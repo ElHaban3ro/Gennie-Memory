@@ -1,0 +1,65 @@
+{
+  "kind": "exploratory_development_threshold_analysis",
+  "cases": 200,
+  "positive": 100,
+  "negative": 100,
+  "correct_positive_top_rank": 50,
+  "distinct_score_breakpoints": 145,
+  "fixed_thresholds": [
+    {
+      "threshold": 0.0,
+      "positive_exact": 50,
+      "negative_empty": 0,
+      "total_exact": 50
+    },
+    {
+      "threshold": 0.25,
+      "positive_exact": 50,
+      "negative_empty": 0,
+      "total_exact": 50
+    },
+    {
+      "threshold": 0.5,
+      "positive_exact": 50,
+      "negative_empty": 0,
+      "total_exact": 50
+    },
+    {
+      "threshold": 0.75,
+      "positive_exact": 35,
+      "negative_empty": 5,
+      "total_exact": 40
+    },
+    {
+      "threshold": 0.9,
+      "positive_exact": 5,
+      "negative_empty": 53,
+      "total_exact": 58
+    },
+    {
+      "threshold": 0.95,
+      "positive_exact": 1,
+      "negative_empty": 84,
+      "total_exact": 85
+    },
+    {
+      "threshold": 0.99,
+      "positive_exact": 0,
+      "negative_empty": 100,
+      "total_exact": 100
+    },
+    {
+      "threshold": 1.0,
+      "positive_exact": 0,
+      "negative_empty": 100,
+      "total_exact": 100
+    }
+  ],
+  "best_over_all_score_breakpoints": {
+    "threshold": 0.9828000000000001,
+    "positive_exact": 0,
+    "negative_empty": 100,
+    "total_exact": 100
+  },
+  "production_threshold_selected": false
+}

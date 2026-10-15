@@ -1,0 +1,4021 @@
+{
+  "version": 1,
+  "method": "openrouter_decisions_choice_probe",
+  "synthetic_only": true,
+  "split": "development",
+  "queries_sha256": "5aecaa964879f27be05b679c7d0ad0cf3e1a0329dbb0235c0eabffcf73d00e8a",
+  "results_sha256": "c09cca970f86131592fab68124444bc67a409a2f92c7e2a36eed8d2bb6682412",
+  "models": [
+    "typesafe/jev-1.13",
+    "openai/gpt-6-luna-decisions"
+  ],
+  "max_candidates": 4,
+  "max_calls": 400,
+  "max_seconds": 1200.0,
+  "max_cost_usd": 0.2,
+  "reserve_per_call_usd": 0.0002,
+  "planned_calls": 400,
+  "cases": [
+    {
+      "case_id": "natgap_development_project_0001_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Please ignore saved memories for this reply and write a neutral sentence.",
+        "scope": "laboratorio_00"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_4e2cfee0ddff2e839861",
+          "summary": "Proyecto Alerce 0001 (PX-0001): si la reunión es presencial, incluir una agenda de cuatro puntos."
+        },
+        {
+          "memory_id": "m_c175641c29512c75ecde",
+          "summary": "Proyecto Alerce 0001 (PX-0001): si la reunión es remota, enviar lecturas previas al inicio."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0001_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "I have not chosen between a video call and being in the same room. Which conditional rule applies now?",
+        "scope": "laboratorio_00"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_4e2cfee0ddff2e839861",
+          "summary": "Proyecto Alerce 0001 (PX-0001): si la reunión es presencial, incluir una agenda de cuatro puntos."
+        },
+        {
+          "memory_id": "m_c175641c29512c75ecde",
+          "summary": "Proyecto Alerce 0001 (PX-0001): si la reunión es remota, enviar lecturas previas al inicio."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0001_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_4e2cfee0ddff2e839861"
+      ],
+      "state": {
+        "user_prompt": "For our next face to face gathering, which saved preparation rule applies?",
+        "scope": "laboratorio_00"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_4e2cfee0ddff2e839861",
+          "summary": "Proyecto Alerce 0001 (PX-0001): si la reunión es presencial, incluir una agenda de cuatro puntos."
+        },
+        {
+          "memory_id": "m_c175641c29512c75ecde",
+          "summary": "Proyecto Alerce 0001 (PX-0001): si la reunión es remota, enviar lecturas previas al inicio."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0001_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_c175641c29512c75ecde"
+      ],
+      "state": {
+        "user_prompt": "For an upcoming video call, which saved preparation rule should I follow?",
+        "scope": "laboratorio_00"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_4e2cfee0ddff2e839861",
+          "summary": "Proyecto Alerce 0001 (PX-0001): si la reunión es presencial, incluir una agenda de cuatro puntos."
+        },
+        {
+          "memory_id": "m_c175641c29512c75ecde",
+          "summary": "Proyecto Alerce 0001 (PX-0001): si la reunión es remota, enviar lecturas previas al inicio."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0015_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Do not consult stored preferences; answer only from my current message.",
+        "scope": "laboratorio_14"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_6e26305f0a5111c89bb2",
+          "summary": "Proyecto Greda 0015 (PX-0015): si la reunión es remota, abrir con decisiones pendientes."
+        },
+        {
+          "memory_id": "m_7fbd22f11f8ff37ed3ed",
+          "summary": "Proyecto Greda 0015 (PX-0015): si la reunión es presencial, enviar lecturas previas al inicio."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0015_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "The format is undecided: webcam or face to face. Should any stored setup preference be used yet?",
+        "scope": "laboratorio_14"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_6e26305f0a5111c89bb2",
+          "summary": "Proyecto Greda 0015 (PX-0015): si la reunión es remota, abrir con decisiones pendientes."
+        },
+        {
+          "memory_id": "m_7fbd22f11f8ff37ed3ed",
+          "summary": "Proyecto Greda 0015 (PX-0015): si la reunión es presencial, enviar lecturas previas al inicio."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0015_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_7fbd22f11f8ff37ed3ed"
+      ],
+      "state": {
+        "user_prompt": "When everyone is in the same room, what established setup preference should I recall?",
+        "scope": "laboratorio_14"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_7fbd22f11f8ff37ed3ed",
+          "summary": "Proyecto Greda 0015 (PX-0015): si la reunión es presencial, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_6e26305f0a5111c89bb2",
+          "summary": "Proyecto Greda 0015 (PX-0015): si la reunión es remota, abrir con decisiones pendientes."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0015_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_6e26305f0a5111c89bb2"
+      ],
+      "state": {
+        "user_prompt": "Before a webcam session with this team, remind me of the established setup preference.",
+        "scope": "laboratorio_14"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_6e26305f0a5111c89bb2",
+          "summary": "Proyecto Greda 0015 (PX-0015): si la reunión es remota, abrir con decisiones pendientes."
+        },
+        {
+          "memory_id": "m_7fbd22f11f8ff37ed3ed",
+          "summary": "Proyecto Greda 0015 (PX-0015): si la reunión es presencial, enviar lecturas previas al inicio."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0022_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Leave prior notes aside for now. Give a generic response without recalling them.",
+        "scope": "laboratorio_01"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_72f7fc0f6d3df2aad513",
+          "summary": "Proyecto Faro 0022 (PX-0022): si la reunión es presencial, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_1ae7d822c0e403caba76",
+          "summary": "Proyecto Faro 0022 (PX-0022): si la reunión es remota, cerrar con responsables y fechas."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0022_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "We might connect online or meet at the office. Which saved instruction is applicable before deciding?",
+        "scope": "laboratorio_01"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_72f7fc0f6d3df2aad513",
+          "summary": "Proyecto Faro 0022 (PX-0022): si la reunión es presencial, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_1ae7d822c0e403caba76",
+          "summary": "Proyecto Faro 0022 (PX-0022): si la reunión es remota, cerrar con responsables y fechas."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0022_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_72f7fc0f6d3df2aad513"
+      ],
+      "state": {
+        "user_prompt": "Before an in person session, remind me of the relevant working instruction.",
+        "scope": "laboratorio_01"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_72f7fc0f6d3df2aad513",
+          "summary": "Proyecto Faro 0022 (PX-0022): si la reunión es presencial, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_1ae7d822c0e403caba76",
+          "summary": "Proyecto Faro 0022 (PX-0022): si la reunión es remota, cerrar con responsables y fechas."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0022_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_1ae7d822c0e403caba76"
+      ],
+      "state": {
+        "user_prompt": "I am joining by video link. What standing preparation instruction applies?",
+        "scope": "laboratorio_01"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_72f7fc0f6d3df2aad513",
+          "summary": "Proyecto Faro 0022 (PX-0022): si la reunión es presencial, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_1ae7d822c0e403caba76",
+          "summary": "Proyecto Faro 0022 (PX-0022): si la reunión es remota, cerrar con responsables y fechas."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0041_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "For this turn, skip memory lookup and respond without archived guidance.",
+        "scope": "laboratorio_00"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_95f63af2a1f37a839e93",
+          "summary": "Proyecto Alerce 0041 (PX-0041): si la reunión es remota, incluir una agenda de cuatro puntos."
+        },
+        {
+          "memory_id": "m_1a0b5350a9eb2e3ff504",
+          "summary": "Proyecto Alerce 0041 (PX-0041): si la reunión es presencial, abrir con decisiones pendientes."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0041_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "No channel has been selected. Can you already apply either preparation rule?",
+        "scope": "laboratorio_00"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_1a0b5350a9eb2e3ff504",
+          "summary": "Proyecto Alerce 0041 (PX-0041): si la reunión es presencial, abrir con decisiones pendientes."
+        },
+        {
+          "memory_id": "m_95f63af2a1f37a839e93",
+          "summary": "Proyecto Alerce 0041 (PX-0041): si la reunión es remota, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0041_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_1a0b5350a9eb2e3ff504"
+      ],
+      "state": {
+        "user_prompt": "I am planning an onsite gathering. What prior rule should guide the opening?",
+        "scope": "laboratorio_00"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_1a0b5350a9eb2e3ff504",
+          "summary": "Proyecto Alerce 0041 (PX-0041): si la reunión es presencial, abrir con decisiones pendientes."
+        },
+        {
+          "memory_id": "m_95f63af2a1f37a839e93",
+          "summary": "Proyecto Alerce 0041 (PX-0041): si la reunión es remota, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0041_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_95f63af2a1f37a839e93"
+      ],
+      "state": {
+        "user_prompt": "During an online gathering, what prior working preference should guide my setup?",
+        "scope": "laboratorio_00"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_1a0b5350a9eb2e3ff504",
+          "summary": "Proyecto Alerce 0041 (PX-0041): si la reunión es presencial, abrir con decisiones pendientes."
+        },
+        {
+          "memory_id": "m_95f63af2a1f37a839e93",
+          "summary": "Proyecto Alerce 0041 (PX-0041): si la reunión es remota, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0045_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "I explicitly do not want saved instructions used in your next answer.",
+        "scope": "laboratorio_04"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_50a6fe6b9913d7ed145f",
+          "summary": "Proyecto Estuario 0045 (PX-0045): si la reunión es presencial, incluir una agenda de cuatro puntos."
+        },
+        {
+          "memory_id": "m_86b455f7a27d0e20e36f",
+          "summary": "Proyecto Estuario 0045 (PX-0045): si la reunión es remota, empezar con un resumen del estado."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0045_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "The team could gather physically or through screens. What guidance applies while that remains open?",
+        "scope": "laboratorio_04"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_50a6fe6b9913d7ed145f",
+          "summary": "Proyecto Estuario 0045 (PX-0045): si la reunión es presencial, incluir una agenda de cuatro puntos."
+        },
+        {
+          "memory_id": "m_86b455f7a27d0e20e36f",
+          "summary": "Proyecto Estuario 0045 (PX-0045): si la reunión es remota, empezar con un resumen del estado."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0045_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_50a6fe6b9913d7ed145f"
+      ],
+      "state": {
+        "user_prompt": "At a physical group session, which stored preparation preference matters?",
+        "scope": "laboratorio_04"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_50a6fe6b9913d7ed145f",
+          "summary": "Proyecto Estuario 0045 (PX-0045): si la reunión es presencial, incluir una agenda de cuatro puntos."
+        },
+        {
+          "memory_id": "m_86b455f7a27d0e20e36f",
+          "summary": "Proyecto Estuario 0045 (PX-0045): si la reunión es remota, empezar con un resumen del estado."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0045_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_86b455f7a27d0e20e36f"
+      ],
+      "state": {
+        "user_prompt": "I am planning a teleconference. Which saved instruction is relevant?",
+        "scope": "laboratorio_04"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_50a6fe6b9913d7ed145f",
+          "summary": "Proyecto Estuario 0045 (PX-0045): si la reunión es presencial, incluir una agenda de cuatro puntos."
+        },
+        {
+          "memory_id": "m_86b455f7a27d0e20e36f",
+          "summary": "Proyecto Estuario 0045 (PX-0045): si la reunión es remota, empezar con un resumen del estado."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0074_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Set aside retained context and write only a neutral reply.",
+        "scope": "laboratorio_13"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_7b7496a6fc62628da566",
+          "summary": "Proyecto Bruma 0074 (PX-0074): si la reunión es presencial, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_d79806c92d69d2771eaf",
+          "summary": "Proyecto Bruma 0074 (PX-0074): si la reunión es remota, abrir con decisiones pendientes."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0074_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "I have two possible formats but have selected neither. Is any conditional setup note valid now?",
+        "scope": "laboratorio_13"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_7b7496a6fc62628da566",
+          "summary": "Proyecto Bruma 0074 (PX-0074): si la reunión es presencial, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_d79806c92d69d2771eaf",
+          "summary": "Proyecto Bruma 0074 (PX-0074): si la reunión es remota, abrir con decisiones pendientes."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0074_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_7b7496a6fc62628da566"
+      ],
+      "state": {
+        "user_prompt": "What saved guidance applies when the whole team shares one room?",
+        "scope": "laboratorio_13"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_7b7496a6fc62628da566",
+          "summary": "Proyecto Bruma 0074 (PX-0074): si la reunión es presencial, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_d79806c92d69d2771eaf",
+          "summary": "Proyecto Bruma 0074 (PX-0074): si la reunión es remota, abrir con decisiones pendientes."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0074_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_d79806c92d69d2771eaf"
+      ],
+      "state": {
+        "user_prompt": "For a camera based discussion, what established preparation habit matters?",
+        "scope": "laboratorio_13"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_7b7496a6fc62628da566",
+          "summary": "Proyecto Bruma 0074 (PX-0074): si la reunión es presencial, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_d79806c92d69d2771eaf",
+          "summary": "Proyecto Bruma 0074 (PX-0074): si la reunión es remota, abrir con decisiones pendientes."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0088_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Please avoid all prior project notes while answering this request.",
+        "scope": "laboratorio_07"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_ee08f64956588ccbb6ac",
+          "summary": "Proyecto Hiedra 0088 (PX-0088): si la reunión es remota, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_97f3b52a77a890081888",
+          "summary": "Proyecto Hiedra 0088 (PX-0088): si la reunión es presencial, abrir con decisiones pendientes."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0088_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Before choosing virtual versus onsite, which existing preparation preference should be followed?",
+        "scope": "laboratorio_07"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_97f3b52a77a890081888",
+          "summary": "Proyecto Hiedra 0088 (PX-0088): si la reunión es presencial, abrir con decisiones pendientes."
+        },
+        {
+          "memory_id": "m_ee08f64956588ccbb6ac",
+          "summary": "Proyecto Hiedra 0088 (PX-0088): si la reunión es remota, enviar lecturas previas al inicio."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0088_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_97f3b52a77a890081888"
+      ],
+      "state": {
+        "user_prompt": "We will gather around a table. Which existing setup rule should I follow?",
+        "scope": "laboratorio_07"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_97f3b52a77a890081888",
+          "summary": "Proyecto Hiedra 0088 (PX-0088): si la reunión es presencial, abrir con decisiones pendientes."
+        },
+        {
+          "memory_id": "m_ee08f64956588ccbb6ac",
+          "summary": "Proyecto Hiedra 0088 (PX-0088): si la reunión es remota, enviar lecturas previas al inicio."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0088_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_ee08f64956588ccbb6ac"
+      ],
+      "state": {
+        "user_prompt": "We will connect through screens. Which retained setup rule should I use?",
+        "scope": "laboratorio_07"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_97f3b52a77a890081888",
+          "summary": "Proyecto Hiedra 0088 (PX-0088): si la reunión es presencial, abrir con decisiones pendientes."
+        },
+        {
+          "memory_id": "m_ee08f64956588ccbb6ac",
+          "summary": "Proyecto Hiedra 0088 (PX-0088): si la reunión es remota, enviar lecturas previas al inicio."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0091_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Answer without retrieving anything previously stored about this work.",
+        "scope": "laboratorio_10"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_db1063ddfbd2ba80f711",
+          "summary": "Proyecto Cobalto 0091 (PX-0091): si la reunión es presencial, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_33a3a0a2a764ce3b2971",
+          "summary": "Proyecto Cobalto 0091 (PX-0091): si la reunión es remota, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0091_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Whether we use a camera link or one room is still unknown. Does a specific rule apply?",
+        "scope": "laboratorio_10"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_db1063ddfbd2ba80f711",
+          "summary": "Proyecto Cobalto 0091 (PX-0091): si la reunión es presencial, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_33a3a0a2a764ce3b2971",
+          "summary": "Proyecto Cobalto 0091 (PX-0091): si la reunión es remota, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0091_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_db1063ddfbd2ba80f711"
+      ],
+      "state": {
+        "user_prompt": "Ahead of a face to face team session, remind me what preparation was agreed.",
+        "scope": "laboratorio_10"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_db1063ddfbd2ba80f711",
+          "summary": "Proyecto Cobalto 0091 (PX-0091): si la reunión es presencial, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_33a3a0a2a764ce3b2971",
+          "summary": "Proyecto Cobalto 0091 (PX-0091): si la reunión es remota, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0091_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_33a3a0a2a764ce3b2971"
+      ],
+      "state": {
+        "user_prompt": "Ahead of a virtual team session, remind me what preparation was agreed.",
+        "scope": "laboratorio_10"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_db1063ddfbd2ba80f711",
+          "summary": "Proyecto Cobalto 0091 (PX-0091): si la reunión es presencial, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_33a3a0a2a764ce3b2971",
+          "summary": "Proyecto Cobalto 0091 (PX-0091): si la reunión es remota, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0098_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Do not bring earlier preferences into the response I am requesting now.",
+        "scope": "laboratorio_17"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_27ffa166d3de0222d0be",
+          "summary": "Proyecto Bruma 0098 (PX-0098): si la reunión es presencial, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_1e6592843b6f8eb1f1e7",
+          "summary": "Proyecto Bruma 0098 (PX-0098): si la reunión es remota, cerrar con responsables y fechas."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0098_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "The meeting format is still pending. Should you recall either conditional instruction?",
+        "scope": "laboratorio_17"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_1e6592843b6f8eb1f1e7",
+          "summary": "Proyecto Bruma 0098 (PX-0098): si la reunión es remota, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_27ffa166d3de0222d0be",
+          "summary": "Proyecto Bruma 0098 (PX-0098): si la reunión es presencial, enviar lecturas previas al inicio."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0098_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_27ffa166d3de0222d0be"
+      ],
+      "state": {
+        "user_prompt": "For an in person workshop, which retained working preference applies?",
+        "scope": "laboratorio_17"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_27ffa166d3de0222d0be",
+          "summary": "Proyecto Bruma 0098 (PX-0098): si la reunión es presencial, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_1e6592843b6f8eb1f1e7",
+          "summary": "Proyecto Bruma 0098 (PX-0098): si la reunión es remota, cerrar con responsables y fechas."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0098_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_1e6592843b6f8eb1f1e7"
+      ],
+      "state": {
+        "user_prompt": "What saved guidance applies when everyone joins through a video link?",
+        "scope": "laboratorio_17"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_27ffa166d3de0222d0be",
+          "summary": "Proyecto Bruma 0098 (PX-0098): si la reunión es presencial, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_1e6592843b6f8eb1f1e7",
+          "summary": "Proyecto Bruma 0098 (PX-0098): si la reunión es remota, cerrar con responsables y fechas."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0103_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Ignore historical context; produce a short general sentence instead.",
+        "scope": "laboratorio_02"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_5971d716af8071d35823",
+          "summary": "Proyecto Greda 0103 (PX-0103): si la reunión es presencial, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_fb2ad5fe209ec1453901",
+          "summary": "Proyecto Greda 0103 (PX-0103): si la reunión es remota, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0103_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "We have not decided how to gather. Is there an applicable saved setup rule already?",
+        "scope": "laboratorio_02"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_5971d716af8071d35823",
+          "summary": "Proyecto Greda 0103 (PX-0103): si la reunión es presencial, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_fb2ad5fe209ec1453901",
+          "summary": "Proyecto Greda 0103 (PX-0103): si la reunión es remota, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0103_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_5971d716af8071d35823"
+      ],
+      "state": {
+        "user_prompt": "I will host everyone at the office. What standing setup instruction matters?",
+        "scope": "laboratorio_02"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_5971d716af8071d35823",
+          "summary": "Proyecto Greda 0103 (PX-0103): si la reunión es presencial, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_fb2ad5fe209ec1453901",
+          "summary": "Proyecto Greda 0103 (PX-0103): si la reunión es remota, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0103_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_fb2ad5fe209ec1453901"
+      ],
+      "state": {
+        "user_prompt": "I will host an online group call. Which existing setup preference applies?",
+        "scope": "laboratorio_02"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_5971d716af8071d35823",
+          "summary": "Proyecto Greda 0103 (PX-0103): si la reunión es presencial, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_fb2ad5fe209ec1453901",
+          "summary": "Proyecto Greda 0103 (PX-0103): si la reunión es remota, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0106_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Please ignore saved memories for this reply and write a neutral sentence.",
+        "scope": "laboratorio_05"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_9bae9a48c09808365438",
+          "summary": "Proyecto Bruma 0106 (PX-0106): si la reunión es remota, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_413b2a65bc1bd07ec974",
+          "summary": "Proyecto Bruma 0106 (PX-0106): si la reunión es presencial, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0106_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "I have not chosen between a video call and being in the same room. Which conditional rule applies now?",
+        "scope": "laboratorio_05"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_9bae9a48c09808365438",
+          "summary": "Proyecto Bruma 0106 (PX-0106): si la reunión es remota, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_413b2a65bc1bd07ec974",
+          "summary": "Proyecto Bruma 0106 (PX-0106): si la reunión es presencial, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0106_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_413b2a65bc1bd07ec974"
+      ],
+      "state": {
+        "user_prompt": "For our next face to face gathering, which saved preparation rule applies?",
+        "scope": "laboratorio_05"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_413b2a65bc1bd07ec974",
+          "summary": "Proyecto Bruma 0106 (PX-0106): si la reunión es presencial, incluir una agenda de cuatro puntos."
+        },
+        {
+          "memory_id": "m_9bae9a48c09808365438",
+          "summary": "Proyecto Bruma 0106 (PX-0106): si la reunión es remota, cerrar con responsables y fechas."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0106_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_9bae9a48c09808365438"
+      ],
+      "state": {
+        "user_prompt": "For an upcoming video call, which saved preparation rule should I follow?",
+        "scope": "laboratorio_05"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_413b2a65bc1bd07ec974",
+          "summary": "Proyecto Bruma 0106 (PX-0106): si la reunión es presencial, incluir una agenda de cuatro puntos."
+        },
+        {
+          "memory_id": "m_9bae9a48c09808365438",
+          "summary": "Proyecto Bruma 0106 (PX-0106): si la reunión es remota, cerrar con responsables y fechas."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0109_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Do not consult stored preferences; answer only from my current message.",
+        "scope": "laboratorio_08"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_697c9187b43239eb2b06",
+          "summary": "Proyecto Estuario 0109 (PX-0109): si la reunión es presencial, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_233ddfc377c1694f74fa",
+          "summary": "Proyecto Estuario 0109 (PX-0109): si la reunión es remota, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0109_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "The format is undecided: webcam or face to face. Should any stored setup preference be used yet?",
+        "scope": "laboratorio_08"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_697c9187b43239eb2b06",
+          "summary": "Proyecto Estuario 0109 (PX-0109): si la reunión es presencial, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_233ddfc377c1694f74fa",
+          "summary": "Proyecto Estuario 0109 (PX-0109): si la reunión es remota, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0109_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_697c9187b43239eb2b06"
+      ],
+      "state": {
+        "user_prompt": "When everyone is in the same room, what established setup preference should I recall?",
+        "scope": "laboratorio_08"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_697c9187b43239eb2b06",
+          "summary": "Proyecto Estuario 0109 (PX-0109): si la reunión es presencial, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_233ddfc377c1694f74fa",
+          "summary": "Proyecto Estuario 0109 (PX-0109): si la reunión es remota, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0109_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_233ddfc377c1694f74fa"
+      ],
+      "state": {
+        "user_prompt": "Before a webcam session with this team, remind me of the established setup preference.",
+        "scope": "laboratorio_08"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_697c9187b43239eb2b06",
+          "summary": "Proyecto Estuario 0109 (PX-0109): si la reunión es presencial, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_233ddfc377c1694f74fa",
+          "summary": "Proyecto Estuario 0109 (PX-0109): si la reunión es remota, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0113_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Leave prior notes aside for now. Give a generic response without recalling them.",
+        "scope": "laboratorio_12"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_755b53d6be184cce007a",
+          "summary": "Proyecto Alerce 0113 (PX-0113): si la reunión es presencial, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_5dea17ceefa1f3e4371e",
+          "summary": "Proyecto Alerce 0113 (PX-0113): si la reunión es remota, reservar diez minutos para riesgos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0113_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "We might connect online or meet at the office. Which saved instruction is applicable before deciding?",
+        "scope": "laboratorio_12"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_755b53d6be184cce007a",
+          "summary": "Proyecto Alerce 0113 (PX-0113): si la reunión es presencial, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_5dea17ceefa1f3e4371e",
+          "summary": "Proyecto Alerce 0113 (PX-0113): si la reunión es remota, reservar diez minutos para riesgos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0113_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_755b53d6be184cce007a"
+      ],
+      "state": {
+        "user_prompt": "Before an in person session, remind me of the relevant working instruction.",
+        "scope": "laboratorio_12"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_755b53d6be184cce007a",
+          "summary": "Proyecto Alerce 0113 (PX-0113): si la reunión es presencial, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_5dea17ceefa1f3e4371e",
+          "summary": "Proyecto Alerce 0113 (PX-0113): si la reunión es remota, reservar diez minutos para riesgos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0113_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_5dea17ceefa1f3e4371e"
+      ],
+      "state": {
+        "user_prompt": "I am joining by video link. What standing preparation instruction applies?",
+        "scope": "laboratorio_12"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_755b53d6be184cce007a",
+          "summary": "Proyecto Alerce 0113 (PX-0113): si la reunión es presencial, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_5dea17ceefa1f3e4371e",
+          "summary": "Proyecto Alerce 0113 (PX-0113): si la reunión es remota, reservar diez minutos para riesgos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0117_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "For this turn, skip memory lookup and respond without archived guidance.",
+        "scope": "laboratorio_16"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_b4d5bc505089d99ee829",
+          "summary": "Proyecto Estuario 0117 (PX-0117): si la reunión es remota, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_0ac16bb9f1a28fdc6dd3",
+          "summary": "Proyecto Estuario 0117 (PX-0117): si la reunión es presencial, abrir con decisiones pendientes."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0117_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "No channel has been selected. Can you already apply either preparation rule?",
+        "scope": "laboratorio_16"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_b4d5bc505089d99ee829",
+          "summary": "Proyecto Estuario 0117 (PX-0117): si la reunión es remota, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_0ac16bb9f1a28fdc6dd3",
+          "summary": "Proyecto Estuario 0117 (PX-0117): si la reunión es presencial, abrir con decisiones pendientes."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0117_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_0ac16bb9f1a28fdc6dd3"
+      ],
+      "state": {
+        "user_prompt": "I am planning an onsite gathering. What prior rule should guide the opening?",
+        "scope": "laboratorio_16"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_b4d5bc505089d99ee829",
+          "summary": "Proyecto Estuario 0117 (PX-0117): si la reunión es remota, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_0ac16bb9f1a28fdc6dd3",
+          "summary": "Proyecto Estuario 0117 (PX-0117): si la reunión es presencial, abrir con decisiones pendientes."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0117_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_b4d5bc505089d99ee829"
+      ],
+      "state": {
+        "user_prompt": "During an online gathering, what prior working preference should guide my setup?",
+        "scope": "laboratorio_16"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_0ac16bb9f1a28fdc6dd3",
+          "summary": "Proyecto Estuario 0117 (PX-0117): si la reunión es presencial, abrir con decisiones pendientes."
+        },
+        {
+          "memory_id": "m_b4d5bc505089d99ee829",
+          "summary": "Proyecto Estuario 0117 (PX-0117): si la reunión es remota, cerrar con responsables y fechas."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0127_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "I explicitly do not want saved instructions used in your next answer.",
+        "scope": "laboratorio_06"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_10694528fa5709f52014",
+          "summary": "Proyecto Greda 0127 (PX-0127): si la reunión es presencial, reservar diez minutos para riesgos."
+        },
+        {
+          "memory_id": "m_fcc027f29163fe99ffe3",
+          "summary": "Proyecto Greda 0127 (PX-0127): si la reunión es remota, enviar lecturas previas al inicio."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0127_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "The team could gather physically or through screens. What guidance applies while that remains open?",
+        "scope": "laboratorio_06"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_10694528fa5709f52014",
+          "summary": "Proyecto Greda 0127 (PX-0127): si la reunión es presencial, reservar diez minutos para riesgos."
+        },
+        {
+          "memory_id": "m_fcc027f29163fe99ffe3",
+          "summary": "Proyecto Greda 0127 (PX-0127): si la reunión es remota, enviar lecturas previas al inicio."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0127_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_10694528fa5709f52014"
+      ],
+      "state": {
+        "user_prompt": "At a physical group session, which stored preparation preference matters?",
+        "scope": "laboratorio_06"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_fcc027f29163fe99ffe3",
+          "summary": "Proyecto Greda 0127 (PX-0127): si la reunión es remota, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_10694528fa5709f52014",
+          "summary": "Proyecto Greda 0127 (PX-0127): si la reunión es presencial, reservar diez minutos para riesgos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0127_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_fcc027f29163fe99ffe3"
+      ],
+      "state": {
+        "user_prompt": "I am planning a teleconference. Which saved instruction is relevant?",
+        "scope": "laboratorio_06"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_fcc027f29163fe99ffe3",
+          "summary": "Proyecto Greda 0127 (PX-0127): si la reunión es remota, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_10694528fa5709f52014",
+          "summary": "Proyecto Greda 0127 (PX-0127): si la reunión es presencial, reservar diez minutos para riesgos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0128_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Set aside retained context and write only a neutral reply.",
+        "scope": "laboratorio_07"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_2ba8a90b5368c85471f9",
+          "summary": "Proyecto Hiedra 0128 (PX-0128): si la reunión es presencial, abrir con decisiones pendientes."
+        },
+        {
+          "memory_id": "m_26396790393bbc3c20f1",
+          "summary": "Proyecto Hiedra 0128 (PX-0128): si la reunión es remota, enviar lecturas previas al inicio."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0128_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "I have two possible formats but have selected neither. Is any conditional setup note valid now?",
+        "scope": "laboratorio_07"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_26396790393bbc3c20f1",
+          "summary": "Proyecto Hiedra 0128 (PX-0128): si la reunión es remota, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_2ba8a90b5368c85471f9",
+          "summary": "Proyecto Hiedra 0128 (PX-0128): si la reunión es presencial, abrir con decisiones pendientes."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0128_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_2ba8a90b5368c85471f9"
+      ],
+      "state": {
+        "user_prompt": "What saved guidance applies when the whole team shares one room?",
+        "scope": "laboratorio_07"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_2ba8a90b5368c85471f9",
+          "summary": "Proyecto Hiedra 0128 (PX-0128): si la reunión es presencial, abrir con decisiones pendientes."
+        },
+        {
+          "memory_id": "m_26396790393bbc3c20f1",
+          "summary": "Proyecto Hiedra 0128 (PX-0128): si la reunión es remota, enviar lecturas previas al inicio."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0128_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_26396790393bbc3c20f1"
+      ],
+      "state": {
+        "user_prompt": "For a camera based discussion, what established preparation habit matters?",
+        "scope": "laboratorio_07"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_2ba8a90b5368c85471f9",
+          "summary": "Proyecto Hiedra 0128 (PX-0128): si la reunión es presencial, abrir con decisiones pendientes."
+        },
+        {
+          "memory_id": "m_26396790393bbc3c20f1",
+          "summary": "Proyecto Hiedra 0128 (PX-0128): si la reunión es remota, enviar lecturas previas al inicio."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0130_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Please avoid all prior project notes while answering this request.",
+        "scope": "laboratorio_09"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_35e9a4cf07b119201f9d",
+          "summary": "Proyecto Bruma 0130 (PX-0130): si la reunión es remota, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_8422081698bbccd04ccd",
+          "summary": "Proyecto Bruma 0130 (PX-0130): si la reunión es presencial, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0130_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Before choosing virtual versus onsite, which existing preparation preference should be followed?",
+        "scope": "laboratorio_09"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_8422081698bbccd04ccd",
+          "summary": "Proyecto Bruma 0130 (PX-0130): si la reunión es presencial, incluir una agenda de cuatro puntos."
+        },
+        {
+          "memory_id": "m_35e9a4cf07b119201f9d",
+          "summary": "Proyecto Bruma 0130 (PX-0130): si la reunión es remota, enviar lecturas previas al inicio."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0130_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_8422081698bbccd04ccd"
+      ],
+      "state": {
+        "user_prompt": "We will gather around a table. Which existing setup rule should I follow?",
+        "scope": "laboratorio_09"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_35e9a4cf07b119201f9d",
+          "summary": "Proyecto Bruma 0130 (PX-0130): si la reunión es remota, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_8422081698bbccd04ccd",
+          "summary": "Proyecto Bruma 0130 (PX-0130): si la reunión es presencial, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0130_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_35e9a4cf07b119201f9d"
+      ],
+      "state": {
+        "user_prompt": "We will connect through screens. Which retained setup rule should I use?",
+        "scope": "laboratorio_09"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_35e9a4cf07b119201f9d",
+          "summary": "Proyecto Bruma 0130 (PX-0130): si la reunión es remota, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_8422081698bbccd04ccd",
+          "summary": "Proyecto Bruma 0130 (PX-0130): si la reunión es presencial, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0132_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Answer without retrieving anything previously stored about this work.",
+        "scope": "laboratorio_11"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_fabdbc22d205ed1cfa01",
+          "summary": "Proyecto Duna 0132 (PX-0132): si la reunión es remota, incluir una agenda de cuatro puntos."
+        },
+        {
+          "memory_id": "m_9adceab029baee3508fb",
+          "summary": "Proyecto Duna 0132 (PX-0132): si la reunión es presencial, reservar diez minutos para riesgos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0132_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Whether we use a camera link or one room is still unknown. Does a specific rule apply?",
+        "scope": "laboratorio_11"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_fabdbc22d205ed1cfa01",
+          "summary": "Proyecto Duna 0132 (PX-0132): si la reunión es remota, incluir una agenda de cuatro puntos."
+        },
+        {
+          "memory_id": "m_9adceab029baee3508fb",
+          "summary": "Proyecto Duna 0132 (PX-0132): si la reunión es presencial, reservar diez minutos para riesgos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0132_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_9adceab029baee3508fb"
+      ],
+      "state": {
+        "user_prompt": "Ahead of a face to face team session, remind me what preparation was agreed.",
+        "scope": "laboratorio_11"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_9adceab029baee3508fb",
+          "summary": "Proyecto Duna 0132 (PX-0132): si la reunión es presencial, reservar diez minutos para riesgos."
+        },
+        {
+          "memory_id": "m_fabdbc22d205ed1cfa01",
+          "summary": "Proyecto Duna 0132 (PX-0132): si la reunión es remota, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0132_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_fabdbc22d205ed1cfa01"
+      ],
+      "state": {
+        "user_prompt": "Ahead of a virtual team session, remind me what preparation was agreed.",
+        "scope": "laboratorio_11"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_9adceab029baee3508fb",
+          "summary": "Proyecto Duna 0132 (PX-0132): si la reunión es presencial, reservar diez minutos para riesgos."
+        },
+        {
+          "memory_id": "m_fabdbc22d205ed1cfa01",
+          "summary": "Proyecto Duna 0132 (PX-0132): si la reunión es remota, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0139_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Do not bring earlier preferences into the response I am requesting now.",
+        "scope": "laboratorio_18"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_33d7d200d05cda900218",
+          "summary": "Proyecto Cobalto 0139 (PX-0139): si la reunión es presencial, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_77a5cfbb0c8623d0532d",
+          "summary": "Proyecto Cobalto 0139 (PX-0139): si la reunión es remota, reservar diez minutos para riesgos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0139_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "The meeting format is still pending. Should you recall either conditional instruction?",
+        "scope": "laboratorio_18"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_33d7d200d05cda900218",
+          "summary": "Proyecto Cobalto 0139 (PX-0139): si la reunión es presencial, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_77a5cfbb0c8623d0532d",
+          "summary": "Proyecto Cobalto 0139 (PX-0139): si la reunión es remota, reservar diez minutos para riesgos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0139_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_33d7d200d05cda900218"
+      ],
+      "state": {
+        "user_prompt": "For an in person workshop, which retained working preference applies?",
+        "scope": "laboratorio_18"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_33d7d200d05cda900218",
+          "summary": "Proyecto Cobalto 0139 (PX-0139): si la reunión es presencial, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_77a5cfbb0c8623d0532d",
+          "summary": "Proyecto Cobalto 0139 (PX-0139): si la reunión es remota, reservar diez minutos para riesgos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0139_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_77a5cfbb0c8623d0532d"
+      ],
+      "state": {
+        "user_prompt": "What saved guidance applies when everyone joins through a video link?",
+        "scope": "laboratorio_18"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_33d7d200d05cda900218",
+          "summary": "Proyecto Cobalto 0139 (PX-0139): si la reunión es presencial, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_77a5cfbb0c8623d0532d",
+          "summary": "Proyecto Cobalto 0139 (PX-0139): si la reunión es remota, reservar diez minutos para riesgos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0149_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Ignore historical context; produce a short general sentence instead.",
+        "scope": "laboratorio_08"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_58b4da96a5edaed44fe4",
+          "summary": "Proyecto Estuario 0149 (PX-0149): si la reunión es presencial, abrir con decisiones pendientes."
+        },
+        {
+          "memory_id": "m_e64af7e47f718441601e",
+          "summary": "Proyecto Estuario 0149 (PX-0149): si la reunión es remota, enviar lecturas previas al inicio."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0149_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "We have not decided how to gather. Is there an applicable saved setup rule already?",
+        "scope": "laboratorio_08"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_e64af7e47f718441601e",
+          "summary": "Proyecto Estuario 0149 (PX-0149): si la reunión es remota, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_58b4da96a5edaed44fe4",
+          "summary": "Proyecto Estuario 0149 (PX-0149): si la reunión es presencial, abrir con decisiones pendientes."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0149_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_58b4da96a5edaed44fe4"
+      ],
+      "state": {
+        "user_prompt": "I will host everyone at the office. What standing setup instruction matters?",
+        "scope": "laboratorio_08"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_58b4da96a5edaed44fe4",
+          "summary": "Proyecto Estuario 0149 (PX-0149): si la reunión es presencial, abrir con decisiones pendientes."
+        },
+        {
+          "memory_id": "m_e64af7e47f718441601e",
+          "summary": "Proyecto Estuario 0149 (PX-0149): si la reunión es remota, enviar lecturas previas al inicio."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0149_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_e64af7e47f718441601e"
+      ],
+      "state": {
+        "user_prompt": "I will host an online group call. Which existing setup preference applies?",
+        "scope": "laboratorio_08"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_58b4da96a5edaed44fe4",
+          "summary": "Proyecto Estuario 0149 (PX-0149): si la reunión es presencial, abrir con decisiones pendientes."
+        },
+        {
+          "memory_id": "m_e64af7e47f718441601e",
+          "summary": "Proyecto Estuario 0149 (PX-0149): si la reunión es remota, enviar lecturas previas al inicio."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0153_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Please ignore saved memories for this reply and write a neutral sentence.",
+        "scope": "laboratorio_12"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_6ec9f47541ac749d4804",
+          "summary": "Proyecto Alerce 0153 (PX-0153): si la reunión es presencial, abrir con decisiones pendientes."
+        },
+        {
+          "memory_id": "m_df2a5017acf5c22f5367",
+          "summary": "Proyecto Alerce 0153 (PX-0153): si la reunión es remota, empezar con un resumen del estado."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0153_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "I have not chosen between a video call and being in the same room. Which conditional rule applies now?",
+        "scope": "laboratorio_12"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_6ec9f47541ac749d4804",
+          "summary": "Proyecto Alerce 0153 (PX-0153): si la reunión es presencial, abrir con decisiones pendientes."
+        },
+        {
+          "memory_id": "m_df2a5017acf5c22f5367",
+          "summary": "Proyecto Alerce 0153 (PX-0153): si la reunión es remota, empezar con un resumen del estado."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0153_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_6ec9f47541ac749d4804"
+      ],
+      "state": {
+        "user_prompt": "For our next face to face gathering, which saved preparation rule applies?",
+        "scope": "laboratorio_12"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_6ec9f47541ac749d4804",
+          "summary": "Proyecto Alerce 0153 (PX-0153): si la reunión es presencial, abrir con decisiones pendientes."
+        },
+        {
+          "memory_id": "m_df2a5017acf5c22f5367",
+          "summary": "Proyecto Alerce 0153 (PX-0153): si la reunión es remota, empezar con un resumen del estado."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0153_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_df2a5017acf5c22f5367"
+      ],
+      "state": {
+        "user_prompt": "For an upcoming video call, which saved preparation rule should I follow?",
+        "scope": "laboratorio_12"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_6ec9f47541ac749d4804",
+          "summary": "Proyecto Alerce 0153 (PX-0153): si la reunión es presencial, abrir con decisiones pendientes."
+        },
+        {
+          "memory_id": "m_df2a5017acf5c22f5367",
+          "summary": "Proyecto Alerce 0153 (PX-0153): si la reunión es remota, empezar con un resumen del estado."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0179_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Do not consult stored preferences; answer only from my current message.",
+        "scope": "laboratorio_18"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_abee1bd9ab0a993f3afb",
+          "summary": "Proyecto Cobalto 0179 (PX-0179): si la reunión es presencial, empezar con un resumen del estado."
+        },
+        {
+          "memory_id": "m_8119e18d0c9af7c63f66",
+          "summary": "Proyecto Cobalto 0179 (PX-0179): si la reunión es remota, enviar lecturas previas al inicio."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0179_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "The format is undecided: webcam or face to face. Should any stored setup preference be used yet?",
+        "scope": "laboratorio_18"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_8119e18d0c9af7c63f66",
+          "summary": "Proyecto Cobalto 0179 (PX-0179): si la reunión es remota, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_abee1bd9ab0a993f3afb",
+          "summary": "Proyecto Cobalto 0179 (PX-0179): si la reunión es presencial, empezar con un resumen del estado."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0179_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_abee1bd9ab0a993f3afb"
+      ],
+      "state": {
+        "user_prompt": "When everyone is in the same room, what established setup preference should I recall?",
+        "scope": "laboratorio_18"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_abee1bd9ab0a993f3afb",
+          "summary": "Proyecto Cobalto 0179 (PX-0179): si la reunión es presencial, empezar con un resumen del estado."
+        },
+        {
+          "memory_id": "m_8119e18d0c9af7c63f66",
+          "summary": "Proyecto Cobalto 0179 (PX-0179): si la reunión es remota, enviar lecturas previas al inicio."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0179_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_8119e18d0c9af7c63f66"
+      ],
+      "state": {
+        "user_prompt": "Before a webcam session with this team, remind me of the established setup preference.",
+        "scope": "laboratorio_18"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_8119e18d0c9af7c63f66",
+          "summary": "Proyecto Cobalto 0179 (PX-0179): si la reunión es remota, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_abee1bd9ab0a993f3afb",
+          "summary": "Proyecto Cobalto 0179 (PX-0179): si la reunión es presencial, empezar con un resumen del estado."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0200_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Leave prior notes aside for now. Give a generic response without recalling them.",
+        "scope": "laboratorio_19"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_71f517ddbc3f9d630e32",
+          "summary": "Proyecto Hiedra 0200 (PX-0200): si la reunión es presencial, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_623f02ee78d18f99c0f1",
+          "summary": "Proyecto Hiedra 0200 (PX-0200): si la reunión es remota, abrir con decisiones pendientes."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0200_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "We might connect online or meet at the office. Which saved instruction is applicable before deciding?",
+        "scope": "laboratorio_19"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_71f517ddbc3f9d630e32",
+          "summary": "Proyecto Hiedra 0200 (PX-0200): si la reunión es presencial, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_623f02ee78d18f99c0f1",
+          "summary": "Proyecto Hiedra 0200 (PX-0200): si la reunión es remota, abrir con decisiones pendientes."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0200_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_71f517ddbc3f9d630e32"
+      ],
+      "state": {
+        "user_prompt": "Before an in person session, remind me of the relevant working instruction.",
+        "scope": "laboratorio_19"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_71f517ddbc3f9d630e32",
+          "summary": "Proyecto Hiedra 0200 (PX-0200): si la reunión es presencial, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_623f02ee78d18f99c0f1",
+          "summary": "Proyecto Hiedra 0200 (PX-0200): si la reunión es remota, abrir con decisiones pendientes."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0200_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_623f02ee78d18f99c0f1"
+      ],
+      "state": {
+        "user_prompt": "I am joining by video link. What standing preparation instruction applies?",
+        "scope": "laboratorio_19"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_71f517ddbc3f9d630e32",
+          "summary": "Proyecto Hiedra 0200 (PX-0200): si la reunión es presencial, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_623f02ee78d18f99c0f1",
+          "summary": "Proyecto Hiedra 0200 (PX-0200): si la reunión es remota, abrir con decisiones pendientes."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0212_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "For this turn, skip memory lookup and respond without archived guidance.",
+        "scope": "laboratorio_11"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_10193d82a26fd3391d57",
+          "summary": "Proyecto Duna 0212 (PX-0212): si la reunión es presencial, reservar diez minutos para riesgos."
+        },
+        {
+          "memory_id": "m_a1f42e49ec2126963b62",
+          "summary": "Proyecto Duna 0212 (PX-0212): si la reunión es remota, abrir con decisiones pendientes."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0212_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "No channel has been selected. Can you already apply either preparation rule?",
+        "scope": "laboratorio_11"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_a1f42e49ec2126963b62",
+          "summary": "Proyecto Duna 0212 (PX-0212): si la reunión es remota, abrir con decisiones pendientes."
+        },
+        {
+          "memory_id": "m_10193d82a26fd3391d57",
+          "summary": "Proyecto Duna 0212 (PX-0212): si la reunión es presencial, reservar diez minutos para riesgos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0212_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_10193d82a26fd3391d57"
+      ],
+      "state": {
+        "user_prompt": "I am planning an onsite gathering. What prior rule should guide the opening?",
+        "scope": "laboratorio_11"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_a1f42e49ec2126963b62",
+          "summary": "Proyecto Duna 0212 (PX-0212): si la reunión es remota, abrir con decisiones pendientes."
+        },
+        {
+          "memory_id": "m_10193d82a26fd3391d57",
+          "summary": "Proyecto Duna 0212 (PX-0212): si la reunión es presencial, reservar diez minutos para riesgos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0212_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_a1f42e49ec2126963b62"
+      ],
+      "state": {
+        "user_prompt": "During an online gathering, what prior working preference should guide my setup?",
+        "scope": "laboratorio_11"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_a1f42e49ec2126963b62",
+          "summary": "Proyecto Duna 0212 (PX-0212): si la reunión es remota, abrir con decisiones pendientes."
+        },
+        {
+          "memory_id": "m_10193d82a26fd3391d57",
+          "summary": "Proyecto Duna 0212 (PX-0212): si la reunión es presencial, reservar diez minutos para riesgos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0220_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "I explicitly do not want saved instructions used in your next answer.",
+        "scope": "laboratorio_19"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_eda1e1974b4acfb474ac",
+          "summary": "Proyecto Duna 0220 (PX-0220): si la reunión es presencial, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_78117d0b69d23ea8bf70",
+          "summary": "Proyecto Duna 0220 (PX-0220): si la reunión es remota, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0220_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "The team could gather physically or through screens. What guidance applies while that remains open?",
+        "scope": "laboratorio_19"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_eda1e1974b4acfb474ac",
+          "summary": "Proyecto Duna 0220 (PX-0220): si la reunión es presencial, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_78117d0b69d23ea8bf70",
+          "summary": "Proyecto Duna 0220 (PX-0220): si la reunión es remota, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0220_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_eda1e1974b4acfb474ac"
+      ],
+      "state": {
+        "user_prompt": "At a physical group session, which stored preparation preference matters?",
+        "scope": "laboratorio_19"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_eda1e1974b4acfb474ac",
+          "summary": "Proyecto Duna 0220 (PX-0220): si la reunión es presencial, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_78117d0b69d23ea8bf70",
+          "summary": "Proyecto Duna 0220 (PX-0220): si la reunión es remota, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0220_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_78117d0b69d23ea8bf70"
+      ],
+      "state": {
+        "user_prompt": "I am planning a teleconference. Which saved instruction is relevant?",
+        "scope": "laboratorio_19"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_eda1e1974b4acfb474ac",
+          "summary": "Proyecto Duna 0220 (PX-0220): si la reunión es presencial, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_78117d0b69d23ea8bf70",
+          "summary": "Proyecto Duna 0220 (PX-0220): si la reunión es remota, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0258_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Set aside retained context and write only a neutral reply.",
+        "scope": "laboratorio_17"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_90b514e3814150ccd185",
+          "summary": "Proyecto Bruma 0258 (PX-0258): si la reunión es presencial, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_075477b27b92a1e38b9c",
+          "summary": "Proyecto Bruma 0258 (PX-0258): si la reunión es remota, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0258_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "I have two possible formats but have selected neither. Is any conditional setup note valid now?",
+        "scope": "laboratorio_17"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_90b514e3814150ccd185",
+          "summary": "Proyecto Bruma 0258 (PX-0258): si la reunión es presencial, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_075477b27b92a1e38b9c",
+          "summary": "Proyecto Bruma 0258 (PX-0258): si la reunión es remota, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0258_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_90b514e3814150ccd185"
+      ],
+      "state": {
+        "user_prompt": "What saved guidance applies when the whole team shares one room?",
+        "scope": "laboratorio_17"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_90b514e3814150ccd185",
+          "summary": "Proyecto Bruma 0258 (PX-0258): si la reunión es presencial, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_075477b27b92a1e38b9c",
+          "summary": "Proyecto Bruma 0258 (PX-0258): si la reunión es remota, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0258_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_075477b27b92a1e38b9c"
+      ],
+      "state": {
+        "user_prompt": "For a camera based discussion, what established preparation habit matters?",
+        "scope": "laboratorio_17"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_90b514e3814150ccd185",
+          "summary": "Proyecto Bruma 0258 (PX-0258): si la reunión es presencial, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_075477b27b92a1e38b9c",
+          "summary": "Proyecto Bruma 0258 (PX-0258): si la reunión es remota, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0259_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Please avoid all prior project notes while answering this request.",
+        "scope": "laboratorio_18"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_a20069f8f37184ef3b9e",
+          "summary": "Proyecto Cobalto 0259 (PX-0259): si la reunión es remota, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_205d4a6423473c20a688",
+          "summary": "Proyecto Cobalto 0259 (PX-0259): si la reunión es presencial, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0259_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Before choosing virtual versus onsite, which existing preparation preference should be followed?",
+        "scope": "laboratorio_18"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_205d4a6423473c20a688",
+          "summary": "Proyecto Cobalto 0259 (PX-0259): si la reunión es presencial, incluir una agenda de cuatro puntos."
+        },
+        {
+          "memory_id": "m_a20069f8f37184ef3b9e",
+          "summary": "Proyecto Cobalto 0259 (PX-0259): si la reunión es remota, enviar lecturas previas al inicio."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0259_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_205d4a6423473c20a688"
+      ],
+      "state": {
+        "user_prompt": "We will gather around a table. Which existing setup rule should I follow?",
+        "scope": "laboratorio_18"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_205d4a6423473c20a688",
+          "summary": "Proyecto Cobalto 0259 (PX-0259): si la reunión es presencial, incluir una agenda de cuatro puntos."
+        },
+        {
+          "memory_id": "m_a20069f8f37184ef3b9e",
+          "summary": "Proyecto Cobalto 0259 (PX-0259): si la reunión es remota, enviar lecturas previas al inicio."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0259_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_a20069f8f37184ef3b9e"
+      ],
+      "state": {
+        "user_prompt": "We will connect through screens. Which retained setup rule should I use?",
+        "scope": "laboratorio_18"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_205d4a6423473c20a688",
+          "summary": "Proyecto Cobalto 0259 (PX-0259): si la reunión es presencial, incluir una agenda de cuatro puntos."
+        },
+        {
+          "memory_id": "m_a20069f8f37184ef3b9e",
+          "summary": "Proyecto Cobalto 0259 (PX-0259): si la reunión es remota, enviar lecturas previas al inicio."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0278_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Answer without retrieving anything previously stored about this work.",
+        "scope": "laboratorio_17"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_f67eac68a7fe625a8452",
+          "summary": "Proyecto Faro 0278 (PX-0278): si la reunión es remota, incluir una agenda de cuatro puntos."
+        },
+        {
+          "memory_id": "m_90afca108843080a71c5",
+          "summary": "Proyecto Faro 0278 (PX-0278): si la reunión es presencial, reservar diez minutos para riesgos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0278_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Whether we use a camera link or one room is still unknown. Does a specific rule apply?",
+        "scope": "laboratorio_17"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_f67eac68a7fe625a8452",
+          "summary": "Proyecto Faro 0278 (PX-0278): si la reunión es remota, incluir una agenda de cuatro puntos."
+        },
+        {
+          "memory_id": "m_90afca108843080a71c5",
+          "summary": "Proyecto Faro 0278 (PX-0278): si la reunión es presencial, reservar diez minutos para riesgos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0278_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_90afca108843080a71c5"
+      ],
+      "state": {
+        "user_prompt": "Ahead of a face to face team session, remind me what preparation was agreed.",
+        "scope": "laboratorio_17"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_90afca108843080a71c5",
+          "summary": "Proyecto Faro 0278 (PX-0278): si la reunión es presencial, reservar diez minutos para riesgos."
+        },
+        {
+          "memory_id": "m_f67eac68a7fe625a8452",
+          "summary": "Proyecto Faro 0278 (PX-0278): si la reunión es remota, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0278_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_f67eac68a7fe625a8452"
+      ],
+      "state": {
+        "user_prompt": "Ahead of a virtual team session, remind me what preparation was agreed.",
+        "scope": "laboratorio_17"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_90afca108843080a71c5",
+          "summary": "Proyecto Faro 0278 (PX-0278): si la reunión es presencial, reservar diez minutos para riesgos."
+        },
+        {
+          "memory_id": "m_f67eac68a7fe625a8452",
+          "summary": "Proyecto Faro 0278 (PX-0278): si la reunión es remota, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0281_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Do not bring earlier preferences into the response I am requesting now.",
+        "scope": "laboratorio_00"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_2274be6159012937a5ef",
+          "summary": "Proyecto Alerce 0281 (PX-0281): si la reunión es presencial, empezar con un resumen del estado."
+        },
+        {
+          "memory_id": "m_79139a8c065a249ec118",
+          "summary": "Proyecto Alerce 0281 (PX-0281): si la reunión es remota, abrir con decisiones pendientes."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0281_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "The meeting format is still pending. Should you recall either conditional instruction?",
+        "scope": "laboratorio_00"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_79139a8c065a249ec118",
+          "summary": "Proyecto Alerce 0281 (PX-0281): si la reunión es remota, abrir con decisiones pendientes."
+        },
+        {
+          "memory_id": "m_2274be6159012937a5ef",
+          "summary": "Proyecto Alerce 0281 (PX-0281): si la reunión es presencial, empezar con un resumen del estado."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0281_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_2274be6159012937a5ef"
+      ],
+      "state": {
+        "user_prompt": "For an in person workshop, which retained working preference applies?",
+        "scope": "laboratorio_00"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_2274be6159012937a5ef",
+          "summary": "Proyecto Alerce 0281 (PX-0281): si la reunión es presencial, empezar con un resumen del estado."
+        },
+        {
+          "memory_id": "m_79139a8c065a249ec118",
+          "summary": "Proyecto Alerce 0281 (PX-0281): si la reunión es remota, abrir con decisiones pendientes."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0281_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_79139a8c065a249ec118"
+      ],
+      "state": {
+        "user_prompt": "What saved guidance applies when everyone joins through a video link?",
+        "scope": "laboratorio_00"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_2274be6159012937a5ef",
+          "summary": "Proyecto Alerce 0281 (PX-0281): si la reunión es presencial, empezar con un resumen del estado."
+        },
+        {
+          "memory_id": "m_79139a8c065a249ec118",
+          "summary": "Proyecto Alerce 0281 (PX-0281): si la reunión es remota, abrir con decisiones pendientes."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0290_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Ignore historical context; produce a short general sentence instead.",
+        "scope": "laboratorio_09"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_da425e7ee40ca6ff8ccb",
+          "summary": "Proyecto Bruma 0290 (PX-0290): si la reunión es presencial, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_d0c0c0b90ec795edc8f1",
+          "summary": "Proyecto Bruma 0290 (PX-0290): si la reunión es remota, reservar diez minutos para riesgos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0290_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "We have not decided how to gather. Is there an applicable saved setup rule already?",
+        "scope": "laboratorio_09"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_da425e7ee40ca6ff8ccb",
+          "summary": "Proyecto Bruma 0290 (PX-0290): si la reunión es presencial, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_d0c0c0b90ec795edc8f1",
+          "summary": "Proyecto Bruma 0290 (PX-0290): si la reunión es remota, reservar diez minutos para riesgos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0290_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_da425e7ee40ca6ff8ccb"
+      ],
+      "state": {
+        "user_prompt": "I will host everyone at the office. What standing setup instruction matters?",
+        "scope": "laboratorio_09"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_da425e7ee40ca6ff8ccb",
+          "summary": "Proyecto Bruma 0290 (PX-0290): si la reunión es presencial, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_d0c0c0b90ec795edc8f1",
+          "summary": "Proyecto Bruma 0290 (PX-0290): si la reunión es remota, reservar diez minutos para riesgos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0290_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_d0c0c0b90ec795edc8f1"
+      ],
+      "state": {
+        "user_prompt": "I will host an online group call. Which existing setup preference applies?",
+        "scope": "laboratorio_09"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_da425e7ee40ca6ff8ccb",
+          "summary": "Proyecto Bruma 0290 (PX-0290): si la reunión es presencial, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_d0c0c0b90ec795edc8f1",
+          "summary": "Proyecto Bruma 0290 (PX-0290): si la reunión es remota, reservar diez minutos para riesgos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0298_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Please ignore saved memories for this reply and write a neutral sentence.",
+        "scope": "laboratorio_17"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_d10439ca55f76c320d5e",
+          "summary": "Proyecto Bruma 0298 (PX-0298): si la reunión es presencial, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_41a642351bc0b1ac1848",
+          "summary": "Proyecto Bruma 0298 (PX-0298): si la reunión es remota, empezar con un resumen del estado."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0298_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "I have not chosen between a video call and being in the same room. Which conditional rule applies now?",
+        "scope": "laboratorio_17"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_d10439ca55f76c320d5e",
+          "summary": "Proyecto Bruma 0298 (PX-0298): si la reunión es presencial, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_41a642351bc0b1ac1848",
+          "summary": "Proyecto Bruma 0298 (PX-0298): si la reunión es remota, empezar con un resumen del estado."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0298_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_d10439ca55f76c320d5e"
+      ],
+      "state": {
+        "user_prompt": "For our next face to face gathering, which saved preparation rule applies?",
+        "scope": "laboratorio_17"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_d10439ca55f76c320d5e",
+          "summary": "Proyecto Bruma 0298 (PX-0298): si la reunión es presencial, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_41a642351bc0b1ac1848",
+          "summary": "Proyecto Bruma 0298 (PX-0298): si la reunión es remota, empezar con un resumen del estado."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0298_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_41a642351bc0b1ac1848"
+      ],
+      "state": {
+        "user_prompt": "For an upcoming video call, which saved preparation rule should I follow?",
+        "scope": "laboratorio_17"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_d10439ca55f76c320d5e",
+          "summary": "Proyecto Bruma 0298 (PX-0298): si la reunión es presencial, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_41a642351bc0b1ac1848",
+          "summary": "Proyecto Bruma 0298 (PX-0298): si la reunión es remota, empezar con un resumen del estado."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0300_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Do not consult stored preferences; answer only from my current message.",
+        "scope": "laboratorio_19"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_ecb5c6541987d52016be",
+          "summary": "Proyecto Duna 0300 (PX-0300): si la reunión es presencial, reservar diez minutos para riesgos."
+        },
+        {
+          "memory_id": "m_d417a4f8ed8265fea436",
+          "summary": "Proyecto Duna 0300 (PX-0300): si la reunión es remota, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0300_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "The format is undecided: webcam or face to face. Should any stored setup preference be used yet?",
+        "scope": "laboratorio_19"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_d417a4f8ed8265fea436",
+          "summary": "Proyecto Duna 0300 (PX-0300): si la reunión es remota, incluir una agenda de cuatro puntos."
+        },
+        {
+          "memory_id": "m_ecb5c6541987d52016be",
+          "summary": "Proyecto Duna 0300 (PX-0300): si la reunión es presencial, reservar diez minutos para riesgos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0300_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_ecb5c6541987d52016be"
+      ],
+      "state": {
+        "user_prompt": "When everyone is in the same room, what established setup preference should I recall?",
+        "scope": "laboratorio_19"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_ecb5c6541987d52016be",
+          "summary": "Proyecto Duna 0300 (PX-0300): si la reunión es presencial, reservar diez minutos para riesgos."
+        },
+        {
+          "memory_id": "m_d417a4f8ed8265fea436",
+          "summary": "Proyecto Duna 0300 (PX-0300): si la reunión es remota, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0300_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_d417a4f8ed8265fea436"
+      ],
+      "state": {
+        "user_prompt": "Before a webcam session with this team, remind me of the established setup preference.",
+        "scope": "laboratorio_19"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_ecb5c6541987d52016be",
+          "summary": "Proyecto Duna 0300 (PX-0300): si la reunión es presencial, reservar diez minutos para riesgos."
+        },
+        {
+          "memory_id": "m_d417a4f8ed8265fea436",
+          "summary": "Proyecto Duna 0300 (PX-0300): si la reunión es remota, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0306_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Leave prior notes aside for now. Give a generic response without recalling them.",
+        "scope": "laboratorio_05"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_03b68523c57000804e0f",
+          "summary": "Proyecto Bruma 0306 (PX-0306): si la reunión es presencial, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_3a0b11080a4cfb0af358",
+          "summary": "Proyecto Bruma 0306 (PX-0306): si la reunión es remota, empezar con un resumen del estado."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0306_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "We might connect online or meet at the office. Which saved instruction is applicable before deciding?",
+        "scope": "laboratorio_05"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_03b68523c57000804e0f",
+          "summary": "Proyecto Bruma 0306 (PX-0306): si la reunión es presencial, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_3a0b11080a4cfb0af358",
+          "summary": "Proyecto Bruma 0306 (PX-0306): si la reunión es remota, empezar con un resumen del estado."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0306_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_03b68523c57000804e0f"
+      ],
+      "state": {
+        "user_prompt": "Before an in person session, remind me of the relevant working instruction.",
+        "scope": "laboratorio_05"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_03b68523c57000804e0f",
+          "summary": "Proyecto Bruma 0306 (PX-0306): si la reunión es presencial, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_3a0b11080a4cfb0af358",
+          "summary": "Proyecto Bruma 0306 (PX-0306): si la reunión es remota, empezar con un resumen del estado."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0306_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_3a0b11080a4cfb0af358"
+      ],
+      "state": {
+        "user_prompt": "I am joining by video link. What standing preparation instruction applies?",
+        "scope": "laboratorio_05"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_03b68523c57000804e0f",
+          "summary": "Proyecto Bruma 0306 (PX-0306): si la reunión es presencial, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_3a0b11080a4cfb0af358",
+          "summary": "Proyecto Bruma 0306 (PX-0306): si la reunión es remota, empezar con un resumen del estado."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0323_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "For this turn, skip memory lookup and respond without archived guidance.",
+        "scope": "laboratorio_02"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_e6d5ec897e5c279f0940",
+          "summary": "Proyecto Cobalto 0323 (PX-0323): si la reunión es remota, abrir con decisiones pendientes."
+        },
+        {
+          "memory_id": "m_42491f200780e3c9194d",
+          "summary": "Proyecto Cobalto 0323 (PX-0323): si la reunión es presencial, empezar con un resumen del estado."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0323_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "No channel has been selected. Can you already apply either preparation rule?",
+        "scope": "laboratorio_02"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_e6d5ec897e5c279f0940",
+          "summary": "Proyecto Cobalto 0323 (PX-0323): si la reunión es remota, abrir con decisiones pendientes."
+        },
+        {
+          "memory_id": "m_42491f200780e3c9194d",
+          "summary": "Proyecto Cobalto 0323 (PX-0323): si la reunión es presencial, empezar con un resumen del estado."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0323_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_42491f200780e3c9194d"
+      ],
+      "state": {
+        "user_prompt": "I am planning an onsite gathering. What prior rule should guide the opening?",
+        "scope": "laboratorio_02"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_e6d5ec897e5c279f0940",
+          "summary": "Proyecto Cobalto 0323 (PX-0323): si la reunión es remota, abrir con decisiones pendientes."
+        },
+        {
+          "memory_id": "m_42491f200780e3c9194d",
+          "summary": "Proyecto Cobalto 0323 (PX-0323): si la reunión es presencial, empezar con un resumen del estado."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0323_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_e6d5ec897e5c279f0940"
+      ],
+      "state": {
+        "user_prompt": "During an online gathering, what prior working preference should guide my setup?",
+        "scope": "laboratorio_02"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_e6d5ec897e5c279f0940",
+          "summary": "Proyecto Cobalto 0323 (PX-0323): si la reunión es remota, abrir con decisiones pendientes."
+        },
+        {
+          "memory_id": "m_42491f200780e3c9194d",
+          "summary": "Proyecto Cobalto 0323 (PX-0323): si la reunión es presencial, empezar con un resumen del estado."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0328_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "I explicitly do not want saved instructions used in your next answer.",
+        "scope": "laboratorio_07"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_014ae3383412a4fda1f0",
+          "summary": "Proyecto Hiedra 0328 (PX-0328): si la reunión es presencial, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_a6b2dbc67f5b0be6b316",
+          "summary": "Proyecto Hiedra 0328 (PX-0328): si la reunión es remota, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0328_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "The team could gather physically or through screens. What guidance applies while that remains open?",
+        "scope": "laboratorio_07"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_014ae3383412a4fda1f0",
+          "summary": "Proyecto Hiedra 0328 (PX-0328): si la reunión es presencial, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_a6b2dbc67f5b0be6b316",
+          "summary": "Proyecto Hiedra 0328 (PX-0328): si la reunión es remota, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0328_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_014ae3383412a4fda1f0"
+      ],
+      "state": {
+        "user_prompt": "At a physical group session, which stored preparation preference matters?",
+        "scope": "laboratorio_07"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_014ae3383412a4fda1f0",
+          "summary": "Proyecto Hiedra 0328 (PX-0328): si la reunión es presencial, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_a6b2dbc67f5b0be6b316",
+          "summary": "Proyecto Hiedra 0328 (PX-0328): si la reunión es remota, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0328_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_a6b2dbc67f5b0be6b316"
+      ],
+      "state": {
+        "user_prompt": "I am planning a teleconference. Which saved instruction is relevant?",
+        "scope": "laboratorio_07"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_014ae3383412a4fda1f0",
+          "summary": "Proyecto Hiedra 0328 (PX-0328): si la reunión es presencial, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_a6b2dbc67f5b0be6b316",
+          "summary": "Proyecto Hiedra 0328 (PX-0328): si la reunión es remota, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0342_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Set aside retained context and write only a neutral reply.",
+        "scope": "laboratorio_01"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_a85f55a55a4584faf5cf",
+          "summary": "Proyecto Faro 0342 (PX-0342): si la reunión es remota, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_bb4f342ec6525d37a3de",
+          "summary": "Proyecto Faro 0342 (PX-0342): si la reunión es presencial, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0342_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "I have two possible formats but have selected neither. Is any conditional setup note valid now?",
+        "scope": "laboratorio_01"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_a85f55a55a4584faf5cf",
+          "summary": "Proyecto Faro 0342 (PX-0342): si la reunión es remota, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_bb4f342ec6525d37a3de",
+          "summary": "Proyecto Faro 0342 (PX-0342): si la reunión es presencial, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0342_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_bb4f342ec6525d37a3de"
+      ],
+      "state": {
+        "user_prompt": "What saved guidance applies when the whole team shares one room?",
+        "scope": "laboratorio_01"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_bb4f342ec6525d37a3de",
+          "summary": "Proyecto Faro 0342 (PX-0342): si la reunión es presencial, incluir una agenda de cuatro puntos."
+        },
+        {
+          "memory_id": "m_a85f55a55a4584faf5cf",
+          "summary": "Proyecto Faro 0342 (PX-0342): si la reunión es remota, cerrar con responsables y fechas."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0342_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_a85f55a55a4584faf5cf"
+      ],
+      "state": {
+        "user_prompt": "For a camera based discussion, what established preparation habit matters?",
+        "scope": "laboratorio_01"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_a85f55a55a4584faf5cf",
+          "summary": "Proyecto Faro 0342 (PX-0342): si la reunión es remota, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_bb4f342ec6525d37a3de",
+          "summary": "Proyecto Faro 0342 (PX-0342): si la reunión es presencial, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0346_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Please avoid all prior project notes while answering this request.",
+        "scope": "laboratorio_05"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_c829f8e00f1acbd3f2a5",
+          "summary": "Proyecto Bruma 0346 (PX-0346): si la reunión es presencial, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_a1b242e6f9c07ceb6afc",
+          "summary": "Proyecto Bruma 0346 (PX-0346): si la reunión es remota, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0346_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Before choosing virtual versus onsite, which existing preparation preference should be followed?",
+        "scope": "laboratorio_05"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_c829f8e00f1acbd3f2a5",
+          "summary": "Proyecto Bruma 0346 (PX-0346): si la reunión es presencial, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_a1b242e6f9c07ceb6afc",
+          "summary": "Proyecto Bruma 0346 (PX-0346): si la reunión es remota, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0346_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_c829f8e00f1acbd3f2a5"
+      ],
+      "state": {
+        "user_prompt": "We will gather around a table. Which existing setup rule should I follow?",
+        "scope": "laboratorio_05"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_c829f8e00f1acbd3f2a5",
+          "summary": "Proyecto Bruma 0346 (PX-0346): si la reunión es presencial, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_a1b242e6f9c07ceb6afc",
+          "summary": "Proyecto Bruma 0346 (PX-0346): si la reunión es remota, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0346_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_a1b242e6f9c07ceb6afc"
+      ],
+      "state": {
+        "user_prompt": "We will connect through screens. Which retained setup rule should I use?",
+        "scope": "laboratorio_05"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_c829f8e00f1acbd3f2a5",
+          "summary": "Proyecto Bruma 0346 (PX-0346): si la reunión es presencial, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_a1b242e6f9c07ceb6afc",
+          "summary": "Proyecto Bruma 0346 (PX-0346): si la reunión es remota, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0351_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Answer without retrieving anything previously stored about this work.",
+        "scope": "laboratorio_10"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_1c07d6d7fd1b02330395",
+          "summary": "Proyecto Greda 0351 (PX-0351): si la reunión es remota, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_0c9b1eb0014c00fde06b",
+          "summary": "Proyecto Greda 0351 (PX-0351): si la reunión es presencial, reservar diez minutos para riesgos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0351_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Whether we use a camera link or one room is still unknown. Does a specific rule apply?",
+        "scope": "laboratorio_10"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_1c07d6d7fd1b02330395",
+          "summary": "Proyecto Greda 0351 (PX-0351): si la reunión es remota, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_0c9b1eb0014c00fde06b",
+          "summary": "Proyecto Greda 0351 (PX-0351): si la reunión es presencial, reservar diez minutos para riesgos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0351_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_0c9b1eb0014c00fde06b"
+      ],
+      "state": {
+        "user_prompt": "Ahead of a face to face team session, remind me what preparation was agreed.",
+        "scope": "laboratorio_10"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_1c07d6d7fd1b02330395",
+          "summary": "Proyecto Greda 0351 (PX-0351): si la reunión es remota, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_0c9b1eb0014c00fde06b",
+          "summary": "Proyecto Greda 0351 (PX-0351): si la reunión es presencial, reservar diez minutos para riesgos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0351_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_1c07d6d7fd1b02330395"
+      ],
+      "state": {
+        "user_prompt": "Ahead of a virtual team session, remind me what preparation was agreed.",
+        "scope": "laboratorio_10"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_1c07d6d7fd1b02330395",
+          "summary": "Proyecto Greda 0351 (PX-0351): si la reunión es remota, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_0c9b1eb0014c00fde06b",
+          "summary": "Proyecto Greda 0351 (PX-0351): si la reunión es presencial, reservar diez minutos para riesgos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0354_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Do not bring earlier preferences into the response I am requesting now.",
+        "scope": "laboratorio_13"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_81d0d2bc78264be67242",
+          "summary": "Proyecto Bruma 0354 (PX-0354): si la reunión es presencial, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_8c458328c736095e69eb",
+          "summary": "Proyecto Bruma 0354 (PX-0354): si la reunión es remota, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0354_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "The meeting format is still pending. Should you recall either conditional instruction?",
+        "scope": "laboratorio_13"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_81d0d2bc78264be67242",
+          "summary": "Proyecto Bruma 0354 (PX-0354): si la reunión es presencial, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_8c458328c736095e69eb",
+          "summary": "Proyecto Bruma 0354 (PX-0354): si la reunión es remota, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0354_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_81d0d2bc78264be67242"
+      ],
+      "state": {
+        "user_prompt": "For an in person workshop, which retained working preference applies?",
+        "scope": "laboratorio_13"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_81d0d2bc78264be67242",
+          "summary": "Proyecto Bruma 0354 (PX-0354): si la reunión es presencial, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_8c458328c736095e69eb",
+          "summary": "Proyecto Bruma 0354 (PX-0354): si la reunión es remota, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0354_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_8c458328c736095e69eb"
+      ],
+      "state": {
+        "user_prompt": "What saved guidance applies when everyone joins through a video link?",
+        "scope": "laboratorio_13"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_81d0d2bc78264be67242",
+          "summary": "Proyecto Bruma 0354 (PX-0354): si la reunión es presencial, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_8c458328c736095e69eb",
+          "summary": "Proyecto Bruma 0354 (PX-0354): si la reunión es remota, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0355_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Ignore historical context; produce a short general sentence instead.",
+        "scope": "laboratorio_14"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_a1a1352b56855f7be769",
+          "summary": "Proyecto Cobalto 0355 (PX-0355): si la reunión es presencial, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_7fc2c7cc027fd4ca9695",
+          "summary": "Proyecto Cobalto 0355 (PX-0355): si la reunión es remota, empezar con un resumen del estado."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0355_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "We have not decided how to gather. Is there an applicable saved setup rule already?",
+        "scope": "laboratorio_14"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_a1a1352b56855f7be769",
+          "summary": "Proyecto Cobalto 0355 (PX-0355): si la reunión es presencial, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_7fc2c7cc027fd4ca9695",
+          "summary": "Proyecto Cobalto 0355 (PX-0355): si la reunión es remota, empezar con un resumen del estado."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0355_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_a1a1352b56855f7be769"
+      ],
+      "state": {
+        "user_prompt": "I will host everyone at the office. What standing setup instruction matters?",
+        "scope": "laboratorio_14"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_a1a1352b56855f7be769",
+          "summary": "Proyecto Cobalto 0355 (PX-0355): si la reunión es presencial, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_7fc2c7cc027fd4ca9695",
+          "summary": "Proyecto Cobalto 0355 (PX-0355): si la reunión es remota, empezar con un resumen del estado."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0355_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_7fc2c7cc027fd4ca9695"
+      ],
+      "state": {
+        "user_prompt": "I will host an online group call. Which existing setup preference applies?",
+        "scope": "laboratorio_14"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_a1a1352b56855f7be769",
+          "summary": "Proyecto Cobalto 0355 (PX-0355): si la reunión es presencial, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_7fc2c7cc027fd4ca9695",
+          "summary": "Proyecto Cobalto 0355 (PX-0355): si la reunión es remota, empezar con un resumen del estado."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0357_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Please ignore saved memories for this reply and write a neutral sentence.",
+        "scope": "laboratorio_16"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_ceaca1b975dfb54d057b",
+          "summary": "Proyecto Estuario 0357 (PX-0357): si la reunión es remota, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_daabb096cb00e2802f10",
+          "summary": "Proyecto Estuario 0357 (PX-0357): si la reunión es presencial, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0357_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "I have not chosen between a video call and being in the same room. Which conditional rule applies now?",
+        "scope": "laboratorio_16"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_ceaca1b975dfb54d057b",
+          "summary": "Proyecto Estuario 0357 (PX-0357): si la reunión es remota, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_daabb096cb00e2802f10",
+          "summary": "Proyecto Estuario 0357 (PX-0357): si la reunión es presencial, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0357_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_daabb096cb00e2802f10"
+      ],
+      "state": {
+        "user_prompt": "For our next face to face gathering, which saved preparation rule applies?",
+        "scope": "laboratorio_16"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_daabb096cb00e2802f10",
+          "summary": "Proyecto Estuario 0357 (PX-0357): si la reunión es presencial, incluir una agenda de cuatro puntos."
+        },
+        {
+          "memory_id": "m_ceaca1b975dfb54d057b",
+          "summary": "Proyecto Estuario 0357 (PX-0357): si la reunión es remota, cerrar con responsables y fechas."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0357_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_ceaca1b975dfb54d057b"
+      ],
+      "state": {
+        "user_prompt": "For an upcoming video call, which saved preparation rule should I follow?",
+        "scope": "laboratorio_16"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_daabb096cb00e2802f10",
+          "summary": "Proyecto Estuario 0357 (PX-0357): si la reunión es presencial, incluir una agenda de cuatro puntos."
+        },
+        {
+          "memory_id": "m_ceaca1b975dfb54d057b",
+          "summary": "Proyecto Estuario 0357 (PX-0357): si la reunión es remota, cerrar con responsables y fechas."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0359_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Do not consult stored preferences; answer only from my current message.",
+        "scope": "laboratorio_18"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_7479572f9612f9f3db1d",
+          "summary": "Proyecto Greda 0359 (PX-0359): si la reunión es presencial, incluir una agenda de cuatro puntos."
+        },
+        {
+          "memory_id": "m_f6a9917286cf84e1c5b6",
+          "summary": "Proyecto Greda 0359 (PX-0359): si la reunión es remota, reservar diez minutos para riesgos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0359_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "The format is undecided: webcam or face to face. Should any stored setup preference be used yet?",
+        "scope": "laboratorio_18"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_7479572f9612f9f3db1d",
+          "summary": "Proyecto Greda 0359 (PX-0359): si la reunión es presencial, incluir una agenda de cuatro puntos."
+        },
+        {
+          "memory_id": "m_f6a9917286cf84e1c5b6",
+          "summary": "Proyecto Greda 0359 (PX-0359): si la reunión es remota, reservar diez minutos para riesgos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0359_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_7479572f9612f9f3db1d"
+      ],
+      "state": {
+        "user_prompt": "When everyone is in the same room, what established setup preference should I recall?",
+        "scope": "laboratorio_18"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_7479572f9612f9f3db1d",
+          "summary": "Proyecto Greda 0359 (PX-0359): si la reunión es presencial, incluir una agenda de cuatro puntos."
+        },
+        {
+          "memory_id": "m_f6a9917286cf84e1c5b6",
+          "summary": "Proyecto Greda 0359 (PX-0359): si la reunión es remota, reservar diez minutos para riesgos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0359_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_f6a9917286cf84e1c5b6"
+      ],
+      "state": {
+        "user_prompt": "Before a webcam session with this team, remind me of the established setup preference.",
+        "scope": "laboratorio_18"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_7479572f9612f9f3db1d",
+          "summary": "Proyecto Greda 0359 (PX-0359): si la reunión es presencial, incluir una agenda de cuatro puntos."
+        },
+        {
+          "memory_id": "m_f6a9917286cf84e1c5b6",
+          "summary": "Proyecto Greda 0359 (PX-0359): si la reunión es remota, reservar diez minutos para riesgos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0362_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Leave prior notes aside for now. Give a generic response without recalling them.",
+        "scope": "laboratorio_01"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_1dba7690f4bac642cc4a",
+          "summary": "Proyecto Bruma 0362 (PX-0362): si la reunión es presencial, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_2436554b6b707971f731",
+          "summary": "Proyecto Bruma 0362 (PX-0362): si la reunión es remota, abrir con decisiones pendientes."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0362_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "We might connect online or meet at the office. Which saved instruction is applicable before deciding?",
+        "scope": "laboratorio_01"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_1dba7690f4bac642cc4a",
+          "summary": "Proyecto Bruma 0362 (PX-0362): si la reunión es presencial, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_2436554b6b707971f731",
+          "summary": "Proyecto Bruma 0362 (PX-0362): si la reunión es remota, abrir con decisiones pendientes."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0362_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_1dba7690f4bac642cc4a"
+      ],
+      "state": {
+        "user_prompt": "Before an in person session, remind me of the relevant working instruction.",
+        "scope": "laboratorio_01"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_1dba7690f4bac642cc4a",
+          "summary": "Proyecto Bruma 0362 (PX-0362): si la reunión es presencial, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_2436554b6b707971f731",
+          "summary": "Proyecto Bruma 0362 (PX-0362): si la reunión es remota, abrir con decisiones pendientes."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0362_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_2436554b6b707971f731"
+      ],
+      "state": {
+        "user_prompt": "I am joining by video link. What standing preparation instruction applies?",
+        "scope": "laboratorio_01"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_1dba7690f4bac642cc4a",
+          "summary": "Proyecto Bruma 0362 (PX-0362): si la reunión es presencial, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_2436554b6b707971f731",
+          "summary": "Proyecto Bruma 0362 (PX-0362): si la reunión es remota, abrir con decisiones pendientes."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0370_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "For this turn, skip memory lookup and respond without archived guidance.",
+        "scope": "laboratorio_09"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_68ef4232a918c4f21fee",
+          "summary": "Proyecto Bruma 0370 (PX-0370): si la reunión es presencial, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_37bfc68c48393505ee00",
+          "summary": "Proyecto Bruma 0370 (PX-0370): si la reunión es remota, empezar con un resumen del estado."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0370_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "No channel has been selected. Can you already apply either preparation rule?",
+        "scope": "laboratorio_09"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_68ef4232a918c4f21fee",
+          "summary": "Proyecto Bruma 0370 (PX-0370): si la reunión es presencial, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_37bfc68c48393505ee00",
+          "summary": "Proyecto Bruma 0370 (PX-0370): si la reunión es remota, empezar con un resumen del estado."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0370_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_68ef4232a918c4f21fee"
+      ],
+      "state": {
+        "user_prompt": "I am planning an onsite gathering. What prior rule should guide the opening?",
+        "scope": "laboratorio_09"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_68ef4232a918c4f21fee",
+          "summary": "Proyecto Bruma 0370 (PX-0370): si la reunión es presencial, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_37bfc68c48393505ee00",
+          "summary": "Proyecto Bruma 0370 (PX-0370): si la reunión es remota, empezar con un resumen del estado."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0370_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_37bfc68c48393505ee00"
+      ],
+      "state": {
+        "user_prompt": "During an online gathering, what prior working preference should guide my setup?",
+        "scope": "laboratorio_09"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_68ef4232a918c4f21fee",
+          "summary": "Proyecto Bruma 0370 (PX-0370): si la reunión es presencial, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_37bfc68c48393505ee00",
+          "summary": "Proyecto Bruma 0370 (PX-0370): si la reunión es remota, empezar con un resumen del estado."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0375_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "I explicitly do not want saved instructions used in your next answer.",
+        "scope": "laboratorio_14"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_5cee478682dd11ae4a51",
+          "summary": "Proyecto Greda 0375 (PX-0375): si la reunión es remota, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_1dc65ae83500632b25c3",
+          "summary": "Proyecto Greda 0375 (PX-0375): si la reunión es presencial, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0375_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "The team could gather physically or through screens. What guidance applies while that remains open?",
+        "scope": "laboratorio_14"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_5cee478682dd11ae4a51",
+          "summary": "Proyecto Greda 0375 (PX-0375): si la reunión es remota, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_1dc65ae83500632b25c3",
+          "summary": "Proyecto Greda 0375 (PX-0375): si la reunión es presencial, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0375_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_1dc65ae83500632b25c3"
+      ],
+      "state": {
+        "user_prompt": "At a physical group session, which stored preparation preference matters?",
+        "scope": "laboratorio_14"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_5cee478682dd11ae4a51",
+          "summary": "Proyecto Greda 0375 (PX-0375): si la reunión es remota, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_1dc65ae83500632b25c3",
+          "summary": "Proyecto Greda 0375 (PX-0375): si la reunión es presencial, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0375_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_5cee478682dd11ae4a51"
+      ],
+      "state": {
+        "user_prompt": "I am planning a teleconference. Which saved instruction is relevant?",
+        "scope": "laboratorio_14"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_5cee478682dd11ae4a51",
+          "summary": "Proyecto Greda 0375 (PX-0375): si la reunión es remota, enviar lecturas previas al inicio."
+        },
+        {
+          "memory_id": "m_1dc65ae83500632b25c3",
+          "summary": "Proyecto Greda 0375 (PX-0375): si la reunión es presencial, incluir una agenda de cuatro puntos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0376_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Set aside retained context and write only a neutral reply.",
+        "scope": "laboratorio_15"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_8daa31b63c5f8dc730e2",
+          "summary": "Proyecto Hiedra 0376 (PX-0376): si la reunión es presencial, abrir con decisiones pendientes."
+        },
+        {
+          "memory_id": "m_62a7dd110f7eb59e6e85",
+          "summary": "Proyecto Hiedra 0376 (PX-0376): si la reunión es remota, reservar diez minutos para riesgos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0376_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "I have two possible formats but have selected neither. Is any conditional setup note valid now?",
+        "scope": "laboratorio_15"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_8daa31b63c5f8dc730e2",
+          "summary": "Proyecto Hiedra 0376 (PX-0376): si la reunión es presencial, abrir con decisiones pendientes."
+        },
+        {
+          "memory_id": "m_62a7dd110f7eb59e6e85",
+          "summary": "Proyecto Hiedra 0376 (PX-0376): si la reunión es remota, reservar diez minutos para riesgos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0376_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_8daa31b63c5f8dc730e2"
+      ],
+      "state": {
+        "user_prompt": "What saved guidance applies when the whole team shares one room?",
+        "scope": "laboratorio_15"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_8daa31b63c5f8dc730e2",
+          "summary": "Proyecto Hiedra 0376 (PX-0376): si la reunión es presencial, abrir con decisiones pendientes."
+        },
+        {
+          "memory_id": "m_62a7dd110f7eb59e6e85",
+          "summary": "Proyecto Hiedra 0376 (PX-0376): si la reunión es remota, reservar diez minutos para riesgos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0376_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_62a7dd110f7eb59e6e85"
+      ],
+      "state": {
+        "user_prompt": "For a camera based discussion, what established preparation habit matters?",
+        "scope": "laboratorio_15"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_8daa31b63c5f8dc730e2",
+          "summary": "Proyecto Hiedra 0376 (PX-0376): si la reunión es presencial, abrir con decisiones pendientes."
+        },
+        {
+          "memory_id": "m_62a7dd110f7eb59e6e85",
+          "summary": "Proyecto Hiedra 0376 (PX-0376): si la reunión es remota, reservar diez minutos para riesgos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0385_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Please avoid all prior project notes while answering this request.",
+        "scope": "laboratorio_04"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_c8ddcb97e6f04c06068d",
+          "summary": "Proyecto Alerce 0385 (PX-0385): si la reunión es presencial, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_b7772b4376f8f282c099",
+          "summary": "Proyecto Alerce 0385 (PX-0385): si la reunión es remota, reservar diez minutos para riesgos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0385_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Before choosing virtual versus onsite, which existing preparation preference should be followed?",
+        "scope": "laboratorio_04"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_c8ddcb97e6f04c06068d",
+          "summary": "Proyecto Alerce 0385 (PX-0385): si la reunión es presencial, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_b7772b4376f8f282c099",
+          "summary": "Proyecto Alerce 0385 (PX-0385): si la reunión es remota, reservar diez minutos para riesgos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0385_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_c8ddcb97e6f04c06068d"
+      ],
+      "state": {
+        "user_prompt": "We will gather around a table. Which existing setup rule should I follow?",
+        "scope": "laboratorio_04"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_c8ddcb97e6f04c06068d",
+          "summary": "Proyecto Alerce 0385 (PX-0385): si la reunión es presencial, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_b7772b4376f8f282c099",
+          "summary": "Proyecto Alerce 0385 (PX-0385): si la reunión es remota, reservar diez minutos para riesgos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0385_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_b7772b4376f8f282c099"
+      ],
+      "state": {
+        "user_prompt": "We will connect through screens. Which retained setup rule should I use?",
+        "scope": "laboratorio_04"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_c8ddcb97e6f04c06068d",
+          "summary": "Proyecto Alerce 0385 (PX-0385): si la reunión es presencial, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_b7772b4376f8f282c099",
+          "summary": "Proyecto Alerce 0385 (PX-0385): si la reunión es remota, reservar diez minutos para riesgos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0387_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Answer without retrieving anything previously stored about this work.",
+        "scope": "laboratorio_06"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_b4000d23172660af0f61",
+          "summary": "Proyecto Cobalto 0387 (PX-0387): si la reunión es remota, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_3af2dde64a54b1e25df8",
+          "summary": "Proyecto Cobalto 0387 (PX-0387): si la reunión es presencial, reservar diez minutos para riesgos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0387_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Whether we use a camera link or one room is still unknown. Does a specific rule apply?",
+        "scope": "laboratorio_06"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_b4000d23172660af0f61",
+          "summary": "Proyecto Cobalto 0387 (PX-0387): si la reunión es remota, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_3af2dde64a54b1e25df8",
+          "summary": "Proyecto Cobalto 0387 (PX-0387): si la reunión es presencial, reservar diez minutos para riesgos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0387_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_3af2dde64a54b1e25df8"
+      ],
+      "state": {
+        "user_prompt": "Ahead of a face to face team session, remind me what preparation was agreed.",
+        "scope": "laboratorio_06"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_b4000d23172660af0f61",
+          "summary": "Proyecto Cobalto 0387 (PX-0387): si la reunión es remota, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_3af2dde64a54b1e25df8",
+          "summary": "Proyecto Cobalto 0387 (PX-0387): si la reunión es presencial, reservar diez minutos para riesgos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0387_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_b4000d23172660af0f61"
+      ],
+      "state": {
+        "user_prompt": "Ahead of a virtual team session, remind me what preparation was agreed.",
+        "scope": "laboratorio_06"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_b4000d23172660af0f61",
+          "summary": "Proyecto Cobalto 0387 (PX-0387): si la reunión es remota, cerrar con responsables y fechas."
+        },
+        {
+          "memory_id": "m_3af2dde64a54b1e25df8",
+          "summary": "Proyecto Cobalto 0387 (PX-0387): si la reunión es presencial, reservar diez minutos para riesgos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0395_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Do not bring earlier preferences into the response I am requesting now.",
+        "scope": "laboratorio_14"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_1ae7a5566f4d5b927ca1",
+          "summary": "Proyecto Cobalto 0395 (PX-0395): si la reunión es remota, abrir con decisiones pendientes."
+        },
+        {
+          "memory_id": "m_cbc1e25ef7a5ebbc21a1",
+          "summary": "Proyecto Cobalto 0395 (PX-0395): si la reunión es presencial, reservar diez minutos para riesgos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0395_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "The meeting format is still pending. Should you recall either conditional instruction?",
+        "scope": "laboratorio_14"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_1ae7a5566f4d5b927ca1",
+          "summary": "Proyecto Cobalto 0395 (PX-0395): si la reunión es remota, abrir con decisiones pendientes."
+        },
+        {
+          "memory_id": "m_cbc1e25ef7a5ebbc21a1",
+          "summary": "Proyecto Cobalto 0395 (PX-0395): si la reunión es presencial, reservar diez minutos para riesgos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0395_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_cbc1e25ef7a5ebbc21a1"
+      ],
+      "state": {
+        "user_prompt": "For an in person workshop, which retained working preference applies?",
+        "scope": "laboratorio_14"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_1ae7a5566f4d5b927ca1",
+          "summary": "Proyecto Cobalto 0395 (PX-0395): si la reunión es remota, abrir con decisiones pendientes."
+        },
+        {
+          "memory_id": "m_cbc1e25ef7a5ebbc21a1",
+          "summary": "Proyecto Cobalto 0395 (PX-0395): si la reunión es presencial, reservar diez minutos para riesgos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0395_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_1ae7a5566f4d5b927ca1"
+      ],
+      "state": {
+        "user_prompt": "What saved guidance applies when everyone joins through a video link?",
+        "scope": "laboratorio_14"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_1ae7a5566f4d5b927ca1",
+          "summary": "Proyecto Cobalto 0395 (PX-0395): si la reunión es remota, abrir con decisiones pendientes."
+        },
+        {
+          "memory_id": "m_cbc1e25ef7a5ebbc21a1",
+          "summary": "Proyecto Cobalto 0395 (PX-0395): si la reunión es presencial, reservar diez minutos para riesgos."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0400_explicit_no_recall",
+      "segment": "natural_gap_explicit_no_recall",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "Ignore historical context; produce a short general sentence instead.",
+        "scope": "laboratorio_19"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_48169e0829e0580699d1",
+          "summary": "Proyecto Hiedra 0400 (PX-0400): si la reunión es presencial, abrir con decisiones pendientes."
+        },
+        {
+          "memory_id": "m_ca2f52767e54d12db922",
+          "summary": "Proyecto Hiedra 0400 (PX-0400): si la reunión es remota, empezar con un resumen del estado."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0400_mode_unspecified",
+      "segment": "natural_gap_mode_unspecified",
+      "expected_ids": [],
+      "state": {
+        "user_prompt": "We have not decided how to gather. Is there an applicable saved setup rule already?",
+        "scope": "laboratorio_19"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_48169e0829e0580699d1",
+          "summary": "Proyecto Hiedra 0400 (PX-0400): si la reunión es presencial, abrir con decisiones pendientes."
+        },
+        {
+          "memory_id": "m_ca2f52767e54d12db922",
+          "summary": "Proyecto Hiedra 0400 (PX-0400): si la reunión es remota, empezar con un resumen del estado."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0400_onsite",
+      "segment": "natural_gap_onsite",
+      "expected_ids": [
+        "m_48169e0829e0580699d1"
+      ],
+      "state": {
+        "user_prompt": "I will host everyone at the office. What standing setup instruction matters?",
+        "scope": "laboratorio_19"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_48169e0829e0580699d1",
+          "summary": "Proyecto Hiedra 0400 (PX-0400): si la reunión es presencial, abrir con decisiones pendientes."
+        },
+        {
+          "memory_id": "m_ca2f52767e54d12db922",
+          "summary": "Proyecto Hiedra 0400 (PX-0400): si la reunión es remota, empezar con un resumen del estado."
+        }
+      ]
+    },
+    {
+      "case_id": "natgap_development_project_0400_remote",
+      "segment": "natural_gap_remote",
+      "expected_ids": [
+        "m_ca2f52767e54d12db922"
+      ],
+      "state": {
+        "user_prompt": "I will host an online group call. Which existing setup preference applies?",
+        "scope": "laboratorio_19"
+      },
+      "candidates": [
+        {
+          "memory_id": "m_48169e0829e0580699d1",
+          "summary": "Proyecto Hiedra 0400 (PX-0400): si la reunión es presencial, abrir con decisiones pendientes."
+        },
+        {
+          "memory_id": "m_ca2f52767e54d12db922",
+          "summary": "Proyecto Hiedra 0400 (PX-0400): si la reunión es remota, empezar con un resumen del estado."
+        }
+      ]
+    }
+  ],
+  "plan_sha256": "2a6d33876d1ef1405d2fc9163e05b32fd753e1649fa16b9af1c00d83a089180a"
+}

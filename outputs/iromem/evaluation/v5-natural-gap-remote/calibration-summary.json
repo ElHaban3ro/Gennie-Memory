@@ -1,0 +1,198 @@
+{
+  "version": 1,
+  "kind": "v5_calibration_remote_seed_campaign",
+  "plan_sha256": "833e329166f6843d1547dfc09f58e87e8ee5abab5a4abca3e9ca1ada22752e48",
+  "plan_file_sha256": "7de4b8365881786267a8aab476b86fc959b06a02156f416359a9747251316349",
+  "decision_report_sha256": "0345b56610481214bc16b9404e52360a8e26fbe20a8854f50c8bb9761010192e",
+  "cases": 200,
+  "models": {
+    "typesafe/jev-1.13": {
+      "positive_exact": 74,
+      "negative_empty": 100,
+      "complete_cases": 200,
+      "fact_fidelity": 74,
+      "condition_fidelity": 74,
+      "source_fidelity": 74,
+      "forbidden_leaks": 0,
+      "cases": 200,
+      "exact": 174,
+      "decision_status": {
+        "complete": 200
+      },
+      "input_tokens_reported": 96734,
+      "provider_cost_reported_usd": 0.004062828,
+      "provider_cost_or_reserved_usd": 0.004062828,
+      "served_models": {
+        "typesafe/jev-1.13-20260917": 200
+      },
+      "provider_latency_ms": {
+        "p50": 473.7129789973551,
+        "p95": 531.9240142507624,
+        "p99": 618.2424340800932
+      },
+      "composition_latency_ms": {
+        "p50": 0.6696664999999999,
+        "p95": 0.7242603999999999
+      },
+      "segments": {
+        "natural_gap_explicit_no_recall": {
+          "cases": 50,
+          "exact": 50
+        },
+        "natural_gap_mode_unspecified": {
+          "cases": 50,
+          "exact": 50
+        },
+        "natural_gap_onsite": {
+          "cases": 50,
+          "exact": 34
+        },
+        "natural_gap_remote": {
+          "cases": 50,
+          "exact": 40
+        }
+      },
+      "seed_results_sha256": "c6d7f68d26ddd0331eafcdb85024a164b3f5897845e3bd9845ac565c536a1765"
+    },
+    "openai/gpt-6-luna-decisions": {
+      "positive_exact": 29,
+      "negative_empty": 100,
+      "complete_cases": 200,
+      "fact_fidelity": 29,
+      "condition_fidelity": 29,
+      "source_fidelity": 29,
+      "forbidden_leaks": 0,
+      "cases": 200,
+      "exact": 129,
+      "decision_status": {
+        "complete": 200
+      },
+      "input_tokens_reported": 49618,
+      "provider_cost_reported_usd": 0.0049618,
+      "provider_cost_or_reserved_usd": 0.0049618,
+      "served_models": {
+        "openai/gpt-6-luna-decisions-20261006": 200
+      },
+      "provider_latency_ms": {
+        "p50": 485.32368749874877,
+        "p95": 784.2342597483364,
+        "p99": 1588.01739508715
+      },
+      "composition_latency_ms": {
+        "p50": 0.6646045,
+        "p95": 0.71416635
+      },
+      "segments": {
+        "natural_gap_explicit_no_recall": {
+          "cases": 50,
+          "exact": 50
+        },
+        "natural_gap_mode_unspecified": {
+          "cases": 50,
+          "exact": 50
+        },
+        "natural_gap_onsite": {
+          "cases": 50,
+          "exact": 10
+        },
+        "natural_gap_remote": {
+          "cases": 50,
+          "exact": 19
+        }
+      },
+      "seed_results_sha256": "fb5e316dd1b3a0243b2f2854c8b6358a209fccd07623f87fe111a0126bb0f254"
+    }
+  },
+  "paired": {
+    "typesafe/jev-1.13__vs__openai/gpt-6-luna-decisions": {
+      "both": 128,
+      "left_only": 46,
+      "right_only": 1,
+      "neither": 25
+    },
+    "typesafe/jev-1.13__vs__fts5": {
+      "both": 100,
+      "left_only": 74,
+      "right_only": 0,
+      "neither": 26
+    },
+    "typesafe/jev-1.13__vs__top1": {
+      "both": 32,
+      "left_only": 142,
+      "right_only": 20,
+      "neither": 6
+    },
+    "typesafe/jev-1.13__vs__laya_choice": {
+      "both": 94,
+      "left_only": 80,
+      "right_only": 0,
+      "neither": 26
+    },
+    "typesafe/jev-1.13__vs__laya_conditions": {
+      "both": 39,
+      "left_only": 135,
+      "right_only": 10,
+      "neither": 16
+    },
+    "openai/gpt-6-luna-decisions__vs__fts5": {
+      "both": 100,
+      "left_only": 29,
+      "right_only": 0,
+      "neither": 71
+    },
+    "openai/gpt-6-luna-decisions__vs__top1": {
+      "both": 14,
+      "left_only": 115,
+      "right_only": 38,
+      "neither": 33
+    },
+    "openai/gpt-6-luna-decisions__vs__laya_choice": {
+      "both": 94,
+      "left_only": 35,
+      "right_only": 0,
+      "neither": 71
+    },
+    "openai/gpt-6-luna-decisions__vs__laya_conditions": {
+      "both": 18,
+      "left_only": 111,
+      "right_only": 31,
+      "neither": 40
+    },
+    "fts5__vs__top1": {
+      "both": 0,
+      "left_only": 100,
+      "right_only": 52,
+      "neither": 48
+    },
+    "fts5__vs__laya_choice": {
+      "both": 94,
+      "left_only": 6,
+      "right_only": 0,
+      "neither": 100
+    },
+    "fts5__vs__laya_conditions": {
+      "both": 0,
+      "left_only": 100,
+      "right_only": 49,
+      "neither": 51
+    },
+    "top1__vs__laya_choice": {
+      "both": 0,
+      "left_only": 52,
+      "right_only": 94,
+      "neither": 54
+    },
+    "top1__vs__laya_conditions": {
+      "both": 14,
+      "left_only": 38,
+      "right_only": 35,
+      "neither": 113
+    },
+    "laya_choice__vs__laya_conditions": {
+      "both": 0,
+      "left_only": 94,
+      "right_only": 49,
+      "neither": 57
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "method": "seed_composition",
+  "cases": 1600,
+  "positive": 1000,
+  "negative": 600,
+  "complete_cases": 1592,
+  "exact_selection_accuracy": 0.94875,
+  "positive_fact_fidelity": 0.992,
+  "positive_condition_fidelity": 0.992,
+  "positive_source_fidelity": 0.992,
+  "negative_empty_rate": 0.8766666666666667,
+  "forbidden_leak_count": 0,
+  "composition_latency_ms": {
+    "p50": 3.1197909999999998,
+    "p95": 6.176875
+  }
+}

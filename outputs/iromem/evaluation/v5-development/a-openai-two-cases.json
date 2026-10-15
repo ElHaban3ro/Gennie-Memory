@@ -1,0 +1,105 @@
+{
+  "method": "integrated_openai_seed_pilot",
+  "split": "development",
+  "model_version": "openai/gpt-6-luna-decisions",
+  "device": "openrouter",
+  "cases": 2,
+  "positive": 1,
+  "negative": 1,
+  "load_seconds": 0.0,
+  "warmup_ms": 0.0,
+  "candidate_coverage": 1,
+  "decision_failures": 0,
+  "provider_calls": 2,
+  "exact_selection": 2,
+  "positive_fact_fidelity": 1,
+  "positive_condition_fidelity": 1,
+  "positive_source_fidelity": 1,
+  "negative_empty": 1,
+  "forbidden_leaks": 0,
+  "input_tokens": 497,
+  "missing_token_usage": 0,
+  "reported_cost_usd": 4.97e-05,
+  "missing_reported_cost": 0,
+  "latency_ms": {
+    "total_ms": {
+      "p50": 530.8769789990038,
+      "p95": 615.9086604013282
+    },
+    "search_roundtrip_ms": {
+      "p50": 7.11437549762195,
+      "p95": 8.159087847889168
+    },
+    "search_rust_ms": {
+      "p50": 5.9348125,
+      "p95": 7.87553155
+    },
+    "choice_ms": {
+      "p50": 510.9495415017591,
+      "p95": 596.3802041536837
+    },
+    "compose_roundtrip_ms": {
+      "p50": 12.679874500463484,
+      "p95": 13.319512150701485
+    },
+    "compose_rust_ms": {
+      "p50": 12.431604,
+      "p95": 13.0381473
+    }
+  },
+  "individual_results": [
+    {
+      "id": "q5_0169_0191",
+      "segment": "direct",
+      "positive": true,
+      "decision_status": "complete",
+      "decision_error": null,
+      "provider_called": true,
+      "served_model": "openai/gpt-6-luna-decisions-20261006",
+      "reported_cost_usd": 2.57e-05,
+      "expected_in_candidates": true,
+      "candidate_count": 2,
+      "presented_count": 2,
+      "chosen_id": "m_2cd95f111ef388d60148",
+      "exact": true,
+      "fact_fidelity": true,
+      "condition_fidelity": true,
+      "source_fidelity": true,
+      "forbidden_leak": false,
+      "input_tokens": 257,
+      "total_ms": 625.3566250015865,
+      "search_roundtrip_ms": 5.95358399732504,
+      "search_rust_ms": 3.778458,
+      "choice_ms": 605.8725000038976,
+      "compose_roundtrip_ms": 13.39058300072793,
+      "compose_rust_ms": 13.105541
+    },
+    {
+      "id": "mode_unknown_0066",
+      "segment": "mode_unknown",
+      "positive": false,
+      "decision_status": "complete",
+      "decision_error": null,
+      "provider_called": true,
+      "served_model": "openai/gpt-6-luna-decisions-20261006",
+      "reported_cost_usd": 2.4e-05,
+      "expected_in_candidates": false,
+      "candidate_count": 2,
+      "presented_count": 2,
+      "chosen_id": "none",
+      "exact": true,
+      "fact_fidelity": true,
+      "condition_fidelity": null,
+      "source_fidelity": null,
+      "forbidden_leak": false,
+      "input_tokens": 240,
+      "total_ms": 436.397332996421,
+      "search_roundtrip_ms": 8.27516699791886,
+      "search_rust_ms": 8.091167,
+      "choice_ms": 416.0265829996206,
+      "compose_roundtrip_ms": 11.969166000199039,
+      "compose_rust_ms": 11.757667
+    }
+  ],
+  "quantile_method": "linear_interpolation"
+}

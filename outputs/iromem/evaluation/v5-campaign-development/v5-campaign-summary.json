@@ -1,0 +1,340 @@
+{
+  "kind": "v5_development_local_seed_campaign",
+  "queries_sha256": "cfcae2f21348a1b640e4b4ff00c7a278a8caf012585eed55132dd63352b35137",
+  "report_sha256": {
+    "integrated_hybrid_top1_seed_campaign": "26d5d76ce7ccdb2cbd3a549a0c34eb8451c65a700cba2820f65220d6a12c03d9",
+    "integrated_hybrid_laya_seed_campaign": "4246a04f5e2da43964179ab07d9fd618580dfdd6fa299ba5eef79f464ded7594",
+    "integrated_hybrid_laya_pairwise_conditions_seed_campaign": "f73a68d58bf4242aa6be839cb7f00b219c5fbd7de8339f14ca50adf1970392ae"
+  },
+  "cases": 1600,
+  "segments": {
+    "absent_entity": 100,
+    "alias": 200,
+    "code_switch": 100,
+    "direct": 250,
+    "english": 200,
+    "explicit_no_recall": 100,
+    "indirect": 150,
+    "long_context": 100,
+    "mode_unknown": 100,
+    "mode_unspecified": 100,
+    "wrong_scope": 100,
+    "wrong_task": 100
+  },
+  "methods": {
+    "integrated_hybrid_top1_seed_campaign": {
+      "cases": 1600,
+      "exact": 919,
+      "positive_exact": 719,
+      "negative_empty": 200,
+      "positive_missed": 0,
+      "positive_wrong_memory": 281,
+      "negative_false_memory": 400,
+      "candidate_coverage": 1000,
+      "positive_fact_fidelity": 719,
+      "positive_condition_fidelity": 719,
+      "positive_source_fidelity": 719,
+      "input_tokens": 0,
+      "load_seconds": 2.2122957079991465,
+      "warmup_ms": 697.9013750024023,
+      "latency_ms": {
+        "total_ms": {
+          "p50": 20.03733349920367,
+          "p95": 37.8974812450906
+        },
+        "embedding_ms": {
+          "p50": 12.571166997076944,
+          "p95": 24.141076749219792
+        },
+        "search_roundtrip_ms": {
+          "p50": 3.66433350063744,
+          "p95": 6.722458652438945
+        },
+        "search_rust_ms": {
+          "p50": 3.4328744999999996,
+          "p95": 6.470446149999999
+        },
+        "choice_ms": {
+          "p50": 0.0,
+          "p95": 0.0
+        },
+        "compose_roundtrip_ms": {
+          "p50": 3.7288334970071446,
+          "p95": 6.78166184661677
+        },
+        "compose_rust_ms": {
+          "p50": 3.4954795,
+          "p95": 6.527160099999999
+        }
+      },
+      "total_ms_p99": 40.49906315769476,
+      "sum_case_seconds": 33.54245238484873,
+      "segments": {
+        "absent_entity": {
+          "cases": 100,
+          "exact": 100
+        },
+        "alias": {
+          "cases": 200,
+          "exact": 160
+        },
+        "code_switch": {
+          "cases": 100,
+          "exact": 65
+        },
+        "direct": {
+          "cases": 250,
+          "exact": 203
+        },
+        "english": {
+          "cases": 200,
+          "exact": 102
+        },
+        "explicit_no_recall": {
+          "cases": 100,
+          "exact": 0
+        },
+        "indirect": {
+          "cases": 150,
+          "exact": 130
+        },
+        "long_context": {
+          "cases": 100,
+          "exact": 59
+        },
+        "mode_unknown": {
+          "cases": 100,
+          "exact": 0
+        },
+        "mode_unspecified": {
+          "cases": 100,
+          "exact": 0
+        },
+        "wrong_scope": {
+          "cases": 100,
+          "exact": 100
+        },
+        "wrong_task": {
+          "cases": 100,
+          "exact": 0
+        }
+      }
+    },
+    "integrated_hybrid_laya_seed_campaign": {
+      "cases": 1600,
+      "exact": 704,
+      "positive_exact": 136,
+      "negative_empty": 568,
+      "positive_missed": 685,
+      "positive_wrong_memory": 179,
+      "negative_false_memory": 32,
+      "candidate_coverage": 1000,
+      "positive_fact_fidelity": 136,
+      "positive_condition_fidelity": 136,
+      "positive_source_fidelity": 136,
+      "input_tokens": 248901,
+      "load_seconds": 1.8944393750061863,
+      "warmup_ms": 523.4644589945674,
+      "latency_ms": {
+        "total_ms": {
+          "p50": 52.7180414974282,
+          "p95": 86.4145235504111
+        },
+        "embedding_ms": {
+          "p50": 12.937270999827888,
+          "p95": 24.332899698492838
+        },
+        "search_roundtrip_ms": {
+          "p50": 3.9324584977293853,
+          "p95": 7.115398551468388
+        },
+        "search_rust_ms": {
+          "p50": 3.6790205,
+          "p95": 6.8514121999999995
+        },
+        "choice_ms": {
+          "p50": 31.78016700258013,
+          "p95": 47.349926750393934
+        },
+        "compose_roundtrip_ms": {
+          "p50": 3.9354584987449925,
+          "p95": 7.070595801269519
+        },
+        "compose_rust_ms": {
+          "p50": 3.6980205,
+          "p95": 6.8438976
+        }
+      },
+      "total_ms_p99": 89.67045916120696,
+      "sum_case_seconds": 81.21498341704137,
+      "segments": {
+        "absent_entity": {
+          "cases": 100,
+          "exact": 100
+        },
+        "alias": {
+          "cases": 200,
+          "exact": 29
+        },
+        "code_switch": {
+          "cases": 100,
+          "exact": 14
+        },
+        "direct": {
+          "cases": 250,
+          "exact": 46
+        },
+        "english": {
+          "cases": 200,
+          "exact": 39
+        },
+        "explicit_no_recall": {
+          "cases": 100,
+          "exact": 99
+        },
+        "indirect": {
+          "cases": 150,
+          "exact": 7
+        },
+        "long_context": {
+          "cases": 100,
+          "exact": 1
+        },
+        "mode_unknown": {
+          "cases": 100,
+          "exact": 100
+        },
+        "mode_unspecified": {
+          "cases": 100,
+          "exact": 100
+        },
+        "wrong_scope": {
+          "cases": 100,
+          "exact": 100
+        },
+        "wrong_task": {
+          "cases": 100,
+          "exact": 69
+        }
+      }
+    },
+    "integrated_hybrid_laya_pairwise_conditions_seed_campaign": {
+      "cases": 1600,
+      "exact": 694,
+      "positive_exact": 494,
+      "negative_empty": 200,
+      "positive_missed": 206,
+      "positive_wrong_memory": 300,
+      "negative_false_memory": 400,
+      "candidate_coverage": 1000,
+      "positive_fact_fidelity": 494,
+      "positive_condition_fidelity": 494,
+      "positive_source_fidelity": 494,
+      "input_tokens": 518588,
+      "load_seconds": 1.891958166997938,
+      "warmup_ms": 534.0411249999306,
+      "latency_ms": {
+        "total_ms": {
+          "p50": 86.60910449907533,
+          "p95": 135.77305659782724
+        },
+        "embedding_ms": {
+          "p50": 13.05970799876377,
+          "p95": 24.66564935130009
+        },
+        "search_roundtrip_ms": {
+          "p50": 4.042292002850445,
+          "p95": 7.2746291971270685
+        },
+        "search_rust_ms": {
+          "p50": 3.781875,
+          "p95": 7.000012799999999
+        },
+        "choice_ms": {
+          "p50": 65.18618749760208,
+          "p95": 96.02837980091863
+        },
+        "compose_roundtrip_ms": {
+          "p50": 4.1151459990942385,
+          "p95": 7.342587203311268
+        },
+        "compose_rust_ms": {
+          "p50": 3.8459380000000003,
+          "p95": 7.0703232499999995
+        }
+      },
+      "total_ms_p99": 140.078381749845,
+      "sum_case_seconds": 129.95727337905555,
+      "segments": {
+        "absent_entity": {
+          "cases": 100,
+          "exact": 100
+        },
+        "alias": {
+          "cases": 200,
+          "exact": 91
+        },
+        "code_switch": {
+          "cases": 100,
+          "exact": 35
+        },
+        "direct": {
+          "cases": 250,
+          "exact": 105
+        },
+        "english": {
+          "cases": 200,
+          "exact": 91
+        },
+        "explicit_no_recall": {
+          "cases": 100,
+          "exact": 0
+        },
+        "indirect": {
+          "cases": 150,
+          "exact": 74
+        },
+        "long_context": {
+          "cases": 100,
+          "exact": 98
+        },
+        "mode_unknown": {
+          "cases": 100,
+          "exact": 0
+        },
+        "mode_unspecified": {
+          "cases": 100,
+          "exact": 0
+        },
+        "wrong_scope": {
+          "cases": 100,
+          "exact": 100
+        },
+        "wrong_task": {
+          "cases": 100,
+          "exact": 0
+        }
+      }
+    }
+  },
+  "paired": {
+    "integrated_hybrid_top1_seed_campaign__vs__integrated_hybrid_laya_seed_campaign": {
+      "both": 262,
+      "left_only": 657,
+      "right_only": 442,
+      "neither": 239
+    },
+    "integrated_hybrid_top1_seed_campaign__vs__integrated_hybrid_laya_pairwise_conditions_seed_campaign": {
+      "both": 549,
+      "left_only": 370,
+      "right_only": 145,
+      "neither": 536
+    },
+    "integrated_hybrid_laya_seed_campaign__vs__integrated_hybrid_laya_pairwise_conditions_seed_campaign": {
+      "both": 276,
+      "left_only": 428,
+      "right_only": 418,
+      "neither": 478
+    }
+  }
+}

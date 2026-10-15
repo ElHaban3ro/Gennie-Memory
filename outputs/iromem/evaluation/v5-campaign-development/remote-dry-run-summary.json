@@ -1,0 +1,22 @@
+{
+  "kind": "offline_remote_pipeline_dry_run",
+  "real_provider_calls": 0,
+  "provider_stub": true,
+  "plan_sha256": "b7c8452a82bcfe6e3418686635aeccf1c1af6a3dc6ed5d675476a5c354c21035",
+  "journal_sha256": "f555d7bc853213deb3aace9f28954589f2a0ea15f0d9896462dccd17e7dc46d1",
+  "tasks": 3200,
+  "simulated_decision_calls": 2800,
+  "models": {
+    "jev": {
+      "seed_cases": 1600,
+      "complete_seeds": 1600,
+      "forbidden_leaks": 0
+    },
+    "openai": {
+      "seed_cases": 1600,
+      "complete_seeds": 1600,
+      "forbidden_leaks": 0
+    }
+  },
+  "quality_metrics_valid": false
+}

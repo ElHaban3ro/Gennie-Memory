@@ -1,0 +1,236 @@
+{
+  "kind": "v5_development_local_seed_campaign",
+  "queries_sha256": "5aecaa964879f27be05b679c7d0ad0cf3e1a0329dbb0235c0eabffcf73d00e8a",
+  "report_sha256": {
+    "integrated_hybrid_top1_seed_campaign": "7e4c087dbd887b922a8a3599925cd7c886360a486580aab739a96fc37d02aeb7",
+    "integrated_hybrid_laya_seed_campaign": "b311e51f7c77efde9576c60b43da7f7c551f88ec5294be2c64ea2eaff0285e7c",
+    "integrated_hybrid_laya_pairwise_conditions_seed_campaign": "ae74972c0c5e71e4b89a5ed1bb40ec25673d412340211df44e0975dac7100f7f"
+  },
+  "cases": 200,
+  "segments": {
+    "natural_gap_explicit_no_recall": 50,
+    "natural_gap_mode_unspecified": 50,
+    "natural_gap_onsite": 50,
+    "natural_gap_remote": 50
+  },
+  "methods": {
+    "integrated_hybrid_top1_seed_campaign": {
+      "cases": 200,
+      "exact": 52,
+      "positive_exact": 52,
+      "negative_empty": 0,
+      "positive_missed": 0,
+      "positive_wrong_memory": 48,
+      "negative_false_memory": 100,
+      "candidate_coverage": 100,
+      "positive_fact_fidelity": 52,
+      "positive_condition_fidelity": 52,
+      "positive_source_fidelity": 52,
+      "input_tokens": 0,
+      "load_seconds": 1.7606008340007975,
+      "warmup_ms": 438.90529200143646,
+      "latency_ms": {
+        "total_ms": {
+          "p50": 13.330625002708985,
+          "p95": 15.319483003986534
+        },
+        "embedding_ms": {
+          "p50": 11.0346040019067,
+          "p95": 13.046310096979141
+        },
+        "search_roundtrip_ms": {
+          "p50": 1.1414795008022338,
+          "p95": 1.235594101308379
+        },
+        "search_rust_ms": {
+          "p50": 0.922229,
+          "p95": 1.0016422999999997
+        },
+        "choice_ms": {
+          "p50": 0.0,
+          "p95": 0.0
+        },
+        "compose_roundtrip_ms": {
+          "p50": 1.1134170017612632,
+          "p95": 1.1839829941891364
+        },
+        "compose_rust_ms": {
+          "p50": 0.9058539999999999,
+          "p95": 0.9775351
+        }
+      },
+      "total_ms_p99": 16.02138332549657,
+      "sum_case_seconds": 2.7189174559971434,
+      "segments": {
+        "natural_gap_explicit_no_recall": {
+          "cases": 50,
+          "exact": 0
+        },
+        "natural_gap_mode_unspecified": {
+          "cases": 50,
+          "exact": 0
+        },
+        "natural_gap_onsite": {
+          "cases": 50,
+          "exact": 41
+        },
+        "natural_gap_remote": {
+          "cases": 50,
+          "exact": 11
+        }
+      }
+    },
+    "integrated_hybrid_laya_seed_campaign": {
+      "cases": 200,
+      "exact": 96,
+      "positive_exact": 2,
+      "negative_empty": 94,
+      "positive_missed": 96,
+      "positive_wrong_memory": 2,
+      "negative_false_memory": 6,
+      "candidate_coverage": 100,
+      "positive_fact_fidelity": 2,
+      "positive_condition_fidelity": 2,
+      "positive_source_fidelity": 2,
+      "input_tokens": 30515,
+      "load_seconds": 2.4973417919973144,
+      "warmup_ms": 505.0496249969001,
+      "latency_ms": {
+        "total_ms": {
+          "p50": 43.57887500373181,
+          "p95": 74.6247562499775
+        },
+        "embedding_ms": {
+          "p50": 11.842729003546992,
+          "p95": 21.129999700497137
+        },
+        "search_roundtrip_ms": {
+          "p50": 1.3694374974875245,
+          "p95": 3.4146586567658233
+        },
+        "search_rust_ms": {
+          "p50": 1.1194164999999998,
+          "p95": 2.6241419499999967
+        },
+        "choice_ms": {
+          "p50": 28.77860450098524,
+          "p95": 45.888804498827064
+        },
+        "compose_roundtrip_ms": {
+          "p50": 1.4001039999129716,
+          "p95": 3.832214903013663
+        },
+        "compose_rust_ms": {
+          "p50": 1.1593749999999998,
+          "p95": 2.7918142499999994
+        }
+      },
+      "total_ms_p99": 106.80076324744722,
+      "sum_case_seconds": 9.651896294031758,
+      "segments": {
+        "natural_gap_explicit_no_recall": {
+          "cases": 50,
+          "exact": 49
+        },
+        "natural_gap_mode_unspecified": {
+          "cases": 50,
+          "exact": 45
+        },
+        "natural_gap_onsite": {
+          "cases": 50,
+          "exact": 1
+        },
+        "natural_gap_remote": {
+          "cases": 50,
+          "exact": 1
+        }
+      }
+    },
+    "integrated_hybrid_laya_pairwise_conditions_seed_campaign": {
+      "cases": 200,
+      "exact": 50,
+      "positive_exact": 50,
+      "negative_empty": 0,
+      "positive_missed": 2,
+      "positive_wrong_memory": 48,
+      "negative_false_memory": 100,
+      "candidate_coverage": 100,
+      "positive_fact_fidelity": 50,
+      "positive_condition_fidelity": 50,
+      "positive_source_fidelity": 50,
+      "input_tokens": 63970,
+      "load_seconds": 1.7412788750007167,
+      "warmup_ms": 483.59945799893467,
+      "latency_ms": {
+        "total_ms": {
+          "p50": 71.54481200268492,
+          "p95": 77.36336249872693
+        },
+        "embedding_ms": {
+          "p50": 11.530667001352413,
+          "p95": 13.47586665251583
+        },
+        "search_roundtrip_ms": {
+          "p50": 1.2775625036738347,
+          "p95": 1.4130430972727481
+        },
+        "search_rust_ms": {
+          "p50": 1.0436245,
+          "p95": 1.1549149
+        },
+        "choice_ms": {
+          "p50": 57.22849999801838,
+          "p95": 62.24550864972116
+        },
+        "compose_roundtrip_ms": {
+          "p50": 1.2910834993817843,
+          "p95": 1.4822639510384759
+        },
+        "compose_rust_ms": {
+          "p50": 1.060667,
+          "p95": 1.2258229500000002
+        }
+      },
+      "total_ms_p99": 83.01582433901785,
+      "sum_case_seconds": 14.502950368107122,
+      "segments": {
+        "natural_gap_explicit_no_recall": {
+          "cases": 50,
+          "exact": 0
+        },
+        "natural_gap_mode_unspecified": {
+          "cases": 50,
+          "exact": 0
+        },
+        "natural_gap_onsite": {
+          "cases": 50,
+          "exact": 3
+        },
+        "natural_gap_remote": {
+          "cases": 50,
+          "exact": 47
+        }
+      }
+    }
+  },
+  "paired": {
+    "integrated_hybrid_top1_seed_campaign__vs__integrated_hybrid_laya_seed_campaign": {
+      "both": 1,
+      "left_only": 51,
+      "right_only": 95,
+      "neither": 53
+    },
+    "integrated_hybrid_top1_seed_campaign__vs__integrated_hybrid_laya_pairwise_conditions_seed_campaign": {
+      "both": 14,
+      "left_only": 38,
+      "right_only": 36,
+      "neither": 112
+    },
+    "integrated_hybrid_laya_seed_campaign__vs__integrated_hybrid_laya_pairwise_conditions_seed_campaign": {
+      "both": 0,
+      "left_only": 96,
+      "right_only": 50,
+      "neither": 54
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "split": "development",
+  "journal_events": 1601,
+  "journal_sha256": "7112e3fe5c74dbbbc02b36e7f87a24f7f44ea72b7d4f6eb8e7c0a16a00bbd466",
+  "manifest": {
+    "version": 1,
+    "kind": "integrated_local_seed_campaign",
+    "split": "development",
+    "selector": "top1",
+    "retrieval": "fts5",
+    "threshold": 0.5,
+    "require_mps": false,
+    "max_candidates": 4,
+    "queries_sha256": "cfcae2f21348a1b640e4b4ff00c7a278a8caf012585eed55132dd63352b35137",
+    "database_sha256": "fae99c9d1c0d324c3dd713c308e4efd65e0c436cbbe374829c4990d8e38c9c8d",
+    "binary_sha256": "24652c759b8237ea679de8ffb1148d1528eab74fc87561a5e93c93fb774ad11b",
+    "runner_sha256": "fb4e7e90b5d84ee77290199115e4af8ed1474233eba82fb463a5e5e7e1ab46b7",
+    "embedding_batch_sha256": null,
+    "model": {}
+  },
+  "case_ids_sha256": "0dd519527cfdea349a4e1d321c0210eb3bfc720e0d74848b575d06f9a3c5d7ed",
+  "same_queries_database_binary_as_hybrid": true
+}

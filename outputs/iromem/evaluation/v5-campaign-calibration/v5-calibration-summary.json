@@ -1,0 +1,340 @@
+{
+  "kind": "v5_calibration_local_seed_campaign",
+  "queries_sha256": "e93b7a64d0083603423f3fa21042475c7a6738054bd25d14b1b4ed746e3209a5",
+  "report_sha256": {
+    "integrated_hybrid_top1_seed_campaign": "999fecc02939516e1039cd8f1aa75ffc7b9232e113256a455a5aeeb46f7c67de",
+    "integrated_hybrid_laya_seed_campaign": "31efce05d9b19421d8c846b2317f753b361bc3d44e4df0aa7212450e1fb23fa0",
+    "integrated_hybrid_laya_pairwise_conditions_seed_campaign": "03371ed15bdcc30c01de575684c515fc73738ce8d4d6c4512b6b96e10636d6fd"
+  },
+  "cases": 1480,
+  "segments": {
+    "absent_entity": 80,
+    "alias": 200,
+    "code_switch": 100,
+    "direct": 250,
+    "english": 200,
+    "explicit_no_recall": 80,
+    "indirect": 150,
+    "long_context": 100,
+    "mode_unknown": 80,
+    "mode_unspecified": 80,
+    "wrong_scope": 80,
+    "wrong_task": 80
+  },
+  "methods": {
+    "integrated_hybrid_top1_seed_campaign": {
+      "cases": 1480,
+      "exact": 861,
+      "positive_exact": 701,
+      "negative_empty": 160,
+      "positive_missed": 0,
+      "positive_wrong_memory": 299,
+      "negative_false_memory": 320,
+      "candidate_coverage": 1000,
+      "positive_fact_fidelity": 701,
+      "positive_condition_fidelity": 701,
+      "positive_source_fidelity": 701,
+      "input_tokens": 0,
+      "load_seconds": 2.330661166997743,
+      "warmup_ms": 709.7974580028676,
+      "latency_ms": {
+        "total_ms": {
+          "p50": 20.124416503676912,
+          "p95": 38.30567464901833
+        },
+        "embedding_ms": {
+          "p50": 12.617582997336285,
+          "p95": 24.2941899014113
+        },
+        "search_roundtrip_ms": {
+          "p50": 3.6762079980690032,
+          "p95": 6.757439595821779
+        },
+        "search_rust_ms": {
+          "p50": 3.4457085,
+          "p95": 6.5251604
+        },
+        "choice_ms": {
+          "p50": 0.0,
+          "p95": 0.0
+        },
+        "compose_roundtrip_ms": {
+          "p50": 3.7267090010573156,
+          "p95": 6.865421495240297
+        },
+        "compose_rust_ms": {
+          "p50": 3.5014580000000004,
+          "p95": 6.63524135
+        }
+      },
+      "total_ms_p99": 40.07316367875319,
+      "sum_case_seconds": 31.180631673094467,
+      "segments": {
+        "absent_entity": {
+          "cases": 80,
+          "exact": 80
+        },
+        "alias": {
+          "cases": 200,
+          "exact": 160
+        },
+        "code_switch": {
+          "cases": 100,
+          "exact": 58
+        },
+        "direct": {
+          "cases": 250,
+          "exact": 202
+        },
+        "english": {
+          "cases": 200,
+          "exact": 100
+        },
+        "explicit_no_recall": {
+          "cases": 80,
+          "exact": 0
+        },
+        "indirect": {
+          "cases": 150,
+          "exact": 130
+        },
+        "long_context": {
+          "cases": 100,
+          "exact": 51
+        },
+        "mode_unknown": {
+          "cases": 80,
+          "exact": 0
+        },
+        "mode_unspecified": {
+          "cases": 80,
+          "exact": 0
+        },
+        "wrong_scope": {
+          "cases": 80,
+          "exact": 80
+        },
+        "wrong_task": {
+          "cases": 80,
+          "exact": 0
+        }
+      }
+    },
+    "integrated_hybrid_laya_seed_campaign": {
+      "cases": 1480,
+      "exact": 602,
+      "positive_exact": 149,
+      "negative_empty": 453,
+      "positive_missed": 672,
+      "positive_wrong_memory": 179,
+      "negative_false_memory": 27,
+      "candidate_coverage": 1000,
+      "positive_fact_fidelity": 149,
+      "positive_condition_fidelity": 149,
+      "positive_source_fidelity": 149,
+      "input_tokens": 235264,
+      "load_seconds": 1.877992957997776,
+      "warmup_ms": 533.6630419988069,
+      "latency_ms": {
+        "total_ms": {
+          "p50": 52.918437504558824,
+          "p95": 87.20455240036245
+        },
+        "embedding_ms": {
+          "p50": 13.001770999835571,
+          "p95": 24.50402530230349
+        },
+        "search_roundtrip_ms": {
+          "p50": 3.9734374986437615,
+          "p95": 7.189803545043105
+        },
+        "search_rust_ms": {
+          "p50": 3.7225415,
+          "p95": 6.938144049999999
+        },
+        "choice_ms": {
+          "p50": 31.82545849995222,
+          "p95": 47.8178622044652
+        },
+        "compose_roundtrip_ms": {
+          "p50": 3.980125500675058,
+          "p95": 7.219658351459656
+        },
+        "compose_rust_ms": {
+          "p50": 3.736625,
+          "p95": 6.97881665
+        }
+      },
+      "total_ms_p99": 90.06387874665961,
+      "sum_case_seconds": 76.38694529287022,
+      "segments": {
+        "absent_entity": {
+          "cases": 80,
+          "exact": 80
+        },
+        "alias": {
+          "cases": 200,
+          "exact": 31
+        },
+        "code_switch": {
+          "cases": 100,
+          "exact": 19
+        },
+        "direct": {
+          "cases": 250,
+          "exact": 46
+        },
+        "english": {
+          "cases": 200,
+          "exact": 37
+        },
+        "explicit_no_recall": {
+          "cases": 80,
+          "exact": 80
+        },
+        "indirect": {
+          "cases": 150,
+          "exact": 9
+        },
+        "long_context": {
+          "cases": 100,
+          "exact": 7
+        },
+        "mode_unknown": {
+          "cases": 80,
+          "exact": 80
+        },
+        "mode_unspecified": {
+          "cases": 80,
+          "exact": 80
+        },
+        "wrong_scope": {
+          "cases": 80,
+          "exact": 80
+        },
+        "wrong_task": {
+          "cases": 80,
+          "exact": 53
+        }
+      }
+    },
+    "integrated_hybrid_laya_pairwise_conditions_seed_campaign": {
+      "cases": 1480,
+      "exact": 616,
+      "positive_exact": 456,
+      "negative_empty": 160,
+      "positive_missed": 229,
+      "positive_wrong_memory": 315,
+      "negative_false_memory": 320,
+      "candidate_coverage": 1000,
+      "positive_fact_fidelity": 456,
+      "positive_condition_fidelity": 456,
+      "positive_source_fidelity": 456,
+      "input_tokens": 490816,
+      "load_seconds": 1.861446832997899,
+      "warmup_ms": 532.6278329957859,
+      "latency_ms": {
+        "total_ms": {
+          "p50": 87.11224950457108,
+          "p95": 135.57285590140964
+        },
+        "embedding_ms": {
+          "p50": 13.174874999094754,
+          "p95": 24.829847899309243
+        },
+        "search_roundtrip_ms": {
+          "p50": 4.052750002301764,
+          "p95": 7.312656548674567
+        },
+        "search_rust_ms": {
+          "p50": 3.7914585,
+          "p95": 7.044735099999999
+        },
+        "choice_ms": {
+          "p50": 65.65564600168727,
+          "p95": 95.62837500525347
+        },
+        "compose_roundtrip_ms": {
+          "p50": 4.112958500627428,
+          "p95": 7.434629150884575
+        },
+        "compose_rust_ms": {
+          "p50": 3.8454375,
+          "p95": 7.161174999999999
+        }
+      },
+      "total_ms_p99": 140.22605150006711,
+      "sum_case_seconds": 122.66748625197215,
+      "segments": {
+        "absent_entity": {
+          "cases": 80,
+          "exact": 80
+        },
+        "alias": {
+          "cases": 200,
+          "exact": 84
+        },
+        "code_switch": {
+          "cases": 100,
+          "exact": 31
+        },
+        "direct": {
+          "cases": 250,
+          "exact": 80
+        },
+        "english": {
+          "cases": 200,
+          "exact": 87
+        },
+        "explicit_no_recall": {
+          "cases": 80,
+          "exact": 0
+        },
+        "indirect": {
+          "cases": 150,
+          "exact": 79
+        },
+        "long_context": {
+          "cases": 100,
+          "exact": 95
+        },
+        "mode_unknown": {
+          "cases": 80,
+          "exact": 0
+        },
+        "mode_unspecified": {
+          "cases": 80,
+          "exact": 0
+        },
+        "wrong_scope": {
+          "cases": 80,
+          "exact": 80
+        },
+        "wrong_task": {
+          "cases": 80,
+          "exact": 0
+        }
+      }
+    }
+  },
+  "paired": {
+    "integrated_hybrid_top1_seed_campaign__vs__integrated_hybrid_laya_seed_campaign": {
+      "both": 218,
+      "left_only": 643,
+      "right_only": 384,
+      "neither": 235
+    },
+    "integrated_hybrid_top1_seed_campaign__vs__integrated_hybrid_laya_pairwise_conditions_seed_campaign": {
+      "both": 487,
+      "left_only": 374,
+      "right_only": 129,
+      "neither": 490
+    },
+    "integrated_hybrid_laya_seed_campaign__vs__integrated_hybrid_laya_pairwise_conditions_seed_campaign": {
+      "both": 242,
+      "left_only": 360,
+      "right_only": 374,
+      "neither": 504
+    }
+  }
+}

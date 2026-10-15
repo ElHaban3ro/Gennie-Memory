@@ -1,0 +1,367 @@
+{
+  "version": 3,
+  "kind": "v5_lexical_gap_balanced_paired_probe",
+  "splits": {
+    "development": {
+      "cases": 200,
+      "positive": 100,
+      "negative": 100,
+      "entities": 50,
+      "sections": {
+        "positive": {
+          "cases": 100,
+          "queries_sha256": "7d1b3cb18fc31a48834e934cc6002e283ad3cac7e70cc1c87a260227ed085790",
+          "report_sha256": {
+            "fts5": "25f4d5f549dcc7b6cbbf772daefad13ccc927188a1898f5a26662319664da086",
+            "top1": "16c8e94500c4fc26b26ccc63146316411d0db5618414c5345cf15e40964ce92d",
+            "choice": "342506a0535b12ea965a36b5e551cccb9f63a958499fe3dc682c448d8aa5b478",
+            "conditions": "d0813f981c98dc8632e326e32c61aa257ec27439e0bd58f7aa862874a1235c2b"
+          },
+          "same_hybrid_candidates_and_vectors": true,
+          "segments": {
+            "lexical_gap_onsite": {
+              "cases": 50,
+              "fts5_exact": 0,
+              "top1_exact": 33,
+              "choice_exact": 0,
+              "conditions_exact": 2
+            },
+            "lexical_gap_remote": {
+              "cases": 50,
+              "fts5_exact": 0,
+              "top1_exact": 24,
+              "choice_exact": 0,
+              "conditions_exact": 46
+            }
+          },
+          "methods": {
+            "fts5": {
+              "exact": 0,
+              "candidate_coverage": 0,
+              "chosen_none": 100,
+              "input_tokens": 0,
+              "latency_ms": {
+                "p50": 0.39843699778430164,
+                "p95": 0.45923569814476645
+              }
+            },
+            "top1": {
+              "exact": 57,
+              "candidate_coverage": 100,
+              "chosen_none": 0,
+              "input_tokens": 0,
+              "latency_ms": {
+                "p50": 13.394083496677922,
+                "p95": 14.594456250051733
+              }
+            },
+            "choice": {
+              "exact": 0,
+              "candidate_coverage": 100,
+              "chosen_none": 100,
+              "input_tokens": 14385,
+              "latency_ms": {
+                "p50": 40.27812499771244,
+                "p95": 44.704886052932125
+              }
+            },
+            "conditions": {
+              "exact": 48,
+              "candidate_coverage": 100,
+              "chosen_none": 2,
+              "input_tokens": 30240,
+              "latency_ms": {
+                "p50": 67.85945800220361,
+                "p95": 70.05180864980503
+              }
+            }
+          }
+        },
+        "negative": {
+          "cases": 100,
+          "queries_sha256": "57c72f8d484660afbd016066c6de8bf2e3ddddb229b0113d68975b7f69b00584",
+          "report_sha256": {
+            "fts5": "c159e2dd161ef614ffc97b07061f5fc4be42ed6f16ff08ed4540b0a963b67b1c",
+            "top1": "336a6bde25d648e6924b895286a007716aa2c4f5a978b6f9826d1ebe16b9c52f",
+            "choice": "be64357c5564d2625667a870b674a2f550912550cf2294b974992910270098fa",
+            "conditions": "4de95035724df6fe5d0e3f8db5cedebf8f61744b32aa4db8d208f2eab2b80538"
+          },
+          "same_hybrid_candidates_and_vectors": true,
+          "segments": {
+            "lexical_gap_explicit_no_recall": {
+              "cases": 50,
+              "fts5_exact": 50,
+              "top1_exact": 0,
+              "choice_exact": 46,
+              "conditions_exact": 0
+            },
+            "lexical_gap_mode_unspecified": {
+              "cases": 50,
+              "fts5_exact": 50,
+              "top1_exact": 0,
+              "choice_exact": 49,
+              "conditions_exact": 1
+            }
+          },
+          "methods": {
+            "fts5": {
+              "exact": 100,
+              "candidate_coverage": 0,
+              "chosen_none": 100,
+              "input_tokens": 0,
+              "latency_ms": {
+                "p50": 0.505812498886371,
+                "p95": 0.6381952047377126
+              }
+            },
+            "top1": {
+              "exact": 0,
+              "candidate_coverage": 0,
+              "chosen_none": 0,
+              "input_tokens": 0,
+              "latency_ms": {
+                "p50": 14.654416998382658,
+                "p95": 54.32218955211274
+              }
+            },
+            "choice": {
+              "exact": 95,
+              "candidate_coverage": 0,
+              "chosen_none": 95,
+              "input_tokens": 15055,
+              "latency_ms": {
+                "p50": 42.454666498088045,
+                "p95": 45.177687497925945
+              }
+            },
+            "conditions": {
+              "exact": 1,
+              "candidate_coverage": 0,
+              "chosen_none": 1,
+              "input_tokens": 31580,
+              "latency_ms": {
+                "p50": 71.2363335005648,
+                "p95": 76.4218207958038
+              }
+            }
+          }
+        }
+      },
+      "methods": {
+        "fts5": {
+          "positive_exact": 0,
+          "negative_empty": 100,
+          "candidate_coverage": 0,
+          "chosen_none": 200,
+          "input_tokens": 0,
+          "total_exact": 100
+        },
+        "top1": {
+          "positive_exact": 57,
+          "negative_empty": 0,
+          "candidate_coverage": 100,
+          "chosen_none": 0,
+          "input_tokens": 0,
+          "total_exact": 57
+        },
+        "choice": {
+          "positive_exact": 0,
+          "negative_empty": 95,
+          "candidate_coverage": 100,
+          "chosen_none": 195,
+          "input_tokens": 29440,
+          "total_exact": 95
+        },
+        "conditions": {
+          "positive_exact": 48,
+          "negative_empty": 1,
+          "candidate_coverage": 100,
+          "chosen_none": 3,
+          "input_tokens": 61820,
+          "total_exact": 49
+        }
+      }
+    },
+    "calibration": {
+      "cases": 200,
+      "positive": 100,
+      "negative": 100,
+      "entities": 50,
+      "sections": {
+        "positive": {
+          "cases": 100,
+          "queries_sha256": "62e1d00ab3c607f31dac452964a7c2dadf329f4f1ab446def6683ecba6954d34",
+          "report_sha256": {
+            "fts5": "d49aedc6e35ecd9ba31ece13224f4cc6fc85168e8cd0d5fe471fe993484cb492",
+            "top1": "9089baf4a73cab71137426def59148bfa282830c5f92ade665a97c587c627daf",
+            "choice": "fa24e71e56931c5f49f3e67da0ae4c4c7ff0b4d72126b9fac759786c6bfc9d9e",
+            "conditions": "13574fc649e1f24ad8e8726a6f5f30b431aa49517c392159a7741d47f96ec997"
+          },
+          "same_hybrid_candidates_and_vectors": true,
+          "segments": {
+            "lexical_gap_onsite": {
+              "cases": 50,
+              "fts5_exact": 0,
+              "top1_exact": 29,
+              "choice_exact": 0,
+              "conditions_exact": 1
+            },
+            "lexical_gap_remote": {
+              "cases": 50,
+              "fts5_exact": 0,
+              "top1_exact": 27,
+              "choice_exact": 0,
+              "conditions_exact": 43
+            }
+          },
+          "methods": {
+            "fts5": {
+              "exact": 0,
+              "candidate_coverage": 0,
+              "chosen_none": 100,
+              "input_tokens": 0,
+              "latency_ms": {
+                "p50": 0.3983335009252187,
+                "p95": 0.4617747010343009
+              }
+            },
+            "top1": {
+              "exact": 56,
+              "candidate_coverage": 100,
+              "chosen_none": 0,
+              "input_tokens": 0,
+              "latency_ms": {
+                "p50": 13.179666002542945,
+                "p95": 14.441189897843286
+              }
+            },
+            "choice": {
+              "exact": 0,
+              "candidate_coverage": 100,
+              "chosen_none": 100,
+              "input_tokens": 14325,
+              "latency_ms": {
+                "p50": 40.016832997935126,
+                "p95": 44.549173196719494
+              }
+            },
+            "conditions": {
+              "exact": 44,
+              "candidate_coverage": 100,
+              "chosen_none": 3,
+              "input_tokens": 30180,
+              "latency_ms": {
+                "p50": 71.03152100171428,
+                "p95": 117.47094170095801
+              }
+            }
+          }
+        },
+        "negative": {
+          "cases": 100,
+          "queries_sha256": "73399bb31528e3a0b251b0dda2f132eb700b3212cb21cad919c42b0b160d2c7d",
+          "report_sha256": {
+            "fts5": "dfe6e2b8bb7c9a32e0f3f4a7687a8434fb328326d9a3a7f702760f9412f4adc6",
+            "top1": "82ec915cbc039ef77498373d6a99622bd5eed0ed505ae599f38578f999814ec5",
+            "choice": "0f2ee207b7085df40a307a9f6e86243c820bc9e8b8036e956cb63c7d325af583",
+            "conditions": "f3c29d8633a2800b361fe598d67600ded607219c2adf06f3d872a5313765a049"
+          },
+          "same_hybrid_candidates_and_vectors": true,
+          "segments": {
+            "lexical_gap_explicit_no_recall": {
+              "cases": 50,
+              "fts5_exact": 50,
+              "top1_exact": 0,
+              "choice_exact": 46,
+              "conditions_exact": 0
+            },
+            "lexical_gap_mode_unspecified": {
+              "cases": 50,
+              "fts5_exact": 50,
+              "top1_exact": 0,
+              "choice_exact": 50,
+              "conditions_exact": 2
+            }
+          },
+          "methods": {
+            "fts5": {
+              "exact": 100,
+              "candidate_coverage": 0,
+              "chosen_none": 100,
+              "input_tokens": 0,
+              "latency_ms": {
+                "p50": 0.5072709973319434,
+                "p95": 0.6140556470199954
+              }
+            },
+            "top1": {
+              "exact": 0,
+              "candidate_coverage": 0,
+              "chosen_none": 0,
+              "input_tokens": 0,
+              "latency_ms": {
+                "p50": 14.371708497492364,
+                "p95": 15.327660404363996
+              }
+            },
+            "choice": {
+              "exact": 96,
+              "candidate_coverage": 0,
+              "chosen_none": 96,
+              "input_tokens": 14995,
+              "latency_ms": {
+                "p50": 42.41281250142492,
+                "p95": 45.47609200162697
+              }
+            },
+            "conditions": {
+              "exact": 2,
+              "candidate_coverage": 0,
+              "chosen_none": 2,
+              "input_tokens": 31520,
+              "latency_ms": {
+                "p50": 71.34735450017615,
+                "p95": 75.65973960263364
+              }
+            }
+          }
+        }
+      },
+      "methods": {
+        "fts5": {
+          "positive_exact": 0,
+          "negative_empty": 100,
+          "candidate_coverage": 0,
+          "chosen_none": 200,
+          "input_tokens": 0,
+          "total_exact": 100
+        },
+        "top1": {
+          "positive_exact": 56,
+          "negative_empty": 0,
+          "candidate_coverage": 100,
+          "chosen_none": 0,
+          "input_tokens": 0,
+          "total_exact": 56
+        },
+        "choice": {
+          "positive_exact": 0,
+          "negative_empty": 96,
+          "candidate_coverage": 100,
+          "chosen_none": 196,
+          "input_tokens": 29320,
+          "total_exact": 96
+        },
+        "conditions": {
+          "positive_exact": 44,
+          "negative_empty": 2,
+          "candidate_coverage": 100,
+          "chosen_none": 5,
+          "input_tokens": 61700,
+          "total_exact": 46
+        }
+      }
+    }
+  },
+  "entity_overlap": 0
+}

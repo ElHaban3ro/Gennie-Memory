@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "kind": "v5_lexical_gap_local_execution",
+  "input_hashes": {
+    "database": "fae99c9d1c0d324c3dd713c308e4efd65e0c436cbbe374829c4990d8e38c9c8d",
+    "binary": "24652c759b8237ea679de8ffb1148d1528eab74fc87561a5e93c93fb774ad11b",
+    "runner": "fb4e7e90b5d84ee77290199115e4af8ed1474233eba82fb463a5e5e7e1ab46b7",
+    "embedding_batch": "32876aff22663720d15e6616b4b96cc0a62cc5eabd44f906e59cc00e781edff0"
+  },
+  "same_database_binary_embedding_batch_as_calibration_campaign": true,
+  "reports_sha256": {
+    "calibration-fts5-top1.json": "d49aedc6e35ecd9ba31ece13224f4cc6fc85168e8cd0d5fe471fe993484cb492",
+    "calibration-hybrid-laya-choice.json": "fa24e71e56931c5f49f3e67da0ae4c4c7ff0b4d72126b9fac759786c6bfc9d9e",
+    "calibration-hybrid-laya-conditions.json": "13574fc649e1f24ad8e8726a6f5f30b431aa49517c392159a7741d47f96ec997",
+    "calibration-hybrid-top1.json": "9089baf4a73cab71137426def59148bfa282830c5f92ade665a97c587c627daf",
+    "development-fts5-top1.json": "25f4d5f549dcc7b6cbbf772daefad13ccc927188a1898f5a26662319664da086",
+    "development-hybrid-laya-choice.json": "342506a0535b12ea965a36b5e551cccb9f63a958499fe3dc682c448d8aa5b478",
+    "development-hybrid-laya-conditions.json": "d0813f981c98dc8632e326e32c61aa257ec27439e0bd58f7aa862874a1235c2b",
+    "development-hybrid-top1.json": "16c8e94500c4fc26b26ccc63146316411d0db5618414c5345cf15e40964ce92d",
+    "negatives-calibration-fts5-top1.json": "dfe6e2b8bb7c9a32e0f3f4a7687a8434fb328326d9a3a7f702760f9412f4adc6",
+    "negatives-calibration-hybrid-laya-choice.json": "0f2ee207b7085df40a307a9f6e86243c820bc9e8b8036e956cb63c7d325af583",
+    "negatives-calibration-hybrid-laya-conditions.json": "f3c29d8633a2800b361fe598d67600ded607219c2adf06f3d872a5313765a049",
+    "negatives-calibration-hybrid-top1.json": "82ec915cbc039ef77498373d6a99622bd5eed0ed505ae599f38578f999814ec5",
+    "negatives-development-fts5-top1.json": "c159e2dd161ef614ffc97b07061f5fc4be42ed6f16ff08ed4540b0a963b67b1c",
+    "negatives-development-hybrid-laya-choice.json": "be64357c5564d2625667a870b674a2f550912550cf2294b974992910270098fa",
+    "negatives-development-hybrid-laya-conditions.json": "4de95035724df6fe5d0e3f8db5cedebf8f61744b32aa4db8d208f2eab2b80538",
+    "negatives-development-hybrid-top1.json": "336a6bde25d648e6924b895286a007716aa2c4f5a978b6f9826d1ebe16b9c52f"
+  },
+  "port": null,
+  "remote_provider_calls": 0
+}

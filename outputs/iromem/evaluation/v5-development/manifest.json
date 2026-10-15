@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "synthetic_only": true,
+  "benchmark_version": 5,
+  "benchmark_manifest": "../../../../tests/benchmark/v5/manifest.json",
+  "split": "development",
+  "sample_groups": {
+    "a": {
+      "queries": "sample-a.jsonl",
+      "reports": [
+        "a-top1.json",
+        "a-laya-choice.json",
+        "a-laya-pairwise.json",
+        "a-laya-pairwise-conditions.json",
+        "a-laya-conditions-choice.json",
+        "a-jev-two-cases.json",
+        "a-openai-two-cases.json"
+      ]
+    },
+    "b": {
+      "queries": "sample-b.jsonl",
+      "reports": [
+        "b-top1.json",
+        "b-laya-choice.json",
+        "b-laya-pairwise-conditions.json"
+      ]
+    },
+    "c": {
+      "queries": "sample-c.jsonl",
+      "reports": [
+        "c-top1.json",
+        "c-laya-pairwise-conditions.json"
+      ]
+    }
+  },
+  "files_sha256": {
+    "sample-a.jsonl": "c82e5c42d2043b3b6f15be0876983c43301b6c350ed1c759b83222dd533f5ff1",
+    "sample-b.jsonl": "d356982b80eefbec11746d901aee63adb77ea5b5bfc4254002822be10a3122ce",
+    "sample-c.jsonl": "e92dfcbabc1a37614a6614b3364d4a9dbbc4a64728927f50758cf188a93b836e",
+    "a-top1.json": "cf7e31eac98cee617e5f55952cadaebbf0402e9c2886ede98797d79f5add6925",
+    "a-laya-choice.json": "5e54118e36a323ea8412ab18c28e45314fe8c089a5bc93c06ccb88a313c093bf",
+    "a-laya-pairwise.json": "b4d080f553346d5c10abdde91dfbd756451ffe9374dded94305aa97668860ee9",
+    "a-laya-pairwise-conditions.json": "2d89baf0224672a3dcc3da47870b93e57042a90254a518888a818c356835057e",
+    "a-laya-conditions-choice.json": "20a86097b12ec650dd379736bd2305a19f9ed39a13df91b2a5c71440b9f59450",
+    "b-top1.json": "1dc1c78ce68d0a171f579f6235a491a5d1ff450a4f58ae5094c9f45402e21031",
+    "b-laya-choice.json": "9b964ca2a2da27a5a58e8e94e542e5657330cc41916ec1a337369e2dc770ffbd",
+    "b-laya-pairwise-conditions.json": "79183b5491e926b7eb2604f84b7b2d503c7c062ee7105a4562ae9ebda69b35b5",
+    "c-top1.json": "e1a12530a7c3d1723d14acac7693b7829aaec0d46e879a1bc57082225d13626b",
+    "c-laya-pairwise-conditions.json": "49ef5b8c49c03c08cb50d410dd2a4c765ab2398e2714545dc839142088414914",
+    "a-jev-two-cases.json": "f263c4f8fc498c92531f99c8035644b2995bd42eeb7dce7e110feea0ced61ecf",
+    "a-openai-two-cases.json": "a6de0d196d825220bd4b5e1e67a7d4a637c0074ae66423b31c5cd73e38331876"
+  }
+}

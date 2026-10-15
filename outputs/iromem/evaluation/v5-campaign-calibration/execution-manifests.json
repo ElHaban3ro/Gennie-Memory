@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "runs": [
+    {
+      "selector_label": "top1",
+      "journal_sha256": "99f75864fc33028868ede16d1ee2ae345e61d7e9d227eb83e1fbc3c322603046",
+      "journal_events": 1481,
+      "manifest": {
+        "version": 1,
+        "kind": "integrated_local_seed_campaign",
+        "split": "calibration",
+        "selector": "top1",
+        "retrieval": "hybrid",
+        "threshold": 0.5,
+        "require_mps": true,
+        "max_candidates": 4,
+        "queries_sha256": "e93b7a64d0083603423f3fa21042475c7a6738054bd25d14b1b4ed746e3209a5",
+        "database_sha256": "fae99c9d1c0d324c3dd713c308e4efd65e0c436cbbe374829c4990d8e38c9c8d",
+        "binary_sha256": "24652c759b8237ea679de8ffb1148d1528eab74fc87561a5e93c93fb774ad11b",
+        "runner_sha256": "fb4e7e90b5d84ee77290199115e4af8ed1474233eba82fb463a5e5e7e1ab46b7",
+        "embedding_batch_sha256": "32876aff22663720d15e6616b4b96cc0a62cc5eabd44f906e59cc00e781edff0",
+        "model": {
+          "weights_sha256": "9d628fd971b700382ac6f65920a86f149777b2e748e0c955fb3b19695aa8f204",
+          "tokenizer_sha256": "609d8f4c067cd3950f88594c5a802616cea245823836ef5848ee4fc40aab5b6f"
+        }
+      },
+      "case_ids_sha256": "aa8e9b9a2661e6f15b8a60aa1092f9b255aedb5db209fbf35dcdf72224076e21"
+    },
+    {
+      "selector_label": "laya-choice",
+      "journal_sha256": "1901a5355bdb3185728122cd0e388362cdc67dd0ce0ed7b05ee89f27b14aa0c5",
+      "journal_events": 1481,
+      "manifest": {
+        "version": 1,
+        "kind": "integrated_local_seed_campaign",
+        "split": "calibration",
+        "selector": "laya",
+        "retrieval": "hybrid",
+        "threshold": 0.5,
+        "require_mps": true,
+        "max_candidates": 4,
+        "queries_sha256": "e93b7a64d0083603423f3fa21042475c7a6738054bd25d14b1b4ed746e3209a5",
+        "database_sha256": "fae99c9d1c0d324c3dd713c308e4efd65e0c436cbbe374829c4990d8e38c9c8d",
+        "binary_sha256": "24652c759b8237ea679de8ffb1148d1528eab74fc87561a5e93c93fb774ad11b",
+        "runner_sha256": "fb4e7e90b5d84ee77290199115e4af8ed1474233eba82fb463a5e5e7e1ab46b7",
+        "embedding_batch_sha256": "32876aff22663720d15e6616b4b96cc0a62cc5eabd44f906e59cc00e781edff0",
+        "model": {
+          "weights_sha256": "9d628fd971b700382ac6f65920a86f149777b2e748e0c955fb3b19695aa8f204",
+          "tokenizer_sha256": "609d8f4c067cd3950f88594c5a802616cea245823836ef5848ee4fc40aab5b6f"
+        }
+      },
+      "case_ids_sha256": "aa8e9b9a2661e6f15b8a60aa1092f9b255aedb5db209fbf35dcdf72224076e21"
+    },
+    {
+      "selector_label": "laya-conditions",
+      "journal_sha256": "0c34516a8e96b04f2ef24b51798f48e9cfb03675c9199b4bc3e280ee4c86a9e6",
+      "journal_events": 1481,
+      "manifest": {
+        "version": 1,
+        "kind": "integrated_local_seed_campaign",
+        "split": "calibration",
+        "selector": "laya_pairwise_conditions",
+        "retrieval": "hybrid",
+        "threshold": 0.5,
+        "require_mps": true,
+        "max_candidates": 4,
+        "queries_sha256": "e93b7a64d0083603423f3fa21042475c7a6738054bd25d14b1b4ed746e3209a5",
+        "database_sha256": "fae99c9d1c0d324c3dd713c308e4efd65e0c436cbbe374829c4990d8e38c9c8d",
+        "binary_sha256": "24652c759b8237ea679de8ffb1148d1528eab74fc87561a5e93c93fb774ad11b",
+        "runner_sha256": "fb4e7e90b5d84ee77290199115e4af8ed1474233eba82fb463a5e5e7e1ab46b7",
+        "embedding_batch_sha256": "32876aff22663720d15e6616b4b96cc0a62cc5eabd44f906e59cc00e781edff0",
+        "model": {
+          "weights_sha256": "9d628fd971b700382ac6f65920a86f149777b2e748e0c955fb3b19695aa8f204",
+          "tokenizer_sha256": "609d8f4c067cd3950f88594c5a802616cea245823836ef5848ee4fc40aab5b6f"
+        }
+      },
+      "case_ids_sha256": "aa8e9b9a2661e6f15b8a60aa1092f9b255aedb5db209fbf35dcdf72224076e21"
+    }
+  ]
+}

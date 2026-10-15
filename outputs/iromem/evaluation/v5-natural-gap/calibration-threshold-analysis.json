@@ -1,0 +1,65 @@
+{
+  "kind": "exploratory_calibration_threshold_analysis",
+  "cases": 200,
+  "positive": 100,
+  "negative": 100,
+  "correct_positive_top_rank": 49,
+  "distinct_score_breakpoints": 146,
+  "fixed_thresholds": [
+    {
+      "threshold": 0.0,
+      "positive_exact": 49,
+      "negative_empty": 0,
+      "total_exact": 49
+    },
+    {
+      "threshold": 0.25,
+      "positive_exact": 49,
+      "negative_empty": 0,
+      "total_exact": 49
+    },
+    {
+      "threshold": 0.5,
+      "positive_exact": 49,
+      "negative_empty": 0,
+      "total_exact": 49
+    },
+    {
+      "threshold": 0.75,
+      "positive_exact": 31,
+      "negative_empty": 4,
+      "total_exact": 35
+    },
+    {
+      "threshold": 0.9,
+      "positive_exact": 4,
+      "negative_empty": 53,
+      "total_exact": 57
+    },
+    {
+      "threshold": 0.95,
+      "positive_exact": 1,
+      "negative_empty": 88,
+      "total_exact": 89
+    },
+    {
+      "threshold": 0.99,
+      "positive_exact": 0,
+      "negative_empty": 100,
+      "total_exact": 100
+    },
+    {
+      "threshold": 1.0,
+      "positive_exact": 0,
+      "negative_empty": 100,
+      "total_exact": 100
+    }
+  ],
+  "best_over_all_score_breakpoints": {
+    "threshold": 0.9743000000000002,
+    "positive_exact": 0,
+    "negative_empty": 100,
+    "total_exact": 100
+  },
+  "production_threshold_selected": false
+}

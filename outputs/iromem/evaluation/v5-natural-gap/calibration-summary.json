@@ -1,0 +1,236 @@
+{
+  "kind": "v5_calibration_local_seed_campaign",
+  "queries_sha256": "4aba0e19883c79e8df320dfef8ee08f2b8708111525b96e594e84f629bb35aa8",
+  "report_sha256": {
+    "integrated_hybrid_top1_seed_campaign": "42f0d325e3dd37b587d051f3a3c5a20bb0f7b30bf67f66e617508655e626aaa8",
+    "integrated_hybrid_laya_seed_campaign": "27019a7db1b9af4ea5d1d429e4310a2508196caeba660515ca2af4b734a7d41b",
+    "integrated_hybrid_laya_pairwise_conditions_seed_campaign": "51302b26abf613f1eab450f150432df523a2b4382fb112d694798e667a6939c2"
+  },
+  "cases": 200,
+  "segments": {
+    "natural_gap_explicit_no_recall": 50,
+    "natural_gap_mode_unspecified": 50,
+    "natural_gap_onsite": 50,
+    "natural_gap_remote": 50
+  },
+  "methods": {
+    "integrated_hybrid_top1_seed_campaign": {
+      "cases": 200,
+      "exact": 52,
+      "positive_exact": 52,
+      "negative_empty": 0,
+      "positive_missed": 0,
+      "positive_wrong_memory": 48,
+      "negative_false_memory": 100,
+      "candidate_coverage": 100,
+      "positive_fact_fidelity": 52,
+      "positive_condition_fidelity": 52,
+      "positive_source_fidelity": 52,
+      "input_tokens": 0,
+      "load_seconds": 1.7061777080016327,
+      "warmup_ms": 435.29670799762243,
+      "latency_ms": {
+        "total_ms": {
+          "p50": 13.373583002248779,
+          "p95": 15.266091349622002
+        },
+        "embedding_ms": {
+          "p50": 11.032708502170863,
+          "p95": 12.962510101715452
+        },
+        "search_roundtrip_ms": {
+          "p50": 1.1586040018300992,
+          "p95": 1.3295565495354815
+        },
+        "search_rust_ms": {
+          "p50": 0.9416455,
+          "p95": 1.0777773999999993
+        },
+        "choice_ms": {
+          "p50": 0.0,
+          "p95": 0.0
+        },
+        "compose_roundtrip_ms": {
+          "p50": 1.1196670020581223,
+          "p95": 1.2159521033026977
+        },
+        "compose_rust_ms": {
+          "p50": 0.9113125,
+          "p95": 0.9819496999999999
+        }
+      },
+      "total_ms_p99": 16.265947915235298,
+      "sum_case_seconds": 2.7222494080342585,
+      "segments": {
+        "natural_gap_explicit_no_recall": {
+          "cases": 50,
+          "exact": 0
+        },
+        "natural_gap_mode_unspecified": {
+          "cases": 50,
+          "exact": 0
+        },
+        "natural_gap_onsite": {
+          "cases": 50,
+          "exact": 36
+        },
+        "natural_gap_remote": {
+          "cases": 50,
+          "exact": 16
+        }
+      }
+    },
+    "integrated_hybrid_laya_seed_campaign": {
+      "cases": 200,
+      "exact": 94,
+      "positive_exact": 0,
+      "negative_empty": 94,
+      "positive_missed": 98,
+      "positive_wrong_memory": 2,
+      "negative_false_memory": 6,
+      "candidate_coverage": 100,
+      "positive_fact_fidelity": 0,
+      "positive_condition_fidelity": 0,
+      "positive_source_fidelity": 0,
+      "input_tokens": 30395,
+      "load_seconds": 1.7462150830033352,
+      "warmup_ms": 474.9205420012004,
+      "latency_ms": {
+        "total_ms": {
+          "p50": 42.011582998384256,
+          "p95": 45.5066464979609
+        },
+        "embedding_ms": {
+          "p50": 11.15712499813526,
+          "p95": 13.298829149789523
+        },
+        "search_roundtrip_ms": {
+          "p50": 1.220041998749366,
+          "p95": 1.3854124979843618
+        },
+        "search_rust_ms": {
+          "p50": 0.9962504999999999,
+          "p95": 1.1302672999999999
+        },
+        "choice_ms": {
+          "p50": 28.126812001573853,
+          "p95": 30.45425415293721
+        },
+        "compose_roundtrip_ms": {
+          "p50": 1.2174789990240242,
+          "p95": 1.3869940496078925
+        },
+        "compose_rust_ms": {
+          "p50": 1.0084374999999999,
+          "p95": 1.1500374999999996
+        }
+      },
+      "total_ms_p99": 48.785877423724735,
+      "sum_case_seconds": 8.481124386984447,
+      "segments": {
+        "natural_gap_explicit_no_recall": {
+          "cases": 50,
+          "exact": 50
+        },
+        "natural_gap_mode_unspecified": {
+          "cases": 50,
+          "exact": 44
+        },
+        "natural_gap_onsite": {
+          "cases": 50,
+          "exact": 0
+        },
+        "natural_gap_remote": {
+          "cases": 50,
+          "exact": 0
+        }
+      }
+    },
+    "integrated_hybrid_laya_pairwise_conditions_seed_campaign": {
+      "cases": 200,
+      "exact": 49,
+      "positive_exact": 49,
+      "negative_empty": 0,
+      "positive_missed": 1,
+      "positive_wrong_memory": 50,
+      "negative_false_memory": 100,
+      "candidate_coverage": 100,
+      "positive_fact_fidelity": 49,
+      "positive_condition_fidelity": 49,
+      "positive_source_fidelity": 49,
+      "input_tokens": 63850,
+      "load_seconds": 1.774891333996493,
+      "warmup_ms": 473.20641699479893,
+      "latency_ms": {
+        "total_ms": {
+          "p50": 72.18062500396627,
+          "p95": 77.3274711536942
+        },
+        "embedding_ms": {
+          "p50": 11.748229000659194,
+          "p95": 13.79586394468788
+        },
+        "search_roundtrip_ms": {
+          "p50": 1.3106869992043357,
+          "p95": 1.411381255456945
+        },
+        "search_rust_ms": {
+          "p50": 1.067917,
+          "p95": 1.16455865
+        },
+        "choice_ms": {
+          "p50": 57.2814164988813,
+          "p95": 62.1571000025142
+        },
+        "compose_roundtrip_ms": {
+          "p50": 1.3368539985094685,
+          "p95": 1.4626038482674628
+        },
+        "compose_rust_ms": {
+          "p50": 1.0983960000000002,
+          "p95": 1.1916899
+        }
+      },
+      "total_ms_p99": 79.56589208188234,
+      "sum_case_seconds": 14.538746620070015,
+      "segments": {
+        "natural_gap_explicit_no_recall": {
+          "cases": 50,
+          "exact": 0
+        },
+        "natural_gap_mode_unspecified": {
+          "cases": 50,
+          "exact": 0
+        },
+        "natural_gap_onsite": {
+          "cases": 50,
+          "exact": 4
+        },
+        "natural_gap_remote": {
+          "cases": 50,
+          "exact": 45
+        }
+      }
+    }
+  },
+  "paired": {
+    "integrated_hybrid_top1_seed_campaign__vs__integrated_hybrid_laya_seed_campaign": {
+      "both": 0,
+      "left_only": 52,
+      "right_only": 94,
+      "neither": 54
+    },
+    "integrated_hybrid_top1_seed_campaign__vs__integrated_hybrid_laya_pairwise_conditions_seed_campaign": {
+      "both": 14,
+      "left_only": 38,
+      "right_only": 35,
+      "neither": 113
+    },
+    "integrated_hybrid_laya_seed_campaign__vs__integrated_hybrid_laya_pairwise_conditions_seed_campaign": {
+      "both": 0,
+      "left_only": 94,
+      "right_only": 49,
+      "neither": 57
+    }
+  }
+}

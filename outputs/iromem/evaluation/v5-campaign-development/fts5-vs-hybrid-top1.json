@@ -1,0 +1,98 @@
+{
+  "kind": "v5_top1_retrieval_ablation",
+  "split": "development",
+  "cases": 1600,
+  "queries_sha256": "cfcae2f21348a1b640e4b4ff00c7a278a8caf012585eed55132dd63352b35137",
+  "report_sha256": {
+    "fts5": "43ba4eea3456815dc13a17f76841679acd699284805c7a85d7da822853d1bced",
+    "hybrid": "26d5d76ce7ccdb2cbd3a549a0c34eb8451c65a700cba2820f65220d6a12c03d9"
+  },
+  "different_candidate_order": 0,
+  "different_candidate_content": 0,
+  "different_choice": 0,
+  "different_exact": 0,
+  "methods": {
+    "fts5": {
+      "exact": 919,
+      "positive_exact": 719,
+      "negative_empty": 200,
+      "candidate_coverage": 1000,
+      "latency_ms": {
+        "p50": 5.496500001754612,
+        "p95": 11.613644398676113
+      }
+    },
+    "hybrid": {
+      "exact": 919,
+      "positive_exact": 719,
+      "negative_empty": 200,
+      "candidate_coverage": 1000,
+      "latency_ms": {
+        "p50": 20.03733349920367,
+        "p95": 37.8974812450906
+      }
+    }
+  },
+  "segments": {
+    "absent_entity": {
+      "cases": 100,
+      "fts5_exact": 100,
+      "hybrid_exact": 100
+    },
+    "alias": {
+      "cases": 200,
+      "fts5_exact": 160,
+      "hybrid_exact": 160
+    },
+    "code_switch": {
+      "cases": 100,
+      "fts5_exact": 65,
+      "hybrid_exact": 65
+    },
+    "direct": {
+      "cases": 250,
+      "fts5_exact": 203,
+      "hybrid_exact": 203
+    },
+    "english": {
+      "cases": 200,
+      "fts5_exact": 102,
+      "hybrid_exact": 102
+    },
+    "explicit_no_recall": {
+      "cases": 100,
+      "fts5_exact": 0,
+      "hybrid_exact": 0
+    },
+    "indirect": {
+      "cases": 150,
+      "fts5_exact": 130,
+      "hybrid_exact": 130
+    },
+    "long_context": {
+      "cases": 100,
+      "fts5_exact": 59,
+      "hybrid_exact": 59
+    },
+    "mode_unknown": {
+      "cases": 100,
+      "fts5_exact": 0,
+      "hybrid_exact": 0
+    },
+    "mode_unspecified": {
+      "cases": 100,
+      "fts5_exact": 0,
+      "hybrid_exact": 0
+    },
+    "wrong_scope": {
+      "cases": 100,
+      "fts5_exact": 100,
+      "hybrid_exact": 100
+    },
+    "wrong_task": {
+      "cases": 100,
+      "fts5_exact": 0,
+      "hybrid_exact": 0
+    }
+  }
+}
