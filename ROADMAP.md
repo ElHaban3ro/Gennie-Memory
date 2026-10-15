@@ -1,0 +1,112 @@
+# Roadmap de iROMEM
+
+Estado: propuesta de ejecución corregida con las decisiones del usuario, 2026-10-15. Fuente funcional: [README.md](README.md), diseño v0.1 del producto completo. Este documento delimita el experimento inicial; ninguna casilla marcada como pendiente representa funcionalidad implementada ni resultados medidos.
+
+## Meta y alcance del MVP
+
+El MVP correrá **en esta Mac**, sin hook ni integración inicial con Codex. Su propósito inmediato es comprobar si iROMEM resuelve bien los **recuerdos semilla**. Usará un corpus sintético generado para el experimento, con etiquetas de relevancia y resultados esperados. Para cada consulta aplicará filtros estructurados, SQLite FTS5/BM25, embeddings, fusión de rankings y un clasificador configurable. Compondrá la semilla de forma determinista a partir de síntesis existentes, con referencia, revisión, ámbito, vigencia y estado. No inventará ni guardará afirmaciones durante la recuperación.
+
+El MVP incluirá una evaluación reproducible y extensa que compare recuperación textual, híbrida sin clasificador y recuperación completa con **Laya**, **Jev**, **OpenAI Decisions** y modelos servidos por **OpenRouter**. Laya reutilizará, en modo lectura, el modelo ya descargado por SOC en `/Users/fer/Library/Application Support/AIModels`; el runtime y la integridad del snapshot se comprobarán antes de inferir. El usuario permite datos reales en los proveedores remotos, pero **todas las pruebas de este MVP usarán datos sintéticos**. El objetivo es medir calidad de selección, latencia, tokens y coste total del recorrido de recuperación.
+
+La especificación propone 0,75 como umbral inicial, 40 candidatos por buscador, 20 para clasificación, 8 recuerdos y 800 tokens de semilla. Son parámetros de partida configurables, **no criterios de éxito ya demostrados**. El plazo de 1.500 ms del hook se evaluará cuando exista ese hook; el experimento actual medirá latencia de recuperación sin presentarla como latencia de integración. Las puntuaciones de proveedores distintos se calibrarán por separado; no se tratarán como probabilidades equivalentes ni se sumarán con BM25 o coseno.
+
+### Fuera de la primera decisión de viabilidad
+
+- Hook, integración con Codex, servidor MCP y frontend. El primer recorrido se demostrará localmente por CLI y por el banco de evaluación; Codex será un host posterior.
+- Índice vectorial aproximado, entrenamiento o ajuste fino de modelos. Se empezará por coseno exacto sobre el conjunto autorizado y se medirá su límite.
+- Despliegue público, sincronización entre equipos y garantías de borrado forense. Requieren decisiones propias.
+- Dar por hecho que una semilla más pequeña ahorra tiempo al agente principal: sin integrarlo se medirán tamaño de contexto, latencia y coste de recuperación, y se reportará como hipótesis cualquier ahorro posterior.
+
+## Secuencia de trabajo
+
+### M0 — Contrato del experimento local
+
+- [x] Fijar nombre técnico `iromem`, ejecución inicial en esta Mac, corpus sintético y ausencia de hook en el MVP.
+- [x] Identificar y verificar en modo lectura el snapshot multilingüe de Laya bajo la caché de SOC; determinar el runtime compatible sin alterar ni volver a descargar los archivos compartidos. Se cargó con Laya 0.3.5; el entorno restringido expuso CPU y la prueba autorizada fuera de él usó MPS.
+- [ ] Tratar **Jev** y OpenAI **Decisions** como proveedores de decisiones tipadas y OpenRouter como proveedor de modelos con salida estructurada; no asumir que comparten formato, latencia o semántica de puntuación. Verificar modelo, versión, disponibilidad, precio y límites antes de incorporarlos.
+- [x] Limitar el corpus de pruebas a datos sintéticos generados para iROMEM. La autorización general para enviar datos reales a terceros no se usará en esta campaña.
+- [x] Definir identidades y ámbitos **simulados** para ejercitar los filtros de recuperación; registrar solamente nombres de variables de credenciales, nunca claves en fixtures o resultados.
+- [ ] Congelar un contrato v1 de consulta, resultado, `coverage`, degradación y trazas de evaluación basado en README §4 y §9. Resolver explícitamente cómo representar `reason` cuando un proveedor de decisiones tipadas no entregue una justificación textual; no fabricar explicaciones.
+- [ ] Separar corpus de desarrollo, calibración y prueba final. Fijar antes del benchmark los indicadores, umbrales de aceptación, presupuesto de llamadas y tamaño de la campaña; mantener una prueba pequeña y local para el ciclo de desarrollo.
+
+**Salida:** decisiones registradas en `.creation/decisions.md`, contrato de evaluación versionado y matriz de proveedores con capacidades comprobadas. No se implementará un adaptador a una API supuesta.
+
+### M1 — Núcleo Rust y corpus consultable
+
+- [x] Crear el workspace Rust a partir de `.creation/`, con un núcleo de recuperación y SQLite compartido por las herramientas locales. Definir módulos por responsabilidad real y un registro explícito; no generar módulos vacíos del ejemplo de CreationTool.
+- [x] Revisar [schema-v1.sql](outputs/iromem/schema-v1.sql) y preparar el esquema mínimo versionado que necesita el experimento: memoria, revisión, ámbito simulado, proyección textual y vectores. Las migraciones 1 y 2 implementan ese mínimo; el esquema de producto completo sigue siendo referencia. La [validación adjunta](outputs/iromem/validation.json) comprueba fragmentos del diseño, no el núcleo Rust.
+- [x] Implementar un cargador determinista de fixtures sintéticos con texto, síntesis, entidad, ámbito, revisión, condiciones y fuente simulada. La migración 4 conserva condiciones y fuente **declarada** por revisión; la verificación externa de procedencia pertenece al producto completo.
+- [ ] Implementar filtros por actor y ámbito simulados, entidad, tipo, revisión y tiempo **antes** de limitar candidatos; comprobar que no se filtran memorias ajenas en la salida experimental. Ya funcionan ámbito, `entity_id` opcional, revisión, estado y tiempo en FTS5 y semántica; faltan actor, tipo y resolución real de entidad.
+- [ ] Implementar FTS5 con `unicode61 remove_diacritics 2`, frases escapadas y parámetros SQL, BM25 1,0/1,5 como configuración evaluable, deduplicación por memoria/revisión y estados de cobertura.
+
+**Salida:** corpus sintético reproducible y búsqueda estructurada/textual. Pruebas: separación de ámbitos simulados, FTS con sintaxis hostil, historial y revisión vigente. Ningún vector antiguo puede pasar por la revisión actual.
+
+### M2 — Recuperación semántica reproducible
+
+- [ ] Crear un perfil de embeddings versionado e independiente del clasificador. Evaluar el perfil propuesto `intfloat/multilingual-e5-small` con artefacto local, tokenizer, hash, runtime, procedimiento, dimensiones y prefijos registrados; comprobar licencia, compatibilidad y rendimiento del runtime antes de fijar dependencias.
+- [ ] Fragmentar original y síntesis por tokens sin truncamiento silencioso; registrar límites y hashes. Validar dimensión, finitud, norma y formato del vector. Asociar cada fragmento a memoria, revisión y `space_id` inmutable.
+- [ ] Precalcular y conservar embeddings de fixtures con perfil y revisión identificables; publicar únicamente conjuntos completos y marcar fallos o cobertura parcial. La cola persistente con leases y reintentos del producto completo se abordará después del experimento.
+- [ ] Buscar por coseno exacto tras el filtro de autorización y vigencia. El coseno, filtros y cobertura parcial ya funcionan en Rust; faltan fragmentos, plazos, escalado medido y activación de espacios completos.
+
+**Salida:** búsqueda híbrida estructurada + FTS5 + semántica con resultados por memoria/revisión. Pruebas: texto largo, cambio de modelo/dimensión, modelo caído, vector de revisión antigua y presupuesto de tiempo.
+
+### M3 — Clasificadores intercambiables y composición de semilla
+
+- [ ] Definir una interfaz interna de valoración por lote para los candidatos autorizados: identificador/revisión de entrada, relevancia, aplicabilidad, negativa o fallo y metadatos de consumo. Validar que la salida cubra exactamente los candidatos enviados y que no contenga identificadores o puntuaciones inválidas.
+- [ ] Crear adaptadores separados para Laya, un modelo por OpenRouter, Jev y OpenAI Decisions. Cada adaptador declara capacidades reales, versión, tokenizer o método de conteo, límites, plazo, formato y tratamiento de rechazos. Las salidas tipadas se convierten al contrato interno sin inventar `reason` ni prometer JSON libre cuando no lo ofrecen.
+- [ ] Fusionar rankings FTS5 y semántico con RRF; aplicar el clasificador sobre candidatos acotados y un umbral calibrado por perfil. Mantener índice, clasificador y modelo de embeddings configurables por separado.
+- [ ] Implementar el flujo local equivalente a `mem_search` y `mem_recall`: selección dentro de ámbitos simulados, presupuesto de entrada, clasificación, composición determinista de semilla completa y trazas de `complete`, `degraded` o `failed`. Ante caída del clasificador, exponer candidatos no clasificados sin fabricar una semilla fiable. Ante caída semántica, permitir clasificación textual con degradación explícita.
+- [ ] Exponer el flujo por CLI y por el runner del banco. No construir hook ni servidor MCP en este hito; una semilla vacía no demostrará por sí sola ausencia de recuerdos.
+
+Avance parcial: `session` expone búsqueda y composición en una conexión local persistente por JSONL; `evaluate_pipeline.py` encadena FTS5 o búsqueda híbrida, Laya, top-1, Jev u OpenAI Decisions y semilla para casos sintéticos v5. Un fallo del proveedor produce semilla degradada. Se completaron tres recorridos locales híbridos de 1.600 casos en MPS sobre las 1.000 formas positivas y 600 controles: top‑1 acertó 919/1.600, Laya `choice` 704/1.600 y Laya binario condicionado 694/1.600. Los resultados por segmento y sus límites están en el [informe local](outputs/iromem/evaluation/v5-campaign-development/README.md). La [campaña remota real](outputs/iromem/evaluation/v5-campaign-remote/README.md) completó 2.800 llamadas sobre los mismos candidatos y compuso 1.600 semillas por modelo: Jev acertó 1.570/1.600 y OpenAI 1.518/1.600, incluidos ocho fallos HTTP. Faltan un perfil de embeddings independiente, contratos internos de proveedor y presupuesto de semilla.
+
+Diagnóstico local: en los mismos 60 casos híbridos, las variantes Laya `choice` y `noul` con y sin condición explícita intercambiaron positivos recuperados por falsos recuerdos negativos; ninguna mejoró la exactitud total frente a top-1. Dos muestras adicionales de 60 consultas, la última sin entidades compartidas, mantuvieron el intercambio. La campaña posterior de 1.600 casos confirmó que `choice` se abstiene con frecuencia ante positivos y `noul` condicionado acepta 400/600 negativos. Ningún umbral sobre las puntuaciones binarias ya guardadas supera los 807/1.600 exactos en desarrollo, frente a 919/1.600 de top‑1. Las instrucciones no están calibradas ni validadas en la partición final. Ver [pilotos](docs/evaluation/pilot-2026-10-15.md) y [análisis de errores](docs/evaluation/error-analysis-v5.md).
+
+Calibración local: se ejecutaron los mismos tres selectores sobre [1.480 casos de entidades separadas](outputs/iromem/evaluation/v5-campaign-calibration/README.md), con las 1.000 formas positivas y 480 controles. Top‑1 logró 861 semillas exactas, Laya `choice` 602 y Laya binario condicionado 616. El mejor umbral exploratorio del binario llegó a 733/1.480, aún debajo de top‑1. Persisten los fallos de aplicabilidad y la omisión de positivos; ninguna variante queda aprobada para producción. `final` sigue reservado.
+
+**Salida:** una consulta sintética produce semilla trazable y el mismo caso se puede ejecutar con cualquier adaptador disponible. Pruebas: filtros antes de llamar al proveedor, formatos inválidos, omisiones, rechazos, timeouts, fallos parciales, presupuesto de tokens y semilla que conserva condiciones esenciales.
+
+### M4 — Banco de pruebas grande, reproducible y adversarial
+
+- [x] Crear generadores y manifiestos versionados de escenarios. v1 conserva 10.800 consultas; v2 añade 41.600 consultas y 1.000 formulaciones componibles, con valores variados por tarea para impedir acertar por patrón fijo. v3 aporta identidad de entidad simulada; v4 añade tres recuerdos activos por entidad con IDs opacos. La campaña final, su presupuesto y su duración siguen pendientes.
+- [ ] Cubrir preguntas directas, paráfrasis, multilingüismo, frases y diacríticos, recuerdos largos, entidades homónimas, preferencias condicionadas, fechas y revisiones, contradicciones, fuentes inciertas, duplicados, permisos cruzados, datos sensibles, corpus vacío, modelos caídos y degradación parcial. v5 añade reglas condicionadas remota/presencial, fuentes sintéticas declaradas, revisiones corregidas y preguntas sin modalidad decidida; los otros escenarios aún faltan.
+- [ ] Etiquetar por caso recuerdos relevantes, aplicabilidad, respuesta correcta, fuentes y errores prohibidos. Mantener procedencia de las etiquetas y revisión humana de una muestra; las etiquetas generadas por un modelo no serán verdad de referencia sin control.
+- [ ] Ejecutar las mismas consultas y corpus en variantes: sin recuperación, FTS5 sola, estructurada + FTS5, híbrida sin clasificador y pipeline completo con cada proveedor. Añadir ablaciones del filtro estructurado, embeddings, RRF y umbral para atribuir el efecto de cada componente.
+- [x] Medir una primera ablación de búsqueda en top‑1: [filtros estructurados + FTS5 frente a híbrida](docs/evaluation/retrieval-ablation-v5.md) sobre 1.600 casos de desarrollo y 1.480 de calibración. En este corpus ambas rutas produjeron exactamente los mismos candidatos y semillas, con menor latencia observada para FTS5. Un [sondeo adicional equilibrado de 400 preguntas sin coincidencia textual](outputs/iromem/evaluation/v5-lexical-gap/README.md) mostró cobertura 0/200 para FTS5 y 200/200 para híbrida en positivos, pero un fuerte intercambio entre positivos correctos y falsos recuerdos negativos: top‑1 113/200 y 0/200, Laya `choice` 0/200 y 191/200, Laya condicionado 92/200 y 3/200. Faltan preguntas humanas y las demás ablaciones enumeradas arriba.
+- [x] Repetir el contraste con [400 peticiones sintéticas completas](outputs/iromem/evaluation/v5-natural-gap/README.md), manteniendo entidades separadas y ausencia de coincidencias FTS5. La búsqueda híbrida recuperó 200/200 positivos entre candidatos; top‑1 acertó 104/200 positivos y 0/200 negativos, Laya `choice` 2/200 y 188/200, y Laya condicionado 99/200 y 0/200. Son 40 plantillas en inglés, no una muestra humana; la política final sigue pendiente.
+- [x] Barrer las puntuaciones binarias ya guardadas del sondeo de peticiones completas en desarrollo y calibración. El mejor total por partición fue 100/200 al abstenerse en todos los casos; elevar el umbral no conserva positivos suficientes. No se seleccionó umbral de producción. Ver [resultados](outputs/iromem/evaluation/v5-natural-gap/README.md).
+- [x] Ejecutar la [comparación remota principal](outputs/iromem/evaluation/v5-campaign-remote/README.md) sobre 1.600 casos sintéticos con candidatos congelados, 2.800 llamadas, coste acotado, fallos explícitos y semillas recompuestas y verificadas. Jev logró 1.000/1.000 positivos y 570/600 negativos; OpenAI 992/1.000 y 526/600.
+- [x] Repetir ambos proveedores en las [400 peticiones completas sin coincidencia FTS5](outputs/iromem/evaluation/v5-natural-gap-remote/README.md), con entidades disjuntas entre desarrollo y calibración y la misma instrucción. Jev logró 147/200 positivos y 200/200 negativos; OpenAI 69/200 y 199/200. La diferencia con el corpus principal impide declarar una política final.
+- [ ] Separar pruebas del núcleo (deterministas), integración con Laya y evaluación remota. Usar exclusivamente fixtures sintéticos; registrar fallos y omisiones sin convertirlos en aciertos.
+
+**Salida:** suite versionada con etiquetas auditables, corridas repetibles y reporte por segmento de datos. La campaña de gran tamaño es un experimento explícito, no parte de un test obligatorio de cada cambio.
+
+### M5 — Medición y decisión de viabilidad del MVP
+
+- [x] Publicar una [lectura provisional de viabilidad](docs/evaluation/viability-interim-v5.md) con resultados locales y remotos, intercambio entre positivos y negativos, límites de los datos y trabajo pendiente. No constituye la decisión final del MVP.
+- [ ] Medir recall y precisión de recuerdos útiles, contexto irrelevante, calidad y fidelidad de la semilla frente a las etiquetas, contradicciones mal presentadas, cruces indebidos entre ámbitos simulados y tasa de recuperación degradada o fallida.
+- [ ] Medir latencia local de recuperación (p50/p95/p99), tokens de clasificación y de semilla, coste remoto, CPU, RAM y coste de almacenamiento e indexación. Separar arranque en frío y caliente, y distinguir coste por consulta de mantenimiento continuado. No atribuir ahorro de respuesta de Codex a un hook que todavía no existe.
+- [ ] Calibrar umbrales en el conjunto de calibración y publicar una sola evaluación final en el conjunto reservado. Comparar métodos por calidad bajo el mismo presupuesto de tiempo y por coste total a calidad comparable; reportar intervalos de confianza y errores por segmento.
+- [ ] Decidir con el usuario si la calidad y el ahorro neto justifican seguir, qué proveedor conviene por entorno y qué casos deben quedarse en modo local o degradado. Documentar limitaciones de hardware, tarifas y datos permitidos junto a cada resultado.
+
+**Cierre del MVP:** núcleo local y runner ejecutan el recorrido de recuperación y composición; cada método e integración disponible tiene pruebas de comportamiento; se puede repetir el benchmark sintético; el informe dice en qué casos iROMEM mejora, empeora o no cambia suficientemente la recuperación. No se declara ahorro de tiempo del agente principal sin probar una integración posterior.
+
+## Después del MVP
+
+1. Integrar con Codex mediante MCP y, si se decide, un hook; medir entonces el efecto real sobre la respuesta del agente y el plazo de 1.500 ms propuesto en README.
+2. Completar el contrato de escritura y reconciliación del README §2 y §5: `mem_write`, `entity_resolve`, huella, clasificación de relaciones, propuestas, `mem_resolve`, confirmación y auditoría de evidencia.
+3. Completar ciclo de vida del README §6–8: cola persistente de embeddings, revisión de vigencia, `mem_review_list`, retirada, restauración, borrado del almacén activo, cancelación de trabajos y continuidad tras compactación.
+4. Endurecer la integración: observabilidad, migración entre perfiles, respaldo y recuperación, instalación/documentación y otras plataformas. Añadir búsqueda vectorial aproximada solo si el coseno exacto incumple un objetivo medido.
+
+## Riesgos y decisiones abiertas
+
+| Tema | Resolución necesaria antes de implementarlo |
+| --- | --- |
+| Jev | Nombre confirmado por el usuario; verificar cuenta, versión y API antes de integrar. [Documentación de TypeSafe](https://api.typesafe.ai/redoc). |
+| OpenAI Decisions | Verificar condiciones y modelo vigente al integrar; la [API Decisions](https://developers.openai.com/api/reference/resources/decisions/methods/create) responde preguntas tipadas (`predicate`, `choice`, `score`) y puede rechazar una pregunta. Su puntuación exige calibración para relevancia, y `reason` puede no existir. |
+| OpenRouter | Elegir un modelo compatible con salida estructurada y validar la respuesta de todos modos; la [documentación de OpenRouter](https://openrouter.ai/docs/guides/features/structured-outputs) limita esta función a modelos compatibles. |
+| Laya | Verificar el snapshot observado en la caché de SOC, su interfaz y su runtime en esta Mac; no alterar el modelo compartido. Mantener su función de clasificación separada del modelo de embeddings. |
+| Datos de prueba | El corpus del MVP será sintético; el permiso para enviar datos reales no convierte datos reales en fixtures ni autoriza incorporarlos a reportes. |
+| Escala y coste | El tamaño de corpus, concurrencia, presupuesto de llamadas y duración de la campaña determinan si la búsqueda exacta es viable; el plazo del hook se medirá después. |
+
+Las versiones de dependencias y avisos de seguridad se comprobarán cuando se elijan e incorporen al workspace. `origin` está configurado con `git@github.com:ElHaban3ro/iROMEM.git`; no hay commit ni push autorizados.
