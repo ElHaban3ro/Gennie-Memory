@@ -1,0 +1,40 @@
+[
+  {
+    "id": "synthetic_meeting_remote",
+    "scope_kind": "project",
+    "scope_id": "synthetic_meetings",
+    "entity_id": "project_synthetic_meetings",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "En reuniones remotas de Proyecto Sintético, enviar la agenda un día antes.",
+    "summary": "Si la reunión de Proyecto Sintético es remota, enviar la agenda un día antes.",
+    "conditions": "Solo para reuniones remotas",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-guide@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "synthetic_meeting_onsite",
+    "scope_kind": "project",
+    "scope_id": "synthetic_meetings",
+    "entity_id": "project_synthetic_meetings",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "En reuniones presenciales de Proyecto Sintético, imprimir la agenda al llegar.",
+    "summary": "Si la reunión de Proyecto Sintético es presencial, imprimir la agenda al llegar.",
+    "conditions": "Solo para reuniones presenciales",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-guide@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  }
+]

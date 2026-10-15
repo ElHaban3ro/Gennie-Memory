@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "synthetic": true,
+  "generator": "scripts/generate_benchmark.py",
+  "entity_count": 400,
+  "fixture_revision_count": 880,
+  "unique_memories": 840,
+  "query_count": 10800,
+  "positive_queries": 10000,
+  "negative_queries": 800,
+  "as_of": "2026-10-15T12:00:00.000Z",
+  "partitions": {
+    "development": 6264,
+    "calibration": 2457,
+    "final": 2079
+  },
+  "files": {
+    "corpus.json": "54d284c81064a413122eca4f65bceaa5d307ae5d4625c3c6a4aecaaf1cbc11c7",
+    "queries.jsonl": "bedc18b03f78981cc3b1e30591ba3ea359448980d3277b72e8da8b7270119d70"
+  }
+}

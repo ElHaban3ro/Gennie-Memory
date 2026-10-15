@@ -1,0 +1,68 @@
+{
+  "version": 1,
+  "kind": "v5_natural_lexical_gap_probe",
+  "cases_per_split": 200,
+  "positive_per_split": 100,
+  "negative_per_split": 100,
+  "source_sha256": {
+    "development.jsonl": "7d1b3cb18fc31a48834e934cc6002e283ad3cac7e70cc1c87a260227ed085790",
+    "calibration.jsonl": "62e1d00ab3c607f31dac452964a7c2dadf329f4f1ab446def6683ecba6954d34",
+    "negatives-development.jsonl": "57c72f8d484660afbd016066c6de8bf2e3ddddb229b0113d68975b7f69b00584",
+    "negatives-calibration.jsonl": "73399bb31528e3a0b251b0dda2f132eb700b3212cb21cad919c42b0b160d2c7d"
+  },
+  "case_sha256": {
+    "development": "5aecaa964879f27be05b679c7d0ad0cf3e1a0329dbb0235c0eabffcf73d00e8a",
+    "calibration": "4aba0e19883c79e8df320dfef8ee08f2b8708111525b96e594e84f629bb35aa8"
+  },
+  "label_provenance": "Derived from v5 deterministic labels via the lexical-gap probe; natural English paraphrases authored for this probe",
+  "prompts": {
+    "lexical_gap_remote": [
+      "For an upcoming video call, which saved preparation rule should I follow?",
+      "Before a webcam session with this team, remind me of the established setup preference.",
+      "I am joining by video link. What standing preparation instruction applies?",
+      "During an online gathering, what prior working preference should guide my setup?",
+      "I am planning a teleconference. Which saved instruction is relevant?",
+      "For a camera based discussion, what established preparation habit matters?",
+      "We will connect through screens. Which retained setup rule should I use?",
+      "Ahead of a virtual team session, remind me what preparation was agreed.",
+      "What saved guidance applies when everyone joins through a video link?",
+      "I will host an online group call. Which existing setup preference applies?"
+    ],
+    "lexical_gap_onsite": [
+      "For our next face to face gathering, which saved preparation rule applies?",
+      "When everyone is in the same room, what established setup preference should I recall?",
+      "Before an in person session, remind me of the relevant working instruction.",
+      "I am planning an onsite gathering. What prior rule should guide the opening?",
+      "At a physical group session, which stored preparation preference matters?",
+      "What saved guidance applies when the whole team shares one room?",
+      "We will gather around a table. Which existing setup rule should I follow?",
+      "Ahead of a face to face team session, remind me what preparation was agreed.",
+      "For an in person workshop, which retained working preference applies?",
+      "I will host everyone at the office. What standing setup instruction matters?"
+    ],
+    "lexical_gap_mode_unspecified": [
+      "I have not chosen between a video call and being in the same room. Which conditional rule applies now?",
+      "The format is undecided: webcam or face to face. Should any stored setup preference be used yet?",
+      "We might connect online or meet at the office. Which saved instruction is applicable before deciding?",
+      "No channel has been selected. Can you already apply either preparation rule?",
+      "The team could gather physically or through screens. What guidance applies while that remains open?",
+      "I have two possible formats but have selected neither. Is any conditional setup note valid now?",
+      "Before choosing virtual versus onsite, which existing preparation preference should be followed?",
+      "Whether we use a camera link or one room is still unknown. Does a specific rule apply?",
+      "The meeting format is still pending. Should you recall either conditional instruction?",
+      "We have not decided how to gather. Is there an applicable saved setup rule already?"
+    ],
+    "lexical_gap_explicit_no_recall": [
+      "Please ignore saved memories for this reply and write a neutral sentence.",
+      "Do not consult stored preferences; answer only from my current message.",
+      "Leave prior notes aside for now. Give a generic response without recalling them.",
+      "For this turn, skip memory lookup and respond without archived guidance.",
+      "I explicitly do not want saved instructions used in your next answer.",
+      "Set aside retained context and write only a neutral reply.",
+      "Please avoid all prior project notes while answering this request.",
+      "Answer without retrieving anything previously stored about this work.",
+      "Do not bring earlier preferences into the response I am requesting now.",
+      "Ignore historical context; produce a short general sentence instead."
+    ]
+  }
+}

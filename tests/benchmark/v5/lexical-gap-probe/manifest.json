@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "kind": "v5_lexical_gap_paraphrase_probe",
+  "entities_per_split": 50,
+  "cases_per_split": 100,
+  "source_sha256": {
+    "development": "cfcae2f21348a1b640e4b4ff00c7a278a8caf012585eed55132dd63352b35137",
+    "calibration": "e93b7a64d0083603423f3fa21042475c7a6738054bd25d14b1b4ed746e3209a5"
+  },
+  "case_sha256": {
+    "development": "7d1b3cb18fc31a48834e934cc6002e283ad3cac7e70cc1c87a260227ed085790",
+    "calibration": "62e1d00ab3c607f31dac452964a7c2dadf329f4f1ab446def6683ecba6954d34"
+  },
+  "label_provenance": "Copied from a positive v5 source case by entity and condition; paraphrases authored for this probe",
+  "query_phrases": {
+    "remote": [
+      "videollamada webcam auriculares",
+      "teleconferencia pantalla enlace",
+      "virtual huddle webcam headset",
+      "video call screen sharing",
+      "online sync camera headset",
+      "audio link virtual gathering",
+      "webcam session digital link",
+      "telepresence camera screen",
+      "videoconferencia auriculares webcam",
+      "online meetup webcam audio"
+    ],
+    "onsite": [
+      "caraacara recinto compartido",
+      "face to face room chairs",
+      "onsite gathering office lobby",
+      "inperson workshop chairs",
+      "physical meetup building room",
+      "sameplace huddle office",
+      "encuentro físico mesas sillas",
+      "conversación caraacara recinto",
+      "onsite session lobby chairs",
+      "shared room workshop seating"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "synthetic_001",
+    "scope_kind": "project",
+    "scope_id": "demo_alpha",
+    "revision": 1,
+    "memory_type": "preference",
+    "original_text": "Marina prefiere informes breves al empezar la semana.",
+    "summary": "Marina prefiere informes breves los lunes.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "synthetic_002",
+    "scope_kind": "project",
+    "scope_id": "demo_beta",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El equipo beta prepara informes extensos los lunes.",
+    "summary": "Beta usa informes extensos los lunes.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  }
+]

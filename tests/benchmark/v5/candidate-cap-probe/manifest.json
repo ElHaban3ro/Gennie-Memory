@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "kind": "v5_candidate_cap_dense_probe",
+  "source_sha256": {
+    "corpus": "5f24908b36989c1a9f55fcaa2ba95625c663617081ddbc89f4ce93a4744c90cf",
+    "development": "5aecaa964879f27be05b679c7d0ad0cf3e1a0329dbb0235c0eabffcf73d00e8a",
+    "calibration": "4aba0e19883c79e8df320dfef8ee08f2b8708111525b96e594e84f629bb35aa8"
+  },
+  "corpus_sha256": "c03c663b4de141097b0ac490b8f79251f1ff7b9a99d7fd75511a8b4b5112a6d0",
+  "case_sha256": {
+    "development": "85229cb5ce249de6dc9159410fc1e4cb5c710f10373035e0b2d205c2d181c4c4",
+    "calibration": "423154fc1a03542a79ae7d150ce3f9860e72f5ccdea0e7881ef9e3f976db1371"
+  },
+  "candidate_caps": [
+    5,
+    10,
+    15,
+    20
+  ],
+  "tasks": [
+    "presupuesto",
+    "incidentes",
+    "incorporación",
+    "lanzamiento",
+    "entrega",
+    "demostración",
+    "seguridad",
+    "formación",
+    "contratación",
+    "retrospectiva"
+  ],
+  "label_provenance": "Synthetic v5 natural-gap labels and deterministic task-specific additions",
+  "entities": 100,
+  "added_memories": 2000,
+  "active_memories_per_entity": 22,
+  "cases_per_split": 200,
+  "positive_per_split": 100,
+  "negative_per_split": 100
+}

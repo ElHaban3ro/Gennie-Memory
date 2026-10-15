@@ -1,0 +1,44 @@
+{
+  "version": 2,
+  "synthetic": true,
+  "generator": "scripts/generate_benchmark_v2.py",
+  "entity_count": 400,
+  "prompt_form_count": 1000,
+  "used_prompt_forms": 1000,
+  "positive_variants_per_entity": 100,
+  "fixture_revision_count": 880,
+  "unique_memories": 840,
+  "query_count": 41600,
+  "positive_queries": 40000,
+  "negative_queries": 1600,
+  "distinct_values_by_task": {
+    "0": 6,
+    "1": 6,
+    "2": 6,
+    "3": 6,
+    "4": 6
+  },
+  "as_of": "2026-10-15T12:00:00.000Z",
+  "partitions": {
+    "development": 24128,
+    "calibration": 9464,
+    "final": 8008
+  },
+  "segments": {
+    "absent_entity": 400,
+    "alias": 8000,
+    "code_switch": 4000,
+    "direct": 10000,
+    "english": 8000,
+    "explicit_no_recall": 400,
+    "indirect": 6000,
+    "long_context": 4000,
+    "wrong_scope": 400,
+    "wrong_task": 400
+  },
+  "files": {
+    "corpus.json": "04d20ddb0d4eb3caa82f74e5a3b7a6b5a31069edafdf22950523be2d10ceecea",
+    "forms.json": "b78dbd16f7d843b8aef0343fa03803e7793e9dac7e26ae9464e4e105fc2be48e",
+    "queries.jsonl": "74aed3e0f2c6555df49b2d6947641fa38234c7b4eadac654d9f8f23c1288aedc"
+  }
+}

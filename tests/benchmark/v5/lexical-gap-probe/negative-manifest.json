@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "kind": "v5_lexical_gap_negative_controls",
+  "cases_per_split": {
+    "development": 100,
+    "calibration": 100
+  },
+  "source_sha256": {
+    "development": "7d1b3cb18fc31a48834e934cc6002e283ad3cac7e70cc1c87a260227ed085790",
+    "calibration": "62e1d00ab3c607f31dac452964a7c2dadf329f4f1ab446def6683ecba6954d34",
+    "all_queries": "4b03b49372e9724c6bf3acc3bdf1667f59aab74923eb91b240a2ffbfa44dcc29"
+  },
+  "case_sha256": {
+    "development": "57c72f8d484660afbd016066c6de8bf2e3ddddb229b0113d68975b7f69b00584",
+    "calibration": "73399bb31528e3a0b251b0dda2f132eb700b3212cb21cad919c42b0b160d2c7d"
+  },
+  "label_provenance": "Copied from deterministic v5 mode_unspecified and explicit_no_recall cases by split and entity; paraphrases authored for this probe",
+  "query_phrases": {
+    "mode_unspecified": [
+      "Could be video call or room gathering; which saved setup applies before choosing?",
+      "Maybe webcam session, maybe office meetup; no format selected yet. Any setup note?",
+      "Which preparation rule applies while online versus onsite remains undecided?",
+      "Should I use a virtual huddle or shared room? Format still open.",
+      "Before choosing camera link or physical room, what setup guidance is valid?",
+      "Either teleconference or face to face is possible; no decision has been made.",
+      "Channel undecided: webcam or same room. Which note applies?",
+      "Could be telepresence or office workshop; still unconfirmed.",
+      "Plan has no channel yet: video link or lobby gathering.",
+      "Unsure whether screen sharing or chairs in a room; what setup note?"
+    ],
+    "explicit_no_recall": [
+      "Ignore archived setup notes for this request; use current text only.",
+      "Do not retrieve saved preferences; answer without stored context.",
+      "Leave memory aside; respond using only this message.",
+      "No saved instructions please; rely solely on present input.",
+      "Skip historical notes; write a generic response.",
+      "Do not consult retained guidance; continue without it.",
+      "Treat all stored reminders as unavailable for this reply.",
+      "Bypass memory lookup; use only what I just wrote.",
+      "Please avoid prior project notes; provide a neutral sentence.",
+      "Exclude archived context and saved rules from this reply."
+    ]
+  }
+}
