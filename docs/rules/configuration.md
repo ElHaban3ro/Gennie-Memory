@@ -1,0 +1,9 @@
+# Configuración y secretos
+
+Propietarios: `kernel/src/config.rs`, `bootstrap/src/main.rs`, `.env.example` y `.env` local ignorado. Hoy la única variable obligatoria es `IROMEM_DATABASE_PATH`; no hay default implícito en código. El `.env` local fija `.local/iromem.db` para desarrollo, fuera de Git. Las variables ya exportadas tienen precedencia sobre `.env`. La app puede arrancar con solo entorno, sin archivo.
+
+`Config` contiene la ruta no secreta; `Secrets`, sin `Debug`, lee opcionalmente `IROMEM_OPENROUTER_API_KEY`. No almacenes tokens en `Config`, en `AppState`, logs, errores, fixtures o `.creation/`. La variable está comentada en `.env.example` sin valor real. Un sondeo Python acotado y el runner integrado de FTS5/semilla usan OpenRouter; aún falta un adaptador de proveedor como contrato interno del producto. Para proveedores nuevos, usa nombres `IROMEM_*`; documenta los placeholders sin credenciales. Valida ausencia, vacío, rango y combinación antes de abrir recursos; no elijas una base distinta al faltar la ruta. Las variables ya exportadas prevalecen sobre `.env`; si incorporas un aviso de discrepancia, informa solo el nombre, nunca el valor.
+
+Los perfiles de clasificador y embeddings todavía no son configuración activa. Cuando se incorporen, fija identidad, revisión, archivos/tokenizer, límites y compatibilidad de espacio; distingue configuración de proceso de ajustes editables por app. Toda notificación de cambios persistidos se envía después del commit. Una nueva variable exige actualizar lector, ejemplo, docs y una prueba de configuración en el mismo cambio.
+
+Comprobación actual: `IROMEM_DATABASE_PATH=/ruta/temporal.db cargo run --offline -p iromem -- init-db`. Usa una ruta de prueba, no la base del usuario. El error por variable faltante se comprueba con entorno controlado; no borres `.env` ajeno para hacerlo.

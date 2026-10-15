@@ -1,0 +1,7 @@
+# 0008 — Sesión local para evaluar la semilla completa
+
+Estado: decisión técnica provisional, 2026-10-15. Motivo: los pilotos previos medían búsqueda, clasificación y composición por separado; faltaba el tiempo conjunto por consulta bajo una conexión compartida.
+
+`bootstrap` ofrece `session`, un protocolo JSONL local por stdin/stdout. Cada operación reutiliza exactamente los servicios Rust existentes y devuelve estado, duración y resultado. El evaluador Python mantiene una instancia de Laya cargada desde la caché de SOC y encadena búsqueda FTS5, elección autorizada y composición validada; la referencia top-1 usa el mismo recorrido. El proceso cierra al terminar la entrada. No hay puerto, hook, MCP ni servicio de red.
+
+Alternativas: lanzar una CLI nueva por etapa sumaría arranques que no pertenecen a cada consulta; incorporar Laya en Rust exigiría un runtime y dependencias nuevos sin necesidad para el experimento actual. Se eligió un transporte mínimo de evaluación. Después se incorporaron al runner dos adaptadores de sondeo por OpenRouter con un máximo de cuatro casos por ejecución y una ruta híbrida que genera el vector de consulta en vivo desde el encoder Laya y usa un índice ya cargado. Revisar cuando exista un perfil de embeddings independiente, contratos internos de proveedor o se diseñe la API definitiva de `mem_recall`. El protocolo no representa por sí mismo un contrato público estable.

@@ -1,0 +1,13 @@
+# 0003 — Espacio semántico versionado para el experimento
+
+Fecha: 2026-10-15. Estado: implementado como línea experimental; perfil de embeddings definitivo pendiente.
+
+Se añadió `0002_embeddings.sql` sin alterar los bytes de `0001_initial.sql`. `embedding_spaces` fija `space_id`, modelo, hashes SHA-256 de pesos/tokenizer, procedimiento, dimensión y formato. `memory_embeddings` ata cada vector a `(memory_id, revision, space_id)`; el cargador rechaza vectores no finitos, de norma cero, de dimensión distinta, duplicados y revisiones no actuales. Una transacción publica el lote completo o ninguno.
+
+La búsqueda híbrida calcula coseno exacto solo para memorias actuales, activas, vigentes y del ámbito simulado solicitado; fusiona los 20 primeros resultados textuales y semánticos con RRF 60. Indica cobertura completa, parcial o ausente, más recuentos elegibles/indexados. El método es exacto y sencillo para el corpus actual; todavía no hay índice vectorial aproximado, actualización asíncrona ni presupuesto de tiempo garantizado.
+Cuando dos candidatos empatan exactamente en RRF, se prioriza el mejor rango textual, después el semántico y por último el ID. El desempate anterior por ID hacía perder top-1 en varios casos donde los rankings invertían dos candidatos; el cambio tiene una prueba Rust específica y se volvió a medir en el mismo conjunto de desarrollo.
+
+Para probar sin descargar otro modelo se reutilizó el encoder del snapshot Laya de SOC (`laya` 0.3.5) con media de la última capa. Espacio piloto: `laya-mmbert-mean-v1-9d628fd971b7-609d8f4c067c`, 768 dimensiones; SHA-256 de pesos `9d628fd971b700382ac6f65920a86f149777b2e748e0c955fb3b19695aa8f204`. Este uso del encoder y la cabeza de decisiones del mismo checkpoint **no satisface aún** la independencia de perfiles pedida para el MVP final. Antes de adoptarlo o sustituirlo, comparar el perfil independiente propuesto en el roadmap, fijar licencia/runtime y medir calidad, coste y cobertura.
+
+Una prueba CLI con 20 entidades, 40 vectores activos y el caso `q_0001_19` recuperó `synthetic_0001@2` como primer candidato semántico, ausente en FTS5. Dos memorias eran elegibles en ese ámbito y ambas estaban indexadas. La prueba Rust comprueba ámbito, cobertura parcial y que un vector de revisión antigua deja de aparecer tras una corrección. Ver [piloto](../evaluation/pilot-2026-10-15.md).
+En 270 consultas de desarrollo del mismo corpus pequeño, el híbrido alcanzó 246/250 positivos top-1 frente a 240/250 de FTS5, y 250/250 en recall@20 frente a 240/250; ambos dejaron vacíos 10/20 negativos. La latencia Rust de búsqueda excluye el embedding de consulta, por lo que la decisión sobre rendimiento total sigue abierta.
