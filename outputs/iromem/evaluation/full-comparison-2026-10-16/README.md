@@ -37,7 +37,7 @@ target/debug/iromem-eval campaign-report \
 
 La nueva medición usa `search-benchmark`, `engram-benchmark`, `campaign`, `codex-prompt`, `codex-engram` y `paired-flow-report` con la sintaxis de [contract-v1.md](../../../../docs/evaluation/contract-v1.md). No repitas una llamada remota incierta cambiando solo el archivo de salida; los diarios guardan `started`/`finished` para detectar ese estado. Las campañas de OpenRouter y los turnos de Codex consumen servicios remotos.
 
-Las tres figuras vigentes del README se regeneran **sin red** desde el agregado congelado con:
+Las cinco figuras vigentes del README se regeneran **sin red** desde el agregado congelado con:
 
 ```sh
 cargo run --offline -p iromem-eval -- render-full-comparison \
@@ -45,4 +45,4 @@ cargo run --offline -p iromem-eval -- render-full-comparison \
   docs/evaluation/assets
 ```
 
-La figura adicional de p95 por corrida permanece en `docs/evaluation/assets/full-comparison-p95-2026-10-16.svg`.
+La figura adicional de p95 por corrida permanece en `docs/evaluation/assets/full-comparison-p95-2026-10-16.svg`. La figura del recorrido calculado suma `recall` y Codex por caso a partir de ejecuciones separadas; no mide el tiempo de un hook instalado.

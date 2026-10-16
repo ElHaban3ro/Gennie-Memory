@@ -48,6 +48,8 @@ Como comprobación adicional, se tomó la mediana de las cuatro mediciones de **
 | Coste total informado | US$0,02974200 | **US$0,02156549** |
 | Respuestas degradadas / IDs prohibidos | 0 / 0 | 0 / 0 |
 
+![Tiempo de preparación de la semilla con Decisions](assets/full-comparison-seed-preparation-2026-10-16.svg)
+
 En los positivos, ambos clasificadores acertaron 411, solo Decisions 30 y solo Jev seis; ambos fallaron trece. Decisions también se abstuvo en las tres negativas que Jev falló. Los dos proveedores informaron cero tokens de salida de mediana; ese campo no permite reconstruir el consumo completo. La diferencia de latencia remota procede de una sola campaña por proveedor y no debe atribuirse únicamente al modelo.
 
 El coste informado conjunto de las dos campañas de OpenRouter fue **US$0,05130749**. Es un valor reportado por el proveedor para estas llamadas sintéticas, no una factura auditada.
@@ -64,14 +66,16 @@ Los cinco hechos positivos y la negativa fueron respondidos correctamente por **
 | Codex → Engram MCP | 9,97 s | 11,34 s | 52.859 / 52.885,5 |
 | Codex sin memoria | 5,11 s | 5,06 s | 16.958 / 16.958 |
 
-![Tiempo de respuesta y tokens informados por Codex en dos rondas](assets/full-comparison-codex-2026-10-16.svg)
+![Tiempo calculado de preparación más respuesta frente al turno Codex con Engram](assets/full-comparison-calculated-flow-2026-10-16.svg)
 
-La figura resume cada camino mediante la mediana de las dos medianas de ronda; los valores de cada ronda están en la tabla anterior.
+![Tiempo del turno Codex con semilla ya lista y tokens informados](assets/full-comparison-codex-2026-10-16.svg)
 
-La preparación previa de la semilla por `recall` tuvo 0,37 s de mediana en esos seis casos. La **suma calculada por caso** de preparación y respuesta con semilla dio medianas de **5,20 y 5,80 s** en las rondas 1 y 2; combina ejecuciones separadas y **no mide** una integración automática de iROMEM con Codex. El prompt con semilla añadió 48 tokens de entrada de mediana frente al control emparejado. Los totales de Codex incluyen instrucciones y caché, y los prompts de ambos caminos con memoria son distintos porque uno recibe contexto y el otro debe buscarlo. Codex no informó coste monetario para estos turnos.
+La figura del turno Codex resume cada camino mediante la mediana de las dos medianas de ronda; **no incluye la preparación de la semilla**. La figura del recorrido calculado sí incorpora esa preparación en iROMEM, usando la suma de cada caso antes de obtener la mediana de la ronda. Engram mide el turno Codex con su búsqueda MCP. Son vías de entrega diferentes y todavía no equivalen a comparar dos integraciones instaladas de extremo a extremo.
+
+La preparación previa de la semilla por `recall` tuvo 0,37 s de mediana en esos seis casos. La **suma calculada por caso** de preparación y respuesta con semilla dio medianas de **5,20 y 5,80 s** en las rondas 1 y 2; combina ejecuciones separadas y **no mide** una integración automática de iROMEM con Codex. Falta medir desde que el usuario envía el mensaje, incluido el hook, la entrega de la semilla y la respuesta final. El prompt con semilla añadió 48 tokens de entrada de mediana frente al control emparejado. Los totales de Codex incluyen instrucciones y caché, y los prompts de ambos caminos con memoria son distintos porque uno recibe contexto y el otro debe buscarlo. Codex no informó coste monetario para estos turnos.
 
 ## Lectura del resultado y límites
 
-La ruta vigente **iROMEM + Decisions** es el postulante mejor sustentado para preparar una semilla en este banco: cubrió un caso más en top 20, acertó 441/460 positivos y se abstuvo en 80/80 negativos. Engram ordenó siete positivos más en primer lugar. En las cuatro corridas locales iROMEM tuvo menor p95 de búsqueda, y en los dos pilotos Codex la semilla ya entregada produjo respuestas más rápidas que pedirle a Codex que buscase por MCP. Son observaciones de esta configuración, no una declaración de superioridad general ni una comparación de contratos equivalentes.
+La ruta vigente **iROMEM + Decisions** es el postulante mejor sustentado para preparar una semilla en este banco: cubrió un caso más en top 20, acertó 441/460 positivos y se abstuvo en 80/80 negativos. Engram ordenó siete positivos más en primer lugar. En las cuatro corridas locales iROMEM tuvo menor p95 de búsqueda. En las dos rondas Codex, tanto el turno con semilla ya lista como la suma calculada de preparación y respuesta fueron menores que el turno con Engram MCP. Son observaciones de esta configuración, no una declaración de superioridad general ni una comparación de dos integraciones instaladas con el mismo punto de inicio y fin.
 
 Los sujetos 014–017 eran nuevos, pero comparten plantillas y el mismo corpus sintético con las cohortes anteriores. Se conocía el ámbito; no se midieron resolución de ámbito, recuerdos reales, escritura/indexación, verificación externa de fuente, hook instalado, consumo completo de recursos ni coste monetario de Codex. Seis preguntas fáciles repetidas no estiman la tasa general de acierto de Codex. Los percentiles locales se midieron en una Mac y los tiempos remotos dependen también del servicio. La siguiente prueba de producto debe medir la entrega automática real y usar preguntas humanas con ámbitos y respuestas menos previsibles.
