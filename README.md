@@ -4,39 +4,39 @@ Memorias semilla para agentes: iROMEM busca recuerdos relevantes y prepara conte
 
 ## Rendimiento de la ruta vigente
 
-La ruta actual usa **FTS5 por palabras clave con expansión de prefijos** y, para decidir la semilla, **Decisions por OpenRouter**. El recorrido de iROMEM está implementado en Rust. La [comparación nueva del 2026-10-16](docs/evaluation/full-comparison-2026-10-16.md) usó **2.800 recuerdos sintéticos** y **540 preguntas nuevas** de sujetos 014–017: 460 positivas y 80 negativas. Cada motor devolvió veinte candidatos por pregunta. Se hicieron **cuatro corridas locales por motor**, con preguntas permutadas y orden de motores alternado.
+La [comparación ampliada del 2026-10-16](docs/evaluation/broader-comparison-2026-10-16.md) usa los mismos **2.800 recuerdos sintéticos** y **540 preguntas** de sujetos 014–017 (460 positivas, 80 negativas). Hubo cuatro corridas de búsqueda por motor. iROMEM y Engram conservan las cifras de la [campaña original](docs/evaluation/full-comparison-2026-10-16.md); Lodis y Basic Memory se añadieron sobre las preguntas congeladas.
 
-| Búsqueda en las mismas 540 preguntas | iROMEM actual | Engram 3.4.0 MCP |
-| --- | ---: | ---: |
-| Recuerdo correcto entre 20 candidatos | **457/460 (99,35 %)** | 456/460 (99,13 %) |
-| Recuerdo correcto en primera posición | 420/460 (91,30 %) | **427/460 (92,83 %)** |
-| Mediana de los cuatro p50 | **6,93 ms** | 7,22 ms |
-| Mediana de los cuatro p95 | **7,77 ms** | 10,71 ms |
-| Rango de p95 observado | **7,49–10,73 ms** | 8,27–15,55 ms |
+| Búsqueda de candidatos | iROMEM | Engram 3.4.0 | Lodis 0.6.0 | Basic Memory |
+| --- | ---: | ---: | ---: | ---: |
+| Correcto entre 20 | **457/460 (99,35 %)** | 456/460 (99,13 %) | 389/460 (84,57 %) | 280/460 (60,87 %) |
+| Correcto en primera posición | 420/460 (91,30 %) | **427/460 (92,83 %)** | 47/460 (10,22 %) | 276/460 (60,00 %) |
+| Mediana de cuatro p50 | **6,93 ms** | 7,22 ms | 19,67 ms | 24,12 ms |
+| Mediana de cuatro p95 | **7,77 ms** | 10,71 ms | 40,94 ms | 127,72 ms |
+| Rango de p95 observado | **7,49–10,73 ms** | 8,27–15,55 ms | 21,04–176,35 ms | 23,81–436,76 ms |
 
-El p95 anterior de **26,54 ms** de iROMEM no reapareció en estas cuatro corridas. Las diferencias de una Mac y de un banco sintético no demuestran superioridad general. Engram se midió aquí como buscador de candidatos: su resultado no incluye clasificación ni composición de semilla.
+Los tiempos de iROMEM, Engram y Lodis incluyen transporte por proceso persistente; Basic Memory usa su API local en proceso. Estas cifras describen el banco y las rutas medidas, no la velocidad intrínseca de cada producto. Ninguna fila de búsqueda incluye clasificación ni composición de semilla.
 
-![Aciertos de candidatos en la cohorte 014–017](docs/evaluation/assets/full-comparison-accuracy-2026-10-16.svg)
+![Aciertos de candidatos en la cohorte 014–017](docs/evaluation/assets/broader-comparison-accuracy-2026-10-16.svg)
 
-![Medianas de búsqueda de candidatos en la cohorte 014–017](docs/evaluation/assets/full-comparison-latency-2026-10-16.svg)
+![Medianas de búsqueda de candidatos en la cohorte 014–017](docs/evaluation/assets/broader-comparison-latency-2026-10-16.svg)
 
 Con **iROMEM + Decisions**, la semilla fue correcta en **441/460 preguntas positivas (95,87 %)** y quedó vacía en **80/80 negativas**. La consulta completa hasta la semilla tardó **369,62 ms de mediana** y **567,22 ms en p95**, incluida OpenRouter. La variante con Jev obtuvo 417/460 positivas y 77/80 negativas vacías, con p95 de 443,53 ms. Estas campañas remotas se ejecutaron por separado de las búsquedas locales.
 
 ![Tiempo de preparación de la semilla con Decisions](docs/evaluation/assets/full-comparison-seed-preparation-2026-10-16.svg)
 
-![P95 de búsqueda de candidatos en cuatro corridas](docs/evaluation/assets/full-comparison-p95-2026-10-16.svg)
+![P95 de los cuatro motores en las cuatro corridas](docs/evaluation/assets/broader-comparison-p95-2026-10-16.svg)
 
-Las preguntas son sintéticas y comparten plantillas con bancos anteriores. Engram recibió los mismos textos en almacenes aislados, sin las condiciones y fuentes declaradas de iROMEM. El [informe nuevo](docs/evaluation/full-comparison-2026-10-16.md) enlaza resultados por caso, hashes y límites. Las figuras [de aciertos](docs/evaluation/assets/current-accuracy.svg) y [de tiempo](docs/evaluation/assets/current-latency.svg) de la cohorte 010–013 se conservan como **históricas**.
+Las preguntas son sintéticas y comparten plantillas con bancos anteriores. El [informe ampliado](docs/evaluation/broader-comparison-2026-10-16.md) enlaza resultados por caso, versiones y límites. La figura de p95 incluye los cuatro motores; la figura de semilla conserva la campaña original de iROMEM con Decisions y Jev. Las figuras de la cohorte 010–013 son históricas.
 
-## Respuesta con Codex: piloto de la ruta vigente
+## Respuesta con Codex: piloto ampliado
 
-En dos rondas de seis turnos sintéticos nuevos, Codex respondió en **4,79 y 5,18 s de mediana** con la semilla de iROMEM **ya entregada** en el prompt, frente a **9,97 y 11,34 s** al consultar Engram por MCP. La figura de Codex mide el turno después de preparar la semilla de iROMEM; **su barra de 4,99 s no incluye Decisions**. Ambos caminos acertaron los cinco positivos y la negativa en cada ronda. Los tokens de entrada informados tuvieron medianas de **17.005,5** con semilla y **52.859 / 52.885,5** con Engram; incluyen instrucciones y caché, y los prompts son distintos.
+En dos rondas de seis turnos sintéticos, Codex respondió en **4,79 y 5,18 s de mediana** con la semilla de iROMEM **ya entregada** en el prompt, frente a **9,97 y 11,34 s** al consultar Engram por MCP y **12,20 y 13,11 s** al consultar Lodis por MCP. Los tres caminos acertaron los cinco positivos y la negativa en ambas rondas. Basic Memory todavía no tiene un turno Codex válido medido. La figura de Codex mide el turno después de preparar la semilla de iROMEM; **su barra de 4,99 s no incluye Decisions**. Los tokens de entrada informados tuvieron medianas de **17.005,5** con semilla, **52.859 / 52.885,5** con Engram y **52.717,5 / 52.715** con Lodis; incluyen instrucciones y caché, y los prompts son distintos.
 
 La preparación de la semilla de iROMEM tardó **0,37 s de mediana** en esos seis casos. La suma calculada **por caso** de preparación y respuesta tuvo medianas de **5,20 y 5,80 s**, frente a **9,97 y 11,34 s** del turno Codex con Engram MCP. **La entrega automática a Codex aún no está instalada ni medida**: la suma combina dos ejecuciones y no incluye el tiempo del futuro hook ni de entregar su resultado al agente. [Método y resultados por caso](docs/evaluation/full-comparison-2026-10-16.md). La [figura Codex anterior](docs/evaluation/assets/current-codex-comparison.svg) conserva los seis turnos de la cohorte 010–013 como historia.
 
-![Tiempo calculado de preparación más respuesta frente al turno Codex con Engram](docs/evaluation/assets/full-comparison-calculated-flow-2026-10-16.svg)
+![Tiempo calculado de iROMEM frente al turno Codex con Engram y Lodis](docs/evaluation/assets/broader-comparison-calculated-flow-2026-10-16.svg)
 
-![Tiempo del turno Codex con semilla ya lista y tokens informados](docs/evaluation/assets/full-comparison-codex-2026-10-16.svg)
+![Tiempo del turno Codex y tokens de entrada con semilla ya lista, Engram o Lodis](docs/evaluation/assets/broader-comparison-codex-2026-10-16.svg)
 
 El orden de implementación y las tareas pendientes están en el [roadmap](ROADMAP.md). La [base ejecutable actual](docs/initialization/implementation.md) combina FTS5, filtrado estructurado opcional, un índice semántico experimental y composición de semillas. `recall` encadena en Rust la ruta rápida, Decisions por defecto o Jev explícito y la composición validada; el híbrido sigue disponible para búsquedas explícitas con vectores ya calculados. El [contrato CLI](docs/evaluation/contract-v1.md), las [reglas de trabajo](AGENTS.md) y el [mapa de módulos](docs/architecture/modules.md) describen el estado del repositorio.
 

@@ -1,6 +1,6 @@
 # Contrato de evaluación v1
 
-Estado vigente: el producto y el evaluador activo son Rust. Los bancos y resultados de pilotos anteriores siguen versionados como evidencia histórica, pero sus scripts Python fueron retirados. Las cifras vigentes de comparación están en [la campaña completa del 2026-10-16](full-comparison-2026-10-16.md); la [primera medición Rust](rust-migration-v1.md) es histórica.
+Estado vigente: el producto y el evaluador principal son Rust. Los bancos y resultados de pilotos anteriores siguen versionados como evidencia histórica; sus scripts Python antiguos fueron retirados. Las cifras vigentes de búsqueda de cuatro motores y el piloto Codex con Lodis están en [la comparación ampliada del 2026-10-16](broader-comparison-2026-10-16.md). La preparación de semilla y las mediciones originales de iROMEM y Engram permanecen en [la campaña completa](full-comparison-2026-10-16.md); la [primera medición Rust](rust-migration-v1.md) es histórica.
 
 ## Bancos y etiquetas
 
@@ -53,7 +53,9 @@ La respuesta incluye `retrieval` (método y candidatos), `classification_status`
 | `render-codex-current <codex-iromem.json> <codex-engram.json> <emparejado.json> <directorio>` | Regenera la figura histórica de Codex de la cohorte 010–013 y verifica que ambos caminos y el informe emparejado coincidan en muestra y medianas. |
 | `render-full-comparison <aggregate.json> <directorio>` | Regenera las figuras vigentes de aciertos, búsqueda, preparación de semilla, recorrido calculado y turno Codex desde el agregado congelado de la cohorte 014–017; conserva aparte la figura de p95 por corrida. El recorrido calculado no mide el hook real. |
 
-Los archivos de salida de una campaña deben ser nuevos. El diario congela hashes de casos, binario y base; un `started` sin `finished` bloquea la reanudación para no duplicar una llamada posiblemente cobrada. Los informes de seis turnos de Codex son simulaciones de entrega inicial, no prueban un hook instalado. La [comparación vigente](full-comparison-2026-10-16.md) enlaza datos, aciertos y límites; la [campaña anterior](keyword-prefix-v1.md) y el [piloto Codex anterior](codex-current-v1.md) se conservan como evidencia histórica.
+La ampliación externa congela resultados de Basic Memory y Lodis mediante adaptadores Python de evaluación; `render_broader_comparison.py` regenera las figuras de cuatro motores y el piloto Codex de tres rutas a partir de resultados congelados. El producto y su búsqueda permanecen en Rust.
+
+Los archivos de salida de una campaña deben ser nuevos. El diario congela hashes de casos, binario y base; un `started` sin `finished` bloquea la reanudación para no duplicar una llamada posiblemente cobrada. Los informes de seis turnos de Codex son simulaciones de entrega inicial, no prueban un hook instalado. La [comparación ampliada](broader-comparison-2026-10-16.md) enlaza datos, aciertos y límites; la [campaña anterior](keyword-prefix-v1.md) y el [piloto Codex anterior](codex-current-v1.md) se conservan como evidencia histórica.
 
 ## Reproducción local mínima
 

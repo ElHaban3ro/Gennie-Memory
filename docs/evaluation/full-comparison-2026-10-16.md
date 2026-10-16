@@ -1,6 +1,6 @@
 # Comparación completa nueva: iROMEM y Engram
 
-Estado: campaña sintética ejecutada el 2026-10-16 en esta Mac. El [paquete reproducible](../../outputs/iromem/evaluation/full-comparison-2026-10-16/) conserva consultas, orden de cada corrida, resultados por caso, manifiestos, diarios, respuestas de Codex y [agregado](../../outputs/iromem/evaluation/full-comparison-2026-10-16/aggregate.json). Esta es la comparación vigente; las cifras de [la cohorte 010–013](keyword-prefix-v1.md) siguen como historia.
+Estado: campaña sintética ejecutada el 2026-10-16 en esta Mac. El [paquete reproducible](../../outputs/iromem/evaluation/full-comparison-2026-10-16/) conserva consultas, orden de cada corrida, resultados por caso, manifiestos, diarios, respuestas de Codex y [agregado](../../outputs/iromem/evaluation/full-comparison-2026-10-16/aggregate.json). La [comparación ampliada](broader-comparison-2026-10-16.md) incorpora Lodis y Basic Memory a la búsqueda, además de un piloto Codex con Lodis. Este informe conserva la campaña original completa; las cifras de [la cohorte 010–013](keyword-prefix-v1.md) siguen como historia.
 
 ## Banco y método
 
