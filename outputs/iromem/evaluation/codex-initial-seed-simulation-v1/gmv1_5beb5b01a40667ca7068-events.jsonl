@@ -1,0 +1,4 @@
+{"elapsed_ms": 151.5695000125561, "event": {"type": "thread.started", "thread_id": "01a14224-65e9-7ad2-9a95-b90a6c111cc9"}}
+{"elapsed_ms": 153.1013750063721, "event": {"type": "turn.started"}}
+{"elapsed_ms": 7102.992042011465, "event": {"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "Leo es la persona responsable de project ficticio 001."}}}
+{"elapsed_ms": 7121.660125005292, "event": {"type": "turn.completed", "usage": {"input_tokens": 15594, "cached_input_tokens": 12288, "cache_write_input_tokens": 0, "output_tokens": 16, "reasoning_output_tokens": 0}}}

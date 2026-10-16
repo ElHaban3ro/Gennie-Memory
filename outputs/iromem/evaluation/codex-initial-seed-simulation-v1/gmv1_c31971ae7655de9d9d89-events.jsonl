@@ -1,0 +1,4 @@
+{"elapsed_ms": 151.56395798840094, "event": {"type": "thread.started", "thread_id": "01a14224-b60d-7260-b95b-45aca205e9f9"}}
+{"elapsed_ms": 153.8044579938287, "event": {"type": "turn.started"}}
+{"elapsed_ms": 4397.676415988826, "event": {"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "Se abandonó el supuesto de que el dato era reciente."}}}
+{"elapsed_ms": 4403.079499999876, "event": {"type": "turn.completed", "usage": {"input_tokens": 15607, "cached_input_tokens": 12288, "cache_write_input_tokens": 0, "output_tokens": 16, "reasoning_output_tokens": 0}}}

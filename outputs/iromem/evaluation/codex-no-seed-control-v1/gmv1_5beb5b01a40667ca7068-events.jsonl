@@ -1,0 +1,4 @@
+{"elapsed_ms": 147.40074999281205, "event": {"type": "thread.started", "thread_id": "01a14225-4f70-7c73-ba85-0e1ce2a356b2"}}
+{"elapsed_ms": 149.2635419999715, "event": {"type": "turn.started"}}
+{"elapsed_ms": 4760.167207990889, "event": {"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "La semilla no contiene información sobre quién es responsable de project ficticio 001."}}}
+{"elapsed_ms": 4763.026457992964, "event": {"type": "turn.completed", "usage": {"input_tokens": 15554, "cached_input_tokens": 12288, "cache_write_input_tokens": 0, "output_tokens": 21, "reasoning_output_tokens": 0}}}

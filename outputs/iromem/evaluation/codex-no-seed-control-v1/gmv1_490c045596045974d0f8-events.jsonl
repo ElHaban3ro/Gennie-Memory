@@ -1,0 +1,4 @@
+{"elapsed_ms": 148.11204200668726, "event": {"type": "thread.started", "thread_id": "01a14225-7e61-7862-9ad1-9939c8f508b2"}}
+{"elapsed_ms": 149.6452919964213, "event": {"type": "turn.started"}}
+{"elapsed_ms": 5117.257792007877, "event": {"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "La semilla no contiene el idioma de salida del perfil de agent ficticio 001."}}}
+{"elapsed_ms": 5152.097833008156, "event": {"type": "turn.completed", "usage": {"input_tokens": 15558, "cached_input_tokens": 12288, "cache_write_input_tokens": 0, "output_tokens": 22, "reasoning_output_tokens": 0}}}

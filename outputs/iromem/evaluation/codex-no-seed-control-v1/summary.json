@@ -1,0 +1,138 @@
+{
+  "kind": "codex_initial_seed_prompt_simulation",
+  "seed_injected": false,
+  "codex_model": "gpt-6.1-sol",
+  "case_ids": [
+    "gmv1_d801f72be8acfa46ddf6",
+    "gmv1_5beb5b01a40667ca7068",
+    "gmv1_423956194e4bfce96c69",
+    "gmv1_490c045596045974d0f8",
+    "gmv1_c31971ae7655de9d9d89",
+    "gmv1_afe0405fcdefd22d86d4"
+  ],
+  "source": "outputs/iromem/evaluation/engram-codex-end-to-end-v1/direct-iromem.json",
+  "rows": [
+    {
+      "case_id": "gmv1_d801f72be8acfa46ddf6",
+      "expected_ids": [
+        "gmv1_745e550c42f8260eed9e"
+      ],
+      "selected_ids": [
+        "gmv1_745e550c42f8260eed9e"
+      ],
+      "seed_text_utf8_bytes": 0,
+      "seed_text_words": 0,
+      "prompt_utf8_bytes": 295,
+      "final_answer_ms": 4719.0073340025265,
+      "final_answer": "La semilla no contiene el nombre completo de user ficticio 001.",
+      "usage": {
+        "input_tokens": 15556,
+        "cached_input_tokens": 12288,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 19,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "case_id": "gmv1_5beb5b01a40667ca7068",
+      "expected_ids": [
+        "gmv1_c670e06cefd6c71bb397"
+      ],
+      "selected_ids": [
+        "gmv1_c670e06cefd6c71bb397"
+      ],
+      "seed_text_utf8_bytes": 0,
+      "seed_text_words": 0,
+      "prompt_utf8_bytes": 292,
+      "final_answer_ms": 4760.167207990889,
+      "final_answer": "La semilla no contiene información sobre quién es responsable de project ficticio 001.",
+      "usage": {
+        "input_tokens": 15554,
+        "cached_input_tokens": 12288,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 21,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "case_id": "gmv1_423956194e4bfce96c69",
+      "expected_ids": [
+        "gmv1_daf8654496352812fa43"
+      ],
+      "selected_ids": [
+        "gmv1_daf8654496352812fa43"
+      ],
+      "seed_text_utf8_bytes": 0,
+      "seed_text_words": 0,
+      "prompt_utf8_bytes": 300,
+      "final_answer_ms": 5013.383583005634,
+      "final_answer": "La semilla no contiene información sobre la tarea actual de «conversation ficticio 001».",
+      "usage": {
+        "input_tokens": 15556,
+        "cached_input_tokens": 12288,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 22,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "case_id": "gmv1_490c045596045974d0f8",
+      "expected_ids": [
+        "gmv1_4f70937ac8c9b46ebbd0"
+      ],
+      "selected_ids": [
+        "gmv1_4f70937ac8c9b46ebbd0"
+      ],
+      "seed_text_utf8_bytes": 0,
+      "seed_text_words": 0,
+      "prompt_utf8_bytes": 309,
+      "final_answer_ms": 5117.257792007877,
+      "final_answer": "La semilla no contiene el idioma de salida del perfil de agent ficticio 001.",
+      "usage": {
+        "input_tokens": 15558,
+        "cached_input_tokens": 12288,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 22,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "case_id": "gmv1_c31971ae7655de9d9d89",
+      "expected_ids": [
+        "gmv1_bf6f48ac692eac7b2e09"
+      ],
+      "selected_ids": [
+        "gmv1_bf6f48ac692eac7b2e09"
+      ],
+      "seed_text_utf8_bytes": 0,
+      "seed_text_words": 0,
+      "prompt_utf8_bytes": 302,
+      "final_answer_ms": 4959.1212079976685,
+      "final_answer": "La semilla no contiene el dato sobre qué supuesto se abandonó en «conversation ficticio 001».",
+      "usage": {
+        "input_tokens": 15556,
+        "cached_input_tokens": 12288,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 25,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "case_id": "gmv1_afe0405fcdefd22d86d4",
+      "expected_ids": [],
+      "selected_ids": [],
+      "seed_text_utf8_bytes": 0,
+      "seed_text_words": 0,
+      "prompt_utf8_bytes": 295,
+      "final_answer_ms": 4864.899874999537,
+      "final_answer": "La semilla no contiene el código secreto de user ficticio 001.",
+      "usage": {
+        "input_tokens": 15556,
+        "cached_input_tokens": 12288,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 19,
+        "reasoning_output_tokens": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,5415 @@
+{
+  "normalization": "Unicode word extraction, lowercase, remove tokens shorter than 3 and fixed Spanish stopword set; no ground truth used",
+  "stopwords": [
+    "a",
+    "al",
+    "algo",
+    "como",
+    "con",
+    "cual",
+    "cuando",
+    "cuál",
+    "cuáles",
+    "cuándo",
+    "cómo",
+    "de",
+    "del",
+    "donde",
+    "dónde",
+    "el",
+    "ella",
+    "en",
+    "es",
+    "esta",
+    "este",
+    "esto",
+    "fue",
+    "ha",
+    "hay",
+    "la",
+    "las",
+    "le",
+    "lo",
+    "los",
+    "mi",
+    "mis",
+    "no",
+    "nos",
+    "para",
+    "por",
+    "que",
+    "quien",
+    "quién",
+    "qué",
+    "se",
+    "ser",
+    "si",
+    "son",
+    "su",
+    "sus",
+    "te",
+    "tiene",
+    "un",
+    "una",
+    "unas",
+    "unos",
+    "y",
+    "ya"
+  ],
+  "summary": {
+    "all": {
+      "recall_at_1": 70,
+      "recall_at_5": 70,
+      "recall_at_10": 70,
+      "recall_at_20": 70,
+      "negatives_with_candidates": 0,
+      "p50_ms": 2.464,
+      "p95_ms": 3.502,
+      "candidate_count_p50": 1.0
+    },
+    "any": {
+      "recall_at_1": 107,
+      "recall_at_5": 111,
+      "recall_at_10": 113,
+      "recall_at_20": 113,
+      "negatives_with_candidates": 20,
+      "p50_ms": 5.391,
+      "p95_ms": 6.444,
+      "candidate_count_p50": 20.0
+    }
+  },
+  "rows": {
+    "all": [
+      {
+        "case_id": "gmv1_d801f72be8acfa46ddf6",
+        "normalized_query": "nombre completo user ficticio 001",
+        "expected": [
+          "gmv1_745e550c42f8260eed9e"
+        ],
+        "candidate_ids": [
+          "gmv1_745e550c42f8260eed9e"
+        ],
+        "elapsed_ms": 3.4797080006683245
+      },
+      {
+        "case_id": "gmv1_e9083c98ce7a4a988cfd",
+        "normalized_query": "prefiere user ficticio 001 llamen",
+        "expected": [
+          "gmv1_55d9763a9ab577561d4c"
+        ],
+        "candidate_ids": [
+          "gmv1_55d9763a9ab577561d4c"
+        ],
+        "elapsed_ms": 2.821208006935194
+      },
+      {
+        "case_id": "gmv1_8b22857a1862b53f776a",
+        "normalized_query": "idioma prefiere conversar user ficticio 001",
+        "expected": [
+          "gmv1_34c062f9282fdec63d00"
+        ],
+        "candidate_ids": [],
+        "elapsed_ms": 0.906916000531055
+      },
+      {
+        "case_id": "gmv1_810eebc2e9222196825c",
+        "normalized_query": "tono prefiere user ficticio 001 respuestas",
+        "expected": [
+          "gmv1_572d4b0b8e4b9b45381c"
+        ],
+        "candidate_ids": [
+          "gmv1_572d4b0b8e4b9b45381c"
+        ],
+        "elapsed_ms": 2.874792000511661
+      },
+      {
+        "case_id": "gmv1_d7b08d12991f5540c03d",
+        "normalized_query": "zona horaria usa user ficticio 001",
+        "expected": [
+          "gmv1_83a08a9ccd69d3f73e13"
+        ],
+        "candidate_ids": [],
+        "elapsed_ms": 0.6720829987898469
+      },
+      {
+        "case_id": "gmv1_6c70b11b487cc223d889",
+        "normalized_query": "ciudad ficticia vive user ficticio 001",
+        "expected": [
+          "gmv1_dfd643b2e9767b1b830c"
+        ],
+        "candidate_ids": [
+          "gmv1_dfd643b2e9767b1b830c"
+        ],
+        "elapsed_ms": 2.8329170017968863
+      },
+      {
+        "case_id": "gmv1_4b97073ff4217dc685fc",
+        "normalized_query": "cargo user ficticio 001",
+        "expected": [
+          "gmv1_9a9b25283b613190411d"
+        ],
+        "candidate_ids": [
+          "gmv1_9a9b25283b613190411d"
+        ],
+        "elapsed_ms": 2.130249995389022
+      },
+      {
+        "case_id": "gmv1_a3eaad1825a776daa17a",
+        "normalized_query": "equipo pertenece user ficticio 001",
+        "expected": [
+          "gmv1_4365537c25203743461d"
+        ],
+        "candidate_ids": [
+          "gmv1_4365537c25203743461d"
+        ],
+        "elapsed_ms": 2.5602079986128956
+      },
+      {
+        "case_id": "gmv1_8346c6b86fb047857545",
+        "normalized_query": "canal prefiere mensajes trabajo user ficticio 001",
+        "expected": [
+          "gmv1_30bffdc232dab25dca44"
+        ],
+        "candidate_ids": [],
+        "elapsed_ms": 0.8947499882197008
+      },
+      {
+        "case_id": "gmv1_ed83abe1473136698eaa",
+        "normalized_query": "hora prefiere reuniones user ficticio 001",
+        "expected": [
+          "gmv1_dd5947b265bf6cef95ab"
+        ],
+        "candidate_ids": [],
+        "elapsed_ms": 2.1248330012895167
+      },
+      {
+        "case_id": "gmv1_39568bceea82ec944c5c",
+        "normalized_query": "reserva user ficticio 001 tiempo concentración",
+        "expected": [
+          "gmv1_58169664179b330f26a2"
+        ],
+        "candidate_ids": [],
+        "elapsed_ms": 0.9278329962398857
+      },
+      {
+        "case_id": "gmv1_92eee5076c6e4c811011",
+        "normalized_query": "debe incluir invitación user ficticio 001",
+        "expected": [
+          "gmv1_b2c07f0abcea252f6443"
+        ],
+        "candidate_ids": [],
+        "elapsed_ms": 0.7708339981036261
+      },
+      {
+        "case_id": "gmv1_619378351ad522b37d2e",
+        "normalized_query": "formato prefiere informes user ficticio 001",
+        "expected": [
+          "gmv1_3bf91960d59b1ec66349"
+        ],
+        "candidate_ids": [],
+        "elapsed_ms": 0.9898330026771873
+      },
+      {
+        "case_id": "gmv1_4f2d9a079d4c08203b3b",
+        "normalized_query": "formato fecha prefiere user ficticio 001",
+        "expected": [
+          "gmv1_744e94ec7f1e0d686abf"
+        ],
+        "candidate_ids": [
+          "gmv1_744e94ec7f1e0d686abf"
+        ],
+        "elapsed_ms": 2.79874999250751
+      },
+      {
+        "case_id": "gmv1_8b443bd0a0ca950838c7",
+        "normalized_query": "unidades prefiere user ficticio 001",
+        "expected": [
+          "gmv1_4d14c1321599e6cc1d12"
+        ],
+        "candidate_ids": [],
+        "elapsed_ms": 0.6541250040754676
+      },
+      {
+        "case_id": "gmv1_953c8e21334117db1eb3",
+        "normalized_query": "ajuste accesibilidad necesita user ficticio 001 documentos",
+        "expected": [
+          "gmv1_a853c356064d84e0f3e2"
+        ],
+        "candidate_ids": [],
+        "elapsed_ms": 1.0550420120125636
+      },
+      {
+        "case_id": "gmv1_9ef7cb204be7a5a8a69b",
+        "normalized_query": "quiere notificaciones user ficticio 001",
+        "expected": [
+          "gmv1_4bff8d0194b0caffa02d"
+        ],
+        "candidate_ids": [
+          "gmv1_4bff8d0194b0caffa02d"
+        ],
+        "elapsed_ms": 2.759916998911649
+      },
+      {
+        "case_id": "gmv1_53b47eca93a64cca402a",
+        "normalized_query": "comida prefiere user ficticio 001",
+        "expected": [
+          "gmv1_b25999a37371c42a28ae"
+        ],
+        "candidate_ids": [
+          "gmv1_b25999a37371c42a28ae"
+        ],
+        "elapsed_ms": 2.5759999989531934
+      },
+      {
+        "case_id": "gmv1_a1d0ab9825ff805d49ca",
+        "normalized_query": "bebida suele pedir user ficticio 001 reuniones",
+        "expected": [
+          "gmv1_31c529799eb63ed1e71d"
+        ],
+        "candidate_ids": [],
+        "elapsed_ms": 0.6680000078631565
+      },
+      {
+        "case_id": "gmv1_3f4a16a82c070a2b16a9",
+        "normalized_query": "asiento prefiere user ficticio 001 viajar",
+        "expected": [
+          "gmv1_472ab82afb83f04a5a15"
+        ],
+        "candidate_ids": [
+          "gmv1_472ab82afb83f04a5a15"
+        ],
+        "elapsed_ms": 2.723124998738058
+      },
+      {
+        "case_id": "gmv1_0f35b6410f1c01683dec",
+        "normalized_query": "suele desplazarse user ficticio 001",
+        "expected": [
+          "gmv1_7ddbb1ecfa6397d2c6a1"
+        ],
+        "candidate_ids": [
+          "gmv1_7ddbb1ecfa6397d2c6a1"
+        ],
+        "elapsed_ms": 2.463915996486321
+      },
+      {
+        "case_id": "gmv1_5aeb1bd6d34e6d57cce1",
+        "normalized_query": "quiere aprender user ficticio 001 año",
+        "expected": [
+          "gmv1_441eb105af3a12915613"
+        ],
+        "candidate_ids": [
+          "gmv1_441eb105af3a12915613"
+        ],
+        "elapsed_ms": 2.620791012304835
+      },
+      {
+        "case_id": "gmv1_5ee575c8bff8481c6d65",
+        "normalized_query": "afición user ficticio 001",
+        "expected": [
+          "gmv1_6c14196a4859ce5f662d"
+        ],
+        "candidate_ids": [
+          "gmv1_6c14196a4859ce5f662d"
+        ],
+        "elapsed_ms": 2.50116600363981
+      },
+      {
+        "case_id": "gmv1_d27d2dd880c8857becd7",
+        "normalized_query": "guarda copias user ficticio 001",
+        "expected": [
+          "gmv1_3265d058092373acd732"
+        ],
+        "candidate_ids": [
+          "gmv1_3265d058092373acd732"
+        ],
+        "elapsed_ms": 2.272708006785251
+      },
+      {
+        "case_id": "gmv1_16fafa064e69a75cfbf9",
+        "normalized_query": "frecuencia revisa objetivos user ficticio 001",
+        "expected": [
+          "gmv1_50ffb8e833a551ff8878"
+        ],
+        "candidate_ids": [],
+        "elapsed_ms": 0.7912500004749745
+      },
+      {
+        "case_id": "gmv1_afe0405fcdefd22d86d4",
+        "normalized_query": "código secreto user ficticio 001",
+        "expected": [],
+        "candidate_ids": [],
+        "elapsed_ms": 0.5395420012064278
+      },
+      {
+        "case_id": "gmv1_4824fd0075e1ccc6d166",
+        "normalized_query": "dirección postal exacta user ficticio 001",
+        "expected": [],
+        "candidate_ids": [],
+        "elapsed_ms": 0.6942909967619926
+      },
+      {
+        "case_id": "gmv1_6633930ed82b659d13ab",
+        "normalized_query": "contraseña usa user ficticio 001",
+        "expected": [],
+        "candidate_ids": [],
+        "elapsed_ms": 0.5840410012751818
+      },
+      {
+        "case_id": "gmv1_19c72cd710e4f30bf333",
+        "normalized_query": "decisión tomó user ficticio 001 mañana",
+        "expected": [],
+        "candidate_ids": [],
+        "elapsed_ms": 0.7065419922582805
+      },
+      {
+        "case_id": "gmv1_5deddcce3795186587eb",
+        "normalized_query": "color favorito user ficticio 001",
+        "expected": [],
+        "candidate_ids": [],
+        "elapsed_ms": 0.48733300354797393
+      },
+      {
+        "case_id": "gmv1_5beb5b01a40667ca7068",
+        "normalized_query": "responsable project ficticio 001",
+        "expected": [
+          "gmv1_c670e06cefd6c71bb397"
+        ],
+        "candidate_ids": [
+          "gmv1_c670e06cefd6c71bb397"
+        ],
+        "elapsed_ms": 2.6283750048605725
+      },
+      {
+        "case_id": "gmv1_a16b9eb4b3152febd31f",
+        "normalized_query": "objetivo project ficticio 001",
+        "expected": [
+          "gmv1_ee88381877feb4a0c68e"
+        ],
+        "candidate_ids": [
+          "gmv1_ee88381877feb4a0c68e"
+        ],
+        "elapsed_ms": 2.5464580103289336
+      },
+      {
+        "case_id": "gmv1_220ba2a5aecaafbcec11",
+        "normalized_query": "vence entrega project ficticio 001",
+        "expected": [
+          "gmv1_1c36e93207fae7d7fffc"
+        ],
+        "candidate_ids": [
+          "gmv1_1c36e93207fae7d7fffc"
+        ],
+        "elapsed_ms": 2.695083006983623
+      },
+      {
+        "case_id": "gmv1_511c563f54a9c7e560a5",
+        "normalized_query": "estado project ficticio 001",
+        "expected": [
+          "gmv1_6a3e42d70e8ea28b029f"
+        ],
+        "candidate_ids": [
+          "gmv1_6a3e42d70e8ea28b029f"
+        ],
+        "elapsed_ms": 2.5028329982887954
+      },
+      {
+        "case_id": "gmv1_15d5dae44f97b1cc07a2",
+        "normalized_query": "presupuesto sintético project ficticio 001",
+        "expected": [
+          "gmv1_b1e86c2c6c43be63ed66"
+        ],
+        "candidate_ids": [
+          "gmv1_b1e86c2c6c43be63ed66"
+        ],
+        "elapsed_ms": 4.131082998355851
+      },
+      {
+        "case_id": "gmv1_445c2c1e08d1febe7e9b",
+        "normalized_query": "frecuencia reporta avances project ficticio 001",
+        "expected": [
+          "gmv1_fb216da29b93dbb77f6d"
+        ],
+        "candidate_ids": [],
+        "elapsed_ms": 0.836499995784834
+      },
+      {
+        "case_id": "gmv1_37ca1dca7b67274777e4",
+        "normalized_query": "llama repositorio ficticio project ficticio 001",
+        "expected": [
+          "gmv1_b2a5cb73fce44437572d"
+        ],
+        "candidate_ids": [
+          "gmv1_b2a5cb73fce44437572d"
+        ],
+        "elapsed_ms": 4.25879200338386
+      },
+      {
+        "case_id": "gmv1_0421d43fe26ce6f6951e",
+        "normalized_query": "valida entregas project ficticio 001",
+        "expected": [
+          "gmv1_86d584e3d51e877614fc"
+        ],
+        "candidate_ids": [
+          "gmv1_86d584e3d51e877614fc"
+        ],
+        "elapsed_ms": 2.6508340088184923
+      },
+      {
+        "case_id": "gmv1_7cbe0ba53bb3e8a0aac5",
+        "normalized_query": "exige project ficticio 001 antes publicar",
+        "expected": [
+          "gmv1_5ba2a6fff6570df8ba73"
+        ],
+        "candidate_ids": [],
+        "elapsed_ms": 0.8375420002266765
+      },
+      {
+        "case_id": "gmv1_155140d56b1a89fd3c93",
+        "normalized_query": "cliente ficticio project ficticio 001",
+        "expected": [
+          "gmv1_24f9185981bc8dddb2a9"
+        ],
+        "candidate_ids": [
+          "gmv1_24f9185981bc8dddb2a9"
+        ],
+        "elapsed_ms": 4.193249988020398
+      },
+      {
+        "case_id": "gmv1_e54ef48a1a67375a65c6",
+        "normalized_query": "entregable principal project ficticio 001",
+        "expected": [
+          "gmv1_e7ae830016b07339ce18"
+        ],
+        "candidate_ids": [
+          "gmv1_e7ae830016b07339ce18"
+        ],
+        "elapsed_ms": 2.9643750021932647
+      },
+      {
+        "case_id": "gmv1_a19602e08cfb81da31d0",
+        "normalized_query": "riesgo principal registró project ficticio 001",
+        "expected": [
+          "gmv1_6ed2b2c424ed6b901a84"
+        ],
+        "candidate_ids": [],
+        "elapsed_ms": 0.7318749994738027
+      },
+      {
+        "case_id": "gmv1_679af778e3a7c132fc1e",
+        "normalized_query": "decidió usar project ficticio 001 piloto",
+        "expected": [
+          "gmv1_6c3260a60a8e4e573fed"
+        ],
+        "candidate_ids": [
+          "gmv1_6c3260a60a8e4e573fed"
+        ],
+        "elapsed_ms": 2.665375010110438
+      },
+      {
+        "case_id": "gmv1_13842c0f9517442cf1a7",
+        "normalized_query": "depende project ficticio 001",
+        "expected": [
+          "gmv1_43e48d46def388b59784"
+        ],
+        "candidate_ids": [
+          "gmv1_43e48d46def388b59784"
+        ],
+        "elapsed_ms": 2.4788750015432015
+      },
+      {
+        "case_id": "gmv1_15f2683814567aab041d",
+        "normalized_query": "celebra seguimiento project ficticio 001",
+        "expected": [
+          "gmv1_d7e7e2c8f1e3a47749f4"
+        ],
+        "candidate_ids": [
+          "gmv1_d7e7e2c8f1e3a47749f4"
+        ],
+        "elapsed_ms": 2.8020839963573962
+      },
+      {
+        "case_id": "gmv1_7690c1537c9e1c180b6c",
+        "normalized_query": "excluye project ficticio 001 primera fase",
+        "expected": [
+          "gmv1_3d7f6cd7b51bbc43db6f"
+        ],
+        "candidate_ids": [
+          "gmv1_3d7f6cd7b51bbc43db6f"
+        ],
+        "elapsed_ms": 2.7746249979827553
+      },
+      {
+        "case_id": "gmv1_e1ca04ff8586b0de8a4b",
+        "normalized_query": "guardará artefactos project ficticio 001",
+        "expected": [
+          "gmv1_014bfb63746dd33acd8e"
+        ],
+        "candidate_ids": [
+          "gmv1_014bfb63746dd33acd8e"
+        ],
+        "elapsed_ms": 2.7967500063823536
+      },
+      {
+        "case_id": "gmv1_077394b36b5a95cc7417",
+        "normalized_query": "tiempo respuesta busca project ficticio 001",
+        "expected": [
+          "gmv1_4f2d384beebc737533ad"
+        ],
+        "candidate_ids": [],
+        "elapsed_ms": 0.9366669983137399
+      },
+      {
+        "case_id": "gmv1_c8abe90c2d95cde42fdc",
+        "normalized_query": "datos permite project ficticio 001 pruebas",
+        "expected": [
+          "gmv1_c5c785faa3d6d35e2518"
+        ],
+        "candidate_ids": [
+          "gmv1_c5c785faa3d6d35e2518"
+        ],
+        "elapsed_ms": 2.992375011672266
+      },
+      {
+        "case_id": "gmv1_e67db9006039bc682ad5",
+        "normalized_query": "revisa project ficticio 001",
+        "expected": [
+          "gmv1_6da544c0060d56062da0"
+        ],
+        "candidate_ids": [],
+        "elapsed_ms": 0.7320000004256144
+      },
+      {
+        "case_id": "gmv1_b1183c289ce9821c62d3",
+        "normalized_query": "documenta decisiones project ficticio 001",
+        "expected": [
+          "gmv1_0282f08e0ebbe9efeaf8"
+        ],
+        "candidate_ids": [
+          "gmv1_0282f08e0ebbe9efeaf8"
+        ],
+        "elapsed_ms": 3.2292499963659793
+      },
+      {
+        "case_id": "gmv1_9ab29b66a439ce5a262a",
+        "normalized_query": "siguiente hito project ficticio 001",
+        "expected": [
+          "gmv1_4a8883a65abfb64755aa"
+        ],
+        "candidate_ids": [
+          "gmv1_4a8883a65abfb64755aa"
+        ],
+        "elapsed_ms": 2.764666991424747
+      },
+      {
+        "case_id": "gmv1_f867a2887f16f832cc7d",
+        "normalized_query": "será primera interfaz project ficticio 001",
+        "expected": [
+          "gmv1_207c2e54b5a3b2c4d5a1"
+        ],
+        "candidate_ids": [
+          "gmv1_207c2e54b5a3b2c4d5a1"
+        ],
+        "elapsed_ms": 2.929374997620471
+      },
+      {
+        "case_id": "gmv1_a0dc21f5f0db305d2aab",
+        "normalized_query": "idioma documenta project ficticio 001",
+        "expected": [
+          "gmv1_cf4367be28fa1e826dec"
+        ],
+        "candidate_ids": [],
+        "elapsed_ms": 0.8515829977113754
+      },
+      {
+        "case_id": "gmv1_96337f8eabf8612a9879",
+        "normalized_query": "contacto soporte project ficticio 001",
+        "expected": [
+          "gmv1_b0c867cd5ce1cef9f77a"
+        ],
+        "candidate_ids": [
+          "gmv1_b0c867cd5ce1cef9f77a"
+        ],
+        "elapsed_ms": 2.8114169981563464
+      },
+      {
+        "case_id": "gmv1_559cc1bd317ec52dc2cd",
+        "normalized_query": "fuente verdad project ficticio 001",
+        "expected": [
+          "gmv1_f3e309cc208fa40fee69"
+        ],
+        "candidate_ids": [
+          "gmv1_f3e309cc208fa40fee69"
+        ],
+        "elapsed_ms": 2.7034590020775795
+      },
+      {
+        "case_id": "gmv1_2cb9e830e3fe089c58f6",
+        "normalized_query": "revierte cambios project ficticio 001",
+        "expected": [
+          "gmv1_feadcb223201a5382097"
+        ],
+        "candidate_ids": [
+          "gmv1_feadcb223201a5382097"
+        ],
+        "elapsed_ms": 2.716415998293087
+      },
+      {
+        "case_id": "gmv1_fdc99d57e41c5ffdc906",
+        "normalized_query": "cobertura mínima exige project ficticio 001",
+        "expected": [
+          "gmv1_4c923d8b899f59aabbeb"
+        ],
+        "candidate_ids": [
+          "gmv1_4c923d8b899f59aabbeb"
+        ],
+        "elapsed_ms": 2.8258329984964803
+      },
+      {
+        "case_id": "gmv1_b52162a414c0196c808f",
+        "normalized_query": "hace traspaso project ficticio 001",
+        "expected": [
+          "gmv1_2a0bbca95e8fd4c4d43b"
+        ],
+        "candidate_ids": [
+          "gmv1_2a0bbca95e8fd4c4d43b"
+        ],
+        "elapsed_ms": 2.630624992889352
+      },
+      {
+        "case_id": "gmv1_ec416c75bf493dbeaae3",
+        "normalized_query": "archiva resultados project ficticio 001",
+        "expected": [
+          "gmv1_6dec1d1efbdd72311f24"
+        ],
+        "candidate_ids": [
+          "gmv1_6dec1d1efbdd72311f24"
+        ],
+        "elapsed_ms": 2.7405409928178415
+      },
+      {
+        "case_id": "gmv1_1cfdd9d76419f26553a5",
+        "normalized_query": "código secreto project ficticio 001",
+        "expected": [],
+        "candidate_ids": [],
+        "elapsed_ms": 0.592917000176385
+      },
+      {
+        "case_id": "gmv1_f1c196f270b5bc3819be",
+        "normalized_query": "dirección postal exacta project ficticio 001",
+        "expected": [],
+        "candidate_ids": [],
+        "elapsed_ms": 0.7409160025417805
+      },
+      {
+        "case_id": "gmv1_84cb06ae95b895f07a50",
+        "normalized_query": "contraseña usa project ficticio 001",
+        "expected": [],
+        "candidate_ids": [],
+        "elapsed_ms": 0.8203749894164503
+      },
+      {
+        "case_id": "gmv1_a093cce640ce7a356cd0",
+        "normalized_query": "decisión tomó project ficticio 001 mañana",
+        "expected": [],
+        "candidate_ids": [],
+        "elapsed_ms": 0.7234170043375343
+      },
+      {
+        "case_id": "gmv1_9bfde074f20f0bbdce6a",
+        "normalized_query": "color favorito project ficticio 001",
+        "expected": [],
+        "candidate_ids": [],
+        "elapsed_ms": 0.5244579951977357
+      },
+      {
+        "case_id": "gmv1_423956194e4bfce96c69",
+        "normalized_query": "tarea actual conversation ficticio 001",
+        "expected": [
+          "gmv1_daf8654496352812fa43"
+        ],
+        "candidate_ids": [
+          "gmv1_daf8654496352812fa43"
+        ],
+        "elapsed_ms": 3.068249992793426
+      },
+      {
+        "case_id": "gmv1_1f558a36a649462bb06a",
+        "normalized_query": "siguiente paso acordó conversation ficticio 001",
+        "expected": [
+          "gmv1_02db127f7ecd9289e61d"
+        ],
+        "candidate_ids": [
+          "gmv1_02db127f7ecd9289e61d"
+        ],
+        "elapsed_ms": 3.6797079956158996
+      },
+      {
+        "case_id": "gmv1_9cba0fd25ac434661e64",
+        "normalized_query": "límite temporal pidió conversation ficticio 001",
+        "expected": [
+          "gmv1_bd16ef48b3618ee14bdc"
+        ],
+        "candidate_ids": [],
+        "elapsed_ms": 0.876082995091565
+      },
+      {
+        "case_id": "gmv1_e476d63ef214e720b4c4",
+        "normalized_query": "pregunta quedó pendiente conversation ficticio 001",
+        "expected": [
+          "gmv1_26ae958f767ce6b0f264"
+        ],
+        "candidate_ids": [],
+        "elapsed_ms": 1.1462499969638884
+      },
+      {
+        "case_id": "gmv1_447cb1c70762aed2f69c",
+        "normalized_query": "archivo mencionó conversation ficticio 001",
+        "expected": [
+          "gmv1_d66d8cfc04aebca2408f"
+        ],
+        "candidate_ids": [],
+        "elapsed_ms": 0.7691659993724898
+      },
+      {
+        "case_id": "gmv1_c5e5613f0e384db003eb",
+        "normalized_query": "opción eligió conversation ficticio 001",
+        "expected": [
+          "gmv1_95d4cc09fd5bb6f4717b"
+        ],
+        "candidate_ids": [
+          "gmv1_95d4cc09fd5bb6f4717b"
+        ],
+        "elapsed_ms": 2.8857089928351343
+      },
+      {
+        "case_id": "gmv1_230f7422e64f115f6053",
+        "normalized_query": "opción descartó conversation ficticio 001",
+        "expected": [
+          "gmv1_34499a1649bd8a23f60b"
+        ],
+        "candidate_ids": [
+          "gmv1_34499a1649bd8a23f60b"
+        ],
+        "elapsed_ms": 3.2113330089487135
+      },
+      {
+        "case_id": "gmv1_b4a63794753a847201a9",
+        "normalized_query": "debe revisarse resultado conversation ficticio 001",
+        "expected": [
+          "gmv1_7aa8a4c2a2d1c7d0eeba"
+        ],
+        "candidate_ids": [
+          "gmv1_7aa8a4c2a2d1c7d0eeba"
+        ],
+        "elapsed_ms": 3.355624998221174
+      },
+      {
+        "case_id": "gmv1_784b525fb7731340140c",
+        "normalized_query": "estilo respuesta pidió conversation ficticio 001",
+        "expected": [
+          "gmv1_27dda7a137bdef181841"
+        ],
+        "candidate_ids": [],
+        "elapsed_ms": 0.7832080009393394
+      },
+      {
+        "case_id": "gmv1_00755b740466918fb1af",
+        "normalized_query": "indica nota traspaso conversation ficticio 001",
+        "expected": [
+          "gmv1_d6a0cea7dbe644d3e4bf"
+        ],
+        "candidate_ids": [
+          "gmv1_d6a0cea7dbe644d3e4bf"
+        ],
+        "elapsed_ms": 3.29129199963063
+      },
+      {
+        "case_id": "gmv1_a39c2bb9095a8b9e473f",
+        "normalized_query": "asumió revisión conversation ficticio 001",
+        "expected": [
+          "gmv1_5a06b68cde6d282733c3"
+        ],
+        "candidate_ids": [
+          "gmv1_5a06b68cde6d282733c3"
+        ],
+        "elapsed_ms": 3.283415993792005
+      },
+      {
+        "case_id": "gmv1_e4f721082e418a637f70",
+        "normalized_query": "fecha revisión acordó conversation ficticio 001",
+        "expected": [
+          "gmv1_9f2312807c8558191c60"
+        ],
+        "candidate_ids": [],
+        "elapsed_ms": 0.982333003776148
+      },
+      {
+        "case_id": "gmv1_3e13f513b9ff0700a16a",
+        "normalized_query": "valor corrigió dato conversation ficticio 001",
+        "expected": [
+          "gmv1_0a9a617ac8464e92b1af"
+        ],
+        "candidate_ids": [],
+        "elapsed_ms": 0.8649160008644685
+      },
+      {
+        "case_id": "gmv1_850c3883a24b12e10d4a",
+        "normalized_query": "tomó decisión conversation ficticio 001",
+        "expected": [
+          "gmv1_b30620326a85e5915c02"
+        ],
+        "candidate_ids": [],
+        "elapsed_ms": 0.7116670021787286
+      },
+      {
+        "case_id": "gmv1_c31971ae7655de9d9d89",
+        "normalized_query": "supuesto abandonó conversation ficticio 001",
+        "expected": [
+          "gmv1_bf6f48ac692eac7b2e09"
+        ],
+        "candidate_ids": [],
+        "elapsed_ms": 0.8119169942801818
+      },
+      {
+        "case_id": "gmv1_235c9ab13081115918c3",
+        "normalized_query": "bloqueó avance conversation ficticio 001",
+        "expected": [
+          "gmv1_6296de08e5ed5b099710"
+        ],
+        "candidate_ids": [],
+        "elapsed_ms": 0.7338750001508743
+      },
+      {
+        "case_id": "gmv1_c63da28d53194de9da4a",
+        "normalized_query": "paso completó conversation ficticio 001",
+        "expected": [
+          "gmv1_b892f10b56bbfafcd583"
+        ],
+        "candidate_ids": [],
+        "elapsed_ms": 1.123833004385233
+      },
+      {
+        "case_id": "gmv1_af090f8238e802fd8b20",
+        "normalized_query": "aplazó conversation ficticio 001",
+        "expected": [
+          "gmv1_734bf9f28d6a01980c62"
+        ],
+        "candidate_ids": [
+          "gmv1_734bf9f28d6a01980c62"
+        ],
+        "elapsed_ms": 2.93612499081064
+      },
+      {
+        "case_id": "gmv1_9bde517928b59e89bd7c",
+        "normalized_query": "pidió ejemplo conversation ficticio 001",
+        "expected": [
+          "gmv1_cbd6cac9ab36a7a3bcd5"
+        ],
+        "candidate_ids": [
+          "gmv1_cbd6cac9ab36a7a3bcd5",
+          "gmv1_27dda7a137bdef181841",
+          "gmv1_8ebc135114eb39c6911c",
+          "gmv1_bd16ef48b3618ee14bdc"
+        ],
+        "elapsed_ms": 4.042291009682231
+      },
+      {
+        "case_id": "gmv1_a21493fc0731c4721a75",
+        "normalized_query": "prepara resultado conversation ficticio 001",
+        "expected": [
+          "gmv1_1045a62a0f037632db8a"
+        ],
+        "candidate_ids": [
+          "gmv1_1045a62a0f037632db8a"
+        ],
+        "elapsed_ms": 3.4163329983130097
+      },
+      {
+        "case_id": "gmv1_594bd3221e179250bfc9",
+        "normalized_query": "archivo adjuntó conversation ficticio 001",
+        "expected": [
+          "gmv1_6b0d654cbfb55925dd9a"
+        ],
+        "candidate_ids": [
+          "gmv1_6b0d654cbfb55925dd9a"
+        ],
+        "elapsed_ms": 3.173291013808921
+      },
+      {
+        "case_id": "gmv1_0a99d83f0c2176982e58",
+        "normalized_query": "fuente señaló conversation ficticio 001",
+        "expected": [
+          "gmv1_4f39eb5ce7e3a98cc081"
+        ],
+        "candidate_ids": [],
+        "elapsed_ms": 0.7790830131852999
+      },
+      {
+        "case_id": "gmv1_6ef46f28577bd3b10d4a",
+        "normalized_query": "devolvió herramienta conversation ficticio 001",
+        "expected": [
+          "gmv1_bda10c328431499982d8"
+        ],
+        "candidate_ids": [
+          "gmv1_bda10c328431499982d8"
+        ],
+        "elapsed_ms": 3.497375000733882
+      },
+      {
+        "case_id": "gmv1_88d086975df0125925a0",
+        "normalized_query": "quedó sin verificar conversation ficticio 001",
+        "expected": [
+          "gmv1_d290e8dda04d4c8397d2"
+        ],
+        "candidate_ids": [
+          "gmv1_d290e8dda04d4c8397d2"
+        ],
+        "elapsed_ms": 3.3266669925069436
+      },
+      {
+        "case_id": "gmv1_bd86f6b8c75bf9d73433",
+        "normalized_query": "limitó trabajo conversation ficticio 001",
+        "expected": [
+          "gmv1_06c5cac8b19b20f859b1"
+        ],
+        "candidate_ids": [
+          "gmv1_06c5cac8b19b20f859b1"
+        ],
+        "elapsed_ms": 3.0991670064395294
+      },
+      {
+        "case_id": "gmv1_e35ec00326f0c4fc9bab",
+        "normalized_query": "priorizó conversation ficticio 001",
+        "expected": [
+          "gmv1_6bd4120becbdf46eff86"
+        ],
+        "candidate_ids": [
+          "gmv1_6bd4120becbdf46eff86"
+        ],
+        "elapsed_ms": 2.889999988838099
+      },
+      {
+        "case_id": "gmv1_e26e146fa541ffa5c2d2",
+        "normalized_query": "idioma pidió explicar resultado conversation ficticio 001",
+        "expected": [
+          "gmv1_8ebc135114eb39c6911c"
+        ],
+        "candidate_ids": [],
+        "elapsed_ms": 0.991208988125436
+      },
+      {
+        "case_id": "gmv1_625d678e39c84e916452",
+        "normalized_query": "sobre hubo desacuerdo conversation ficticio 001",
+        "expected": [
+          "gmv1_d2a1a2064fdce80df754"
+        ],
+        "candidate_ids": [
+          "gmv1_d2a1a2064fdce80df754"
+        ],
+        "elapsed_ms": 3.1822500022826716
+      },
+      {
+        "case_id": "gmv1_23543eb53b0dc09f9180",
+        "normalized_query": "comentario recibió conversation ficticio 001",
+        "expected": [
+          "gmv1_1dd0ec710b8e809987c1"
+        ],
+        "candidate_ids": [],
+        "elapsed_ms": 0.873042008606717
+      },
+      {
+        "case_id": "gmv1_dee304143ab44874f983",
+        "normalized_query": "quedó pendiente cerrar conversation ficticio 001",
+        "expected": [
+          "gmv1_2e0d58c9336c68dfcfa1"
+        ],
+        "candidate_ids": [],
+        "elapsed_ms": 0.9820829873206094
+      },
+      {
+        "case_id": "gmv1_35a8e9f2a0e935265ca4",
+        "normalized_query": "código secreto conversation ficticio 001",
+        "expected": [],
+        "candidate_ids": [],
+        "elapsed_ms": 0.8170829969458282
+      },
+      {
+        "case_id": "gmv1_5d26a48ca2d50ff105da",
+        "normalized_query": "dirección postal exacta conversation ficticio 001",
+        "expected": [],
+        "candidate_ids": [],
+        "elapsed_ms": 0.8470829925499856
+      },
+      {
+        "case_id": "gmv1_96062418418ddb122f8f",
+        "normalized_query": "contraseña usa conversation ficticio 001",
+        "expected": [],
+        "candidate_ids": [],
+        "elapsed_ms": 0.9772079938556999
+      },
+      {
+        "case_id": "gmv1_189dfa1ac2fa9f8aa498",
+        "normalized_query": "decisión tomó conversation ficticio 001 mañana",
+        "expected": [],
+        "candidate_ids": [],
+        "elapsed_ms": 0.7836250006221235
+      },
+      {
+        "case_id": "gmv1_ffa1503111bbe550c877",
+        "normalized_query": "color favorito conversation ficticio 001",
+        "expected": [],
+        "candidate_ids": [],
+        "elapsed_ms": 0.61570800608024
+      },
+      {
+        "case_id": "gmv1_490c045596045974d0f8",
+        "normalized_query": "idioma salida registra perfil agent ficticio 001",
+        "expected": [
+          "gmv1_4f70937ac8c9b46ebbd0"
+        ],
+        "candidate_ids": [
+          "gmv1_4f70937ac8c9b46ebbd0"
+        ],
+        "elapsed_ms": 3.233791998354718
+      },
+      {
+        "case_id": "gmv1_ea4a8e05e73f13e822bc",
+        "normalized_query": "longitud respuesta registra perfil agent ficticio 001",
+        "expected": [
+          "gmv1_507d6810d619957d4cdb"
+        ],
+        "candidate_ids": [],
+        "elapsed_ms": 0.723915989510715
+      },
+      {
+        "case_id": "gmv1_29dfb9554fd3eb1608f7",
+        "normalized_query": "contrasta afirmaciones flujo agent ficticio 001",
+        "expected": [
+          "gmv1_6b6a6e4ad7f007c85c25"
+        ],
+        "candidate_ids": [
+          "gmv1_6b6a6e4ad7f007c85c25"
+        ],
+        "elapsed_ms": 3.338458001962863
+      },
+      {
+        "case_id": "gmv1_687ca4e9c1f8179b0fae",
+        "normalized_query": "trata fallos flujo agent ficticio 001",
+        "expected": [
+          "gmv1_7835fd3101b20eb295a4"
+        ],
+        "candidate_ids": [
+          "gmv1_7835fd3101b20eb295a4"
+        ],
+        "elapsed_ms": 2.7445839950814843
+      },
+      {
+        "case_id": "gmv1_98761f1d08e7f30cc644",
+        "normalized_query": "empieza secuencia registrada agent ficticio 001",
+        "expected": [
+          "gmv1_b57b9ebc940b6b41fd4e"
+        ],
+        "candidate_ids": [
+          "gmv1_b57b9ebc940b6b41fd4e"
+        ],
+        "elapsed_ms": 3.455333993770182
+      },
+      {
+        "case_id": "gmv1_71f43da1cdd8e5a61112",
+        "normalized_query": "dato marca excluido perfil agent ficticio 001",
+        "expected": [
+          "gmv1_9d64a2a4e4cb947dce65"
+        ],
+        "candidate_ids": [
+          "gmv1_9d64a2a4e4cb947dce65"
+        ],
+        "elapsed_ms": 3.0738749919692054
+      },
+      {
+        "case_id": "gmv1_448100399b4df69d5266",
+        "normalized_query": "señala informe registrado agent ficticio 001 falta evidencia",
+        "expected": [
+          "gmv1_f394b83f85c16d8127cb"
+        ],
+        "candidate_ids": [
+          "gmv1_f394b83f85c16d8127cb"
+        ],
+        "elapsed_ms": 3.65354199311696
+      },
+      {
+        "case_id": "gmv1_a7042890eae22c23d6da",
+        "normalized_query": "coloca referencias perfil agent ficticio 001",
+        "expected": [
+          "gmv1_e0921f3e3d32ceb95c2a"
+        ],
+        "candidate_ids": [
+          "gmv1_e0921f3e3d32ceb95c2a"
+        ],
+        "elapsed_ms": 3.2486660056747496
+      },
+      {
+        "case_id": "gmv1_db0f16429909e7e845fb",
+        "normalized_query": "condición planificación registra perfil agent ficticio 001",
+        "expected": [
+          "gmv1_5084b5b2212123744e50"
+        ],
+        "candidate_ids": [],
+        "elapsed_ms": 1.121207998949103
+      },
+      {
+        "case_id": "gmv1_3780ce36c70108692658",
+        "normalized_query": "incluye traspaso agent ficticio 001",
+        "expected": [
+          "gmv1_07e8c928619cb12f6dc9"
+        ],
+        "candidate_ids": [
+          "gmv1_07e8c928619cb12f6dc9"
+        ],
+        "elapsed_ms": 2.9141249979147688
+      },
+      {
+        "case_id": "gmv1_8632591009ab104266f8",
+        "normalized_query": "módulo activo registró agent ficticio 001",
+        "expected": [
+          "gmv1_542d13e9d0074d969b51"
+        ],
+        "candidate_ids": [],
+        "elapsed_ms": 0.9703340037958696
+      },
+      {
+        "case_id": "gmv1_313df7eef7069a5dc59b",
+        "normalized_query": "herramienta ofrece entorno agent ficticio 001",
+        "expected": [
+          "gmv1_a403d3a86558ee2c4fa2"
+        ],
+        "candidate_ids": [
+          "gmv1_a403d3a86558ee2c4fa2"
+        ],
+        "elapsed_ms": 3.354542001034133
+      },
+      {
+        "case_id": "gmv1_3694b9b6e7a7f503ff69",
+        "normalized_query": "está disponible entorno agent ficticio 001",
+        "expected": [
+          "gmv1_3354e1249d995b9b38d8"
+        ],
+        "candidate_ids": [
+          "gmv1_3354e1249d995b9b38d8"
+        ],
+        "elapsed_ms": 3.076166001847014
+      },
+      {
+        "case_id": "gmv1_767cd1d7c854e6e34d9a",
+        "normalized_query": "última operación exitosa agent ficticio 001",
+        "expected": [
+          "gmv1_dd481fab8e7ae1e9d43d"
+        ],
+        "candidate_ids": [
+          "gmv1_dd481fab8e7ae1e9d43d"
+        ],
+        "elapsed_ms": 3.1427080102730542
+      },
+      {
+        "case_id": "gmv1_1cfe2ee7fb2e1eb51233",
+        "normalized_query": "último fallo registrado agent ficticio 001",
+        "expected": [
+          "gmv1_164975a0c0f8abb94759"
+        ],
+        "candidate_ids": [
+          "gmv1_164975a0c0f8abb94759"
+        ],
+        "elapsed_ms": 3.1511670094914734
+      },
+      {
+        "case_id": "gmv1_8fd4f834b7507e3f728e",
+        "normalized_query": "punto control agent ficticio 001",
+        "expected": [
+          "gmv1_83273af564724ed14dae"
+        ],
+        "candidate_ids": [
+          "gmv1_83273af564724ed14dae"
+        ],
+        "elapsed_ms": 2.7020830020774156
+      },
+      {
+        "case_id": "gmv1_a10c4bad24892e291b99",
+        "normalized_query": "operación pendiente agent ficticio 001",
+        "expected": [
+          "gmv1_549d2eb5e228411bbe6c"
+        ],
+        "candidate_ids": [
+          "gmv1_549d2eb5e228411bbe6c"
+        ],
+        "elapsed_ms": 3.279500000644475
+      },
+      {
+        "case_id": "gmv1_eb60a154ba9192c88920",
+        "normalized_query": "artefacto produjo agent ficticio 001",
+        "expected": [
+          "gmv1_c1653573f528082b59fc"
+        ],
+        "candidate_ids": [],
+        "elapsed_ms": 0.8573340019211173
+      },
+      {
+        "case_id": "gmv1_dc08cee6905107b7c6c0",
+        "normalized_query": "fuente inspeccionó agent ficticio 001",
+        "expected": [
+          "gmv1_0582933c044a5a3f28bc"
+        ],
+        "candidate_ids": [],
+        "elapsed_ms": 0.7535000040661544
+      },
+      {
+        "case_id": "gmv1_e3c66110af395511ad8c",
+        "normalized_query": "código error observó agent ficticio 001",
+        "expected": [
+          "gmv1_facc70836b08801577ae"
+        ],
+        "candidate_ids": [],
+        "elapsed_ms": 0.669291999656707
+      },
+      {
+        "case_id": "gmv1_3d91ebd818c56599e22e",
+        "normalized_query": "cuántos reintentos indica registro agent ficticio 001",
+        "expected": [
+          "gmv1_f2743d7fc348ce5e05c9"
+        ],
+        "candidate_ids": [],
+        "elapsed_ms": 0.9344160062028095
+      },
+      {
+        "case_id": "gmv1_ccee22f0fd61d92fe529",
+        "normalized_query": "solución provisional registró agent ficticio 001",
+        "expected": [
+          "gmv1_83534d85e5ec6e69a729"
+        ],
+        "candidate_ids": [],
+        "elapsed_ms": 0.8565419993828982
+      },
+      {
+        "case_id": "gmv1_b35529533a48f2b324f1",
+        "normalized_query": "entorno registró agent ficticio 001",
+        "expected": [
+          "gmv1_bd891cf031cefac747ce"
+        ],
+        "candidate_ids": [],
+        "elapsed_ms": 0.6287920114118606
+      },
+      {
+        "case_id": "gmv1_471bcff70a2c12278fd1",
+        "normalized_query": "latencia midió agent ficticio 001",
+        "expected": [
+          "gmv1_e5f05d96c1d90ace8bce"
+        ],
+        "candidate_ids": [],
+        "elapsed_ms": 0.6098750018281862
+      },
+      {
+        "case_id": "gmv1_76497d497e93686fc560",
+        "normalized_query": "estado estaba caché observada agent ficticio 001",
+        "expected": [
+          "gmv1_44e9b59d447ce45a452d"
+        ],
+        "candidate_ids": [],
+        "elapsed_ms": 1.0960420040646568
+      },
+      {
+        "case_id": "gmv1_127dc81cc46b8b9a972a",
+        "normalized_query": "llamó conjunto evaluación agent ficticio 001",
+        "expected": [
+          "gmv1_fe61b0c379749e1d70ae"
+        ],
+        "candidate_ids": [
+          "gmv1_fe61b0c379749e1d70ae"
+        ],
+        "elapsed_ms": 3.034374996786937
+      },
+      {
+        "case_id": "gmv1_7a6f200b6688e1c8fda8",
+        "normalized_query": "límite conocido registró agent ficticio 001",
+        "expected": [
+          "gmv1_f37b538d6290f4c2f2b1"
+        ],
+        "candidate_ids": [],
+        "elapsed_ms": 0.7882089994382113
+      },
+      {
+        "case_id": "gmv1_4c5ee8a6a905896cd8c6",
+        "normalized_query": "siguiente comprobación agent ficticio 001",
+        "expected": [
+          "gmv1_beafbeafe3d030fb242e"
+        ],
+        "candidate_ids": [
+          "gmv1_beafbeafe3d030fb242e"
+        ],
+        "elapsed_ms": 3.51445798878558
+      },
+      {
+        "case_id": "gmv1_efc84a0b57baca642669",
+        "normalized_query": "asignó traspaso agent ficticio 001",
+        "expected": [
+          "gmv1_b52d04b7e91fb329c960"
+        ],
+        "candidate_ids": [],
+        "elapsed_ms": 0.6142080092104152
+      },
+      {
+        "case_id": "gmv1_bab3844dea3a5cd10e91",
+        "normalized_query": "estado cerró agent ficticio 001",
+        "expected": [
+          "gmv1_aedee3c546ba68f3d1e8"
+        ],
+        "candidate_ids": [],
+        "elapsed_ms": 0.8527919999323785
+      },
+      {
+        "case_id": "gmv1_690f04fe6b89a6003b73",
+        "normalized_query": "código secreto agent ficticio 001",
+        "expected": [],
+        "candidate_ids": [],
+        "elapsed_ms": 0.538583000889048
+      },
+      {
+        "case_id": "gmv1_546402afab71964ee375",
+        "normalized_query": "dirección postal exacta agent ficticio 001",
+        "expected": [],
+        "candidate_ids": [],
+        "elapsed_ms": 0.7442499918397516
+      },
+      {
+        "case_id": "gmv1_336e55586cbd18502185",
+        "normalized_query": "contraseña usa agent ficticio 001",
+        "expected": [],
+        "candidate_ids": [],
+        "elapsed_ms": 0.6905000045662746
+      },
+      {
+        "case_id": "gmv1_1e480ceb49f644593f7f",
+        "normalized_query": "decisión tomó agent ficticio 001 mañana",
+        "expected": [],
+        "candidate_ids": [],
+        "elapsed_ms": 0.6442079902626574
+      },
+      {
+        "case_id": "gmv1_0a35578f4ba4fbacf7d2",
+        "normalized_query": "color favorito agent ficticio 001",
+        "expected": [],
+        "candidate_ids": [],
+        "elapsed_ms": 0.4714170063380152
+      }
+    ],
+    "any": [
+      {
+        "case_id": "gmv1_d801f72be8acfa46ddf6",
+        "normalized_query": "nombre completo user ficticio 001",
+        "expected": [
+          "gmv1_745e550c42f8260eed9e"
+        ],
+        "candidate_ids": [
+          "gmv1_745e550c42f8260eed9e",
+          "gmv1_6c14196a4859ce5f662d",
+          "gmv1_3bf91960d59b1ec66349",
+          "gmv1_55d9763a9ab577561d4c",
+          "gmv1_4365537c25203743461d",
+          "gmv1_50ffb8e833a551ff8878",
+          "gmv1_7ddbb1ecfa6397d2c6a1",
+          "gmv1_b25999a37371c42a28ae",
+          "gmv1_34c062f9282fdec63d00",
+          "gmv1_dd5947b265bf6cef95ab",
+          "gmv1_83a08a9ccd69d3f73e13",
+          "gmv1_31c529799eb63ed1e71d",
+          "gmv1_441eb105af3a12915613",
+          "gmv1_572d4b0b8e4b9b45381c",
+          "gmv1_744e94ec7f1e0d686abf",
+          "gmv1_a853c356064d84e0f3e2",
+          "gmv1_dfd643b2e9767b1b830c",
+          "gmv1_9a9b25283b613190411d",
+          "gmv1_4d14c1321599e6cc1d12",
+          "gmv1_472ab82afb83f04a5a15"
+        ],
+        "elapsed_ms": 5.460083004436456
+      },
+      {
+        "case_id": "gmv1_e9083c98ce7a4a988cfd",
+        "normalized_query": "prefiere user ficticio 001 llamen",
+        "expected": [
+          "gmv1_55d9763a9ab577561d4c"
+        ],
+        "candidate_ids": [
+          "gmv1_55d9763a9ab577561d4c",
+          "gmv1_3bf91960d59b1ec66349",
+          "gmv1_b25999a37371c42a28ae",
+          "gmv1_34c062f9282fdec63d00",
+          "gmv1_dd5947b265bf6cef95ab",
+          "gmv1_572d4b0b8e4b9b45381c",
+          "gmv1_744e94ec7f1e0d686abf",
+          "gmv1_4d14c1321599e6cc1d12",
+          "gmv1_472ab82afb83f04a5a15",
+          "gmv1_30bffdc232dab25dca44",
+          "gmv1_6c14196a4859ce5f662d",
+          "gmv1_4365537c25203743461d",
+          "gmv1_50ffb8e833a551ff8878",
+          "gmv1_7ddbb1ecfa6397d2c6a1",
+          "gmv1_83a08a9ccd69d3f73e13",
+          "gmv1_31c529799eb63ed1e71d",
+          "gmv1_745e550c42f8260eed9e",
+          "gmv1_441eb105af3a12915613",
+          "gmv1_a853c356064d84e0f3e2",
+          "gmv1_dfd643b2e9767b1b830c"
+        ],
+        "elapsed_ms": 5.296583010931499
+      },
+      {
+        "case_id": "gmv1_8b22857a1862b53f776a",
+        "normalized_query": "idioma prefiere conversar user ficticio 001",
+        "expected": [
+          "gmv1_34c062f9282fdec63d00"
+        ],
+        "candidate_ids": [
+          "gmv1_34c062f9282fdec63d00",
+          "gmv1_3bf91960d59b1ec66349",
+          "gmv1_55d9763a9ab577561d4c",
+          "gmv1_b25999a37371c42a28ae",
+          "gmv1_dd5947b265bf6cef95ab",
+          "gmv1_572d4b0b8e4b9b45381c",
+          "gmv1_744e94ec7f1e0d686abf",
+          "gmv1_4d14c1321599e6cc1d12",
+          "gmv1_472ab82afb83f04a5a15",
+          "gmv1_30bffdc232dab25dca44",
+          "gmv1_6c14196a4859ce5f662d",
+          "gmv1_4365537c25203743461d",
+          "gmv1_50ffb8e833a551ff8878",
+          "gmv1_7ddbb1ecfa6397d2c6a1",
+          "gmv1_83a08a9ccd69d3f73e13",
+          "gmv1_31c529799eb63ed1e71d",
+          "gmv1_745e550c42f8260eed9e",
+          "gmv1_441eb105af3a12915613",
+          "gmv1_a853c356064d84e0f3e2",
+          "gmv1_dfd643b2e9767b1b830c"
+        ],
+        "elapsed_ms": 5.728500007535331
+      },
+      {
+        "case_id": "gmv1_810eebc2e9222196825c",
+        "normalized_query": "tono prefiere user ficticio 001 respuestas",
+        "expected": [
+          "gmv1_572d4b0b8e4b9b45381c"
+        ],
+        "candidate_ids": [
+          "gmv1_572d4b0b8e4b9b45381c",
+          "gmv1_3bf91960d59b1ec66349",
+          "gmv1_55d9763a9ab577561d4c",
+          "gmv1_b25999a37371c42a28ae",
+          "gmv1_34c062f9282fdec63d00",
+          "gmv1_dd5947b265bf6cef95ab",
+          "gmv1_744e94ec7f1e0d686abf",
+          "gmv1_4d14c1321599e6cc1d12",
+          "gmv1_472ab82afb83f04a5a15",
+          "gmv1_30bffdc232dab25dca44",
+          "gmv1_6c14196a4859ce5f662d",
+          "gmv1_4365537c25203743461d",
+          "gmv1_50ffb8e833a551ff8878",
+          "gmv1_7ddbb1ecfa6397d2c6a1",
+          "gmv1_83a08a9ccd69d3f73e13",
+          "gmv1_31c529799eb63ed1e71d",
+          "gmv1_745e550c42f8260eed9e",
+          "gmv1_441eb105af3a12915613",
+          "gmv1_a853c356064d84e0f3e2",
+          "gmv1_dfd643b2e9767b1b830c"
+        ],
+        "elapsed_ms": 5.658666996168904
+      },
+      {
+        "case_id": "gmv1_d7b08d12991f5540c03d",
+        "normalized_query": "zona horaria usa user ficticio 001",
+        "expected": [
+          "gmv1_83a08a9ccd69d3f73e13"
+        ],
+        "candidate_ids": [
+          "gmv1_83a08a9ccd69d3f73e13",
+          "gmv1_6c14196a4859ce5f662d",
+          "gmv1_3bf91960d59b1ec66349",
+          "gmv1_55d9763a9ab577561d4c",
+          "gmv1_4365537c25203743461d",
+          "gmv1_50ffb8e833a551ff8878",
+          "gmv1_7ddbb1ecfa6397d2c6a1",
+          "gmv1_b25999a37371c42a28ae",
+          "gmv1_34c062f9282fdec63d00",
+          "gmv1_dd5947b265bf6cef95ab",
+          "gmv1_31c529799eb63ed1e71d",
+          "gmv1_745e550c42f8260eed9e",
+          "gmv1_441eb105af3a12915613",
+          "gmv1_572d4b0b8e4b9b45381c",
+          "gmv1_744e94ec7f1e0d686abf",
+          "gmv1_a853c356064d84e0f3e2",
+          "gmv1_dfd643b2e9767b1b830c",
+          "gmv1_9a9b25283b613190411d",
+          "gmv1_4d14c1321599e6cc1d12",
+          "gmv1_472ab82afb83f04a5a15"
+        ],
+        "elapsed_ms": 4.547916003502905
+      },
+      {
+        "case_id": "gmv1_6c70b11b487cc223d889",
+        "normalized_query": "ciudad ficticia vive user ficticio 001",
+        "expected": [
+          "gmv1_dfd643b2e9767b1b830c"
+        ],
+        "candidate_ids": [
+          "gmv1_dfd643b2e9767b1b830c",
+          "gmv1_6c14196a4859ce5f662d",
+          "gmv1_3bf91960d59b1ec66349",
+          "gmv1_55d9763a9ab577561d4c",
+          "gmv1_4365537c25203743461d",
+          "gmv1_50ffb8e833a551ff8878",
+          "gmv1_7ddbb1ecfa6397d2c6a1",
+          "gmv1_b25999a37371c42a28ae",
+          "gmv1_34c062f9282fdec63d00",
+          "gmv1_dd5947b265bf6cef95ab",
+          "gmv1_83a08a9ccd69d3f73e13",
+          "gmv1_31c529799eb63ed1e71d",
+          "gmv1_745e550c42f8260eed9e",
+          "gmv1_441eb105af3a12915613",
+          "gmv1_572d4b0b8e4b9b45381c",
+          "gmv1_744e94ec7f1e0d686abf",
+          "gmv1_a853c356064d84e0f3e2",
+          "gmv1_9a9b25283b613190411d",
+          "gmv1_4d14c1321599e6cc1d12",
+          "gmv1_472ab82afb83f04a5a15"
+        ],
+        "elapsed_ms": 5.772749995230697
+      },
+      {
+        "case_id": "gmv1_4b97073ff4217dc685fc",
+        "normalized_query": "cargo user ficticio 001",
+        "expected": [
+          "gmv1_9a9b25283b613190411d"
+        ],
+        "candidate_ids": [
+          "gmv1_9a9b25283b613190411d",
+          "gmv1_6c14196a4859ce5f662d",
+          "gmv1_3bf91960d59b1ec66349",
+          "gmv1_55d9763a9ab577561d4c",
+          "gmv1_4365537c25203743461d",
+          "gmv1_50ffb8e833a551ff8878",
+          "gmv1_7ddbb1ecfa6397d2c6a1",
+          "gmv1_b25999a37371c42a28ae",
+          "gmv1_34c062f9282fdec63d00",
+          "gmv1_dd5947b265bf6cef95ab",
+          "gmv1_83a08a9ccd69d3f73e13",
+          "gmv1_31c529799eb63ed1e71d",
+          "gmv1_745e550c42f8260eed9e",
+          "gmv1_441eb105af3a12915613",
+          "gmv1_572d4b0b8e4b9b45381c",
+          "gmv1_744e94ec7f1e0d686abf",
+          "gmv1_a853c356064d84e0f3e2",
+          "gmv1_dfd643b2e9767b1b830c",
+          "gmv1_4d14c1321599e6cc1d12",
+          "gmv1_472ab82afb83f04a5a15"
+        ],
+        "elapsed_ms": 4.349416994955391
+      },
+      {
+        "case_id": "gmv1_a3eaad1825a776daa17a",
+        "normalized_query": "equipo pertenece user ficticio 001",
+        "expected": [
+          "gmv1_4365537c25203743461d"
+        ],
+        "candidate_ids": [
+          "gmv1_4365537c25203743461d",
+          "gmv1_6c14196a4859ce5f662d",
+          "gmv1_3bf91960d59b1ec66349",
+          "gmv1_55d9763a9ab577561d4c",
+          "gmv1_50ffb8e833a551ff8878",
+          "gmv1_7ddbb1ecfa6397d2c6a1",
+          "gmv1_b25999a37371c42a28ae",
+          "gmv1_34c062f9282fdec63d00",
+          "gmv1_dd5947b265bf6cef95ab",
+          "gmv1_83a08a9ccd69d3f73e13",
+          "gmv1_31c529799eb63ed1e71d",
+          "gmv1_745e550c42f8260eed9e",
+          "gmv1_441eb105af3a12915613",
+          "gmv1_572d4b0b8e4b9b45381c",
+          "gmv1_744e94ec7f1e0d686abf",
+          "gmv1_a853c356064d84e0f3e2",
+          "gmv1_dfd643b2e9767b1b830c",
+          "gmv1_9a9b25283b613190411d",
+          "gmv1_4d14c1321599e6cc1d12",
+          "gmv1_472ab82afb83f04a5a15"
+        ],
+        "elapsed_ms": 4.646125002182089
+      },
+      {
+        "case_id": "gmv1_8346c6b86fb047857545",
+        "normalized_query": "canal prefiere mensajes trabajo user ficticio 001",
+        "expected": [
+          "gmv1_30bffdc232dab25dca44"
+        ],
+        "candidate_ids": [
+          "gmv1_30bffdc232dab25dca44",
+          "gmv1_58169664179b330f26a2",
+          "gmv1_3bf91960d59b1ec66349",
+          "gmv1_55d9763a9ab577561d4c",
+          "gmv1_b25999a37371c42a28ae",
+          "gmv1_34c062f9282fdec63d00",
+          "gmv1_dd5947b265bf6cef95ab",
+          "gmv1_572d4b0b8e4b9b45381c",
+          "gmv1_744e94ec7f1e0d686abf",
+          "gmv1_4d14c1321599e6cc1d12",
+          "gmv1_472ab82afb83f04a5a15",
+          "gmv1_6c14196a4859ce5f662d",
+          "gmv1_4365537c25203743461d",
+          "gmv1_50ffb8e833a551ff8878",
+          "gmv1_7ddbb1ecfa6397d2c6a1",
+          "gmv1_83a08a9ccd69d3f73e13",
+          "gmv1_31c529799eb63ed1e71d",
+          "gmv1_745e550c42f8260eed9e",
+          "gmv1_441eb105af3a12915613",
+          "gmv1_a853c356064d84e0f3e2"
+        ],
+        "elapsed_ms": 6.867082993267104
+      },
+      {
+        "case_id": "gmv1_ed83abe1473136698eaa",
+        "normalized_query": "hora prefiere reuniones user ficticio 001",
+        "expected": [
+          "gmv1_dd5947b265bf6cef95ab"
+        ],
+        "candidate_ids": [
+          "gmv1_dd5947b265bf6cef95ab",
+          "gmv1_83a08a9ccd69d3f73e13",
+          "gmv1_31c529799eb63ed1e71d",
+          "gmv1_4bff8d0194b0caffa02d",
+          "gmv1_3bf91960d59b1ec66349",
+          "gmv1_55d9763a9ab577561d4c",
+          "gmv1_b25999a37371c42a28ae",
+          "gmv1_34c062f9282fdec63d00",
+          "gmv1_572d4b0b8e4b9b45381c",
+          "gmv1_744e94ec7f1e0d686abf",
+          "gmv1_4d14c1321599e6cc1d12",
+          "gmv1_472ab82afb83f04a5a15",
+          "gmv1_30bffdc232dab25dca44",
+          "gmv1_6c14196a4859ce5f662d",
+          "gmv1_4365537c25203743461d",
+          "gmv1_50ffb8e833a551ff8878",
+          "gmv1_7ddbb1ecfa6397d2c6a1",
+          "gmv1_745e550c42f8260eed9e",
+          "gmv1_441eb105af3a12915613",
+          "gmv1_a853c356064d84e0f3e2"
+        ],
+        "elapsed_ms": 5.909082989091985
+      },
+      {
+        "case_id": "gmv1_39568bceea82ec944c5c",
+        "normalized_query": "reserva user ficticio 001 tiempo concentración",
+        "expected": [
+          "gmv1_58169664179b330f26a2"
+        ],
+        "candidate_ids": [
+          "gmv1_58169664179b330f26a2",
+          "gmv1_6c14196a4859ce5f662d",
+          "gmv1_3bf91960d59b1ec66349",
+          "gmv1_55d9763a9ab577561d4c",
+          "gmv1_4365537c25203743461d",
+          "gmv1_50ffb8e833a551ff8878",
+          "gmv1_7ddbb1ecfa6397d2c6a1",
+          "gmv1_b25999a37371c42a28ae",
+          "gmv1_34c062f9282fdec63d00",
+          "gmv1_dd5947b265bf6cef95ab",
+          "gmv1_83a08a9ccd69d3f73e13",
+          "gmv1_31c529799eb63ed1e71d",
+          "gmv1_745e550c42f8260eed9e",
+          "gmv1_441eb105af3a12915613",
+          "gmv1_572d4b0b8e4b9b45381c",
+          "gmv1_744e94ec7f1e0d686abf",
+          "gmv1_a853c356064d84e0f3e2",
+          "gmv1_dfd643b2e9767b1b830c",
+          "gmv1_9a9b25283b613190411d",
+          "gmv1_4d14c1321599e6cc1d12"
+        ],
+        "elapsed_ms": 5.391000013332814
+      },
+      {
+        "case_id": "gmv1_92eee5076c6e4c811011",
+        "normalized_query": "debe incluir invitación user ficticio 001",
+        "expected": [
+          "gmv1_b2c07f0abcea252f6443"
+        ],
+        "candidate_ids": [
+          "gmv1_6c14196a4859ce5f662d",
+          "gmv1_3bf91960d59b1ec66349",
+          "gmv1_55d9763a9ab577561d4c",
+          "gmv1_4365537c25203743461d",
+          "gmv1_50ffb8e833a551ff8878",
+          "gmv1_7ddbb1ecfa6397d2c6a1",
+          "gmv1_b25999a37371c42a28ae",
+          "gmv1_34c062f9282fdec63d00",
+          "gmv1_dd5947b265bf6cef95ab",
+          "gmv1_83a08a9ccd69d3f73e13",
+          "gmv1_31c529799eb63ed1e71d",
+          "gmv1_745e550c42f8260eed9e",
+          "gmv1_441eb105af3a12915613",
+          "gmv1_572d4b0b8e4b9b45381c",
+          "gmv1_744e94ec7f1e0d686abf",
+          "gmv1_a853c356064d84e0f3e2",
+          "gmv1_dfd643b2e9767b1b830c",
+          "gmv1_9a9b25283b613190411d",
+          "gmv1_4d14c1321599e6cc1d12",
+          "gmv1_472ab82afb83f04a5a15"
+        ],
+        "elapsed_ms": 4.75525000365451
+      },
+      {
+        "case_id": "gmv1_619378351ad522b37d2e",
+        "normalized_query": "formato prefiere informes user ficticio 001",
+        "expected": [
+          "gmv1_3bf91960d59b1ec66349"
+        ],
+        "candidate_ids": [
+          "gmv1_3bf91960d59b1ec66349",
+          "gmv1_744e94ec7f1e0d686abf",
+          "gmv1_55d9763a9ab577561d4c",
+          "gmv1_b25999a37371c42a28ae",
+          "gmv1_34c062f9282fdec63d00",
+          "gmv1_dd5947b265bf6cef95ab",
+          "gmv1_572d4b0b8e4b9b45381c",
+          "gmv1_4d14c1321599e6cc1d12",
+          "gmv1_472ab82afb83f04a5a15",
+          "gmv1_30bffdc232dab25dca44",
+          "gmv1_6c14196a4859ce5f662d",
+          "gmv1_4365537c25203743461d",
+          "gmv1_50ffb8e833a551ff8878",
+          "gmv1_7ddbb1ecfa6397d2c6a1",
+          "gmv1_83a08a9ccd69d3f73e13",
+          "gmv1_31c529799eb63ed1e71d",
+          "gmv1_745e550c42f8260eed9e",
+          "gmv1_441eb105af3a12915613",
+          "gmv1_a853c356064d84e0f3e2",
+          "gmv1_dfd643b2e9767b1b830c"
+        ],
+        "elapsed_ms": 5.579624994425103
+      },
+      {
+        "case_id": "gmv1_4f2d9a079d4c08203b3b",
+        "normalized_query": "formato fecha prefiere user ficticio 001",
+        "expected": [
+          "gmv1_744e94ec7f1e0d686abf"
+        ],
+        "candidate_ids": [
+          "gmv1_744e94ec7f1e0d686abf",
+          "gmv1_3bf91960d59b1ec66349",
+          "gmv1_55d9763a9ab577561d4c",
+          "gmv1_b25999a37371c42a28ae",
+          "gmv1_34c062f9282fdec63d00",
+          "gmv1_dd5947b265bf6cef95ab",
+          "gmv1_572d4b0b8e4b9b45381c",
+          "gmv1_4d14c1321599e6cc1d12",
+          "gmv1_472ab82afb83f04a5a15",
+          "gmv1_30bffdc232dab25dca44",
+          "gmv1_6c14196a4859ce5f662d",
+          "gmv1_4365537c25203743461d",
+          "gmv1_50ffb8e833a551ff8878",
+          "gmv1_7ddbb1ecfa6397d2c6a1",
+          "gmv1_83a08a9ccd69d3f73e13",
+          "gmv1_31c529799eb63ed1e71d",
+          "gmv1_745e550c42f8260eed9e",
+          "gmv1_441eb105af3a12915613",
+          "gmv1_a853c356064d84e0f3e2",
+          "gmv1_dfd643b2e9767b1b830c"
+        ],
+        "elapsed_ms": 5.307874991558492
+      },
+      {
+        "case_id": "gmv1_8b443bd0a0ca950838c7",
+        "normalized_query": "unidades prefiere user ficticio 001",
+        "expected": [
+          "gmv1_4d14c1321599e6cc1d12"
+        ],
+        "candidate_ids": [
+          "gmv1_3bf91960d59b1ec66349",
+          "gmv1_55d9763a9ab577561d4c",
+          "gmv1_b25999a37371c42a28ae",
+          "gmv1_34c062f9282fdec63d00",
+          "gmv1_dd5947b265bf6cef95ab",
+          "gmv1_572d4b0b8e4b9b45381c",
+          "gmv1_744e94ec7f1e0d686abf",
+          "gmv1_4d14c1321599e6cc1d12",
+          "gmv1_472ab82afb83f04a5a15",
+          "gmv1_30bffdc232dab25dca44",
+          "gmv1_6c14196a4859ce5f662d",
+          "gmv1_4365537c25203743461d",
+          "gmv1_50ffb8e833a551ff8878",
+          "gmv1_7ddbb1ecfa6397d2c6a1",
+          "gmv1_83a08a9ccd69d3f73e13",
+          "gmv1_31c529799eb63ed1e71d",
+          "gmv1_745e550c42f8260eed9e",
+          "gmv1_441eb105af3a12915613",
+          "gmv1_a853c356064d84e0f3e2",
+          "gmv1_dfd643b2e9767b1b830c"
+        ],
+        "elapsed_ms": 4.963625004165806
+      },
+      {
+        "case_id": "gmv1_953c8e21334117db1eb3",
+        "normalized_query": "ajuste accesibilidad necesita user ficticio 001 documentos",
+        "expected": [
+          "gmv1_a853c356064d84e0f3e2"
+        ],
+        "candidate_ids": [
+          "gmv1_a853c356064d84e0f3e2",
+          "gmv1_3265d058092373acd732",
+          "gmv1_6c14196a4859ce5f662d",
+          "gmv1_3bf91960d59b1ec66349",
+          "gmv1_55d9763a9ab577561d4c",
+          "gmv1_4365537c25203743461d",
+          "gmv1_50ffb8e833a551ff8878",
+          "gmv1_7ddbb1ecfa6397d2c6a1",
+          "gmv1_b25999a37371c42a28ae",
+          "gmv1_34c062f9282fdec63d00",
+          "gmv1_dd5947b265bf6cef95ab",
+          "gmv1_83a08a9ccd69d3f73e13",
+          "gmv1_31c529799eb63ed1e71d",
+          "gmv1_745e550c42f8260eed9e",
+          "gmv1_441eb105af3a12915613",
+          "gmv1_572d4b0b8e4b9b45381c",
+          "gmv1_744e94ec7f1e0d686abf",
+          "gmv1_dfd643b2e9767b1b830c",
+          "gmv1_9a9b25283b613190411d",
+          "gmv1_4d14c1321599e6cc1d12"
+        ],
+        "elapsed_ms": 5.8537919976515695
+      },
+      {
+        "case_id": "gmv1_9ef7cb204be7a5a8a69b",
+        "normalized_query": "quiere notificaciones user ficticio 001",
+        "expected": [
+          "gmv1_4bff8d0194b0caffa02d"
+        ],
+        "candidate_ids": [
+          "gmv1_4bff8d0194b0caffa02d",
+          "gmv1_441eb105af3a12915613",
+          "gmv1_b2c07f0abcea252f6443",
+          "gmv1_6c14196a4859ce5f662d",
+          "gmv1_3bf91960d59b1ec66349",
+          "gmv1_55d9763a9ab577561d4c",
+          "gmv1_4365537c25203743461d",
+          "gmv1_50ffb8e833a551ff8878",
+          "gmv1_7ddbb1ecfa6397d2c6a1",
+          "gmv1_b25999a37371c42a28ae",
+          "gmv1_34c062f9282fdec63d00",
+          "gmv1_dd5947b265bf6cef95ab",
+          "gmv1_83a08a9ccd69d3f73e13",
+          "gmv1_31c529799eb63ed1e71d",
+          "gmv1_745e550c42f8260eed9e",
+          "gmv1_572d4b0b8e4b9b45381c",
+          "gmv1_744e94ec7f1e0d686abf",
+          "gmv1_a853c356064d84e0f3e2",
+          "gmv1_dfd643b2e9767b1b830c",
+          "gmv1_9a9b25283b613190411d"
+        ],
+        "elapsed_ms": 5.326124999555759
+      },
+      {
+        "case_id": "gmv1_53b47eca93a64cca402a",
+        "normalized_query": "comida prefiere user ficticio 001",
+        "expected": [
+          "gmv1_b25999a37371c42a28ae"
+        ],
+        "candidate_ids": [
+          "gmv1_b25999a37371c42a28ae",
+          "gmv1_3bf91960d59b1ec66349",
+          "gmv1_55d9763a9ab577561d4c",
+          "gmv1_34c062f9282fdec63d00",
+          "gmv1_dd5947b265bf6cef95ab",
+          "gmv1_572d4b0b8e4b9b45381c",
+          "gmv1_744e94ec7f1e0d686abf",
+          "gmv1_4d14c1321599e6cc1d12",
+          "gmv1_472ab82afb83f04a5a15",
+          "gmv1_30bffdc232dab25dca44",
+          "gmv1_6c14196a4859ce5f662d",
+          "gmv1_4365537c25203743461d",
+          "gmv1_50ffb8e833a551ff8878",
+          "gmv1_7ddbb1ecfa6397d2c6a1",
+          "gmv1_83a08a9ccd69d3f73e13",
+          "gmv1_31c529799eb63ed1e71d",
+          "gmv1_745e550c42f8260eed9e",
+          "gmv1_441eb105af3a12915613",
+          "gmv1_a853c356064d84e0f3e2",
+          "gmv1_dfd643b2e9767b1b830c"
+        ],
+        "elapsed_ms": 4.9302080005872995
+      },
+      {
+        "case_id": "gmv1_a1d0ab9825ff805d49ca",
+        "normalized_query": "bebida suele pedir user ficticio 001 reuniones",
+        "expected": [
+          "gmv1_31c529799eb63ed1e71d"
+        ],
+        "candidate_ids": [
+          "gmv1_31c529799eb63ed1e71d",
+          "gmv1_7ddbb1ecfa6397d2c6a1",
+          "gmv1_dd5947b265bf6cef95ab",
+          "gmv1_4bff8d0194b0caffa02d",
+          "gmv1_6c14196a4859ce5f662d",
+          "gmv1_3bf91960d59b1ec66349",
+          "gmv1_55d9763a9ab577561d4c",
+          "gmv1_4365537c25203743461d",
+          "gmv1_50ffb8e833a551ff8878",
+          "gmv1_b25999a37371c42a28ae",
+          "gmv1_34c062f9282fdec63d00",
+          "gmv1_83a08a9ccd69d3f73e13",
+          "gmv1_745e550c42f8260eed9e",
+          "gmv1_441eb105af3a12915613",
+          "gmv1_572d4b0b8e4b9b45381c",
+          "gmv1_744e94ec7f1e0d686abf",
+          "gmv1_a853c356064d84e0f3e2",
+          "gmv1_dfd643b2e9767b1b830c",
+          "gmv1_9a9b25283b613190411d",
+          "gmv1_4d14c1321599e6cc1d12"
+        ],
+        "elapsed_ms": 5.068958009360358
+      },
+      {
+        "case_id": "gmv1_3f4a16a82c070a2b16a9",
+        "normalized_query": "asiento prefiere user ficticio 001 viajar",
+        "expected": [
+          "gmv1_472ab82afb83f04a5a15"
+        ],
+        "candidate_ids": [
+          "gmv1_472ab82afb83f04a5a15",
+          "gmv1_3bf91960d59b1ec66349",
+          "gmv1_55d9763a9ab577561d4c",
+          "gmv1_b25999a37371c42a28ae",
+          "gmv1_34c062f9282fdec63d00",
+          "gmv1_dd5947b265bf6cef95ab",
+          "gmv1_572d4b0b8e4b9b45381c",
+          "gmv1_744e94ec7f1e0d686abf",
+          "gmv1_4d14c1321599e6cc1d12",
+          "gmv1_30bffdc232dab25dca44",
+          "gmv1_6c14196a4859ce5f662d",
+          "gmv1_4365537c25203743461d",
+          "gmv1_50ffb8e833a551ff8878",
+          "gmv1_7ddbb1ecfa6397d2c6a1",
+          "gmv1_83a08a9ccd69d3f73e13",
+          "gmv1_31c529799eb63ed1e71d",
+          "gmv1_745e550c42f8260eed9e",
+          "gmv1_441eb105af3a12915613",
+          "gmv1_a853c356064d84e0f3e2",
+          "gmv1_dfd643b2e9767b1b830c"
+        ],
+        "elapsed_ms": 5.209750001085922
+      },
+      {
+        "case_id": "gmv1_0f35b6410f1c01683dec",
+        "normalized_query": "suele desplazarse user ficticio 001",
+        "expected": [
+          "gmv1_7ddbb1ecfa6397d2c6a1"
+        ],
+        "candidate_ids": [
+          "gmv1_7ddbb1ecfa6397d2c6a1",
+          "gmv1_31c529799eb63ed1e71d",
+          "gmv1_6c14196a4859ce5f662d",
+          "gmv1_3bf91960d59b1ec66349",
+          "gmv1_55d9763a9ab577561d4c",
+          "gmv1_4365537c25203743461d",
+          "gmv1_50ffb8e833a551ff8878",
+          "gmv1_b25999a37371c42a28ae",
+          "gmv1_34c062f9282fdec63d00",
+          "gmv1_dd5947b265bf6cef95ab",
+          "gmv1_83a08a9ccd69d3f73e13",
+          "gmv1_745e550c42f8260eed9e",
+          "gmv1_441eb105af3a12915613",
+          "gmv1_572d4b0b8e4b9b45381c",
+          "gmv1_744e94ec7f1e0d686abf",
+          "gmv1_a853c356064d84e0f3e2",
+          "gmv1_dfd643b2e9767b1b830c",
+          "gmv1_9a9b25283b613190411d",
+          "gmv1_4d14c1321599e6cc1d12",
+          "gmv1_472ab82afb83f04a5a15"
+        ],
+        "elapsed_ms": 4.930750001221895
+      },
+      {
+        "case_id": "gmv1_5aeb1bd6d34e6d57cce1",
+        "normalized_query": "quiere aprender user ficticio 001 año",
+        "expected": [
+          "gmv1_441eb105af3a12915613"
+        ],
+        "candidate_ids": [
+          "gmv1_441eb105af3a12915613",
+          "gmv1_744e94ec7f1e0d686abf",
+          "gmv1_4bff8d0194b0caffa02d",
+          "gmv1_b2c07f0abcea252f6443",
+          "gmv1_6c14196a4859ce5f662d",
+          "gmv1_3bf91960d59b1ec66349",
+          "gmv1_55d9763a9ab577561d4c",
+          "gmv1_4365537c25203743461d",
+          "gmv1_50ffb8e833a551ff8878",
+          "gmv1_7ddbb1ecfa6397d2c6a1",
+          "gmv1_b25999a37371c42a28ae",
+          "gmv1_34c062f9282fdec63d00",
+          "gmv1_dd5947b265bf6cef95ab",
+          "gmv1_83a08a9ccd69d3f73e13",
+          "gmv1_31c529799eb63ed1e71d",
+          "gmv1_745e550c42f8260eed9e",
+          "gmv1_572d4b0b8e4b9b45381c",
+          "gmv1_a853c356064d84e0f3e2",
+          "gmv1_dfd643b2e9767b1b830c",
+          "gmv1_9a9b25283b613190411d"
+        ],
+        "elapsed_ms": 4.852833997574635
+      },
+      {
+        "case_id": "gmv1_5ee575c8bff8481c6d65",
+        "normalized_query": "afición user ficticio 001",
+        "expected": [
+          "gmv1_6c14196a4859ce5f662d"
+        ],
+        "candidate_ids": [
+          "gmv1_6c14196a4859ce5f662d",
+          "gmv1_3bf91960d59b1ec66349",
+          "gmv1_55d9763a9ab577561d4c",
+          "gmv1_4365537c25203743461d",
+          "gmv1_50ffb8e833a551ff8878",
+          "gmv1_7ddbb1ecfa6397d2c6a1",
+          "gmv1_b25999a37371c42a28ae",
+          "gmv1_34c062f9282fdec63d00",
+          "gmv1_dd5947b265bf6cef95ab",
+          "gmv1_83a08a9ccd69d3f73e13",
+          "gmv1_31c529799eb63ed1e71d",
+          "gmv1_745e550c42f8260eed9e",
+          "gmv1_441eb105af3a12915613",
+          "gmv1_572d4b0b8e4b9b45381c",
+          "gmv1_744e94ec7f1e0d686abf",
+          "gmv1_a853c356064d84e0f3e2",
+          "gmv1_dfd643b2e9767b1b830c",
+          "gmv1_9a9b25283b613190411d",
+          "gmv1_4d14c1321599e6cc1d12",
+          "gmv1_472ab82afb83f04a5a15"
+        ],
+        "elapsed_ms": 4.748708990518935
+      },
+      {
+        "case_id": "gmv1_d27d2dd880c8857becd7",
+        "normalized_query": "guarda copias user ficticio 001",
+        "expected": [
+          "gmv1_3265d058092373acd732"
+        ],
+        "candidate_ids": [
+          "gmv1_3265d058092373acd732",
+          "gmv1_6c14196a4859ce5f662d",
+          "gmv1_3bf91960d59b1ec66349",
+          "gmv1_55d9763a9ab577561d4c",
+          "gmv1_4365537c25203743461d",
+          "gmv1_50ffb8e833a551ff8878",
+          "gmv1_7ddbb1ecfa6397d2c6a1",
+          "gmv1_b25999a37371c42a28ae",
+          "gmv1_34c062f9282fdec63d00",
+          "gmv1_dd5947b265bf6cef95ab",
+          "gmv1_83a08a9ccd69d3f73e13",
+          "gmv1_31c529799eb63ed1e71d",
+          "gmv1_745e550c42f8260eed9e",
+          "gmv1_441eb105af3a12915613",
+          "gmv1_572d4b0b8e4b9b45381c",
+          "gmv1_744e94ec7f1e0d686abf",
+          "gmv1_a853c356064d84e0f3e2",
+          "gmv1_dfd643b2e9767b1b830c",
+          "gmv1_9a9b25283b613190411d",
+          "gmv1_4d14c1321599e6cc1d12"
+        ],
+        "elapsed_ms": 4.478332994040102
+      },
+      {
+        "case_id": "gmv1_16fafa064e69a75cfbf9",
+        "normalized_query": "frecuencia revisa objetivos user ficticio 001",
+        "expected": [
+          "gmv1_50ffb8e833a551ff8878"
+        ],
+        "candidate_ids": [
+          "gmv1_50ffb8e833a551ff8878",
+          "gmv1_6c14196a4859ce5f662d",
+          "gmv1_3bf91960d59b1ec66349",
+          "gmv1_55d9763a9ab577561d4c",
+          "gmv1_4365537c25203743461d",
+          "gmv1_7ddbb1ecfa6397d2c6a1",
+          "gmv1_b25999a37371c42a28ae",
+          "gmv1_34c062f9282fdec63d00",
+          "gmv1_dd5947b265bf6cef95ab",
+          "gmv1_83a08a9ccd69d3f73e13",
+          "gmv1_31c529799eb63ed1e71d",
+          "gmv1_745e550c42f8260eed9e",
+          "gmv1_441eb105af3a12915613",
+          "gmv1_572d4b0b8e4b9b45381c",
+          "gmv1_744e94ec7f1e0d686abf",
+          "gmv1_a853c356064d84e0f3e2",
+          "gmv1_dfd643b2e9767b1b830c",
+          "gmv1_9a9b25283b613190411d",
+          "gmv1_4d14c1321599e6cc1d12",
+          "gmv1_472ab82afb83f04a5a15"
+        ],
+        "elapsed_ms": 5.283625010633841
+      },
+      {
+        "case_id": "gmv1_afe0405fcdefd22d86d4",
+        "normalized_query": "código secreto user ficticio 001",
+        "expected": [],
+        "candidate_ids": [
+          "gmv1_6c14196a4859ce5f662d",
+          "gmv1_3bf91960d59b1ec66349",
+          "gmv1_55d9763a9ab577561d4c",
+          "gmv1_4365537c25203743461d",
+          "gmv1_50ffb8e833a551ff8878",
+          "gmv1_7ddbb1ecfa6397d2c6a1",
+          "gmv1_b25999a37371c42a28ae",
+          "gmv1_34c062f9282fdec63d00",
+          "gmv1_dd5947b265bf6cef95ab",
+          "gmv1_83a08a9ccd69d3f73e13",
+          "gmv1_31c529799eb63ed1e71d",
+          "gmv1_745e550c42f8260eed9e",
+          "gmv1_441eb105af3a12915613",
+          "gmv1_572d4b0b8e4b9b45381c",
+          "gmv1_744e94ec7f1e0d686abf",
+          "gmv1_a853c356064d84e0f3e2",
+          "gmv1_dfd643b2e9767b1b830c",
+          "gmv1_9a9b25283b613190411d",
+          "gmv1_4d14c1321599e6cc1d12",
+          "gmv1_472ab82afb83f04a5a15"
+        ],
+        "elapsed_ms": 4.826916003366932
+      },
+      {
+        "case_id": "gmv1_4824fd0075e1ccc6d166",
+        "normalized_query": "dirección postal exacta user ficticio 001",
+        "expected": [],
+        "candidate_ids": [
+          "gmv1_6c14196a4859ce5f662d",
+          "gmv1_3bf91960d59b1ec66349",
+          "gmv1_55d9763a9ab577561d4c",
+          "gmv1_4365537c25203743461d",
+          "gmv1_50ffb8e833a551ff8878",
+          "gmv1_7ddbb1ecfa6397d2c6a1",
+          "gmv1_b25999a37371c42a28ae",
+          "gmv1_34c062f9282fdec63d00",
+          "gmv1_dd5947b265bf6cef95ab",
+          "gmv1_83a08a9ccd69d3f73e13",
+          "gmv1_31c529799eb63ed1e71d",
+          "gmv1_745e550c42f8260eed9e",
+          "gmv1_441eb105af3a12915613",
+          "gmv1_572d4b0b8e4b9b45381c",
+          "gmv1_744e94ec7f1e0d686abf",
+          "gmv1_a853c356064d84e0f3e2",
+          "gmv1_dfd643b2e9767b1b830c",
+          "gmv1_9a9b25283b613190411d",
+          "gmv1_4d14c1321599e6cc1d12",
+          "gmv1_472ab82afb83f04a5a15"
+        ],
+        "elapsed_ms": 4.736833987408318
+      },
+      {
+        "case_id": "gmv1_6633930ed82b659d13ab",
+        "normalized_query": "contraseña usa user ficticio 001",
+        "expected": [],
+        "candidate_ids": [
+          "gmv1_6c14196a4859ce5f662d",
+          "gmv1_3bf91960d59b1ec66349",
+          "gmv1_55d9763a9ab577561d4c",
+          "gmv1_4365537c25203743461d",
+          "gmv1_50ffb8e833a551ff8878",
+          "gmv1_7ddbb1ecfa6397d2c6a1",
+          "gmv1_b25999a37371c42a28ae",
+          "gmv1_34c062f9282fdec63d00",
+          "gmv1_dd5947b265bf6cef95ab",
+          "gmv1_83a08a9ccd69d3f73e13",
+          "gmv1_31c529799eb63ed1e71d",
+          "gmv1_745e550c42f8260eed9e",
+          "gmv1_441eb105af3a12915613",
+          "gmv1_572d4b0b8e4b9b45381c",
+          "gmv1_744e94ec7f1e0d686abf",
+          "gmv1_a853c356064d84e0f3e2",
+          "gmv1_dfd643b2e9767b1b830c",
+          "gmv1_9a9b25283b613190411d",
+          "gmv1_4d14c1321599e6cc1d12",
+          "gmv1_472ab82afb83f04a5a15"
+        ],
+        "elapsed_ms": 4.775792011059821
+      },
+      {
+        "case_id": "gmv1_19c72cd710e4f30bf333",
+        "normalized_query": "decisión tomó user ficticio 001 mañana",
+        "expected": [],
+        "candidate_ids": [
+          "gmv1_6c14196a4859ce5f662d",
+          "gmv1_3bf91960d59b1ec66349",
+          "gmv1_55d9763a9ab577561d4c",
+          "gmv1_4365537c25203743461d",
+          "gmv1_50ffb8e833a551ff8878",
+          "gmv1_7ddbb1ecfa6397d2c6a1",
+          "gmv1_b25999a37371c42a28ae",
+          "gmv1_34c062f9282fdec63d00",
+          "gmv1_dd5947b265bf6cef95ab",
+          "gmv1_83a08a9ccd69d3f73e13",
+          "gmv1_31c529799eb63ed1e71d",
+          "gmv1_745e550c42f8260eed9e",
+          "gmv1_441eb105af3a12915613",
+          "gmv1_572d4b0b8e4b9b45381c",
+          "gmv1_744e94ec7f1e0d686abf",
+          "gmv1_a853c356064d84e0f3e2",
+          "gmv1_dfd643b2e9767b1b830c",
+          "gmv1_9a9b25283b613190411d",
+          "gmv1_4d14c1321599e6cc1d12",
+          "gmv1_472ab82afb83f04a5a15"
+        ],
+        "elapsed_ms": 4.822792005143128
+      },
+      {
+        "case_id": "gmv1_5deddcce3795186587eb",
+        "normalized_query": "color favorito user ficticio 001",
+        "expected": [],
+        "candidate_ids": [
+          "gmv1_6c14196a4859ce5f662d",
+          "gmv1_3bf91960d59b1ec66349",
+          "gmv1_55d9763a9ab577561d4c",
+          "gmv1_4365537c25203743461d",
+          "gmv1_50ffb8e833a551ff8878",
+          "gmv1_7ddbb1ecfa6397d2c6a1",
+          "gmv1_b25999a37371c42a28ae",
+          "gmv1_34c062f9282fdec63d00",
+          "gmv1_dd5947b265bf6cef95ab",
+          "gmv1_83a08a9ccd69d3f73e13",
+          "gmv1_31c529799eb63ed1e71d",
+          "gmv1_745e550c42f8260eed9e",
+          "gmv1_441eb105af3a12915613",
+          "gmv1_572d4b0b8e4b9b45381c",
+          "gmv1_744e94ec7f1e0d686abf",
+          "gmv1_a853c356064d84e0f3e2",
+          "gmv1_dfd643b2e9767b1b830c",
+          "gmv1_9a9b25283b613190411d",
+          "gmv1_4d14c1321599e6cc1d12",
+          "gmv1_472ab82afb83f04a5a15"
+        ],
+        "elapsed_ms": 4.268707998562604
+      },
+      {
+        "case_id": "gmv1_5beb5b01a40667ca7068",
+        "normalized_query": "responsable project ficticio 001",
+        "expected": [
+          "gmv1_c670e06cefd6c71bb397"
+        ],
+        "candidate_ids": [
+          "gmv1_c670e06cefd6c71bb397",
+          "gmv1_6a3e42d70e8ea28b029f",
+          "gmv1_43e48d46def388b59784",
+          "gmv1_1c36e93207fae7d7fffc",
+          "gmv1_4c923d8b899f59aabbeb",
+          "gmv1_4f2d384beebc737533ad",
+          "gmv1_fb216da29b93dbb77f6d",
+          "gmv1_b0c867cd5ce1cef9f77a",
+          "gmv1_4a8883a65abfb64755aa",
+          "gmv1_6da544c0060d56062da0",
+          "gmv1_ee88381877feb4a0c68e",
+          "gmv1_d7e7e2c8f1e3a47749f4",
+          "gmv1_86d584e3d51e877614fc",
+          "gmv1_24f9185981bc8dddb2a9",
+          "gmv1_6c3260a60a8e4e573fed",
+          "gmv1_6dec1d1efbdd72311f24",
+          "gmv1_2a0bbca95e8fd4c4d43b",
+          "gmv1_e7ae830016b07339ce18",
+          "gmv1_cf4367be28fa1e826dec",
+          "gmv1_5ba2a6fff6570df8ba73"
+        ],
+        "elapsed_ms": 5.007125000702217
+      },
+      {
+        "case_id": "gmv1_a16b9eb4b3152febd31f",
+        "normalized_query": "objetivo project ficticio 001",
+        "expected": [
+          "gmv1_ee88381877feb4a0c68e"
+        ],
+        "candidate_ids": [
+          "gmv1_ee88381877feb4a0c68e",
+          "gmv1_6a3e42d70e8ea28b029f",
+          "gmv1_43e48d46def388b59784",
+          "gmv1_1c36e93207fae7d7fffc",
+          "gmv1_4c923d8b899f59aabbeb",
+          "gmv1_4f2d384beebc737533ad",
+          "gmv1_fb216da29b93dbb77f6d",
+          "gmv1_c670e06cefd6c71bb397",
+          "gmv1_b0c867cd5ce1cef9f77a",
+          "gmv1_4a8883a65abfb64755aa",
+          "gmv1_6da544c0060d56062da0",
+          "gmv1_d7e7e2c8f1e3a47749f4",
+          "gmv1_86d584e3d51e877614fc",
+          "gmv1_24f9185981bc8dddb2a9",
+          "gmv1_6c3260a60a8e4e573fed",
+          "gmv1_6dec1d1efbdd72311f24",
+          "gmv1_2a0bbca95e8fd4c4d43b",
+          "gmv1_e7ae830016b07339ce18",
+          "gmv1_cf4367be28fa1e826dec",
+          "gmv1_5ba2a6fff6570df8ba73"
+        ],
+        "elapsed_ms": 4.98608298948966
+      },
+      {
+        "case_id": "gmv1_220ba2a5aecaafbcec11",
+        "normalized_query": "vence entrega project ficticio 001",
+        "expected": [
+          "gmv1_1c36e93207fae7d7fffc"
+        ],
+        "candidate_ids": [
+          "gmv1_1c36e93207fae7d7fffc",
+          "gmv1_86d584e3d51e877614fc",
+          "gmv1_e7ae830016b07339ce18",
+          "gmv1_6a3e42d70e8ea28b029f",
+          "gmv1_43e48d46def388b59784",
+          "gmv1_4c923d8b899f59aabbeb",
+          "gmv1_4f2d384beebc737533ad",
+          "gmv1_fb216da29b93dbb77f6d",
+          "gmv1_c670e06cefd6c71bb397",
+          "gmv1_b0c867cd5ce1cef9f77a",
+          "gmv1_4a8883a65abfb64755aa",
+          "gmv1_6da544c0060d56062da0",
+          "gmv1_ee88381877feb4a0c68e",
+          "gmv1_d7e7e2c8f1e3a47749f4",
+          "gmv1_24f9185981bc8dddb2a9",
+          "gmv1_6c3260a60a8e4e573fed",
+          "gmv1_6dec1d1efbdd72311f24",
+          "gmv1_2a0bbca95e8fd4c4d43b",
+          "gmv1_cf4367be28fa1e826dec",
+          "gmv1_5ba2a6fff6570df8ba73"
+        ],
+        "elapsed_ms": 5.068958009360358
+      },
+      {
+        "case_id": "gmv1_511c563f54a9c7e560a5",
+        "normalized_query": "estado project ficticio 001",
+        "expected": [
+          "gmv1_6a3e42d70e8ea28b029f"
+        ],
+        "candidate_ids": [
+          "gmv1_6a3e42d70e8ea28b029f",
+          "gmv1_43e48d46def388b59784",
+          "gmv1_1c36e93207fae7d7fffc",
+          "gmv1_4c923d8b899f59aabbeb",
+          "gmv1_4f2d384beebc737533ad",
+          "gmv1_fb216da29b93dbb77f6d",
+          "gmv1_c670e06cefd6c71bb397",
+          "gmv1_b0c867cd5ce1cef9f77a",
+          "gmv1_4a8883a65abfb64755aa",
+          "gmv1_6da544c0060d56062da0",
+          "gmv1_ee88381877feb4a0c68e",
+          "gmv1_d7e7e2c8f1e3a47749f4",
+          "gmv1_86d584e3d51e877614fc",
+          "gmv1_24f9185981bc8dddb2a9",
+          "gmv1_6c3260a60a8e4e573fed",
+          "gmv1_6dec1d1efbdd72311f24",
+          "gmv1_2a0bbca95e8fd4c4d43b",
+          "gmv1_e7ae830016b07339ce18",
+          "gmv1_cf4367be28fa1e826dec",
+          "gmv1_5ba2a6fff6570df8ba73"
+        ],
+        "elapsed_ms": 4.59262500226032
+      },
+      {
+        "case_id": "gmv1_15d5dae44f97b1cc07a2",
+        "normalized_query": "presupuesto sintético project ficticio 001",
+        "expected": [
+          "gmv1_b1e86c2c6c43be63ed66"
+        ],
+        "candidate_ids": [
+          "gmv1_b1e86c2c6c43be63ed66",
+          "gmv1_6a3e42d70e8ea28b029f",
+          "gmv1_43e48d46def388b59784",
+          "gmv1_1c36e93207fae7d7fffc",
+          "gmv1_4c923d8b899f59aabbeb",
+          "gmv1_4f2d384beebc737533ad",
+          "gmv1_fb216da29b93dbb77f6d",
+          "gmv1_c670e06cefd6c71bb397",
+          "gmv1_b0c867cd5ce1cef9f77a",
+          "gmv1_4a8883a65abfb64755aa",
+          "gmv1_6da544c0060d56062da0",
+          "gmv1_ee88381877feb4a0c68e",
+          "gmv1_d7e7e2c8f1e3a47749f4",
+          "gmv1_86d584e3d51e877614fc",
+          "gmv1_24f9185981bc8dddb2a9",
+          "gmv1_6c3260a60a8e4e573fed",
+          "gmv1_6dec1d1efbdd72311f24",
+          "gmv1_2a0bbca95e8fd4c4d43b",
+          "gmv1_e7ae830016b07339ce18",
+          "gmv1_cf4367be28fa1e826dec"
+        ],
+        "elapsed_ms": 7.650749990716577
+      },
+      {
+        "case_id": "gmv1_445c2c1e08d1febe7e9b",
+        "normalized_query": "frecuencia reporta avances project ficticio 001",
+        "expected": [
+          "gmv1_fb216da29b93dbb77f6d"
+        ],
+        "candidate_ids": [
+          "gmv1_fb216da29b93dbb77f6d",
+          "gmv1_6a3e42d70e8ea28b029f",
+          "gmv1_43e48d46def388b59784",
+          "gmv1_1c36e93207fae7d7fffc",
+          "gmv1_4c923d8b899f59aabbeb",
+          "gmv1_4f2d384beebc737533ad",
+          "gmv1_c670e06cefd6c71bb397",
+          "gmv1_b0c867cd5ce1cef9f77a",
+          "gmv1_4a8883a65abfb64755aa",
+          "gmv1_6da544c0060d56062da0",
+          "gmv1_ee88381877feb4a0c68e",
+          "gmv1_d7e7e2c8f1e3a47749f4",
+          "gmv1_86d584e3d51e877614fc",
+          "gmv1_24f9185981bc8dddb2a9",
+          "gmv1_6c3260a60a8e4e573fed",
+          "gmv1_6dec1d1efbdd72311f24",
+          "gmv1_2a0bbca95e8fd4c4d43b",
+          "gmv1_e7ae830016b07339ce18",
+          "gmv1_cf4367be28fa1e826dec",
+          "gmv1_5ba2a6fff6570df8ba73"
+        ],
+        "elapsed_ms": 5.413000006228685
+      },
+      {
+        "case_id": "gmv1_37ca1dca7b67274777e4",
+        "normalized_query": "llama repositorio ficticio project ficticio 001",
+        "expected": [
+          "gmv1_b2a5cb73fce44437572d"
+        ],
+        "candidate_ids": [
+          "gmv1_b2a5cb73fce44437572d",
+          "gmv1_6a3e42d70e8ea28b029f",
+          "gmv1_43e48d46def388b59784",
+          "gmv1_1c36e93207fae7d7fffc",
+          "gmv1_4c923d8b899f59aabbeb",
+          "gmv1_4f2d384beebc737533ad",
+          "gmv1_fb216da29b93dbb77f6d",
+          "gmv1_c670e06cefd6c71bb397",
+          "gmv1_b0c867cd5ce1cef9f77a",
+          "gmv1_4a8883a65abfb64755aa",
+          "gmv1_6da544c0060d56062da0",
+          "gmv1_ee88381877feb4a0c68e",
+          "gmv1_d7e7e2c8f1e3a47749f4",
+          "gmv1_86d584e3d51e877614fc",
+          "gmv1_24f9185981bc8dddb2a9",
+          "gmv1_6c3260a60a8e4e573fed",
+          "gmv1_6dec1d1efbdd72311f24",
+          "gmv1_2a0bbca95e8fd4c4d43b",
+          "gmv1_e7ae830016b07339ce18",
+          "gmv1_cf4367be28fa1e826dec"
+        ],
+        "elapsed_ms": 7.901124990894459
+      },
+      {
+        "case_id": "gmv1_0421d43fe26ce6f6951e",
+        "normalized_query": "valida entregas project ficticio 001",
+        "expected": [
+          "gmv1_86d584e3d51e877614fc"
+        ],
+        "candidate_ids": [
+          "gmv1_86d584e3d51e877614fc",
+          "gmv1_6a3e42d70e8ea28b029f",
+          "gmv1_43e48d46def388b59784",
+          "gmv1_1c36e93207fae7d7fffc",
+          "gmv1_4c923d8b899f59aabbeb",
+          "gmv1_4f2d384beebc737533ad",
+          "gmv1_fb216da29b93dbb77f6d",
+          "gmv1_c670e06cefd6c71bb397",
+          "gmv1_b0c867cd5ce1cef9f77a",
+          "gmv1_4a8883a65abfb64755aa",
+          "gmv1_6da544c0060d56062da0",
+          "gmv1_ee88381877feb4a0c68e",
+          "gmv1_d7e7e2c8f1e3a47749f4",
+          "gmv1_24f9185981bc8dddb2a9",
+          "gmv1_6c3260a60a8e4e573fed",
+          "gmv1_6dec1d1efbdd72311f24",
+          "gmv1_2a0bbca95e8fd4c4d43b",
+          "gmv1_e7ae830016b07339ce18",
+          "gmv1_cf4367be28fa1e826dec",
+          "gmv1_5ba2a6fff6570df8ba73"
+        ],
+        "elapsed_ms": 5.256040996755473
+      },
+      {
+        "case_id": "gmv1_7cbe0ba53bb3e8a0aac5",
+        "normalized_query": "exige project ficticio 001 antes publicar",
+        "expected": [
+          "gmv1_5ba2a6fff6570df8ba73"
+        ],
+        "candidate_ids": [
+          "gmv1_5ba2a6fff6570df8ba73",
+          "gmv1_4c923d8b899f59aabbeb",
+          "gmv1_6a3e42d70e8ea28b029f",
+          "gmv1_43e48d46def388b59784",
+          "gmv1_1c36e93207fae7d7fffc",
+          "gmv1_4f2d384beebc737533ad",
+          "gmv1_fb216da29b93dbb77f6d",
+          "gmv1_c670e06cefd6c71bb397",
+          "gmv1_b0c867cd5ce1cef9f77a",
+          "gmv1_4a8883a65abfb64755aa",
+          "gmv1_6da544c0060d56062da0",
+          "gmv1_ee88381877feb4a0c68e",
+          "gmv1_d7e7e2c8f1e3a47749f4",
+          "gmv1_86d584e3d51e877614fc",
+          "gmv1_24f9185981bc8dddb2a9",
+          "gmv1_6c3260a60a8e4e573fed",
+          "gmv1_6dec1d1efbdd72311f24",
+          "gmv1_2a0bbca95e8fd4c4d43b",
+          "gmv1_e7ae830016b07339ce18",
+          "gmv1_cf4367be28fa1e826dec"
+        ],
+        "elapsed_ms": 5.164125002920628
+      },
+      {
+        "case_id": "gmv1_155140d56b1a89fd3c93",
+        "normalized_query": "cliente ficticio project ficticio 001",
+        "expected": [
+          "gmv1_24f9185981bc8dddb2a9"
+        ],
+        "candidate_ids": [
+          "gmv1_24f9185981bc8dddb2a9",
+          "gmv1_6a3e42d70e8ea28b029f",
+          "gmv1_43e48d46def388b59784",
+          "gmv1_1c36e93207fae7d7fffc",
+          "gmv1_4c923d8b899f59aabbeb",
+          "gmv1_4f2d384beebc737533ad",
+          "gmv1_fb216da29b93dbb77f6d",
+          "gmv1_c670e06cefd6c71bb397",
+          "gmv1_b0c867cd5ce1cef9f77a",
+          "gmv1_4a8883a65abfb64755aa",
+          "gmv1_6da544c0060d56062da0",
+          "gmv1_ee88381877feb4a0c68e",
+          "gmv1_d7e7e2c8f1e3a47749f4",
+          "gmv1_86d584e3d51e877614fc",
+          "gmv1_6c3260a60a8e4e573fed",
+          "gmv1_6dec1d1efbdd72311f24",
+          "gmv1_2a0bbca95e8fd4c4d43b",
+          "gmv1_e7ae830016b07339ce18",
+          "gmv1_cf4367be28fa1e826dec",
+          "gmv1_5ba2a6fff6570df8ba73"
+        ],
+        "elapsed_ms": 7.466916998964734
+      },
+      {
+        "case_id": "gmv1_e54ef48a1a67375a65c6",
+        "normalized_query": "entregable principal project ficticio 001",
+        "expected": [
+          "gmv1_e7ae830016b07339ce18"
+        ],
+        "candidate_ids": [
+          "gmv1_e7ae830016b07339ce18",
+          "gmv1_6ed2b2c424ed6b901a84",
+          "gmv1_6a3e42d70e8ea28b029f",
+          "gmv1_43e48d46def388b59784",
+          "gmv1_1c36e93207fae7d7fffc",
+          "gmv1_4c923d8b899f59aabbeb",
+          "gmv1_4f2d384beebc737533ad",
+          "gmv1_fb216da29b93dbb77f6d",
+          "gmv1_c670e06cefd6c71bb397",
+          "gmv1_b0c867cd5ce1cef9f77a",
+          "gmv1_4a8883a65abfb64755aa",
+          "gmv1_6da544c0060d56062da0",
+          "gmv1_ee88381877feb4a0c68e",
+          "gmv1_d7e7e2c8f1e3a47749f4",
+          "gmv1_86d584e3d51e877614fc",
+          "gmv1_24f9185981bc8dddb2a9",
+          "gmv1_6c3260a60a8e4e573fed",
+          "gmv1_6dec1d1efbdd72311f24",
+          "gmv1_2a0bbca95e8fd4c4d43b",
+          "gmv1_cf4367be28fa1e826dec"
+        ],
+        "elapsed_ms": 5.236540993792005
+      },
+      {
+        "case_id": "gmv1_a19602e08cfb81da31d0",
+        "normalized_query": "riesgo principal registró project ficticio 001",
+        "expected": [
+          "gmv1_6ed2b2c424ed6b901a84"
+        ],
+        "candidate_ids": [
+          "gmv1_6ed2b2c424ed6b901a84",
+          "gmv1_e7ae830016b07339ce18",
+          "gmv1_6a3e42d70e8ea28b029f",
+          "gmv1_43e48d46def388b59784",
+          "gmv1_1c36e93207fae7d7fffc",
+          "gmv1_4c923d8b899f59aabbeb",
+          "gmv1_4f2d384beebc737533ad",
+          "gmv1_fb216da29b93dbb77f6d",
+          "gmv1_c670e06cefd6c71bb397",
+          "gmv1_b0c867cd5ce1cef9f77a",
+          "gmv1_4a8883a65abfb64755aa",
+          "gmv1_6da544c0060d56062da0",
+          "gmv1_ee88381877feb4a0c68e",
+          "gmv1_d7e7e2c8f1e3a47749f4",
+          "gmv1_86d584e3d51e877614fc",
+          "gmv1_24f9185981bc8dddb2a9",
+          "gmv1_6c3260a60a8e4e573fed",
+          "gmv1_6dec1d1efbdd72311f24",
+          "gmv1_2a0bbca95e8fd4c4d43b",
+          "gmv1_cf4367be28fa1e826dec"
+        ],
+        "elapsed_ms": 5.359958013286814
+      },
+      {
+        "case_id": "gmv1_679af778e3a7c132fc1e",
+        "normalized_query": "decidió usar project ficticio 001 piloto",
+        "expected": [
+          "gmv1_6c3260a60a8e4e573fed"
+        ],
+        "candidate_ids": [
+          "gmv1_6c3260a60a8e4e573fed",
+          "gmv1_6a3e42d70e8ea28b029f",
+          "gmv1_43e48d46def388b59784",
+          "gmv1_1c36e93207fae7d7fffc",
+          "gmv1_4c923d8b899f59aabbeb",
+          "gmv1_4f2d384beebc737533ad",
+          "gmv1_fb216da29b93dbb77f6d",
+          "gmv1_c670e06cefd6c71bb397",
+          "gmv1_b0c867cd5ce1cef9f77a",
+          "gmv1_4a8883a65abfb64755aa",
+          "gmv1_6da544c0060d56062da0",
+          "gmv1_ee88381877feb4a0c68e",
+          "gmv1_d7e7e2c8f1e3a47749f4",
+          "gmv1_86d584e3d51e877614fc",
+          "gmv1_24f9185981bc8dddb2a9",
+          "gmv1_6dec1d1efbdd72311f24",
+          "gmv1_2a0bbca95e8fd4c4d43b",
+          "gmv1_e7ae830016b07339ce18",
+          "gmv1_cf4367be28fa1e826dec",
+          "gmv1_5ba2a6fff6570df8ba73"
+        ],
+        "elapsed_ms": 5.346250007278286
+      },
+      {
+        "case_id": "gmv1_13842c0f9517442cf1a7",
+        "normalized_query": "depende project ficticio 001",
+        "expected": [
+          "gmv1_43e48d46def388b59784"
+        ],
+        "candidate_ids": [
+          "gmv1_43e48d46def388b59784",
+          "gmv1_6a3e42d70e8ea28b029f",
+          "gmv1_1c36e93207fae7d7fffc",
+          "gmv1_4c923d8b899f59aabbeb",
+          "gmv1_4f2d384beebc737533ad",
+          "gmv1_fb216da29b93dbb77f6d",
+          "gmv1_c670e06cefd6c71bb397",
+          "gmv1_b0c867cd5ce1cef9f77a",
+          "gmv1_4a8883a65abfb64755aa",
+          "gmv1_6da544c0060d56062da0",
+          "gmv1_ee88381877feb4a0c68e",
+          "gmv1_d7e7e2c8f1e3a47749f4",
+          "gmv1_86d584e3d51e877614fc",
+          "gmv1_24f9185981bc8dddb2a9",
+          "gmv1_6c3260a60a8e4e573fed",
+          "gmv1_6dec1d1efbdd72311f24",
+          "gmv1_2a0bbca95e8fd4c4d43b",
+          "gmv1_e7ae830016b07339ce18",
+          "gmv1_cf4367be28fa1e826dec",
+          "gmv1_5ba2a6fff6570df8ba73"
+        ],
+        "elapsed_ms": 4.878708001342602
+      },
+      {
+        "case_id": "gmv1_15f2683814567aab041d",
+        "normalized_query": "celebra seguimiento project ficticio 001",
+        "expected": [
+          "gmv1_d7e7e2c8f1e3a47749f4"
+        ],
+        "candidate_ids": [
+          "gmv1_d7e7e2c8f1e3a47749f4",
+          "gmv1_6a3e42d70e8ea28b029f",
+          "gmv1_43e48d46def388b59784",
+          "gmv1_1c36e93207fae7d7fffc",
+          "gmv1_4c923d8b899f59aabbeb",
+          "gmv1_4f2d384beebc737533ad",
+          "gmv1_fb216da29b93dbb77f6d",
+          "gmv1_c670e06cefd6c71bb397",
+          "gmv1_b0c867cd5ce1cef9f77a",
+          "gmv1_4a8883a65abfb64755aa",
+          "gmv1_6da544c0060d56062da0",
+          "gmv1_ee88381877feb4a0c68e",
+          "gmv1_86d584e3d51e877614fc",
+          "gmv1_24f9185981bc8dddb2a9",
+          "gmv1_6c3260a60a8e4e573fed",
+          "gmv1_6dec1d1efbdd72311f24",
+          "gmv1_2a0bbca95e8fd4c4d43b",
+          "gmv1_e7ae830016b07339ce18",
+          "gmv1_cf4367be28fa1e826dec",
+          "gmv1_5ba2a6fff6570df8ba73"
+        ],
+        "elapsed_ms": 5.3254590020515025
+      },
+      {
+        "case_id": "gmv1_7690c1537c9e1c180b6c",
+        "normalized_query": "excluye project ficticio 001 primera fase",
+        "expected": [
+          "gmv1_3d7f6cd7b51bbc43db6f"
+        ],
+        "candidate_ids": [
+          "gmv1_3d7f6cd7b51bbc43db6f",
+          "gmv1_207c2e54b5a3b2c4d5a1",
+          "gmv1_6a3e42d70e8ea28b029f",
+          "gmv1_43e48d46def388b59784",
+          "gmv1_1c36e93207fae7d7fffc",
+          "gmv1_4c923d8b899f59aabbeb",
+          "gmv1_4f2d384beebc737533ad",
+          "gmv1_fb216da29b93dbb77f6d",
+          "gmv1_c670e06cefd6c71bb397",
+          "gmv1_b0c867cd5ce1cef9f77a",
+          "gmv1_4a8883a65abfb64755aa",
+          "gmv1_6da544c0060d56062da0",
+          "gmv1_ee88381877feb4a0c68e",
+          "gmv1_d7e7e2c8f1e3a47749f4",
+          "gmv1_86d584e3d51e877614fc",
+          "gmv1_24f9185981bc8dddb2a9",
+          "gmv1_6c3260a60a8e4e573fed",
+          "gmv1_6dec1d1efbdd72311f24",
+          "gmv1_2a0bbca95e8fd4c4d43b",
+          "gmv1_e7ae830016b07339ce18"
+        ],
+        "elapsed_ms": 5.012749999877997
+      },
+      {
+        "case_id": "gmv1_e1ca04ff8586b0de8a4b",
+        "normalized_query": "guardará artefactos project ficticio 001",
+        "expected": [
+          "gmv1_014bfb63746dd33acd8e"
+        ],
+        "candidate_ids": [
+          "gmv1_014bfb63746dd33acd8e",
+          "gmv1_6a3e42d70e8ea28b029f",
+          "gmv1_43e48d46def388b59784",
+          "gmv1_1c36e93207fae7d7fffc",
+          "gmv1_4c923d8b899f59aabbeb",
+          "gmv1_4f2d384beebc737533ad",
+          "gmv1_fb216da29b93dbb77f6d",
+          "gmv1_c670e06cefd6c71bb397",
+          "gmv1_b0c867cd5ce1cef9f77a",
+          "gmv1_4a8883a65abfb64755aa",
+          "gmv1_6da544c0060d56062da0",
+          "gmv1_ee88381877feb4a0c68e",
+          "gmv1_d7e7e2c8f1e3a47749f4",
+          "gmv1_86d584e3d51e877614fc",
+          "gmv1_24f9185981bc8dddb2a9",
+          "gmv1_6c3260a60a8e4e573fed",
+          "gmv1_6dec1d1efbdd72311f24",
+          "gmv1_2a0bbca95e8fd4c4d43b",
+          "gmv1_e7ae830016b07339ce18",
+          "gmv1_cf4367be28fa1e826dec"
+        ],
+        "elapsed_ms": 5.222583989962004
+      },
+      {
+        "case_id": "gmv1_077394b36b5a95cc7417",
+        "normalized_query": "tiempo respuesta busca project ficticio 001",
+        "expected": [
+          "gmv1_4f2d384beebc737533ad"
+        ],
+        "candidate_ids": [
+          "gmv1_4f2d384beebc737533ad",
+          "gmv1_6a3e42d70e8ea28b029f",
+          "gmv1_43e48d46def388b59784",
+          "gmv1_1c36e93207fae7d7fffc",
+          "gmv1_4c923d8b899f59aabbeb",
+          "gmv1_fb216da29b93dbb77f6d",
+          "gmv1_c670e06cefd6c71bb397",
+          "gmv1_b0c867cd5ce1cef9f77a",
+          "gmv1_4a8883a65abfb64755aa",
+          "gmv1_6da544c0060d56062da0",
+          "gmv1_ee88381877feb4a0c68e",
+          "gmv1_d7e7e2c8f1e3a47749f4",
+          "gmv1_86d584e3d51e877614fc",
+          "gmv1_24f9185981bc8dddb2a9",
+          "gmv1_6c3260a60a8e4e573fed",
+          "gmv1_6dec1d1efbdd72311f24",
+          "gmv1_2a0bbca95e8fd4c4d43b",
+          "gmv1_e7ae830016b07339ce18",
+          "gmv1_cf4367be28fa1e826dec",
+          "gmv1_5ba2a6fff6570df8ba73"
+        ],
+        "elapsed_ms": 5.408291995991021
+      },
+      {
+        "case_id": "gmv1_c8abe90c2d95cde42fdc",
+        "normalized_query": "datos permite project ficticio 001 pruebas",
+        "expected": [
+          "gmv1_c5c785faa3d6d35e2518"
+        ],
+        "candidate_ids": [
+          "gmv1_c5c785faa3d6d35e2518",
+          "gmv1_86d584e3d51e877614fc",
+          "gmv1_5ba2a6fff6570df8ba73",
+          "gmv1_6ed2b2c424ed6b901a84",
+          "gmv1_6a3e42d70e8ea28b029f",
+          "gmv1_43e48d46def388b59784",
+          "gmv1_1c36e93207fae7d7fffc",
+          "gmv1_4c923d8b899f59aabbeb",
+          "gmv1_4f2d384beebc737533ad",
+          "gmv1_fb216da29b93dbb77f6d",
+          "gmv1_c670e06cefd6c71bb397",
+          "gmv1_b0c867cd5ce1cef9f77a",
+          "gmv1_4a8883a65abfb64755aa",
+          "gmv1_6da544c0060d56062da0",
+          "gmv1_ee88381877feb4a0c68e",
+          "gmv1_d7e7e2c8f1e3a47749f4",
+          "gmv1_24f9185981bc8dddb2a9",
+          "gmv1_6c3260a60a8e4e573fed",
+          "gmv1_6dec1d1efbdd72311f24",
+          "gmv1_2a0bbca95e8fd4c4d43b"
+        ],
+        "elapsed_ms": 5.684000003384426
+      },
+      {
+        "case_id": "gmv1_e67db9006039bc682ad5",
+        "normalized_query": "revisa project ficticio 001",
+        "expected": [
+          "gmv1_6da544c0060d56062da0"
+        ],
+        "candidate_ids": [
+          "gmv1_6a3e42d70e8ea28b029f",
+          "gmv1_43e48d46def388b59784",
+          "gmv1_1c36e93207fae7d7fffc",
+          "gmv1_4c923d8b899f59aabbeb",
+          "gmv1_4f2d384beebc737533ad",
+          "gmv1_fb216da29b93dbb77f6d",
+          "gmv1_c670e06cefd6c71bb397",
+          "gmv1_b0c867cd5ce1cef9f77a",
+          "gmv1_4a8883a65abfb64755aa",
+          "gmv1_6da544c0060d56062da0",
+          "gmv1_ee88381877feb4a0c68e",
+          "gmv1_d7e7e2c8f1e3a47749f4",
+          "gmv1_86d584e3d51e877614fc",
+          "gmv1_24f9185981bc8dddb2a9",
+          "gmv1_6c3260a60a8e4e573fed",
+          "gmv1_6dec1d1efbdd72311f24",
+          "gmv1_2a0bbca95e8fd4c4d43b",
+          "gmv1_e7ae830016b07339ce18",
+          "gmv1_cf4367be28fa1e826dec",
+          "gmv1_5ba2a6fff6570df8ba73"
+        ],
+        "elapsed_ms": 4.894583995337598
+      },
+      {
+        "case_id": "gmv1_b1183c289ce9821c62d3",
+        "normalized_query": "documenta decisiones project ficticio 001",
+        "expected": [
+          "gmv1_0282f08e0ebbe9efeaf8"
+        ],
+        "candidate_ids": [
+          "gmv1_0282f08e0ebbe9efeaf8",
+          "gmv1_6dec1d1efbdd72311f24",
+          "gmv1_cf4367be28fa1e826dec",
+          "gmv1_6a3e42d70e8ea28b029f",
+          "gmv1_43e48d46def388b59784",
+          "gmv1_1c36e93207fae7d7fffc",
+          "gmv1_4c923d8b899f59aabbeb",
+          "gmv1_4f2d384beebc737533ad",
+          "gmv1_fb216da29b93dbb77f6d",
+          "gmv1_c670e06cefd6c71bb397",
+          "gmv1_b0c867cd5ce1cef9f77a",
+          "gmv1_4a8883a65abfb64755aa",
+          "gmv1_6da544c0060d56062da0",
+          "gmv1_ee88381877feb4a0c68e",
+          "gmv1_d7e7e2c8f1e3a47749f4",
+          "gmv1_86d584e3d51e877614fc",
+          "gmv1_24f9185981bc8dddb2a9",
+          "gmv1_6c3260a60a8e4e573fed",
+          "gmv1_2a0bbca95e8fd4c4d43b",
+          "gmv1_e7ae830016b07339ce18"
+        ],
+        "elapsed_ms": 5.50199999997858
+      },
+      {
+        "case_id": "gmv1_9ab29b66a439ce5a262a",
+        "normalized_query": "siguiente hito project ficticio 001",
+        "expected": [
+          "gmv1_4a8883a65abfb64755aa"
+        ],
+        "candidate_ids": [
+          "gmv1_4a8883a65abfb64755aa",
+          "gmv1_6a3e42d70e8ea28b029f",
+          "gmv1_43e48d46def388b59784",
+          "gmv1_1c36e93207fae7d7fffc",
+          "gmv1_4c923d8b899f59aabbeb",
+          "gmv1_4f2d384beebc737533ad",
+          "gmv1_fb216da29b93dbb77f6d",
+          "gmv1_c670e06cefd6c71bb397",
+          "gmv1_b0c867cd5ce1cef9f77a",
+          "gmv1_6da544c0060d56062da0",
+          "gmv1_ee88381877feb4a0c68e",
+          "gmv1_d7e7e2c8f1e3a47749f4",
+          "gmv1_86d584e3d51e877614fc",
+          "gmv1_24f9185981bc8dddb2a9",
+          "gmv1_6c3260a60a8e4e573fed",
+          "gmv1_6dec1d1efbdd72311f24",
+          "gmv1_2a0bbca95e8fd4c4d43b",
+          "gmv1_e7ae830016b07339ce18",
+          "gmv1_cf4367be28fa1e826dec",
+          "gmv1_5ba2a6fff6570df8ba73"
+        ],
+        "elapsed_ms": 5.274249997455627
+      },
+      {
+        "case_id": "gmv1_f867a2887f16f832cc7d",
+        "normalized_query": "será primera interfaz project ficticio 001",
+        "expected": [
+          "gmv1_207c2e54b5a3b2c4d5a1"
+        ],
+        "candidate_ids": [
+          "gmv1_207c2e54b5a3b2c4d5a1",
+          "gmv1_3d7f6cd7b51bbc43db6f",
+          "gmv1_6a3e42d70e8ea28b029f",
+          "gmv1_43e48d46def388b59784",
+          "gmv1_1c36e93207fae7d7fffc",
+          "gmv1_4c923d8b899f59aabbeb",
+          "gmv1_4f2d384beebc737533ad",
+          "gmv1_fb216da29b93dbb77f6d",
+          "gmv1_c670e06cefd6c71bb397",
+          "gmv1_b0c867cd5ce1cef9f77a",
+          "gmv1_4a8883a65abfb64755aa",
+          "gmv1_6da544c0060d56062da0",
+          "gmv1_ee88381877feb4a0c68e",
+          "gmv1_d7e7e2c8f1e3a47749f4",
+          "gmv1_86d584e3d51e877614fc",
+          "gmv1_24f9185981bc8dddb2a9",
+          "gmv1_6c3260a60a8e4e573fed",
+          "gmv1_6dec1d1efbdd72311f24",
+          "gmv1_2a0bbca95e8fd4c4d43b",
+          "gmv1_e7ae830016b07339ce18"
+        ],
+        "elapsed_ms": 5.289416993036866
+      },
+      {
+        "case_id": "gmv1_a0dc21f5f0db305d2aab",
+        "normalized_query": "idioma documenta project ficticio 001",
+        "expected": [
+          "gmv1_cf4367be28fa1e826dec"
+        ],
+        "candidate_ids": [
+          "gmv1_6dec1d1efbdd72311f24",
+          "gmv1_cf4367be28fa1e826dec",
+          "gmv1_0282f08e0ebbe9efeaf8",
+          "gmv1_6a3e42d70e8ea28b029f",
+          "gmv1_43e48d46def388b59784",
+          "gmv1_1c36e93207fae7d7fffc",
+          "gmv1_4c923d8b899f59aabbeb",
+          "gmv1_4f2d384beebc737533ad",
+          "gmv1_fb216da29b93dbb77f6d",
+          "gmv1_c670e06cefd6c71bb397",
+          "gmv1_b0c867cd5ce1cef9f77a",
+          "gmv1_4a8883a65abfb64755aa",
+          "gmv1_6da544c0060d56062da0",
+          "gmv1_ee88381877feb4a0c68e",
+          "gmv1_d7e7e2c8f1e3a47749f4",
+          "gmv1_86d584e3d51e877614fc",
+          "gmv1_24f9185981bc8dddb2a9",
+          "gmv1_6c3260a60a8e4e573fed",
+          "gmv1_2a0bbca95e8fd4c4d43b",
+          "gmv1_e7ae830016b07339ce18"
+        ],
+        "elapsed_ms": 5.4867500002728775
+      },
+      {
+        "case_id": "gmv1_96337f8eabf8612a9879",
+        "normalized_query": "contacto soporte project ficticio 001",
+        "expected": [
+          "gmv1_b0c867cd5ce1cef9f77a"
+        ],
+        "candidate_ids": [
+          "gmv1_b0c867cd5ce1cef9f77a",
+          "gmv1_6a3e42d70e8ea28b029f",
+          "gmv1_43e48d46def388b59784",
+          "gmv1_1c36e93207fae7d7fffc",
+          "gmv1_4c923d8b899f59aabbeb",
+          "gmv1_4f2d384beebc737533ad",
+          "gmv1_fb216da29b93dbb77f6d",
+          "gmv1_c670e06cefd6c71bb397",
+          "gmv1_4a8883a65abfb64755aa",
+          "gmv1_6da544c0060d56062da0",
+          "gmv1_ee88381877feb4a0c68e",
+          "gmv1_d7e7e2c8f1e3a47749f4",
+          "gmv1_86d584e3d51e877614fc",
+          "gmv1_24f9185981bc8dddb2a9",
+          "gmv1_6c3260a60a8e4e573fed",
+          "gmv1_6dec1d1efbdd72311f24",
+          "gmv1_2a0bbca95e8fd4c4d43b",
+          "gmv1_e7ae830016b07339ce18",
+          "gmv1_cf4367be28fa1e826dec",
+          "gmv1_5ba2a6fff6570df8ba73"
+        ],
+        "elapsed_ms": 4.924166001728736
+      },
+      {
+        "case_id": "gmv1_559cc1bd317ec52dc2cd",
+        "normalized_query": "fuente verdad project ficticio 001",
+        "expected": [
+          "gmv1_f3e309cc208fa40fee69"
+        ],
+        "candidate_ids": [
+          "gmv1_f3e309cc208fa40fee69",
+          "gmv1_6a3e42d70e8ea28b029f",
+          "gmv1_43e48d46def388b59784",
+          "gmv1_1c36e93207fae7d7fffc",
+          "gmv1_4c923d8b899f59aabbeb",
+          "gmv1_4f2d384beebc737533ad",
+          "gmv1_fb216da29b93dbb77f6d",
+          "gmv1_c670e06cefd6c71bb397",
+          "gmv1_b0c867cd5ce1cef9f77a",
+          "gmv1_4a8883a65abfb64755aa",
+          "gmv1_6da544c0060d56062da0",
+          "gmv1_ee88381877feb4a0c68e",
+          "gmv1_d7e7e2c8f1e3a47749f4",
+          "gmv1_86d584e3d51e877614fc",
+          "gmv1_24f9185981bc8dddb2a9",
+          "gmv1_6c3260a60a8e4e573fed",
+          "gmv1_6dec1d1efbdd72311f24",
+          "gmv1_2a0bbca95e8fd4c4d43b",
+          "gmv1_e7ae830016b07339ce18",
+          "gmv1_cf4367be28fa1e826dec"
+        ],
+        "elapsed_ms": 5.276124997180887
+      },
+      {
+        "case_id": "gmv1_2cb9e830e3fe089c58f6",
+        "normalized_query": "revierte cambios project ficticio 001",
+        "expected": [
+          "gmv1_feadcb223201a5382097"
+        ],
+        "candidate_ids": [
+          "gmv1_feadcb223201a5382097",
+          "gmv1_6a3e42d70e8ea28b029f",
+          "gmv1_43e48d46def388b59784",
+          "gmv1_1c36e93207fae7d7fffc",
+          "gmv1_4c923d8b899f59aabbeb",
+          "gmv1_4f2d384beebc737533ad",
+          "gmv1_fb216da29b93dbb77f6d",
+          "gmv1_c670e06cefd6c71bb397",
+          "gmv1_b0c867cd5ce1cef9f77a",
+          "gmv1_4a8883a65abfb64755aa",
+          "gmv1_6da544c0060d56062da0",
+          "gmv1_ee88381877feb4a0c68e",
+          "gmv1_d7e7e2c8f1e3a47749f4",
+          "gmv1_86d584e3d51e877614fc",
+          "gmv1_24f9185981bc8dddb2a9",
+          "gmv1_6c3260a60a8e4e573fed",
+          "gmv1_6dec1d1efbdd72311f24",
+          "gmv1_2a0bbca95e8fd4c4d43b",
+          "gmv1_e7ae830016b07339ce18",
+          "gmv1_cf4367be28fa1e826dec"
+        ],
+        "elapsed_ms": 5.302332996507175
+      },
+      {
+        "case_id": "gmv1_fdc99d57e41c5ffdc906",
+        "normalized_query": "cobertura mínima exige project ficticio 001",
+        "expected": [
+          "gmv1_4c923d8b899f59aabbeb"
+        ],
+        "candidate_ids": [
+          "gmv1_4c923d8b899f59aabbeb",
+          "gmv1_6a3e42d70e8ea28b029f",
+          "gmv1_43e48d46def388b59784",
+          "gmv1_1c36e93207fae7d7fffc",
+          "gmv1_4f2d384beebc737533ad",
+          "gmv1_fb216da29b93dbb77f6d",
+          "gmv1_c670e06cefd6c71bb397",
+          "gmv1_b0c867cd5ce1cef9f77a",
+          "gmv1_4a8883a65abfb64755aa",
+          "gmv1_6da544c0060d56062da0",
+          "gmv1_ee88381877feb4a0c68e",
+          "gmv1_d7e7e2c8f1e3a47749f4",
+          "gmv1_86d584e3d51e877614fc",
+          "gmv1_24f9185981bc8dddb2a9",
+          "gmv1_6c3260a60a8e4e573fed",
+          "gmv1_6dec1d1efbdd72311f24",
+          "gmv1_2a0bbca95e8fd4c4d43b",
+          "gmv1_e7ae830016b07339ce18",
+          "gmv1_cf4367be28fa1e826dec",
+          "gmv1_5ba2a6fff6570df8ba73"
+        ],
+        "elapsed_ms": 5.0424170040059835
+      },
+      {
+        "case_id": "gmv1_b52162a414c0196c808f",
+        "normalized_query": "hace traspaso project ficticio 001",
+        "expected": [
+          "gmv1_2a0bbca95e8fd4c4d43b"
+        ],
+        "candidate_ids": [
+          "gmv1_2a0bbca95e8fd4c4d43b",
+          "gmv1_6a3e42d70e8ea28b029f",
+          "gmv1_43e48d46def388b59784",
+          "gmv1_1c36e93207fae7d7fffc",
+          "gmv1_4c923d8b899f59aabbeb",
+          "gmv1_4f2d384beebc737533ad",
+          "gmv1_fb216da29b93dbb77f6d",
+          "gmv1_c670e06cefd6c71bb397",
+          "gmv1_b0c867cd5ce1cef9f77a",
+          "gmv1_4a8883a65abfb64755aa",
+          "gmv1_6da544c0060d56062da0",
+          "gmv1_ee88381877feb4a0c68e",
+          "gmv1_d7e7e2c8f1e3a47749f4",
+          "gmv1_86d584e3d51e877614fc",
+          "gmv1_24f9185981bc8dddb2a9",
+          "gmv1_6c3260a60a8e4e573fed",
+          "gmv1_6dec1d1efbdd72311f24",
+          "gmv1_e7ae830016b07339ce18",
+          "gmv1_cf4367be28fa1e826dec",
+          "gmv1_5ba2a6fff6570df8ba73"
+        ],
+        "elapsed_ms": 4.796041001100093
+      },
+      {
+        "case_id": "gmv1_ec416c75bf493dbeaae3",
+        "normalized_query": "archiva resultados project ficticio 001",
+        "expected": [
+          "gmv1_6dec1d1efbdd72311f24"
+        ],
+        "candidate_ids": [
+          "gmv1_6dec1d1efbdd72311f24",
+          "gmv1_6a3e42d70e8ea28b029f",
+          "gmv1_43e48d46def388b59784",
+          "gmv1_1c36e93207fae7d7fffc",
+          "gmv1_4c923d8b899f59aabbeb",
+          "gmv1_4f2d384beebc737533ad",
+          "gmv1_fb216da29b93dbb77f6d",
+          "gmv1_c670e06cefd6c71bb397",
+          "gmv1_b0c867cd5ce1cef9f77a",
+          "gmv1_4a8883a65abfb64755aa",
+          "gmv1_6da544c0060d56062da0",
+          "gmv1_ee88381877feb4a0c68e",
+          "gmv1_d7e7e2c8f1e3a47749f4",
+          "gmv1_86d584e3d51e877614fc",
+          "gmv1_24f9185981bc8dddb2a9",
+          "gmv1_6c3260a60a8e4e573fed",
+          "gmv1_2a0bbca95e8fd4c4d43b",
+          "gmv1_e7ae830016b07339ce18",
+          "gmv1_cf4367be28fa1e826dec",
+          "gmv1_5ba2a6fff6570df8ba73"
+        ],
+        "elapsed_ms": 5.263250001007691
+      },
+      {
+        "case_id": "gmv1_1cfdd9d76419f26553a5",
+        "normalized_query": "código secreto project ficticio 001",
+        "expected": [],
+        "candidate_ids": [
+          "gmv1_6a3e42d70e8ea28b029f",
+          "gmv1_43e48d46def388b59784",
+          "gmv1_1c36e93207fae7d7fffc",
+          "gmv1_4c923d8b899f59aabbeb",
+          "gmv1_4f2d384beebc737533ad",
+          "gmv1_fb216da29b93dbb77f6d",
+          "gmv1_c670e06cefd6c71bb397",
+          "gmv1_b0c867cd5ce1cef9f77a",
+          "gmv1_4a8883a65abfb64755aa",
+          "gmv1_6da544c0060d56062da0",
+          "gmv1_ee88381877feb4a0c68e",
+          "gmv1_d7e7e2c8f1e3a47749f4",
+          "gmv1_86d584e3d51e877614fc",
+          "gmv1_24f9185981bc8dddb2a9",
+          "gmv1_6c3260a60a8e4e573fed",
+          "gmv1_6dec1d1efbdd72311f24",
+          "gmv1_2a0bbca95e8fd4c4d43b",
+          "gmv1_e7ae830016b07339ce18",
+          "gmv1_cf4367be28fa1e826dec",
+          "gmv1_5ba2a6fff6570df8ba73"
+        ],
+        "elapsed_ms": 4.781666997587308
+      },
+      {
+        "case_id": "gmv1_f1c196f270b5bc3819be",
+        "normalized_query": "dirección postal exacta project ficticio 001",
+        "expected": [],
+        "candidate_ids": [
+          "gmv1_6a3e42d70e8ea28b029f",
+          "gmv1_43e48d46def388b59784",
+          "gmv1_1c36e93207fae7d7fffc",
+          "gmv1_4c923d8b899f59aabbeb",
+          "gmv1_4f2d384beebc737533ad",
+          "gmv1_fb216da29b93dbb77f6d",
+          "gmv1_c670e06cefd6c71bb397",
+          "gmv1_b0c867cd5ce1cef9f77a",
+          "gmv1_4a8883a65abfb64755aa",
+          "gmv1_6da544c0060d56062da0",
+          "gmv1_ee88381877feb4a0c68e",
+          "gmv1_d7e7e2c8f1e3a47749f4",
+          "gmv1_86d584e3d51e877614fc",
+          "gmv1_24f9185981bc8dddb2a9",
+          "gmv1_6c3260a60a8e4e573fed",
+          "gmv1_6dec1d1efbdd72311f24",
+          "gmv1_2a0bbca95e8fd4c4d43b",
+          "gmv1_e7ae830016b07339ce18",
+          "gmv1_cf4367be28fa1e826dec",
+          "gmv1_5ba2a6fff6570df8ba73"
+        ],
+        "elapsed_ms": 5.382791990996338
+      },
+      {
+        "case_id": "gmv1_84cb06ae95b895f07a50",
+        "normalized_query": "contraseña usa project ficticio 001",
+        "expected": [],
+        "candidate_ids": [
+          "gmv1_6c3260a60a8e4e573fed",
+          "gmv1_6a3e42d70e8ea28b029f",
+          "gmv1_43e48d46def388b59784",
+          "gmv1_1c36e93207fae7d7fffc",
+          "gmv1_4c923d8b899f59aabbeb",
+          "gmv1_4f2d384beebc737533ad",
+          "gmv1_fb216da29b93dbb77f6d",
+          "gmv1_c670e06cefd6c71bb397",
+          "gmv1_b0c867cd5ce1cef9f77a",
+          "gmv1_4a8883a65abfb64755aa",
+          "gmv1_6da544c0060d56062da0",
+          "gmv1_ee88381877feb4a0c68e",
+          "gmv1_d7e7e2c8f1e3a47749f4",
+          "gmv1_86d584e3d51e877614fc",
+          "gmv1_24f9185981bc8dddb2a9",
+          "gmv1_6dec1d1efbdd72311f24",
+          "gmv1_2a0bbca95e8fd4c4d43b",
+          "gmv1_e7ae830016b07339ce18",
+          "gmv1_cf4367be28fa1e826dec",
+          "gmv1_5ba2a6fff6570df8ba73"
+        ],
+        "elapsed_ms": 5.070415994850919
+      },
+      {
+        "case_id": "gmv1_a093cce640ce7a356cd0",
+        "normalized_query": "decisión tomó project ficticio 001 mañana",
+        "expected": [],
+        "candidate_ids": [
+          "gmv1_6a3e42d70e8ea28b029f",
+          "gmv1_43e48d46def388b59784",
+          "gmv1_1c36e93207fae7d7fffc",
+          "gmv1_4c923d8b899f59aabbeb",
+          "gmv1_4f2d384beebc737533ad",
+          "gmv1_fb216da29b93dbb77f6d",
+          "gmv1_c670e06cefd6c71bb397",
+          "gmv1_b0c867cd5ce1cef9f77a",
+          "gmv1_4a8883a65abfb64755aa",
+          "gmv1_6da544c0060d56062da0",
+          "gmv1_ee88381877feb4a0c68e",
+          "gmv1_d7e7e2c8f1e3a47749f4",
+          "gmv1_86d584e3d51e877614fc",
+          "gmv1_24f9185981bc8dddb2a9",
+          "gmv1_6c3260a60a8e4e573fed",
+          "gmv1_6dec1d1efbdd72311f24",
+          "gmv1_2a0bbca95e8fd4c4d43b",
+          "gmv1_e7ae830016b07339ce18",
+          "gmv1_cf4367be28fa1e826dec",
+          "gmv1_5ba2a6fff6570df8ba73"
+        ],
+        "elapsed_ms": 4.996625008061528
+      },
+      {
+        "case_id": "gmv1_9bfde074f20f0bbdce6a",
+        "normalized_query": "color favorito project ficticio 001",
+        "expected": [],
+        "candidate_ids": [
+          "gmv1_6a3e42d70e8ea28b029f",
+          "gmv1_43e48d46def388b59784",
+          "gmv1_1c36e93207fae7d7fffc",
+          "gmv1_4c923d8b899f59aabbeb",
+          "gmv1_4f2d384beebc737533ad",
+          "gmv1_fb216da29b93dbb77f6d",
+          "gmv1_c670e06cefd6c71bb397",
+          "gmv1_b0c867cd5ce1cef9f77a",
+          "gmv1_4a8883a65abfb64755aa",
+          "gmv1_6da544c0060d56062da0",
+          "gmv1_ee88381877feb4a0c68e",
+          "gmv1_d7e7e2c8f1e3a47749f4",
+          "gmv1_86d584e3d51e877614fc",
+          "gmv1_24f9185981bc8dddb2a9",
+          "gmv1_6c3260a60a8e4e573fed",
+          "gmv1_6dec1d1efbdd72311f24",
+          "gmv1_2a0bbca95e8fd4c4d43b",
+          "gmv1_e7ae830016b07339ce18",
+          "gmv1_cf4367be28fa1e826dec",
+          "gmv1_5ba2a6fff6570df8ba73"
+        ],
+        "elapsed_ms": 4.606208996847272
+      },
+      {
+        "case_id": "gmv1_423956194e4bfce96c69",
+        "normalized_query": "tarea actual conversation ficticio 001",
+        "expected": [
+          "gmv1_daf8654496352812fa43"
+        ],
+        "candidate_ids": [
+          "gmv1_daf8654496352812fa43",
+          "gmv1_95d4cc09fd5bb6f4717b",
+          "gmv1_34499a1649bd8a23f60b",
+          "gmv1_734bf9f28d6a01980c62",
+          "gmv1_6bd4120becbdf46eff86",
+          "gmv1_b892f10b56bbfafcd583",
+          "gmv1_d290e8dda04d4c8397d2",
+          "gmv1_2e0d58c9336c68dfcfa1",
+          "gmv1_0a9a617ac8464e92b1af",
+          "gmv1_cbd6cac9ab36a7a3bcd5",
+          "gmv1_27dda7a137bdef181841",
+          "gmv1_26ae958f767ce6b0f264",
+          "gmv1_1045a62a0f037632db8a",
+          "gmv1_5a06b68cde6d282733c3",
+          "gmv1_d66d8cfc04aebca2408f",
+          "gmv1_06c5cac8b19b20f859b1",
+          "gmv1_d6a0cea7dbe644d3e4bf",
+          "gmv1_4f39eb5ce7e3a98cc081",
+          "gmv1_d2a1a2064fdce80df754",
+          "gmv1_bda10c328431499982d8"
+        ],
+        "elapsed_ms": 5.660374998115003
+      },
+      {
+        "case_id": "gmv1_1f558a36a649462bb06a",
+        "normalized_query": "siguiente paso acordó conversation ficticio 001",
+        "expected": [
+          "gmv1_02db127f7ecd9289e61d"
+        ],
+        "candidate_ids": [
+          "gmv1_02db127f7ecd9289e61d",
+          "gmv1_9f2312807c8558191c60",
+          "gmv1_5a06b68cde6d282733c3",
+          "gmv1_d6a0cea7dbe644d3e4bf",
+          "gmv1_d2a1a2064fdce80df754",
+          "gmv1_95d4cc09fd5bb6f4717b",
+          "gmv1_34499a1649bd8a23f60b",
+          "gmv1_734bf9f28d6a01980c62",
+          "gmv1_6bd4120becbdf46eff86",
+          "gmv1_b892f10b56bbfafcd583",
+          "gmv1_d290e8dda04d4c8397d2",
+          "gmv1_2e0d58c9336c68dfcfa1",
+          "gmv1_0a9a617ac8464e92b1af",
+          "gmv1_cbd6cac9ab36a7a3bcd5",
+          "gmv1_27dda7a137bdef181841",
+          "gmv1_26ae958f767ce6b0f264",
+          "gmv1_1045a62a0f037632db8a",
+          "gmv1_daf8654496352812fa43",
+          "gmv1_d66d8cfc04aebca2408f",
+          "gmv1_06c5cac8b19b20f859b1"
+        ],
+        "elapsed_ms": 6.3699169986648485
+      },
+      {
+        "case_id": "gmv1_9cba0fd25ac434661e64",
+        "normalized_query": "límite temporal pidió conversation ficticio 001",
+        "expected": [
+          "gmv1_bd16ef48b3618ee14bdc"
+        ],
+        "candidate_ids": [
+          "gmv1_cbd6cac9ab36a7a3bcd5",
+          "gmv1_27dda7a137bdef181841",
+          "gmv1_8ebc135114eb39c6911c",
+          "gmv1_bd16ef48b3618ee14bdc",
+          "gmv1_95d4cc09fd5bb6f4717b",
+          "gmv1_34499a1649bd8a23f60b",
+          "gmv1_734bf9f28d6a01980c62",
+          "gmv1_6bd4120becbdf46eff86",
+          "gmv1_b892f10b56bbfafcd583",
+          "gmv1_d290e8dda04d4c8397d2",
+          "gmv1_2e0d58c9336c68dfcfa1",
+          "gmv1_0a9a617ac8464e92b1af",
+          "gmv1_26ae958f767ce6b0f264",
+          "gmv1_1045a62a0f037632db8a",
+          "gmv1_5a06b68cde6d282733c3",
+          "gmv1_daf8654496352812fa43",
+          "gmv1_d66d8cfc04aebca2408f",
+          "gmv1_06c5cac8b19b20f859b1",
+          "gmv1_d6a0cea7dbe644d3e4bf",
+          "gmv1_4f39eb5ce7e3a98cc081"
+        ],
+        "elapsed_ms": 5.861083001946099
+      },
+      {
+        "case_id": "gmv1_e476d63ef214e720b4c4",
+        "normalized_query": "pregunta quedó pendiente conversation ficticio 001",
+        "expected": [
+          "gmv1_26ae958f767ce6b0f264"
+        ],
+        "candidate_ids": [
+          "gmv1_26ae958f767ce6b0f264",
+          "gmv1_d290e8dda04d4c8397d2",
+          "gmv1_6296de08e5ed5b099710",
+          "gmv1_2e0d58c9336c68dfcfa1",
+          "gmv1_95d4cc09fd5bb6f4717b",
+          "gmv1_34499a1649bd8a23f60b",
+          "gmv1_734bf9f28d6a01980c62",
+          "gmv1_6bd4120becbdf46eff86",
+          "gmv1_b892f10b56bbfafcd583",
+          "gmv1_0a9a617ac8464e92b1af",
+          "gmv1_cbd6cac9ab36a7a3bcd5",
+          "gmv1_27dda7a137bdef181841",
+          "gmv1_1045a62a0f037632db8a",
+          "gmv1_5a06b68cde6d282733c3",
+          "gmv1_daf8654496352812fa43",
+          "gmv1_d66d8cfc04aebca2408f",
+          "gmv1_06c5cac8b19b20f859b1",
+          "gmv1_d6a0cea7dbe644d3e4bf",
+          "gmv1_4f39eb5ce7e3a98cc081",
+          "gmv1_d2a1a2064fdce80df754"
+        ],
+        "elapsed_ms": 6.388792011421174
+      },
+      {
+        "case_id": "gmv1_447cb1c70762aed2f69c",
+        "normalized_query": "archivo mencionó conversation ficticio 001",
+        "expected": [
+          "gmv1_d66d8cfc04aebca2408f"
+        ],
+        "candidate_ids": [
+          "gmv1_d66d8cfc04aebca2408f",
+          "gmv1_6b0d654cbfb55925dd9a",
+          "gmv1_95d4cc09fd5bb6f4717b",
+          "gmv1_34499a1649bd8a23f60b",
+          "gmv1_734bf9f28d6a01980c62",
+          "gmv1_6bd4120becbdf46eff86",
+          "gmv1_b892f10b56bbfafcd583",
+          "gmv1_d290e8dda04d4c8397d2",
+          "gmv1_2e0d58c9336c68dfcfa1",
+          "gmv1_0a9a617ac8464e92b1af",
+          "gmv1_cbd6cac9ab36a7a3bcd5",
+          "gmv1_27dda7a137bdef181841",
+          "gmv1_26ae958f767ce6b0f264",
+          "gmv1_1045a62a0f037632db8a",
+          "gmv1_5a06b68cde6d282733c3",
+          "gmv1_daf8654496352812fa43",
+          "gmv1_06c5cac8b19b20f859b1",
+          "gmv1_d6a0cea7dbe644d3e4bf",
+          "gmv1_4f39eb5ce7e3a98cc081",
+          "gmv1_d2a1a2064fdce80df754"
+        ],
+        "elapsed_ms": 5.718832995626144
+      },
+      {
+        "case_id": "gmv1_c5e5613f0e384db003eb",
+        "normalized_query": "opción eligió conversation ficticio 001",
+        "expected": [
+          "gmv1_95d4cc09fd5bb6f4717b"
+        ],
+        "candidate_ids": [
+          "gmv1_95d4cc09fd5bb6f4717b",
+          "gmv1_34499a1649bd8a23f60b",
+          "gmv1_734bf9f28d6a01980c62",
+          "gmv1_6bd4120becbdf46eff86",
+          "gmv1_b892f10b56bbfafcd583",
+          "gmv1_d290e8dda04d4c8397d2",
+          "gmv1_2e0d58c9336c68dfcfa1",
+          "gmv1_0a9a617ac8464e92b1af",
+          "gmv1_cbd6cac9ab36a7a3bcd5",
+          "gmv1_27dda7a137bdef181841",
+          "gmv1_26ae958f767ce6b0f264",
+          "gmv1_1045a62a0f037632db8a",
+          "gmv1_5a06b68cde6d282733c3",
+          "gmv1_daf8654496352812fa43",
+          "gmv1_d66d8cfc04aebca2408f",
+          "gmv1_06c5cac8b19b20f859b1",
+          "gmv1_d6a0cea7dbe644d3e4bf",
+          "gmv1_4f39eb5ce7e3a98cc081",
+          "gmv1_d2a1a2064fdce80df754",
+          "gmv1_bda10c328431499982d8"
+        ],
+        "elapsed_ms": 5.620416995952837
+      },
+      {
+        "case_id": "gmv1_230f7422e64f115f6053",
+        "normalized_query": "opción descartó conversation ficticio 001",
+        "expected": [
+          "gmv1_34499a1649bd8a23f60b"
+        ],
+        "candidate_ids": [
+          "gmv1_34499a1649bd8a23f60b",
+          "gmv1_95d4cc09fd5bb6f4717b",
+          "gmv1_734bf9f28d6a01980c62",
+          "gmv1_6bd4120becbdf46eff86",
+          "gmv1_b892f10b56bbfafcd583",
+          "gmv1_d290e8dda04d4c8397d2",
+          "gmv1_2e0d58c9336c68dfcfa1",
+          "gmv1_0a9a617ac8464e92b1af",
+          "gmv1_cbd6cac9ab36a7a3bcd5",
+          "gmv1_27dda7a137bdef181841",
+          "gmv1_26ae958f767ce6b0f264",
+          "gmv1_1045a62a0f037632db8a",
+          "gmv1_5a06b68cde6d282733c3",
+          "gmv1_daf8654496352812fa43",
+          "gmv1_d66d8cfc04aebca2408f",
+          "gmv1_06c5cac8b19b20f859b1",
+          "gmv1_d6a0cea7dbe644d3e4bf",
+          "gmv1_4f39eb5ce7e3a98cc081",
+          "gmv1_d2a1a2064fdce80df754",
+          "gmv1_bda10c328431499982d8"
+        ],
+        "elapsed_ms": 5.916333000641316
+      },
+      {
+        "case_id": "gmv1_b4a63794753a847201a9",
+        "normalized_query": "debe revisarse resultado conversation ficticio 001",
+        "expected": [
+          "gmv1_7aa8a4c2a2d1c7d0eeba"
+        ],
+        "candidate_ids": [
+          "gmv1_7aa8a4c2a2d1c7d0eeba",
+          "gmv1_1045a62a0f037632db8a",
+          "gmv1_8ebc135114eb39c6911c",
+          "gmv1_9f2312807c8558191c60",
+          "gmv1_95d4cc09fd5bb6f4717b",
+          "gmv1_34499a1649bd8a23f60b",
+          "gmv1_734bf9f28d6a01980c62",
+          "gmv1_6bd4120becbdf46eff86",
+          "gmv1_b892f10b56bbfafcd583",
+          "gmv1_d290e8dda04d4c8397d2",
+          "gmv1_2e0d58c9336c68dfcfa1",
+          "gmv1_0a9a617ac8464e92b1af",
+          "gmv1_cbd6cac9ab36a7a3bcd5",
+          "gmv1_27dda7a137bdef181841",
+          "gmv1_26ae958f767ce6b0f264",
+          "gmv1_5a06b68cde6d282733c3",
+          "gmv1_daf8654496352812fa43",
+          "gmv1_d66d8cfc04aebca2408f",
+          "gmv1_06c5cac8b19b20f859b1",
+          "gmv1_d6a0cea7dbe644d3e4bf"
+        ],
+        "elapsed_ms": 5.933874999755062
+      },
+      {
+        "case_id": "gmv1_784b525fb7731340140c",
+        "normalized_query": "estilo respuesta pidió conversation ficticio 001",
+        "expected": [
+          "gmv1_27dda7a137bdef181841"
+        ],
+        "candidate_ids": [
+          "gmv1_cbd6cac9ab36a7a3bcd5",
+          "gmv1_27dda7a137bdef181841",
+          "gmv1_8ebc135114eb39c6911c",
+          "gmv1_bd16ef48b3618ee14bdc",
+          "gmv1_95d4cc09fd5bb6f4717b",
+          "gmv1_34499a1649bd8a23f60b",
+          "gmv1_734bf9f28d6a01980c62",
+          "gmv1_6bd4120becbdf46eff86",
+          "gmv1_b892f10b56bbfafcd583",
+          "gmv1_d290e8dda04d4c8397d2",
+          "gmv1_2e0d58c9336c68dfcfa1",
+          "gmv1_0a9a617ac8464e92b1af",
+          "gmv1_26ae958f767ce6b0f264",
+          "gmv1_1045a62a0f037632db8a",
+          "gmv1_5a06b68cde6d282733c3",
+          "gmv1_daf8654496352812fa43",
+          "gmv1_d66d8cfc04aebca2408f",
+          "gmv1_06c5cac8b19b20f859b1",
+          "gmv1_d6a0cea7dbe644d3e4bf",
+          "gmv1_4f39eb5ce7e3a98cc081"
+        ],
+        "elapsed_ms": 5.88554200658109
+      },
+      {
+        "case_id": "gmv1_00755b740466918fb1af",
+        "normalized_query": "indica nota traspaso conversation ficticio 001",
+        "expected": [
+          "gmv1_d6a0cea7dbe644d3e4bf"
+        ],
+        "candidate_ids": [
+          "gmv1_d6a0cea7dbe644d3e4bf",
+          "gmv1_95d4cc09fd5bb6f4717b",
+          "gmv1_34499a1649bd8a23f60b",
+          "gmv1_734bf9f28d6a01980c62",
+          "gmv1_6bd4120becbdf46eff86",
+          "gmv1_b892f10b56bbfafcd583",
+          "gmv1_d290e8dda04d4c8397d2",
+          "gmv1_2e0d58c9336c68dfcfa1",
+          "gmv1_0a9a617ac8464e92b1af",
+          "gmv1_cbd6cac9ab36a7a3bcd5",
+          "gmv1_27dda7a137bdef181841",
+          "gmv1_26ae958f767ce6b0f264",
+          "gmv1_1045a62a0f037632db8a",
+          "gmv1_5a06b68cde6d282733c3",
+          "gmv1_daf8654496352812fa43",
+          "gmv1_d66d8cfc04aebca2408f",
+          "gmv1_06c5cac8b19b20f859b1",
+          "gmv1_4f39eb5ce7e3a98cc081",
+          "gmv1_d2a1a2064fdce80df754",
+          "gmv1_bda10c328431499982d8"
+        ],
+        "elapsed_ms": 6.191833992488682
+      },
+      {
+        "case_id": "gmv1_a39c2bb9095a8b9e473f",
+        "normalized_query": "asumió revisión conversation ficticio 001",
+        "expected": [
+          "gmv1_5a06b68cde6d282733c3"
+        ],
+        "candidate_ids": [
+          "gmv1_5a06b68cde6d282733c3",
+          "gmv1_95d4cc09fd5bb6f4717b",
+          "gmv1_34499a1649bd8a23f60b",
+          "gmv1_734bf9f28d6a01980c62",
+          "gmv1_6bd4120becbdf46eff86",
+          "gmv1_b892f10b56bbfafcd583",
+          "gmv1_d290e8dda04d4c8397d2",
+          "gmv1_2e0d58c9336c68dfcfa1",
+          "gmv1_0a9a617ac8464e92b1af",
+          "gmv1_cbd6cac9ab36a7a3bcd5",
+          "gmv1_27dda7a137bdef181841",
+          "gmv1_26ae958f767ce6b0f264",
+          "gmv1_1045a62a0f037632db8a",
+          "gmv1_daf8654496352812fa43",
+          "gmv1_d66d8cfc04aebca2408f",
+          "gmv1_06c5cac8b19b20f859b1",
+          "gmv1_d6a0cea7dbe644d3e4bf",
+          "gmv1_4f39eb5ce7e3a98cc081",
+          "gmv1_d2a1a2064fdce80df754",
+          "gmv1_bda10c328431499982d8"
+        ],
+        "elapsed_ms": 5.798208003398031
+      },
+      {
+        "case_id": "gmv1_e4f721082e418a637f70",
+        "normalized_query": "fecha revisión acordó conversation ficticio 001",
+        "expected": [
+          "gmv1_9f2312807c8558191c60"
+        ],
+        "candidate_ids": [
+          "gmv1_9f2312807c8558191c60",
+          "gmv1_02db127f7ecd9289e61d",
+          "gmv1_5a06b68cde6d282733c3",
+          "gmv1_95d4cc09fd5bb6f4717b",
+          "gmv1_34499a1649bd8a23f60b",
+          "gmv1_734bf9f28d6a01980c62",
+          "gmv1_6bd4120becbdf46eff86",
+          "gmv1_b892f10b56bbfafcd583",
+          "gmv1_d290e8dda04d4c8397d2",
+          "gmv1_2e0d58c9336c68dfcfa1",
+          "gmv1_0a9a617ac8464e92b1af",
+          "gmv1_cbd6cac9ab36a7a3bcd5",
+          "gmv1_27dda7a137bdef181841",
+          "gmv1_26ae958f767ce6b0f264",
+          "gmv1_1045a62a0f037632db8a",
+          "gmv1_daf8654496352812fa43",
+          "gmv1_d66d8cfc04aebca2408f",
+          "gmv1_06c5cac8b19b20f859b1",
+          "gmv1_d6a0cea7dbe644d3e4bf",
+          "gmv1_4f39eb5ce7e3a98cc081"
+        ],
+        "elapsed_ms": 5.8597089955583215
+      },
+      {
+        "case_id": "gmv1_3e13f513b9ff0700a16a",
+        "normalized_query": "valor corrigió dato conversation ficticio 001",
+        "expected": [
+          "gmv1_0a9a617ac8464e92b1af"
+        ],
+        "candidate_ids": [
+          "gmv1_0a9a617ac8464e92b1af",
+          "gmv1_6bd4120becbdf46eff86",
+          "gmv1_bf6f48ac692eac7b2e09",
+          "gmv1_95d4cc09fd5bb6f4717b",
+          "gmv1_34499a1649bd8a23f60b",
+          "gmv1_734bf9f28d6a01980c62",
+          "gmv1_b892f10b56bbfafcd583",
+          "gmv1_d290e8dda04d4c8397d2",
+          "gmv1_2e0d58c9336c68dfcfa1",
+          "gmv1_cbd6cac9ab36a7a3bcd5",
+          "gmv1_27dda7a137bdef181841",
+          "gmv1_26ae958f767ce6b0f264",
+          "gmv1_1045a62a0f037632db8a",
+          "gmv1_5a06b68cde6d282733c3",
+          "gmv1_daf8654496352812fa43",
+          "gmv1_d66d8cfc04aebca2408f",
+          "gmv1_06c5cac8b19b20f859b1",
+          "gmv1_d6a0cea7dbe644d3e4bf",
+          "gmv1_4f39eb5ce7e3a98cc081",
+          "gmv1_d2a1a2064fdce80df754"
+        ],
+        "elapsed_ms": 5.964416995993815
+      },
+      {
+        "case_id": "gmv1_850c3883a24b12e10d4a",
+        "normalized_query": "tomó decisión conversation ficticio 001",
+        "expected": [
+          "gmv1_b30620326a85e5915c02"
+        ],
+        "candidate_ids": [
+          "gmv1_b30620326a85e5915c02",
+          "gmv1_95d4cc09fd5bb6f4717b",
+          "gmv1_34499a1649bd8a23f60b",
+          "gmv1_734bf9f28d6a01980c62",
+          "gmv1_6bd4120becbdf46eff86",
+          "gmv1_b892f10b56bbfafcd583",
+          "gmv1_d290e8dda04d4c8397d2",
+          "gmv1_2e0d58c9336c68dfcfa1",
+          "gmv1_0a9a617ac8464e92b1af",
+          "gmv1_cbd6cac9ab36a7a3bcd5",
+          "gmv1_27dda7a137bdef181841",
+          "gmv1_26ae958f767ce6b0f264",
+          "gmv1_1045a62a0f037632db8a",
+          "gmv1_5a06b68cde6d282733c3",
+          "gmv1_daf8654496352812fa43",
+          "gmv1_d66d8cfc04aebca2408f",
+          "gmv1_06c5cac8b19b20f859b1",
+          "gmv1_d6a0cea7dbe644d3e4bf",
+          "gmv1_4f39eb5ce7e3a98cc081",
+          "gmv1_d2a1a2064fdce80df754"
+        ],
+        "elapsed_ms": 5.64479100285098
+      },
+      {
+        "case_id": "gmv1_c31971ae7655de9d9d89",
+        "normalized_query": "supuesto abandonó conversation ficticio 001",
+        "expected": [
+          "gmv1_bf6f48ac692eac7b2e09"
+        ],
+        "candidate_ids": [
+          "gmv1_95d4cc09fd5bb6f4717b",
+          "gmv1_34499a1649bd8a23f60b",
+          "gmv1_734bf9f28d6a01980c62",
+          "gmv1_6bd4120becbdf46eff86",
+          "gmv1_b892f10b56bbfafcd583",
+          "gmv1_d290e8dda04d4c8397d2",
+          "gmv1_2e0d58c9336c68dfcfa1",
+          "gmv1_0a9a617ac8464e92b1af",
+          "gmv1_cbd6cac9ab36a7a3bcd5",
+          "gmv1_27dda7a137bdef181841",
+          "gmv1_26ae958f767ce6b0f264",
+          "gmv1_1045a62a0f037632db8a",
+          "gmv1_5a06b68cde6d282733c3",
+          "gmv1_daf8654496352812fa43",
+          "gmv1_d66d8cfc04aebca2408f",
+          "gmv1_06c5cac8b19b20f859b1",
+          "gmv1_d6a0cea7dbe644d3e4bf",
+          "gmv1_4f39eb5ce7e3a98cc081",
+          "gmv1_d2a1a2064fdce80df754",
+          "gmv1_bda10c328431499982d8"
+        ],
+        "elapsed_ms": 5.512540999916382
+      },
+      {
+        "case_id": "gmv1_235c9ab13081115918c3",
+        "normalized_query": "bloqueó avance conversation ficticio 001",
+        "expected": [
+          "gmv1_6296de08e5ed5b099710"
+        ],
+        "candidate_ids": [
+          "gmv1_6296de08e5ed5b099710",
+          "gmv1_95d4cc09fd5bb6f4717b",
+          "gmv1_34499a1649bd8a23f60b",
+          "gmv1_734bf9f28d6a01980c62",
+          "gmv1_6bd4120becbdf46eff86",
+          "gmv1_b892f10b56bbfafcd583",
+          "gmv1_d290e8dda04d4c8397d2",
+          "gmv1_2e0d58c9336c68dfcfa1",
+          "gmv1_0a9a617ac8464e92b1af",
+          "gmv1_cbd6cac9ab36a7a3bcd5",
+          "gmv1_27dda7a137bdef181841",
+          "gmv1_26ae958f767ce6b0f264",
+          "gmv1_1045a62a0f037632db8a",
+          "gmv1_5a06b68cde6d282733c3",
+          "gmv1_daf8654496352812fa43",
+          "gmv1_d66d8cfc04aebca2408f",
+          "gmv1_06c5cac8b19b20f859b1",
+          "gmv1_d6a0cea7dbe644d3e4bf",
+          "gmv1_4f39eb5ce7e3a98cc081",
+          "gmv1_d2a1a2064fdce80df754"
+        ],
+        "elapsed_ms": 5.552665999857709
+      },
+      {
+        "case_id": "gmv1_c63da28d53194de9da4a",
+        "normalized_query": "paso completó conversation ficticio 001",
+        "expected": [
+          "gmv1_b892f10b56bbfafcd583"
+        ],
+        "candidate_ids": [
+          "gmv1_b892f10b56bbfafcd583",
+          "gmv1_d6a0cea7dbe644d3e4bf",
+          "gmv1_d2a1a2064fdce80df754",
+          "gmv1_02db127f7ecd9289e61d",
+          "gmv1_95d4cc09fd5bb6f4717b",
+          "gmv1_34499a1649bd8a23f60b",
+          "gmv1_734bf9f28d6a01980c62",
+          "gmv1_6bd4120becbdf46eff86",
+          "gmv1_d290e8dda04d4c8397d2",
+          "gmv1_2e0d58c9336c68dfcfa1",
+          "gmv1_0a9a617ac8464e92b1af",
+          "gmv1_cbd6cac9ab36a7a3bcd5",
+          "gmv1_27dda7a137bdef181841",
+          "gmv1_26ae958f767ce6b0f264",
+          "gmv1_1045a62a0f037632db8a",
+          "gmv1_5a06b68cde6d282733c3",
+          "gmv1_daf8654496352812fa43",
+          "gmv1_d66d8cfc04aebca2408f",
+          "gmv1_06c5cac8b19b20f859b1",
+          "gmv1_4f39eb5ce7e3a98cc081"
+        ],
+        "elapsed_ms": 6.103374995291233
+      },
+      {
+        "case_id": "gmv1_af090f8238e802fd8b20",
+        "normalized_query": "aplazó conversation ficticio 001",
+        "expected": [
+          "gmv1_734bf9f28d6a01980c62"
+        ],
+        "candidate_ids": [
+          "gmv1_734bf9f28d6a01980c62",
+          "gmv1_95d4cc09fd5bb6f4717b",
+          "gmv1_34499a1649bd8a23f60b",
+          "gmv1_6bd4120becbdf46eff86",
+          "gmv1_b892f10b56bbfafcd583",
+          "gmv1_d290e8dda04d4c8397d2",
+          "gmv1_2e0d58c9336c68dfcfa1",
+          "gmv1_0a9a617ac8464e92b1af",
+          "gmv1_cbd6cac9ab36a7a3bcd5",
+          "gmv1_27dda7a137bdef181841",
+          "gmv1_26ae958f767ce6b0f264",
+          "gmv1_1045a62a0f037632db8a",
+          "gmv1_5a06b68cde6d282733c3",
+          "gmv1_daf8654496352812fa43",
+          "gmv1_d66d8cfc04aebca2408f",
+          "gmv1_06c5cac8b19b20f859b1",
+          "gmv1_d6a0cea7dbe644d3e4bf",
+          "gmv1_4f39eb5ce7e3a98cc081",
+          "gmv1_d2a1a2064fdce80df754",
+          "gmv1_bda10c328431499982d8"
+        ],
+        "elapsed_ms": 5.304165999405086
+      },
+      {
+        "case_id": "gmv1_9bde517928b59e89bd7c",
+        "normalized_query": "pidió ejemplo conversation ficticio 001",
+        "expected": [
+          "gmv1_cbd6cac9ab36a7a3bcd5"
+        ],
+        "candidate_ids": [
+          "gmv1_cbd6cac9ab36a7a3bcd5",
+          "gmv1_27dda7a137bdef181841",
+          "gmv1_8ebc135114eb39c6911c",
+          "gmv1_bd16ef48b3618ee14bdc",
+          "gmv1_95d4cc09fd5bb6f4717b",
+          "gmv1_34499a1649bd8a23f60b",
+          "gmv1_734bf9f28d6a01980c62",
+          "gmv1_6bd4120becbdf46eff86",
+          "gmv1_b892f10b56bbfafcd583",
+          "gmv1_d290e8dda04d4c8397d2",
+          "gmv1_2e0d58c9336c68dfcfa1",
+          "gmv1_0a9a617ac8464e92b1af",
+          "gmv1_26ae958f767ce6b0f264",
+          "gmv1_1045a62a0f037632db8a",
+          "gmv1_5a06b68cde6d282733c3",
+          "gmv1_daf8654496352812fa43",
+          "gmv1_d66d8cfc04aebca2408f",
+          "gmv1_06c5cac8b19b20f859b1",
+          "gmv1_d6a0cea7dbe644d3e4bf",
+          "gmv1_4f39eb5ce7e3a98cc081"
+        ],
+        "elapsed_ms": 7.86033300391864
+      },
+      {
+        "case_id": "gmv1_a21493fc0731c4721a75",
+        "normalized_query": "prepara resultado conversation ficticio 001",
+        "expected": [
+          "gmv1_1045a62a0f037632db8a"
+        ],
+        "candidate_ids": [
+          "gmv1_1045a62a0f037632db8a",
+          "gmv1_8ebc135114eb39c6911c",
+          "gmv1_9f2312807c8558191c60",
+          "gmv1_7aa8a4c2a2d1c7d0eeba",
+          "gmv1_95d4cc09fd5bb6f4717b",
+          "gmv1_34499a1649bd8a23f60b",
+          "gmv1_734bf9f28d6a01980c62",
+          "gmv1_6bd4120becbdf46eff86",
+          "gmv1_b892f10b56bbfafcd583",
+          "gmv1_d290e8dda04d4c8397d2",
+          "gmv1_2e0d58c9336c68dfcfa1",
+          "gmv1_0a9a617ac8464e92b1af",
+          "gmv1_cbd6cac9ab36a7a3bcd5",
+          "gmv1_27dda7a137bdef181841",
+          "gmv1_26ae958f767ce6b0f264",
+          "gmv1_5a06b68cde6d282733c3",
+          "gmv1_daf8654496352812fa43",
+          "gmv1_d66d8cfc04aebca2408f",
+          "gmv1_06c5cac8b19b20f859b1",
+          "gmv1_d6a0cea7dbe644d3e4bf"
+        ],
+        "elapsed_ms": 5.972625003778376
+      },
+      {
+        "case_id": "gmv1_594bd3221e179250bfc9",
+        "normalized_query": "archivo adjuntó conversation ficticio 001",
+        "expected": [
+          "gmv1_6b0d654cbfb55925dd9a"
+        ],
+        "candidate_ids": [
+          "gmv1_6b0d654cbfb55925dd9a",
+          "gmv1_d66d8cfc04aebca2408f",
+          "gmv1_95d4cc09fd5bb6f4717b",
+          "gmv1_34499a1649bd8a23f60b",
+          "gmv1_734bf9f28d6a01980c62",
+          "gmv1_6bd4120becbdf46eff86",
+          "gmv1_b892f10b56bbfafcd583",
+          "gmv1_d290e8dda04d4c8397d2",
+          "gmv1_2e0d58c9336c68dfcfa1",
+          "gmv1_0a9a617ac8464e92b1af",
+          "gmv1_cbd6cac9ab36a7a3bcd5",
+          "gmv1_27dda7a137bdef181841",
+          "gmv1_26ae958f767ce6b0f264",
+          "gmv1_1045a62a0f037632db8a",
+          "gmv1_5a06b68cde6d282733c3",
+          "gmv1_daf8654496352812fa43",
+          "gmv1_06c5cac8b19b20f859b1",
+          "gmv1_d6a0cea7dbe644d3e4bf",
+          "gmv1_4f39eb5ce7e3a98cc081",
+          "gmv1_d2a1a2064fdce80df754"
+        ],
+        "elapsed_ms": 5.813333002151921
+      },
+      {
+        "case_id": "gmv1_0a99d83f0c2176982e58",
+        "normalized_query": "fuente señaló conversation ficticio 001",
+        "expected": [
+          "gmv1_4f39eb5ce7e3a98cc081"
+        ],
+        "candidate_ids": [
+          "gmv1_4f39eb5ce7e3a98cc081",
+          "gmv1_95d4cc09fd5bb6f4717b",
+          "gmv1_34499a1649bd8a23f60b",
+          "gmv1_734bf9f28d6a01980c62",
+          "gmv1_6bd4120becbdf46eff86",
+          "gmv1_b892f10b56bbfafcd583",
+          "gmv1_d290e8dda04d4c8397d2",
+          "gmv1_2e0d58c9336c68dfcfa1",
+          "gmv1_0a9a617ac8464e92b1af",
+          "gmv1_cbd6cac9ab36a7a3bcd5",
+          "gmv1_27dda7a137bdef181841",
+          "gmv1_26ae958f767ce6b0f264",
+          "gmv1_1045a62a0f037632db8a",
+          "gmv1_5a06b68cde6d282733c3",
+          "gmv1_daf8654496352812fa43",
+          "gmv1_d66d8cfc04aebca2408f",
+          "gmv1_06c5cac8b19b20f859b1",
+          "gmv1_d6a0cea7dbe644d3e4bf",
+          "gmv1_d2a1a2064fdce80df754",
+          "gmv1_bda10c328431499982d8"
+        ],
+        "elapsed_ms": 5.719332999433391
+      },
+      {
+        "case_id": "gmv1_6ef46f28577bd3b10d4a",
+        "normalized_query": "devolvió herramienta conversation ficticio 001",
+        "expected": [
+          "gmv1_bda10c328431499982d8"
+        ],
+        "candidate_ids": [
+          "gmv1_bda10c328431499982d8",
+          "gmv1_95d4cc09fd5bb6f4717b",
+          "gmv1_34499a1649bd8a23f60b",
+          "gmv1_734bf9f28d6a01980c62",
+          "gmv1_6bd4120becbdf46eff86",
+          "gmv1_b892f10b56bbfafcd583",
+          "gmv1_d290e8dda04d4c8397d2",
+          "gmv1_2e0d58c9336c68dfcfa1",
+          "gmv1_0a9a617ac8464e92b1af",
+          "gmv1_cbd6cac9ab36a7a3bcd5",
+          "gmv1_27dda7a137bdef181841",
+          "gmv1_26ae958f767ce6b0f264",
+          "gmv1_1045a62a0f037632db8a",
+          "gmv1_5a06b68cde6d282733c3",
+          "gmv1_daf8654496352812fa43",
+          "gmv1_d66d8cfc04aebca2408f",
+          "gmv1_06c5cac8b19b20f859b1",
+          "gmv1_d6a0cea7dbe644d3e4bf",
+          "gmv1_4f39eb5ce7e3a98cc081",
+          "gmv1_d2a1a2064fdce80df754"
+        ],
+        "elapsed_ms": 5.998417007504031
+      },
+      {
+        "case_id": "gmv1_88d086975df0125925a0",
+        "normalized_query": "quedó sin verificar conversation ficticio 001",
+        "expected": [
+          "gmv1_d290e8dda04d4c8397d2"
+        ],
+        "candidate_ids": [
+          "gmv1_d290e8dda04d4c8397d2",
+          "gmv1_6296de08e5ed5b099710",
+          "gmv1_95d4cc09fd5bb6f4717b",
+          "gmv1_34499a1649bd8a23f60b",
+          "gmv1_734bf9f28d6a01980c62",
+          "gmv1_6bd4120becbdf46eff86",
+          "gmv1_b892f10b56bbfafcd583",
+          "gmv1_2e0d58c9336c68dfcfa1",
+          "gmv1_0a9a617ac8464e92b1af",
+          "gmv1_cbd6cac9ab36a7a3bcd5",
+          "gmv1_27dda7a137bdef181841",
+          "gmv1_26ae958f767ce6b0f264",
+          "gmv1_1045a62a0f037632db8a",
+          "gmv1_5a06b68cde6d282733c3",
+          "gmv1_daf8654496352812fa43",
+          "gmv1_d66d8cfc04aebca2408f",
+          "gmv1_06c5cac8b19b20f859b1",
+          "gmv1_d6a0cea7dbe644d3e4bf",
+          "gmv1_4f39eb5ce7e3a98cc081",
+          "gmv1_d2a1a2064fdce80df754"
+        ],
+        "elapsed_ms": 6.124042003648356
+      },
+      {
+        "case_id": "gmv1_bd86f6b8c75bf9d73433",
+        "normalized_query": "limitó trabajo conversation ficticio 001",
+        "expected": [
+          "gmv1_06c5cac8b19b20f859b1"
+        ],
+        "candidate_ids": [
+          "gmv1_06c5cac8b19b20f859b1",
+          "gmv1_95d4cc09fd5bb6f4717b",
+          "gmv1_34499a1649bd8a23f60b",
+          "gmv1_734bf9f28d6a01980c62",
+          "gmv1_6bd4120becbdf46eff86",
+          "gmv1_b892f10b56bbfafcd583",
+          "gmv1_d290e8dda04d4c8397d2",
+          "gmv1_2e0d58c9336c68dfcfa1",
+          "gmv1_0a9a617ac8464e92b1af",
+          "gmv1_cbd6cac9ab36a7a3bcd5",
+          "gmv1_27dda7a137bdef181841",
+          "gmv1_26ae958f767ce6b0f264",
+          "gmv1_1045a62a0f037632db8a",
+          "gmv1_5a06b68cde6d282733c3",
+          "gmv1_daf8654496352812fa43",
+          "gmv1_d66d8cfc04aebca2408f",
+          "gmv1_d6a0cea7dbe644d3e4bf",
+          "gmv1_4f39eb5ce7e3a98cc081",
+          "gmv1_d2a1a2064fdce80df754",
+          "gmv1_bda10c328431499982d8"
+        ],
+        "elapsed_ms": 5.924708006205037
+      },
+      {
+        "case_id": "gmv1_e35ec00326f0c4fc9bab",
+        "normalized_query": "priorizó conversation ficticio 001",
+        "expected": [
+          "gmv1_6bd4120becbdf46eff86"
+        ],
+        "candidate_ids": [
+          "gmv1_6bd4120becbdf46eff86",
+          "gmv1_95d4cc09fd5bb6f4717b",
+          "gmv1_34499a1649bd8a23f60b",
+          "gmv1_734bf9f28d6a01980c62",
+          "gmv1_b892f10b56bbfafcd583",
+          "gmv1_d290e8dda04d4c8397d2",
+          "gmv1_2e0d58c9336c68dfcfa1",
+          "gmv1_0a9a617ac8464e92b1af",
+          "gmv1_cbd6cac9ab36a7a3bcd5",
+          "gmv1_27dda7a137bdef181841",
+          "gmv1_26ae958f767ce6b0f264",
+          "gmv1_1045a62a0f037632db8a",
+          "gmv1_5a06b68cde6d282733c3",
+          "gmv1_daf8654496352812fa43",
+          "gmv1_d66d8cfc04aebca2408f",
+          "gmv1_06c5cac8b19b20f859b1",
+          "gmv1_d6a0cea7dbe644d3e4bf",
+          "gmv1_4f39eb5ce7e3a98cc081",
+          "gmv1_d2a1a2064fdce80df754",
+          "gmv1_bda10c328431499982d8"
+        ],
+        "elapsed_ms": 5.508499991265126
+      },
+      {
+        "case_id": "gmv1_e26e146fa541ffa5c2d2",
+        "normalized_query": "idioma pidió explicar resultado conversation ficticio 001",
+        "expected": [
+          "gmv1_8ebc135114eb39c6911c"
+        ],
+        "candidate_ids": [
+          "gmv1_8ebc135114eb39c6911c",
+          "gmv1_cbd6cac9ab36a7a3bcd5",
+          "gmv1_27dda7a137bdef181841",
+          "gmv1_bd16ef48b3618ee14bdc",
+          "gmv1_1045a62a0f037632db8a",
+          "gmv1_9f2312807c8558191c60",
+          "gmv1_7aa8a4c2a2d1c7d0eeba",
+          "gmv1_95d4cc09fd5bb6f4717b",
+          "gmv1_34499a1649bd8a23f60b",
+          "gmv1_734bf9f28d6a01980c62",
+          "gmv1_6bd4120becbdf46eff86",
+          "gmv1_b892f10b56bbfafcd583",
+          "gmv1_d290e8dda04d4c8397d2",
+          "gmv1_2e0d58c9336c68dfcfa1",
+          "gmv1_0a9a617ac8464e92b1af",
+          "gmv1_26ae958f767ce6b0f264",
+          "gmv1_5a06b68cde6d282733c3",
+          "gmv1_daf8654496352812fa43",
+          "gmv1_d66d8cfc04aebca2408f",
+          "gmv1_06c5cac8b19b20f859b1"
+        ],
+        "elapsed_ms": 6.382375009707175
+      },
+      {
+        "case_id": "gmv1_625d678e39c84e916452",
+        "normalized_query": "sobre hubo desacuerdo conversation ficticio 001",
+        "expected": [
+          "gmv1_d2a1a2064fdce80df754"
+        ],
+        "candidate_ids": [
+          "gmv1_d2a1a2064fdce80df754",
+          "gmv1_95d4cc09fd5bb6f4717b",
+          "gmv1_34499a1649bd8a23f60b",
+          "gmv1_734bf9f28d6a01980c62",
+          "gmv1_6bd4120becbdf46eff86",
+          "gmv1_b892f10b56bbfafcd583",
+          "gmv1_d290e8dda04d4c8397d2",
+          "gmv1_2e0d58c9336c68dfcfa1",
+          "gmv1_0a9a617ac8464e92b1af",
+          "gmv1_cbd6cac9ab36a7a3bcd5",
+          "gmv1_27dda7a137bdef181841",
+          "gmv1_26ae958f767ce6b0f264",
+          "gmv1_1045a62a0f037632db8a",
+          "gmv1_5a06b68cde6d282733c3",
+          "gmv1_daf8654496352812fa43",
+          "gmv1_d66d8cfc04aebca2408f",
+          "gmv1_06c5cac8b19b20f859b1",
+          "gmv1_d6a0cea7dbe644d3e4bf",
+          "gmv1_4f39eb5ce7e3a98cc081",
+          "gmv1_bda10c328431499982d8"
+        ],
+        "elapsed_ms": 5.661457995302044
+      },
+      {
+        "case_id": "gmv1_23543eb53b0dc09f9180",
+        "normalized_query": "comentario recibió conversation ficticio 001",
+        "expected": [
+          "gmv1_1dd0ec710b8e809987c1"
+        ],
+        "candidate_ids": [
+          "gmv1_1dd0ec710b8e809987c1",
+          "gmv1_95d4cc09fd5bb6f4717b",
+          "gmv1_34499a1649bd8a23f60b",
+          "gmv1_734bf9f28d6a01980c62",
+          "gmv1_6bd4120becbdf46eff86",
+          "gmv1_b892f10b56bbfafcd583",
+          "gmv1_d290e8dda04d4c8397d2",
+          "gmv1_2e0d58c9336c68dfcfa1",
+          "gmv1_0a9a617ac8464e92b1af",
+          "gmv1_cbd6cac9ab36a7a3bcd5",
+          "gmv1_27dda7a137bdef181841",
+          "gmv1_26ae958f767ce6b0f264",
+          "gmv1_1045a62a0f037632db8a",
+          "gmv1_5a06b68cde6d282733c3",
+          "gmv1_daf8654496352812fa43",
+          "gmv1_d66d8cfc04aebca2408f",
+          "gmv1_06c5cac8b19b20f859b1",
+          "gmv1_d6a0cea7dbe644d3e4bf",
+          "gmv1_4f39eb5ce7e3a98cc081",
+          "gmv1_d2a1a2064fdce80df754"
+        ],
+        "elapsed_ms": 6.081416999222711
+      },
+      {
+        "case_id": "gmv1_dee304143ab44874f983",
+        "normalized_query": "quedó pendiente cerrar conversation ficticio 001",
+        "expected": [
+          "gmv1_2e0d58c9336c68dfcfa1"
+        ],
+        "candidate_ids": [
+          "gmv1_d290e8dda04d4c8397d2",
+          "gmv1_6296de08e5ed5b099710",
+          "gmv1_2e0d58c9336c68dfcfa1",
+          "gmv1_26ae958f767ce6b0f264",
+          "gmv1_95d4cc09fd5bb6f4717b",
+          "gmv1_34499a1649bd8a23f60b",
+          "gmv1_734bf9f28d6a01980c62",
+          "gmv1_6bd4120becbdf46eff86",
+          "gmv1_b892f10b56bbfafcd583",
+          "gmv1_0a9a617ac8464e92b1af",
+          "gmv1_cbd6cac9ab36a7a3bcd5",
+          "gmv1_27dda7a137bdef181841",
+          "gmv1_1045a62a0f037632db8a",
+          "gmv1_5a06b68cde6d282733c3",
+          "gmv1_daf8654496352812fa43",
+          "gmv1_d66d8cfc04aebca2408f",
+          "gmv1_06c5cac8b19b20f859b1",
+          "gmv1_d6a0cea7dbe644d3e4bf",
+          "gmv1_4f39eb5ce7e3a98cc081",
+          "gmv1_d2a1a2064fdce80df754"
+        ],
+        "elapsed_ms": 6.418959004804492
+      },
+      {
+        "case_id": "gmv1_35a8e9f2a0e935265ca4",
+        "normalized_query": "código secreto conversation ficticio 001",
+        "expected": [],
+        "candidate_ids": [
+          "gmv1_95d4cc09fd5bb6f4717b",
+          "gmv1_34499a1649bd8a23f60b",
+          "gmv1_734bf9f28d6a01980c62",
+          "gmv1_6bd4120becbdf46eff86",
+          "gmv1_b892f10b56bbfafcd583",
+          "gmv1_d290e8dda04d4c8397d2",
+          "gmv1_2e0d58c9336c68dfcfa1",
+          "gmv1_0a9a617ac8464e92b1af",
+          "gmv1_cbd6cac9ab36a7a3bcd5",
+          "gmv1_27dda7a137bdef181841",
+          "gmv1_26ae958f767ce6b0f264",
+          "gmv1_1045a62a0f037632db8a",
+          "gmv1_5a06b68cde6d282733c3",
+          "gmv1_daf8654496352812fa43",
+          "gmv1_d66d8cfc04aebca2408f",
+          "gmv1_06c5cac8b19b20f859b1",
+          "gmv1_d6a0cea7dbe644d3e4bf",
+          "gmv1_4f39eb5ce7e3a98cc081",
+          "gmv1_d2a1a2064fdce80df754",
+          "gmv1_bda10c328431499982d8"
+        ],
+        "elapsed_ms": 5.594041998847388
+      },
+      {
+        "case_id": "gmv1_5d26a48ca2d50ff105da",
+        "normalized_query": "dirección postal exacta conversation ficticio 001",
+        "expected": [],
+        "candidate_ids": [
+          "gmv1_95d4cc09fd5bb6f4717b",
+          "gmv1_34499a1649bd8a23f60b",
+          "gmv1_734bf9f28d6a01980c62",
+          "gmv1_6bd4120becbdf46eff86",
+          "gmv1_b892f10b56bbfafcd583",
+          "gmv1_d290e8dda04d4c8397d2",
+          "gmv1_2e0d58c9336c68dfcfa1",
+          "gmv1_0a9a617ac8464e92b1af",
+          "gmv1_cbd6cac9ab36a7a3bcd5",
+          "gmv1_27dda7a137bdef181841",
+          "gmv1_26ae958f767ce6b0f264",
+          "gmv1_1045a62a0f037632db8a",
+          "gmv1_5a06b68cde6d282733c3",
+          "gmv1_daf8654496352812fa43",
+          "gmv1_d66d8cfc04aebca2408f",
+          "gmv1_06c5cac8b19b20f859b1",
+          "gmv1_d6a0cea7dbe644d3e4bf",
+          "gmv1_4f39eb5ce7e3a98cc081",
+          "gmv1_d2a1a2064fdce80df754",
+          "gmv1_bda10c328431499982d8"
+        ],
+        "elapsed_ms": 5.724250004277565
+      },
+      {
+        "case_id": "gmv1_96062418418ddb122f8f",
+        "normalized_query": "contraseña usa conversation ficticio 001",
+        "expected": [],
+        "candidate_ids": [
+          "gmv1_95d4cc09fd5bb6f4717b",
+          "gmv1_34499a1649bd8a23f60b",
+          "gmv1_734bf9f28d6a01980c62",
+          "gmv1_6bd4120becbdf46eff86",
+          "gmv1_b892f10b56bbfafcd583",
+          "gmv1_d290e8dda04d4c8397d2",
+          "gmv1_2e0d58c9336c68dfcfa1",
+          "gmv1_0a9a617ac8464e92b1af",
+          "gmv1_cbd6cac9ab36a7a3bcd5",
+          "gmv1_27dda7a137bdef181841",
+          "gmv1_26ae958f767ce6b0f264",
+          "gmv1_1045a62a0f037632db8a",
+          "gmv1_5a06b68cde6d282733c3",
+          "gmv1_daf8654496352812fa43",
+          "gmv1_d66d8cfc04aebca2408f",
+          "gmv1_06c5cac8b19b20f859b1",
+          "gmv1_d6a0cea7dbe644d3e4bf",
+          "gmv1_4f39eb5ce7e3a98cc081",
+          "gmv1_d2a1a2064fdce80df754",
+          "gmv1_bda10c328431499982d8"
+        ],
+        "elapsed_ms": 5.579915989073925
+      },
+      {
+        "case_id": "gmv1_189dfa1ac2fa9f8aa498",
+        "normalized_query": "decisión tomó conversation ficticio 001 mañana",
+        "expected": [],
+        "candidate_ids": [
+          "gmv1_d6a0cea7dbe644d3e4bf",
+          "gmv1_b30620326a85e5915c02",
+          "gmv1_95d4cc09fd5bb6f4717b",
+          "gmv1_34499a1649bd8a23f60b",
+          "gmv1_734bf9f28d6a01980c62",
+          "gmv1_6bd4120becbdf46eff86",
+          "gmv1_b892f10b56bbfafcd583",
+          "gmv1_d290e8dda04d4c8397d2",
+          "gmv1_2e0d58c9336c68dfcfa1",
+          "gmv1_0a9a617ac8464e92b1af",
+          "gmv1_cbd6cac9ab36a7a3bcd5",
+          "gmv1_27dda7a137bdef181841",
+          "gmv1_26ae958f767ce6b0f264",
+          "gmv1_1045a62a0f037632db8a",
+          "gmv1_5a06b68cde6d282733c3",
+          "gmv1_daf8654496352812fa43",
+          "gmv1_d66d8cfc04aebca2408f",
+          "gmv1_06c5cac8b19b20f859b1",
+          "gmv1_4f39eb5ce7e3a98cc081",
+          "gmv1_d2a1a2064fdce80df754"
+        ],
+        "elapsed_ms": 5.794540993520059
+      },
+      {
+        "case_id": "gmv1_ffa1503111bbe550c877",
+        "normalized_query": "color favorito conversation ficticio 001",
+        "expected": [],
+        "candidate_ids": [
+          "gmv1_95d4cc09fd5bb6f4717b",
+          "gmv1_34499a1649bd8a23f60b",
+          "gmv1_734bf9f28d6a01980c62",
+          "gmv1_6bd4120becbdf46eff86",
+          "gmv1_b892f10b56bbfafcd583",
+          "gmv1_d290e8dda04d4c8397d2",
+          "gmv1_2e0d58c9336c68dfcfa1",
+          "gmv1_0a9a617ac8464e92b1af",
+          "gmv1_cbd6cac9ab36a7a3bcd5",
+          "gmv1_27dda7a137bdef181841",
+          "gmv1_26ae958f767ce6b0f264",
+          "gmv1_1045a62a0f037632db8a",
+          "gmv1_5a06b68cde6d282733c3",
+          "gmv1_daf8654496352812fa43",
+          "gmv1_d66d8cfc04aebca2408f",
+          "gmv1_06c5cac8b19b20f859b1",
+          "gmv1_d6a0cea7dbe644d3e4bf",
+          "gmv1_4f39eb5ce7e3a98cc081",
+          "gmv1_d2a1a2064fdce80df754",
+          "gmv1_bda10c328431499982d8"
+        ],
+        "elapsed_ms": 5.3816250001545995
+      },
+      {
+        "case_id": "gmv1_490c045596045974d0f8",
+        "normalized_query": "idioma salida registra perfil agent ficticio 001",
+        "expected": [
+          "gmv1_4f70937ac8c9b46ebbd0"
+        ],
+        "candidate_ids": [
+          "gmv1_4f70937ac8c9b46ebbd0",
+          "gmv1_549d2eb5e228411bbe6c",
+          "gmv1_507d6810d619957d4cdb",
+          "gmv1_5084b5b2212123744e50",
+          "gmv1_e0921f3e3d32ceb95c2a",
+          "gmv1_9d64a2a4e4cb947dce65",
+          "gmv1_542d13e9d0074d969b51",
+          "gmv1_aedee3c546ba68f3d1e8",
+          "gmv1_164975a0c0f8abb94759",
+          "gmv1_bd891cf031cefac747ce",
+          "gmv1_f37b538d6290f4c2f2b1",
+          "gmv1_beafbeafe3d030fb242e",
+          "gmv1_dd481fab8e7ae1e9d43d",
+          "gmv1_83534d85e5ec6e69a729",
+          "gmv1_b57b9ebc940b6b41fd4e",
+          "gmv1_f394b83f85c16d8127cb",
+          "gmv1_b52d04b7e91fb329c960",
+          "gmv1_facc70836b08801577ae",
+          "gmv1_f2743d7fc348ce5e05c9",
+          "gmv1_44e9b59d447ce45a452d"
+        ],
+        "elapsed_ms": 5.7185839978046715
+      },
+      {
+        "case_id": "gmv1_ea4a8e05e73f13e822bc",
+        "normalized_query": "longitud respuesta registra perfil agent ficticio 001",
+        "expected": [
+          "gmv1_507d6810d619957d4cdb"
+        ],
+        "candidate_ids": [
+          "gmv1_507d6810d619957d4cdb",
+          "gmv1_5084b5b2212123744e50",
+          "gmv1_4f70937ac8c9b46ebbd0",
+          "gmv1_e0921f3e3d32ceb95c2a",
+          "gmv1_9d64a2a4e4cb947dce65",
+          "gmv1_542d13e9d0074d969b51",
+          "gmv1_aedee3c546ba68f3d1e8",
+          "gmv1_164975a0c0f8abb94759",
+          "gmv1_bd891cf031cefac747ce",
+          "gmv1_f37b538d6290f4c2f2b1",
+          "gmv1_549d2eb5e228411bbe6c",
+          "gmv1_beafbeafe3d030fb242e",
+          "gmv1_dd481fab8e7ae1e9d43d",
+          "gmv1_83534d85e5ec6e69a729",
+          "gmv1_b57b9ebc940b6b41fd4e",
+          "gmv1_f394b83f85c16d8127cb",
+          "gmv1_b52d04b7e91fb329c960",
+          "gmv1_facc70836b08801577ae",
+          "gmv1_f2743d7fc348ce5e05c9",
+          "gmv1_44e9b59d447ce45a452d"
+        ],
+        "elapsed_ms": 5.618958006380126
+      },
+      {
+        "case_id": "gmv1_29dfb9554fd3eb1608f7",
+        "normalized_query": "contrasta afirmaciones flujo agent ficticio 001",
+        "expected": [
+          "gmv1_6b6a6e4ad7f007c85c25"
+        ],
+        "candidate_ids": [
+          "gmv1_6b6a6e4ad7f007c85c25",
+          "gmv1_7835fd3101b20eb295a4",
+          "gmv1_b52d04b7e91fb329c960",
+          "gmv1_facc70836b08801577ae",
+          "gmv1_f2743d7fc348ce5e05c9",
+          "gmv1_542d13e9d0074d969b51",
+          "gmv1_44e9b59d447ce45a452d",
+          "gmv1_aedee3c546ba68f3d1e8",
+          "gmv1_83273af564724ed14dae",
+          "gmv1_164975a0c0f8abb94759",
+          "gmv1_e5f05d96c1d90ace8bce",
+          "gmv1_bd891cf031cefac747ce",
+          "gmv1_fe61b0c379749e1d70ae",
+          "gmv1_a403d3a86558ee2c4fa2",
+          "gmv1_507d6810d619957d4cdb",
+          "gmv1_c1653573f528082b59fc",
+          "gmv1_f37b538d6290f4c2f2b1",
+          "gmv1_549d2eb5e228411bbe6c",
+          "gmv1_5084b5b2212123744e50",
+          "gmv1_0582933c044a5a3f28bc"
+        ],
+        "elapsed_ms": 5.673709005350247
+      },
+      {
+        "case_id": "gmv1_687ca4e9c1f8179b0fae",
+        "normalized_query": "trata fallos flujo agent ficticio 001",
+        "expected": [
+          "gmv1_7835fd3101b20eb295a4"
+        ],
+        "candidate_ids": [
+          "gmv1_7835fd3101b20eb295a4",
+          "gmv1_6b6a6e4ad7f007c85c25",
+          "gmv1_b52d04b7e91fb329c960",
+          "gmv1_facc70836b08801577ae",
+          "gmv1_f2743d7fc348ce5e05c9",
+          "gmv1_542d13e9d0074d969b51",
+          "gmv1_44e9b59d447ce45a452d",
+          "gmv1_aedee3c546ba68f3d1e8",
+          "gmv1_83273af564724ed14dae",
+          "gmv1_164975a0c0f8abb94759",
+          "gmv1_e5f05d96c1d90ace8bce",
+          "gmv1_bd891cf031cefac747ce",
+          "gmv1_fe61b0c379749e1d70ae",
+          "gmv1_a403d3a86558ee2c4fa2",
+          "gmv1_507d6810d619957d4cdb",
+          "gmv1_c1653573f528082b59fc",
+          "gmv1_f37b538d6290f4c2f2b1",
+          "gmv1_549d2eb5e228411bbe6c",
+          "gmv1_5084b5b2212123744e50",
+          "gmv1_0582933c044a5a3f28bc"
+        ],
+        "elapsed_ms": 5.062249998445623
+      },
+      {
+        "case_id": "gmv1_98761f1d08e7f30cc644",
+        "normalized_query": "empieza secuencia registrada agent ficticio 001",
+        "expected": [
+          "gmv1_b57b9ebc940b6b41fd4e"
+        ],
+        "candidate_ids": [
+          "gmv1_b57b9ebc940b6b41fd4e",
+          "gmv1_549d2eb5e228411bbe6c",
+          "gmv1_beafbeafe3d030fb242e",
+          "gmv1_dd481fab8e7ae1e9d43d",
+          "gmv1_83534d85e5ec6e69a729",
+          "gmv1_b52d04b7e91fb329c960",
+          "gmv1_facc70836b08801577ae",
+          "gmv1_f2743d7fc348ce5e05c9",
+          "gmv1_542d13e9d0074d969b51",
+          "gmv1_44e9b59d447ce45a452d",
+          "gmv1_aedee3c546ba68f3d1e8",
+          "gmv1_83273af564724ed14dae",
+          "gmv1_164975a0c0f8abb94759",
+          "gmv1_e5f05d96c1d90ace8bce",
+          "gmv1_bd891cf031cefac747ce",
+          "gmv1_fe61b0c379749e1d70ae",
+          "gmv1_a403d3a86558ee2c4fa2",
+          "gmv1_507d6810d619957d4cdb",
+          "gmv1_c1653573f528082b59fc",
+          "gmv1_f37b538d6290f4c2f2b1"
+        ],
+        "elapsed_ms": 6.051749995094724
+      },
+      {
+        "case_id": "gmv1_71f43da1cdd8e5a61112",
+        "normalized_query": "dato marca excluido perfil agent ficticio 001",
+        "expected": [
+          "gmv1_9d64a2a4e4cb947dce65"
+        ],
+        "candidate_ids": [
+          "gmv1_9d64a2a4e4cb947dce65",
+          "gmv1_507d6810d619957d4cdb",
+          "gmv1_5084b5b2212123744e50",
+          "gmv1_4f70937ac8c9b46ebbd0",
+          "gmv1_e0921f3e3d32ceb95c2a",
+          "gmv1_f37b538d6290f4c2f2b1",
+          "gmv1_b52d04b7e91fb329c960",
+          "gmv1_facc70836b08801577ae",
+          "gmv1_f2743d7fc348ce5e05c9",
+          "gmv1_542d13e9d0074d969b51",
+          "gmv1_44e9b59d447ce45a452d",
+          "gmv1_aedee3c546ba68f3d1e8",
+          "gmv1_83273af564724ed14dae",
+          "gmv1_164975a0c0f8abb94759",
+          "gmv1_e5f05d96c1d90ace8bce",
+          "gmv1_bd891cf031cefac747ce",
+          "gmv1_fe61b0c379749e1d70ae",
+          "gmv1_a403d3a86558ee2c4fa2",
+          "gmv1_c1653573f528082b59fc",
+          "gmv1_549d2eb5e228411bbe6c"
+        ],
+        "elapsed_ms": 5.430375007563271
+      },
+      {
+        "case_id": "gmv1_448100399b4df69d5266",
+        "normalized_query": "señala informe registrado agent ficticio 001 falta evidencia",
+        "expected": [
+          "gmv1_f394b83f85c16d8127cb"
+        ],
+        "candidate_ids": [
+          "gmv1_f394b83f85c16d8127cb",
+          "gmv1_542d13e9d0074d969b51",
+          "gmv1_aedee3c546ba68f3d1e8",
+          "gmv1_164975a0c0f8abb94759",
+          "gmv1_9d64a2a4e4cb947dce65",
+          "gmv1_bd891cf031cefac747ce",
+          "gmv1_f37b538d6290f4c2f2b1",
+          "gmv1_b52d04b7e91fb329c960",
+          "gmv1_facc70836b08801577ae",
+          "gmv1_f2743d7fc348ce5e05c9",
+          "gmv1_44e9b59d447ce45a452d",
+          "gmv1_83273af564724ed14dae",
+          "gmv1_e5f05d96c1d90ace8bce",
+          "gmv1_fe61b0c379749e1d70ae",
+          "gmv1_a403d3a86558ee2c4fa2",
+          "gmv1_507d6810d619957d4cdb",
+          "gmv1_c1653573f528082b59fc",
+          "gmv1_549d2eb5e228411bbe6c",
+          "gmv1_6b6a6e4ad7f007c85c25",
+          "gmv1_5084b5b2212123744e50"
+        ],
+        "elapsed_ms": 6.131749993073754
+      },
+      {
+        "case_id": "gmv1_a7042890eae22c23d6da",
+        "normalized_query": "coloca referencias perfil agent ficticio 001",
+        "expected": [
+          "gmv1_e0921f3e3d32ceb95c2a"
+        ],
+        "candidate_ids": [
+          "gmv1_e0921f3e3d32ceb95c2a",
+          "gmv1_507d6810d619957d4cdb",
+          "gmv1_5084b5b2212123744e50",
+          "gmv1_4f70937ac8c9b46ebbd0",
+          "gmv1_9d64a2a4e4cb947dce65",
+          "gmv1_b52d04b7e91fb329c960",
+          "gmv1_facc70836b08801577ae",
+          "gmv1_f2743d7fc348ce5e05c9",
+          "gmv1_542d13e9d0074d969b51",
+          "gmv1_44e9b59d447ce45a452d",
+          "gmv1_aedee3c546ba68f3d1e8",
+          "gmv1_83273af564724ed14dae",
+          "gmv1_164975a0c0f8abb94759",
+          "gmv1_e5f05d96c1d90ace8bce",
+          "gmv1_bd891cf031cefac747ce",
+          "gmv1_fe61b0c379749e1d70ae",
+          "gmv1_a403d3a86558ee2c4fa2",
+          "gmv1_c1653573f528082b59fc",
+          "gmv1_f37b538d6290f4c2f2b1",
+          "gmv1_549d2eb5e228411bbe6c"
+        ],
+        "elapsed_ms": 5.59675000840798
+      },
+      {
+        "case_id": "gmv1_db0f16429909e7e845fb",
+        "normalized_query": "condición planificación registra perfil agent ficticio 001",
+        "expected": [
+          "gmv1_5084b5b2212123744e50"
+        ],
+        "candidate_ids": [
+          "gmv1_5084b5b2212123744e50",
+          "gmv1_507d6810d619957d4cdb",
+          "gmv1_4f70937ac8c9b46ebbd0",
+          "gmv1_e0921f3e3d32ceb95c2a",
+          "gmv1_9d64a2a4e4cb947dce65",
+          "gmv1_542d13e9d0074d969b51",
+          "gmv1_aedee3c546ba68f3d1e8",
+          "gmv1_164975a0c0f8abb94759",
+          "gmv1_bd891cf031cefac747ce",
+          "gmv1_f37b538d6290f4c2f2b1",
+          "gmv1_549d2eb5e228411bbe6c",
+          "gmv1_beafbeafe3d030fb242e",
+          "gmv1_dd481fab8e7ae1e9d43d",
+          "gmv1_83534d85e5ec6e69a729",
+          "gmv1_b57b9ebc940b6b41fd4e",
+          "gmv1_f394b83f85c16d8127cb",
+          "gmv1_b52d04b7e91fb329c960",
+          "gmv1_facc70836b08801577ae",
+          "gmv1_f2743d7fc348ce5e05c9",
+          "gmv1_44e9b59d447ce45a452d"
+        ],
+        "elapsed_ms": 6.501166993984953
+      },
+      {
+        "case_id": "gmv1_3780ce36c70108692658",
+        "normalized_query": "incluye traspaso agent ficticio 001",
+        "expected": [
+          "gmv1_07e8c928619cb12f6dc9"
+        ],
+        "candidate_ids": [
+          "gmv1_07e8c928619cb12f6dc9",
+          "gmv1_b52d04b7e91fb329c960",
+          "gmv1_facc70836b08801577ae",
+          "gmv1_f2743d7fc348ce5e05c9",
+          "gmv1_542d13e9d0074d969b51",
+          "gmv1_44e9b59d447ce45a452d",
+          "gmv1_aedee3c546ba68f3d1e8",
+          "gmv1_83273af564724ed14dae",
+          "gmv1_164975a0c0f8abb94759",
+          "gmv1_e5f05d96c1d90ace8bce",
+          "gmv1_bd891cf031cefac747ce",
+          "gmv1_fe61b0c379749e1d70ae",
+          "gmv1_a403d3a86558ee2c4fa2",
+          "gmv1_507d6810d619957d4cdb",
+          "gmv1_c1653573f528082b59fc",
+          "gmv1_f37b538d6290f4c2f2b1",
+          "gmv1_549d2eb5e228411bbe6c",
+          "gmv1_6b6a6e4ad7f007c85c25",
+          "gmv1_5084b5b2212123744e50",
+          "gmv1_0582933c044a5a3f28bc"
+        ],
+        "elapsed_ms": 6.714500006637536
+      },
+      {
+        "case_id": "gmv1_8632591009ab104266f8",
+        "normalized_query": "módulo activo registró agent ficticio 001",
+        "expected": [
+          "gmv1_542d13e9d0074d969b51"
+        ],
+        "candidate_ids": [
+          "gmv1_542d13e9d0074d969b51",
+          "gmv1_b52d04b7e91fb329c960",
+          "gmv1_facc70836b08801577ae",
+          "gmv1_f2743d7fc348ce5e05c9",
+          "gmv1_44e9b59d447ce45a452d",
+          "gmv1_aedee3c546ba68f3d1e8",
+          "gmv1_83273af564724ed14dae",
+          "gmv1_164975a0c0f8abb94759",
+          "gmv1_e5f05d96c1d90ace8bce",
+          "gmv1_bd891cf031cefac747ce",
+          "gmv1_fe61b0c379749e1d70ae",
+          "gmv1_a403d3a86558ee2c4fa2",
+          "gmv1_507d6810d619957d4cdb",
+          "gmv1_c1653573f528082b59fc",
+          "gmv1_f37b538d6290f4c2f2b1",
+          "gmv1_549d2eb5e228411bbe6c",
+          "gmv1_6b6a6e4ad7f007c85c25",
+          "gmv1_5084b5b2212123744e50",
+          "gmv1_0582933c044a5a3f28bc",
+          "gmv1_beafbeafe3d030fb242e"
+        ],
+        "elapsed_ms": 5.414667000877671
+      },
+      {
+        "case_id": "gmv1_313df7eef7069a5dc59b",
+        "normalized_query": "herramienta ofrece entorno agent ficticio 001",
+        "expected": [
+          "gmv1_a403d3a86558ee2c4fa2"
+        ],
+        "candidate_ids": [
+          "gmv1_a403d3a86558ee2c4fa2",
+          "gmv1_bd891cf031cefac747ce",
+          "gmv1_3354e1249d995b9b38d8",
+          "gmv1_b52d04b7e91fb329c960",
+          "gmv1_facc70836b08801577ae",
+          "gmv1_f2743d7fc348ce5e05c9",
+          "gmv1_542d13e9d0074d969b51",
+          "gmv1_44e9b59d447ce45a452d",
+          "gmv1_aedee3c546ba68f3d1e8",
+          "gmv1_83273af564724ed14dae",
+          "gmv1_164975a0c0f8abb94759",
+          "gmv1_e5f05d96c1d90ace8bce",
+          "gmv1_fe61b0c379749e1d70ae",
+          "gmv1_507d6810d619957d4cdb",
+          "gmv1_c1653573f528082b59fc",
+          "gmv1_f37b538d6290f4c2f2b1",
+          "gmv1_549d2eb5e228411bbe6c",
+          "gmv1_6b6a6e4ad7f007c85c25",
+          "gmv1_5084b5b2212123744e50",
+          "gmv1_0582933c044a5a3f28bc"
+        ],
+        "elapsed_ms": 5.734375008614734
+      },
+      {
+        "case_id": "gmv1_3694b9b6e7a7f503ff69",
+        "normalized_query": "está disponible entorno agent ficticio 001",
+        "expected": [
+          "gmv1_3354e1249d995b9b38d8"
+        ],
+        "candidate_ids": [
+          "gmv1_3354e1249d995b9b38d8",
+          "gmv1_bd891cf031cefac747ce",
+          "gmv1_a403d3a86558ee2c4fa2",
+          "gmv1_b52d04b7e91fb329c960",
+          "gmv1_facc70836b08801577ae",
+          "gmv1_f2743d7fc348ce5e05c9",
+          "gmv1_542d13e9d0074d969b51",
+          "gmv1_44e9b59d447ce45a452d",
+          "gmv1_aedee3c546ba68f3d1e8",
+          "gmv1_83273af564724ed14dae",
+          "gmv1_164975a0c0f8abb94759",
+          "gmv1_e5f05d96c1d90ace8bce",
+          "gmv1_fe61b0c379749e1d70ae",
+          "gmv1_507d6810d619957d4cdb",
+          "gmv1_c1653573f528082b59fc",
+          "gmv1_f37b538d6290f4c2f2b1",
+          "gmv1_549d2eb5e228411bbe6c",
+          "gmv1_6b6a6e4ad7f007c85c25",
+          "gmv1_5084b5b2212123744e50",
+          "gmv1_0582933c044a5a3f28bc"
+        ],
+        "elapsed_ms": 5.49808400683105
+      },
+      {
+        "case_id": "gmv1_767cd1d7c854e6e34d9a",
+        "normalized_query": "última operación exitosa agent ficticio 001",
+        "expected": [
+          "gmv1_dd481fab8e7ae1e9d43d"
+        ],
+        "candidate_ids": [
+          "gmv1_dd481fab8e7ae1e9d43d",
+          "gmv1_e5f05d96c1d90ace8bce",
+          "gmv1_549d2eb5e228411bbe6c",
+          "gmv1_b52d04b7e91fb329c960",
+          "gmv1_facc70836b08801577ae",
+          "gmv1_f2743d7fc348ce5e05c9",
+          "gmv1_542d13e9d0074d969b51",
+          "gmv1_44e9b59d447ce45a452d",
+          "gmv1_aedee3c546ba68f3d1e8",
+          "gmv1_83273af564724ed14dae",
+          "gmv1_164975a0c0f8abb94759",
+          "gmv1_bd891cf031cefac747ce",
+          "gmv1_fe61b0c379749e1d70ae",
+          "gmv1_a403d3a86558ee2c4fa2",
+          "gmv1_507d6810d619957d4cdb",
+          "gmv1_c1653573f528082b59fc",
+          "gmv1_f37b538d6290f4c2f2b1",
+          "gmv1_6b6a6e4ad7f007c85c25",
+          "gmv1_5084b5b2212123744e50",
+          "gmv1_0582933c044a5a3f28bc"
+        ],
+        "elapsed_ms": 5.476500009535812
+      },
+      {
+        "case_id": "gmv1_1cfe2ee7fb2e1eb51233",
+        "normalized_query": "último fallo registrado agent ficticio 001",
+        "expected": [
+          "gmv1_164975a0c0f8abb94759"
+        ],
+        "candidate_ids": [
+          "gmv1_164975a0c0f8abb94759",
+          "gmv1_83273af564724ed14dae",
+          "gmv1_7835fd3101b20eb295a4",
+          "gmv1_542d13e9d0074d969b51",
+          "gmv1_aedee3c546ba68f3d1e8",
+          "gmv1_bd891cf031cefac747ce",
+          "gmv1_f37b538d6290f4c2f2b1",
+          "gmv1_f394b83f85c16d8127cb",
+          "gmv1_b52d04b7e91fb329c960",
+          "gmv1_facc70836b08801577ae",
+          "gmv1_f2743d7fc348ce5e05c9",
+          "gmv1_44e9b59d447ce45a452d",
+          "gmv1_e5f05d96c1d90ace8bce",
+          "gmv1_fe61b0c379749e1d70ae",
+          "gmv1_a403d3a86558ee2c4fa2",
+          "gmv1_507d6810d619957d4cdb",
+          "gmv1_c1653573f528082b59fc",
+          "gmv1_549d2eb5e228411bbe6c",
+          "gmv1_6b6a6e4ad7f007c85c25",
+          "gmv1_5084b5b2212123744e50"
+        ],
+        "elapsed_ms": 5.223915999522433
+      },
+      {
+        "case_id": "gmv1_8fd4f834b7507e3f728e",
+        "normalized_query": "punto control agent ficticio 001",
+        "expected": [
+          "gmv1_83273af564724ed14dae"
+        ],
+        "candidate_ids": [
+          "gmv1_83273af564724ed14dae",
+          "gmv1_b52d04b7e91fb329c960",
+          "gmv1_facc70836b08801577ae",
+          "gmv1_f2743d7fc348ce5e05c9",
+          "gmv1_542d13e9d0074d969b51",
+          "gmv1_44e9b59d447ce45a452d",
+          "gmv1_aedee3c546ba68f3d1e8",
+          "gmv1_164975a0c0f8abb94759",
+          "gmv1_e5f05d96c1d90ace8bce",
+          "gmv1_bd891cf031cefac747ce",
+          "gmv1_fe61b0c379749e1d70ae",
+          "gmv1_a403d3a86558ee2c4fa2",
+          "gmv1_507d6810d619957d4cdb",
+          "gmv1_c1653573f528082b59fc",
+          "gmv1_f37b538d6290f4c2f2b1",
+          "gmv1_549d2eb5e228411bbe6c",
+          "gmv1_6b6a6e4ad7f007c85c25",
+          "gmv1_5084b5b2212123744e50",
+          "gmv1_0582933c044a5a3f28bc",
+          "gmv1_beafbeafe3d030fb242e"
+        ],
+        "elapsed_ms": 4.974458002834581
+      },
+      {
+        "case_id": "gmv1_a10c4bad24892e291b99",
+        "normalized_query": "operación pendiente agent ficticio 001",
+        "expected": [
+          "gmv1_549d2eb5e228411bbe6c"
+        ],
+        "candidate_ids": [
+          "gmv1_549d2eb5e228411bbe6c",
+          "gmv1_dd481fab8e7ae1e9d43d",
+          "gmv1_b52d04b7e91fb329c960",
+          "gmv1_facc70836b08801577ae",
+          "gmv1_f2743d7fc348ce5e05c9",
+          "gmv1_542d13e9d0074d969b51",
+          "gmv1_44e9b59d447ce45a452d",
+          "gmv1_aedee3c546ba68f3d1e8",
+          "gmv1_83273af564724ed14dae",
+          "gmv1_164975a0c0f8abb94759",
+          "gmv1_e5f05d96c1d90ace8bce",
+          "gmv1_bd891cf031cefac747ce",
+          "gmv1_fe61b0c379749e1d70ae",
+          "gmv1_a403d3a86558ee2c4fa2",
+          "gmv1_507d6810d619957d4cdb",
+          "gmv1_c1653573f528082b59fc",
+          "gmv1_f37b538d6290f4c2f2b1",
+          "gmv1_6b6a6e4ad7f007c85c25",
+          "gmv1_5084b5b2212123744e50",
+          "gmv1_0582933c044a5a3f28bc"
+        ],
+        "elapsed_ms": 5.435291997855529
+      },
+      {
+        "case_id": "gmv1_eb60a154ba9192c88920",
+        "normalized_query": "artefacto produjo agent ficticio 001",
+        "expected": [
+          "gmv1_c1653573f528082b59fc"
+        ],
+        "candidate_ids": [
+          "gmv1_c1653573f528082b59fc",
+          "gmv1_b52d04b7e91fb329c960",
+          "gmv1_facc70836b08801577ae",
+          "gmv1_f2743d7fc348ce5e05c9",
+          "gmv1_542d13e9d0074d969b51",
+          "gmv1_44e9b59d447ce45a452d",
+          "gmv1_aedee3c546ba68f3d1e8",
+          "gmv1_83273af564724ed14dae",
+          "gmv1_164975a0c0f8abb94759",
+          "gmv1_e5f05d96c1d90ace8bce",
+          "gmv1_bd891cf031cefac747ce",
+          "gmv1_fe61b0c379749e1d70ae",
+          "gmv1_a403d3a86558ee2c4fa2",
+          "gmv1_507d6810d619957d4cdb",
+          "gmv1_f37b538d6290f4c2f2b1",
+          "gmv1_549d2eb5e228411bbe6c",
+          "gmv1_6b6a6e4ad7f007c85c25",
+          "gmv1_5084b5b2212123744e50",
+          "gmv1_0582933c044a5a3f28bc",
+          "gmv1_beafbeafe3d030fb242e"
+        ],
+        "elapsed_ms": 4.965957996319048
+      },
+      {
+        "case_id": "gmv1_dc08cee6905107b7c6c0",
+        "normalized_query": "fuente inspeccionó agent ficticio 001",
+        "expected": [
+          "gmv1_0582933c044a5a3f28bc"
+        ],
+        "candidate_ids": [
+          "gmv1_0582933c044a5a3f28bc",
+          "gmv1_b52d04b7e91fb329c960",
+          "gmv1_facc70836b08801577ae",
+          "gmv1_f2743d7fc348ce5e05c9",
+          "gmv1_542d13e9d0074d969b51",
+          "gmv1_44e9b59d447ce45a452d",
+          "gmv1_aedee3c546ba68f3d1e8",
+          "gmv1_83273af564724ed14dae",
+          "gmv1_164975a0c0f8abb94759",
+          "gmv1_e5f05d96c1d90ace8bce",
+          "gmv1_bd891cf031cefac747ce",
+          "gmv1_fe61b0c379749e1d70ae",
+          "gmv1_a403d3a86558ee2c4fa2",
+          "gmv1_507d6810d619957d4cdb",
+          "gmv1_c1653573f528082b59fc",
+          "gmv1_f37b538d6290f4c2f2b1",
+          "gmv1_549d2eb5e228411bbe6c",
+          "gmv1_6b6a6e4ad7f007c85c25",
+          "gmv1_5084b5b2212123744e50",
+          "gmv1_beafbeafe3d030fb242e"
+        ],
+        "elapsed_ms": 5.167374998563901
+      },
+      {
+        "case_id": "gmv1_e3c66110af395511ad8c",
+        "normalized_query": "código error observó agent ficticio 001",
+        "expected": [
+          "gmv1_facc70836b08801577ae"
+        ],
+        "candidate_ids": [
+          "gmv1_facc70836b08801577ae",
+          "gmv1_7835fd3101b20eb295a4",
+          "gmv1_b52d04b7e91fb329c960",
+          "gmv1_f2743d7fc348ce5e05c9",
+          "gmv1_542d13e9d0074d969b51",
+          "gmv1_44e9b59d447ce45a452d",
+          "gmv1_aedee3c546ba68f3d1e8",
+          "gmv1_83273af564724ed14dae",
+          "gmv1_164975a0c0f8abb94759",
+          "gmv1_e5f05d96c1d90ace8bce",
+          "gmv1_bd891cf031cefac747ce",
+          "gmv1_fe61b0c379749e1d70ae",
+          "gmv1_a403d3a86558ee2c4fa2",
+          "gmv1_507d6810d619957d4cdb",
+          "gmv1_c1653573f528082b59fc",
+          "gmv1_f37b538d6290f4c2f2b1",
+          "gmv1_549d2eb5e228411bbe6c",
+          "gmv1_6b6a6e4ad7f007c85c25",
+          "gmv1_5084b5b2212123744e50",
+          "gmv1_0582933c044a5a3f28bc"
+        ],
+        "elapsed_ms": 4.885832997388206
+      },
+      {
+        "case_id": "gmv1_3d91ebd818c56599e22e",
+        "normalized_query": "cuántos reintentos indica registro agent ficticio 001",
+        "expected": [
+          "gmv1_f2743d7fc348ce5e05c9"
+        ],
+        "candidate_ids": [
+          "gmv1_f2743d7fc348ce5e05c9",
+          "gmv1_7835fd3101b20eb295a4",
+          "gmv1_b57b9ebc940b6b41fd4e",
+          "gmv1_b52d04b7e91fb329c960",
+          "gmv1_facc70836b08801577ae",
+          "gmv1_542d13e9d0074d969b51",
+          "gmv1_44e9b59d447ce45a452d",
+          "gmv1_aedee3c546ba68f3d1e8",
+          "gmv1_83273af564724ed14dae",
+          "gmv1_164975a0c0f8abb94759",
+          "gmv1_e5f05d96c1d90ace8bce",
+          "gmv1_bd891cf031cefac747ce",
+          "gmv1_fe61b0c379749e1d70ae",
+          "gmv1_a403d3a86558ee2c4fa2",
+          "gmv1_507d6810d619957d4cdb",
+          "gmv1_c1653573f528082b59fc",
+          "gmv1_f37b538d6290f4c2f2b1",
+          "gmv1_549d2eb5e228411bbe6c",
+          "gmv1_6b6a6e4ad7f007c85c25",
+          "gmv1_5084b5b2212123744e50"
+        ],
+        "elapsed_ms": 5.913375003729016
+      },
+      {
+        "case_id": "gmv1_ccee22f0fd61d92fe529",
+        "normalized_query": "solución provisional registró agent ficticio 001",
+        "expected": [
+          "gmv1_83534d85e5ec6e69a729"
+        ],
+        "candidate_ids": [
+          "gmv1_83534d85e5ec6e69a729",
+          "gmv1_b52d04b7e91fb329c960",
+          "gmv1_facc70836b08801577ae",
+          "gmv1_f2743d7fc348ce5e05c9",
+          "gmv1_542d13e9d0074d969b51",
+          "gmv1_44e9b59d447ce45a452d",
+          "gmv1_aedee3c546ba68f3d1e8",
+          "gmv1_83273af564724ed14dae",
+          "gmv1_164975a0c0f8abb94759",
+          "gmv1_e5f05d96c1d90ace8bce",
+          "gmv1_bd891cf031cefac747ce",
+          "gmv1_fe61b0c379749e1d70ae",
+          "gmv1_a403d3a86558ee2c4fa2",
+          "gmv1_507d6810d619957d4cdb",
+          "gmv1_c1653573f528082b59fc",
+          "gmv1_f37b538d6290f4c2f2b1",
+          "gmv1_549d2eb5e228411bbe6c",
+          "gmv1_6b6a6e4ad7f007c85c25",
+          "gmv1_5084b5b2212123744e50",
+          "gmv1_0582933c044a5a3f28bc"
+        ],
+        "elapsed_ms": 5.443874993943609
+      },
+      {
+        "case_id": "gmv1_b35529533a48f2b324f1",
+        "normalized_query": "entorno registró agent ficticio 001",
+        "expected": [
+          "gmv1_bd891cf031cefac747ce"
+        ],
+        "candidate_ids": [
+          "gmv1_bd891cf031cefac747ce",
+          "gmv1_a403d3a86558ee2c4fa2",
+          "gmv1_3354e1249d995b9b38d8",
+          "gmv1_b52d04b7e91fb329c960",
+          "gmv1_facc70836b08801577ae",
+          "gmv1_f2743d7fc348ce5e05c9",
+          "gmv1_542d13e9d0074d969b51",
+          "gmv1_44e9b59d447ce45a452d",
+          "gmv1_aedee3c546ba68f3d1e8",
+          "gmv1_83273af564724ed14dae",
+          "gmv1_164975a0c0f8abb94759",
+          "gmv1_e5f05d96c1d90ace8bce",
+          "gmv1_fe61b0c379749e1d70ae",
+          "gmv1_507d6810d619957d4cdb",
+          "gmv1_c1653573f528082b59fc",
+          "gmv1_f37b538d6290f4c2f2b1",
+          "gmv1_549d2eb5e228411bbe6c",
+          "gmv1_6b6a6e4ad7f007c85c25",
+          "gmv1_5084b5b2212123744e50",
+          "gmv1_0582933c044a5a3f28bc"
+        ],
+        "elapsed_ms": 5.347124999389052
+      },
+      {
+        "case_id": "gmv1_471bcff70a2c12278fd1",
+        "normalized_query": "latencia midió agent ficticio 001",
+        "expected": [
+          "gmv1_e5f05d96c1d90ace8bce"
+        ],
+        "candidate_ids": [
+          "gmv1_e5f05d96c1d90ace8bce",
+          "gmv1_b52d04b7e91fb329c960",
+          "gmv1_facc70836b08801577ae",
+          "gmv1_f2743d7fc348ce5e05c9",
+          "gmv1_542d13e9d0074d969b51",
+          "gmv1_44e9b59d447ce45a452d",
+          "gmv1_aedee3c546ba68f3d1e8",
+          "gmv1_83273af564724ed14dae",
+          "gmv1_164975a0c0f8abb94759",
+          "gmv1_bd891cf031cefac747ce",
+          "gmv1_fe61b0c379749e1d70ae",
+          "gmv1_a403d3a86558ee2c4fa2",
+          "gmv1_507d6810d619957d4cdb",
+          "gmv1_c1653573f528082b59fc",
+          "gmv1_f37b538d6290f4c2f2b1",
+          "gmv1_549d2eb5e228411bbe6c",
+          "gmv1_6b6a6e4ad7f007c85c25",
+          "gmv1_5084b5b2212123744e50",
+          "gmv1_0582933c044a5a3f28bc",
+          "gmv1_beafbeafe3d030fb242e"
+        ],
+        "elapsed_ms": 4.936958008329384
+      },
+      {
+        "case_id": "gmv1_76497d497e93686fc560",
+        "normalized_query": "estado estaba caché observada agent ficticio 001",
+        "expected": [
+          "gmv1_44e9b59d447ce45a452d"
+        ],
+        "candidate_ids": [
+          "gmv1_44e9b59d447ce45a452d",
+          "gmv1_aedee3c546ba68f3d1e8",
+          "gmv1_b52d04b7e91fb329c960",
+          "gmv1_facc70836b08801577ae",
+          "gmv1_f2743d7fc348ce5e05c9",
+          "gmv1_542d13e9d0074d969b51",
+          "gmv1_83273af564724ed14dae",
+          "gmv1_164975a0c0f8abb94759",
+          "gmv1_e5f05d96c1d90ace8bce",
+          "gmv1_bd891cf031cefac747ce",
+          "gmv1_fe61b0c379749e1d70ae",
+          "gmv1_a403d3a86558ee2c4fa2",
+          "gmv1_507d6810d619957d4cdb",
+          "gmv1_c1653573f528082b59fc",
+          "gmv1_f37b538d6290f4c2f2b1",
+          "gmv1_549d2eb5e228411bbe6c",
+          "gmv1_6b6a6e4ad7f007c85c25",
+          "gmv1_5084b5b2212123744e50",
+          "gmv1_0582933c044a5a3f28bc",
+          "gmv1_beafbeafe3d030fb242e"
+        ],
+        "elapsed_ms": 5.282291996991262
+      },
+      {
+        "case_id": "gmv1_127dc81cc46b8b9a972a",
+        "normalized_query": "llamó conjunto evaluación agent ficticio 001",
+        "expected": [
+          "gmv1_fe61b0c379749e1d70ae"
+        ],
+        "candidate_ids": [
+          "gmv1_fe61b0c379749e1d70ae",
+          "gmv1_b52d04b7e91fb329c960",
+          "gmv1_facc70836b08801577ae",
+          "gmv1_f2743d7fc348ce5e05c9",
+          "gmv1_542d13e9d0074d969b51",
+          "gmv1_44e9b59d447ce45a452d",
+          "gmv1_aedee3c546ba68f3d1e8",
+          "gmv1_83273af564724ed14dae",
+          "gmv1_164975a0c0f8abb94759",
+          "gmv1_e5f05d96c1d90ace8bce",
+          "gmv1_bd891cf031cefac747ce",
+          "gmv1_a403d3a86558ee2c4fa2",
+          "gmv1_507d6810d619957d4cdb",
+          "gmv1_c1653573f528082b59fc",
+          "gmv1_f37b538d6290f4c2f2b1",
+          "gmv1_549d2eb5e228411bbe6c",
+          "gmv1_6b6a6e4ad7f007c85c25",
+          "gmv1_5084b5b2212123744e50",
+          "gmv1_0582933c044a5a3f28bc",
+          "gmv1_beafbeafe3d030fb242e"
+        ],
+        "elapsed_ms": 5.5267499992623925
+      },
+      {
+        "case_id": "gmv1_7a6f200b6688e1c8fda8",
+        "normalized_query": "límite conocido registró agent ficticio 001",
+        "expected": [
+          "gmv1_f37b538d6290f4c2f2b1"
+        ],
+        "candidate_ids": [
+          "gmv1_f37b538d6290f4c2f2b1",
+          "gmv1_f394b83f85c16d8127cb",
+          "gmv1_b52d04b7e91fb329c960",
+          "gmv1_facc70836b08801577ae",
+          "gmv1_f2743d7fc348ce5e05c9",
+          "gmv1_542d13e9d0074d969b51",
+          "gmv1_44e9b59d447ce45a452d",
+          "gmv1_aedee3c546ba68f3d1e8",
+          "gmv1_83273af564724ed14dae",
+          "gmv1_164975a0c0f8abb94759",
+          "gmv1_e5f05d96c1d90ace8bce",
+          "gmv1_bd891cf031cefac747ce",
+          "gmv1_fe61b0c379749e1d70ae",
+          "gmv1_a403d3a86558ee2c4fa2",
+          "gmv1_507d6810d619957d4cdb",
+          "gmv1_c1653573f528082b59fc",
+          "gmv1_549d2eb5e228411bbe6c",
+          "gmv1_6b6a6e4ad7f007c85c25",
+          "gmv1_5084b5b2212123744e50",
+          "gmv1_0582933c044a5a3f28bc"
+        ],
+        "elapsed_ms": 5.158291998668574
+      },
+      {
+        "case_id": "gmv1_4c5ee8a6a905896cd8c6",
+        "normalized_query": "siguiente comprobación agent ficticio 001",
+        "expected": [
+          "gmv1_beafbeafe3d030fb242e"
+        ],
+        "candidate_ids": [
+          "gmv1_beafbeafe3d030fb242e",
+          "gmv1_b52d04b7e91fb329c960",
+          "gmv1_facc70836b08801577ae",
+          "gmv1_f2743d7fc348ce5e05c9",
+          "gmv1_542d13e9d0074d969b51",
+          "gmv1_44e9b59d447ce45a452d",
+          "gmv1_aedee3c546ba68f3d1e8",
+          "gmv1_83273af564724ed14dae",
+          "gmv1_164975a0c0f8abb94759",
+          "gmv1_e5f05d96c1d90ace8bce",
+          "gmv1_bd891cf031cefac747ce",
+          "gmv1_fe61b0c379749e1d70ae",
+          "gmv1_a403d3a86558ee2c4fa2",
+          "gmv1_507d6810d619957d4cdb",
+          "gmv1_c1653573f528082b59fc",
+          "gmv1_f37b538d6290f4c2f2b1",
+          "gmv1_549d2eb5e228411bbe6c",
+          "gmv1_6b6a6e4ad7f007c85c25",
+          "gmv1_5084b5b2212123744e50",
+          "gmv1_0582933c044a5a3f28bc"
+        ],
+        "elapsed_ms": 6.001499990816228
+      },
+      {
+        "case_id": "gmv1_efc84a0b57baca642669",
+        "normalized_query": "asignó traspaso agent ficticio 001",
+        "expected": [
+          "gmv1_b52d04b7e91fb329c960"
+        ],
+        "candidate_ids": [
+          "gmv1_b52d04b7e91fb329c960",
+          "gmv1_07e8c928619cb12f6dc9",
+          "gmv1_facc70836b08801577ae",
+          "gmv1_f2743d7fc348ce5e05c9",
+          "gmv1_542d13e9d0074d969b51",
+          "gmv1_44e9b59d447ce45a452d",
+          "gmv1_aedee3c546ba68f3d1e8",
+          "gmv1_83273af564724ed14dae",
+          "gmv1_164975a0c0f8abb94759",
+          "gmv1_e5f05d96c1d90ace8bce",
+          "gmv1_bd891cf031cefac747ce",
+          "gmv1_fe61b0c379749e1d70ae",
+          "gmv1_a403d3a86558ee2c4fa2",
+          "gmv1_507d6810d619957d4cdb",
+          "gmv1_c1653573f528082b59fc",
+          "gmv1_f37b538d6290f4c2f2b1",
+          "gmv1_549d2eb5e228411bbe6c",
+          "gmv1_6b6a6e4ad7f007c85c25",
+          "gmv1_5084b5b2212123744e50",
+          "gmv1_0582933c044a5a3f28bc"
+        ],
+        "elapsed_ms": 4.812041996046901
+      },
+      {
+        "case_id": "gmv1_bab3844dea3a5cd10e91",
+        "normalized_query": "estado cerró agent ficticio 001",
+        "expected": [
+          "gmv1_aedee3c546ba68f3d1e8"
+        ],
+        "candidate_ids": [
+          "gmv1_aedee3c546ba68f3d1e8",
+          "gmv1_b52d04b7e91fb329c960",
+          "gmv1_facc70836b08801577ae",
+          "gmv1_f2743d7fc348ce5e05c9",
+          "gmv1_542d13e9d0074d969b51",
+          "gmv1_44e9b59d447ce45a452d",
+          "gmv1_83273af564724ed14dae",
+          "gmv1_164975a0c0f8abb94759",
+          "gmv1_e5f05d96c1d90ace8bce",
+          "gmv1_bd891cf031cefac747ce",
+          "gmv1_fe61b0c379749e1d70ae",
+          "gmv1_a403d3a86558ee2c4fa2",
+          "gmv1_507d6810d619957d4cdb",
+          "gmv1_c1653573f528082b59fc",
+          "gmv1_f37b538d6290f4c2f2b1",
+          "gmv1_549d2eb5e228411bbe6c",
+          "gmv1_6b6a6e4ad7f007c85c25",
+          "gmv1_5084b5b2212123744e50",
+          "gmv1_0582933c044a5a3f28bc",
+          "gmv1_beafbeafe3d030fb242e"
+        ],
+        "elapsed_ms": 4.663499988964759
+      },
+      {
+        "case_id": "gmv1_690f04fe6b89a6003b73",
+        "normalized_query": "código secreto agent ficticio 001",
+        "expected": [],
+        "candidate_ids": [
+          "gmv1_facc70836b08801577ae",
+          "gmv1_b52d04b7e91fb329c960",
+          "gmv1_f2743d7fc348ce5e05c9",
+          "gmv1_542d13e9d0074d969b51",
+          "gmv1_44e9b59d447ce45a452d",
+          "gmv1_aedee3c546ba68f3d1e8",
+          "gmv1_83273af564724ed14dae",
+          "gmv1_164975a0c0f8abb94759",
+          "gmv1_e5f05d96c1d90ace8bce",
+          "gmv1_bd891cf031cefac747ce",
+          "gmv1_fe61b0c379749e1d70ae",
+          "gmv1_a403d3a86558ee2c4fa2",
+          "gmv1_507d6810d619957d4cdb",
+          "gmv1_c1653573f528082b59fc",
+          "gmv1_f37b538d6290f4c2f2b1",
+          "gmv1_549d2eb5e228411bbe6c",
+          "gmv1_6b6a6e4ad7f007c85c25",
+          "gmv1_5084b5b2212123744e50",
+          "gmv1_0582933c044a5a3f28bc",
+          "gmv1_beafbeafe3d030fb242e"
+        ],
+        "elapsed_ms": 4.698500008089468
+      },
+      {
+        "case_id": "gmv1_546402afab71964ee375",
+        "normalized_query": "dirección postal exacta agent ficticio 001",
+        "expected": [],
+        "candidate_ids": [
+          "gmv1_b52d04b7e91fb329c960",
+          "gmv1_facc70836b08801577ae",
+          "gmv1_f2743d7fc348ce5e05c9",
+          "gmv1_542d13e9d0074d969b51",
+          "gmv1_44e9b59d447ce45a452d",
+          "gmv1_aedee3c546ba68f3d1e8",
+          "gmv1_83273af564724ed14dae",
+          "gmv1_164975a0c0f8abb94759",
+          "gmv1_e5f05d96c1d90ace8bce",
+          "gmv1_bd891cf031cefac747ce",
+          "gmv1_fe61b0c379749e1d70ae",
+          "gmv1_a403d3a86558ee2c4fa2",
+          "gmv1_507d6810d619957d4cdb",
+          "gmv1_c1653573f528082b59fc",
+          "gmv1_f37b538d6290f4c2f2b1",
+          "gmv1_549d2eb5e228411bbe6c",
+          "gmv1_6b6a6e4ad7f007c85c25",
+          "gmv1_5084b5b2212123744e50",
+          "gmv1_0582933c044a5a3f28bc",
+          "gmv1_beafbeafe3d030fb242e"
+        ],
+        "elapsed_ms": 5.06383299943991
+      },
+      {
+        "case_id": "gmv1_336e55586cbd18502185",
+        "normalized_query": "contraseña usa agent ficticio 001",
+        "expected": [],
+        "candidate_ids": [
+          "gmv1_b52d04b7e91fb329c960",
+          "gmv1_facc70836b08801577ae",
+          "gmv1_f2743d7fc348ce5e05c9",
+          "gmv1_542d13e9d0074d969b51",
+          "gmv1_44e9b59d447ce45a452d",
+          "gmv1_aedee3c546ba68f3d1e8",
+          "gmv1_83273af564724ed14dae",
+          "gmv1_164975a0c0f8abb94759",
+          "gmv1_e5f05d96c1d90ace8bce",
+          "gmv1_bd891cf031cefac747ce",
+          "gmv1_fe61b0c379749e1d70ae",
+          "gmv1_a403d3a86558ee2c4fa2",
+          "gmv1_507d6810d619957d4cdb",
+          "gmv1_c1653573f528082b59fc",
+          "gmv1_f37b538d6290f4c2f2b1",
+          "gmv1_549d2eb5e228411bbe6c",
+          "gmv1_6b6a6e4ad7f007c85c25",
+          "gmv1_5084b5b2212123744e50",
+          "gmv1_0582933c044a5a3f28bc",
+          "gmv1_beafbeafe3d030fb242e"
+        ],
+        "elapsed_ms": 4.760916999657638
+      },
+      {
+        "case_id": "gmv1_1e480ceb49f644593f7f",
+        "normalized_query": "decisión tomó agent ficticio 001 mañana",
+        "expected": [],
+        "candidate_ids": [
+          "gmv1_b52d04b7e91fb329c960",
+          "gmv1_facc70836b08801577ae",
+          "gmv1_f2743d7fc348ce5e05c9",
+          "gmv1_542d13e9d0074d969b51",
+          "gmv1_44e9b59d447ce45a452d",
+          "gmv1_aedee3c546ba68f3d1e8",
+          "gmv1_83273af564724ed14dae",
+          "gmv1_164975a0c0f8abb94759",
+          "gmv1_e5f05d96c1d90ace8bce",
+          "gmv1_bd891cf031cefac747ce",
+          "gmv1_fe61b0c379749e1d70ae",
+          "gmv1_a403d3a86558ee2c4fa2",
+          "gmv1_507d6810d619957d4cdb",
+          "gmv1_c1653573f528082b59fc",
+          "gmv1_f37b538d6290f4c2f2b1",
+          "gmv1_549d2eb5e228411bbe6c",
+          "gmv1_6b6a6e4ad7f007c85c25",
+          "gmv1_5084b5b2212123744e50",
+          "gmv1_0582933c044a5a3f28bc",
+          "gmv1_beafbeafe3d030fb242e"
+        ],
+        "elapsed_ms": 4.974458002834581
+      },
+      {
+        "case_id": "gmv1_0a35578f4ba4fbacf7d2",
+        "normalized_query": "color favorito agent ficticio 001",
+        "expected": [],
+        "candidate_ids": [
+          "gmv1_b52d04b7e91fb329c960",
+          "gmv1_facc70836b08801577ae",
+          "gmv1_f2743d7fc348ce5e05c9",
+          "gmv1_542d13e9d0074d969b51",
+          "gmv1_44e9b59d447ce45a452d",
+          "gmv1_aedee3c546ba68f3d1e8",
+          "gmv1_83273af564724ed14dae",
+          "gmv1_164975a0c0f8abb94759",
+          "gmv1_e5f05d96c1d90ace8bce",
+          "gmv1_bd891cf031cefac747ce",
+          "gmv1_fe61b0c379749e1d70ae",
+          "gmv1_a403d3a86558ee2c4fa2",
+          "gmv1_507d6810d619957d4cdb",
+          "gmv1_c1653573f528082b59fc",
+          "gmv1_f37b538d6290f4c2f2b1",
+          "gmv1_549d2eb5e228411bbe6c",
+          "gmv1_6b6a6e4ad7f007c85c25",
+          "gmv1_5084b5b2212123744e50",
+          "gmv1_0582933c044a5a3f28bc",
+          "gmv1_beafbeafe3d030fb242e"
+        ],
+        "elapsed_ms": 4.78587498946581
+      }
+    ]
+  }
+}

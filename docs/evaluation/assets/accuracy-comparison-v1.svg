@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="455" viewBox="0 0 1120 455" role="img" aria-labelledby="title desc">
+<title id="title">Aciertos observados en búsqueda y respuesta</title>
+<desc id="desc">En 460 consultas positivas, iROMEM por palabras clave incluyó el recuerdo correcto entre veinte candidatos en 452 casos y Engram en 454. En seis preguntas, Codex con semilla inicial respondió correctamente seis y Codex con Engram cinco.</desc>
+<rect width="1120" height="455" rx="20" fill="#f5f8fc"/>
+<text x="35" y="48" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="700" fill="#17233b">iROMEM · aciertos observados</text>
+<rect x="30" y="72" width="520" height="318" rx="16" fill="#ffffff" stroke="#dce5ee"/>
+<rect x="570" y="72" width="520" height="318" rx="16" fill="#ffffff" stroke="#dce5ee"/>
+<text x="55" y="111" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="#17233b">Recuerdo correcto entre 20</text>
+<text x="55" y="136" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="400" fill="#52627a">460 consultas positivas · 2.800 recuerdos</text>
+<text x="55" y="191" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="600" fill="#17233b">iROMEM palabras clave</text>
+<text x="520" text-anchor="end" y="191" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700" fill="#1a7f74">452/460 · 98.3%</text>
+<rect x="55" y="201" width="465" height="22" rx="11" fill="#e8edf3"/>
+<rect x="55" y="201" width="456.91" height="22" rx="11" fill="#1a7f74"/>
+<text x="55" y="279" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="600" fill="#17233b">Engram palabras clave</text>
+<text x="520" text-anchor="end" y="279" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700" fill="#64748b">454/460 · 98.7%</text>
+<rect x="55" y="289" width="465" height="22" rx="11" fill="#e8edf3"/>
+<rect x="55" y="289" width="458.93" height="22" rx="11" fill="#64748b"/>
+<text x="595" y="111" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="#17233b">Respuesta correcta de Codex</text>
+<text x="595" y="136" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="400" fill="#52627a">6 preguntas · 5 con recuerdo y 1 sin él</text>
+<text x="595" y="191" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="600" fill="#17233b">Semilla inicial simulada</text>
+<text x="1060" text-anchor="end" y="191" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700" fill="#1a7f74">6/6 · 100.0%</text>
+<rect x="595" y="201" width="465" height="22" rx="11" fill="#e8edf3"/>
+<rect x="595" y="201" width="465.0" height="22" rx="11" fill="#1a7f74"/>
+<text x="595" y="279" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="600" fill="#17233b">Engram MCP</text>
+<text x="1060" text-anchor="end" y="279" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700" fill="#64748b">5/6 · 83.3%</text>
+<rect x="595" y="289" width="465" height="22" rx="11" fill="#e8edf3"/>
+<rect x="595" y="289" width="387.5" height="22" rx="11" fill="#64748b"/>
+<text x="35" y="422" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" fill="#52627a">Las dos barras de cada panel comparten casos; los paneles miden etapas distintas.</text>
+</svg>

@@ -1,0 +1,4 @@
+{"elapsed_ms": 143.12495799094904, "event": {"type": "thread.started", "thread_id": "01a14224-9d45-7773-b4a5-6b0fe2db7cdd"}}
+{"elapsed_ms": 144.71204100118484, "event": {"type": "turn.started"}}
+{"elapsed_ms": 5112.993665999966, "event": {"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "El perfil de agent ficticio 001 registra inglés como idioma de salida."}}}
+{"elapsed_ms": 5130.954041000223, "event": {"type": "turn.completed", "usage": {"input_tokens": 15607, "cached_input_tokens": 12288, "cache_write_input_tokens": 0, "output_tokens": 19, "reasoning_output_tokens": 0}}}

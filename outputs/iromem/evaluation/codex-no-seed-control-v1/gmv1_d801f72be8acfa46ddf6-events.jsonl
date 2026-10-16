@@ -1,0 +1,4 @@
+{"elapsed_ms": 135.957167003653, "event": {"type": "thread.started", "thread_id": "01a14225-38a2-7343-a7f6-f31275e07983"}}
+{"elapsed_ms": 137.4705839989474, "event": {"type": "turn.started"}}
+{"elapsed_ms": 4719.0073340025265, "event": {"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "La semilla no contiene el nombre completo de user ficticio 001."}}}
+{"elapsed_ms": 4755.430709003122, "event": {"type": "turn.completed", "usage": {"input_tokens": 15556, "cached_input_tokens": 12288, "cache_write_input_tokens": 0, "output_tokens": 19, "reasoning_output_tokens": 0}}}

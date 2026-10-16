@@ -1,0 +1,164 @@
+{
+  "kind": "codex_cli_engram_mcp_synthetic",
+  "cli_version": "0.162.0-alpha.17.2",
+  "model": "gpt-6.1-sol",
+  "case_ids": [
+    "gmv1_d801f72be8acfa46ddf6",
+    "gmv1_5beb5b01a40667ca7068",
+    "gmv1_423956194e4bfce96c69",
+    "gmv1_490c045596045974d0f8",
+    "gmv1_c31971ae7655de9d9d89",
+    "gmv1_afe0405fcdefd22d86d4"
+  ],
+  "rows": [
+    {
+      "case_id": "gmv1_d801f72be8acfa46ddf6",
+      "segment": "user/legal_name",
+      "positive": true,
+      "expected_fact": "El nombre completo de user ficticio 001 es Bruno Mar.",
+      "exit_code": 0,
+      "total_process_ms": 11431.644875,
+      "first_tool_start_ms": 8192.732917,
+      "first_tool_result_ms": 8202.113542,
+      "last_tool_result_ms": 8202.113542,
+      "final_answer_ms": 9758.011292,
+      "mcp_calls": 1,
+      "tool_arguments": [
+        {
+          "project": "synthetic_user_001",
+          "query": "nombre completo",
+          "match_mode": "all",
+          "limit": 10
+        }
+      ],
+      "final_answer": "El nombre completo es Bruno Mar.",
+      "error_events": []
+    },
+    {
+      "case_id": "gmv1_5beb5b01a40667ca7068",
+      "segment": "project/owner",
+      "positive": true,
+      "expected_fact": "La persona responsable de project ficticio 001 es Leo.",
+      "exit_code": 0,
+      "total_process_ms": 10899.343708,
+      "first_tool_start_ms": 7366.327333000001,
+      "first_tool_result_ms": 7371.008249999999,
+      "last_tool_result_ms": 7371.008249999999,
+      "final_answer_ms": 9223.567625000001,
+      "mcp_calls": 1,
+      "tool_arguments": [
+        {
+          "project": "synthetic_project_001",
+          "query": "001",
+          "limit": 20
+        }
+      ],
+      "final_answer": "Leo es responsable de project ficticio 001.",
+      "error_events": []
+    },
+    {
+      "case_id": "gmv1_423956194e4bfce96c69",
+      "segment": "conversation/current_task",
+      "positive": true,
+      "expected_fact": "En conversation ficticio 001, la tarea actual es comparar dos opciones.",
+      "exit_code": 0,
+      "total_process_ms": 10812.545707999998,
+      "first_tool_start_ms": 7695.016083000002,
+      "first_tool_result_ms": 7701.333500000001,
+      "last_tool_result_ms": 7701.333500000001,
+      "final_answer_ms": 9162.88875,
+      "mcp_calls": 1,
+      "tool_arguments": [
+        {
+          "project": "synthetic_conversation_001",
+          "query": "tarea actual",
+          "limit": 10
+        }
+      ],
+      "final_answer": "La tarea actual de conversation ficticio 001 es comparar dos opciones.",
+      "error_events": []
+    },
+    {
+      "case_id": "gmv1_490c045596045974d0f8",
+      "segment": "agent/output_language",
+      "positive": true,
+      "expected_fact": "El perfil ficticio de agent ficticio 001 registra inglés como idioma de salida.",
+      "exit_code": 0,
+      "total_process_ms": 10674.217917,
+      "first_tool_start_ms": 7222.206,
+      "first_tool_result_ms": 7229.316582999999,
+      "last_tool_result_ms": 7229.316582999999,
+      "final_answer_ms": 8662.923249999998,
+      "mcp_calls": 1,
+      "tool_arguments": [
+        {
+          "project": "synthetic_agent_001",
+          "query": "perfil",
+          "limit": 10
+        }
+      ],
+      "final_answer": "Inglés.",
+      "error_events": []
+    },
+    {
+      "case_id": "gmv1_c31971ae7655de9d9d89",
+      "segment": "conversation/changed_assumption",
+      "positive": true,
+      "expected_fact": "En conversation ficticio 001, dejó de asumirse que el dato era reciente.",
+      "exit_code": 0,
+      "total_process_ms": 16185.852959000002,
+      "first_tool_start_ms": 8432.322,
+      "first_tool_result_ms": 8437.278624999997,
+      "last_tool_result_ms": 13173.821750000003,
+      "final_answer_ms": 14533.775667,
+      "mcp_calls": 3,
+      "tool_arguments": [
+        {
+          "project": "synthetic_conversation_001",
+          "query": "supuesto",
+          "limit": 10
+        },
+        {
+          "project": "synthetic_conversation_001",
+          "query": "001",
+          "limit": 20
+        },
+        {
+          "project": "synthetic_conversation_001",
+          "query": "abandonó",
+          "limit": 10
+        }
+      ],
+      "final_answer": "No encuentro ese recuerdo",
+      "error_events": []
+    },
+    {
+      "case_id": "gmv1_afe0405fcdefd22d86d4",
+      "segment": "user/unknown_secret",
+      "positive": false,
+      "expected_fact": null,
+      "exit_code": 0,
+      "total_process_ms": 13866.036625000006,
+      "first_tool_start_ms": 8615.249332999994,
+      "first_tool_result_ms": 8618.613416000002,
+      "last_tool_result_ms": 10733.141083000006,
+      "final_answer_ms": 12152.680375000004,
+      "mcp_calls": 2,
+      "tool_arguments": [
+        {
+          "project": "synthetic_user_001",
+          "query": "\"código secreto\"",
+          "limit": 10
+        },
+        {
+          "project": "synthetic_user_001",
+          "query": "secreto secret código code",
+          "match_mode": "any",
+          "limit": 20
+        }
+      ],
+      "final_answer": "No encuentro ese recuerdo",
+      "error_events": []
+    }
+  ]
+}
