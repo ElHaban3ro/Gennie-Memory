@@ -1,0 +1,4 @@
+{"elapsed_ms":149.709791,"event":{"thread_id":"01a1433c-8456-7133-9525-f23e7d786312","type":"thread.started"}}
+{"elapsed_ms":151.750416,"event":{"type":"turn.started"}}
+{"elapsed_ms":4905.2685,"event":{"item":{"id":"item_0","text":"La semilla no contiene información sobre quién es responsable de project ficticio 010.","type":"agent_message"},"type":"item.completed"}}
+{"elapsed_ms":4917.0070829999995,"event":{"type":"turn.completed","usage":{"cache_write_input_tokens":0,"cached_input_tokens":12288,"input_tokens":16938,"output_tokens":21,"reasoning_output_tokens":0}}}

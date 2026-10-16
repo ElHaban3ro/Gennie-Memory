@@ -1,0 +1,4 @@
+{"elapsed_ms":156.587792,"event":{"thread_id":"01a1433c-e213-79a2-8f4f-af6deb88b7c5","type":"thread.started"}}
+{"elapsed_ms":158.409292,"event":{"type":"turn.started"}}
+{"elapsed_ms":5400.751459,"event":{"item":{"id":"item_0","text":"La semilla no contiene el código secreto del usuario ficticio 010.","type":"agent_message"},"type":"item.completed"}}
+{"elapsed_ms":5455.470709,"event":{"type":"turn.completed","usage":{"cache_write_input_tokens":0,"cached_input_tokens":12288,"input_tokens":16940,"output_tokens":19,"reasoning_output_tokens":0}}}

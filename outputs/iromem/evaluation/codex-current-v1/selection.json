@@ -1,0 +1,11 @@
+{
+  "selection_rule": "First positive case in each of the user, project, agent and conversation scopes; second positive project case; first negative user case, in the frozen holdout file order. Selection fixed before inspecting recall or Codex outcomes.",
+  "case_ids": [
+    "gmv1_8deff8f1e36cc738e9c4",
+    "gmv1_42cdf8dd1eb76aaf0437",
+    "gmv1_4ba61918baf66e89d48d",
+    "gmv1_d2e3cd3a8685fdd36755",
+    "gmv1_ea68565d1230c6cf8ed8",
+    "gmv1_3b471c6201bdffb4abeb"
+  ]
+}

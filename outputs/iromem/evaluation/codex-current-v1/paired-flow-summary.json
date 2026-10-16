@@ -1,0 +1,66 @@
+{
+  "kind": "rust_paired_flow_calculation",
+  "measurement_note": "La suma recall + Codex con semilla combina dos ejecuciones; no mide una integración automática.",
+  "median_calculated_seed_total_ms": 4761.782332999999,
+  "median_codex_engram_ms": 9965.198959000001,
+  "median_codex_seed_ms": 4384.6992915,
+  "median_recall_ms": 387.54004150000003,
+  "median_seed_vs_control_input_token_delta": 48.5,
+  "rows": [
+    {
+      "calculated_seed_total_ms": 4474.9628330000005,
+      "case_id": "gmv1_3b471c6201bdffb4abeb",
+      "codex_engram_ms": 13126.631625,
+      "codex_seed_ms": 4119.128708,
+      "recall_ms": 355.83412500000003,
+      "seed_vs_control_input_token_delta": 56
+    },
+    {
+      "calculated_seed_total_ms": 5492.531167,
+      "case_id": "gmv1_42cdf8dd1eb76aaf0437",
+      "codex_engram_ms": 8741.309040999999,
+      "codex_seed_ms": 5090.541792,
+      "recall_ms": 401.989375,
+      "seed_vs_control_input_token_delta": 44
+    },
+    {
+      "calculated_seed_total_ms": 4852.626125,
+      "case_id": "gmv1_4ba61918baf66e89d48d",
+      "codex_engram_ms": 10480.727208,
+      "codex_seed_ms": 4477.958375,
+      "recall_ms": 374.66775,
+      "seed_vs_control_input_token_delta": 53
+    },
+    {
+      "calculated_seed_total_ms": 6406.876167,
+      "case_id": "gmv1_8deff8f1e36cc738e9c4",
+      "codex_engram_ms": 10273.532209,
+      "codex_seed_ms": 5487.274958,
+      "recall_ms": 919.601209,
+      "seed_vs_control_input_token_delta": 47
+    },
+    {
+      "calculated_seed_total_ms": 4670.9385409999995,
+      "case_id": "gmv1_d2e3cd3a8685fdd36755",
+      "codex_engram_ms": 9656.865709,
+      "codex_seed_ms": 4291.440208,
+      "recall_ms": 379.498333,
+      "seed_vs_control_input_token_delta": 50
+    },
+    {
+      "calculated_seed_total_ms": 4665.461083000001,
+      "case_id": "gmv1_ea68565d1230c6cf8ed8",
+      "codex_engram_ms": 9156.946333,
+      "codex_seed_ms": 4269.879333000001,
+      "recall_ms": 395.58175,
+      "seed_vs_control_input_token_delta": 46
+    }
+  ],
+  "sample_count": 6,
+  "sources": {
+    "control_sha256": "c0945c5fa009914a8ad143dea04fa68e0406f2edbf1a35c2c34d22233016e157",
+    "engram_sha256": "28b335a2906ef083ea4bbbbb23388e2d2fa9181390d1fdae5caebcbb6a05de84",
+    "recall_sha256": "ab2db08f2f28d11375bd07f7b2aa831bfeea942aee3465b00015d0088087b1a6",
+    "seed_sha256": "7137e2cf82e971be417cdfe33357f85ddca9926d09e29e15865c81718f47c3e1"
+  }
+}

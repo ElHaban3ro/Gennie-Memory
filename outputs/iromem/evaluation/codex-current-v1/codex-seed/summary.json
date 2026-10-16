@@ -1,0 +1,144 @@
+{
+  "case_ids": [
+    "gmv1_8deff8f1e36cc738e9c4",
+    "gmv1_42cdf8dd1eb76aaf0437",
+    "gmv1_4ba61918baf66e89d48d",
+    "gmv1_d2e3cd3a8685fdd36755",
+    "gmv1_ea68565d1230c6cf8ed8",
+    "gmv1_3b471c6201bdffb4abeb"
+  ],
+  "codex_model": "gpt-6.1-sol",
+  "kind": "rust_codex_initial_seed_prompt_simulation",
+  "rows": [
+    {
+      "case_id": "gmv1_8deff8f1e36cc738e9c4",
+      "expected_ids": [
+        "gmv1_58439c2cca6e855cedd2"
+      ],
+      "final_answer": "El nombre completo de user ficticio 010 es Clara Luz.",
+      "final_answer_ms": 5487.274958,
+      "prompt_utf8_bytes": 416,
+      "seed_text_utf8_bytes": 160,
+      "seed_text_words": 16,
+      "selected_ids": [
+        "gmv1_58439c2cca6e855cedd2"
+      ],
+      "tool_calls": 0,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 16987,
+        "output_tokens": 17,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "case_id": "gmv1_42cdf8dd1eb76aaf0437",
+      "expected_ids": [
+        "gmv1_13884d473595d53bf696"
+      ],
+      "final_answer": "Iris es la persona responsable de project ficticio 010.",
+      "final_answer_ms": 5090.541792,
+      "prompt_utf8_bytes": 417,
+      "seed_text_utf8_bytes": 164,
+      "seed_text_words": 15,
+      "selected_ids": [
+        "gmv1_13884d473595d53bf696"
+      ],
+      "tool_calls": 0,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 16982,
+        "output_tokens": 17,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "case_id": "gmv1_4ba61918baf66e89d48d",
+      "expected_ids": [
+        "gmv1_0a5c983771e97915b599"
+      ],
+      "final_answer": "El perfil de agent ficticio 010 registra portugués como idioma de salida.",
+      "final_answer_ms": 4477.958375,
+      "prompt_utf8_bytes": 466,
+      "seed_text_utf8_bytes": 196,
+      "seed_text_words": 19,
+      "selected_ids": [
+        "gmv1_0a5c983771e97915b599"
+      ],
+      "tool_calls": 0,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 16995,
+        "output_tokens": 20,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "case_id": "gmv1_d2e3cd3a8685fdd36755",
+      "expected_ids": [
+        "gmv1_aa4c9895c1add989b116"
+      ],
+      "final_answer": "La tarea actual de conversation ficticio 010 es preparar una lista.",
+      "final_answer_ms": 4291.440208,
+      "prompt_utf8_bytes": 446,
+      "seed_text_utf8_bytes": 185,
+      "seed_text_words": 17,
+      "selected_ids": [
+        "gmv1_aa4c9895c1add989b116"
+      ],
+      "tool_calls": 0,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 16990,
+        "output_tokens": 18,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "case_id": "gmv1_ea68565d1230c6cf8ed8",
+      "expected_ids": [
+        "gmv1_2cbfec5f94df92864202"
+      ],
+      "final_answer": "El objetivo de project ficticio 010 es automatizar informes.",
+      "final_answer_ms": 4269.879333000001,
+      "prompt_utf8_bytes": 425,
+      "seed_text_utf8_bytes": 173,
+      "seed_text_words": 15,
+      "selected_ids": [
+        "gmv1_2cbfec5f94df92864202"
+      ],
+      "tool_calls": 0,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 16985,
+        "output_tokens": 17,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "case_id": "gmv1_3b471c6201bdffb4abeb",
+      "expected_ids": [],
+      "final_answer": "La semilla no contiene el código secreto del usuario ficticio 010.",
+      "final_answer_ms": 4119.128708,
+      "prompt_utf8_bytes": 295,
+      "seed_text_utf8_bytes": 0,
+      "seed_text_words": 0,
+      "selected_ids": [],
+      "tool_calls": 0,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 16996,
+        "output_tokens": 19,
+        "reasoning_output_tokens": 0
+      }
+    }
+  ],
+  "seed_injected": true,
+  "source": "outputs/iromem/evaluation/keyword-prefix-v1/holdout-010-013-decisions-network.jsonl"
+}

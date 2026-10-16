@@ -1,0 +1,116 @@
+{
+  "case_ids": [
+    "gmv1_8deff8f1e36cc738e9c4",
+    "gmv1_42cdf8dd1eb76aaf0437",
+    "gmv1_4ba61918baf66e89d48d",
+    "gmv1_d2e3cd3a8685fdd36755",
+    "gmv1_ea68565d1230c6cf8ed8",
+    "gmv1_3b471c6201bdffb4abeb"
+  ],
+  "cases_sha256": "bffea972319ca1b61b91c869c7c0d80bac78509e80ed2d23c0299edd0461b3a0",
+  "codex_model": "gpt-6.1-sol",
+  "engram_binary_sha256": "f0905ec7ff169ea477ebaaaa5d38a9d9fe736768e48adb1ccd990802c02b1f61",
+  "kind": "rust_codex_engram_mcp_synthetic",
+  "rows": [
+    {
+      "case_id": "gmv1_8deff8f1e36cc738e9c4",
+      "expected_fact": "El nombre completo de user ficticio 010 es Clara Luz.",
+      "expected_ids": [
+        "gmv1_58439c2cca6e855cedd2"
+      ],
+      "final_answer": "El nombre completo de user ficticio 010 es Clara Luz.",
+      "final_answer_ms": 10273.532209,
+      "tool_calls": 1,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 46720,
+        "input_tokens": 52774,
+        "output_tokens": 125,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "case_id": "gmv1_42cdf8dd1eb76aaf0437",
+      "expected_fact": "La persona responsable de project ficticio 010 es Iris.",
+      "expected_ids": [
+        "gmv1_13884d473595d53bf696"
+      ],
+      "final_answer": "La persona responsable de project ficticio 010 es Iris.",
+      "final_answer_ms": 8741.309040999999,
+      "tool_calls": 1,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 46720,
+        "input_tokens": 52782,
+        "output_tokens": 112,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "case_id": "gmv1_4ba61918baf66e89d48d",
+      "expected_fact": "El perfil ficticio de agent ficticio 010 registra portugués como idioma de salida.",
+      "expected_ids": [
+        "gmv1_0a5c983771e97915b599"
+      ],
+      "final_answer": "El perfil ficticio de agent 010 registra portugués como idioma de salida.",
+      "final_answer_ms": 10480.727208,
+      "tool_calls": 1,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 44544,
+        "input_tokens": 52802,
+        "output_tokens": 111,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "case_id": "gmv1_d2e3cd3a8685fdd36755",
+      "expected_fact": "En conversation ficticio 010, la tarea actual es preparar una lista.",
+      "expected_ids": [
+        "gmv1_aa4c9895c1add989b116"
+      ],
+      "final_answer": "La tarea actual de conversation ficticio 010 es preparar una lista.",
+      "final_answer_ms": 9656.865709,
+      "tool_calls": 1,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 46720,
+        "input_tokens": 52816,
+        "output_tokens": 143,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "case_id": "gmv1_ea68565d1230c6cf8ed8",
+      "expected_fact": "El objetivo de project ficticio 010 es automatizar informes.",
+      "expected_ids": [
+        "gmv1_2cbfec5f94df92864202"
+      ],
+      "final_answer": "El objetivo de project ficticio 010 es automatizar informes.",
+      "final_answer_ms": 9156.946333,
+      "tool_calls": 1,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 46720,
+        "input_tokens": 52778,
+        "output_tokens": 107,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "case_id": "gmv1_3b471c6201bdffb4abeb",
+      "expected_fact": null,
+      "expected_ids": [],
+      "final_answer": "No encontré una memoria pertinente en el proyecto `user:synthetic_user_010`.",
+      "final_answer_ms": 13126.631625,
+      "tool_calls": 2,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 59008,
+        "input_tokens": 70749,
+        "output_tokens": 226,
+        "reasoning_output_tokens": 0
+      }
+    }
+  ]
+}

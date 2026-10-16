@@ -1,0 +1,4 @@
+{"elapsed_ms":141.128583,"event":{"thread_id":"01a1433a-c663-7251-acf7-8c80da58a909","type":"thread.started"}}
+{"elapsed_ms":143.366458,"event":{"type":"turn.started"}}
+{"elapsed_ms":4269.879333000001,"event":{"item":{"id":"item_0","text":"El objetivo de project ficticio 010 es automatizar informes.","type":"agent_message"},"type":"item.completed"}}
+{"elapsed_ms":4352.976208,"event":{"type":"turn.completed","usage":{"cache_write_input_tokens":0,"cached_input_tokens":12288,"input_tokens":16985,"output_tokens":17,"reasoning_output_tokens":0}}}

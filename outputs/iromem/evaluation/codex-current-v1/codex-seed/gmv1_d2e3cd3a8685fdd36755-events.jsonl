@@ -1,0 +1,4 @@
+{"elapsed_ms":135.453625,"event":{"thread_id":"01a1433a-b13d-7850-a841-26c98081e484","type":"thread.started"}}
+{"elapsed_ms":137.407958,"event":{"type":"turn.started"}}
+{"elapsed_ms":4291.440208,"event":{"item":{"id":"item_0","text":"La tarea actual de conversation ficticio 010 es preparar una lista.","type":"agent_message"},"type":"item.completed"}}
+{"elapsed_ms":4360.238375,"event":{"type":"turn.completed","usage":{"cache_write_input_tokens":0,"cached_input_tokens":12288,"input_tokens":16990,"output_tokens":18,"reasoning_output_tokens":0}}}

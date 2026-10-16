@@ -1,0 +1,144 @@
+{
+  "case_ids": [
+    "gmv1_8deff8f1e36cc738e9c4",
+    "gmv1_42cdf8dd1eb76aaf0437",
+    "gmv1_4ba61918baf66e89d48d",
+    "gmv1_d2e3cd3a8685fdd36755",
+    "gmv1_ea68565d1230c6cf8ed8",
+    "gmv1_3b471c6201bdffb4abeb"
+  ],
+  "codex_model": "gpt-6.1-sol",
+  "kind": "rust_codex_initial_seed_prompt_simulation",
+  "rows": [
+    {
+      "case_id": "gmv1_8deff8f1e36cc738e9c4",
+      "expected_ids": [
+        "gmv1_58439c2cca6e855cedd2"
+      ],
+      "final_answer": "La semilla no contiene el nombre completo de user ficticio 010.",
+      "final_answer_ms": 5196.451792000001,
+      "prompt_utf8_bytes": 295,
+      "seed_text_utf8_bytes": 0,
+      "seed_text_words": 0,
+      "selected_ids": [
+        "gmv1_58439c2cca6e855cedd2"
+      ],
+      "tool_calls": 0,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 16940,
+        "output_tokens": 19,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "case_id": "gmv1_42cdf8dd1eb76aaf0437",
+      "expected_ids": [
+        "gmv1_13884d473595d53bf696"
+      ],
+      "final_answer": "La semilla no contiene información sobre quién es responsable de project ficticio 010.",
+      "final_answer_ms": 4905.2685,
+      "prompt_utf8_bytes": 292,
+      "seed_text_utf8_bytes": 0,
+      "seed_text_words": 0,
+      "selected_ids": [
+        "gmv1_13884d473595d53bf696"
+      ],
+      "tool_calls": 0,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 16938,
+        "output_tokens": 21,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "case_id": "gmv1_4ba61918baf66e89d48d",
+      "expected_ids": [
+        "gmv1_0a5c983771e97915b599"
+      ],
+      "final_answer": "La semilla no contiene el idioma de salida del perfil de agent ficticio 010.",
+      "final_answer_ms": 4449.251458,
+      "prompt_utf8_bytes": 309,
+      "seed_text_utf8_bytes": 0,
+      "seed_text_words": 0,
+      "selected_ids": [
+        "gmv1_0a5c983771e97915b599"
+      ],
+      "tool_calls": 0,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 16942,
+        "output_tokens": 22,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "case_id": "gmv1_d2e3cd3a8685fdd36755",
+      "expected_ids": [
+        "gmv1_aa4c9895c1add989b116"
+      ],
+      "final_answer": "La semilla no contiene información sobre la tarea actual de conversation ficticio 010.",
+      "final_answer_ms": 4769.525417,
+      "prompt_utf8_bytes": 300,
+      "seed_text_utf8_bytes": 0,
+      "seed_text_words": 0,
+      "selected_ids": [
+        "gmv1_aa4c9895c1add989b116"
+      ],
+      "tool_calls": 0,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 16940,
+        "output_tokens": 21,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "case_id": "gmv1_ea68565d1230c6cf8ed8",
+      "expected_ids": [
+        "gmv1_2cbfec5f94df92864202"
+      ],
+      "final_answer": "La semilla no contiene información sobre el objetivo de project ficticio 010.",
+      "final_answer_ms": 5276.439417,
+      "prompt_utf8_bytes": 291,
+      "seed_text_utf8_bytes": 0,
+      "seed_text_words": 0,
+      "selected_ids": [
+        "gmv1_2cbfec5f94df92864202"
+      ],
+      "tool_calls": 0,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 14592,
+        "input_tokens": 16939,
+        "output_tokens": 20,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "case_id": "gmv1_3b471c6201bdffb4abeb",
+      "expected_ids": [],
+      "final_answer": "La semilla no contiene el código secreto del usuario ficticio 010.",
+      "final_answer_ms": 5400.751459,
+      "prompt_utf8_bytes": 295,
+      "seed_text_utf8_bytes": 0,
+      "seed_text_words": 0,
+      "selected_ids": [],
+      "tool_calls": 0,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 16940,
+        "output_tokens": 19,
+        "reasoning_output_tokens": 0
+      }
+    }
+  ],
+  "seed_injected": false,
+  "source": "outputs/iromem/evaluation/keyword-prefix-v1/holdout-010-013-decisions-network.jsonl"
+}
