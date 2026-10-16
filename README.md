@@ -6,9 +6,9 @@ Memorias semilla para agentes: iROMEM busca recuerdos relevantes y prepara conte
 
 ![Comparación de latencia de búsqueda local y respuesta de Codex con Engram o semilla inicial](docs/evaluation/assets/speed-comparison-v1.svg)
 
-![Aciertos de búsqueda entre veinte candidatos y respuestas correctas de Codex](docs/evaluation/assets/accuracy-comparison-v1.svg)
+![Aciertos medidos en la búsqueda y en la respuesta de Codex, con ejes y tamaños de muestra explícitos](docs/evaluation/assets/accuracy-comparison-v1.svg)
 
-La primera gráfica muestra **latencia mediana**; la segunda, **aciertos observados**. El panel de búsqueda usa 460 preguntas positivas del banco de 2.800 recuerdos; el panel de respuestas usa seis preguntas emparejadas (cinco positivas y una negativa). Son etapas y tamaños de muestra distintos.
+Las figuras presentan la comparación como dos pasos: **encontrar candidatos** y **responder con Codex**. La primera muestra latencias medianas con ejes desde cero; la segunda, aciertos. Su eje izquierdo amplía explícitamente el tramo **450–460** para que se aprecien dos casos de diferencia sin ocultar el recorte. El panel de búsqueda usa 460 preguntas positivas del banco de 2.800 recuerdos; el panel de respuestas usa seis preguntas emparejadas (cinco positivas y una negativa). Son etapas y tamaños de muestra distintos.
 
 En **2.800 recuerdos y 540 preguntas sintéticas**, la búsqueda híbrida de iROMEM encontró el recuerdo correcto entre veinte candidatos en **459/460** positivos, con **11,93 ms** de mediana. Engram encontró **454/460** en **5,52 ms**. El modo rápido opcional de iROMEM bajó a **5,23 ms**, pero encontró **452/460**; por eso el híbrido conserva la prioridad de calidad.
 
