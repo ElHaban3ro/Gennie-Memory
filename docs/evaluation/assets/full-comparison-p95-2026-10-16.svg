@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" viewBox="0 0 980 540">
+<title id="title">P95 de búsqueda de candidatos en cuatro corridas</title>
+<desc id="desc">Cuatro comparaciones de 540 preguntas: iROMEM 7.75, 7.49, 7.79 y 10.73 ms; Engram 15.55, 8.27, 9.64 y 11.78 ms.</desc>
+<rect width="980" height="540" fill="#fbfaf7"/>
+<text x="72" y="55" font-family="Georgia,serif" font-size="32" fill="#24313b">Búsqueda de candidatos: p95 por corrida</text>
+<text x="72" y="85" font-family="Arial,sans-serif" font-size="16" fill="#526471">540 preguntas sintéticas idénticas por corrida · orden alternado · milisegundos</text>
+<line x1="105" y1="420.0" x2="920" y2="420.0" stroke="#dfe5e6" stroke-width="1"/>
+<text x="90" y="425.0" text-anchor="end" font-family="Arial,sans-serif" font-size="14" fill="#526471">0</text>
+<line x1="105" y1="338.1" x2="920" y2="338.1" stroke="#dfe5e6" stroke-width="1"/>
+<text x="90" y="343.1" text-anchor="end" font-family="Arial,sans-serif" font-size="14" fill="#526471">5</text>
+<line x1="105" y1="256.1" x2="920" y2="256.1" stroke="#dfe5e6" stroke-width="1"/>
+<text x="90" y="261.1" text-anchor="end" font-family="Arial,sans-serif" font-size="14" fill="#526471">10</text>
+<line x1="105" y1="174.2" x2="920" y2="174.2" stroke="#dfe5e6" stroke-width="1"/>
+<text x="90" y="179.2" text-anchor="end" font-family="Arial,sans-serif" font-size="14" fill="#526471">15</text>
+<line x1="105" y1="125" x2="105" y2="420" stroke="#7d8990"/>
+<line x1="105" y1="420" x2="920" y2="420" stroke="#7d8990"/>
+<rect x="150" y="293.0" width="48" height="127.0" fill="#178583"/>
+<text x="174" y="284.0" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#24313b">7.75</text>
+<rect x="212" y="165.2" width="48" height="254.8" fill="#b77b2a"/>
+<text x="236" y="156.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#24313b">15.55</text>
+<text x="205" y="450" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#24313b">Corrida 1</text>
+<rect x="350" y="297.2" width="48" height="122.8" fill="#178583"/>
+<text x="374" y="288.2" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#24313b">7.49</text>
+<rect x="412" y="284.5" width="48" height="135.5" fill="#b77b2a"/>
+<text x="436" y="275.5" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#24313b">8.27</text>
+<text x="405" y="450" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#24313b">Corrida 2</text>
+<rect x="550" y="292.3" width="48" height="127.7" fill="#178583"/>
+<text x="574" y="283.3" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#24313b">7.79</text>
+<rect x="612" y="262.0" width="48" height="158.0" fill="#b77b2a"/>
+<text x="636" y="253.0" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#24313b">9.64</text>
+<text x="605" y="450" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#24313b">Corrida 3</text>
+<rect x="750" y="244.1" width="48" height="175.9" fill="#178583"/>
+<text x="774" y="235.1" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#24313b">10.73</text>
+<rect x="812" y="227.0" width="48" height="193.0" fill="#b77b2a"/>
+<text x="836" y="218.0" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#24313b">11.78</text>
+<text x="805" y="450" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#24313b">Corrida 4</text>
+<rect x="305" y="475" width="18" height="18" fill="#178583"/><text x="331" y="489" font-family="Arial,sans-serif" font-size="15" fill="#24313b">iROMEM</text>
+<rect x="470" y="475" width="18" height="18" fill="#b77b2a"/><text x="496" y="489" font-family="Arial,sans-serif" font-size="15" fill="#24313b">Engram</text>
+<text x="72" y="520" font-family="Arial,sans-serif" font-size="13" fill="#526471">Cohorte 014–017 · cada barra corresponde a una corrida completa, no a una consulta individual.</text>
+</svg>
