@@ -1,0 +1,10 @@
+{
+  "binary_sha256": "f0905ec7ff169ea477ebaaaa5d38a9d9fe736768e48adb1ccd990802c02b1f61",
+  "cases": 540,
+  "cases_sha256": "bffea972319ca1b61b91c869c7c0d80bac78509e80ed2d23c0299edd0461b3a0",
+  "kind": "engram_benchmark",
+  "memories_sha256": "ee55707918018aece6f687759ef31eac0adc37d85542fae0d2e312bd136c6835",
+  "method": "engram_any",
+  "query": "keywords",
+  "split": "holdout_010_013"
+}

@@ -10,6 +10,7 @@ Las consultas sintéticas de desarrollo y final están congeladas en el paquete 
 | `final-prefix-prompt-decisions-network.jsonl` y resumen | 540 llamadas de `recall` con la variante congelada; incluye respuestas, etiquetas, tiempos y uso informado. |
 | `holdout-010-013-queries.jsonl` | 540 consultas de sujetos antes reservados, derivadas con `select-cohort` del fixture versionado. |
 | `holdout-010-013-keywords.jsonl`, manifiesto y resumen | Búsqueda Rust sobre esos 540 casos. |
+| `holdout-010-013-engram.jsonl`, manifiesto y resumen | Búsqueda Engram MCP 3.4.0 sobre las mismas 540 preguntas y el mismo contenido sintético importado a un almacén aislado. |
 | `holdout-010-013-decisions-network.jsonl` y resumen | Campaña Rust de Decisions en la cohorte nueva, sin ajustar la variante después. |
 
 Ejemplo de regeneración local, sin llamadas remotas:
@@ -35,6 +36,7 @@ Las dos figuras de la ruta vigente que muestra el README se regeneran desde los 
 cargo run --offline -p iromem-eval -- render-current-charts \
   outputs/iromem/evaluation/keyword-prefix-v1/holdout-010-013-keywords-summary.json \
   outputs/iromem/evaluation/keyword-prefix-v1/holdout-010-013-decisions-network-summary.json \
+  outputs/iromem/evaluation/keyword-prefix-v1/holdout-010-013-engram-summary.json \
   docs/evaluation/assets
 ```
 

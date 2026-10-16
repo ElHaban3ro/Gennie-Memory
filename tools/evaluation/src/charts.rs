@@ -558,59 +558,85 @@ pub fn render_keyword_improvement(paths: &[&Path], output_dir: &Path) -> Result<
 pub fn render_current_performance(
     search_path: &Path,
     campaign_path: &Path,
+    engram_path: &Path,
     output_dir: &Path,
 ) -> Result<(), String> {
     let search = load(search_path)?;
     let campaign = load(campaign_path)?;
+    let engram = load(engram_path)?;
     let positives = n(&search, "/overall/positive")?;
     let negatives = n(&search, "/overall/negative")?;
     if positives != n(&campaign, "/positive")?
         || negatives != n(&campaign, "/negative")?
+        || positives != n(&engram, "/overall/positive")?
+        || negatives != n(&engram, "/overall/negative")?
         || (f(&search, "/overall/recall_at_20")? * positives as f64).round() as u64
             != n(&campaign, "/candidate_recall")?
     {
-        return Err("informes de búsqueda y campaña incoherentes".into());
+        return Err("informes de búsqueda, Engram y campaña incoherentes".into());
     }
 
     fs::create_dir_all(output_dir).map_err(|error| error.to_string())?;
-    let mut quality = Svg::new(700, 620, "Aciertos de la ruta actual");
+    let mut quality = Svg::new(1200, 650, "Recuerdos recuperados en las mismas preguntas");
     quality.text(
         58,
         110,
-        "FTS5 con prefijos + Decisions · 2.800 recuerdos sintéticos",
+        "460 preguntas positivas · 2.800 recuerdos sintéticos · barras desde cero",
         17,
         MUTED,
         "start",
         "Arial,sans-serif",
     );
-    panel(
-        &mut quality,
-        &Panel {
-            x: 80,
-            title: "Preguntas que requerían recuerdo",
-            subtitle: "Hasta 20 candidatos por pregunta",
+    let top_20 = [
+        (f(&search, "/overall/recall_at_20")? * positives as f64).round(),
+        (f(&engram, "/overall/recall_at_20")? * positives as f64).round(),
+    ];
+    let top_1 = [
+        (f(&search, "/overall/top_1_accuracy")? * positives as f64).round(),
+        (f(&engram, "/overall/top_1_accuracy")? * positives as f64).round(),
+    ];
+    for data in [
+        Panel {
+            x: 58,
+            title: "Entre 20 candidatos",
+            subtitle: "Recuerdo esperado presente",
             unit: "aciertos / 460",
             maximum: positives as f64,
-            bars: [
-                (
-                    "Candidatos",
-                    n(&campaign, "/candidate_recall")? as f64,
-                    BLUE,
-                ),
-                ("Semilla", n(&campaign, "/positive_correct")? as f64, TEAL),
-            ],
+            bars: [("iROMEM", top_20[0], TEAL), ("Engram", top_20[1], GOLD)],
             decimals: 0,
         },
-    );
+        Panel {
+            x: 610,
+            title: "Primer candidato",
+            subtitle: "Recuerdo esperado en posición 1",
+            unit: "aciertos / 460",
+            maximum: positives as f64,
+            bars: [("iROMEM", top_1[0], TEAL), ("Engram", top_1[1], GOLD)],
+            decimals: 0,
+        },
+    ] {
+        panel(&mut quality, &data);
+    }
     quality.text(
         58,
         570,
         &format!(
-            "Preguntas sin recuerdo: {}/{} terminaron sin semilla.",
+            "iROMEM + Decisions produjo {}/{} semillas correctas y dejó {}/{} negativos sin semilla.",
+            n(&campaign, "/positive_correct")?,
+            positives,
             n(&campaign, "/negative_empty")?,
             negatives
         ),
-        17,
+        16,
+        MUTED,
+        "start",
+        "Arial,sans-serif",
+    );
+    quality.text(
+        58,
+        602,
+        "Engram se midió como buscador de candidatos; no se le atribuye una semilla clasificada.",
+        16,
         MUTED,
         "start",
         "Arial,sans-serif",
@@ -619,13 +645,15 @@ pub fn render_current_performance(
 
     let search_p50 = f(&search, "/overall/latency_ms/p50")?;
     let search_p95 = f(&search, "/overall/latency_ms/p95")?;
+    let engram_p50 = f(&engram, "/overall/latency_ms/p50")?;
+    let engram_p95 = f(&engram, "/overall/latency_ms/p95")?;
     let full_p50 = f(&campaign, "/elapsed_p50_ms")?;
     let full_p95 = f(&campaign, "/elapsed_p95_ms")?;
-    let mut latency = Svg::new(1200, 635, "Tiempo de la ruta actual");
+    let mut latency = Svg::new(1550, 665, "Tiempo de búsqueda y preparación de semilla");
     latency.text(
         58,
         110,
-        "540 preguntas sintéticas · ejes separados · milisegundos",
+        "540 preguntas idénticas para ambas búsquedas · ejes independientes · milisegundos",
         17,
         MUTED,
         "start",
@@ -634,17 +662,26 @@ pub fn render_current_performance(
     for data in [
         Panel {
             x: 58,
-            title: "Búsqueda aislada",
-            subtitle: "Sesión Rust local",
+            title: "Búsqueda: mediana",
+            subtitle: "Candidatos · proceso local",
             unit: "milisegundos",
-            maximum: (search_p95 * 1.1).ceil(),
-            bars: [("Mediana", search_p50, BLUE), ("p95", search_p95, TEAL)],
+            maximum: (search_p50.max(engram_p50) * 1.1).ceil(),
+            bars: [("iROMEM", search_p50, TEAL), ("Engram", engram_p50, GOLD)],
             decimals: 2,
         },
         Panel {
-            x: 610,
-            title: "Consulta hasta la semilla",
-            subtitle: "Incluye Decisions por OpenRouter",
+            x: 553,
+            title: "Búsqueda: p95",
+            subtitle: "Cola observada",
+            unit: "milisegundos",
+            maximum: (search_p95.max(engram_p95) * 1.1).ceil(),
+            bars: [("iROMEM", search_p95, TEAL), ("Engram", engram_p95, GOLD)],
+            decimals: 2,
+        },
+        Panel {
+            x: 1048,
+            title: "iROMEM → semilla",
+            subtitle: "Decisions y red incluidos",
             unit: "milisegundos",
             maximum: (full_p95 * 1.1).ceil(),
             bars: [("Mediana", full_p50, BLUE), ("p95", full_p95, TEAL)],
@@ -656,8 +693,17 @@ pub fn render_current_performance(
     latency.text(
         58,
         585,
-        "Búsqueda y consulta completa se midieron en corridas distintas.",
-        17,
+        "Engram solo recupera candidatos aquí; la tercera escala no es una comparación de flujo completo.",
+        16,
+        MUTED,
+        "start",
+        "Arial,sans-serif",
+    );
+    latency.text(
+        58,
+        615,
+        "Cada búsqueda y la consulta con Decisions fueron corridas separadas en esta Mac.",
+        16,
         MUTED,
         "start",
         "Arial,sans-serif",

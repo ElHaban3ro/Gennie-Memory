@@ -230,6 +230,7 @@ fn run() -> Result<(), String> {
         "render-current-charts" => {
             let search = args.next().ok_or("falta informe de búsqueda")?;
             let campaign = args.next().ok_or("falta informe de campaña")?;
+            let engram = args.next().ok_or("falta informe Engram")?;
             let output = args.next().ok_or("falta directorio de imágenes")?;
             if args.next().is_some() {
                 return Err("demasiados argumentos".into());
@@ -237,6 +238,7 @@ fn run() -> Result<(), String> {
             charts::render_current_performance(
                 Path::new(&search),
                 Path::new(&campaign),
+                Path::new(&engram),
                 Path::new(&output),
             )
         }

@@ -2,7 +2,7 @@
 
 Estado: evaluación sintética en esta Mac, 2026-10-15. El [paquete por caso](../../outputs/iromem/evaluation/keyword-prefix-v1/) conserva consultas, diarios, manifiestos y resúmenes de Rust. Esta corrida mejora la ruta FTS5 vigente; no activa la búsqueda híbrida ni integra Codex. Los fallos de los sujetos 002–005 ya eran conocidos de campañas anteriores y ayudaron a plantear la expansión. La cohorte 010–013 se preparó después para una comprobación adicional sin ajustar más el cambio.
 
-Las [figuras comparativas de aciertos](assets/keyword-accuracy-v1.svg) y [latencias](assets/keyword-latency-v1.svg) se conservan aquí como evidencia histórica y se regeneran con `iromem-eval render-keyword-charts` desde los seis resúmenes de búsqueda y Decisions citados abajo. El README muestra solo la ruta vigente mediante [aciertos actuales](assets/current-accuracy.svg) y [latencias actuales](assets/current-latency.svg), regenerados con `iromem-eval render-current-charts` desde los dos resúmenes de la muestra 010–013.
+Las [figuras de aciertos](assets/current-accuracy.svg) y [latencias](assets/current-latency.svg) del README se regeneran con `iromem-eval render-current-charts` desde los resúmenes de iROMEM, Decisions y Engram para las mismas preguntas 010–013. Las [figuras de ajuste de aciertos](assets/keyword-accuracy-v1.svg) y [latencias](assets/keyword-latency-v1.svg) se conservan como evidencia histórica y se regeneran con `iromem-eval render-keyword-charts` desde los seis resúmenes anteriores.
 
 ## Cambio congelado antes de la cohorte nueva
 
@@ -49,6 +49,19 @@ La tasa positiva observada superó el objetivo del 95 % **en este banco sintéti
 | Respuestas degradadas / fugas de IDs prohibidos | 0 / 0 |
 
 También aquí se alcanzó el **95 % observado**, aunque 21 positivos no produjeron la semilla correcta: cuatro sin candidato esperado y diecisiete con candidato disponible. El p95 alto se observó en esta ejecución, sin una comparación emparejada de red que permita atribuirlo a la expansión. Los casos comparten plantillas y banco de recuerdos con las particiones anteriores; las personas y respuestas concretas son distintas. La proporción observada no garantiza al 95 % estadístico una tasa poblacional superior al objetivo ni representa conversaciones humanas.
+
+## Engram en las mismas 540 preguntas
+
+El evaluador Rust importó los mismos 2.800 recuerdos sintéticos a un almacén aislado de Engram 3.4.0. `mem_search` recibió las mismas 540 preguntas de sujetos 010–013, el ámbito equivalente, `match_mode=any` y un máximo de 20 resultados. Se calentó una consulta fuera de la medición; ambas herramientas se midieron en corridas locales seriales distintas. El [diario Engram por caso](../../outputs/iromem/evaluation/keyword-prefix-v1/holdout-010-013-engram.jsonl), el [resumen](../../outputs/iromem/evaluation/keyword-prefix-v1/holdout-010-013-engram-summary.json) y el manifiesto conservan sus entradas y resultados.
+
+| Búsqueda | iROMEM vigente | Engram MCP |
+| --- | ---: | ---: |
+| Recuerdo correcto entre 20 candidatos | 456/460 | 456/460 |
+| Recuerdo correcto en primer lugar | 420/460 | 425/460 |
+| Latencia p50 | 7,11 ms | 10,80 ms |
+| Latencia p95 | 26,54 ms | 14,96 ms |
+
+iROMEM fue 3,69 ms más rápido en la mediana de esta ejecución; Engram tuvo una cola p95 11,58 ms más corta. Una sola corrida por método, en orden fijo, no permite declarar superioridad estable. Engram recibió el resumen como título y el texto original como cuerpo, sin las condiciones ni fuentes declaradas de iROMEM. Esta comparación mide recuperación de candidatos, no una semilla clasificada de Engram ni respuestas de Codex. La campaña de Decisions se ejecutó por separado y no se atribuye a Engram.
 
 ## Método y límites
 
