@@ -1,6 +1,6 @@
 # Roadmap de iROMEM
 
-Estado: propuesta de ejecución corregida con las decisiones del usuario, 2026-10-15. Fuente funcional: [diseño v0.1](docs/design/specification-v0.1.md) del producto completo. El [README](README.md) muestra el rendimiento de la ruta vigente. Este documento delimita el experimento inicial; ninguna casilla marcada como pendiente representa funcionalidad implementada ni resultados medidos.
+Estado: propuesta de ejecución corregida con las decisiones del usuario, 2026-10-15. Fuente funcional: [diseño v0.1](README.md) del producto completo. El README presenta arriba las mediciones vigentes. Este documento delimita el experimento inicial; ninguna casilla marcada como pendiente representa funcionalidad implementada ni resultados medidos.
 
 ## Meta y alcance del MVP
 
@@ -27,7 +27,7 @@ La especificación propone 0,75 como umbral inicial, 40 candidatos por buscador,
 - [ ] Tratar **Jev** y OpenAI **Decisions** como proveedores de decisiones tipadas y OpenRouter como proveedor de modelos con salida estructurada; no asumir que comparten formato, latencia o semántica de puntuación. Verificar modelo, versión, disponibilidad, precio y límites antes de incorporarlos.
 - [x] Limitar el corpus de pruebas a datos sintéticos generados para iROMEM. La autorización general para enviar datos reales a terceros no se usará en esta campaña.
 - [x] Definir identidades y ámbitos **simulados** para ejercitar los filtros de recuperación; registrar solamente nombres de variables de credenciales, nunca claves en fixtures o resultados.
-- [ ] Congelar un contrato v1 de consulta, resultado, `coverage`, degradación y trazas de evaluación basado en [diseño v0.1](docs/design/specification-v0.1.md) §4 y §9. Resolver explícitamente cómo representar `reason` cuando un proveedor de decisiones tipadas no entregue una justificación textual; no fabricar explicaciones.
+- [ ] Congelar un contrato v1 de consulta, resultado, `coverage`, degradación y trazas de evaluación basado en [diseño v0.1](README.md) §4 y §9. Resolver explícitamente cómo representar `reason` cuando un proveedor de decisiones tipadas no entregue una justificación textual; no fabricar explicaciones.
 - [ ] Separar corpus de desarrollo, calibración y prueba final para el producto completo. Fijar antes del benchmark indicadores, umbrales de aceptación, volumen previsto de llamadas y tamaño de campaña; el gasto puede quedar sin tope cuando el usuario lo autoriza y se registra. La matriz de recuerdos semilla ya usó esas tres etapas; mantener una prueba pequeña y local para el ciclo de desarrollo.
 
 **Salida:** decisiones registradas en `.creation/decisions.md`, contrato de evaluación versionado y matriz de proveedores con capacidades comprobadas. No se implementará un adaptador a una API supuesta.
@@ -113,9 +113,9 @@ Calibración local: se ejecutaron los mismos tres selectores sobre [1.480 casos 
 
 ## Después del MVP
 
-1. Integrar con Codex mediante MCP y, si se decide, un hook; medir entonces el efecto real sobre la respuesta del agente y el plazo de 1.500 ms propuesto en el [diseño v0.1](docs/design/specification-v0.1.md).
-2. Completar el contrato de escritura y reconciliación del [diseño v0.1](docs/design/specification-v0.1.md) §2 y §5: `mem_write`, `entity_resolve`, huella, clasificación de relaciones, propuestas, `mem_resolve`, confirmación y auditoría de evidencia.
-3. Completar ciclo de vida del [diseño v0.1](docs/design/specification-v0.1.md) §6–8: cola persistente de embeddings, revisión de vigencia, `mem_review_list`, retirada, restauración, borrado del almacén activo, cancelación de trabajos y continuidad tras compactación.
+1. Integrar con Codex mediante MCP y, si se decide, un hook; medir entonces el efecto real sobre la respuesta del agente y el plazo de 1.500 ms propuesto en el [diseño v0.1](README.md).
+2. Completar el contrato de escritura y reconciliación del [diseño v0.1](README.md) §2 y §5: `mem_write`, `entity_resolve`, huella, clasificación de relaciones, propuestas, `mem_resolve`, confirmación y auditoría de evidencia.
+3. Completar ciclo de vida del [diseño v0.1](README.md) §6–8: cola persistente de embeddings, revisión de vigencia, `mem_review_list`, retirada, restauración, borrado del almacén activo, cancelación de trabajos y continuidad tras compactación.
 4. Endurecer la integración: observabilidad, migración entre perfiles, respaldo y recuperación, instalación/documentación y otras plataformas. Añadir búsqueda vectorial aproximada solo si el coseno exacto incumple un objetivo medido.
 
 ## Riesgos y decisiones abiertas
