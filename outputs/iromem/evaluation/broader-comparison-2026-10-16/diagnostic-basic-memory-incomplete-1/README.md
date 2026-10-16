@@ -1,0 +1,1 @@
+Incomplete diagnostic round: five positive turns had completed Basic Memory MCP search calls, but the sixth negative turn made no MCP call. No summary or latency from this directory enters the comparison.

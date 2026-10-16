@@ -1,0 +1,1 @@
+Invalid diagnostic attempt: Codex declared the Basic Memory MCP tool unavailable before any case could call it. The runner now requires MCP startup and allows 60 seconds for initialization; this directory is excluded from reported results.

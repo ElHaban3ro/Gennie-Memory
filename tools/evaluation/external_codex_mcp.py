@@ -12,6 +12,8 @@ import subprocess
 import time
 from pathlib import Path
 
+from basic_memory_benchmark import keywords
+
 
 def digest(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
@@ -39,7 +41,10 @@ def run_case(codex: Path, workdir: Path, prompt: str, config: list[str]) -> dict
                  if e.get("type") == "item.completed"
                  and e.get("item", {}).get("type") in ("command_execution", "web_search")]
     if not answers or not calls or forbidden or any(call.get("error") or call.get("status") != "completed" for call in calls):
-        raise ValueError(f"missing answer/MCP call or forbidden tool: {len(answers)}, {len(calls)}, {forbidden}")
+        raise ValueError(
+            f"missing answer/MCP call or forbidden tool: {len(answers)}, {len(calls)}, "
+            f"{forbidden}; final={answers[-1][:300] if answers else None}"
+        )
     usages = [e.get("usage") for e in events if e.get("type") == "turn.completed"]
     return {
         "final_answer_ms": (time.perf_counter_ns() - started) / 1_000_000,
@@ -79,6 +84,9 @@ def main() -> None:
             'mcp_servers.basic_memory.args=["mcp","--project","main"]',
             'mcp_servers.basic_memory.env.BASIC_MEMORY_CONFIG_DIR="' + str(args.data_dir / "config") + '"',
             'mcp_servers.basic_memory.env.BASIC_MEMORY_HOME="' + str(args.data_dir / "benchmark-notes") + '"',
+            'mcp_servers.basic_memory.default_tools_approval_mode="approve"',
+            'mcp_servers.basic_memory.startup_timeout_sec=60',
+            'mcp_servers.basic_memory.required=true',
         ]
     rows = []
     try:
@@ -90,11 +98,19 @@ def main() -> None:
                 instruction = f"Busca con memory_search en el dominio exacto {scope} (limit 20, expand false)."
             else:
                 instruction = (
-                    "Busca con search_notes en el proyecto main, texto de la pregunta y filtros "
-                    f"exactos scope_kind={request['scope_kind']} y scope_id={request['scope_id']}."
+                    "Llama a basic_memory.search_notes una vez con project=main, "
+                    f"query={json.dumps(keywords(request['query']), ensure_ascii=False)}, "
+                    'search_type="text", page_size=20 y metadata_filters='
+                    f'{{"scope_kind":"{request["scope_kind"]}","scope_id":"{request["scope_id"]}"}}.'
                 )
+            mandatory_search = (
+                "Consulta la herramienta antes de responder, también si la pregunta parece no tener respuesta. "
+                "No concluyas que falta información sin consultar. "
+                if args.provider == "basic-memory" else ""
+            )
             prompt = (
                 f"Pregunta del usuario: {request['query']}\n\n{instruction} "
+                f"{mandatory_search}"
                 "Responde brevemente solo con la memoria encontrada. Si no hay memoria pertinente, dilo. "
                 "No uses archivos, shell ni otras herramientas."
             )
