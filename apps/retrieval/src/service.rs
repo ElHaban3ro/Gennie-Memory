@@ -1,4 +1,6 @@
-use crate::model::{SearchRequest, SearchResponse, SeedMemory, SeedRequest, SeedResponse};
+use crate::model::{
+    QueryMode, SearchRequest, SearchResponse, SeedMemory, SeedRequest, SeedResponse,
+};
 use rusqlite::Connection;
 use std::collections::HashSet;
 
@@ -22,11 +24,14 @@ pub fn search(conn: &Connection, request: &SearchRequest) -> Result<SearchRespon
     if !(1..=20).contains(&request.limit.unwrap_or(8)) {
         return Err("limit debe estar entre 1 y 20".into());
     }
-    let expression = fts_expression(&request.query);
+    let (expression, method) = match request.query_mode {
+        QueryMode::Natural => (fts_expression(&request.query), "fts5"),
+        QueryMode::Keywords => (keyword_expression(&request.query), "fts5_keywords"),
+    };
     if expression.is_empty() {
         return Ok(SearchResponse {
             status: "complete",
-            method: "fts5",
+            method,
             candidates: vec![],
             semantic_coverage: "disabled",
         });
@@ -34,7 +39,7 @@ pub fn search(conn: &Connection, request: &SearchRequest) -> Result<SearchRespon
     let candidates = crate::repo::search(conn, request, &expression)?;
     Ok(SearchResponse {
         status: "complete",
-        method: "fts5",
+        method,
         candidates,
         semantic_coverage: "disabled",
     })
@@ -254,10 +259,81 @@ fn fts_expression(query: &str) -> String {
     terms.join(" OR ")
 }
 
+fn keyword_expression(query: &str) -> String {
+    // This fixed, label-independent list matches the Engram comparison's
+    // development-only query normalization. The indexed memories are unchanged.
+    const STOPWORDS: &[&str] = &[
+        "a", "al", "algo", "como", "con", "cual", "cuando", "cuál", "cuáles", "cuándo", "cómo",
+        "de", "del", "donde", "dónde", "el", "ella", "en", "es", "esta", "este", "esto", "fue",
+        "ha", "hay", "la", "las", "le", "lo", "los", "mi", "mis", "no", "nos", "para", "por",
+        "que", "quien", "quién", "qué", "se", "ser", "si", "son", "su", "sus", "te", "tiene", "un",
+        "una", "unas", "unos", "y", "ya",
+    ];
+    let mut seen = HashSet::new();
+    query
+        .split(|c: char| !c.is_alphanumeric())
+        .filter(|word| word.chars().count() >= 3)
+        .map(str::to_lowercase)
+        .filter(|word| !STOPWORDS.contains(&word.as_str()) && seen.insert(word.clone()))
+        .map(|word| format!("\"{word}\""))
+        .collect::<Vec<_>>()
+        .join(" OR ")
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
     use crate::model::FixtureMemory;
+
+    #[test]
+    fn keyword_search_removes_question_words_but_keeps_scoped_memory() {
+        let mut conn = Connection::open_in_memory().unwrap();
+        iromem_kernel::db::configure(&conn).unwrap();
+        conn.execute_batch(include_str!("../migrations/0001_initial.sql"))
+            .unwrap();
+        conn.execute_batch(include_str!("../migrations/0003_entity_filter.sql"))
+            .unwrap();
+        conn.execute_batch(include_str!("../migrations/0004_seed_provenance.sql"))
+            .unwrap();
+        let fixture = |id: &str, scope: &str| FixtureMemory {
+            id: id.into(),
+            scope_kind: "user".into(),
+            scope_id: scope.into(),
+            entity_id: None,
+            revision: 1,
+            memory_type: "fact".into(),
+            original_text: "El nombre completo es Clara Luz".into(),
+            summary: "Nombre completo Clara Luz".into(),
+            conditions: None,
+            source: None,
+            state: "active".into(),
+            valid_from: None,
+            valid_until: None,
+        };
+        crate::repo::load_fixtures(
+            &mut conn,
+            &[fixture("wanted", "u1"), fixture("other", "u2")],
+        )
+        .unwrap();
+        let request = SearchRequest {
+            query: "¿Cuál es mi nombre completo?".into(),
+            scope_kind: "user".into(),
+            scope_id: "u1".into(),
+            entity_id: None,
+            as_of: "2026-10-15T12:00:00.000Z".into(),
+            limit: Some(20),
+            query_mode: QueryMode::Keywords,
+        };
+        let response = search(&conn, &request).unwrap();
+        assert_eq!(response.method, "fts5_keywords");
+        assert_eq!(response.candidates.len(), 1);
+        assert_eq!(response.candidates[0].memory_id, "wanted");
+        assert_eq!(
+            keyword_expression("¿Cuál es mi nombre completo?"),
+            "\"nombre\" OR \"completo\""
+        );
+        assert!(keyword_expression("¿Y si no?").is_empty());
+    }
 
     #[test]
     fn search_filters_scope_and_old_revision() {
@@ -326,6 +402,7 @@ mod tests {
                 entity_id: None,
                 as_of: "2026-10-15T12:00:00.000Z".into(),
                 limit: None,
+                query_mode: QueryMode::Natural,
             },
         )
         .unwrap();
@@ -399,6 +476,7 @@ mod tests {
                 entity_id: None,
                 as_of: "2026-10-15T12:00:00.000Z".into(),
                 limit: Some(8),
+                query_mode: QueryMode::Natural,
             }),
             hybrid: None,
             presented: vec![crate::model::SelectedCandidate {
@@ -480,6 +558,7 @@ mod tests {
             entity_id: None,
             as_of: "2026-10-15T12:00:00.000Z".into(),
             limit: Some(8),
+            query_mode: QueryMode::Natural,
         };
         let candidates = search(&conn, &search_request).unwrap().candidates;
         assert_eq!(candidates[0].conditions, fixture.conditions);

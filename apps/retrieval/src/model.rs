@@ -41,6 +41,16 @@ pub struct SearchRequest {
     pub entity_id: Option<String>,
     pub as_of: String,
     pub limit: Option<u32>,
+    #[serde(default)]
+    pub query_mode: QueryMode,
+}
+
+#[derive(Debug, Clone, Copy, Default, Deserialize, PartialEq, Eq)]
+#[serde(rename_all = "snake_case")]
+pub enum QueryMode {
+    #[default]
+    Natural,
+    Keywords,
 }
 
 #[derive(Debug, Serialize)]

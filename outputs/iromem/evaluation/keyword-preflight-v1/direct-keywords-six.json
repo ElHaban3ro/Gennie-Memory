@@ -1,0 +1,241 @@
+{
+  "kind": "keyword_direct_end_to_end_synthetic",
+  "case_ids": [
+    "gmv1_d801f72be8acfa46ddf6",
+    "gmv1_5beb5b01a40667ca7068",
+    "gmv1_423956194e4bfce96c69",
+    "gmv1_490c045596045974d0f8",
+    "gmv1_c31971ae7655de9d9d89",
+    "gmv1_afe0405fcdefd22d86d4"
+  ],
+  "rows": [
+    {
+      "case_id": "gmv1_d801f72be8acfa46ddf6",
+      "expected_ids": [
+        "gmv1_745e550c42f8260eed9e"
+      ],
+      "candidate_ids": [
+        "gmv1_745e550c42f8260eed9e",
+        "gmv1_34c062f9282fdec63d00",
+        "gmv1_3bf91960d59b1ec66349",
+        "gmv1_4365537c25203743461d",
+        "gmv1_7ddbb1ecfa6397d2c6a1",
+        "gmv1_31c529799eb63ed1e71d",
+        "gmv1_441eb105af3a12915613",
+        "gmv1_50ffb8e833a551ff8878",
+        "gmv1_55d9763a9ab577561d4c",
+        "gmv1_572d4b0b8e4b9b45381c",
+        "gmv1_6c14196a4859ce5f662d",
+        "gmv1_a853c356064d84e0f3e2",
+        "gmv1_b25999a37371c42a28ae",
+        "gmv1_472ab82afb83f04a5a15",
+        "gmv1_4bff8d0194b0caffa02d",
+        "gmv1_4d14c1321599e6cc1d12",
+        "gmv1_58169664179b330f26a2",
+        "gmv1_dd5947b265bf6cef95ab",
+        "gmv1_30bffdc232dab25dca44",
+        "gmv1_744e94ec7f1e0d686abf"
+      ],
+      "chosen_id": "gmv1_745e550c42f8260eed9e",
+      "seed_ids": [
+        "gmv1_745e550c42f8260eed9e"
+      ],
+      "correct": true,
+      "search_ms": 7.396583998342976,
+      "decision_ms": 1468.4713339956943,
+      "compose_ms": 16.839707997860387,
+      "total_ms": 1492.7561250078725,
+      "served_model": "openai/gpt-6-luna-decisions-20261006",
+      "reported_cost_usd": 4.96e-05
+    },
+    {
+      "case_id": "gmv1_5beb5b01a40667ca7068",
+      "expected_ids": [
+        "gmv1_c670e06cefd6c71bb397"
+      ],
+      "candidate_ids": [
+        "gmv1_c670e06cefd6c71bb397",
+        "gmv1_43e48d46def388b59784",
+        "gmv1_4c923d8b899f59aabbeb",
+        "gmv1_86d584e3d51e877614fc",
+        "gmv1_fb216da29b93dbb77f6d",
+        "gmv1_014bfb63746dd33acd8e",
+        "gmv1_0282f08e0ebbe9efeaf8",
+        "gmv1_5ba2a6fff6570df8ba73",
+        "gmv1_6da544c0060d56062da0",
+        "gmv1_6dec1d1efbdd72311f24",
+        "gmv1_d7e7e2c8f1e3a47749f4",
+        "gmv1_feadcb223201a5382097",
+        "gmv1_24f9185981bc8dddb2a9",
+        "gmv1_2a0bbca95e8fd4c4d43b",
+        "gmv1_3d7f6cd7b51bbc43db6f",
+        "gmv1_4a8883a65abfb64755aa",
+        "gmv1_4f2d384beebc737533ad",
+        "gmv1_6a3e42d70e8ea28b029f",
+        "gmv1_6c3260a60a8e4e573fed",
+        "gmv1_b0c867cd5ce1cef9f77a"
+      ],
+      "chosen_id": "gmv1_c670e06cefd6c71bb397",
+      "seed_ids": [
+        "gmv1_c670e06cefd6c71bb397"
+      ],
+      "correct": true,
+      "search_ms": 8.487541999784298,
+      "decision_ms": 490.6207089952659,
+      "compose_ms": 8.073042001342401,
+      "total_ms": 507.2421660006512,
+      "served_model": "openai/gpt-6-luna-decisions-20261006",
+      "reported_cost_usd": 4.99e-05
+    },
+    {
+      "case_id": "gmv1_423956194e4bfce96c69",
+      "expected_ids": [
+        "gmv1_daf8654496352812fa43"
+      ],
+      "candidate_ids": [
+        "gmv1_daf8654496352812fa43",
+        "gmv1_34499a1649bd8a23f60b",
+        "gmv1_6bd4120becbdf46eff86",
+        "gmv1_734bf9f28d6a01980c62",
+        "gmv1_95d4cc09fd5bb6f4717b",
+        "gmv1_5a06b68cde6d282733c3",
+        "gmv1_b892f10b56bbfafcd583",
+        "gmv1_bda10c328431499982d8",
+        "gmv1_d290e8dda04d4c8397d2",
+        "gmv1_26ae958f767ce6b0f264",
+        "gmv1_27dda7a137bdef181841",
+        "gmv1_2e0d58c9336c68dfcfa1",
+        "gmv1_06c5cac8b19b20f859b1",
+        "gmv1_0a9a617ac8464e92b1af",
+        "gmv1_1045a62a0f037632db8a",
+        "gmv1_1dd0ec710b8e809987c1",
+        "gmv1_6296de08e5ed5b099710",
+        "gmv1_8ebc135114eb39c6911c",
+        "gmv1_b30620326a85e5915c02",
+        "gmv1_cbd6cac9ab36a7a3bcd5"
+      ],
+      "chosen_id": "gmv1_daf8654496352812fa43",
+      "seed_ids": [
+        "gmv1_daf8654496352812fa43"
+      ],
+      "correct": true,
+      "search_ms": 7.4319169943919405,
+      "decision_ms": 1153.552709001815,
+      "compose_ms": 17.27791600569617,
+      "total_ms": 1178.3222090016352,
+      "served_model": "openai/gpt-6-luna-decisions-20261006",
+      "reported_cost_usd": 5.37e-05
+    },
+    {
+      "case_id": "gmv1_490c045596045974d0f8",
+      "expected_ids": [
+        "gmv1_4f70937ac8c9b46ebbd0"
+      ],
+      "candidate_ids": [
+        "gmv1_4f70937ac8c9b46ebbd0",
+        "gmv1_5084b5b2212123744e50",
+        "gmv1_507d6810d619957d4cdb",
+        "gmv1_e0921f3e3d32ceb95c2a",
+        "gmv1_9d64a2a4e4cb947dce65",
+        "gmv1_f2743d7fc348ce5e05c9",
+        "gmv1_44e9b59d447ce45a452d",
+        "gmv1_542d13e9d0074d969b51",
+        "gmv1_bd891cf031cefac747ce",
+        "gmv1_164975a0c0f8abb94759",
+        "gmv1_549d2eb5e228411bbe6c",
+        "gmv1_6b6a6e4ad7f007c85c25",
+        "gmv1_aedee3c546ba68f3d1e8",
+        "gmv1_facc70836b08801577ae",
+        "gmv1_a403d3a86558ee2c4fa2",
+        "gmv1_b52d04b7e91fb329c960",
+        "gmv1_0582933c044a5a3f28bc",
+        "gmv1_83534d85e5ec6e69a729",
+        "gmv1_beafbeafe3d030fb242e",
+        "gmv1_e5f05d96c1d90ace8bce"
+      ],
+      "chosen_id": "gmv1_4f70937ac8c9b46ebbd0",
+      "seed_ids": [
+        "gmv1_4f70937ac8c9b46ebbd0"
+      ],
+      "correct": true,
+      "search_ms": 9.552375006023794,
+      "decision_ms": 504.7766670031706,
+      "compose_ms": 18.405374998110346,
+      "total_ms": 532.7952499937965,
+      "served_model": "openai/gpt-6-luna-decisions-20261006",
+      "reported_cost_usd": 5.67e-05
+    },
+    {
+      "case_id": "gmv1_c31971ae7655de9d9d89",
+      "expected_ids": [
+        "gmv1_bf6f48ac692eac7b2e09"
+      ],
+      "candidate_ids": [
+        "gmv1_34499a1649bd8a23f60b",
+        "gmv1_6bd4120becbdf46eff86",
+        "gmv1_734bf9f28d6a01980c62",
+        "gmv1_95d4cc09fd5bb6f4717b",
+        "gmv1_5a06b68cde6d282733c3",
+        "gmv1_b892f10b56bbfafcd583",
+        "gmv1_bda10c328431499982d8",
+        "gmv1_d290e8dda04d4c8397d2",
+        "gmv1_26ae958f767ce6b0f264",
+        "gmv1_27dda7a137bdef181841",
+        "gmv1_2e0d58c9336c68dfcfa1",
+        "gmv1_06c5cac8b19b20f859b1",
+        "gmv1_0a9a617ac8464e92b1af",
+        "gmv1_1045a62a0f037632db8a",
+        "gmv1_1dd0ec710b8e809987c1",
+        "gmv1_6296de08e5ed5b099710",
+        "gmv1_8ebc135114eb39c6911c",
+        "gmv1_b30620326a85e5915c02",
+        "gmv1_cbd6cac9ab36a7a3bcd5",
+        "gmv1_d2a1a2064fdce80df754"
+      ],
+      "chosen_id": "none",
+      "seed_ids": [],
+      "correct": false,
+      "search_ms": 8.386457993765362,
+      "decision_ms": 504.48566699924413,
+      "compose_ms": 8.663000000524335,
+      "total_ms": 521.5695840015542,
+      "served_model": "openai/gpt-6-luna-decisions-20261006",
+      "reported_cost_usd": 5.38e-05
+    },
+    {
+      "case_id": "gmv1_afe0405fcdefd22d86d4",
+      "expected_ids": [],
+      "candidate_ids": [
+        "gmv1_34c062f9282fdec63d00",
+        "gmv1_3bf91960d59b1ec66349",
+        "gmv1_4365537c25203743461d",
+        "gmv1_7ddbb1ecfa6397d2c6a1",
+        "gmv1_31c529799eb63ed1e71d",
+        "gmv1_441eb105af3a12915613",
+        "gmv1_50ffb8e833a551ff8878",
+        "gmv1_55d9763a9ab577561d4c",
+        "gmv1_572d4b0b8e4b9b45381c",
+        "gmv1_6c14196a4859ce5f662d",
+        "gmv1_a853c356064d84e0f3e2",
+        "gmv1_b25999a37371c42a28ae",
+        "gmv1_472ab82afb83f04a5a15",
+        "gmv1_4bff8d0194b0caffa02d",
+        "gmv1_4d14c1321599e6cc1d12",
+        "gmv1_58169664179b330f26a2",
+        "gmv1_dd5947b265bf6cef95ab",
+        "gmv1_30bffdc232dab25dca44",
+        "gmv1_744e94ec7f1e0d686abf",
+        "gmv1_745e550c42f8260eed9e"
+      ],
+      "chosen_id": "none",
+      "seed_ids": [],
+      "correct": true,
+      "search_ms": 7.714958002907224,
+      "decision_ms": 440.55520799884107,
+      "compose_ms": 16.067167001892813,
+      "total_ms": 464.38608299649786,
+      "served_model": "openai/gpt-6-luna-decisions-20261006",
+      "reported_cost_usd": 4.96e-05
+    }
+  ]
+}
