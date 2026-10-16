@@ -242,6 +242,21 @@ fn run() -> Result<(), String> {
                 Path::new(&output),
             )
         }
+        "render-codex-current" => {
+            let seed = args.next().ok_or("falta resumen Codex con iROMEM")?;
+            let engram = args.next().ok_or("falta resumen Codex con Engram")?;
+            let paired = args.next().ok_or("falta informe emparejado")?;
+            let output = args.next().ok_or("falta directorio de imágenes")?;
+            if args.next().is_some() {
+                return Err("demasiados argumentos".into());
+            }
+            charts::render_current_codex(
+                Path::new(&seed),
+                Path::new(&engram),
+                Path::new(&paired),
+                Path::new(&output),
+            )
+        }
         "paired-flow-report" => {
             let journal = args.next().ok_or("falta diario de recall")?;
             let seed = args.next().ok_or("falta resumen Codex con semilla")?;

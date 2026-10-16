@@ -626,8 +626,6 @@ pub fn render_current_performance(
     let search_p95 = f(&search, "/overall/latency_ms/p95")?;
     let engram_p50 = f(&engram, "/overall/latency_ms/p50")?;
     let engram_p95 = f(&engram, "/overall/latency_ms/p95")?;
-    let full_p50 = f(&campaign, "/elapsed_p50_ms")?;
-    let full_p95 = f(&campaign, "/elapsed_p95_ms")?;
     let mut latency = Svg::new(1200, 635, "Tiempo de búsqueda de candidatos");
     latency.text(
         58,
@@ -671,39 +669,126 @@ pub fn render_current_performance(
     );
     latency.save(&output_dir.join("current-latency.svg"))?;
 
-    let mut seed = Svg::new(700, 620, "iROMEM: pregunta hasta semilla");
-    seed.text(
+    Ok(())
+}
+
+pub fn render_current_codex(
+    seed_path: &Path,
+    engram_path: &Path,
+    paired_path: &Path,
+    output_dir: &Path,
+) -> Result<(), String> {
+    let seed = load(seed_path)?;
+    let engram = load(engram_path)?;
+    let paired = load(paired_path)?;
+    let seed_ids = seed
+        .get("case_ids")
+        .and_then(Value::as_array)
+        .ok_or("faltan casos Codex con iROMEM")?;
+    let engram_ids = engram
+        .get("case_ids")
+        .and_then(Value::as_array)
+        .ok_or("faltan casos Codex con Engram")?;
+    if seed_ids.is_empty()
+        || seed_ids != engram_ids
+        || n(&paired, "/sample_count")? != seed_ids.len() as u64
+    {
+        return Err("las corridas de Codex no tienen los mismos casos".into());
+    }
+    let seed_ms = codex_p50(&seed)?;
+    let engram_ms = codex_p50(&engram)?;
+    if (seed_ms - f(&paired, "/median_codex_seed_ms")?).abs() > 0.001
+        || (engram_ms - f(&paired, "/median_codex_engram_ms")?).abs() > 0.001
+    {
+        return Err("el informe emparejado no coincide con los turnos Codex".into());
+    }
+    let input_p50 = |report: &Value| -> Result<f64, String> {
+        let rows = report
+            .get("rows")
+            .and_then(Value::as_array)
+            .ok_or("faltan filas Codex")?;
+        if rows.len() != seed_ids.len() {
+            return Err("el número de turnos Codex no coincide".into());
+        }
+        median(
+            rows.iter()
+                .map(|row| n(row, "/usage/input_tokens").map(|tokens| tokens as f64))
+                .collect::<Result<Vec<_>, _>>()?,
+        )
+    };
+    let seed_tokens = input_p50(&seed)?;
+    let engram_tokens = input_p50(&engram)?;
+
+    fs::create_dir_all(output_dir).map_err(|error| error.to_string())?;
+    let mut svg = Svg::new(1200, 650, "Codex: iROMEM frente a Engram");
+    svg.text(
         58,
         110,
-        "540 preguntas sintéticas · Decisions por OpenRouter incluido",
+        &format!(
+            "{} turnos sintéticos emparejados · misma versión de Codex · medianas",
+            seed_ids.len()
+        ),
         17,
         MUTED,
         "start",
         "Arial,sans-serif",
     );
-    panel(
-        &mut seed,
-        &Panel {
-            x: 80,
-            title: "Consulta completa",
-            subtitle: "Búsqueda, elección y composición",
-            unit: "milisegundos",
-            maximum: (full_p95 * 1.1).ceil(),
-            bars: [("Mediana", full_p50, BLUE), ("p95", full_p95, TEAL)],
+    for data in [
+        Panel {
+            x: 58,
+            title: "Tiempo hasta la respuesta",
+            subtitle: "Codex con semilla o búsqueda MCP",
+            unit: "segundos",
+            maximum: ((seed_ms.max(engram_ms) / 1000.0) * 1.2).ceil(),
+            bars: [
+                ("iROMEM", seed_ms / 1000.0, TEAL),
+                ("Engram", engram_ms / 1000.0, GOLD),
+            ],
+            decimals: 2,
+        },
+        Panel {
+            x: 610,
+            title: "Tokens de entrada informados",
+            subtitle: "Incluyen contexto e instrucciones",
+            unit: "tokens",
+            maximum: ((seed_tokens.max(engram_tokens) * 1.2) / 1000.0).ceil() * 1000.0,
+            bars: [
+                ("iROMEM", seed_tokens.round(), TEAL),
+                ("Engram", engram_tokens.round(), GOLD),
+            ],
             decimals: 0,
         },
-    );
-    seed.text(
+    ] {
+        panel(&mut svg, &data);
+    }
+    svg.text(
         58,
-        570,
-        "Engram se midió solo como buscador; no hay flujo completo comparable.",
+        575,
+        "iROMEM entregó la semilla en el prompt; Engram se consultó por MCP.",
         16,
         MUTED,
         "start",
         "Arial,sans-serif",
     );
-    seed.save(&output_dir.join("current-seed-latency.svg"))?;
-    Ok(())
+    svg.text(
+        58,
+        600,
+        "Los tokens incluyen contexto y caché; no equivalen al coste marginal de la recuperación.",
+        16,
+        MUTED,
+        "start",
+        "Arial,sans-serif",
+    );
+    svg.text(
+        58,
+        625,
+        "La preparación de semilla se midió aparte; la integración automática sigue pendiente.",
+        16,
+        MUTED,
+        "start",
+        "Arial,sans-serif",
+    );
+    svg.save(&output_dir.join("current-codex-comparison.svg"))
 }
 
 #[cfg(test)]
