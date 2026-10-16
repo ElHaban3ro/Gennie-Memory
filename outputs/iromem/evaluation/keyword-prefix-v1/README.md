@@ -30,7 +30,7 @@ cargo run --offline -p iromem-eval -- campaign-report \
 
 Una nueva campaña debe usar otro diario y registrar el binario, el banco y la base que realmente ejecute. Los diarios completos no se reetiquetan como mediciones de Codex.
 
-Las dos figuras de la ruta vigente que muestra el README se regeneran desde los resúmenes guardados:
+Las dos figuras históricas de la cohorte 010–013 se regeneran desde los resúmenes guardados:
 
 ```sh
 cargo run --offline -p iromem-eval -- render-current-charts \

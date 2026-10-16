@@ -1,6 +1,6 @@
 # Contrato de evaluación v1
 
-Estado vigente: el producto y el evaluador activo son Rust. Los bancos y resultados de pilotos anteriores siguen versionados como evidencia histórica, pero sus scripts Python fueron retirados. Las cifras nuevas de la ruta predeterminada están en [la medición Rust](rust-migration-v1.md).
+Estado vigente: el producto y el evaluador activo son Rust. Los bancos y resultados de pilotos anteriores siguen versionados como evidencia histórica, pero sus scripts Python fueron retirados. Las cifras vigentes de comparación están en [la campaña completa del 2026-10-16](full-comparison-2026-10-16.md); la [primera medición Rust](rust-migration-v1.md) es histórica.
 
 ## Bancos y etiquetas
 
@@ -52,7 +52,7 @@ La respuesta incluye `retrieval` (método y candidatos), `classification_status`
 | `render-current-charts <búsqueda-iromem.json> <decisions.json> <búsqueda-engram.json> <directorio>` | Regenera las figuras de aciertos y búsqueda vigentes del README. |
 | `render-codex-current <codex-iromem.json> <codex-engram.json> <emparejado.json> <directorio>` | Regenera la comparación actual de Codex y verifica que ambos caminos y el informe emparejado coincidan en muestra y medianas. |
 
-Los archivos de salida de una campaña deben ser nuevos. El diario congela hashes de casos, binario y base; un `started` sin `finished` bloquea la reanudación para no duplicar una llamada posiblemente cobrada. Los informes de seis turnos de Codex son simulaciones de entrega inicial, no prueban un hook instalado. La [campaña actual](keyword-prefix-v1.md) y el [piloto de Codex](codex-current-v1.md) enlazan datos, aciertos y límites.
+Los archivos de salida de una campaña deben ser nuevos. El diario congela hashes de casos, binario y base; un `started` sin `finished` bloquea la reanudación para no duplicar una llamada posiblemente cobrada. Los informes de seis turnos de Codex son simulaciones de entrega inicial, no prueban un hook instalado. La [comparación vigente](full-comparison-2026-10-16.md) enlaza datos, aciertos y límites; la [campaña anterior](keyword-prefix-v1.md) y el [piloto Codex anterior](codex-current-v1.md) se conservan como evidencia histórica.
 
 ## Reproducción local mínima
 
