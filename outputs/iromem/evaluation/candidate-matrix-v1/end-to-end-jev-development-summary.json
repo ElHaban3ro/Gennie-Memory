@@ -1,0 +1,36 @@
+{
+  "kind": "candidate_matrix_end_to_end_pilot",
+  "synthetic_only": true,
+  "queries_sha256": "ab1810251e4a59b4f8ca817c969d8db157586b6d928ed94e70d7d28e77b68802",
+  "model": "typesafe/jev-1.13",
+  "cases": 16,
+  "positive_exact": 11,
+  "positive_cases": 12,
+  "negative_empty": 4,
+  "negative_cases": 4,
+  "faithful_positive": 11,
+  "load_seconds": 1.990849125009845,
+  "timing_ms": {
+    "embedding_ms": {
+      "p50": 20.948749996023253,
+      "p95": 26.540468494204106
+    },
+    "retrieval_ms": {
+      "p50": 15.00266649236437,
+      "p95": 25.20008324427181
+    },
+    "decision_ms": {
+      "p50": 514.0684579964727,
+      "p95": 677.751322498807
+    },
+    "composition_ms": {
+      "p50": 25.600687506084796,
+      "p95": 27.37322849861812
+    },
+    "total_ms": {
+      "p50": 569.2920000001322,
+      "p95": 745.1424894934462
+    }
+  },
+  "reported_cost_usd": 0.00085386
+}

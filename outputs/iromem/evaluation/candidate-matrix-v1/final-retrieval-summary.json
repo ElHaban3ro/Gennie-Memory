@@ -1,0 +1,41 @@
+{
+  "kind": "candidate_matrix_final_retrieval",
+  "synthetic_only": true,
+  "manifest_sha256": "82e6a0ae1da6f9825f4707757bbf7e2b1d6a3735190c6a385acb4d43fd004bb6",
+  "groups": {
+    "scoped": {
+      "queries_sha256": "e3b93b97acb971f1fe73b6408370f333a4ab7c37d057095a6bc3e19dd064cdaa",
+      "results_sha256": "e33d34541f674ee06e596f05d9228d0b9d997604b2099fd20640f2ce9b5f69f6",
+      "positive_cases": 400,
+      "negative_cases": 80,
+      "candidate_coverage": {
+        "5": 190,
+        "10": 295,
+        "15": 342,
+        "20": 400
+      },
+      "retrieval_ms": {
+        "p50": 8.4532085,
+        "p95": 11.062778849999997,
+        "p99": 14.991327569999966
+      }
+    },
+    "unscoped": {
+      "queries_sha256": "155fc7d7b697e6d05218efb9d3b4101359291f68e840b213eb20116331576e8e",
+      "results_sha256": "2586182fe5ce7e29638989c99c1f708e2353e86ec3210c93413a398da083f503",
+      "positive_cases": 400,
+      "negative_cases": 80,
+      "candidate_coverage": {
+        "5": 221,
+        "10": 252,
+        "15": 290,
+        "20": 320
+      },
+      "retrieval_ms": {
+        "p50": 453.55772950000005,
+        "p95": 937.7980121999999,
+        "p99": 2502.8861873599994
+      }
+    }
+  }
+}

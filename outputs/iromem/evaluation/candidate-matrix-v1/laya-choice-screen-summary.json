@@ -1,0 +1,846 @@
+{
+  "manifest": {
+    "version": 1,
+    "kind": "laya_candidate_matrix_choice",
+    "model_sha256": "9d628fd971b700382ac6f65920a86f149777b2e748e0c955fb3b19695aa8f204",
+    "tokenizer_sha256": "609d8f4c067cd3950f88594c5a802616cea245823836ef5848ee4fc40aab5b6f",
+    "prompt_sha256": "a000cebb07146b9a8ac77bdde92325938d7529ed5c141b611632d5565416913b",
+    "runner_sha256": "56ef15d6c1294744c0a78b0de951f9d25124a19d56977322ac0b9384815d4a3b",
+    "inputs": {
+      "100/scoped": {
+        "queries": "497ec439e62ef31fd376e97f5a0c1dca033f189882648155515338b46fb20c7b",
+        "results": "4ff0c8b2600c7fec7a6709052021ac8886bc19a60fea1d7228055e9da3bd515d"
+      },
+      "100/unscoped": {
+        "queries": "35531d87dc3d73885c10ea0883d3065322373d2e3477c10fcb76bbcbb8bbbeb8",
+        "results": "a5a2a442a5ab80578cbff184bb8eb1ade9caa4604f3fecacc33596e0a5f367d1"
+      },
+      "200/scoped": {
+        "queries": "497ec439e62ef31fd376e97f5a0c1dca033f189882648155515338b46fb20c7b",
+        "results": "9e6dc93a4b588f236c3abc70cc454382a8b98354e5d0b963e1bbbeb79555aacd"
+      },
+      "200/unscoped": {
+        "queries": "35531d87dc3d73885c10ea0883d3065322373d2e3477c10fcb76bbcbb8bbbeb8",
+        "results": "4871c9e4c42e019cfbd20c9db77a7a804a828fa83d641eeaab44e7f28ec52347"
+      },
+      "2000/scoped": {
+        "queries": "497ec439e62ef31fd376e97f5a0c1dca033f189882648155515338b46fb20c7b",
+        "results": "4433d02f9ebe442857b83b979dfabd8ad35f7bb0c98aa2dc5feef6dae490a8d8"
+      },
+      "2000/unscoped": {
+        "queries": "35531d87dc3d73885c10ea0883d3065322373d2e3477c10fcb76bbcbb8bbbeb8",
+        "results": "9edf550dfcc03d77978883bbb0294f00158753f461832a034f31a7e4ee6616da"
+      }
+    },
+    "caps": [
+      5,
+      10,
+      15,
+      20
+    ],
+    "variants": [
+      "plain",
+      "conditional",
+      "structured"
+    ]
+  },
+  "device": "mps",
+  "model_version": "0.3.5",
+  "load_seconds": 2.19254699999874,
+  "warmup_ms": 130.42100000893697,
+  "decisions": 2016,
+  "groups": {
+    "100/scoped/5/plain": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 8,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 46.83602099248674,
+        "p95": 49.456801505584735
+      },
+      "input_tokens": 7186
+    },
+    "100/scoped/5/conditional": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 8,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 48.446000495459884,
+        "p95": 52.206854004907655
+      },
+      "input_tokens": 7937
+    },
+    "100/scoped/5/structured": {
+      "positive_exact": 1,
+      "positive_cases": 20,
+      "negative_empty": 5,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 48.61818699282594,
+        "p95": 50.4654685028072
+      },
+      "input_tokens": 7937
+    },
+    "100/scoped/10/plain": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 7,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 48.69766650517704,
+        "p95": 49.47116675248253
+      },
+      "input_tokens": 7937
+    },
+    "100/scoped/10/conditional": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 7,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 48.731874994700775,
+        "p95": 49.13927026063902
+      },
+      "input_tokens": 7937
+    },
+    "100/scoped/10/structured": {
+      "positive_exact": 1,
+      "positive_cases": 20,
+      "negative_empty": 4,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 48.801542005094234,
+        "p95": 51.179958503780654
+      },
+      "input_tokens": 7937
+    },
+    "100/scoped/15/plain": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 8,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 48.79006249393569,
+        "p95": 50.71151075389935
+      },
+      "input_tokens": 7937
+    },
+    "100/scoped/15/conditional": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 8,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 48.97899999195943,
+        "p95": 49.32722874218598
+      },
+      "input_tokens": 7937
+    },
+    "100/scoped/15/structured": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 5,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 48.97137499938253,
+        "p95": 49.503874994115904
+      },
+      "input_tokens": 7937
+    },
+    "100/scoped/20/plain": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 5,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 48.95439549727598,
+        "p95": 49.87987499407609
+      },
+      "input_tokens": 7937
+    },
+    "100/scoped/20/conditional": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 6,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 49.90131299564382,
+        "p95": 50.86769750050735
+      },
+      "input_tokens": 7937
+    },
+    "100/scoped/20/structured": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 7,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 49.4367709979997,
+        "p95": 51.996385507663945
+      },
+      "input_tokens": 7937
+    },
+    "100/unscoped/5/plain": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 6,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 47.13166700094007,
+        "p95": 50.96177060258924
+      },
+      "input_tokens": 7665
+    },
+    "100/unscoped/5/conditional": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 6,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 49.14479149738327,
+        "p95": 50.10990854498232
+      },
+      "input_tokens": 8521
+    },
+    "100/unscoped/5/structured": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 0,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 48.987146008585114,
+        "p95": 50.12107545117033
+      },
+      "input_tokens": 8521
+    },
+    "100/unscoped/10/plain": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 7,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 49.07035400538007,
+        "p95": 49.53723125072429
+      },
+      "input_tokens": 8521
+    },
+    "100/unscoped/10/conditional": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 7,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 49.332499991578516,
+        "p95": 50.648162497236626
+      },
+      "input_tokens": 8521
+    },
+    "100/unscoped/10/structured": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 4,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 49.87727149273269,
+        "p95": 52.004560639034025
+      },
+      "input_tokens": 8521
+    },
+    "100/unscoped/15/plain": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 8,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 51.40218749875203,
+        "p95": 54.27979200176196
+      },
+      "input_tokens": 8521
+    },
+    "100/unscoped/15/conditional": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 8,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 51.06966650055256,
+        "p95": 57.6654937591229
+      },
+      "input_tokens": 8521
+    },
+    "100/unscoped/15/structured": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 5,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 50.502458499977365,
+        "p95": 52.502241548063466
+      },
+      "input_tokens": 8521
+    },
+    "100/unscoped/20/plain": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 2,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 50.19370799709577,
+        "p95": 51.6981687527732
+      },
+      "input_tokens": 8521
+    },
+    "100/unscoped/20/conditional": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 4,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 52.3338125058217,
+        "p95": 57.954914245783584
+      },
+      "input_tokens": 8521
+    },
+    "100/unscoped/20/structured": {
+      "positive_exact": 1,
+      "positive_cases": 20,
+      "negative_empty": 8,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 54.58552049094578,
+        "p95": 255.01816085452438
+      },
+      "input_tokens": 8521
+    },
+    "200/scoped/5/plain": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 8,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 101.82745850033825,
+        "p95": 198.0703952467593
+      },
+      "input_tokens": 7186
+    },
+    "200/scoped/5/conditional": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 8,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 53.01572949974798,
+        "p95": 109.22251025112928
+      },
+      "input_tokens": 7937
+    },
+    "200/scoped/5/structured": {
+      "positive_exact": 1,
+      "positive_cases": 20,
+      "negative_empty": 5,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 52.016020999872126,
+        "p95": 54.705187256331556
+      },
+      "input_tokens": 7937
+    },
+    "200/scoped/10/plain": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 7,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 51.755250002315734,
+        "p95": 59.670812745025614
+      },
+      "input_tokens": 7937
+    },
+    "200/scoped/10/conditional": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 7,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 67.3196249990724,
+        "p95": 173.96920800456428
+      },
+      "input_tokens": 7937
+    },
+    "200/scoped/10/structured": {
+      "positive_exact": 1,
+      "positive_cases": 20,
+      "negative_empty": 4,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 58.772520496859215,
+        "p95": 78.92132275446784
+      },
+      "input_tokens": 7937
+    },
+    "200/scoped/15/plain": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 8,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 51.91025000385707,
+        "p95": 55.37157299841056
+      },
+      "input_tokens": 7937
+    },
+    "200/scoped/15/conditional": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 8,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 52.70631249732105,
+        "p95": 62.36897899725591
+      },
+      "input_tokens": 7937
+    },
+    "200/scoped/15/structured": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 5,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 69.71543750114506,
+        "p95": 121.95207249533269
+      },
+      "input_tokens": 7937
+    },
+    "200/scoped/20/plain": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 5,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 61.287395998078864,
+        "p95": 74.69303124889848
+      },
+      "input_tokens": 7937
+    },
+    "200/scoped/20/conditional": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 6,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 51.99481250019744,
+        "p95": 53.03030224604299
+      },
+      "input_tokens": 7937
+    },
+    "200/scoped/20/structured": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 7,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 52.349562996823806,
+        "p95": 54.32726075378014
+      },
+      "input_tokens": 7937
+    },
+    "200/unscoped/5/plain": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 6,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 49.60127099911915,
+        "p95": 55.81469614044181
+      },
+      "input_tokens": 7575
+    },
+    "200/unscoped/5/conditional": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 7,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 51.91568749432918,
+        "p95": 53.53411645119195
+      },
+      "input_tokens": 8521
+    },
+    "200/unscoped/5/structured": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 3,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 51.96935399726499,
+        "p95": 54.038239146757405
+      },
+      "input_tokens": 8521
+    },
+    "200/unscoped/10/plain": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 4,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 51.45724949397845,
+        "p95": 53.29447509793681
+      },
+      "input_tokens": 8521
+    },
+    "200/unscoped/10/conditional": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 5,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 54.199958001845516,
+        "p95": 99.12415569124278
+      },
+      "input_tokens": 8521
+    },
+    "200/unscoped/10/structured": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 3,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 52.79002099996433,
+        "p95": 63.93679355678614
+      },
+      "input_tokens": 8521
+    },
+    "200/unscoped/15/plain": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 6,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 53.83927100774599,
+        "p95": 96.0812249039008
+      },
+      "input_tokens": 8521
+    },
+    "200/unscoped/15/conditional": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 8,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 52.92956299672369,
+        "p95": 55.104791550547816
+      },
+      "input_tokens": 8521
+    },
+    "200/unscoped/15/structured": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 4,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 51.737208501435816,
+        "p95": 53.29276204720372
+      },
+      "input_tokens": 8521
+    },
+    "200/unscoped/20/plain": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 2,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 54.92104199947789,
+        "p95": 62.6681915440713
+      },
+      "input_tokens": 8521
+    },
+    "200/unscoped/20/conditional": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 3,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 52.13558350078529,
+        "p95": 54.23801930301124
+      },
+      "input_tokens": 8521
+    },
+    "200/unscoped/20/structured": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 8,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 53.34670850425027,
+        "p95": 59.16001874938956
+      },
+      "input_tokens": 8521
+    },
+    "2000/scoped/5/plain": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 8,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 49.47064651059918,
+        "p95": 50.79084399767453
+      },
+      "input_tokens": 7186
+    },
+    "2000/scoped/5/conditional": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 8,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 51.743416996032465,
+        "p95": 53.34937475345214
+      },
+      "input_tokens": 7937
+    },
+    "2000/scoped/5/structured": {
+      "positive_exact": 1,
+      "positive_cases": 20,
+      "negative_empty": 5,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 51.942833997600246,
+        "p95": 53.11743725542328
+      },
+      "input_tokens": 7937
+    },
+    "2000/scoped/10/plain": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 7,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 51.84695850039134,
+        "p95": 52.37190625121002
+      },
+      "input_tokens": 7937
+    },
+    "2000/scoped/10/conditional": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 7,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 51.83508349728072,
+        "p95": 52.805729250394506
+      },
+      "input_tokens": 7937
+    },
+    "2000/scoped/10/structured": {
+      "positive_exact": 1,
+      "positive_cases": 20,
+      "negative_empty": 4,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 52.12362499878509,
+        "p95": 59.271354493830586
+      },
+      "input_tokens": 7937
+    },
+    "2000/scoped/15/plain": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 8,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 52.03083300148137,
+        "p95": 54.28087524705916
+      },
+      "input_tokens": 7937
+    },
+    "2000/scoped/15/conditional": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 8,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 51.677750001545064,
+        "p95": 53.20055225456599
+      },
+      "input_tokens": 7937
+    },
+    "2000/scoped/15/structured": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 5,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 51.71068749768892,
+        "p95": 52.870572504616575
+      },
+      "input_tokens": 7937
+    },
+    "2000/scoped/20/plain": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 5,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 51.32972900173627,
+        "p95": 52.310448005300714
+      },
+      "input_tokens": 7937
+    },
+    "2000/scoped/20/conditional": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 6,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 51.70516649377532,
+        "p95": 52.33432324894238
+      },
+      "input_tokens": 7937
+    },
+    "2000/scoped/20/structured": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 7,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 52.02447948977351,
+        "p95": 53.20202049551881
+      },
+      "input_tokens": 7937
+    },
+    "2000/unscoped/5/plain": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 6,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 47.924145495926496,
+        "p95": 49.96746195902233
+      },
+      "input_tokens": 7485
+    },
+    "2000/unscoped/5/conditional": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 8,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 51.47649999707937,
+        "p95": 53.0622522928752
+      },
+      "input_tokens": 8521
+    },
+    "2000/unscoped/5/structured": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 3,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 51.45504150277702,
+        "p95": 52.67428080114769
+      },
+      "input_tokens": 8521
+    },
+    "2000/unscoped/10/plain": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 7,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 51.80387499422068,
+        "p95": 53.56349210123881
+      },
+      "input_tokens": 8521
+    },
+    "2000/unscoped/10/conditional": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 8,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 51.54481250065146,
+        "p95": 53.818167097779224
+      },
+      "input_tokens": 8521
+    },
+    "2000/unscoped/10/structured": {
+      "positive_exact": 1,
+      "positive_cases": 20,
+      "negative_empty": 4,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 51.753707994066644,
+        "p95": 55.28571249815286
+      },
+      "input_tokens": 8521
+    },
+    "2000/unscoped/15/plain": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 6,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 52.42052100220462,
+        "p95": 71.45884769561235
+      },
+      "input_tokens": 8521
+    },
+    "2000/unscoped/15/conditional": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 8,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 53.47664600412827,
+        "p95": 63.762252391461516
+      },
+      "input_tokens": 8521
+    },
+    "2000/unscoped/15/structured": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 5,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 56.39583348965971,
+        "p95": 57.54789584534592
+      },
+      "input_tokens": 8521
+    },
+    "2000/unscoped/20/plain": {
+      "positive_exact": 1,
+      "positive_cases": 20,
+      "negative_empty": 2,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 57.2544585011201,
+        "p95": 60.12228924664669
+      },
+      "input_tokens": 8521
+    },
+    "2000/unscoped/20/conditional": {
+      "positive_exact": 1,
+      "positive_cases": 20,
+      "negative_empty": 2,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 53.10797950369306,
+        "p95": 54.31053114734823
+      },
+      "input_tokens": 8521
+    },
+    "2000/unscoped/20/structured": {
+      "positive_exact": 0,
+      "positive_cases": 20,
+      "negative_empty": 6,
+      "negative_cases": 8,
+      "decision_ms": {
+        "p50": 52.62752099952195,
+        "p95": 53.942875001666835
+      },
+      "input_tokens": 8521
+    }
+  }
+}

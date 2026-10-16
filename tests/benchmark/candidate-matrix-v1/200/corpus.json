@@ -1,0 +1,3802 @@
+[
+  {
+    "id": "m_c175641c29512c75ecde",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0001",
+    "revision": 2,
+    "memory_type": "procedure",
+    "original_text": "En Proyecto Alerce 0001 (PX-0001), solo para reuniones remotas: enviar lecturas previas al inicio.",
+    "summary": "Proyecto Alerce 0001 (PX-0001): si la reunión es remota, enviar lecturas previas al inicio.",
+    "conditions": "Solo para reuniones remotas",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-guide/0001@v2",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_4e2cfee0ddff2e839861",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0001",
+    "revision": 2,
+    "memory_type": "procedure",
+    "original_text": "En Proyecto Alerce 0001 (PX-0001), solo para reuniones presenciales: incluir una agenda de cuatro puntos.",
+    "summary": "Proyecto Alerce 0001 (PX-0001): si la reunión es presencial, incluir una agenda de cuatro puntos.",
+    "conditions": "Solo para reuniones presenciales",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-guide/0001@v2",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_828064943524b3566543",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0001",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0001 (PX-0001): para una reunión remota de presupuesto, confirmar las cifras aprobadas para presupuesto (remota).",
+    "summary": "Proyecto Alerce 0001 (PX-0001): para una reunión remota de presupuesto, confirmar las cifras aprobadas para presupuesto (remota).",
+    "conditions": "Solo para reuniones remotas de presupuesto",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0001/1@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_43f3f580f9491958a9ea",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0001",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0001 (PX-0001): para una reunión presencial de presupuesto, confirmar las cifras aprobadas para presupuesto (presencial).",
+    "summary": "Proyecto Alerce 0001 (PX-0001): para una reunión presencial de presupuesto, confirmar las cifras aprobadas para presupuesto (presencial).",
+    "conditions": "Solo para reuniones presenciales de presupuesto",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0001/1@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_dbce6f02f645a3564b74",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0001",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0001 (PX-0001): para una reunión remota de incidentes, enumerar los incidentes abiertos para incidentes (remota).",
+    "summary": "Proyecto Alerce 0001 (PX-0001): para una reunión remota de incidentes, enumerar los incidentes abiertos para incidentes (remota).",
+    "conditions": "Solo para reuniones remotas de incidentes",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0001/2@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_6b5bc678b9ecb728d3ab",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0001",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0001 (PX-0001): para una reunión presencial de incidentes, enumerar los incidentes abiertos para incidentes (presencial).",
+    "summary": "Proyecto Alerce 0001 (PX-0001): para una reunión presencial de incidentes, enumerar los incidentes abiertos para incidentes (presencial).",
+    "conditions": "Solo para reuniones presenciales de incidentes",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0001/2@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_cd065ebe000f1d26caac",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0001",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0001 (PX-0001): para una reunión remota de incorporación, presentar a los responsables de bienvenida para incorporación (remota).",
+    "summary": "Proyecto Alerce 0001 (PX-0001): para una reunión remota de incorporación, presentar a los responsables de bienvenida para incorporación (remota).",
+    "conditions": "Solo para reuniones remotas de incorporación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0001/3@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_11c28e7d93fcae68d190",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0001",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0001 (PX-0001): para una reunión presencial de incorporación, presentar a los responsables de bienvenida para incorporación (presencial).",
+    "summary": "Proyecto Alerce 0001 (PX-0001): para una reunión presencial de incorporación, presentar a los responsables de bienvenida para incorporación (presencial).",
+    "conditions": "Solo para reuniones presenciales de incorporación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0001/3@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_91c0f6917604521011ee",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0001",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0001 (PX-0001): para una reunión remota de lanzamiento, revisar las fechas de lanzamiento para lanzamiento (remota).",
+    "summary": "Proyecto Alerce 0001 (PX-0001): para una reunión remota de lanzamiento, revisar las fechas de lanzamiento para lanzamiento (remota).",
+    "conditions": "Solo para reuniones remotas de lanzamiento",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0001/4@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_3c24162ba40a9b3a9eef",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0001",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0001 (PX-0001): para una reunión presencial de lanzamiento, revisar las fechas de lanzamiento para lanzamiento (presencial).",
+    "summary": "Proyecto Alerce 0001 (PX-0001): para una reunión presencial de lanzamiento, revisar las fechas de lanzamiento para lanzamiento (presencial).",
+    "conditions": "Solo para reuniones presenciales de lanzamiento",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0001/4@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_bf5b1cd55a48e5987236",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0001",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0001 (PX-0001): para una reunión remota de entrega, verificar los entregables pendientes para entrega (remota).",
+    "summary": "Proyecto Alerce 0001 (PX-0001): para una reunión remota de entrega, verificar los entregables pendientes para entrega (remota).",
+    "conditions": "Solo para reuniones remotas de entrega",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0001/5@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_1f14b8673a1b7ff8d014",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0001",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0001 (PX-0001): para una reunión presencial de entrega, verificar los entregables pendientes para entrega (presencial).",
+    "summary": "Proyecto Alerce 0001 (PX-0001): para una reunión presencial de entrega, verificar los entregables pendientes para entrega (presencial).",
+    "conditions": "Solo para reuniones presenciales de entrega",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0001/5@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_8d9e5083aec0e81d3eba",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0001",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0001 (PX-0001): para una reunión remota de demostración, preparar el recorrido de demostración para demostración (remota).",
+    "summary": "Proyecto Alerce 0001 (PX-0001): para una reunión remota de demostración, preparar el recorrido de demostración para demostración (remota).",
+    "conditions": "Solo para reuniones remotas de demostración",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0001/6@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_fdb3f7df743900e40e5f",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0001",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0001 (PX-0001): para una reunión presencial de demostración, preparar el recorrido de demostración para demostración (presencial).",
+    "summary": "Proyecto Alerce 0001 (PX-0001): para una reunión presencial de demostración, preparar el recorrido de demostración para demostración (presencial).",
+    "conditions": "Solo para reuniones presenciales de demostración",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0001/6@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_c04448c94d085da16ab6",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0001",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0001 (PX-0001): para una reunión remota de seguridad, revisar los riesgos registrados para seguridad (remota).",
+    "summary": "Proyecto Alerce 0001 (PX-0001): para una reunión remota de seguridad, revisar los riesgos registrados para seguridad (remota).",
+    "conditions": "Solo para reuniones remotas de seguridad",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0001/7@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_59db36776a650c18ae5c",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0001",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0001 (PX-0001): para una reunión presencial de seguridad, revisar los riesgos registrados para seguridad (presencial).",
+    "summary": "Proyecto Alerce 0001 (PX-0001): para una reunión presencial de seguridad, revisar los riesgos registrados para seguridad (presencial).",
+    "conditions": "Solo para reuniones presenciales de seguridad",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0001/7@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_f7ae13955409a84340ef",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0001",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0001 (PX-0001): para una reunión remota de formación, compartir los materiales de formación para formación (remota).",
+    "summary": "Proyecto Alerce 0001 (PX-0001): para una reunión remota de formación, compartir los materiales de formación para formación (remota).",
+    "conditions": "Solo para reuniones remotas de formación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0001/8@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_9f6bb346bcc750a943bb",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0001",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0001 (PX-0001): para una reunión presencial de formación, compartir los materiales de formación para formación (presencial).",
+    "summary": "Proyecto Alerce 0001 (PX-0001): para una reunión presencial de formación, compartir los materiales de formación para formación (presencial).",
+    "conditions": "Solo para reuniones presenciales de formación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0001/8@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_bb68c231ba55ba088f2c",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0001",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0001 (PX-0001): para una reunión remota de contratación, confirmar el perfil de la vacante para contratación (remota).",
+    "summary": "Proyecto Alerce 0001 (PX-0001): para una reunión remota de contratación, confirmar el perfil de la vacante para contratación (remota).",
+    "conditions": "Solo para reuniones remotas de contratación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0001/9@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_5e4619fc3e9739d60f73",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0001",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0001 (PX-0001): para una reunión presencial de contratación, confirmar el perfil de la vacante para contratación (presencial).",
+    "summary": "Proyecto Alerce 0001 (PX-0001): para una reunión presencial de contratación, confirmar el perfil de la vacante para contratación (presencial).",
+    "conditions": "Solo para reuniones presenciales de contratación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0001/9@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_c930aefbddcb33c2f843",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0002",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "En Proyecto Bruma 0002 (PX-0002), solo para reuniones remotas: cerrar con responsables y fechas.",
+    "summary": "Proyecto Bruma 0002 (PX-0002): si la reunión es remota, cerrar con responsables y fechas.",
+    "conditions": "Solo para reuniones remotas",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-guide/0002@v2",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_f3e65c42c604d1cb9086",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0002",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "En Proyecto Bruma 0002 (PX-0002), solo para reuniones presenciales: abrir con decisiones pendientes.",
+    "summary": "Proyecto Bruma 0002 (PX-0002): si la reunión es presencial, abrir con decisiones pendientes.",
+    "conditions": "Solo para reuniones presenciales",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-guide/0002@v2",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_53c1aa593192d337ea15",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0002",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Bruma 0002 (PX-0002): para una reunión remota de presupuesto, confirmar las cifras aprobadas para presupuesto (remota).",
+    "summary": "Proyecto Bruma 0002 (PX-0002): para una reunión remota de presupuesto, confirmar las cifras aprobadas para presupuesto (remota).",
+    "conditions": "Solo para reuniones remotas de presupuesto",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0002/1@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_5adbd23e39bd90b8d2e1",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0002",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Bruma 0002 (PX-0002): para una reunión presencial de presupuesto, confirmar las cifras aprobadas para presupuesto (presencial).",
+    "summary": "Proyecto Bruma 0002 (PX-0002): para una reunión presencial de presupuesto, confirmar las cifras aprobadas para presupuesto (presencial).",
+    "conditions": "Solo para reuniones presenciales de presupuesto",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0002/1@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_4af4bd64e8ac2e8ee14f",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0002",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Bruma 0002 (PX-0002): para una reunión remota de incidentes, enumerar los incidentes abiertos para incidentes (remota).",
+    "summary": "Proyecto Bruma 0002 (PX-0002): para una reunión remota de incidentes, enumerar los incidentes abiertos para incidentes (remota).",
+    "conditions": "Solo para reuniones remotas de incidentes",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0002/2@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_b40f9371bee543f51aac",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0002",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Bruma 0002 (PX-0002): para una reunión presencial de incidentes, enumerar los incidentes abiertos para incidentes (presencial).",
+    "summary": "Proyecto Bruma 0002 (PX-0002): para una reunión presencial de incidentes, enumerar los incidentes abiertos para incidentes (presencial).",
+    "conditions": "Solo para reuniones presenciales de incidentes",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0002/2@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_314227587ccc86098686",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0002",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Bruma 0002 (PX-0002): para una reunión remota de incorporación, presentar a los responsables de bienvenida para incorporación (remota).",
+    "summary": "Proyecto Bruma 0002 (PX-0002): para una reunión remota de incorporación, presentar a los responsables de bienvenida para incorporación (remota).",
+    "conditions": "Solo para reuniones remotas de incorporación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0002/3@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_8b9652a6a9160ed030f9",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0002",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Bruma 0002 (PX-0002): para una reunión presencial de incorporación, presentar a los responsables de bienvenida para incorporación (presencial).",
+    "summary": "Proyecto Bruma 0002 (PX-0002): para una reunión presencial de incorporación, presentar a los responsables de bienvenida para incorporación (presencial).",
+    "conditions": "Solo para reuniones presenciales de incorporación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0002/3@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_cda1e9e255b29530488c",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0002",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Bruma 0002 (PX-0002): para una reunión remota de lanzamiento, revisar las fechas de lanzamiento para lanzamiento (remota).",
+    "summary": "Proyecto Bruma 0002 (PX-0002): para una reunión remota de lanzamiento, revisar las fechas de lanzamiento para lanzamiento (remota).",
+    "conditions": "Solo para reuniones remotas de lanzamiento",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0002/4@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_4ca06e33f8af5f83dae5",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0002",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Bruma 0002 (PX-0002): para una reunión presencial de lanzamiento, revisar las fechas de lanzamiento para lanzamiento (presencial).",
+    "summary": "Proyecto Bruma 0002 (PX-0002): para una reunión presencial de lanzamiento, revisar las fechas de lanzamiento para lanzamiento (presencial).",
+    "conditions": "Solo para reuniones presenciales de lanzamiento",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0002/4@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_06be0a36bcb7138e0f3a",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0002",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Bruma 0002 (PX-0002): para una reunión remota de entrega, verificar los entregables pendientes para entrega (remota).",
+    "summary": "Proyecto Bruma 0002 (PX-0002): para una reunión remota de entrega, verificar los entregables pendientes para entrega (remota).",
+    "conditions": "Solo para reuniones remotas de entrega",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0002/5@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_6b2f77a856cf86fdc19f",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0002",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Bruma 0002 (PX-0002): para una reunión presencial de entrega, verificar los entregables pendientes para entrega (presencial).",
+    "summary": "Proyecto Bruma 0002 (PX-0002): para una reunión presencial de entrega, verificar los entregables pendientes para entrega (presencial).",
+    "conditions": "Solo para reuniones presenciales de entrega",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0002/5@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_ab8e9be05e6af081f735",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0002",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Bruma 0002 (PX-0002): para una reunión remota de demostración, preparar el recorrido de demostración para demostración (remota).",
+    "summary": "Proyecto Bruma 0002 (PX-0002): para una reunión remota de demostración, preparar el recorrido de demostración para demostración (remota).",
+    "conditions": "Solo para reuniones remotas de demostración",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0002/6@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_4fb219f54d3cfd7e2dea",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0002",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Bruma 0002 (PX-0002): para una reunión presencial de demostración, preparar el recorrido de demostración para demostración (presencial).",
+    "summary": "Proyecto Bruma 0002 (PX-0002): para una reunión presencial de demostración, preparar el recorrido de demostración para demostración (presencial).",
+    "conditions": "Solo para reuniones presenciales de demostración",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0002/6@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_3477e87f250947e906da",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0002",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Bruma 0002 (PX-0002): para una reunión remota de seguridad, revisar los riesgos registrados para seguridad (remota).",
+    "summary": "Proyecto Bruma 0002 (PX-0002): para una reunión remota de seguridad, revisar los riesgos registrados para seguridad (remota).",
+    "conditions": "Solo para reuniones remotas de seguridad",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0002/7@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_f72c5cc5a7502699c392",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0002",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Bruma 0002 (PX-0002): para una reunión presencial de seguridad, revisar los riesgos registrados para seguridad (presencial).",
+    "summary": "Proyecto Bruma 0002 (PX-0002): para una reunión presencial de seguridad, revisar los riesgos registrados para seguridad (presencial).",
+    "conditions": "Solo para reuniones presenciales de seguridad",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0002/7@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_340a8f20f47829cabaa2",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0002",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Bruma 0002 (PX-0002): para una reunión remota de formación, compartir los materiales de formación para formación (remota).",
+    "summary": "Proyecto Bruma 0002 (PX-0002): para una reunión remota de formación, compartir los materiales de formación para formación (remota).",
+    "conditions": "Solo para reuniones remotas de formación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0002/8@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_9cf2a71ff20bab8009a2",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0002",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Bruma 0002 (PX-0002): para una reunión presencial de formación, compartir los materiales de formación para formación (presencial).",
+    "summary": "Proyecto Bruma 0002 (PX-0002): para una reunión presencial de formación, compartir los materiales de formación para formación (presencial).",
+    "conditions": "Solo para reuniones presenciales de formación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0002/8@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_923d13a92d833f485bb5",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0002",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Bruma 0002 (PX-0002): para una reunión remota de contratación, confirmar el perfil de la vacante para contratación (remota).",
+    "summary": "Proyecto Bruma 0002 (PX-0002): para una reunión remota de contratación, confirmar el perfil de la vacante para contratación (remota).",
+    "conditions": "Solo para reuniones remotas de contratación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0002/9@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_8349d4447cbfee8246e0",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0002",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Bruma 0002 (PX-0002): para una reunión presencial de contratación, confirmar el perfil de la vacante para contratación (presencial).",
+    "summary": "Proyecto Bruma 0002 (PX-0002): para una reunión presencial de contratación, confirmar el perfil de la vacante para contratación (presencial).",
+    "conditions": "Solo para reuniones presenciales de contratación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0002/9@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_6e26305f0a5111c89bb2",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0015",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "En Proyecto Greda 0015 (PX-0015), solo para reuniones remotas: abrir con decisiones pendientes.",
+    "summary": "Proyecto Greda 0015 (PX-0015): si la reunión es remota, abrir con decisiones pendientes.",
+    "conditions": "Solo para reuniones remotas",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-guide/0015@v2",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_7fbd22f11f8ff37ed3ed",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0015",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "En Proyecto Greda 0015 (PX-0015), solo para reuniones presenciales: enviar lecturas previas al inicio.",
+    "summary": "Proyecto Greda 0015 (PX-0015): si la reunión es presencial, enviar lecturas previas al inicio.",
+    "conditions": "Solo para reuniones presenciales",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-guide/0015@v2",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_b3222e31129dd11bd86c",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0015",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Greda 0015 (PX-0015): para una reunión remota de presupuesto, confirmar las cifras aprobadas para presupuesto (remota).",
+    "summary": "Proyecto Greda 0015 (PX-0015): para una reunión remota de presupuesto, confirmar las cifras aprobadas para presupuesto (remota).",
+    "conditions": "Solo para reuniones remotas de presupuesto",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0015/1@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_beb418b202a25131e655",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0015",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Greda 0015 (PX-0015): para una reunión presencial de presupuesto, confirmar las cifras aprobadas para presupuesto (presencial).",
+    "summary": "Proyecto Greda 0015 (PX-0015): para una reunión presencial de presupuesto, confirmar las cifras aprobadas para presupuesto (presencial).",
+    "conditions": "Solo para reuniones presenciales de presupuesto",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0015/1@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_c854eeab1459e5061fa1",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0015",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Greda 0015 (PX-0015): para una reunión remota de incidentes, enumerar los incidentes abiertos para incidentes (remota).",
+    "summary": "Proyecto Greda 0015 (PX-0015): para una reunión remota de incidentes, enumerar los incidentes abiertos para incidentes (remota).",
+    "conditions": "Solo para reuniones remotas de incidentes",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0015/2@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_914644e42f346b9e3eba",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0015",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Greda 0015 (PX-0015): para una reunión presencial de incidentes, enumerar los incidentes abiertos para incidentes (presencial).",
+    "summary": "Proyecto Greda 0015 (PX-0015): para una reunión presencial de incidentes, enumerar los incidentes abiertos para incidentes (presencial).",
+    "conditions": "Solo para reuniones presenciales de incidentes",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0015/2@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_2e5b349a8e15df704869",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0015",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Greda 0015 (PX-0015): para una reunión remota de incorporación, presentar a los responsables de bienvenida para incorporación (remota).",
+    "summary": "Proyecto Greda 0015 (PX-0015): para una reunión remota de incorporación, presentar a los responsables de bienvenida para incorporación (remota).",
+    "conditions": "Solo para reuniones remotas de incorporación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0015/3@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_d0ed3c765133505f2801",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0015",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Greda 0015 (PX-0015): para una reunión presencial de incorporación, presentar a los responsables de bienvenida para incorporación (presencial).",
+    "summary": "Proyecto Greda 0015 (PX-0015): para una reunión presencial de incorporación, presentar a los responsables de bienvenida para incorporación (presencial).",
+    "conditions": "Solo para reuniones presenciales de incorporación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0015/3@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_5b52a2d9a212dd3aa88c",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0015",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Greda 0015 (PX-0015): para una reunión remota de lanzamiento, revisar las fechas de lanzamiento para lanzamiento (remota).",
+    "summary": "Proyecto Greda 0015 (PX-0015): para una reunión remota de lanzamiento, revisar las fechas de lanzamiento para lanzamiento (remota).",
+    "conditions": "Solo para reuniones remotas de lanzamiento",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0015/4@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_3c9b031716d38af8220d",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0015",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Greda 0015 (PX-0015): para una reunión presencial de lanzamiento, revisar las fechas de lanzamiento para lanzamiento (presencial).",
+    "summary": "Proyecto Greda 0015 (PX-0015): para una reunión presencial de lanzamiento, revisar las fechas de lanzamiento para lanzamiento (presencial).",
+    "conditions": "Solo para reuniones presenciales de lanzamiento",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0015/4@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_da962803bd5c768bb624",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0015",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Greda 0015 (PX-0015): para una reunión remota de entrega, verificar los entregables pendientes para entrega (remota).",
+    "summary": "Proyecto Greda 0015 (PX-0015): para una reunión remota de entrega, verificar los entregables pendientes para entrega (remota).",
+    "conditions": "Solo para reuniones remotas de entrega",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0015/5@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_4999a3544d1acc290124",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0015",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Greda 0015 (PX-0015): para una reunión presencial de entrega, verificar los entregables pendientes para entrega (presencial).",
+    "summary": "Proyecto Greda 0015 (PX-0015): para una reunión presencial de entrega, verificar los entregables pendientes para entrega (presencial).",
+    "conditions": "Solo para reuniones presenciales de entrega",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0015/5@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_b0e2858fc4278c39d834",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0015",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Greda 0015 (PX-0015): para una reunión remota de demostración, preparar el recorrido de demostración para demostración (remota).",
+    "summary": "Proyecto Greda 0015 (PX-0015): para una reunión remota de demostración, preparar el recorrido de demostración para demostración (remota).",
+    "conditions": "Solo para reuniones remotas de demostración",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0015/6@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_c05b8b73580e3f23ed49",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0015",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Greda 0015 (PX-0015): para una reunión presencial de demostración, preparar el recorrido de demostración para demostración (presencial).",
+    "summary": "Proyecto Greda 0015 (PX-0015): para una reunión presencial de demostración, preparar el recorrido de demostración para demostración (presencial).",
+    "conditions": "Solo para reuniones presenciales de demostración",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0015/6@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_faedd02eaf1910a06004",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0015",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Greda 0015 (PX-0015): para una reunión remota de seguridad, revisar los riesgos registrados para seguridad (remota).",
+    "summary": "Proyecto Greda 0015 (PX-0015): para una reunión remota de seguridad, revisar los riesgos registrados para seguridad (remota).",
+    "conditions": "Solo para reuniones remotas de seguridad",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0015/7@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_67aef20a38d943b0a958",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0015",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Greda 0015 (PX-0015): para una reunión presencial de seguridad, revisar los riesgos registrados para seguridad (presencial).",
+    "summary": "Proyecto Greda 0015 (PX-0015): para una reunión presencial de seguridad, revisar los riesgos registrados para seguridad (presencial).",
+    "conditions": "Solo para reuniones presenciales de seguridad",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0015/7@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_f5f155436e9e1cf30f8f",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0015",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Greda 0015 (PX-0015): para una reunión remota de formación, compartir los materiales de formación para formación (remota).",
+    "summary": "Proyecto Greda 0015 (PX-0015): para una reunión remota de formación, compartir los materiales de formación para formación (remota).",
+    "conditions": "Solo para reuniones remotas de formación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0015/8@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_1bff1af0e7b3a21a2291",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0015",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Greda 0015 (PX-0015): para una reunión presencial de formación, compartir los materiales de formación para formación (presencial).",
+    "summary": "Proyecto Greda 0015 (PX-0015): para una reunión presencial de formación, compartir los materiales de formación para formación (presencial).",
+    "conditions": "Solo para reuniones presenciales de formación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0015/8@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_832bcd876648e1e8c435",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0015",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Greda 0015 (PX-0015): para una reunión remota de contratación, confirmar el perfil de la vacante para contratación (remota).",
+    "summary": "Proyecto Greda 0015 (PX-0015): para una reunión remota de contratación, confirmar el perfil de la vacante para contratación (remota).",
+    "conditions": "Solo para reuniones remotas de contratación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0015/9@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_e66fd92572f2e9e5158c",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0015",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Greda 0015 (PX-0015): para una reunión presencial de contratación, confirmar el perfil de la vacante para contratación (presencial).",
+    "summary": "Proyecto Greda 0015 (PX-0015): para una reunión presencial de contratación, confirmar el perfil de la vacante para contratación (presencial).",
+    "conditions": "Solo para reuniones presenciales de contratación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0015/9@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_5b6cd9d6d4dac8023b69",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0006",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "En Proyecto Faro 0006 (PX-0006), solo para reuniones remotas: enviar lecturas previas al inicio.",
+    "summary": "Proyecto Faro 0006 (PX-0006): si la reunión es remota, enviar lecturas previas al inicio.",
+    "conditions": "Solo para reuniones remotas",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-guide/0006@v2",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_991791e34e28af1b3db3",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0006",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "En Proyecto Faro 0006 (PX-0006), solo para reuniones presenciales: incluir una agenda de cuatro puntos.",
+    "summary": "Proyecto Faro 0006 (PX-0006): si la reunión es presencial, incluir una agenda de cuatro puntos.",
+    "conditions": "Solo para reuniones presenciales",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-guide/0006@v2",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_1e878b1d807c05657690",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0006",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Faro 0006 (PX-0006): para una reunión remota de presupuesto, confirmar las cifras aprobadas para presupuesto (remota).",
+    "summary": "Proyecto Faro 0006 (PX-0006): para una reunión remota de presupuesto, confirmar las cifras aprobadas para presupuesto (remota).",
+    "conditions": "Solo para reuniones remotas de presupuesto",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0006/1@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_6abca1b439885d7886af",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0006",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Faro 0006 (PX-0006): para una reunión presencial de presupuesto, confirmar las cifras aprobadas para presupuesto (presencial).",
+    "summary": "Proyecto Faro 0006 (PX-0006): para una reunión presencial de presupuesto, confirmar las cifras aprobadas para presupuesto (presencial).",
+    "conditions": "Solo para reuniones presenciales de presupuesto",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0006/1@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_d6925bda826af84882b9",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0006",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Faro 0006 (PX-0006): para una reunión remota de incidentes, enumerar los incidentes abiertos para incidentes (remota).",
+    "summary": "Proyecto Faro 0006 (PX-0006): para una reunión remota de incidentes, enumerar los incidentes abiertos para incidentes (remota).",
+    "conditions": "Solo para reuniones remotas de incidentes",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0006/2@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_25d287b5624f86a756cb",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0006",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Faro 0006 (PX-0006): para una reunión presencial de incidentes, enumerar los incidentes abiertos para incidentes (presencial).",
+    "summary": "Proyecto Faro 0006 (PX-0006): para una reunión presencial de incidentes, enumerar los incidentes abiertos para incidentes (presencial).",
+    "conditions": "Solo para reuniones presenciales de incidentes",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0006/2@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_eded83fdb1596ef51cb1",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0006",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Faro 0006 (PX-0006): para una reunión remota de incorporación, presentar a los responsables de bienvenida para incorporación (remota).",
+    "summary": "Proyecto Faro 0006 (PX-0006): para una reunión remota de incorporación, presentar a los responsables de bienvenida para incorporación (remota).",
+    "conditions": "Solo para reuniones remotas de incorporación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0006/3@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_81455a3ba984e336c24d",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0006",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Faro 0006 (PX-0006): para una reunión presencial de incorporación, presentar a los responsables de bienvenida para incorporación (presencial).",
+    "summary": "Proyecto Faro 0006 (PX-0006): para una reunión presencial de incorporación, presentar a los responsables de bienvenida para incorporación (presencial).",
+    "conditions": "Solo para reuniones presenciales de incorporación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0006/3@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_44371062108460a9251d",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0006",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Faro 0006 (PX-0006): para una reunión remota de lanzamiento, revisar las fechas de lanzamiento para lanzamiento (remota).",
+    "summary": "Proyecto Faro 0006 (PX-0006): para una reunión remota de lanzamiento, revisar las fechas de lanzamiento para lanzamiento (remota).",
+    "conditions": "Solo para reuniones remotas de lanzamiento",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0006/4@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_d19b875d59a6f22afa91",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0006",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Faro 0006 (PX-0006): para una reunión presencial de lanzamiento, revisar las fechas de lanzamiento para lanzamiento (presencial).",
+    "summary": "Proyecto Faro 0006 (PX-0006): para una reunión presencial de lanzamiento, revisar las fechas de lanzamiento para lanzamiento (presencial).",
+    "conditions": "Solo para reuniones presenciales de lanzamiento",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0006/4@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_41b7e778b493f5b92ab2",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0006",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Faro 0006 (PX-0006): para una reunión remota de entrega, verificar los entregables pendientes para entrega (remota).",
+    "summary": "Proyecto Faro 0006 (PX-0006): para una reunión remota de entrega, verificar los entregables pendientes para entrega (remota).",
+    "conditions": "Solo para reuniones remotas de entrega",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0006/5@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_97331a6b1812e3b61ddf",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0006",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Faro 0006 (PX-0006): para una reunión presencial de entrega, verificar los entregables pendientes para entrega (presencial).",
+    "summary": "Proyecto Faro 0006 (PX-0006): para una reunión presencial de entrega, verificar los entregables pendientes para entrega (presencial).",
+    "conditions": "Solo para reuniones presenciales de entrega",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0006/5@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_736d2e4204cf63ddffdb",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0006",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Faro 0006 (PX-0006): para una reunión remota de demostración, preparar el recorrido de demostración para demostración (remota).",
+    "summary": "Proyecto Faro 0006 (PX-0006): para una reunión remota de demostración, preparar el recorrido de demostración para demostración (remota).",
+    "conditions": "Solo para reuniones remotas de demostración",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0006/6@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_a006ad46aba29eac87bd",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0006",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Faro 0006 (PX-0006): para una reunión presencial de demostración, preparar el recorrido de demostración para demostración (presencial).",
+    "summary": "Proyecto Faro 0006 (PX-0006): para una reunión presencial de demostración, preparar el recorrido de demostración para demostración (presencial).",
+    "conditions": "Solo para reuniones presenciales de demostración",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0006/6@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_c181813b090731f9dbe2",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0006",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Faro 0006 (PX-0006): para una reunión remota de seguridad, revisar los riesgos registrados para seguridad (remota).",
+    "summary": "Proyecto Faro 0006 (PX-0006): para una reunión remota de seguridad, revisar los riesgos registrados para seguridad (remota).",
+    "conditions": "Solo para reuniones remotas de seguridad",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0006/7@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_87390ffbe4cc448b26f7",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0006",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Faro 0006 (PX-0006): para una reunión presencial de seguridad, revisar los riesgos registrados para seguridad (presencial).",
+    "summary": "Proyecto Faro 0006 (PX-0006): para una reunión presencial de seguridad, revisar los riesgos registrados para seguridad (presencial).",
+    "conditions": "Solo para reuniones presenciales de seguridad",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0006/7@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_4b2e2c0bfc11b1a26581",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0006",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Faro 0006 (PX-0006): para una reunión remota de formación, compartir los materiales de formación para formación (remota).",
+    "summary": "Proyecto Faro 0006 (PX-0006): para una reunión remota de formación, compartir los materiales de formación para formación (remota).",
+    "conditions": "Solo para reuniones remotas de formación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0006/8@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_67f8f9484f075fd21df0",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0006",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Faro 0006 (PX-0006): para una reunión presencial de formación, compartir los materiales de formación para formación (presencial).",
+    "summary": "Proyecto Faro 0006 (PX-0006): para una reunión presencial de formación, compartir los materiales de formación para formación (presencial).",
+    "conditions": "Solo para reuniones presenciales de formación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0006/8@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_31f4fc0c22c5046e99d3",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0006",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Faro 0006 (PX-0006): para una reunión remota de contratación, confirmar el perfil de la vacante para contratación (remota).",
+    "summary": "Proyecto Faro 0006 (PX-0006): para una reunión remota de contratación, confirmar el perfil de la vacante para contratación (remota).",
+    "conditions": "Solo para reuniones remotas de contratación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0006/9@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_645fbcb669ec61502d1e",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0006",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Faro 0006 (PX-0006): para una reunión presencial de contratación, confirmar el perfil de la vacante para contratación (presencial).",
+    "summary": "Proyecto Faro 0006 (PX-0006): para una reunión presencial de contratación, confirmar el perfil de la vacante para contratación (presencial).",
+    "conditions": "Solo para reuniones presenciales de contratación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0006/9@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_1ae7d822c0e403caba76",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0022",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "En Proyecto Faro 0022 (PX-0022), solo para reuniones remotas: cerrar con responsables y fechas.",
+    "summary": "Proyecto Faro 0022 (PX-0022): si la reunión es remota, cerrar con responsables y fechas.",
+    "conditions": "Solo para reuniones remotas",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-guide/0022@v2",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_72f7fc0f6d3df2aad513",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0022",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "En Proyecto Faro 0022 (PX-0022), solo para reuniones presenciales: enviar lecturas previas al inicio.",
+    "summary": "Proyecto Faro 0022 (PX-0022): si la reunión es presencial, enviar lecturas previas al inicio.",
+    "conditions": "Solo para reuniones presenciales",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-guide/0022@v2",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_d06396493af30babd54d",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0022",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Faro 0022 (PX-0022): para una reunión remota de presupuesto, confirmar las cifras aprobadas para presupuesto (remota).",
+    "summary": "Proyecto Faro 0022 (PX-0022): para una reunión remota de presupuesto, confirmar las cifras aprobadas para presupuesto (remota).",
+    "conditions": "Solo para reuniones remotas de presupuesto",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0022/1@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_24ed3b9a2010ec410d82",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0022",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Faro 0022 (PX-0022): para una reunión presencial de presupuesto, confirmar las cifras aprobadas para presupuesto (presencial).",
+    "summary": "Proyecto Faro 0022 (PX-0022): para una reunión presencial de presupuesto, confirmar las cifras aprobadas para presupuesto (presencial).",
+    "conditions": "Solo para reuniones presenciales de presupuesto",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0022/1@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_3d611c3a1cbc5d8a8dfc",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0022",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Faro 0022 (PX-0022): para una reunión remota de incidentes, enumerar los incidentes abiertos para incidentes (remota).",
+    "summary": "Proyecto Faro 0022 (PX-0022): para una reunión remota de incidentes, enumerar los incidentes abiertos para incidentes (remota).",
+    "conditions": "Solo para reuniones remotas de incidentes",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0022/2@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_7a2e4af1e119415d8cff",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0022",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Faro 0022 (PX-0022): para una reunión presencial de incidentes, enumerar los incidentes abiertos para incidentes (presencial).",
+    "summary": "Proyecto Faro 0022 (PX-0022): para una reunión presencial de incidentes, enumerar los incidentes abiertos para incidentes (presencial).",
+    "conditions": "Solo para reuniones presenciales de incidentes",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0022/2@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_5d0e9f0895cd2f681f76",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0022",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Faro 0022 (PX-0022): para una reunión remota de incorporación, presentar a los responsables de bienvenida para incorporación (remota).",
+    "summary": "Proyecto Faro 0022 (PX-0022): para una reunión remota de incorporación, presentar a los responsables de bienvenida para incorporación (remota).",
+    "conditions": "Solo para reuniones remotas de incorporación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0022/3@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_cf869c27becffa09d1d1",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0022",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Faro 0022 (PX-0022): para una reunión presencial de incorporación, presentar a los responsables de bienvenida para incorporación (presencial).",
+    "summary": "Proyecto Faro 0022 (PX-0022): para una reunión presencial de incorporación, presentar a los responsables de bienvenida para incorporación (presencial).",
+    "conditions": "Solo para reuniones presenciales de incorporación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0022/3@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_8d9d5959dd5bbedc77df",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0022",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Faro 0022 (PX-0022): para una reunión remota de lanzamiento, revisar las fechas de lanzamiento para lanzamiento (remota).",
+    "summary": "Proyecto Faro 0022 (PX-0022): para una reunión remota de lanzamiento, revisar las fechas de lanzamiento para lanzamiento (remota).",
+    "conditions": "Solo para reuniones remotas de lanzamiento",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0022/4@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_05ae72628945ccff82be",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0022",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Faro 0022 (PX-0022): para una reunión presencial de lanzamiento, revisar las fechas de lanzamiento para lanzamiento (presencial).",
+    "summary": "Proyecto Faro 0022 (PX-0022): para una reunión presencial de lanzamiento, revisar las fechas de lanzamiento para lanzamiento (presencial).",
+    "conditions": "Solo para reuniones presenciales de lanzamiento",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0022/4@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_8484c5f6e36ffa71a179",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0022",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Faro 0022 (PX-0022): para una reunión remota de entrega, verificar los entregables pendientes para entrega (remota).",
+    "summary": "Proyecto Faro 0022 (PX-0022): para una reunión remota de entrega, verificar los entregables pendientes para entrega (remota).",
+    "conditions": "Solo para reuniones remotas de entrega",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0022/5@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_b64b90aac5cca05850c6",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0022",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Faro 0022 (PX-0022): para una reunión presencial de entrega, verificar los entregables pendientes para entrega (presencial).",
+    "summary": "Proyecto Faro 0022 (PX-0022): para una reunión presencial de entrega, verificar los entregables pendientes para entrega (presencial).",
+    "conditions": "Solo para reuniones presenciales de entrega",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0022/5@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_e8be0df7ae1e8e178149",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0022",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Faro 0022 (PX-0022): para una reunión remota de demostración, preparar el recorrido de demostración para demostración (remota).",
+    "summary": "Proyecto Faro 0022 (PX-0022): para una reunión remota de demostración, preparar el recorrido de demostración para demostración (remota).",
+    "conditions": "Solo para reuniones remotas de demostración",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0022/6@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_52ba47acd266a79dcbc6",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0022",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Faro 0022 (PX-0022): para una reunión presencial de demostración, preparar el recorrido de demostración para demostración (presencial).",
+    "summary": "Proyecto Faro 0022 (PX-0022): para una reunión presencial de demostración, preparar el recorrido de demostración para demostración (presencial).",
+    "conditions": "Solo para reuniones presenciales de demostración",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0022/6@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_38d7cdad3bc6a404f2d2",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0022",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Faro 0022 (PX-0022): para una reunión remota de seguridad, revisar los riesgos registrados para seguridad (remota).",
+    "summary": "Proyecto Faro 0022 (PX-0022): para una reunión remota de seguridad, revisar los riesgos registrados para seguridad (remota).",
+    "conditions": "Solo para reuniones remotas de seguridad",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0022/7@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_111bca1fb84c7798ec62",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0022",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Faro 0022 (PX-0022): para una reunión presencial de seguridad, revisar los riesgos registrados para seguridad (presencial).",
+    "summary": "Proyecto Faro 0022 (PX-0022): para una reunión presencial de seguridad, revisar los riesgos registrados para seguridad (presencial).",
+    "conditions": "Solo para reuniones presenciales de seguridad",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0022/7@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_00a7e0c8f76526d7755c",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0022",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Faro 0022 (PX-0022): para una reunión remota de formación, compartir los materiales de formación para formación (remota).",
+    "summary": "Proyecto Faro 0022 (PX-0022): para una reunión remota de formación, compartir los materiales de formación para formación (remota).",
+    "conditions": "Solo para reuniones remotas de formación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0022/8@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_4b1b13597d2a70e10ea3",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0022",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Faro 0022 (PX-0022): para una reunión presencial de formación, compartir los materiales de formación para formación (presencial).",
+    "summary": "Proyecto Faro 0022 (PX-0022): para una reunión presencial de formación, compartir los materiales de formación para formación (presencial).",
+    "conditions": "Solo para reuniones presenciales de formación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0022/8@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_bf5b6fc22d4851aaa618",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0022",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Faro 0022 (PX-0022): para una reunión remota de contratación, confirmar el perfil de la vacante para contratación (remota).",
+    "summary": "Proyecto Faro 0022 (PX-0022): para una reunión remota de contratación, confirmar el perfil de la vacante para contratación (remota).",
+    "conditions": "Solo para reuniones remotas de contratación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0022/9@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_c2a3e5d0ec70357a78e8",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0022",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Faro 0022 (PX-0022): para una reunión presencial de contratación, confirmar el perfil de la vacante para contratación (presencial).",
+    "summary": "Proyecto Faro 0022 (PX-0022): para una reunión presencial de contratación, confirmar el perfil de la vacante para contratación (presencial).",
+    "conditions": "Solo para reuniones presenciales de contratación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0022/9@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_1ab1f6ec44c7ce857f57",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0009",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "En Proyecto Alerce 0009 (PX-0009), solo para reuniones remotas: enviar lecturas previas al inicio.",
+    "summary": "Proyecto Alerce 0009 (PX-0009): si la reunión es remota, enviar lecturas previas al inicio.",
+    "conditions": "Solo para reuniones remotas",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-guide/0009@v2",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_8c2582f6f51a41e6f4b3",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0009",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "En Proyecto Alerce 0009 (PX-0009), solo para reuniones presenciales: abrir con decisiones pendientes.",
+    "summary": "Proyecto Alerce 0009 (PX-0009): si la reunión es presencial, abrir con decisiones pendientes.",
+    "conditions": "Solo para reuniones presenciales",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-guide/0009@v2",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_7e176ff7a8376200233f",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0009",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0009 (PX-0009): para una reunión remota de presupuesto, confirmar las cifras aprobadas para presupuesto (remota).",
+    "summary": "Proyecto Alerce 0009 (PX-0009): para una reunión remota de presupuesto, confirmar las cifras aprobadas para presupuesto (remota).",
+    "conditions": "Solo para reuniones remotas de presupuesto",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0009/1@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_d3ade91bf1e68bb07e81",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0009",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0009 (PX-0009): para una reunión presencial de presupuesto, confirmar las cifras aprobadas para presupuesto (presencial).",
+    "summary": "Proyecto Alerce 0009 (PX-0009): para una reunión presencial de presupuesto, confirmar las cifras aprobadas para presupuesto (presencial).",
+    "conditions": "Solo para reuniones presenciales de presupuesto",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0009/1@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_810c6f3ff1718b0f12fb",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0009",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0009 (PX-0009): para una reunión remota de incidentes, enumerar los incidentes abiertos para incidentes (remota).",
+    "summary": "Proyecto Alerce 0009 (PX-0009): para una reunión remota de incidentes, enumerar los incidentes abiertos para incidentes (remota).",
+    "conditions": "Solo para reuniones remotas de incidentes",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0009/2@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_f47514259652c3e16ce0",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0009",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0009 (PX-0009): para una reunión presencial de incidentes, enumerar los incidentes abiertos para incidentes (presencial).",
+    "summary": "Proyecto Alerce 0009 (PX-0009): para una reunión presencial de incidentes, enumerar los incidentes abiertos para incidentes (presencial).",
+    "conditions": "Solo para reuniones presenciales de incidentes",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0009/2@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_32808c7d697b8798bb9a",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0009",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0009 (PX-0009): para una reunión remota de incorporación, presentar a los responsables de bienvenida para incorporación (remota).",
+    "summary": "Proyecto Alerce 0009 (PX-0009): para una reunión remota de incorporación, presentar a los responsables de bienvenida para incorporación (remota).",
+    "conditions": "Solo para reuniones remotas de incorporación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0009/3@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_b28f9f1c203694678b8b",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0009",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0009 (PX-0009): para una reunión presencial de incorporación, presentar a los responsables de bienvenida para incorporación (presencial).",
+    "summary": "Proyecto Alerce 0009 (PX-0009): para una reunión presencial de incorporación, presentar a los responsables de bienvenida para incorporación (presencial).",
+    "conditions": "Solo para reuniones presenciales de incorporación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0009/3@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_b3380b94054e0ab3a9e2",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0009",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0009 (PX-0009): para una reunión remota de lanzamiento, revisar las fechas de lanzamiento para lanzamiento (remota).",
+    "summary": "Proyecto Alerce 0009 (PX-0009): para una reunión remota de lanzamiento, revisar las fechas de lanzamiento para lanzamiento (remota).",
+    "conditions": "Solo para reuniones remotas de lanzamiento",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0009/4@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_6723d60870bb23d5a740",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0009",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0009 (PX-0009): para una reunión presencial de lanzamiento, revisar las fechas de lanzamiento para lanzamiento (presencial).",
+    "summary": "Proyecto Alerce 0009 (PX-0009): para una reunión presencial de lanzamiento, revisar las fechas de lanzamiento para lanzamiento (presencial).",
+    "conditions": "Solo para reuniones presenciales de lanzamiento",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0009/4@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_c6beb7d4cfc303864f0a",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0009",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0009 (PX-0009): para una reunión remota de entrega, verificar los entregables pendientes para entrega (remota).",
+    "summary": "Proyecto Alerce 0009 (PX-0009): para una reunión remota de entrega, verificar los entregables pendientes para entrega (remota).",
+    "conditions": "Solo para reuniones remotas de entrega",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0009/5@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_3d047787685cc7e7086c",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0009",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0009 (PX-0009): para una reunión presencial de entrega, verificar los entregables pendientes para entrega (presencial).",
+    "summary": "Proyecto Alerce 0009 (PX-0009): para una reunión presencial de entrega, verificar los entregables pendientes para entrega (presencial).",
+    "conditions": "Solo para reuniones presenciales de entrega",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0009/5@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_d8c61b9ebac7be5baca1",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0009",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0009 (PX-0009): para una reunión remota de demostración, preparar el recorrido de demostración para demostración (remota).",
+    "summary": "Proyecto Alerce 0009 (PX-0009): para una reunión remota de demostración, preparar el recorrido de demostración para demostración (remota).",
+    "conditions": "Solo para reuniones remotas de demostración",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0009/6@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_004739128460e23a75c6",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0009",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0009 (PX-0009): para una reunión presencial de demostración, preparar el recorrido de demostración para demostración (presencial).",
+    "summary": "Proyecto Alerce 0009 (PX-0009): para una reunión presencial de demostración, preparar el recorrido de demostración para demostración (presencial).",
+    "conditions": "Solo para reuniones presenciales de demostración",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0009/6@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_ce170ddb0c6b10e0177c",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0009",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0009 (PX-0009): para una reunión remota de seguridad, revisar los riesgos registrados para seguridad (remota).",
+    "summary": "Proyecto Alerce 0009 (PX-0009): para una reunión remota de seguridad, revisar los riesgos registrados para seguridad (remota).",
+    "conditions": "Solo para reuniones remotas de seguridad",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0009/7@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_62ad56bb096b35eafaa2",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0009",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0009 (PX-0009): para una reunión presencial de seguridad, revisar los riesgos registrados para seguridad (presencial).",
+    "summary": "Proyecto Alerce 0009 (PX-0009): para una reunión presencial de seguridad, revisar los riesgos registrados para seguridad (presencial).",
+    "conditions": "Solo para reuniones presenciales de seguridad",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0009/7@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_fcd34bf0791926b29706",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0009",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0009 (PX-0009): para una reunión remota de formación, compartir los materiales de formación para formación (remota).",
+    "summary": "Proyecto Alerce 0009 (PX-0009): para una reunión remota de formación, compartir los materiales de formación para formación (remota).",
+    "conditions": "Solo para reuniones remotas de formación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0009/8@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_35b62dfc0819486a01de",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0009",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0009 (PX-0009): para una reunión presencial de formación, compartir los materiales de formación para formación (presencial).",
+    "summary": "Proyecto Alerce 0009 (PX-0009): para una reunión presencial de formación, compartir los materiales de formación para formación (presencial).",
+    "conditions": "Solo para reuniones presenciales de formación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0009/8@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_81d48bd1a6ae7bf6d632",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0009",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0009 (PX-0009): para una reunión remota de contratación, confirmar el perfil de la vacante para contratación (remota).",
+    "summary": "Proyecto Alerce 0009 (PX-0009): para una reunión remota de contratación, confirmar el perfil de la vacante para contratación (remota).",
+    "conditions": "Solo para reuniones remotas de contratación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0009/9@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_088fcf28026e17870ef8",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0009",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0009 (PX-0009): para una reunión presencial de contratación, confirmar el perfil de la vacante para contratación (presencial).",
+    "summary": "Proyecto Alerce 0009 (PX-0009): para una reunión presencial de contratación, confirmar el perfil de la vacante para contratación (presencial).",
+    "conditions": "Solo para reuniones presenciales de contratación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0009/9@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_95f63af2a1f37a839e93",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0041",
+    "revision": 2,
+    "memory_type": "procedure",
+    "original_text": "En Proyecto Alerce 0041 (PX-0041), solo para reuniones remotas: incluir una agenda de cuatro puntos.",
+    "summary": "Proyecto Alerce 0041 (PX-0041): si la reunión es remota, incluir una agenda de cuatro puntos.",
+    "conditions": "Solo para reuniones remotas",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-guide/0041@v2",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_1a0b5350a9eb2e3ff504",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0041",
+    "revision": 2,
+    "memory_type": "procedure",
+    "original_text": "En Proyecto Alerce 0041 (PX-0041), solo para reuniones presenciales: abrir con decisiones pendientes.",
+    "summary": "Proyecto Alerce 0041 (PX-0041): si la reunión es presencial, abrir con decisiones pendientes.",
+    "conditions": "Solo para reuniones presenciales",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-guide/0041@v2",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_f484e82dcbd1456a7a4f",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0041",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0041 (PX-0041): para una reunión remota de presupuesto, confirmar las cifras aprobadas para presupuesto (remota).",
+    "summary": "Proyecto Alerce 0041 (PX-0041): para una reunión remota de presupuesto, confirmar las cifras aprobadas para presupuesto (remota).",
+    "conditions": "Solo para reuniones remotas de presupuesto",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0041/1@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_936f10747b5d66d2ef3f",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0041",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0041 (PX-0041): para una reunión presencial de presupuesto, confirmar las cifras aprobadas para presupuesto (presencial).",
+    "summary": "Proyecto Alerce 0041 (PX-0041): para una reunión presencial de presupuesto, confirmar las cifras aprobadas para presupuesto (presencial).",
+    "conditions": "Solo para reuniones presenciales de presupuesto",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0041/1@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_de2d6df4cc9ebcb48809",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0041",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0041 (PX-0041): para una reunión remota de incidentes, enumerar los incidentes abiertos para incidentes (remota).",
+    "summary": "Proyecto Alerce 0041 (PX-0041): para una reunión remota de incidentes, enumerar los incidentes abiertos para incidentes (remota).",
+    "conditions": "Solo para reuniones remotas de incidentes",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0041/2@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_1e04b3ef5798544f604f",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0041",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0041 (PX-0041): para una reunión presencial de incidentes, enumerar los incidentes abiertos para incidentes (presencial).",
+    "summary": "Proyecto Alerce 0041 (PX-0041): para una reunión presencial de incidentes, enumerar los incidentes abiertos para incidentes (presencial).",
+    "conditions": "Solo para reuniones presenciales de incidentes",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0041/2@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_69b17748c29dcdace28b",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0041",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0041 (PX-0041): para una reunión remota de incorporación, presentar a los responsables de bienvenida para incorporación (remota).",
+    "summary": "Proyecto Alerce 0041 (PX-0041): para una reunión remota de incorporación, presentar a los responsables de bienvenida para incorporación (remota).",
+    "conditions": "Solo para reuniones remotas de incorporación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0041/3@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_7fdf351d2c0381b75fc5",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0041",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0041 (PX-0041): para una reunión presencial de incorporación, presentar a los responsables de bienvenida para incorporación (presencial).",
+    "summary": "Proyecto Alerce 0041 (PX-0041): para una reunión presencial de incorporación, presentar a los responsables de bienvenida para incorporación (presencial).",
+    "conditions": "Solo para reuniones presenciales de incorporación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0041/3@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_b76847e330825a28e186",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0041",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0041 (PX-0041): para una reunión remota de lanzamiento, revisar las fechas de lanzamiento para lanzamiento (remota).",
+    "summary": "Proyecto Alerce 0041 (PX-0041): para una reunión remota de lanzamiento, revisar las fechas de lanzamiento para lanzamiento (remota).",
+    "conditions": "Solo para reuniones remotas de lanzamiento",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0041/4@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_8751ebdd30c44f5e8141",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0041",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0041 (PX-0041): para una reunión presencial de lanzamiento, revisar las fechas de lanzamiento para lanzamiento (presencial).",
+    "summary": "Proyecto Alerce 0041 (PX-0041): para una reunión presencial de lanzamiento, revisar las fechas de lanzamiento para lanzamiento (presencial).",
+    "conditions": "Solo para reuniones presenciales de lanzamiento",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0041/4@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_1b7f0b03041f84e0914c",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0041",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0041 (PX-0041): para una reunión remota de entrega, verificar los entregables pendientes para entrega (remota).",
+    "summary": "Proyecto Alerce 0041 (PX-0041): para una reunión remota de entrega, verificar los entregables pendientes para entrega (remota).",
+    "conditions": "Solo para reuniones remotas de entrega",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0041/5@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_3f89922b48ef9cc9e8ba",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0041",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0041 (PX-0041): para una reunión presencial de entrega, verificar los entregables pendientes para entrega (presencial).",
+    "summary": "Proyecto Alerce 0041 (PX-0041): para una reunión presencial de entrega, verificar los entregables pendientes para entrega (presencial).",
+    "conditions": "Solo para reuniones presenciales de entrega",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0041/5@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_0cac84ef13805d6230f3",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0041",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0041 (PX-0041): para una reunión remota de demostración, preparar el recorrido de demostración para demostración (remota).",
+    "summary": "Proyecto Alerce 0041 (PX-0041): para una reunión remota de demostración, preparar el recorrido de demostración para demostración (remota).",
+    "conditions": "Solo para reuniones remotas de demostración",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0041/6@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_36375fc91c91585a8cee",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0041",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0041 (PX-0041): para una reunión presencial de demostración, preparar el recorrido de demostración para demostración (presencial).",
+    "summary": "Proyecto Alerce 0041 (PX-0041): para una reunión presencial de demostración, preparar el recorrido de demostración para demostración (presencial).",
+    "conditions": "Solo para reuniones presenciales de demostración",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0041/6@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_5876b4da766544f36c19",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0041",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0041 (PX-0041): para una reunión remota de seguridad, revisar los riesgos registrados para seguridad (remota).",
+    "summary": "Proyecto Alerce 0041 (PX-0041): para una reunión remota de seguridad, revisar los riesgos registrados para seguridad (remota).",
+    "conditions": "Solo para reuniones remotas de seguridad",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0041/7@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_bb757c48c60fb60577c3",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0041",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0041 (PX-0041): para una reunión presencial de seguridad, revisar los riesgos registrados para seguridad (presencial).",
+    "summary": "Proyecto Alerce 0041 (PX-0041): para una reunión presencial de seguridad, revisar los riesgos registrados para seguridad (presencial).",
+    "conditions": "Solo para reuniones presenciales de seguridad",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0041/7@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_728abda87cb9573dae5b",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0041",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0041 (PX-0041): para una reunión remota de formación, compartir los materiales de formación para formación (remota).",
+    "summary": "Proyecto Alerce 0041 (PX-0041): para una reunión remota de formación, compartir los materiales de formación para formación (remota).",
+    "conditions": "Solo para reuniones remotas de formación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0041/8@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_f52eeb60ace74a6ef8a9",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0041",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0041 (PX-0041): para una reunión presencial de formación, compartir los materiales de formación para formación (presencial).",
+    "summary": "Proyecto Alerce 0041 (PX-0041): para una reunión presencial de formación, compartir los materiales de formación para formación (presencial).",
+    "conditions": "Solo para reuniones presenciales de formación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0041/8@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_284870f1cd6048064459",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0041",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0041 (PX-0041): para una reunión remota de contratación, confirmar el perfil de la vacante para contratación (remota).",
+    "summary": "Proyecto Alerce 0041 (PX-0041): para una reunión remota de contratación, confirmar el perfil de la vacante para contratación (remota).",
+    "conditions": "Solo para reuniones remotas de contratación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0041/9@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_e2b590261b1d8bf8c90b",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0041",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Alerce 0041 (PX-0041): para una reunión presencial de contratación, confirmar el perfil de la vacante para contratación (presencial).",
+    "summary": "Proyecto Alerce 0041 (PX-0041): para una reunión presencial de contratación, confirmar el perfil de la vacante para contratación (presencial).",
+    "conditions": "Solo para reuniones presenciales de contratación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0041/9@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_3419f5c517b9847820ae",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0012",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "En Proyecto Duna 0012 (PX-0012), solo para reuniones remotas: reservar diez minutos para riesgos.",
+    "summary": "Proyecto Duna 0012 (PX-0012): si la reunión es remota, reservar diez minutos para riesgos.",
+    "conditions": "Solo para reuniones remotas",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-guide/0012@v2",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_90161ca881f1c281d137",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0012",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "En Proyecto Duna 0012 (PX-0012), solo para reuniones presenciales: empezar con un resumen del estado.",
+    "summary": "Proyecto Duna 0012 (PX-0012): si la reunión es presencial, empezar con un resumen del estado.",
+    "conditions": "Solo para reuniones presenciales",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-guide/0012@v2",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_a3f987cb7f164b9d4336",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0012",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Duna 0012 (PX-0012): para una reunión remota de presupuesto, confirmar las cifras aprobadas para presupuesto (remota).",
+    "summary": "Proyecto Duna 0012 (PX-0012): para una reunión remota de presupuesto, confirmar las cifras aprobadas para presupuesto (remota).",
+    "conditions": "Solo para reuniones remotas de presupuesto",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0012/1@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_fd6070c97914d3ee6b8e",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0012",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Duna 0012 (PX-0012): para una reunión presencial de presupuesto, confirmar las cifras aprobadas para presupuesto (presencial).",
+    "summary": "Proyecto Duna 0012 (PX-0012): para una reunión presencial de presupuesto, confirmar las cifras aprobadas para presupuesto (presencial).",
+    "conditions": "Solo para reuniones presenciales de presupuesto",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0012/1@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_d21c7ffd2f09a6ccd39d",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0012",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Duna 0012 (PX-0012): para una reunión remota de incidentes, enumerar los incidentes abiertos para incidentes (remota).",
+    "summary": "Proyecto Duna 0012 (PX-0012): para una reunión remota de incidentes, enumerar los incidentes abiertos para incidentes (remota).",
+    "conditions": "Solo para reuniones remotas de incidentes",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0012/2@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_7c4e22a88f53f379bcd1",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0012",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Duna 0012 (PX-0012): para una reunión presencial de incidentes, enumerar los incidentes abiertos para incidentes (presencial).",
+    "summary": "Proyecto Duna 0012 (PX-0012): para una reunión presencial de incidentes, enumerar los incidentes abiertos para incidentes (presencial).",
+    "conditions": "Solo para reuniones presenciales de incidentes",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0012/2@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_6f9ab82b4c81ee259f6d",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0012",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Duna 0012 (PX-0012): para una reunión remota de incorporación, presentar a los responsables de bienvenida para incorporación (remota).",
+    "summary": "Proyecto Duna 0012 (PX-0012): para una reunión remota de incorporación, presentar a los responsables de bienvenida para incorporación (remota).",
+    "conditions": "Solo para reuniones remotas de incorporación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0012/3@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_a8e63dc76444d942e07e",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0012",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Duna 0012 (PX-0012): para una reunión presencial de incorporación, presentar a los responsables de bienvenida para incorporación (presencial).",
+    "summary": "Proyecto Duna 0012 (PX-0012): para una reunión presencial de incorporación, presentar a los responsables de bienvenida para incorporación (presencial).",
+    "conditions": "Solo para reuniones presenciales de incorporación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0012/3@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_a11b176c2fff6758df64",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0012",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Duna 0012 (PX-0012): para una reunión remota de lanzamiento, revisar las fechas de lanzamiento para lanzamiento (remota).",
+    "summary": "Proyecto Duna 0012 (PX-0012): para una reunión remota de lanzamiento, revisar las fechas de lanzamiento para lanzamiento (remota).",
+    "conditions": "Solo para reuniones remotas de lanzamiento",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0012/4@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_862cb5e3aff65157fa3f",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0012",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Duna 0012 (PX-0012): para una reunión presencial de lanzamiento, revisar las fechas de lanzamiento para lanzamiento (presencial).",
+    "summary": "Proyecto Duna 0012 (PX-0012): para una reunión presencial de lanzamiento, revisar las fechas de lanzamiento para lanzamiento (presencial).",
+    "conditions": "Solo para reuniones presenciales de lanzamiento",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0012/4@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_0ed124e286aa1b56ad56",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0012",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Duna 0012 (PX-0012): para una reunión remota de entrega, verificar los entregables pendientes para entrega (remota).",
+    "summary": "Proyecto Duna 0012 (PX-0012): para una reunión remota de entrega, verificar los entregables pendientes para entrega (remota).",
+    "conditions": "Solo para reuniones remotas de entrega",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0012/5@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_be45b6de2b5c17417559",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0012",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Duna 0012 (PX-0012): para una reunión presencial de entrega, verificar los entregables pendientes para entrega (presencial).",
+    "summary": "Proyecto Duna 0012 (PX-0012): para una reunión presencial de entrega, verificar los entregables pendientes para entrega (presencial).",
+    "conditions": "Solo para reuniones presenciales de entrega",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0012/5@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_4aa8962da8fe0ce4c367",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0012",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Duna 0012 (PX-0012): para una reunión remota de demostración, preparar el recorrido de demostración para demostración (remota).",
+    "summary": "Proyecto Duna 0012 (PX-0012): para una reunión remota de demostración, preparar el recorrido de demostración para demostración (remota).",
+    "conditions": "Solo para reuniones remotas de demostración",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0012/6@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_d1a2a2c9900d1719e65c",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0012",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Duna 0012 (PX-0012): para una reunión presencial de demostración, preparar el recorrido de demostración para demostración (presencial).",
+    "summary": "Proyecto Duna 0012 (PX-0012): para una reunión presencial de demostración, preparar el recorrido de demostración para demostración (presencial).",
+    "conditions": "Solo para reuniones presenciales de demostración",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0012/6@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_55f9375a5baf659baa51",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0012",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Duna 0012 (PX-0012): para una reunión remota de seguridad, revisar los riesgos registrados para seguridad (remota).",
+    "summary": "Proyecto Duna 0012 (PX-0012): para una reunión remota de seguridad, revisar los riesgos registrados para seguridad (remota).",
+    "conditions": "Solo para reuniones remotas de seguridad",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0012/7@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_e48f88d69b1edc7dcdf2",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0012",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Duna 0012 (PX-0012): para una reunión presencial de seguridad, revisar los riesgos registrados para seguridad (presencial).",
+    "summary": "Proyecto Duna 0012 (PX-0012): para una reunión presencial de seguridad, revisar los riesgos registrados para seguridad (presencial).",
+    "conditions": "Solo para reuniones presenciales de seguridad",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0012/7@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_7093c3f41502ebaed098",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0012",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Duna 0012 (PX-0012): para una reunión remota de formación, compartir los materiales de formación para formación (remota).",
+    "summary": "Proyecto Duna 0012 (PX-0012): para una reunión remota de formación, compartir los materiales de formación para formación (remota).",
+    "conditions": "Solo para reuniones remotas de formación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0012/8@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_dff87ef86fe2fb1358ef",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0012",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Duna 0012 (PX-0012): para una reunión presencial de formación, compartir los materiales de formación para formación (presencial).",
+    "summary": "Proyecto Duna 0012 (PX-0012): para una reunión presencial de formación, compartir los materiales de formación para formación (presencial).",
+    "conditions": "Solo para reuniones presenciales de formación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0012/8@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_0b8c313434d7703523d9",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0012",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Duna 0012 (PX-0012): para una reunión remota de contratación, confirmar el perfil de la vacante para contratación (remota).",
+    "summary": "Proyecto Duna 0012 (PX-0012): para una reunión remota de contratación, confirmar el perfil de la vacante para contratación (remota).",
+    "conditions": "Solo para reuniones remotas de contratación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0012/9@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_5b0d5b5ba548b58eb3fd",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0012",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Duna 0012 (PX-0012): para una reunión presencial de contratación, confirmar el perfil de la vacante para contratación (presencial).",
+    "summary": "Proyecto Duna 0012 (PX-0012): para una reunión presencial de contratación, confirmar el perfil de la vacante para contratación (presencial).",
+    "conditions": "Solo para reuniones presenciales de contratación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0012/9@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_86b455f7a27d0e20e36f",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0045",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "En Proyecto Estuario 0045 (PX-0045), solo para reuniones remotas: empezar con un resumen del estado.",
+    "summary": "Proyecto Estuario 0045 (PX-0045): si la reunión es remota, empezar con un resumen del estado.",
+    "conditions": "Solo para reuniones remotas",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-guide/0045@v2",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_50a6fe6b9913d7ed145f",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0045",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "En Proyecto Estuario 0045 (PX-0045), solo para reuniones presenciales: incluir una agenda de cuatro puntos.",
+    "summary": "Proyecto Estuario 0045 (PX-0045): si la reunión es presencial, incluir una agenda de cuatro puntos.",
+    "conditions": "Solo para reuniones presenciales",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-guide/0045@v2",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_93c3e124b829699e30a0",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0045",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Estuario 0045 (PX-0045): para una reunión remota de presupuesto, confirmar las cifras aprobadas para presupuesto (remota).",
+    "summary": "Proyecto Estuario 0045 (PX-0045): para una reunión remota de presupuesto, confirmar las cifras aprobadas para presupuesto (remota).",
+    "conditions": "Solo para reuniones remotas de presupuesto",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0045/1@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_c6ccc2b12f7bd8265c5c",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0045",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Estuario 0045 (PX-0045): para una reunión presencial de presupuesto, confirmar las cifras aprobadas para presupuesto (presencial).",
+    "summary": "Proyecto Estuario 0045 (PX-0045): para una reunión presencial de presupuesto, confirmar las cifras aprobadas para presupuesto (presencial).",
+    "conditions": "Solo para reuniones presenciales de presupuesto",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0045/1@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_24c7d919f724f49bf72f",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0045",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Estuario 0045 (PX-0045): para una reunión remota de incidentes, enumerar los incidentes abiertos para incidentes (remota).",
+    "summary": "Proyecto Estuario 0045 (PX-0045): para una reunión remota de incidentes, enumerar los incidentes abiertos para incidentes (remota).",
+    "conditions": "Solo para reuniones remotas de incidentes",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0045/2@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_73139b637fbbbb983194",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0045",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Estuario 0045 (PX-0045): para una reunión presencial de incidentes, enumerar los incidentes abiertos para incidentes (presencial).",
+    "summary": "Proyecto Estuario 0045 (PX-0045): para una reunión presencial de incidentes, enumerar los incidentes abiertos para incidentes (presencial).",
+    "conditions": "Solo para reuniones presenciales de incidentes",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0045/2@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_f325ca7a11bb09a2bd2a",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0045",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Estuario 0045 (PX-0045): para una reunión remota de incorporación, presentar a los responsables de bienvenida para incorporación (remota).",
+    "summary": "Proyecto Estuario 0045 (PX-0045): para una reunión remota de incorporación, presentar a los responsables de bienvenida para incorporación (remota).",
+    "conditions": "Solo para reuniones remotas de incorporación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0045/3@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_fa514cbb3a60a51b449c",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0045",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Estuario 0045 (PX-0045): para una reunión presencial de incorporación, presentar a los responsables de bienvenida para incorporación (presencial).",
+    "summary": "Proyecto Estuario 0045 (PX-0045): para una reunión presencial de incorporación, presentar a los responsables de bienvenida para incorporación (presencial).",
+    "conditions": "Solo para reuniones presenciales de incorporación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0045/3@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_3ab350d92ead49bbdb4c",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0045",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Estuario 0045 (PX-0045): para una reunión remota de lanzamiento, revisar las fechas de lanzamiento para lanzamiento (remota).",
+    "summary": "Proyecto Estuario 0045 (PX-0045): para una reunión remota de lanzamiento, revisar las fechas de lanzamiento para lanzamiento (remota).",
+    "conditions": "Solo para reuniones remotas de lanzamiento",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0045/4@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_fa499a590b3ae63a8a24",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0045",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Estuario 0045 (PX-0045): para una reunión presencial de lanzamiento, revisar las fechas de lanzamiento para lanzamiento (presencial).",
+    "summary": "Proyecto Estuario 0045 (PX-0045): para una reunión presencial de lanzamiento, revisar las fechas de lanzamiento para lanzamiento (presencial).",
+    "conditions": "Solo para reuniones presenciales de lanzamiento",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0045/4@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_49efc51a8af29725ebbd",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0045",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Estuario 0045 (PX-0045): para una reunión remota de entrega, verificar los entregables pendientes para entrega (remota).",
+    "summary": "Proyecto Estuario 0045 (PX-0045): para una reunión remota de entrega, verificar los entregables pendientes para entrega (remota).",
+    "conditions": "Solo para reuniones remotas de entrega",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0045/5@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_e119cd2d26689cd1a609",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0045",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Estuario 0045 (PX-0045): para una reunión presencial de entrega, verificar los entregables pendientes para entrega (presencial).",
+    "summary": "Proyecto Estuario 0045 (PX-0045): para una reunión presencial de entrega, verificar los entregables pendientes para entrega (presencial).",
+    "conditions": "Solo para reuniones presenciales de entrega",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0045/5@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_5615ff525e520bbb9df2",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0045",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Estuario 0045 (PX-0045): para una reunión remota de demostración, preparar el recorrido de demostración para demostración (remota).",
+    "summary": "Proyecto Estuario 0045 (PX-0045): para una reunión remota de demostración, preparar el recorrido de demostración para demostración (remota).",
+    "conditions": "Solo para reuniones remotas de demostración",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0045/6@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_809cb11878b296e57010",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0045",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Estuario 0045 (PX-0045): para una reunión presencial de demostración, preparar el recorrido de demostración para demostración (presencial).",
+    "summary": "Proyecto Estuario 0045 (PX-0045): para una reunión presencial de demostración, preparar el recorrido de demostración para demostración (presencial).",
+    "conditions": "Solo para reuniones presenciales de demostración",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0045/6@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_161680679d0d5d6779f7",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0045",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Estuario 0045 (PX-0045): para una reunión remota de seguridad, revisar los riesgos registrados para seguridad (remota).",
+    "summary": "Proyecto Estuario 0045 (PX-0045): para una reunión remota de seguridad, revisar los riesgos registrados para seguridad (remota).",
+    "conditions": "Solo para reuniones remotas de seguridad",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0045/7@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_453a1b95d8f67e77c359",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0045",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Estuario 0045 (PX-0045): para una reunión presencial de seguridad, revisar los riesgos registrados para seguridad (presencial).",
+    "summary": "Proyecto Estuario 0045 (PX-0045): para una reunión presencial de seguridad, revisar los riesgos registrados para seguridad (presencial).",
+    "conditions": "Solo para reuniones presenciales de seguridad",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0045/7@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_f29cb187c98e3ce5dde1",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0045",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Estuario 0045 (PX-0045): para una reunión remota de formación, compartir los materiales de formación para formación (remota).",
+    "summary": "Proyecto Estuario 0045 (PX-0045): para una reunión remota de formación, compartir los materiales de formación para formación (remota).",
+    "conditions": "Solo para reuniones remotas de formación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0045/8@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_b0495b3aa3df708cce96",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0045",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Estuario 0045 (PX-0045): para una reunión presencial de formación, compartir los materiales de formación para formación (presencial).",
+    "summary": "Proyecto Estuario 0045 (PX-0045): para una reunión presencial de formación, compartir los materiales de formación para formación (presencial).",
+    "conditions": "Solo para reuniones presenciales de formación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0045/8@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_3e37b0c143cd55504513",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0045",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Estuario 0045 (PX-0045): para una reunión remota de contratación, confirmar el perfil de la vacante para contratación (remota).",
+    "summary": "Proyecto Estuario 0045 (PX-0045): para una reunión remota de contratación, confirmar el perfil de la vacante para contratación (remota).",
+    "conditions": "Solo para reuniones remotas de contratación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0045/9@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_9caf084707a15b9aa880",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0045",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Estuario 0045 (PX-0045): para una reunión presencial de contratación, confirmar el perfil de la vacante para contratación (presencial).",
+    "summary": "Proyecto Estuario 0045 (PX-0045): para una reunión presencial de contratación, confirmar el perfil de la vacante para contratación (presencial).",
+    "conditions": "Solo para reuniones presenciales de contratación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0045/9@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_917b2d0e484d4538cbb9",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0020",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "En Proyecto Duna 0020 (PX-0020), solo para reuniones remotas: incluir una agenda de cuatro puntos.",
+    "summary": "Proyecto Duna 0020 (PX-0020): si la reunión es remota, incluir una agenda de cuatro puntos.",
+    "conditions": "Solo para reuniones remotas",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-guide/0020@v2",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_0e4628ff72b41b6dbb87",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0020",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "En Proyecto Duna 0020 (PX-0020), solo para reuniones presenciales: empezar con un resumen del estado.",
+    "summary": "Proyecto Duna 0020 (PX-0020): si la reunión es presencial, empezar con un resumen del estado.",
+    "conditions": "Solo para reuniones presenciales",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-guide/0020@v2",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_815275919468e1a5abd8",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0020",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Duna 0020 (PX-0020): para una reunión remota de presupuesto, confirmar las cifras aprobadas para presupuesto (remota).",
+    "summary": "Proyecto Duna 0020 (PX-0020): para una reunión remota de presupuesto, confirmar las cifras aprobadas para presupuesto (remota).",
+    "conditions": "Solo para reuniones remotas de presupuesto",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0020/1@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_7d777af4caa00f8ee1dd",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0020",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Duna 0020 (PX-0020): para una reunión presencial de presupuesto, confirmar las cifras aprobadas para presupuesto (presencial).",
+    "summary": "Proyecto Duna 0020 (PX-0020): para una reunión presencial de presupuesto, confirmar las cifras aprobadas para presupuesto (presencial).",
+    "conditions": "Solo para reuniones presenciales de presupuesto",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0020/1@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_c33252651d5e7cf2028f",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0020",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Duna 0020 (PX-0020): para una reunión remota de incidentes, enumerar los incidentes abiertos para incidentes (remota).",
+    "summary": "Proyecto Duna 0020 (PX-0020): para una reunión remota de incidentes, enumerar los incidentes abiertos para incidentes (remota).",
+    "conditions": "Solo para reuniones remotas de incidentes",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0020/2@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_8db6d549c4929b65f10c",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0020",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Duna 0020 (PX-0020): para una reunión presencial de incidentes, enumerar los incidentes abiertos para incidentes (presencial).",
+    "summary": "Proyecto Duna 0020 (PX-0020): para una reunión presencial de incidentes, enumerar los incidentes abiertos para incidentes (presencial).",
+    "conditions": "Solo para reuniones presenciales de incidentes",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0020/2@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_bf1b778e8869e3810b2b",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0020",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Duna 0020 (PX-0020): para una reunión remota de incorporación, presentar a los responsables de bienvenida para incorporación (remota).",
+    "summary": "Proyecto Duna 0020 (PX-0020): para una reunión remota de incorporación, presentar a los responsables de bienvenida para incorporación (remota).",
+    "conditions": "Solo para reuniones remotas de incorporación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0020/3@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_337ee5da370efc221aa1",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0020",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Duna 0020 (PX-0020): para una reunión presencial de incorporación, presentar a los responsables de bienvenida para incorporación (presencial).",
+    "summary": "Proyecto Duna 0020 (PX-0020): para una reunión presencial de incorporación, presentar a los responsables de bienvenida para incorporación (presencial).",
+    "conditions": "Solo para reuniones presenciales de incorporación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0020/3@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_4cc39474cd5121bca839",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0020",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Duna 0020 (PX-0020): para una reunión remota de lanzamiento, revisar las fechas de lanzamiento para lanzamiento (remota).",
+    "summary": "Proyecto Duna 0020 (PX-0020): para una reunión remota de lanzamiento, revisar las fechas de lanzamiento para lanzamiento (remota).",
+    "conditions": "Solo para reuniones remotas de lanzamiento",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0020/4@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_a0c2b063c61336bead42",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0020",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Duna 0020 (PX-0020): para una reunión presencial de lanzamiento, revisar las fechas de lanzamiento para lanzamiento (presencial).",
+    "summary": "Proyecto Duna 0020 (PX-0020): para una reunión presencial de lanzamiento, revisar las fechas de lanzamiento para lanzamiento (presencial).",
+    "conditions": "Solo para reuniones presenciales de lanzamiento",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0020/4@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_59bc4098ce181cab5efc",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0020",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Duna 0020 (PX-0020): para una reunión remota de entrega, verificar los entregables pendientes para entrega (remota).",
+    "summary": "Proyecto Duna 0020 (PX-0020): para una reunión remota de entrega, verificar los entregables pendientes para entrega (remota).",
+    "conditions": "Solo para reuniones remotas de entrega",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0020/5@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_f5b2517302fa7ba052a7",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0020",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Duna 0020 (PX-0020): para una reunión presencial de entrega, verificar los entregables pendientes para entrega (presencial).",
+    "summary": "Proyecto Duna 0020 (PX-0020): para una reunión presencial de entrega, verificar los entregables pendientes para entrega (presencial).",
+    "conditions": "Solo para reuniones presenciales de entrega",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0020/5@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_2689ef794e1942c61025",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0020",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Duna 0020 (PX-0020): para una reunión remota de demostración, preparar el recorrido de demostración para demostración (remota).",
+    "summary": "Proyecto Duna 0020 (PX-0020): para una reunión remota de demostración, preparar el recorrido de demostración para demostración (remota).",
+    "conditions": "Solo para reuniones remotas de demostración",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0020/6@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_a18da9f0c301f753add8",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0020",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Duna 0020 (PX-0020): para una reunión presencial de demostración, preparar el recorrido de demostración para demostración (presencial).",
+    "summary": "Proyecto Duna 0020 (PX-0020): para una reunión presencial de demostración, preparar el recorrido de demostración para demostración (presencial).",
+    "conditions": "Solo para reuniones presenciales de demostración",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0020/6@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_cf3e3f6c628e8e3f4c0c",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0020",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Duna 0020 (PX-0020): para una reunión remota de seguridad, revisar los riesgos registrados para seguridad (remota).",
+    "summary": "Proyecto Duna 0020 (PX-0020): para una reunión remota de seguridad, revisar los riesgos registrados para seguridad (remota).",
+    "conditions": "Solo para reuniones remotas de seguridad",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0020/7@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_3cf556625f5b560e64a0",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0020",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Duna 0020 (PX-0020): para una reunión presencial de seguridad, revisar los riesgos registrados para seguridad (presencial).",
+    "summary": "Proyecto Duna 0020 (PX-0020): para una reunión presencial de seguridad, revisar los riesgos registrados para seguridad (presencial).",
+    "conditions": "Solo para reuniones presenciales de seguridad",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0020/7@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_2fd50fa1652e8b074b54",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0020",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Duna 0020 (PX-0020): para una reunión remota de formación, compartir los materiales de formación para formación (remota).",
+    "summary": "Proyecto Duna 0020 (PX-0020): para una reunión remota de formación, compartir los materiales de formación para formación (remota).",
+    "conditions": "Solo para reuniones remotas de formación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0020/8@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_d16db002e83d9bd12aaf",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0020",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Duna 0020 (PX-0020): para una reunión presencial de formación, compartir los materiales de formación para formación (presencial).",
+    "summary": "Proyecto Duna 0020 (PX-0020): para una reunión presencial de formación, compartir los materiales de formación para formación (presencial).",
+    "conditions": "Solo para reuniones presenciales de formación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0020/8@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_55260868487b1b2e835f",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0020",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Duna 0020 (PX-0020): para una reunión remota de contratación, confirmar el perfil de la vacante para contratación (remota).",
+    "summary": "Proyecto Duna 0020 (PX-0020): para una reunión remota de contratación, confirmar el perfil de la vacante para contratación (remota).",
+    "conditions": "Solo para reuniones remotas de contratación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0020/9@v1",
+      "locator": "remote"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "m_89e2b24fc5350e0f515f",
+    "scope_kind": "project",
+    "scope_id": "candidate_matrix_lab",
+    "entity_id": "project_0020",
+    "revision": 1,
+    "memory_type": "procedure",
+    "original_text": "Proyecto Duna 0020 (PX-0020): para una reunión presencial de contratación, confirmar el perfil de la vacante para contratación (presencial).",
+    "summary": "Proyecto Duna 0020 (PX-0020): para una reunión presencial de contratación, confirmar el perfil de la vacante para contratación (presencial).",
+    "conditions": "Solo para reuniones presenciales de contratación",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:meeting-task-guide/project_0020/9@v1",
+      "locator": "onsite"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  }
+]

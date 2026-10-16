@@ -1,0 +1,2314 @@
+{
+  "kind": "candidate_matrix_remote_summary",
+  "synthetic_only": true,
+  "split": "calibration",
+  "cells": 144,
+  "calls": 1658,
+  "reported_or_reserved_cost_usd": 0.09749138199999999,
+  "groups": {
+    "100/scoped/5/plain/typesafe/jev-1.13": {
+      "positive_exact": 3,
+      "positive_cases": 8,
+      "candidate_covered": 3,
+      "correct_when_covered": 3,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 546.7436250037281,
+        "p95": 1917.4848540060339
+      },
+      "input_tokens": 6683,
+      "output_tokens": 671,
+      "reported_cost_usd": 0.000280686
+    },
+    "100/scoped/5/plain/openai/gpt-6-luna-decisions": {
+      "positive_exact": 3,
+      "positive_cases": 8,
+      "candidate_covered": 3,
+      "correct_when_covered": 3,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 522.1527910034638,
+        "p95": 1198.145457994542
+      },
+      "input_tokens": 3744,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0003744
+    },
+    "100/scoped/5/conditional/typesafe/jev-1.13": {
+      "positive_exact": 3,
+      "positive_cases": 8,
+      "candidate_covered": 3,
+      "correct_when_covered": 3,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 523.566458010464,
+        "p95": 608.9603334985441
+      },
+      "input_tokens": 7454,
+      "output_tokens": 671,
+      "reported_cost_usd": 0.000313068
+    },
+    "100/scoped/5/conditional/openai/gpt-6-luna-decisions": {
+      "positive_exact": 1,
+      "positive_cases": 8,
+      "candidate_covered": 3,
+      "correct_when_covered": 1,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 521.481917006895,
+        "p95": 954.3110829981742
+      },
+      "input_tokens": 4486,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0004486
+    },
+    "100/scoped/5/structured/typesafe/jev-1.13": {
+      "positive_exact": 3,
+      "positive_cases": 8,
+      "candidate_covered": 3,
+      "correct_when_covered": 3,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 523.1873750017257,
+        "p95": 1400.4845205054153
+      },
+      "input_tokens": 7613,
+      "output_tokens": 671,
+      "reported_cost_usd": 0.000319746
+    },
+    "100/scoped/5/structured/openai/gpt-6-luna-decisions": {
+      "positive_exact": 1,
+      "positive_cases": 8,
+      "candidate_covered": 3,
+      "correct_when_covered": 1,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 521.762292002677,
+        "p95": 865.0407079985598
+      },
+      "input_tokens": 4645,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0004645
+    },
+    "100/scoped/10/plain/typesafe/jev-1.13": {
+      "positive_exact": 4,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 4,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 523.5071249917382,
+        "p95": 1312.0437705001677
+      },
+      "input_tokens": 9326,
+      "output_tokens": 1056,
+      "reported_cost_usd": 0.000391692
+    },
+    "100/scoped/10/plain/openai/gpt-6-luna-decisions": {
+      "positive_exact": 4,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 4,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 627.716374990996,
+        "p95": 943.3423334994586
+      },
+      "input_tokens": 5617,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0005617
+    },
+    "100/scoped/10/conditional/typesafe/jev-1.13": {
+      "positive_exact": 2,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 2,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 532.3926659912104,
+        "p95": 925.3946875032852
+      },
+      "input_tokens": 10803,
+      "output_tokens": 1056,
+      "reported_cost_usd": 0.000453726
+    },
+    "100/scoped/10/conditional/openai/gpt-6-luna-decisions": {
+      "positive_exact": 3,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 3,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 588.246875006007,
+        "p95": 730.6671875048778
+      },
+      "input_tokens": 7021,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0007021
+    },
+    "100/scoped/10/structured/typesafe/jev-1.13": {
+      "positive_exact": 3,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 3,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 529.1400000132853,
+        "p95": 855.7573334983317
+      },
+      "input_tokens": 11067,
+      "output_tokens": 1056,
+      "reported_cost_usd": 0.00046481399999999997
+    },
+    "100/scoped/10/structured/openai/gpt-6-luna-decisions": {
+      "positive_exact": 2,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 2,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 676.5973750007106,
+        "p95": 1013.0097080036649
+      },
+      "input_tokens": 7285,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0007285
+    },
+    "100/scoped/15/plain/typesafe/jev-1.13": {
+      "positive_exact": 5,
+      "positive_cases": 8,
+      "candidate_covered": 5,
+      "correct_when_covered": 5,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 519.4845419900957,
+        "p95": 721.1160410006414
+      },
+      "input_tokens": 12070,
+      "output_tokens": 1441,
+      "reported_cost_usd": 0.00050694
+    },
+    "100/scoped/15/plain/openai/gpt-6-luna-decisions": {
+      "positive_exact": 5,
+      "positive_cases": 8,
+      "candidate_covered": 5,
+      "correct_when_covered": 5,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 598.4155829937663,
+        "p95": 951.9134379952447
+      },
+      "input_tokens": 7568,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0007568
+    },
+    "100/scoped/15/conditional/typesafe/jev-1.13": {
+      "positive_exact": 5,
+      "positive_cases": 8,
+      "candidate_covered": 5,
+      "correct_when_covered": 5,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 555.3394579910673,
+        "p95": 1522.5434164967737
+      },
+      "input_tokens": 14278,
+      "output_tokens": 1441,
+      "reported_cost_usd": 0.000599676
+    },
+    "100/scoped/15/conditional/openai/gpt-6-luna-decisions": {
+      "positive_exact": 3,
+      "positive_cases": 8,
+      "candidate_covered": 5,
+      "correct_when_covered": 3,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 522.5562499981606,
+        "p95": 1626.751020507072
+      },
+      "input_tokens": 9649,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0009649
+    },
+    "100/scoped/15/structured/typesafe/jev-1.13": {
+      "positive_exact": 5,
+      "positive_cases": 8,
+      "candidate_covered": 5,
+      "correct_when_covered": 5,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 524.5582080096938,
+        "p95": 841.667625005357
+      },
+      "input_tokens": 14652,
+      "output_tokens": 1441,
+      "reported_cost_usd": 0.000615384
+    },
+    "100/scoped/15/structured/openai/gpt-6-luna-decisions": {
+      "positive_exact": 2,
+      "positive_cases": 8,
+      "candidate_covered": 5,
+      "correct_when_covered": 2,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 542.2525830072118,
+        "p95": 1033.3463540009689
+      },
+      "input_tokens": 10023,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0010023
+    },
+    "100/scoped/20/plain/typesafe/jev-1.13": {
+      "positive_exact": 8,
+      "positive_cases": 8,
+      "candidate_covered": 8,
+      "correct_when_covered": 8,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 523.4192499920027,
+        "p95": 1694.2452914954629
+      },
+      "input_tokens": 14756,
+      "output_tokens": 1826,
+      "reported_cost_usd": 0.000619752
+    },
+    "100/scoped/20/plain/openai/gpt-6-luna-decisions": {
+      "positive_exact": 8,
+      "positive_cases": 8,
+      "candidate_covered": 8,
+      "correct_when_covered": 8,
+      "negative_empty": 3,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 668.2173750014044,
+        "p95": 2400.5300420030835
+      },
+      "input_tokens": 9507,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0009507
+    },
+    "100/scoped/20/conditional/typesafe/jev-1.13": {
+      "positive_exact": 7,
+      "positive_cases": 8,
+      "candidate_covered": 8,
+      "correct_when_covered": 7,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 522.3106250050478,
+        "p95": 1313.3657715006848
+      },
+      "input_tokens": 17682,
+      "output_tokens": 1826,
+      "reported_cost_usd": 0.000742644
+    },
+    "100/scoped/20/conditional/openai/gpt-6-luna-decisions": {
+      "positive_exact": 7,
+      "positive_cases": 8,
+      "candidate_covered": 8,
+      "correct_when_covered": 7,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 560.8531249890802,
+        "p95": 1084.7228749989881
+      },
+      "input_tokens": 12257,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0012257
+    },
+    "100/scoped/20/structured/typesafe/jev-1.13": {
+      "positive_exact": 8,
+      "positive_cases": 8,
+      "candidate_covered": 8,
+      "correct_when_covered": 8,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 554.0075419994537,
+        "p95": 1370.2236880053533
+      },
+      "input_tokens": 18166,
+      "output_tokens": 1826,
+      "reported_cost_usd": 0.000762972
+    },
+    "100/scoped/20/structured/openai/gpt-6-luna-decisions": {
+      "positive_exact": 5,
+      "positive_cases": 8,
+      "candidate_covered": 8,
+      "correct_when_covered": 5,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 660.7246250059688,
+        "p95": 1918.9969794970239
+      },
+      "input_tokens": 12741,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0012741
+    },
+    "100/unscoped/5/plain/typesafe/jev-1.13": {
+      "positive_exact": 2,
+      "positive_cases": 8,
+      "candidate_covered": 2,
+      "correct_when_covered": 2,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 497.69014599587535,
+        "p95": 553.6661246995209
+      },
+      "input_tokens": 7184,
+      "output_tokens": 732,
+      "reported_cost_usd": 0.000301728
+    },
+    "100/unscoped/5/plain/openai/gpt-6-luna-decisions": {
+      "positive_exact": 2,
+      "positive_cases": 8,
+      "candidate_covered": 2,
+      "correct_when_covered": 2,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 496.3229165005032,
+        "p95": 1522.2890789504152
+      },
+      "input_tokens": 4003,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.00040029999999999997
+    },
+    "100/unscoped/5/conditional/typesafe/jev-1.13": {
+      "positive_exact": 2,
+      "positive_cases": 8,
+      "candidate_covered": 2,
+      "correct_when_covered": 2,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 477.1599375017104,
+        "p95": 552.5629329953516
+      },
+      "input_tokens": 8000,
+      "output_tokens": 732,
+      "reported_cost_usd": 0.000336
+    },
+    "100/unscoped/5/conditional/openai/gpt-6-luna-decisions": {
+      "positive_exact": 1,
+      "positive_cases": 8,
+      "candidate_covered": 2,
+      "correct_when_covered": 1,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 500.25068749528145,
+        "p95": 763.7377874954835
+      },
+      "input_tokens": 4788,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0004788
+    },
+    "100/unscoped/5/structured/typesafe/jev-1.13": {
+      "positive_exact": 2,
+      "positive_cases": 8,
+      "candidate_covered": 2,
+      "correct_when_covered": 2,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 491.4477295023971,
+        "p95": 622.8712858959624
+      },
+      "input_tokens": 8163,
+      "output_tokens": 732,
+      "reported_cost_usd": 0.000342846
+    },
+    "100/unscoped/5/structured/openai/gpt-6-luna-decisions": {
+      "positive_exact": 1,
+      "positive_cases": 8,
+      "candidate_covered": 2,
+      "correct_when_covered": 1,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 494.88764599664137,
+        "p95": 986.7906786523231
+      },
+      "input_tokens": 4951,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0004951
+    },
+    "100/unscoped/10/plain/typesafe/jev-1.13": {
+      "positive_exact": 4,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 4,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 464.1213539944147,
+        "p95": 523.1718349074072
+      },
+      "input_tokens": 9961,
+      "output_tokens": 1152,
+      "reported_cost_usd": 0.000418362
+    },
+    "100/unscoped/10/plain/openai/gpt-6-luna-decisions": {
+      "positive_exact": 4,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 4,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 510.9525629959535,
+        "p95": 669.790512205509
+      },
+      "input_tokens": 5991,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0005991
+    },
+    "100/unscoped/10/conditional/typesafe/jev-1.13": {
+      "positive_exact": 2,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 2,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 472.63564549939474,
+        "p95": 516.7016850464279
+      },
+      "input_tokens": 11505,
+      "output_tokens": 1152,
+      "reported_cost_usd": 0.00048321000000000003
+    },
+    "100/unscoped/10/conditional/openai/gpt-6-luna-decisions": {
+      "positive_exact": 2,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 2,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 575.4974369992851,
+        "p95": 756.1249062579008
+      },
+      "input_tokens": 7467,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0007467
+    },
+    "100/unscoped/10/structured/typesafe/jev-1.13": {
+      "positive_exact": 3,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 3,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 483.78235400741687,
+        "p95": 517.415419047029
+      },
+      "input_tokens": 11769,
+      "output_tokens": 1152,
+      "reported_cost_usd": 0.000494298
+    },
+    "100/unscoped/10/structured/openai/gpt-6-luna-decisions": {
+      "positive_exact": 1,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 1,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 517.7743539970834,
+        "p95": 740.3632347552046
+      },
+      "input_tokens": 7731,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0007731
+    },
+    "100/unscoped/15/plain/typesafe/jev-1.13": {
+      "positive_exact": 4,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 4,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 475.4468125029234,
+        "p95": 523.4976689003815
+      },
+      "input_tokens": 12733,
+      "output_tokens": 1572,
+      "reported_cost_usd": 0.000534786
+    },
+    "100/unscoped/15/plain/openai/gpt-6-luna-decisions": {
+      "positive_exact": 4,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 4,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 513.6852495052153,
+        "p95": 671.7796645527415
+      },
+      "input_tokens": 7991,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0007991
+    },
+    "100/unscoped/15/conditional/typesafe/jev-1.13": {
+      "positive_exact": 4,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 4,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 476.621604495449,
+        "p95": 504.5153856073739
+      },
+      "input_tokens": 15015,
+      "output_tokens": 1572,
+      "reported_cost_usd": 0.00063063
+    },
+    "100/unscoped/15/conditional/openai/gpt-6-luna-decisions": {
+      "positive_exact": 2,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 2,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 518.5808745009126,
+        "p95": 783.1052959452788
+      },
+      "input_tokens": 10165,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0010165
+    },
+    "100/unscoped/15/structured/typesafe/jev-1.13": {
+      "positive_exact": 4,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 4,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 474.9734999932116,
+        "p95": 513.6178854445461
+      },
+      "input_tokens": 15387,
+      "output_tokens": 1572,
+      "reported_cost_usd": 0.000646254
+    },
+    "100/unscoped/15/structured/openai/gpt-6-luna-decisions": {
+      "positive_exact": 2,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 2,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 484.78110400174046,
+        "p95": 1472.8572335516217
+      },
+      "input_tokens": 10537,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0010537
+    },
+    "100/unscoped/20/plain/typesafe/jev-1.13": {
+      "positive_exact": 4,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 4,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 504.3936250003753,
+        "p95": 557.2530774537881
+      },
+      "input_tokens": 15581,
+      "output_tokens": 1992,
+      "reported_cost_usd": 0.000654402
+    },
+    "100/unscoped/20/plain/openai/gpt-6-luna-decisions": {
+      "positive_exact": 4,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 4,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 504.25904151052237,
+        "p95": 675.148339549196
+      },
+      "input_tokens": 10026,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0010026
+    },
+    "100/unscoped/20/conditional/typesafe/jev-1.13": {
+      "positive_exact": 3,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 3,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 530.6704169997829,
+        "p95": 809.2035104527894
+      },
+      "input_tokens": 18626,
+      "output_tokens": 1992,
+      "reported_cost_usd": 0.000782292
+    },
+    "100/unscoped/20/conditional/openai/gpt-6-luna-decisions": {
+      "positive_exact": 3,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 3,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 636.6860420021112,
+        "p95": 1028.168816857942
+      },
+      "input_tokens": 12919,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0012919
+    },
+    "100/unscoped/20/structured/typesafe/jev-1.13": {
+      "positive_exact": 4,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 4,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 509.0068124991376,
+        "p95": 612.278814396268
+      },
+      "input_tokens": 19113,
+      "output_tokens": 1992,
+      "reported_cost_usd": 0.000802746
+    },
+    "100/unscoped/20/structured/openai/gpt-6-luna-decisions": {
+      "positive_exact": 2,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 2,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 723.8316044895328,
+        "p95": 2962.839322806392
+      },
+      "input_tokens": 13406,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0013406
+    },
+    "200/scoped/5/plain/typesafe/jev-1.13": {
+      "positive_exact": 3,
+      "positive_cases": 8,
+      "candidate_covered": 3,
+      "correct_when_covered": 3,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 461.99658399564214,
+        "p95": 574.446562488447
+      },
+      "input_tokens": 6683,
+      "output_tokens": 671,
+      "reported_cost_usd": 0.000280686
+    },
+    "200/scoped/5/plain/openai/gpt-6-luna-decisions": {
+      "positive_exact": 3,
+      "positive_cases": 8,
+      "candidate_covered": 3,
+      "correct_when_covered": 3,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 513.4490839991486,
+        "p95": 992.4858130034409
+      },
+      "input_tokens": 3744,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0003744
+    },
+    "200/scoped/5/conditional/typesafe/jev-1.13": {
+      "positive_exact": 2,
+      "positive_cases": 8,
+      "candidate_covered": 3,
+      "correct_when_covered": 2,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 475.72720899188425,
+        "p95": 494.879416495678
+      },
+      "input_tokens": 7454,
+      "output_tokens": 671,
+      "reported_cost_usd": 0.000313068
+    },
+    "200/scoped/5/conditional/openai/gpt-6-luna-decisions": {
+      "positive_exact": 1,
+      "positive_cases": 8,
+      "candidate_covered": 3,
+      "correct_when_covered": 1,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 636.2261670001317,
+        "p95": 1073.0753539974103
+      },
+      "input_tokens": 4486,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0004486
+    },
+    "200/scoped/5/structured/typesafe/jev-1.13": {
+      "positive_exact": 3,
+      "positive_cases": 8,
+      "candidate_covered": 3,
+      "correct_when_covered": 3,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 482.9557500052033,
+        "p95": 605.6083954972564
+      },
+      "input_tokens": 7613,
+      "output_tokens": 671,
+      "reported_cost_usd": 0.000319746
+    },
+    "200/scoped/5/structured/openai/gpt-6-luna-decisions": {
+      "positive_exact": 1,
+      "positive_cases": 8,
+      "candidate_covered": 3,
+      "correct_when_covered": 1,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 538.9302499970654,
+        "p95": 1009.6784790002857
+      },
+      "input_tokens": 4645,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0004645
+    },
+    "200/scoped/10/plain/typesafe/jev-1.13": {
+      "positive_exact": 4,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 4,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 476.9348339905264,
+        "p95": 499.39652100147214
+      },
+      "input_tokens": 9326,
+      "output_tokens": 1056,
+      "reported_cost_usd": 0.000391692
+    },
+    "200/scoped/10/plain/openai/gpt-6-luna-decisions": {
+      "positive_exact": 4,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 4,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 495.0010000029579,
+        "p95": 552.1285834984155
+      },
+      "input_tokens": 5617,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0005617
+    },
+    "200/scoped/10/conditional/typesafe/jev-1.13": {
+      "positive_exact": 2,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 2,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 474.4602080027107,
+        "p95": 534.1893125005299
+      },
+      "input_tokens": 10803,
+      "output_tokens": 1056,
+      "reported_cost_usd": 0.000453726
+    },
+    "200/scoped/10/conditional/openai/gpt-6-luna-decisions": {
+      "positive_exact": 2,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 2,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 534.7495000023628,
+        "p95": 1130.039604002377
+      },
+      "input_tokens": 7021,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0007021
+    },
+    "200/scoped/10/structured/typesafe/jev-1.13": {
+      "positive_exact": 4,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 4,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 484.767792004277,
+        "p95": 520.3373130061664
+      },
+      "input_tokens": 11067,
+      "output_tokens": 1056,
+      "reported_cost_usd": 0.00046481399999999997
+    },
+    "200/scoped/10/structured/openai/gpt-6-luna-decisions": {
+      "positive_exact": 2,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 2,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 534.9946669884957,
+        "p95": 1330.1474374966347
+      },
+      "input_tokens": 7285,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0007285
+    },
+    "200/scoped/15/plain/typesafe/jev-1.13": {
+      "positive_exact": 5,
+      "positive_cases": 8,
+      "candidate_covered": 5,
+      "correct_when_covered": 5,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 486.2548329983838,
+        "p95": 658.2933954996406
+      },
+      "input_tokens": 12070,
+      "output_tokens": 1441,
+      "reported_cost_usd": 0.00050694
+    },
+    "200/scoped/15/plain/openai/gpt-6-luna-decisions": {
+      "positive_exact": 5,
+      "positive_cases": 8,
+      "candidate_covered": 5,
+      "correct_when_covered": 5,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 519.318167003803,
+        "p95": 1439.5016044945805
+      },
+      "input_tokens": 7568,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0007568
+    },
+    "200/scoped/15/conditional/typesafe/jev-1.13": {
+      "positive_exact": 5,
+      "positive_cases": 8,
+      "candidate_covered": 5,
+      "correct_when_covered": 5,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 483.38037500798237,
+        "p95": 531.5385834983317
+      },
+      "input_tokens": 14278,
+      "output_tokens": 1441,
+      "reported_cost_usd": 0.000599676
+    },
+    "200/scoped/15/conditional/openai/gpt-6-luna-decisions": {
+      "positive_exact": 2,
+      "positive_cases": 8,
+      "candidate_covered": 5,
+      "correct_when_covered": 2,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 495.4139170004055,
+        "p95": 605.253249501402
+      },
+      "input_tokens": 9649,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0009649
+    },
+    "200/scoped/15/structured/typesafe/jev-1.13": {
+      "positive_exact": 5,
+      "positive_cases": 8,
+      "candidate_covered": 5,
+      "correct_when_covered": 5,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 482.9035419970751,
+        "p95": 522.7829170034966
+      },
+      "input_tokens": 14652,
+      "output_tokens": 1441,
+      "reported_cost_usd": 0.000615384
+    },
+    "200/scoped/15/structured/openai/gpt-6-luna-decisions": {
+      "positive_exact": 2,
+      "positive_cases": 8,
+      "candidate_covered": 5,
+      "correct_when_covered": 2,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 495.90966700634453,
+        "p95": 885.0929375039414
+      },
+      "input_tokens": 10023,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0010023
+    },
+    "200/scoped/20/plain/typesafe/jev-1.13": {
+      "positive_exact": 8,
+      "positive_cases": 8,
+      "candidate_covered": 8,
+      "correct_when_covered": 8,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 474.28254199621733,
+        "p95": 518.7720419999096
+      },
+      "input_tokens": 14756,
+      "output_tokens": 1826,
+      "reported_cost_usd": 0.000619752
+    },
+    "200/scoped/20/plain/openai/gpt-6-luna-decisions": {
+      "positive_exact": 8,
+      "positive_cases": 8,
+      "candidate_covered": 8,
+      "correct_when_covered": 8,
+      "negative_empty": 3,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 628.1363339949166,
+        "p95": 1260.5154379998567
+      },
+      "input_tokens": 9507,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0009507
+    },
+    "200/scoped/20/conditional/typesafe/jev-1.13": {
+      "positive_exact": 7,
+      "positive_cases": 8,
+      "candidate_covered": 8,
+      "correct_when_covered": 7,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 471.45304099831264,
+        "p95": 530.6850209963159
+      },
+      "input_tokens": 17682,
+      "output_tokens": 1826,
+      "reported_cost_usd": 0.000742644
+    },
+    "200/scoped/20/conditional/openai/gpt-6-luna-decisions": {
+      "positive_exact": 5,
+      "positive_cases": 8,
+      "candidate_covered": 8,
+      "correct_when_covered": 5,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 541.5111250040354,
+        "p95": 666.637479000201
+      },
+      "input_tokens": 12257,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0012257
+    },
+    "200/scoped/20/structured/typesafe/jev-1.13": {
+      "positive_exact": 8,
+      "positive_cases": 8,
+      "candidate_covered": 8,
+      "correct_when_covered": 8,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 470.66691699728835,
+        "p95": 523.0989580013556
+      },
+      "input_tokens": 18166,
+      "output_tokens": 1826,
+      "reported_cost_usd": 0.000762972
+    },
+    "200/scoped/20/structured/openai/gpt-6-luna-decisions": {
+      "positive_exact": 5,
+      "positive_cases": 8,
+      "candidate_covered": 8,
+      "correct_when_covered": 5,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 496.0469590005232,
+        "p95": 690.2376875077607
+      },
+      "input_tokens": 12741,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0012741
+    },
+    "200/unscoped/5/plain/typesafe/jev-1.13": {
+      "positive_exact": 2,
+      "positive_cases": 8,
+      "candidate_covered": 3,
+      "correct_when_covered": 2,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 481.9339375026175,
+        "p95": 643.7419168512861
+      },
+      "input_tokens": 7134,
+      "output_tokens": 732,
+      "reported_cost_usd": 0.000299628
+    },
+    "200/unscoped/5/plain/openai/gpt-6-luna-decisions": {
+      "positive_exact": 3,
+      "positive_cases": 8,
+      "candidate_covered": 3,
+      "correct_when_covered": 3,
+      "negative_empty": 3,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 493.1855414979509,
+        "p95": 734.5421750025706
+      },
+      "input_tokens": 3969,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0003969
+    },
+    "200/unscoped/5/conditional/typesafe/jev-1.13": {
+      "positive_exact": 2,
+      "positive_cases": 8,
+      "candidate_covered": 3,
+      "correct_when_covered": 2,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 484.4177505001426,
+        "p95": 572.2967186011374
+      },
+      "input_tokens": 7926,
+      "output_tokens": 732,
+      "reported_cost_usd": 0.000332892
+    },
+    "200/unscoped/5/conditional/openai/gpt-6-luna-decisions": {
+      "positive_exact": 1,
+      "positive_cases": 8,
+      "candidate_covered": 3,
+      "correct_when_covered": 1,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 496.7713334990549,
+        "p95": 1679.5725479489179
+      },
+      "input_tokens": 4734,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0004734
+    },
+    "200/unscoped/5/structured/typesafe/jev-1.13": {
+      "positive_exact": 2,
+      "positive_cases": 8,
+      "candidate_covered": 3,
+      "correct_when_covered": 2,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 483.65377099980833,
+        "p95": 504.75459619774483
+      },
+      "input_tokens": 8080,
+      "output_tokens": 732,
+      "reported_cost_usd": 0.00033936000000000003
+    },
+    "200/unscoped/5/structured/openai/gpt-6-luna-decisions": {
+      "positive_exact": 2,
+      "positive_cases": 8,
+      "candidate_covered": 3,
+      "correct_when_covered": 2,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 499.1153124938137,
+        "p95": 1043.8997580029536
+      },
+      "input_tokens": 4888,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0004888
+    },
+    "200/unscoped/10/plain/typesafe/jev-1.13": {
+      "positive_exact": 3,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 3,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 485.81097949499963,
+        "p95": 524.8266142531065
+      },
+      "input_tokens": 9877,
+      "output_tokens": 1152,
+      "reported_cost_usd": 0.000414834
+    },
+    "200/unscoped/10/plain/openai/gpt-6-luna-decisions": {
+      "positive_exact": 4,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 4,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 572.4912499936181,
+        "p95": 889.0736541106886
+      },
+      "input_tokens": 5918,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0005918
+    },
+    "200/unscoped/10/conditional/typesafe/jev-1.13": {
+      "positive_exact": 2,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 2,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 475.23972899944056,
+        "p95": 509.2194374963583
+      },
+      "input_tokens": 11388,
+      "output_tokens": 1152,
+      "reported_cost_usd": 0.000478296
+    },
+    "200/unscoped/10/conditional/openai/gpt-6-luna-decisions": {
+      "positive_exact": 1,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 1,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 468.17527099483414,
+        "p95": 592.2407746955287
+      },
+      "input_tokens": 7361,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0007361
+    },
+    "200/unscoped/10/structured/typesafe/jev-1.13": {
+      "positive_exact": 3,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 3,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 484.6795205012313,
+        "p95": 522.132679502829
+      },
+      "input_tokens": 11636,
+      "output_tokens": 1152,
+      "reported_cost_usd": 0.000488712
+    },
+    "200/unscoped/10/structured/openai/gpt-6-luna-decisions": {
+      "positive_exact": 4,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 4,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 497.9135414978373,
+        "p95": 831.6064435981389
+      },
+      "input_tokens": 7609,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0007609
+    },
+    "200/unscoped/15/plain/typesafe/jev-1.13": {
+      "positive_exact": 3,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 3,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 509.30043799598934,
+        "p95": 565.4737874989223
+      },
+      "input_tokens": 12638,
+      "output_tokens": 1572,
+      "reported_cost_usd": 0.000530796
+    },
+    "200/unscoped/15/plain/openai/gpt-6-luna-decisions": {
+      "positive_exact": 4,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 4,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 507.15897949703503,
+        "p95": 563.1541857517732
+      },
+      "input_tokens": 7915,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0007915
+    },
+    "200/unscoped/15/conditional/typesafe/jev-1.13": {
+      "positive_exact": 3,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 3,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 502.9311870021047,
+        "p95": 573.8998295033525
+      },
+      "input_tokens": 14878,
+      "output_tokens": 1572,
+      "reported_cost_usd": 0.000624876
+    },
+    "200/unscoped/15/conditional/openai/gpt-6-luna-decisions": {
+      "positive_exact": 2,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 2,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 498.900604499795,
+        "p95": 620.7889293538756
+      },
+      "input_tokens": 10052,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0010052
+    },
+    "200/unscoped/15/structured/typesafe/jev-1.13": {
+      "positive_exact": 3,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 3,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 489.68593750032596,
+        "p95": 547.3425314034102
+      },
+      "input_tokens": 15232,
+      "output_tokens": 1572,
+      "reported_cost_usd": 0.000639744
+    },
+    "200/unscoped/15/structured/openai/gpt-6-luna-decisions": {
+      "positive_exact": 3,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 3,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 544.613666497753,
+        "p95": 730.5051648028893
+      },
+      "input_tokens": 10406,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0010406
+    },
+    "200/unscoped/20/plain/typesafe/jev-1.13": {
+      "positive_exact": 3,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 3,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 529.2937289996189,
+        "p95": 702.9278268993949
+      },
+      "input_tokens": 15448,
+      "output_tokens": 1992,
+      "reported_cost_usd": 0.000648816
+    },
+    "200/unscoped/20/plain/openai/gpt-6-luna-decisions": {
+      "positive_exact": 4,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 4,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 515.6367914969451,
+        "p95": 1227.7142205020937
+      },
+      "input_tokens": 9923,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0009923
+    },
+    "200/unscoped/20/conditional/typesafe/jev-1.13": {
+      "positive_exact": 3,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 3,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 506.0702085029334,
+        "p95": 547.4383749984554
+      },
+      "input_tokens": 18423,
+      "output_tokens": 1992,
+      "reported_cost_usd": 0.0007737660000000001
+    },
+    "200/unscoped/20/conditional/openai/gpt-6-luna-decisions": {
+      "positive_exact": 2,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 2,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 535.3470415066113,
+        "p95": 930.7647434448879
+      },
+      "input_tokens": 12759,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0012759
+    },
+    "200/unscoped/20/structured/typesafe/jev-1.13": {
+      "positive_exact": 4,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 4,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 493.0078334946302,
+        "p95": 508.2334251485008
+      },
+      "input_tokens": 18882,
+      "output_tokens": 1992,
+      "reported_cost_usd": 0.000793044
+    },
+    "200/unscoped/20/structured/openai/gpt-6-luna-decisions": {
+      "positive_exact": 2,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 2,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 542.346604001068,
+        "p95": 697.9669773034402
+      },
+      "input_tokens": 13218,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0013218
+    },
+    "2000/scoped/5/plain/typesafe/jev-1.13": {
+      "positive_exact": 3,
+      "positive_cases": 8,
+      "candidate_covered": 3,
+      "correct_when_covered": 3,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 466.0452909884043,
+        "p95": 554.1653125037556
+      },
+      "input_tokens": 6683,
+      "output_tokens": 671,
+      "reported_cost_usd": 0.000280686
+    },
+    "2000/scoped/5/plain/openai/gpt-6-luna-decisions": {
+      "positive_exact": 3,
+      "positive_cases": 8,
+      "candidate_covered": 3,
+      "correct_when_covered": 3,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 645.746791997226,
+        "p95": 956.4264380023815
+      },
+      "input_tokens": 3744,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0003744
+    },
+    "2000/scoped/5/conditional/typesafe/jev-1.13": {
+      "positive_exact": 2,
+      "positive_cases": 8,
+      "candidate_covered": 3,
+      "correct_when_covered": 2,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 473.43450000334997,
+        "p95": 503.6681459969259
+      },
+      "input_tokens": 7454,
+      "output_tokens": 671,
+      "reported_cost_usd": 0.000313068
+    },
+    "2000/scoped/5/conditional/openai/gpt-6-luna-decisions": {
+      "positive_exact": 1,
+      "positive_cases": 8,
+      "candidate_covered": 3,
+      "correct_when_covered": 1,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 481.492499995511,
+        "p95": 664.4107500032987
+      },
+      "input_tokens": 4486,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0004486
+    },
+    "2000/scoped/5/structured/typesafe/jev-1.13": {
+      "positive_exact": 3,
+      "positive_cases": 8,
+      "candidate_covered": 3,
+      "correct_when_covered": 3,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 483.85562498879153,
+        "p95": 540.3073954948923
+      },
+      "input_tokens": 7613,
+      "output_tokens": 671,
+      "reported_cost_usd": 0.000319746
+    },
+    "2000/scoped/5/structured/openai/gpt-6-luna-decisions": {
+      "positive_exact": 1,
+      "positive_cases": 8,
+      "candidate_covered": 3,
+      "correct_when_covered": 1,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 585.6605829903856,
+        "p95": 657.0551665063249
+      },
+      "input_tokens": 4645,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0004645
+    },
+    "2000/scoped/10/plain/typesafe/jev-1.13": {
+      "positive_exact": 4,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 4,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 507.14758299000096,
+        "p95": 594.1563539963681
+      },
+      "input_tokens": 9326,
+      "output_tokens": 1056,
+      "reported_cost_usd": 0.000391692
+    },
+    "2000/scoped/10/plain/openai/gpt-6-luna-decisions": {
+      "positive_exact": 4,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 4,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 519.3648749991553,
+        "p95": 1119.219250002061
+      },
+      "input_tokens": 5617,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0005617
+    },
+    "2000/scoped/10/conditional/typesafe/jev-1.13": {
+      "positive_exact": 2,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 2,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 474.65220799495,
+        "p95": 530.3807914970093
+      },
+      "input_tokens": 10803,
+      "output_tokens": 1056,
+      "reported_cost_usd": 0.000453726
+    },
+    "2000/scoped/10/conditional/openai/gpt-6-luna-decisions": {
+      "positive_exact": 2,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 2,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 494.3580420076614,
+        "p95": 682.5370204969659
+      },
+      "input_tokens": 7021,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0007021
+    },
+    "2000/scoped/10/structured/typesafe/jev-1.13": {
+      "positive_exact": 4,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 4,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 487.1442090079654,
+        "p95": 498.41639600344934
+      },
+      "input_tokens": 11067,
+      "output_tokens": 1056,
+      "reported_cost_usd": 0.00046481399999999997
+    },
+    "2000/scoped/10/structured/openai/gpt-6-luna-decisions": {
+      "positive_exact": 2,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 2,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 596.1978749983246,
+        "p95": 957.9318329924718
+      },
+      "input_tokens": 7285,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0007285
+    },
+    "2000/scoped/15/plain/typesafe/jev-1.13": {
+      "positive_exact": 5,
+      "positive_cases": 8,
+      "candidate_covered": 5,
+      "correct_when_covered": 5,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 484.6332920133136,
+        "p95": 510.07279199984623
+      },
+      "input_tokens": 12070,
+      "output_tokens": 1441,
+      "reported_cost_usd": 0.00050694
+    },
+    "2000/scoped/15/plain/openai/gpt-6-luna-decisions": {
+      "positive_exact": 5,
+      "positive_cases": 8,
+      "candidate_covered": 5,
+      "correct_when_covered": 5,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 541.2543330021435,
+        "p95": 634.43439600087
+      },
+      "input_tokens": 7568,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0007568
+    },
+    "2000/scoped/15/conditional/typesafe/jev-1.13": {
+      "positive_exact": 5,
+      "positive_cases": 8,
+      "candidate_covered": 5,
+      "correct_when_covered": 5,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 478.52120800234843,
+        "p95": 505.03250049223425
+      },
+      "input_tokens": 14278,
+      "output_tokens": 1441,
+      "reported_cost_usd": 0.000599676
+    },
+    "2000/scoped/15/conditional/openai/gpt-6-luna-decisions": {
+      "positive_exact": 2,
+      "positive_cases": 8,
+      "candidate_covered": 5,
+      "correct_when_covered": 2,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 480.2694169920869,
+        "p95": 513.9295420012786
+      },
+      "input_tokens": 9649,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0009649
+    },
+    "2000/scoped/15/structured/typesafe/jev-1.13": {
+      "positive_exact": 5,
+      "positive_cases": 8,
+      "candidate_covered": 5,
+      "correct_when_covered": 5,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 502.0528330060188,
+        "p95": 658.9218125009211
+      },
+      "input_tokens": 14652,
+      "output_tokens": 1441,
+      "reported_cost_usd": 0.000615384
+    },
+    "2000/scoped/15/structured/openai/gpt-6-luna-decisions": {
+      "positive_exact": 2,
+      "positive_cases": 8,
+      "candidate_covered": 5,
+      "correct_when_covered": 2,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 503.2703750039218,
+        "p95": 584.3203545009601
+      },
+      "input_tokens": 10023,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0010023
+    },
+    "2000/scoped/20/plain/typesafe/jev-1.13": {
+      "positive_exact": 8,
+      "positive_cases": 8,
+      "candidate_covered": 8,
+      "correct_when_covered": 8,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 481.556584010832,
+        "p95": 504.97897900640965
+      },
+      "input_tokens": 14756,
+      "output_tokens": 1826,
+      "reported_cost_usd": 0.000619752
+    },
+    "2000/scoped/20/plain/openai/gpt-6-luna-decisions": {
+      "positive_exact": 8,
+      "positive_cases": 8,
+      "candidate_covered": 8,
+      "correct_when_covered": 8,
+      "negative_empty": 3,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 502.89720798900817,
+        "p95": 623.9031874938519
+      },
+      "input_tokens": 9507,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0009507
+    },
+    "2000/scoped/20/conditional/typesafe/jev-1.13": {
+      "positive_exact": 6,
+      "positive_cases": 8,
+      "candidate_covered": 8,
+      "correct_when_covered": 6,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 493.06649999925867,
+        "p95": 537.2940209999797
+      },
+      "input_tokens": 17682,
+      "output_tokens": 1826,
+      "reported_cost_usd": 0.000742644
+    },
+    "2000/scoped/20/conditional/openai/gpt-6-luna-decisions": {
+      "positive_exact": 5,
+      "positive_cases": 8,
+      "candidate_covered": 8,
+      "correct_when_covered": 5,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 497.63345799874514,
+        "p95": 597.4959164959728
+      },
+      "input_tokens": 12257,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0012257
+    },
+    "2000/scoped/20/structured/typesafe/jev-1.13": {
+      "positive_exact": 8,
+      "positive_cases": 8,
+      "candidate_covered": 8,
+      "correct_when_covered": 8,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 504.86916600493714,
+        "p95": 531.0043955032597
+      },
+      "input_tokens": 18166,
+      "output_tokens": 1826,
+      "reported_cost_usd": 0.000762972
+    },
+    "2000/scoped/20/structured/openai/gpt-6-luna-decisions": {
+      "positive_exact": 5,
+      "positive_cases": 8,
+      "candidate_covered": 8,
+      "correct_when_covered": 5,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 11,
+      "decision_ms": {
+        "p50": 546.8757920025382,
+        "p95": 860.3640625005937
+      },
+      "input_tokens": 12741,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0012741
+    },
+    "2000/unscoped/5/plain/typesafe/jev-1.13": {
+      "positive_exact": 4,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 4,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 482.5021664946689,
+        "p95": 502.48433979795664
+      },
+      "input_tokens": 7149,
+      "output_tokens": 732,
+      "reported_cost_usd": 0.00030025799999999997
+    },
+    "2000/unscoped/5/plain/openai/gpt-6-luna-decisions": {
+      "positive_exact": 4,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 4,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 503.43410349887563,
+        "p95": 807.1658607477727
+      },
+      "input_tokens": 3983,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0003983
+    },
+    "2000/unscoped/5/conditional/typesafe/jev-1.13": {
+      "positive_exact": 4,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 4,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 475.15670849679736,
+        "p95": 792.2823163018616
+      },
+      "input_tokens": 7930,
+      "output_tokens": 732,
+      "reported_cost_usd": 0.00033306
+    },
+    "2000/unscoped/5/conditional/openai/gpt-6-luna-decisions": {
+      "positive_exact": 2,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 2,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 512.5342495011864,
+        "p95": 724.1489686064596
+      },
+      "input_tokens": 4743,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0004743
+    },
+    "2000/unscoped/5/structured/typesafe/jev-1.13": {
+      "positive_exact": 4,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 4,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 494.7311669966439,
+        "p95": 636.9068146537754
+      },
+      "input_tokens": 8081,
+      "output_tokens": 732,
+      "reported_cost_usd": 0.000339402
+    },
+    "2000/unscoped/5/structured/openai/gpt-6-luna-decisions": {
+      "positive_exact": 2,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 2,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 500.7687290053582,
+        "p95": 654.3258663019515
+      },
+      "input_tokens": 4894,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0004894
+    },
+    "2000/unscoped/10/plain/typesafe/jev-1.13": {
+      "positive_exact": 4,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 4,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 485.35322899988387,
+        "p95": 521.544797954266
+      },
+      "input_tokens": 9938,
+      "output_tokens": 1152,
+      "reported_cost_usd": 0.000417396
+    },
+    "2000/unscoped/10/plain/openai/gpt-6-luna-decisions": {
+      "positive_exact": 4,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 4,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 508.6882294926909,
+        "p95": 1228.3673685989918
+      },
+      "input_tokens": 5974,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0005974
+    },
+    "2000/unscoped/10/conditional/typesafe/jev-1.13": {
+      "positive_exact": 4,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 4,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 485.08102049527224,
+        "p95": 515.6638690423279
+      },
+      "input_tokens": 11421,
+      "output_tokens": 1152,
+      "reported_cost_usd": 0.000479682
+    },
+    "2000/unscoped/10/conditional/openai/gpt-6-luna-decisions": {
+      "positive_exact": 2,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 2,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 500.0088954984676,
+        "p95": 730.6868189007217
+      },
+      "input_tokens": 7411,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0007411
+    },
+    "2000/unscoped/10/structured/typesafe/jev-1.13": {
+      "positive_exact": 4,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 4,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 499.38797950017033,
+        "p95": 537.324250301026
+      },
+      "input_tokens": 11665,
+      "output_tokens": 1152,
+      "reported_cost_usd": 0.00048993
+    },
+    "2000/unscoped/10/structured/openai/gpt-6-luna-decisions": {
+      "positive_exact": 2,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 2,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 513.7107080008718,
+        "p95": 983.3707687488637
+      },
+      "input_tokens": 7655,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0007655
+    },
+    "2000/unscoped/15/plain/typesafe/jev-1.13": {
+      "positive_exact": 4,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 4,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 510.26541650207946,
+        "p95": 554.6707973968296
+      },
+      "input_tokens": 12671,
+      "output_tokens": 1572,
+      "reported_cost_usd": 0.000532182
+    },
+    "2000/unscoped/15/plain/openai/gpt-6-luna-decisions": {
+      "positive_exact": 4,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 4,
+      "negative_empty": 3,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 487.1992295011296,
+        "p95": 632.8300878041773
+      },
+      "input_tokens": 7950,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.000795
+    },
+    "2000/unscoped/15/conditional/typesafe/jev-1.13": {
+      "positive_exact": 4,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 4,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 472.1769374955329,
+        "p95": 500.4696418516687
+      },
+      "input_tokens": 14871,
+      "output_tokens": 1572,
+      "reported_cost_usd": 0.000624582
+    },
+    "2000/unscoped/15/conditional/openai/gpt-6-luna-decisions": {
+      "positive_exact": 2,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 2,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 613.7602084927494,
+        "p95": 1151.162933695741
+      },
+      "input_tokens": 10069,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0010069
+    },
+    "2000/unscoped/15/structured/typesafe/jev-1.13": {
+      "positive_exact": 4,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 4,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 494.40945850801654,
+        "p95": 535.6446828467597
+      },
+      "input_tokens": 15216,
+      "output_tokens": 1572,
+      "reported_cost_usd": 0.000639072
+    },
+    "2000/unscoped/15/structured/openai/gpt-6-luna-decisions": {
+      "positive_exact": 2,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 2,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 548.5473545049899,
+        "p95": 800.5669395504808
+      },
+      "input_tokens": 10414,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0010414
+    },
+    "2000/unscoped/20/plain/typesafe/jev-1.13": {
+      "positive_exact": 4,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 4,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 486.0606665024534,
+        "p95": 587.8767522044653
+      },
+      "input_tokens": 15431,
+      "output_tokens": 1992,
+      "reported_cost_usd": 0.000648102
+    },
+    "2000/unscoped/20/plain/openai/gpt-6-luna-decisions": {
+      "positive_exact": 4,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 4,
+      "negative_empty": 3,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 489.66560399276204,
+        "p95": 591.0366163050638
+      },
+      "input_tokens": 9917,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0009916999999999999
+    },
+    "2000/unscoped/20/conditional/typesafe/jev-1.13": {
+      "positive_exact": 3,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 3,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 503.05952149938093,
+        "p95": 577.9636270504852
+      },
+      "input_tokens": 18340,
+      "output_tokens": 1992,
+      "reported_cost_usd": 0.00077028
+    },
+    "2000/unscoped/20/conditional/openai/gpt-6-luna-decisions": {
+      "positive_exact": 2,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 2,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 530.2678125008242,
+        "p95": 1208.0498122028075
+      },
+      "input_tokens": 12713,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0012713
+    },
+    "2000/unscoped/20/structured/typesafe/jev-1.13": {
+      "positive_exact": 4,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 4,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 489.0761249989737,
+        "p95": 532.4744102959812
+      },
+      "input_tokens": 18779,
+      "output_tokens": 1992,
+      "reported_cost_usd": 0.000788718
+    },
+    "2000/unscoped/20/structured/openai/gpt-6-luna-decisions": {
+      "positive_exact": 2,
+      "positive_cases": 8,
+      "candidate_covered": 4,
+      "correct_when_covered": 2,
+      "negative_empty": 4,
+      "negative_cases": 4,
+      "decisions": 12,
+      "decision_ms": {
+        "p50": 551.3686455014977,
+        "p95": 2488.749729495612
+      },
+      "input_tokens": 13152,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.0013151999999999999
+    }
+  }
+}

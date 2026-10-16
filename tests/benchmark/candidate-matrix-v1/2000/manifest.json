@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "kind": "candidate_matrix_v1",
+  "active_memories": 2000,
+  "entities": 100,
+  "eligible_per_scoped_query": 20,
+  "caps": [
+    5,
+    10,
+    15,
+    20
+  ],
+  "variants": [
+    "scoped",
+    "unscoped"
+  ],
+  "cases_per_variant": 2400,
+  "positive_per_variant": 2000,
+  "source_sha256": {
+    "corpus": "5f24908b36989c1a9f55fcaa2ba95625c663617081ddbc89f4ce93a4744c90cf",
+    "development": "5aecaa964879f27be05b679c7d0ad0cf3e1a0329dbb0235c0eabffcf73d00e8a",
+    "calibration": "4aba0e19883c79e8df320dfef8ee08f2b8708111525b96e594e84f629bb35aa8"
+  },
+  "corpus_sha256": "fd6e49e54d9db73cda758420d8dd13d456393922fddfb689cccb17001e68ebb1",
+  "case_sha256": {
+    "scoped": "f355add7fd56f632975242514ebca37b409fabacf063907f1a0928a746147944",
+    "unscoped": "8bde0aa4091d57c672a83f23ad446bb461e89f61a47c8240cd2aa4f979687878"
+  },
+  "label_provenance": "Deterministic synthetic task and modality labels; no human review"
+}

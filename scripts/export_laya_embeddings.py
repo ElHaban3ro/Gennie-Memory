@@ -26,7 +26,7 @@ def main() -> None:
     parser.add_argument("--queries", type=Path, required=True)
     selector = parser.add_mutually_exclusive_group(required=True)
     selector.add_argument("--case-id")
-    selector.add_argument("--split", choices=("development", "calibration", "final"))
+    selector.add_argument("--split", choices=("development", "calibration", "final", "all"))
     parser.add_argument("--soc-runtime", type=Path,
                         default=Path.home() / "Library/Application Support/soc/decisions/runtime.json")
     parser.add_argument("--out-batch", type=Path, required=True)
@@ -38,7 +38,7 @@ def main() -> None:
     corpus = json.loads(args.corpus.read_text())
     all_cases = [json.loads(line) for line in args.queries.read_text().splitlines()]
     cases = ([next(case for case in all_cases if case["id"] == args.case_id)] if args.case_id else
-             [case for case in all_cases if case["split"] == args.split])
+             [case for case in all_cases if args.split == "all" or case["split"] == args.split])
     if not cases or any(case["label_source"] != "deterministic_fixture_rule" for case in cases):
         raise ValueError("Only synthetic benchmark cases are accepted")
     current = {}
@@ -97,6 +97,8 @@ def main() -> None:
             for case, request in zip(cases, hybrid_requests):
                 item = {key: case[key] for key in ("id", "split", "segment", "expected_ids",
                                                   "expected_fact", "forbidden_ids", "label_source")}
+                item["expected_condition"] = case.get("expected_condition")
+                item["expected_source"] = case.get("expected_source")
                 item["request"] = request
                 output.write(json.dumps(item, ensure_ascii=False, separators=(",", ":")) + "\n")
     print(json.dumps({"device": str(agent.device), "model_version": laya.__version__,

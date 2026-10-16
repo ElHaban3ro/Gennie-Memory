@@ -1,0 +1,36 @@
+{
+  "kind": "candidate_matrix_end_to_end_pilot",
+  "synthetic_only": true,
+  "queries_sha256": "ab1810251e4a59b4f8ca817c969d8db157586b6d928ed94e70d7d28e77b68802",
+  "model": "openai/gpt-6-luna-decisions",
+  "cases": 16,
+  "positive_exact": 12,
+  "positive_cases": 12,
+  "negative_empty": 3,
+  "negative_cases": 4,
+  "faithful_positive": 12,
+  "load_seconds": 2.3863688749988796,
+  "timing_ms": {
+    "embedding_ms": {
+      "p50": 18.059937996440567,
+      "p95": 23.217958747409284
+    },
+    "retrieval_ms": {
+      "p50": 10.773333000543062,
+      "p95": 22.014427500835154
+    },
+    "decision_ms": {
+      "p50": 545.4985830001533,
+      "p95": 1022.2566667507635
+    },
+    "composition_ms": {
+      "p50": 10.093041499203537,
+      "p95": 11.85108325080364
+    },
+    "total_ms": {
+      "p50": 585.0369795007282,
+      "p95": 1066.35336425461
+    }
+  },
+  "reported_cost_usd": 0.0013170999999999999
+}

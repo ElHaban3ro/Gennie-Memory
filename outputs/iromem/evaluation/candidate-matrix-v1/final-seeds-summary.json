@@ -1,0 +1,34 @@
+{
+  "kind": "candidate_matrix_final_seeds",
+  "synthetic_only": true,
+  "groups": {
+    "typesafe/jev-1.13": {
+      "results_sha256": "8f07826e86da95be2e069a4798aa5a4a15df98e688701b8c60d8cc17fb25b7e7",
+      "positive_exact": 389,
+      "positive_cases": 400,
+      "faithful_when_exact": 389,
+      "exact_cases": 389,
+      "negative_empty": 80,
+      "negative_cases": 80,
+      "composition_ms": {
+        "p50": 9.2089165,
+        "p95": 12.708052749999997,
+        "p99": 16.446191819999992
+      }
+    },
+    "openai/gpt-6-luna-decisions": {
+      "results_sha256": "c01acb6844934eb6bf5676574abab45fb0912a5c1e673ec80cb73127c67ec01a",
+      "positive_exact": 387,
+      "positive_cases": 400,
+      "faithful_when_exact": 387,
+      "exact_cases": 387,
+      "negative_empty": 64,
+      "negative_cases": 80,
+      "composition_ms": {
+        "p50": 8.667021000000002,
+        "p95": 9.437991,
+        "p99": 10.341426749999997
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "kind": "candidate_matrix_final_classification",
+  "synthetic_only": true,
+  "plan_sha256": "d23660a839c5e3d0dda7c23659d2113c27c60011516516ad08b5732b78906c9d",
+  "calls": 920,
+  "reported_or_reserved_cost_usd": 0.06663024000000055,
+  "groups": {
+    "typesafe/jev-1.13": {
+      "positive_exact": 389,
+      "positive_cases": 400,
+      "positive_rate": 0.9725,
+      "positive_wilson_95": [
+        0.9514345181143852,
+        0.9845763637397046
+      ],
+      "positive_entity_cluster_bootstrap_95": [
+        0.9574999999999999,
+        0.985
+      ],
+      "candidate_covered": 400,
+      "negative_empty": 80,
+      "negative_cases": 80,
+      "decision_calls": 460,
+      "decision_ms": {
+        "p50": 505.988166500174,
+        "p95": 630.1754851039731,
+        "p99": 747.7336934968463
+      },
+      "input_tokens": 623720,
+      "output_tokens": 76360,
+      "reported_cost_usd": 0.02619624
+    },
+    "openai/gpt-6-luna-decisions": {
+      "positive_exact": 387,
+      "positive_cases": 400,
+      "positive_rate": 0.9675,
+      "positive_wilson_95": [
+        0.9451958471762332,
+        0.9809101576211996
+      ],
+      "positive_entity_cluster_bootstrap_95": [
+        0.9425000000000001,
+        0.9875
+      ],
+      "candidate_covered": 400,
+      "negative_empty": 64,
+      "negative_cases": 80,
+      "decision_calls": 460,
+      "decision_ms": {
+        "p50": 496.1306664990843,
+        "p95": 773.8070369028717,
+        "p99": 1224.9812606803584
+      },
+      "input_tokens": 404340,
+      "output_tokens": 0,
+      "reported_cost_usd": 0.040434
+    }
+  }
+}

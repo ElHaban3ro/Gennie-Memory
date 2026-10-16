@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "kind": "candidate_matrix_v1_development_policy",
+  "chosen_before_calibration_review": true,
+  "classification_model": "openai/gpt-6-luna-decisions",
+  "retrieval_method": "fts5_semantic_rrf",
+  "entity_filter": "required_when_known",
+  "max_candidates": 20,
+  "prompt_variant": "plain",
+  "primary_metric": "positive_exact_final_seed",
+  "negative_metric": "negative_empty_separate",
+  "basis": {
+    "remote_development_summary_sha256": "dc34098443cd654f9250ffe09a47257d56bcc49e724af2fca76a6c34f52709ad",
+    "retrieval_summary_sha256": "d943e1126b2d1ae3affc022a787d6135df87b21d37642f701d1bea4b4daa9f39",
+    "positive_exact_scoped_cap20_plain": {
+      "100": "11/12",
+      "200": "12/12",
+      "2000": "12/12"
+    },
+    "candidate_recall_scoped_cap20": "100/100 for each size"
+  },
+  "limitations": [
+    "Twelve distinct positive questions in the development screen",
+    "Final composition and held-out evaluation remain untested"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "kind": "laya_final_choice",
+  "synthetic_only": true,
+  "manifest": {
+    "phase": "manifest",
+    "kind": "laya_final_choice",
+    "queries_sha256": "e3b93b97acb971f1fe73b6408370f333a4ab7c37d057095a6bc3e19dd064cdaa",
+    "results_sha256": "e33d34541f674ee06e596f05d9228d0b9d997604b2099fd20640f2ce9b5f69f6",
+    "prompt_sha256": "a000cebb07146b9a8ac77bdde92325938d7529ed5c141b611632d5565416913b",
+    "runner_sha256": "5da0047b13ddabe272caa08922b89b5653e4136ccddd1778483879c5599c375b",
+    "model_sha256": "9d628fd971b700382ac6f65920a86f149777b2e748e0c955fb3b19695aa8f204",
+    "tokenizer_sha256": "609d8f4c067cd3950f88594c5a802616cea245823836ef5848ee4fc40aab5b6f",
+    "model_version": "0.3.5",
+    "device": "mps",
+    "load_seconds": 3.800469833004172,
+    "max_candidates": 20,
+    "prompt_variant": "plain"
+  },
+  "positive_exact": 0,
+  "positive_cases": 400,
+  "negative_empty": 79,
+  "negative_cases": 80,
+  "input_tokens": 140863,
+  "decision_ms": {
+    "p50": 50.05452100158436,
+    "p95": 91.61628125584676
+  }
+}
