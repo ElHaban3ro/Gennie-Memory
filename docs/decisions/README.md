@@ -16,4 +16,6 @@
 
 [0008 — Sesión local de evaluación](0008-local-evaluation-session.md) explica el transporte JSONL y la primera medición completa de FTS5, Laya y semilla.
 
+[0009 — Consulta léxica rápida optativa](0009-optional-keyword-preflight.md) registra la mejora de latencia, la pérdida de cobertura y la decisión de no activarla por defecto.
+
 Cada decisión nueva debe indicar contexto, alternativas, motivo, estado y condición de revisión. Una sustitución conserva el documento anterior y enlaza el nuevo; no reescribe silenciosamente la historia. Los registros de [memoria de trabajo](../memory/index.md) aportan evidencia, pero no modifican reglas ni decisiones por sí solos.

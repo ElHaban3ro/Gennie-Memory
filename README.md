@@ -1,4 +1,18 @@
-¡Bienvenido a **iROMEM**!
+# iROMEM
+
+Memorias semilla para agentes: iROMEM busca recuerdos relevantes y prepara contexto breve antes de que el agente responda. El MVP se evalúa en esta Mac con datos sintéticos; la integración automática con Codex sigue pendiente.
+
+### Rendimiento medido
+
+![Comparación de latencia de búsqueda local y respuesta de Codex con Engram o semilla inicial](docs/evaluation/assets/speed-comparison-v1.svg)
+
+![Aciertos de búsqueda entre veinte candidatos y respuestas correctas de Codex](docs/evaluation/assets/accuracy-comparison-v1.svg)
+
+La primera gráfica muestra **latencia mediana**; la segunda, **aciertos observados**. El panel de búsqueda usa 460 preguntas positivas del banco de 2.800 recuerdos; el panel de respuestas usa seis preguntas emparejadas (cinco positivas y una negativa). Son etapas y tamaños de muestra distintos.
+
+En **2.800 recuerdos y 540 preguntas sintéticas**, la búsqueda híbrida de iROMEM encontró el recuerdo correcto entre veinte candidatos en **459/460** positivos, con **11,93 ms** de mediana. Engram encontró **454/460** en **5,52 ms**. El modo rápido opcional de iROMEM bajó a **5,23 ms**, pero encontró **452/460**; por eso el híbrido conserva la prioridad de calidad.
+
+En **seis preguntas sintéticas**, iROMEM preparó una semilla en **0,73 s** de mediana. Codex con esa semilla desde el primer prompt respondió en **5,12 s**, frente a **9,49 s** de Codex buscando en Engram. La suma por caso de preparación y respuesta fue **5,79 s de mediana**, calculada a partir de dos corridas: **todavía no es una medición de iROMEM integrado con Codex**. Decisions usó **524 tokens de entrada por consulta** de mediana; el texto de semilla añadió **42 tokens de entrada** de mediana al prompt de Codex en los cinco positivos. El consumo completo de tokens y tiempo de la futura integración sigue sin medirse. [Método, datos por caso y límites](docs/evaluation/initial-seed-speed-and-tokens-v1.md).
 
 El orden de implementación y la evaluación del MVP están en el [roadmap](ROADMAP.md).
 
