@@ -1,0 +1,4 @@
+{"elapsed_ms":145.41891700000002,"event":{"thread_id":"01a14354-e56a-7900-b8c8-5c443708747a","type":"thread.started"}}
+{"elapsed_ms":147.263084,"event":{"type":"turn.started"}}
+{"elapsed_ms":4830.63775,"event":{"item":{"id":"item_0","text":"La memoria semilla no contiene el nombre completo de user ficticio 014.","type":"agent_message"},"type":"item.completed"}}
+{"elapsed_ms":4872.199125,"event":{"type":"turn.completed","usage":{"cache_write_input_tokens":0,"cached_input_tokens":12288,"input_tokens":16958,"output_tokens":20,"reasoning_output_tokens":0}}}

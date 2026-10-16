@@ -1,0 +1,4 @@
+{"elapsed_ms":164.849875,"event":{"thread_id":"01a14356-4e36-7a92-84f4-8ca289a22846","type":"thread.started"}}
+{"elapsed_ms":167.258625,"event":{"type":"turn.started"}}
+{"elapsed_ms":5066.984084,"event":{"item":{"id":"item_0","text":"El nombre completo de user ficticio 014 es Clara Luz.","type":"agent_message"},"type":"item.completed"}}
+{"elapsed_ms":5095.286209,"event":{"type":"turn.completed","usage":{"cache_write_input_tokens":0,"cached_input_tokens":12288,"input_tokens":17006,"output_tokens":17,"reasoning_output_tokens":0}}}

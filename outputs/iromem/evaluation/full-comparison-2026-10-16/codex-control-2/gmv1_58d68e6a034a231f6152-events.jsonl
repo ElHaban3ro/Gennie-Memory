@@ -1,0 +1,4 @@
+{"elapsed_ms":132.8605,"event":{"thread_id":"01a14355-e7e6-7bb2-b353-ef0bb47b18e2","type":"thread.started"}}
+{"elapsed_ms":134.31550000000001,"event":{"type":"turn.started"}}
+{"elapsed_ms":4464.430832999999,"event":{"item":{"id":"item_0","text":"La memoria semilla no contiene el objetivo de project ficticio 014.","type":"agent_message"},"type":"item.completed"}}
+{"elapsed_ms":4466.257791,"event":{"type":"turn.completed","usage":{"cache_write_input_tokens":0,"cached_input_tokens":14592,"input_tokens":16957,"output_tokens":19,"reasoning_output_tokens":0}}}

@@ -1,0 +1,4 @@
+{"elapsed_ms":210.585708,"event":{"thread_id":"01a14353-3950-7c82-b0b0-88c04fd5bd21","type":"thread.started"}}
+{"elapsed_ms":212.61629100000002,"event":{"type":"turn.started"}}
+{"elapsed_ms":5010.224708,"event":{"item":{"id":"item_0","text":"El perfil de agent ficticio 014 registra portugués como idioma de salida.","type":"agent_message"},"type":"item.completed"}}
+{"elapsed_ms":5029.873916,"event":{"type":"turn.completed","usage":{"cache_write_input_tokens":0,"cached_input_tokens":14592,"input_tokens":17014,"output_tokens":20,"reasoning_output_tokens":0}}}

@@ -1,0 +1,144 @@
+{
+  "case_ids": [
+    "gmv1_22cfc56ad815287ee807",
+    "gmv1_473634b411cb67d29c62",
+    "gmv1_58d68e6a034a231f6152",
+    "gmv1_4a3ff3b59c9eca57fcdf",
+    "gmv1_4bcad2d72475e3a96c3c",
+    "gmv1_75afee680da25a2eb675"
+  ],
+  "codex_model": "gpt-6.1-sol",
+  "kind": "rust_codex_initial_seed_prompt_simulation",
+  "rows": [
+    {
+      "case_id": "gmv1_22cfc56ad815287ee807",
+      "expected_ids": [
+        "gmv1_16c2dc8396ff4b781f94"
+      ],
+      "final_answer": "El nombre completo de user ficticio 014 es Clara Luz.",
+      "final_answer_ms": 5066.984084,
+      "prompt_utf8_bytes": 416,
+      "seed_text_utf8_bytes": 160,
+      "seed_text_words": 16,
+      "selected_ids": [
+        "gmv1_16c2dc8396ff4b781f94"
+      ],
+      "tool_calls": 0,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 17006,
+        "output_tokens": 17,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "case_id": "gmv1_473634b411cb67d29c62",
+      "expected_ids": [
+        "gmv1_e8677903b4ed05fa90a3"
+      ],
+      "final_answer": "Iris es la responsable de project ficticio 014.",
+      "final_answer_ms": 5714.783959,
+      "prompt_utf8_bytes": 417,
+      "seed_text_utf8_bytes": 164,
+      "seed_text_words": 15,
+      "selected_ids": [
+        "gmv1_e8677903b4ed05fa90a3"
+      ],
+      "tool_calls": 0,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 17002,
+        "output_tokens": 16,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "case_id": "gmv1_58d68e6a034a231f6152",
+      "expected_ids": [
+        "gmv1_f37117c579a5d08a16e1"
+      ],
+      "final_answer": "El objetivo de project ficticio 014 es automatizar informes.",
+      "final_answer_ms": 4340.16175,
+      "prompt_utf8_bytes": 425,
+      "seed_text_utf8_bytes": 173,
+      "seed_text_words": 15,
+      "selected_ids": [
+        "gmv1_f37117c579a5d08a16e1"
+      ],
+      "tool_calls": 0,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 17005,
+        "output_tokens": 17,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "case_id": "gmv1_4a3ff3b59c9eca57fcdf",
+      "expected_ids": [
+        "gmv1_21888b9aa2ad97e57ba7"
+      ],
+      "final_answer": "El perfil de agent ficticio 014 registra portugués como idioma de salida.",
+      "final_answer_ms": 5294.533917,
+      "prompt_utf8_bytes": 466,
+      "seed_text_utf8_bytes": 196,
+      "seed_text_words": 19,
+      "selected_ids": [
+        "gmv1_21888b9aa2ad97e57ba7"
+      ],
+      "tool_calls": 0,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 14592,
+        "input_tokens": 17014,
+        "output_tokens": 20,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "case_id": "gmv1_4bcad2d72475e3a96c3c",
+      "expected_ids": [
+        "gmv1_21bb6a7143dbc04b6431"
+      ],
+      "final_answer": "La tarea actual de conversation ficticio 014 es preparar una lista.",
+      "final_answer_ms": 4843.331291,
+      "prompt_utf8_bytes": 446,
+      "seed_text_utf8_bytes": 185,
+      "seed_text_words": 17,
+      "selected_ids": [
+        "gmv1_21bb6a7143dbc04b6431"
+      ],
+      "tool_calls": 0,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 17008,
+        "output_tokens": 18,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "case_id": "gmv1_75afee680da25a2eb675",
+      "expected_ids": [],
+      "final_answer": "La semilla no contiene el código secreto del usuario ficticio 014.",
+      "final_answer_ms": 5593.128125,
+      "prompt_utf8_bytes": 295,
+      "seed_text_utf8_bytes": 0,
+      "seed_text_words": 0,
+      "selected_ids": [],
+      "tool_calls": 0,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 16961,
+        "output_tokens": 19,
+        "reasoning_output_tokens": 0
+      }
+    }
+  ],
+  "seed_injected": true,
+  "source": "outputs/iromem/evaluation/full-comparison-2026-10-16/recall-decisions-network.jsonl"
+}

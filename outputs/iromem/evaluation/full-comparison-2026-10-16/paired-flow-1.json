@@ -1,0 +1,66 @@
+{
+  "kind": "rust_paired_flow_calculation",
+  "measurement_note": "La suma recall + Codex con semilla combina dos ejecuciones; no mide una integración automática.",
+  "median_calculated_seed_total_ms": 5197.102124999999,
+  "median_codex_engram_ms": 9967.270166,
+  "median_codex_seed_ms": 4792.7412915,
+  "median_recall_ms": 369.67033349999997,
+  "median_seed_vs_control_input_token_delta": 48.0,
+  "rows": [
+    {
+      "calculated_seed_total_ms": 6627.062458,
+      "case_id": "gmv1_22cfc56ad815287ee807",
+      "codex_engram_ms": 11273.3665,
+      "codex_seed_ms": 5710.680541000001,
+      "recall_ms": 916.381917,
+      "seed_vs_control_input_token_delta": 48
+    },
+    {
+      "calculated_seed_total_ms": 5016.87275,
+      "case_id": "gmv1_473634b411cb67d29c62",
+      "codex_engram_ms": 9078.483875,
+      "codex_seed_ms": 4546.321875000001,
+      "recall_ms": 470.550875,
+      "seed_vs_control_input_token_delta": 46
+    },
+    {
+      "calculated_seed_total_ms": 5377.331499999999,
+      "case_id": "gmv1_4a3ff3b59c9eca57fcdf",
+      "codex_engram_ms": 10311.887666,
+      "codex_seed_ms": 5010.224708,
+      "recall_ms": 367.106792,
+      "seed_vs_control_input_token_delta": 54
+    },
+    {
+      "calculated_seed_total_ms": 5894.334667,
+      "case_id": "gmv1_4bcad2d72475e3a96c3c",
+      "codex_engram_ms": 9622.652666,
+      "codex_seed_ms": 5522.100792,
+      "recall_ms": 372.233875,
+      "seed_vs_control_input_token_delta": 50
+    },
+    {
+      "calculated_seed_total_ms": 4562.158667,
+      "case_id": "gmv1_58d68e6a034a231f6152",
+      "codex_engram_ms": 9464.119958,
+      "codex_seed_ms": 4226.052917,
+      "recall_ms": 336.10575,
+      "seed_vs_control_input_token_delta": 48
+    },
+    {
+      "calculated_seed_total_ms": 4922.734958,
+      "case_id": "gmv1_75afee680da25a2eb675",
+      "codex_engram_ms": 13893.609666,
+      "codex_seed_ms": 4575.257875,
+      "recall_ms": 347.477083,
+      "seed_vs_control_input_token_delta": 3
+    }
+  ],
+  "sample_count": 6,
+  "sources": {
+    "control_sha256": "421f9b93f23f30bf9c3ccb84ebdfc4f6dc47a75b4c64890808ea38952576219d",
+    "engram_sha256": "c939156a4d6cc80e71c43edd129290af05eb4ef5ceb5a510d97803fa5a645f6f",
+    "recall_sha256": "35a83d16a8151c122196521f266ce13a84e713f24dd3fe596a1de91382e0d0f8",
+    "seed_sha256": "7648f9858dd7ac56d2b1a4621664ee450d4fbc7d202768b00488c464e52d17a1"
+  }
+}

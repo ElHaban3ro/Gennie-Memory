@@ -1,0 +1,4 @@
+{"elapsed_ms":138.992208,"event":{"thread_id":"01a14355-1647-7081-90b2-49c8181ffc65","type":"thread.started"}}
+{"elapsed_ms":140.692083,"event":{"type":"turn.started"}}
+{"elapsed_ms":6473.914208,"event":{"item":{"id":"item_0","text":"La semilla no contiene el objetivo de «project ficticio 014».","type":"agent_message"},"type":"item.completed"}}
+{"elapsed_ms":6490.113625,"event":{"type":"turn.completed","usage":{"cache_write_input_tokens":0,"cached_input_tokens":12288,"input_tokens":16957,"output_tokens":19,"reasoning_output_tokens":0}}}

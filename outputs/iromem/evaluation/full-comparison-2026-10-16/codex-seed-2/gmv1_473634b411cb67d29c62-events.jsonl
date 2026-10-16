@@ -1,0 +1,4 @@
+{"elapsed_ms":144.61933399999998,"event":{"thread_id":"01a14356-663f-7151-89b3-2ba1602535e5","type":"thread.started"}}
+{"elapsed_ms":146.431375,"event":{"type":"turn.started"}}
+{"elapsed_ms":5714.783959,"event":{"item":{"id":"item_0","text":"Iris es la responsable de project ficticio 014.","type":"agent_message"},"type":"item.completed"}}
+{"elapsed_ms":5718.863667,"event":{"type":"turn.completed","usage":{"cache_write_input_tokens":0,"cached_input_tokens":12288,"input_tokens":17002,"output_tokens":16,"reasoning_output_tokens":0}}}

@@ -1,0 +1,4 @@
+{"elapsed_ms":139.319042,"event":{"thread_id":"01a14353-0e3b-7ec3-9314-42557e2ddc9e","type":"thread.started"}}
+{"elapsed_ms":140.996375,"event":{"type":"turn.started"}}
+{"elapsed_ms":4546.321875000001,"event":{"item":{"id":"item_0","text":"La persona responsable de project ficticio 014 es Iris.","type":"agent_message"},"type":"item.completed"}}
+{"elapsed_ms":4589.027333999999,"event":{"type":"turn.completed","usage":{"cache_write_input_tokens":0,"cached_input_tokens":12288,"input_tokens":17002,"output_tokens":16,"reasoning_output_tokens":0}}}

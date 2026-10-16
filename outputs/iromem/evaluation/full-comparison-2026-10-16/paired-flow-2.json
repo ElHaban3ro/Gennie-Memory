@@ -1,0 +1,66 @@
+{
+  "kind": "rust_paired_flow_calculation",
+  "measurement_note": "La suma recall + Codex con semilla combina dos ejecuciones; no mide una integración automática.",
+  "median_calculated_seed_total_ms": 5801.1229585,
+  "median_codex_engram_ms": 11340.909791,
+  "median_codex_seed_ms": 5180.7590005,
+  "median_recall_ms": 369.67033349999997,
+  "median_seed_vs_control_input_token_delta": 48.0,
+  "rows": [
+    {
+      "calculated_seed_total_ms": 5983.366000999999,
+      "case_id": "gmv1_22cfc56ad815287ee807",
+      "codex_engram_ms": 11201.422334,
+      "codex_seed_ms": 5066.984084,
+      "recall_ms": 916.381917,
+      "seed_vs_control_input_token_delta": 48
+    },
+    {
+      "calculated_seed_total_ms": 6185.334834,
+      "case_id": "gmv1_473634b411cb67d29c62",
+      "codex_engram_ms": 11931.738791000002,
+      "codex_seed_ms": 5714.783959,
+      "recall_ms": 470.550875,
+      "seed_vs_control_input_token_delta": 46
+    },
+    {
+      "calculated_seed_total_ms": 5661.640708999999,
+      "case_id": "gmv1_4a3ff3b59c9eca57fcdf",
+      "codex_engram_ms": 11406.493291,
+      "codex_seed_ms": 5294.533917,
+      "recall_ms": 367.106792,
+      "seed_vs_control_input_token_delta": 54
+    },
+    {
+      "calculated_seed_total_ms": 5215.565166,
+      "case_id": "gmv1_4bcad2d72475e3a96c3c",
+      "codex_engram_ms": 11275.326291,
+      "codex_seed_ms": 4843.331291,
+      "recall_ms": 372.233875,
+      "seed_vs_control_input_token_delta": 50
+    },
+    {
+      "calculated_seed_total_ms": 4676.2675,
+      "case_id": "gmv1_58d68e6a034a231f6152",
+      "codex_engram_ms": 9751.566208,
+      "codex_seed_ms": 4340.16175,
+      "recall_ms": 336.10575,
+      "seed_vs_control_input_token_delta": 48
+    },
+    {
+      "calculated_seed_total_ms": 5940.605208,
+      "case_id": "gmv1_75afee680da25a2eb675",
+      "codex_engram_ms": 12435.1395,
+      "codex_seed_ms": 5593.128125,
+      "recall_ms": 347.477083,
+      "seed_vs_control_input_token_delta": 3
+    }
+  ],
+  "sample_count": 6,
+  "sources": {
+    "control_sha256": "2375e4ed65ec7c9252cf6bef5f08384dcca43c7f7068cc13af540336dbf717bc",
+    "engram_sha256": "b383a15a3f42195a5d6f09a2dbdf8978a8b2323e94d43d148b2d294cd92756fb",
+    "recall_sha256": "35a83d16a8151c122196521f266ce13a84e713f24dd3fe596a1de91382e0d0f8",
+    "seed_sha256": "3b9a85bf9c08664a475448159d8a8508549306f17cf82b5721e6f22d5dcbcf12"
+  }
+}

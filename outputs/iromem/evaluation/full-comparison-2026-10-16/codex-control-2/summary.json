@@ -1,0 +1,144 @@
+{
+  "case_ids": [
+    "gmv1_22cfc56ad815287ee807",
+    "gmv1_473634b411cb67d29c62",
+    "gmv1_58d68e6a034a231f6152",
+    "gmv1_4a3ff3b59c9eca57fcdf",
+    "gmv1_4bcad2d72475e3a96c3c",
+    "gmv1_75afee680da25a2eb675"
+  ],
+  "codex_model": "gpt-6.1-sol",
+  "kind": "rust_codex_initial_seed_prompt_simulation",
+  "rows": [
+    {
+      "case_id": "gmv1_22cfc56ad815287ee807",
+      "expected_ids": [
+        "gmv1_16c2dc8396ff4b781f94"
+      ],
+      "final_answer": "La semilla no contiene el nombre completo de user ficticio 014.",
+      "final_answer_ms": 5616.000083,
+      "prompt_utf8_bytes": 295,
+      "seed_text_utf8_bytes": 0,
+      "seed_text_words": 0,
+      "selected_ids": [
+        "gmv1_16c2dc8396ff4b781f94"
+      ],
+      "tool_calls": 0,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 16958,
+        "output_tokens": 19,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "case_id": "gmv1_473634b411cb67d29c62",
+      "expected_ids": [
+        "gmv1_e8677903b4ed05fa90a3"
+      ],
+      "final_answer": "La memoria semilla no indica quién es responsable de project ficticio 014.",
+      "final_answer_ms": 5100.141958,
+      "prompt_utf8_bytes": 292,
+      "seed_text_utf8_bytes": 0,
+      "seed_text_words": 0,
+      "selected_ids": [
+        "gmv1_e8677903b4ed05fa90a3"
+      ],
+      "tool_calls": 0,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 14592,
+        "input_tokens": 16956,
+        "output_tokens": 20,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "case_id": "gmv1_58d68e6a034a231f6152",
+      "expected_ids": [
+        "gmv1_f37117c579a5d08a16e1"
+      ],
+      "final_answer": "La memoria semilla no contiene el objetivo de project ficticio 014.",
+      "final_answer_ms": 4464.430832999999,
+      "prompt_utf8_bytes": 291,
+      "seed_text_utf8_bytes": 0,
+      "seed_text_words": 0,
+      "selected_ids": [
+        "gmv1_f37117c579a5d08a16e1"
+      ],
+      "tool_calls": 0,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 14592,
+        "input_tokens": 16957,
+        "output_tokens": 19,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "case_id": "gmv1_4a3ff3b59c9eca57fcdf",
+      "expected_ids": [
+        "gmv1_21888b9aa2ad97e57ba7"
+      ],
+      "final_answer": "La semilla no contiene el idioma de salida del perfil de agent ficticio 014.",
+      "final_answer_ms": 4989.007417,
+      "prompt_utf8_bytes": 309,
+      "seed_text_utf8_bytes": 0,
+      "seed_text_words": 0,
+      "selected_ids": [
+        "gmv1_21888b9aa2ad97e57ba7"
+      ],
+      "tool_calls": 0,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 16960,
+        "output_tokens": 22,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "case_id": "gmv1_4bcad2d72475e3a96c3c",
+      "expected_ids": [
+        "gmv1_21bb6a7143dbc04b6431"
+      ],
+      "final_answer": "La semilla no contiene información sobre la tarea actual de conversation ficticio 014.",
+      "final_answer_ms": 6919.055458,
+      "prompt_utf8_bytes": 300,
+      "seed_text_utf8_bytes": 0,
+      "seed_text_words": 0,
+      "selected_ids": [
+        "gmv1_21bb6a7143dbc04b6431"
+      ],
+      "tool_calls": 0,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 16958,
+        "output_tokens": 21,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "case_id": "gmv1_75afee680da25a2eb675",
+      "expected_ids": [],
+      "final_answer": "La semilla no contiene el código secreto del usuario ficticio 014.",
+      "final_answer_ms": 5011.135625,
+      "prompt_utf8_bytes": 295,
+      "seed_text_utf8_bytes": 0,
+      "seed_text_words": 0,
+      "selected_ids": [],
+      "tool_calls": 0,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 16958,
+        "output_tokens": 19,
+        "reasoning_output_tokens": 0
+      }
+    }
+  ],
+  "seed_injected": false,
+  "source": "outputs/iromem/evaluation/full-comparison-2026-10-16/recall-decisions-network.jsonl"
+}

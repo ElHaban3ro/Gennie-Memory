@@ -1,0 +1,11 @@
+{
+  "selection_rule": "First positive case in each user, project, agent and conversation scope; second positive project case; first negative user case, in frozen cohort order. Fixed before any new results.",
+  "case_ids": [
+    "gmv1_22cfc56ad815287ee807",
+    "gmv1_473634b411cb67d29c62",
+    "gmv1_58d68e6a034a231f6152",
+    "gmv1_4a3ff3b59c9eca57fcdf",
+    "gmv1_4bcad2d72475e3a96c3c",
+    "gmv1_75afee680da25a2eb675"
+  ]
+}
