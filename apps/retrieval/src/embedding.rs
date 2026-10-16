@@ -138,7 +138,12 @@ pub fn search_hybrid(conn: &Connection, request: &HybridRequest) -> Result<Hybri
         entity_id: request.search.entity_id.clone(),
         as_of: request.search.as_of.clone(),
         limit: Some(RANK_LIMIT as u32),
-        query_mode: request.search.query_mode,
+        query_mode: Some(
+            request
+                .search
+                .query_mode
+                .unwrap_or(crate::model::QueryMode::Natural),
+        ),
     };
     let text = crate::service::search(conn, &text_request)?;
     if !(1..=RANK_LIMIT as u32).contains(&request.search.limit.unwrap_or(8)) {
@@ -394,7 +399,7 @@ mod tests {
                 entity_id: None,
                 as_of: "2026-10-15T12:00:00.000Z".into(),
                 limit: Some(8),
-                query_mode: crate::model::QueryMode::Natural,
+                query_mode: None,
             },
             space_id: "synthetic-space-v1".into(),
             query_vector: vec![1.0, 0.0],
@@ -498,7 +503,7 @@ mod tests {
                     entity_id: None,
                     as_of: "2026-10-15T12:00:00.000Z".into(),
                     limit: Some(2),
-                    query_mode: crate::model::QueryMode::Natural,
+                    query_mode: Some(crate::model::QueryMode::Natural),
                 },
                 space_id: "synthetic-space-v1".into(),
                 query_vector: vec![1.0, 0.0],
@@ -550,7 +555,7 @@ mod tests {
             entity_id: Some("project_one".into()),
             as_of: "2026-10-15T12:00:00.000Z".into(),
             limit: Some(8),
-            query_mode: crate::model::QueryMode::Natural,
+            query_mode: Some(crate::model::QueryMode::Natural),
         };
         let textual = crate::service::search(&conn, &search).unwrap();
         assert_eq!(textual.candidates.len(), 1);

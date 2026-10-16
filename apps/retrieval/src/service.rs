@@ -1,8 +1,11 @@
+use crate::classifier::Classifier;
 use crate::model::{
-    QueryMode, SearchRequest, SearchResponse, SeedMemory, SeedRequest, SeedResponse,
+    QueryMode, RecallRequest, RecallResponse, RecallTimings, SearchRequest, SearchResponse,
+    SeedMemory, SeedRequest, SeedResponse, SelectedCandidate,
 };
 use rusqlite::Connection;
 use std::collections::HashSet;
+use std::time::Instant;
 
 pub fn search(conn: &Connection, request: &SearchRequest) -> Result<SearchResponse, String> {
     if request.query.trim().is_empty() || request.query.chars().count() > 8000 {
@@ -24,7 +27,7 @@ pub fn search(conn: &Connection, request: &SearchRequest) -> Result<SearchRespon
     if !(1..=20).contains(&request.limit.unwrap_or(8)) {
         return Err("limit debe estar entre 1 y 20".into());
     }
-    let (expression, method) = match request.query_mode {
+    let (expression, method) = match request.query_mode.unwrap_or(QueryMode::Keywords) {
         QueryMode::Natural => (fts_expression(&request.query), "fts5"),
         QueryMode::Keywords => (keyword_expression(&request.query), "fts5_keywords"),
     };
@@ -42,6 +45,103 @@ pub fn search(conn: &Connection, request: &SearchRequest) -> Result<SearchRespon
         method,
         candidates,
         semantic_coverage: "disabled",
+    })
+}
+
+pub fn recall(
+    conn: &Connection,
+    request: &RecallRequest,
+    classifier: &impl Classifier,
+) -> Result<RecallResponse, String> {
+    let started = Instant::now();
+    let mut search_request = request.search.clone();
+    if search_request.limit.is_none() {
+        search_request.limit = Some(20);
+    }
+    let retrieval = search(conn, &search_request)?;
+    let search_ms = started.elapsed().as_secs_f64() * 1000.0;
+    let presented: Vec<SelectedCandidate> = retrieval
+        .candidates
+        .iter()
+        .map(|item| SelectedCandidate {
+            memory_id: item.memory_id.clone(),
+            revision: item.revision,
+        })
+        .collect();
+    let classifier_started = Instant::now();
+    let (classification_status, error_code, provider_http_status, decision) =
+        if presented.is_empty() {
+            ("skipped_empty", None, None, None)
+        } else {
+            match classifier.classify(
+                &search_request.query,
+                &search_request.scope_id,
+                &retrieval.candidates,
+                request.provider,
+            ) {
+                Ok(decision)
+                    if decision.selected_id.as_ref().is_none_or(|id| {
+                        presented.iter().any(|candidate| candidate.memory_id == *id)
+                    }) =>
+                {
+                    ("complete", None, None, Some(decision))
+                }
+                Ok(_) => ("failed", Some("invalid_choice"), None, None),
+                Err(error) => ("failed", Some(error.code), error.http_status, None),
+            }
+        };
+    let classifier_ms = classifier_started.elapsed().as_secs_f64() * 1000.0;
+    let selected = decision
+        .as_ref()
+        .and_then(|item| item.selected_id.as_ref())
+        .and_then(|id| {
+            presented
+                .iter()
+                .find(|candidate| candidate.memory_id == *id)
+        })
+        .map(|candidate| SelectedCandidate {
+            memory_id: candidate.memory_id.clone(),
+            revision: candidate.revision,
+        })
+        .into_iter()
+        .collect();
+    let composition_started = Instant::now();
+    let seed = compose_seed(
+        conn,
+        &SeedRequest {
+            search: Some(search_request),
+            hybrid: None,
+            presented,
+            selected,
+            classifier: request.provider.model_id().into(),
+            classification_status: if classification_status == "failed" {
+                "failed"
+            } else {
+                "complete"
+            }
+            .into(),
+        },
+    )?;
+    let composition_ms = composition_started.elapsed().as_secs_f64() * 1000.0;
+    Ok(RecallResponse {
+        status: seed.status,
+        retrieval,
+        classification_status,
+        requested_model: request.provider.model_id(),
+        served_model: decision.as_ref().and_then(|item| item.served_model.clone()),
+        selected_id: decision.as_ref().and_then(|item| item.selected_id.clone()),
+        seed,
+        input_tokens: decision.as_ref().and_then(|item| item.input_tokens),
+        output_tokens: decision.as_ref().and_then(|item| item.output_tokens),
+        reported_cost_usd: decision.as_ref().and_then(|item| item.reported_cost_usd),
+        error_code,
+        provider_http_status,
+        timings: RecallTimings {
+            search_ms,
+            classifier_ms,
+            composition_ms,
+            total_ms: started.elapsed().as_secs_f64() * 1000.0,
+        },
     })
 }
 
@@ -275,7 +375,17 @@ fn keyword_expression(query: &str) -> String {
         .filter(|word| word.chars().count() >= 3)
         .map(str::to_lowercase)
         .filter(|word| !STOPWORDS.contains(&word.as_str()) && seen.insert(word.clone()))
-        .map(|word| format!("\"{word}\""))
+        .map(|word| {
+            if word.chars().count() >= 7 {
+                let prefix = word
+                    .chars()
+                    .take(word.chars().count() - 2)
+                    .collect::<String>();
+                format!("\"{word}\" OR \"{prefix}\"*")
+            } else {
+                format!("\"{word}\"")
+            }
+        })
         .collect::<Vec<_>>()
         .join(" OR ")
 }
@@ -283,6 +393,108 @@ fn keyword_expression(query: &str) -> String {
 #[cfg(test)]
 mod tests {
     use super::*;
+    use crate::classifier::DecisionError;
+    use crate::model::{Candidate, ClassifierProvider, DecisionResult};
+    use std::cell::Cell;
+
+    struct FixedClassifier {
+        choice: Option<&'static str>,
+        fail: bool,
+        calls: Cell<usize>,
+    }
+
+    impl Classifier for FixedClassifier {
+        fn classify(
+            &self,
+            _query: &str,
+            _scope_id: &str,
+            _candidates: &[Candidate],
+            _provider: ClassifierProvider,
+        ) -> Result<DecisionResult, DecisionError> {
+            self.calls.set(self.calls.get() + 1);
+            if self.fail {
+                return Err(DecisionError {
+                    code: "transport_error",
+                    http_status: None,
+                });
+            }
+            Ok(DecisionResult {
+                selected_id: self.choice.map(str::to_owned),
+                served_model: Some("synthetic-model".into()),
+                input_tokens: Some(10),
+                output_tokens: Some(0),
+                reported_cost_usd: Some(0.001),
+            })
+        }
+    }
+
+    #[test]
+    fn recall_chooses_a_scoped_memory_and_degrades_on_provider_failure() {
+        let mut conn = Connection::open_in_memory().unwrap();
+        iromem_kernel::db::configure(&conn).unwrap();
+        conn.execute_batch(include_str!("../migrations/0001_initial.sql"))
+            .unwrap();
+        conn.execute_batch(include_str!("../migrations/0003_entity_filter.sql"))
+            .unwrap();
+        conn.execute_batch(include_str!("../migrations/0004_seed_provenance.sql"))
+            .unwrap();
+        let memory = |id: &str, scope: &str| FixtureMemory {
+            id: id.into(),
+            scope_kind: "user".into(),
+            scope_id: scope.into(),
+            entity_id: None,
+            revision: 1,
+            memory_type: "preference".into(),
+            original_text: "Prefiere formato breve".into(),
+            summary: "Prefiere formato breve".into(),
+            conditions: None,
+            source: None,
+            state: "active".into(),
+            valid_from: None,
+            valid_until: None,
+        };
+        crate::repo::load_fixtures(&mut conn, &[memory("wanted", "u1"), memory("other", "u2")])
+            .unwrap();
+        let mut request = RecallRequest {
+            search: SearchRequest {
+                query: "¿Qué formato prefiero?".into(),
+                scope_kind: "user".into(),
+                scope_id: "u1".into(),
+                entity_id: None,
+                as_of: "2026-10-15T12:00:00.000Z".into(),
+                limit: None,
+                query_mode: None,
+            },
+            provider: ClassifierProvider::Decisions,
+        };
+        let good = FixedClassifier {
+            choice: Some("wanted"),
+            fail: false,
+            calls: Cell::new(0),
+        };
+        let response = recall(&conn, &request, &good).unwrap();
+        assert_eq!(response.status, "complete");
+        assert_eq!(response.retrieval.method, "fts5_keywords");
+        assert_eq!(response.seed.memories[0].memory_id, "wanted");
+        assert_eq!(response.input_tokens, Some(10));
+        assert_eq!(good.calls.get(), 1);
+
+        let failed = FixedClassifier {
+            choice: None,
+            fail: true,
+            calls: Cell::new(0),
+        };
+        let response = recall(&conn, &request, &failed).unwrap();
+        assert_eq!(response.status, "degraded");
+        assert_eq!(response.error_code, Some("transport_error"));
+        assert!(response.seed.seed_text.is_none());
+        assert_eq!(response.retrieval.candidates.len(), 1);
+
+        request.search.query = "palabra_sin_coincidencia".into();
+        let response = recall(&conn, &request, &good).unwrap();
+        assert_eq!(response.classification_status, "skipped_empty");
+        assert_eq!(good.calls.get(), 1);
+    }
     use crate::model::FixtureMemory;
 
     #[test]
@@ -310,9 +522,12 @@ mod tests {
             valid_from: None,
             valid_until: None,
         };
+        let mut invitation = fixture("invitation", "u1");
+        invitation.original_text = "Invitaciones de calendario con agenda previa".into();
+        invitation.summary = "Quiere invitaciones de calendario con agenda previa".into();
         crate::repo::load_fixtures(
             &mut conn,
-            &[fixture("wanted", "u1"), fixture("other", "u2")],
+            &[fixture("wanted", "u1"), fixture("other", "u2"), invitation],
         )
         .unwrap();
         let request = SearchRequest {
@@ -322,15 +537,40 @@ mod tests {
             entity_id: None,
             as_of: "2026-10-15T12:00:00.000Z".into(),
             limit: Some(20),
-            query_mode: QueryMode::Keywords,
+            query_mode: Some(QueryMode::Keywords),
         };
         let response = search(&conn, &request).unwrap();
         assert_eq!(response.method, "fts5_keywords");
         assert_eq!(response.candidates.len(), 1);
         assert_eq!(response.candidates[0].memory_id, "wanted");
+        let default_request: SearchRequest = serde_json::from_str(
+            r#"{"query":"¿Cuál es mi nombre completo?","scope_kind":"user","scope_id":"u1","as_of":"2026-10-15T12:00:00.000Z","limit":20}"#,
+        )
+        .unwrap();
+        assert_eq!(
+            search(&conn, &default_request).unwrap().method,
+            "fts5_keywords"
+        );
+        let natural_request: SearchRequest = serde_json::from_str(
+            r#"{"query":"¿Cuál es mi nombre completo?","scope_kind":"user","scope_id":"u1","as_of":"2026-10-15T12:00:00.000Z","limit":20,"query_mode":"natural"}"#,
+        )
+        .unwrap();
+        assert_eq!(search(&conn, &natural_request).unwrap().method, "fts5");
+        let mut singular_request = request;
+        singular_request.query = "¿Qué incluir en la invitación?".into();
+        let expanded = search(&conn, &singular_request).unwrap();
+        assert_eq!(expanded.candidates.len(), 1);
+        assert_eq!(expanded.candidates[0].memory_id, "invitation");
+        singular_request.query_mode = Some(QueryMode::Natural);
+        assert!(
+            search(&conn, &singular_request)
+                .unwrap()
+                .candidates
+                .is_empty()
+        );
         assert_eq!(
             keyword_expression("¿Cuál es mi nombre completo?"),
-            "\"nombre\" OR \"completo\""
+            "\"nombre\" OR \"completo\" OR \"comple\"*"
         );
         assert!(keyword_expression("¿Y si no?").is_empty());
     }
@@ -402,7 +642,7 @@ mod tests {
                 entity_id: None,
                 as_of: "2026-10-15T12:00:00.000Z".into(),
                 limit: None,
-                query_mode: QueryMode::Natural,
+                query_mode: Some(QueryMode::Natural),
             },
         )
         .unwrap();
@@ -476,7 +716,7 @@ mod tests {
                 entity_id: None,
                 as_of: "2026-10-15T12:00:00.000Z".into(),
                 limit: Some(8),
-                query_mode: QueryMode::Natural,
+                query_mode: Some(QueryMode::Natural),
             }),
             hybrid: None,
             presented: vec![crate::model::SelectedCandidate {
@@ -558,7 +798,7 @@ mod tests {
             entity_id: None,
             as_of: "2026-10-15T12:00:00.000Z".into(),
             limit: Some(8),
-            query_mode: QueryMode::Natural,
+            query_mode: Some(QueryMode::Natural),
         };
         let candidates = search(&conn, &search_request).unwrap().candidates;
         assert_eq!(candidates[0].conditions, fixture.conditions);

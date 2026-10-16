@@ -1,3 +1,4 @@
+mod openrouter;
 mod registry;
 mod session;
 
@@ -83,13 +84,17 @@ fn run() -> Result<(), String> {
     let mut args = std::env::args().skip(1);
     let command = args
         .next()
-        .ok_or("uso: iromem <init-db|load-fixtures|load-embeddings|search|hybrid-search|search-batch|hybrid-search-batch|compose-seed|compose-seed-batch|session> [archivo]")?;
+        .ok_or("uso: iromem <init-db|load-fixtures|load-embeddings|search|recall|hybrid-search|search-batch|hybrid-search-batch|compose-seed|compose-seed-batch|session> [archivo]")?;
     let config = iromem_kernel::config::load()?;
     let mut conn = iromem_kernel::db::connect(&config.database_path)?;
     let modules = registry::modules()?;
     iromem_kernel::db::migrate(&mut conn, &modules)?;
     match command.as_str() {
-        "session" => session::run(&conn)?,
+        "session" => {
+            let secrets = iromem_kernel::config::load_secrets()?;
+            let classifier = openrouter::OpenRouterClassifier::new(secrets.openrouter_api_key)?;
+            session::run(&conn, &classifier)?;
+        }
         "init-db" => println!("SQLite listo: {}", config.database_path.display()),
         "load-fixtures" => {
             let path = args.next().ok_or("falta archivo JSON de fixtures")?;
@@ -113,6 +118,24 @@ fn run() -> Result<(), String> {
             let request: iromem_retrieval::model::SearchRequest =
                 serde_json::from_str(&data).map_err(|e| e.to_string())?;
             let response = iromem_retrieval::service::search(&conn, &request)?;
+            println!(
+                "{}",
+                serde_json::to_string_pretty(&response).map_err(|e| e.to_string())?
+            );
+        }
+        "recall" => {
+            let path = args
+                .next()
+                .ok_or("falta archivo JSON de consulta de recuerdo")?;
+            let data = fs::read_to_string(path).map_err(|e| e.to_string())?;
+            if data.len() > 1_000_000 {
+                return Err("la solicitud supera 1 MB".into());
+            }
+            let request: iromem_retrieval::model::RecallRequest =
+                serde_json::from_str(&data).map_err(|e| e.to_string())?;
+            let secrets = iromem_kernel::config::load_secrets()?;
+            let classifier = openrouter::OpenRouterClassifier::new(secrets.openrouter_api_key)?;
+            let response = iromem_retrieval::service::recall(&conn, &request, &classifier)?;
             println!(
                 "{}",
                 serde_json::to_string_pretty(&response).map_err(|e| e.to_string())?
@@ -242,7 +265,7 @@ fn run() -> Result<(), String> {
         }
         _ => {
             return Err(
-                "comando desconocido: use init-db, load-fixtures, load-embeddings, search, hybrid-search, search-batch, hybrid-search-batch, compose-seed, compose-seed-batch o session".into(),
+                "comando desconocido: use init-db, load-fixtures, load-embeddings, search, recall, hybrid-search, search-batch, hybrid-search-batch, compose-seed, compose-seed-batch o session".into(),
             );
         }
     }

@@ -1,6 +1,7 @@
 //! Local JSONL transport for measuring a complete retrieval/classification/seed run.
 
-use iromem_retrieval::model::{HybridRequest, SearchRequest, SeedRequest};
+use iromem_retrieval::classifier::Classifier;
+use iromem_retrieval::model::{HybridRequest, RecallRequest, SearchRequest, SeedRequest};
 use rusqlite::Connection;
 use serde::{Deserialize, Serialize};
 use std::io::{BufRead, BufWriter, Write};
@@ -10,6 +11,7 @@ use std::time::Instant;
 #[serde(tag = "op", content = "request", rename_all = "snake_case")]
 enum SessionRequest {
     Search(SearchRequest),
+    Recall(RecallRequest),
     HybridSearch(HybridRequest),
     ComposeSeed(SeedRequest),
 }
@@ -22,7 +24,7 @@ struct SessionResult {
     error: Option<String>,
 }
 
-fn handle(conn: &Connection, line: &str) -> SessionResult {
+fn handle(conn: &Connection, classifier: &impl Classifier, line: &str) -> SessionResult {
     let started = Instant::now();
     let result = (|| {
         if line.len() > 1_000_000 {
@@ -32,6 +34,10 @@ fn handle(conn: &Connection, line: &str) -> SessionResult {
         match request {
             SessionRequest::Search(request) => {
                 let response = iromem_retrieval::service::search(conn, &request)?;
+                serde_json::to_value(response).map_err(|e| e.to_string())
+            }
+            SessionRequest::Recall(request) => {
+                let response = iromem_retrieval::service::recall(conn, &request, classifier)?;
                 serde_json::to_value(response).map_err(|e| e.to_string())
             }
             SessionRequest::HybridSearch(request) => {
@@ -60,7 +66,7 @@ fn handle(conn: &Connection, line: &str) -> SessionResult {
     }
 }
 
-pub fn run(conn: &Connection) -> Result<(), String> {
+pub fn run(conn: &Connection, classifier: &impl Classifier) -> Result<(), String> {
     let input = std::io::stdin().lock();
     let mut output = BufWriter::new(std::io::stdout().lock());
     for line in input.lines() {
@@ -68,7 +74,8 @@ pub fn run(conn: &Connection) -> Result<(), String> {
         if line.trim().is_empty() {
             continue;
         }
-        serde_json::to_writer(&mut output, &handle(conn, &line)).map_err(|e| e.to_string())?;
+        serde_json::to_writer(&mut output, &handle(conn, classifier, &line))
+            .map_err(|e| e.to_string())?;
         output.write_all(b"\n").map_err(|e| e.to_string())?;
         output.flush().map_err(|e| e.to_string())?;
     }
@@ -81,6 +88,7 @@ mod tests {
 
     #[test]
     fn session_reuses_search_and_revalidates_the_seed() {
+        let classifier = crate::openrouter::OpenRouterClassifier::new(None).unwrap();
         let mut conn = Connection::open_in_memory().unwrap();
         iromem_kernel::db::configure(&conn).unwrap();
         iromem_kernel::db::migrate(&mut conn, &crate::registry::modules().unwrap()).unwrap();
@@ -99,6 +107,7 @@ mod tests {
         });
         let found = handle(
             &conn,
+            &classifier,
             &serde_json::json!({"op":"search","request":search}).to_string(),
         );
         assert_eq!(found.status, "complete");
@@ -120,6 +129,7 @@ mod tests {
         });
         let composed = handle(
             &conn,
+            &classifier,
             &serde_json::json!({"op":"compose_seed","request":request}).to_string(),
         );
         assert_eq!(composed.status, "complete");
@@ -139,7 +149,15 @@ mod tests {
                 .contains("Solo para reuniones remotas")
         );
 
-        let invalid = handle(&conn, "not json");
+        let recall = handle(
+            &conn,
+            &classifier,
+            &serde_json::json!({"op":"recall","request":{"search":search}}).to_string(),
+        );
+        assert_eq!(recall.status, "complete");
+        assert_eq!(recall.response.unwrap()["error_code"], "missing_api_key");
+
+        let invalid = handle(&conn, &classifier, "not json");
         assert_eq!(invalid.status, "failed");
     }
 }

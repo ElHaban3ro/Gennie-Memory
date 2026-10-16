@@ -1,3 +1,4 @@
+pub mod classifier;
 pub mod embedding;
 pub mod model;
 pub mod module;
