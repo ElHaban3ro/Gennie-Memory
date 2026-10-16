@@ -162,23 +162,19 @@ fn panel(svg: &mut Svg, p: &Panel<'_>) {
 fn render_speed(
     local: &Value,
     engram: &Value,
-    decisions: &Value,
-    jev: &Value,
     seed_codex: &Value,
     engram_codex: &Value,
     path: &Path,
 ) -> Result<(), String> {
     let fast = f(local, "/overall/latency_ms/p50")?;
     let engram_search = f(engram, "/overall/latency_ms/p50")?;
-    let decisions_ms = f(decisions, "/elapsed_p50_ms")?;
-    let jev_ms = f(jev, "/elapsed_p50_ms")?;
     let seeded_s = codex_p50(seed_codex)? / 1000.0;
     let engram_s = codex_p50(engram_codex)? / 1000.0;
-    let mut svg = Svg::new(1550, 645, "Tiempo de búsqueda, semilla y respuesta");
+    let mut svg = Svg::new(1200, 645, "iROMEM frente a Engram: búsqueda y respuesta");
     svg.text(
         58,
         109,
-        "Tres etapas medidas por separado · medianas · mismo banco sintético",
+        "Dos etapas medidas por separado · medianas · datos sintéticos",
         17,
         MUTED,
         "start",
@@ -199,32 +195,17 @@ fn render_speed(
     panel(
         &mut svg,
         &Panel {
-            x: 553,
-            title: "2. Preparar semilla",
-            subtitle: "540 preguntas · FTS5 + clasificador",
-            unit: "milisegundos",
-            maximum: (decisions_ms.max(jev_ms) * 1.25).ceil().max(1.0),
-            bars: [("Decisions", decisions_ms, TEAL), ("Jev", jev_ms, BLUE)],
-            decimals: 0,
-        },
-    );
-    panel(
-        &mut svg,
-        &Panel {
-            x: 1048,
-            title: "3. Responder con Codex",
-            subtitle: "6 turnos aislados · semilla vs MCP",
+            x: 610,
+            title: "2. Responder con Codex",
+            subtitle: "6 turnos aislados · prompt vs MCP",
             unit: "segundos",
             maximum: (seeded_s.max(engram_s) * 1.25).ceil().max(1.0),
-            bars: [
-                ("Semilla inicial", seeded_s, TEAL),
-                ("Engram MCP", engram_s, GOLD),
-            ],
+            bars: [("iROMEM", seeded_s, TEAL), ("Engram", engram_s, GOLD)],
             decimals: 2,
         },
     );
-    svg.text(58,586,"El panel 3 mide a Codex con semilla ya entregada; la integración automática de iROMEM sigue pendiente.",16,MUTED,"start","Arial,sans-serif");
-    svg.text(58,612,"Las etapas tienen escalas distintas. Las barras parten de cero; las muestras de 540 y 6 no estiman la misma tasa.",16,MUTED,"start","Arial,sans-serif");
+    svg.text(58,586,"En el panel 2, Codex recibió la semilla de iROMEM en el prompt; Engram se consultó por MCP.",16,MUTED,"start","Arial,sans-serif");
+    svg.text(58,612,"Escalas y muestras distintas (540 y 6); la integración automática de iROMEM sigue pendiente.",16,MUTED,"start","Arial,sans-serif");
     svg.save(path)
 }
 
@@ -304,8 +285,6 @@ pub fn run(paths: &[&Path], output_dir: &Path) -> Result<(), String> {
     render_speed(
         &data[0],
         &data[1],
-        &data[2],
-        &data[3],
         &data[4],
         &data[5],
         &output_dir.join("speed-comparison-rust.svg"),
@@ -649,11 +628,11 @@ pub fn render_current_performance(
     let engram_p95 = f(&engram, "/overall/latency_ms/p95")?;
     let full_p50 = f(&campaign, "/elapsed_p50_ms")?;
     let full_p95 = f(&campaign, "/elapsed_p95_ms")?;
-    let mut latency = Svg::new(1550, 665, "Tiempo de búsqueda y preparación de semilla");
+    let mut latency = Svg::new(1200, 635, "Tiempo de búsqueda de candidatos");
     latency.text(
         58,
         110,
-        "540 preguntas idénticas para ambas búsquedas · ejes independientes · milisegundos",
+        "540 preguntas idénticas para iROMEM y Engram · milisegundos",
         17,
         MUTED,
         "start",
@@ -670,7 +649,7 @@ pub fn render_current_performance(
             decimals: 2,
         },
         Panel {
-            x: 553,
+            x: 610,
             title: "Búsqueda: p95",
             subtitle: "Cola observada",
             unit: "milisegundos",
@@ -678,37 +657,52 @@ pub fn render_current_performance(
             bars: [("iROMEM", search_p95, TEAL), ("Engram", engram_p95, GOLD)],
             decimals: 2,
         },
-        Panel {
-            x: 1048,
-            title: "iROMEM → semilla",
-            subtitle: "Decisions y red incluidos",
-            unit: "milisegundos",
-            maximum: (full_p95 * 1.1).ceil(),
-            bars: [("Mediana", full_p50, BLUE), ("p95", full_p95, TEAL)],
-            decimals: 0,
-        },
     ] {
         panel(&mut latency, &data);
     }
     latency.text(
         58,
         585,
-        "Engram solo recupera candidatos aquí; la tercera escala no es una comparación de flujo completo.",
-        16,
-        MUTED,
-        "start",
-        "Arial,sans-serif",
-    );
-    latency.text(
-        58,
-        615,
-        "Cada búsqueda y la consulta con Decisions fueron corridas separadas en esta Mac.",
+        "Cada búsqueda se midió en una corrida local separada; estas barras no incluyen clasificación.",
         16,
         MUTED,
         "start",
         "Arial,sans-serif",
     );
     latency.save(&output_dir.join("current-latency.svg"))?;
+
+    let mut seed = Svg::new(700, 620, "iROMEM: pregunta hasta semilla");
+    seed.text(
+        58,
+        110,
+        "540 preguntas sintéticas · Decisions por OpenRouter incluido",
+        17,
+        MUTED,
+        "start",
+        "Arial,sans-serif",
+    );
+    panel(
+        &mut seed,
+        &Panel {
+            x: 80,
+            title: "Consulta completa",
+            subtitle: "Búsqueda, elección y composición",
+            unit: "milisegundos",
+            maximum: (full_p95 * 1.1).ceil(),
+            bars: [("Mediana", full_p50, BLUE), ("p95", full_p95, TEAL)],
+            decimals: 0,
+        },
+    );
+    seed.text(
+        58,
+        570,
+        "Engram se midió solo como buscador; no hay flujo completo comparable.",
+        16,
+        MUTED,
+        "start",
+        "Arial,sans-serif",
+    );
+    seed.save(&output_dir.join("current-seed-latency.svg"))?;
     Ok(())
 }
 

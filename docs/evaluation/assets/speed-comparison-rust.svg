@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1550" height="645" viewBox="0 0 1550 645" role="img" aria-label="Tiempo de búsqueda, semilla y respuesta">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="645" viewBox="0 0 1200 645" role="img" aria-label="iROMEM frente a Engram: búsqueda y respuesta">
 <rect width="100%" height="100%" fill="#fffefa"/>
-<text x="58" y="75" fill="#25313b" text-anchor="start" font-family="Georgia,serif" font-size="34">Tiempo de búsqueda, semilla y respuesta</text>
-<text x="58" y="109" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="17">Tres etapas medidas por separado · medianas · mismo banco sintético</text>
+<text x="58" y="75" fill="#25313b" text-anchor="start" font-family="Georgia,serif" font-size="34">iROMEM frente a Engram: búsqueda y respuesta</text>
+<text x="58" y="109" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="17">Dos etapas medidas por separado · medianas · datos sintéticos</text>
 <text x="58" y="144" fill="#25313b" text-anchor="start" font-family="Georgia,serif" font-size="22">1. Buscar candidatos</text>
 <text x="58" y="174" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="16">540 preguntas · 2.800 recuerdos</text>
 <text x="110" y="199" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="14">milisegundos</text>
@@ -18,38 +18,22 @@
 <rect x="350" y="285" width="96" height="212" fill="#b77a27"/>
 <text x="398" y="272" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="18">6.02</text>
 <text x="398" y="527" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="17">Engram</text>
-<text x="553" y="144" fill="#25313b" text-anchor="start" font-family="Georgia,serif" font-size="22">2. Preparar semilla</text>
-<text x="553" y="174" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="16">540 preguntas · FTS5 + clasificador</text>
-<text x="605" y="199" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="14">milisegundos</text>
-<line x1="605" y1="497" x2="998" y2="497" stroke="#d8dfdf" stroke-width="1"/>
-<text x="595" y="502" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">0</text>
-<line x1="605" y1="356" x2="998" y2="356" stroke="#d8dfdf" stroke-width="1"/>
-<text x="595" y="361" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">238</text>
-<line x1="605" y1="215" x2="998" y2="215" stroke="#d8dfdf" stroke-width="1"/>
-<text x="595" y="220" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">477</text>
-<line x1="605" y1="215" x2="605" y2="497" stroke="#25313b" stroke-width="1"/>
-<rect x="670" y="275" width="96" height="222" fill="#18817e"/>
-<text x="718" y="262" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="18">376</text>
-<text x="718" y="527" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="17">Decisions</text>
-<rect x="845" y="272" width="96" height="225" fill="#617db1"/>
-<text x="893" y="259" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="18">381</text>
-<text x="893" y="527" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="17">Jev</text>
-<text x="1048" y="144" fill="#25313b" text-anchor="start" font-family="Georgia,serif" font-size="22">3. Responder con Codex</text>
-<text x="1048" y="174" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="16">6 turnos aislados · semilla vs MCP</text>
-<text x="1100" y="199" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="14">segundos</text>
-<line x1="1100" y1="497" x2="1493" y2="497" stroke="#d8dfdf" stroke-width="1"/>
-<text x="1090" y="502" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">0.0</text>
-<line x1="1100" y1="356" x2="1493" y2="356" stroke="#d8dfdf" stroke-width="1"/>
-<text x="1090" y="361" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">7.0</text>
-<line x1="1100" y1="215" x2="1493" y2="215" stroke="#d8dfdf" stroke-width="1"/>
-<text x="1090" y="220" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">14.0</text>
-<line x1="1100" y1="215" x2="1100" y2="497" stroke="#25313b" stroke-width="1"/>
-<rect x="1165" y="377" width="96" height="120" fill="#18817e"/>
-<text x="1213" y="364" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="18">5.97</text>
-<text x="1213" y="527" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="17">Semilla inicial</text>
-<rect x="1340" y="274" width="96" height="223" fill="#b77a27"/>
-<text x="1388" y="261" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="18">11.07</text>
-<text x="1388" y="527" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="17">Engram MCP</text>
-<text x="58" y="586" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="16">El panel 3 mide a Codex con semilla ya entregada; la integración automática de iROMEM sigue pendiente.</text>
-<text x="58" y="612" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="16">Las etapas tienen escalas distintas. Las barras parten de cero; las muestras de 540 y 6 no estiman la misma tasa.</text>
+<text x="610" y="144" fill="#25313b" text-anchor="start" font-family="Georgia,serif" font-size="22">2. Responder con Codex</text>
+<text x="610" y="174" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="16">6 turnos aislados · prompt vs MCP</text>
+<text x="662" y="199" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="14">segundos</text>
+<line x1="662" y1="497" x2="1055" y2="497" stroke="#d8dfdf" stroke-width="1"/>
+<text x="652" y="502" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">0.0</text>
+<line x1="662" y1="356" x2="1055" y2="356" stroke="#d8dfdf" stroke-width="1"/>
+<text x="652" y="361" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">7.0</text>
+<line x1="662" y1="215" x2="1055" y2="215" stroke="#d8dfdf" stroke-width="1"/>
+<text x="652" y="220" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">14.0</text>
+<line x1="662" y1="215" x2="662" y2="497" stroke="#25313b" stroke-width="1"/>
+<rect x="727" y="377" width="96" height="120" fill="#18817e"/>
+<text x="775" y="364" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="18">5.97</text>
+<text x="775" y="527" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="17">iROMEM</text>
+<rect x="902" y="274" width="96" height="223" fill="#b77a27"/>
+<text x="950" y="261" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="18">11.07</text>
+<text x="950" y="527" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="17">Engram</text>
+<text x="58" y="586" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="16">En el panel 2, Codex recibió la semilla de iROMEM en el prompt; Engram se consultó por MCP.</text>
+<text x="58" y="612" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="16">Escalas y muestras distintas (540 y 6); la integración automática de iROMEM sigue pendiente.</text>
 </svg>
