@@ -14,7 +14,7 @@ Este paquete contiene únicamente datos sintéticos. El [informe](../../../../do
 | `codex-seed-v2/`, `codex-engram-v3/`, `codex-control-v2/` | Seis turnos por camino: respuesta, uso y eventos JSONL por caso. |
 | `paired-flow-summary.json` | Sumas por caso de preparación Rust y turno Codex con semilla, calculadas desde registros separados. |
 
-Las figuras del README se regeneran **sin llamadas de red** desde estos informes:
+Las figuras históricas del [informe](../../../../docs/evaluation/rust-migration-v1.md) se regeneran **sin llamadas de red** desde estos informes:
 
 ```sh
 cargo run --offline -p iromem-eval -- render-charts \
