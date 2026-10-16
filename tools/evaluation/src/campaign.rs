@@ -1,0 +1,429 @@
+//! Resumable synthetic recall campaign driven by the Rust CLI session protocol.
+
+use serde_json::{Value, json};
+use sha2::{Digest, Sha256};
+use std::collections::{BTreeMap, HashMap, HashSet};
+use std::fs::{self, File, OpenOptions};
+use std::io::{BufRead, BufReader, Write};
+use std::path::Path;
+use std::process::{Command, Stdio};
+use std::time::Instant;
+
+pub(crate) fn digest(path: &Path) -> Result<String, String> {
+    let bytes = fs::read(path).map_err(|error| format!("{}: {error}", path.display()))?;
+    Ok(Sha256::digest(bytes)
+        .iter()
+        .map(|byte| format!("{byte:02x}"))
+        .collect())
+}
+
+fn read_lines(path: &Path) -> Result<Vec<Value>, String> {
+    let file = File::open(path).map_err(|error| error.to_string())?;
+    BufReader::new(file)
+        .lines()
+        .enumerate()
+        .filter_map(|(index, line)| match line {
+            Ok(line) if line.trim().is_empty() => None,
+            other => Some((index, other)),
+        })
+        .map(|(index, line)| {
+            let line = line.map_err(|error| error.to_string())?;
+            serde_json::from_str(&line).map_err(|error| format!("línea {}: {error}", index + 1))
+        })
+        .collect()
+}
+
+fn field<'a>(value: &'a Value, key: &str) -> Result<&'a str, String> {
+    value
+        .get(key)
+        .and_then(Value::as_str)
+        .ok_or_else(|| format!("falta {key}"))
+}
+
+fn ids(value: &Value, key: &str) -> Result<Vec<String>, String> {
+    value
+        .get(key)
+        .and_then(Value::as_array)
+        .ok_or_else(|| format!("falta {key}"))?
+        .iter()
+        .map(|item| {
+            item.as_str()
+                .map(str::to_owned)
+                .ok_or_else(|| format!("{key} debe contener IDs"))
+        })
+        .collect()
+}
+
+fn load_cases(path: &Path, split: &str) -> Result<Vec<Value>, String> {
+    let cases = read_lines(path)?;
+    if cases.is_empty() {
+        return Err("el banco no contiene casos".into());
+    }
+    let mut seen = HashSet::new();
+    for case in &cases {
+        let id = field(case, "id")?;
+        if !seen.insert(id) {
+            return Err(format!("ID repetido: {id}"));
+        }
+        if field(case, "split")? != split
+            || field(case, "label_source")? != "deterministic_fixture_rule"
+        {
+            return Err(format!("etiqueta de banco incompatible: {id}"));
+        }
+        ids(case, "expected_ids")?;
+        ids(case, "forbidden_ids")?;
+        let request = case
+            .get("request")
+            .ok_or_else(|| format!("falta request en {id}"))?;
+        let search = request.get("search").unwrap_or(request);
+        for key in ["query", "scope_kind", "scope_id", "as_of"] {
+            field(search, key)?;
+        }
+    }
+    Ok(cases)
+}
+
+fn append(file: &mut File, event: &Value) -> Result<(), String> {
+    serde_json::to_writer(&mut *file, event).map_err(|error| error.to_string())?;
+    file.write_all(b"\n").map_err(|error| error.to_string())?;
+    file.sync_data().map_err(|error| error.to_string())
+}
+
+fn read_journal(
+    journal: &Path,
+    manifest: &Value,
+    cases: &[Value],
+) -> Result<HashSet<String>, String> {
+    let rows = read_lines(journal)?;
+    if rows.first() != Some(manifest) {
+        return Err("el diario no coincide con banco, binario, base, proveedor o partición".into());
+    }
+    let valid: HashMap<&str, &Value> = cases
+        .iter()
+        .map(|case| Ok((field(case, "id")?, case)))
+        .collect::<Result<_, String>>()?;
+    let mut started = HashSet::new();
+    let mut finished = HashSet::new();
+    for event in rows.iter().skip(1) {
+        let id = field(event, "id")?;
+        let case = valid
+            .get(id)
+            .ok_or_else(|| format!("evento de caso ajeno: {id}"))?;
+        match field(event, "kind")? {
+            "started" if started.insert(id.to_owned()) && !finished.contains(id) => {}
+            "finished" if started.contains(id) && finished.insert(id.to_owned()) => {
+                if event.get("segment") != case.get("segment")
+                    || event.get("expected_ids") != case.get("expected_ids")
+                    || event.get("forbidden_ids") != case.get("forbidden_ids")
+                    || event.get("response").is_none()
+                {
+                    return Err(format!("etiquetas o respuesta distintas en {id}"));
+                }
+            }
+            _ => return Err(format!("secuencia de eventos inválida: {id}")),
+        }
+    }
+    if let Some(id) = started.difference(&finished).next() {
+        return Err(format!(
+            "llamada de resultado incierto: {id}; no se reintentará automáticamente"
+        ));
+    }
+    Ok(finished)
+}
+
+pub fn run(
+    cases_path: &Path,
+    binary: &Path,
+    database: &Path,
+    journal: &Path,
+    provider: &str,
+    split: &str,
+    max_calls: usize,
+) -> Result<(), String> {
+    if !["decisions", "jev"].contains(&provider) || max_calls == 0 {
+        return Err("proveedor o máximo de llamadas inválido".into());
+    }
+    let cases = load_cases(cases_path, split)?;
+    let manifest = json!({
+        "kind": "manifest", "format": 1, "cases_sha256": digest(cases_path)?,
+        "binary_sha256": digest(binary)?, "database_sha256": digest(database)?,
+        "case_count": cases.len(), "provider": provider, "split": split,
+    });
+    let finished = if journal.exists() {
+        read_journal(journal, &manifest, &cases)?
+    } else {
+        let mut file = OpenOptions::new()
+            .write(true)
+            .create_new(true)
+            .open(journal)
+            .map_err(|error| error.to_string())?;
+        append(&mut file, &manifest)?;
+        HashSet::new()
+    };
+    let mut journal_file = OpenOptions::new()
+        .append(true)
+        .open(journal)
+        .map_err(|error| error.to_string())?;
+    let mut child = Command::new(binary)
+        .arg("session")
+        .env("IROMEM_DATABASE_PATH", database)
+        .stdin(Stdio::piped())
+        .stdout(Stdio::piped())
+        .stderr(Stdio::inherit())
+        .spawn()
+        .map_err(|error| format!("no se pudo iniciar iromem: {error}"))?;
+    let mut input = child.stdin.take().ok_or("falta entrada de sesión")?;
+    let mut output = BufReader::new(child.stdout.take().ok_or("falta salida de sesión")?);
+    let result = (|| {
+        let mut attempted = 0;
+        for case in &cases {
+            let id = field(case, "id")?;
+            if finished.contains(id) {
+                continue;
+            }
+            if attempted == max_calls {
+                break;
+            }
+            let request = case.get("request").ok_or("falta request")?;
+            let search = request.get("search").unwrap_or(request);
+            let message = json!({"op":"recall", "request":{"search":search,"provider":provider}});
+            append(&mut journal_file, &json!({"kind":"started","id":id}))?;
+            let started = Instant::now();
+            serde_json::to_writer(&mut input, &message).map_err(|error| error.to_string())?;
+            input.write_all(b"\n").map_err(|error| error.to_string())?;
+            input.flush().map_err(|error| error.to_string())?;
+            let mut line = String::new();
+            if output
+                .read_line(&mut line)
+                .map_err(|error| error.to_string())?
+                == 0
+            {
+                return Err(format!(
+                    "la sesión terminó durante {id}; la llamada queda incierta"
+                ));
+            }
+            let envelope: Value = serde_json::from_str(&line).map_err(|_| {
+                format!("respuesta inválida durante {id}; la llamada queda incierta")
+            })?;
+            if field(&envelope, "status")? != "complete" {
+                return Err(format!(
+                    "la sesión falló durante {id}; la llamada queda incierta"
+                ));
+            }
+            let response = envelope.get("response").ok_or("falta response")?;
+            append(
+                &mut journal_file,
+                &json!({
+                    "kind":"finished", "id":id, "segment":field(case,"segment")?,
+                    "expected_ids":ids(case,"expected_ids")?,
+                    "forbidden_ids":ids(case,"forbidden_ids")?,
+                    "elapsed_ms":started.elapsed().as_secs_f64()*1000.0,
+                    "response":response,
+                }),
+            )?;
+            attempted += 1;
+        }
+        Ok::<usize, String>(attempted)
+    })();
+    drop(input);
+    if result.is_err() {
+        let _ = child.kill();
+    }
+    let exit = child.wait().map_err(|error| error.to_string())?;
+    let attempted = result?;
+    if !exit.success() {
+        return Err(format!("la sesión terminó con estado {exit}"));
+    }
+    println!(
+        "{} llamadas nuevas; diario {}",
+        attempted,
+        journal.display()
+    );
+    Ok(())
+}
+
+pub fn report(journal: &Path, output: Option<&Path>) -> Result<(), String> {
+    let rows = read_lines(journal)?;
+    let manifest = rows.first().ok_or("diario vacío")?;
+    if field(manifest, "kind")? != "manifest" {
+        return Err("falta manifiesto".into());
+    }
+    let count = manifest
+        .get("case_count")
+        .and_then(Value::as_u64)
+        .ok_or("falta case_count")?;
+    let mut finished = HashMap::new();
+    let mut started = HashSet::new();
+    for row in rows.iter().skip(1) {
+        let id = field(row, "id")?;
+        match field(row, "kind")? {
+            "started" if started.insert(id.to_owned()) => {}
+            "finished" if started.contains(id) && finished.insert(id.to_owned(), row).is_none() => {
+            }
+            _ => return Err(format!("diario inválido en {id}")),
+        }
+    }
+    if finished.len() as u64 != count || started.len() != finished.len() {
+        return Err(format!(
+            "campaña incompleta: {} de {count} casos terminados",
+            finished.len()
+        ));
+    }
+    let mut groups: BTreeMap<String, (usize, usize)> = BTreeMap::new();
+    let mut correct = 0;
+    let mut positive = 0;
+    let mut positive_correct = 0;
+    let mut negative = 0;
+    let mut negative_empty = 0;
+    let mut degraded = 0;
+    let mut forbidden = 0;
+    let mut candidate_recall = 0;
+    let mut negative_candidate_empty = 0;
+    let mut elapsed = Vec::new();
+    let mut search = Vec::new();
+    let mut classifier = Vec::new();
+    let mut service_total = Vec::new();
+    let mut cost = 0.0;
+    let mut cost_reported_cases = 0;
+    let mut input_tokens = Vec::new();
+    let mut output_tokens = Vec::new();
+    for row in finished.values() {
+        let expected = ids(row, "expected_ids")?;
+        let forbidden_ids = ids(row, "forbidden_ids")?;
+        let response = row.get("response").ok_or("falta response")?;
+        let memories = response
+            .pointer("/seed/memories")
+            .and_then(Value::as_array)
+            .ok_or("falta seed.memories")?;
+        let selected: Vec<String> = memories
+            .iter()
+            .map(|item| field(item, "memory_id").map(str::to_owned))
+            .collect::<Result<_, _>>()?;
+        let candidates = response
+            .pointer("/retrieval/candidates")
+            .and_then(Value::as_array)
+            .ok_or("faltan candidatos")?;
+        let candidate_ids: Vec<String> = candidates
+            .iter()
+            .map(|item| field(item, "memory_id").map(str::to_owned))
+            .collect::<Result<_, _>>()?;
+        let is_correct = response.get("status").and_then(Value::as_str) == Some("complete")
+            && selected == expected;
+        correct += usize::from(is_correct);
+        if expected.is_empty() {
+            negative += 1;
+            negative_empty += usize::from(is_correct);
+            negative_candidate_empty += usize::from(candidate_ids.is_empty());
+        } else {
+            positive += 1;
+            positive_correct += usize::from(is_correct);
+            candidate_recall += usize::from(expected.iter().any(|id| candidate_ids.contains(id)));
+        }
+        degraded += usize::from(response.get("status").and_then(Value::as_str) == Some("degraded"));
+        forbidden += usize::from(
+            forbidden_ids
+                .iter()
+                .any(|id| candidate_ids.contains(id) || selected.contains(id)),
+        );
+        let group = groups.entry(field(row, "segment")?.to_owned()).or_default();
+        group.0 += 1;
+        group.1 += usize::from(is_correct);
+        elapsed.push(
+            row.get("elapsed_ms")
+                .and_then(Value::as_f64)
+                .ok_or("falta elapsed_ms")?,
+        );
+        search.push(
+            response
+                .pointer("/timings/search_ms")
+                .and_then(Value::as_f64)
+                .ok_or("falta search_ms")?,
+        );
+        classifier.push(
+            response
+                .pointer("/timings/classifier_ms")
+                .and_then(Value::as_f64)
+                .ok_or("falta classifier_ms")?,
+        );
+        service_total.push(
+            response
+                .pointer("/timings/total_ms")
+                .and_then(Value::as_f64)
+                .ok_or("falta total_ms")?,
+        );
+        if let Some(value) = response.get("reported_cost_usd").and_then(Value::as_f64) {
+            cost += value;
+            cost_reported_cases += 1;
+        }
+        if let Some(value) = response.get("input_tokens").and_then(Value::as_u64) {
+            input_tokens.push(value);
+        }
+        if let Some(value) = response.get("output_tokens").and_then(Value::as_u64) {
+            output_tokens.push(value);
+        }
+    }
+    let quantile = |values: &mut Vec<f64>, fraction: f64| {
+        values.sort_by(f64::total_cmp);
+        let n = values.len();
+        let position = (n - 1) as f64 * fraction;
+        let lower = position.floor() as usize;
+        let upper = position.ceil() as usize;
+        values[lower] + (values[upper] - values[lower]) * position.fract()
+    };
+    let mut by_segment = serde_json::Map::new();
+    for (name, (cases, correct)) in groups {
+        by_segment.insert(name, json!({"cases":cases, "correct":correct}));
+    }
+    let mut input_values: Vec<f64> = input_tokens.iter().map(|value| *value as f64).collect();
+    let mut output_values: Vec<f64> = output_tokens.iter().map(|value| *value as f64).collect();
+    let report = json!({
+        "status":"complete", "provider":manifest["provider"], "split":manifest["split"],
+        "cases":count, "correct":correct, "positive":positive, "positive_correct":positive_correct,
+        "negative":negative, "negative_empty":negative_empty, "degraded":degraded,
+        "candidate_recall":candidate_recall, "negative_candidate_empty":negative_candidate_empty,
+        "forbidden_leak_count":forbidden, "by_segment":by_segment,
+        "elapsed_p50_ms":quantile(&mut elapsed,0.5), "elapsed_p95_ms":quantile(&mut elapsed,0.95),
+        "search_p50_ms":quantile(&mut search,0.5), "search_p95_ms":quantile(&mut search,0.95),
+        "classifier_p50_ms":quantile(&mut classifier,0.5), "classifier_p95_ms":quantile(&mut classifier,0.95),
+        "service_total_p50_ms":quantile(&mut service_total,0.5),
+        "service_total_p95_ms":quantile(&mut service_total,0.95),
+        "reported_cost_usd":cost, "cost_reported_cases":cost_reported_cases,
+        "input_tokens_reported_cases":input_tokens.len(),
+        "input_tokens_p50":if input_values.is_empty(){None}else{Some(quantile(&mut input_values,0.5))},
+        "output_tokens_reported_cases":output_tokens.len(),
+        "output_tokens_p50":if output_values.is_empty(){None}else{Some(quantile(&mut output_values,0.5))},
+        "manifest":manifest,
+    });
+    let encoded = serde_json::to_string_pretty(&report).map_err(|error| error.to_string())? + "\n";
+    if let Some(path) = output {
+        fs::write(path, encoded).map_err(|error| error.to_string())
+    } else {
+        print!("{encoded}");
+        Ok(())
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn journal_rejects_uncertain_call_before_any_retry() {
+        let file =
+            std::env::temp_dir().join(format!("iromem-campaign-test-{}", std::process::id()));
+        let manifest = json!({"kind":"manifest","case_count":1});
+        fs::write(
+            &file,
+            format!(
+                "{}\n{}\n",
+                manifest,
+                json!({"kind":"started","id":"case-1"})
+            ),
+        )
+        .unwrap();
+        let cases = vec![json!({"id":"case-1"})];
+        let error = read_journal(&file, &manifest, &cases).unwrap_err();
+        assert!(error.contains("incierto"));
+        fs::remove_file(file).unwrap();
+    }
+}

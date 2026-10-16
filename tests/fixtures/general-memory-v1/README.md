@@ -8,7 +8,7 @@ Los doce tipos de recuerdo incluyen identidad, hechos, preferencias, relaciones,
 
 ## Archivos
 
-- `generate.py`: generador determinista. Ejecutar `python3 tests/fixtures/general-memory-v1/generate.py` para reconstruir los datos.
+- El generador Python histórico fue retirado. Los datos congelados se verifican con `cargo run --offline -p iromem-eval -- validate-general-memory tests/fixtures/general-memory-v1`; no se promete regeneración byte por byte desde las plantillas originales.
 - `memories.json`: lista compatible con `load-fixtures` de la CLI actual.
 - `queries.jsonl`: consultas con `scope_kind` y `scope_id` ya dados, `expected_memory_ids` y etiqueta positiva o negativa. Son etiquetas de referencia para un evaluador futuro; `search-batch` no consume este formato directamente.
 - `unscoped-queries.jsonl`: preguntas como «¿cómo me llamo?» con `host_context`, ámbito y recuerdo esperados. Requieren un componente futuro que seleccione ámbitos y preserve permisos. La CLI actual exige que se le indique un único ámbito.

@@ -1,0 +1,1 @@
+{"id":"synthetic_recall_001","split":"development","segment":"personal_preference","expected_ids":["synthetic_001"],"forbidden_ids":["synthetic_002"],"label_source":"deterministic_fixture_rule","request":{"query":"¿Qué formato de informes prefiere Marina los lunes?","scope_kind":"project","scope_id":"demo_alpha","as_of":"2026-10-15T12:00:00.000Z","limit":20}}
