@@ -16,6 +16,10 @@ La ruta actual usa **FTS5 por palabras clave con expansión de prefijos** y, par
 
 El p95 anterior de **26,54 ms** de iROMEM no reapareció en estas cuatro corridas. Las diferencias de una Mac y de un banco sintético no demuestran superioridad general. Engram se midió aquí como buscador de candidatos: su resultado no incluye clasificación ni composición de semilla.
 
+![Aciertos de candidatos en la cohorte 014–017](docs/evaluation/assets/full-comparison-accuracy-2026-10-16.svg)
+
+![Medianas de búsqueda de candidatos en la cohorte 014–017](docs/evaluation/assets/full-comparison-latency-2026-10-16.svg)
+
 Con **iROMEM + Decisions**, la semilla fue correcta en **441/460 preguntas positivas (95,87 %)** y quedó vacía en **80/80 negativas**. La consulta completa hasta la semilla tardó **369,62 ms de mediana** y **567,22 ms en p95**, incluida OpenRouter. La variante con Jev obtuvo 417/460 positivas y 77/80 negativas vacías, con p95 de 443,53 ms. Estas campañas remotas se ejecutaron por separado de las búsquedas locales.
 
 ![P95 de búsqueda de candidatos en cuatro corridas](docs/evaluation/assets/full-comparison-p95-2026-10-16.svg)
@@ -27,6 +31,8 @@ Las preguntas son sintéticas y comparten plantillas con bancos anteriores. Engr
 En dos rondas de seis turnos sintéticos nuevos, Codex respondió en **4,79 y 5,18 s de mediana** con la semilla de iROMEM entregada en el prompt, frente a **9,97 y 11,34 s** al consultar Engram por MCP. Ambos caminos acertaron los cinco positivos y la negativa en cada ronda. Los tokens de entrada informados tuvieron medianas de **17.005,5** con semilla y **52.859 / 52.885,5** con Engram; incluyen instrucciones y caché, y los prompts son distintos.
 
 La preparación de la semilla de iROMEM tardó **0,37 s de mediana** en esos seis casos. La suma calculada por caso de preparación y respuesta tuvo medianas de **5,20 y 5,80 s**. **La entrega automática a Codex aún no está instalada ni medida**; el piloto usa un runner que incorpora la semilla en el prompt. [Método y resultados por caso](docs/evaluation/full-comparison-2026-10-16.md). La [figura Codex anterior](docs/evaluation/assets/current-codex-comparison.svg) conserva los seis turnos de la cohorte 010–013 como historia.
+
+![Tiempo de respuesta y tokens informados por Codex en dos rondas](docs/evaluation/assets/full-comparison-codex-2026-10-16.svg)
 
 El orden de implementación y las tareas pendientes están en el [roadmap](ROADMAP.md). La [base ejecutable actual](docs/initialization/implementation.md) combina FTS5, filtrado estructurado opcional, un índice semántico experimental y composición de semillas. `recall` encadena en Rust la ruta rápida, Decisions por defecto o Jev explícito y la composición validada; el híbrido sigue disponible para búsquedas explícitas con vectores ya calculados. El [contrato CLI](docs/evaluation/contract-v1.md), las [reglas de trabajo](AGENTS.md) y el [mapa de módulos](docs/architecture/modules.md) describen el estado del repositorio.
 

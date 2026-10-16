@@ -21,6 +21,8 @@ Las campañas de `recall` con Decisions y Jev ejecutaron una vez cada una las mi
 
 En top 20 ambos acertaron 453 casos, solo iROMEM acertó cuatro y solo Engram tres. En top 1, ambos acertaron 412, solo iROMEM ocho y solo Engram quince. La calidad de candidatos fue idéntica entre las cuatro repeticiones de cada motor; esas repeticiones miden variación temporal, no aportan cuatro bancos independientes de exactitud.
 
+![Aciertos de candidatos en la cohorte 014–017](assets/full-comparison-accuracy-2026-10-16.svg)
+
 | Corrida y primer motor | iROMEM p50 / p95 | Engram p50 / p95 |
 | --- | ---: | ---: |
 | 1 · Engram | 7,06 / **7,75 ms** | 7,35 / 15,55 ms |
@@ -28,6 +30,8 @@ En top 20 ambos acertaron 453 casos, solo iROMEM acertó cuatro y solo Engram tr
 | 3 · iROMEM | 6,79 / **7,79 ms** | 7,08 / 9,64 ms |
 | 4 · Engram | 7,68 / **10,73 ms** | 9,15 / 11,78 ms |
 | Mediana de las cuatro corridas | **6,93 / 7,77 ms** | 7,22 / 10,71 ms |
+
+![Medianas de búsqueda de candidatos en la cohorte 014–017](assets/full-comparison-latency-2026-10-16.svg)
 
 ![P95 de búsqueda en cuatro corridas](assets/full-comparison-p95-2026-10-16.svg)
 
@@ -59,6 +63,10 @@ Los cinco hechos positivos y la negativa fueron respondidos correctamente por **
 | Codex con semilla ya entregada | **4,79 s** | **5,18 s** | 17.005,5 / 17.005,5 |
 | Codex → Engram MCP | 9,97 s | 11,34 s | 52.859 / 52.885,5 |
 | Codex sin memoria | 5,11 s | 5,06 s | 16.958 / 16.958 |
+
+![Tiempo de respuesta y tokens informados por Codex en dos rondas](assets/full-comparison-codex-2026-10-16.svg)
+
+La figura resume cada camino mediante la mediana de las dos medianas de ronda; los valores de cada ronda están en la tabla anterior.
 
 La preparación previa de la semilla por `recall` tuvo 0,37 s de mediana en esos seis casos. La **suma calculada por caso** de preparación y respuesta con semilla dio medianas de **5,20 y 5,80 s** en las rondas 1 y 2; combina ejecuciones separadas y **no mide** una integración automática de iROMEM con Codex. El prompt con semilla añadió 48 tokens de entrada de mediana frente al control emparejado. Los totales de Codex incluyen instrucciones y caché, y los prompts de ambos caminos con memoria son distintos porque uno recibe contexto y el otro debe buscarlo. Codex no informó coste monetario para estos turnos.
 
