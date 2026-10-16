@@ -257,6 +257,14 @@ fn run() -> Result<(), String> {
                 Path::new(&output),
             )
         }
+        "render-full-comparison" => {
+            let aggregate = args.next().ok_or("falta agregado de la campaña")?;
+            let output = args.next().ok_or("falta directorio de imágenes")?;
+            if args.next().is_some() {
+                return Err("demasiados argumentos".into());
+            }
+            charts::render_full_comparison(Path::new(&aggregate), Path::new(&output))
+        }
         "paired-flow-report" => {
             let journal = args.next().ok_or("falta diario de recall")?;
             let seed = args.next().ok_or("falta resumen Codex con semilla")?;

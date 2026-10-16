@@ -791,6 +791,224 @@ pub fn render_current_codex(
     svg.save(&output_dir.join("current-codex-comparison.svg"))
 }
 
+/// Rebuild the three current README figures from one frozen campaign aggregate.
+pub fn render_full_comparison(aggregate_path: &Path, output_dir: &Path) -> Result<(), String> {
+    let data = load(aggregate_path)?;
+    let iromem = data
+        .pointer("/search/iromem")
+        .ok_or("falta búsqueda iROMEM")?;
+    let engram = data
+        .pointer("/search/engram")
+        .ok_or("falta búsqueda Engram")?;
+    let decisions = data
+        .pointer("/recall/decisions")
+        .ok_or("falta campaña Decisions")?;
+    let positives = n(decisions, "/positive")?;
+    let negatives = n(decisions, "/negative")?;
+    if positives != 460
+        || negatives != 80
+        || n(decisions, "/candidate_recall")? != n(iromem, "/runs/0/top_20_correct")?
+    {
+        return Err("el agregado no coincide con la cohorte 014–017".into());
+    }
+    for system in [iromem, engram] {
+        let runs = system
+            .get("runs")
+            .and_then(Value::as_array)
+            .ok_or("faltan corridas de búsqueda")?;
+        if runs.len() != 4
+            || runs.iter().any(|run| {
+                n(run, "/top_1_correct").ok() != n(system, "/runs/0/top_1_correct").ok()
+                    || n(run, "/top_20_correct").ok() != n(system, "/runs/0/top_20_correct").ok()
+            })
+        {
+            return Err("la calidad de candidatos cambia entre corridas".into());
+        }
+    }
+    fs::create_dir_all(output_dir).map_err(|error| error.to_string())?;
+
+    let mut quality = Svg::new(1200, 650, "Recuerdos recuperados en las mismas preguntas");
+    quality.text(
+        58,
+        110,
+        "Cohorte 014–017 · 460 positivas · 2.800 recuerdos sintéticos · barras desde cero",
+        17,
+        MUTED,
+        "start",
+        "Arial,sans-serif",
+    );
+    for data in [
+        Panel {
+            x: 58,
+            title: "Entre 20 candidatos",
+            subtitle: "Recuerdo esperado presente",
+            unit: "aciertos / 460",
+            maximum: positives as f64,
+            bars: [
+                ("iROMEM", n(iromem, "/runs/0/top_20_correct")? as f64, TEAL),
+                ("Engram", n(engram, "/runs/0/top_20_correct")? as f64, GOLD),
+            ],
+            decimals: 0,
+        },
+        Panel {
+            x: 610,
+            title: "Primer candidato",
+            subtitle: "Recuerdo esperado en posición 1",
+            unit: "aciertos / 460",
+            maximum: positives as f64,
+            bars: [
+                ("iROMEM", n(iromem, "/runs/0/top_1_correct")? as f64, TEAL),
+                ("Engram", n(engram, "/runs/0/top_1_correct")? as f64, GOLD),
+            ],
+            decimals: 0,
+        },
+    ] {
+        panel(&mut quality, &data);
+    }
+    quality.text(58, 570, &format!("iROMEM + Decisions produjo {}/{} semillas correctas y dejó {}/{} negativos sin semilla.",
+        n(decisions, "/positive_correct")?, positives, n(decisions, "/negative_empty")?, negatives), 16, MUTED, "start", "Arial,sans-serif");
+    quality.text(
+        58,
+        602,
+        "Engram se midió como buscador de candidatos; no se le atribuye una semilla clasificada.",
+        16,
+        MUTED,
+        "start",
+        "Arial,sans-serif",
+    );
+    quality.save(&output_dir.join("full-comparison-accuracy-2026-10-16.svg"))?;
+
+    let mut latency = Svg::new(1200, 635, "Tiempo de búsqueda de candidatos");
+    latency.text(
+        58,
+        110,
+        "Cohorte 014–017 · 540 preguntas idénticas · mediana de cuatro corridas por motor",
+        17,
+        MUTED,
+        "start",
+        "Arial,sans-serif",
+    );
+    for data in [
+        Panel {
+            x: 58,
+            title: "Búsqueda: mediana",
+            subtitle: "Mediana de cuatro p50",
+            unit: "milisegundos",
+            maximum: 9.0,
+            bars: [
+                ("iROMEM", f(iromem, "/median_run_p50_ms")?, TEAL),
+                ("Engram", f(engram, "/median_run_p50_ms")?, GOLD),
+            ],
+            decimals: 2,
+        },
+        Panel {
+            x: 610,
+            title: "Búsqueda: p95",
+            subtitle: "Mediana de cuatro p95",
+            unit: "milisegundos",
+            maximum: 13.0,
+            bars: [
+                ("iROMEM", f(iromem, "/median_run_p95_ms")?, TEAL),
+                ("Engram", f(engram, "/median_run_p95_ms")?, GOLD),
+            ],
+            decimals: 2,
+        },
+    ] {
+        panel(&mut latency, &data);
+    }
+    latency.text(
+        58,
+        585,
+        "Cada corrida midió 540 consultas; el p95 por corrida se muestra en la figura adicional.",
+        16,
+        MUTED,
+        "start",
+        "Arial,sans-serif",
+    );
+    latency.save(&output_dir.join("full-comparison-latency-2026-10-16.svg"))?;
+
+    let round = |number: &str, system: &str, field: &str| -> Result<f64, String> {
+        f(&data, &format!("/codex/{number}/{system}/{field}"))
+    };
+    for number in ["1", "2"] {
+        for system in ["seed", "engram"] {
+            if n(&data, &format!("/codex/{number}/{system}/cases"))? != 6 {
+                return Err("el piloto Codex no tiene seis turnos por camino".into());
+            }
+        }
+    }
+    let across_rounds = |system: &str, field: &str| -> Result<f64, String> {
+        Ok((round("1", system, field)? + round("2", system, field)?) / 2.0)
+    };
+    let seed_s = across_rounds("seed", "median_final_answer_ms")? / 1000.0;
+    let engram_s = across_rounds("engram", "median_final_answer_ms")? / 1000.0;
+    let seed_tokens = across_rounds("seed", "median_input_tokens")?;
+    let engram_tokens = across_rounds("engram", "median_input_tokens")?;
+    let mut codex = Svg::new(1200, 650, "Codex: iROMEM frente a Engram");
+    codex.text(
+        58,
+        110,
+        "Cohorte 014–017 · 2 rondas de 6 turnos · mediana de las medianas de cada ronda",
+        17,
+        MUTED,
+        "start",
+        "Arial,sans-serif",
+    );
+    for data in [
+        Panel {
+            x: 58,
+            title: "Tiempo hasta la respuesta",
+            subtitle: "Semilla en prompt o búsqueda MCP",
+            unit: "segundos",
+            maximum: 13.0,
+            bars: [("iROMEM", seed_s, TEAL), ("Engram", engram_s, GOLD)],
+            decimals: 2,
+        },
+        Panel {
+            x: 610,
+            title: "Tokens de entrada informados",
+            subtitle: "Incluyen contexto e instrucciones",
+            unit: "tokens",
+            maximum: 64000.0,
+            bars: [
+                ("iROMEM", seed_tokens, TEAL),
+                ("Engram", engram_tokens, GOLD),
+            ],
+            decimals: 0,
+        },
+    ] {
+        panel(&mut codex, &data);
+    }
+    codex.text(
+        58,
+        575,
+        "iROMEM entregó la semilla en el prompt; Engram se consultó por MCP.",
+        16,
+        MUTED,
+        "start",
+        "Arial,sans-serif",
+    );
+    codex.text(
+        58,
+        600,
+        "Los tokens incluyen contexto y caché; no equivalen al coste marginal de la recuperación.",
+        16,
+        MUTED,
+        "start",
+        "Arial,sans-serif",
+    );
+    codex.text(
+        58,
+        625,
+        "La preparación de semilla se midió aparte; la integración automática sigue pendiente.",
+        16,
+        MUTED,
+        "start",
+        "Arial,sans-serif",
+    );
+    codex.save(&output_dir.join("full-comparison-codex-2026-10-16.svg"))
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
