@@ -1,0 +1,162 @@
+{
+  "kind": "general_memory_v1_hybrid_retrieval",
+  "synthetic_only": true,
+  "queries_sha256": "47e21acc0b2060205b924fb53e383b5ce5aba3ae0c4796e002531a29303930e3",
+  "results_sha256": "5e03e42e0a093eaf621de46f52792464fd1028b86d694013fb14c9eba79d748c",
+  "split_sha256": {
+    "development": {
+      "queries": "2e11c85f9bdd6b04ad62b1f53c15e9bd32b621786243acd457d4d833f200a365",
+      "results": "51835cd39dab5a7832cba881f9ac3c60ce53707282f33453c175c46f3293d6ae"
+    },
+    "final": {
+      "queries": "75ca1feaf830a30e84cf8ccb01bb1c5d55535ad50b8b6e4e305b35bc6ff8ff06",
+      "results": "19013c8b99d528cfe9a40bb72ee534b72c834d5228b3603909989bb66724cf81"
+    }
+  },
+  "statistics": {
+    "development/agent": {
+      "positive_cases": 30,
+      "negative_cases": 5,
+      "positive_recall": {
+        "1": 17,
+        "5": 22,
+        "10": 26,
+        "20": 30
+      },
+      "negative_with_candidates": 5,
+      "search_p50_ms": 17.877917
+    },
+    "development/conversation": {
+      "positive_cases": 30,
+      "negative_cases": 5,
+      "positive_recall": {
+        "1": 14,
+        "5": 26,
+        "10": 27,
+        "20": 30
+      },
+      "negative_with_candidates": 5,
+      "search_p50_ms": 14.632542
+    },
+    "development/project": {
+      "positive_cases": 30,
+      "negative_cases": 5,
+      "positive_recall": {
+        "1": 14,
+        "5": 23,
+        "10": 26,
+        "20": 30
+      },
+      "negative_with_candidates": 5,
+      "search_p50_ms": 21.718125
+    },
+    "development/user": {
+      "positive_cases": 25,
+      "negative_cases": 5,
+      "positive_recall": {
+        "1": 14,
+        "5": 23,
+        "10": 23,
+        "20": 25
+      },
+      "negative_with_candidates": 5,
+      "search_p50_ms": 22.872270999999998
+    },
+    "final/agent": {
+      "positive_cases": 120,
+      "negative_cases": 20,
+      "positive_recall": {
+        "1": 59,
+        "5": 97,
+        "10": 103,
+        "20": 120
+      },
+      "negative_with_candidates": 20,
+      "search_p50_ms": 19.986625
+    },
+    "final/conversation": {
+      "positive_cases": 120,
+      "negative_cases": 20,
+      "positive_recall": {
+        "1": 51,
+        "5": 97,
+        "10": 103,
+        "20": 120
+      },
+      "negative_with_candidates": 20,
+      "search_p50_ms": 14.455479
+    },
+    "final/project": {
+      "positive_cases": 120,
+      "negative_cases": 20,
+      "positive_recall": {
+        "1": 62,
+        "5": 94,
+        "10": 104,
+        "20": 119
+      },
+      "negative_with_candidates": 20,
+      "search_p50_ms": 18.335208
+    },
+    "final/user": {
+      "positive_cases": 100,
+      "negative_cases": 20,
+      "positive_recall": {
+        "1": 69,
+        "5": 87,
+        "10": 92,
+        "20": 100
+      },
+      "negative_with_candidates": 20,
+      "search_p50_ms": 18.963208
+    },
+    "holdout/agent": {
+      "positive_cases": 450,
+      "negative_cases": 75,
+      "positive_recall": {
+        "1": 247,
+        "5": 365,
+        "10": 392,
+        "20": 450
+      },
+      "negative_with_candidates": 75,
+      "search_p50_ms": 21.449375
+    },
+    "holdout/conversation": {
+      "positive_cases": 450,
+      "negative_cases": 75,
+      "positive_recall": {
+        "1": 194,
+        "5": 361,
+        "10": 394,
+        "20": 450
+      },
+      "negative_with_candidates": 75,
+      "search_p50_ms": 18.85175
+    },
+    "holdout/project": {
+      "positive_cases": 450,
+      "negative_cases": 75,
+      "positive_recall": {
+        "1": 233,
+        "5": 355,
+        "10": 391,
+        "20": 449
+      },
+      "negative_with_candidates": 75,
+      "search_p50_ms": 15.786167
+    },
+    "holdout/user": {
+      "positive_cases": 875,
+      "negative_cases": 175,
+      "positive_recall": {
+        "1": 554,
+        "5": 759,
+        "10": 804,
+        "20": 870
+      },
+      "negative_with_candidates": 175,
+      "search_p50_ms": 19.153375
+    }
+  }
+}

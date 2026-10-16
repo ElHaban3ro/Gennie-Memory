@@ -1,0 +1,118 @@
+{
+  "manifest": {
+    "kind": "general_memory_laya_choice",
+    "synthetic_only": true,
+    "queries_sha256": "2e11c85f9bdd6b04ad62b1f53c15e9bd32b621786243acd457d4d833f200a365",
+    "results_sha256": "51835cd39dab5a7832cba881f9ac3c60ce53707282f33453c175c46f3293d6ae",
+    "model_sha256": "9d628fd971b700382ac6f65920a86f149777b2e748e0c955fb3b19695aa8f204",
+    "tokenizer_sha256": "609d8f4c067cd3950f88594c5a802616cea245823836ef5848ee4fc40aab5b6f",
+    "prompt_sha256": "589cbd8d92fbb5650c37119f7f6594b6ab788ec25edad2f8363a3960a9bee7ce",
+    "runner_sha256": "d4ede643e67a9254a3d88e36beaa1fe5b3dfd5c7925df229d50fd5458cb52583",
+    "caps": [
+      5,
+      10,
+      20
+    ],
+    "variants": [
+      "direct",
+      "grounded",
+      "spanish"
+    ]
+  },
+  "device": "mps",
+  "laya_version": "0.3.5",
+  "load_seconds": 14.357603707991075,
+  "decisions": 1215,
+  "groups": {
+    "5/direct": {
+      "positive_exact": 35,
+      "positive_cases": 115,
+      "negative_empty": 14,
+      "negative_cases": 20,
+      "positive_candidate_coverage": 94,
+      "decision_p50_ms": 73.16254198667593,
+      "decision_p95_ms": 155.86394650454145,
+      "input_tokens": 23605
+    },
+    "5/grounded": {
+      "positive_exact": 43,
+      "positive_cases": 115,
+      "negative_empty": 14,
+      "negative_cases": 20,
+      "positive_candidate_coverage": 94,
+      "decision_p50_ms": 80.97054199606646,
+      "decision_p95_ms": 197.81903379771384,
+      "input_tokens": 26305
+    },
+    "5/spanish": {
+      "positive_exact": 21,
+      "positive_cases": 115,
+      "negative_empty": 19,
+      "negative_cases": 20,
+      "positive_candidate_coverage": 94,
+      "decision_p50_ms": 77.91641699441243,
+      "decision_p95_ms": 165.2748875014366,
+      "input_tokens": 25630
+    },
+    "10/direct": {
+      "positive_exact": 28,
+      "positive_cases": 115,
+      "negative_empty": 14,
+      "negative_cases": 20,
+      "positive_candidate_coverage": 102,
+      "decision_p50_ms": 98.22250000433996,
+      "decision_p95_ms": 220.35720800340613,
+      "input_tokens": 36726
+    },
+    "10/grounded": {
+      "positive_exact": 36,
+      "positive_cases": 115,
+      "negative_empty": 9,
+      "negative_cases": 20,
+      "positive_candidate_coverage": 102,
+      "decision_p50_ms": 100.56654100480955,
+      "decision_p95_ms": 210.83586240711148,
+      "input_tokens": 38413
+    },
+    "10/spanish": {
+      "positive_exact": 25,
+      "positive_cases": 115,
+      "negative_empty": 14,
+      "negative_cases": 20,
+      "positive_candidate_coverage": 102,
+      "decision_p50_ms": 99.1762089979602,
+      "decision_p95_ms": 203.37728749582308,
+      "input_tokens": 38092
+    },
+    "20/direct": {
+      "positive_exact": 24,
+      "positive_cases": 115,
+      "negative_empty": 8,
+      "negative_cases": 20,
+      "positive_candidate_coverage": 115,
+      "decision_p50_ms": 99.94241700042039,
+      "decision_p95_ms": 187.71900379797435,
+      "input_tokens": 39400
+    },
+    "20/grounded": {
+      "positive_exact": 35,
+      "positive_cases": 115,
+      "negative_empty": 5,
+      "negative_cases": 20,
+      "positive_candidate_coverage": 115,
+      "decision_p50_ms": 99.41845899447799,
+      "decision_p95_ms": 163.7856168017606,
+      "input_tokens": 39400
+    },
+    "20/spanish": {
+      "positive_exact": 26,
+      "positive_cases": 115,
+      "negative_empty": 12,
+      "negative_cases": 20,
+      "positive_candidate_coverage": 115,
+      "decision_p50_ms": 98.57783299230505,
+      "decision_p95_ms": 200.7822669998858,
+      "input_tokens": 39400
+    }
+  }
+}

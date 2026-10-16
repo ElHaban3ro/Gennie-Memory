@@ -1,0 +1,41 @@
+{
+  "kind": "general_memory_followup_calibration",
+  "synthetic_only": true,
+  "source_sha256": {
+    "queries": "85974bab77224fcb589b3995afef5a39a57ca8d49ade399e83b2f0ea067f577d",
+    "results": "5e03e42e0a093eaf621de46f52792464fd1028b86d694013fb14c9eba79d748c"
+  },
+  "selected_subjects": {
+    "user": [
+      "synthetic_user_006",
+      "synthetic_user_007",
+      "synthetic_user_008",
+      "synthetic_user_009"
+    ],
+    "project": [
+      "synthetic_project_006",
+      "synthetic_project_007",
+      "synthetic_project_008",
+      "synthetic_project_009"
+    ],
+    "conversation": [
+      "synthetic_conversation_006",
+      "synthetic_conversation_007",
+      "synthetic_conversation_008",
+      "synthetic_conversation_009"
+    ],
+    "agent": [
+      "synthetic_agent_006",
+      "synthetic_agent_007",
+      "synthetic_agent_008",
+      "synthetic_agent_009"
+    ]
+  },
+  "cohort_sha256": {
+    "queries": "6d1bd04878cdebd6a51be4962f53dbbb3cf0d34150a2a7500ca876b81aede900",
+    "results": "b6fcba31fa06a84c9ad59b1ccb2d1b5006a5b7d3c8fb95c540f01c1af6fd8951"
+  },
+  "seed_results_sha256": "c2c0c2be7482b5a7d5f353d3add63c46485ffbdf5003de77680a89eb05527f3c",
+  "positive": 460,
+  "negative": 80
+}

@@ -63,6 +63,8 @@ def call(key: str, model: str, state: dict, criteria: dict, instructions: str = 
         raise RuntimeError(f"OpenRouter HTTP {error.code}") from None
     except urllib.error.URLError as error:
         raise RuntimeError(f"OpenRouter transport error: {type(error.reason).__name__}") from None
+    except OSError as error:
+        raise RuntimeError(f"OpenRouter transport error: {type(error).__name__}; outcome unknown") from None
     elapsed_ms = (time.perf_counter() - started) * 1000
     return parse_decision(body, criteria, model, elapsed_ms)
 

@@ -1,0 +1,78 @@
+{
+  "kind": "general_memory_followup",
+  "synthetic_only": true,
+  "cases": 135,
+  "fallback_calls": 25,
+  "cascade_choices_changed": 0,
+  "groups": {
+    "primary": {
+      "positive_correct": 109,
+      "positive": 115,
+      "negative_empty": 20,
+      "negative": 20,
+      "decision_p50_ms": 492.5956670049345,
+      "decision_p95_ms": 748.3667787004376,
+      "by_scope": {
+        "user": {
+          "positive": 25,
+          "positive_correct": 24,
+          "negative": 5,
+          "negative_empty": 5
+        },
+        "project": {
+          "positive": 30,
+          "positive_correct": 30,
+          "negative": 5,
+          "negative_empty": 5
+        },
+        "conversation": {
+          "positive": 30,
+          "positive_correct": 25,
+          "negative": 5,
+          "negative_empty": 5
+        },
+        "agent": {
+          "positive": 30,
+          "positive_correct": 30,
+          "negative": 5,
+          "negative_empty": 5
+        }
+      }
+    },
+    "cascade": {
+      "positive_correct": 109,
+      "positive": 115,
+      "negative_empty": 20,
+      "negative": 20,
+      "decision_p50_ms": 512.2828750027111,
+      "decision_p95_ms": 1093.5405713928048,
+      "by_scope": {
+        "user": {
+          "positive": 25,
+          "positive_correct": 24,
+          "negative": 5,
+          "negative_empty": 5
+        },
+        "project": {
+          "positive": 30,
+          "positive_correct": 30,
+          "negative": 5,
+          "negative_empty": 5
+        },
+        "conversation": {
+          "positive": 30,
+          "positive_correct": 25,
+          "negative": 5,
+          "negative_empty": 5
+        },
+        "agent": {
+          "positive": 30,
+          "positive_correct": 30,
+          "negative": 5,
+          "negative_empty": 5
+        }
+      }
+    }
+  },
+  "reported_cost_usd": 0.007731012
+}

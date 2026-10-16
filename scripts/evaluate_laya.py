@@ -84,8 +84,8 @@ def main() -> None:
     parser.add_argument("--threshold", type=float, default=.5)
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
-    if not 1 <= args.limit <= 100000 or not 1 <= args.max_candidates <= 8 or not 0 <= args.threshold <= 1:
-        parser.error("limit must be positive and max-candidates between 1 and 8")
+    if not 1 <= args.limit <= 100000 or not 1 <= args.max_candidates <= 20 or not 0 <= args.threshold <= 1:
+        parser.error("limit must be positive and max-candidates between 1 and 20")
 
     queries = read_jsonl(args.queries)
     results = read_jsonl(args.results)

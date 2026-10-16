@@ -11,8 +11,14 @@ from pathlib import Path
 
 if __package__:
     from . import probe_openrouter_decisions as probe
+    from . import classifier_prompts
+    from . import general_memory_prompts
+    from . import classifier_policy
 else:
     import probe_openrouter_decisions as probe
+    import classifier_prompts
+    import general_memory_prompts
+    import classifier_policy
 
 
 def canonical(value: object) -> bytes:
@@ -35,9 +41,32 @@ def positive_number(value: str) -> float:
 
 
 def prepare(args: argparse.Namespace) -> dict:
-    if not 1 <= args.max_candidates <= 8 or args.max_calls < 1:
-        raise ValueError("max-candidates must be 1..8 and max-calls must be positive")
-    if not args.model or len(set(args.model)) != len(args.model):
+    configured_models = args.model
+    profile_path = getattr(args, "profile", None)
+    provider = getattr(args, "provider", "primary")
+    profile = None
+    if profile_path is not None and configured_models:
+        raise ValueError("Choose either a classifier profile or explicit models")
+    if not configured_models:
+        profile_path = profile_path or classifier_policy.DEFAULT_PROFILE
+        profile = classifier_policy.load_profile(profile_path)
+        configured_models = [classifier_policy.selected_model(profile, provider)]
+        if (args.max_candidates not in (None, profile["max_candidates"]) or
+                getattr(args, "prompt_variant", None) not in (None, profile["prompt_variant"])):
+            raise ValueError("Classifier profile conflicts with explicit choice settings")
+        max_candidates = profile["max_candidates"]
+        prompt_variant = profile["prompt_variant"]
+    else:
+        if provider != "primary":
+            raise ValueError("Provider role requires a classifier profile")
+        max_candidates = args.max_candidates if args.max_candidates is not None else 4
+        prompt_variant = getattr(args, "prompt_variant", None) or "legacy"
+    if not 1 <= max_candidates <= 20 or args.max_calls < 1:
+        raise ValueError("max-candidates must be 1..20 and max-calls must be positive")
+    if prompt_variant not in ("legacy", *classifier_prompts.CHOICE_VARIANTS,
+                              *general_memory_prompts.VARIANTS):
+        raise ValueError("Unknown prompt variant")
+    if not configured_models or len(set(configured_models)) != len(configured_models):
         raise ValueError("Models must be unique")
     queries = read_jsonl(args.queries)
     results = read_jsonl(args.results)
@@ -62,7 +91,7 @@ def prepare(args: argparse.Namespace) -> dict:
         search = probe.search_request(case)
         if not isinstance(search["query"], str) or not isinstance(search["scope_id"], str):
             raise ValueError(f"Invalid search request for {case_id}")
-        candidates = response["candidates"][:args.max_candidates]
+        candidates = response["candidates"][:max_candidates]
         identifiers = [candidate["memory_id"] for candidate in candidates]
         if "none" in identifiers or len(identifiers) != len(set(identifiers)):
             raise ValueError(f"Invalid candidate IDs for {case_id}")
@@ -74,25 +103,31 @@ def prepare(args: argparse.Namespace) -> dict:
             "case_id": case_id, "segment": case["segment"],
             "expected_ids": case["expected_ids"],
             "state": {"user_prompt": search["query"], "scope": search["scope_id"]},
-            "candidates": [{"memory_id": item["memory_id"], "summary": item["summary"]}
+            "candidates": [{"memory_id": item["memory_id"], "summary": item["summary"],
+                            "conditions": item.get("conditions")}
                            for item in candidates],
         })
-    planned_calls = sum(bool(case["candidates"]) for case in cases) * len(args.model)
+    planned_calls = sum(bool(case["candidates"]) for case in cases) * len(configured_models)
     if planned_calls > args.max_calls:
         raise ValueError(f"Plan needs {planned_calls} calls but max-calls is {args.max_calls}")
-    if planned_calls * args.reserve_per_call_usd > args.max_cost_usd:
+    if (args.max_cost_usd is not None and
+            planned_calls * args.reserve_per_call_usd > args.max_cost_usd):
         raise ValueError("Reserved call cost exceeds max-cost-usd")
     plan = {
         "version": 1, "method": "openrouter_decisions_choice_probe",
         "synthetic_only": True, "split": args.split,
         "queries_sha256": digest(args.queries.read_bytes()),
         "results_sha256": digest(args.results.read_bytes()),
-        "models": args.model, "max_candidates": args.max_candidates,
+        "models": configured_models, "max_candidates": max_candidates,
+        "prompt_variant": prompt_variant,
         "max_calls": args.max_calls, "max_seconds": args.max_seconds,
         "max_cost_usd": args.max_cost_usd,
         "reserve_per_call_usd": args.reserve_per_call_usd,
         "planned_calls": planned_calls, "cases": cases,
     }
+    if profile is not None:
+        plan["profile_sha256"] = digest(profile_path.read_bytes())
+        plan["prompt_sha256"] = digest(Path(general_memory_prompts.__file__).read_bytes())
     plan["plan_sha256"] = digest(canonical(plan))
     return plan
 
@@ -115,7 +150,8 @@ def load_journal(path: Path, plan: dict) -> dict[tuple[str, str], dict]:
             raise ValueError(f"Unknown journal task at line {line_number}")
         previous = state.get(identity)
         if event["phase"] == "started":
-            if previous is not None:
+            if previous is not None and not (previous["phase"] == "finished" and
+                                             previous["result"]["status"] == "failed"):
                 raise ValueError(f"Repeated started task at line {line_number}")
         elif event["phase"] == "finished":
             if previous is None or previous["phase"] != "started":
@@ -158,16 +194,33 @@ def usage_from_journal(path: Path, plan: dict) -> tuple[int, float, float]:
     return calls, cost, active_seconds
 
 
-def run(plan: dict, journal: Path, call=probe.call) -> dict:
+def run(plan: dict, journal: Path, call=probe.call, retry_failed: bool = False,
+        retry_only: tuple[str, str] | None = None) -> dict:
+    if (plan.get("prompt_sha256") and
+            plan["prompt_sha256"] != digest(Path(general_memory_prompts.__file__).read_bytes())):
+        raise ValueError("Classifier prompt code changed after the plan was frozen")
+    if retry_only is not None and not retry_failed:
+        raise ValueError("retry_only requires retry_failed")
     state = load_journal(journal, plan)
+    if retry_only is not None and (retry_only not in state or
+                                   state[retry_only]["phase"] != "finished" or
+                                   state[retry_only]["result"]["status"] != "failed"):
+        raise ValueError("Selected task has no terminal failure to retry")
     if any(event["phase"] == "started" for event in state.values()):
         raise ValueError("Uncertain in-flight call: resolve it as failed before resuming; never retry automatically")
     calls, estimated_cost, prior_active_seconds = usage_from_journal(journal, plan)
+    retry_allowance = (sum(event["phase"] == "finished" and
+                           event["result"]["status"] == "failed"
+                           for event in (json.loads(line) for line in journal.read_text().splitlines()))
+                       if retry_failed and journal.exists() else 0)
     key = probe.read_key()
     started_at = time.monotonic()
     for model, case in tasks(plan):
         identity = (model, case["case_id"])
-        if identity in state:
+        retry_this = (retry_failed and state.get(identity, {}).get("phase") == "finished" and
+                      state[identity]["result"]["status"] == "failed" and
+                      (retry_only is None or retry_only == identity))
+        if identity in state and not retry_this:
             continue
         base = {"plan_sha256": plan["plan_sha256"], "model": model,
                 "case_id": case["case_id"]}
@@ -177,18 +230,33 @@ def run(plan: dict, journal: Path, call=probe.call) -> dict:
             append_event(journal, event)
             state[identity] = event
             continue
-        if (calls >= plan["max_calls"] or
-            estimated_cost + plan["reserve_per_call_usd"] > plan["max_cost_usd"] or
+        if (calls >= plan["max_calls"] + retry_allowance or
+            (plan["max_cost_usd"] is not None and
+             estimated_cost + plan["reserve_per_call_usd"] > plan["max_cost_usd"]) or
             prior_active_seconds + time.monotonic() - started_at >= plan["max_seconds"]):
             break
-        criteria = {item["memory_id"]: item["summary"] for item in candidates}
-        criteria["none"] = "No candidate memory is relevant to this request."
+        prompt_variant = plan.get("prompt_variant", "legacy")
+        if prompt_variant == "legacy":
+            criteria = {item["memory_id"]: item["summary"] for item in candidates}
+            criteria["none"] = "No candidate memory is relevant to this request."
+            mapping = {key: key for key in criteria}
+            instructions = None
+        else:
+            question, mapping = (general_memory_prompts.choice(candidates, prompt_variant)
+                                 if prompt_variant in general_memory_prompts.VARIANTS else
+                                 classifier_prompts.choice(candidates, prompt_variant))
+            criteria = question["criteria"]
+            instructions = question["instructions"]
         append_event(journal, {**base, "phase": "started"})
         calls += 1
         estimated_cost += plan["reserve_per_call_usd"]
         attempt_started = time.monotonic()
         try:
-            result = call(key, model, case["state"], criteria)
+            result = (call(key, model, case["state"], criteria) if instructions is None else
+                      call(key, model, case["state"], criteria, instructions=instructions))
+            if result["chosen_id"] not in mapping:
+                raise ValueError("Provider selected an unknown option")
+            result["chosen_id"] = mapping[result["chosen_id"]]
             reported = result.get("reported_cost_usd")
             if isinstance(reported, bool) or not isinstance(reported, (int, float)) or (
                 not math.isfinite(reported) or reported < 0
@@ -213,6 +281,8 @@ def run(plan: dict, journal: Path, call=probe.call) -> dict:
             break
     return {"planned_tasks": len(tasks(plan)), "finished_tasks": len(state),
             "attempted_calls": calls, "reported_or_reserved_cost_usd": estimated_cost,
+            "failed_tasks": sum(event["phase"] == "finished" and
+                                event["result"]["status"] == "failed" for event in state.values()),
             "uncertain_calls": sum(event["phase"] == "started" for event in state.values())}
 
 
@@ -268,16 +338,27 @@ def main() -> None:
     prep.add_argument("--queries", type=Path, required=True)
     prep.add_argument("--results", type=Path, required=True)
     prep.add_argument("--split", choices=("development", "calibration", "final"), required=True)
-    prep.add_argument("--model", action="append", choices=probe.MODELS, required=True)
-    prep.add_argument("--max-candidates", type=int, default=4)
+    prep.add_argument("--model", action="append", choices=probe.MODELS)
+    prep.add_argument("--profile", type=Path,
+                      help="Versioned classifier profile; default when --model is omitted")
+    prep.add_argument("--provider", choices=("primary", "secondary"), default="primary")
+    prep.add_argument("--max-candidates", type=int)
+    prep.add_argument("--prompt-variant", choices=("legacy", *classifier_prompts.CHOICE_VARIANTS,
+                                                  *general_memory_prompts.VARIANTS),
+                      default=None)
     prep.add_argument("--max-calls", type=int, required=True)
-    prep.add_argument("--max-cost-usd", type=positive_number, required=True)
+    prep.add_argument("--max-cost-usd", type=positive_number,
+                      help="Optional spending cap; omit for uncapped research")
     prep.add_argument("--reserve-per-call-usd", type=positive_number, required=True)
     prep.add_argument("--max-seconds", type=positive_number, required=True)
     prep.add_argument("--output", type=Path, required=True)
     running = sub.add_parser("run")
     running.add_argument("--plan", type=Path, required=True)
     running.add_argument("--journal", type=Path, required=True)
+    running.add_argument("--retry-failed", action="store_true",
+                         help="Explicitly retry terminal failures; uncertain calls still block")
+    running.add_argument("--retry-only-model", choices=probe.MODELS)
+    running.add_argument("--retry-only-case-id")
     resolve = sub.add_parser("resolve-uncertain")
     resolve.add_argument("--plan", type=Path, required=True)
     resolve.add_argument("--journal", type=Path, required=True)
@@ -303,7 +384,12 @@ def main() -> None:
         raise ValueError("Plan checksum or synthetic-only flag is invalid")
     plan["plan_sha256"] = actual
     if args.command == "run":
-        print(json.dumps(run(plan, args.journal)))
+        if bool(args.retry_only_model) != bool(args.retry_only_case_id):
+            parser.error("--retry-only-model and --retry-only-case-id must be provided together")
+        retry_only = ((args.retry_only_model, args.retry_only_case_id)
+                      if args.retry_only_model else None)
+        print(json.dumps(run(plan, args.journal, retry_failed=args.retry_failed,
+                             retry_only=retry_only)))
     elif args.command == "resolve-uncertain":
         resolve_uncertain(plan, args.journal, args.model, args.case_id)
     else:

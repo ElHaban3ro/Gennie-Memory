@@ -42,7 +42,7 @@ def main() -> None:
     if not decisions:
         raise ValueError("No matching decisions")
     max_candidates = report.get("max_candidates")
-    if isinstance(max_candidates, bool) or not isinstance(max_candidates, int) or not 1 <= max_candidates <= 8:
+    if isinstance(max_candidates, bool) or not isinstance(max_candidates, int) or not 1 <= max_candidates <= 20:
         raise ValueError("Decision report has no valid max_candidates")
     if len({row["id"] if "id" in row else row["case_id"] for row in decisions}) != len(decisions):
         raise ValueError("Duplicate decisions for the same case")

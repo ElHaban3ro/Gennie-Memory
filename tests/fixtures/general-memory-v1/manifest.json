@@ -1,0 +1,30 @@
+{
+  "version": "general-memory-v1",
+  "synthetic": true,
+  "as_of": "2026-10-15T12:00:00.000Z",
+  "memories": 2800,
+  "queries": 3300,
+  "positive_queries": 2800,
+  "negative_queries": 500,
+  "unscoped_queries": 140,
+  "memories_by_scope": {
+    "agent": 600,
+    "conversation": 600,
+    "project": 600,
+    "user": 1000
+  },
+  "memories_by_type": {
+    "constraint": 280,
+    "correction": 20,
+    "decision": 200,
+    "event": 120,
+    "fact": 640,
+    "goal": 100,
+    "identity": 40,
+    "observation": 180,
+    "preference": 640,
+    "procedure": 280,
+    "relationship": 160,
+    "routine": 140
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "retrieval_method": "fts5_semantic_rrf",
+  "embedding_encoder": "laya_local",
+  "max_candidates": 20,
+  "question_type": "choice",
+  "prompt_variant": "direct",
+  "allow_none": true,
+  "primary_model": "openai/gpt-6-luna-decisions",
+  "secondary_model": "typesafe/jev-1.13",
+  "secondary_enabled": true,
+  "automatic_fallback": false
+}

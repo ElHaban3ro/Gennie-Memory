@@ -411,9 +411,9 @@ def main() -> None:
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
     max_limit = 10000 if args.journal and args.selector not in REMOTE_MODELS else 100
-    if (not 1 <= args.limit <= max_limit or not 1 <= args.max_candidates <= 8 or
+    if (not 1 <= args.limit <= max_limit or not 1 <= args.max_candidates <= 20 or
         not math.isfinite(args.threshold) or not 0 <= args.threshold <= 1):
-        parser.error(f"limit must be 1..{max_limit} and max-candidates 1..8")
+        parser.error(f"limit must be 1..{max_limit} and max-candidates 1..20")
     if args.case_id and len(args.case_id) > args.limit:
         parser.error("--case-id count exceeds --limit")
     cases = selected_cases(args.queries, args.limit, args.case_id, args.split)

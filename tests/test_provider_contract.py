@@ -3,6 +3,7 @@
 import importlib.util
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 
 path = Path(__file__).resolve().parents[1] / "scripts/probe_openrouter_decisions.py"
@@ -12,6 +13,12 @@ spec.loader.exec_module(module)
 
 
 class DecisionContractTests(unittest.TestCase):
+    def test_connection_reset_is_reported_without_leaking_credentials(self):
+        with patch.object(module.urllib.request, "urlopen", side_effect=ConnectionResetError()):
+            with self.assertRaisesRegex(RuntimeError, "ConnectionResetError; outcome unknown"):
+                module.call("synthetic-key", "test-model", {"user_prompt": "synthetic"},
+                            {"none": "no memory"})
+
     def test_valid_choice_and_refusal_or_unknown_id(self):
         criteria = {"synthetic_0001": "fictitious memory", "none": "no memory"}
         body = {"model": "test-model", "answers": {"relevance": {

@@ -1,0 +1,18 @@
+{
+  "kind": "general_memory_v1_adapter",
+  "synthetic_only": true,
+  "selection": "Entity-disjoint: first ID per scope development; next four final; rest holdout",
+  "fixture_sha256": {
+    "memories": "ee55707918018aece6f687759ef31eac0adc37d85542fae0d2e312bd136c6835",
+    "queries": "b8dd35eb5b1d97e212614d8288ad7c8021622e8bee095fee3ce8852d7139dca9"
+  },
+  "adapted_queries_sha256": "85974bab77224fcb589b3995afef5a39a57ca8d49ade399e83b2f0ea067f577d",
+  "counts": {
+    "development/negative": 20,
+    "development/positive": 115,
+    "final/negative": 80,
+    "final/positive": 460,
+    "holdout/negative": 400,
+    "holdout/positive": 2225
+  }
+}

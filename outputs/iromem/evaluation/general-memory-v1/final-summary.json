@@ -1,0 +1,195 @@
+{
+  "kind": "general_memory_v1_final_comparison",
+  "synthetic_only": true,
+  "cohort": "Four final entities per scope; no development entity reused",
+  "candidate_cap": 20,
+  "prompt_variant_remote": "direct",
+  "remote_attempted_calls": 1084,
+  "remote_reported_or_reserved_cost_usd": 0.05401995600000067,
+  "groups": {
+    "laya/direct": {
+      "positive_exact": 96,
+      "positive_cases": 460,
+      "positive_rate": 0.20869565217391303,
+      "positive_wilson_95": [
+        0.1740474609579883,
+        0.24816891296989724
+      ],
+      "candidate_covered": 459,
+      "positive_abstentions": 91,
+      "negative_empty": 20,
+      "negative_cases": 80,
+      "decision_failures": 0,
+      "decision_ms": {
+        "p50": 95.29081299842801,
+        "p95": 174.1795191002892
+      },
+      "by_scope": {
+        "user": {
+          "positive_exact": 22,
+          "positive_cases": 100,
+          "negative_empty": 7,
+          "negative_cases": 20
+        },
+        "project": {
+          "positive_exact": 17,
+          "positive_cases": 120,
+          "negative_empty": 3,
+          "negative_cases": 20
+        },
+        "conversation": {
+          "positive_exact": 13,
+          "positive_cases": 120,
+          "negative_empty": 7,
+          "negative_cases": 20
+        },
+        "agent": {
+          "positive_exact": 44,
+          "positive_cases": 120,
+          "negative_empty": 3,
+          "negative_cases": 20
+        }
+      }
+    },
+    "laya/grounded": {
+      "positive_exact": 125,
+      "positive_cases": 460,
+      "positive_rate": 0.2717391304347826,
+      "positive_wilson_95": [
+        0.23310148576339945,
+        0.31415761320994356
+      ],
+      "candidate_covered": 459,
+      "positive_abstentions": 38,
+      "negative_empty": 7,
+      "negative_cases": 80,
+      "decision_failures": 0,
+      "decision_ms": {
+        "p50": 95.16014598921174,
+        "p95": 164.6888312578085
+      },
+      "by_scope": {
+        "user": {
+          "positive_exact": 26,
+          "positive_cases": 100,
+          "negative_empty": 3,
+          "negative_cases": 20
+        },
+        "project": {
+          "positive_exact": 20,
+          "positive_cases": 120,
+          "negative_empty": 2,
+          "negative_cases": 20
+        },
+        "conversation": {
+          "positive_exact": 17,
+          "positive_cases": 120,
+          "negative_empty": 1,
+          "negative_cases": 20
+        },
+        "agent": {
+          "positive_exact": 62,
+          "positive_cases": 120,
+          "negative_empty": 1,
+          "negative_cases": 20
+        }
+      }
+    },
+    "typesafe/jev-1.13": {
+      "positive_exact": 414,
+      "positive_cases": 460,
+      "positive_rate": 0.9,
+      "positive_wilson_95": [
+        0.86918563961914,
+        0.9241888917037635
+      ],
+      "candidate_covered": 459,
+      "positive_abstentions": 41,
+      "negative_empty": 79,
+      "negative_cases": 80,
+      "decision_failures": 0,
+      "decision_ms": {
+        "p50": 516.6427704971284,
+        "p95": 737.4357003005567
+      },
+      "by_scope": {
+        "user": {
+          "positive_exact": 100,
+          "positive_cases": 100,
+          "negative_empty": 20,
+          "negative_cases": 20
+        },
+        "project": {
+          "positive_exact": 114,
+          "positive_cases": 120,
+          "negative_empty": 20,
+          "negative_cases": 20
+        },
+        "conversation": {
+          "positive_exact": 88,
+          "positive_cases": 120,
+          "negative_empty": 19,
+          "negative_cases": 20
+        },
+        "agent": {
+          "positive_exact": 112,
+          "positive_cases": 120,
+          "negative_empty": 20,
+          "negative_cases": 20
+        }
+      },
+      "reported_cost_usd": 0.021170856,
+      "served_models": [
+        "typesafe/jev-1.13-20260917"
+      ]
+    },
+    "openai/gpt-6-luna-decisions": {
+      "positive_exact": 433,
+      "positive_cases": 460,
+      "positive_rate": 0.941304347826087,
+      "positive_wilson_95": [
+        0.915948547318111,
+        0.959350528000092
+      ],
+      "candidate_covered": 459,
+      "positive_abstentions": 21,
+      "negative_empty": 80,
+      "negative_cases": 80,
+      "decision_failures": 0,
+      "decision_ms": {
+        "p50": 491.6412290040171,
+        "p95": 705.2394038488272
+      },
+      "by_scope": {
+        "user": {
+          "positive_exact": 99,
+          "positive_cases": 100,
+          "negative_empty": 20,
+          "negative_cases": 20
+        },
+        "project": {
+          "positive_exact": 119,
+          "positive_cases": 120,
+          "negative_empty": 20,
+          "negative_cases": 20
+        },
+        "conversation": {
+          "positive_exact": 97,
+          "positive_cases": 120,
+          "negative_empty": 20,
+          "negative_cases": 20
+        },
+        "agent": {
+          "positive_exact": 118,
+          "positive_cases": 120,
+          "negative_empty": 20,
+          "negative_cases": 20
+        }
+      },
+      "reported_cost_usd": 0.0288491,
+      "served_models": [
+        "openai/gpt-6-luna-decisions-20261006"
+      ]
+    }
+  }
+}
