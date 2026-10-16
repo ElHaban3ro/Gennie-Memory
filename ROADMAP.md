@@ -115,7 +115,7 @@ Calibración local: se ejecutaron los mismos tres selectores sobre [1.480 casos 
 
 ## Después del MVP
 
-1. Integrar con Codex mediante MCP y, si se decide, un hook; medir entonces el efecto real sobre la respuesta del agente y el plazo de 1.500 ms propuesto en el [diseño v0.1](README.md).
+1. Integrar con Codex mediante MCP y, si se decide, un hook; medir desde el envío del mensaje del usuario hasta la respuesta final, incluyendo recepción, recuperación, Decisions, composición, entrega de la semilla y respuesta del agente. Comparar ambos caminos con el mismo punto de inicio y fin, además de medir el plazo de 1.500 ms propuesto en el [diseño v0.1](README.md). La suma actual de `recall` y Codex es un cálculo de dos ejecuciones, no esa medición.
 2. Completar el contrato de escritura y reconciliación del [diseño v0.1](README.md) §2 y §5: `mem_write`, `entity_resolve`, huella, clasificación de relaciones, propuestas, `mem_resolve`, confirmación y auditoría de evidencia.
 3. Completar ciclo de vida del [diseño v0.1](README.md) §6–8: cola persistente de embeddings, revisión de vigencia, `mem_review_list`, retirada, restauración, borrado del almacén activo, cancelación de trabajos y continuidad tras compactación.
 4. Endurecer la integración: observabilidad, migración entre perfiles, respaldo y recuperación, instalación/documentación y otras plataformas. Añadir búsqueda vectorial aproximada solo si el coseno exacto incumple un objetivo medido.
