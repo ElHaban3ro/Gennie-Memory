@@ -152,10 +152,15 @@ svg.save("broader-comparison-p95-2026-10-16.svg")
 codex = original["codex"]
 lodis_rounds = []
 lodis_tokens = []
+basic_rounds = []
+basic_tokens = []
 for round_number in (1, 2):
     rows = json.loads((DATA / f"codex-lodis-valid-{round_number}/summary.json").read_text())["rows"]
     lodis_rounds.append(statistics.median(row["final_answer_ms"] for row in rows) / 1000)
     lodis_tokens.append(statistics.median(row["usage"]["input_tokens"] for row in rows))
+    basic_rows = json.loads((DATA / f"codex-basic-memory-valid-{round_number}/summary.json").read_text())["rows"]
+    basic_rounds.append(statistics.median(row["final_answer_ms"] for row in basic_rows) / 1000)
+    basic_tokens.append(statistics.median(row["usage"]["input_tokens"] for row in basic_rows))
 
 
 def original_median(kind, field):
@@ -165,22 +170,24 @@ def original_median(kind, field):
 seed_codex = original_median("seed", "median_final_answer_ms") / 1000
 engram_codex = original_median("engram", "median_final_answer_ms") / 1000
 lodis_codex = statistics.median(lodis_rounds)
+basic_codex = statistics.median(basic_rounds)
 seed_tokens = original_median("seed", "median_input_tokens")
 engram_tokens = original_median("engram", "median_input_tokens")
 lodis_input_tokens = statistics.median(lodis_tokens)
-colors = COLORS[:3]
-names = ["iROMEM", "Engram", "Lodis"]
+basic_input_tokens = statistics.median(basic_tokens)
+colors = COLORS
+names = ["iROMEM", "Engram", "Lodis", "Basic Memory"]
 
-def three_values(numbers):
+def codex_values(numbers):
     return [(name, number, color) for name, number, color in zip(names, numbers, colors)]
 
 
 svg = Svg("Codex: turno con memoria",
           "Cohorte 014–017 · 2 rondas de 6 turnos · mediana de las medianas de cada ronda")
-panel(svg, 58, "Tiempo del turno Codex", "Semilla en prompt o búsqueda MCP", "segundos", 15,
-      three_values([seed_codex, engram_codex, lodis_codex]))
+panel(svg, 58, "Tiempo del turno Codex", "Semilla en prompt o búsqueda MCP", "segundos", 20,
+      codex_values([seed_codex, engram_codex, lodis_codex, basic_codex]))
 panel(svg, 610, "Tokens de entrada informados", "Incluyen contexto e instrucciones", "tokens", 64000,
-      three_values([seed_tokens, engram_tokens, lodis_input_tokens]), 0)
+      codex_values([seed_tokens, engram_tokens, lodis_input_tokens, basic_input_tokens]), 0)
 svg.text(58, 578, "iROMEM empieza con la semilla lista; su preparación se muestra en otra figura.", 16, MUTED)
 svg.text(58, 608, "Los tokens incluyen instrucciones y caché; no equivalen al coste marginal de la recuperación.", 16, MUTED)
 svg.save("broader-comparison-codex-2026-10-16.svg")
@@ -191,9 +198,9 @@ for index in (1, 2):
     x = 58 if index == 1 else 610
     values = [codex[str(index)]["calculated_seed_plus_recall_median_ms"] / 1000,
               codex[str(index)]["engram"]["median_final_answer_ms"] / 1000,
-              lodis_rounds[index - 1]]
-    panel(svg, x, f"Ronda {index}", "Mediana de seis casos emparejados", "segundos", 15,
-          three_values(values))
+              lodis_rounds[index - 1], basic_rounds[index - 1]]
+    panel(svg, x, f"Ronda {index}", "Mediana de seis casos emparejados", "segundos", 20,
+          codex_values(values))
 svg.text(58, 578, "iROMEM: suma por caso de recall + Codex medidos en ejecuciones separadas.", 16, MUTED)
-svg.text(58, 608, "Engram y Lodis: turno Codex con MCP. Falta medir el hook y la entrega real de iROMEM.", 16, MUTED)
+svg.text(58, 608, "Otros motores: turno Codex con MCP. Falta medir el hook y la entrega real de iROMEM.", 16, MUTED)
 svg.save("broader-comparison-calculated-flow-2026-10-16.svg")
