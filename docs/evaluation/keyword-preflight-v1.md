@@ -1,12 +1,12 @@
 # Consulta rápida por palabras clave frente al híbrido y Engram
 
-Estado: experimento sintético ejecutado el 2026-10-15 en esta Mac. `query_mode: "keywords"` está implementado como opción de `search` y `session`; el modo predeterminado sigue siendo `natural`. [Resultados por caso](../../outputs/iromem/evaluation/keyword-preflight-v1/).
+Estado: experimento sintético ejecutado el 2026-10-15 en esta Mac. Este informe conserva la política de su fecha: entonces `query_mode: "keywords"` era optativo. La [decisión posterior](../decisions/0010-keyword-search-default.md) lo convirtió en predeterminado; las mediciones y conclusiones de esta corrida no se reescriben. [Resultados por caso](../../outputs/iromem/evaluation/keyword-preflight-v1/).
 
 ## Implementación
 
 La nueva modalidad extrae palabras clave de **la pregunta entrante** antes de consultar FTS5. Conserva los documentos indexados y los filtros de ámbito, entidad, revisión, estado y fecha. Usa términos Unicode minúsculos de al menos tres caracteres, sin duplicados ni las palabras funcionales fijadas para la comparación Engram, unidos por OR. No se añadieron etiquetas a los recuerdos ni se modificó SQLite. El texto original de la pregunta sigue disponible para Decisions.
 
-El experimento también ejecutó una política de preselección en `scripts/benchmark_keyword_preflight.py`: busca por palabras clave y usa el híbrido si la lista está vacía. Es una simulación del orquestador con vectores ya calculados; **no está activada como política predeterminada**. En final no hubo listas vacías, aunque ocho positivos perdieron el recuerdo correcto entre veinte candidatos. Una lista no vacía no acredita cobertura.
+El experimento también simuló una política de preselección: busca por palabras clave y usa el híbrido si la lista está vacía. Fue una simulación del orquestador con vectores ya calculados; **esa regla no se activó**. En final no hubo listas vacías, aunque ocho positivos perdieron el recuerdo correcto entre veinte candidatos. Una lista no vacía no acredita cobertura. El script histórico fue retirado.
 
 ## Búsqueda local: 2.800 recuerdos, 540 preguntas finales
 
@@ -41,12 +41,12 @@ iROMEM **no tiene hook ni herramienta MCP para Codex**. El escenario relevante e
 
 ## Decisión y reproducción
 
-La modalidad rápida queda optativa. No se activa el salto semántico por lista no vacía como política base: perdió siete positivos en top veinte, incluido uno del piloto completo. La ruta híbrida natural conserva la mayor cobertura observada. Una regla de confianza que permita saltar el vector debe fijarse en desarrollo y validarse en sujetos nuevos, con precisión de semilla y negativos.
+Esta fue la decisión **de aquel experimento**. Una decisión posterior fijó la ruta rápida como predeterminada, aceptando su menor cobertura; la [medición Rust vigente](rust-migration-v1.md) evalúa esa política. El salto semántico automático por lista vacía continúa descartado.
 
 ```sh
 cargo fmt --all --check
 cargo test --offline --workspace
-python3 scripts/benchmark_keyword_preflight.py --before /ruta/al/binario/anterior --after target/debug/iromem --database .local/pilots/general-memory-v1/iromem.db --queries .local/pilots/general-memory-v1/final-queries.jsonl --output /tmp/keyword-final.json
+cargo run --offline -p iromem-eval -- validate-general-memory tests/fixtures/general-memory-v1
 ```
 
-Huellas SHA-256: binario anterior `24652c759b8237ea679de8ffb1148d1528eab74fc87561a5e93c93fb774ad11b`; binario nuevo `f91056f060022f85341cd6ae9e73d02e063c69fdfb2a917e7a6b3c85d2b5aeef`; base `fd2eb78aff4021660ac9bf0f1972e14014cf17e9c64b9b7b6009aa4fc2a0eae9`; preguntas finales `75ca1feaf830a30e84cf8ccb01bb1c5d55535ad50b8b6e4e305b35bc6ff8ff06`.
+La comparación histórica original ya no se regenera con su script retirado. Huellas SHA-256 de esa corrida: binario anterior `24652c759b8237ea679de8ffb1148d1528eab74fc87561a5e93c93fb774ad11b`; binario nuevo `f91056f060022f85341cd6ae9e73d02e063c69fdfb2a917e7a6b3c85d2b5aeef`; base `fd2eb78aff4021660ac9bf0f1972e14014cf17e9c64b9b7b6009aa4fc2a0eae9`; preguntas finales `75ca1feaf830a30e84cf8ccb01bb1c5d55535ad50b8b6e4e305b35bc6ff8ff06`.

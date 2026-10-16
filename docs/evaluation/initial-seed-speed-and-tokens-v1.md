@@ -1,6 +1,6 @@
 # Velocidad y tokens de la semilla inicial: evidencia y límites
 
-Estado: piloto sintético medido el 2026-10-15 en esta Mac. Gráficas de [velocidad](assets/speed-comparison-v1.svg) y [aciertos](assets/accuracy-comparison-v1.svg). Esta prueba **simula** la entrega de una semilla en el primer prompt de Codex; no instala un hook ni integra iROMEM en Codex.
+Estado: **piloto histórico** sintético medido el 2026-10-15 en esta Mac, con figuras [originales de velocidad](assets/speed-comparison-v1.svg) y [aciertos](assets/accuracy-comparison-v1.svg). Simuló la entrega de una semilla **híbrida** en el primer prompt de Codex; no instaló un hook. La [decisión posterior](../decisions/0010-keyword-search-default.md) cambió el método predeterminado a palabras clave. Su medición equivalente actual, ejecutada desde Rust, está en [rust-migration-v1.md](rust-migration-v1.md); no se deben mezclar sus cifras.
 
 ## Dos bancos, dos preguntas distintas
 
@@ -16,7 +16,7 @@ iROMEM híbrido no es más rápido que Engram en la búsqueda local aislada. La 
 
 **Recorrido de seis preguntas.** Se usaron cinco preguntas positivas y una negativa de la partición de desarrollo, con recuerdos sintéticos de usuario, proyecto, conversación y agente. La [corrida Codex + Engram](engram-codex-end-to-end-v1.md) inició un proceso Codex nuevo por pregunta y midió hasta la respuesta. La [corrida iROMEM directa](../../outputs/iromem/evaluation/engram-codex-end-to-end-v1/direct-iromem.json) usó Laya, búsqueda híbrida, Decisions y composición validada, con los procesos calientes, hasta producir la semilla. Después, una [corrida Codex con semilla inicial](../../outputs/iromem/evaluation/codex-initial-seed-simulation-v1/summary.json) inició el mismo Codex CLI y modelo con el texto de la semilla incluida en el primer prompt, sin MCP ni herramientas. Las selecciones de recuerdos de iROMEM quedaron congeladas antes de ese turno.
 
-La simulación usó el CLI incluido en la aplicación (`0.162.0-alpha.17.2`), `gpt-6.1-sol`, una sesión nueva y efímera por pregunta, configuración del usuario ignorada y sandbox de solo lectura. El prompt incluyó pregunta, semilla y una instrucción breve de responder sin herramientas. `scripts/simulate_codex_seed_prompt.py` guarda los eventos de cada turno y rechaza una corrida si Codex usa herramientas. La prueba Engram tenía MCP disponible y una instrucción distinta para consultarlo; por ello la comparación incluye tanto el cambio de entrega de memoria como el cambio de herramientas/contexto.
+La simulación histórica usó el CLI incluido en la aplicación (`0.162.0-alpha.17.2`), `gpt-6.1-sol`, una sesión nueva y efímera por pregunta, configuración del usuario ignorada y sandbox de solo lectura. El prompt incluyó pregunta, semilla y una instrucción breve de responder sin herramientas. El runner antiguo guardó los eventos de cada turno y rechazó corridas con herramientas; fue retirado. La prueba Engram tenía MCP disponible y una instrucción distinta para consultarlo; por ello la comparación incluye tanto el cambio de entrega de memoria como el cambio de herramientas/contexto.
 
 | Recorrido medido | p50 / p95 | Resultado de seis casos |
 | --- | ---: | --- |
@@ -46,13 +46,8 @@ La ruta léxica optativa consumió 518 tokens p50 de entrada en Decisions en una
 - Ahorro causal de tokens frente a Engram con igual carga de contexto y herramientas: las configuraciones del modelo difieren porque una corrida tenía MCP y la otra no.
 - Resultados en preguntas y recuerdos reales. Seis preguntas templáticas no bastan para estimar p95, calidad general ni tasa de errores.
 
-La gráfica de velocidad usa medianas de las observaciones guardadas, barras y ejes desde cero, y omite el híbrido para comparar las dos búsquedas léxicas locales. La segunda muestra aciertos mediante puntos y ejes: el izquierdo amplía de **450 a 460**, lo indica explícitamente y no debe interpretarse como una escala que empieza en cero; el derecho sí empieza en cero. Separa llegada del recuerdo correcto a la lista de veinte candidatos (460 positivos) de respuesta final correcta (seis turnos), sin sumar ni equiparar ambas tasas. Los cinco aciertos de Codex con Engram y los seis con semilla inicial proceden de revisar las respuestas guardadas contra el hecho sintético esperado. Las figuras usan una composición editorial inspirada en [Distill](https://distill.pub/) y son originales de este proyecto. `scripts/render_speed_chart.py` regenera ambas imágenes. No se usaron recuerdos reales ni se modificó la configuración de Codex del usuario.
+Las figuras históricas usaron medianas de las observaciones guardadas y separaron candidatos de respuesta final. Los cinco aciertos de Codex con Engram y seis con semilla inicial proceden de revisar las respuestas guardadas contra el hecho sintético esperado. El generador Python fue retirado; las figuras originales y sus datos quedan congelados. Las [figuras vigentes](rust-migration-v1.md) se regeneran en Rust. No se usaron recuerdos reales ni se modificó la configuración de Codex del usuario.
 
-## Reproducción local
+## Estado de reproducción
 
-Los resultados por caso incluyen tiempos y contadores del proveedor. La simulación de Codex requiere la autenticación que el usuario ya tenga configurada; no modifica esa configuración. Se debe elegir un directorio de salida nuevo en cada corrida. La gráfica se regenera sin red:
-
-```sh
-python3 scripts/render_speed_chart.py
-python3 -m py_compile scripts/render_speed_chart.py scripts/simulate_codex_seed_prompt.py
-```
+Los resultados por caso incluyen tiempos y contadores del proveedor. Los comandos Python originales ya no existen. Para repetir el experimento vigente con el runner Rust y salidas nuevas, consulta [el contrato de evaluación](contract-v1.md) y [el informe actual](rust-migration-v1.md); la simulación de Codex requiere la autenticación existente y no modifica su configuración.

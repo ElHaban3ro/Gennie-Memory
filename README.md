@@ -4,21 +4,29 @@ Memorias semilla para agentes: iROMEM busca recuerdos relevantes y prepara conte
 
 ### Rendimiento medido
 
-![Comparación de latencia de búsqueda local y respuesta de Codex con Engram o semilla inicial](docs/evaluation/assets/speed-comparison-v1.svg)
+**Ruta vigente:** en una cohorte nueva de **2.800 recuerdos y 540 preguntas sintéticas**, la búsqueda rápida encontró el recuerdo correcto en **456/460** positivos y Decisions produjo **439/460 semillas correctas (95,4 %)**, con **80/80** negativos vacíos. La búsqueda tuvo **7,11 ms** de mediana y la consulta completa **386 ms**; su p95 fue **958 ms** en esta corrida. Los sujetos 010–013 no se habían usado para escoger el ajuste, aunque comparten plantillas con campañas anteriores. En el banco anterior reutilizado, la expansión elevó candidatos de **452/460 a 457/460** y semillas de **424/460 a 442/460**, con una mediana completa de **382 ms** frente a **376 ms** antes. El [informe y los datos por caso](docs/evaluation/keyword-prefix-v1.md) separan ambas cohortes y sus límites.
 
-![Aciertos medidos en la búsqueda y en la respuesta de Codex, con ejes y tamaños de muestra explícitos](docs/evaluation/assets/accuracy-comparison-v1.svg)
+![Aciertos actuales de candidatos y semillas: ruta anterior, ruta ajustada y sujetos nuevos](docs/evaluation/assets/keyword-accuracy-v1.svg)
 
-Las figuras presentan la comparación como dos pasos: **encontrar candidatos** y **responder con Codex**. La primera muestra latencias medianas con ejes desde cero; la segunda, aciertos. Su eje izquierdo amplía explícitamente el tramo **450–460** para que se aprecien dos casos de diferencia sin ocultar el recorte. El panel de búsqueda usa 460 preguntas positivas del banco de 2.800 recuerdos; el panel de respuestas usa seis preguntas emparejadas (cinco positivas y una negativa). Son etapas y tamaños de muestra distintos.
+![Latencias actuales de búsqueda y preparación de semilla: medianas y p95 por cohorte](docs/evaluation/assets/keyword-latency-v1.svg)
 
-En **2.800 recuerdos y 540 preguntas sintéticas**, la búsqueda híbrida de iROMEM encontró el recuerdo correcto entre veinte candidatos en **459/460** positivos, con **11,93 ms** de mediana. Engram encontró **454/460** en **5,52 ms**. El modo rápido opcional de iROMEM bajó a **5,23 ms**, pero encontró **452/460**; por eso el híbrido conserva la prioridad de calidad.
+**Comparación histórica con Engram, Jev y Codex:** las siguientes figuras conservan la campaña anterior. **No representan la nueva ruta con expansión léxica**; Codex todavía no se ha medido con esa ruta.
 
-En **seis preguntas sintéticas**, iROMEM preparó una semilla en **0,73 s** de mediana. Codex con esa semilla desde el primer prompt respondió en **5,12 s**, frente a **9,49 s** de Codex buscando en Engram. La suma por caso de preparación y respuesta fue **5,79 s de mediana**, calculada a partir de dos corridas: **todavía no es una medición de iROMEM integrado con Codex**. Decisions usó **524 tokens de entrada por consulta** de mediana; el texto de semilla añadió **42 tokens de entrada** de mediana al prompt de Codex en los cinco positivos. El consumo completo de tokens y tiempo de la futura integración sigue sin medirse. [Método, datos por caso y límites](docs/evaluation/initial-seed-speed-and-tokens-v1.md).
+![Latencia medida de búsqueda, preparación de semilla y respuesta de Codex, con ejes independientes desde cero](docs/evaluation/assets/speed-comparison-rust.svg)
+
+![Aciertos en la recuperación de candidatos y en la semilla final, sobre 460 preguntas positivas](docs/evaluation/assets/accuracy-comparison-rust.svg)
+
+**Campaña anterior:** en ese mismo banco de 2.800 recuerdos, la búsqueda rápida original obtuvo **452/460** y **5,72 ms**; Engram MCP, **456/460** y **6,02 ms**. Decisions produjo **424/460** semillas positivas correctas y Jev **400/460**, ambos con **80/80** negativos vacíos. Los tiempos medianos de consulta a semilla fueron **376 ms** y **381 ms**.
+
+En **seis preguntas emparejadas** (cinco positivas y una negativa), Codex respondió con la semilla ya incluida en el primer prompt en **5,97 s** de mediana, frente a **11,07 s** al buscar por Engram MCP. Ambos caminos acertaron **4/5** positivos y el negativo. La quinta pregunta evidencia una pérdida de cobertura de la ruta rápida; no se presenta este piloto como una tasa general. Codex informó **16.912 tokens de entrada** de mediana con semilla y **52.586** con Engram, cifras que incluyen contexto en caché e instrucciones diferentes. La semilla añadió **47 tokens** de mediana al prompt en los cuatro positivos que sí la recibieron.
+
+Sumando por caso la preparación medida de iROMEM y el turno medido de Codex con semilla, la **mediana calculada de aquella ruta** es **6,72 s**; esa suma combina dos ejecuciones y no mide una integración automática. Todas estas pruebas y figuras se ejecutaron o generaron **desde Rust**. La entrega inicial de la semilla fue simulada por el runner: **iROMEM aún no está integrado automáticamente con Codex**. Los 6,72 s no se extrapolan a la búsqueda vigente. El [método, los datos por caso y los límites](docs/evaluation/rust-migration-v1.md) permiten revisar las cifras sin mezclar candidatos, semilla y respuesta final.
 
 El orden de implementación y la evaluación del MVP están en el [roadmap](ROADMAP.md).
 
 **Alcance inicial confirmado:** el MVP validará la recuperación local de memorias semilla con pruebas sintéticas. La integración con Codex y el hook descritos más abajo pertenecen a una etapa posterior; el diseño v0.1 siguiente describe el producto completo. El [contrato de evaluación](docs/evaluation/contract-v1.md) y el [primer piloto](docs/evaluation/pilot-2026-10-15.md) distinguen las mediciones reales de este diseño.
 
-La [base ejecutable actual](docs/initialization/implementation.md) combina FTS5, filtrado estructurado opcional, un índice semántico experimental y composición de semillas por CLI. Ya se evaluaron clasificadores locales y remotos sobre datos sintéticos; los [resultados y límites](docs/evaluation/viability-interim-v5.md) no justifican aún activar la recuperación automática. Las [reglas de trabajo](AGENTS.md), los [requisitos confirmados](docs/initialization/requirements.md) y el [mapa de módulos](docs/architecture/modules.md) describen el estado del repositorio.
+La [base ejecutable actual](docs/initialization/implementation.md) combina FTS5, filtrado estructurado opcional, un índice semántico experimental y composición de semillas. `recall` encadena en Rust la ruta rápida, Decisions por defecto o Jev explícito y la composición validada, sin cargar Laya; su [contrato CLI](docs/evaluation/contract-v1.md) describe entradas, tiempos y fallos. El híbrido sigue disponible para búsquedas explícitas con vectores ya calculados. Los [resultados y límites](docs/evaluation/viability-interim-v5.md) no justifican aún activar la recuperación automática en Codex. Las [reglas de trabajo](AGENTS.md), los [requisitos confirmados](docs/initialization/requirements.md) y el [mapa de módulos](docs/architecture/modules.md) describen el estado del repositorio.
 
 iROMEM es un proyecto para trabajar con memorias de agentes de IA en proyectos grandes. Combina memorias «semilla» con clasificadores rápidos, locales o en línea, para identificar el contexto útil en cada consulta.
 
@@ -26,7 +34,7 @@ Su objetivo es reducir el tiempo de respuesta y el consumo de tokens sin perder 
 
 Este documento define el **diseño propuesto v0.1**. Los contratos, métodos y valores iniciales descritos deberán implementarse y evaluarse; su presencia aquí no implica que ya exista una implementación ni demuestra mejoras de rendimiento.
 
-iROMEM almacenará las memorias en SQLite. Un mismo núcleo Rust atenderá las herramientas MCP y los scripts de línea de comandos. Ambos usarán los mismos contratos JSON, validaciones, permisos y transacciones. Los clientes no escribirán directamente en las tablas ni enviarán índices calculados por su cuenta.
+iROMEM almacenará las memorias en SQLite. Un mismo núcleo Rust atenderá las herramientas MCP y los comandos de línea. Ambos usarán los mismos contratos JSON, validaciones, permisos y transacciones. Los clientes no escribirán directamente en las tablas ni enviarán índices calculados por su cuenta.
 
 ## 1. Recibir un mensaje
 
@@ -528,4 +536,4 @@ El esquema adjunto fija tablas, relaciones, índices y triggers. Las validacione
 
 ### Comprobación de esta especificación
 
-Se acompaña de [un verificador local](outputs/iromem/check_spec.py) y [su resultado](outputs/iromem/validation.json). Comprueba los ejemplos JSON, crea el esquema en SQLite en memoria y ensaya restricciones de unicidad, revisión esperada, búsqueda textual del historial, forma de los vectores y eliminación de derivados. Son comprobaciones del diseño y de los fragmentos SQL; no ejecutan el núcleo Rust, los proveedores de modelos ni permisos de una integración real.
+La [validación histórica del diseño](outputs/iromem/validation.json) comprobó ejemplos JSON y fragmentos SQL antes de existir el recorrido actual. Las pruebas vigentes del núcleo, la CLI y los bancos sintéticos se ejecutan con `cargo test` y `iromem-eval`; ese resultado antiguo no demuestra el comportamiento del producto presente.

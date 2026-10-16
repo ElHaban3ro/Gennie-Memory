@@ -8,7 +8,7 @@ Estado: **muestra congelada y campaña local completada**; ver [resultados por c
 - SHA-256: `e93b7a64d0083603423f3fa21042475c7a6738054bd25d14b1b4ed746e3209a5`.
 - 1.480 consultas sintéticas de `calibration`: una positiva por cada una de las 1.000 formas y 480 negativas, 80 por cada uno de seis segmentos. Los 1.480 IDs son únicos.
 - 171 entidades; cero IDs y cero entidades compartidos con la campaña de desarrollo de 1.600 casos. Las etiquetas proceden de reglas deterministas del generador.
-- Selección reproducible: `python3 scripts/select_benchmark_cases.py --queries tests/benchmark/v5/queries.jsonl --split calibration --cover-forms tests/benchmark/v5/forms.json --per-segment 80 --exclude-entities-from tests/benchmark/v5/development-campaign-1600.jsonl --output tests/benchmark/v5/calibration-campaign-1480.jsonl`.
+- Selección histórica congelada en `tests/benchmark/v5/calibration-campaign-1480.jsonl`; el selector Python original fue retirado. `iromem-eval validate-benchmark tests/benchmark/v5` comprueba el banco base versionado.
 
 ## Siguiente evaluación
 

@@ -3,7 +3,7 @@
 Estado: evaluación sintética completada el 2026-10-15 en esta Mac. Laya se usa únicamente para los vectores de la búsqueda híbrida; los clasificadores evaluados son OpenAI GPT-6 Luna Decisions y Jev 1.13. No hay hook ni activación automática en Codex. [Resultados por caso y manifiesto](../../outputs/iromem/evaluation/general-memory-v2/).
 
 **Decisión posterior del usuario:** se descarta la cascada Decisions → Jev. Sus cuatro aciertos positivos adicionales no compensan el falso recuerdo ni la latencia extra. Decisions `direct` con máximo veinte candidatos queda como referencia experimental; su 94,78 % de positivos no cumple todavía el objetivo del 95 %. Jev permanece disponible para comparaciones independientes. Los resultados de la cascada se conservan como evidencia de la prueba, no como política recomendada.
-La [configuración base v1](../../config/classifier-profile-v1.json) formaliza esa elección para campañas nuevas: Decisions principal, Jev secundario seleccionable, búsqueda híbrida con Laya para vectores, `choice` con `none`, instrucción `direct` y máximo veinte candidatos. No cambia retrospectivamente las campañas de esta página ni integra el clasificador en la CLI Rust.
+La [configuración base v1](../../config/classifier-profile-v1.json) formalizó esa elección para las campañas de entonces: Decisions principal, Jev secundario seleccionable, búsqueda híbrida con vectores de Laya, `choice` con `none`, instrucción `direct` y máximo veinte candidatos. La [decisión posterior](../decisions/0010-keyword-search-default.md) fijó la ruta rápida predeterminada; [la medición actual](rust-migration-v1.md) ejecuta el clasificador en la CLI Rust. Ninguna decisión cambia retrospectivamente las campañas de esta página.
 
 ## Método
 

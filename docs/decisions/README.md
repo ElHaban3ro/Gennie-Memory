@@ -16,6 +16,12 @@
 
 [0008 — Sesión local de evaluación](0008-local-evaluation-session.md) explica el transporte JSONL y la primera medición completa de FTS5, Laya y semilla.
 
-[0009 — Consulta léxica rápida optativa](0009-optional-keyword-preflight.md) registra la mejora de latencia, la pérdida de cobertura y la decisión de no activarla por defecto.
+[0009 — Consulta léxica rápida optativa](0009-optional-keyword-preflight.md) registra la medición y la política inicial, ahora sustituida.
+
+[0010 — Búsqueda rápida predeterminada](0010-keyword-search-default.md) registra la decisión posterior de priorizar FTS5 por palabras clave como base, con el híbrido explícito para comparación.
+
+[0011 — Recorrido textual completo en Rust](0011-rust-recall-cli.md) registra el contrato del comando `recall`, el adaptador OpenRouter y la permanencia de Laya solo para el híbrido experimental.
+
+[0012 — Expansión por prefijo en la búsqueda rápida](0012-keyword-prefix-expansion.md) registra el ajuste léxico y de instrucción de Decisions, con selección en desarrollo, validación final y coste observado.
 
 Cada decisión nueva debe indicar contexto, alternativas, motivo, estado y condición de revisión. Una sustitución conserva el documento anterior y enlaza el nuevo; no reescribe silenciosamente la historia. Los registros de [memoria de trabajo](../memory/index.md) aportan evidencia, pero no modifican reglas ni decisiones por sí solos.

@@ -15,8 +15,8 @@ Un [segundo sondeo con 400 peticiones sintéticas completas](../../outputs/irome
 
 Evidencia reproducible:
 
-- [Comparación por caso de desarrollo](../../outputs/iromem/evaluation/v5-campaign-development/fts5-vs-hybrid-top1.json) y [calibración](../../outputs/iromem/evaluation/v5-campaign-calibration/fts5-vs-hybrid-top1.json), generadas con [`compare_retrieval_ablation.py`](../../scripts/compare_retrieval_ablation.py).
+- [Comparación por caso de desarrollo](../../outputs/iromem/evaluation/v5-campaign-development/fts5-vs-hybrid-top1.json) y [calibración](../../outputs/iromem/evaluation/v5-campaign-calibration/fts5-vs-hybrid-top1.json), generadas por el comparador histórico ya retirado.
 - Informes FTS5 por caso: [desarrollo](../../outputs/iromem/evaluation/v5-campaign-development/v5-development-fts5-top1-1600-report.json) y [calibración](../../outputs/iromem/evaluation/v5-campaign-calibration/v5-calibration-fts5-top1-1480-report.json). Las comparaciones registran hashes de estos informes y de los informes híbridos.
 - Manifiestos FTS5: [desarrollo](../../outputs/iromem/evaluation/v5-campaign-development/fts5-top1-execution.json) y [calibración](../../outputs/iromem/evaluation/v5-campaign-calibration/fts5-top1-execution.json); validan los diarios completos y la igualdad de consulta, base y binario con cada campaña híbrida.
 
-Para regenerar las comparaciones desde los informes publicados, ejecutar `python3 scripts/compare_retrieval_ablation.py --queries <muestra> --fts5 <informe-fts5> --hybrid <informe-híbrido> --output <salida>` con las rutas enlazadas arriba. El script rechaza particiones mezcladas o `final`, informes incompletos y estados degradados.
+Los resultados de esta ablación son históricos y permanecen congelados. El comparador Python original rechazaba particiones mezcladas o `final`, informes incompletos y estados degradados; fue retirado. Para una comparación nueva se ejecuta `iromem-eval search-benchmark` y se resumen ambas listas con `iromem-eval retrieval`, documentando el método y la cohorte.

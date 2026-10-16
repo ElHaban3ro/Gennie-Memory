@@ -1,6 +1,6 @@
 # 0009 — Consulta léxica rápida optativa
 
-Fecha: 2026-10-15. Estado: aceptada para experimento optativo; activación predeterminada pendiente.
+Fecha: 2026-10-15. Estado: decisión histórica; sustituida por [0010](0010-keyword-search-default.md) para el valor predeterminado.
 
 ## Contexto y alternativas
 

@@ -10,10 +10,10 @@ Este directorio conserva tres muestras sintéticas de 60 consultas y doce inform
 
 Cada `*.json` de informe incluye resultados por caso, conteos, perfil y latencias. Los documentos de fuente de v5 son referencias sintéticas declaradas. La carga del modelo y la indexación se miden aparte del tiempo caliente por consulta.
 
-Desde la raíz del repositorio, comprueba el paquete con:
+Desde la raíz del repositorio, comprueba la integridad de los archivos congelados con Rust:
 
 ```sh
-python3 scripts/verify_pilot_bundle.py outputs/iromem/evaluation/v5-development
+cargo run --offline -p iromem-eval -- verify-hashes outputs/iromem/evaluation/v5-development
 ```
 
-El verificador coteja hashes, casos con el benchmark v5 versionado, etiquetas, conteos, emparejamiento y separación de entidades de C. Las cifras son de pilotos de desarrollo; no se ejecutó aquí la partición final ni la campaña grande.
+El comando vigente coteja los hashes declarados. El verificador histórico también cotejó casos con benchmark v5, etiquetas, conteos, emparejamiento y separación de entidades de C al congelar el paquete; ese script fue retirado. Las cifras son de pilotos de desarrollo; no se ejecutó aquí la partición final ni la campaña grande.

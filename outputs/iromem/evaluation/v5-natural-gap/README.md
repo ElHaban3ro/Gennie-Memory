@@ -31,4 +31,4 @@ Las frases son más parecidas a peticiones completas que las listas de palabras 
 - [Instantánea híbrida de desarrollo](development-hybrid-results.jsonl) y [de calibración](calibration-hybrid-results.jsonl): candidatos y vectores exactos. Los vectores de `choice` y condicionado se verificaron contra estas instantáneas antes de compactar sus informes.
 - Desarrollo: [FTS5](v5-natural-gap-development-fts5-report.json), [híbrida top‑1](v5-natural-gap-development-top1-report.json), [Laya `choice`](v5-natural-gap-development-choice-report.json), [Laya condicionado](v5-natural-gap-development-conditions-report.json).
 - Calibración: [FTS5](v5-natural-gap-calibration-fts5-report.json), [híbrida top‑1](v5-natural-gap-calibration-top1-report.json), [Laya `choice`](v5-natural-gap-calibration-choice-report.json), [Laya condicionado](v5-natural-gap-calibration-conditions-report.json).
-- [`generate_natural_gap_probe.py`](../../../../scripts/generate_natural_gap_probe.py) regenera las peticiones desde los casos v5 derivados.
+- El generador histórico de estas peticiones fue retirado; los casos v5 derivados permanecen congelados.
