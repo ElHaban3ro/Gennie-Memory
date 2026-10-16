@@ -1,29 +1,58 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="455" viewBox="0 0 1120 455" role="img" aria-labelledby="title desc">
-<title id="title">Latencia medida de recuperación y respuesta</title>
-<desc id="desc">La búsqueda local de iROMEM por palabras clave tarda 5,23 milisegundos y Engram tarda 5,52. Codex con Engram tarda 9,49 segundos hasta respuesta y Codex con una semilla sintética inicial, 5,12 segundos; preparar esa semilla lleva tiempo adicional.</desc>
-<rect width="1120" height="455" rx="20" fill="#f5f8fc"/>
-<text x="35" y="48" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="700" fill="#17233b">iROMEM · velocidad medida</text>
-<rect x="30" y="72" width="520" height="318" rx="16" fill="#ffffff" stroke="#dce5ee"/>
-<rect x="570" y="72" width="520" height="318" rx="16" fill="#ffffff" stroke="#dce5ee"/>
-<text x="55" y="111" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="#17233b">Búsqueda local de candidatos</text>
-<text x="55" y="136" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="400" fill="#52627a">2.800 recuerdos · 540 preguntas · p50</text>
-<text x="55" y="191" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="600" fill="#17233b">iROMEM palabras clave</text>
-<rect x="55" y="201" width="465" height="17" rx="8.5" fill="#e8edf3"/>
-<rect x="55" y="201" width="404.94" height="17" rx="8.5" fill="#1a7f74"/>
-<text x="520" text-anchor="end" y="191" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700" fill="#1a7f74">5.23 ms</text>
-<text x="55" y="279" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="600" fill="#17233b">Engram palabras clave</text>
-<rect x="55" y="289" width="465" height="17" rx="8.5" fill="#e8edf3"/>
-<rect x="55" y="289" width="427.88" height="17" rx="8.5" fill="#64748b"/>
-<text x="520" text-anchor="end" y="279" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700" fill="#64748b">5.52 ms</text>
-<text x="595" y="111" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="#17233b">Codex: pregunta → respuesta</text>
-<text x="595" y="136" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="400" fill="#52627a">6 preguntas sintéticas · p50</text>
-<text x="595" y="191" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="600" fill="#17233b">Codex + Engram MCP</text>
-<rect x="595" y="201" width="465" height="17" rx="8.5" fill="#e8edf3"/>
-<rect x="595" y="201" width="441.32" height="17" rx="8.5" fill="#64748b"/>
-<text x="1060" text-anchor="end" y="191" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700" fill="#64748b">9.49 s</text>
-<text x="595" y="279" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="600" fill="#17233b">Codex + semilla inicial simulada</text>
-<rect x="595" y="289" width="465" height="17" rx="8.5" fill="#e8edf3"/>
-<rect x="595" y="289" width="238.18" height="17" rx="8.5" fill="#1a7f74"/>
-<text x="1060" text-anchor="end" y="279" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700" fill="#1a7f74">5.12 s</text>
-<text x="35" y="422" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" fill="#52627a">La semilla inicial requiere preparación aparte (~0,73 s p50); todavía no hay integración con Codex.</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+<title id="title">¿Cuánto tarda en llegar la respuesta?</title>
+<desc id="desc">Búsqueda local mediana: iROMEM 5,23 milisegundos, Engram 5,52. Turno de Codex mediano: semilla inicial simulada 5,12 segundos, Engram MCP 9,49. Los ejes empiezan en cero. La preparación de la semilla no está incluida en el turno de Codex.</desc>
+<rect width="1200" height="700" fill="#fffefa"/>
+<line x1="64" y1="18" x2="1136" y2="18" stroke="#20252b" stroke-width="2"/>
+<text x="64" y="49" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700" fill="#187d7b">iROMEM  /  FIGURA 01</text>
+<text x="64" y="95" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="35" font-weight="700" fill="#20252b">¿Cuánto tarda en llegar la respuesta?</text>
+<text x="64" y="133" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="400" fill="#657078">Dos pasos medidos por separado, con sus propias unidades y escalas.</text>
+<line x1="64" y1="177" x2="1136" y2="177" stroke="#d9dedb" stroke-width="1"/>
+<line x1="601" y1="202" x2="601" y2="645" stroke="#d9dedb" stroke-width="1"/>
+<text x="80" y="221" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700" fill="#20252b">01 / Encontrar candidatos</text>
+<text x="80" y="250" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" fill="#657078">2.800 recuerdos · 540 consultas · p50</text>
+<text x="128" y="295" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700" fill="#657078">ms</text>
+<line x1="128" y1="515.0" x2="544" y2="515.0" stroke="#20252b" stroke-width="1.4"/>
+<text x="114" y="520.0" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" fill="#657078">0</text>
+<line x1="128" y1="448.33" x2="544" y2="448.33" stroke="#d9dedb" stroke-width="1"/>
+<text x="114" y="453.33" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" fill="#657078">2</text>
+<line x1="128" y1="381.67" x2="544" y2="381.67" stroke="#d9dedb" stroke-width="1"/>
+<text x="114" y="386.67" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" fill="#657078">4</text>
+<line x1="128" y1="315.0" x2="544" y2="315.0" stroke="#d9dedb" stroke-width="1"/>
+<text x="114" y="320.0" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" fill="#657078">6</text>
+<line x1="128" y1="315" x2="128" y2="515" stroke="#20252b" stroke-width="1.4"/>
+<rect x="219" y="340.83000000000004" width="102" height="174.17" fill="#187d7b" opacity="0.83"/>
+<text x="270" y="326.83000000000004" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="700" fill="#187d7b">5,23 ms</text>
+<text x="270" y="547" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700" fill="#20252b">iROMEM</text>
+<text x="270" y="571" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="400" fill="#657078">palabras clave</text>
+<rect x="384" y="330.97" width="102" height="184.03" fill="#b77b26" opacity="0.83"/>
+<text x="435" y="316.97" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="700" fill="#b77b26">5,52 ms</text>
+<text x="435" y="547" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700" fill="#20252b">Engram</text>
+<text x="435" y="571" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="400" fill="#657078">palabras clave</text>
+<text x="665" y="221" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700" fill="#20252b">02 / Responder con Codex</text>
+<text x="665" y="250" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" fill="#657078">6 preguntas sintéticas · p50</text>
+<text x="710" y="295" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700" fill="#657078">s</text>
+<line x1="710" y1="515.0" x2="1125" y2="515.0" stroke="#20252b" stroke-width="1.4"/>
+<text x="696" y="520.0" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" fill="#657078">0</text>
+<line x1="710" y1="475.0" x2="1125" y2="475.0" stroke="#d9dedb" stroke-width="1"/>
+<text x="696" y="480.0" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" fill="#657078">2</text>
+<line x1="710" y1="435.0" x2="1125" y2="435.0" stroke="#d9dedb" stroke-width="1"/>
+<text x="696" y="440.0" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" fill="#657078">4</text>
+<line x1="710" y1="395.0" x2="1125" y2="395.0" stroke="#d9dedb" stroke-width="1"/>
+<text x="696" y="400.0" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" fill="#657078">6</text>
+<line x1="710" y1="355.0" x2="1125" y2="355.0" stroke="#d9dedb" stroke-width="1"/>
+<text x="696" y="360.0" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" fill="#657078">8</text>
+<line x1="710" y1="315.0" x2="1125" y2="315.0" stroke="#d9dedb" stroke-width="1"/>
+<text x="696" y="320.0" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" fill="#657078">10</text>
+<line x1="710" y1="315" x2="710" y2="515" stroke="#20252b" stroke-width="1.4"/>
+<rect x="801" y="412.56" width="102" height="102.44" fill="#187d7b" opacity="0.83"/>
+<text x="852" y="398.56" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="700" fill="#187d7b">5,12 s</text>
+<text x="852" y="547" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700" fill="#20252b">Semilla inicial</text>
+<text x="852" y="571" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="400" fill="#657078">simulada</text>
+<rect x="966" y="325.18" width="102" height="189.82" fill="#b77b26" opacity="0.83"/>
+<text x="1017" y="311.18" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="700" fill="#b77b26">9,49 s</text>
+<text x="1017" y="547" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700" fill="#20252b">Engram MCP</text>
+<line x1="80" y1="604" x2="1140" y2="604" stroke="#d9dedb" stroke-width="1"/>
+<text x="80" y="633" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700" fill="#187d7b">LECTURA</text>
+<text x="171" y="633" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" fill="#20252b">La diferencia local es pequeña; el turno con semilla termina antes en esta muestra.</text>
+<text x="80" y="668" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="400" fill="#657078">La semilla tardó 0,73 s p50 en prepararse aparte. Inyectarla automáticamente en Codex sigue pendiente.</text>
 </svg>

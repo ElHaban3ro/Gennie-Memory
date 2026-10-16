@@ -1,29 +1,68 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="455" viewBox="0 0 1120 455" role="img" aria-labelledby="title desc">
-<title id="title">Aciertos observados en búsqueda y respuesta</title>
-<desc id="desc">En 460 consultas positivas, iROMEM por palabras clave incluyó el recuerdo correcto entre veinte candidatos en 452 casos y Engram en 454. En seis preguntas, Codex con semilla inicial respondió correctamente seis y Codex con Engram cinco.</desc>
-<rect width="1120" height="455" rx="20" fill="#f5f8fc"/>
-<text x="35" y="48" font-family="Arial,Helvetica,sans-serif" font-size="27" font-weight="700" fill="#17233b">iROMEM · aciertos observados</text>
-<rect x="30" y="72" width="520" height="318" rx="16" fill="#ffffff" stroke="#dce5ee"/>
-<rect x="570" y="72" width="520" height="318" rx="16" fill="#ffffff" stroke="#dce5ee"/>
-<text x="55" y="111" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="#17233b">Recuerdo correcto entre 20</text>
-<text x="55" y="136" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="400" fill="#52627a">460 consultas positivas · 2.800 recuerdos</text>
-<text x="55" y="191" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="600" fill="#17233b">iROMEM palabras clave</text>
-<text x="520" text-anchor="end" y="191" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700" fill="#1a7f74">452/460 · 98.3%</text>
-<rect x="55" y="201" width="465" height="22" rx="11" fill="#e8edf3"/>
-<rect x="55" y="201" width="456.91" height="22" rx="11" fill="#1a7f74"/>
-<text x="55" y="279" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="600" fill="#17233b">Engram palabras clave</text>
-<text x="520" text-anchor="end" y="279" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700" fill="#64748b">454/460 · 98.7%</text>
-<rect x="55" y="289" width="465" height="22" rx="11" fill="#e8edf3"/>
-<rect x="55" y="289" width="458.93" height="22" rx="11" fill="#64748b"/>
-<text x="595" y="111" font-family="Arial,Helvetica,sans-serif" font-size="20" font-weight="700" fill="#17233b">Respuesta correcta de Codex</text>
-<text x="595" y="136" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="400" fill="#52627a">6 preguntas · 5 con recuerdo y 1 sin él</text>
-<text x="595" y="191" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="600" fill="#17233b">Semilla inicial simulada</text>
-<text x="1060" text-anchor="end" y="191" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700" fill="#1a7f74">6/6 · 100.0%</text>
-<rect x="595" y="201" width="465" height="22" rx="11" fill="#e8edf3"/>
-<rect x="595" y="201" width="465.0" height="22" rx="11" fill="#1a7f74"/>
-<text x="595" y="279" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="600" fill="#17233b">Engram MCP</text>
-<text x="1060" text-anchor="end" y="279" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700" fill="#64748b">5/6 · 83.3%</text>
-<rect x="595" y="289" width="465" height="22" rx="11" fill="#e8edf3"/>
-<rect x="595" y="289" width="387.5" height="22" rx="11" fill="#64748b"/>
-<text x="35" y="422" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" fill="#52627a">Las dos barras de cada panel comparten casos; los paneles miden etapas distintas.</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+<title id="title">¿Cuántas preguntas acierta cada ruta?</title>
+<desc id="desc">La recuperación de candidatos usa un eje ampliado de 450 a 460 aciertos: iROMEM 452 y Engram 454 sobre 460 positivas. La respuesta final usa un eje desde cero: Codex con semilla inicial simulada acierta seis de seis y Codex con Engram cinco de seis. No se equiparan las dos pruebas.</desc>
+<rect width="1200" height="700" fill="#fffefa"/>
+<line x1="64" y1="18" x2="1136" y2="18" stroke="#20252b" stroke-width="2"/>
+<text x="64" y="49" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700" fill="#187d7b">iROMEM  /  FIGURA 02</text>
+<text x="64" y="95" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="35" font-weight="700" fill="#20252b">¿Cuántas preguntas acierta cada ruta?</text>
+<text x="64" y="133" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="400" fill="#657078">Dos pruebas distintas: encontrar el recuerdo y responder con él.</text>
+<line x1="64" y1="177" x2="1136" y2="177" stroke="#d9dedb" stroke-width="1"/>
+<line x1="601" y1="202" x2="601" y2="645" stroke="#d9dedb" stroke-width="1"/>
+<text x="80" y="221" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700" fill="#20252b">01 / Recuerdo entre 20 candidatos</text>
+<text x="80" y="250" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" fill="#657078">460 consultas positivas · detalle ampliado</text>
+<text x="128" y="295" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700" fill="#657078">aciertos</text>
+<line x1="128" y1="515.0" x2="544" y2="515.0" stroke="#20252b" stroke-width="1.4"/>
+<text x="114" y="520.0" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" fill="#657078">450</text>
+<line x1="128" y1="475.0" x2="544" y2="475.0" stroke="#d9dedb" stroke-width="1"/>
+<text x="114" y="480.0" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" fill="#657078">452</text>
+<line x1="128" y1="435.0" x2="544" y2="435.0" stroke="#d9dedb" stroke-width="1"/>
+<text x="114" y="440.0" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" fill="#657078">454</text>
+<line x1="128" y1="395.0" x2="544" y2="395.0" stroke="#d9dedb" stroke-width="1"/>
+<text x="114" y="400.0" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" fill="#657078">456</text>
+<line x1="128" y1="355.0" x2="544" y2="355.0" stroke="#d9dedb" stroke-width="1"/>
+<text x="114" y="360.0" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" fill="#657078">458</text>
+<line x1="128" y1="315.0" x2="544" y2="315.0" stroke="#d9dedb" stroke-width="1"/>
+<text x="114" y="320.0" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" fill="#657078">460</text>
+<line x1="128" y1="315" x2="128" y2="515" stroke="#20252b" stroke-width="1.4"/>
+<line x1="270" y1="515" x2="270" y2="475.0" stroke="#187d7b" stroke-width="3"/>
+<circle cx="270" cy="475.0" r="10" fill="#187d7b"/>
+<text x="270" y="455.0" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="700" fill="#187d7b">452/460</text>
+<text x="270" y="547" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700" fill="#20252b">iROMEM</text>
+<text x="270" y="571" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="400" fill="#657078">palabras clave</text>
+<line x1="435" y1="515" x2="435" y2="435.0" stroke="#b77b26" stroke-width="3"/>
+<circle cx="435" cy="435.0" r="10" fill="#b77b26"/>
+<text x="435" y="415.0" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="700" fill="#b77b26">454/460</text>
+<text x="435" y="547" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700" fill="#20252b">Engram</text>
+<text x="435" y="571" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="400" fill="#657078">palabras clave</text>
+<text x="665" y="221" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="22" font-weight="700" fill="#20252b">02 / Respuesta correcta de Codex</text>
+<text x="665" y="250" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="16" font-weight="400" fill="#657078">6 preguntas · 5 positivas y 1 negativa</text>
+<text x="710" y="295" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="700" fill="#657078">aciertos</text>
+<line x1="710" y1="515.0" x2="1125" y2="515.0" stroke="#20252b" stroke-width="1.4"/>
+<text x="696" y="520.0" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" fill="#657078">0</text>
+<line x1="710" y1="481.67" x2="1125" y2="481.67" stroke="#d9dedb" stroke-width="1"/>
+<text x="696" y="486.67" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" fill="#657078">1</text>
+<line x1="710" y1="448.33" x2="1125" y2="448.33" stroke="#d9dedb" stroke-width="1"/>
+<text x="696" y="453.33" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" fill="#657078">2</text>
+<line x1="710" y1="415.0" x2="1125" y2="415.0" stroke="#d9dedb" stroke-width="1"/>
+<text x="696" y="420.0" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" fill="#657078">3</text>
+<line x1="710" y1="381.67" x2="1125" y2="381.67" stroke="#d9dedb" stroke-width="1"/>
+<text x="696" y="386.67" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" fill="#657078">4</text>
+<line x1="710" y1="348.33" x2="1125" y2="348.33" stroke="#d9dedb" stroke-width="1"/>
+<text x="696" y="353.33" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" fill="#657078">5</text>
+<line x1="710" y1="315.0" x2="1125" y2="315.0" stroke="#d9dedb" stroke-width="1"/>
+<text x="696" y="320.0" text-anchor="end" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="400" fill="#657078">6</text>
+<line x1="710" y1="315" x2="710" y2="515" stroke="#20252b" stroke-width="1.4"/>
+<line x1="852" y1="515" x2="852" y2="315.0" stroke="#187d7b" stroke-width="3"/>
+<circle cx="852" cy="315.0" r="10" fill="#187d7b"/>
+<text x="852" y="295.0" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="700" fill="#187d7b">6/6</text>
+<text x="852" y="547" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700" fill="#20252b">Semilla inicial</text>
+<text x="852" y="571" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="400" fill="#657078">simulada</text>
+<line x1="1017" y1="515" x2="1017" y2="348.33" stroke="#b77b26" stroke-width="3"/>
+<circle cx="1017" cy="348.33" r="10" fill="#b77b26"/>
+<text x="1017" y="328.33" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="19" font-weight="700" fill="#b77b26">5/6</text>
+<text x="1017" y="547" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700" fill="#20252b">Engram MCP</text>
+<line x1="80" y1="604" x2="1140" y2="604" stroke="#d9dedb" stroke-width="1"/>
+<text x="80" y="633" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="700" fill="#187d7b">LECTURA</text>
+<text x="171" y="633" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="400" fill="#20252b">Engram encuentra 2 recuerdos más; la semilla logra 1 respuesta más en seis casos.</text>
+<text x="80" y="668" text-anchor="start" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="400" fill="#657078">El eje izquierdo empieza en 450 para revelar 2 casos de diferencia; el derecho empieza en 0. Muestras distintas.</text>
 </svg>
