@@ -21,11 +21,15 @@ Con **iROMEM + Decisions**, la respuesta final fue correcta en **439/460 pregunt
 
 ![Tiempo de búsqueda de candidatos de iROMEM y Engram](docs/evaluation/assets/current-latency.svg)
 
-La latencia de la **semilla completa** usa otra escala y se muestra aparte:
-
-![Tiempo de iROMEM desde la pregunta hasta la semilla con Decisions](docs/evaluation/assets/current-seed-latency.svg)
-
 Las preguntas son sintéticas; los sujetos de esta muestra no se usaron para elegir el ajuste, pero comparten plantillas con bancos anteriores. Se hizo una corrida por herramienta, de modo que las diferencias de milisegundos no demuestran una ventaja estable. Engram recibió los mismos textos en un almacén aislado, sin las condiciones y fuentes declaradas de iROMEM. Los [resultados por caso y el método](docs/evaluation/keyword-prefix-v1.md) documentan la comparación. **La entrega automática de esta versión de iROMEM a Codex aún no está medida.**
+
+## Respuesta con Codex: piloto de la ruta vigente
+
+En seis turnos sintéticos nuevos, Codex respondió en **4,38 s de mediana** con la semilla de iROMEM preparada por la ruta actual y entregada en el prompt, frente a **9,97 s** al consultar Engram por MCP. Ambos caminos acertaron **5/5 preguntas positivas y la negativa**. Codex informó medianas de **16.989** y **52.792 tokens de entrada**, respectivamente; incluyen contexto y caché, con instrucciones distintas, así que no representan el coste marginal de recuperar memoria.
+
+![Tiempo de respuesta y tokens informados por Codex con iROMEM y Engram](docs/evaluation/assets/current-codex-comparison.svg)
+
+La preparación de la semilla de iROMEM tardó **0,39 s de mediana** en una corrida Rust separada. **La entrega automática a Codex aún no está instalada ni medida**; el piloto usa un runner que incorpora la semilla en el prompt. La muestra de seis turnos sirve para observar este flujo, no para establecer una ventaja estadística. [Método y resultados por caso](docs/evaluation/codex-current-v1.md).
 
 El orden de implementación y las tareas pendientes están en el [roadmap](ROADMAP.md). La [base ejecutable actual](docs/initialization/implementation.md) combina FTS5, filtrado estructurado opcional, un índice semántico experimental y composición de semillas. `recall` encadena en Rust la ruta rápida, Decisions por defecto o Jev explícito y la composición validada; el híbrido sigue disponible para búsquedas explícitas con vectores ya calculados. El [contrato CLI](docs/evaluation/contract-v1.md), las [reglas de trabajo](AGENTS.md) y el [mapa de módulos](docs/architecture/modules.md) describen el estado del repositorio.
 

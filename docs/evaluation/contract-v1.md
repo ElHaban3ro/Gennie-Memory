@@ -47,10 +47,12 @@ La respuesta incluye `retrieval` (método y candidatos), `classification_status`
 | `codex-prompt <diario> <consultas> <selección.json> <binario-codex> <nuevo-directorio> <seed|control>` | Ejecuta turnos efímeros de Codex con o sin semilla inicial y guarda eventos y tokens por caso. |
 | `codex-engram <consultas> <selección.json> <binario-codex> <binario-engram> <data-dir> <nuevo-directorio>` | Ejecuta Codex con Engram MCP aislado; exige llamadas MCP y prohíbe shell/web. |
 | `paired-flow-report <diario-recall> <codex-semilla.json> <codex-engram.json> <codex-control.json> <salida-nueva.json>` | Empareja por caso tiempos y tokens; suma preparación de semilla y turno de Codex como cálculo, no como tiempo de integración medido. |
-| `render-charts <búsqueda-iromem.json> <búsqueda-engram.json> <decisions.json> <jev.json> <codex-semilla.json> <codex-engram.json> <directorio>` | Regenera las dos figuras SVG del README desde informes observados. |
-| `render-keyword-charts <búsqueda-anterior.json> <decisions-anterior.json> <búsqueda-ajustada.json> <decisions-ajustada.json> <búsqueda-nueva.json> <decisions-nueva.json> <directorio>` | Regenera las dos figuras vigentes de aciertos y latencias, con las cohortes identificadas. |
+| `render-charts <búsqueda-iromem.json> <búsqueda-engram.json> <decisions.json> <jev.json> <codex-semilla.json> <codex-engram.json> <directorio>` | Regenera las dos figuras históricas desde informes observados. |
+| `render-keyword-charts <búsqueda-anterior.json> <decisions-anterior.json> <búsqueda-ajustada.json> <decisions-ajustada.json> <búsqueda-nueva.json> <decisions-nueva.json> <directorio>` | Regenera las dos figuras históricas de ajuste, con las cohortes identificadas. |
+| `render-current-charts <búsqueda-iromem.json> <decisions.json> <búsqueda-engram.json> <directorio>` | Regenera las figuras de aciertos y búsqueda vigentes del README. |
+| `render-codex-current <codex-iromem.json> <codex-engram.json> <emparejado.json> <directorio>` | Regenera la comparación actual de Codex y verifica que ambos caminos y el informe emparejado coincidan en muestra y medianas. |
 
-Los archivos de salida de una campaña deben ser nuevos. El diario congela hashes de casos, binario y base; un `started` sin `finished` bloquea la reanudación para no duplicar una llamada posiblemente cobrada. Los informes de seis turnos de Codex son simulaciones de entrega inicial, no prueban un hook instalado. La [corrida final](rust-migration-v1.md) enlaza comandos, datos, aciertos y límites.
+Los archivos de salida de una campaña deben ser nuevos. El diario congela hashes de casos, binario y base; un `started` sin `finished` bloquea la reanudación para no duplicar una llamada posiblemente cobrada. Los informes de seis turnos de Codex son simulaciones de entrega inicial, no prueban un hook instalado. La [campaña actual](keyword-prefix-v1.md) y el [piloto de Codex](codex-current-v1.md) enlazan datos, aciertos y límites.
 
 ## Reproducción local mínima
 
