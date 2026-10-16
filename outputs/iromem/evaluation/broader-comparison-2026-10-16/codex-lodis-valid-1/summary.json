@@ -1,0 +1,274 @@
+{
+  "kind": "external_codex_mcp_synthetic",
+  "provider": "lodis",
+  "codex_model": "gpt-6.1-sol",
+  "cases_sha256": "74d007d9f48d46496137ad3a0585510968d4c538e2307a3247094c38234d20ec",
+  "selection_sha256": "1760bdce15d3ffa7c18809f11aa69d246f867c4f41529dd8afef6160c4d9d8cc",
+  "server_sha256": "492d6c6b6c40f84cbc0a5da3a655a81b48f610d73791999d75f32b96baf20163",
+  "case_ids": [
+    "gmv1_22cfc56ad815287ee807",
+    "gmv1_473634b411cb67d29c62",
+    "gmv1_58d68e6a034a231f6152",
+    "gmv1_4a3ff3b59c9eca57fcdf",
+    "gmv1_4bcad2d72475e3a96c3c",
+    "gmv1_75afee680da25a2eb675"
+  ],
+  "rows": [
+    {
+      "case_id": "gmv1_22cfc56ad815287ee807",
+      "expected_ids": [
+        "gmv1_16c2dc8396ff4b781f94"
+      ],
+      "expected_fact": "El nombre completo de user ficticio 014 es Clara Luz.",
+      "prompt": "Pregunta del usuario: ¿Cuál es el nombre completo de user ficticio 014?\n\nBusca con memory_search en el dominio exacto user:synthetic_user_014 (limit 20, expand false). Responde brevemente solo con la memoria encontrada. Si no hay memoria pertinente, dilo. No uses archivos, shell ni otras herramientas.",
+      "final_answer_ms": 12891.889042,
+      "final_answer": "El nombre completo de user ficticio 014 es Clara Luz.",
+      "usage": {
+        "input_tokens": 52713,
+        "cached_input_tokens": 46464,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 129,
+        "reasoning_output_tokens": 0
+      },
+      "tool_calls": 1,
+      "mcp_calls": [
+        {
+          "id": "item_1",
+          "type": "mcp_tool_call",
+          "server": "lodis",
+          "tool": "memory_search",
+          "arguments": {
+            "query": "nombre completo",
+            "domain": "user:synthetic_user_014",
+            "limit": 20,
+            "expand": false
+          },
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"memories\": [\n    {\n      \"id\": \"af4217b86c067d5eb5fbdfe72d862ed1\",\n      \"content\": \"El nombre completo de user ficticio 014 es Clara Luz.\",\n      \"detail\": \"Ejemplo completamente sintético. El nombre completo de user ficticio 014 es Clara Luz.\",\n      \"domain\": \"user:synthetic_user_014\",\n      \"source_agent_id\": \"iromem-eval\",\n      \"source_agent_name\": \"iromem-eval\",\n      \"cross_agent_id\": null,\n      \"cross_agent_name\": null,\n      \"source_type\": \"observed\",\n      \"source_description\": null,\n      \"confidence\": 0.75,\n      \"confirmed_count\": 0,\n      \"corrected_count\": 0,\n      \"mistake_count\": 0,\n      \"used_count\": 57,\n      \"learned_at\": \"2026-10-16T07:12:53.094Z\",\n      \"confirmed_at\": null,\n      \"last_used_at\": \"2026-10-16T07:23:07.750Z\",\n      \"deleted_at\": null,\n      \"summary\": null,\n      \"permanence\": null,\n      \"expires_at\": null,\n      \"archived_at\": null,\n      \"has_pii_flag\": 0,\n      \"entity_type\": \"fact\",\n      \"entity_name\": null,\n      \"structured_data\": \"{\\\"source_id\\\":\\\"gmv1_16c2dc8396ff4b781f94\\\"}\",\n      \"updated_at\": \"2026-10-16 07:23:07\",\n      \"user_id\": null,\n      \"referenced_count\": 0,\n      \"noise_count\": 0,\n      \"last_referenced_at\": null,\n      \"event_ts\": null,\n      \"embedding_shape\": \"legacy\",\n      \"valid_from\": null,\n      \"valid_to\": null,\n      \"superseded_by\": null,\n      \"embedding\": {},\n      \"url\": \"http://localhost:3838/memory/af4217b86c067d5eb5fbdfe72d862ed1\",\n      \"_searchScore\": 0.013006462281813064,\n      \"_connected\": []\n    }\n  ],\n  \"count\": 1,\n  \"totalConnected\": 0,\n  \"cached\": false\n}"
+              }
+            ],
+            "structured_content": null
+          },
+          "error": null,
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "case_id": "gmv1_473634b411cb67d29c62",
+      "expected_ids": [
+        "gmv1_e8677903b4ed05fa90a3"
+      ],
+      "expected_fact": "La persona responsable de project ficticio 014 es Iris.",
+      "prompt": "Pregunta del usuario: ¿Quién es responsable de project ficticio 014?\n\nBusca con memory_search en el dominio exacto project:synthetic_project_014 (limit 20, expand false). Responde brevemente solo con la memoria encontrada. Si no hay memoria pertinente, dilo. No uses archivos, shell ni otras herramientas.",
+      "final_answer_ms": 11795.724041,
+      "final_answer": "Iris es la persona responsable de project ficticio 014.",
+      "usage": {
+        "input_tokens": 52703,
+        "cached_input_tokens": 41984,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 129,
+        "reasoning_output_tokens": 0
+      },
+      "tool_calls": 1,
+      "mcp_calls": [
+        {
+          "id": "item_1",
+          "type": "mcp_tool_call",
+          "server": "lodis",
+          "tool": "memory_search",
+          "arguments": {
+            "query": "responsable",
+            "domain": "project:synthetic_project_014",
+            "limit": 20,
+            "expand": false
+          },
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"memories\": [\n    {\n      \"id\": \"d4a337c00b196c838b077384e22e96f6\",\n      \"content\": \"La persona responsable de project ficticio 014 es Iris.\",\n      \"detail\": \"Ejemplo completamente sintético. La persona responsable de project ficticio 014 es Iris.\",\n      \"domain\": \"project:synthetic_project_014\",\n      \"source_agent_id\": \"iromem-eval\",\n      \"source_agent_name\": \"iromem-eval\",\n      \"cross_agent_id\": null,\n      \"cross_agent_name\": null,\n      \"source_type\": \"observed\",\n      \"source_description\": null,\n      \"confidence\": 0.75,\n      \"confirmed_count\": 0,\n      \"corrected_count\": 0,\n      \"mistake_count\": 0,\n      \"used_count\": 140,\n      \"learned_at\": \"2026-10-16T07:13:49.652Z\",\n      \"confirmed_at\": null,\n      \"last_used_at\": \"2026-10-16T07:15:28.467Z\",\n      \"deleted_at\": null,\n      \"summary\": null,\n      \"permanence\": null,\n      \"expires_at\": null,\n      \"archived_at\": null,\n      \"has_pii_flag\": 0,\n      \"entity_type\": \"fact\",\n      \"entity_name\": null,\n      \"structured_data\": \"{\\\"source_id\\\":\\\"gmv1_e8677903b4ed05fa90a3\\\"}\",\n      \"updated_at\": \"2026-10-16 07:15:28\",\n      \"user_id\": null,\n      \"referenced_count\": 0,\n      \"noise_count\": 0,\n      \"last_referenced_at\": null,\n      \"event_ts\": null,\n      \"embedding_shape\": \"legacy\",\n      \"valid_from\": null,\n      \"valid_to\": null,\n      \"superseded_by\": null,\n      \"embedding\": {},\n      \"url\": \"http://localhost:3838/memory/d4a337c00b196c838b077384e22e96f6\",\n      \"_searchScore\": 0.01300648286672089,\n      \"_connected\": []\n    }\n  ],\n  \"count\": 1,\n  \"totalConnected\": 0,\n  \"cached\": false\n}"
+              }
+            ],
+            "structured_content": null
+          },
+          "error": null,
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "case_id": "gmv1_58d68e6a034a231f6152",
+      "expected_ids": [
+        "gmv1_f37117c579a5d08a16e1"
+      ],
+      "expected_fact": "El objetivo de project ficticio 014 es automatizar informes.",
+      "prompt": "Pregunta del usuario: ¿Cuál es el objetivo de project ficticio 014?\n\nBusca con memory_search en el dominio exacto project:synthetic_project_014 (limit 20, expand false). Responde brevemente solo con la memoria encontrada. Si no hay memoria pertinente, dilo. No uses archivos, shell ni otras herramientas.",
+      "final_answer_ms": 13451.252916,
+      "final_answer": "El objetivo de project ficticio 014 es automatizar informes.",
+      "usage": {
+        "input_tokens": 52764,
+        "cached_input_tokens": 41984,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 159,
+        "reasoning_output_tokens": 28
+      },
+      "tool_calls": 1,
+      "mcp_calls": [
+        {
+          "id": "item_1",
+          "type": "mcp_tool_call",
+          "server": "lodis",
+          "tool": "memory_search",
+          "arguments": {
+            "query": "objetivo",
+            "domain": "project:synthetic_project_014",
+            "limit": 20,
+            "expand": false
+          },
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"memories\": [\n    {\n      \"id\": \"832cac601351fdddf2778d6a06812e95\",\n      \"content\": \"El objetivo de project ficticio 014 es automatizar informes.\",\n      \"detail\": \"Ejemplo completamente sintético. El objetivo de project ficticio 014 es automatizar informes.\",\n      \"domain\": \"project:synthetic_project_014\",\n      \"source_agent_id\": \"iromem-eval\",\n      \"source_agent_name\": \"iromem-eval\",\n      \"cross_agent_id\": null,\n      \"cross_agent_name\": null,\n      \"source_type\": \"observed\",\n      \"source_description\": null,\n      \"confidence\": 0.75,\n      \"confirmed_count\": 0,\n      \"corrected_count\": 0,\n      \"mistake_count\": 0,\n      \"used_count\": 140,\n      \"learned_at\": \"2026-10-16T07:13:49.652Z\",\n      \"confirmed_at\": null,\n      \"last_used_at\": \"2026-10-16T07:15:28.467Z\",\n      \"deleted_at\": null,\n      \"summary\": null,\n      \"permanence\": null,\n      \"expires_at\": null,\n      \"archived_at\": null,\n      \"has_pii_flag\": 0,\n      \"entity_type\": \"fact\",\n      \"entity_name\": null,\n      \"structured_data\": \"{\\\"source_id\\\":\\\"gmv1_f37117c579a5d08a16e1\\\"}\",\n      \"updated_at\": \"2026-10-16 07:15:28\",\n      \"user_id\": null,\n      \"referenced_count\": 0,\n      \"noise_count\": 0,\n      \"last_referenced_at\": null,\n      \"event_ts\": null,\n      \"embedding_shape\": \"legacy\",\n      \"valid_from\": null,\n      \"valid_to\": null,\n      \"superseded_by\": null,\n      \"embedding\": {},\n      \"url\": \"http://localhost:3838/memory/832cac601351fdddf2778d6a06812e95\",\n      \"_searchScore\": 0.008088061113096859,\n      \"_connected\": []\n    }\n  ],\n  \"count\": 1,\n  \"totalConnected\": 0,\n  \"cached\": false\n}"
+              }
+            ],
+            "structured_content": null
+          },
+          "error": null,
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "case_id": "gmv1_4a3ff3b59c9eca57fcdf",
+      "expected_ids": [
+        "gmv1_21888b9aa2ad97e57ba7"
+      ],
+      "expected_fact": "El perfil ficticio de agent ficticio 014 registra portugués como idioma de salida.",
+      "prompt": "Pregunta del usuario: ¿Qué idioma de salida registra el perfil de agent ficticio 014?\n\nBusca con memory_search en el dominio exacto agent:synthetic_agent_014 (limit 20, expand false). Responde brevemente solo con la memoria encontrada. Si no hay memoria pertinente, dilo. No uses archivos, shell ni otras herramientas.",
+      "final_answer_ms": 10854.444125,
+      "final_answer": "El perfil de agent ficticio 014 registra portugués como idioma de salida.",
+      "usage": {
+        "input_tokens": 52797,
+        "cached_input_tokens": 41344,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 114,
+        "reasoning_output_tokens": 0
+      },
+      "tool_calls": 1,
+      "mcp_calls": [
+        {
+          "id": "item_1",
+          "type": "mcp_tool_call",
+          "server": "lodis",
+          "tool": "memory_search",
+          "arguments": {
+            "domain": "agent:synthetic_agent_014",
+            "query": "idioma salida",
+            "limit": 20,
+            "expand": false
+          },
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"memories\": [\n    {\n      \"id\": \"cd6f11b9a03b8e9c4a77ec43142452a2\",\n      \"content\": \"El perfil ficticio de agent ficticio 014 registra portugués como idioma de salida.\",\n      \"detail\": \"Ejemplo completamente sintético. El perfil ficticio de agent ficticio 014 registra portugués como idioma de salida.\",\n      \"domain\": \"agent:synthetic_agent_014\",\n      \"source_agent_id\": \"iromem-eval\",\n      \"source_agent_name\": \"iromem-eval\",\n      \"cross_agent_id\": null,\n      \"cross_agent_name\": null,\n      \"source_type\": \"observed\",\n      \"source_description\": null,\n      \"confidence\": 0.75,\n      \"confirmed_count\": 0,\n      \"corrected_count\": 0,\n      \"mistake_count\": 0,\n      \"used_count\": 64,\n      \"learned_at\": \"2026-10-16T07:14:03.176Z\",\n      \"confirmed_at\": null,\n      \"last_used_at\": \"2026-10-16T07:15:26.498Z\",\n      \"deleted_at\": null,\n      \"summary\": null,\n      \"permanence\": null,\n      \"expires_at\": null,\n      \"archived_at\": null,\n      \"has_pii_flag\": 0,\n      \"entity_type\": \"fact\",\n      \"entity_name\": null,\n      \"structured_data\": \"{\\\"source_id\\\":\\\"gmv1_21888b9aa2ad97e57ba7\\\"}\",\n      \"updated_at\": \"2026-10-16 07:15:26\",\n      \"user_id\": null,\n      \"referenced_count\": 0,\n      \"noise_count\": 0,\n      \"last_referenced_at\": null,\n      \"event_ts\": null,\n      \"embedding_shape\": \"legacy\",\n      \"valid_from\": null,\n      \"valid_to\": null,\n      \"superseded_by\": null,\n      \"embedding\": {},\n      \"url\": \"http://localhost:3838/memory/cd6f11b9a03b8e9c4a77ec43142452a2\",\n      \"_searchScore\": 0.01233947890328229,\n      \"_connected\": []\n    }\n  ],\n  \"count\": 1,\n  \"totalConnected\": 0,\n  \"cached\": false\n}"
+              }
+            ],
+            "structured_content": null
+          },
+          "error": null,
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "case_id": "gmv1_4bcad2d72475e3a96c3c",
+      "expected_ids": [
+        "gmv1_21bb6a7143dbc04b6431"
+      ],
+      "expected_fact": "En conversation ficticio 014, la tarea actual es preparar una lista.",
+      "prompt": "Pregunta del usuario: ¿Cuál es la tarea actual de conversation ficticio 014?\n\nBusca con memory_search en el dominio exacto conversation:synthetic_conversation_014 (limit 20, expand false). Responde brevemente solo con la memoria encontrada. Si no hay memoria pertinente, dilo. No uses archivos, shell ni otras herramientas.",
+      "final_answer_ms": 11417.421708,
+      "final_answer": "La tarea actual de conversation ficticio 014 es preparar una lista.",
+      "usage": {
+        "input_tokens": 52722,
+        "cached_input_tokens": 46464,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 130,
+        "reasoning_output_tokens": 0
+      },
+      "tool_calls": 1,
+      "mcp_calls": [
+        {
+          "id": "item_1",
+          "type": "mcp_tool_call",
+          "server": "lodis",
+          "tool": "memory_search",
+          "arguments": {
+            "domain": "conversation:synthetic_conversation_014",
+            "query": "tarea actual",
+            "limit": 20,
+            "expand": false
+          },
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"memories\": [\n    {\n      \"id\": \"267e8fc2122e6c0aeb8c91ba2ded97d8\",\n      \"content\": \"En conversation ficticio 014, la tarea actual es preparar una lista.\",\n      \"detail\": \"Ejemplo completamente sintético. En conversation ficticio 014, la tarea actual es preparar una lista.\",\n      \"domain\": \"conversation:synthetic_conversation_014\",\n      \"source_agent_id\": \"iromem-eval\",\n      \"source_agent_name\": \"iromem-eval\",\n      \"cross_agent_id\": null,\n      \"cross_agent_name\": null,\n      \"source_type\": \"observed\",\n      \"source_description\": null,\n      \"confidence\": 0.75,\n      \"confirmed_count\": 0,\n      \"corrected_count\": 0,\n      \"mistake_count\": 0,\n      \"used_count\": 96,\n      \"learned_at\": \"2026-10-16T07:13:53.668Z\",\n      \"confirmed_at\": null,\n      \"last_used_at\": \"2026-10-16T07:15:28.391Z\",\n      \"deleted_at\": null,\n      \"summary\": null,\n      \"permanence\": null,\n      \"expires_at\": null,\n      \"archived_at\": null,\n      \"has_pii_flag\": 0,\n      \"entity_type\": \"fact\",\n      \"entity_name\": null,\n      \"structured_data\": \"{\\\"source_id\\\":\\\"gmv1_21bb6a7143dbc04b6431\\\"}\",\n      \"updated_at\": \"2026-10-16 07:15:28\",\n      \"user_id\": null,\n      \"referenced_count\": 0,\n      \"noise_count\": 0,\n      \"last_referenced_at\": null,\n      \"event_ts\": null,\n      \"embedding_shape\": \"legacy\",\n      \"valid_from\": null,\n      \"valid_to\": null,\n      \"superseded_by\": null,\n      \"embedding\": {},\n      \"url\": \"http://localhost:3838/memory/267e8fc2122e6c0aeb8c91ba2ded97d8\",\n      \"_searchScore\": 0.009254602432410376,\n      \"_connected\": []\n    }\n  ],\n  \"count\": 1,\n  \"totalConnected\": 0,\n  \"cached\": false\n}"
+              }
+            ],
+            "structured_content": null
+          },
+          "error": null,
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "case_id": "gmv1_75afee680da25a2eb675",
+      "expected_ids": [],
+      "expected_fact": null,
+      "prompt": "Pregunta del usuario: ¿Cuál es el código secreto de user ficticio 014?\n\nBusca con memory_search en el dominio exacto user:synthetic_user_014 (limit 20, expand false). Responde brevemente solo con la memoria encontrada. Si no hay memoria pertinente, dilo. No uses archivos, shell ni otras herramientas.",
+      "final_answer_ms": 12601.076584,
+      "final_answer": "No encontré memoria pertinente en user:synthetic_user_014.",
+      "usage": {
+        "input_tokens": 52222,
+        "cached_input_tokens": 46464,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 124,
+        "reasoning_output_tokens": 0
+      },
+      "tool_calls": 1,
+      "mcp_calls": [
+        {
+          "id": "item_0",
+          "type": "mcp_tool_call",
+          "server": "lodis",
+          "tool": "memory_search",
+          "arguments": {
+            "query": "código secreto",
+            "domain": "user:synthetic_user_014",
+            "limit": 20,
+            "expand": false
+          },
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"memories\": [],\n  \"count\": 0,\n  \"totalConnected\": 0,\n  \"cached\": false\n}"
+              }
+            ],
+            "structured_content": null
+          },
+          "error": null,
+          "status": "completed"
+        }
+      ]
+    }
+  ]
+}

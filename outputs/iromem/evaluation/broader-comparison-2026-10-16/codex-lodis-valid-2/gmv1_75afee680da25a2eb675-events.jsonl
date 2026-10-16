@@ -1,0 +1,6 @@
+{"type": "thread.started", "thread_id": "01a1439a-7463-7242-bd81-524cb77db878"}
+{"type": "turn.started"}
+{"type": "item.started", "item": {"id": "item_0", "type": "mcp_tool_call", "server": "lodis", "tool": "memory_search", "arguments": {"domain": "user:synthetic_user_014", "query": "código secreto", "limit": 20, "expand": false}, "result": null, "error": null, "status": "in_progress"}}
+{"type": "item.completed", "item": {"id": "item_0", "type": "mcp_tool_call", "server": "lodis", "tool": "memory_search", "arguments": {"domain": "user:synthetic_user_014", "query": "código secreto", "limit": 20, "expand": false}, "result": {"content": [{"type": "text", "text": "{\n  \"memories\": [],\n  \"count\": 0,\n  \"totalConnected\": 0,\n  \"cached\": false\n}"}], "structured_content": null}, "error": null, "status": "completed"}}
+{"type": "item.completed", "item": {"id": "item_1", "type": "agent_message", "text": "No se encontró memoria pertinente."}}
+{"type": "turn.completed", "usage": {"input_tokens": 52219, "cached_input_tokens": 41984, "cache_write_input_tokens": 0, "output_tokens": 114, "reasoning_output_tokens": 0}}

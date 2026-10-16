@@ -1,0 +1,10 @@
+{
+  "kind": "basic_memory_local_asgi_benchmark",
+  "method": "basic_memory_fts",
+  "split": "holdout_014_017",
+  "cases": 540,
+  "cases_sha256": "3f5c1294a1782d9fbe74963c7cef7bdb2fa6372c5bb22fd4468dbb9aadae97ab",
+  "config_dir": "/private/tmp/iromem-basic-memory-eval-20261016/config",
+  "query": "engram_keywords_with_exact_scope_metadata_filter",
+  "transport": "in_process_asgi_QUERY"
+}

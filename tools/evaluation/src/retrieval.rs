@@ -137,7 +137,16 @@ fn evaluate(queries: &[Value], results: &[Value]) -> Result<Value, String> {
             return Err(format!("estado inválido en {id}"));
         }
         let current_method = required_str(response, "method")?;
-        if !["fts5", "fts5_keywords", "fts5_semantic_rrf", "engram_any"].contains(&current_method) {
+        if ![
+            "fts5",
+            "fts5_keywords",
+            "fts5_semantic_rrf",
+            "engram_any",
+            "basic_memory_fts",
+            "lodis_hybrid",
+        ]
+        .contains(&current_method)
+        {
             return Err(format!("método inválido en {id}"));
         }
         if method.is_some_and(|previous| previous != current_method) {

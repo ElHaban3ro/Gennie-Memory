@@ -1,0 +1,10 @@
+{
+  "kind": "lodis_mcp_benchmark",
+  "method": "lodis_hybrid",
+  "split": "holdout_014_017",
+  "cases": 540,
+  "cases_sha256": "9da781c4357aaf1616daca8345081cd8dbba0126a9f818cca6945f0051574147",
+  "mapping_sha256": "63952c322af2fd5264f34d529557258d0a42eee00ae4c0d85b096bbd1e176760",
+  "binary_sha256": "3c549a77507d684d68952661c340e6cae3ba202ff2819492ebf863b69efbddef",
+  "query": "engram_keywords_with_exact_domain_filter"
+}

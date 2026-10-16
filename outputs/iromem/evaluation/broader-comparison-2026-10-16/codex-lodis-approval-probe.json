@@ -1,0 +1,37 @@
+{
+  "final_answer_ms": 13347.187542,
+  "final_answer": "Tu nombre completo es Clara Luz.",
+  "usage": {
+    "input_tokens": 52563,
+    "cached_input_tokens": 43648,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 114,
+    "reasoning_output_tokens": 0
+  },
+  "tool_calls": 1,
+  "mcp_calls": [
+    {
+      "id": "item_0",
+      "type": "mcp_tool_call",
+      "server": "lodis",
+      "tool": "memory_search",
+      "arguments": {
+        "query": "nombre completo",
+        "domain": "user:synthetic_user_014",
+        "limit": 20,
+        "expand": false
+      },
+      "result": {
+        "content": [
+          {
+            "type": "text",
+            "text": "{\n  \"memories\": [\n    {\n      \"id\": \"af4217b86c067d5eb5fbdfe72d862ed1\",\n      \"content\": \"El nombre completo de user ficticio 014 es Clara Luz.\",\n      \"detail\": \"Ejemplo completamente sintético. El nombre completo de user ficticio 014 es Clara Luz.\",\n      \"domain\": \"user:synthetic_user_014\",\n      \"source_agent_id\": \"iromem-eval\",\n      \"source_agent_name\": \"iromem-eval\",\n      \"cross_agent_id\": null,\n      \"cross_agent_name\": null,\n      \"source_type\": \"observed\",\n      \"source_description\": null,\n      \"confidence\": 0.75,\n      \"confirmed_count\": 0,\n      \"corrected_count\": 0,\n      \"mistake_count\": 0,\n      \"used_count\": 56,\n      \"learned_at\": \"2026-10-16T07:12:53.094Z\",\n      \"confirmed_at\": null,\n      \"last_used_at\": \"2026-10-16T07:15:28.373Z\",\n      \"deleted_at\": null,\n      \"summary\": null,\n      \"permanence\": null,\n      \"expires_at\": null,\n      \"archived_at\": null,\n      \"has_pii_flag\": 0,\n      \"entity_type\": \"fact\",\n      \"entity_name\": null,\n      \"structured_data\": \"{\\\"source_id\\\":\\\"gmv1_16c2dc8396ff4b781f94\\\"}\",\n      \"updated_at\": \"2026-10-16 07:15:28\",\n      \"user_id\": null,\n      \"referenced_count\": 0,\n      \"noise_count\": 0,\n      \"last_referenced_at\": null,\n      \"event_ts\": null,\n      \"embedding_shape\": \"legacy\",\n      \"valid_from\": null,\n      \"valid_to\": null,\n      \"superseded_by\": null,\n      \"embedding\": {},\n      \"url\": \"http://localhost:3838/memory/af4217b86c067d5eb5fbdfe72d862ed1\",\n      \"_searchScore\": 0.013006476361517768,\n      \"_connected\": []\n    }\n  ],\n  \"count\": 1,\n  \"totalConnected\": 0,\n  \"cached\": false\n}"
+          }
+        ],
+        "structured_content": null
+      },
+      "error": null,
+      "status": "completed"
+    }
+  ]
+}

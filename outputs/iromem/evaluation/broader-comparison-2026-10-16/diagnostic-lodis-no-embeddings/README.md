@@ -1,0 +1,1 @@
+Diagnostic only: the first Lodis import had zero persisted embeddings, so these runs used lexical fallback despite the original `lodis_hybrid` label. They are excluded from all reported comparisons. The primary run is `search-lodis-semantic-*`, with 2,800/2,800 persisted embeddings.

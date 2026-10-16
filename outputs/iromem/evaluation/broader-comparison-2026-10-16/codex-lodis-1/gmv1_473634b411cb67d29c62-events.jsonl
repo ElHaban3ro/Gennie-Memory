@@ -1,0 +1,7 @@
+{"type": "thread.started", "thread_id": "01a14392-9652-74b2-9370-db4630ddb226"}
+{"type": "turn.started"}
+{"type": "item.completed", "item": {"id": "item_0", "type": "agent_message", "text": "Buscaré la memoria en el dominio exacto indicado."}}
+{"type": "item.started", "item": {"id": "item_1", "type": "mcp_tool_call", "server": "lodis", "tool": "memory_search", "arguments": {"query": "responsable", "domain": "project:synthetic_project_014", "limit": 20, "expand": false}, "result": null, "error": null, "status": "in_progress"}}
+{"type": "item.completed", "item": {"id": "item_1", "type": "mcp_tool_call", "server": "lodis", "tool": "memory_search", "arguments": {"query": "responsable", "domain": "project:synthetic_project_014", "limit": 20, "expand": false}, "result": null, "error": {"message": "MCP tool call requires approval, but approval policy is never"}, "status": "failed"}}
+{"type": "item.completed", "item": {"id": "item_2", "type": "agent_message", "text": "No pude consultar la memoria: la búsqueda requiere una aprobación que este entorno no permite. No puedo determinar quién es responsable."}}
+{"type": "turn.completed", "usage": {"input_tokens": 52226, "cached_input_tokens": 36864, "cache_write_input_tokens": 0, "output_tokens": 152, "reasoning_output_tokens": 0}}
