@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-label="iROMEM: tiempo para preparar la semilla">
+<rect width="100%" height="100%" fill="#fffefa"/>
+<text x="58" y="75" fill="#25313b" text-anchor="start" font-family="Georgia,serif" font-size="34">iROMEM: tiempo para preparar la semilla</text>
+<text x="58" y="110" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="17">540 consultas · búsqueda + Decisions + composición · milisegundos</text>
+<text x="58" y="144" fill="#25313b" text-anchor="start" font-family="Georgia,serif" font-size="22">Mediana</text>
+<text x="58" y="174" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="16">Etapa Decisions y recorrido total</text>
+<text x="110" y="199" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="14">milisegundos</text>
+<line x1="110" y1="497" x2="503" y2="497" stroke="#d8dfdf" stroke-width="1"/>
+<text x="100" y="502" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">0.0</text>
+<line x1="110" y1="356" x2="503" y2="356" stroke="#d8dfdf" stroke-width="1"/>
+<text x="100" y="361" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">225.0</text>
+<line x1="110" y1="215" x2="503" y2="215" stroke="#d8dfdf" stroke-width="1"/>
+<text x="100" y="220" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">450.0</text>
+<line x1="110" y1="215" x2="110" y2="497" stroke="#25313b" stroke-width="1"/>
+<rect x="175" y="279" width="96" height="218" fill="#617db1"/>
+<text x="223" y="266" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="18">347.10</text>
+<text x="223" y="527" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="17">Decisions</text>
+<rect x="350" y="265" width="96" height="232" fill="#18817e"/>
+<text x="398" y="252" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="18">369.62</text>
+<text x="398" y="527" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="17">Semilla</text>
+<text x="610" y="144" fill="#25313b" text-anchor="start" font-family="Georgia,serif" font-size="22">p95</text>
+<text x="610" y="174" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="16">Etapa Decisions y recorrido total</text>
+<text x="662" y="199" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="14">milisegundos</text>
+<line x1="662" y1="497" x2="1055" y2="497" stroke="#d8dfdf" stroke-width="1"/>
+<text x="652" y="502" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">0.0</text>
+<line x1="662" y1="356" x2="1055" y2="356" stroke="#d8dfdf" stroke-width="1"/>
+<text x="652" y="361" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">325.0</text>
+<line x1="662" y1="215" x2="1055" y2="215" stroke="#d8dfdf" stroke-width="1"/>
+<text x="652" y="220" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">650.0</text>
+<line x1="662" y1="215" x2="662" y2="497" stroke="#25313b" stroke-width="1"/>
+<rect x="727" y="262" width="96" height="235" fill="#617db1"/>
+<text x="775" y="249" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="18">542.18</text>
+<text x="775" y="527" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="17">Decisions</text>
+<rect x="902" y="251" width="96" height="246" fill="#18817e"/>
+<text x="950" y="238" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="18">567.22</text>
+<text x="950" y="527" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="17">Semilla</text>
+<text x="58" y="575" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="16">Búsqueda dentro de recall: 8.10 ms de mediana y 14.19 ms en p95.</text>
+<text x="58" y="605" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="16">Decisions es una etapa de la semilla; los percentiles de etapas distintas no se suman.</text>
+</svg>

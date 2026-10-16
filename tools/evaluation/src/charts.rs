@@ -791,7 +791,7 @@ pub fn render_current_codex(
     svg.save(&output_dir.join("current-codex-comparison.svg"))
 }
 
-/// Rebuild the three current README figures from one frozen campaign aggregate.
+/// Rebuild the current README figures from one frozen campaign aggregate.
 pub fn render_full_comparison(aggregate_path: &Path, output_dir: &Path) -> Result<(), String> {
     let data = load(aggregate_path)?;
     let iromem = data
@@ -927,6 +927,68 @@ pub fn render_full_comparison(aggregate_path: &Path, output_dir: &Path) -> Resul
     );
     latency.save(&output_dir.join("full-comparison-latency-2026-10-16.svg"))?;
 
+    let mut preparation = Svg::new(1200, 650, "iROMEM: tiempo para preparar la semilla");
+    preparation.text(
+        58,
+        110,
+        "540 consultas · búsqueda + Decisions + composición · milisegundos",
+        17,
+        MUTED,
+        "start",
+        "Arial,sans-serif",
+    );
+    for data in [
+        Panel {
+            x: 58,
+            title: "Mediana",
+            subtitle: "Etapa Decisions y recorrido total",
+            unit: "milisegundos",
+            maximum: 450.0,
+            bars: [
+                ("Decisions", f(decisions, "/classifier_p50_ms")?, BLUE),
+                ("Semilla", f(decisions, "/elapsed_p50_ms")?, TEAL),
+            ],
+            decimals: 2,
+        },
+        Panel {
+            x: 610,
+            title: "p95",
+            subtitle: "Etapa Decisions y recorrido total",
+            unit: "milisegundos",
+            maximum: 650.0,
+            bars: [
+                ("Decisions", f(decisions, "/classifier_p95_ms")?, BLUE),
+                ("Semilla", f(decisions, "/elapsed_p95_ms")?, TEAL),
+            ],
+            decimals: 2,
+        },
+    ] {
+        panel(&mut preparation, &data);
+    }
+    preparation.text(
+        58,
+        575,
+        &format!(
+            "Búsqueda dentro de recall: {:.2} ms de mediana y {:.2} ms en p95.",
+            f(decisions, "/search_p50_ms")?,
+            f(decisions, "/search_p95_ms")?
+        ),
+        16,
+        MUTED,
+        "start",
+        "Arial,sans-serif",
+    );
+    preparation.text(
+        58,
+        605,
+        "Decisions es una etapa de la semilla; los percentiles de etapas distintas no se suman.",
+        16,
+        MUTED,
+        "start",
+        "Arial,sans-serif",
+    );
+    preparation.save(&output_dir.join("full-comparison-seed-preparation-2026-10-16.svg"))?;
+
     let round = |number: &str, system: &str, field: &str| -> Result<f64, String> {
         f(&data, &format!("/codex/{number}/{system}/{field}"))
     };
@@ -944,7 +1006,7 @@ pub fn render_full_comparison(aggregate_path: &Path, output_dir: &Path) -> Resul
     let engram_s = across_rounds("engram", "median_final_answer_ms")? / 1000.0;
     let seed_tokens = across_rounds("seed", "median_input_tokens")?;
     let engram_tokens = across_rounds("engram", "median_input_tokens")?;
-    let mut codex = Svg::new(1200, 650, "Codex: iROMEM frente a Engram");
+    let mut codex = Svg::new(1200, 650, "Codex: semilla ya lista frente a Engram");
     codex.text(
         58,
         110,
@@ -957,7 +1019,7 @@ pub fn render_full_comparison(aggregate_path: &Path, output_dir: &Path) -> Resul
     for data in [
         Panel {
             x: 58,
-            title: "Tiempo hasta la respuesta",
+            title: "Tiempo del turno Codex",
             subtitle: "Semilla en prompt o búsqueda MCP",
             unit: "segundos",
             maximum: 13.0,
@@ -1000,13 +1062,71 @@ pub fn render_full_comparison(aggregate_path: &Path, output_dir: &Path) -> Resul
     codex.text(
         58,
         625,
-        "La preparación de semilla se midió aparte; la integración automática sigue pendiente.",
+        "La barra iROMEM empieza con la semilla lista; su preparación se muestra en otra figura.",
         16,
         MUTED,
         "start",
         "Arial,sans-serif",
     );
-    codex.save(&output_dir.join("full-comparison-codex-2026-10-16.svg"))
+    codex.save(&output_dir.join("full-comparison-codex-2026-10-16.svg"))?;
+
+    let mut full = Svg::new(1200, 650, "Tiempo hasta respuesta: recorrido calculado");
+    full.text(
+        58,
+        110,
+        "Dos rondas de seis preguntas · iROMEM incluye preparación de semilla con Decisions",
+        17,
+        MUTED,
+        "start",
+        "Arial,sans-serif",
+    );
+    for (number, x) in [("1", 58), ("2", 610)] {
+        panel(
+            &mut full,
+            &Panel {
+                x,
+                title: if number == "1" { "Ronda 1" } else { "Ronda 2" },
+                subtitle: "Mediana de seis casos emparejados",
+                unit: "segundos",
+                maximum: 13.0,
+                bars: [
+                    (
+                        "iROMEM*",
+                        f(
+                            &data,
+                            &format!("/codex/{number}/calculated_seed_plus_recall_median_ms"),
+                        )? / 1000.0,
+                        TEAL,
+                    ),
+                    (
+                        "Engram",
+                        round(number, "engram", "median_final_answer_ms")? / 1000.0,
+                        GOLD,
+                    ),
+                ],
+                decimals: 2,
+            },
+        );
+    }
+    full.text(
+        58,
+        575,
+        "*iROMEM: suma por caso de recall + Codex, medidos en ejecuciones separadas.",
+        16,
+        MUTED,
+        "start",
+        "Arial,sans-serif",
+    );
+    full.text(
+        58,
+        605,
+        "Engram: turno Codex con MCP medido. Falta medir el hook y su entrega real a Codex.",
+        16,
+        MUTED,
+        "start",
+        "Arial,sans-serif",
+    );
+    full.save(&output_dir.join("full-comparison-calculated-flow-2026-10-16.svg"))
 }
 
 #[cfg(test)]

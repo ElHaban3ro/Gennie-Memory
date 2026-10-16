@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-label="Codex: iROMEM frente a Engram">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-label="Codex: semilla ya lista frente a Engram">
 <rect width="100%" height="100%" fill="#fffefa"/>
-<text x="58" y="75" fill="#25313b" text-anchor="start" font-family="Georgia,serif" font-size="34">Codex: iROMEM frente a Engram</text>
+<text x="58" y="75" fill="#25313b" text-anchor="start" font-family="Georgia,serif" font-size="34">Codex: semilla ya lista frente a Engram</text>
 <text x="58" y="110" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="17">Cohorte 014–017 · 2 rondas de 6 turnos · mediana de las medianas de cada ronda</text>
-<text x="58" y="144" fill="#25313b" text-anchor="start" font-family="Georgia,serif" font-size="22">Tiempo hasta la respuesta</text>
+<text x="58" y="144" fill="#25313b" text-anchor="start" font-family="Georgia,serif" font-size="22">Tiempo del turno Codex</text>
 <text x="58" y="174" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="16">Semilla en prompt o búsqueda MCP</text>
 <text x="110" y="199" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="14">segundos</text>
 <line x1="110" y1="497" x2="503" y2="497" stroke="#d8dfdf" stroke-width="1"/>
@@ -36,5 +36,5 @@
 <text x="950" y="527" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="17">Engram</text>
 <text x="58" y="575" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="16">iROMEM entregó la semilla en el prompt; Engram se consultó por MCP.</text>
 <text x="58" y="600" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="16">Los tokens incluyen contexto y caché; no equivalen al coste marginal de la recuperación.</text>
-<text x="58" y="625" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="16">La preparación de semilla se midió aparte; la integración automática sigue pendiente.</text>
+<text x="58" y="625" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="16">La barra iROMEM empieza con la semilla lista; su preparación se muestra en otra figura.</text>
 </svg>
