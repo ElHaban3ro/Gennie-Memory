@@ -1,0 +1,142 @@
+{
+  "case_ids": [
+    "gmv1_d801f72be8acfa46ddf6",
+    "gmv1_5beb5b01a40667ca7068",
+    "gmv1_423956194e4bfce96c69",
+    "gmv1_490c045596045974d0f8",
+    "gmv1_c31971ae7655de9d9d89",
+    "gmv1_afe0405fcdefd22d86d4"
+  ],
+  "codex_model": "gpt-6.1-sol",
+  "kind": "rust_codex_initial_seed_prompt_simulation",
+  "rows": [
+    {
+      "case_id": "gmv1_d801f72be8acfa46ddf6",
+      "expected_ids": [
+        "gmv1_745e550c42f8260eed9e"
+      ],
+      "final_answer": "La memoria semilla no contiene el nombre completo de user ficticio 001.",
+      "final_answer_ms": 5514.903209,
+      "prompt_utf8_bytes": 295,
+      "seed_text_utf8_bytes": 0,
+      "seed_text_words": 0,
+      "selected_ids": [
+        "gmv1_745e550c42f8260eed9e"
+      ],
+      "tool_calls": 0,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 16867,
+        "output_tokens": 20,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "case_id": "gmv1_5beb5b01a40667ca7068",
+      "expected_ids": [
+        "gmv1_c670e06cefd6c71bb397"
+      ],
+      "final_answer": "La memoria semilla no indica quién es responsable de project ficticio 001.",
+      "final_answer_ms": 5215.250666,
+      "prompt_utf8_bytes": 292,
+      "seed_text_utf8_bytes": 0,
+      "seed_text_words": 0,
+      "selected_ids": [
+        "gmv1_c670e06cefd6c71bb397"
+      ],
+      "tool_calls": 0,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 16865,
+        "output_tokens": 20,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "case_id": "gmv1_423956194e4bfce96c69",
+      "expected_ids": [
+        "gmv1_daf8654496352812fa43"
+      ],
+      "final_answer": "La semilla no contiene información sobre la tarea actual de «conversation ficticio 001».",
+      "final_answer_ms": 4953.969416999999,
+      "prompt_utf8_bytes": 300,
+      "seed_text_utf8_bytes": 0,
+      "seed_text_words": 0,
+      "selected_ids": [
+        "gmv1_daf8654496352812fa43"
+      ],
+      "tool_calls": 0,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 16867,
+        "output_tokens": 22,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "case_id": "gmv1_490c045596045974d0f8",
+      "expected_ids": [
+        "gmv1_4f70937ac8c9b46ebbd0"
+      ],
+      "final_answer": "La semilla no contiene el idioma de salida del perfil de agent ficticio 001.",
+      "final_answer_ms": 4613.238082999999,
+      "prompt_utf8_bytes": 309,
+      "seed_text_utf8_bytes": 0,
+      "seed_text_words": 0,
+      "selected_ids": [
+        "gmv1_4f70937ac8c9b46ebbd0"
+      ],
+      "tool_calls": 0,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 16869,
+        "output_tokens": 22,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "case_id": "gmv1_c31971ae7655de9d9d89",
+      "expected_ids": [
+        "gmv1_bf6f48ac692eac7b2e09"
+      ],
+      "final_answer": "La semilla no contiene el dato sobre qué supuesto se abandonó en «conversation ficticio 001».",
+      "final_answer_ms": 4547.284458,
+      "prompt_utf8_bytes": 302,
+      "seed_text_utf8_bytes": 0,
+      "seed_text_words": 0,
+      "selected_ids": [],
+      "tool_calls": 0,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 16867,
+        "output_tokens": 25,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "case_id": "gmv1_afe0405fcdefd22d86d4",
+      "expected_ids": [],
+      "final_answer": "La memoria semilla no contiene el código secreto de user ficticio 001.",
+      "final_answer_ms": 5718.333167,
+      "prompt_utf8_bytes": 295,
+      "seed_text_utf8_bytes": 0,
+      "seed_text_words": 0,
+      "selected_ids": [],
+      "tool_calls": 0,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 16867,
+        "output_tokens": 20,
+        "reasoning_output_tokens": 0
+      }
+    }
+  ],
+  "seed_injected": false,
+  "source": ".local/pilots/rust-migration/general-memory-development-decisions-network.jsonl"
+}

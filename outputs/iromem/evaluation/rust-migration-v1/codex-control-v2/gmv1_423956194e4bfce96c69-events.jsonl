@@ -1,0 +1,4 @@
+{"elapsed_ms":148.78804200000002,"event":{"thread_id":"01a14264-a0fc-73f1-ac57-257ab9dcb7b9","type":"thread.started"}}
+{"elapsed_ms":150.643833,"event":{"type":"turn.started"}}
+{"elapsed_ms":4953.969416999999,"event":{"item":{"id":"item_0","text":"La semilla no contiene información sobre la tarea actual de «conversation ficticio 001».","type":"agent_message"},"type":"item.completed"}}
+{"elapsed_ms":5040.570208,"event":{"type":"turn.completed","usage":{"cache_write_input_tokens":0,"cached_input_tokens":12288,"input_tokens":16867,"output_tokens":22,"reasoning_output_tokens":0}}}

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1550" height="645" viewBox="0 0 1550 645" role="img" aria-label="¿Cuántas veces acertó cada etapa?">
+<rect width="100%" height="100%" fill="#fffefa"/>
+<text x="58" y="75" fill="#25313b" text-anchor="start" font-family="Georgia,serif" font-size="34">¿Cuántas veces acertó cada etapa?</text>
+<text x="58" y="109" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="17">Cohorte final · 460 preguntas positivas · cuentas observadas</text>
+<text x="58" y="144" fill="#25313b" text-anchor="start" font-family="Georgia,serif" font-size="22">1. El recuerdo llega al top 20</text>
+<text x="58" y="174" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="16">Búsqueda local en 2.800 recuerdos</text>
+<text x="110" y="199" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="14">aciertos / 460</text>
+<line x1="110" y1="497" x2="503" y2="497" stroke="#d8dfdf" stroke-width="1"/>
+<text x="100" y="502" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">0</text>
+<line x1="110" y1="356" x2="503" y2="356" stroke="#d8dfdf" stroke-width="1"/>
+<text x="100" y="361" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">230</text>
+<line x1="110" y1="215" x2="503" y2="215" stroke="#d8dfdf" stroke-width="1"/>
+<text x="100" y="220" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">460</text>
+<line x1="110" y1="215" x2="110" y2="497" stroke="#25313b" stroke-width="1"/>
+<rect x="175" y="220" width="96" height="277" fill="#18817e"/>
+<text x="223" y="207" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="18">452</text>
+<text x="223" y="527" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="17">iROMEM</text>
+<rect x="350" y="217" width="96" height="280" fill="#b77a27"/>
+<text x="398" y="204" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="18">456</text>
+<text x="398" y="527" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="17">Engram</text>
+<text x="803" y="144" fill="#25313b" text-anchor="start" font-family="Georgia,serif" font-size="22">2. La semilla final es correcta</text>
+<text x="803" y="174" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="16">Decisión completa de iROMEM</text>
+<text x="855" y="199" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="14">aciertos / 460</text>
+<line x1="855" y1="497" x2="1248" y2="497" stroke="#d8dfdf" stroke-width="1"/>
+<text x="845" y="502" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">0</text>
+<line x1="855" y1="356" x2="1248" y2="356" stroke="#d8dfdf" stroke-width="1"/>
+<text x="845" y="361" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">230</text>
+<line x1="855" y1="215" x2="1248" y2="215" stroke="#d8dfdf" stroke-width="1"/>
+<text x="845" y="220" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">460</text>
+<line x1="855" y1="215" x2="855" y2="497" stroke="#25313b" stroke-width="1"/>
+<rect x="920" y="237" width="96" height="260" fill="#18817e"/>
+<text x="968" y="224" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="18">424</text>
+<text x="968" y="527" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="17">Decisions</text>
+<rect x="1095" y="252" width="96" height="245" fill="#617db1"/>
+<text x="1143" y="239" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="18">400</text>
+<text x="1143" y="527" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="17">Jev</text>
+<text x="58" y="586" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="16">Engram no produce una semilla con el contrato de iROMEM; por eso solo aparece en el panel de candidatos.</text>
+<text x="58" y="612" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="16">Controles negativos: Decisions 80/80 vacíos; Jev 80/80 vacíos. Ejes completos desde cero.</text>
+</svg>

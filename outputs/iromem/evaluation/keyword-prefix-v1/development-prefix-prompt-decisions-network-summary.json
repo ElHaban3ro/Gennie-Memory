@@ -1,0 +1,581 @@
+{
+  "by_segment": {
+    "agent/active_module": {
+      "cases": 1,
+      "correct": 1
+    },
+    "agent/answer_length": {
+      "cases": 1,
+      "correct": 1
+    },
+    "agent/artifact": {
+      "cases": 1,
+      "correct": 1
+    },
+    "agent/cache_state": {
+      "cases": 1,
+      "correct": 1
+    },
+    "agent/checkpoint": {
+      "cases": 1,
+      "correct": 1
+    },
+    "agent/citation": {
+      "cases": 1,
+      "correct": 1
+    },
+    "agent/completion_state": {
+      "cases": 1,
+      "correct": 1
+    },
+    "agent/environment": {
+      "cases": 1,
+      "correct": 1
+    },
+    "agent/error_code": {
+      "cases": 1,
+      "correct": 1
+    },
+    "agent/evaluation_set": {
+      "cases": 1,
+      "correct": 1
+    },
+    "agent/evidence": {
+      "cases": 1,
+      "correct": 1
+    },
+    "agent/failure_handling": {
+      "cases": 1,
+      "correct": 1
+    },
+    "agent/handoff": {
+      "cases": 1,
+      "correct": 1
+    },
+    "agent/handoff_target": {
+      "cases": 1,
+      "correct": 1
+    },
+    "agent/known_limit": {
+      "cases": 1,
+      "correct": 1
+    },
+    "agent/last_failure": {
+      "cases": 1,
+      "correct": 1
+    },
+    "agent/last_success": {
+      "cases": 1,
+      "correct": 1
+    },
+    "agent/latency": {
+      "cases": 1,
+      "correct": 1
+    },
+    "agent/next_check": {
+      "cases": 1,
+      "correct": 1
+    },
+    "agent/output_language": {
+      "cases": 1,
+      "correct": 1
+    },
+    "agent/pending_operation": {
+      "cases": 1,
+      "correct": 1
+    },
+    "agent/privacy": {
+      "cases": 1,
+      "correct": 1
+    },
+    "agent/retry_count": {
+      "cases": 1,
+      "correct": 1
+    },
+    "agent/schedule": {
+      "cases": 1,
+      "correct": 1
+    },
+    "agent/source_inspected": {
+      "cases": 1,
+      "correct": 1
+    },
+    "agent/tool_available": {
+      "cases": 1,
+      "correct": 1
+    },
+    "agent/tool_order": {
+      "cases": 1,
+      "correct": 1
+    },
+    "agent/tool_unavailable": {
+      "cases": 1,
+      "correct": 1
+    },
+    "agent/uncertainty": {
+      "cases": 1,
+      "correct": 1
+    },
+    "agent/unknown_address": {
+      "cases": 1,
+      "correct": 1
+    },
+    "agent/unknown_color": {
+      "cases": 1,
+      "correct": 1
+    },
+    "agent/unknown_future": {
+      "cases": 1,
+      "correct": 1
+    },
+    "agent/unknown_password": {
+      "cases": 1,
+      "correct": 1
+    },
+    "agent/unknown_secret": {
+      "cases": 1,
+      "correct": 1
+    },
+    "agent/workaround": {
+      "cases": 1,
+      "correct": 1
+    },
+    "conversation/agreed_date": {
+      "cases": 1,
+      "correct": 1
+    },
+    "conversation/agreed_owner": {
+      "cases": 1,
+      "correct": 1
+    },
+    "conversation/answer_language": {
+      "cases": 1,
+      "correct": 1
+    },
+    "conversation/attachment": {
+      "cases": 1,
+      "correct": 1
+    },
+    "conversation/audience": {
+      "cases": 1,
+      "correct": 1
+    },
+    "conversation/blocked_by": {
+      "cases": 1,
+      "correct": 1
+    },
+    "conversation/changed_assumption": {
+      "cases": 1,
+      "correct": 0
+    },
+    "conversation/chosen_option": {
+      "cases": 1,
+      "correct": 1
+    },
+    "conversation/closing_state": {
+      "cases": 1,
+      "correct": 0
+    },
+    "conversation/completed_step": {
+      "cases": 1,
+      "correct": 1
+    },
+    "conversation/correction": {
+      "cases": 1,
+      "correct": 1
+    },
+    "conversation/current_task": {
+      "cases": 1,
+      "correct": 0
+    },
+    "conversation/decision_reason": {
+      "cases": 1,
+      "correct": 1
+    },
+    "conversation/deferred_step": {
+      "cases": 1,
+      "correct": 1
+    },
+    "conversation/disagreement": {
+      "cases": 1,
+      "correct": 1
+    },
+    "conversation/excluded_option": {
+      "cases": 1,
+      "correct": 1
+    },
+    "conversation/feedback": {
+      "cases": 1,
+      "correct": 1
+    },
+    "conversation/handoff_note": {
+      "cases": 1,
+      "correct": 1
+    },
+    "conversation/next_step": {
+      "cases": 1,
+      "correct": 1
+    },
+    "conversation/open_question": {
+      "cases": 1,
+      "correct": 1
+    },
+    "conversation/priority": {
+      "cases": 1,
+      "correct": 1
+    },
+    "conversation/reference_file": {
+      "cases": 1,
+      "correct": 1
+    },
+    "conversation/requested_example": {
+      "cases": 1,
+      "correct": 1
+    },
+    "conversation/response_style": {
+      "cases": 1,
+      "correct": 0
+    },
+    "conversation/review_rule": {
+      "cases": 1,
+      "correct": 1
+    },
+    "conversation/scope_boundary": {
+      "cases": 1,
+      "correct": 1
+    },
+    "conversation/source_pointer": {
+      "cases": 1,
+      "correct": 1
+    },
+    "conversation/temporary_constraint": {
+      "cases": 1,
+      "correct": 0
+    },
+    "conversation/tool_result": {
+      "cases": 1,
+      "correct": 0
+    },
+    "conversation/unknown_address": {
+      "cases": 1,
+      "correct": 1
+    },
+    "conversation/unknown_color": {
+      "cases": 1,
+      "correct": 1
+    },
+    "conversation/unknown_future": {
+      "cases": 1,
+      "correct": 1
+    },
+    "conversation/unknown_password": {
+      "cases": 1,
+      "correct": 1
+    },
+    "conversation/unknown_secret": {
+      "cases": 1,
+      "correct": 1
+    },
+    "conversation/unverified_claim": {
+      "cases": 1,
+      "correct": 1
+    },
+    "project/archive": {
+      "cases": 1,
+      "correct": 1
+    },
+    "project/budget": {
+      "cases": 1,
+      "correct": 1
+    },
+    "project/client": {
+      "cases": 1,
+      "correct": 1
+    },
+    "project/deadline": {
+      "cases": 1,
+      "correct": 1
+    },
+    "project/deliverable": {
+      "cases": 1,
+      "correct": 1
+    },
+    "project/dependency": {
+      "cases": 1,
+      "correct": 1
+    },
+    "project/design_decision": {
+      "cases": 1,
+      "correct": 1
+    },
+    "project/documentation": {
+      "cases": 1,
+      "correct": 1
+    },
+    "project/handoff": {
+      "cases": 1,
+      "correct": 1
+    },
+    "project/interface": {
+      "cases": 1,
+      "correct": 1
+    },
+    "project/language": {
+      "cases": 1,
+      "correct": 1
+    },
+    "project/meeting_cadence": {
+      "cases": 1,
+      "correct": 1
+    },
+    "project/milestone": {
+      "cases": 1,
+      "correct": 1
+    },
+    "project/objective": {
+      "cases": 1,
+      "correct": 1
+    },
+    "project/owner": {
+      "cases": 1,
+      "correct": 1
+    },
+    "project/performance_goal": {
+      "cases": 1,
+      "correct": 1
+    },
+    "project/privacy_rule": {
+      "cases": 1,
+      "correct": 1
+    },
+    "project/quality_gate": {
+      "cases": 1,
+      "correct": 1
+    },
+    "project/release_gate": {
+      "cases": 1,
+      "correct": 1
+    },
+    "project/reporting": {
+      "cases": 1,
+      "correct": 1
+    },
+    "project/repository": {
+      "cases": 1,
+      "correct": 1
+    },
+    "project/reviewer": {
+      "cases": 1,
+      "correct": 1
+    },
+    "project/risk": {
+      "cases": 1,
+      "correct": 1
+    },
+    "project/rollback": {
+      "cases": 1,
+      "correct": 1
+    },
+    "project/scope_exclusion": {
+      "cases": 1,
+      "correct": 1
+    },
+    "project/source_of_truth": {
+      "cases": 1,
+      "correct": 1
+    },
+    "project/status": {
+      "cases": 1,
+      "correct": 1
+    },
+    "project/storage": {
+      "cases": 1,
+      "correct": 1
+    },
+    "project/support_contact": {
+      "cases": 1,
+      "correct": 1
+    },
+    "project/test_strategy": {
+      "cases": 1,
+      "correct": 1
+    },
+    "project/unknown_address": {
+      "cases": 1,
+      "correct": 1
+    },
+    "project/unknown_color": {
+      "cases": 1,
+      "correct": 1
+    },
+    "project/unknown_future": {
+      "cases": 1,
+      "correct": 1
+    },
+    "project/unknown_password": {
+      "cases": 1,
+      "correct": 1
+    },
+    "project/unknown_secret": {
+      "cases": 1,
+      "correct": 1
+    },
+    "user/accessibility": {
+      "cases": 1,
+      "correct": 1
+    },
+    "user/backup_rule": {
+      "cases": 1,
+      "correct": 1
+    },
+    "user/calendar_style": {
+      "cases": 1,
+      "correct": 1
+    },
+    "user/commute": {
+      "cases": 1,
+      "correct": 1
+    },
+    "user/contact_channel": {
+      "cases": 1,
+      "correct": 1
+    },
+    "user/date_format": {
+      "cases": 1,
+      "correct": 1
+    },
+    "user/diet": {
+      "cases": 1,
+      "correct": 1
+    },
+    "user/drink": {
+      "cases": 1,
+      "correct": 1
+    },
+    "user/focus_window": {
+      "cases": 1,
+      "correct": 1
+    },
+    "user/hobby": {
+      "cases": 1,
+      "correct": 1
+    },
+    "user/home_city": {
+      "cases": 1,
+      "correct": 1
+    },
+    "user/language": {
+      "cases": 1,
+      "correct": 1
+    },
+    "user/learning_goal": {
+      "cases": 1,
+      "correct": 1
+    },
+    "user/legal_name": {
+      "cases": 1,
+      "correct": 1
+    },
+    "user/measurement_units": {
+      "cases": 1,
+      "correct": 1
+    },
+    "user/meeting_window": {
+      "cases": 1,
+      "correct": 1
+    },
+    "user/notification_rule": {
+      "cases": 1,
+      "correct": 1
+    },
+    "user/preferred_name": {
+      "cases": 1,
+      "correct": 1
+    },
+    "user/report_format": {
+      "cases": 1,
+      "correct": 1
+    },
+    "user/review_cadence": {
+      "cases": 1,
+      "correct": 1
+    },
+    "user/team": {
+      "cases": 1,
+      "correct": 1
+    },
+    "user/timezone": {
+      "cases": 1,
+      "correct": 1
+    },
+    "user/travel_seat": {
+      "cases": 1,
+      "correct": 1
+    },
+    "user/unknown_address": {
+      "cases": 1,
+      "correct": 1
+    },
+    "user/unknown_color": {
+      "cases": 1,
+      "correct": 1
+    },
+    "user/unknown_future": {
+      "cases": 1,
+      "correct": 1
+    },
+    "user/unknown_password": {
+      "cases": 1,
+      "correct": 1
+    },
+    "user/unknown_secret": {
+      "cases": 1,
+      "correct": 1
+    },
+    "user/work_role": {
+      "cases": 1,
+      "correct": 1
+    },
+    "user/writing_tone": {
+      "cases": 1,
+      "correct": 1
+    }
+  },
+  "candidate_recall": 114,
+  "cases": 135,
+  "classifier_p50_ms": 351.844542,
+  "classifier_p95_ms": 560.3723541999999,
+  "correct": 129,
+  "cost_reported_cases": 135,
+  "degraded": 0,
+  "elapsed_p50_ms": 380.030375,
+  "elapsed_p95_ms": 586.0538831,
+  "forbidden_leak_count": 0,
+  "input_tokens_p50": 562.0,
+  "input_tokens_reported_cases": 135,
+  "manifest": {
+    "binary_sha256": "a4eb9e226276cc8a8aaebc00d69e7e072c239da406a87e43e12e662b938522e4",
+    "case_count": 135,
+    "cases_sha256": "2e11c85f9bdd6b04ad62b1f53c15e9bd32b621786243acd457d4d833f200a365",
+    "database_sha256": "fd2eb78aff4021660ac9bf0f1972e14014cf17e9c64b9b7b6009aa4fc2a0eae9",
+    "format": 1,
+    "kind": "manifest",
+    "provider": "decisions",
+    "split": "development"
+  },
+  "negative": 20,
+  "negative_candidate_empty": 0,
+  "negative_empty": 20,
+  "output_tokens_p50": 0.0,
+  "output_tokens_reported_cases": 135,
+  "positive": 115,
+  "positive_correct": 109,
+  "provider": "decisions",
+  "reported_cost_usd": 0.007439799999999998,
+  "search_p50_ms": 9.728541,
+  "search_p95_ms": 11.7405162,
+  "service_total_p50_ms": 379.102,
+  "service_total_p95_ms": 585.1228501999999,
+  "split": "development",
+  "status": "complete"
+}

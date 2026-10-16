@@ -1,0 +1,1916 @@
+{
+  "by_split_segment": {
+    "holdout_010_013/agent/active_module": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.578333,
+        "p95": 7.343208000000001,
+        "p99": 7.343208000000001
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/agent/answer_length": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 7.1264579999999995,
+        "p95": 7.591417,
+        "p99": 7.591417
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/agent/artifact": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.8702499999999995,
+        "p95": 7.103375000000001,
+        "p99": 7.103375000000001
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/agent/cache_state": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.878875,
+        "p95": 7.006959,
+        "p99": 7.006959
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/agent/checkpoint": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.779042,
+        "p95": 6.806041,
+        "p99": 6.806041
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/agent/citation": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.737292,
+        "p95": 6.816666,
+        "p99": 6.816666
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/agent/completion_state": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.880083,
+        "p95": 6.901209000000001,
+        "p99": 6.901209000000001
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/agent/environment": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.85575,
+        "p95": 7.128584,
+        "p99": 7.128584
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/agent/error_code": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.557167,
+        "p95": 6.706834,
+        "p99": 6.706834
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/agent/evaluation_set": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.997833,
+        "p95": 7.105583,
+        "p99": 7.105583
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/agent/evidence": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 7.108874999999999,
+        "p95": 7.144208,
+        "p99": 7.144208
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/agent/failure_handling": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.874166,
+        "p95": 6.9135409999999995,
+        "p99": 6.9135409999999995
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/agent/handoff": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.360917,
+        "p95": 7.598917,
+        "p99": 7.598917
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/agent/handoff_target": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.690458,
+        "p95": 6.88025,
+        "p99": 6.88025
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/agent/known_limit": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 7.025,
+        "p95": 7.194166999999999,
+        "p99": 7.194166999999999
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/agent/last_failure": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 7.087208,
+        "p95": 7.665375,
+        "p99": 7.665375
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/agent/last_success": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.713417,
+        "p95": 6.8687499999999995,
+        "p99": 6.8687499999999995
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/agent/latency": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 7.062749999999999,
+        "p95": 7.25275,
+        "p99": 7.25275
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 0.75
+    },
+    "holdout_010_013/agent/next_check": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 7.267625,
+        "p95": 7.587875,
+        "p99": 7.587875
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/agent/output_language": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 7.265458,
+        "p95": 7.686417,
+        "p99": 7.686417
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/agent/pending_operation": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.90875,
+        "p95": 6.940917,
+        "p99": 6.940917
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/agent/privacy": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.8593329999999995,
+        "p95": 7.265874999999999,
+        "p99": 7.265874999999999
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/agent/retry_count": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 7.10475,
+        "p95": 7.334875,
+        "p99": 7.334875
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/agent/schedule": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.670167,
+        "p95": 7.238833,
+        "p99": 7.238833
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/agent/source_inspected": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.489166999999999,
+        "p95": 6.803666,
+        "p99": 6.803666
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/agent/tool_available": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.67375,
+        "p95": 6.790792000000001,
+        "p99": 6.790792000000001
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/agent/tool_order": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.974458,
+        "p95": 7.30425,
+        "p99": 7.30425
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/agent/tool_unavailable": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.858958,
+        "p95": 7.182792,
+        "p99": 7.182792
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/agent/uncertainty": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 7.335417,
+        "p95": 7.732,
+        "p99": 7.732
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/agent/unknown_address": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.760708,
+        "p95": 7.139457999999999,
+        "p99": 7.139457999999999
+      },
+      "negative": 4,
+      "negative_empty_rate": 0.0,
+      "positive": 0,
+      "recall_at_20": null,
+      "top_1_accuracy": null
+    },
+    "holdout_010_013/agent/unknown_color": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.581666,
+        "p95": 6.689625,
+        "p99": 6.689625
+      },
+      "negative": 4,
+      "negative_empty_rate": 0.0,
+      "positive": 0,
+      "recall_at_20": null,
+      "top_1_accuracy": null
+    },
+    "holdout_010_013/agent/unknown_future": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 7.164125,
+        "p95": 7.208708000000001,
+        "p99": 7.208708000000001
+      },
+      "negative": 4,
+      "negative_empty_rate": 0.0,
+      "positive": 0,
+      "recall_at_20": null,
+      "top_1_accuracy": null
+    },
+    "holdout_010_013/agent/unknown_password": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.550292,
+        "p95": 7.185833,
+        "p99": 7.185833
+      },
+      "negative": 4,
+      "negative_empty_rate": 0.0,
+      "positive": 0,
+      "recall_at_20": null,
+      "top_1_accuracy": null
+    },
+    "holdout_010_013/agent/unknown_secret": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.709958,
+        "p95": 6.8547080000000005,
+        "p99": 6.8547080000000005
+      },
+      "negative": 4,
+      "negative_empty_rate": 0.0,
+      "positive": 0,
+      "recall_at_20": null,
+      "top_1_accuracy": null
+    },
+    "holdout_010_013/agent/workaround": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.909417,
+        "p95": 7.464125,
+        "p99": 7.464125
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/conversation/agreed_date": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 8.719084,
+        "p95": 9.555959,
+        "p99": 9.555959
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 0.0
+    },
+    "holdout_010_013/conversation/agreed_owner": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 8.882542,
+        "p95": 9.127292,
+        "p99": 9.127292
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/conversation/answer_language": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 7.847833,
+        "p95": 7.994332999999999,
+        "p99": 7.994332999999999
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/conversation/attachment": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 7.429083,
+        "p95": 8.026,
+        "p99": 8.026
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/conversation/audience": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 8.195208000000001,
+        "p95": 8.641334,
+        "p99": 8.641334
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/conversation/blocked_by": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 7.914417,
+        "p95": 8.385666,
+        "p99": 8.385666
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/conversation/changed_assumption": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 8.697667,
+        "p95": 8.868208000000001,
+        "p99": 8.868208000000001
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 0.0,
+      "top_1_accuracy": 0.0
+    },
+    "holdout_010_013/conversation/chosen_option": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 8.248167,
+        "p95": 9.946083,
+        "p99": 9.946083
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/conversation/closing_state": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 8.060917,
+        "p95": 8.185333,
+        "p99": 8.185333
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 0.5
+    },
+    "holdout_010_013/conversation/completed_step": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 8.053458,
+        "p95": 8.952417,
+        "p99": 8.952417
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 0.0
+    },
+    "holdout_010_013/conversation/correction": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 8.561,
+        "p95": 9.818084,
+        "p99": 9.818084
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/conversation/current_task": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 8.2825,
+        "p95": 11.72675,
+        "p99": 11.72675
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/conversation/decision_reason": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 8.794833,
+        "p95": 9.143125,
+        "p99": 9.143125
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/conversation/deferred_step": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 7.855542,
+        "p95": 7.862042,
+        "p99": 7.862042
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/conversation/disagreement": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 7.640499999999999,
+        "p95": 7.837291999999999,
+        "p99": 7.837291999999999
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/conversation/excluded_option": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 8.558125,
+        "p95": 8.748583,
+        "p99": 8.748583
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/conversation/feedback": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 7.623584,
+        "p95": 7.775665999999999,
+        "p99": 7.775665999999999
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/conversation/handoff_note": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 8.683875,
+        "p95": 10.87225,
+        "p99": 10.87225
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/conversation/next_step": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 8.944208999999999,
+        "p95": 9.004916,
+        "p99": 9.004916
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/conversation/open_question": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 9.693625,
+        "p95": 13.296458,
+        "p99": 13.296458
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/conversation/priority": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 7.59775,
+        "p95": 7.704417,
+        "p99": 7.704417
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/conversation/reference_file": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 8.312999999999999,
+        "p95": 8.847458000000001,
+        "p99": 8.847458000000001
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/conversation/requested_example": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 8.30675,
+        "p95": 9.110042,
+        "p99": 9.110042
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 0.0
+    },
+    "holdout_010_013/conversation/response_style": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 8.7855,
+        "p95": 9.978042,
+        "p99": 9.978042
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 0.75
+    },
+    "holdout_010_013/conversation/review_rule": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 9.413792,
+        "p95": 13.183292,
+        "p99": 13.183292
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/conversation/scope_boundary": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 7.647333,
+        "p95": 8.926333,
+        "p99": 8.926333
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/conversation/source_pointer": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 7.592334,
+        "p95": 8.334417,
+        "p99": 8.334417
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/conversation/temporary_constraint": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 8.385250000000001,
+        "p95": 12.120916,
+        "p99": 12.120916
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 0.0
+    },
+    "holdout_010_013/conversation/tool_result": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 7.381625,
+        "p95": 8.095167,
+        "p99": 8.095167
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/conversation/unknown_address": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 7.805584,
+        "p95": 10.861791,
+        "p99": 10.861791
+      },
+      "negative": 4,
+      "negative_empty_rate": 0.0,
+      "positive": 0,
+      "recall_at_20": null,
+      "top_1_accuracy": null
+    },
+    "holdout_010_013/conversation/unknown_color": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 7.399958,
+        "p95": 8.105833,
+        "p99": 8.105833
+      },
+      "negative": 4,
+      "negative_empty_rate": 0.0,
+      "positive": 0,
+      "recall_at_20": null,
+      "top_1_accuracy": null
+    },
+    "holdout_010_013/conversation/unknown_future": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 7.710624999999999,
+        "p95": 8.065375,
+        "p99": 8.065375
+      },
+      "negative": 4,
+      "negative_empty_rate": 0.0,
+      "positive": 0,
+      "recall_at_20": null,
+      "top_1_accuracy": null
+    },
+    "holdout_010_013/conversation/unknown_password": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 8.068041999999998,
+        "p95": 8.776208,
+        "p99": 8.776208
+      },
+      "negative": 4,
+      "negative_empty_rate": 0.0,
+      "positive": 0,
+      "recall_at_20": null,
+      "top_1_accuracy": null
+    },
+    "holdout_010_013/conversation/unknown_secret": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 7.458542,
+        "p95": 8.725375,
+        "p99": 8.725375
+      },
+      "negative": 4,
+      "negative_empty_rate": 0.0,
+      "positive": 0,
+      "recall_at_20": null,
+      "top_1_accuracy": null
+    },
+    "holdout_010_013/conversation/unverified_claim": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 7.671375,
+        "p95": 8.200375,
+        "p99": 8.200375
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/project/archive": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.988625,
+        "p95": 16.979292,
+        "p99": 16.979292
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/project/budget": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 7.1005,
+        "p95": 7.284042,
+        "p99": 7.284042
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/project/client": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.225,
+        "p95": 7.743,
+        "p99": 7.743
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/project/deadline": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.766834,
+        "p95": 6.809334,
+        "p99": 6.809334
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/project/deliverable": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.271625,
+        "p95": 11.860958,
+        "p99": 11.860958
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/project/dependency": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.559958,
+        "p95": 12.100541,
+        "p99": 12.100541
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/project/design_decision": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.592625,
+        "p95": 7.586667,
+        "p99": 7.586667
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/project/documentation": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.750458,
+        "p95": 13.495084,
+        "p99": 13.495084
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/project/handoff": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.815917000000001,
+        "p95": 13.353792,
+        "p99": 13.353792
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/project/interface": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.690125,
+        "p95": 14.954458,
+        "p99": 14.954458
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/project/language": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.826124999999999,
+        "p95": 13.161917,
+        "p99": 13.161917
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 0.0
+    },
+    "holdout_010_013/project/meeting_cadence": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.390166,
+        "p95": 7.643667,
+        "p99": 7.643667
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/project/milestone": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.673832999999999,
+        "p95": 13.49025,
+        "p99": 13.49025
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/project/objective": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.526083,
+        "p95": 6.598917,
+        "p99": 6.598917
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/project/owner": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.3975409999999995,
+        "p95": 6.5135000000000005,
+        "p99": 6.5135000000000005
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/project/performance_goal": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.592874999999999,
+        "p95": 7.976667,
+        "p99": 7.976667
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/project/privacy_rule": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.80775,
+        "p95": 7.95025,
+        "p99": 7.95025
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/project/quality_gate": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.78275,
+        "p95": 14.547667,
+        "p99": 14.547667
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/project/release_gate": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.632125,
+        "p95": 7.517959,
+        "p99": 7.517959
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/project/reporting": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.644459,
+        "p95": 6.8445,
+        "p99": 6.8445
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/project/repository": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.579792,
+        "p95": 7.183916,
+        "p99": 7.183916
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/project/reviewer": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.418583,
+        "p95": 11.786458,
+        "p99": 11.786458
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 0.0
+    },
+    "holdout_010_013/project/risk": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.482459,
+        "p95": 8.281375,
+        "p99": 8.281375
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/project/rollback": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.67775,
+        "p95": 14.133791,
+        "p99": 14.133791
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/project/scope_exclusion": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.342375,
+        "p95": 7.043125,
+        "p99": 7.043125
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/project/source_of_truth": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.6497910000000005,
+        "p95": 15.811458,
+        "p99": 15.811458
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/project/status": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.329917,
+        "p95": 6.499874999999999,
+        "p99": 6.499874999999999
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/project/storage": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.440083,
+        "p95": 7.453375,
+        "p99": 7.453375
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/project/support_contact": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.993666,
+        "p95": 13.333708,
+        "p99": 13.333708
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/project/test_strategy": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.389459,
+        "p95": 8.899707999999999,
+        "p99": 8.899707999999999
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/project/unknown_address": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.71425,
+        "p95": 14.988792,
+        "p99": 14.988792
+      },
+      "negative": 4,
+      "negative_empty_rate": 0.0,
+      "positive": 0,
+      "recall_at_20": null,
+      "top_1_accuracy": null
+    },
+    "holdout_010_013/project/unknown_color": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.532375,
+        "p95": 24.212625000000003,
+        "p99": 24.212625000000003
+      },
+      "negative": 4,
+      "negative_empty_rate": 0.0,
+      "positive": 0,
+      "recall_at_20": null,
+      "top_1_accuracy": null
+    },
+    "holdout_010_013/project/unknown_future": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.918915999999999,
+        "p95": 22.671584000000003,
+        "p99": 22.671584000000003
+      },
+      "negative": 4,
+      "negative_empty_rate": 0.0,
+      "positive": 0,
+      "recall_at_20": null,
+      "top_1_accuracy": null
+    },
+    "holdout_010_013/project/unknown_password": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.802834,
+        "p95": 15.497167,
+        "p99": 15.497167
+      },
+      "negative": 4,
+      "negative_empty_rate": 0.0,
+      "positive": 0,
+      "recall_at_20": null,
+      "top_1_accuracy": null
+    },
+    "holdout_010_013/project/unknown_secret": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.59825,
+        "p95": 15.430375,
+        "p99": 15.430375
+      },
+      "negative": 4,
+      "negative_empty_rate": 0.0,
+      "positive": 0,
+      "recall_at_20": null,
+      "top_1_accuracy": null
+    },
+    "holdout_010_013/user/accessibility": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 7.11175,
+        "p95": 7.113208,
+        "p99": 7.113208
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/user/backup_rule": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.029458,
+        "p95": 6.190292,
+        "p99": 6.190292
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/user/calendar_style": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.5381670000000005,
+        "p95": 6.6294580000000005,
+        "p99": 6.6294580000000005
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/user/commute": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.356416,
+        "p95": 6.384708,
+        "p99": 6.384708
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/user/contact_channel": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.9045,
+        "p95": 7.009167000000001,
+        "p99": 7.009167000000001
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/user/date_format": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.612833999999999,
+        "p95": 6.68025,
+        "p99": 6.68025
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/user/diet": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.613291,
+        "p95": 7.098083,
+        "p99": 7.098083
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 0.25
+    },
+    "holdout_010_013/user/drink": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.69375,
+        "p95": 6.954375,
+        "p99": 6.954375
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/user/focus_window": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.623542,
+        "p95": 6.683542,
+        "p99": 6.683542
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/user/hobby": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.058125,
+        "p95": 6.188625,
+        "p99": 6.188625
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/user/home_city": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 7.047666,
+        "p95": 7.080625,
+        "p99": 7.080625
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/user/language": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.950583,
+        "p95": 6.995542,
+        "p99": 6.995542
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/user/learning_goal": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.4345,
+        "p95": 6.552792,
+        "p99": 6.552792
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/user/legal_name": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 7.007417,
+        "p95": 7.260542,
+        "p99": 7.260542
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/user/measurement_units": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.593667,
+        "p95": 6.649667,
+        "p99": 6.649667
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 0.0
+    },
+    "holdout_010_013/user/meeting_window": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.678166,
+        "p95": 6.992083,
+        "p99": 6.992083
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/user/notification_rule": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.83975,
+        "p95": 6.907875,
+        "p99": 6.907875
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/user/preferred_name": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.523375,
+        "p95": 6.729417,
+        "p99": 6.729417
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/user/report_format": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.5628329999999995,
+        "p95": 6.9579580000000005,
+        "p99": 6.9579580000000005
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 0.75
+    },
+    "holdout_010_013/user/review_cadence": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.489958,
+        "p95": 6.644958,
+        "p99": 6.644958
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/user/team": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.401542,
+        "p95": 6.462292,
+        "p99": 6.462292
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/user/timezone": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.196709,
+        "p95": 6.492208,
+        "p99": 6.492208
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/user/travel_seat": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.774167,
+        "p95": 6.868208,
+        "p99": 6.868208
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/user/unknown_address": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.333875,
+        "p95": 6.786667,
+        "p99": 6.786667
+      },
+      "negative": 4,
+      "negative_empty_rate": 0.0,
+      "positive": 0,
+      "recall_at_20": null,
+      "top_1_accuracy": null
+    },
+    "holdout_010_013/user/unknown_color": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.101917,
+        "p95": 6.491459,
+        "p99": 6.491459
+      },
+      "negative": 4,
+      "negative_empty_rate": 0.0,
+      "positive": 0,
+      "recall_at_20": null,
+      "top_1_accuracy": null
+    },
+    "holdout_010_013/user/unknown_future": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.5422910000000005,
+        "p95": 6.72075,
+        "p99": 6.72075
+      },
+      "negative": 4,
+      "negative_empty_rate": 0.0,
+      "positive": 0,
+      "recall_at_20": null,
+      "top_1_accuracy": null
+    },
+    "holdout_010_013/user/unknown_password": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.110583,
+        "p95": 6.52325,
+        "p99": 6.52325
+      },
+      "negative": 4,
+      "negative_empty_rate": 0.0,
+      "positive": 0,
+      "recall_at_20": null,
+      "top_1_accuracy": null
+    },
+    "holdout_010_013/user/unknown_secret": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.2433749999999995,
+        "p95": 6.510458,
+        "p99": 6.510458
+      },
+      "negative": 4,
+      "negative_empty_rate": 0.0,
+      "positive": 0,
+      "recall_at_20": null,
+      "top_1_accuracy": null
+    },
+    "holdout_010_013/user/work_role": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.182041,
+        "p95": 6.273917,
+        "p99": 6.273917
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "holdout_010_013/user/writing_tone": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.697833,
+        "p95": 6.9465,
+        "p99": 6.9465
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    }
+  },
+  "degraded_cases": 0,
+  "method": "fts5_keywords",
+  "overall": {
+    "cases": 540,
+    "forbidden_leak_count": 0,
+    "latency_ms": {
+      "p50": 7.11175,
+      "p95": 26.540834,
+      "p99": 78.83387499999999
+    },
+    "negative": 80,
+    "negative_empty_rate": 0.0,
+    "positive": 460,
+    "recall_at_20": 0.991304347826087,
+    "top_1_accuracy": 0.9130434782608695
+  },
+  "semantic_coverage": {
+    "complete": 0,
+    "disabled": 540,
+    "missing": 0,
+    "partial": 0
+  }
+}

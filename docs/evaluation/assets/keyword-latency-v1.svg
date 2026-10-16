@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1550" height="680" viewBox="0 0 1550 680" role="img" aria-label="Latencia medida por etapa">
+<rect width="100%" height="100%" fill="#fffefa"/>
+<text x="58" y="75" fill="#25313b" text-anchor="start" font-family="Georgia,serif" font-size="34">Latencia medida por etapa</text>
+<text x="58" y="110" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="17">Medianas y p95 observados · 540 consultas por cohorte · escalas independientes</text>
+<text x="58" y="144" fill="#25313b" text-anchor="start" font-family="Georgia,serif" font-size="22">1. Búsqueda p50</text>
+<text x="58" y="174" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="16">Candidatos · sesión local</text>
+<text x="113" y="199" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="14">milisegundos</text>
+<line x1="113" y1="505" x2="488" y2="505" stroke="#d8dfdf" stroke-width="1"/>
+<text x="103" y="510" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">0.00</text>
+<line x1="113" y1="360" x2="488" y2="360" stroke="#d8dfdf" stroke-width="1"/>
+<text x="103" y="365" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">4.50</text>
+<line x1="113" y1="215" x2="488" y2="215" stroke="#d8dfdf" stroke-width="1"/>
+<text x="103" y="220" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">9.00</text>
+<line x1="113" y1="215" x2="113" y2="505" stroke="#25313b" stroke-width="1"/>
+<rect x="168" y="321" width="78" height="184" fill="#b77a27"/>
+<text x="207" y="308" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="17">5.72</text>
+<text x="207" y="536" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="16">Antes</text>
+<rect x="262" y="297" width="78" height="208" fill="#18817e"/>
+<text x="301" y="284" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="17">6.45</text>
+<text x="301" y="536" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="16">Ajuste</text>
+<rect x="355" y="276" width="78" height="229" fill="#617db1"/>
+<text x="394" y="263" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="17">7.11</text>
+<text x="394" y="536" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="16">Nuevos</text>
+<text x="553" y="144" fill="#25313b" text-anchor="start" font-family="Georgia,serif" font-size="22">2. Semilla p50</text>
+<text x="553" y="174" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="16">Consulta completa · red incluida</text>
+<text x="608" y="199" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="14">milisegundos</text>
+<line x1="608" y1="505" x2="983" y2="505" stroke="#d8dfdf" stroke-width="1"/>
+<text x="598" y="510" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">0</text>
+<line x1="608" y1="360" x2="983" y2="360" stroke="#d8dfdf" stroke-width="1"/>
+<text x="598" y="365" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">222</text>
+<line x1="608" y1="215" x2="983" y2="215" stroke="#d8dfdf" stroke-width="1"/>
+<text x="598" y="220" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">444</text>
+<line x1="608" y1="215" x2="608" y2="505" stroke="#25313b" stroke-width="1"/>
+<rect x="663" y="259" width="78" height="246" fill="#b77a27"/>
+<text x="702" y="246" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="17">376</text>
+<text x="702" y="536" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="16">Antes</text>
+<rect x="757" y="256" width="78" height="249" fill="#18817e"/>
+<text x="796" y="243" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="17">382</text>
+<text x="796" y="536" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="16">Ajuste</text>
+<rect x="850" y="253" width="78" height="252" fill="#617db1"/>
+<text x="889" y="240" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="17">386</text>
+<text x="889" y="536" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="16">Nuevos</text>
+<text x="1048" y="144" fill="#25313b" text-anchor="start" font-family="Georgia,serif" font-size="22">3. Semilla p95</text>
+<text x="1048" y="174" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="16">Cola de latencia · red incluida</text>
+<text x="1103" y="199" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="14">milisegundos</text>
+<line x1="1103" y1="505" x2="1478" y2="505" stroke="#d8dfdf" stroke-width="1"/>
+<text x="1093" y="510" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">0</text>
+<line x1="1103" y1="360" x2="1478" y2="360" stroke="#d8dfdf" stroke-width="1"/>
+<text x="1093" y="365" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">551</text>
+<line x1="1103" y1="215" x2="1478" y2="215" stroke="#d8dfdf" stroke-width="1"/>
+<text x="1093" y="220" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">1102</text>
+<line x1="1103" y1="215" x2="1103" y2="505" stroke="#25313b" stroke-width="1"/>
+<rect x="1158" y="358" width="78" height="147" fill="#b77a27"/>
+<text x="1197" y="345" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="17">558</text>
+<text x="1197" y="536" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="16">Antes</text>
+<rect x="1252" y="339" width="78" height="166" fill="#18817e"/>
+<text x="1291" y="326" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="17">631</text>
+<text x="1291" y="536" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="16">Ajuste</text>
+<rect x="1345" y="253" width="78" height="252" fill="#617db1"/>
+<text x="1384" y="240" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="17">958</text>
+<text x="1384" y="536" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="16">Nuevos</text>
+<text x="58" y="591" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="16">Cada cohorte tuvo una corrida distinta; el p95 de red no se atribuye solo a la búsqueda local.</text>
+<text x="58" y="622" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="16">Codex no se midió con esta versión. La gráfica de Codex anterior se conserva aparte.</text>
+</svg>

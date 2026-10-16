@@ -1,0 +1,66 @@
+{
+  "kind": "rust_paired_flow_calculation",
+  "measurement_note": "La suma recall + Codex con semilla combina dos ejecuciones; no mide una integración automática.",
+  "median_calculated_seed_total_ms": 6717.960042,
+  "median_codex_engram_ms": 11065.9564585,
+  "median_codex_seed_ms": 5969.416875,
+  "median_recall_ms": 487.9356665,
+  "median_seed_vs_control_input_token_delta": 46.0,
+  "rows": [
+    {
+      "calculated_seed_total_ms": 6559.02975,
+      "case_id": "gmv1_423956194e4bfce96c69",
+      "codex_engram_ms": 9707.956375,
+      "codex_seed_ms": 5598.579041,
+      "recall_ms": 960.450709,
+      "seed_vs_control_input_token_delta": 47
+    },
+    {
+      "calculated_seed_total_ms": 6876.890334,
+      "case_id": "gmv1_490c045596045974d0f8",
+      "codex_engram_ms": 9784.606792,
+      "codex_seed_ms": 6492.382042,
+      "recall_ms": 384.508292,
+      "seed_vs_control_input_token_delta": 54
+    },
+    {
+      "calculated_seed_total_ms": 6211.164791,
+      "case_id": "gmv1_5beb5b01a40667ca7068",
+      "codex_engram_ms": 9687.019542,
+      "codex_seed_ms": 5638.145125,
+      "recall_ms": 573.019666,
+      "seed_vs_control_input_token_delta": 45
+    },
+    {
+      "calculated_seed_total_ms": 6263.274042,
+      "case_id": "gmv1_afe0405fcdefd22d86d4",
+      "codex_engram_ms": 14199.559041,
+      "codex_seed_ms": 5860.422375,
+      "recall_ms": 402.851667,
+      "seed_vs_control_input_token_delta": 3
+    },
+    {
+      "calculated_seed_total_ms": 8128.859667000001,
+      "case_id": "gmv1_c31971ae7655de9d9d89",
+      "codex_engram_ms": 18471.056917,
+      "codex_seed_ms": 7784.771292,
+      "recall_ms": 344.088375,
+      "seed_vs_control_input_token_delta": 3
+    },
+    {
+      "calculated_seed_total_ms": 7113.806791999999,
+      "case_id": "gmv1_d801f72be8acfa46ddf6",
+      "codex_engram_ms": 12347.306125,
+      "codex_seed_ms": 6078.411375,
+      "recall_ms": 1035.395417,
+      "seed_vs_control_input_token_delta": 47
+    }
+  ],
+  "sample_count": 6,
+  "sources": {
+    "control_sha256": "b210440fdc7184756269857ea875998b1bc529cfc72f02ee92a78a55ed69d8c4",
+    "engram_sha256": "75ed19e3e43481e022eda0c147e77f8c2d73f79cf379896201ecb25710bd2041",
+    "recall_sha256": "411af5672533f261379d4ee7e2a2772ff714efcff590a88fe4d36256835f4c96",
+    "seed_sha256": "22c131084d407e1beab8349dbc4ac0d2843c4e03e3f16cd99ca6d3dc52e8a33f"
+  }
+}

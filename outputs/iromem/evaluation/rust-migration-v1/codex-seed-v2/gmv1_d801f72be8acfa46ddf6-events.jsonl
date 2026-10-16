@@ -1,0 +1,4 @@
+{"elapsed_ms":982.1827079999999,"event":{"thread_id":"01a14260-41e8-77a3-8a4c-8d344cc61433","type":"thread.started"}}
+{"elapsed_ms":984.367125,"event":{"type":"turn.started"}}
+{"elapsed_ms":6078.411375,"event":{"item":{"id":"item_0","text":"El nombre completo de user ficticio 001 es Bruno Mar.","type":"agent_message"},"type":"item.completed"}}
+{"elapsed_ms":6121.511208,"event":{"type":"turn.completed","usage":{"cache_write_input_tokens":0,"cached_input_tokens":12288,"input_tokens":16914,"output_tokens":17,"reasoning_output_tokens":0}}}

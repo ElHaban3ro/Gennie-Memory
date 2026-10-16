@@ -1,0 +1,142 @@
+{
+  "case_ids": [
+    "gmv1_d801f72be8acfa46ddf6",
+    "gmv1_5beb5b01a40667ca7068",
+    "gmv1_423956194e4bfce96c69",
+    "gmv1_490c045596045974d0f8",
+    "gmv1_c31971ae7655de9d9d89",
+    "gmv1_afe0405fcdefd22d86d4"
+  ],
+  "codex_model": "gpt-6.1-sol",
+  "kind": "rust_codex_initial_seed_prompt_simulation",
+  "rows": [
+    {
+      "case_id": "gmv1_d801f72be8acfa46ddf6",
+      "expected_ids": [
+        "gmv1_745e550c42f8260eed9e"
+      ],
+      "final_answer": "El nombre completo de user ficticio 001 es Bruno Mar.",
+      "final_answer_ms": 6078.411375,
+      "prompt_utf8_bytes": 416,
+      "seed_text_utf8_bytes": 160,
+      "seed_text_words": 16,
+      "selected_ids": [
+        "gmv1_745e550c42f8260eed9e"
+      ],
+      "tool_calls": 0,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 16914,
+        "output_tokens": 17,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "case_id": "gmv1_5beb5b01a40667ca7068",
+      "expected_ids": [
+        "gmv1_c670e06cefd6c71bb397"
+      ],
+      "final_answer": "Leo es la persona responsable de project ficticio 001.",
+      "final_answer_ms": 5638.145125,
+      "prompt_utf8_bytes": 416,
+      "seed_text_utf8_bytes": 163,
+      "seed_text_words": 15,
+      "selected_ids": [
+        "gmv1_c670e06cefd6c71bb397"
+      ],
+      "tool_calls": 0,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 16910,
+        "output_tokens": 16,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "case_id": "gmv1_423956194e4bfce96c69",
+      "expected_ids": [
+        "gmv1_daf8654496352812fa43"
+      ],
+      "final_answer": "La tarea actual de conversation ficticio 001 es comparar dos opciones.",
+      "final_answer_ms": 5598.579041,
+      "prompt_utf8_bytes": 449,
+      "seed_text_utf8_bytes": 188,
+      "seed_text_words": 17,
+      "selected_ids": [
+        "gmv1_daf8654496352812fa43"
+      ],
+      "tool_calls": 0,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 14592,
+        "input_tokens": 16914,
+        "output_tokens": 18,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "case_id": "gmv1_490c045596045974d0f8",
+      "expected_ids": [
+        "gmv1_4f70937ac8c9b46ebbd0"
+      ],
+      "final_answer": "El perfil de agent ficticio 001 registra inglés como idioma de salida.",
+      "final_answer_ms": 6492.382042,
+      "prompt_utf8_bytes": 463,
+      "seed_text_utf8_bytes": 193,
+      "seed_text_words": 19,
+      "selected_ids": [
+        "gmv1_4f70937ac8c9b46ebbd0"
+      ],
+      "tool_calls": 0,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 16923,
+        "output_tokens": 19,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "case_id": "gmv1_c31971ae7655de9d9d89",
+      "expected_ids": [
+        "gmv1_bf6f48ac692eac7b2e09"
+      ],
+      "final_answer": "La semilla no contiene información sobre qué supuesto se abandonó en conversation ficticio 001.",
+      "final_answer_ms": 7784.771292,
+      "prompt_utf8_bytes": 302,
+      "seed_text_utf8_bytes": 0,
+      "seed_text_words": 0,
+      "selected_ids": [],
+      "tool_calls": 0,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 16870,
+        "output_tokens": 23,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "case_id": "gmv1_afe0405fcdefd22d86d4",
+      "expected_ids": [],
+      "final_answer": "La memoria semilla no contiene el código secreto del usuario ficticio 001.",
+      "final_answer_ms": 5860.422375,
+      "prompt_utf8_bytes": 295,
+      "seed_text_utf8_bytes": 0,
+      "seed_text_words": 0,
+      "selected_ids": [],
+      "tool_calls": 0,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 12288,
+        "input_tokens": 16870,
+        "output_tokens": 20,
+        "reasoning_output_tokens": 0
+      }
+    }
+  ],
+  "seed_injected": true,
+  "source": ".local/pilots/rust-migration/general-memory-development-decisions-network.jsonl"
+}

@@ -1,0 +1,116 @@
+{
+  "case_ids": [
+    "gmv1_d801f72be8acfa46ddf6",
+    "gmv1_5beb5b01a40667ca7068",
+    "gmv1_423956194e4bfce96c69",
+    "gmv1_490c045596045974d0f8",
+    "gmv1_c31971ae7655de9d9d89",
+    "gmv1_afe0405fcdefd22d86d4"
+  ],
+  "cases_sha256": "2e11c85f9bdd6b04ad62b1f53c15e9bd32b621786243acd457d4d833f200a365",
+  "codex_model": "gpt-6.1-sol",
+  "engram_binary_sha256": "f0905ec7ff169ea477ebaaaa5d38a9d9fe736768e48adb1ccd990802c02b1f61",
+  "kind": "rust_codex_engram_mcp_synthetic",
+  "rows": [
+    {
+      "case_id": "gmv1_d801f72be8acfa46ddf6",
+      "expected_fact": "El nombre completo de user ficticio 001 es Bruno Mar.",
+      "expected_ids": [
+        "gmv1_745e550c42f8260eed9e"
+      ],
+      "final_answer": "El nombre completo de user ficticio 001 es Bruno Mar.",
+      "final_answer_ms": 12347.306125,
+      "tool_calls": 1,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 46464,
+        "input_tokens": 52576,
+        "output_tokens": 137,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "case_id": "gmv1_5beb5b01a40667ca7068",
+      "expected_fact": "La persona responsable de project ficticio 001 es Leo.",
+      "expected_ids": [
+        "gmv1_c670e06cefd6c71bb397"
+      ],
+      "final_answer": "La persona responsable de project ficticio 001 es Leo.",
+      "final_answer_ms": 9687.019542,
+      "tool_calls": 1,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 44416,
+        "input_tokens": 52567,
+        "output_tokens": 133,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "case_id": "gmv1_423956194e4bfce96c69",
+      "expected_fact": "En conversation ficticio 001, la tarea actual es comparar dos opciones.",
+      "expected_ids": [
+        "gmv1_daf8654496352812fa43"
+      ],
+      "final_answer": "La tarea actual de conversation ficticio 001 es comparar dos opciones.",
+      "final_answer_ms": 9707.956375,
+      "tool_calls": 1,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 46464,
+        "input_tokens": 52569,
+        "output_tokens": 127,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "case_id": "gmv1_490c045596045974d0f8",
+      "expected_fact": "El perfil ficticio de agent ficticio 001 registra inglés como idioma de salida.",
+      "expected_ids": [
+        "gmv1_4f70937ac8c9b46ebbd0"
+      ],
+      "final_answer": "El perfil ficticio de agent ficticio 001 registra inglés como idioma de salida.",
+      "final_answer_ms": 9784.606792,
+      "tool_calls": 1,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 46464,
+        "input_tokens": 52595,
+        "output_tokens": 139,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "case_id": "gmv1_c31971ae7655de9d9d89",
+      "expected_fact": "En conversation ficticio 001, dejó de asumirse que el dato era reciente.",
+      "expected_ids": [
+        "gmv1_bf6f48ac692eac7b2e09"
+      ],
+      "final_answer": "No encontré una memoria pertinente en el proyecto `conversation:synthetic_conversation_001`.",
+      "final_answer_ms": 18471.056916999998,
+      "tool_calls": 3,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 81920,
+        "input_tokens": 88426,
+        "output_tokens": 207,
+        "reasoning_output_tokens": 0
+      }
+    },
+    {
+      "case_id": "gmv1_afe0405fcdefd22d86d4",
+      "expected_fact": null,
+      "expected_ids": [],
+      "final_answer": "No encontré una memoria pertinente en el proyecto `user:synthetic_user_001`.",
+      "final_answer_ms": 14199.559041,
+      "tool_calls": 2,
+      "usage": {
+        "cache_write_input_tokens": 0,
+        "cached_input_tokens": 54400,
+        "input_tokens": 70391,
+        "output_tokens": 209,
+        "reasoning_output_tokens": 7
+      }
+    }
+  ]
+}

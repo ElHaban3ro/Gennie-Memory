@@ -1,0 +1,1916 @@
+{
+  "by_split_segment": {
+    "development/agent/active_module": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.179041,
+        "p95": 6.179041,
+        "p99": 6.179041
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/agent/answer_length": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.40625,
+        "p95": 6.40625,
+        "p99": 6.40625
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/agent/artifact": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 5.962917,
+        "p95": 5.962917,
+        "p99": 5.962917
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/agent/cache_state": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.037833,
+        "p95": 6.037833,
+        "p99": 6.037833
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/agent/checkpoint": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.131832999999999,
+        "p95": 6.131832999999999,
+        "p99": 6.131832999999999
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/agent/citation": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.132791999999999,
+        "p95": 6.132791999999999,
+        "p99": 6.132791999999999
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/agent/completion_state": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 5.856833,
+        "p95": 5.856833,
+        "p99": 5.856833
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/agent/environment": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.1610830000000005,
+        "p95": 6.1610830000000005,
+        "p99": 6.1610830000000005
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/agent/error_code": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.202458999999999,
+        "p95": 6.202458999999999,
+        "p99": 6.202458999999999
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/agent/evaluation_set": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.13925,
+        "p95": 6.13925,
+        "p99": 6.13925
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/agent/evidence": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.164167,
+        "p95": 6.164167,
+        "p99": 6.164167
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/agent/failure_handling": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 5.919041,
+        "p95": 5.919041,
+        "p99": 5.919041
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/agent/handoff": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.107125,
+        "p95": 6.107125,
+        "p99": 6.107125
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/agent/handoff_target": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.537583,
+        "p95": 6.537583,
+        "p99": 6.537583
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/agent/known_limit": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.3183750000000005,
+        "p95": 6.3183750000000005,
+        "p99": 6.3183750000000005
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/agent/last_failure": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.507416999999999,
+        "p95": 6.507416999999999,
+        "p99": 6.507416999999999
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/agent/last_success": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.308707999999999,
+        "p95": 6.308707999999999,
+        "p99": 6.308707999999999
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/agent/latency": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.011584,
+        "p95": 6.011584,
+        "p99": 6.011584
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/agent/next_check": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.0905830000000005,
+        "p95": 6.0905830000000005,
+        "p99": 6.0905830000000005
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/agent/output_language": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.265667,
+        "p95": 6.265667,
+        "p99": 6.265667
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/agent/pending_operation": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.2177500000000006,
+        "p95": 6.2177500000000006,
+        "p99": 6.2177500000000006
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/agent/privacy": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.1613750000000005,
+        "p95": 6.1613750000000005,
+        "p99": 6.1613750000000005
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/agent/retry_count": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.455500000000001,
+        "p95": 6.455500000000001,
+        "p99": 6.455500000000001
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/agent/schedule": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.36675,
+        "p95": 6.36675,
+        "p99": 6.36675
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/agent/source_inspected": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 5.981459,
+        "p95": 5.981459,
+        "p99": 5.981459
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/agent/tool_available": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.16625,
+        "p95": 6.16625,
+        "p99": 6.16625
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/agent/tool_order": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.298875,
+        "p95": 6.298875,
+        "p99": 6.298875
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/agent/tool_unavailable": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 5.994458,
+        "p95": 5.994458,
+        "p99": 5.994458
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/agent/uncertainty": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.452625,
+        "p95": 6.452625,
+        "p99": 6.452625
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/agent/unknown_address": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.026291,
+        "p95": 6.026291,
+        "p99": 6.026291
+      },
+      "negative": 1,
+      "negative_empty_rate": 0.0,
+      "positive": 0,
+      "recall_at_20": null,
+      "top_1_accuracy": null
+    },
+    "development/agent/unknown_color": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 5.998749999999999,
+        "p95": 5.998749999999999,
+        "p99": 5.998749999999999
+      },
+      "negative": 1,
+      "negative_empty_rate": 0.0,
+      "positive": 0,
+      "recall_at_20": null,
+      "top_1_accuracy": null
+    },
+    "development/agent/unknown_future": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.190833,
+        "p95": 6.190833,
+        "p99": 6.190833
+      },
+      "negative": 1,
+      "negative_empty_rate": 0.0,
+      "positive": 0,
+      "recall_at_20": null,
+      "top_1_accuracy": null
+    },
+    "development/agent/unknown_password": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.0575,
+        "p95": 6.0575,
+        "p99": 6.0575
+      },
+      "negative": 1,
+      "negative_empty_rate": 0.0,
+      "positive": 0,
+      "recall_at_20": null,
+      "top_1_accuracy": null
+    },
+    "development/agent/unknown_secret": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 5.753375,
+        "p95": 5.753375,
+        "p99": 5.753375
+      },
+      "negative": 1,
+      "negative_empty_rate": 0.0,
+      "positive": 0,
+      "recall_at_20": null,
+      "top_1_accuracy": null
+    },
+    "development/agent/workaround": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.357333,
+        "p95": 6.357333,
+        "p99": 6.357333
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/conversation/agreed_date": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.2998330000000005,
+        "p95": 6.2998330000000005,
+        "p99": 6.2998330000000005
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 0.0
+    },
+    "development/conversation/agreed_owner": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.212625,
+        "p95": 6.212625,
+        "p99": 6.212625
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/conversation/answer_language": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.440792,
+        "p95": 6.440792,
+        "p99": 6.440792
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/conversation/attachment": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.249708,
+        "p95": 6.249708,
+        "p99": 6.249708
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/conversation/audience": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.279667,
+        "p95": 6.279667,
+        "p99": 6.279667
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/conversation/blocked_by": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.006166,
+        "p95": 6.006166,
+        "p99": 6.006166
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/conversation/changed_assumption": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.222875,
+        "p95": 6.222875,
+        "p99": 6.222875
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 0.0,
+      "top_1_accuracy": 0.0
+    },
+    "development/conversation/chosen_option": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.028958,
+        "p95": 6.028958,
+        "p99": 6.028958
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/conversation/closing_state": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.298708,
+        "p95": 6.298708,
+        "p99": 6.298708
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 0.0
+    },
+    "development/conversation/completed_step": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.643750000000001,
+        "p95": 6.643750000000001,
+        "p99": 6.643750000000001
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 0.0
+    },
+    "development/conversation/correction": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.149417,
+        "p95": 6.149417,
+        "p99": 6.149417
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/conversation/current_task": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.054417,
+        "p95": 6.054417,
+        "p99": 6.054417
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/conversation/decision_reason": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.073167,
+        "p95": 6.073167,
+        "p99": 6.073167
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/conversation/deferred_step": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 5.962042,
+        "p95": 5.962042,
+        "p99": 5.962042
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/conversation/disagreement": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.3149169999999994,
+        "p95": 6.3149169999999994,
+        "p99": 6.3149169999999994
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/conversation/excluded_option": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.0777920000000005,
+        "p95": 6.0777920000000005,
+        "p99": 6.0777920000000005
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/conversation/feedback": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.255334,
+        "p95": 6.255334,
+        "p99": 6.255334
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/conversation/handoff_note": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.2885,
+        "p95": 6.2885,
+        "p99": 6.2885
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/conversation/next_step": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.377333,
+        "p95": 6.377333,
+        "p99": 6.377333
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/conversation/open_question": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.316916,
+        "p95": 6.316916,
+        "p99": 6.316916
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/conversation/priority": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.0085,
+        "p95": 6.0085,
+        "p99": 6.0085
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/conversation/reference_file": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.230959,
+        "p95": 6.230959,
+        "p99": 6.230959
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/conversation/requested_example": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.98,
+        "p95": 6.98,
+        "p99": 6.98
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 0.0
+    },
+    "development/conversation/response_style": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.273792,
+        "p95": 6.273792,
+        "p99": 6.273792
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/conversation/review_rule": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.263999999999999,
+        "p95": 6.263999999999999,
+        "p99": 6.263999999999999
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/conversation/scope_boundary": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.21475,
+        "p95": 6.21475,
+        "p99": 6.21475
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/conversation/source_pointer": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.028292,
+        "p95": 6.028292,
+        "p99": 6.028292
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/conversation/temporary_constraint": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.276083,
+        "p95": 6.276083,
+        "p99": 6.276083
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 0.0
+    },
+    "development/conversation/tool_result": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.111291,
+        "p95": 6.111291,
+        "p99": 6.111291
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/conversation/unknown_address": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.115708,
+        "p95": 6.115708,
+        "p99": 6.115708
+      },
+      "negative": 1,
+      "negative_empty_rate": 0.0,
+      "positive": 0,
+      "recall_at_20": null,
+      "top_1_accuracy": null
+    },
+    "development/conversation/unknown_color": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 5.995667,
+        "p95": 5.995667,
+        "p99": 5.995667
+      },
+      "negative": 1,
+      "negative_empty_rate": 0.0,
+      "positive": 0,
+      "recall_at_20": null,
+      "top_1_accuracy": null
+    },
+    "development/conversation/unknown_future": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.288917,
+        "p95": 6.288917,
+        "p99": 6.288917
+      },
+      "negative": 1,
+      "negative_empty_rate": 0.0,
+      "positive": 0,
+      "recall_at_20": null,
+      "top_1_accuracy": null
+    },
+    "development/conversation/unknown_password": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.052417,
+        "p95": 6.052417,
+        "p99": 6.052417
+      },
+      "negative": 1,
+      "negative_empty_rate": 0.0,
+      "positive": 0,
+      "recall_at_20": null,
+      "top_1_accuracy": null
+    },
+    "development/conversation/unknown_secret": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.170458,
+        "p95": 6.170458,
+        "p99": 6.170458
+      },
+      "negative": 1,
+      "negative_empty_rate": 0.0,
+      "positive": 0,
+      "recall_at_20": null,
+      "top_1_accuracy": null
+    },
+    "development/conversation/unverified_claim": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.306875,
+        "p95": 6.306875,
+        "p99": 6.306875
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/project/archive": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.352167,
+        "p95": 6.352167,
+        "p99": 6.352167
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/project/budget": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 7.008667,
+        "p95": 7.008667,
+        "p99": 7.008667
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/project/client": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.017083,
+        "p95": 6.017083,
+        "p99": 6.017083
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/project/deadline": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.201542,
+        "p95": 6.201542,
+        "p99": 6.201542
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/project/deliverable": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.046250000000001,
+        "p95": 6.046250000000001,
+        "p99": 6.046250000000001
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/project/dependency": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.024500000000001,
+        "p95": 6.024500000000001,
+        "p99": 6.024500000000001
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/project/design_decision": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.295083,
+        "p95": 6.295083,
+        "p99": 6.295083
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/project/documentation": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.199833,
+        "p95": 6.199833,
+        "p99": 6.199833
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/project/handoff": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.018833000000001,
+        "p95": 6.018833000000001,
+        "p99": 6.018833000000001
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/project/interface": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.0185830000000005,
+        "p95": 6.0185830000000005,
+        "p99": 6.0185830000000005
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/project/language": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.062833,
+        "p95": 6.062833,
+        "p99": 6.062833
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 0.0
+    },
+    "development/project/meeting_cadence": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.0600000000000005,
+        "p95": 6.0600000000000005,
+        "p99": 6.0600000000000005
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/project/milestone": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.100834,
+        "p95": 6.100834,
+        "p99": 6.100834
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/project/objective": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 5.923792,
+        "p95": 5.923792,
+        "p99": 5.923792
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/project/owner": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 5.8868339999999995,
+        "p95": 5.8868339999999995,
+        "p99": 5.8868339999999995
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/project/performance_goal": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.232583,
+        "p95": 6.232583,
+        "p99": 6.232583
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/project/privacy_rule": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.220917,
+        "p95": 6.220917,
+        "p99": 6.220917
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/project/quality_gate": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.108625,
+        "p95": 6.108625,
+        "p99": 6.108625
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/project/release_gate": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.2463750000000005,
+        "p95": 6.2463750000000005,
+        "p99": 6.2463750000000005
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/project/reporting": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.297,
+        "p95": 6.297,
+        "p99": 6.297
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/project/repository": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.072667,
+        "p95": 6.072667,
+        "p99": 6.072667
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/project/reviewer": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 5.885833,
+        "p95": 5.885833,
+        "p99": 5.885833
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 0.0
+    },
+    "development/project/risk": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.199959,
+        "p95": 6.199959,
+        "p99": 6.199959
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/project/rollback": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.144959,
+        "p95": 6.144959,
+        "p99": 6.144959
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/project/scope_exclusion": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.12975,
+        "p95": 6.12975,
+        "p99": 6.12975
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/project/source_of_truth": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.027,
+        "p95": 6.027,
+        "p99": 6.027
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/project/status": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 5.906,
+        "p95": 5.906,
+        "p99": 5.906
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/project/storage": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.0191669999999995,
+        "p95": 6.0191669999999995,
+        "p99": 6.0191669999999995
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/project/support_contact": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.320667,
+        "p95": 6.320667,
+        "p99": 6.320667
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/project/test_strategy": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.372292,
+        "p95": 6.372292,
+        "p99": 6.372292
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/project/unknown_address": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.023958,
+        "p95": 6.023958,
+        "p99": 6.023958
+      },
+      "negative": 1,
+      "negative_empty_rate": 0.0,
+      "positive": 0,
+      "recall_at_20": null,
+      "top_1_accuracy": null
+    },
+    "development/project/unknown_color": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 5.965292,
+        "p95": 5.965292,
+        "p99": 5.965292
+      },
+      "negative": 1,
+      "negative_empty_rate": 0.0,
+      "positive": 0,
+      "recall_at_20": null,
+      "top_1_accuracy": null
+    },
+    "development/project/unknown_future": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.230791,
+        "p95": 6.230791,
+        "p99": 6.230791
+      },
+      "negative": 1,
+      "negative_empty_rate": 0.0,
+      "positive": 0,
+      "recall_at_20": null,
+      "top_1_accuracy": null
+    },
+    "development/project/unknown_password": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.155916,
+        "p95": 6.155916,
+        "p99": 6.155916
+      },
+      "negative": 1,
+      "negative_empty_rate": 0.0,
+      "positive": 0,
+      "recall_at_20": null,
+      "top_1_accuracy": null
+    },
+    "development/project/unknown_secret": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 5.996542,
+        "p95": 5.996542,
+        "p99": 5.996542
+      },
+      "negative": 1,
+      "negative_empty_rate": 0.0,
+      "positive": 0,
+      "recall_at_20": null,
+      "top_1_accuracy": null
+    },
+    "development/user/accessibility": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.574041,
+        "p95": 6.574041,
+        "p99": 6.574041
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/user/backup_rule": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 5.820042,
+        "p95": 5.820042,
+        "p99": 5.820042
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/user/calendar_style": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.22,
+        "p95": 6.22,
+        "p99": 6.22
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/user/commute": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 5.949375,
+        "p95": 5.949375,
+        "p99": 5.949375
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/user/contact_channel": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.601667,
+        "p95": 6.601667,
+        "p99": 6.601667
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/user/date_format": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.0995,
+        "p95": 6.0995,
+        "p99": 6.0995
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/user/diet": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.063375000000001,
+        "p95": 6.063375000000001,
+        "p99": 6.063375000000001
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 0.0
+    },
+    "development/user/drink": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.23675,
+        "p95": 6.23675,
+        "p99": 6.23675
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/user/focus_window": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.237292,
+        "p95": 6.237292,
+        "p99": 6.237292
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/user/hobby": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 5.797584,
+        "p95": 5.797584,
+        "p99": 5.797584
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/user/home_city": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.791833,
+        "p95": 6.791833,
+        "p99": 6.791833
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/user/language": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 7.995916,
+        "p95": 7.995916,
+        "p99": 7.995916
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/user/learning_goal": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.131125,
+        "p95": 6.131125,
+        "p99": 6.131125
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/user/legal_name": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 10.226541,
+        "p95": 10.226541,
+        "p99": 10.226541
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/user/measurement_units": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.0591669999999995,
+        "p95": 6.0591669999999995,
+        "p99": 6.0591669999999995
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 0.0
+    },
+    "development/user/meeting_window": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.466208,
+        "p95": 6.466208,
+        "p99": 6.466208
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/user/notification_rule": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.090375,
+        "p95": 6.090375,
+        "p99": 6.090375
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/user/preferred_name": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 8.529375,
+        "p95": 8.529375,
+        "p99": 8.529375
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/user/report_format": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.448084,
+        "p95": 6.448084,
+        "p99": 6.448084
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/user/review_cadence": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.197666,
+        "p95": 6.197666,
+        "p99": 6.197666
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/user/team": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 5.868375,
+        "p95": 5.868375,
+        "p99": 5.868375
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/user/timezone": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.529875,
+        "p95": 6.529875,
+        "p99": 6.529875
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/user/travel_seat": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.289000000000001,
+        "p95": 6.289000000000001,
+        "p99": 6.289000000000001
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/user/unknown_address": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.062542,
+        "p95": 6.062542,
+        "p99": 6.062542
+      },
+      "negative": 1,
+      "negative_empty_rate": 0.0,
+      "positive": 0,
+      "recall_at_20": null,
+      "top_1_accuracy": null
+    },
+    "development/user/unknown_color": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 5.912917,
+        "p95": 5.912917,
+        "p99": 5.912917
+      },
+      "negative": 1,
+      "negative_empty_rate": 0.0,
+      "positive": 0,
+      "recall_at_20": null,
+      "top_1_accuracy": null
+    },
+    "development/user/unknown_future": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.087083,
+        "p95": 6.087083,
+        "p99": 6.087083
+      },
+      "negative": 1,
+      "negative_empty_rate": 0.0,
+      "positive": 0,
+      "recall_at_20": null,
+      "top_1_accuracy": null
+    },
+    "development/user/unknown_password": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 5.81225,
+        "p95": 5.81225,
+        "p99": 5.81225
+      },
+      "negative": 1,
+      "negative_empty_rate": 0.0,
+      "positive": 0,
+      "recall_at_20": null,
+      "top_1_accuracy": null
+    },
+    "development/user/unknown_secret": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 6.040208,
+        "p95": 6.040208,
+        "p99": 6.040208
+      },
+      "negative": 1,
+      "negative_empty_rate": 0.0,
+      "positive": 0,
+      "recall_at_20": null,
+      "top_1_accuracy": null
+    },
+    "development/user/work_role": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 5.786666,
+        "p95": 5.786666,
+        "p99": 5.786666
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/user/writing_tone": {
+      "cases": 1,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 7.431958,
+        "p95": 7.431958,
+        "p99": 7.431958
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 1,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    }
+  },
+  "degraded_cases": 0,
+  "method": "fts5_keywords",
+  "overall": {
+    "cases": 135,
+    "forbidden_leak_count": 0,
+    "latency_ms": {
+      "p50": 6.1613750000000005,
+      "p95": 6.643750000000001,
+      "p99": 7.995916
+    },
+    "negative": 20,
+    "negative_empty_rate": 0.0,
+    "positive": 115,
+    "recall_at_20": 0.991304347826087,
+    "top_1_accuracy": 0.9130434782608695
+  },
+  "semantic_coverage": {
+    "complete": 0,
+    "disabled": 135,
+    "missing": 0,
+    "partial": 0
+  }
+}

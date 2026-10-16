@@ -1,0 +1,4 @@
+{"elapsed_ms":178.117333,"event":{"thread_id":"01a14264-8879-79e1-a0d0-62b9889076f7","type":"thread.started"}}
+{"elapsed_ms":180.1315,"event":{"type":"turn.started"}}
+{"elapsed_ms":5215.250666,"event":{"item":{"id":"item_0","text":"La memoria semilla no indica quién es responsable de project ficticio 001.","type":"agent_message"},"type":"item.completed"}}
+{"elapsed_ms":5249.6025,"event":{"type":"turn.completed","usage":{"cache_write_input_tokens":0,"cached_input_tokens":12288,"input_tokens":16865,"output_tokens":20,"reasoning_output_tokens":0}}}

@@ -1,0 +1,4 @@
+{"elapsed_ms":284.050125,"event":{"thread_id":"01a14260-b1b5-7491-a5d3-b4f8f2516079","type":"thread.started"}}
+{"elapsed_ms":288.77108400000003,"event":{"type":"turn.started"}}
+{"elapsed_ms":7784.771292,"event":{"item":{"id":"item_0","text":"La semilla no contiene información sobre qué supuesto se abandonó en conversation ficticio 001.","type":"agent_message"},"type":"item.completed"}}
+{"elapsed_ms":7801.5335,"event":{"type":"turn.completed","usage":{"cache_write_input_tokens":0,"cached_input_tokens":12288,"input_tokens":16870,"output_tokens":23,"reasoning_output_tokens":0}}}
