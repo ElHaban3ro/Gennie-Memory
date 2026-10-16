@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="635" viewBox="0 0 1200 635" role="img" aria-label="Tiempo de la ruta actual">
+<rect width="100%" height="100%" fill="#fffefa"/>
+<text x="58" y="75" fill="#25313b" text-anchor="start" font-family="Georgia,serif" font-size="34">Tiempo de la ruta actual</text>
+<text x="58" y="110" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="17">540 preguntas sintéticas · ejes separados · milisegundos</text>
+<text x="58" y="144" fill="#25313b" text-anchor="start" font-family="Georgia,serif" font-size="22">Búsqueda aislada</text>
+<text x="58" y="174" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="16">Sesión Rust local</text>
+<text x="110" y="199" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="14">milisegundos</text>
+<line x1="110" y1="497" x2="503" y2="497" stroke="#d8dfdf" stroke-width="1"/>
+<text x="100" y="502" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">0.0</text>
+<line x1="110" y1="356" x2="503" y2="356" stroke="#d8dfdf" stroke-width="1"/>
+<text x="100" y="361" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">15.0</text>
+<line x1="110" y1="215" x2="503" y2="215" stroke="#d8dfdf" stroke-width="1"/>
+<text x="100" y="220" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">30.0</text>
+<line x1="110" y1="215" x2="110" y2="497" stroke="#25313b" stroke-width="1"/>
+<rect x="175" y="430" width="96" height="67" fill="#617db1"/>
+<text x="223" y="417" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="18">7.11</text>
+<text x="223" y="527" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="17">Mediana</text>
+<rect x="350" y="248" width="96" height="249" fill="#18817e"/>
+<text x="398" y="235" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="18">26.54</text>
+<text x="398" y="527" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="17">p95</text>
+<text x="610" y="144" fill="#25313b" text-anchor="start" font-family="Georgia,serif" font-size="22">Consulta hasta la semilla</text>
+<text x="610" y="174" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="16">Incluye Decisions por OpenRouter</text>
+<text x="662" y="199" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="14">milisegundos</text>
+<line x1="662" y1="497" x2="1055" y2="497" stroke="#d8dfdf" stroke-width="1"/>
+<text x="652" y="502" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">0</text>
+<line x1="662" y1="356" x2="1055" y2="356" stroke="#d8dfdf" stroke-width="1"/>
+<text x="652" y="361" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">527</text>
+<line x1="662" y1="215" x2="1055" y2="215" stroke="#d8dfdf" stroke-width="1"/>
+<text x="652" y="220" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">1054</text>
+<line x1="662" y1="215" x2="662" y2="497" stroke="#25313b" stroke-width="1"/>
+<rect x="727" y="394" width="96" height="103" fill="#617db1"/>
+<text x="775" y="381" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="18">386</text>
+<text x="775" y="527" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="17">Mediana</text>
+<rect x="902" y="241" width="96" height="256" fill="#18817e"/>
+<text x="950" y="228" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="18">958</text>
+<text x="950" y="527" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="17">p95</text>
+<text x="58" y="585" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="17">Búsqueda y consulta completa se midieron en corridas distintas.</text>
+</svg>

@@ -2,7 +2,7 @@
 
 Estado: evaluación sintética en esta Mac, 2026-10-15. El [paquete por caso](../../outputs/iromem/evaluation/keyword-prefix-v1/) conserva consultas, diarios, manifiestos y resúmenes de Rust. Esta corrida mejora la ruta FTS5 vigente; no activa la búsqueda híbrida ni integra Codex. Los fallos de los sujetos 002–005 ya eran conocidos de campañas anteriores y ayudaron a plantear la expansión. La cohorte 010–013 se preparó después para una comprobación adicional sin ajustar más el cambio.
 
-Las [figuras de aciertos](assets/keyword-accuracy-v1.svg) y [latencias](assets/keyword-latency-v1.svg) del README se regeneran con `iromem-eval render-keyword-charts` desde los seis resúmenes de búsqueda y Decisions citados abajo. Sus barras empiezan en cero y distinguen las cohortes reutilizada y nueva.
+Las [figuras comparativas de aciertos](assets/keyword-accuracy-v1.svg) y [latencias](assets/keyword-latency-v1.svg) se conservan aquí como evidencia histórica y se regeneran con `iromem-eval render-keyword-charts` desde los seis resúmenes de búsqueda y Decisions citados abajo. El README muestra solo la ruta vigente mediante [aciertos actuales](assets/current-accuracy.svg) y [latencias actuales](assets/current-latency.svg), regenerados con `iromem-eval render-current-charts` desde los dos resúmenes de la muestra 010–013.
 
 ## Cambio congelado antes de la cohorte nueva
 

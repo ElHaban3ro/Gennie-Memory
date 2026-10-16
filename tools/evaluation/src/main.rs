@@ -227,6 +227,19 @@ fn run() -> Result<(), String> {
                 Path::new(&output),
             )
         }
+        "render-current-charts" => {
+            let search = args.next().ok_or("falta informe de búsqueda")?;
+            let campaign = args.next().ok_or("falta informe de campaña")?;
+            let output = args.next().ok_or("falta directorio de imágenes")?;
+            if args.next().is_some() {
+                return Err("demasiados argumentos".into());
+            }
+            charts::render_current_performance(
+                Path::new(&search),
+                Path::new(&campaign),
+                Path::new(&output),
+            )
+        }
         "paired-flow-report" => {
             let journal = args.next().ok_or("falta diario de recall")?;
             let seed = args.next().ok_or("falta resumen Codex con semilla")?;

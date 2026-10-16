@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="620" viewBox="0 0 700 620" role="img" aria-label="Aciertos de la ruta actual">
+<rect width="100%" height="100%" fill="#fffefa"/>
+<text x="58" y="75" fill="#25313b" text-anchor="start" font-family="Georgia,serif" font-size="34">Aciertos de la ruta actual</text>
+<text x="58" y="110" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="17">FTS5 con prefijos + Decisions · 2.800 recuerdos sintéticos</text>
+<text x="80" y="144" fill="#25313b" text-anchor="start" font-family="Georgia,serif" font-size="22">Preguntas que requerían recuerdo</text>
+<text x="80" y="174" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="16">Hasta 20 candidatos por pregunta</text>
+<text x="132" y="199" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="14">aciertos / 460</text>
+<line x1="132" y1="497" x2="525" y2="497" stroke="#d8dfdf" stroke-width="1"/>
+<text x="122" y="502" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">0</text>
+<line x1="132" y1="356" x2="525" y2="356" stroke="#d8dfdf" stroke-width="1"/>
+<text x="122" y="361" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">230</text>
+<line x1="132" y1="215" x2="525" y2="215" stroke="#d8dfdf" stroke-width="1"/>
+<text x="122" y="220" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">460</text>
+<line x1="132" y1="215" x2="132" y2="497" stroke="#25313b" stroke-width="1"/>
+<rect x="197" y="217" width="96" height="280" fill="#617db1"/>
+<text x="245" y="204" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="18">456</text>
+<text x="245" y="527" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="17">Candidatos</text>
+<rect x="372" y="228" width="96" height="269" fill="#18817e"/>
+<text x="420" y="215" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="18">439</text>
+<text x="420" y="527" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="17">Semilla</text>
+<text x="58" y="570" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="17">Preguntas sin recuerdo: 80/80 terminaron sin semilla.</text>
+</svg>

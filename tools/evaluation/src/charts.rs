@@ -555,6 +555,117 @@ pub fn render_keyword_improvement(paths: &[&Path], output_dir: &Path) -> Result<
     Ok(())
 }
 
+pub fn render_current_performance(
+    search_path: &Path,
+    campaign_path: &Path,
+    output_dir: &Path,
+) -> Result<(), String> {
+    let search = load(search_path)?;
+    let campaign = load(campaign_path)?;
+    let positives = n(&search, "/overall/positive")?;
+    let negatives = n(&search, "/overall/negative")?;
+    if positives != n(&campaign, "/positive")?
+        || negatives != n(&campaign, "/negative")?
+        || (f(&search, "/overall/recall_at_20")? * positives as f64).round() as u64
+            != n(&campaign, "/candidate_recall")?
+    {
+        return Err("informes de búsqueda y campaña incoherentes".into());
+    }
+
+    fs::create_dir_all(output_dir).map_err(|error| error.to_string())?;
+    let mut quality = Svg::new(700, 620, "Aciertos de la ruta actual");
+    quality.text(
+        58,
+        110,
+        "FTS5 con prefijos + Decisions · 2.800 recuerdos sintéticos",
+        17,
+        MUTED,
+        "start",
+        "Arial,sans-serif",
+    );
+    panel(
+        &mut quality,
+        &Panel {
+            x: 80,
+            title: "Preguntas que requerían recuerdo",
+            subtitle: "Hasta 20 candidatos por pregunta",
+            unit: "aciertos / 460",
+            maximum: positives as f64,
+            bars: [
+                (
+                    "Candidatos",
+                    n(&campaign, "/candidate_recall")? as f64,
+                    BLUE,
+                ),
+                ("Semilla", n(&campaign, "/positive_correct")? as f64, TEAL),
+            ],
+            decimals: 0,
+        },
+    );
+    quality.text(
+        58,
+        570,
+        &format!(
+            "Preguntas sin recuerdo: {}/{} terminaron sin semilla.",
+            n(&campaign, "/negative_empty")?,
+            negatives
+        ),
+        17,
+        MUTED,
+        "start",
+        "Arial,sans-serif",
+    );
+    quality.save(&output_dir.join("current-accuracy.svg"))?;
+
+    let search_p50 = f(&search, "/overall/latency_ms/p50")?;
+    let search_p95 = f(&search, "/overall/latency_ms/p95")?;
+    let full_p50 = f(&campaign, "/elapsed_p50_ms")?;
+    let full_p95 = f(&campaign, "/elapsed_p95_ms")?;
+    let mut latency = Svg::new(1200, 635, "Tiempo de la ruta actual");
+    latency.text(
+        58,
+        110,
+        "540 preguntas sintéticas · ejes separados · milisegundos",
+        17,
+        MUTED,
+        "start",
+        "Arial,sans-serif",
+    );
+    for data in [
+        Panel {
+            x: 58,
+            title: "Búsqueda aislada",
+            subtitle: "Sesión Rust local",
+            unit: "milisegundos",
+            maximum: (search_p95 * 1.1).ceil(),
+            bars: [("Mediana", search_p50, BLUE), ("p95", search_p95, TEAL)],
+            decimals: 2,
+        },
+        Panel {
+            x: 610,
+            title: "Consulta hasta la semilla",
+            subtitle: "Incluye Decisions por OpenRouter",
+            unit: "milisegundos",
+            maximum: (full_p95 * 1.1).ceil(),
+            bars: [("Mediana", full_p50, BLUE), ("p95", full_p95, TEAL)],
+            decimals: 0,
+        },
+    ] {
+        panel(&mut latency, &data);
+    }
+    latency.text(
+        58,
+        585,
+        "Búsqueda y consulta completa se midieron en corridas distintas.",
+        17,
+        MUTED,
+        "start",
+        "Arial,sans-serif",
+    );
+    latency.save(&output_dir.join("current-latency.svg"))?;
+    Ok(())
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
