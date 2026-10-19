@@ -1,10 +1,12 @@
 # Contrato de evaluación v1
 
-Estado vigente: el producto y el evaluador principal son Rust. Los bancos y resultados de pilotos anteriores siguen versionados como evidencia histórica; sus scripts Python antiguos fueron retirados. Las cifras vigentes de búsqueda y el piloto Codex de cuatro rutas están en [la comparación ampliada del 2026-10-16](broader-comparison-2026-10-16.md). La preparación de semilla y las mediciones originales de iROMEM y Engram permanecen en [la campaña completa](full-comparison-2026-10-16.md); la [primera medición Rust](rust-migration-v1.md) es histórica.
+Estado vigente: el producto y el evaluador principal son Rust. Los bancos y resultados de pilotos anteriores siguen versionados como evidencia histórica; sus scripts Python antiguos fueron retirados. La medición nueva de la ruta iROMEM está en [la cohorte sintética 018–020](mvp-final-synthetic-2026-10-16.md). La comparación de búsqueda entre cuatro motores y el piloto Codex aún corresponden a [014–017](broader-comparison-2026-10-16.md); la [primera medición Rust](rust-migration-v1.md) es histórica.
 
 ## Bancos y etiquetas
 
 Los bancos sintéticos v1–v5 están congelados en `tests/benchmark/`. `iromem-eval validate-benchmark <directorio>` comprueba hashes declarados, unicidad, particiones por entidad, revisiones, ámbito, vigencia y correspondencia de hechos, condiciones y fuentes. v1 contiene 10.800 consultas; v2–v4, 41.600 cada uno; v5, 42.400. Las etiquetas proceden de reglas deterministas, no de revisión humana. Los detalles de generación y las limitaciones están en los manifiestos y [el primer piloto](pilot-2026-10-15.md). La regeneración byte por byte desde las plantillas Python se retiró; los archivos versionados son el corpus de referencia.
+
+El [protocolo final del MVP](mvp-final-protocol-2026-10-16.md) reservó `tests/fixtures/general-memory-v1/holdout-018-020.jsonl`: 405 consultas de doce ámbitos. Su hash, política y criterios se fijaron antes de ejecutar la [campaña sintética](mvp-final-synthetic-2026-10-16.md). La prueba de preguntas naturales con revisión humana es independiente y aún no existe; el holdout conserva etiquetas sintéticas deterministas.
 
 `iromem-eval validate-general-memory tests/fixtures/general-memory-v1` comprueba los 2.800 recuerdos, 3.300 preguntas etiquetadas y 140 preguntas sin ámbito explícito, incluidos IDs y ámbitos esperados. `validate-candidate-matrix tests/benchmark/candidate-matrix-v1/<100|200|2000>` comprueba hashes, tamaños, etiquetas e identidades de las tres matrices. Los sujetos de desarrollo y final del banco general están separados; no se ajustan instrucciones con la cohorte final.
 

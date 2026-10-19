@@ -4,6 +4,10 @@ Memorias semilla para agentes: iROMEM busca recuerdos relevantes y prepara conte
 
 ## Rendimiento de la ruta vigente
 
+La [cohorte sintética reservada 018–020](docs/evaluation/mvp-final-synthetic-2026-10-16.md) evaluó la ruta vigente sin reajustarla: **2.800 recuerdos, 345 preguntas positivas y 60 negativas**. FTS5 recuperó el recuerdo correcto entre veinte candidatos en **343/345** positivos. La semilla con Decisions acertó **331/345 (95,94 %)** y quedó vacía en **60/60** negativos; Jev obtuvo **316/345 (91,59 %)** y **60/60**. La consulta hasta la semilla midió p50/p95 de **391/1.090 ms** con Decisions y **371/478 ms** con Jev. El coste informado conjunto fue **US$0,03848813**. Sin embargo, Decisions acertó solo **77/90** positivos de `conversation`, y su intervalo Wilson de 95 % para el agregado fue **93,30–97,57 %**. Es evidencia de este banco con etiquetas de plantilla; la revisión humana independiente y las preguntas naturales siguen pendientes.
+
+Las figuras visibles a continuación conservan explícitamente la **comparación anterior 014–017** entre motores y el piloto Codex de seis turnos. No contienen la cohorte 018–020 ni miden una integración automática. Los diarios y el análisis por caso de la cohorte nueva están enlazados en su informe.
+
 La [comparación ampliada del 2026-10-16](docs/evaluation/broader-comparison-2026-10-16.md) usa los mismos **2.800 recuerdos sintéticos** y **540 preguntas** de sujetos 014–017 (460 positivas, 80 negativas). Hubo cuatro corridas de búsqueda por motor. iROMEM y Engram conservan las cifras de la [campaña original](docs/evaluation/full-comparison-2026-10-16.md); Lodis y Basic Memory se añadieron sobre las preguntas congeladas.
 
 | Búsqueda de candidatos | iROMEM | Engram 3.4.0 | Lodis 0.6.0 | Basic Memory |

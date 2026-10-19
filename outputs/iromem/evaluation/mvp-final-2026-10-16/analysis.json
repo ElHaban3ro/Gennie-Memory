@@ -1,0 +1,140 @@
+{
+  "method": "Wilson 95% by case; 10000 scope-cluster bootstrap resamples with seed 20261016",
+  "case_sha256": "2e2d8e819636f5bd5e6fb248dde7b201b4d7e1556b9954c24352ae67db9124dc",
+  "providers": {
+    "decisions": {
+      "positive": 345,
+      "positive_correct": 331,
+      "positive_rate": 0.9594202898550724,
+      "positive_wilson_95": [
+        0.933046181303564,
+        0.9756760820181796
+      ],
+      "positive_scope_bootstrap_95": [
+        0.9142857142857143,
+        0.9941176470588236
+      ],
+      "negative": 60,
+      "negative_empty": 60,
+      "negative_wilson_95": [
+        0.93982814785791,
+        0.9999999999999998
+      ],
+      "by_scope_kind": {
+        "user": {
+          "positive": 75,
+          "positive_correct": 75,
+          "candidate_recall": 75,
+          "negative": 15,
+          "negative_empty": 15,
+          "abstentions_positive": 0,
+          "wrong_choice_positive": 0
+        },
+        "project": {
+          "positive": 90,
+          "positive_correct": 90,
+          "candidate_recall": 90,
+          "negative": 15,
+          "negative_empty": 15,
+          "abstentions_positive": 0,
+          "wrong_choice_positive": 0
+        },
+        "conversation": {
+          "positive": 90,
+          "positive_correct": 77,
+          "candidate_recall": 88,
+          "negative": 15,
+          "negative_empty": 15,
+          "abstentions_positive": 12,
+          "wrong_choice_positive": 1
+        },
+        "agent": {
+          "positive": 90,
+          "positive_correct": 89,
+          "candidate_recall": 90,
+          "negative": 15,
+          "negative_empty": 15,
+          "abstentions_positive": 1,
+          "wrong_choice_positive": 0
+        }
+      },
+      "served_models": {
+        "openai/gpt-6-luna-decisions-20261006": 405
+      },
+      "degraded": 0,
+      "forbidden_cases": 0,
+      "selected_memory_count": 332,
+      "fidelity_mismatches": [],
+      "seed_utf8_bytes_p50": 175.0,
+      "seed_utf8_bytes_p95": 212.5999999999999,
+      "service_total_p99_ms": 1944.7697903199996
+    },
+    "jev": {
+      "positive": 345,
+      "positive_correct": 316,
+      "positive_rate": 0.9159420289855073,
+      "positive_wilson_95": [
+        0.8818858701194153,
+        0.9408374408374945
+      ],
+      "positive_scope_bootstrap_95": [
+        0.8628571428571429,
+        0.9647058823529412
+      ],
+      "negative": 60,
+      "negative_empty": 60,
+      "negative_wilson_95": [
+        0.93982814785791,
+        0.9999999999999998
+      ],
+      "by_scope_kind": {
+        "user": {
+          "positive": 75,
+          "positive_correct": 75,
+          "candidate_recall": 75,
+          "negative": 15,
+          "negative_empty": 15,
+          "abstentions_positive": 0,
+          "wrong_choice_positive": 0
+        },
+        "project": {
+          "positive": 90,
+          "positive_correct": 89,
+          "candidate_recall": 90,
+          "negative": 15,
+          "negative_empty": 15,
+          "abstentions_positive": 1,
+          "wrong_choice_positive": 0
+        },
+        "conversation": {
+          "positive": 90,
+          "positive_correct": 72,
+          "candidate_recall": 88,
+          "negative": 15,
+          "negative_empty": 15,
+          "abstentions_positive": 17,
+          "wrong_choice_positive": 1
+        },
+        "agent": {
+          "positive": 90,
+          "positive_correct": 80,
+          "candidate_recall": 90,
+          "negative": 15,
+          "negative_empty": 15,
+          "abstentions_positive": 10,
+          "wrong_choice_positive": 0
+        }
+      },
+      "served_models": {
+        "typesafe/jev-1.13-20260917": 405
+      },
+      "degraded": 0,
+      "forbidden_cases": 0,
+      "selected_memory_count": 317,
+      "fidelity_mismatches": [],
+      "seed_utf8_bytes_p50": 174.0,
+      "seed_utf8_bytes_p95": 210.5999999999999,
+      "service_total_p99_ms": 998.4930530399994
+    }
+  }
+}
