@@ -24,4 +24,6 @@
 
 [0012 — Expansión por prefijo en la búsqueda rápida](0012-keyword-prefix-expansion.md) registra el ajuste léxico y de instrucción de Decisions, con selección en desarrollo, validación final y coste observado.
 
+[0013 — Protocolo previo a la evaluación final del MVP](0013-mvp-final-evaluation-protocol.md) reserva 018–020, fija criterios y enlaza los resultados sintéticos sin confundirlos con la auditoría humana pendiente.
+
 Cada decisión nueva debe indicar contexto, alternativas, motivo, estado y condición de revisión. Una sustitución conserva el documento anterior y enlaza el nuevo; no reescribe silenciosamente la historia. Los registros de [memoria de trabajo](../memory/index.md) aportan evidencia, pero no modifican reglas ni decisiones por sí solos.
