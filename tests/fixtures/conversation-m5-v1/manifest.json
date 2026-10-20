@@ -1,0 +1,16 @@
+{
+  "version": "conversation-m5-v1-development",
+  "scope_count": 5,
+  "memories": 150,
+  "cases": 100,
+  "positive": 75,
+  "negative": 25,
+  "label_source": "deterministic_fixture_rule",
+  "human_review": "pending",
+  "files": {
+    "memories.json": "895fd1dd13d0a061134f0dee1bbc215b39d4b9967205fbf94bc94e0b7e293d4c",
+    "development.jsonl": "b98901c136f6fa96d1a66bf931e5973dbc3dfaf3eb134d0252226b0cf9e3b156",
+    "development-probe.jsonl": "4ac6845fac9bf24cfde0c89f63397d73bf64717216f917d1fce528cf411eb004"
+  },
+  "probe_cases": 6
+}

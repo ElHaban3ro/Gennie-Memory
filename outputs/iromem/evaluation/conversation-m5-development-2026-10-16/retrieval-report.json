@@ -1,0 +1,306 @@
+{
+  "by_split_segment": {
+    "development/conversation/answer_language": {
+      "cases": 5,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 1.14025,
+        "p95": 1.15225,
+        "p99": 1.15225
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 5,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/conversation/artifact": {
+      "cases": 5,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 1.128208,
+        "p95": 1.206333,
+        "p99": 1.206333
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 5,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/conversation/changed_assumption": {
+      "cases": 5,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 1.168584,
+        "p95": 1.2715,
+        "p99": 1.2715
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 5,
+      "recall_at_20": 0.8,
+      "top_1_accuracy": 0.0
+    },
+    "development/conversation/correction": {
+      "cases": 5,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 1.123542,
+        "p95": 1.221666,
+        "p99": 1.221666
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 5,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/conversation/deadline": {
+      "cases": 5,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 1.105834,
+        "p95": 1.191792,
+        "p99": 1.191792
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 5,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/conversation/decision": {
+      "cases": 5,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 1.098166,
+        "p95": 1.135625,
+        "p99": 1.135625
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 5,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/conversation/evidence": {
+      "cases": 5,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 1.168375,
+        "p95": 1.178291,
+        "p99": 1.178291
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 5,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/conversation/negative_approved_budget": {
+      "cases": 5,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 1.050083,
+        "p95": 1.055875,
+        "p99": 1.055875
+      },
+      "negative": 5,
+      "negative_empty_rate": 0.0,
+      "positive": 0,
+      "recall_at_20": null,
+      "top_1_accuracy": null
+    },
+    "development/conversation/negative_deployment_date": {
+      "cases": 5,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 1.146459,
+        "p95": 1.149583,
+        "p99": 1.149583
+      },
+      "negative": 5,
+      "negative_empty_rate": 0.0,
+      "positive": 0,
+      "recall_at_20": null,
+      "top_1_accuracy": null
+    },
+    "development/conversation/negative_device_model": {
+      "cases": 5,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 1.121541,
+        "p95": 1.183625,
+        "p99": 1.183625
+      },
+      "negative": 5,
+      "negative_empty_rate": 0.0,
+      "positive": 0,
+      "recall_at_20": null,
+      "top_1_accuracy": null
+    },
+    "development/conversation/negative_secret": {
+      "cases": 5,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 1.105625,
+        "p95": 1.154916,
+        "p99": 1.154916
+      },
+      "negative": 5,
+      "negative_empty_rate": 0.0,
+      "positive": 0,
+      "recall_at_20": null,
+      "top_1_accuracy": null
+    },
+    "development/conversation/negative_signed_client": {
+      "cases": 5,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 1.15525,
+        "p95": 1.165375,
+        "p99": 1.165375
+      },
+      "negative": 5,
+      "negative_empty_rate": 0.0,
+      "positive": 0,
+      "recall_at_20": null,
+      "top_1_accuracy": null
+    },
+    "development/conversation/next_step": {
+      "cases": 5,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 1.119625,
+        "p95": 1.136875,
+        "p99": 1.136875
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 5,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/conversation/open_question": {
+      "cases": 5,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 1.1683329999999998,
+        "p95": 1.175959,
+        "p99": 1.175959
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 5,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 0.8
+    },
+    "development/conversation/owner": {
+      "cases": 5,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 1.122667,
+        "p95": 1.2242920000000002,
+        "p99": 1.2242920000000002
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 5,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/conversation/pending_test": {
+      "cases": 5,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 1.099625,
+        "p95": 1.101084,
+        "p99": 1.101084
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 5,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/conversation/rejected_option": {
+      "cases": 5,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 1.046125,
+        "p95": 1.068625,
+        "p99": 1.068625
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 5,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/conversation/response_style": {
+      "cases": 5,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 1.145834,
+        "p95": 1.186125,
+        "p99": 1.186125
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 5,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 0.0
+    },
+    "development/conversation/temporary_constraint": {
+      "cases": 5,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 1.071417,
+        "p95": 1.126583,
+        "p99": 1.126583
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 5,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    },
+    "development/conversation/tool_result": {
+      "cases": 5,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 1.171208,
+        "p95": 1.1924590000000002,
+        "p99": 1.1924590000000002
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 5,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    }
+  },
+  "degraded_cases": 0,
+  "method": "fts5_keywords",
+  "overall": {
+    "cases": 100,
+    "forbidden_leak_count": 0,
+    "latency_ms": {
+      "p50": 1.123542,
+      "p95": 1.310875,
+      "p99": 1.54875
+    },
+    "negative": 25,
+    "negative_empty_rate": 0.0,
+    "positive": 75,
+    "recall_at_20": 0.9866666666666667,
+    "top_1_accuracy": 0.8533333333333334
+  },
+  "semantic_coverage": {
+    "complete": 0,
+    "disabled": 100,
+    "missing": 0,
+    "partial": 0
+  }
+}

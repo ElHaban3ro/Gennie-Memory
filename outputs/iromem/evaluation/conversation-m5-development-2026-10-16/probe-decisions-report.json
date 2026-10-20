@@ -1,0 +1,49 @@
+{
+  "by_segment": {
+    "conversation/changed_assumption": {
+      "cases": 1,
+      "correct": 1
+    },
+    "conversation/response_style": {
+      "cases": 5,
+      "correct": 4
+    }
+  },
+  "candidate_recall": 5,
+  "cases": 6,
+  "classifier_p50_ms": 447.9866045,
+  "classifier_p95_ms": 732.61659375,
+  "correct": 5,
+  "cost_reported_cases": 6,
+  "degraded": 0,
+  "elapsed_p50_ms": 451.322333,
+  "elapsed_p95_ms": 736.68960375,
+  "forbidden_leak_count": 0,
+  "input_tokens_p50": 759.0,
+  "input_tokens_reported_cases": 6,
+  "manifest": {
+    "binary_sha256": "585d4cc6627b8f79f1be3fabaab309d9f8c369cd6b43e249e524dce2b1afced0",
+    "case_count": 6,
+    "cases_sha256": "4ac6845fac9bf24cfde0c89f63397d73bf64717216f917d1fce528cf411eb004",
+    "database_sha256": "583ec80e67b8d9eda8a5c127dee8db519f246079a49781a353fe2d44b1b0422e",
+    "format": 1,
+    "kind": "manifest",
+    "provider": "decisions",
+    "split": "development_probe"
+  },
+  "negative": 0,
+  "negative_candidate_empty": 0,
+  "negative_empty": 0,
+  "output_tokens_p50": 0.0,
+  "output_tokens_reported_cases": 6,
+  "positive": 6,
+  "positive_correct": 5,
+  "provider": "decisions",
+  "reported_cost_usd": 0.00045420000000000004,
+  "search_p50_ms": 1.458229,
+  "search_p95_ms": 1.60968725,
+  "service_total_p50_ms": 450.6416875,
+  "service_total_p95_ms": 735.5960835000001,
+  "split": "development_probe",
+  "status": "complete"
+}

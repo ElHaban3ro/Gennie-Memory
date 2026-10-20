@@ -1,0 +1,121 @@
+{
+  "by_segment": {
+    "conversation/answer_language": {
+      "cases": 5,
+      "correct": 5
+    },
+    "conversation/artifact": {
+      "cases": 5,
+      "correct": 5
+    },
+    "conversation/changed_assumption": {
+      "cases": 5,
+      "correct": 4
+    },
+    "conversation/correction": {
+      "cases": 5,
+      "correct": 5
+    },
+    "conversation/deadline": {
+      "cases": 5,
+      "correct": 5
+    },
+    "conversation/decision": {
+      "cases": 5,
+      "correct": 5
+    },
+    "conversation/evidence": {
+      "cases": 5,
+      "correct": 5
+    },
+    "conversation/negative_approved_budget": {
+      "cases": 5,
+      "correct": 5
+    },
+    "conversation/negative_deployment_date": {
+      "cases": 5,
+      "correct": 5
+    },
+    "conversation/negative_device_model": {
+      "cases": 5,
+      "correct": 5
+    },
+    "conversation/negative_secret": {
+      "cases": 5,
+      "correct": 5
+    },
+    "conversation/negative_signed_client": {
+      "cases": 5,
+      "correct": 5
+    },
+    "conversation/next_step": {
+      "cases": 5,
+      "correct": 5
+    },
+    "conversation/open_question": {
+      "cases": 5,
+      "correct": 5
+    },
+    "conversation/owner": {
+      "cases": 5,
+      "correct": 5
+    },
+    "conversation/pending_test": {
+      "cases": 5,
+      "correct": 5
+    },
+    "conversation/rejected_option": {
+      "cases": 5,
+      "correct": 5
+    },
+    "conversation/response_style": {
+      "cases": 5,
+      "correct": 1
+    },
+    "conversation/temporary_constraint": {
+      "cases": 5,
+      "correct": 5
+    },
+    "conversation/tool_result": {
+      "cases": 5,
+      "correct": 5
+    }
+  },
+  "candidate_recall": 74,
+  "cases": 100,
+  "classifier_p50_ms": 369.3774165,
+  "classifier_p95_ms": 1509.8737693999994,
+  "correct": 95,
+  "cost_reported_cases": 100,
+  "degraded": 0,
+  "elapsed_p50_ms": 373.263334,
+  "elapsed_p95_ms": 1512.6820243499992,
+  "forbidden_leak_count": 0,
+  "input_tokens_p50": 760.0,
+  "input_tokens_reported_cases": 100,
+  "manifest": {
+    "binary_sha256": "585d4cc6627b8f79f1be3fabaab309d9f8c369cd6b43e249e524dce2b1afced0",
+    "case_count": 100,
+    "cases_sha256": "b98901c136f6fa96d1a66bf931e5973dbc3dfaf3eb134d0252226b0cf9e3b156",
+    "database_sha256": "583ec80e67b8d9eda8a5c127dee8db519f246079a49781a353fe2d44b1b0422e",
+    "format": 1,
+    "kind": "manifest",
+    "provider": "decisions",
+    "split": "development"
+  },
+  "negative": 25,
+  "negative_candidate_empty": 0,
+  "negative_empty": 25,
+  "output_tokens_p50": 0.0,
+  "output_tokens_reported_cases": 100,
+  "positive": 75,
+  "positive_correct": 70,
+  "provider": "decisions",
+  "reported_cost_usd": 0.0075499,
+  "search_p50_ms": 1.209375,
+  "search_p95_ms": 3.0846562499999997,
+  "service_total_p50_ms": 372.1355625,
+  "service_total_p95_ms": 1511.9694961499995,
+  "split": "development",
+  "status": "complete"
+}

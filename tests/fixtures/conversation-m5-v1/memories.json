@@ -1,0 +1,2702 @@
+[
+  {
+    "id": "cm5_64cd7ab1104f5a4d3a07",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_021",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 21 sobre una entrega de panel interno, la decisión final fue publicar primero una versión de lectura.",
+    "summary": "En la conversación ficticia 21 sobre una entrega de panel interno, la decisión final fue publicar primero una versión de lectura.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/21/decision"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_6f5db84c1651dbd08c00",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_021",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 21 sobre una entrega de panel interno, se descartó activar la edición masiva.",
+    "summary": "En la conversación ficticia 21 sobre una entrega de panel interno, se descartó activar la edición masiva.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/21/rejected_option"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_3afc2bab804879707451",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_021",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 21 sobre una entrega de panel interno, Inés quedó responsable de la siguiente revisión.",
+    "summary": "En la conversación ficticia 21 sobre una entrega de panel interno, Inés quedó responsable de la siguiente revisión.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/21/owner"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_2497f30aa29fbbeebf91",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_021",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 21 sobre una entrega de panel interno, la fecha fijada para la revisión fue 2026-11-04.",
+    "summary": "En la conversación ficticia 21 sobre una entrega de panel interno, la fecha fijada para la revisión fue 2026-11-04.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/21/deadline"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_b00c67e1d61664e8cca0",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_021",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 21 sobre una entrega de panel interno, se acordó no compartir capturas fuera del equipo durante esta conversación.",
+    "summary": "En la conversación ficticia 21 sobre una entrega de panel interno, se acordó no compartir capturas fuera del equipo durante esta conversación.",
+    "conditions": "Durante esta conversación",
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/21/temporary_constraint"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_2f780592ca1a2f9022c5",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_021",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 21 sobre una entrega de panel interno, se pidió responder con pasos numerados.",
+    "summary": "En la conversación ficticia 21 sobre una entrega de panel interno, se pidió responder con pasos numerados.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/21/response_style"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_a9e085c97c12b5ba49bc",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_021",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 21 sobre una entrega de panel interno, dejó de asumirse que el archivo CSV era definitivo.",
+    "summary": "En la conversación ficticia 21 sobre una entrega de panel interno, dejó de asumirse que el archivo CSV era definitivo.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/21/changed_assumption"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_924a52e34a36d95504ce",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_021",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 21 sobre una entrega de panel interno, quedó abierta la pregunta de quién validará los permisos.",
+    "summary": "En la conversación ficticia 21 sobre una entrega de panel interno, quedó abierta la pregunta de quién validará los permisos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/21/open_question"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_51fa5d0e65d51a08bc01",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_021",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 21 sobre una entrega de panel interno, el validador de esquema devolvió cero errores de estructura.",
+    "summary": "En la conversación ficticia 21 sobre una entrega de panel interno, el validador de esquema devolvió cero errores de estructura.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/21/tool_result"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_46a5f68ef0ff6d74f07b",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_021",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 21 sobre una entrega de panel interno, se corrigió el dato de 24 columnas a 23 columnas.",
+    "summary": "En la conversación ficticia 21 sobre una entrega de panel interno, se corrigió el dato de 24 columnas a 23 columnas.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/21/correction"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_9111f3df5dd06d015c7d",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_021",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 21 sobre una entrega de panel interno, se tomó el registro de importación como evidencia principal.",
+    "summary": "En la conversación ficticia 21 sobre una entrega de panel interno, se tomó el registro de importación como evidencia principal.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/21/evidence"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_0f860164206420f55c45",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_021",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 21 sobre una entrega de panel interno, el artefacto producido se llamó panel-revision-b.csv.",
+    "summary": "En la conversación ficticia 21 sobre una entrega de panel interno, el artefacto producido se llamó panel-revision-b.csv.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/21/artifact"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_fdd698daefca0c5ebff7",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_021",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 21 sobre una entrega de panel interno, quedó pendiente probar la importación con un archivo vacío.",
+    "summary": "En la conversación ficticia 21 sobre una entrega de panel interno, quedó pendiente probar la importación con un archivo vacío.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/21/pending_test"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_8660680f926880c372f9",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_021",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 21 sobre una entrega de panel interno, el siguiente paso acordado fue comparar las dos rutas de lectura.",
+    "summary": "En la conversación ficticia 21 sobre una entrega de panel interno, el siguiente paso acordado fue comparar las dos rutas de lectura.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/21/next_step"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_ed945be6748934034fa8",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_021",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 21 sobre una entrega de panel interno, se pidió explicar el resultado en español.",
+    "summary": "En la conversación ficticia 21 sobre una entrega de panel interno, se pidió explicar el resultado en español.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/21/answer_language"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_9d830242b59e2ffab28e",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_021",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 21 sobre una entrega de panel interno, se anotó una propuesta inicial que no llegó a ser una decisión.",
+    "summary": "En la conversación ficticia 21 sobre una entrega de panel interno, se anotó una propuesta inicial que no llegó a ser una decisión.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/21/draft_decision"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_274624b39bc8ad1d6062",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_021",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 21 sobre una entrega de panel interno, otra persona participó como observadora sin asumir la revisión.",
+    "summary": "En la conversación ficticia 21 sobre una entrega de panel interno, otra persona participó como observadora sin asumir la revisión.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/21/alternative_owner"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_a75202cc6f8161ea6660",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_021",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 21 sobre una entrega de panel interno, se mencionó una fecha tentativa para una tarea distinta.",
+    "summary": "En la conversación ficticia 21 sobre una entrega de panel interno, se mencionó una fecha tentativa para una tarea distinta.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/21/tentative_deadline"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_98cddc264221c890d9bf",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_021",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 21 sobre una entrega de panel interno, la publicación se mantuvo pendiente de comprobación.",
+    "summary": "En la conversación ficticia 21 sobre una entrega de panel interno, la publicación se mantuvo pendiente de comprobación.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/21/publication_status"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_ced5f2540c8367679efd",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_021",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 21 sobre una entrega de panel interno, se comentó que el título podía acortarse más adelante.",
+    "summary": "En la conversación ficticia 21 sobre una entrega de panel interno, se comentó que el título podía acortarse más adelante.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/21/style_review"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_f6c7cf3db0d2d6654769",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_021",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 21 sobre una entrega de panel interno, todavía se asumía que había espacio suficiente en disco.",
+    "summary": "En la conversación ficticia 21 sobre una entrega de panel interno, todavía se asumía que había espacio suficiente en disco.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/21/remaining_assumption"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_b448685898c40758988b",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_021",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 21 sobre una entrega de panel interno, también se planteó una duda secundaria sobre el orden de lectura.",
+    "summary": "En la conversación ficticia 21 sobre una entrega de panel interno, también se planteó una duda secundaria sobre el orden de lectura.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/21/secondary_question"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_391485445ce115cad2a6",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_021",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 21 sobre una entrega de panel interno, otra herramienta solo confirmó que se pudo abrir un archivo.",
+    "summary": "En la conversación ficticia 21 sobre una entrega de panel interno, otra herramienta solo confirmó que se pudo abrir un archivo.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/21/secondary_tool"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_9e9bcb8ebd62966f29eb",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_021",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 21 sobre una entrega de panel interno, se anotó una estimación preliminar de recursos.",
+    "summary": "En la conversación ficticia 21 sobre una entrega de panel interno, se anotó una estimación preliminar de recursos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/21/estimated_budget"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_03e2c7c8e97c62e14f14",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_021",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 21 sobre una entrega de panel interno, hubo un borrador anterior que no fue el artefacto final.",
+    "summary": "En la conversación ficticia 21 sobre una entrega de panel interno, hubo un borrador anterior que no fue el artefacto final.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/21/draft_artifact"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_28198f08e65766d2ef4d",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_021",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 21 sobre una entrega de panel interno, una prueba anterior de formato ya estaba completada.",
+    "summary": "En la conversación ficticia 21 sobre una entrega de panel interno, una prueba anterior de formato ya estaba completada.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/21/completed_test"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_86b4623aebcb1127d218",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_021",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 21 sobre una entrega de panel interno, la publicación general se dejó para una fase posterior.",
+    "summary": "En la conversación ficticia 21 sobre una entrega de panel interno, la publicación general se dejó para una fase posterior.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/21/later_step"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_6f8835fdade71648377b",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_021",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 21 sobre una entrega de panel interno, se pidió verificar una fuente secundaria antes de citarla.",
+    "summary": "En la conversación ficticia 21 sobre una entrega de panel interno, se pidió verificar una fuente secundaria antes de citarla.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/21/source_review"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_d51d5d572970d76f7a4f",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_021",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 21 sobre una entrega de panel interno, se revisó la disponibilidad de una sala de reunión.",
+    "summary": "En la conversación ficticia 21 sobre una entrega de panel interno, se revisó la disponibilidad de una sala de reunión.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/21/device_note"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_192d5ba8245d1e7a680c",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_021",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 21 sobre una entrega de panel interno, se preparó una copia interna del resumen.",
+    "summary": "En la conversación ficticia 21 sobre una entrega de panel interno, se preparó una copia interna del resumen.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/21/client_note"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_42d7dd2b868b13f8df57",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_022",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 22 sobre una migración de archivos, la decisión final fue mover solo los documentos activos.",
+    "summary": "En la conversación ficticia 22 sobre una migración de archivos, la decisión final fue mover solo los documentos activos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/22/decision"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_c6198816cfff38aa995d",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_022",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 22 sobre una migración de archivos, se descartó copiar todo el archivo histórico.",
+    "summary": "En la conversación ficticia 22 sobre una migración de archivos, se descartó copiar todo el archivo histórico.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/22/rejected_option"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_fb5881856581556a5b71",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_022",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 22 sobre una migración de archivos, Berto quedó responsable de la siguiente revisión.",
+    "summary": "En la conversación ficticia 22 sobre una migración de archivos, Berto quedó responsable de la siguiente revisión.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/22/owner"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_10070c463a4f76ba3acb",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_022",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 22 sobre una migración de archivos, la fecha fijada para la revisión fue 2026-11-11.",
+    "summary": "En la conversación ficticia 22 sobre una migración de archivos, la fecha fijada para la revisión fue 2026-11-11.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/22/deadline"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_beeff2db875dbd522ee8",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_022",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 22 sobre una migración de archivos, se acordó no borrar originales durante la revisión durante esta conversación.",
+    "summary": "En la conversación ficticia 22 sobre una migración de archivos, se acordó no borrar originales durante la revisión durante esta conversación.",
+    "conditions": "Durante esta conversación",
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/22/temporary_constraint"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_faef6c8f12040c5c3ef4",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_022",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 22 sobre una migración de archivos, se pidió responder con una tabla breve.",
+    "summary": "En la conversación ficticia 22 sobre una migración de archivos, se pidió responder con una tabla breve.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/22/response_style"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_7be44d69fb97e4dcee16",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_022",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 22 sobre una migración de archivos, dejó de asumirse que todos los nombres eran únicos.",
+    "summary": "En la conversación ficticia 22 sobre una migración de archivos, dejó de asumirse que todos los nombres eran únicos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/22/changed_assumption"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_a0af7a8643de19cb8c81",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_022",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 22 sobre una migración de archivos, quedó abierta la pregunta de cómo tratar los duplicados.",
+    "summary": "En la conversación ficticia 22 sobre una migración de archivos, quedó abierta la pregunta de cómo tratar los duplicados.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/22/open_question"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_2e293ee07288bb1512d5",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_022",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 22 sobre una migración de archivos, el comparador de hashes devolvió tres duplicados probables.",
+    "summary": "En la conversación ficticia 22 sobre una migración de archivos, el comparador de hashes devolvió tres duplicados probables.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/22/tool_result"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_b9c0f654ea6d5590f980",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_022",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 22 sobre una migración de archivos, se corrigió el dato de 18 carpetas a 19 carpetas.",
+    "summary": "En la conversación ficticia 22 sobre una migración de archivos, se corrigió el dato de 18 carpetas a 19 carpetas.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/22/correction"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_634ed1ae1be33eef733e",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_022",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 22 sobre una migración de archivos, se tomó el inventario firmado como evidencia principal.",
+    "summary": "En la conversación ficticia 22 sobre una migración de archivos, se tomó el inventario firmado como evidencia principal.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/22/evidence"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_b3136b43056255f5f365",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_022",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 22 sobre una migración de archivos, el artefacto producido se llamó migracion-lote-c.json.",
+    "summary": "En la conversación ficticia 22 sobre una migración de archivos, el artefacto producido se llamó migracion-lote-c.json.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/22/artifact"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_07afa0072e7b413b7525",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_022",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 22 sobre una migración de archivos, quedó pendiente restaurar una copia de prueba.",
+    "summary": "En la conversación ficticia 22 sobre una migración de archivos, quedó pendiente restaurar una copia de prueba.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/22/pending_test"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_64757712ac3b5a379a52",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_022",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 22 sobre una migración de archivos, el siguiente paso acordado fue separar los duplicados por origen.",
+    "summary": "En la conversación ficticia 22 sobre una migración de archivos, el siguiente paso acordado fue separar los duplicados por origen.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/22/next_step"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_ea78ee73bc1944e14160",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_022",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 22 sobre una migración de archivos, se pidió explicar el resultado en portugués.",
+    "summary": "En la conversación ficticia 22 sobre una migración de archivos, se pidió explicar el resultado en portugués.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/22/answer_language"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_8d0890b4e1bcb438b473",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_022",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 22 sobre una migración de archivos, se anotó una propuesta inicial que no llegó a ser una decisión.",
+    "summary": "En la conversación ficticia 22 sobre una migración de archivos, se anotó una propuesta inicial que no llegó a ser una decisión.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/22/draft_decision"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_a69f81cac55e59c47ded",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_022",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 22 sobre una migración de archivos, otra persona participó como observadora sin asumir la revisión.",
+    "summary": "En la conversación ficticia 22 sobre una migración de archivos, otra persona participó como observadora sin asumir la revisión.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/22/alternative_owner"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_5b0b47f9c109bef27cea",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_022",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 22 sobre una migración de archivos, se mencionó una fecha tentativa para una tarea distinta.",
+    "summary": "En la conversación ficticia 22 sobre una migración de archivos, se mencionó una fecha tentativa para una tarea distinta.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/22/tentative_deadline"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_70e190d16b27a93035b9",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_022",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 22 sobre una migración de archivos, la publicación se mantuvo pendiente de comprobación.",
+    "summary": "En la conversación ficticia 22 sobre una migración de archivos, la publicación se mantuvo pendiente de comprobación.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/22/publication_status"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_62c26ff8f02c85c3295e",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_022",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 22 sobre una migración de archivos, se comentó que el título podía acortarse más adelante.",
+    "summary": "En la conversación ficticia 22 sobre una migración de archivos, se comentó que el título podía acortarse más adelante.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/22/style_review"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_e94480a7376ea9fb884b",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_022",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 22 sobre una migración de archivos, todavía se asumía que había espacio suficiente en disco.",
+    "summary": "En la conversación ficticia 22 sobre una migración de archivos, todavía se asumía que había espacio suficiente en disco.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/22/remaining_assumption"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_68d105d00a8ad7a31c21",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_022",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 22 sobre una migración de archivos, también se planteó una duda secundaria sobre el orden de lectura.",
+    "summary": "En la conversación ficticia 22 sobre una migración de archivos, también se planteó una duda secundaria sobre el orden de lectura.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/22/secondary_question"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_7c47abd524604dfb19f5",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_022",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 22 sobre una migración de archivos, otra herramienta solo confirmó que se pudo abrir un archivo.",
+    "summary": "En la conversación ficticia 22 sobre una migración de archivos, otra herramienta solo confirmó que se pudo abrir un archivo.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/22/secondary_tool"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_19bfd2ed91ddeba0ce85",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_022",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 22 sobre una migración de archivos, se anotó una estimación preliminar de recursos.",
+    "summary": "En la conversación ficticia 22 sobre una migración de archivos, se anotó una estimación preliminar de recursos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/22/estimated_budget"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_d9613b38786c891c28e4",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_022",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 22 sobre una migración de archivos, hubo un borrador anterior que no fue el artefacto final.",
+    "summary": "En la conversación ficticia 22 sobre una migración de archivos, hubo un borrador anterior que no fue el artefacto final.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/22/draft_artifact"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_b9ce07e03dd8ebd3fe8c",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_022",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 22 sobre una migración de archivos, una prueba anterior de formato ya estaba completada.",
+    "summary": "En la conversación ficticia 22 sobre una migración de archivos, una prueba anterior de formato ya estaba completada.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/22/completed_test"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_9d30c5219fa4dec75b01",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_022",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 22 sobre una migración de archivos, la publicación general se dejó para una fase posterior.",
+    "summary": "En la conversación ficticia 22 sobre una migración de archivos, la publicación general se dejó para una fase posterior.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/22/later_step"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_334e7abef4490b247553",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_022",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 22 sobre una migración de archivos, se pidió verificar una fuente secundaria antes de citarla.",
+    "summary": "En la conversación ficticia 22 sobre una migración de archivos, se pidió verificar una fuente secundaria antes de citarla.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/22/source_review"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_f583f3382246d043e019",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_022",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 22 sobre una migración de archivos, se revisó la disponibilidad de una sala de reunión.",
+    "summary": "En la conversación ficticia 22 sobre una migración de archivos, se revisó la disponibilidad de una sala de reunión.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/22/device_note"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_4b4ad4254818a7d71572",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_022",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 22 sobre una migración de archivos, se preparó una copia interna del resumen.",
+    "summary": "En la conversación ficticia 22 sobre una migración de archivos, se preparó una copia interna del resumen.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/22/client_note"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_524ee5983310a8fb1aab",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_023",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 23 sobre una evaluación de latencia, la decisión final fue medir por separado búsqueda y composición.",
+    "summary": "En la conversación ficticia 23 sobre una evaluación de latencia, la decisión final fue medir por separado búsqueda y composición.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/23/decision"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_e2949f21f9c03344ea93",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_023",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 23 sobre una evaluación de latencia, se descartó usar solo el promedio agregado.",
+    "summary": "En la conversación ficticia 23 sobre una evaluación de latencia, se descartó usar solo el promedio agregado.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/23/rejected_option"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_2606c7c2b0de4075bb1b",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_023",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 23 sobre una evaluación de latencia, Carla quedó responsable de la siguiente revisión.",
+    "summary": "En la conversación ficticia 23 sobre una evaluación de latencia, Carla quedó responsable de la siguiente revisión.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/23/owner"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_19c5ef7457cfb67f18c8",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_023",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 23 sobre una evaluación de latencia, la fecha fijada para la revisión fue 2026-11-18.",
+    "summary": "En la conversación ficticia 23 sobre una evaluación de latencia, la fecha fijada para la revisión fue 2026-11-18.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/23/deadline"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_fe91ff5d1f4e6c528519",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_023",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 23 sobre una evaluación de latencia, se acordó no presentar sumas como tiempo de punta a punta durante esta conversación.",
+    "summary": "En la conversación ficticia 23 sobre una evaluación de latencia, se acordó no presentar sumas como tiempo de punta a punta durante esta conversación.",
+    "conditions": "Durante esta conversación",
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/23/temporary_constraint"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_c295aacdc2c1426a0665",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_023",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 23 sobre una evaluación de latencia, se pidió responder con dos párrafos concisos.",
+    "summary": "En la conversación ficticia 23 sobre una evaluación de latencia, se pidió responder con dos párrafos concisos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/23/response_style"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_1a7c1b2e998c34581863",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_023",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 23 sobre una evaluación de latencia, dejó de asumirse que la caché estaba caliente en todas las corridas.",
+    "summary": "En la conversación ficticia 23 sobre una evaluación de latencia, dejó de asumirse que la caché estaba caliente en todas las corridas.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/23/changed_assumption"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_4939a34ad9ccd7b7b22e",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_023",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 23 sobre una evaluación de latencia, quedó abierta la pregunta de cuánto tarda el primer acceso.",
+    "summary": "En la conversación ficticia 23 sobre una evaluación de latencia, quedó abierta la pregunta de cuánto tarda el primer acceso.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/23/open_question"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_50943dbe1fcc715f4e1b",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_023",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 23 sobre una evaluación de latencia, el medidor local devolvió p95 de 42 milisegundos.",
+    "summary": "En la conversación ficticia 23 sobre una evaluación de latencia, el medidor local devolvió p95 de 42 milisegundos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/23/tool_result"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_22777d829704ab6b7edc",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_023",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 23 sobre una evaluación de latencia, se corrigió el dato de seis muestras a ocho muestras.",
+    "summary": "En la conversación ficticia 23 sobre una evaluación de latencia, se corrigió el dato de seis muestras a ocho muestras.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/23/correction"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_fa570c206c9f27e43e19",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_023",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 23 sobre una evaluación de latencia, se tomó las trazas con marcas de tiempo como evidencia principal.",
+    "summary": "En la conversación ficticia 23 sobre una evaluación de latencia, se tomó las trazas con marcas de tiempo como evidencia principal.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/23/evidence"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_0e6503ae2ae212751b81",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_023",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 23 sobre una evaluación de latencia, el artefacto producido se llamó latencia-ronda-2.jsonl.",
+    "summary": "En la conversación ficticia 23 sobre una evaluación de latencia, el artefacto producido se llamó latencia-ronda-2.jsonl.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/23/artifact"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_cb1f58d3dcb234f85c0d",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_023",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 23 sobre una evaluación de latencia, quedó pendiente repetir el arranque en frío.",
+    "summary": "En la conversación ficticia 23 sobre una evaluación de latencia, quedó pendiente repetir el arranque en frío.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/23/pending_test"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_20567cfb27835624cf5f",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_023",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 23 sobre una evaluación de latencia, el siguiente paso acordado fue agrupar los tiempos por etapa.",
+    "summary": "En la conversación ficticia 23 sobre una evaluación de latencia, el siguiente paso acordado fue agrupar los tiempos por etapa.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/23/next_step"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_b608742cdee8b6bfb409",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_023",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 23 sobre una evaluación de latencia, se pidió explicar el resultado en inglés.",
+    "summary": "En la conversación ficticia 23 sobre una evaluación de latencia, se pidió explicar el resultado en inglés.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/23/answer_language"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_5d34ad0980945f187ddc",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_023",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 23 sobre una evaluación de latencia, se anotó una propuesta inicial que no llegó a ser una decisión.",
+    "summary": "En la conversación ficticia 23 sobre una evaluación de latencia, se anotó una propuesta inicial que no llegó a ser una decisión.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/23/draft_decision"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_02935a447b561a0a472e",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_023",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 23 sobre una evaluación de latencia, otra persona participó como observadora sin asumir la revisión.",
+    "summary": "En la conversación ficticia 23 sobre una evaluación de latencia, otra persona participó como observadora sin asumir la revisión.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/23/alternative_owner"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_4eb17c69f2180b08dcee",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_023",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 23 sobre una evaluación de latencia, se mencionó una fecha tentativa para una tarea distinta.",
+    "summary": "En la conversación ficticia 23 sobre una evaluación de latencia, se mencionó una fecha tentativa para una tarea distinta.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/23/tentative_deadline"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_8d4120ce00c2d917bd9f",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_023",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 23 sobre una evaluación de latencia, la publicación se mantuvo pendiente de comprobación.",
+    "summary": "En la conversación ficticia 23 sobre una evaluación de latencia, la publicación se mantuvo pendiente de comprobación.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/23/publication_status"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_4ef1df261b8e67381966",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_023",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 23 sobre una evaluación de latencia, se comentó que el título podía acortarse más adelante.",
+    "summary": "En la conversación ficticia 23 sobre una evaluación de latencia, se comentó que el título podía acortarse más adelante.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/23/style_review"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_032b15b0c7f4d6f6e4ca",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_023",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 23 sobre una evaluación de latencia, todavía se asumía que había espacio suficiente en disco.",
+    "summary": "En la conversación ficticia 23 sobre una evaluación de latencia, todavía se asumía que había espacio suficiente en disco.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/23/remaining_assumption"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_63e32d0621dc94841540",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_023",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 23 sobre una evaluación de latencia, también se planteó una duda secundaria sobre el orden de lectura.",
+    "summary": "En la conversación ficticia 23 sobre una evaluación de latencia, también se planteó una duda secundaria sobre el orden de lectura.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/23/secondary_question"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_874940603833af91aadd",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_023",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 23 sobre una evaluación de latencia, otra herramienta solo confirmó que se pudo abrir un archivo.",
+    "summary": "En la conversación ficticia 23 sobre una evaluación de latencia, otra herramienta solo confirmó que se pudo abrir un archivo.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/23/secondary_tool"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_6bf183afeba6dcc2d7b1",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_023",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 23 sobre una evaluación de latencia, se anotó una estimación preliminar de recursos.",
+    "summary": "En la conversación ficticia 23 sobre una evaluación de latencia, se anotó una estimación preliminar de recursos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/23/estimated_budget"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_3dc79f3d45eb2c7c8d84",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_023",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 23 sobre una evaluación de latencia, hubo un borrador anterior que no fue el artefacto final.",
+    "summary": "En la conversación ficticia 23 sobre una evaluación de latencia, hubo un borrador anterior que no fue el artefacto final.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/23/draft_artifact"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_810aa06708461fcac24b",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_023",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 23 sobre una evaluación de latencia, una prueba anterior de formato ya estaba completada.",
+    "summary": "En la conversación ficticia 23 sobre una evaluación de latencia, una prueba anterior de formato ya estaba completada.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/23/completed_test"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_bf5dec0772ff85029d74",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_023",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 23 sobre una evaluación de latencia, la publicación general se dejó para una fase posterior.",
+    "summary": "En la conversación ficticia 23 sobre una evaluación de latencia, la publicación general se dejó para una fase posterior.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/23/later_step"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_a63f5ad159dd5cfbf1ce",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_023",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 23 sobre una evaluación de latencia, se pidió verificar una fuente secundaria antes de citarla.",
+    "summary": "En la conversación ficticia 23 sobre una evaluación de latencia, se pidió verificar una fuente secundaria antes de citarla.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/23/source_review"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_f2bc9feab877ee3e2707",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_023",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 23 sobre una evaluación de latencia, se revisó la disponibilidad de una sala de reunión.",
+    "summary": "En la conversación ficticia 23 sobre una evaluación de latencia, se revisó la disponibilidad de una sala de reunión.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/23/device_note"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_77d791aa690091e618b9",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_023",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 23 sobre una evaluación de latencia, se preparó una copia interna del resumen.",
+    "summary": "En la conversación ficticia 23 sobre una evaluación de latencia, se preparó una copia interna del resumen.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/23/client_note"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_2a7fcad9949c88006a9a",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_024",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 24 sobre una guía editorial, la decisión final fue mantener el glosario en un archivo separado.",
+    "summary": "En la conversación ficticia 24 sobre una guía editorial, la decisión final fue mantener el glosario en un archivo separado.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/24/decision"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_dd9619e3c0266e0f8708",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_024",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 24 sobre una guía editorial, se descartó duplicar términos en cada capítulo.",
+    "summary": "En la conversación ficticia 24 sobre una guía editorial, se descartó duplicar términos en cada capítulo.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/24/rejected_option"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_f735c4c195df96b785ee",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_024",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 24 sobre una guía editorial, Diego quedó responsable de la siguiente revisión.",
+    "summary": "En la conversación ficticia 24 sobre una guía editorial, Diego quedó responsable de la siguiente revisión.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/24/owner"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_2e16a1f0491236b6d28f",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_024",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 24 sobre una guía editorial, la fecha fijada para la revisión fue 2026-11-25.",
+    "summary": "En la conversación ficticia 24 sobre una guía editorial, la fecha fijada para la revisión fue 2026-11-25.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/24/deadline"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_14715092bf794cf6403b",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_024",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 24 sobre una guía editorial, se acordó no publicar citas sin atribución durante esta conversación.",
+    "summary": "En la conversación ficticia 24 sobre una guía editorial, se acordó no publicar citas sin atribución durante esta conversación.",
+    "conditions": "Durante esta conversación",
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/24/temporary_constraint"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_5fdfd02b5ebda685a318",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_024",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 24 sobre una guía editorial, se pidió responder con un ejemplo antes de la regla.",
+    "summary": "En la conversación ficticia 24 sobre una guía editorial, se pidió responder con un ejemplo antes de la regla.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/24/response_style"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_6b70a20144726e007b92",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_024",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 24 sobre una guía editorial, dejó de asumirse que la traducción previa estaba aprobada.",
+    "summary": "En la conversación ficticia 24 sobre una guía editorial, dejó de asumirse que la traducción previa estaba aprobada.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/24/changed_assumption"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_c7fa346c73daa235a752",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_024",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 24 sobre una guía editorial, quedó abierta la pregunta de quién revisará los regionalismos.",
+    "summary": "En la conversación ficticia 24 sobre una guía editorial, quedó abierta la pregunta de quién revisará los regionalismos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/24/open_question"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_fba89809667f82a7e0f9",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_024",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 24 sobre una guía editorial, el verificador de enlaces devolvió dos enlaces rotos.",
+    "summary": "En la conversación ficticia 24 sobre una guía editorial, el verificador de enlaces devolvió dos enlaces rotos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/24/tool_result"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_c4a073d42c0de10405ea",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_024",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 24 sobre una guía editorial, se corrigió el dato de capítulo cuatro a capítulo cinco.",
+    "summary": "En la conversación ficticia 24 sobre una guía editorial, se corrigió el dato de capítulo cuatro a capítulo cinco.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/24/correction"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_34803690d09bbcf1624e",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_024",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 24 sobre una guía editorial, se tomó las notas de revisión como evidencia principal.",
+    "summary": "En la conversación ficticia 24 sobre una guía editorial, se tomó las notas de revisión como evidencia principal.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/24/evidence"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_251fdbaa84128a9a81bd",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_024",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 24 sobre una guía editorial, el artefacto producido se llamó glosario-v3.md.",
+    "summary": "En la conversación ficticia 24 sobre una guía editorial, el artefacto producido se llamó glosario-v3.md.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/24/artifact"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_172a883ee905fc96a94a",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_024",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 24 sobre una guía editorial, quedó pendiente leer la guía con un editor externo.",
+    "summary": "En la conversación ficticia 24 sobre una guía editorial, quedó pendiente leer la guía con un editor externo.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/24/pending_test"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_04fa462ad8a47108324f",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_024",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 24 sobre una guía editorial, el siguiente paso acordado fue resolver los dos enlaces rotos.",
+    "summary": "En la conversación ficticia 24 sobre una guía editorial, el siguiente paso acordado fue resolver los dos enlaces rotos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/24/next_step"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_9a32c53da00deec4ab9c",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_024",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 24 sobre una guía editorial, se pidió explicar el resultado en francés.",
+    "summary": "En la conversación ficticia 24 sobre una guía editorial, se pidió explicar el resultado en francés.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/24/answer_language"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_779780e651e3d873c191",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_024",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 24 sobre una guía editorial, se anotó una propuesta inicial que no llegó a ser una decisión.",
+    "summary": "En la conversación ficticia 24 sobre una guía editorial, se anotó una propuesta inicial que no llegó a ser una decisión.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/24/draft_decision"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_973db19cf7587a87e81a",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_024",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 24 sobre una guía editorial, otra persona participó como observadora sin asumir la revisión.",
+    "summary": "En la conversación ficticia 24 sobre una guía editorial, otra persona participó como observadora sin asumir la revisión.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/24/alternative_owner"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_c672f4508bd428b4d534",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_024",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 24 sobre una guía editorial, se mencionó una fecha tentativa para una tarea distinta.",
+    "summary": "En la conversación ficticia 24 sobre una guía editorial, se mencionó una fecha tentativa para una tarea distinta.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/24/tentative_deadline"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_64e2bc94f5297ea916ea",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_024",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 24 sobre una guía editorial, la publicación se mantuvo pendiente de comprobación.",
+    "summary": "En la conversación ficticia 24 sobre una guía editorial, la publicación se mantuvo pendiente de comprobación.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/24/publication_status"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_8302946324ed5cec0d8e",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_024",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 24 sobre una guía editorial, se comentó que el título podía acortarse más adelante.",
+    "summary": "En la conversación ficticia 24 sobre una guía editorial, se comentó que el título podía acortarse más adelante.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/24/style_review"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_fa8cce1b908a561f7e1e",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_024",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 24 sobre una guía editorial, todavía se asumía que había espacio suficiente en disco.",
+    "summary": "En la conversación ficticia 24 sobre una guía editorial, todavía se asumía que había espacio suficiente en disco.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/24/remaining_assumption"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_fb1fc5482f8da9bc797d",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_024",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 24 sobre una guía editorial, también se planteó una duda secundaria sobre el orden de lectura.",
+    "summary": "En la conversación ficticia 24 sobre una guía editorial, también se planteó una duda secundaria sobre el orden de lectura.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/24/secondary_question"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_053fd7ea46ed3b4ba535",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_024",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 24 sobre una guía editorial, otra herramienta solo confirmó que se pudo abrir un archivo.",
+    "summary": "En la conversación ficticia 24 sobre una guía editorial, otra herramienta solo confirmó que se pudo abrir un archivo.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/24/secondary_tool"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_2e09888904d0c5736ac6",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_024",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 24 sobre una guía editorial, se anotó una estimación preliminar de recursos.",
+    "summary": "En la conversación ficticia 24 sobre una guía editorial, se anotó una estimación preliminar de recursos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/24/estimated_budget"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_194136f55dfd6fbd27a7",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_024",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 24 sobre una guía editorial, hubo un borrador anterior que no fue el artefacto final.",
+    "summary": "En la conversación ficticia 24 sobre una guía editorial, hubo un borrador anterior que no fue el artefacto final.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/24/draft_artifact"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_fc0be85b04f8696c8f00",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_024",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 24 sobre una guía editorial, una prueba anterior de formato ya estaba completada.",
+    "summary": "En la conversación ficticia 24 sobre una guía editorial, una prueba anterior de formato ya estaba completada.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/24/completed_test"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_c81f60f6e14d749f4e0f",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_024",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 24 sobre una guía editorial, la publicación general se dejó para una fase posterior.",
+    "summary": "En la conversación ficticia 24 sobre una guía editorial, la publicación general se dejó para una fase posterior.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/24/later_step"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_1638fa0aa0da1f1c7511",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_024",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 24 sobre una guía editorial, se pidió verificar una fuente secundaria antes de citarla.",
+    "summary": "En la conversación ficticia 24 sobre una guía editorial, se pidió verificar una fuente secundaria antes de citarla.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/24/source_review"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_3fcae8b041166e43d7db",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_024",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 24 sobre una guía editorial, se revisó la disponibilidad de una sala de reunión.",
+    "summary": "En la conversación ficticia 24 sobre una guía editorial, se revisó la disponibilidad de una sala de reunión.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/24/device_note"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_89930f8928caaddf2216",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_024",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 24 sobre una guía editorial, se preparó una copia interna del resumen.",
+    "summary": "En la conversación ficticia 24 sobre una guía editorial, se preparó una copia interna del resumen.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/24/client_note"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_0cd5e50d7add652c8a43",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_025",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 25 sobre la configuración de un laboratorio, la decisión final fue aislar la red de las máquinas de prueba.",
+    "summary": "En la conversación ficticia 25 sobre la configuración de un laboratorio, la decisión final fue aislar la red de las máquinas de prueba.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/25/decision"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_3fca38487d4bad581ea0",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_025",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 25 sobre la configuración de un laboratorio, se descartó usar la red de invitados.",
+    "summary": "En la conversación ficticia 25 sobre la configuración de un laboratorio, se descartó usar la red de invitados.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/25/rejected_option"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_e5bbdfbac81b62dcb948",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_025",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 25 sobre la configuración de un laboratorio, Elena quedó responsable de la siguiente revisión.",
+    "summary": "En la conversación ficticia 25 sobre la configuración de un laboratorio, Elena quedó responsable de la siguiente revisión.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/25/owner"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_a0aa7ba545565efecec3",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_025",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 25 sobre la configuración de un laboratorio, la fecha fijada para la revisión fue 2026-12-02.",
+    "summary": "En la conversación ficticia 25 sobre la configuración de un laboratorio, la fecha fijada para la revisión fue 2026-12-02.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/25/deadline"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_5bcdaf027123795ade83",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_025",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 25 sobre la configuración de un laboratorio, se acordó no conectar dispositivos personales durante esta conversación.",
+    "summary": "En la conversación ficticia 25 sobre la configuración de un laboratorio, se acordó no conectar dispositivos personales durante esta conversación.",
+    "conditions": "Durante esta conversación",
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/25/temporary_constraint"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_f382efbbafdc84b01ddc",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_025",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 25 sobre la configuración de un laboratorio, se pidió responder con una lista de comprobación.",
+    "summary": "En la conversación ficticia 25 sobre la configuración de un laboratorio, se pidió responder con una lista de comprobación.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/25/response_style"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_d650a3701ddd72da72b1",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_025",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 25 sobre la configuración de un laboratorio, dejó de asumirse que el adaptador USB era compatible.",
+    "summary": "En la conversación ficticia 25 sobre la configuración de un laboratorio, dejó de asumirse que el adaptador USB era compatible.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/25/changed_assumption"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_3b0882bff9d8be329a5e",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_025",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 25 sobre la configuración de un laboratorio, quedó abierta la pregunta de si habrá un puerto libre.",
+    "summary": "En la conversación ficticia 25 sobre la configuración de un laboratorio, quedó abierta la pregunta de si habrá un puerto libre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/25/open_question"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_23d5bcf31bfc543884ba",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_025",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 25 sobre la configuración de un laboratorio, el sonda de red devolvió una pérdida de paquetes del 2 %.",
+    "summary": "En la conversación ficticia 25 sobre la configuración de un laboratorio, el sonda de red devolvió una pérdida de paquetes del 2 %.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/25/tool_result"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_f3d9a38380e1f229c46d",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_025",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 25 sobre la configuración de un laboratorio, se corrigió el dato de cuatro equipos a cinco equipos.",
+    "summary": "En la conversación ficticia 25 sobre la configuración de un laboratorio, se corrigió el dato de cuatro equipos a cinco equipos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/25/correction"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_d3851cb403ba1846d68c",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_025",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 25 sobre la configuración de un laboratorio, se tomó el registro de la sonda como evidencia principal.",
+    "summary": "En la conversación ficticia 25 sobre la configuración de un laboratorio, se tomó el registro de la sonda como evidencia principal.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/25/evidence"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_9150b05b286ea511c6da",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_025",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 25 sobre la configuración de un laboratorio, el artefacto producido se llamó inventario-lab-25.csv.",
+    "summary": "En la conversación ficticia 25 sobre la configuración de un laboratorio, el artefacto producido se llamó inventario-lab-25.csv.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/25/artifact"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_22126f04dcb526953dff",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_025",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 25 sobre la configuración de un laboratorio, quedó pendiente reiniciar una máquina aislada.",
+    "summary": "En la conversación ficticia 25 sobre la configuración de un laboratorio, quedó pendiente reiniciar una máquina aislada.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/25/pending_test"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_a739ff984b2890685e07",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_025",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 25 sobre la configuración de un laboratorio, el siguiente paso acordado fue medir la red con carga.",
+    "summary": "En la conversación ficticia 25 sobre la configuración de un laboratorio, el siguiente paso acordado fue medir la red con carga.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/25/next_step"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_31e39b3a3edda5160090",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_025",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 25 sobre la configuración de un laboratorio, se pidió explicar el resultado en alemán.",
+    "summary": "En la conversación ficticia 25 sobre la configuración de un laboratorio, se pidió explicar el resultado en alemán.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/25/answer_language"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_76cb621c0ab7a7a74624",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_025",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 25 sobre la configuración de un laboratorio, se anotó una propuesta inicial que no llegó a ser una decisión.",
+    "summary": "En la conversación ficticia 25 sobre la configuración de un laboratorio, se anotó una propuesta inicial que no llegó a ser una decisión.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/25/draft_decision"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_4f7466e41094a4e5dc3b",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_025",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 25 sobre la configuración de un laboratorio, otra persona participó como observadora sin asumir la revisión.",
+    "summary": "En la conversación ficticia 25 sobre la configuración de un laboratorio, otra persona participó como observadora sin asumir la revisión.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/25/alternative_owner"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_506dc9c932e8336e7dcb",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_025",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 25 sobre la configuración de un laboratorio, se mencionó una fecha tentativa para una tarea distinta.",
+    "summary": "En la conversación ficticia 25 sobre la configuración de un laboratorio, se mencionó una fecha tentativa para una tarea distinta.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/25/tentative_deadline"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_f5dcdd191b66529e372e",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_025",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 25 sobre la configuración de un laboratorio, la publicación se mantuvo pendiente de comprobación.",
+    "summary": "En la conversación ficticia 25 sobre la configuración de un laboratorio, la publicación se mantuvo pendiente de comprobación.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/25/publication_status"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_d03ea4879ebc77013a33",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_025",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 25 sobre la configuración de un laboratorio, se comentó que el título podía acortarse más adelante.",
+    "summary": "En la conversación ficticia 25 sobre la configuración de un laboratorio, se comentó que el título podía acortarse más adelante.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/25/style_review"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_57a50ae00378955316f8",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_025",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 25 sobre la configuración de un laboratorio, todavía se asumía que había espacio suficiente en disco.",
+    "summary": "En la conversación ficticia 25 sobre la configuración de un laboratorio, todavía se asumía que había espacio suficiente en disco.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/25/remaining_assumption"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_2246b67a955639fd4a38",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_025",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 25 sobre la configuración de un laboratorio, también se planteó una duda secundaria sobre el orden de lectura.",
+    "summary": "En la conversación ficticia 25 sobre la configuración de un laboratorio, también se planteó una duda secundaria sobre el orden de lectura.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/25/secondary_question"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_c4dc8b2491455e5083b3",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_025",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 25 sobre la configuración de un laboratorio, otra herramienta solo confirmó que se pudo abrir un archivo.",
+    "summary": "En la conversación ficticia 25 sobre la configuración de un laboratorio, otra herramienta solo confirmó que se pudo abrir un archivo.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/25/secondary_tool"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_9e6a04168c32f945f168",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_025",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 25 sobre la configuración de un laboratorio, se anotó una estimación preliminar de recursos.",
+    "summary": "En la conversación ficticia 25 sobre la configuración de un laboratorio, se anotó una estimación preliminar de recursos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/25/estimated_budget"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_0a3b002ce5631a32f2ff",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_025",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 25 sobre la configuración de un laboratorio, hubo un borrador anterior que no fue el artefacto final.",
+    "summary": "En la conversación ficticia 25 sobre la configuración de un laboratorio, hubo un borrador anterior que no fue el artefacto final.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/25/draft_artifact"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_34aa677cbec7d3adceb4",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_025",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 25 sobre la configuración de un laboratorio, una prueba anterior de formato ya estaba completada.",
+    "summary": "En la conversación ficticia 25 sobre la configuración de un laboratorio, una prueba anterior de formato ya estaba completada.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/25/completed_test"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_0aade4414845faf89880",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_025",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 25 sobre la configuración de un laboratorio, la publicación general se dejó para una fase posterior.",
+    "summary": "En la conversación ficticia 25 sobre la configuración de un laboratorio, la publicación general se dejó para una fase posterior.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/25/later_step"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_8e5c35a8faf36b595b8b",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_025",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 25 sobre la configuración de un laboratorio, se pidió verificar una fuente secundaria antes de citarla.",
+    "summary": "En la conversación ficticia 25 sobre la configuración de un laboratorio, se pidió verificar una fuente secundaria antes de citarla.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/25/source_review"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_5b7fa78f60a882d67c58",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_025",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 25 sobre la configuración de un laboratorio, se revisó la disponibilidad de una sala de reunión.",
+    "summary": "En la conversación ficticia 25 sobre la configuración de un laboratorio, se revisó la disponibilidad de una sala de reunión.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/25/device_note"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_0c55cf7404209cd8f399",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_025",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 25 sobre la configuración de un laboratorio, se preparó una copia interna del resumen.",
+    "summary": "En la conversación ficticia 25 sobre la configuración de un laboratorio, se preparó una copia interna del resumen.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/25/client_note"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  }
+]

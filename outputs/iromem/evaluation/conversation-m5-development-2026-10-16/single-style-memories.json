@@ -1,0 +1,74 @@
+[
+  {
+    "id": "cm5_faef6c8f12040c5c3ef4",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_022",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 22 sobre una migración de archivos, se pidió responder con una tabla breve.",
+    "summary": "En la conversación ficticia 22 sobre una migración de archivos, se pidió responder con una tabla breve.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/22/response_style"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_c295aacdc2c1426a0665",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_023",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 23 sobre una evaluación de latencia, se pidió responder con dos párrafos concisos.",
+    "summary": "En la conversación ficticia 23 sobre una evaluación de latencia, se pidió responder con dos párrafos concisos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/23/response_style"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_5fdfd02b5ebda685a318",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_024",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 24 sobre una guía editorial, se pidió responder con un ejemplo antes de la regla.",
+    "summary": "En la conversación ficticia 24 sobre una guía editorial, se pidió responder con un ejemplo antes de la regla.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/24/response_style"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5_f382efbbafdc84b01ddc",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_025",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 25 sobre la configuración de un laboratorio, se pidió responder con una lista de comprobación.",
+    "summary": "En la conversación ficticia 25 sobre la configuración de un laboratorio, se pidió responder con una lista de comprobación.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v1/25/response_style"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  }
+]

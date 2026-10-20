@@ -1,0 +1,40 @@
+{
+  "by_split_segment": {
+    "development_single/conversation/response_style": {
+      "cases": 4,
+      "forbidden_leak_count": 0,
+      "latency_ms": {
+        "p50": 1.185541,
+        "p95": 1.197083,
+        "p99": 1.197083
+      },
+      "negative": 0,
+      "negative_empty_rate": null,
+      "positive": 4,
+      "recall_at_20": 1.0,
+      "top_1_accuracy": 1.0
+    }
+  },
+  "degraded_cases": 0,
+  "method": "fts5_keywords",
+  "overall": {
+    "cases": 4,
+    "forbidden_leak_count": 0,
+    "latency_ms": {
+      "p50": 1.185541,
+      "p95": 1.197083,
+      "p99": 1.197083
+    },
+    "negative": 0,
+    "negative_empty_rate": null,
+    "positive": 4,
+    "recall_at_20": 1.0,
+    "top_1_accuracy": 1.0
+  },
+  "semantic_coverage": {
+    "complete": 0,
+    "disabled": 4,
+    "missing": 0,
+    "partial": 0
+  }
+}
