@@ -1,6 +1,9 @@
+pub mod applicability;
 pub mod classifier;
 pub mod embedding;
 pub mod model;
 pub mod module;
+pub mod per_memory;
 pub mod repo;
 pub mod service;
+pub mod slot_evidence;

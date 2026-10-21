@@ -156,3 +156,54 @@ pub fn search(
     rows.collect::<Result<Vec<_>, _>>()
         .map_err(|e| e.to_string())
 }
+
+pub fn list_scope(conn: &Connection, request: &SearchRequest) -> Result<Vec<Candidate>, String> {
+    let mut stmt = conn
+        .prepare(
+            "SELECT m.id, r.revision, r.summary, r.state, r.conditions,
+                r.source_kind, r.source_ref, r.source_locator
+         FROM memories m JOIN memory_revisions r
+           ON r.memory_id = m.id AND r.revision = m.current_revision
+         WHERE m.scope_kind = ?1 AND m.scope_id = ?2 AND r.state = 'active'
+           AND (r.valid_from IS NULL OR r.valid_from <= ?3)
+           AND (r.valid_until IS NULL OR r.valid_until > ?3)
+           AND (?4 IS NULL OR m.entity_id = ?4)
+         ORDER BY m.id LIMIT 101",
+        )
+        .map_err(|e| e.to_string())?;
+    let rows = stmt
+        .query_map(
+            params![
+                request.scope_kind,
+                request.scope_id,
+                request.as_of,
+                request.entity_id
+            ],
+            |row| {
+                let source_kind: Option<String> = row.get(5)?;
+                let source_ref: Option<String> = row.get(6)?;
+                let source_locator: Option<String> = row.get(7)?;
+                Ok(Candidate {
+                    memory_id: row.get(0)?,
+                    revision: row.get(1)?,
+                    summary: row.get(2)?,
+                    state: row.get(3)?,
+                    conditions: row.get(4)?,
+                    source: source_kind
+                        .zip(source_ref)
+                        .map(|(kind, reference)| SourceRef {
+                            kind,
+                            reference,
+                            locator: source_locator,
+                        }),
+                    bm25: 0.0,
+                })
+            },
+        )
+        .map_err(|e| e.to_string())?;
+    let result: Vec<Candidate> = rows.collect::<Result<_, _>>().map_err(|e| e.to_string())?;
+    if result.len() > 100 {
+        return Err("el ámbito supera 100 recuerdos; acota por entidad".into());
+    }
+    Ok(result)
+}

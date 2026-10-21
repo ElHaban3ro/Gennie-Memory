@@ -4,10 +4,19 @@ version.workspace = true
 edition.workspace = true
 rust-version.workspace = true
 
+[features]
+default = []
+http2-transport = ["reqwest/http2", "dep:h2"]
+
 [dependencies]
+h2 = { workspace = true, optional = true }
 iromem-kernel.workspace = true
 iromem-retrieval.workspace = true
+iromem-dashboard.workspace = true
 serde.workspace = true
 serde_json.workspace = true
 rusqlite.workspace = true
 reqwest.workspace = true
+
+[dev-dependencies]
+tokio = { workspace = true, features = ["time"] }

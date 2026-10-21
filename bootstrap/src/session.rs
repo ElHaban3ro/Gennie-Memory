@@ -37,7 +37,13 @@ fn handle(conn: &Connection, classifier: &impl Classifier, line: &str) -> Sessio
                 serde_json::to_value(response).map_err(|e| e.to_string())
             }
             SessionRequest::Recall(request) => {
-                let response = iromem_retrieval::service::recall(conn, &request, classifier)?;
+                let response = if let Some(reviewed) =
+                    iromem_dashboard::service::reviewed_recall(conn, &request)?
+                {
+                    reviewed
+                } else {
+                    iromem_retrieval::service::recall(conn, &request, classifier)?
+                };
                 serde_json::to_value(response).map_err(|e| e.to_string())
             }
             SessionRequest::HybridSearch(request) => {
@@ -156,6 +162,33 @@ mod tests {
         );
         assert_eq!(recall.status, "complete");
         assert_eq!(recall.response.unwrap()["error_code"], "missing_api_key");
+
+        let review_search: SearchRequest = serde_json::from_value(search.clone()).unwrap();
+        let review_view = iromem_dashboard::service::view(
+            &conn,
+            &review_search,
+            iromem_dashboard::model::ViewMode::Search,
+        )
+        .unwrap();
+        let review_request: iromem_dashboard::model::ReviewRequest = serde_json::from_value(
+            serde_json::json!({
+                "case_id": null, "search": search, "view_mode": "search",
+                "candidates": review_view.candidates.iter().map(|item| serde_json::json!({"memory_id": item.memory_id, "revision": item.revision})).collect::<Vec<_>>(),
+                "decisions": [{"memory_id": "synthetic_meeting_remote", "revision": 1, "verdict": "match"}],
+                "outcome": "matches", "note": null
+            }),
+        ).unwrap();
+        iromem_dashboard::service::save(&mut conn, review_request).unwrap();
+        let reviewed = handle(
+            &conn,
+            &classifier,
+            &serde_json::json!({"op":"recall","request":{"search":review_search}}).to_string(),
+        );
+        assert_eq!(reviewed.status, "complete");
+        assert_eq!(
+            reviewed.response.unwrap()["classification_status"],
+            "review_reused"
+        );
 
         let invalid = handle(&conn, &classifier, "not json");
         assert_eq!(invalid.status, "failed");

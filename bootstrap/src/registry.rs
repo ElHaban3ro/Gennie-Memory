@@ -1,9 +1,10 @@
+use iromem_dashboard::module::DashboardModule;
 use iromem_kernel::core::AppModule;
 use iromem_retrieval::module::RetrievalModule;
 use std::collections::{HashMap, HashSet};
 
 pub fn modules() -> Result<Vec<Box<dyn AppModule>>, String> {
-    order(vec![Box::new(RetrievalModule)])
+    order(vec![Box::new(RetrievalModule), Box::new(DashboardModule)])
 }
 
 fn order(input: Vec<Box<dyn AppModule>>) -> Result<Vec<Box<dyn AppModule>>, String> {

@@ -3,6 +3,8 @@ use std::path::PathBuf;
 #[derive(Clone, Debug)]
 pub struct Config {
     pub database_path: PathBuf,
+    pub evaluation_capture_path: Option<PathBuf>,
+    pub evaluation_response_content_path: Option<PathBuf>,
 }
 
 pub struct Secrets {
@@ -25,7 +27,41 @@ pub fn load() -> Result<Config, String> {
     }
     Ok(Config {
         database_path: PathBuf::from(value),
+        evaluation_capture_path: read_evaluation_capture_path(|name| std::env::var(name))?,
+        evaluation_response_content_path: read_evaluation_response_content_path(|name| {
+            std::env::var(name)
+        })?,
     })
+}
+
+fn read_evaluation_response_content_path(
+    get: impl Fn(&str) -> Result<String, std::env::VarError>,
+) -> Result<Option<PathBuf>, String> {
+    match get("IROMEM_EVALUATION_RESPONSE_CONTENT_PATH") {
+        Ok(value) if value.trim().is_empty() => {
+            Err("IROMEM_EVALUATION_RESPONSE_CONTENT_PATH está vacío".into())
+        }
+        Ok(value) => Ok(Some(PathBuf::from(value))),
+        Err(std::env::VarError::NotPresent) => Ok(None),
+        Err(std::env::VarError::NotUnicode(_)) => {
+            Err("IROMEM_EVALUATION_RESPONSE_CONTENT_PATH no es una ruta válida".into())
+        }
+    }
+}
+
+fn read_evaluation_capture_path(
+    get: impl Fn(&str) -> Result<String, std::env::VarError>,
+) -> Result<Option<PathBuf>, String> {
+    match get("IROMEM_EVALUATION_CAPTURE_PATH") {
+        Ok(value) if value.trim().is_empty() => {
+            Err("IROMEM_EVALUATION_CAPTURE_PATH está vacío".into())
+        }
+        Ok(value) => Ok(Some(PathBuf::from(value))),
+        Err(std::env::VarError::NotPresent) => Ok(None),
+        Err(std::env::VarError::NotUnicode(_)) => {
+            Err("IROMEM_EVALUATION_CAPTURE_PATH no es una ruta válida".into())
+        }
+    }
 }
 
 pub fn load_secrets() -> Result<Secrets, String> {
@@ -54,5 +90,32 @@ mod tests {
         });
         assert_eq!(key.as_deref(), Some("synthetic-test-token"));
         assert!(read_openrouter_key(|_| Some("  ".into())).is_none());
+    }
+
+    #[test]
+    fn evaluation_capture_path_is_optional_and_rejects_empty_values() {
+        assert_eq!(
+            read_evaluation_capture_path(|_| Err(std::env::VarError::NotPresent)).unwrap(),
+            None
+        );
+        assert_eq!(
+            read_evaluation_capture_path(|_| Ok("/tmp/iromem-capture.jsonl".into())).unwrap(),
+            Some(PathBuf::from("/tmp/iromem-capture.jsonl"))
+        );
+        assert!(read_evaluation_capture_path(|_| Ok("  ".into())).is_err());
+    }
+
+    #[test]
+    fn evaluation_response_content_path_is_separately_opt_in() {
+        assert_eq!(
+            read_evaluation_response_content_path(|_| Err(std::env::VarError::NotPresent)).unwrap(),
+            None
+        );
+        assert_eq!(
+            read_evaluation_response_content_path(|_| Ok("/tmp/iromem-response.jsonl".into()))
+                .unwrap(),
+            Some(PathBuf::from("/tmp/iromem-response.jsonl"))
+        );
+        assert!(read_evaluation_response_content_path(|_| Ok(" ".into())).is_err());
     }
 }
