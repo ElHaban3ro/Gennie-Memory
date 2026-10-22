@@ -123,7 +123,13 @@ fn panel(svg: &mut Svg, p: &Panel<'_>) {
             y + 5,
             &format!(
                 "{:.*}",
-                if p.decimals > 0 { 1 } else { 0 },
+                if p.maximum < 0.1 {
+                    p.decimals
+                } else if p.decimals > 0 {
+                    1
+                } else {
+                    0
+                },
                 p.maximum * part
             ),
             14,
@@ -1136,4 +1142,216 @@ mod tests {
     fn xml_labels_are_escaped() {
         assert_eq!(escape("A & <B>"), "A &amp; &lt;B&gt;");
     }
+}
+
+/// Paired utility evidence and classifier input; never labels these as Codex tokens.
+pub fn render_utility(report_path: &Path, output: &Path) -> Result<(), String> {
+    let report = load(report_path)?;
+    if report["version"] != "utility-paired-report-v1" {
+        return Err("informe de utilidad inválido".into());
+    }
+    let candidate = report["candidate_policy"].as_str().unwrap_or("utility_v1");
+    if ![
+        "utility_v1",
+        "utility_v2",
+        "witness_v1",
+        "roles_v1",
+        "roles_fallback_v1",
+        "roles_v2",
+        "jev_roles_v1",
+        "jev_roles_v2",
+        "jev_roles_consensus_v1",
+        "jev_roles_consensus_batch_v1",
+        "jev_roles_consensus_shared_v1",
+    ]
+    .contains(&candidate)
+    {
+        return Err("candidata de figura inválida".into());
+    }
+    let relations = [
+        (
+            "supports_answer",
+            "Preguntas de respuesta",
+            "permitted_evidence",
+        ),
+        ("refutes_premise", "Refutación", "permitted_evidence"),
+        (
+            "pending_or_partial",
+            "Contexto parcial",
+            "permitted_evidence",
+        ),
+        ("unrelated", "Ausencia: semilla vacía", "empty"),
+    ];
+    let policies = [("baseline", "Base", GOLD), (candidate, candidate, TEAL)];
+    fs::create_dir_all(output).map_err(|e| e.to_string())?;
+    for name in ["selection.svg", "classifier-resources.svg"] {
+        if output.join(name).exists() {
+            return Err("elige un directorio de figuras nuevo".into());
+        }
+    }
+    let mut svg = Svg::new(
+        1200,
+        690,
+        &format!("Evidencia útil: base frente a {candidate}"),
+    );
+    svg.text(
+        58,
+        110,
+        &format!(
+            "{} preguntas emparejadas · desarrollo sintético · no mide respuesta final",
+            n(&report, "/pairs")?
+        ),
+        17,
+        MUTED,
+        "start",
+        "Arial,sans-serif",
+    );
+    svg.rect(790, 132, 16, 16, GOLD);
+    svg.text(814, 146, "Base", 16, INK, "start", "Arial,sans-serif");
+    svg.rect(900, 132, 16, 16, TEAL);
+    svg.text(924, 146, candidate, 16, INK, "start", "Arial,sans-serif");
+    let maximum = relations
+        .iter()
+        .map(|(r, _, _)| n(&report, &format!("/by_policy/baseline/{r}/cases")))
+        .collect::<Result<Vec<_>, _>>()?
+        .into_iter()
+        .max()
+        .unwrap_or(1)
+        .max(1);
+    let mut ticks: Vec<u64> = (0..=maximum).step_by(4).collect();
+    if ticks.last().copied() != Some(maximum) {
+        ticks.push(maximum);
+    }
+    for tick in ticks {
+        let x = 400 + (650.0 * tick as f64 / maximum as f64).round() as i32;
+        svg.line(x, 182, x, 568, GRID, 1);
+        svg.text(
+            x,
+            592,
+            &tick.to_string(),
+            14,
+            MUTED,
+            "middle",
+            "Arial,sans-serif",
+        );
+    }
+    svg.line(400, 182, 400, 568, INK, 1);
+    for (index, (relation, label, metric)) in relations.iter().enumerate() {
+        let y = 205 + index as i32 * 94;
+        svg.text(58, y + 22, label, 21, INK, "start", "Georgia,serif");
+        for (offset, (policy, _, color)) in policies.iter().enumerate() {
+            let path = format!("/by_policy/{policy}/{relation}");
+            let total = n(&report, &format!("{path}/cases"))?;
+            if total != maximum || maximum != 16 {
+                return Err("la figura requiere 16 casos por relación".into());
+            }
+            let value = report
+                .pointer(&format!("{path}/{metric}"))
+                .and_then(Value::as_u64)
+                .unwrap_or(0);
+            if value > total {
+                return Err("recuento fuera de rango".into());
+            }
+            let width = (650.0 * value as f64 / maximum as f64).round() as i32;
+            svg.rect(400, y - 12 + offset as i32 * 28, width, 22, color);
+            svg.text(
+                412 + width,
+                y + 5 + offset as i32 * 28,
+                &format!("{value}/{total}"),
+                17,
+                INK,
+                "start",
+                "Arial,sans-serif",
+            );
+        }
+    }
+    svg.text(
+        58,
+        630,
+        "Ausencia: cuenta abstenciones; las demás categorías cuentan IDs de evidencia permitidos.",
+        16,
+        MUTED,
+        "start",
+        "Arial,sans-serif",
+    );
+    svg.text(58,658,"Cada eje parte de cero. Etiquetas sintéticas; no acredita verdad factual ni validación humana.",16,MUTED,"start","Arial,sans-serif");
+    svg.save(&output.join("selection.svg"))?;
+    let mut resources = Svg::new(
+        1200,
+        650,
+        if candidate == "witness_v1" {
+            "Entrada y gasto conocido: selección + extracción"
+        } else {
+            "Entrada del clasificador: tokens y coste reportados"
+        },
+    );
+    resources.text(58,110,if candidate=="jev_roles_consensus_shared_v1" {"Jev · dos votos y recibo único · los 20 recuerdos una vez en contexto compartido"}else if candidate=="jev_roles_consensus_batch_v1" {"Jev · dos votos en una petición · hasta 16 candidatos · recibo global contado una vez"}else if candidate=="jev_roles_consensus_v1" {"Jev · dos elecciones paralelas sobre hasta 16 candidatos · suma de consumo · no son tokens de Codex"}else if candidate=="witness_v1" {"Decisions + GPT-4.1 Mini cuando hay propuesta · consumo conocido · no son tokens de Codex"}else if candidate=="roles_fallback_v1" {"Decisions · segunda elección solo tras abstención · consumo de ambas · no son tokens de Codex"}else{"Mismas preguntas y candidatos · una llamada por política y pregunta · no son tokens de Codex"},17,MUTED,"start","Arial,sans-serif");
+    for (index, (title, unit, key, decimals)) in [
+        ("Tokens de entrada", "tokens", "known_input_tokens", 0),
+        ("Coste informado", "USD", "known_cost_usd", 6),
+    ]
+    .iter()
+    .enumerate()
+    {
+        let a = f(&report, &format!("/usage/baseline/{key}"))?;
+        let b = f(&report, &format!("/usage/{candidate}/{key}"))?;
+        if n(&report, "/usage/baseline/cost_missing_cases")? != 0
+            || n(&report, &format!("/usage/{candidate}/cost_missing_cases"))? != 0
+        {
+            return Err("no graficar coste parcial como total".into());
+        }
+        panel(
+            &mut resources,
+            &Panel {
+                x: 58 + index as i32 * 552,
+                title,
+                subtitle: if candidate == "witness_v1" {
+                    "Consumo conocido por política"
+                } else {
+                    "Total por política en este banco"
+                },
+                unit,
+                maximum: (a.max(b) * 1.25).max(0.000001),
+                bars: [("Base", a, GOLD), (candidate, b, TEAL)],
+                decimals: *decimals,
+            },
+        );
+    }
+    resources.text(
+        58,
+        575,
+        if candidate == "witness_v1" {
+            "El testigo añade extracción. Las etapas fallidas pueden carecer de desglose completo."
+        } else if candidate == "roles_fallback_v1" {
+            "Se conserva la primera selección; el segundo intento solo sucede tras abstención."
+        } else {
+            if [
+                "jev_roles_v1",
+                "jev_roles_v2",
+                "jev_roles_consensus_v1",
+                "jev_roles_consensus_batch_v1",
+                "jev_roles_consensus_shared_v1",
+            ]
+            .contains(&candidate)
+            {
+                "Base: Decisions. Candidata: Jev con roles. Cambian modelo e instrucción."
+            } else {
+                "La variante modifica instrucción y opción none. El consumo pertenece a Decisions."
+            }
+        },
+        16,
+        MUTED,
+        "start",
+        "Arial,sans-serif",
+    );
+    resources.text(
+        58,
+        605,
+        "El contexto y el coste de una respuesta de Codex no se midieron en esta comparación.",
+        16,
+        MUTED,
+        "start",
+        "Arial,sans-serif",
+    );
+    resources.save(&output.join("classifier-resources.svg"))
 }

@@ -58,6 +58,7 @@ fn ratio(numerator: usize, denominator: usize) -> Value {
 struct Row {
     split: String,
     segment: String,
+    scope_id: String,
     expected: Vec<String>,
     forbidden: Vec<String>,
     candidates: Vec<String>,
@@ -72,6 +73,17 @@ fn summarize(rows: &[Row]) -> Value {
     let recall = positive
         .iter()
         .filter(|row| row.expected.iter().any(|id| row.candidates.contains(id)))
+        .count();
+    let recall_at_5 = positive
+        .iter()
+        .filter(|row| {
+            row.expected.iter().any(|id| {
+                row.candidates
+                    .iter()
+                    .take(5)
+                    .any(|candidate| candidate == id)
+            })
+        })
         .count();
     let top1 = positive
         .iter()
@@ -88,6 +100,7 @@ fn summarize(rows: &[Row]) -> Value {
     let latencies: Vec<f64> = rows.iter().map(|row| row.elapsed_ms).collect();
     json!({
         "cases": rows.len(), "positive": positive.len(), "negative": negative.len(),
+        "recall_at_5": ratio(recall_at_5, positive.len()),
         "recall_at_20": ratio(recall, positive.len()),
         "top_1_accuracy": ratio(top1, positive.len()),
         "negative_empty_rate": ratio(empty, negative.len()),
@@ -168,6 +181,12 @@ fn evaluate(queries: &[Value], results: &[Value]) -> Result<Value, String> {
         rows.push(Row {
             split: required_str(result, "split")?.into(),
             segment: required_str(result, "segment")?.into(),
+            scope_id: query
+                .pointer("/request/search/scope_id")
+                .or_else(|| query.pointer("/request/scope_id"))
+                .and_then(Value::as_str)
+                .unwrap_or("unspecified")
+                .into(),
             expected: ids(result, "expected_ids")?,
             forbidden: ids(result, "forbidden_ids")?,
             candidates,
@@ -190,6 +209,17 @@ fn evaluate(queries: &[Value], results: &[Value]) -> Result<Value, String> {
     for (key, values) in grouped {
         by_split_segment.insert(key, summarize(&values));
     }
+    let mut scopes: BTreeMap<String, Vec<Row>> = BTreeMap::new();
+    for row in &rows {
+        scopes
+            .entry(row.scope_id.clone())
+            .or_default()
+            .push(row.clone());
+    }
+    let mut by_scope = Map::new();
+    for (key, values) in scopes {
+        by_scope.insert(key, summarize(&values));
+    }
     let mut coverage = Map::new();
     for name in ["disabled", "complete", "partial", "missing"] {
         coverage.insert(
@@ -201,6 +231,7 @@ fn evaluate(queries: &[Value], results: &[Value]) -> Result<Value, String> {
         "method": method.ok_or("no hay resultados")?,
         "overall": summarize(&rows),
         "by_split_segment": by_split_segment,
+        "by_scope": by_scope,
         "degraded_cases": rows.iter().filter(|row| row.status == "degraded").count(),
         "semantic_coverage": coverage,
     }))
@@ -231,6 +262,7 @@ mod tests {
             "semantic_coverage":"disabled", "candidates":[{"memory_id":"memory-1"}]}});
         let report = evaluate(std::slice::from_ref(&query), std::slice::from_ref(&result)).unwrap();
         assert_eq!(report["overall"]["recall_at_20"], 1.0);
+        assert_eq!(report["overall"]["recall_at_5"], 1.0);
         assert!(evaluate(std::slice::from_ref(&query), &[]).is_err());
         let mut changed = result;
         changed["expected_ids"] = json!([]);

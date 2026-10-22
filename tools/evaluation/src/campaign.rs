@@ -60,16 +60,25 @@ fn load_cases(path: &Path, split: &str) -> Result<Vec<Value>, String> {
         return Err("el banco no contiene casos".into());
     }
     let mut seen = HashSet::new();
+    let mut label_source: Option<&str> = None;
     for case in &cases {
         let id = field(case, "id")?;
         if !seen.insert(id) {
             return Err(format!("ID repetido: {id}"));
         }
+        let source = field(case, "label_source")?;
         if field(case, "split")? != split
-            || field(case, "label_source")? != "deterministic_fixture_rule"
+            || ![
+                "deterministic_fixture_rule",
+                "agent_synthetic_unreviewed",
+                "blind_synthetic_adjudication",
+            ]
+            .contains(&source)
+            || label_source.is_some_and(|previous| previous != source)
         {
             return Err(format!("etiqueta de banco incompatible: {id}"));
         }
+        label_source = Some(source);
         ids(case, "expected_ids")?;
         ids(case, "forbidden_ids")?;
         let request = case
@@ -131,6 +140,97 @@ fn read_journal(
     Ok(finished)
 }
 
+fn case_policy<'a>(case: &'a Value, policy: &'a str) -> Result<&'a str, String> {
+    if policy != "per_case"
+        && case
+            .pointer("/request/selection_policy")
+            .and_then(Value::as_str)
+            .is_some_and(|declared| declared != policy)
+    {
+        return Err("política global contradice caso explícito; use per_case".into());
+    }
+    let policy = if policy == "per_case" {
+        case.pointer("/request/selection_policy")
+            .and_then(Value::as_str)
+            .ok_or("falta política explícita por caso")?
+    } else {
+        policy
+    };
+    if ![
+        "baseline",
+        "evidence_v1",
+        "support_gate_v1",
+        "utility_v1",
+        "utility_v2",
+        "witness_v1",
+        "slot_evidence_v1",
+        "slot_evidence_v2",
+        "slot_evidence_v3",
+        "roles_v1",
+        "roles_fallback_v1",
+        "roles_v2",
+        "roles_consensus_v1",
+        "roles_consensus_batch_v1",
+        "roles_consensus_shared_v1",
+        "roles_consensus_compact_v1",
+        "roles_consensus_mirrored_v1",
+        "roles_primary_veto_v1",
+        "epistemic_partial_single_pass_v1",
+        "per_memory_v1",
+        "per_memory_v2",
+        "per_memory_v3",
+        "per_memory_v4",
+        "per_memory_binary_v1",
+        "per_memory_binary_v2",
+        "per_memory_binary_v3",
+        "per_memory_binary_v4",
+        "per_memory_binary_v5",
+        "per_memory_examples_v1",
+        "per_memory_factors_v1",
+        "per_memory_scoped_v1",
+        "per_memory_scoped_v2",
+        "per_memory_scoped_v3",
+        "per_memory_scoped_anchor_v1",
+        "per_memory_scored_v1",
+        "per_memory_verified_v1",
+        "per_memory_correction_verified_v1",
+        "per_memory_correction_verified_v2",
+        "per_memory_correction_verified_v3",
+        "per_memory_correction_verified_v4",
+        "per_memory_correction_verified_v5",
+        "per_memory_role_verified_v1",
+        "per_memory_role_verified_v2",
+        "per_memory_role_batch_v1",
+        "per_memory_complete_premise_v1",
+    ]
+    .contains(&policy)
+    {
+        return Err("política de selección inválida".into());
+    }
+    Ok(policy)
+}
+fn case_provider<'a>(case: &'a Value, provider: &'a str) -> Result<&'a str, String> {
+    if provider != "per_case"
+        && case
+            .pointer("/request/provider")
+            .and_then(Value::as_str)
+            .is_some_and(|declared| declared != provider)
+    {
+        return Err("proveedor global contradice caso explícito; use per_case".into());
+    }
+    let provider = if provider == "per_case" {
+        case.pointer("/request/provider")
+            .and_then(Value::as_str)
+            .ok_or("falta proveedor por caso")?
+    } else {
+        provider
+    };
+    if !["decisions", "jev", "jev114", "gemma3_4b"].contains(&provider) {
+        return Err("proveedor por caso inválido".into());
+    }
+    Ok(provider)
+}
+
 pub fn run(
     cases_path: &Path,
     binary: &Path,
@@ -139,16 +239,76 @@ pub fn run(
     provider: &str,
     split: &str,
     max_calls: usize,
+    selection_policy: &str,
 ) -> Result<(), String> {
-    if !["decisions", "jev"].contains(&provider) || max_calls == 0 {
-        return Err("proveedor o máximo de llamadas inválido".into());
+    if !["decisions", "jev", "jev114", "gemma3_4b", "per_case"].contains(&provider)
+        || ![
+            "baseline",
+            "evidence_v1",
+            "support_gate_v1",
+            "utility_v1",
+            "utility_v2",
+            "witness_v1",
+            "slot_evidence_v1",
+            "slot_evidence_v2",
+            "slot_evidence_v3",
+            "roles_v1",
+            "roles_fallback_v1",
+            "roles_v2",
+            "roles_consensus_v1",
+            "roles_consensus_batch_v1",
+            "roles_consensus_shared_v1",
+            "roles_consensus_compact_v1",
+            "roles_consensus_mirrored_v1",
+            "roles_primary_veto_v1",
+            "epistemic_partial_single_pass_v1",
+            "per_memory_v1",
+            "per_memory_v2",
+            "per_memory_v3",
+            "per_memory_v4",
+            "per_memory_binary_v1",
+            "per_memory_binary_v2",
+            "per_memory_binary_v3",
+            "per_memory_binary_v4",
+            "per_memory_binary_v5",
+            "per_memory_examples_v1",
+            "per_memory_factors_v1",
+            "per_memory_scoped_v1",
+            "per_memory_scoped_v2",
+            "per_memory_scoped_v3",
+            "per_memory_scoped_anchor_v1",
+            "per_memory_scored_v1",
+            "per_memory_verified_v1",
+            "per_memory_correction_verified_v1",
+            "per_memory_correction_verified_v2",
+            "per_memory_correction_verified_v3",
+            "per_memory_correction_verified_v4",
+            "per_memory_correction_verified_v5",
+            "per_memory_role_verified_v1",
+            "per_memory_role_verified_v2",
+            "per_memory_role_batch_v1",
+            "per_memory_complete_premise_v1",
+            "per_case",
+        ]
+        .contains(&selection_policy)
+        || max_calls == 0
+    {
+        return Err("proveedor, política o máximo de llamadas inválido".into());
     }
     let cases = load_cases(cases_path, split)?;
-    let manifest = json!({
+    for case in &cases {
+        case_policy(case, selection_policy)?;
+        case_provider(case, provider)?;
+    }
+    let mut manifest = json!({
         "kind": "manifest", "format": 1, "cases_sha256": digest(cases_path)?,
         "binary_sha256": digest(binary)?, "database_sha256": digest(database)?,
         "case_count": cases.len(), "provider": provider, "split": split,
+        "label_source": field(&cases[0], "label_source")?,
     });
+    if selection_policy != "baseline" {
+        manifest["selection_policy"] = json!(selection_policy);
+    }
     let finished = if journal.exists() {
         read_journal(journal, &manifest, &cases)?
     } else {
@@ -186,7 +346,12 @@ pub fn run(
             }
             let request = case.get("request").ok_or("falta request")?;
             let search = request.get("search").unwrap_or(request);
-            let message = json!({"op":"recall", "request":{"search":search,"provider":provider}});
+            let mut request = json!({"search":search,"provider":case_provider(case, provider)?});
+            let policy = case_policy(case, selection_policy)?;
+            if policy != "baseline" {
+                request["selection_policy"] = json!(policy);
+            }
+            let message = json!({"op":"recall", "request":request});
             append(&mut journal_file, &json!({"kind":"started","id":id}))?;
             let started = Instant::now();
             serde_json::to_writer(&mut input, &message).map_err(|error| error.to_string())?;
@@ -406,6 +571,101 @@ pub fn report(journal: &Path, output: Option<&Path>) -> Result<(), String> {
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn per_case_policy_is_explicit_and_cannot_recurse() {
+        assert_eq!(
+            case_provider(&json!({"request":{"provider":"jev114"}}), "per_case").unwrap(),
+            "jev114"
+        );
+        assert!(case_provider(&json!({"request":{"provider":"jev114"}}), "jev").is_err());
+        assert_eq!(
+            case_provider(&json!({"request":{"provider":"jev"}}), "per_case").unwrap(),
+            "jev"
+        );
+        assert_eq!(
+            case_provider(&json!({"request":{"provider":"gemma3_4b"}}), "per_case").unwrap(),
+            "gemma3_4b"
+        );
+        assert!(case_provider(&json!({}), "per_case").is_err());
+        assert!(case_provider(&json!({"request":{"provider":"per_case"}}), "per_case").is_err());
+        assert_eq!(
+            case_policy(
+                &json!({"request":{"selection_policy":"utility_v1"}}),
+                "per_case"
+            )
+            .unwrap(),
+            "utility_v1"
+        );
+        assert_eq!(
+            case_policy(
+                &json!({"request":{"selection_policy":"slot_evidence_v2"}}),
+                "per_case"
+            )
+            .unwrap(),
+            "slot_evidence_v2"
+        );
+        assert!(case_policy(&json!({"request":{}}), "per_case").is_err());
+        assert!(
+            case_policy(
+                &json!({"request":{"selection_policy":"per_case"}}),
+                "per_case"
+            )
+            .is_err()
+        );
+        assert!(
+            case_policy(
+                &json!({"request":{"selection_policy":"utility_v1"}}),
+                "baseline"
+            )
+            .is_err()
+        );
+        assert!(case_provider(&json!({"request":{"provider":"jev"}}), "decisions").is_err());
+        assert_eq!(
+            case_policy(
+                &json!({"request":{"selection_policy":"baseline"}}),
+                "baseline"
+            )
+            .unwrap(),
+            "baseline"
+        );
+    }
+    #[test]
+    fn campaign_preserves_one_declared_label_source() {
+        let file = std::env::temp_dir().join(format!(
+            "iromem-campaign-label-source-{}",
+            std::process::id()
+        ));
+        let case = |id: &str, source: &str| {
+            json!({"id":id,"split":"development","label_source":source,
+                "expected_ids":[],"forbidden_ids":[],
+                "request":{"search":{"query":"question","scope_kind":"conversation",
+                    "scope_id":"scope","as_of":"2026-10-17T12:00:00.000Z"}}})
+        };
+        fs::write(
+            &file,
+            format!("{}\n", case("case-1", "agent_synthetic_unreviewed")),
+        )
+        .unwrap();
+        assert_eq!(load_cases(&file, "development").unwrap().len(), 1);
+        fs::write(
+            &file,
+            format!("{}\n", case("case-1", "blind_synthetic_adjudication")),
+        )
+        .unwrap();
+        assert_eq!(load_cases(&file, "development").unwrap().len(), 1);
+        fs::write(
+            &file,
+            format!(
+                "{}\n{}\n",
+                case("case-1", "agent_synthetic_unreviewed"),
+                case("case-2", "deterministic_fixture_rule")
+            ),
+        )
+        .unwrap();
+        assert!(load_cases(&file, "development").is_err());
+        fs::remove_file(file).unwrap();
+    }
 
     #[test]
     fn journal_rejects_uncertain_call_before_any_retry() {

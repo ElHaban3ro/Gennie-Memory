@@ -1,0 +1,647 @@
+{
+  "vocabulary": {
+    "version": "nominal-event-controls-v1",
+    "predicate_rows": [
+      {
+        "id": "action_beneficiary",
+        "roles": {
+          "subject": "ref",
+          "action_kind": "action_id",
+          "beneficiary": "ref"
+        },
+        "distributive": false
+      },
+      {
+        "id": "quantity",
+        "roles": {
+          "subject": "ref",
+          "attribute": "attribute_id",
+          "amount": "quantity"
+        },
+        "distributive": false
+      }
+    ],
+    "fixed_attribute_rows": [
+      "mass"
+    ],
+    "fixed_action_rows": [
+      "remove",
+      "grant"
+    ],
+    "semantic_type_rows": [],
+    "relevance_links": [],
+    "request_context_profile": {
+      "version": "documentary_request_context_v1",
+      "features": [
+        "nominal_complement_de",
+        "nonagentive_nominal_event_with_contexts_v1"
+      ]
+    }
+  },
+  "source": {
+    "text": "En Orbe se eliminó la restricción de acceso para Paz.",
+    "raw": {
+      "version": "documentary_evidence_v3",
+      "kind": "source",
+      "text_sha256": "b1069e415e688b49acf671d3112992c50b4c1a557a69532d27aa5ed856edf49b",
+      "vocabulary_sha256": "426a7e372bf2764e3e0a2e81fa9cd456c221e713e49fe6d66193b008a48af90b",
+      "domain_namespace": "nominal-event-controls",
+      "scopes": [
+        {
+          "id": "root",
+          "parent_id": null,
+          "kind": "document",
+          "branch_id": null,
+          "binding": null
+        }
+      ],
+      "references": [
+        {
+          "id": "patient",
+          "scope_id": "root",
+          "mention": {
+            "start_byte": 23,
+            "end_byte": 45,
+            "quote": "restricción de acceso"
+          },
+          "name": null,
+          "declared_class": {
+            "start_byte": 23,
+            "end_byte": 35,
+            "quote": "restricción"
+          },
+          "semantic_type": null,
+          "denotation": "entity",
+          "links": [
+            {
+              "kind": "nominal_complement_de",
+              "target": "tail",
+              "evidence": [
+                {
+                  "start_byte": 23,
+                  "end_byte": 45,
+                  "quote": "restricción de acceso"
+                }
+              ]
+            }
+          ],
+          "binding_scope_id": null,
+          "anaphora": null
+        },
+        {
+          "id": "tail",
+          "scope_id": "root",
+          "mention": {
+            "start_byte": 39,
+            "end_byte": 45,
+            "quote": "acceso"
+          },
+          "name": null,
+          "declared_class": {
+            "start_byte": 39,
+            "end_byte": 45,
+            "quote": "acceso"
+          },
+          "semantic_type": null,
+          "denotation": "entity",
+          "links": [],
+          "binding_scope_id": null,
+          "anaphora": null
+        },
+        {
+          "id": "person",
+          "scope_id": "root",
+          "mention": {
+            "start_byte": 51,
+            "end_byte": 54,
+            "quote": "Paz"
+          },
+          "name": {
+            "start_byte": 51,
+            "end_byte": 54,
+            "quote": "Paz"
+          },
+          "declared_class": null,
+          "semantic_type": null,
+          "denotation": "entity",
+          "links": [],
+          "binding_scope_id": null,
+          "anaphora": null
+        },
+        {
+          "id": "place",
+          "scope_id": "root",
+          "mention": {
+            "start_byte": 3,
+            "end_byte": 7,
+            "quote": "Orbe"
+          },
+          "name": {
+            "start_byte": 3,
+            "end_byte": 7,
+            "quote": "Orbe"
+          },
+          "declared_class": null,
+          "semantic_type": null,
+          "denotation": "entity",
+          "links": [],
+          "binding_scope_id": null,
+          "anaphora": null
+        }
+      ],
+      "identity": [],
+      "qualifiers": [],
+      "claims": [
+        {
+          "id": "compound-claim",
+          "scope_id": "root",
+          "qualifier_ids": [],
+          "evidence": [
+            {
+              "start_byte": 0,
+              "end_byte": 54,
+              "quote": "En Orbe se eliminó la restricción de acceso para Paz"
+            }
+          ],
+          "body": {
+            "kind": "linguistic_composition",
+            "constructor": "nonagentive_nominal_event_with_contexts_v1",
+            "composition_id": "compound",
+            "evidence": {
+              "start_byte": 0,
+              "end_byte": 54,
+              "quote": "En Orbe se eliminó la restricción de acceso para Paz"
+            },
+            "core": {
+              "id": "event",
+              "action_id": "remove",
+              "action_evidence": {
+                "start_byte": 11,
+                "end_byte": 19,
+                "quote": "eliminó"
+              },
+              "construction": "nonagentive_se",
+              "construction_evidence": {
+                "start_byte": 8,
+                "end_byte": 10,
+                "quote": "se"
+              },
+              "actuality": "occurred",
+              "temporal_resolution": "source_past",
+              "patient": {
+                "kind": "ref",
+                "id": "patient"
+              }
+            },
+            "region": {
+              "id": "region",
+              "kind": "core_with_patient_nominal_closure",
+              "core_id": "event"
+            },
+            "contexts": [
+              {
+                "id": "place-pp",
+                "kind": "source_bound_prepositional_context",
+                "preposition": {
+                  "start_byte": 0,
+                  "end_byte": 2,
+                  "quote": "En"
+                },
+                "complement": {
+                  "kind": "ref",
+                  "id": "place"
+                },
+                "complement_evidence": {
+                  "start_byte": 3,
+                  "end_byte": 7,
+                  "quote": "Orbe"
+                },
+                "phrase_evidence": {
+                  "start_byte": 0,
+                  "end_byte": 7,
+                  "quote": "En Orbe"
+                },
+                "region_id": "region",
+                "attachment": {
+                  "kind": "original_source_context",
+                  "resolution": "not_published"
+                }
+              },
+              {
+                "id": "person-pp",
+                "kind": "source_bound_prepositional_context",
+                "preposition": {
+                  "start_byte": 46,
+                  "end_byte": 50,
+                  "quote": "para"
+                },
+                "complement": {
+                  "kind": "ref",
+                  "id": "person"
+                },
+                "complement_evidence": {
+                  "start_byte": 51,
+                  "end_byte": 54,
+                  "quote": "Paz"
+                },
+                "phrase_evidence": {
+                  "start_byte": 46,
+                  "end_byte": 54,
+                  "quote": "para Paz"
+                },
+                "region_id": "region",
+                "attachment": {
+                  "kind": "original_source_context",
+                  "resolution": "not_published"
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "requests": [],
+      "dependencies": [
+        {
+          "consumer": {
+            "kind": "reference",
+            "id": "patient"
+          },
+          "requires": {
+            "kind": "scope",
+            "id": "root"
+          },
+          "role": "binding"
+        },
+        {
+          "consumer": {
+            "kind": "reference",
+            "id": "patient"
+          },
+          "requires": {
+            "kind": "reference",
+            "id": "tail"
+          },
+          "role": "identity"
+        },
+        {
+          "consumer": {
+            "kind": "reference",
+            "id": "tail"
+          },
+          "requires": {
+            "kind": "scope",
+            "id": "root"
+          },
+          "role": "binding"
+        },
+        {
+          "consumer": {
+            "kind": "reference",
+            "id": "person"
+          },
+          "requires": {
+            "kind": "scope",
+            "id": "root"
+          },
+          "role": "binding"
+        },
+        {
+          "consumer": {
+            "kind": "reference",
+            "id": "place"
+          },
+          "requires": {
+            "kind": "scope",
+            "id": "root"
+          },
+          "role": "binding"
+        },
+        {
+          "consumer": {
+            "kind": "claim",
+            "id": "compound-claim"
+          },
+          "requires": {
+            "kind": "scope",
+            "id": "root"
+          },
+          "role": "binding"
+        },
+        {
+          "consumer": {
+            "kind": "claim",
+            "id": "compound-claim"
+          },
+          "requires": {
+            "kind": "reference",
+            "id": "patient"
+          },
+          "role": "identity"
+        },
+        {
+          "consumer": {
+            "kind": "claim",
+            "id": "compound-claim"
+          },
+          "requires": {
+            "kind": "reference",
+            "id": "person"
+          },
+          "role": "identity"
+        },
+        {
+          "consumer": {
+            "kind": "claim",
+            "id": "compound-claim"
+          },
+          "requires": {
+            "kind": "reference",
+            "id": "place"
+          },
+          "role": "identity"
+        }
+      ],
+      "coverage": [
+        {
+          "span": {
+            "start_byte": 0,
+            "end_byte": 55,
+            "quote": "En Orbe se eliminó la restricción de acceso para Paz."
+          },
+          "state": "represented",
+          "owner": {
+            "kind": "claim",
+            "id": "compound-claim"
+          },
+          "issue_id": null
+        }
+      ]
+    }
+  },
+  "question": {
+    "text": "¿Se eliminó la restricción de acceso para Paz?",
+    "raw": {
+      "version": "documentary_evidence_v3",
+      "kind": "question",
+      "text_sha256": "865b694333ce96785316bc1eca852872198bfce2020dc4d3c3ad2b47b6a40f93",
+      "vocabulary_sha256": "426a7e372bf2764e3e0a2e81fa9cd456c221e713e49fe6d66193b008a48af90b",
+      "domain_namespace": "nominal-event-controls",
+      "scopes": [
+        {
+          "id": "root",
+          "parent_id": null,
+          "kind": "document",
+          "branch_id": null,
+          "binding": null
+        }
+      ],
+      "references": [
+        {
+          "id": "patient",
+          "scope_id": "root",
+          "mention": {
+            "start_byte": 17,
+            "end_byte": 39,
+            "quote": "restricción de acceso"
+          },
+          "name": null,
+          "declared_class": {
+            "start_byte": 17,
+            "end_byte": 29,
+            "quote": "restricción"
+          },
+          "semantic_type": null,
+          "denotation": "entity",
+          "links": [
+            {
+              "kind": "nominal_complement_de",
+              "target": "tail",
+              "evidence": [
+                {
+                  "start_byte": 17,
+                  "end_byte": 39,
+                  "quote": "restricción de acceso"
+                }
+              ]
+            }
+          ],
+          "binding_scope_id": null,
+          "anaphora": null
+        },
+        {
+          "id": "tail",
+          "scope_id": "root",
+          "mention": {
+            "start_byte": 33,
+            "end_byte": 39,
+            "quote": "acceso"
+          },
+          "name": null,
+          "declared_class": {
+            "start_byte": 33,
+            "end_byte": 39,
+            "quote": "acceso"
+          },
+          "semantic_type": null,
+          "denotation": "entity",
+          "links": [],
+          "binding_scope_id": null,
+          "anaphora": null
+        },
+        {
+          "id": "person",
+          "scope_id": "root",
+          "mention": {
+            "start_byte": 45,
+            "end_byte": 48,
+            "quote": "Paz"
+          },
+          "name": {
+            "start_byte": 45,
+            "end_byte": 48,
+            "quote": "Paz"
+          },
+          "declared_class": null,
+          "semantic_type": null,
+          "denotation": "entity",
+          "links": [],
+          "binding_scope_id": null,
+          "anaphora": null
+        }
+      ],
+      "identity": [],
+      "qualifiers": [],
+      "claims": [],
+      "requests": [
+        {
+          "id": "ask",
+          "scope_id": "root",
+          "mode": "truth",
+          "target": {
+            "atom": {
+              "predicate": "action_beneficiary",
+              "arguments": [
+                {
+                  "role": "subject",
+                  "value": {
+                    "kind": "ref",
+                    "id": "patient"
+                  }
+                },
+                {
+                  "role": "action_kind",
+                  "value": {
+                    "kind": "symbol",
+                    "id": "remove",
+                    "evidence": [
+                      {
+                        "start_byte": 5,
+                        "end_byte": 13,
+                        "quote": "eliminó"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "role": "beneficiary",
+                  "value": {
+                    "kind": "ref",
+                    "id": "person"
+                  }
+                }
+              ],
+              "polarity": "positive",
+              "evidence": [
+                {
+                  "start_byte": 0,
+                  "end_byte": 49,
+                  "quote": "¿Se eliminó la restricción de acceso para Paz?"
+                }
+              ]
+            },
+            "judgment": "fact",
+            "status": "occurred",
+            "qualifier_ids": []
+          },
+          "slot": "status",
+          "class_filter": null,
+          "unit": null,
+          "basis_requirement": {
+            "kind": "any"
+          },
+          "required_answer_extent": "truth_status",
+          "normative_scope_filter": null,
+          "qualifier_ids": [],
+          "premise_ids": [],
+          "evidence": [
+            {
+              "start_byte": 0,
+              "end_byte": 49,
+              "quote": "¿Se eliminó la restricción de acceso para Paz?"
+            }
+          ]
+        }
+      ],
+      "dependencies": [
+        {
+          "consumer": {
+            "kind": "reference",
+            "id": "patient"
+          },
+          "requires": {
+            "kind": "scope",
+            "id": "root"
+          },
+          "role": "binding"
+        },
+        {
+          "consumer": {
+            "kind": "reference",
+            "id": "patient"
+          },
+          "requires": {
+            "kind": "reference",
+            "id": "tail"
+          },
+          "role": "identity"
+        },
+        {
+          "consumer": {
+            "kind": "reference",
+            "id": "tail"
+          },
+          "requires": {
+            "kind": "scope",
+            "id": "root"
+          },
+          "role": "binding"
+        },
+        {
+          "consumer": {
+            "kind": "reference",
+            "id": "person"
+          },
+          "requires": {
+            "kind": "scope",
+            "id": "root"
+          },
+          "role": "binding"
+        },
+        {
+          "consumer": {
+            "kind": "request",
+            "id": "ask"
+          },
+          "requires": {
+            "kind": "scope",
+            "id": "root"
+          },
+          "role": "binding"
+        },
+        {
+          "consumer": {
+            "kind": "request",
+            "id": "ask"
+          },
+          "requires": {
+            "kind": "reference",
+            "id": "patient"
+          },
+          "role": "identity"
+        },
+        {
+          "consumer": {
+            "kind": "request",
+            "id": "ask"
+          },
+          "requires": {
+            "kind": "reference",
+            "id": "person"
+          },
+          "role": "identity"
+        }
+      ],
+      "coverage": [
+        {
+          "span": {
+            "start_byte": 0,
+            "end_byte": 49,
+            "quote": "¿Se eliminó la restricción de acceso para Paz?"
+          },
+          "state": "represented",
+          "owner": {
+            "kind": "request",
+            "id": "ask"
+          },
+          "issue_id": null
+        }
+      ]
+    }
+  },
+  "pair_scope": {
+    "namespace": "nominal-event-controls",
+    "configuration": [],
+    "time_selector": null,
+    "closed_world": false
+  }
+}
