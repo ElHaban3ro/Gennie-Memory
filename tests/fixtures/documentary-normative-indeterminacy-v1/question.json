@@ -1,0 +1,262 @@
+{
+  "version": "documentary_evidence_v3",
+  "kind": "question",
+  "text_sha256": "a3d1663e31039498ad98211086c145f504913a584303e9e810398929bb6deb90",
+  "vocabulary_sha256": "46b19d0249fe8e9eda4c86f2268534f4bb9639ee38ed4a0b2e939eb76e7f4613",
+  "domain_namespace": "normative-indeterminacy-controls",
+  "scopes": [
+    {
+      "id": "root",
+      "parent_id": null,
+      "kind": "document",
+      "branch_id": null,
+      "binding": null
+    }
+  ],
+  "references": [
+    {
+      "id": "person",
+      "scope_id": "root",
+      "mention": {
+        "start_byte": 31,
+        "end_byte": 35,
+        "quote": "Vera"
+      },
+      "name": {
+        "start_byte": 31,
+        "end_byte": 35,
+        "quote": "Vera"
+      },
+      "declared_class": null,
+      "semantic_type": null,
+      "denotation": "entity",
+      "links": [],
+      "binding_scope_id": null,
+      "anaphora": null
+    },
+    {
+      "id": "course",
+      "scope_id": "root",
+      "mention": {
+        "start_byte": 56,
+        "end_byte": 61,
+        "quote": "Delta"
+      },
+      "name": {
+        "start_byte": 56,
+        "end_byte": 61,
+        "quote": "Delta"
+      },
+      "declared_class": null,
+      "semantic_type": null,
+      "denotation": "entity",
+      "links": [],
+      "binding_scope_id": null,
+      "anaphora": null
+    }
+  ],
+  "identity": [],
+  "qualifiers": [],
+  "claims": [],
+  "requests": [
+    {
+      "id": "requested_tutor",
+      "scope_id": "root",
+      "mode": "answer",
+      "target": {
+        "atom": {
+          "predicate": "action",
+          "arguments": [
+            {
+              "role": "action_kind",
+              "value": {
+                "kind": "symbol",
+                "id": "accompany",
+                "evidence": [
+                  {
+                    "start_byte": 18,
+                    "end_byte": 28,
+                    "quote": "acompañar"
+                  }
+                ]
+              }
+            },
+            {
+              "role": "object",
+              "value": {
+                "kind": "ref",
+                "id": "person"
+              }
+            }
+          ],
+          "polarity": "positive",
+          "evidence": [
+            {
+              "start_byte": 0,
+              "end_byte": 62,
+              "quote": "¿Qué tutor debe acompañar a Vera para inscribirse en Delta?"
+            }
+          ]
+        },
+        "judgment": "required",
+        "status": "state",
+        "qualifier_ids": []
+      },
+      "slot": "actor",
+      "class_filter": {
+        "kind": "lexical",
+        "class_quote": {
+          "start_byte": 7,
+          "end_byte": 12,
+          "quote": "tutor"
+        }
+      },
+      "unit": null,
+      "basis_requirement": {
+        "kind": "exact",
+        "value": "normative"
+      },
+      "required_answer_extent": "one_value",
+      "normative_scope_filter": null,
+      "qualifier_ids": [],
+      "premise_ids": [],
+      "evidence": [
+        {
+          "start_byte": 0,
+          "end_byte": 62,
+          "quote": "¿Qué tutor debe acompañar a Vera para inscribirse en Delta?"
+        }
+      ],
+      "context_bindings": [
+        {
+          "id": "purpose",
+          "kind": "normative_action_relation",
+          "relation": {
+            "kind": "purpose",
+            "evidence": [
+              {
+                "start_byte": 36,
+                "end_byte": 40,
+                "quote": "para"
+              }
+            ]
+          },
+          "action": {
+            "action_kind": {
+              "kind": "symbol",
+              "id": "enroll",
+              "evidence": [
+                {
+                  "start_byte": 41,
+                  "end_byte": 52,
+                  "quote": "inscribirse"
+                }
+              ]
+            },
+            "actor": {
+              "kind": "unresolved",
+              "reason": "ambiguous_control",
+              "evidence": [
+                {
+                  "start_byte": 41,
+                  "end_byte": 52,
+                  "quote": "inscribirse"
+                }
+              ]
+            },
+            "destination": {
+              "kind": "ref",
+              "id": "course"
+            },
+            "evidence": [
+              {
+                "start_byte": 41,
+                "end_byte": 61,
+                "quote": "inscribirse en Delta"
+              }
+            ]
+          },
+          "evidence": [
+            {
+              "start_byte": 36,
+              "end_byte": 61,
+              "quote": "para inscribirse en Delta"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "consumer": {
+        "kind": "reference",
+        "id": "person"
+      },
+      "requires": {
+        "kind": "scope",
+        "id": "root"
+      },
+      "role": "binding"
+    },
+    {
+      "consumer": {
+        "kind": "reference",
+        "id": "course"
+      },
+      "requires": {
+        "kind": "scope",
+        "id": "root"
+      },
+      "role": "binding"
+    },
+    {
+      "consumer": {
+        "kind": "request",
+        "id": "requested_tutor"
+      },
+      "requires": {
+        "kind": "scope",
+        "id": "root"
+      },
+      "role": "binding"
+    },
+    {
+      "consumer": {
+        "kind": "request",
+        "id": "requested_tutor"
+      },
+      "requires": {
+        "kind": "reference",
+        "id": "course"
+      },
+      "role": "identity"
+    },
+    {
+      "consumer": {
+        "kind": "request",
+        "id": "requested_tutor"
+      },
+      "requires": {
+        "kind": "reference",
+        "id": "person"
+      },
+      "role": "identity"
+    }
+  ],
+  "coverage": [
+    {
+      "span": {
+        "start_byte": 0,
+        "end_byte": 62,
+        "quote": "¿Qué tutor debe acompañar a Vera para inscribirse en Delta?"
+      },
+      "state": "represented",
+      "owner": {
+        "kind": "request",
+        "id": "requested_tutor"
+      },
+      "issue_id": null
+    }
+  ]
+}

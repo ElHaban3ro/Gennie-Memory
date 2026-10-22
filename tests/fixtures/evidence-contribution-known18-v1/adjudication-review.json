@@ -1,0 +1,114 @@
+{
+  "review_kind": "informed_adjudication_manifest_review_non_blind",
+  "blocking_disagreement": false,
+  "role_consistency": {
+    "reviewed_questions": 18,
+    "reviewed_labels": 126,
+    "consistent_with_proposal": true,
+    "conclusion": "Los 126 roles enumerados conservan las asignaciones aceptadas en la conciliación. No encontré una atribución indebida de ejecución, confirmación, exclusividad o valor de otro caso que obligue a cambiar un rol. Las siguientes objeciones limitan interpretación y metadatos; no son nuevos juicios ciegos."
+  },
+  "questioned_judgments": [
+    {
+      "question_id": "cev4q_060_03",
+      "memory_id": "cev4_060_24",
+      "role": "A",
+      "objection": "Germinaron al concluir ambos puede presuponer conclusión ya ocurrida, lo que favorece B en una lectura.",
+      "resolution": "A es defendible porque comunica parte medida y pendiente explícita sin escoger esa lectura como premisa necesaria.",
+      "residual_limit_preserved": true,
+      "evidence": "El label conserva residual_ambiguity=true y la objeción A/B; dieciocho sigue atribuido al primer recuento.",
+      "requires_role_change": false
+    },
+    {
+      "question_id": "cev4q_062_01",
+      "memory_ids": [
+        "cev4_062_25",
+        "cev4_062_17"
+      ],
+      "role": "none",
+      "objection": "Un solo asignado o ausencia programada de invitado podrían interpretarse como confirmación o recuento negativo de una categoría.",
+      "resolution": "No hay estado explícito de confirmación ni número de músicos confirmados. La programación no basta.",
+      "residual_limit_preserved": true,
+      "evidence": "Ambos labels conservan residual_ambiguity=true y sus lecturas alternativas.",
+      "requires_role_change": false
+    },
+    {
+      "question_id": "cev5q_069_05",
+      "memory_ids": [
+        "cev5_069_10",
+        "cev5_069_12"
+      ],
+      "role": "none",
+      "objection": "No presentación y cita de las dos restantes sugieren prueba incompleta.",
+      "resolution": "No identifican autonomía como atributo de la comprobación; tampoco excluyen pruebas previas. No convertir plan o chequeo genérico en estado de autonomía.",
+      "residual_limit_preserved": true,
+      "evidence": "Ambos labels conservan residual_ambiguity=true y objeciones sobre otras pruebas y atributo.",
+      "requires_role_change": false
+    },
+    {
+      "question_id": "cev5q_069_05",
+      "memory_id": "cev5_069_11",
+      "role": "A",
+      "objection": "Una hora seguida no acredita agotamiento ni protocolo de prueba de autonomía completa.",
+      "resolution": "Sí aporta duración sostenida como límite parcial, suficiente para A.",
+      "residual_limit_preserved": "partial",
+      "evidence": "El label limita cobertura a seis juegos y declara no informar del resto. No explicita en su objection el límite de duración máxima o protocolo.",
+      "recommended_annotation": "Añadir que no acredita autonomía máxima ni protocolo certificado; no cambiar rol.",
+      "requires_role_change": false
+    },
+    {
+      "question_id": "cev5q_066_01",
+      "memory_id": "cev5_066_01",
+      "role": "A",
+      "objection": "Un equipo puede empezar sin Dalia; inicio del colectivo y de la persona no son idénticos.",
+      "resolution": "La atribución explícita al equipo de Dalia permite aporte parcial bajo la conciliación, siempre que se cite al equipo.",
+      "residual_limit_preserved": "textually_yes_machine_flag_no",
+      "evidence": "permitted_contribution dice para el equipo y objection dice no describe una llegada personal separada. Sin embargo residual_ambiguity=false no refleja la ambigüedad equipo/persona que señalé en la revisión informada previa.",
+      "recommended_annotation": "Conservar el rol A y marcar residual_ambiguity=true o documentar explícitamente por qué ese campo no representa esta incertidumbre. El límite textual no fue borrado.",
+      "requires_role_change": false
+    },
+    {
+      "question_id": "cev5q_073_03",
+      "memory_id": "cev5_073_17",
+      "role": "A",
+      "objection": "Identificar depósito no identifica acometida ni excluye alimentación mixta.",
+      "resolution": "El contrato permite fuente intermedia explícita: alimenta Laurel.",
+      "residual_limit_preserved": true,
+      "evidence": "La objeción conserva ausencia de exclusividad, posibilidad de otro suministro y prohibición de elevar a B.",
+      "requires_role_change": false
+    },
+    {
+      "question_id": "cev4q_061_01",
+      "memory_id": "cev4_061_06",
+      "role": "C",
+      "objection": "M4 podría también usar Silente; las asignaciones no excluyen coexistencia.",
+      "resolution": "Ese límite es precisamente la diferencia de C respecto de B; no invalida el contraste.",
+      "residual_limit_preserved": true,
+      "evidence": "objection no excluye M4/Silente ni da su duración; no traslada cuatro segundos de M8 a M4.",
+      "requires_role_change": false
+    },
+    {
+      "question_id": "cev5q_070_05",
+      "memory_id": "cev5_070_11",
+      "role": "none",
+      "objection": "Muestra preparada y sellada podría sugerir prueba húmeda pendiente.",
+      "resolution": "No declara ejecución, ausencia de ejecución ni resultado; none sigue consistente.",
+      "residual_limit_preserved": true,
+      "evidence": "El label mantiene separadas preparación y realización.",
+      "requires_role_change": false
+    }
+  ],
+  "residual_limits": [
+    "Revisión informada: conozco las resoluciones y las etiquetas; no presentarla como juicio ciego independiente.",
+    "Los roles son coherentes como anotación de desarrollo. Las ambigüedades lingüísticas no desaparecen por fijar una etiqueta para medir.",
+    "La duración sostenida de seis juegos no prueba cobertura de todas las parejas, agotamiento ni duración máxima.",
+    "El inicio del equipo no certifica inicio o llegada personal de Dalia. Mantener esta atribución al componer respuestas.",
+    "El depósito L no prueba exclusividad ni ausencia de agua de red; C no excluye configuraciones coexistentes.",
+    "El archivo permitido development.json contiene full_candidates, original_gold_ids e historical_selected_ids. Esos campos quedaron expuestos en la primera lectura integral y no se usaron para resolver roles; no se consultó otro archivo de resultados. Esto reafirma que esta revisión no es ciega.",
+    "No certifico concordancia con datos históricos externos, correspondencia mecánica de IDs, hashes ni preservación contra un origen no leído. Esa verificación corresponde al código solicitado por el coordinador.",
+    "No evalué llamadas de proveedor, recursos, estabilidad ni generalización; la coherencia semántica de este manifiesto no demuestra esas puertas."
+  ],
+  "recommended_nonblocking_annotation_changes": [
+    "cev5q_066_01/cev5_066_01: representar la ambigüedad equipo/persona también en residual_ambiguity, o explicar el significado limitado de false.",
+    "cev5q_069_05/cev5_069_11: explicitar que una hora seguida no es autonomía máxima ni protocolo certificado."
+  ]
+}

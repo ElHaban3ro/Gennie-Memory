@@ -1,0 +1,2306 @@
+[
+  {
+    "id": "v7_harbor_ops_01",
+    "scope_kind": "conversation",
+    "scope_id": "harbor_ops",
+    "entity_id": "OPS-41",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Mara Velez (OPS-41), the harbor engineer, is based at Puerto Niebla.",
+    "summary": "Mara Velez (OPS-41), the harbor engineer, is based at Puerto Niebla.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/harbor_ops/msg_harbor_ops_01",
+      "locator": "msg_harbor_ops_01"
+    }
+  },
+  {
+    "id": "v7_harbor_ops_02",
+    "scope_kind": "conversation",
+    "scope_id": "harbor_ops",
+    "entity_id": "OPS-41",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Mara Velez (OPS-41) uses the tide gauge TG-8 for routine field checks.",
+    "summary": "Mara Velez (OPS-41) uses the tide gauge TG-8 for routine field checks.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/harbor_ops/msg_harbor_ops_02",
+      "locator": "msg_harbor_ops_02"
+    }
+  },
+  {
+    "id": "v7_harbor_ops_03",
+    "scope_kind": "conversation",
+    "scope_id": "harbor_ops",
+    "entity_id": "OPS-41",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Mara Velez (OPS-41) started inspection I-41 on 2026-04-12.",
+    "summary": "Mara Velez (OPS-41) started inspection I-41 on 2026-04-12.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/harbor_ops/msg_harbor_ops_03",
+      "locator": "msg_harbor_ops_03"
+    }
+  },
+  {
+    "id": "v7_harbor_ops_04",
+    "scope_kind": "conversation",
+    "scope_id": "harbor_ops",
+    "entity_id": "OPS-41",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The approved allocation for inspection I-41 under Mara Velez (OPS-41) is 18,400 credits.",
+    "summary": "The approved allocation for inspection I-41 under Mara Velez (OPS-41) is 18,400 credits.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/harbor_ops/msg_harbor_ops_04",
+      "locator": "msg_harbor_ops_04"
+    }
+  },
+  {
+    "id": "v7_harbor_ops_05",
+    "scope_kind": "conversation",
+    "scope_id": "harbor_ops",
+    "entity_id": "OPS-41",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Correction: Mara Velez (OPS-41) did not base operations in Caleta Gris; that site belongs to Bruma.",
+    "summary": "Correction: Mara Velez (OPS-41) did not base operations in Caleta Gris; that site belongs to Bruma.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/harbor_ops/msg_harbor_ops_05",
+      "locator": "msg_harbor_ops_05"
+    }
+  },
+  {
+    "id": "v7_harbor_ops_06",
+    "scope_kind": "conversation",
+    "scope_id": "harbor_ops",
+    "entity_id": "OPS-41",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Correction: Mara Velez (OPS-41) did not approve inspection I-41; the approval log records it as declined.",
+    "summary": "Correction: Mara Velez (OPS-41) did not approve inspection I-41; the approval log records it as declined.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/harbor_ops/msg_harbor_ops_06",
+      "locator": "msg_harbor_ops_06"
+    }
+  },
+  {
+    "id": "v7_harbor_ops_07",
+    "scope_kind": "conversation",
+    "scope_id": "harbor_ops",
+    "entity_id": "OPS-41",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The inspection I-41 work window for Mara Velez (OPS-41) is 6 hours; an end date is not recorded.",
+    "summary": "The inspection I-41 work window for Mara Velez (OPS-41) is 6 hours; an end date is not recorded.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/harbor_ops/msg_harbor_ops_07",
+      "locator": "msg_harbor_ops_07"
+    }
+  },
+  {
+    "id": "v7_harbor_ops_08",
+    "scope_kind": "conversation",
+    "scope_id": "harbor_ops",
+    "entity_id": "OPS-41",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "For Mara Velez (OPS-41), the checklist records the start date as 2026-04-12 but gives no completion date.",
+    "summary": "For Mara Velez (OPS-41), the checklist records the start date as 2026-04-12 but gives no completion date.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/harbor_ops/msg_harbor_ops_08",
+      "locator": "msg_harbor_ops_08"
+    }
+  },
+  {
+    "id": "v7_harbor_ops_09",
+    "scope_kind": "conversation",
+    "scope_id": "harbor_ops",
+    "entity_id": "OPS-41",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "A temperature reading for inspection I-41 by Mara Velez (OPS-41) has not been measured yet.",
+    "summary": "A temperature reading for inspection I-41 by Mara Velez (OPS-41) has not been measured yet.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/harbor_ops/msg_harbor_ops_09",
+      "locator": "msg_harbor_ops_09"
+    }
+  },
+  {
+    "id": "v7_harbor_ops_10",
+    "scope_kind": "conversation",
+    "scope_id": "harbor_ops",
+    "entity_id": "OPS-41",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "No result for the salinity test on inspection I-41 by Mara Velez (OPS-41) has been measured yet.",
+    "summary": "No result for the salinity test on inspection I-41 by Mara Velez (OPS-41) has been measured yet.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/harbor_ops/msg_harbor_ops_10",
+      "locator": "msg_harbor_ops_10"
+    }
+  },
+  {
+    "id": "v7_harbor_ops_11",
+    "scope_kind": "conversation",
+    "scope_id": "harbor_ops",
+    "entity_id": "OPS-41",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Mara Velez (OPS-41) filed the equipment checkout form before the morning shift.",
+    "summary": "Mara Velez (OPS-41) filed the equipment checkout form before the morning shift.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/harbor_ops/msg_harbor_ops_11",
+      "locator": "msg_harbor_ops_11"
+    }
+  },
+  {
+    "id": "v7_harbor_ops_12",
+    "scope_kind": "conversation",
+    "scope_id": "harbor_ops",
+    "entity_id": "OPS-41",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Mara Velez (OPS-41) attended the weekly safety briefing with Bruma.",
+    "summary": "Mara Velez (OPS-41) attended the weekly safety briefing with Bruma.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/harbor_ops/msg_harbor_ops_12",
+      "locator": "msg_harbor_ops_12"
+    }
+  },
+  {
+    "id": "v7_harbor_ops_13",
+    "scope_kind": "conversation",
+    "scope_id": "harbor_ops",
+    "entity_id": "OPS-41",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The spare battery assigned to Mara Velez (OPS-41) is stored in cabinet 4.",
+    "summary": "The spare battery assigned to Mara Velez (OPS-41) is stored in cabinet 4.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/harbor_ops/msg_harbor_ops_13",
+      "locator": "msg_harbor_ops_13"
+    }
+  },
+  {
+    "id": "v7_harbor_ops_14",
+    "scope_kind": "conversation",
+    "scope_id": "harbor_ops",
+    "entity_id": "OPS-41",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Mara Velez (OPS-41) prefers the blue cover on printed field maps.",
+    "summary": "Mara Velez (OPS-41) prefers the blue cover on printed field maps.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/harbor_ops/msg_harbor_ops_14",
+      "locator": "msg_harbor_ops_14"
+    }
+  },
+  {
+    "id": "v7_harbor_ops_15",
+    "scope_kind": "conversation",
+    "scope_id": "harbor_ops",
+    "entity_id": "OPS-41",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "A replacement label for inspection I-41 was printed on 2026-01-15.",
+    "summary": "A replacement label for inspection I-41 was printed on 2026-01-15.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/harbor_ops/msg_harbor_ops_15",
+      "locator": "msg_harbor_ops_15"
+    }
+  },
+  {
+    "id": "v7_harbor_ops_16",
+    "scope_kind": "conversation",
+    "scope_id": "harbor_ops",
+    "entity_id": "OPS-41",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The shared break room serving Puerto Niebla stocks ginger tea.",
+    "summary": "The shared break room serving Puerto Niebla stocks ginger tea.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/harbor_ops/msg_harbor_ops_16",
+      "locator": "msg_harbor_ops_16"
+    }
+  },
+  {
+    "id": "v7_orchard_lab_01",
+    "scope_kind": "conversation",
+    "scope_id": "orchard_lab",
+    "entity_id": "LAB-62",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Ivo Serrano (LAB-62), the orchard botanist, is based at Valle Claro.",
+    "summary": "Ivo Serrano (LAB-62), the orchard botanist, is based at Valle Claro.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/orchard_lab/msg_orchard_lab_01",
+      "locator": "msg_orchard_lab_01"
+    }
+  },
+  {
+    "id": "v7_orchard_lab_02",
+    "scope_kind": "conversation",
+    "scope_id": "orchard_lab",
+    "entity_id": "LAB-62",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Ivo Serrano (LAB-62) uses the soil probe SP-6 for routine field checks.",
+    "summary": "Ivo Serrano (LAB-62) uses the soil probe SP-6 for routine field checks.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/orchard_lab/msg_orchard_lab_02",
+      "locator": "msg_orchard_lab_02"
+    }
+  },
+  {
+    "id": "v7_orchard_lab_03",
+    "scope_kind": "conversation",
+    "scope_id": "orchard_lab",
+    "entity_id": "LAB-62",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Ivo Serrano (LAB-62) started trial T-62 on 2026-05-08.",
+    "summary": "Ivo Serrano (LAB-62) started trial T-62 on 2026-05-08.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/orchard_lab/msg_orchard_lab_03",
+      "locator": "msg_orchard_lab_03"
+    }
+  },
+  {
+    "id": "v7_orchard_lab_04",
+    "scope_kind": "conversation",
+    "scope_id": "orchard_lab",
+    "entity_id": "LAB-62",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The approved allocation for trial T-62 under Ivo Serrano (LAB-62) is 7,250 credits.",
+    "summary": "The approved allocation for trial T-62 under Ivo Serrano (LAB-62) is 7,250 credits.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/orchard_lab/msg_orchard_lab_04",
+      "locator": "msg_orchard_lab_04"
+    }
+  },
+  {
+    "id": "v7_orchard_lab_05",
+    "scope_kind": "conversation",
+    "scope_id": "orchard_lab",
+    "entity_id": "LAB-62",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Correction: Ivo Serrano (LAB-62) did not base operations in Monte Azul; that site belongs to Risco.",
+    "summary": "Correction: Ivo Serrano (LAB-62) did not base operations in Monte Azul; that site belongs to Risco.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/orchard_lab/msg_orchard_lab_05",
+      "locator": "msg_orchard_lab_05"
+    }
+  },
+  {
+    "id": "v7_orchard_lab_06",
+    "scope_kind": "conversation",
+    "scope_id": "orchard_lab",
+    "entity_id": "LAB-62",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Correction: Ivo Serrano (LAB-62) did not approve trial T-62; the approval log records it as declined.",
+    "summary": "Correction: Ivo Serrano (LAB-62) did not approve trial T-62; the approval log records it as declined.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/orchard_lab/msg_orchard_lab_06",
+      "locator": "msg_orchard_lab_06"
+    }
+  },
+  {
+    "id": "v7_orchard_lab_07",
+    "scope_kind": "conversation",
+    "scope_id": "orchard_lab",
+    "entity_id": "LAB-62",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The trial T-62 work window for Ivo Serrano (LAB-62) is 4 hours; an end date is not recorded.",
+    "summary": "The trial T-62 work window for Ivo Serrano (LAB-62) is 4 hours; an end date is not recorded.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/orchard_lab/msg_orchard_lab_07",
+      "locator": "msg_orchard_lab_07"
+    }
+  },
+  {
+    "id": "v7_orchard_lab_08",
+    "scope_kind": "conversation",
+    "scope_id": "orchard_lab",
+    "entity_id": "LAB-62",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "For Ivo Serrano (LAB-62), the checklist records the start date as 2026-05-08 but gives no completion date.",
+    "summary": "For Ivo Serrano (LAB-62), the checklist records the start date as 2026-05-08 but gives no completion date.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/orchard_lab/msg_orchard_lab_08",
+      "locator": "msg_orchard_lab_08"
+    }
+  },
+  {
+    "id": "v7_orchard_lab_09",
+    "scope_kind": "conversation",
+    "scope_id": "orchard_lab",
+    "entity_id": "LAB-62",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "A temperature reading for trial T-62 by Ivo Serrano (LAB-62) has not been measured yet.",
+    "summary": "A temperature reading for trial T-62 by Ivo Serrano (LAB-62) has not been measured yet.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/orchard_lab/msg_orchard_lab_09",
+      "locator": "msg_orchard_lab_09"
+    }
+  },
+  {
+    "id": "v7_orchard_lab_10",
+    "scope_kind": "conversation",
+    "scope_id": "orchard_lab",
+    "entity_id": "LAB-62",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "No result for the salinity test on trial T-62 by Ivo Serrano (LAB-62) has been measured yet.",
+    "summary": "No result for the salinity test on trial T-62 by Ivo Serrano (LAB-62) has been measured yet.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/orchard_lab/msg_orchard_lab_10",
+      "locator": "msg_orchard_lab_10"
+    }
+  },
+  {
+    "id": "v7_orchard_lab_11",
+    "scope_kind": "conversation",
+    "scope_id": "orchard_lab",
+    "entity_id": "LAB-62",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Ivo Serrano (LAB-62) filed the equipment checkout form before the morning shift.",
+    "summary": "Ivo Serrano (LAB-62) filed the equipment checkout form before the morning shift.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/orchard_lab/msg_orchard_lab_11",
+      "locator": "msg_orchard_lab_11"
+    }
+  },
+  {
+    "id": "v7_orchard_lab_12",
+    "scope_kind": "conversation",
+    "scope_id": "orchard_lab",
+    "entity_id": "LAB-62",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Ivo Serrano (LAB-62) attended the weekly safety briefing with Risco.",
+    "summary": "Ivo Serrano (LAB-62) attended the weekly safety briefing with Risco.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/orchard_lab/msg_orchard_lab_12",
+      "locator": "msg_orchard_lab_12"
+    }
+  },
+  {
+    "id": "v7_orchard_lab_13",
+    "scope_kind": "conversation",
+    "scope_id": "orchard_lab",
+    "entity_id": "LAB-62",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The spare battery assigned to Ivo Serrano (LAB-62) is stored in cabinet 4.",
+    "summary": "The spare battery assigned to Ivo Serrano (LAB-62) is stored in cabinet 4.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/orchard_lab/msg_orchard_lab_13",
+      "locator": "msg_orchard_lab_13"
+    }
+  },
+  {
+    "id": "v7_orchard_lab_14",
+    "scope_kind": "conversation",
+    "scope_id": "orchard_lab",
+    "entity_id": "LAB-62",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Ivo Serrano (LAB-62) prefers the blue cover on printed field maps.",
+    "summary": "Ivo Serrano (LAB-62) prefers the blue cover on printed field maps.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/orchard_lab/msg_orchard_lab_14",
+      "locator": "msg_orchard_lab_14"
+    }
+  },
+  {
+    "id": "v7_orchard_lab_15",
+    "scope_kind": "conversation",
+    "scope_id": "orchard_lab",
+    "entity_id": "LAB-62",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "A replacement label for trial T-62 was printed on 2026-01-15.",
+    "summary": "A replacement label for trial T-62 was printed on 2026-01-15.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/orchard_lab/msg_orchard_lab_15",
+      "locator": "msg_orchard_lab_15"
+    }
+  },
+  {
+    "id": "v7_orchard_lab_16",
+    "scope_kind": "conversation",
+    "scope_id": "orchard_lab",
+    "entity_id": "LAB-62",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The shared break room serving Valle Claro stocks ginger tea.",
+    "summary": "The shared break room serving Valle Claro stocks ginger tea.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/orchard_lab/msg_orchard_lab_16",
+      "locator": "msg_orchard_lab_16"
+    }
+  },
+  {
+    "id": "v7_archive_team_01",
+    "scope_kind": "conversation",
+    "scope_id": "archive_team",
+    "entity_id": "ARC-83",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Neri Okafor (ARC-83), the archive conservator, is based at Lumen Quay.",
+    "summary": "Neri Okafor (ARC-83), the archive conservator, is based at Lumen Quay.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/archive_team/msg_archive_team_01",
+      "locator": "msg_archive_team_01"
+    }
+  },
+  {
+    "id": "v7_archive_team_02",
+    "scope_kind": "conversation",
+    "scope_id": "archive_team",
+    "entity_id": "ARC-83",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Neri Okafor (ARC-83) uses the humidity logger HL-3 for routine field checks.",
+    "summary": "Neri Okafor (ARC-83) uses the humidity logger HL-3 for routine field checks.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/archive_team/msg_archive_team_02",
+      "locator": "msg_archive_team_02"
+    }
+  },
+  {
+    "id": "v7_archive_team_03",
+    "scope_kind": "conversation",
+    "scope_id": "archive_team",
+    "entity_id": "ARC-83",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Neri Okafor (ARC-83) started box B-83 on 2026-06-19.",
+    "summary": "Neri Okafor (ARC-83) started box B-83 on 2026-06-19.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/archive_team/msg_archive_team_03",
+      "locator": "msg_archive_team_03"
+    }
+  },
+  {
+    "id": "v7_archive_team_04",
+    "scope_kind": "conversation",
+    "scope_id": "archive_team",
+    "entity_id": "ARC-83",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The approved allocation for box B-83 under Neri Okafor (ARC-83) is 12,600 credits.",
+    "summary": "The approved allocation for box B-83 under Neri Okafor (ARC-83) is 12,600 credits.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/archive_team/msg_archive_team_04",
+      "locator": "msg_archive_team_04"
+    }
+  },
+  {
+    "id": "v7_archive_team_05",
+    "scope_kind": "conversation",
+    "scope_id": "archive_team",
+    "entity_id": "ARC-83",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Correction: Neri Okafor (ARC-83) did not base operations in Cinder Bay; that site belongs to Aster.",
+    "summary": "Correction: Neri Okafor (ARC-83) did not base operations in Cinder Bay; that site belongs to Aster.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/archive_team/msg_archive_team_05",
+      "locator": "msg_archive_team_05"
+    }
+  },
+  {
+    "id": "v7_archive_team_06",
+    "scope_kind": "conversation",
+    "scope_id": "archive_team",
+    "entity_id": "ARC-83",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Correction: Neri Okafor (ARC-83) did not approve box B-83; the approval log records it as declined.",
+    "summary": "Correction: Neri Okafor (ARC-83) did not approve box B-83; the approval log records it as declined.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/archive_team/msg_archive_team_06",
+      "locator": "msg_archive_team_06"
+    }
+  },
+  {
+    "id": "v7_archive_team_07",
+    "scope_kind": "conversation",
+    "scope_id": "archive_team",
+    "entity_id": "ARC-83",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The box B-83 work window for Neri Okafor (ARC-83) is 5 hours; an end date is not recorded.",
+    "summary": "The box B-83 work window for Neri Okafor (ARC-83) is 5 hours; an end date is not recorded.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/archive_team/msg_archive_team_07",
+      "locator": "msg_archive_team_07"
+    }
+  },
+  {
+    "id": "v7_archive_team_08",
+    "scope_kind": "conversation",
+    "scope_id": "archive_team",
+    "entity_id": "ARC-83",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "For Neri Okafor (ARC-83), the checklist records the start date as 2026-06-19 but gives no completion date.",
+    "summary": "For Neri Okafor (ARC-83), the checklist records the start date as 2026-06-19 but gives no completion date.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/archive_team/msg_archive_team_08",
+      "locator": "msg_archive_team_08"
+    }
+  },
+  {
+    "id": "v7_archive_team_09",
+    "scope_kind": "conversation",
+    "scope_id": "archive_team",
+    "entity_id": "ARC-83",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "A temperature reading for box B-83 by Neri Okafor (ARC-83) has not been measured yet.",
+    "summary": "A temperature reading for box B-83 by Neri Okafor (ARC-83) has not been measured yet.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/archive_team/msg_archive_team_09",
+      "locator": "msg_archive_team_09"
+    }
+  },
+  {
+    "id": "v7_archive_team_10",
+    "scope_kind": "conversation",
+    "scope_id": "archive_team",
+    "entity_id": "ARC-83",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "No result for the salinity test on box B-83 by Neri Okafor (ARC-83) has been measured yet.",
+    "summary": "No result for the salinity test on box B-83 by Neri Okafor (ARC-83) has been measured yet.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/archive_team/msg_archive_team_10",
+      "locator": "msg_archive_team_10"
+    }
+  },
+  {
+    "id": "v7_archive_team_11",
+    "scope_kind": "conversation",
+    "scope_id": "archive_team",
+    "entity_id": "ARC-83",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Neri Okafor (ARC-83) filed the equipment checkout form before the morning shift.",
+    "summary": "Neri Okafor (ARC-83) filed the equipment checkout form before the morning shift.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/archive_team/msg_archive_team_11",
+      "locator": "msg_archive_team_11"
+    }
+  },
+  {
+    "id": "v7_archive_team_12",
+    "scope_kind": "conversation",
+    "scope_id": "archive_team",
+    "entity_id": "ARC-83",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Neri Okafor (ARC-83) attended the weekly safety briefing with Aster.",
+    "summary": "Neri Okafor (ARC-83) attended the weekly safety briefing with Aster.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/archive_team/msg_archive_team_12",
+      "locator": "msg_archive_team_12"
+    }
+  },
+  {
+    "id": "v7_archive_team_13",
+    "scope_kind": "conversation",
+    "scope_id": "archive_team",
+    "entity_id": "ARC-83",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The spare battery assigned to Neri Okafor (ARC-83) is stored in cabinet 4.",
+    "summary": "The spare battery assigned to Neri Okafor (ARC-83) is stored in cabinet 4.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/archive_team/msg_archive_team_13",
+      "locator": "msg_archive_team_13"
+    }
+  },
+  {
+    "id": "v7_archive_team_14",
+    "scope_kind": "conversation",
+    "scope_id": "archive_team",
+    "entity_id": "ARC-83",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Neri Okafor (ARC-83) prefers the blue cover on printed field maps.",
+    "summary": "Neri Okafor (ARC-83) prefers the blue cover on printed field maps.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/archive_team/msg_archive_team_14",
+      "locator": "msg_archive_team_14"
+    }
+  },
+  {
+    "id": "v7_archive_team_15",
+    "scope_kind": "conversation",
+    "scope_id": "archive_team",
+    "entity_id": "ARC-83",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "A replacement label for box B-83 was printed on 2026-01-15.",
+    "summary": "A replacement label for box B-83 was printed on 2026-01-15.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/archive_team/msg_archive_team_15",
+      "locator": "msg_archive_team_15"
+    }
+  },
+  {
+    "id": "v7_archive_team_16",
+    "scope_kind": "conversation",
+    "scope_id": "archive_team",
+    "entity_id": "ARC-83",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The shared break room serving Lumen Quay stocks ginger tea.",
+    "summary": "The shared break room serving Lumen Quay stocks ginger tea.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/archive_team/msg_archive_team_16",
+      "locator": "msg_archive_team_16"
+    }
+  },
+  {
+    "id": "v7_rail_survey_01",
+    "scope_kind": "conversation",
+    "scope_id": "rail_survey",
+    "entity_id": "RAIL-24",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Tala Kim (RAIL-24), the rail surveyor, is based at North Fen.",
+    "summary": "Tala Kim (RAIL-24), the rail surveyor, is based at North Fen.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/rail_survey/msg_rail_survey_01",
+      "locator": "msg_rail_survey_01"
+    }
+  },
+  {
+    "id": "v7_rail_survey_02",
+    "scope_kind": "conversation",
+    "scope_id": "rail_survey",
+    "entity_id": "RAIL-24",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Tala Kim (RAIL-24) uses the laser rangefinder LR-24 for routine field checks.",
+    "summary": "Tala Kim (RAIL-24) uses the laser rangefinder LR-24 for routine field checks.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/rail_survey/msg_rail_survey_02",
+      "locator": "msg_rail_survey_02"
+    }
+  },
+  {
+    "id": "v7_rail_survey_03",
+    "scope_kind": "conversation",
+    "scope_id": "rail_survey",
+    "entity_id": "RAIL-24",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Tala Kim (RAIL-24) started survey S-24 on 2026-07-03.",
+    "summary": "Tala Kim (RAIL-24) started survey S-24 on 2026-07-03.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/rail_survey/msg_rail_survey_03",
+      "locator": "msg_rail_survey_03"
+    }
+  },
+  {
+    "id": "v7_rail_survey_04",
+    "scope_kind": "conversation",
+    "scope_id": "rail_survey",
+    "entity_id": "RAIL-24",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The approved allocation for survey S-24 under Tala Kim (RAIL-24) is 21,900 credits.",
+    "summary": "The approved allocation for survey S-24 under Tala Kim (RAIL-24) is 21,900 credits.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/rail_survey/msg_rail_survey_04",
+      "locator": "msg_rail_survey_04"
+    }
+  },
+  {
+    "id": "v7_rail_survey_05",
+    "scope_kind": "conversation",
+    "scope_id": "rail_survey",
+    "entity_id": "RAIL-24",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Correction: Tala Kim (RAIL-24) did not base operations in East Fen; that site belongs to South Fen.",
+    "summary": "Correction: Tala Kim (RAIL-24) did not base operations in East Fen; that site belongs to South Fen.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/rail_survey/msg_rail_survey_05",
+      "locator": "msg_rail_survey_05"
+    }
+  },
+  {
+    "id": "v7_rail_survey_06",
+    "scope_kind": "conversation",
+    "scope_id": "rail_survey",
+    "entity_id": "RAIL-24",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Correction: Tala Kim (RAIL-24) did not approve survey S-24; the approval log records it as declined.",
+    "summary": "Correction: Tala Kim (RAIL-24) did not approve survey S-24; the approval log records it as declined.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/rail_survey/msg_rail_survey_06",
+      "locator": "msg_rail_survey_06"
+    }
+  },
+  {
+    "id": "v7_rail_survey_07",
+    "scope_kind": "conversation",
+    "scope_id": "rail_survey",
+    "entity_id": "RAIL-24",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The survey S-24 work window for Tala Kim (RAIL-24) is 7 hours; an end date is not recorded.",
+    "summary": "The survey S-24 work window for Tala Kim (RAIL-24) is 7 hours; an end date is not recorded.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/rail_survey/msg_rail_survey_07",
+      "locator": "msg_rail_survey_07"
+    }
+  },
+  {
+    "id": "v7_rail_survey_08",
+    "scope_kind": "conversation",
+    "scope_id": "rail_survey",
+    "entity_id": "RAIL-24",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "For Tala Kim (RAIL-24), the checklist records the start date as 2026-07-03 but gives no completion date.",
+    "summary": "For Tala Kim (RAIL-24), the checklist records the start date as 2026-07-03 but gives no completion date.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/rail_survey/msg_rail_survey_08",
+      "locator": "msg_rail_survey_08"
+    }
+  },
+  {
+    "id": "v7_rail_survey_09",
+    "scope_kind": "conversation",
+    "scope_id": "rail_survey",
+    "entity_id": "RAIL-24",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "A temperature reading for survey S-24 by Tala Kim (RAIL-24) has not been measured yet.",
+    "summary": "A temperature reading for survey S-24 by Tala Kim (RAIL-24) has not been measured yet.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/rail_survey/msg_rail_survey_09",
+      "locator": "msg_rail_survey_09"
+    }
+  },
+  {
+    "id": "v7_rail_survey_10",
+    "scope_kind": "conversation",
+    "scope_id": "rail_survey",
+    "entity_id": "RAIL-24",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "No result for the salinity test on survey S-24 by Tala Kim (RAIL-24) has been measured yet.",
+    "summary": "No result for the salinity test on survey S-24 by Tala Kim (RAIL-24) has been measured yet.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/rail_survey/msg_rail_survey_10",
+      "locator": "msg_rail_survey_10"
+    }
+  },
+  {
+    "id": "v7_rail_survey_11",
+    "scope_kind": "conversation",
+    "scope_id": "rail_survey",
+    "entity_id": "RAIL-24",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Tala Kim (RAIL-24) filed the equipment checkout form before the morning shift.",
+    "summary": "Tala Kim (RAIL-24) filed the equipment checkout form before the morning shift.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/rail_survey/msg_rail_survey_11",
+      "locator": "msg_rail_survey_11"
+    }
+  },
+  {
+    "id": "v7_rail_survey_12",
+    "scope_kind": "conversation",
+    "scope_id": "rail_survey",
+    "entity_id": "RAIL-24",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Tala Kim (RAIL-24) attended the weekly safety briefing with South Fen.",
+    "summary": "Tala Kim (RAIL-24) attended the weekly safety briefing with South Fen.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/rail_survey/msg_rail_survey_12",
+      "locator": "msg_rail_survey_12"
+    }
+  },
+  {
+    "id": "v7_rail_survey_13",
+    "scope_kind": "conversation",
+    "scope_id": "rail_survey",
+    "entity_id": "RAIL-24",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The spare battery assigned to Tala Kim (RAIL-24) is stored in cabinet 4.",
+    "summary": "The spare battery assigned to Tala Kim (RAIL-24) is stored in cabinet 4.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/rail_survey/msg_rail_survey_13",
+      "locator": "msg_rail_survey_13"
+    }
+  },
+  {
+    "id": "v7_rail_survey_14",
+    "scope_kind": "conversation",
+    "scope_id": "rail_survey",
+    "entity_id": "RAIL-24",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Tala Kim (RAIL-24) prefers the blue cover on printed field maps.",
+    "summary": "Tala Kim (RAIL-24) prefers the blue cover on printed field maps.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/rail_survey/msg_rail_survey_14",
+      "locator": "msg_rail_survey_14"
+    }
+  },
+  {
+    "id": "v7_rail_survey_15",
+    "scope_kind": "conversation",
+    "scope_id": "rail_survey",
+    "entity_id": "RAIL-24",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "A replacement label for survey S-24 was printed on 2026-01-15.",
+    "summary": "A replacement label for survey S-24 was printed on 2026-01-15.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/rail_survey/msg_rail_survey_15",
+      "locator": "msg_rail_survey_15"
+    }
+  },
+  {
+    "id": "v7_rail_survey_16",
+    "scope_kind": "conversation",
+    "scope_id": "rail_survey",
+    "entity_id": "RAIL-24",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The shared break room serving North Fen stocks ginger tea.",
+    "summary": "The shared break room serving North Fen stocks ginger tea.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/rail_survey/msg_rail_survey_16",
+      "locator": "msg_rail_survey_16"
+    }
+  },
+  {
+    "id": "v7_clinic_trials_01",
+    "scope_kind": "conversation",
+    "scope_id": "clinic_trials",
+    "entity_id": "CLN-55",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Pavel Duarte (CLN-55), the clinical coordinator, is based at San Telmo.",
+    "summary": "Pavel Duarte (CLN-55), the clinical coordinator, is based at San Telmo.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/clinic_trials/msg_clinic_trials_01",
+      "locator": "msg_clinic_trials_01"
+    }
+  },
+  {
+    "id": "v7_clinic_trials_02",
+    "scope_kind": "conversation",
+    "scope_id": "clinic_trials",
+    "entity_id": "CLN-55",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Pavel Duarte (CLN-55) uses the pulse monitor PM-5 for routine field checks.",
+    "summary": "Pavel Duarte (CLN-55) uses the pulse monitor PM-5 for routine field checks.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/clinic_trials/msg_clinic_trials_02",
+      "locator": "msg_clinic_trials_02"
+    }
+  },
+  {
+    "id": "v7_clinic_trials_03",
+    "scope_kind": "conversation",
+    "scope_id": "clinic_trials",
+    "entity_id": "CLN-55",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Pavel Duarte (CLN-55) started protocol P-55 on 2026-08-14.",
+    "summary": "Pavel Duarte (CLN-55) started protocol P-55 on 2026-08-14.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/clinic_trials/msg_clinic_trials_03",
+      "locator": "msg_clinic_trials_03"
+    }
+  },
+  {
+    "id": "v7_clinic_trials_04",
+    "scope_kind": "conversation",
+    "scope_id": "clinic_trials",
+    "entity_id": "CLN-55",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The approved allocation for protocol P-55 under Pavel Duarte (CLN-55) is 9,800 credits.",
+    "summary": "The approved allocation for protocol P-55 under Pavel Duarte (CLN-55) is 9,800 credits.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/clinic_trials/msg_clinic_trials_04",
+      "locator": "msg_clinic_trials_04"
+    }
+  },
+  {
+    "id": "v7_clinic_trials_05",
+    "scope_kind": "conversation",
+    "scope_id": "clinic_trials",
+    "entity_id": "CLN-55",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Correction: Pavel Duarte (CLN-55) did not base operations in Santa Isla; that site belongs to Las Rocas.",
+    "summary": "Correction: Pavel Duarte (CLN-55) did not base operations in Santa Isla; that site belongs to Las Rocas.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/clinic_trials/msg_clinic_trials_05",
+      "locator": "msg_clinic_trials_05"
+    }
+  },
+  {
+    "id": "v7_clinic_trials_06",
+    "scope_kind": "conversation",
+    "scope_id": "clinic_trials",
+    "entity_id": "CLN-55",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Correction: Pavel Duarte (CLN-55) did not approve protocol P-55; the approval log records it as declined.",
+    "summary": "Correction: Pavel Duarte (CLN-55) did not approve protocol P-55; the approval log records it as declined.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/clinic_trials/msg_clinic_trials_06",
+      "locator": "msg_clinic_trials_06"
+    }
+  },
+  {
+    "id": "v7_clinic_trials_07",
+    "scope_kind": "conversation",
+    "scope_id": "clinic_trials",
+    "entity_id": "CLN-55",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The protocol P-55 work window for Pavel Duarte (CLN-55) is 3 hours; an end date is not recorded.",
+    "summary": "The protocol P-55 work window for Pavel Duarte (CLN-55) is 3 hours; an end date is not recorded.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/clinic_trials/msg_clinic_trials_07",
+      "locator": "msg_clinic_trials_07"
+    }
+  },
+  {
+    "id": "v7_clinic_trials_08",
+    "scope_kind": "conversation",
+    "scope_id": "clinic_trials",
+    "entity_id": "CLN-55",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "For Pavel Duarte (CLN-55), the checklist records the start date as 2026-08-14 but gives no completion date.",
+    "summary": "For Pavel Duarte (CLN-55), the checklist records the start date as 2026-08-14 but gives no completion date.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/clinic_trials/msg_clinic_trials_08",
+      "locator": "msg_clinic_trials_08"
+    }
+  },
+  {
+    "id": "v7_clinic_trials_09",
+    "scope_kind": "conversation",
+    "scope_id": "clinic_trials",
+    "entity_id": "CLN-55",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "A temperature reading for protocol P-55 by Pavel Duarte (CLN-55) has not been measured yet.",
+    "summary": "A temperature reading for protocol P-55 by Pavel Duarte (CLN-55) has not been measured yet.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/clinic_trials/msg_clinic_trials_09",
+      "locator": "msg_clinic_trials_09"
+    }
+  },
+  {
+    "id": "v7_clinic_trials_10",
+    "scope_kind": "conversation",
+    "scope_id": "clinic_trials",
+    "entity_id": "CLN-55",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "No result for the salinity test on protocol P-55 by Pavel Duarte (CLN-55) has been measured yet.",
+    "summary": "No result for the salinity test on protocol P-55 by Pavel Duarte (CLN-55) has been measured yet.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/clinic_trials/msg_clinic_trials_10",
+      "locator": "msg_clinic_trials_10"
+    }
+  },
+  {
+    "id": "v7_clinic_trials_11",
+    "scope_kind": "conversation",
+    "scope_id": "clinic_trials",
+    "entity_id": "CLN-55",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Pavel Duarte (CLN-55) filed the equipment checkout form before the morning shift.",
+    "summary": "Pavel Duarte (CLN-55) filed the equipment checkout form before the morning shift.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/clinic_trials/msg_clinic_trials_11",
+      "locator": "msg_clinic_trials_11"
+    }
+  },
+  {
+    "id": "v7_clinic_trials_12",
+    "scope_kind": "conversation",
+    "scope_id": "clinic_trials",
+    "entity_id": "CLN-55",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Pavel Duarte (CLN-55) attended the weekly safety briefing with Las Rocas.",
+    "summary": "Pavel Duarte (CLN-55) attended the weekly safety briefing with Las Rocas.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/clinic_trials/msg_clinic_trials_12",
+      "locator": "msg_clinic_trials_12"
+    }
+  },
+  {
+    "id": "v7_clinic_trials_13",
+    "scope_kind": "conversation",
+    "scope_id": "clinic_trials",
+    "entity_id": "CLN-55",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The spare battery assigned to Pavel Duarte (CLN-55) is stored in cabinet 4.",
+    "summary": "The spare battery assigned to Pavel Duarte (CLN-55) is stored in cabinet 4.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/clinic_trials/msg_clinic_trials_13",
+      "locator": "msg_clinic_trials_13"
+    }
+  },
+  {
+    "id": "v7_clinic_trials_14",
+    "scope_kind": "conversation",
+    "scope_id": "clinic_trials",
+    "entity_id": "CLN-55",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Pavel Duarte (CLN-55) prefers the blue cover on printed field maps.",
+    "summary": "Pavel Duarte (CLN-55) prefers the blue cover on printed field maps.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/clinic_trials/msg_clinic_trials_14",
+      "locator": "msg_clinic_trials_14"
+    }
+  },
+  {
+    "id": "v7_clinic_trials_15",
+    "scope_kind": "conversation",
+    "scope_id": "clinic_trials",
+    "entity_id": "CLN-55",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "A replacement label for protocol P-55 was printed on 2026-01-15.",
+    "summary": "A replacement label for protocol P-55 was printed on 2026-01-15.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/clinic_trials/msg_clinic_trials_15",
+      "locator": "msg_clinic_trials_15"
+    }
+  },
+  {
+    "id": "v7_clinic_trials_16",
+    "scope_kind": "conversation",
+    "scope_id": "clinic_trials",
+    "entity_id": "CLN-55",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The shared break room serving San Telmo stocks ginger tea.",
+    "summary": "The shared break room serving San Telmo stocks ginger tea.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/clinic_trials/msg_clinic_trials_16",
+      "locator": "msg_clinic_trials_16"
+    }
+  },
+  {
+    "id": "v7_canopy_field_01",
+    "scope_kind": "conversation",
+    "scope_id": "canopy_field",
+    "entity_id": "BIO-76",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Yara Mensah (BIO-76), the canopy ecologist, is based at Koru Ridge.",
+    "summary": "Yara Mensah (BIO-76), the canopy ecologist, is based at Koru Ridge.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/canopy_field/msg_canopy_field_01",
+      "locator": "msg_canopy_field_01"
+    }
+  },
+  {
+    "id": "v7_canopy_field_02",
+    "scope_kind": "conversation",
+    "scope_id": "canopy_field",
+    "entity_id": "BIO-76",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Yara Mensah (BIO-76) uses the acoustic recorder AR-7 for routine field checks.",
+    "summary": "Yara Mensah (BIO-76) uses the acoustic recorder AR-7 for routine field checks.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/canopy_field/msg_canopy_field_02",
+      "locator": "msg_canopy_field_02"
+    }
+  },
+  {
+    "id": "v7_canopy_field_03",
+    "scope_kind": "conversation",
+    "scope_id": "canopy_field",
+    "entity_id": "BIO-76",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Yara Mensah (BIO-76) started transect X-76 on 2026-09-02.",
+    "summary": "Yara Mensah (BIO-76) started transect X-76 on 2026-09-02.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/canopy_field/msg_canopy_field_03",
+      "locator": "msg_canopy_field_03"
+    }
+  },
+  {
+    "id": "v7_canopy_field_04",
+    "scope_kind": "conversation",
+    "scope_id": "canopy_field",
+    "entity_id": "BIO-76",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The approved allocation for transect X-76 under Yara Mensah (BIO-76) is 15,300 credits.",
+    "summary": "The approved allocation for transect X-76 under Yara Mensah (BIO-76) is 15,300 credits.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/canopy_field/msg_canopy_field_04",
+      "locator": "msg_canopy_field_04"
+    }
+  },
+  {
+    "id": "v7_canopy_field_05",
+    "scope_kind": "conversation",
+    "scope_id": "canopy_field",
+    "entity_id": "BIO-76",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Correction: Yara Mensah (BIO-76) did not base operations in Tern Point; that site belongs to Moss Shelf.",
+    "summary": "Correction: Yara Mensah (BIO-76) did not base operations in Tern Point; that site belongs to Moss Shelf.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/canopy_field/msg_canopy_field_05",
+      "locator": "msg_canopy_field_05"
+    }
+  },
+  {
+    "id": "v7_canopy_field_06",
+    "scope_kind": "conversation",
+    "scope_id": "canopy_field",
+    "entity_id": "BIO-76",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Correction: Yara Mensah (BIO-76) did not approve transect X-76; the approval log records it as declined.",
+    "summary": "Correction: Yara Mensah (BIO-76) did not approve transect X-76; the approval log records it as declined.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/canopy_field/msg_canopy_field_06",
+      "locator": "msg_canopy_field_06"
+    }
+  },
+  {
+    "id": "v7_canopy_field_07",
+    "scope_kind": "conversation",
+    "scope_id": "canopy_field",
+    "entity_id": "BIO-76",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The transect X-76 work window for Yara Mensah (BIO-76) is 8 hours; an end date is not recorded.",
+    "summary": "The transect X-76 work window for Yara Mensah (BIO-76) is 8 hours; an end date is not recorded.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/canopy_field/msg_canopy_field_07",
+      "locator": "msg_canopy_field_07"
+    }
+  },
+  {
+    "id": "v7_canopy_field_08",
+    "scope_kind": "conversation",
+    "scope_id": "canopy_field",
+    "entity_id": "BIO-76",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "For Yara Mensah (BIO-76), the checklist records the start date as 2026-09-02 but gives no completion date.",
+    "summary": "For Yara Mensah (BIO-76), the checklist records the start date as 2026-09-02 but gives no completion date.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/canopy_field/msg_canopy_field_08",
+      "locator": "msg_canopy_field_08"
+    }
+  },
+  {
+    "id": "v7_canopy_field_09",
+    "scope_kind": "conversation",
+    "scope_id": "canopy_field",
+    "entity_id": "BIO-76",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "A temperature reading for transect X-76 by Yara Mensah (BIO-76) has not been measured yet.",
+    "summary": "A temperature reading for transect X-76 by Yara Mensah (BIO-76) has not been measured yet.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/canopy_field/msg_canopy_field_09",
+      "locator": "msg_canopy_field_09"
+    }
+  },
+  {
+    "id": "v7_canopy_field_10",
+    "scope_kind": "conversation",
+    "scope_id": "canopy_field",
+    "entity_id": "BIO-76",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "No result for the salinity test on transect X-76 by Yara Mensah (BIO-76) has been measured yet.",
+    "summary": "No result for the salinity test on transect X-76 by Yara Mensah (BIO-76) has been measured yet.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/canopy_field/msg_canopy_field_10",
+      "locator": "msg_canopy_field_10"
+    }
+  },
+  {
+    "id": "v7_canopy_field_11",
+    "scope_kind": "conversation",
+    "scope_id": "canopy_field",
+    "entity_id": "BIO-76",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Yara Mensah (BIO-76) filed the equipment checkout form before the morning shift.",
+    "summary": "Yara Mensah (BIO-76) filed the equipment checkout form before the morning shift.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/canopy_field/msg_canopy_field_11",
+      "locator": "msg_canopy_field_11"
+    }
+  },
+  {
+    "id": "v7_canopy_field_12",
+    "scope_kind": "conversation",
+    "scope_id": "canopy_field",
+    "entity_id": "BIO-76",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Yara Mensah (BIO-76) attended the weekly safety briefing with Moss Shelf.",
+    "summary": "Yara Mensah (BIO-76) attended the weekly safety briefing with Moss Shelf.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/canopy_field/msg_canopy_field_12",
+      "locator": "msg_canopy_field_12"
+    }
+  },
+  {
+    "id": "v7_canopy_field_13",
+    "scope_kind": "conversation",
+    "scope_id": "canopy_field",
+    "entity_id": "BIO-76",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The spare battery assigned to Yara Mensah (BIO-76) is stored in cabinet 4.",
+    "summary": "The spare battery assigned to Yara Mensah (BIO-76) is stored in cabinet 4.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/canopy_field/msg_canopy_field_13",
+      "locator": "msg_canopy_field_13"
+    }
+  },
+  {
+    "id": "v7_canopy_field_14",
+    "scope_kind": "conversation",
+    "scope_id": "canopy_field",
+    "entity_id": "BIO-76",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Yara Mensah (BIO-76) prefers the blue cover on printed field maps.",
+    "summary": "Yara Mensah (BIO-76) prefers the blue cover on printed field maps.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/canopy_field/msg_canopy_field_14",
+      "locator": "msg_canopy_field_14"
+    }
+  },
+  {
+    "id": "v7_canopy_field_15",
+    "scope_kind": "conversation",
+    "scope_id": "canopy_field",
+    "entity_id": "BIO-76",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "A replacement label for transect X-76 was printed on 2026-01-15.",
+    "summary": "A replacement label for transect X-76 was printed on 2026-01-15.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/canopy_field/msg_canopy_field_15",
+      "locator": "msg_canopy_field_15"
+    }
+  },
+  {
+    "id": "v7_canopy_field_16",
+    "scope_kind": "conversation",
+    "scope_id": "canopy_field",
+    "entity_id": "BIO-76",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The shared break room serving Koru Ridge stocks ginger tea.",
+    "summary": "The shared break room serving Koru Ridge stocks ginger tea.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/canopy_field/msg_canopy_field_16",
+      "locator": "msg_canopy_field_16"
+    }
+  },
+  {
+    "id": "v7_kiln_studio_01",
+    "scope_kind": "conversation",
+    "scope_id": "kiln_studio",
+    "entity_id": "KILN-37",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Oren Petrov (KILN-37), the ceramic technician, is based at Redclay Works.",
+    "summary": "Oren Petrov (KILN-37), the ceramic technician, is based at Redclay Works.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/kiln_studio/msg_kiln_studio_01",
+      "locator": "msg_kiln_studio_01"
+    }
+  },
+  {
+    "id": "v7_kiln_studio_02",
+    "scope_kind": "conversation",
+    "scope_id": "kiln_studio",
+    "entity_id": "KILN-37",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Oren Petrov (KILN-37) uses the kiln sensor KS-37 for routine field checks.",
+    "summary": "Oren Petrov (KILN-37) uses the kiln sensor KS-37 for routine field checks.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/kiln_studio/msg_kiln_studio_02",
+      "locator": "msg_kiln_studio_02"
+    }
+  },
+  {
+    "id": "v7_kiln_studio_03",
+    "scope_kind": "conversation",
+    "scope_id": "kiln_studio",
+    "entity_id": "KILN-37",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Oren Petrov (KILN-37) started firing F-37 on 2026-03-27.",
+    "summary": "Oren Petrov (KILN-37) started firing F-37 on 2026-03-27.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/kiln_studio/msg_kiln_studio_03",
+      "locator": "msg_kiln_studio_03"
+    }
+  },
+  {
+    "id": "v7_kiln_studio_04",
+    "scope_kind": "conversation",
+    "scope_id": "kiln_studio",
+    "entity_id": "KILN-37",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The approved allocation for firing F-37 under Oren Petrov (KILN-37) is 6,450 credits.",
+    "summary": "The approved allocation for firing F-37 under Oren Petrov (KILN-37) is 6,450 credits.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/kiln_studio/msg_kiln_studio_04",
+      "locator": "msg_kiln_studio_04"
+    }
+  },
+  {
+    "id": "v7_kiln_studio_05",
+    "scope_kind": "conversation",
+    "scope_id": "kiln_studio",
+    "entity_id": "KILN-37",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Correction: Oren Petrov (KILN-37) did not base operations in Ashbank; that site belongs to Whiteclay Works.",
+    "summary": "Correction: Oren Petrov (KILN-37) did not base operations in Ashbank; that site belongs to Whiteclay Works.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/kiln_studio/msg_kiln_studio_05",
+      "locator": "msg_kiln_studio_05"
+    }
+  },
+  {
+    "id": "v7_kiln_studio_06",
+    "scope_kind": "conversation",
+    "scope_id": "kiln_studio",
+    "entity_id": "KILN-37",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Correction: Oren Petrov (KILN-37) did not approve firing F-37; the approval log records it as declined.",
+    "summary": "Correction: Oren Petrov (KILN-37) did not approve firing F-37; the approval log records it as declined.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/kiln_studio/msg_kiln_studio_06",
+      "locator": "msg_kiln_studio_06"
+    }
+  },
+  {
+    "id": "v7_kiln_studio_07",
+    "scope_kind": "conversation",
+    "scope_id": "kiln_studio",
+    "entity_id": "KILN-37",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The firing F-37 work window for Oren Petrov (KILN-37) is 2 hours; an end date is not recorded.",
+    "summary": "The firing F-37 work window for Oren Petrov (KILN-37) is 2 hours; an end date is not recorded.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/kiln_studio/msg_kiln_studio_07",
+      "locator": "msg_kiln_studio_07"
+    }
+  },
+  {
+    "id": "v7_kiln_studio_08",
+    "scope_kind": "conversation",
+    "scope_id": "kiln_studio",
+    "entity_id": "KILN-37",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "For Oren Petrov (KILN-37), the checklist records the start date as 2026-03-27 but gives no completion date.",
+    "summary": "For Oren Petrov (KILN-37), the checklist records the start date as 2026-03-27 but gives no completion date.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/kiln_studio/msg_kiln_studio_08",
+      "locator": "msg_kiln_studio_08"
+    }
+  },
+  {
+    "id": "v7_kiln_studio_09",
+    "scope_kind": "conversation",
+    "scope_id": "kiln_studio",
+    "entity_id": "KILN-37",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "A temperature reading for firing F-37 by Oren Petrov (KILN-37) has not been measured yet.",
+    "summary": "A temperature reading for firing F-37 by Oren Petrov (KILN-37) has not been measured yet.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/kiln_studio/msg_kiln_studio_09",
+      "locator": "msg_kiln_studio_09"
+    }
+  },
+  {
+    "id": "v7_kiln_studio_10",
+    "scope_kind": "conversation",
+    "scope_id": "kiln_studio",
+    "entity_id": "KILN-37",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "No result for the salinity test on firing F-37 by Oren Petrov (KILN-37) has been measured yet.",
+    "summary": "No result for the salinity test on firing F-37 by Oren Petrov (KILN-37) has been measured yet.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/kiln_studio/msg_kiln_studio_10",
+      "locator": "msg_kiln_studio_10"
+    }
+  },
+  {
+    "id": "v7_kiln_studio_11",
+    "scope_kind": "conversation",
+    "scope_id": "kiln_studio",
+    "entity_id": "KILN-37",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Oren Petrov (KILN-37) filed the equipment checkout form before the morning shift.",
+    "summary": "Oren Petrov (KILN-37) filed the equipment checkout form before the morning shift.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/kiln_studio/msg_kiln_studio_11",
+      "locator": "msg_kiln_studio_11"
+    }
+  },
+  {
+    "id": "v7_kiln_studio_12",
+    "scope_kind": "conversation",
+    "scope_id": "kiln_studio",
+    "entity_id": "KILN-37",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Oren Petrov (KILN-37) attended the weekly safety briefing with Whiteclay Works.",
+    "summary": "Oren Petrov (KILN-37) attended the weekly safety briefing with Whiteclay Works.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/kiln_studio/msg_kiln_studio_12",
+      "locator": "msg_kiln_studio_12"
+    }
+  },
+  {
+    "id": "v7_kiln_studio_13",
+    "scope_kind": "conversation",
+    "scope_id": "kiln_studio",
+    "entity_id": "KILN-37",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The spare battery assigned to Oren Petrov (KILN-37) is stored in cabinet 4.",
+    "summary": "The spare battery assigned to Oren Petrov (KILN-37) is stored in cabinet 4.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/kiln_studio/msg_kiln_studio_13",
+      "locator": "msg_kiln_studio_13"
+    }
+  },
+  {
+    "id": "v7_kiln_studio_14",
+    "scope_kind": "conversation",
+    "scope_id": "kiln_studio",
+    "entity_id": "KILN-37",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Oren Petrov (KILN-37) prefers the blue cover on printed field maps.",
+    "summary": "Oren Petrov (KILN-37) prefers the blue cover on printed field maps.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/kiln_studio/msg_kiln_studio_14",
+      "locator": "msg_kiln_studio_14"
+    }
+  },
+  {
+    "id": "v7_kiln_studio_15",
+    "scope_kind": "conversation",
+    "scope_id": "kiln_studio",
+    "entity_id": "KILN-37",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "A replacement label for firing F-37 was printed on 2026-01-15.",
+    "summary": "A replacement label for firing F-37 was printed on 2026-01-15.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/kiln_studio/msg_kiln_studio_15",
+      "locator": "msg_kiln_studio_15"
+    }
+  },
+  {
+    "id": "v7_kiln_studio_16",
+    "scope_kind": "conversation",
+    "scope_id": "kiln_studio",
+    "entity_id": "KILN-37",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The shared break room serving Redclay Works stocks ginger tea.",
+    "summary": "The shared break room serving Redclay Works stocks ginger tea.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/kiln_studio/msg_kiln_studio_16",
+      "locator": "msg_kiln_studio_16"
+    }
+  },
+  {
+    "id": "v7_ice_station_01",
+    "scope_kind": "conversation",
+    "scope_id": "ice_station",
+    "entity_id": "ICE-98",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Sumi Arora (ICE-98), the glacier technician, is based at Morrow Shelf.",
+    "summary": "Sumi Arora (ICE-98), the glacier technician, is based at Morrow Shelf.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/ice_station/msg_ice_station_01",
+      "locator": "msg_ice_station_01"
+    }
+  },
+  {
+    "id": "v7_ice_station_02",
+    "scope_kind": "conversation",
+    "scope_id": "ice_station",
+    "entity_id": "ICE-98",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Sumi Arora (ICE-98) uses the ice radar IR-9 for routine field checks.",
+    "summary": "Sumi Arora (ICE-98) uses the ice radar IR-9 for routine field checks.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/ice_station/msg_ice_station_02",
+      "locator": "msg_ice_station_02"
+    }
+  },
+  {
+    "id": "v7_ice_station_03",
+    "scope_kind": "conversation",
+    "scope_id": "ice_station",
+    "entity_id": "ICE-98",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Sumi Arora (ICE-98) started core C-98 on 2026-02-11.",
+    "summary": "Sumi Arora (ICE-98) started core C-98 on 2026-02-11.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/ice_station/msg_ice_station_03",
+      "locator": "msg_ice_station_03"
+    }
+  },
+  {
+    "id": "v7_ice_station_04",
+    "scope_kind": "conversation",
+    "scope_id": "ice_station",
+    "entity_id": "ICE-98",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The approved allocation for core C-98 under Sumi Arora (ICE-98) is 24,700 credits.",
+    "summary": "The approved allocation for core C-98 under Sumi Arora (ICE-98) is 24,700 credits.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/ice_station/msg_ice_station_04",
+      "locator": "msg_ice_station_04"
+    }
+  },
+  {
+    "id": "v7_ice_station_05",
+    "scope_kind": "conversation",
+    "scope_id": "ice_station",
+    "entity_id": "ICE-98",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Correction: Sumi Arora (ICE-98) did not base operations in Dawn Shelf; that site belongs to Lark Shelf.",
+    "summary": "Correction: Sumi Arora (ICE-98) did not base operations in Dawn Shelf; that site belongs to Lark Shelf.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/ice_station/msg_ice_station_05",
+      "locator": "msg_ice_station_05"
+    }
+  },
+  {
+    "id": "v7_ice_station_06",
+    "scope_kind": "conversation",
+    "scope_id": "ice_station",
+    "entity_id": "ICE-98",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Correction: Sumi Arora (ICE-98) did not approve core C-98; the approval log records it as declined.",
+    "summary": "Correction: Sumi Arora (ICE-98) did not approve core C-98; the approval log records it as declined.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/ice_station/msg_ice_station_06",
+      "locator": "msg_ice_station_06"
+    }
+  },
+  {
+    "id": "v7_ice_station_07",
+    "scope_kind": "conversation",
+    "scope_id": "ice_station",
+    "entity_id": "ICE-98",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The core C-98 work window for Sumi Arora (ICE-98) is 9 hours; an end date is not recorded.",
+    "summary": "The core C-98 work window for Sumi Arora (ICE-98) is 9 hours; an end date is not recorded.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/ice_station/msg_ice_station_07",
+      "locator": "msg_ice_station_07"
+    }
+  },
+  {
+    "id": "v7_ice_station_08",
+    "scope_kind": "conversation",
+    "scope_id": "ice_station",
+    "entity_id": "ICE-98",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "For Sumi Arora (ICE-98), the checklist records the start date as 2026-02-11 but gives no completion date.",
+    "summary": "For Sumi Arora (ICE-98), the checklist records the start date as 2026-02-11 but gives no completion date.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/ice_station/msg_ice_station_08",
+      "locator": "msg_ice_station_08"
+    }
+  },
+  {
+    "id": "v7_ice_station_09",
+    "scope_kind": "conversation",
+    "scope_id": "ice_station",
+    "entity_id": "ICE-98",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "A temperature reading for core C-98 by Sumi Arora (ICE-98) has not been measured yet.",
+    "summary": "A temperature reading for core C-98 by Sumi Arora (ICE-98) has not been measured yet.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/ice_station/msg_ice_station_09",
+      "locator": "msg_ice_station_09"
+    }
+  },
+  {
+    "id": "v7_ice_station_10",
+    "scope_kind": "conversation",
+    "scope_id": "ice_station",
+    "entity_id": "ICE-98",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "No result for the salinity test on core C-98 by Sumi Arora (ICE-98) has been measured yet.",
+    "summary": "No result for the salinity test on core C-98 by Sumi Arora (ICE-98) has been measured yet.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/ice_station/msg_ice_station_10",
+      "locator": "msg_ice_station_10"
+    }
+  },
+  {
+    "id": "v7_ice_station_11",
+    "scope_kind": "conversation",
+    "scope_id": "ice_station",
+    "entity_id": "ICE-98",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Sumi Arora (ICE-98) filed the equipment checkout form before the morning shift.",
+    "summary": "Sumi Arora (ICE-98) filed the equipment checkout form before the morning shift.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/ice_station/msg_ice_station_11",
+      "locator": "msg_ice_station_11"
+    }
+  },
+  {
+    "id": "v7_ice_station_12",
+    "scope_kind": "conversation",
+    "scope_id": "ice_station",
+    "entity_id": "ICE-98",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Sumi Arora (ICE-98) attended the weekly safety briefing with Lark Shelf.",
+    "summary": "Sumi Arora (ICE-98) attended the weekly safety briefing with Lark Shelf.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/ice_station/msg_ice_station_12",
+      "locator": "msg_ice_station_12"
+    }
+  },
+  {
+    "id": "v7_ice_station_13",
+    "scope_kind": "conversation",
+    "scope_id": "ice_station",
+    "entity_id": "ICE-98",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The spare battery assigned to Sumi Arora (ICE-98) is stored in cabinet 4.",
+    "summary": "The spare battery assigned to Sumi Arora (ICE-98) is stored in cabinet 4.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/ice_station/msg_ice_station_13",
+      "locator": "msg_ice_station_13"
+    }
+  },
+  {
+    "id": "v7_ice_station_14",
+    "scope_kind": "conversation",
+    "scope_id": "ice_station",
+    "entity_id": "ICE-98",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Sumi Arora (ICE-98) prefers the blue cover on printed field maps.",
+    "summary": "Sumi Arora (ICE-98) prefers the blue cover on printed field maps.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/ice_station/msg_ice_station_14",
+      "locator": "msg_ice_station_14"
+    }
+  },
+  {
+    "id": "v7_ice_station_15",
+    "scope_kind": "conversation",
+    "scope_id": "ice_station",
+    "entity_id": "ICE-98",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "A replacement label for core C-98 was printed on 2026-01-15.",
+    "summary": "A replacement label for core C-98 was printed on 2026-01-15.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/ice_station/msg_ice_station_15",
+      "locator": "msg_ice_station_15"
+    }
+  },
+  {
+    "id": "v7_ice_station_16",
+    "scope_kind": "conversation",
+    "scope_id": "ice_station",
+    "entity_id": "ICE-98",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The shared break room serving Morrow Shelf stocks ginger tea.",
+    "summary": "The shared break room serving Morrow Shelf stocks ginger tea.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v7/ice_station/msg_ice_station_16",
+      "locator": "msg_ice_station_16"
+    }
+  }
+]

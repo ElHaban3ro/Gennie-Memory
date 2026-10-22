@@ -1,0 +1,76 @@
+{
+  "version": "slot-evidence-v3-attribution-blind-v1",
+  "synthetic": true,
+  "cases": [
+    {
+      "id": "case-01",
+      "query": "What city does contractor Bob Torres (B-29) live in?",
+      "summary": "Contractor Bob Torres B-29 lives in Quito; employee Carlos Ruiz C-3 lives in Lima."
+    },
+    {
+      "id": "case-02",
+      "query": "What city does contractor Bob Torres (B-29) live in?",
+      "summary": "Contractor Bob Torres B-29 thought employee Carlos Ruiz C-3 lives in Lima."
+    },
+    {
+      "id": "case-03",
+      "query": "What city does contractor Bob Torres (B-29) live in?",
+      "summary": "Contractor Bob Torres B-29 understands that employee Carlos Ruiz C-3 currently lives in Lima."
+    },
+    {
+      "id": "case-04",
+      "query": "What city does contractor Bob Torres (B-29) live in?",
+      "summary": "Contractor Bob Torres B-29 realized employee Carlos Ruiz C-3 lived in Lima."
+    },
+    {
+      "id": "case-05",
+      "query": "What city does contractor Bob Torres (B-29) live in?",
+      "summary": "Contractor Bob Torres B-29 said that employee Carlos Ruiz C-3, his colleague, lives in Lima."
+    },
+    {
+      "id": "case-06",
+      "query": "What city does contractor Bob Torres (B-29) live in?",
+      "summary": "Contractor Bob Torres B-29 said employee Carlos Ruiz C-3 (a close colleague) lives in Lima."
+    },
+    {
+      "id": "case-07",
+      "query": "What city does contractor Bob Torres (B-29) live in?",
+      "summary": "Contractor Bob Torres B-29 said that employee Carlos C-3, the chief compliance officer at the firm, lives in Lima."
+    },
+    {
+      "id": "case-08",
+      "query": "What city does contractor Bob Torres (B-29) live in?",
+      "summary": "Contractor Bob Torres B-29, who thought employee Carlos Ruiz C-3 lived in Lima, lives in Quito."
+    },
+    {
+      "id": "case-09",
+      "query": "What city does contractor Bob Torres (B-29) live in?",
+      "summary": "Contractor Bob Torres B-29 told employee Carlos C-3 a joke and lives in Quito."
+    },
+    {
+      "id": "case-10",
+      "query": "What city does contractor Bob Torres (B-29) live in?",
+      "summary": "Contractor Bob Torres B-29 considered employee Carlos C-3 a close friend and lives in Quito."
+    },
+    {
+      "id": "case-11",
+      "query": "What city does contractor Bob Torres (B-29) live in?",
+      "summary": "Contractor Bob Torres B-29 met employee Carlos C-3 and employee Dana D-4, who live in Lima."
+    },
+    {
+      "id": "case-12",
+      "query": "What city does contractor Bob Torres (B-29) live in?",
+      "summary": "Contractor Bob Torres B-29 and employee Carlos Ruiz C-3, who joined in 2020, live in Quito."
+    },
+    {
+      "id": "case-13",
+      "query": "What city does contractor Bob Torres (B-29) live in?",
+      "summary": "Contractor Bob Torres B-29 lives in Quito; employee Ana Ruiz E-17, who lives in Lima, joined later."
+    },
+    {
+      "id": "case-14",
+      "query": "What city does contractor Bob Torres (B-29) live in?",
+      "summary": "Employee Carlos Ruiz C-3 lives in Lima, and contractor Bob Torres B-29 lives in Quito."
+    }
+  ]
+}

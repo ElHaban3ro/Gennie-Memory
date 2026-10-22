@@ -1,0 +1,5176 @@
+{
+  "version": "epistemic-binding-v5",
+  "annotation_notice": "Manual V5 migration of all 100 known development pairs, not new validation. Original texts and pairs unchanged; old V1 gold/results immutable. Conditional propositions are not asserted as grounded in their earlier conversation. Missing measurement methods are explicit, never invented. Open pragmatic Olmo interpretation preserved, not forced exhaustive.",
+  "ontology": {
+    "contact_phone": {
+      "additive": false,
+      "intermediate_types": [],
+      "kind": "property"
+    },
+    "requires": {
+      "additive": false,
+      "intermediate_types": [],
+      "kind": "property"
+    },
+    "pickup_location": {
+      "additive": false,
+      "intermediate_types": [],
+      "kind": "property"
+    },
+    "tutor_identity": {
+      "additive": false,
+      "intermediate_types": [],
+      "kind": "property"
+    },
+    "enrollment_delivery_location": {
+      "additive": false,
+      "intermediate_types": [],
+      "kind": "property"
+    },
+    "exposure": {
+      "additive": false,
+      "intermediate_types": [],
+      "kind": "property"
+    },
+    "profile": {
+      "additive": false,
+      "intermediate_types": [],
+      "kind": "property"
+    },
+    "orientation": {
+      "additive": false,
+      "intermediate_types": [],
+      "kind": "property"
+    },
+    "storage": {
+      "additive": false,
+      "intermediate_types": [],
+      "kind": "property"
+    },
+    "autonomy": {
+      "additive": false,
+      "intermediate_types": [],
+      "kind": "quantity"
+    },
+    "measurement": {
+      "additive": false,
+      "intermediate_types": [],
+      "kind": "measurement"
+    },
+    "battery_reserved": {
+      "additive": false,
+      "intermediate_types": [],
+      "kind": "property"
+    },
+    "strap_color": {
+      "additive": false,
+      "intermediate_types": [],
+      "kind": "property"
+    },
+    "water_supply": {
+      "additive": false,
+      "intermediate_types": [
+        "reservoir",
+        "rainwater_reservoir"
+      ],
+      "kind": "property"
+    },
+    "network_provenance": {
+      "additive": false,
+      "intermediate_types": [],
+      "kind": "property"
+    },
+    "lid_color": {
+      "additive": false,
+      "intermediate_types": [],
+      "kind": "property"
+    },
+    "watering_time": {
+      "additive": false,
+      "intermediate_types": [],
+      "kind": "property"
+    },
+    "rainwater_mixed": {
+      "additive": false,
+      "intermediate_types": [],
+      "kind": "property"
+    },
+    "irrigation_method": {
+      "additive": false,
+      "intermediate_types": [],
+      "kind": "property"
+    },
+    "delivered_image_format": {
+      "additive": false,
+      "intermediate_types": [],
+      "kind": "property"
+    },
+    "digitized_pages": {
+      "additive": true,
+      "intermediate_types": [],
+      "kind": "quantity"
+    },
+    "export_image_format": {
+      "additive": false,
+      "intermediate_types": [],
+      "kind": "property"
+    },
+    "export_date": {
+      "additive": false,
+      "intermediate_types": [],
+      "kind": "property"
+    },
+    "pending_pages": {
+      "additive": true,
+      "intermediate_types": [],
+      "kind": "quantity"
+    },
+    "retention_policy": {
+      "additive": false,
+      "intermediate_types": [],
+      "kind": "property"
+    },
+    "deletion_age": {
+      "additive": false,
+      "intermediate_types": [],
+      "kind": "property"
+    },
+    "ingestion_schedule": {
+      "additive": false,
+      "intermediate_types": [],
+      "kind": "property"
+    },
+    "inauguration_date": {
+      "additive": false,
+      "intermediate_types": [],
+      "kind": "property"
+    },
+    "inaugurated_by": {
+      "additive": false,
+      "intermediate_types": [],
+      "kind": "property"
+    },
+    "reviewed_by": {
+      "additive": false,
+      "intermediate_types": [],
+      "kind": "property"
+    },
+    "review_schedule": {
+      "additive": false,
+      "intermediate_types": [],
+      "kind": "property"
+    },
+    "confirmed_musicians": {
+      "additive": true,
+      "intermediate_types": [],
+      "kind": "quantity"
+    },
+    "music_stands_prepared": {
+      "additive": false,
+      "intermediate_types": [],
+      "kind": "property"
+    },
+    "rehearsal_location": {
+      "additive": false,
+      "intermediate_types": [],
+      "kind": "property"
+    },
+    "salt_quantity": {
+      "additive": false,
+      "intermediate_types": [],
+      "kind": "quantity"
+    },
+    "resolution": {
+      "additive": false,
+      "intermediate_types": [],
+      "kind": "quantity"
+    },
+    "mode": {
+      "additive": false,
+      "intermediate_types": [],
+      "kind": "property"
+    },
+    "paper_tray_size": {
+      "additive": false,
+      "intermediate_types": [],
+      "kind": "property"
+    },
+    "line_detail": {
+      "additive": false,
+      "intermediate_types": [],
+      "kind": "property"
+    },
+    "tray_count": {
+      "additive": false,
+      "intermediate_types": [],
+      "kind": "property"
+    },
+    "service_schedule": {
+      "additive": false,
+      "intermediate_types": [],
+      "kind": "property"
+    },
+    "cartridge_color": {
+      "additive": false,
+      "intermediate_types": [],
+      "kind": "property"
+    },
+    "weight": {
+      "additive": false,
+      "intermediate_types": [],
+      "kind": "quantity"
+    },
+    "sample_rate": {
+      "additive": false,
+      "intermediate_types": [],
+      "kind": "quantity"
+    },
+    "program": {
+      "additive": false,
+      "intermediate_types": [],
+      "kind": "property"
+    },
+    "case_color": {
+      "additive": false,
+      "intermediate_types": [],
+      "kind": "property"
+    },
+    "session_length_capability": {
+      "additive": false,
+      "intermediate_types": [],
+      "kind": "property"
+    },
+    "policy_retention": {
+      "additive": false,
+      "intermediate_types": [],
+      "kind": "property"
+    },
+    "measurement_date": {
+      "additive": false,
+      "intermediate_types": [],
+      "kind": "property"
+    },
+    "water_origin": {
+      "additive": false,
+      "intermediate_types": [],
+      "kind": "property"
+    },
+    "operating_duration": {
+      "additive": false,
+      "intermediate_types": [],
+      "kind": "quantity"
+    },
+    "water_volume_per_period": {
+      "additive": false,
+      "intermediate_types": [],
+      "kind": "quantity"
+    },
+    "photograph_preparation": {
+      "additive": false,
+      "intermediate_types": [],
+      "kind": "property"
+    },
+    "attachment_force": {
+      "kind": "quantity",
+      "additive": false,
+      "intermediate_types": []
+    }
+  },
+  "questions": {
+    "q001": {
+      "text": "¿Cuál es el teléfono de contacto del pedido O7 de Darsa?",
+      "frame": {
+        "subject": {
+          "entity": "Darsa/O7",
+          "all": false,
+          "member_of": null,
+          "part_of": null
+        },
+        "context": {},
+        "configuration": {},
+        "requests": [
+          {
+            "attribute": "contact_phone",
+            "modality": "state",
+            "value": null,
+            "value_type": null,
+            "path": "direct"
+          }
+        ],
+        "premises": []
+      }
+    },
+    "q002": {
+      "text": "¿Qué tutor debe acompañar a Ina para matricularse en el curso Faro?",
+      "frame": {
+        "subject": {
+          "entity": "Ina/Faro",
+          "all": false,
+          "member_of": null,
+          "part_of": null
+        },
+        "context": {},
+        "configuration": {},
+        "requests": [
+          {
+            "attribute": "tutor_identity",
+            "modality": "state",
+            "value": null,
+            "value_type": null,
+            "path": "direct"
+          }
+        ],
+        "premises": [
+          {
+            "subject": {
+              "entity": "Ina/Faro",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "requires",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "tutor",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      }
+    },
+    "q003": {
+      "text": "¿Qué tiempo de exposición usa la cámara P2 de Ópalo con el perfil Eclipse?",
+      "frame": {
+        "subject": {
+          "entity": "Ópalo/P2",
+          "all": false,
+          "member_of": null,
+          "part_of": null
+        },
+        "context": {},
+        "configuration": {
+          "profile": "Eclipse"
+        },
+        "requests": [
+          {
+            "attribute": "exposure",
+            "modality": "state",
+            "value": null,
+            "value_type": null,
+            "path": "direct"
+          }
+        ],
+        "premises": [
+          {
+            "subject": {
+              "entity": "Ópalo/P2",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "profile",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "Eclipse",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      }
+    },
+    "q004": {
+      "text": "¿Cuál es la autonomía máxima del reproductor Cobre durante la ruta Nacar?",
+      "frame": {
+        "subject": {
+          "entity": "Cobre",
+          "all": false,
+          "member_of": null,
+          "part_of": null
+        },
+        "context": {
+          "route": "Nacar"
+        },
+        "configuration": {},
+        "requests": [
+          {
+            "attribute": "autonomy",
+            "modality": "state",
+            "value": null,
+            "value_type": null,
+            "path": "direct",
+            "extent": "maximum"
+          }
+        ],
+        "premises": []
+      }
+    },
+    "q005": {
+      "text": "¿De qué tubería de la red procede el agua de riego del huerto Nardo?",
+      "frame": {
+        "subject": {
+          "entity": "Nardo",
+          "all": false,
+          "member_of": null,
+          "part_of": null
+        },
+        "context": {},
+        "configuration": {},
+        "requests": [
+          {
+            "attribute": "water_supply",
+            "modality": "state",
+            "value": null,
+            "value_type": "network_pipe",
+            "path": "transitive"
+          }
+        ],
+        "premises": [
+          {
+            "subject": {
+              "entity": "Nardo",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "network_provenance",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "present",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      }
+    },
+    "q006": {
+      "text": "¿De qué tubería de la red procede el agua de riego del huerto Malva?",
+      "frame": {
+        "subject": {
+          "entity": "Malva",
+          "all": false,
+          "member_of": null,
+          "part_of": null
+        },
+        "context": {},
+        "configuration": {},
+        "requests": [
+          {
+            "attribute": "water_supply",
+            "modality": "state",
+            "value": null,
+            "value_type": "network_pipe",
+            "path": "transitive"
+          }
+        ],
+        "premises": [
+          {
+            "subject": {
+              "entity": "Malva",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "network_provenance",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "present",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      }
+    },
+    "q007": {
+      "text": "¿De qué tubería de la red procede el agua de riego del huerto Azucena?",
+      "frame": {
+        "subject": {
+          "entity": "Azucena",
+          "all": false,
+          "member_of": null,
+          "part_of": null
+        },
+        "context": {},
+        "configuration": {},
+        "requests": [
+          {
+            "attribute": "water_supply",
+            "modality": "state",
+            "value": null,
+            "value_type": "network_pipe",
+            "path": "transitive"
+          }
+        ],
+        "premises": [
+          {
+            "subject": {
+              "entity": "Azucena",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "network_provenance",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "present",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      }
+    },
+    "q008": {
+      "text": "¿En qué formato se entregaron las imágenes del expediente Delta y cuántas páginas se digitalizaron?",
+      "frame": {
+        "subject": {
+          "entity": "Delta",
+          "all": false,
+          "member_of": null,
+          "part_of": null
+        },
+        "context": {},
+        "configuration": {},
+        "requests": [
+          {
+            "attribute": "delivered_image_format",
+            "modality": "state",
+            "value": null,
+            "value_type": null,
+            "path": "direct"
+          },
+          {
+            "attribute": "digitized_pages",
+            "modality": "state",
+            "value": null,
+            "value_type": null,
+            "path": "direct"
+          }
+        ],
+        "premises": []
+      }
+    },
+    "q009": {
+      "text": "¿Cuál es la política de retención de toda la colección Iris?",
+      "frame": {
+        "subject": {
+          "entity": "Iris",
+          "all": true,
+          "member_of": null,
+          "part_of": null
+        },
+        "context": {},
+        "configuration": {},
+        "requests": [
+          {
+            "attribute": "retention_policy",
+            "modality": "state",
+            "value": null,
+            "value_type": null,
+            "path": "direct"
+          }
+        ],
+        "premises": []
+      }
+    },
+    "q010": {
+      "text": "¿En qué fecha inauguró Nerea el puente Vado?",
+      "frame": {
+        "subject": {
+          "entity": "Vado",
+          "all": false,
+          "member_of": null,
+          "part_of": null
+        },
+        "context": {},
+        "configuration": {},
+        "requests": [
+          {
+            "attribute": "inauguration_date",
+            "modality": "state",
+            "value": null,
+            "value_type": null,
+            "path": "direct"
+          }
+        ],
+        "premises": [
+          {
+            "subject": {
+              "entity": "Vado",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "inaugurated_by",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "Nerea",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      }
+    },
+    "q011": {
+      "text": "¿Cuántos músicos tiene confirmados en total el conjunto Arce?",
+      "frame": {
+        "subject": {
+          "entity": "Arce",
+          "all": false,
+          "member_of": null,
+          "part_of": null
+        },
+        "context": {},
+        "configuration": {},
+        "requests": [
+          {
+            "attribute": "confirmed_musicians",
+            "modality": "state",
+            "value": null,
+            "value_type": null,
+            "path": "direct"
+          }
+        ],
+        "premises": []
+      }
+    },
+    "q012": {
+      "text": "¿Cuántos gramos de sal indica la receta Brisa?",
+      "frame": {
+        "subject": {
+          "entity": "Brisa",
+          "all": false,
+          "member_of": null,
+          "part_of": null
+        },
+        "context": {},
+        "configuration": {},
+        "requests": [
+          {
+            "attribute": "salt_quantity",
+            "modality": "state",
+            "value": null,
+            "value_type": null,
+            "path": "direct"
+          }
+        ],
+        "premises": []
+      }
+    },
+    "q013": {
+      "text": "¿Qué resolución usa la impresora Senda con el modo Fino?",
+      "frame": {
+        "subject": {
+          "entity": "Senda",
+          "all": false,
+          "member_of": null,
+          "part_of": null
+        },
+        "context": {},
+        "configuration": {
+          "mode": "Fino"
+        },
+        "requests": [
+          {
+            "attribute": "resolution",
+            "modality": "state",
+            "value": null,
+            "value_type": null,
+            "path": "direct"
+          }
+        ],
+        "premises": [
+          {
+            "subject": {
+              "entity": "Senda",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "mode",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "Fino",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      }
+    },
+    "q014": {
+      "text": "¿Qué resolución usa la impresora Cima con el modo Fino?",
+      "frame": {
+        "subject": {
+          "entity": "Cima",
+          "all": false,
+          "member_of": null,
+          "part_of": null
+        },
+        "context": {},
+        "configuration": {
+          "mode": "Fino"
+        },
+        "requests": [
+          {
+            "attribute": "resolution",
+            "modality": "state",
+            "value": null,
+            "value_type": null,
+            "path": "direct"
+          }
+        ],
+        "premises": [
+          {
+            "subject": {
+              "entity": "Cima",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "mode",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "Fino",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      }
+    },
+    "q015": {
+      "text": "¿Qué resolución usa la impresora Risco con el modo Fino?",
+      "frame": {
+        "subject": {
+          "entity": "Risco",
+          "all": false,
+          "member_of": null,
+          "part_of": null
+        },
+        "context": {},
+        "configuration": {
+          "mode": "Fino"
+        },
+        "requests": [
+          {
+            "attribute": "resolution",
+            "modality": "state",
+            "value": null,
+            "value_type": null,
+            "path": "direct"
+          }
+        ],
+        "premises": [
+          {
+            "subject": {
+              "entity": "Risco",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "mode",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "Fino",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      }
+    },
+    "q016": {
+      "text": "¿Qué tasa de muestreo usa el grabador Nube con el programa Largo?",
+      "frame": {
+        "subject": {
+          "entity": "Nube",
+          "all": false,
+          "member_of": null,
+          "part_of": null
+        },
+        "context": {},
+        "configuration": {
+          "program": "Largo"
+        },
+        "requests": [
+          {
+            "attribute": "sample_rate",
+            "modality": "state",
+            "value": null,
+            "value_type": null,
+            "path": "direct"
+          }
+        ],
+        "premises": [
+          {
+            "subject": {
+              "entity": "Nube",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "program",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "Largo",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      }
+    },
+    "q017": {
+      "text": "¿Qué plazo fijaba la política de retención de Sálamo para el borrado automático del archivo crudo B3 de Q4?",
+      "frame": {
+        "subject": {
+          "entity": "Sálamo/Q4/B3",
+          "all": false,
+          "member_of": "Sálamo/Q4",
+          "part_of": null
+        },
+        "context": {},
+        "configuration": {},
+        "requests": [
+          {
+            "attribute": "policy_retention",
+            "modality": "state",
+            "value": null,
+            "value_type": null,
+            "path": "direct"
+          }
+        ],
+        "premises": []
+      }
+    },
+    "q018": {
+      "text": "¿Qué plazo común fijaba la política de retención de Sálamo para el borrado automático de todos los archivos crudos de Q4?",
+      "frame": {
+        "subject": {
+          "entity": "Sálamo/Q4",
+          "all": true,
+          "member_of": null,
+          "part_of": null
+        },
+        "context": {},
+        "configuration": {},
+        "requests": [
+          {
+            "attribute": "policy_retention",
+            "modality": "state",
+            "value": null,
+            "value_type": null,
+            "path": "direct"
+          }
+        ],
+        "premises": []
+      }
+    },
+    "q019": {
+      "text": "¿Qué aspecto de los faros de seis parejas de Salvia se midió?",
+      "frame": {
+        "subject": {
+          "entity": "Salvia/six_pairs_headlights",
+          "all": false,
+          "member_of": null,
+          "part_of": null
+        },
+        "context": {},
+        "configuration": {},
+        "requests": [
+          {
+            "attribute": "measurement",
+            "modality": "occurred",
+            "value_type": null,
+            "path": "direct",
+            "measured_attribute_scope": "any",
+            "measurement_method_scope": "any"
+          }
+        ],
+        "premises": []
+      }
+    },
+    "q020": {
+      "text": "¿Se ha medido la autonomía de los faros de seis parejas de Salvia?",
+      "frame": {
+        "subject": {
+          "entity": "Salvia/six_pairs_headlights",
+          "all": false,
+          "member_of": null,
+          "part_of": null
+        },
+        "context": {},
+        "configuration": {},
+        "requests": [
+          {
+            "attribute": "measurement",
+            "modality": "occurred",
+            "value_type": null,
+            "path": "direct",
+            "measured_attribute": "autonomy",
+            "measurement_method_scope": "any"
+          }
+        ],
+        "premises": []
+      }
+    },
+    "q021": {
+      "text": "¿Para qué día está programada la medición de autonomía de los faros de Bruma?",
+      "frame": {
+        "subject": {
+          "entity": "Bruma/headlights",
+          "all": false,
+          "member_of": null,
+          "part_of": null
+        },
+        "context": {
+          "measurement_aspect": "autonomy"
+        },
+        "configuration": {},
+        "requests": [
+          {
+            "attribute": "measurement_date",
+            "modality": "planned",
+            "value": null,
+            "value_type": null,
+            "path": "direct"
+          }
+        ],
+        "premises": []
+      }
+    },
+    "q022": {
+      "text": "¿Se ha realizado la medición de autonomía de los faros de Bruma?",
+      "frame": {
+        "subject": {
+          "entity": "Bruma/headlights",
+          "all": false,
+          "member_of": null,
+          "part_of": null
+        },
+        "context": {},
+        "configuration": {},
+        "requests": [
+          {
+            "attribute": "measurement",
+            "modality": "occurred",
+            "value_type": null,
+            "path": "direct",
+            "measured_attribute": "autonomy",
+            "measurement_method_scope": "any"
+          }
+        ],
+        "premises": []
+      }
+    },
+    "q023": {
+      "text": "¿Cuál es la autonomía máxima del reproductor Lino?",
+      "frame": {
+        "subject": {
+          "entity": "Lino",
+          "all": false,
+          "member_of": null,
+          "part_of": null
+        },
+        "context": {},
+        "configuration": {},
+        "requests": [
+          {
+            "attribute": "autonomy",
+            "modality": "state",
+            "value": null,
+            "value_type": null,
+            "path": "direct",
+            "extent": "maximum"
+          }
+        ],
+        "premises": []
+      }
+    },
+    "q024": {
+      "text": "¿Se midió la duración del reproductor Lino hasta apagarse?",
+      "frame": {
+        "subject": {
+          "entity": "Lino",
+          "all": false,
+          "member_of": null,
+          "part_of": null
+        },
+        "context": {},
+        "configuration": {},
+        "requests": [
+          {
+            "attribute": "measurement",
+            "modality": "occurred",
+            "value_type": null,
+            "path": "direct",
+            "measured_attribute": "autonomy",
+            "measurement_method": "duration_until_poweroff"
+          }
+        ],
+        "premises": []
+      }
+    },
+    "q025": {
+      "text": "¿Cuántas páginas del expediente Atlas quedan por digitalizar?",
+      "frame": {
+        "subject": {
+          "entity": "Atlas",
+          "all": false,
+          "member_of": null,
+          "part_of": null
+        },
+        "context": {},
+        "configuration": {},
+        "requests": [
+          {
+            "attribute": "pending_pages",
+            "modality": "state",
+            "value": null,
+            "value_type": null,
+            "path": "direct"
+          }
+        ],
+        "premises": []
+      }
+    },
+    "q026": {
+      "text": "¿Cuántas páginas del expediente Boreal quedan por digitalizar?",
+      "frame": {
+        "subject": {
+          "entity": "Boreal",
+          "all": false,
+          "member_of": null,
+          "part_of": null
+        },
+        "context": {},
+        "configuration": {},
+        "requests": [
+          {
+            "attribute": "pending_pages",
+            "modality": "state",
+            "value": null,
+            "value_type": null,
+            "path": "direct"
+          }
+        ],
+        "premises": []
+      }
+    },
+    "q027": {
+      "text": "¿En qué año inauguró Silvana el puente Raso?",
+      "frame": {
+        "subject": {
+          "entity": "Raso",
+          "all": false,
+          "member_of": null,
+          "part_of": null
+        },
+        "context": {},
+        "configuration": {},
+        "requests": [
+          {
+            "attribute": "inauguration_date",
+            "modality": "state",
+            "value": null,
+            "value_type": null,
+            "path": "direct"
+          }
+        ],
+        "premises": [
+          {
+            "subject": {
+              "entity": "Raso",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "inaugurated_by",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "Silvana",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      }
+    },
+    "q028": {
+      "text": "¿En qué año inauguró Silvana el puente Lago?",
+      "frame": {
+        "subject": {
+          "entity": "Lago",
+          "all": false,
+          "member_of": null,
+          "part_of": null
+        },
+        "context": {},
+        "configuration": {},
+        "requests": [
+          {
+            "attribute": "inauguration_date",
+            "modality": "state",
+            "value": null,
+            "value_type": null,
+            "path": "direct"
+          }
+        ],
+        "premises": [
+          {
+            "subject": {
+              "entity": "Lago",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "inaugurated_by",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "Silvana",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      }
+    },
+    "q029": {
+      "text": "¿Qué resolución usa la impresora Duna con el modo Fino?",
+      "frame": {
+        "subject": {
+          "entity": "Duna",
+          "all": false,
+          "member_of": null,
+          "part_of": null
+        },
+        "context": {},
+        "configuration": {
+          "mode": "Fino"
+        },
+        "requests": [
+          {
+            "attribute": "resolution",
+            "modality": "state",
+            "value": null,
+            "value_type": null,
+            "path": "direct"
+          }
+        ],
+        "premises": [
+          {
+            "subject": {
+              "entity": "Duna",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "mode",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "Fino",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      }
+    },
+    "q030": {
+      "text": "¿Qué resolución usa la impresora Duna con el modo Borrador?",
+      "frame": {
+        "subject": {
+          "entity": "Duna",
+          "all": false,
+          "member_of": null,
+          "part_of": null
+        },
+        "context": {},
+        "configuration": {
+          "mode": "Borrador"
+        },
+        "requests": [
+          {
+            "attribute": "resolution",
+            "modality": "state",
+            "value": null,
+            "value_type": null,
+            "path": "direct"
+          }
+        ],
+        "premises": [
+          {
+            "subject": {
+              "entity": "Duna",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "mode",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "Borrador",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      }
+    },
+    "q031": {
+      "text": "¿De qué tubería de la red procede el agua del parque Olmo?",
+      "frame": {
+        "subject": {
+          "entity": "Olmo",
+          "all": false,
+          "member_of": null,
+          "part_of": null
+        },
+        "context": {},
+        "configuration": {},
+        "requests": [
+          {
+            "attribute": "water_supply",
+            "modality": "state",
+            "value": null,
+            "value_type": "network_pipe",
+            "path": "transitive"
+          }
+        ],
+        "premises": [
+          {
+            "subject": {
+              "entity": "Olmo",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "network_provenance",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "present",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      }
+    },
+    "q032": {
+      "text": "¿Qué depósito de lluvia alimenta el parque Olmo?",
+      "frame": {
+        "subject": {
+          "entity": "Olmo",
+          "all": false,
+          "member_of": null,
+          "part_of": null
+        },
+        "context": {},
+        "configuration": {},
+        "requests": [
+          {
+            "attribute": "water_supply",
+            "modality": "state",
+            "value": null,
+            "value_type": "rainwater_reservoir",
+            "path": "direct"
+          }
+        ],
+        "premises": []
+      }
+    },
+    "q033": {
+      "text": "¿Cuántas páginas del expediente Atlas están digitalizadas y cuántas quedan pendientes?",
+      "frame": {
+        "subject": {
+          "entity": "Atlas",
+          "all": false,
+          "member_of": null,
+          "part_of": null
+        },
+        "context": {},
+        "configuration": {},
+        "requests": [
+          {
+            "attribute": "digitized_pages",
+            "modality": "state",
+            "value": null,
+            "value_type": null,
+            "path": "direct"
+          },
+          {
+            "attribute": "pending_pages",
+            "modality": "state",
+            "value": null,
+            "value_type": null,
+            "path": "direct"
+          }
+        ],
+        "premises": []
+      }
+    }
+  },
+  "assertions": {
+    "a001": {
+      "text": "El formulario del pedido O7 de Darsa no exige teléfono de contacto.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Darsa/O7",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "requires",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": false,
+            "datum": {
+              "kind": "known",
+              "text": "contact_phone",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a002": {
+      "text": "El teléfono de contacto del pedido O7 de Darsa no consta en el registro.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Darsa/O7",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "contact_phone",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "unknown",
+              "text": null,
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": "the referenced record"
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a003": {
+      "text": "El teléfono del pedido O8 de Darsa es 555-0108.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Darsa/O8",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "contact_phone",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "555-0108",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a004": {
+      "text": "El pedido O7 de Darsa se recoge en la ventanilla este.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Darsa/O7",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "pickup_location",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "east_window",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a005": {
+      "text": "Para matricularse en Faro, Ina debe presentar la credencial de alumna.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Ina/Faro",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "requires",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "student_card",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a006": {
+      "text": "En Faro se eliminó la obligación de tutor para Ina; basta su credencial de alumna.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Ina/Faro",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "requires",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": false,
+            "datum": {
+              "kind": "known",
+              "text": "tutor",
+              "value_type": null
+            },
+            "only_values": null
+          },
+          {
+            "subject": {
+              "entity": "Ina/Faro",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "requires",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "student_card",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a007": {
+      "text": "El curso Muelle exige tutor para matricularse.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Muelle",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "requires",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "tutor",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a008": {
+      "text": "Las matrículas de Faro se entregan en la oficina de la esquina.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Faro",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "enrollment_delivery_location",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "corner_office",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a009": {
+      "text": "En Ópalo, P2 usa Alba con dos segundos de exposición; P7 usa Eclipse con cuatro segundos.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Ópalo/P2",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "exposure",
+            "modality": "state",
+            "context": {},
+            "configuration": {
+              "profile": "Alba"
+            },
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "2 seconds",
+              "value_type": null
+            },
+            "only_values": null
+          },
+          {
+            "subject": {
+              "entity": "Ópalo/P7",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "exposure",
+            "modality": "state",
+            "context": {},
+            "configuration": {
+              "profile": "Eclipse"
+            },
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "4 seconds",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a010": {
+      "text": "P7 de Ópalo usa Eclipse con cuatro segundos de exposición.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Ópalo/P7",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "exposure",
+            "modality": "state",
+            "context": {},
+            "configuration": {
+              "profile": "Eclipse"
+            },
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "4 seconds",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a011": {
+      "text": "La cámara P2 de Ópalo apunta al norte.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Ópalo/P2",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "orientation",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "north",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a012": {
+      "text": "El objetivo de P2 de Ópalo se guarda en una funda gris.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Ópalo/P2/lens",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "storage",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "gray_case",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a013": {
+      "text": "Cobre funcionó ochenta minutos en Nacar sin apagarse; no se midió su duración hasta apagarse.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Cobre",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "autonomy",
+            "modality": "state",
+            "context": {
+              "route": "Nacar"
+            },
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "lower_bound",
+              "text": "80 minutes",
+              "value_type": null
+            },
+            "only_values": null,
+            "basis": "observation",
+            "quantity_scope": "trial"
+          },
+          {
+            "subject": {
+              "entity": "Cobre",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "measurement",
+            "modality": "occurred",
+            "context": {
+              "route": "Nacar"
+            },
+            "configuration": {},
+            "positive": false,
+            "datum": {
+              "kind": "known",
+              "text": "duration_until_poweroff",
+              "value_type": null
+            },
+            "only_values": null,
+            "basis": "observation",
+            "quantity_scope": "trial",
+            "measured_attribute": "autonomy",
+            "measurement_method": "duration_until_poweroff"
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a014": {
+      "text": "Se reservó una batería nueva para Cobre en Nacar.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Cobre",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "battery_reserved",
+            "modality": "state",
+            "context": {
+              "route": "Nacar"
+            },
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "new",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a015": {
+      "text": "El reproductor Zinc se apagó tras cien minutos en Nacar.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Zinc",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "operating_duration",
+            "modality": "state",
+            "context": {
+              "route": "Nacar"
+            },
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "100 minutes",
+              "value_type": null
+            },
+            "only_values": null,
+            "basis": "observation",
+            "quantity_scope": "trial"
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a016": {
+      "text": "Cobre tiene una correa azul para la ruta Nacar.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Cobre",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "strap_color",
+            "modality": "state",
+            "context": {
+              "route": "Nacar"
+            },
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "blue",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a017": {
+      "text": "El depósito de lluvia V que alimenta Nardo tiene una tapa azul.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Nardo",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "water_supply",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "V",
+              "value_type": "rainwater_reservoir"
+            },
+            "only_values": null,
+            "flow_scope": "immediate"
+          },
+          {
+            "subject": {
+              "entity": "V",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "lid_color",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "blue",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a018": {
+      "text": "El depósito V tiene una tapa azul.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "V",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "lid_color",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "blue",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a019": {
+      "text": "Nardo se riega a las seis de la mañana.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Nardo",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "watering_time",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "06:00",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a020": {
+      "text": "El huerto Hinojo recibe agua de la tubería R9.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Hinojo",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "water_supply",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "R9",
+              "value_type": "pipe"
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a021": {
+      "text": "Malva no usa agua de la red: se riega exclusivamente con lluvia del depósito W.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Malva",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "network_provenance",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": false,
+            "datum": {
+              "kind": "known",
+              "text": "present",
+              "value_type": null
+            },
+            "only_values": null
+          },
+          {
+            "subject": {
+              "entity": "Malva",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "water_supply",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "W",
+              "value_type": "rainwater_reservoir"
+            },
+            "only_values": null,
+            "flow_scope": "immediate"
+          },
+          {
+            "subject": {
+              "entity": "Malva",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "water_origin",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": null,
+            "only_values": [
+              "rainfall"
+            ],
+            "flow_scope": "upstream"
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a022": {
+      "text": "El depósito W de Malva tiene una tapa negra.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Malva/W",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "lid_color",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "black",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a023": {
+      "text": "Malva recibe ocho litros cada tarde.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Malva",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "water_volume_per_period",
+            "modality": "state",
+            "context": {
+              "period": "afternoon"
+            },
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "8 liters",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a024": {
+      "text": "La manguera del huerto Hinojo está en el cobertizo.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Hinojo/hose",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "storage",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "shed",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a025": {
+      "text": "El depósito J que alimenta Azucena mezcla lluvia con agua de la red procedente de la tubería T6.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Azucena",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "water_supply",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "J",
+              "value_type": "reservoir"
+            },
+            "only_values": null
+          },
+          {
+            "subject": {
+              "entity": "J",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "water_supply",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "T6",
+              "value_type": "network_pipe"
+            },
+            "only_values": null
+          },
+          {
+            "subject": {
+              "entity": "J",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "rainwater_mixed",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "present",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a026": {
+      "text": "Azucena usa riego por goteo.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Azucena",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "irrigation_method",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "drip",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a027": {
+      "text": "La tapa del depósito J es roja.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "J",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "lid_color",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "red",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a028": {
+      "text": "La red del huerto Verbena entra por la tubería T2.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Verbena",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "water_supply",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "T2",
+              "value_type": "network_pipe"
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a029": {
+      "text": "Está previsto exportar las imágenes de Delta a PNG el próximo lunes.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Delta",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "export_image_format",
+            "modality": "planned",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "PNG",
+              "value_type": null
+            },
+            "only_values": null
+          },
+          {
+            "subject": {
+              "entity": "Delta",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "export_date",
+            "modality": "planned",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "next_Monday",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a030": {
+      "text": "Del expediente Delta se digitalizaron doce páginas; faltan cuatro.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Delta",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "digitized_pages",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "12",
+              "value_type": null
+            },
+            "only_values": null
+          },
+          {
+            "subject": {
+              "entity": "Delta",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "pending_pages",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "4",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a031": {
+      "text": "No consta el formato de las imágenes ya entregadas de Delta.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Delta",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "delivered_image_format",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "unknown",
+              "text": null,
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": "the record of already delivered images"
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a032": {
+      "text": "El expediente Delta se guarda en una caja verde.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Delta",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "storage",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "green_box",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a033": {
+      "text": "El archivo de prueba Iris-3 fue borrado a los dieciocho días.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Iris-3",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "deletion_age",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "18 days",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a034": {
+      "text": "La política de toda la colección Iris es retención indefinida.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Iris",
+              "all": true,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "retention_policy",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "indefinite",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a035": {
+      "text": "La colección Zafiro conserva registros noventa días.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Zafiro",
+              "all": true,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "retention_policy",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "90 days",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a036": {
+      "text": "Iris recibe registros cada noche.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Iris",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "ingestion_schedule",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "nightly",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a037": {
+      "text": "La atribución de la inauguración de Vado a Nerea es errónea: lo inauguró Leo.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Vado",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "inaugurated_by",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": false,
+            "datum": {
+              "kind": "known",
+              "text": "Nerea",
+              "value_type": null
+            },
+            "only_values": null
+          },
+          {
+            "subject": {
+              "entity": "Vado",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "inaugurated_by",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "Leo",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a038": {
+      "text": "Nerea revisó las fotografías del puente Vado.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Vado/photos",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "reviewed_by",
+            "modality": "occurred",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "Nerea",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a039": {
+      "text": "Nerea inauguró el puente Puerto el 3 de abril.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Puerto",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "inaugurated_by",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "Nerea",
+              "value_type": null
+            },
+            "only_values": null
+          },
+          {
+            "subject": {
+              "entity": "Puerto",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "inauguration_date",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "April_3",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a040": {
+      "text": "Las luces de Vado se revisan los viernes.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Vado/lights",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "review_schedule",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "Fridays",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a041": {
+      "text": "Arce tiene diez músicos de cuerda confirmados; la confirmación de viento sigue pendiente.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Arce/strings",
+              "all": false,
+              "member_of": null,
+              "part_of": "Arce"
+            },
+            "attribute": "confirmed_musicians",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "10",
+              "value_type": null
+            },
+            "only_values": null
+          },
+          {
+            "subject": {
+              "entity": "Arce/winds",
+              "all": false,
+              "member_of": null,
+              "part_of": "Arce"
+            },
+            "attribute": "confirmed_musicians",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "pending",
+              "text": null,
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a042": {
+      "text": "Se prepararon veinte atriles para Arce.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Arce",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "music_stands_prepared",
+            "modality": "occurred",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "20",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a043": {
+      "text": "El conjunto Cedro tiene quince músicos confirmados.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Cedro",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "confirmed_musicians",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "15",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a044": {
+      "text": "Arce ensaya en la sala baja.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Arce",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "rehearsal_location",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "lower_room",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a045": {
+      "text": "La cantidad de sal de Brisa está ilegible en la copia conservada.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Brisa",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "salt_quantity",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "illegible",
+              "text": null,
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": "the preserved copy"
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a046": {
+      "text": "Se prepara una fotografía de la receta Brisa.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Brisa",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "photograph_preparation",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "in_progress",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a047": {
+      "text": "La receta Rocío indica ocho gramos de sal.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Rocío",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "salt_quantity",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "8 grams",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a048": {
+      "text": "La copia de Brisa se conserva en una carpeta negra.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Brisa",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "storage",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "black_folder",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a049": {
+      "text": "Senda usa Borrador a 150 ppp; la impresora Loma usa Fino a 600 ppp.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Senda",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "resolution",
+            "modality": "state",
+            "context": {},
+            "configuration": {
+              "mode": "Borrador"
+            },
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "150 ppp",
+              "value_type": null
+            },
+            "only_values": null
+          },
+          {
+            "subject": {
+              "entity": "Loma",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "resolution",
+            "modality": "state",
+            "context": {},
+            "configuration": {
+              "mode": "Fino"
+            },
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "600 ppp",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a050": {
+      "text": "La impresora Loma usa Fino a 600 ppp.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Loma",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "resolution",
+            "modality": "state",
+            "context": {},
+            "configuration": {
+              "mode": "Fino"
+            },
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "600 ppp",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a051": {
+      "text": "Senda tiene una bandeja de papel grande.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Senda",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "paper_tray_size",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "large",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a052": {
+      "text": "El modo Fino mejora el detalle de las líneas.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Fino",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "line_detail",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "improved",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a053": {
+      "text": "Cima usa Borrador a 150 ppp y también usa Fino a 600 ppp.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Cima",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "resolution",
+            "modality": "state",
+            "context": {},
+            "configuration": {
+              "mode": "Borrador"
+            },
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "150 ppp",
+              "value_type": null
+            },
+            "only_values": null
+          },
+          {
+            "subject": {
+              "entity": "Cima",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "resolution",
+            "modality": "state",
+            "context": {},
+            "configuration": {
+              "mode": "Fino"
+            },
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "600 ppp",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a054": {
+      "text": "Cima tiene dos bandejas.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Cima",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "tray_count",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "2",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a055": {
+      "text": "La impresora Vega usa Fino a 300 ppp.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Vega",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "resolution",
+            "modality": "state",
+            "context": {},
+            "configuration": {
+              "mode": "Fino"
+            },
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "300 ppp",
+              "value_type": null
+            },
+            "only_values": null,
+            "basis": "assignment"
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a056": {
+      "text": "Cima se revisa cada mes.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Cima",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "service_schedule",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "monthly",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a057": {
+      "text": "Risco funciona únicamente en Borrador a 150 ppp; no admite el modo Fino.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Risco",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "mode",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": null,
+            "only_values": [
+              "Borrador"
+            ]
+          },
+          {
+            "subject": {
+              "entity": "Risco",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "mode",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": false,
+            "datum": {
+              "kind": "known",
+              "text": "Fino",
+              "value_type": null
+            },
+            "only_values": null
+          },
+          {
+            "subject": {
+              "entity": "Risco",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "resolution",
+            "modality": "state",
+            "context": {},
+            "configuration": {
+              "mode": "Borrador"
+            },
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "150 ppp",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a058": {
+      "text": "El cartucho de Risco es negro.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Risco",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "cartridge_color",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "black",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a059": {
+      "text": "La impresora Vega admite Fino a 300 ppp.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Vega",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "resolution",
+            "modality": "state",
+            "context": {},
+            "configuration": {
+              "mode": "Fino"
+            },
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "300 ppp",
+              "value_type": null
+            },
+            "only_values": null,
+            "basis": "admission"
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a060": {
+      "text": "Risco pesa doce kilos.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Risco",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "weight",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "12 kg",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a061": {
+      "text": "Nube utiliza Corto a 44 kHz; el grabador Valle utiliza Largo a 48 kHz.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Nube",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "sample_rate",
+            "modality": "state",
+            "context": {},
+            "configuration": {
+              "program": "Corto"
+            },
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "44 kHz",
+              "value_type": null
+            },
+            "only_values": null
+          },
+          {
+            "subject": {
+              "entity": "Valle",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "sample_rate",
+            "modality": "state",
+            "context": {},
+            "configuration": {
+              "program": "Largo"
+            },
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "48 kHz",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a062": {
+      "text": "Valle utiliza Largo a 48 kHz.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Valle",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "sample_rate",
+            "modality": "state",
+            "context": {},
+            "configuration": {
+              "program": "Largo"
+            },
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "48 kHz",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a063": {
+      "text": "Nube tiene una funda blanca.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Nube",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "case_color",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "white",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a064": {
+      "text": "El programa Largo permite sesiones extensas.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Largo",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "session_length_capability",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "extended",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a065": {
+      "text": "La política de retención de Sálamo fijaba dieciocho días para el borrado automático del archivo crudo B3 de Q4.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Sálamo/Q4/B3",
+              "all": false,
+              "member_of": "Sálamo/Q4",
+              "part_of": null
+            },
+            "attribute": "policy_retention",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "18 days",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a066": {
+      "text": "La política de retención de Sálamo fijaba dieciocho días para el borrado automático de todos los archivos crudos de Q4.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Sálamo/Q4",
+              "all": true,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "policy_retention",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "18 days",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a067": {
+      "text": "Se midió la autonomía de los faros de seis parejas de Salvia.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Salvia/six_pairs_headlights",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "measurement",
+            "modality": "occurred",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "measurement",
+              "value_type": null
+            },
+            "only_values": null,
+            "measured_attribute": "autonomy",
+            "measurement_method_scope": "unspecified"
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a068": {
+      "text": "Se midió la fuerza de fijación de los faros de seis parejas de Salvia.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Salvia/six_pairs_headlights",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "measurement",
+            "modality": "occurred",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "measurement",
+              "value_type": null
+            },
+            "only_values": null,
+            "measured_attribute": "attachment_force",
+            "measurement_method_scope": "unspecified"
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a069": {
+      "text": "Está programada para el martes la medición de autonomía de los faros de Bruma.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Bruma/headlights",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "measurement",
+            "modality": "planned",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "measurement",
+              "value_type": null
+            },
+            "only_values": null,
+            "measured_attribute": "autonomy",
+            "measurement_method_scope": "unspecified"
+          },
+          {
+            "subject": {
+              "entity": "Bruma/headlights",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "measurement_date",
+            "modality": "planned",
+            "context": {
+              "measurement_aspect": "autonomy"
+            },
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "Tuesday",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a070": {
+      "text": "Se realizó el martes la medición de autonomía de los faros de Bruma.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Bruma/headlights",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "measurement",
+            "modality": "occurred",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "measurement",
+              "value_type": null
+            },
+            "only_values": null,
+            "measured_attribute": "autonomy",
+            "measurement_method_scope": "unspecified"
+          },
+          {
+            "subject": {
+              "entity": "Bruma/headlights",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "measurement_date",
+            "modality": "occurred",
+            "context": {
+              "measurement_aspect": "autonomy"
+            },
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "Tuesday",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a071": {
+      "text": "La autonomía del reproductor Lino es de como máximo setenta y cinco minutos.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Lino",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "autonomy",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "upper_bound",
+              "text": "75 minutes",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a072": {
+      "text": "La autonomía del reproductor Lino es de al menos setenta y cinco minutos.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Lino",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "autonomy",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "lower_bound",
+              "text": "75 minutes",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a073": {
+      "text": "Quedan cuatro páginas por digitalizar del expediente Atlas.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Atlas",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "pending_pages",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "4",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a074": {
+      "text": "Quedan cuatro páginas por digitalizar del expediente Boreal.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Boreal",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "pending_pages",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "4",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a075": {
+      "text": "Silvana no inauguró el puente Lago.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Lago",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "inaugurated_by",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": false,
+            "datum": {
+              "kind": "known",
+              "text": "Silvana",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a076": {
+      "text": "Silvana no inauguró el puente Raso.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Raso",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "inaugurated_by",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": false,
+            "datum": {
+              "kind": "known",
+              "text": "Silvana",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a077": {
+      "text": "La impresora Duna admite el modo Borrador a 150 ppp; la impresora Loma usa Fino a 600 ppp.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Duna",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "resolution",
+            "modality": "state",
+            "context": {},
+            "configuration": {
+              "mode": "Borrador"
+            },
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "150 ppp",
+              "value_type": null
+            },
+            "only_values": null,
+            "basis": "admission"
+          },
+          {
+            "subject": {
+              "entity": "Loma",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "resolution",
+            "modality": "state",
+            "context": {},
+            "configuration": {
+              "mode": "Fino"
+            },
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "600 ppp",
+              "value_type": null
+            },
+            "only_values": null,
+            "basis": "assignment"
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a078": {
+      "text": "El único modo admitido por la impresora Duna es Borrador a 150 ppp; la impresora Loma usa Fino a 600 ppp.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Duna",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "resolution",
+            "modality": "state",
+            "context": {},
+            "configuration": {
+              "mode": "Borrador"
+            },
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "150 ppp",
+              "value_type": null
+            },
+            "only_values": null,
+            "basis": "admission"
+          },
+          {
+            "subject": {
+              "entity": "Loma",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "resolution",
+            "modality": "state",
+            "context": {},
+            "configuration": {
+              "mode": "Fino"
+            },
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "600 ppp",
+              "value_type": null
+            },
+            "only_values": null,
+            "basis": "assignment"
+          },
+          {
+            "subject": {
+              "entity": "Duna",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "mode",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": null,
+            "only_values": [
+              "Borrador"
+            ]
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a079": {
+      "text": "Olmo recibe agua exclusivamente del depósito de lluvia K.",
+      "interpretations": [
+        "Exclusive immediate supplier; reservoir name does not exclude upstream network.",
+        "Additional pragmatic interpretation: no water travels through any network route to Olmo. Not entailed by reservoir name or meteorological rain origin. Alternatives are declared readings, not an exhaustive proof of Spanish meaning."
+      ],
+      "alternatives": [
+        [],
+        [
+          {
+            "subject": {
+              "entity": "Olmo",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "network_provenance",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": false,
+            "datum": {
+              "kind": "known",
+              "text": "present",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [
+        {
+          "subject": {
+            "entity": "Olmo",
+            "all": false,
+            "member_of": null,
+            "part_of": null
+          },
+          "attribute": "water_supply",
+          "modality": "state",
+          "context": {},
+          "configuration": {},
+          "positive": true,
+          "datum": {
+            "kind": "known",
+            "text": "K",
+            "value_type": "rainwater_reservoir"
+          },
+          "only_values": null,
+          "flow_scope": "immediate"
+        },
+        {
+          "subject": {
+            "entity": "Olmo",
+            "all": false,
+            "member_of": null,
+            "part_of": null
+          },
+          "attribute": "water_supply",
+          "modality": "state",
+          "context": {},
+          "configuration": {},
+          "positive": true,
+          "datum": null,
+          "only_values": [
+            "K"
+          ],
+          "flow_scope": "immediate"
+        }
+      ],
+      "uncertainty": null,
+      "alternatives_exhaustive": false
+    },
+    "a080": {
+      "text": "Olmo recibe agua del depósito de lluvia K.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Olmo",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "water_supply",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "K",
+              "value_type": "rainwater_reservoir"
+            },
+            "only_values": null,
+            "flow_scope": "immediate"
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a081": {
+      "text": "No se midió la duración del reproductor Lino hasta apagarse.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Lino",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "measurement",
+            "modality": "occurred",
+            "context": {},
+            "configuration": {},
+            "positive": false,
+            "datum": {
+              "kind": "known",
+              "text": "duration_until_poweroff",
+              "value_type": null
+            },
+            "only_values": null,
+            "measured_attribute": "autonomy",
+            "measurement_method": "duration_until_poweroff"
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a082": {
+      "text": "Del expediente Atlas están digitalizadas trece páginas.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Atlas",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "digitized_pages",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "13",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    },
+    "a083": {
+      "text": "Del expediente Atlas no quedan páginas pendientes.",
+      "interpretations": [
+        "Literal semantic decomposition: subject/property/modality and explicit values; no relation to question is encoded."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Atlas",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "pending_pages",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "0",
+              "value_type": null
+            },
+            "only_values": null
+          }
+        ]
+      ],
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "uncertainty": null,
+      "alternatives_exhaustive": true
+    }
+  },
+  "pairs": [
+    {
+      "id": "cv3q_01/cv3_01_00",
+      "question": "q001",
+      "assertion": "a001"
+    },
+    {
+      "id": "cv3q_01/cv3_01_01",
+      "question": "q001",
+      "assertion": "a002"
+    },
+    {
+      "id": "cv3q_01/cv3_01_02",
+      "question": "q001",
+      "assertion": "a003"
+    },
+    {
+      "id": "cv3q_01/cv3_01_03",
+      "question": "q001",
+      "assertion": "a004"
+    },
+    {
+      "id": "cv3q_02/cv3_02_00",
+      "question": "q002",
+      "assertion": "a005"
+    },
+    {
+      "id": "cv3q_02/cv3_02_01",
+      "question": "q002",
+      "assertion": "a006"
+    },
+    {
+      "id": "cv3q_02/cv3_02_02",
+      "question": "q002",
+      "assertion": "a007"
+    },
+    {
+      "id": "cv3q_02/cv3_02_03",
+      "question": "q002",
+      "assertion": "a008"
+    },
+    {
+      "id": "cv3q_03/cv3_03_00",
+      "question": "q003",
+      "assertion": "a009"
+    },
+    {
+      "id": "cv3q_03/cv3_03_01",
+      "question": "q003",
+      "assertion": "a010"
+    },
+    {
+      "id": "cv3q_03/cv3_03_02",
+      "question": "q003",
+      "assertion": "a011"
+    },
+    {
+      "id": "cv3q_03/cv3_03_03",
+      "question": "q003",
+      "assertion": "a012"
+    },
+    {
+      "id": "cv3q_04/cv3_04_00",
+      "question": "q004",
+      "assertion": "a013"
+    },
+    {
+      "id": "cv3q_04/cv3_04_01",
+      "question": "q004",
+      "assertion": "a014"
+    },
+    {
+      "id": "cv3q_04/cv3_04_02",
+      "question": "q004",
+      "assertion": "a015"
+    },
+    {
+      "id": "cv3q_04/cv3_04_03",
+      "question": "q004",
+      "assertion": "a016"
+    },
+    {
+      "id": "cv3q_05/cv3_05_00",
+      "question": "q005",
+      "assertion": "a017"
+    },
+    {
+      "id": "cv3q_05/cv3_05_01",
+      "question": "q005",
+      "assertion": "a018"
+    },
+    {
+      "id": "cv3q_05/cv3_05_02",
+      "question": "q005",
+      "assertion": "a019"
+    },
+    {
+      "id": "cv3q_05/cv3_05_03",
+      "question": "q005",
+      "assertion": "a020"
+    },
+    {
+      "id": "cv3q_06/cv3_06_00",
+      "question": "q006",
+      "assertion": "a021"
+    },
+    {
+      "id": "cv3q_06/cv3_06_01",
+      "question": "q006",
+      "assertion": "a022"
+    },
+    {
+      "id": "cv3q_06/cv3_06_02",
+      "question": "q006",
+      "assertion": "a023"
+    },
+    {
+      "id": "cv3q_06/cv3_06_03",
+      "question": "q006",
+      "assertion": "a024"
+    },
+    {
+      "id": "cv3q_07/cv3_07_00",
+      "question": "q007",
+      "assertion": "a025"
+    },
+    {
+      "id": "cv3q_07/cv3_07_01",
+      "question": "q007",
+      "assertion": "a026"
+    },
+    {
+      "id": "cv3q_07/cv3_07_02",
+      "question": "q007",
+      "assertion": "a027"
+    },
+    {
+      "id": "cv3q_07/cv3_07_03",
+      "question": "q007",
+      "assertion": "a028"
+    },
+    {
+      "id": "cv3q_08/cv3_08_00",
+      "question": "q008",
+      "assertion": "a029"
+    },
+    {
+      "id": "cv3q_08/cv3_08_01",
+      "question": "q008",
+      "assertion": "a030"
+    },
+    {
+      "id": "cv3q_08/cv3_08_02",
+      "question": "q008",
+      "assertion": "a031"
+    },
+    {
+      "id": "cv3q_08/cv3_08_03",
+      "question": "q008",
+      "assertion": "a032"
+    },
+    {
+      "id": "cv3q_09/cv3_09_00",
+      "question": "q009",
+      "assertion": "a033"
+    },
+    {
+      "id": "cv3q_09/cv3_09_01",
+      "question": "q009",
+      "assertion": "a034"
+    },
+    {
+      "id": "cv3q_09/cv3_09_02",
+      "question": "q009",
+      "assertion": "a035"
+    },
+    {
+      "id": "cv3q_09/cv3_09_03",
+      "question": "q009",
+      "assertion": "a036"
+    },
+    {
+      "id": "cv3q_10/cv3_10_00",
+      "question": "q010",
+      "assertion": "a037"
+    },
+    {
+      "id": "cv3q_10/cv3_10_01",
+      "question": "q010",
+      "assertion": "a038"
+    },
+    {
+      "id": "cv3q_10/cv3_10_02",
+      "question": "q010",
+      "assertion": "a039"
+    },
+    {
+      "id": "cv3q_10/cv3_10_03",
+      "question": "q010",
+      "assertion": "a040"
+    },
+    {
+      "id": "cv3q_11/cv3_11_00",
+      "question": "q011",
+      "assertion": "a041"
+    },
+    {
+      "id": "cv3q_11/cv3_11_01",
+      "question": "q011",
+      "assertion": "a042"
+    },
+    {
+      "id": "cv3q_11/cv3_11_02",
+      "question": "q011",
+      "assertion": "a043"
+    },
+    {
+      "id": "cv3q_11/cv3_11_03",
+      "question": "q011",
+      "assertion": "a044"
+    },
+    {
+      "id": "cv3q_12/cv3_12_00",
+      "question": "q012",
+      "assertion": "a045"
+    },
+    {
+      "id": "cv3q_12/cv3_12_01",
+      "question": "q012",
+      "assertion": "a046"
+    },
+    {
+      "id": "cv3q_12/cv3_12_02",
+      "question": "q012",
+      "assertion": "a047"
+    },
+    {
+      "id": "cv3q_12/cv3_12_03",
+      "question": "q012",
+      "assertion": "a048"
+    },
+    {
+      "id": "cv3q_13/cv3_13_00",
+      "question": "q013",
+      "assertion": "a049"
+    },
+    {
+      "id": "cv3q_13/cv3_13_01",
+      "question": "q013",
+      "assertion": "a050"
+    },
+    {
+      "id": "cv3q_13/cv3_13_02",
+      "question": "q013",
+      "assertion": "a051"
+    },
+    {
+      "id": "cv3q_13/cv3_13_03",
+      "question": "q013",
+      "assertion": "a052"
+    },
+    {
+      "id": "cv3q_14/cv3_14_00",
+      "question": "q014",
+      "assertion": "a053"
+    },
+    {
+      "id": "cv3q_14/cv3_14_01",
+      "question": "q014",
+      "assertion": "a054"
+    },
+    {
+      "id": "cv3q_14/cv3_14_02",
+      "question": "q014",
+      "assertion": "a055"
+    },
+    {
+      "id": "cv3q_14/cv3_14_03",
+      "question": "q014",
+      "assertion": "a056"
+    },
+    {
+      "id": "cv3q_15/cv3_15_00",
+      "question": "q015",
+      "assertion": "a057"
+    },
+    {
+      "id": "cv3q_15/cv3_15_01",
+      "question": "q015",
+      "assertion": "a058"
+    },
+    {
+      "id": "cv3q_15/cv3_15_02",
+      "question": "q015",
+      "assertion": "a059"
+    },
+    {
+      "id": "cv3q_15/cv3_15_03",
+      "question": "q015",
+      "assertion": "a060"
+    },
+    {
+      "id": "cv3q_16/cv3_16_00",
+      "question": "q016",
+      "assertion": "a061"
+    },
+    {
+      "id": "cv3q_16/cv3_16_01",
+      "question": "q016",
+      "assertion": "a062"
+    },
+    {
+      "id": "cv3q_16/cv3_16_02",
+      "question": "q016",
+      "assertion": "a063"
+    },
+    {
+      "id": "cv3q_16/cv3_16_03",
+      "question": "q016",
+      "assertion": "a064"
+    },
+    {
+      "id": "pcv1_01_01/claim_00",
+      "question": "q017",
+      "assertion": "a065"
+    },
+    {
+      "id": "pcv1_01_01/claim_01",
+      "question": "q017",
+      "assertion": "a066"
+    },
+    {
+      "id": "pcv1_01_02/claim_00",
+      "question": "q018",
+      "assertion": "a066"
+    },
+    {
+      "id": "pcv1_01_02/claim_01",
+      "question": "q018",
+      "assertion": "a065"
+    },
+    {
+      "id": "pcv1_02_01/claim_00",
+      "question": "q019",
+      "assertion": "a067"
+    },
+    {
+      "id": "pcv1_02_01/claim_01",
+      "question": "q019",
+      "assertion": "a068"
+    },
+    {
+      "id": "pcv1_02_02/claim_00",
+      "question": "q020",
+      "assertion": "a068"
+    },
+    {
+      "id": "pcv1_02_02/claim_01",
+      "question": "q020",
+      "assertion": "a067"
+    },
+    {
+      "id": "pcv1_03_01/claim_00",
+      "question": "q021",
+      "assertion": "a069"
+    },
+    {
+      "id": "pcv1_03_01/claim_01",
+      "question": "q021",
+      "assertion": "a070"
+    },
+    {
+      "id": "pcv1_03_02/claim_00",
+      "question": "q022",
+      "assertion": "a070"
+    },
+    {
+      "id": "pcv1_03_02/claim_01",
+      "question": "q022",
+      "assertion": "a069"
+    },
+    {
+      "id": "pcv1_04_01/claim_00",
+      "question": "q023",
+      "assertion": "a071"
+    },
+    {
+      "id": "pcv1_04_01/claim_01",
+      "question": "q023",
+      "assertion": "a072"
+    },
+    {
+      "id": "pcv1_04_02/claim_00",
+      "question": "q024",
+      "assertion": "a072"
+    },
+    {
+      "id": "pcv1_04_02/claim_01",
+      "question": "q024",
+      "assertion": "a071"
+    },
+    {
+      "id": "pcv1_05_01/claim_00",
+      "question": "q025",
+      "assertion": "a073"
+    },
+    {
+      "id": "pcv1_05_01/claim_01",
+      "question": "q025",
+      "assertion": "a074"
+    },
+    {
+      "id": "pcv1_05_02/claim_00",
+      "question": "q026",
+      "assertion": "a074"
+    },
+    {
+      "id": "pcv1_05_02/claim_01",
+      "question": "q026",
+      "assertion": "a073"
+    },
+    {
+      "id": "pcv1_06_01/claim_00",
+      "question": "q027",
+      "assertion": "a075"
+    },
+    {
+      "id": "pcv1_06_01/claim_01",
+      "question": "q027",
+      "assertion": "a076"
+    },
+    {
+      "id": "pcv1_06_02/claim_00",
+      "question": "q028",
+      "assertion": "a076"
+    },
+    {
+      "id": "pcv1_06_02/claim_01",
+      "question": "q028",
+      "assertion": "a075"
+    },
+    {
+      "id": "pcv1_07_01/claim_00",
+      "question": "q029",
+      "assertion": "a077"
+    },
+    {
+      "id": "pcv1_07_01/claim_01",
+      "question": "q029",
+      "assertion": "a078"
+    },
+    {
+      "id": "pcv1_07_02/claim_00",
+      "question": "q030",
+      "assertion": "a078"
+    },
+    {
+      "id": "pcv1_07_02/claim_01",
+      "question": "q030",
+      "assertion": "a077"
+    },
+    {
+      "id": "pcv1_08_01/claim_00",
+      "question": "q031",
+      "assertion": "a079"
+    },
+    {
+      "id": "pcv1_08_01/claim_01",
+      "question": "q031",
+      "assertion": "a080"
+    },
+    {
+      "id": "pcv1_08_02/claim_00",
+      "question": "q032",
+      "assertion": "a080"
+    },
+    {
+      "id": "pcv1_08_02/claim_01",
+      "question": "q032",
+      "assertion": "a079"
+    },
+    {
+      "id": "pcv1_control_17/claim_00",
+      "question": "q023",
+      "assertion": "a072"
+    },
+    {
+      "id": "pcv1_control_17/claim_01",
+      "question": "q023",
+      "assertion": "a081"
+    },
+    {
+      "id": "pcv1_control_18/claim_00",
+      "question": "q033",
+      "assertion": "a082"
+    },
+    {
+      "id": "pcv1_control_18/claim_01",
+      "question": "q033",
+      "assertion": "a083"
+    }
+  ]
+}

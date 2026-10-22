@@ -1,0 +1,1635 @@
+{
+  "review_type": "blind_known100_invariant_requested_fact_count_audit",
+  "reviewer": "same-family model; no human adjudication",
+  "inputs_read": [
+    "tests/fixtures/documentary-known100-v1/source-only-draft.json",
+    "docs/evaluation/evidence-contribution-v3-contract.md",
+    "docs/evaluation/evidence-contribution-v4-contract.md",
+    "docs/evaluation/epistemic-binding-v5-contract.md",
+    "docs/evaluation/measurement-identity-v1-extension.md",
+    "tests/fixtures/documentary-known100-v1/source-only-reviewed.json",
+    "docs/evaluation/request-basis-v1-extension.md"
+  ],
+  "blindness": "No old/new labels, results, implementation, V6 or API inspected. IDs only address pairs, not evidence of correctness.",
+  "development_status": "All 100 are known development pairs according to supplied notice. Not new validation or historical metric correction.",
+  "ready_for_manual_execution": true,
+  "pending_adjudication": [],
+  "semantics": {
+    "world_roles": "Distinct roles of supplied document readings. For unresolved admission boundary this is empty because reviewer does not assert a resolved role; strict provisional none is documented in rationale.",
+    "selected": "false plus unresolved is unresolved automatic selection, not safe rejection.",
+    "qualification_required": "Mandatory selected partial/contrast/bound/status/uncertain evidence must retain stated limits. false for unselected does not remove review requirement."
+  },
+  "source_audit": [
+    {
+      "area": "measurement a067-a070",
+      "status": "faithful",
+      "finding": "Neutral datum measurement plus measured_attribute and explicit method_scope unspecified preserves literal measurement without inventing a method. It is not wildcard. Method-specific queries cannot be answered from it."
+    },
+    {
+      "area": "q019-q020",
+      "status": "faithful",
+      "finding": "Generic aspect/method any in q019 and autonomy/method any in q020 are supported by wording. a068 does not refute or answer autonomy measurement. a067/a068 can answer what aspect generically."
+    },
+    {
+      "area": "q021-q022",
+      "status": "faithful",
+      "finding": "Planned date and occurrence are distinct. a069 supports planned Tuesday only; a070 supports performed autonomy measurement only. a070 Tuesday does not establish original schedule."
+    },
+    {
+      "area": "q023-q024",
+      "status": "faithful",
+      "finding": "q023 maximum accepts bounded contribution, not bound-to-equality. q024 explicitly asks duration until poweroff; bounds a071/a072 cannot establish method occurrence. a081 is specific negative occurrence and can contribute V4 execution to q023 without unknown maximum."
+    },
+    {
+      "area": "a013",
+      "status": "faithful_with_limits",
+      "finding": "80-minute trial lower bound and no poweroff measurement are separately represented with trial/observation qualifiers. Do not report maximum=80 or derive global unknown."
+    },
+    {
+      "area": "a079 Olmo",
+      "status": "faithful_as_explicitly_conditional_representation",
+      "finding": "K and exclusive immediate supplier are literal certain facts. No-network route is an additional pragmatic reading, not entailed by rainfall or literal immediate exclusivity. Open list is honest coverage limit. Preserve A/B for q031; q032 concrete K remains available from certain facts without new epistemic uncertainty."
+    },
+    {
+      "area": "Duna a077/a078",
+      "status": "resolved_under_explicit_question_basis",
+      "finding": "Resolution admission qualifiers remain; all usa requests now require actual assignment. q029/a077 and q030/a077,a078 are none; q029/a078 B by exclusion. mode-only_values would benefit from preserving admission qualifier explicitly if exposed separately, but source text establishes the exclusion and no actual use is inferred."
+    },
+    {
+      "area": "a031 availability_scope",
+      "status": "acceptable_inferred_documentary_scope",
+      "finding": "No consta is a documentary availability claim. the record of already delivered images is interpretive scope wording, not a named external source; preserve original text and do not claim global lack of format."
+    },
+    {
+      "area": "a065/a066 and q017/q018",
+      "status": "faithful",
+      "finding": "Universal policy can include named member; member policy does not establish common collection policy. Neither is observed deletion age."
+    },
+    {
+      "area": "remaining migration",
+      "status": "no_blocking_source_mismatch_identified",
+      "finding": "Inspected all 83 literal assertions and frames against 33 questions. Fields generally preserve subject/property/modality/configuration and literal values; this is manual review, not grounding in historical conversations. No broad proof of extraction."
+    }
+  ],
+  "remaining_objections": [
+    "La adjudicación actual_assignment es una decisión prospectiva plausible de significado de la pregunta; no demuestra ausencia de otras lecturas naturales de usa. El banco deberá informar este alcance al comparar con historia.",
+    "La admisión se conserva como hecho de capacidad y no se usa para fabricar asignación. q029/a078 conserva B por exclusión expresa de Fino.",
+    "Open pragmatic Olmo relation coverage remains incomplete and review must block autonomous relation resolution. Its certain intermediate datum need not be discarded.",
+    "Missing method may answer generic occurrence but cannot satisfy concrete method or magnitude-to-execution shortcut without identified procedure.",
+    "This review and bank are same-family known development, not independent holdout or proof of generalization."
+  ],
+  "pairs": [
+    {
+      "id": "cv3q_01/cv3_01_00",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "No exigir teléfono no aporta contact_phone ni niega una premisa necesaria.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_01/cv3_01_01",
+      "relation": "A",
+      "selected": true,
+      "world_roles": [
+        "A"
+      ],
+      "review_required": false,
+      "qualification_required": true,
+      "rationale": "Ausencia explícita del teléfono en el registro; no inexistencia ni desconocimiento global.",
+      "assertable_facts": 1,
+      "assertable_fact_witnesses": [
+        "contact_phone(Darsa/O7)=unknown; availability=the referenced record"
+      ],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_01/cv3_01_02",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Pedido O8 distinto de O7.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_01/cv3_01_03",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Lugar de recogida no aporta teléfono.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_02/cv3_02_00",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Requisito de credencial puede coexistir con requisito de tutor y no identifica tutor.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_02/cv3_02_01",
+      "relation": "B",
+      "selected": true,
+      "world_roles": [
+        "B"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Eliminación explícita de obligación de tutor para Ina/Faro contradice la premisa necesaria; no identifica un tutor.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_02/cv3_02_02",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Exigencia de tutor de otro curso.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_02/cv3_02_03",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Oficina de entrega no identifica tutor ni elimina obligación.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_03/cv3_03_00",
+      "relation": "C",
+      "selected": true,
+      "world_roles": [
+        "C"
+      ],
+      "review_required": false,
+      "qualification_required": true,
+      "rationale": "Contraste explícito P2/Alba/2 frente P7/Eclipse/4; no exposición P2/Eclipse ni exclusividad de perfil.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_03/cv3_03_01",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Solo P7/Eclipse; falta asignación del caso P2 para C.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_03/cv3_03_02",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Orientación no es exposición.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_03/cv3_03_03",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Funda del objetivo no es exposición.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_04/cv3_04_00",
+      "relation": "A",
+      "selected": true,
+      "world_roles": [
+        "A"
+      ],
+      "review_required": false,
+      "qualification_required": true,
+      "rationale": "Límite observado de 80 minutos en ensayo Nacar, sin elevarlo a máximo general; además ausencia explícita de medición hasta apagarse. No implica máximo desconocido.",
+      "assertable_facts": 1,
+      "assertable_fact_witnesses": [
+        "autonomy(Cobre, route=Nacar)>=80 minutes; observation/trial"
+      ],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_04/cv3_04_01",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Reserva de batería no acredita ejecución, progreso ni valor de autonomía.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_04/cv3_04_02",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Zinc es otro reproductor.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_04/cv3_04_03",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Color de correa no es autonomía.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_05/cv3_05_00",
+      "relation": "A",
+      "selected": true,
+      "world_roles": [
+        "A"
+      ],
+      "review_required": false,
+      "qualification_required": true,
+      "rationale": "V está explícitamente identificado como depósito intermedio que alimenta Nardo. No determina tubería de red ni excluye origen remoto.",
+      "assertable_facts": 1,
+      "assertable_fact_witnesses": [
+        "water_supply(Nardo)=V; rainwater_reservoir/immediate"
+      ],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_05/cv3_05_01",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Tapa de V sin enlace a Nardo en este registro; no completar desde otro recuerdo.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_05/cv3_05_02",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Horario de riego no identifica procedencia.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_05/cv3_05_03",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Tubería de otro huerto.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_06/cv3_06_00",
+      "relation": "B",
+      "selected": true,
+      "world_roles": [
+        "B"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Malva no usa agua de red, negación explícita de premisa; W y exclusividad de lluvia no se usan para inventar tubería.",
+      "assertable_facts": 1,
+      "assertable_fact_witnesses": [
+        "water_supply(Malva)=W; rainwater_reservoir/immediate"
+      ],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_06/cv3_06_01",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Depósito de Malva con tapa negra no afirma que alimente el huerto.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_06/cv3_06_02",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Volumen periódico no aporta tubería ni niega procedencia.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_06/cv3_06_03",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Manguera de otro huerto.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_07/cv3_07_00",
+      "relation": "A",
+      "selected": true,
+      "world_roles": [
+        "A"
+      ],
+      "review_required": false,
+      "qualification_required": true,
+      "rationale": "Cadena literal Azucena<-J<-T6 y mezcla: aporta procedencia de red conservando depósito intermedio y mezcla de lluvia.",
+      "assertable_facts": 1,
+      "assertable_fact_witnesses": [
+        "water_supply(Azucena)=J; reservoir intermediate"
+      ],
+      "count_annotated": true,
+      "count_limit": "Counts one independent requested-subject intermediate fact. J<-T6 plus Azucena<-J supports a composed route answer and must be preserved in source; the upstream fact J<-T6 alone does not identify Azucena, so it is not an additional standalone contributor under this counting convention. Count is not number of facts needed to compose the answer."
+    },
+    {
+      "id": "cv3q_07/cv3_07_01",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Método de riego no identifica procedencia.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_07/cv3_07_02",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Tapa de J sin enlace al huerto en este texto.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_07/cv3_07_03",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Tubería de Verbena, no Azucena.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_08/cv3_08_00",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Exportación PNG futura no acredita formato de imágenes entregadas ni digitalización.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_08/cv3_08_01",
+      "relation": "A",
+      "selected": true,
+      "world_roles": [
+        "A"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Doce páginas digitalizadas responde una parte pedida. Cuatro pendientes es información adicional, no total digitalizado.",
+      "assertable_facts": 1,
+      "assertable_fact_witnesses": [
+        "digitized_pages(Delta)=12"
+      ],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_08/cv3_08_02",
+      "relation": "A",
+      "selected": true,
+      "world_roles": [
+        "A"
+      ],
+      "review_required": false,
+      "qualification_required": true,
+      "rationale": "Ausencia explícita del formato de imágenes ya entregadas, acotada al registro; no inexistencia de imágenes ni unknown global.",
+      "assertable_facts": 1,
+      "assertable_fact_witnesses": [
+        "delivered_image_format(Delta)=unknown; documentary availability scope"
+      ],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_08/cv3_08_03",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Caja no aporta formato ni páginas.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_09/cv3_09_00",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Borrado observado de archivo de prueba no establece política de toda Iris; tampoco refuta una premisa factual de la pregunta.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_09/cv3_09_01",
+      "relation": "A",
+      "selected": true,
+      "world_roles": [
+        "A"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Política explícita de toda la colección: retención indefinida.",
+      "assertable_facts": 1,
+      "assertable_fact_witnesses": [
+        "retention_policy(Iris/all)=indefinite"
+      ],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_09/cv3_09_02",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Política de Zafiro, otro sujeto.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_09/cv3_09_03",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Horario de ingesta no es retención.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_10/cv3_10_00",
+      "relation": "B",
+      "selected": true,
+      "world_roles": [
+        "B"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Niega explícitamente atribución a Nerea para Vado; Leo corrige autor sin cambiar sujeto. No aporta fecha.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_10/cv3_10_01",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Revisar fotos no equivale a inaugurar.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_10/cv3_10_02",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Fecha de Puerto no se transfiere a Vado.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_10/cv3_10_03",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Revisión de luces no es inauguración.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_11/cv3_11_00",
+      "relation": "A",
+      "selected": true,
+      "world_roles": [
+        "A"
+      ],
+      "review_required": false,
+      "qualification_required": true,
+      "rationale": "Diez cuerdas confirmadas es parte aditiva de Arce; viento pendiente. No declarar diez como total ni convertir pendiente en cero.",
+      "assertable_facts": 2,
+      "assertable_fact_witnesses": [
+        "confirmed_musicians(Arce/strings)=10; part_of=Arce",
+        "confirmed_musicians(Arce/winds)=pending; part_of=Arce"
+      ],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_11/cv3_11_01",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Atriles preparados no acreditan músicos confirmados.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_11/cv3_11_02",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Cedro es otro conjunto.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_11/cv3_11_03",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Sala de ensayo no es cantidad.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_12/cv3_12_00",
+      "relation": "A",
+      "selected": true,
+      "world_roles": [
+        "A"
+      ],
+      "review_required": false,
+      "qualification_required": true,
+      "rationale": "Ilegibilidad de cantidad de sal en copia conservada, no cantidad ni desconocimiento global.",
+      "assertable_facts": 1,
+      "assertable_fact_witnesses": [
+        "salt_quantity(Brisa)=illegible; preserved copy"
+      ],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_12/cv3_12_01",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Preparar fotografía no acredita legibilidad, ejecución de digitalización ni valor de sal.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_12/cv3_12_02",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Sal de Rocío no es sal de Brisa.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_12/cv3_12_03",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Localización de copia no aporta cantidad.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_13/cv3_13_00",
+      "relation": "C",
+      "selected": true,
+      "world_roles": [
+        "C"
+      ],
+      "review_required": false,
+      "qualification_required": true,
+      "rationale": "Senda/Borrador/150 frente Loma/Fino/600: contraste, sin afirmar Senda/Fino ni exclusión de Fino.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_13/cv3_13_01",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Loma/Fino aislada no aporta Senda ni contraste completo.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_13/cv3_13_02",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Bandeja no es resolución.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_13/cv3_13_03",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Propiedad genérica de Fino no establece configuración Senda.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_14/cv3_14_00",
+      "relation": "A",
+      "selected": true,
+      "world_roles": [
+        "A"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Cima/Fino/600 está explícito; Borrador coexistente no refuta Fino.",
+      "assertable_facts": 1,
+      "assertable_fact_witnesses": [
+        "resolution(Cima, mode=Fino)=600 ppp"
+      ],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_14/cv3_14_01",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Bandejas no son resolución.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_14/cv3_14_02",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Vega es otra impresora.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_14/cv3_14_03",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Revisión mensual no es resolución.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_15/cv3_15_00",
+      "relation": "B",
+      "selected": true,
+      "world_roles": [
+        "B"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Risco no admite Fino y funciona únicamente en Borrador: exclusión suficiente de configuración presupuesta.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_15/cv3_15_01",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Cartucho no aporta resolución.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_15/cv3_15_02",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Admisión de Fino en Vega no acredita nada de Risco.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_15/cv3_15_03",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Peso no es resolución.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_16/cv3_16_00",
+      "relation": "C",
+      "selected": true,
+      "world_roles": [
+        "C"
+      ],
+      "review_required": false,
+      "qualification_required": true,
+      "rationale": "Nube/Corto/44 frente Valle/Largo/48: contraste explícito, no tasa Nube/Largo ni imposibilidad de Largo.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_16/cv3_16_01",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Valle/Largo aislado no aporta Nube ni comparación completa.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_16/cv3_16_02",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Funda no es tasa.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "cv3q_16/cv3_16_03",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Capacidad genérica de Largo no determina asignación ni tasa Nube.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "pcv1_01_01/claim_00",
+      "relation": "A",
+      "selected": true,
+      "world_roles": [
+        "A"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "La política nombra B3/Q4 y plazo de 18 días; no borrado observado.",
+      "assertable_facts": 1,
+      "assertable_fact_witnesses": [
+        "policy_retention(Salamo/Q4/B3)=18 days"
+      ],
+      "count_annotated": true
+    },
+    {
+      "id": "pcv1_01_01/claim_01",
+      "relation": "A",
+      "selected": true,
+      "world_roles": [
+        "A"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Universal de todos los crudos Q4 incluye B3; conservar fuente universal, no evento de borrado.",
+      "assertable_facts": 1,
+      "assertable_fact_witnesses": [
+        "policy_retention(Salamo/Q4/all)=18 days; universal applies to B3; original universal subject retained"
+      ],
+      "count_annotated": true
+    },
+    {
+      "id": "pcv1_01_02/claim_00",
+      "relation": "A",
+      "selected": true,
+      "world_roles": [
+        "A"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Política común explícita para todos los archivos crudos Q4.",
+      "assertable_facts": 1,
+      "assertable_fact_witnesses": [
+        "policy_retention(Salamo/Q4/all)=18 days"
+      ],
+      "count_annotated": true
+    },
+    {
+      "id": "pcv1_01_02/claim_01",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Política de un miembro no establece política común de toda Q4.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "pcv1_02_01/claim_00",
+      "relation": "A",
+      "selected": true,
+      "world_roles": [
+        "A"
+      ],
+      "review_required": false,
+      "qualification_required": true,
+      "rationale": "Se midió autonomía del sujeto exacto. Pregunta genérica de aspecto/método admite este hecho con método no especificado; no valor de autonomía.",
+      "assertable_facts": 1,
+      "assertable_fact_witnesses": [
+        "measurement(Salvia/six_pairs_headlights, autonomy)=occurred; method unspecified"
+      ],
+      "count_annotated": true
+    },
+    {
+      "id": "pcv1_02_01/claim_01",
+      "relation": "A",
+      "selected": true,
+      "world_roles": [
+        "A"
+      ],
+      "review_required": false,
+      "qualification_required": true,
+      "rationale": "Se midió fuerza de fijación del sujeto exacto. any de magnitud y método permite informar ese aspecto, conservando método no especificado.",
+      "assertable_facts": 1,
+      "assertable_fact_witnesses": [
+        "measurement(Salvia/six_pairs_headlights, attachment_force)=occurred; method unspecified"
+      ],
+      "count_annotated": true
+    },
+    {
+      "id": "pcv1_02_02/claim_00",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Fuerza de fijación no es autonomía; no medición de autonomía ni negación de ella.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "pcv1_02_02/claim_01",
+      "relation": "A",
+      "selected": true,
+      "world_roles": [
+        "A"
+      ],
+      "review_required": false,
+      "qualification_required": true,
+      "rationale": "Ejecución genérica de medición de autonomía explícita, método no especificado. Pregunta any no pide prueba concreta ni valor.",
+      "assertable_facts": 1,
+      "assertable_fact_witnesses": [
+        "measurement(Salvia/six_pairs_headlights, autonomy)=occurred; method unspecified"
+      ],
+      "count_annotated": true
+    },
+    {
+      "id": "pcv1_03_01/claim_00",
+      "relation": "A",
+      "selected": true,
+      "world_roles": [
+        "A"
+      ],
+      "review_required": false,
+      "qualification_required": true,
+      "rationale": "Martes es fecha prevista explícita para medición de autonomía; no realizada. Método no especificado no debe completarse.",
+      "assertable_facts": 1,
+      "assertable_fact_witnesses": [
+        "measurement_date(Bruma/headlights, autonomy)=Tuesday; planned"
+      ],
+      "count_annotated": true
+    },
+    {
+      "id": "pcv1_03_01/claim_01",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Realización el martes no acredita para qué día estaba programada; ocurrido y planificado no se intercambian.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "pcv1_03_02/claim_00",
+      "relation": "A",
+      "selected": true,
+      "world_roles": [
+        "A"
+      ],
+      "review_required": false,
+      "qualification_required": true,
+      "rationale": "Realización de medición de autonomía explícita; responde estado genérico any conservando método no especificado.",
+      "assertable_facts": 1,
+      "assertable_fact_witnesses": [
+        "measurement(Bruma/headlights, autonomy)=occurred; method unspecified"
+      ],
+      "count_annotated": true
+    },
+    {
+      "id": "pcv1_03_02/claim_01",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Programación no acredita realización ni ausencia de realización; no B.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "pcv1_04_01/claim_00",
+      "relation": "A",
+      "selected": true,
+      "world_roles": [
+        "A"
+      ],
+      "review_required": false,
+      "qualification_required": true,
+      "rationale": "Cota superior 75 minutos explícita; no convertir como máximo en igualdad exacta del máximo.",
+      "assertable_facts": 1,
+      "assertable_fact_witnesses": [
+        "autonomy(Lino)<=75 minutes"
+      ],
+      "count_annotated": true
+    },
+    {
+      "id": "pcv1_04_01/claim_01",
+      "relation": "A",
+      "selected": true,
+      "world_roles": [
+        "A"
+      ],
+      "review_required": false,
+      "qualification_required": true,
+      "rationale": "Cota inferior 75 minutos explícita; no convertir al menos en valor exacto ni cota superior.",
+      "assertable_facts": 1,
+      "assertable_fact_witnesses": [
+        "autonomy(Lino)>=75 minutes"
+      ],
+      "count_annotated": true
+    },
+    {
+      "id": "pcv1_04_02/claim_00",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Cota de autonomía no acredita realización de procedimiento hasta apagarse.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "pcv1_04_02/claim_01",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Cota superior tampoco acredita medición hasta apagarse; método no se deduce de número.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "pcv1_05_01/claim_00",
+      "relation": "A",
+      "selected": true,
+      "world_roles": [
+        "A"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Cuatro páginas pendientes de Atlas es dato directo.",
+      "assertable_facts": 1,
+      "assertable_fact_witnesses": [
+        "pending_pages(Atlas)=4"
+      ],
+      "count_annotated": true
+    },
+    {
+      "id": "pcv1_05_01/claim_01",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Boreal no es Atlas.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "pcv1_05_02/claim_00",
+      "relation": "A",
+      "selected": true,
+      "world_roles": [
+        "A"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Cuatro páginas pendientes de Boreal es dato directo.",
+      "assertable_facts": 1,
+      "assertable_fact_witnesses": [
+        "pending_pages(Boreal)=4"
+      ],
+      "count_annotated": true
+    },
+    {
+      "id": "pcv1_05_02/claim_01",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Atlas no es Boreal.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "pcv1_06_01/claim_00",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Negación de inauguración en Lago no se transfiere a Raso.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "pcv1_06_01/claim_01",
+      "relation": "B",
+      "selected": true,
+      "world_roles": [
+        "B"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Negación explícita Silvana/Raso refuta premisa necesaria; no año.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "pcv1_06_02/claim_00",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Negación de inauguración en Raso no se transfiere a Lago.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "pcv1_06_02/claim_01",
+      "relation": "B",
+      "selected": true,
+      "world_roles": [
+        "B"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Negación explícita Silvana/Lago refuta premisa necesaria; no año.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "pcv1_07_01/claim_00",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "none bajo basis_requirement=actual_assignment: Duna solo admite Borrador/150, sin afirmar asignación/uso de Borrador; falta asignación del sujeto para C y no hay resolución Duna/Fino. No elevar capacidad a uso.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "pcv1_07_01/claim_01",
+      "relation": "B",
+      "selected": true,
+      "world_roles": [
+        "B"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Único modo admitido Borrador excluye Fino presupuesta. Conservar admisión como fundamento; no inferir uso efectivo de Borrador.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "pcv1_07_02/claim_00",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "none bajo basis_requirement=actual_assignment: admitir únicamente Borrador/150 no prueba que Duna esté asignada/usando ese modo. Exclusividad de capacidad no es ejecución o asignación real.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "pcv1_07_02/claim_01",
+      "relation": "none",
+      "selected": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "none bajo basis_requirement=actual_assignment: admite Borrador/150 no aporta un valor de uso con el fundamento solicitado. No pierde el calificador admission ni lo transforma en assignment.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true
+    },
+    {
+      "id": "pcv1_08_01/claim_00",
+      "relation": "ambiguous",
+      "selected": true,
+      "world_roles": [
+        "A",
+        "B"
+      ],
+      "review_required": true,
+      "qualification_required": true,
+      "rationale": "Hechos ciertos dan K como proveedor inmediato intermedio en todas las lecturas; por ello evidencia seleccionable A. Una interpretación pragmática añade exclusión de red y B. No convertir B en hecho cierto; lista abierta impone revisión de relación/cobertura. No hay cue documental para nueva A epistémica.",
+      "assertable_facts": 1,
+      "assertable_fact_witnesses": [
+        "water_supply(Olmo)=K; rainwater_reservoir/immediate; certain_fact"
+      ],
+      "count_annotated": true,
+      "count_limit": "Counts K source identity once. Immediate only_values K is a qualifier/constraint on that identity, not another requested source identity. Conditional network_provenance is not an invariant water_supply fact."
+    },
+    {
+      "id": "pcv1_08_01/claim_01",
+      "relation": "A",
+      "selected": true,
+      "world_roles": [
+        "A"
+      ],
+      "review_required": false,
+      "qualification_required": true,
+      "rationale": "Depósito K es intermedio explícito hacia procedencia de agua; no tubería ni exclusión de red remota.",
+      "assertable_facts": 1,
+      "assertable_fact_witnesses": [
+        "water_supply(Olmo)=K; rainwater_reservoir/immediate"
+      ],
+      "count_annotated": true
+    },
+    {
+      "id": "pcv1_08_02/claim_00",
+      "relation": "A",
+      "selected": true,
+      "world_roles": [
+        "A"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Depósito de lluvia K que alimenta Olmo está explícito.",
+      "assertable_facts": 1,
+      "assertable_fact_witnesses": [
+        "water_supply(Olmo)=K; rainwater_reservoir/immediate"
+      ],
+      "count_annotated": true
+    },
+    {
+      "id": "pcv1_08_02/claim_01",
+      "relation": "A",
+      "selected": true,
+      "world_roles": [
+        "A"
+      ],
+      "review_required": false,
+      "qualification_required": true,
+      "rationale": "K y exclusividad inmediata son hechos ciertos independientes de la lista abierta. Ambas lecturas representadas responden depósito; exclusión pragmática de red no altera ese dato. No afirmar exclusión de red.",
+      "assertable_facts": 1,
+      "assertable_fact_witnesses": [
+        "water_supply(Olmo)=K; rainwater_reservoir/immediate; certain_fact"
+      ],
+      "count_annotated": true,
+      "count_limit": "Counts K source identity once. Immediate only_values K is a qualifier/constraint on that identity, not another requested source identity. Conditional network_provenance is not an invariant water_supply fact."
+    },
+    {
+      "id": "pcv1_control_17/claim_00",
+      "relation": "A",
+      "selected": true,
+      "world_roles": [
+        "A"
+      ],
+      "review_required": false,
+      "qualification_required": true,
+      "rationale": "Cota inferior 75 minutos explícita; no convertir al menos en valor exacto ni cota superior.",
+      "assertable_facts": 1,
+      "assertable_fact_witnesses": [
+        "autonomy(Lino)>=75 minutes"
+      ],
+      "count_annotated": true
+    },
+    {
+      "id": "pcv1_control_17/claim_01",
+      "relation": "A",
+      "selected": true,
+      "world_roles": [
+        "A"
+      ],
+      "review_required": false,
+      "qualification_required": true,
+      "rationale": "Ausencia explícita de medición de duración hasta apagarse: magnitud y procedimiento identificados. A V4 de ejecución, sin máximo numérico ni ausencia global del dato.",
+      "assertable_facts": 0,
+      "assertable_fact_witnesses": [],
+      "count_annotated": true,
+      "count_limit": "Zero direct autonomy quantity facts. The selected A remains V4 execution-state contribution; no count of numeric autonomy or global unknown."
+    },
+    {
+      "id": "pcv1_control_18/claim_00",
+      "relation": "A",
+      "selected": true,
+      "world_roles": [
+        "A"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Trece digitalizadas aporta una de dos cantidades; no permite inferir pendientes.",
+      "assertable_facts": 1,
+      "assertable_fact_witnesses": [
+        "digitized_pages(Atlas)=13"
+      ],
+      "count_annotated": true
+    },
+    {
+      "id": "pcv1_control_18/claim_01",
+      "relation": "A",
+      "selected": true,
+      "world_roles": [
+        "A"
+      ],
+      "review_required": false,
+      "qualification_required": false,
+      "rationale": "Cero pendientes explícito aporta una de dos cantidades; no permite inferir digitalizadas.",
+      "assertable_facts": 1,
+      "assertable_fact_witnesses": [
+        "pending_pages(Atlas)=0"
+      ],
+      "count_annotated": true
+    }
+  ],
+  "admission_boundary_analysis": {
+    "current_contract_determination": "No determina inequívocamente A para la pregunta usa. Conservar record_asserts con basis=admission evita una falsedad en la salida, pero no demuestra que el hecho aporte al campo solicitado bajo una lectura de uso/asignación efectiva. El contrato distingue admisión y uso, pero el frame de request no declara cuál demanda; V5 no amplía explícitamente A a capacidades frente preguntas de uso.",
+    "strict_boundary": {
+      "interpretation": "usa consulta asignación/uso efectivo",
+      "q029_a077": "none: falta asignación Duna para C y no resolución Duna/Fino",
+      "q030_a077": "none: capacidad no implica uso",
+      "q030_a078": "none: capacidad única no implica ejecución o asignación real",
+      "cost": "Pierde evidencia de especificación que una lectura habitual de usa podría considerar parcial; no se oculta esa pérdida."
+    },
+    "specification_boundary": {
+      "interpretation": "usa consulta resolución característica/admitida bajo modo, sin exigir activación actual",
+      "q029_a077": "none: admisión Duna no satisface ambas asignaciones C",
+      "q030_a077": "A con calificación: admite Borrador a 150 ppp; no acredita que esté usándolo",
+      "q030_a078": "A con la misma calificación; exclusividad de admisión no prueba uso",
+      "cost": "Exige declarar esta lectura de la solicitud o una ampliación explícita de A hacia capacidad cualificada; no basta preservar qualifier en output."
+    },
+    "recommended_representation": "Distinguir exigencia de fundamento en pregunta (por ejemplo, uso observado/asignación, característica admitida o ambas lecturas). No rellenarla desde la fuente candidata. Si usa es ambiguo, conservar lecturas de pregunta y revisión; la adopción de un límite no debe presentarse como corrección automática de gold histórico.",
+    "relation_to_historical_labels": "No se consultaron etiquetas históricas. Registrar discrepancia cuando se comparen posteriormente, sin reescribir métricas o elegir la frontera para pasar.",
+    "pending_preserved": false,
+    "final_adjudication": "The reviewed request now explicitly chooses strict actual-assignment boundary. Three pending judgments resolved as none; alternative specification boundary remains historical analysis only."
+  },
+  "question_adjudication_review": {
+    "delta_verified": "Exactly seven added basis_requirement=actual_assignment fields on q003,q013,q014,q015,q016,q029,q030. No source texts, alternatives, assertions, pairing, ontology or other question fields changed.",
+    "status": "Acceptable prospective adjudication; no blocking contradiction identified.",
+    "language_limit": "usa reasonably supports assignment/use. actual_assignment chooses that reading explicitly, rather than proving that the original wording has no specification/capability reading. This choice is declared from question alone and applied consistently to all seven usa questions.",
+    "partial_A_limit": "Once question explicitly requires actual_assignment, a resolution admitted under that mode is not a fact of requested use with the necessary basis. Preserving admission in output prevents fabrication but does not satisfy the request. No new A expansion to capacity is assumed.",
+    "C_limit": "q029/a077 lacks the alternate assignment of Duna and therefore cannot yield C. Other C sources explicitly usa/utiliza and remain C; their contrast does not imply exclusivity.",
+    "B_limit": "q029/a078 excludes Fino as an admitted mode and therefore refutes required actual Fino use. This does not affirm actual Borrador use.",
+    "historical_limit": "Old development/history is not relabeled by this prospective adjudication. Prior draft and pending objections remain in blind-review.json; final decision is conditional on the added request basis."
+  },
+  "counting_convention": {
+    "unit": "One invariant original source fact that independently contributes to a requested field, including explicit value/bound/availability and qualifying additive component or universal facts. Original subjects and qualifiers remain. Not count of complete answers, source propositions generally, inferred route endpoints or slots filled.",
+    "basis": "Facts must satisfy explicit request basis. Admission does not count for actual_assignment.",
+    "other_usefulness": "B premise facts, C alternative-configuration facts and V4 execution states toward quantity questions can be useful without being direct requested-field facts; they count zero unless the source separately has an eligible A fact.",
+    "B_with_partial_A": "Precedence B does not erase direct A fact witnesses: Malva a021 has count 1 for W intermediate despite B relation.",
+    "components": "Arce a041 has count 2 with subjects strings and winds; not total=10 nor winds=0.",
+    "open_lists": "Certain facts remain eligible; no intersection-only assertion from open uncertain alternatives.",
+    "chain_limit": "For Azucena a025 count1 covers its independent intermediate fact. T6 route is valid contextual composition from two facts and retained in text, not a second standalone requested-subject witness. This convention must be fixed before comparing a machine count.",
+    "scope_of_review": "All100 counts annotated manually. Count convention is explicit and does not certify extractor grounding."
+  },
+  "request_basis_criterion_review": {
+    "accepted_before_execution": true,
+    "no_blocking_objection": true,
+    "open_coverage": "Accept: other-attribute alternatives do not contaminate literal certain requested facts; preserve coverage and qualifications. A certain plus B conditional must remain ambiguous, not certain B.",
+    "minimum_qualification": "Accept: mandatory true is a minimum. Additional conservative warning is not false factual assertion; record warnings separately from mandatory failures. No post-output criterion change is justified.",
+    "flags_preserved": "No original role, selection, review or mandatory qualification flag changed by this count audit."
+  },
+  "priority_count_checks": [
+    {
+      "question": "q004",
+      "assertion": "a013",
+      "count": 1,
+      "note": "Trial lower bound only; explicit nonmeasurement remains separate V4 execution evidence."
+    },
+    {
+      "question": "q011",
+      "assertion": "a041",
+      "count": 2,
+      "note": "Two component facts, not overall total."
+    },
+    {
+      "question": "q006",
+      "assertion": "a021",
+      "count": 1,
+      "note": "B precedence plus one direct intermediate W fact; exclusive rainfall is not a second requested pipe identity."
+    },
+    {
+      "question": "q031/q032",
+      "assertion": "a079",
+      "count": 1,
+      "note": "K literal certain; no invariant no-network assertion."
+    },
+    {
+      "question": "q023",
+      "assertion": "a081",
+      "count": 0,
+      "note": "Quantity requested; measurement state is V4 useful but no autonomy quantity fact."
+    },
+    {
+      "question": "q024",
+      "assertion": "a081",
+      "count": 1,
+      "in_bank": false,
+      "note": "Auxiliary comparison only: actual negative occurrence for the requested specific procedure. No such pair was added to bank."
+    }
+  ]
+}

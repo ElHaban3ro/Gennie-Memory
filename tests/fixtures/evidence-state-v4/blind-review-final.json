@@ -1,0 +1,709 @@
+{
+  "review_identity": {
+    "reviewer": "same-family blind critical AI reviewer",
+    "human_review": false,
+    "independent_model_family": false,
+    "synthetic_development_only": true,
+    "external_apis_used": false,
+    "read_scope_this_pass": [
+      "tests/fixtures/evidence-state-v4/source-only-reviewed.json",
+      "docs/evaluation/evidence-contribution-v4-contract.md"
+    ],
+    "normative_v3": "Read in prior explicitly authorized blind pass; no labels, adjudication, code or results read."
+  },
+  "decision_basis": "Revisión de textos originales, hechos revisados y contrato conciliado antes de ejecución. roles conserva conjunto completo de lecturas explícitas; selected exige utilidad en todas. measurement_status solo vía ampliada hacia cantidad solicitada, no respuesta directa sobre realización.",
+  "objection_resolution": [
+    {
+      "id": "O1",
+      "assertions": [
+        "a024"
+      ],
+      "status": "closed",
+      "reason": "pending/state conserva estado actual pendiente. El contrato distingue completitud de inicio y prohíbe derivar desconocimiento de la cantidad."
+    },
+    {
+      "id": "O2",
+      "assertions": [
+        "a021"
+      ],
+      "status": "closed",
+      "reason": "Publicación tiene atributo separado y vínculo magnitud/método. Contrato excluye inferir ejecución o ausencia del máximo desde no publicación de resultado de ensayo no identificado como máximo. none deja de ser provisional."
+    },
+    {
+      "id": "O3",
+      "assertions": [
+        "a016"
+      ],
+      "status": "closed",
+      "reason": "Los tres hechos usan basis admission; ya no declaran asignación/uso."
+    },
+    {
+      "id": "O4",
+      "assertions": [
+        "a019"
+      ],
+      "status": "closed",
+      "reason": "Contrato incluye procedimientos explícitos de estimación/cálculo y limita sus implicaciones empíricas."
+    },
+    {
+      "id": "O5",
+      "assertions": [
+        "a007",
+        "a008",
+        "a022",
+        "a028"
+      ],
+      "status": "closed",
+      "reason": "Máximo conservado; a008 conocido/specification; a028 lower_bound con observation y trial."
+    },
+    {
+      "id": "O6",
+      "assertions": [
+        "a009",
+        "a021",
+        "a023",
+        "a025",
+        "a030"
+      ],
+      "status": "closed",
+      "reason": "Ausencia de resultado en este texto, identidad de publicación, cancelación definitiva y política normativa ahora tienen representación explícita."
+    },
+    {
+      "id": "O7",
+      "assertions": [],
+      "status": "closed",
+      "reason": "V3 fue leído mediante autorización específica; define el C aplicable a esv4_17."
+    }
+  ],
+  "new_material_objections": [],
+  "pairs": [
+    {
+      "id": "esv4_01",
+      "question": "q001",
+      "assertion": "a001",
+      "roles": [
+        "A"
+      ],
+      "selected": true,
+      "measurement_status": true,
+      "requires_review": false,
+      "qualification_required": true,
+      "rationale": "No realización explícita de medición de autonomía; no implica desconocimiento del máximo."
+    },
+    {
+      "id": "esv4_02",
+      "question": "q001",
+      "assertion": "a002",
+      "roles": [
+        "none"
+      ],
+      "selected": false,
+      "measurement_status": false,
+      "requires_review": false,
+      "qualification_required": false,
+      "rationale": "Previsión futura sin estado de ejecución."
+    },
+    {
+      "id": "esv4_03",
+      "question": "q001",
+      "assertion": "a003",
+      "roles": [
+        "none"
+      ],
+      "selected": false,
+      "measurement_status": false,
+      "requires_review": false,
+      "qualification_required": false,
+      "rationale": "Otra magnitud: masa."
+    },
+    {
+      "id": "esv4_04",
+      "question": "q001",
+      "assertion": "a004",
+      "roles": [
+        "none"
+      ],
+      "selected": false,
+      "measurement_status": false,
+      "requires_review": false,
+      "qualification_required": false,
+      "rationale": "Otro sujeto: Cuarzo."
+    },
+    {
+      "id": "esv4_05",
+      "question": "q002",
+      "assertion": "a005",
+      "roles": [
+        "none"
+      ],
+      "selected": false,
+      "measurement_status": false,
+      "requires_review": false,
+      "qualification_required": false,
+      "rationale": "Condición Bosque distinta de Riachuelo."
+    },
+    {
+      "id": "esv4_06",
+      "question": "q001",
+      "assertion": "a006",
+      "roles": [
+        "none"
+      ],
+      "selected": false,
+      "measurement_status": false,
+      "requires_review": false,
+      "qualification_required": false,
+      "rationale": "Componente no aditivo distinto del sujeto completo."
+    },
+    {
+      "id": "esv4_07",
+      "question": "q001",
+      "assertion": "a007",
+      "roles": [
+        "A"
+      ],
+      "selected": true,
+      "measurement_status": false,
+      "requires_review": false,
+      "qualification_required": false,
+      "rationale": "Ausencia del máximo en registro de mantenimiento, limitada a esa fuente."
+    },
+    {
+      "id": "esv4_08",
+      "question": "q001",
+      "assertion": "a008",
+      "roles": [
+        "A"
+      ],
+      "selected": true,
+      "measurement_status": true,
+      "requires_review": false,
+      "qualification_required": true,
+      "rationale": "Conservar no realización y máximo especificado de 90 minutos; coexistentes."
+    },
+    {
+      "id": "esv4_09",
+      "question": "q001",
+      "assertion": "a009",
+      "roles": [
+        "A"
+      ],
+      "selected": true,
+      "measurement_status": true,
+      "requires_review": false,
+      "qualification_required": true,
+      "rationale": "Realización explícita; ausencia del resultado solo en este texto."
+    },
+    {
+      "id": "esv4_10",
+      "question": "q001",
+      "assertion": "a010",
+      "roles": [
+        "none"
+      ],
+      "selected": false,
+      "measurement_status": false,
+      "requires_review": false,
+      "qualification_required": false,
+      "rationale": "Falta de planificación no informa ejecución."
+    },
+    {
+      "id": "esv4_11",
+      "question": "q003",
+      "assertion": "a001",
+      "roles": [
+        "none"
+      ],
+      "selected": false,
+      "measurement_status": false,
+      "requires_review": false,
+      "qualification_required": false,
+      "rationale": "No realización no responde fecha programada ni niega programación."
+    },
+    {
+      "id": "esv4_12",
+      "question": "q004",
+      "assertion": "a001",
+      "roles": [
+        "A"
+      ],
+      "selected": true,
+      "measurement_status": false,
+      "requires_review": false,
+      "qualification_required": false,
+      "rationale": "Respuesta negativa directa sobre realización de la prueba identificada por magnitud y método."
+    },
+    {
+      "id": "esv4_13",
+      "question": "q005",
+      "assertion": "a011",
+      "roles": [
+        "A",
+        "B"
+      ],
+      "selected": true,
+      "measurement_status": false,
+      "requires_review": false,
+      "qualification_required": true,
+      "rationale": "Proveedor inmediato aporta tramo A; lectura de exclusión de cualquier red refuta premisa B. Conservar ambas sin afirmar B demostrado."
+    },
+    {
+      "id": "esv4_14",
+      "question": "q005",
+      "assertion": "a012",
+      "roles": [
+        "B"
+      ],
+      "selected": true,
+      "measurement_status": false,
+      "requires_review": false,
+      "qualification_required": false,
+      "rationale": "Exclusión explícita de procedencia de red incompatible con premisa."
+    },
+    {
+      "id": "esv4_15",
+      "question": "q005",
+      "assertion": "a013",
+      "roles": [
+        "A"
+      ],
+      "selected": true,
+      "measurement_status": false,
+      "requires_review": false,
+      "qualification_required": false,
+      "rationale": "Fuente intermedia pertinente, sin demostrar exclusividad ni tubería final."
+    },
+    {
+      "id": "esv4_16",
+      "question": "q006",
+      "assertion": "a014",
+      "roles": [
+        "A",
+        "none"
+      ],
+      "selected": false,
+      "measurement_status": false,
+      "requires_review": true,
+      "qualification_required": false,
+      "rationale": "Identidad Q2 útil, identidad Q3 ajena; selección sin resolver."
+    },
+    {
+      "id": "esv4_17",
+      "question": "q007",
+      "assertion": "a015",
+      "roles": [
+        "C"
+      ],
+      "selected": true,
+      "measurement_status": false,
+      "requires_review": false,
+      "qualification_required": false,
+      "rationale": "Dos asignaciones explícitas cumplen C de V3; no exclusividad."
+    },
+    {
+      "id": "esv4_18",
+      "question": "q007",
+      "assertion": "a016",
+      "roles": [
+        "B"
+      ],
+      "selected": true,
+      "measurement_status": false,
+      "requires_review": false,
+      "qualification_required": false,
+      "rationale": "No admitir Fino impide configuración supuesta; admission no es uso."
+    },
+    {
+      "id": "esv4_19",
+      "question": "q007",
+      "assertion": "a017",
+      "roles": [
+        "none"
+      ],
+      "selected": false,
+      "measurement_status": false,
+      "requires_review": false,
+      "qualification_required": false,
+      "rationale": "Otro sujeto aislado."
+    },
+    {
+      "id": "esv4_20",
+      "question": "q007",
+      "assertion": "a018",
+      "roles": [
+        "A"
+      ],
+      "selected": true,
+      "measurement_status": false,
+      "requires_review": false,
+      "qualification_required": false,
+      "rationale": "Resolución asignada al mismo sujeto y modo."
+    },
+    {
+      "id": "esv4_21",
+      "question": "q001",
+      "assertion": "a019",
+      "roles": [
+        "A"
+      ],
+      "selected": true,
+      "measurement_status": true,
+      "requires_review": false,
+      "qualification_required": true,
+      "rationale": "Procedimiento de estimación admitido expresamente por contrato; no prueba validez física ni observación empírica."
+    },
+    {
+      "id": "esv4_22",
+      "question": "q001",
+      "assertion": "a020",
+      "roles": [
+        "none"
+      ],
+      "selected": false,
+      "measurement_status": false,
+      "requires_review": false,
+      "qualification_required": false,
+      "rationale": "Faltan magnitud y método; no completarlos desde pregunta."
+    },
+    {
+      "id": "esv4_23",
+      "question": "q001",
+      "assertion": "a021",
+      "roles": [
+        "none"
+      ],
+      "selected": false,
+      "measurement_status": false,
+      "requires_review": false,
+      "qualification_required": false,
+      "rationale": "No publicación de resultado de ensayo no identificado como máximo no establece ejecución ni ausencia del propio máximo; contrato actualizado lo resuelve."
+    },
+    {
+      "id": "esv4_24",
+      "question": "q001",
+      "assertion": "a022",
+      "roles": [
+        "A"
+      ],
+      "selected": true,
+      "measurement_status": false,
+      "requires_review": false,
+      "qualification_required": false,
+      "rationale": "Ilegibilidad del máximo en registro A, sin generalizar a otras fuentes."
+    },
+    {
+      "id": "esv4_25",
+      "question": "q001",
+      "assertion": "a023",
+      "roles": [
+        "A"
+      ],
+      "selected": true,
+      "measurement_status": true,
+      "requires_review": false,
+      "qualification_required": true,
+      "rationale": "No realización explícita más cancelación definitiva, ambas preservadas."
+    },
+    {
+      "id": "esv4_26",
+      "question": "q001",
+      "assertion": "a024",
+      "roles": [
+        "A"
+      ],
+      "selected": true,
+      "measurement_status": true,
+      "requires_review": false,
+      "qualification_required": true,
+      "rationale": "Pendiente es estado actual de completitud; no determina inicio, avance, finalización futura ni disponibilidad del máximo."
+    },
+    {
+      "id": "esv4_27",
+      "question": "q008",
+      "assertion": "a025",
+      "roles": [
+        "A"
+      ],
+      "selected": true,
+      "measurement_status": true,
+      "requires_review": false,
+      "qualification_required": true,
+      "rationale": "Realización de procedimiento de masa; ausencia del resultado solo en este texto."
+    },
+    {
+      "id": "esv4_28",
+      "question": "q008",
+      "assertion": "a026",
+      "roles": [
+        "A"
+      ],
+      "selected": true,
+      "measurement_status": true,
+      "requires_review": false,
+      "qualification_required": true,
+      "rationale": "No realización de medición de masa; no equivale a máximo desconocido."
+    },
+    {
+      "id": "esv4_29",
+      "question": "q002",
+      "assertion": "a027",
+      "roles": [
+        "A"
+      ],
+      "selected": true,
+      "measurement_status": true,
+      "requires_review": false,
+      "qualification_required": true,
+      "rationale": "Misma magnitud, sujeto y ruta Riachuelo."
+    },
+    {
+      "id": "esv4_30",
+      "question": "q001",
+      "assertion": "a028",
+      "roles": [
+        "A"
+      ],
+      "selected": true,
+      "measurement_status": false,
+      "requires_review": false,
+      "qualification_required": false,
+      "rationale": "Límite inferior observado de 70 minutos en un ensayo; no máximo exacto ni garantía general."
+    },
+    {
+      "id": "esv4_31",
+      "question": "q009",
+      "assertion": "a029",
+      "roles": [
+        "none"
+      ],
+      "selected": false,
+      "measurement_status": false,
+      "requires_review": false,
+      "qualification_required": false,
+      "rationale": "Duración individual no establece ni refuta por sí sola política común."
+    },
+    {
+      "id": "esv4_32",
+      "question": "q009",
+      "assertion": "a030",
+      "roles": [
+        "A"
+      ],
+      "selected": true,
+      "measurement_status": false,
+      "requires_review": false,
+      "qualification_required": false,
+      "rationale": "Norma explícita para toda colección: retención indefinida."
+    }
+  ],
+  "assertion_fidelity": [
+    {
+      "assertion": "a001",
+      "material_issue_open": false,
+      "finding": "Sin infidelidad material pendiente detectada para las decisiones de estos pares; conservar original y calificadores."
+    },
+    {
+      "assertion": "a002",
+      "material_issue_open": false,
+      "finding": "Sin infidelidad material pendiente detectada para las decisiones de estos pares; conservar original y calificadores."
+    },
+    {
+      "assertion": "a003",
+      "material_issue_open": false,
+      "finding": "Sin infidelidad material pendiente detectada para las decisiones de estos pares; conservar original y calificadores."
+    },
+    {
+      "assertion": "a004",
+      "material_issue_open": false,
+      "finding": "Sin infidelidad material pendiente detectada para las decisiones de estos pares; conservar original y calificadores."
+    },
+    {
+      "assertion": "a005",
+      "material_issue_open": false,
+      "finding": "Sin infidelidad material pendiente detectada para las decisiones de estos pares; conservar original y calificadores."
+    },
+    {
+      "assertion": "a006",
+      "material_issue_open": false,
+      "finding": "Sin infidelidad material pendiente detectada para las decisiones de estos pares; conservar original y calificadores."
+    },
+    {
+      "assertion": "a007",
+      "material_issue_open": false,
+      "finding": "Sin infidelidad material pendiente detectada para las decisiones de estos pares; conservar original y calificadores."
+    },
+    {
+      "assertion": "a008",
+      "material_issue_open": false,
+      "finding": "Sin infidelidad material pendiente detectada para las decisiones de estos pares; conservar original y calificadores."
+    },
+    {
+      "assertion": "a009",
+      "material_issue_open": false,
+      "finding": "Sin infidelidad material pendiente detectada para las decisiones de estos pares; conservar original y calificadores."
+    },
+    {
+      "assertion": "a010",
+      "material_issue_open": false,
+      "finding": "Sin infidelidad material pendiente detectada para las decisiones de estos pares; conservar original y calificadores."
+    },
+    {
+      "assertion": "a011",
+      "material_issue_open": false,
+      "finding": "Se mantienen las dos lecturas declaradas; la exclusión global de red no está entrañada por el nombre del depósito."
+    },
+    {
+      "assertion": "a012",
+      "material_issue_open": false,
+      "finding": "Sin infidelidad material pendiente detectada para las decisiones de estos pares; conservar original y calificadores."
+    },
+    {
+      "assertion": "a013",
+      "material_issue_open": false,
+      "finding": "Sin infidelidad material pendiente detectada para las decisiones de estos pares; conservar original y calificadores."
+    },
+    {
+      "assertion": "a014",
+      "material_issue_open": false,
+      "finding": "Sin infidelidad material pendiente detectada para las decisiones de estos pares; conservar original y calificadores."
+    },
+    {
+      "assertion": "a015",
+      "material_issue_open": false,
+      "finding": "Sin infidelidad material pendiente detectada para las decisiones de estos pares; conservar original y calificadores."
+    },
+    {
+      "assertion": "a016",
+      "material_issue_open": false,
+      "finding": "Admisión preservada en todos los hechos; no usarla como asignación efectiva."
+    },
+    {
+      "assertion": "a017",
+      "material_issue_open": false,
+      "finding": "Sin infidelidad material pendiente detectada para las decisiones de estos pares; conservar original y calificadores."
+    },
+    {
+      "assertion": "a018",
+      "material_issue_open": false,
+      "finding": "Sin infidelidad material pendiente detectada para las decisiones de estos pares; conservar original y calificadores."
+    },
+    {
+      "assertion": "a019",
+      "material_issue_open": false,
+      "finding": "Sin infidelidad material pendiente detectada para las decisiones de estos pares; conservar original y calificadores."
+    },
+    {
+      "assertion": "a020",
+      "material_issue_open": false,
+      "finding": "Sin infidelidad material pendiente detectada para las decisiones de estos pares; conservar original y calificadores."
+    },
+    {
+      "assertion": "a021",
+      "material_issue_open": false,
+      "finding": "Sin infidelidad material pendiente detectada para las decisiones de estos pares; conservar original y calificadores."
+    },
+    {
+      "assertion": "a022",
+      "material_issue_open": false,
+      "finding": "Sin infidelidad material pendiente detectada para las decisiones de estos pares; conservar original y calificadores."
+    },
+    {
+      "assertion": "a023",
+      "material_issue_open": false,
+      "finding": "Sin infidelidad material pendiente detectada para las decisiones de estos pares; conservar original y calificadores."
+    },
+    {
+      "assertion": "a024",
+      "material_issue_open": false,
+      "finding": "Estado pendiente correctamente separado de planned. No leerlo como afirmación de ausencia de inicio; la frase sobre máximo no autoriza datum unknown para autonomía."
+    },
+    {
+      "assertion": "a025",
+      "material_issue_open": false,
+      "finding": "Sin infidelidad material pendiente detectada para las decisiones de estos pares; conservar original y calificadores."
+    },
+    {
+      "assertion": "a026",
+      "material_issue_open": false,
+      "finding": "Sin infidelidad material pendiente detectada para las decisiones de estos pares; conservar original y calificadores."
+    },
+    {
+      "assertion": "a027",
+      "material_issue_open": false,
+      "finding": "Sin infidelidad material pendiente detectada para las decisiones de estos pares; conservar original y calificadores."
+    },
+    {
+      "assertion": "a028",
+      "material_issue_open": false,
+      "finding": "Límite observado en ensayo preservado; condiciones del ensayo no especificadas, sin inventarlas."
+    },
+    {
+      "assertion": "a029",
+      "material_issue_open": false,
+      "finding": "retention_duration de miembro distingue duración de política; description no afirma por sí sola si el plazo es observado o contractual."
+    },
+    {
+      "assertion": "a030",
+      "material_issue_open": false,
+      "finding": "Sin infidelidad material pendiente detectada para las decisiones de estos pares; conservar original y calificadores."
+    }
+  ],
+  "question_fidelity": [
+    {
+      "question": "q001",
+      "material_issue_open": false,
+      "finding": "Sin discrepancia material detectada."
+    },
+    {
+      "question": "q002",
+      "material_issue_open": false,
+      "finding": "Sin discrepancia material detectada."
+    },
+    {
+      "question": "q003",
+      "material_issue_open": false,
+      "finding": "Sin discrepancia material detectada."
+    },
+    {
+      "question": "q004",
+      "material_issue_open": false,
+      "finding": "Identidad de medición incluye autonomía y método."
+    },
+    {
+      "question": "q005",
+      "material_issue_open": false,
+      "finding": "Sin discrepancia material detectada."
+    },
+    {
+      "question": "q006",
+      "material_issue_open": false,
+      "finding": "Sin discrepancia material detectada."
+    },
+    {
+      "question": "q007",
+      "material_issue_open": false,
+      "finding": "Configuración Fino es supuesta; no afirmar que existe uso actual."
+    },
+    {
+      "question": "q008",
+      "material_issue_open": false,
+      "finding": "Sin discrepancia material detectada."
+    },
+    {
+      "question": "q009",
+      "material_issue_open": false,
+      "finding": "Solicita retention_policy; no confundir con duración individual."
+    }
+  ],
+  "summary": {
+    "pairs_reviewed": 32,
+    "assertions_reviewed": 30,
+    "questions_reviewed": 9,
+    "all_O1_through_O6_closed": true,
+    "roles_changed_from_previous_final_blind_judgment": false,
+    "esv4_23_no_longer_provisional": true,
+    "readiness": "Sin objeción semántica pendiente identificada para este banco sintético y contrato vigente. No demuestra corrección de implementación, extracción, autonomía, estabilidad ni generalización.",
+    "remaining_semantic_review_pair": "esv4_16 requiere revisión por A/none; no es rechazo seguro ni selección completa.",
+    "relationship_ambiguity_pair": "esv4_13 conserva A/B y calificación obligatoria."
+  }
+}

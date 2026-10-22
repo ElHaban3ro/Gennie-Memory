@@ -1,0 +1,52 @@
+[
+  {
+    "id": "pcv1_control_17",
+    "labels": [
+      {
+        "id": "claim_00",
+        "grounded": true,
+        "role": "A",
+        "source_quote": "El reproductor Lino funcionó setenta y cinco minutos sin apagarse; no se midió su duración hasta apagarse.",
+        "question_quote": "¿Cuál es la autonomía máxima del reproductor Lino?",
+        "proposition_quote": "La autonomía del reproductor Lino es de al menos setenta y cinco minutos.",
+        "rationale": "La ejecución durante setenta y cinco minutos sin apagarse acredita una cota inferior de autonomía. Es un límite parcial del dato solicitado, aunque no determine el máximo.",
+        "ambiguity": false
+      },
+      {
+        "id": "claim_01",
+        "grounded": true,
+        "role": "A",
+        "source_quote": "El reproductor Lino funcionó setenta y cinco minutos sin apagarse; no se midió su duración hasta apagarse.",
+        "question_quote": "¿Cuál es la autonomía máxima del reproductor Lino?",
+        "proposition_quote": "No se midió la duración del reproductor Lino hasta apagarse.",
+        "rationale": "La fuente declara explícitamente que no se midió hasta apagarse. Ese estado de medición informa la ausencia del máximo medido solicitado; v3 conserva estados explícitos pertinentes aunque no aporten un valor numérico.",
+        "ambiguity": false
+      }
+    ]
+  },
+  {
+    "id": "pcv1_control_18",
+    "labels": [
+      {
+        "id": "claim_00",
+        "grounded": false,
+        "role": "A",
+        "source_quote": "Del expediente Atlas se digitalizaron doce páginas; sus cuatro páginas restantes siguen pendientes.",
+        "question_quote": "¿Cuántas páginas del expediente Atlas están digitalizadas y cuántas quedan pendientes?",
+        "proposition_quote": "Del expediente Atlas están digitalizadas trece páginas.",
+        "rationale": "La fuente establece doce páginas digitalizadas y no respalda trece. Suponiendo verdadera la proposición, responde la primera de las dos cantidades solicitadas, sin necesidad de completar la segunda.",
+        "ambiguity": false
+      },
+      {
+        "id": "claim_01",
+        "grounded": false,
+        "role": "A",
+        "source_quote": "Del expediente Atlas se digitalizaron doce páginas; sus cuatro páginas restantes siguen pendientes.",
+        "question_quote": "¿Cuántas páginas del expediente Atlas están digitalizadas y cuántas quedan pendientes?",
+        "proposition_quote": "Del expediente Atlas no quedan páginas pendientes.",
+        "rationale": "La fuente establece cuatro páginas pendientes y no respalda ausencia de pendientes. Suponiendo verdadera la proposición, aporta cero como cantidad pendiente. La pregunta cuantitativa no exige una cantidad positiva ni presupone una cantidad concreta que esta afirmación refute.",
+        "ambiguity": false
+      }
+    ]
+  }
+]

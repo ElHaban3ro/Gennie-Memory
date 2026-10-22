@@ -1,0 +1,72 @@
+{
+  "version": "evidence-state-v4-adjudication",
+  "no_results_before_revision": true,
+  "provider_calls": 0,
+  "draft_sha256": "ea4da549778c909531eb1a8742c10ef920d1ac1e447bafa1f2b3656d3817242a",
+  "blind_review_sha256": "a0fa857e2ac4cf61333118ec2c860b53a57570d999e3f45f18fdb8e9f5e30801",
+  "reviewed_source_sha256": "0d7c6203af2b0d96ba0336d0e53e35c68bb367747f5b7aea8ca14d4abd6dd814",
+  "labels_reviewed_sha256": "8f181b8c315b8d116cbec8a94ea87fe890402fd4b88b02a5445531555a074a5e",
+  "changes": [
+    {
+      "object": "a024",
+      "action": "Represent pending completion, not planned event; no inference about initiation or quantity availability."
+    },
+    {
+      "object": "a016",
+      "action": "Capacity/admission preserved, not actual assignment or printing."
+    },
+    {
+      "object": "a007",
+      "action": "Maximum target extent retained."
+    },
+    {
+      "object": "a008",
+      "action": "Maximum target extent retained."
+    },
+    {
+      "object": "a022",
+      "action": "Maximum target extent retained."
+    },
+    {
+      "object": "a008",
+      "action": "Exact specified maximum 90 retained as specification, not measured maximum or merely weaker upper bound."
+    },
+    {
+      "object": "a009",
+      "action": "Result absent in this text, not quantity globally unknown; bind to aspect/method."
+    },
+    {
+      "object": "a025",
+      "action": "Result absent in this text, not quantity globally unknown; bind to aspect/method."
+    },
+    {
+      "object": "a021",
+      "action": "Negative publication is bound to trial result and quantity, not execution or missing maximum."
+    },
+    {
+      "object": "a023",
+      "action": "Definitive cancellation retained, independent of no execution; no pending inferred."
+    },
+    {
+      "object": "a028",
+      "action": "Observed lower bound limited to an unspecified trial, not a guaranteed general maximum."
+    },
+    {
+      "object": "q009/a029/a030",
+      "action": "Normative common policy distinguished from observed member duration, in addition to quantification."
+    },
+    {
+      "object": "q004",
+      "action": "Direct execution question explicitly bound to measured autonomy, not only a method name."
+    }
+  ],
+  "semantic_decisions": [
+    "Pending completion qualifies actual procedure evidence; starting/completing and value availability remain separate.",
+    "Publication alone does not establish execution or availability of requested maximum when only a trial result is mentioned.",
+    "Measurement includes explicit estimation/calculation procedures, preserving method and basis; not equivalence to empirical validity."
+  ],
+  "historical_gold_modified": false,
+  "all_objections_resolved_before_execution": true,
+  "blind_final_sha256": "c36ce929ab50678e2c5cc98fed57a6803498a302f8a6bd2ceed41953a0e6c627",
+  "final_contract_sha256": "d225e4153cff9651452f2e7429c0bb519ed55002f1746a3c03e2fae829cc85ea"
+}

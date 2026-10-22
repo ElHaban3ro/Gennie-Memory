@@ -1,0 +1,895 @@
+{
+  "version": "role-contract-development-v1",
+  "synthetic": true,
+  "annotated_roles_only": true,
+  "cases": [
+    {
+      "id": "correction-modality",
+      "query": "Atlas azul: ¿dónde será la entrega presencial?",
+      "memory": "Atlas azul: la entrega no será presencial; se hará por videollamada.",
+      "witness": {
+        "version": "evidence-roles-v1",
+        "identity": [
+          {
+            "dimension": "subject",
+            "query_quote": "Atlas",
+            "memory_quote": "Atlas"
+          },
+          {
+            "dimension": "edition",
+            "query_quote": "azul",
+            "memory_quote": "azul"
+          }
+        ],
+        "requested": [
+          {
+            "slot": "where",
+            "query_quote": "dónde"
+          }
+        ],
+        "premises": [
+          {
+            "id": "modality",
+            "query_quote": "presencial"
+          }
+        ],
+        "facts": [
+          {
+            "relation": "refutes",
+            "target": "modality",
+            "memory_quote": "la entrega no será presencial"
+          }
+        ],
+        "identity_coverage": "complete"
+      },
+      "expected": "accepted"
+    },
+    {
+      "id": "partial-quantity",
+      "query": "Atlas: ¿cuántas cajas y qué peso tendrán?",
+      "memory": "Atlas: once cajas de documentos; el peso sigue sin medirse.",
+      "witness": {
+        "version": "evidence-roles-v1",
+        "identity": [
+          {
+            "dimension": "subject",
+            "query_quote": "Atlas",
+            "memory_quote": "Atlas"
+          }
+        ],
+        "requested": [
+          {
+            "slot": "count",
+            "query_quote": "cuántas cajas"
+          },
+          {
+            "slot": "weight",
+            "query_quote": "qué peso"
+          }
+        ],
+        "premises": [],
+        "facts": [
+          {
+            "relation": "partial",
+            "target": "count",
+            "memory_quote": "once cajas de documentos"
+          }
+        ],
+        "identity_coverage": "complete"
+      },
+      "expected": "accepted"
+    },
+    {
+      "id": "partial-start",
+      "query": "Atlas: ¿cuándo empieza y termina la revisión?",
+      "memory": "Atlas: la revisión empieza el jueves; el final no está decidido.",
+      "witness": {
+        "version": "evidence-roles-v1",
+        "identity": [
+          {
+            "dimension": "subject",
+            "query_quote": "Atlas",
+            "memory_quote": "Atlas"
+          }
+        ],
+        "requested": [
+          {
+            "slot": "start",
+            "query_quote": "cuándo empieza"
+          },
+          {
+            "slot": "end",
+            "query_quote": "termina"
+          }
+        ],
+        "premises": [],
+        "facts": [
+          {
+            "relation": "partial",
+            "target": "start",
+            "memory_quote": "empieza el jueves"
+          }
+        ],
+        "identity_coverage": "complete"
+      },
+      "expected": "accepted"
+    },
+    {
+      "id": "refutation-purchase",
+      "query": "Atlas: ¿cuánto pagaron por la compra?",
+      "memory": "Atlas: no hubo compra; se recibió una donación.",
+      "witness": {
+        "version": "evidence-roles-v1",
+        "identity": [
+          {
+            "dimension": "subject",
+            "query_quote": "Atlas",
+            "memory_quote": "Atlas"
+          }
+        ],
+        "requested": [
+          {
+            "slot": "price",
+            "query_quote": "cuánto"
+          }
+        ],
+        "premises": [
+          {
+            "id": "purchase",
+            "query_quote": "compra"
+          }
+        ],
+        "facts": [
+          {
+            "relation": "refutes",
+            "target": "purchase",
+            "memory_quote": "no hubo compra"
+          }
+        ],
+        "identity_coverage": "complete"
+      },
+      "expected": "accepted"
+    },
+    {
+      "id": "answer-location",
+      "query": "Atlas: ¿dónde está el informe?",
+      "memory": "Atlas: el informe está en la carpeta Brisa.",
+      "witness": {
+        "version": "evidence-roles-v1",
+        "identity": [
+          {
+            "dimension": "subject",
+            "query_quote": "Atlas",
+            "memory_quote": "Atlas"
+          }
+        ],
+        "requested": [
+          {
+            "slot": "where",
+            "query_quote": "dónde"
+          }
+        ],
+        "premises": [],
+        "facts": [
+          {
+            "relation": "answers",
+            "target": "where",
+            "memory_quote": "el informe está en la carpeta Brisa"
+          }
+        ],
+        "identity_coverage": "complete"
+      },
+      "expected": "accepted"
+    },
+    {
+      "id": "refutation-status",
+      "query": "Atlas: ¿quién firmó el contrato aprobado?",
+      "memory": "Atlas: el contrato sigue pendiente, nadie lo aprobó ni firmó.",
+      "witness": {
+        "version": "evidence-roles-v1",
+        "identity": [
+          {
+            "dimension": "subject",
+            "query_quote": "Atlas",
+            "memory_quote": "Atlas"
+          }
+        ],
+        "requested": [
+          {
+            "slot": "signer",
+            "query_quote": "quién"
+          }
+        ],
+        "premises": [
+          {
+            "id": "approved",
+            "query_quote": "aprobado"
+          }
+        ],
+        "facts": [
+          {
+            "relation": "refutes",
+            "target": "approved",
+            "memory_quote": "nadie lo aprobó ni firmó"
+          }
+        ],
+        "identity_coverage": "complete"
+      },
+      "expected": "accepted"
+    },
+    {
+      "id": "wrong-subject",
+      "query": "Atlas Atlas: ¿cuál es el código?",
+      "memory": "Boreal: el código es Z9.",
+      "witness": {
+        "version": "evidence-roles-v1",
+        "identity": [
+          {
+            "dimension": "subject",
+            "query_quote": "Atlas",
+            "memory_quote": "Boreal"
+          }
+        ],
+        "requested": [
+          {
+            "slot": "code",
+            "query_quote": "código"
+          }
+        ],
+        "premises": [],
+        "facts": [
+          {
+            "relation": "answers",
+            "target": "code",
+            "memory_quote": "el código es Z9"
+          }
+        ],
+        "identity_coverage": "complete"
+      },
+      "expected": "incompatible"
+    },
+    {
+      "id": "wrong-team",
+      "query": "Atlas verde: ¿cuál es el código?",
+      "memory": "Atlas rojo: el código es Z9.",
+      "witness": {
+        "version": "evidence-roles-v1",
+        "identity": [
+          {
+            "dimension": "subject",
+            "query_quote": "Atlas",
+            "memory_quote": "Atlas"
+          },
+          {
+            "dimension": "team",
+            "query_quote": "verde",
+            "memory_quote": "rojo"
+          }
+        ],
+        "requested": [
+          {
+            "slot": "code",
+            "query_quote": "código"
+          }
+        ],
+        "premises": [],
+        "facts": [
+          {
+            "relation": "answers",
+            "target": "code",
+            "memory_quote": "el código es Z9"
+          }
+        ],
+        "identity_coverage": "complete"
+      },
+      "expected": "incompatible"
+    },
+    {
+      "id": "wrong-environment",
+      "query": "Atlas producción: ¿cuál es el código?",
+      "memory": "Atlas pruebas: el código es Z9.",
+      "witness": {
+        "version": "evidence-roles-v1",
+        "identity": [
+          {
+            "dimension": "subject",
+            "query_quote": "Atlas",
+            "memory_quote": "Atlas"
+          },
+          {
+            "dimension": "environment",
+            "query_quote": "producción",
+            "memory_quote": "pruebas"
+          }
+        ],
+        "requested": [
+          {
+            "slot": "code",
+            "query_quote": "código"
+          }
+        ],
+        "premises": [],
+        "facts": [
+          {
+            "relation": "answers",
+            "target": "code",
+            "memory_quote": "el código es Z9"
+          }
+        ],
+        "identity_coverage": "complete"
+      },
+      "expected": "incompatible"
+    },
+    {
+      "id": "wrong-time",
+      "query": "Atlas lunes: ¿cuál es el código?",
+      "memory": "Atlas martes: el código es Z9.",
+      "witness": {
+        "version": "evidence-roles-v1",
+        "identity": [
+          {
+            "dimension": "subject",
+            "query_quote": "Atlas",
+            "memory_quote": "Atlas"
+          },
+          {
+            "dimension": "time",
+            "query_quote": "lunes",
+            "memory_quote": "martes"
+          }
+        ],
+        "requested": [
+          {
+            "slot": "code",
+            "query_quote": "código"
+          }
+        ],
+        "premises": [],
+        "facts": [
+          {
+            "relation": "answers",
+            "target": "code",
+            "memory_quote": "el código es Z9"
+          }
+        ],
+        "identity_coverage": "complete"
+      },
+      "expected": "incompatible"
+    },
+    {
+      "id": "wrong-item",
+      "query": "Atlas cuarzo: ¿cuál es el código?",
+      "memory": "Atlas feldespato: el código es Z9.",
+      "witness": {
+        "version": "evidence-roles-v1",
+        "identity": [
+          {
+            "dimension": "subject",
+            "query_quote": "Atlas",
+            "memory_quote": "Atlas"
+          },
+          {
+            "dimension": "item",
+            "query_quote": "cuarzo",
+            "memory_quote": "feldespato"
+          }
+        ],
+        "requested": [
+          {
+            "slot": "code",
+            "query_quote": "código"
+          }
+        ],
+        "premises": [],
+        "facts": [
+          {
+            "relation": "answers",
+            "target": "code",
+            "memory_quote": "el código es Z9"
+          }
+        ],
+        "identity_coverage": "complete"
+      },
+      "expected": "incompatible"
+    },
+    {
+      "id": "wrong-person",
+      "query": "Atlas Ada: ¿cuál es el código?",
+      "memory": "Atlas Ivo: el código es Z9.",
+      "witness": {
+        "version": "evidence-roles-v1",
+        "identity": [
+          {
+            "dimension": "subject",
+            "query_quote": "Atlas",
+            "memory_quote": "Atlas"
+          },
+          {
+            "dimension": "person",
+            "query_quote": "Ada",
+            "memory_quote": "Ivo"
+          }
+        ],
+        "requested": [
+          {
+            "slot": "code",
+            "query_quote": "código"
+          }
+        ],
+        "premises": [],
+        "facts": [
+          {
+            "relation": "answers",
+            "target": "code",
+            "memory_quote": "el código es Z9"
+          }
+        ],
+        "identity_coverage": "complete"
+      },
+      "expected": "incompatible"
+    },
+    {
+      "id": "wrong-site",
+      "query": "Atlas norte: ¿cuál es el código?",
+      "memory": "Atlas sur: el código es Z9.",
+      "witness": {
+        "version": "evidence-roles-v1",
+        "identity": [
+          {
+            "dimension": "subject",
+            "query_quote": "Atlas",
+            "memory_quote": "Atlas"
+          },
+          {
+            "dimension": "site",
+            "query_quote": "norte",
+            "memory_quote": "sur"
+          }
+        ],
+        "requested": [
+          {
+            "slot": "code",
+            "query_quote": "código"
+          }
+        ],
+        "premises": [],
+        "facts": [
+          {
+            "relation": "answers",
+            "target": "code",
+            "memory_quote": "el código es Z9"
+          }
+        ],
+        "identity_coverage": "complete"
+      },
+      "expected": "incompatible"
+    },
+    {
+      "id": "wrong-condition",
+      "query": "Atlas diurna: ¿cuál es el código?",
+      "memory": "Atlas nocturna: el código es Z9.",
+      "witness": {
+        "version": "evidence-roles-v1",
+        "identity": [
+          {
+            "dimension": "subject",
+            "query_quote": "Atlas",
+            "memory_quote": "Atlas"
+          },
+          {
+            "dimension": "condition",
+            "query_quote": "diurna",
+            "memory_quote": "nocturna"
+          }
+        ],
+        "requested": [
+          {
+            "slot": "code",
+            "query_quote": "código"
+          }
+        ],
+        "premises": [],
+        "facts": [
+          {
+            "relation": "answers",
+            "target": "code",
+            "memory_quote": "el código es Z9"
+          }
+        ],
+        "identity_coverage": "complete"
+      },
+      "expected": "incompatible"
+    },
+    {
+      "id": "no-subject",
+      "query": "Atlas: ¿cuál es el código?",
+      "memory": "Atlas: el código es Z9.",
+      "witness": {
+        "version": "evidence-roles-v1",
+        "identity": [],
+        "requested": [
+          {
+            "slot": "code",
+            "query_quote": "código"
+          }
+        ],
+        "premises": [],
+        "facts": [
+          {
+            "relation": "answers",
+            "target": "code",
+            "memory_quote": "el código es Z9"
+          }
+        ],
+        "identity_coverage": "complete"
+      },
+      "expected": "not_established"
+    },
+    {
+      "id": "missing-context",
+      "query": "Atlas azul: ¿cuál es el código?",
+      "memory": "Atlas: el código es Z9.",
+      "witness": {
+        "version": "evidence-roles-v1",
+        "identity": [
+          {
+            "dimension": "subject",
+            "query_quote": "Atlas",
+            "memory_quote": "Atlas"
+          },
+          {
+            "dimension": "edition",
+            "query_quote": "azul",
+            "memory_quote": null
+          }
+        ],
+        "requested": [
+          {
+            "slot": "code",
+            "query_quote": "código"
+          }
+        ],
+        "premises": [],
+        "facts": [
+          {
+            "relation": "answers",
+            "target": "code",
+            "memory_quote": "el código es Z9"
+          }
+        ],
+        "identity_coverage": "complete"
+      },
+      "expected": "not_established"
+    },
+    {
+      "id": "uncertain-identity",
+      "query": "Atlas: ¿cuál es el código?",
+      "memory": "Atlas: el código es Z9.",
+      "witness": {
+        "version": "evidence-roles-v1",
+        "identity": [
+          {
+            "dimension": "subject",
+            "query_quote": "Atlas",
+            "memory_quote": "Atlas"
+          }
+        ],
+        "requested": [
+          {
+            "slot": "code",
+            "query_quote": "código"
+          }
+        ],
+        "premises": [],
+        "facts": [
+          {
+            "relation": "answers",
+            "target": "code",
+            "memory_quote": "el código es Z9"
+          }
+        ],
+        "identity_coverage": "uncertain"
+      },
+      "expected": "not_established"
+    },
+    {
+      "id": "same-topic-no-answer",
+      "query": "Atlas: ¿cuál es el código?",
+      "memory": "Atlas: el informe ocupa dos páginas.",
+      "witness": {
+        "version": "evidence-roles-v1",
+        "identity": [
+          {
+            "dimension": "subject",
+            "query_quote": "Atlas",
+            "memory_quote": "Atlas"
+          }
+        ],
+        "requested": [
+          {
+            "slot": "code",
+            "query_quote": "código"
+          }
+        ],
+        "premises": [],
+        "facts": [
+          {
+            "relation": "unrelated",
+            "target": "code",
+            "memory_quote": "el informe ocupa dos páginas"
+          }
+        ],
+        "identity_coverage": "complete"
+      },
+      "expected": "not_established"
+    },
+    {
+      "id": "fabricated",
+      "query": "Atlas: ¿dónde está el informe?",
+      "memory": "Atlas: el informe está en la carpeta Brisa.",
+      "witness": {
+        "version": "evidence-roles-v1",
+        "identity": [
+          {
+            "dimension": "subject",
+            "query_quote": "Atlas",
+            "memory_quote": "Atlas"
+          }
+        ],
+        "requested": [
+          {
+            "slot": "where",
+            "query_quote": "dónde"
+          }
+        ],
+        "premises": [],
+        "facts": [
+          {
+            "relation": "answers",
+            "target": "where",
+            "memory_quote": "unseen"
+          }
+        ],
+        "identity_coverage": "complete"
+      },
+      "expected": "invalid:ungrounded_memory_quote"
+    },
+    {
+      "id": "wrong-target",
+      "query": "Atlas: ¿dónde está el informe?",
+      "memory": "Atlas: el informe está en la carpeta Brisa.",
+      "witness": {
+        "version": "evidence-roles-v1",
+        "identity": [
+          {
+            "dimension": "subject",
+            "query_quote": "Atlas",
+            "memory_quote": "Atlas"
+          }
+        ],
+        "requested": [
+          {
+            "slot": "where",
+            "query_quote": "dónde"
+          }
+        ],
+        "premises": [],
+        "facts": [
+          {
+            "relation": "answers",
+            "target": "other",
+            "memory_quote": "el informe está en la carpeta Brisa"
+          }
+        ],
+        "identity_coverage": "complete"
+      },
+      "expected": "invalid:invalid_fact_target"
+    },
+    {
+      "id": "duplicate",
+      "query": "Atlas: ¿dónde está el informe?",
+      "memory": "Atlas: el informe está en la carpeta Brisa.",
+      "witness": {
+        "version": "evidence-roles-v1",
+        "identity": [
+          {
+            "dimension": "subject",
+            "query_quote": "Atlas",
+            "memory_quote": "Atlas"
+          },
+          {
+            "dimension": "subject",
+            "query_quote": "Atlas",
+            "memory_quote": "Atlas"
+          }
+        ],
+        "requested": [
+          {
+            "slot": "where",
+            "query_quote": "dónde"
+          }
+        ],
+        "premises": [],
+        "facts": [
+          {
+            "relation": "answers",
+            "target": "where",
+            "memory_quote": "el informe está en la carpeta Brisa"
+          }
+        ],
+        "identity_coverage": "complete"
+      },
+      "expected": "invalid:invalid_identity_dimension"
+    },
+    {
+      "id": "refute-without-premise",
+      "query": "Atlas: ¿dónde está el informe?",
+      "memory": "Atlas: el informe está en la carpeta Brisa.",
+      "witness": {
+        "version": "evidence-roles-v1",
+        "identity": [
+          {
+            "dimension": "subject",
+            "query_quote": "Atlas",
+            "memory_quote": "Atlas"
+          }
+        ],
+        "requested": [
+          {
+            "slot": "where",
+            "query_quote": "dónde"
+          }
+        ],
+        "premises": [],
+        "facts": [
+          {
+            "relation": "refutes",
+            "target": "where",
+            "memory_quote": "el informe está en la carpeta Brisa"
+          }
+        ],
+        "identity_coverage": "complete"
+      },
+      "expected": "invalid:invalid_fact_target"
+    },
+    {
+      "id": "same-property-identity",
+      "query": "Atlas azul edición presencial: ¿dónde será la entrega?",
+      "memory": "Atlas azul edición remota: la entrega se hará por videollamada.",
+      "witness": {
+        "version": "evidence-roles-v1",
+        "identity": [
+          {
+            "dimension": "subject",
+            "query_quote": "Atlas",
+            "memory_quote": "Atlas"
+          },
+          {
+            "dimension": "edition",
+            "query_quote": "azul",
+            "memory_quote": "azul"
+          },
+          {
+            "dimension": "condition",
+            "query_quote": "presencial",
+            "memory_quote": "remota"
+          }
+        ],
+        "requested": [
+          {
+            "slot": "where",
+            "query_quote": "dónde"
+          }
+        ],
+        "premises": [],
+        "facts": [
+          {
+            "relation": "answers",
+            "target": "where",
+            "memory_quote": "la entrega se hará por videollamada"
+          }
+        ],
+        "identity_coverage": "complete"
+      },
+      "expected": "incompatible"
+    },
+    {
+      "id": "plan-not-execution",
+      "query": "Atlas: ¿cuándo se ejecutó la migración?",
+      "memory": "Atlas: se propuso ejecutar la migración el jueves; aún no se ejecutó.",
+      "witness": {
+        "version": "evidence-roles-v1",
+        "identity": [
+          {
+            "dimension": "subject",
+            "query_quote": "Atlas",
+            "memory_quote": "Atlas"
+          }
+        ],
+        "requested": [
+          {
+            "slot": "date",
+            "query_quote": "cuándo"
+          }
+        ],
+        "premises": [
+          {
+            "id": "done",
+            "query_quote": "se ejecutó"
+          }
+        ],
+        "facts": [
+          {
+            "relation": "refutes",
+            "target": "done",
+            "memory_quote": "aún no se ejecutó"
+          }
+        ],
+        "identity_coverage": "complete"
+      },
+      "expected": "accepted"
+    },
+    {
+      "id": "unmeasured-not-measurement",
+      "query": "Atlas: ¿cuál es el peso de las cajas?",
+      "memory": "Atlas: el peso no se ha medido.",
+      "witness": {
+        "version": "evidence-roles-v1",
+        "identity": [
+          {
+            "dimension": "subject",
+            "query_quote": "Atlas",
+            "memory_quote": "Atlas"
+          }
+        ],
+        "requested": [
+          {
+            "slot": "weight",
+            "query_quote": "peso"
+          }
+        ],
+        "premises": [],
+        "facts": [
+          {
+            "relation": "partial",
+            "target": "weight",
+            "memory_quote": "el peso no se ha medido"
+          }
+        ],
+        "identity_coverage": "complete"
+      },
+      "expected": "accepted"
+    },
+    {
+      "id": "revoked-not-current-approval",
+      "query": "Atlas: ¿sigue aprobado el contrato?",
+      "memory": "Atlas: la aprobación del contrato fue revocada.",
+      "witness": {
+        "version": "evidence-roles-v1",
+        "identity": [
+          {
+            "dimension": "subject",
+            "query_quote": "Atlas",
+            "memory_quote": "Atlas"
+          }
+        ],
+        "requested": [
+          {
+            "slot": "approval",
+            "query_quote": "sigue aprobado"
+          }
+        ],
+        "premises": [],
+        "facts": [
+          {
+            "relation": "answers",
+            "target": "approval",
+            "memory_quote": "la aprobación del contrato fue revocada"
+          }
+        ],
+        "identity_coverage": "complete"
+      },
+      "expected": "accepted"
+    }
+  ]
+}

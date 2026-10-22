@@ -1,0 +1,1154 @@
+[
+  {
+    "id": "cev1_038_07",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_038",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El taller de bicicletas tiene un cartel rojo en la entrada.",
+    "summary": "El taller de bicicletas tiene un cartel rojo en la entrada.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/038/07"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_040_04",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_040",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La exposición de cerámica trasladó todas las piezas del patio al salón interior.",
+    "summary": "La exposición de cerámica trasladó todas las piezas del patio al salón interior.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/040/04"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_037_07",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_037",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La cubierta del atlas de aves traducido muestra una garza.",
+    "summary": "La cubierta del atlas de aves traducido muestra una garza.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/037/07"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_041_07",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_041",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La ruta de senderismo del arroyo está señalizada en verde.",
+    "summary": "La ruta de senderismo del arroyo está señalizada en verde.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/041/07"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_035_03",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_035",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La dirección rechazó publicar en abierto las entrevistas del archivo de radio comunitaria.",
+    "summary": "La dirección rechazó publicar en abierto las entrevistas del archivo de radio comunitaria.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/035/03"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_037_03",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_037",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La edición traducida del atlas de aves será digital; se descartó imprimirla.",
+    "summary": "La edición traducida del atlas de aves será digital; se descartó imprimirla.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/037/03"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_037_02",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_037",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Nadia revisa la terminología de la traducción del atlas de aves.",
+    "summary": "Nadia revisa la terminología de la traducción del atlas de aves.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/037/02"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_034_03",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_034",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La inauguración del mural del mercado se canceló; no hay una nueva fecha fijada.",
+    "summary": "La inauguración del mural del mercado se canceló; no hay una nueva fecha fijada.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/034/03"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_039_01",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_039",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La estación de observación de nubes registra datos cada quince minutos.",
+    "summary": "La estación de observación de nubes registra datos cada quince minutos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/039/01"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_041_02",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_041",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Bruno guía la ruta de senderismo del arroyo.",
+    "summary": "Bruno guía la ruta de senderismo del arroyo.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/041/02"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_041_05",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_041",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La ruta de senderismo del arroyo tiene ocho kilómetros.",
+    "summary": "La ruta de senderismo del arroyo tiene ocho kilómetros.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/041/05"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_041_01",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_041",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La ruta de senderismo del arroyo comienza en el puente de piedra.",
+    "summary": "La ruta de senderismo del arroyo comienza en el puente de piedra.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/041/01"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_035_08",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_035",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La portada del archivo de radio comunitaria usa una antena dibujada.",
+    "summary": "La portada del archivo de radio comunitaria usa una antena dibujada.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/035/08"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_041_08",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_041",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El folleto de la ruta de senderismo del arroyo muestra un colibrí.",
+    "summary": "El folleto de la ruta de senderismo del arroyo muestra un colibrí.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/041/08"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_035_07",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_035",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El servidor del archivo de radio comunitaria está en la sala azul.",
+    "summary": "El servidor del archivo de radio comunitaria está en la sala azul.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/035/07"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_037_04",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_037",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El editor retiró el capítulo de rapaces del atlas de aves traducido.",
+    "summary": "El editor retiró el capítulo de rapaces del atlas de aves traducido.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/037/04"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_040_05",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_040",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La exposición de cerámica reunirá treinta piezas.",
+    "summary": "La exposición de cerámica reunirá treinta piezas.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/040/05"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_040_07",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_040",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La exposición de cerámica utiliza iluminación cálida.",
+    "summary": "La exposición de cerámica utiliza iluminación cálida.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/040/07"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_039_05",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_039",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La estación de observación de nubes está a mil doscientos metros de altitud.",
+    "summary": "La estación de observación de nubes está a mil doscientos metros de altitud.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/039/05"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_034_04",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_034",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El equipo del mural del mercado descartó utilizar barniz acrílico.",
+    "summary": "El equipo del mural del mercado descartó utilizar barniz acrílico.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/034/04"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_035_04",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_035",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El archivo de radio comunitaria recibió micrófonos en préstamo; no compró micrófonos.",
+    "summary": "El archivo de radio comunitaria recibió micrófonos en préstamo; no compró micrófonos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/035/04"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_039_03",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_039",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La estación de observación de nubes retiró el sensor de viento por una avería.",
+    "summary": "La estación de observación de nubes retiró el sensor de viento por una avería.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/039/03"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_036_03",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_036",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El vivero de plantas nativas no usará pesticidas sintéticos en esta temporada.",
+    "summary": "El vivero de plantas nativas no usará pesticidas sintéticos en esta temporada.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/036/03"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_034_08",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_034",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El mural del mercado aparece en un folleto de turismo del barrio.",
+    "summary": "El mural del mercado aparece en un folleto de turismo del barrio.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/034/08"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_038_08",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_038",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Las herramientas del taller de bicicletas se guardan en cajas numeradas.",
+    "summary": "Las herramientas del taller de bicicletas se guardan en cajas numeradas.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/038/08"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_035_05",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_035",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La digitalización del archivo de radio comunitaria comenzará en enero.",
+    "summary": "La digitalización del archivo de radio comunitaria comenzará en enero.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/035/05"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_038_03",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_038",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El taller de bicicletas eliminó el cobro de inscripción; inscribirse es gratis.",
+    "summary": "El taller de bicicletas eliminó el cobro de inscripción; inscribirse es gratis.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/038/03"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_036_06",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_036",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Mara supervisará el trasplante de las plantas nativas del vivero.",
+    "summary": "Mara supervisará el trasplante de las plantas nativas del vivero.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/036/06"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_037_05",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_037",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La traducción del atlas de aves tiene cuarenta mapas.",
+    "summary": "La traducción del atlas de aves tiene cuarenta mapas.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/037/05"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_036_01",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_036",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El vivero de plantas nativas abre los sábados a las nueve.",
+    "summary": "El vivero de plantas nativas abre los sábados a las nueve.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/036/01"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_039_04",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_039",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La estación de observación de nubes transmite por cable; no tiene enlace satelital.",
+    "summary": "La estación de observación de nubes transmite por cable; no tiene enlace satelital.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/039/04"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_040_03",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_040",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La exposición de cerámica no tendrá concurso ni premios.",
+    "summary": "La exposición de cerámica no tendrá concurso ni premios.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/040/03"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_035_01",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_035",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Los audios del archivo de radio comunitaria se conservarán en formato FLAC.",
+    "summary": "Los audios del archivo de radio comunitaria se conservarán en formato FLAC.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/035/01"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_040_01",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_040",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Las piezas de la exposición de cerámica se transportarán en cajas de pino.",
+    "summary": "Las piezas de la exposición de cerámica se transportarán en cajas de pino.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/040/01"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_041_03",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_041",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La ruta de senderismo del arroyo cerró el tramo del mirador por un desprendimiento.",
+    "summary": "La ruta de senderismo del arroyo cerró el tramo del mirador por un desprendimiento.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/041/03"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_037_01",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_037",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La traducción del atlas de aves se entregará en formato ODT.",
+    "summary": "La traducción del atlas de aves se entregará en formato ODT.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/037/01"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_038_06",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_038",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La sesión de frenos del taller de bicicletas durará dos horas.",
+    "summary": "La sesión de frenos del taller de bicicletas durará dos horas.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/038/06"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_034_06",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_034",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La primera fase del mural del mercado cubrirá la pared norte.",
+    "summary": "La primera fase del mural del mercado cubrirá la pared norte.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/034/06"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_041_06",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_041",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La salida de la ruta de senderismo del arroyo será a las seis de la mañana.",
+    "summary": "La salida de la ruta de senderismo del arroyo será a las seis de la mañana.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/041/06"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_039_07",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_039",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La estación de observación de nubes tiene una puerta de madera.",
+    "summary": "La estación de observación de nubes tiene una puerta de madera.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/039/07"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_034_01",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_034",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Inés Vidal coordina la restauración del mural del mercado.",
+    "summary": "Inés Vidal coordina la restauración del mural del mercado.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/034/01"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_036_05",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_036",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El vivero de plantas nativas tiene doce bandejas de plántulas.",
+    "summary": "El vivero de plantas nativas tiene doce bandejas de plántulas.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/036/05"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_039_06",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_039",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La calibración del termómetro de la estación de nubes se hará en diciembre.",
+    "summary": "La calibración del termómetro de la estación de nubes se hará en diciembre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/039/06"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_034_02",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_034",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La restauración del mural del mercado utiliza pigmentos minerales.",
+    "summary": "La restauración del mural del mercado utiliza pigmentos minerales.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/034/02"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_038_02",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_038",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Óscar lleva el registro de reparaciones del taller de bicicletas del barrio.",
+    "summary": "Óscar lleva el registro de reparaciones del taller de bicicletas del barrio.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/038/02"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_040_02",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_040",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Alma diseñó las cartelas de la exposición de cerámica.",
+    "summary": "Alma diseñó las cartelas de la exposición de cerámica.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/040/02"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_036_07",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_036",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El vivero de plantas nativas utiliza etiquetas amarillas para los lotes.",
+    "summary": "El vivero de plantas nativas utiliza etiquetas amarillas para los lotes.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/036/07"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_037_06",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_037",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El glosario del atlas de aves traducido está en la carpeta compartida Atlas.",
+    "summary": "El glosario del atlas de aves traducido está en la carpeta compartida Atlas.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/037/06"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_036_04",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_036",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La visita escolar al vivero de plantas nativas pasó del martes al jueves.",
+    "summary": "La visita escolar al vivero de plantas nativas pasó del martes al jueves.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/036/04"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_040_08",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_040",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La exposición de cerámica incluye un panel sobre técnicas de cocción.",
+    "summary": "La exposición de cerámica incluye un panel sobre técnicas de cocción.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/040/08"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_034_07",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_034",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Las fotografías del mural del mercado se guardan en una carpeta verde.",
+    "summary": "Las fotografías del mural del mercado se guardan en una carpeta verde.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/034/07"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_039_02",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_039",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El cuaderno de la estación de observación de nubes lo custodia Lucía.",
+    "summary": "El cuaderno de la estación de observación de nubes lo custodia Lucía.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/039/02"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_038_01",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_038",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El taller de bicicletas del barrio recibe reparaciones en el local siete.",
+    "summary": "El taller de bicicletas del barrio recibe reparaciones en el local siete.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/038/01"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_034_05",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_034",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Para restaurar el mural del mercado se reservaron seis andamios.",
+    "summary": "Para restaurar el mural del mercado se reservaron seis andamios.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/034/05"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_035_06",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_035",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El catálogo del archivo de radio comunitaria contiene ochenta entrevistas.",
+    "summary": "El catálogo del archivo de radio comunitaria contiene ochenta entrevistas.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/035/06"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_041_04",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_041",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La ruta de senderismo del arroyo excluye cruzar el río; todo el recorrido va por la orilla.",
+    "summary": "La ruta de senderismo del arroyo excluye cruzar el río; todo el recorrido va por la orilla.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/041/04"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_037_08",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_037",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La traducción del atlas de aves usa notas al pie.",
+    "summary": "La traducción del atlas de aves usa notas al pie.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/037/08"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_036_02",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_036",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Las semillas de guayacán del vivero de plantas nativas están en el cajón cuatro.",
+    "summary": "Las semillas de guayacán del vivero de plantas nativas están en el cajón cuatro.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/036/02"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_038_04",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_038",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El taller de bicicletas sustituyó la clase presencial del viernes por una sesión virtual.",
+    "summary": "El taller de bicicletas sustituyó la clase presencial del viernes por una sesión virtual.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/038/04"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_035_02",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_035",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Tomás Leal catalogó las entrevistas del archivo de radio comunitaria.",
+    "summary": "Tomás Leal catalogó las entrevistas del archivo de radio comunitaria.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/035/02"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_039_08",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_039",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Los informes de la estación de observación de nubes llevan un sello azul.",
+    "summary": "Los informes de la estación de observación de nubes llevan un sello azul.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/039/08"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_038_05",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_038",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El taller de bicicletas recibió veinticuatro cascos.",
+    "summary": "El taller de bicicletas recibió veinticuatro cascos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/038/05"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_040_06",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_040",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El montaje de la exposición de cerámica comenzará el lunes.",
+    "summary": "El montaje de la exposición de cerámica comenzará el lunes.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/040/06"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev1_036_08",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_036",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El vivero de plantas nativas aparece en el mapa de huertas del municipio.",
+    "summary": "El vivero de plantas nativas aparece en el mapa de huertas del municipio.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v1/036/08"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  }
+]

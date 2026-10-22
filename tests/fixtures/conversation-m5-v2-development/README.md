@@ -1,0 +1,16 @@
+# Conversaciones sintéticas M5 v2: desarrollo
+
+Este paquete contiene cinco conversaciones **ficticias** nuevas (`026`–`030`) sobre un herbario, radio barrial, cocina escolar, mapas antiguos y observación de aves. Hay 30 recuerdos por conversación y 20 consultas: 15 positivas con **un único ID esperado** y cinco negativas sin respuesta documentada. Ningún recuerdo procede de usuarios, ni se consultaron datos personales. Los 100 casos pertenecen solo a la partición `development`; no son una prueba reservada ni una estimación de rendimiento real.
+
+Un agente escribió los hechos y las etiquetas antes de ejecutar búsquedas. `label_source: agent_synthetic_unreviewed` indica que las etiquetas todavía no tienen revisión humana independiente. No debe cambiarse una etiqueta por la salida de FTS5 o de un clasificador. Cada recuerdo declara `scope_kind: conversation`, un ámbito ficticio exclusivo, `revision: 1`, `conditions: null` y `source.ref: synthetic://conversation-m5-v2/...`; la fuente es una declaración del fixture, no una fuente externa verificada. La fecha de consulta es UTC y todos los recuerdos están activos sin intervalo temporal, así que este banco no comprueba revisiones sucesivas, condiciones, vigencia ni permisos.
+
+- `memories.json` es la entrada de `iromem load-fixtures`.
+- `development.jsonl` contiene las consultas para `search-benchmark` y `retrieval`, con el hecho, ID y fuente esperados en positivos. Las negativas tienen `expected_ids: []` y `expected_fact: null`.
+- `label-audit.md` registra formulaciones deliberadamente excluidas de la puntuación y límites de las etiquetas.
+- `manifest.json` registra cantidades, procedencia y SHA-256 de esos tres archivos.
+
+Las preguntas positivas mencionan el objeto concreto del que se pregunta, para evitar etiquetas que acepten una sola memoria cuando otras también responden. Una pregunta sobre una «frase» se corrigió para pedir el tema de la frase, porque el recuerdo no contiene una cita literal. Diez negativas (dos por conversación) confrontan un dato provisional o cercano con otro final o autorizado que no consta: estimación frente a precio aprobado, propuesta frente a fecha confirmada, interés frente a patrocinio firmado, licencia de música frente a emisión comercial, prueba frente a informe final, entre otros. Una lista de búsqueda no vacía no equivale a respuesta. La auditoría de formulación fue interna del agente, sin adjudicación externa: los resultados deberán presentarse como **agente-sintéticos no revisados**. No mezclar los casos con la cohorte final 018–020 ni usarlos para escoger una política después de mirar sus resultados y llamarlos validación independiente.
+
+El evaluador vigente acepta `agent_synthetic_unreviewed` y conserva la procedencia. Una campaña remota sería una medición de desarrollo distinta; este paquete por sí solo no demuestra ninguna cifra de clasificación ni requiere ejecutarla.
+
+El orden de ambos archivos de datos se barajó de forma determinista para quitar la pista «positivos primero / recuerdo esperado antes que distractores». Método reproducible: ordenar los recuerdos por `source.ref` y las preguntas por `id`; aplicar por separado `random.Random(2026101701).shuffle(memories)` y `random.Random(2026101702).shuffle(cases)` de Python 3. Los IDs, ámbitos, fuentes y etiquetas permanecen invariantes.

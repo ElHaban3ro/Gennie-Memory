@@ -1,0 +1,4034 @@
+[
+  {
+    "id": "cev3_053_20",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_053",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En laboratorio Marea, el registro auxiliar 4 conserva una nota de embalaje del lote de ensayo 4.",
+    "summary": "En laboratorio Marea, el registro auxiliar 4 conserva una nota de embalaje del lote de ensayo 4.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/053/20"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_055_23",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_055",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En proyecto Encina, el registro auxiliar 7 conserva una nota de embalaje del lote de ensayo 7.",
+    "summary": "En proyecto Encina, el registro auxiliar 7 conserva una nota de embalaje del lote de ensayo 7.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/055/23"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_053_19",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_053",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En laboratorio Marea, el registro auxiliar 3 conserva una nota de embalaje del lote de ensayo 3.",
+    "summary": "En laboratorio Marea, el registro auxiliar 3 conserva una nota de embalaje del lote de ensayo 3.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/053/19"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_052_23",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_052",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En catálogo Umbría, el registro auxiliar 7 conserva una nota de embalaje del lote de ensayo 7.",
+    "summary": "En catálogo Umbría, el registro auxiliar 7 conserva una nota de embalaje del lote de ensayo 7.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/052/23"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_053_28",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_053",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En laboratorio Marea, el registro auxiliar 12 conserva una nota de embalaje del lote de ensayo 12.",
+    "summary": "En laboratorio Marea, el registro auxiliar 12 conserva una nota de embalaje del lote de ensayo 12.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/053/28"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_054_03",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_054",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En inventario Prisma, para colección Aster, se canceló la compra de vehículos; se recibieron vehículos donados.",
+    "summary": "En inventario Prisma, para colección Aster, se canceló la compra de vehículos; se recibieron vehículos donados.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/054/03"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_050_25",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_050",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En archivo Coral, el registro auxiliar 9 conserva una nota de embalaje del lote de ensayo 9.",
+    "summary": "En archivo Coral, el registro auxiliar 9 conserva una nota de embalaje del lote de ensayo 9.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/050/25"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_055_07",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_055",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En proyecto Encina, para modalidad nocturna, la cuenta del registro se llama cuenta-055.",
+    "summary": "En proyecto Encina, para modalidad nocturna, la cuenta del registro se llama cuenta-055.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/055/07"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_051_06",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_051",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En observatorio Linde, para sede Norte, la revisión comenzará el jueves.",
+    "summary": "En observatorio Linde, para sede Norte, la revisión comenzará el jueves.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/051/06"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_057_28",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_057",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En programa Albor, el registro auxiliar 12 conserva una nota de embalaje del lote de ensayo 12.",
+    "summary": "En programa Albor, el registro auxiliar 12 conserva una nota de embalaje del lote de ensayo 12.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/057/28"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_053_01",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_053",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En laboratorio Marea, para entorno Activo, Hugo coordina el registro.",
+    "summary": "En laboratorio Marea, para entorno Activo, Hugo coordina el registro.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/053/01"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_053_18",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_053",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En laboratorio Marea, el registro auxiliar 2 conserva una nota de embalaje del lote de ensayo 2.",
+    "summary": "En laboratorio Marea, el registro auxiliar 2 conserva una nota de embalaje del lote de ensayo 2.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/053/18"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_056_26",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_056",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En registro Trama, el registro auxiliar 10 conserva una nota de embalaje del lote de ensayo 10.",
+    "summary": "En registro Trama, el registro auxiliar 10 conserva una nota de embalaje del lote de ensayo 10.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/056/26"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_050_27",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_050",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En archivo Coral, el registro auxiliar 11 conserva una nota de embalaje del lote de ensayo 11.",
+    "summary": "En archivo Coral, el registro auxiliar 11 conserva una nota de embalaje del lote de ensayo 11.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/050/27"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_056_23",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_056",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En registro Trama, el registro auxiliar 7 conserva una nota de embalaje del lote de ensayo 7.",
+    "summary": "En registro Trama, el registro auxiliar 7 conserva una nota de embalaje del lote de ensayo 7.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/056/23"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_052_13",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_052",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En catálogo Umbría, para edición Cobre, hay cinco cajas de documentos.",
+    "summary": "En catálogo Umbría, para edición Cobre, hay cinco cajas de documentos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/052/13"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_054_14",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_054",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En inventario Prisma, para colección Brezo, cada caja pesa tres kilogramos.",
+    "summary": "En inventario Prisma, para colección Brezo, cada caja pesa tres kilogramos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/054/14"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_051_19",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_051",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En observatorio Linde, el registro auxiliar 3 conserva una nota de embalaje del lote de ensayo 3.",
+    "summary": "En observatorio Linde, el registro auxiliar 3 conserva una nota de embalaje del lote de ensayo 3.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/051/19"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_052_05",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_052",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En catálogo Umbría, para edición Nácar, hay trece cajas de documentos.",
+    "summary": "En catálogo Umbría, para edición Nácar, hay trece cajas de documentos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/052/05"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_051_27",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_051",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En observatorio Linde, el registro auxiliar 11 conserva una nota de embalaje del lote de ensayo 11.",
+    "summary": "En observatorio Linde, el registro auxiliar 11 conserva una nota de embalaje del lote de ensayo 11.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/051/27"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_054_21",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_054",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En inventario Prisma, el registro auxiliar 5 conserva una nota de embalaje del lote de ensayo 5.",
+    "summary": "En inventario Prisma, el registro auxiliar 5 conserva una nota de embalaje del lote de ensayo 5.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/054/21"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_056_06",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_056",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En registro Trama, para ciclo 2031, la revisión comenzará el domingo.",
+    "summary": "En registro Trama, para ciclo 2031, la revisión comenzará el domingo.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/056/06"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_053_06",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_053",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En laboratorio Marea, para entorno Activo, la revisión comenzará el viernes.",
+    "summary": "En laboratorio Marea, para entorno Activo, la revisión comenzará el viernes.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/053/06"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_050_03",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_050",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En archivo Coral, para equipo Ópalo, se canceló la compra de vehículos; se recibieron vehículos donados.",
+    "summary": "En archivo Coral, para equipo Ópalo, se canceló la compra de vehículos; se recibieron vehículos donados.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/050/03"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_051_10",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_051",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En observatorio Linde, para sede Oeste, los documentos se guardan en el cajón Gris.",
+    "summary": "En observatorio Linde, para sede Oeste, los documentos se guardan en el cajón Gris.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/051/10"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_052_19",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_052",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En catálogo Umbría, el registro auxiliar 3 conserva una nota de embalaje del lote de ensayo 3.",
+    "summary": "En catálogo Umbría, el registro auxiliar 3 conserva una nota de embalaje del lote de ensayo 3.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/052/19"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_050_16",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_050",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En archivo Coral, para equipo Ágata, la revisión durará cuatro horas.",
+    "summary": "En archivo Coral, para equipo Ágata, la revisión durará cuatro horas.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/050/16"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_057_22",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_057",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En programa Albor, el registro auxiliar 6 conserva una nota de embalaje del lote de ensayo 6.",
+    "summary": "En programa Albor, el registro auxiliar 6 conserva una nota de embalaje del lote de ensayo 6.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/057/22"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_050_17",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_050",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En archivo Coral, el registro auxiliar 1 conserva una nota de embalaje del lote de ensayo 1.",
+    "summary": "En archivo Coral, el registro auxiliar 1 conserva una nota de embalaje del lote de ensayo 1.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/050/17"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_052_14",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_052",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En catálogo Umbría, para edición Cobre, cada caja pesa tres kilogramos.",
+    "summary": "En catálogo Umbría, para edición Cobre, cada caja pesa tres kilogramos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/052/14"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_057_27",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_057",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En programa Albor, el registro auxiliar 11 conserva una nota de embalaje del lote de ensayo 11.",
+    "summary": "En programa Albor, el registro auxiliar 11 conserva una nota de embalaje del lote de ensayo 11.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/057/27"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_054_27",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_054",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En inventario Prisma, el registro auxiliar 11 conserva una nota de embalaje del lote de ensayo 11.",
+    "summary": "En inventario Prisma, el registro auxiliar 11 conserva una nota de embalaje del lote de ensayo 11.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/054/27"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_053_04",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_053",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En laboratorio Marea, para entorno Activo, el acto de entrega no será presencial; se celebrará por videollamada.",
+    "summary": "En laboratorio Marea, para entorno Activo, el acto de entrega no será presencial; se celebrará por videollamada.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/053/04"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_052_21",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_052",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En catálogo Umbría, el registro auxiliar 5 conserva una nota de embalaje del lote de ensayo 5.",
+    "summary": "En catálogo Umbría, el registro auxiliar 5 conserva una nota de embalaje del lote de ensayo 5.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/052/21"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_056_02",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_056",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En registro Trama, para ciclo 2031, los documentos se guardan en estante cinco.",
+    "summary": "En registro Trama, para ciclo 2031, los documentos se guardan en estante cinco.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/056/02"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_050_01",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_050",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En archivo Coral, para equipo Ópalo, Mina coordina el registro.",
+    "summary": "En archivo Coral, para equipo Ópalo, Mina coordina el registro.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/050/01"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_054_18",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_054",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En inventario Prisma, el registro auxiliar 2 conserva una nota de embalaje del lote de ensayo 2.",
+    "summary": "En inventario Prisma, el registro auxiliar 2 conserva una nota de embalaje del lote de ensayo 2.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/054/18"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_051_05",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_051",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En observatorio Linde, para sede Norte, hay veintitrés cajas de documentos.",
+    "summary": "En observatorio Linde, para sede Norte, hay veintitrés cajas de documentos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/051/05"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_054_19",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_054",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En inventario Prisma, el registro auxiliar 3 conserva una nota de embalaje del lote de ensayo 3.",
+    "summary": "En inventario Prisma, el registro auxiliar 3 conserva una nota de embalaje del lote de ensayo 3.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/054/19"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_053_27",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_053",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En laboratorio Marea, el registro auxiliar 11 conserva una nota de embalaje del lote de ensayo 11.",
+    "summary": "En laboratorio Marea, el registro auxiliar 11 conserva una nota de embalaje del lote de ensayo 11.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/053/27"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_052_27",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_052",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En catálogo Umbría, el registro auxiliar 11 conserva una nota de embalaje del lote de ensayo 11.",
+    "summary": "En catálogo Umbría, el registro auxiliar 11 conserva una nota de embalaje del lote de ensayo 11.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/052/27"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_052_26",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_052",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En catálogo Umbría, el registro auxiliar 10 conserva una nota de embalaje del lote de ensayo 10.",
+    "summary": "En catálogo Umbría, el registro auxiliar 10 conserva una nota de embalaje del lote de ensayo 10.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/052/26"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_051_25",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_051",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En observatorio Linde, el registro auxiliar 9 conserva una nota de embalaje del lote de ensayo 9.",
+    "summary": "En observatorio Linde, el registro auxiliar 9 conserva una nota de embalaje del lote de ensayo 9.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/051/25"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_054_16",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_054",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En inventario Prisma, para colección Brezo, la revisión durará cuatro horas.",
+    "summary": "En inventario Prisma, para colección Brezo, la revisión durará cuatro horas.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/054/16"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_053_03",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_053",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En laboratorio Marea, para entorno Activo, se canceló la compra de vehículos; se recibieron vehículos donados.",
+    "summary": "En laboratorio Marea, para entorno Activo, se canceló la compra de vehículos; se recibieron vehículos donados.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/053/03"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_052_17",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_052",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En catálogo Umbría, el registro auxiliar 1 conserva una nota de embalaje del lote de ensayo 1.",
+    "summary": "En catálogo Umbría, el registro auxiliar 1 conserva una nota de embalaje del lote de ensayo 1.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/052/17"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_051_12",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_051",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En observatorio Linde, para sede Oeste, el acto de entrega presencial será en el aula nueve.",
+    "summary": "En observatorio Linde, para sede Oeste, el acto de entrega presencial será en el aula nueve.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/051/12"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_052_16",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_052",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En catálogo Umbría, para edición Cobre, la revisión durará cuatro horas.",
+    "summary": "En catálogo Umbría, para edición Cobre, la revisión durará cuatro horas.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/052/16"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_052_10",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_052",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En catálogo Umbría, para edición Cobre, los documentos se guardan en el cajón Gris.",
+    "summary": "En catálogo Umbría, para edición Cobre, los documentos se guardan en el cajón Gris.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/052/10"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_054_04",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_054",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En inventario Prisma, para colección Aster, el acto de entrega no será presencial; se celebrará por videollamada.",
+    "summary": "En inventario Prisma, para colección Aster, el acto de entrega no será presencial; se celebrará por videollamada.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/054/04"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_056_11",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_056",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En registro Trama, para ciclo 2032, se compraron vehículos por cien unidades ficticias.",
+    "summary": "En registro Trama, para ciclo 2032, se compraron vehículos por cien unidades ficticias.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/056/11"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_050_14",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_050",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En archivo Coral, para equipo Ágata, cada caja pesa tres kilogramos.",
+    "summary": "En archivo Coral, para equipo Ágata, cada caja pesa tres kilogramos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/050/14"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_056_12",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_056",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En registro Trama, para ciclo 2032, el acto de entrega presencial será en el aula nueve.",
+    "summary": "En registro Trama, para ciclo 2032, el acto de entrega presencial será en el aula nueve.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/056/12"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_050_07",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_050",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En archivo Coral, para equipo Ágata, la cuenta del registro se llama cuenta-050.",
+    "summary": "En archivo Coral, para equipo Ágata, la cuenta del registro se llama cuenta-050.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/050/07"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_054_15",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_054",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En inventario Prisma, para colección Brezo, la revisión comenzará el miércoles.",
+    "summary": "En inventario Prisma, para colección Brezo, la revisión comenzará el miércoles.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/054/15"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_051_22",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_051",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En observatorio Linde, el registro auxiliar 6 conserva una nota de embalaje del lote de ensayo 6.",
+    "summary": "En observatorio Linde, el registro auxiliar 6 conserva una nota de embalaje del lote de ensayo 6.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/051/22"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_053_15",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_053",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En laboratorio Marea, para entorno Ensayo, la revisión comenzará el miércoles.",
+    "summary": "En laboratorio Marea, para entorno Ensayo, la revisión comenzará el miércoles.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/053/15"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_057_19",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_057",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En programa Albor, el registro auxiliar 3 conserva una nota de embalaje del lote de ensayo 3.",
+    "summary": "En programa Albor, el registro auxiliar 3 conserva una nota de embalaje del lote de ensayo 3.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/057/19"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_050_13",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_050",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En archivo Coral, para equipo Ágata, hay cinco cajas de documentos.",
+    "summary": "En archivo Coral, para equipo Ágata, hay cinco cajas de documentos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/050/13"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_051_02",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_051",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En observatorio Linde, para sede Norte, los documentos se guardan en armario Lila.",
+    "summary": "En observatorio Linde, para sede Norte, los documentos se guardan en armario Lila.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/051/02"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_056_24",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_056",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En registro Trama, el registro auxiliar 8 conserva una nota de embalaje del lote de ensayo 8.",
+    "summary": "En registro Trama, el registro auxiliar 8 conserva una nota de embalaje del lote de ensayo 8.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/056/24"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_055_08",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_055",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En proyecto Encina, para modalidad nocturna, el transporte usa el código TR-055.",
+    "summary": "En proyecto Encina, para modalidad nocturna, el transporte usa el código TR-055.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/055/08"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_054_08",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_054",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En inventario Prisma, para colección Brezo, el transporte usa el código TR-054.",
+    "summary": "En inventario Prisma, para colección Brezo, el transporte usa el código TR-054.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/054/08"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_055_20",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_055",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En proyecto Encina, el registro auxiliar 4 conserva una nota de embalaje del lote de ensayo 4.",
+    "summary": "En proyecto Encina, el registro auxiliar 4 conserva una nota de embalaje del lote de ensayo 4.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/055/20"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_053_07",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_053",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En laboratorio Marea, para entorno Ensayo, la cuenta del registro se llama cuenta-053.",
+    "summary": "En laboratorio Marea, para entorno Ensayo, la cuenta del registro se llama cuenta-053.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/053/07"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_051_20",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_051",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En observatorio Linde, el registro auxiliar 4 conserva una nota de embalaje del lote de ensayo 4.",
+    "summary": "En observatorio Linde, el registro auxiliar 4 conserva una nota de embalaje del lote de ensayo 4.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/051/20"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_057_21",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_057",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En programa Albor, el registro auxiliar 5 conserva una nota de embalaje del lote de ensayo 5.",
+    "summary": "En programa Albor, el registro auxiliar 5 conserva una nota de embalaje del lote de ensayo 5.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/057/21"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_052_06",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_052",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En catálogo Umbría, para edición Nácar, la revisión comenzará el lunes.",
+    "summary": "En catálogo Umbría, para edición Nácar, la revisión comenzará el lunes.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/052/06"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_056_18",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_056",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En registro Trama, el registro auxiliar 2 conserva una nota de embalaje del lote de ensayo 2.",
+    "summary": "En registro Trama, el registro auxiliar 2 conserva una nota de embalaje del lote de ensayo 2.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/056/18"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_056_07",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_056",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En registro Trama, para ciclo 2032, la cuenta del registro se llama cuenta-056.",
+    "summary": "En registro Trama, para ciclo 2032, la cuenta del registro se llama cuenta-056.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/056/07"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_052_02",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_052",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En catálogo Umbría, para edición Nácar, los documentos se guardan en cajón Cedro.",
+    "summary": "En catálogo Umbría, para edición Nácar, los documentos se guardan en cajón Cedro.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/052/02"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_056_19",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_056",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En registro Trama, el registro auxiliar 3 conserva una nota de embalaje del lote de ensayo 3.",
+    "summary": "En registro Trama, el registro auxiliar 3 conserva una nota de embalaje del lote de ensayo 3.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/056/19"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_050_11",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_050",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En archivo Coral, para equipo Ágata, se compraron vehículos por cien unidades ficticias.",
+    "summary": "En archivo Coral, para equipo Ágata, se compraron vehículos por cien unidades ficticias.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/050/11"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_050_28",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_050",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En archivo Coral, el registro auxiliar 12 conserva una nota de embalaje del lote de ensayo 12.",
+    "summary": "En archivo Coral, el registro auxiliar 12 conserva una nota de embalaje del lote de ensayo 12.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/050/28"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_051_15",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_051",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En observatorio Linde, para sede Oeste, la revisión comenzará el miércoles.",
+    "summary": "En observatorio Linde, para sede Oeste, la revisión comenzará el miércoles.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/051/15"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_053_26",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_053",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En laboratorio Marea, el registro auxiliar 10 conserva una nota de embalaje del lote de ensayo 10.",
+    "summary": "En laboratorio Marea, el registro auxiliar 10 conserva una nota de embalaje del lote de ensayo 10.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/053/26"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_052_18",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_052",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En catálogo Umbría, el registro auxiliar 2 conserva una nota de embalaje del lote de ensayo 2.",
+    "summary": "En catálogo Umbría, el registro auxiliar 2 conserva una nota de embalaje del lote de ensayo 2.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/052/18"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_054_25",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_054",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En inventario Prisma, el registro auxiliar 9 conserva una nota de embalaje del lote de ensayo 9.",
+    "summary": "En inventario Prisma, el registro auxiliar 9 conserva una nota de embalaje del lote de ensayo 9.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/054/25"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_056_08",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_056",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En registro Trama, para ciclo 2032, el transporte usa el código TR-056.",
+    "summary": "En registro Trama, para ciclo 2032, el transporte usa el código TR-056.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/056/08"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_057_14",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_057",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En programa Albor, para responsable Ivo, cada caja pesa tres kilogramos.",
+    "summary": "En programa Albor, para responsable Ivo, cada caja pesa tres kilogramos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/057/14"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_053_21",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_053",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En laboratorio Marea, el registro auxiliar 5 conserva una nota de embalaje del lote de ensayo 5.",
+    "summary": "En laboratorio Marea, el registro auxiliar 5 conserva una nota de embalaje del lote de ensayo 5.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/053/21"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_055_19",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_055",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En proyecto Encina, el registro auxiliar 3 conserva una nota de embalaje del lote de ensayo 3.",
+    "summary": "En proyecto Encina, el registro auxiliar 3 conserva una nota de embalaje del lote de ensayo 3.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/055/19"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_057_08",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_057",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En programa Albor, para responsable Ivo, el transporte usa el código TR-057.",
+    "summary": "En programa Albor, para responsable Ivo, el transporte usa el código TR-057.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/057/08"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_056_21",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_056",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En registro Trama, el registro auxiliar 5 conserva una nota de embalaje del lote de ensayo 5.",
+    "summary": "En registro Trama, el registro auxiliar 5 conserva una nota de embalaje del lote de ensayo 5.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/056/21"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_054_17",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_054",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En inventario Prisma, el registro auxiliar 1 conserva una nota de embalaje del lote de ensayo 1.",
+    "summary": "En inventario Prisma, el registro auxiliar 1 conserva una nota de embalaje del lote de ensayo 1.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/054/17"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_055_28",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_055",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En proyecto Encina, el registro auxiliar 12 conserva una nota de embalaje del lote de ensayo 12.",
+    "summary": "En proyecto Encina, el registro auxiliar 12 conserva una nota de embalaje del lote de ensayo 12.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/055/28"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_052_25",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_052",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En catálogo Umbría, el registro auxiliar 9 conserva una nota de embalaje del lote de ensayo 9.",
+    "summary": "En catálogo Umbría, el registro auxiliar 9 conserva una nota de embalaje del lote de ensayo 9.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/052/25"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_050_15",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_050",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En archivo Coral, para equipo Ágata, la revisión comenzará el miércoles.",
+    "summary": "En archivo Coral, para equipo Ágata, la revisión comenzará el miércoles.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/050/15"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_052_04",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_052",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En catálogo Umbría, para edición Nácar, el acto de entrega no será presencial; se celebrará por videollamada.",
+    "summary": "En catálogo Umbría, para edición Nácar, el acto de entrega no será presencial; se celebrará por videollamada.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/052/04"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_052_12",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_052",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En catálogo Umbría, para edición Cobre, el acto de entrega presencial será en el aula nueve.",
+    "summary": "En catálogo Umbría, para edición Cobre, el acto de entrega presencial será en el aula nueve.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/052/12"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_057_17",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_057",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En programa Albor, el registro auxiliar 1 conserva una nota de embalaje del lote de ensayo 1.",
+    "summary": "En programa Albor, el registro auxiliar 1 conserva una nota de embalaje del lote de ensayo 1.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/057/17"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_050_18",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_050",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En archivo Coral, el registro auxiliar 2 conserva una nota de embalaje del lote de ensayo 2.",
+    "summary": "En archivo Coral, el registro auxiliar 2 conserva una nota de embalaje del lote de ensayo 2.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/050/18"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_056_15",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_056",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En registro Trama, para ciclo 2032, la revisión comenzará el miércoles.",
+    "summary": "En registro Trama, para ciclo 2032, la revisión comenzará el miércoles.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/056/15"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_054_28",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_054",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En inventario Prisma, el registro auxiliar 12 conserva una nota de embalaje del lote de ensayo 12.",
+    "summary": "En inventario Prisma, el registro auxiliar 12 conserva una nota de embalaje del lote de ensayo 12.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/054/28"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_056_28",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_056",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En registro Trama, el registro auxiliar 12 conserva una nota de embalaje del lote de ensayo 12.",
+    "summary": "En registro Trama, el registro auxiliar 12 conserva una nota de embalaje del lote de ensayo 12.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/056/28"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_054_10",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_054",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En inventario Prisma, para colección Brezo, los documentos se guardan en el cajón Gris.",
+    "summary": "En inventario Prisma, para colección Brezo, los documentos se guardan en el cajón Gris.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/054/10"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_052_03",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_052",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En catálogo Umbría, para edición Nácar, se canceló la compra de vehículos; se recibieron vehículos donados.",
+    "summary": "En catálogo Umbría, para edición Nácar, se canceló la compra de vehículos; se recibieron vehículos donados.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/052/03"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_057_15",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_057",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En programa Albor, para responsable Ivo, la revisión comenzará el miércoles.",
+    "summary": "En programa Albor, para responsable Ivo, la revisión comenzará el miércoles.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/057/15"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_055_05",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_055",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En proyecto Encina, para modalidad diurna, hay once cajas de documentos.",
+    "summary": "En proyecto Encina, para modalidad diurna, hay once cajas de documentos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/055/05"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_057_04",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_057",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En programa Albor, para responsable Ada, el acto de entrega no será presencial; se celebrará por videollamada.",
+    "summary": "En programa Albor, para responsable Ada, el acto de entrega no será presencial; se celebrará por videollamada.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/057/04"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_050_04",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_050",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En archivo Coral, para equipo Ópalo, el acto de entrega no será presencial; se celebrará por videollamada.",
+    "summary": "En archivo Coral, para equipo Ópalo, el acto de entrega no será presencial; se celebrará por videollamada.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/050/04"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_054_09",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_054",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En inventario Prisma, para colección Brezo, Dana coordina el registro.",
+    "summary": "En inventario Prisma, para colección Brezo, Dana coordina el registro.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/054/09"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_054_13",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_054",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En inventario Prisma, para colección Brezo, hay cinco cajas de documentos.",
+    "summary": "En inventario Prisma, para colección Brezo, hay cinco cajas de documentos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/054/13"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_051_18",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_051",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En observatorio Linde, el registro auxiliar 2 conserva una nota de embalaje del lote de ensayo 2.",
+    "summary": "En observatorio Linde, el registro auxiliar 2 conserva una nota de embalaje del lote de ensayo 2.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/051/18"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_055_21",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_055",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En proyecto Encina, el registro auxiliar 5 conserva una nota de embalaje del lote de ensayo 5.",
+    "summary": "En proyecto Encina, el registro auxiliar 5 conserva una nota de embalaje del lote de ensayo 5.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/055/21"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_053_22",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_053",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En laboratorio Marea, el registro auxiliar 6 conserva una nota de embalaje del lote de ensayo 6.",
+    "summary": "En laboratorio Marea, el registro auxiliar 6 conserva una nota de embalaje del lote de ensayo 6.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/053/22"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_051_08",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_051",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En observatorio Linde, para sede Oeste, el transporte usa el código TR-051.",
+    "summary": "En observatorio Linde, para sede Oeste, el transporte usa el código TR-051.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/051/08"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_051_03",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_051",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En observatorio Linde, para sede Norte, se canceló la compra de vehículos; se recibieron vehículos donados.",
+    "summary": "En observatorio Linde, para sede Norte, se canceló la compra de vehículos; se recibieron vehículos donados.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/051/03"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_051_24",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_051",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En observatorio Linde, el registro auxiliar 8 conserva una nota de embalaje del lote de ensayo 8.",
+    "summary": "En observatorio Linde, el registro auxiliar 8 conserva una nota de embalaje del lote de ensayo 8.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/051/24"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_051_04",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_051",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En observatorio Linde, para sede Norte, el acto de entrega no será presencial; se celebrará por videollamada.",
+    "summary": "En observatorio Linde, para sede Norte, el acto de entrega no será presencial; se celebrará por videollamada.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/051/04"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_050_19",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_050",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En archivo Coral, el registro auxiliar 3 conserva una nota de embalaje del lote de ensayo 3.",
+    "summary": "En archivo Coral, el registro auxiliar 3 conserva una nota de embalaje del lote de ensayo 3.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/050/19"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_056_04",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_056",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En registro Trama, para ciclo 2031, el acto de entrega no será presencial; se celebrará por videollamada.",
+    "summary": "En registro Trama, para ciclo 2031, el acto de entrega no será presencial; se celebrará por videollamada.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/056/04"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_054_06",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_054",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En inventario Prisma, para colección Aster, la revisión comenzará el miércoles.",
+    "summary": "En inventario Prisma, para colección Aster, la revisión comenzará el miércoles.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/054/06"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_057_01",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_057",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En programa Albor, para responsable Ada, Teo coordina el registro.",
+    "summary": "En programa Albor, para responsable Ada, Teo coordina el registro.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/057/01"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_057_03",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_057",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En programa Albor, para responsable Ada, se canceló la compra de vehículos; se recibieron vehículos donados.",
+    "summary": "En programa Albor, para responsable Ada, se canceló la compra de vehículos; se recibieron vehículos donados.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/057/03"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_057_16",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_057",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En programa Albor, para responsable Ivo, la revisión durará cuatro horas.",
+    "summary": "En programa Albor, para responsable Ivo, la revisión durará cuatro horas.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/057/16"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_056_01",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_056",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En registro Trama, para ciclo 2031, Nora coordina el registro.",
+    "summary": "En registro Trama, para ciclo 2031, Nora coordina el registro.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/056/01"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_053_11",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_053",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En laboratorio Marea, para entorno Ensayo, se compraron vehículos por cien unidades ficticias.",
+    "summary": "En laboratorio Marea, para entorno Ensayo, se compraron vehículos por cien unidades ficticias.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/053/11"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_050_05",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_050",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En archivo Coral, para equipo Ópalo, hay diecinueve cajas de documentos.",
+    "summary": "En archivo Coral, para equipo Ópalo, hay diecinueve cajas de documentos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/050/05"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_053_17",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_053",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En laboratorio Marea, el registro auxiliar 1 conserva una nota de embalaje del lote de ensayo 1.",
+    "summary": "En laboratorio Marea, el registro auxiliar 1 conserva una nota de embalaje del lote de ensayo 1.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/053/17"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_051_13",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_051",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En observatorio Linde, para sede Oeste, hay cinco cajas de documentos.",
+    "summary": "En observatorio Linde, para sede Oeste, hay cinco cajas de documentos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/051/13"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_053_23",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_053",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En laboratorio Marea, el registro auxiliar 7 conserva una nota de embalaje del lote de ensayo 7.",
+    "summary": "En laboratorio Marea, el registro auxiliar 7 conserva una nota de embalaje del lote de ensayo 7.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/053/23"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_054_12",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_054",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En inventario Prisma, para colección Brezo, el acto de entrega presencial será en el aula nueve.",
+    "summary": "En inventario Prisma, para colección Brezo, el acto de entrega presencial será en el aula nueve.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/054/12"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_052_15",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_052",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En catálogo Umbría, para edición Cobre, la revisión comenzará el miércoles.",
+    "summary": "En catálogo Umbría, para edición Cobre, la revisión comenzará el miércoles.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/052/15"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_056_05",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_056",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En registro Trama, para ciclo 2031, hay treinta y siete cajas de documentos.",
+    "summary": "En registro Trama, para ciclo 2031, hay treinta y siete cajas de documentos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/056/05"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_057_24",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_057",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En programa Albor, el registro auxiliar 8 conserva una nota de embalaje del lote de ensayo 8.",
+    "summary": "En programa Albor, el registro auxiliar 8 conserva una nota de embalaje del lote de ensayo 8.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/057/24"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_054_22",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_054",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En inventario Prisma, el registro auxiliar 6 conserva una nota de embalaje del lote de ensayo 6.",
+    "summary": "En inventario Prisma, el registro auxiliar 6 conserva una nota de embalaje del lote de ensayo 6.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/054/22"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_055_10",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_055",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En proyecto Encina, para modalidad nocturna, los documentos se guardan en el cajón Gris.",
+    "summary": "En proyecto Encina, para modalidad nocturna, los documentos se guardan en el cajón Gris.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/055/10"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_050_24",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_050",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En archivo Coral, el registro auxiliar 8 conserva una nota de embalaje del lote de ensayo 8.",
+    "summary": "En archivo Coral, el registro auxiliar 8 conserva una nota de embalaje del lote de ensayo 8.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/050/24"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_050_09",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_050",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En archivo Coral, para equipo Ágata, Dana coordina el registro.",
+    "summary": "En archivo Coral, para equipo Ágata, Dana coordina el registro.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/050/09"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_051_09",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_051",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En observatorio Linde, para sede Oeste, Dana coordina el registro.",
+    "summary": "En observatorio Linde, para sede Oeste, Dana coordina el registro.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/051/09"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_051_26",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_051",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En observatorio Linde, el registro auxiliar 10 conserva una nota de embalaje del lote de ensayo 10.",
+    "summary": "En observatorio Linde, el registro auxiliar 10 conserva una nota de embalaje del lote de ensayo 10.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/051/26"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_050_23",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_050",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En archivo Coral, el registro auxiliar 7 conserva una nota de embalaje del lote de ensayo 7.",
+    "summary": "En archivo Coral, el registro auxiliar 7 conserva una nota de embalaje del lote de ensayo 7.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/050/23"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_057_06",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_057",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En programa Albor, para responsable Ada, la revisión comenzará el martes.",
+    "summary": "En programa Albor, para responsable Ada, la revisión comenzará el martes.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/057/06"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_057_20",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_057",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En programa Albor, el registro auxiliar 4 conserva una nota de embalaje del lote de ensayo 4.",
+    "summary": "En programa Albor, el registro auxiliar 4 conserva una nota de embalaje del lote de ensayo 4.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/057/20"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_057_02",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_057",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En programa Albor, para responsable Ada, los documentos se guardan en armario Nube.",
+    "summary": "En programa Albor, para responsable Ada, los documentos se guardan en armario Nube.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/057/02"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_056_10",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_056",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En registro Trama, para ciclo 2032, los documentos se guardan en el cajón Gris.",
+    "summary": "En registro Trama, para ciclo 2032, los documentos se guardan en el cajón Gris.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/056/10"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_053_05",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_053",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En laboratorio Marea, para entorno Activo, hay diecisiete cajas de documentos.",
+    "summary": "En laboratorio Marea, para entorno Activo, hay diecisiete cajas de documentos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/053/05"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_052_22",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_052",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En catálogo Umbría, el registro auxiliar 6 conserva una nota de embalaje del lote de ensayo 6.",
+    "summary": "En catálogo Umbría, el registro auxiliar 6 conserva una nota de embalaje del lote de ensayo 6.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/052/22"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_050_22",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_050",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En archivo Coral, el registro auxiliar 6 conserva una nota de embalaje del lote de ensayo 6.",
+    "summary": "En archivo Coral, el registro auxiliar 6 conserva una nota de embalaje del lote de ensayo 6.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/050/22"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_056_22",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_056",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En registro Trama, el registro auxiliar 6 conserva una nota de embalaje del lote de ensayo 6.",
+    "summary": "En registro Trama, el registro auxiliar 6 conserva una nota de embalaje del lote de ensayo 6.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/056/22"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_052_01",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_052",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En catálogo Umbría, para edición Nácar, Sira coordina el registro.",
+    "summary": "En catálogo Umbría, para edición Nácar, Sira coordina el registro.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/052/01"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_053_25",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_053",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En laboratorio Marea, el registro auxiliar 9 conserva una nota de embalaje del lote de ensayo 9.",
+    "summary": "En laboratorio Marea, el registro auxiliar 9 conserva una nota de embalaje del lote de ensayo 9.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/053/25"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_051_21",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_051",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En observatorio Linde, el registro auxiliar 5 conserva una nota de embalaje del lote de ensayo 5.",
+    "summary": "En observatorio Linde, el registro auxiliar 5 conserva una nota de embalaje del lote de ensayo 5.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/051/21"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_052_07",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_052",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En catálogo Umbría, para edición Cobre, la cuenta del registro se llama cuenta-052.",
+    "summary": "En catálogo Umbría, para edición Cobre, la cuenta del registro se llama cuenta-052.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/052/07"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_056_27",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_056",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En registro Trama, el registro auxiliar 11 conserva una nota de embalaje del lote de ensayo 11.",
+    "summary": "En registro Trama, el registro auxiliar 11 conserva una nota de embalaje del lote de ensayo 11.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/056/27"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_051_28",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_051",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En observatorio Linde, el registro auxiliar 12 conserva una nota de embalaje del lote de ensayo 12.",
+    "summary": "En observatorio Linde, el registro auxiliar 12 conserva una nota de embalaje del lote de ensayo 12.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/051/28"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_054_07",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_054",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En inventario Prisma, para colección Brezo, la cuenta del registro se llama cuenta-054.",
+    "summary": "En inventario Prisma, para colección Brezo, la cuenta del registro se llama cuenta-054.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/054/07"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_053_08",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_053",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En laboratorio Marea, para entorno Ensayo, el transporte usa el código TR-053.",
+    "summary": "En laboratorio Marea, para entorno Ensayo, el transporte usa el código TR-053.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/053/08"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_057_26",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_057",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En programa Albor, el registro auxiliar 10 conserva una nota de embalaje del lote de ensayo 10.",
+    "summary": "En programa Albor, el registro auxiliar 10 conserva una nota de embalaje del lote de ensayo 10.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/057/26"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_057_05",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_057",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En programa Albor, para responsable Ada, hay cuarenta y una cajas de documentos.",
+    "summary": "En programa Albor, para responsable Ada, hay cuarenta y una cajas de documentos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/057/05"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_050_26",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_050",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En archivo Coral, el registro auxiliar 10 conserva una nota de embalaje del lote de ensayo 10.",
+    "summary": "En archivo Coral, el registro auxiliar 10 conserva una nota de embalaje del lote de ensayo 10.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/050/26"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_051_14",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_051",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En observatorio Linde, para sede Oeste, cada caja pesa tres kilogramos.",
+    "summary": "En observatorio Linde, para sede Oeste, cada caja pesa tres kilogramos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/051/14"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_053_10",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_053",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En laboratorio Marea, para entorno Ensayo, los documentos se guardan en el cajón Gris.",
+    "summary": "En laboratorio Marea, para entorno Ensayo, los documentos se guardan en el cajón Gris.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/053/10"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_055_27",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_055",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En proyecto Encina, el registro auxiliar 11 conserva una nota de embalaje del lote de ensayo 11.",
+    "summary": "En proyecto Encina, el registro auxiliar 11 conserva una nota de embalaje del lote de ensayo 11.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/055/27"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_053_16",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_053",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En laboratorio Marea, para entorno Ensayo, la revisión durará cuatro horas.",
+    "summary": "En laboratorio Marea, para entorno Ensayo, la revisión durará cuatro horas.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/053/16"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_055_01",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_055",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En proyecto Encina, para modalidad diurna, Biel coordina el registro.",
+    "summary": "En proyecto Encina, para modalidad diurna, Biel coordina el registro.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/055/01"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_055_12",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_055",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En proyecto Encina, para modalidad nocturna, el acto de entrega presencial será en el aula nueve.",
+    "summary": "En proyecto Encina, para modalidad nocturna, el acto de entrega presencial será en el aula nueve.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/055/12"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_053_09",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_053",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En laboratorio Marea, para entorno Ensayo, Dana coordina el registro.",
+    "summary": "En laboratorio Marea, para entorno Ensayo, Dana coordina el registro.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/053/09"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_056_20",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_056",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En registro Trama, el registro auxiliar 4 conserva una nota de embalaje del lote de ensayo 4.",
+    "summary": "En registro Trama, el registro auxiliar 4 conserva una nota de embalaje del lote de ensayo 4.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/056/20"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_056_13",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_056",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En registro Trama, para ciclo 2032, hay cinco cajas de documentos.",
+    "summary": "En registro Trama, para ciclo 2032, hay cinco cajas de documentos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/056/13"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_050_20",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_050",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En archivo Coral, el registro auxiliar 4 conserva una nota de embalaje del lote de ensayo 4.",
+    "summary": "En archivo Coral, el registro auxiliar 4 conserva una nota de embalaje del lote de ensayo 4.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/050/20"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_051_11",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_051",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En observatorio Linde, para sede Oeste, se compraron vehículos por cien unidades ficticias.",
+    "summary": "En observatorio Linde, para sede Oeste, se compraron vehículos por cien unidades ficticias.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/051/11"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_054_26",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_054",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En inventario Prisma, el registro auxiliar 10 conserva una nota de embalaje del lote de ensayo 10.",
+    "summary": "En inventario Prisma, el registro auxiliar 10 conserva una nota de embalaje del lote de ensayo 10.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/054/26"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_056_16",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_056",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En registro Trama, para ciclo 2032, la revisión durará cuatro horas.",
+    "summary": "En registro Trama, para ciclo 2032, la revisión durará cuatro horas.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/056/16"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_055_11",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_055",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En proyecto Encina, para modalidad nocturna, se compraron vehículos por cien unidades ficticias.",
+    "summary": "En proyecto Encina, para modalidad nocturna, se compraron vehículos por cien unidades ficticias.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/055/11"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_055_22",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_055",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En proyecto Encina, el registro auxiliar 6 conserva una nota de embalaje del lote de ensayo 6.",
+    "summary": "En proyecto Encina, el registro auxiliar 6 conserva una nota de embalaje del lote de ensayo 6.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/055/22"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_054_24",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_054",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En inventario Prisma, el registro auxiliar 8 conserva una nota de embalaje del lote de ensayo 8.",
+    "summary": "En inventario Prisma, el registro auxiliar 8 conserva una nota de embalaje del lote de ensayo 8.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/054/24"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_054_01",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_054",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En inventario Prisma, para colección Aster, Lara coordina el registro.",
+    "summary": "En inventario Prisma, para colección Aster, Lara coordina el registro.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/054/01"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_055_26",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_055",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En proyecto Encina, el registro auxiliar 10 conserva una nota de embalaje del lote de ensayo 10.",
+    "summary": "En proyecto Encina, el registro auxiliar 10 conserva una nota de embalaje del lote de ensayo 10.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/055/26"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_052_11",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_052",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En catálogo Umbría, para edición Cobre, se compraron vehículos por cien unidades ficticias.",
+    "summary": "En catálogo Umbría, para edición Cobre, se compraron vehículos por cien unidades ficticias.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/052/11"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_053_13",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_053",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En laboratorio Marea, para entorno Ensayo, hay cinco cajas de documentos.",
+    "summary": "En laboratorio Marea, para entorno Ensayo, hay cinco cajas de documentos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/053/13"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_057_23",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_057",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En programa Albor, el registro auxiliar 7 conserva una nota de embalaje del lote de ensayo 7.",
+    "summary": "En programa Albor, el registro auxiliar 7 conserva una nota de embalaje del lote de ensayo 7.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/057/23"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_055_16",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_055",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En proyecto Encina, para modalidad nocturna, la revisión durará cuatro horas.",
+    "summary": "En proyecto Encina, para modalidad nocturna, la revisión durará cuatro horas.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/055/16"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_057_11",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_057",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En programa Albor, para responsable Ivo, se compraron vehículos por cien unidades ficticias.",
+    "summary": "En programa Albor, para responsable Ivo, se compraron vehículos por cien unidades ficticias.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/057/11"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_057_10",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_057",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En programa Albor, para responsable Ivo, los documentos se guardan en el cajón Gris.",
+    "summary": "En programa Albor, para responsable Ivo, los documentos se guardan en el cajón Gris.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/057/10"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_057_12",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_057",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En programa Albor, para responsable Ivo, el acto de entrega presencial será en el aula nueve.",
+    "summary": "En programa Albor, para responsable Ivo, el acto de entrega presencial será en el aula nueve.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/057/12"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_052_09",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_052",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En catálogo Umbría, para edición Cobre, Dana coordina el registro.",
+    "summary": "En catálogo Umbría, para edición Cobre, Dana coordina el registro.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/052/09"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_057_25",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_057",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En programa Albor, el registro auxiliar 9 conserva una nota de embalaje del lote de ensayo 9.",
+    "summary": "En programa Albor, el registro auxiliar 9 conserva una nota de embalaje del lote de ensayo 9.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/057/25"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_055_09",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_055",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En proyecto Encina, para modalidad nocturna, Dana coordina el registro.",
+    "summary": "En proyecto Encina, para modalidad nocturna, Dana coordina el registro.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/055/09"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_054_05",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_054",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En inventario Prisma, para colección Aster, hay veintinueve cajas de documentos.",
+    "summary": "En inventario Prisma, para colección Aster, hay veintinueve cajas de documentos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/054/05"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_050_12",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_050",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En archivo Coral, para equipo Ágata, el acto de entrega presencial será en el aula nueve.",
+    "summary": "En archivo Coral, para equipo Ágata, el acto de entrega presencial será en el aula nueve.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/050/12"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_054_02",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_054",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En inventario Prisma, para colección Aster, los documentos se guardan en armario Olmo.",
+    "summary": "En inventario Prisma, para colección Aster, los documentos se guardan en armario Olmo.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/054/02"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_055_15",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_055",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En proyecto Encina, para modalidad nocturna, la revisión comenzará el miércoles.",
+    "summary": "En proyecto Encina, para modalidad nocturna, la revisión comenzará el miércoles.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/055/15"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_055_14",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_055",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En proyecto Encina, para modalidad nocturna, cada caja pesa tres kilogramos.",
+    "summary": "En proyecto Encina, para modalidad nocturna, cada caja pesa tres kilogramos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/055/14"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_055_18",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_055",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En proyecto Encina, el registro auxiliar 2 conserva una nota de embalaje del lote de ensayo 2.",
+    "summary": "En proyecto Encina, el registro auxiliar 2 conserva una nota de embalaje del lote de ensayo 2.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/055/18"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_052_24",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_052",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En catálogo Umbría, el registro auxiliar 8 conserva una nota de embalaje del lote de ensayo 8.",
+    "summary": "En catálogo Umbría, el registro auxiliar 8 conserva una nota de embalaje del lote de ensayo 8.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/052/24"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_050_10",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_050",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En archivo Coral, para equipo Ágata, los documentos se guardan en el cajón Gris.",
+    "summary": "En archivo Coral, para equipo Ágata, los documentos se guardan en el cajón Gris.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/050/10"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_055_04",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_055",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En proyecto Encina, para modalidad diurna, el acto de entrega no será presencial; se celebrará por videollamada.",
+    "summary": "En proyecto Encina, para modalidad diurna, el acto de entrega no será presencial; se celebrará por videollamada.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/055/04"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_051_16",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_051",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En observatorio Linde, para sede Oeste, la revisión durará cuatro horas.",
+    "summary": "En observatorio Linde, para sede Oeste, la revisión durará cuatro horas.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/051/16"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_057_18",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_057",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En programa Albor, el registro auxiliar 2 conserva una nota de embalaje del lote de ensayo 2.",
+    "summary": "En programa Albor, el registro auxiliar 2 conserva una nota de embalaje del lote de ensayo 2.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/057/18"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_054_11",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_054",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En inventario Prisma, para colección Brezo, se compraron vehículos por cien unidades ficticias.",
+    "summary": "En inventario Prisma, para colección Brezo, se compraron vehículos por cien unidades ficticias.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/054/11"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_051_17",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_051",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En observatorio Linde, el registro auxiliar 1 conserva una nota de embalaje del lote de ensayo 1.",
+    "summary": "En observatorio Linde, el registro auxiliar 1 conserva una nota de embalaje del lote de ensayo 1.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/051/17"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_050_21",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_050",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En archivo Coral, el registro auxiliar 5 conserva una nota de embalaje del lote de ensayo 5.",
+    "summary": "En archivo Coral, el registro auxiliar 5 conserva una nota de embalaje del lote de ensayo 5.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/050/21"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_053_14",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_053",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En laboratorio Marea, para entorno Ensayo, cada caja pesa tres kilogramos.",
+    "summary": "En laboratorio Marea, para entorno Ensayo, cada caja pesa tres kilogramos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/053/14"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_051_07",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_051",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En observatorio Linde, para sede Oeste, la cuenta del registro se llama cuenta-051.",
+    "summary": "En observatorio Linde, para sede Oeste, la cuenta del registro se llama cuenta-051.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/051/07"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_051_01",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_051",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En observatorio Linde, para sede Norte, Darío coordina el registro.",
+    "summary": "En observatorio Linde, para sede Norte, Darío coordina el registro.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/051/01"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_053_24",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_053",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En laboratorio Marea, el registro auxiliar 8 conserva una nota de embalaje del lote de ensayo 8.",
+    "summary": "En laboratorio Marea, el registro auxiliar 8 conserva una nota de embalaje del lote de ensayo 8.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/053/24"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_057_13",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_057",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En programa Albor, para responsable Ivo, hay cinco cajas de documentos.",
+    "summary": "En programa Albor, para responsable Ivo, hay cinco cajas de documentos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/057/13"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_055_24",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_055",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En proyecto Encina, el registro auxiliar 8 conserva una nota de embalaje del lote de ensayo 8.",
+    "summary": "En proyecto Encina, el registro auxiliar 8 conserva una nota de embalaje del lote de ensayo 8.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/055/24"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_055_06",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_055",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En proyecto Encina, para modalidad diurna, la revisión comenzará el sábado.",
+    "summary": "En proyecto Encina, para modalidad diurna, la revisión comenzará el sábado.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/055/06"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_052_28",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_052",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En catálogo Umbría, el registro auxiliar 12 conserva una nota de embalaje del lote de ensayo 12.",
+    "summary": "En catálogo Umbría, el registro auxiliar 12 conserva una nota de embalaje del lote de ensayo 12.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/052/28"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_052_20",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_052",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En catálogo Umbría, el registro auxiliar 4 conserva una nota de embalaje del lote de ensayo 4.",
+    "summary": "En catálogo Umbría, el registro auxiliar 4 conserva una nota de embalaje del lote de ensayo 4.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/052/20"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_056_03",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_056",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En registro Trama, para ciclo 2031, se canceló la compra de vehículos; se recibieron vehículos donados.",
+    "summary": "En registro Trama, para ciclo 2031, se canceló la compra de vehículos; se recibieron vehículos donados.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/056/03"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_050_08",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_050",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En archivo Coral, para equipo Ágata, el transporte usa el código TR-050.",
+    "summary": "En archivo Coral, para equipo Ágata, el transporte usa el código TR-050.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/050/08"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_052_08",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_052",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En catálogo Umbría, para edición Cobre, el transporte usa el código TR-052.",
+    "summary": "En catálogo Umbría, para edición Cobre, el transporte usa el código TR-052.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/052/08"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_055_25",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_055",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En proyecto Encina, el registro auxiliar 9 conserva una nota de embalaje del lote de ensayo 9.",
+    "summary": "En proyecto Encina, el registro auxiliar 9 conserva una nota de embalaje del lote de ensayo 9.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/055/25"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_053_02",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_053",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En laboratorio Marea, para entorno Activo, los documentos se guardan en estante dos.",
+    "summary": "En laboratorio Marea, para entorno Activo, los documentos se guardan en estante dos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/053/02"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_050_02",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_050",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En archivo Coral, para equipo Ópalo, los documentos se guardan en estante siete.",
+    "summary": "En archivo Coral, para equipo Ópalo, los documentos se guardan en estante siete.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/050/02"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_055_03",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_055",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En proyecto Encina, para modalidad diurna, se canceló la compra de vehículos; se recibieron vehículos donados.",
+    "summary": "En proyecto Encina, para modalidad diurna, se canceló la compra de vehículos; se recibieron vehículos donados.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/055/03"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_057_09",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_057",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En programa Albor, para responsable Ivo, Dana coordina el registro.",
+    "summary": "En programa Albor, para responsable Ivo, Dana coordina el registro.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/057/09"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_056_14",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_056",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En registro Trama, para ciclo 2032, cada caja pesa tres kilogramos.",
+    "summary": "En registro Trama, para ciclo 2032, cada caja pesa tres kilogramos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/056/14"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_055_13",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_055",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En proyecto Encina, para modalidad nocturna, hay cinco cajas de documentos.",
+    "summary": "En proyecto Encina, para modalidad nocturna, hay cinco cajas de documentos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/055/13"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_055_17",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_055",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En proyecto Encina, el registro auxiliar 1 conserva una nota de embalaje del lote de ensayo 1.",
+    "summary": "En proyecto Encina, el registro auxiliar 1 conserva una nota de embalaje del lote de ensayo 1.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/055/17"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_057_07",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_057",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En programa Albor, para responsable Ivo, la cuenta del registro se llama cuenta-057.",
+    "summary": "En programa Albor, para responsable Ivo, la cuenta del registro se llama cuenta-057.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/057/07"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_055_02",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_055",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En proyecto Encina, para modalidad diurna, los documentos se guardan en cajón Pino.",
+    "summary": "En proyecto Encina, para modalidad diurna, los documentos se guardan en cajón Pino.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/055/02"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_056_09",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_056",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En registro Trama, para ciclo 2032, Dana coordina el registro.",
+    "summary": "En registro Trama, para ciclo 2032, Dana coordina el registro.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/056/09"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_053_12",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_053",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En laboratorio Marea, para entorno Ensayo, el acto de entrega presencial será en el aula nueve.",
+    "summary": "En laboratorio Marea, para entorno Ensayo, el acto de entrega presencial será en el aula nueve.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/053/12"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_054_23",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_054",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En inventario Prisma, el registro auxiliar 7 conserva una nota de embalaje del lote de ensayo 7.",
+    "summary": "En inventario Prisma, el registro auxiliar 7 conserva una nota de embalaje del lote de ensayo 7.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/054/23"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_051_23",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_051",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En observatorio Linde, el registro auxiliar 7 conserva una nota de embalaje del lote de ensayo 7.",
+    "summary": "En observatorio Linde, el registro auxiliar 7 conserva una nota de embalaje del lote de ensayo 7.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/051/23"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_050_06",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_050",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En archivo Coral, para equipo Ópalo, la revisión comenzará el martes.",
+    "summary": "En archivo Coral, para equipo Ópalo, la revisión comenzará el martes.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/050/06"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_054_20",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_054",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En inventario Prisma, el registro auxiliar 4 conserva una nota de embalaje del lote de ensayo 4.",
+    "summary": "En inventario Prisma, el registro auxiliar 4 conserva una nota de embalaje del lote de ensayo 4.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/054/20"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_056_25",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_056",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En registro Trama, el registro auxiliar 9 conserva una nota de embalaje del lote de ensayo 9.",
+    "summary": "En registro Trama, el registro auxiliar 9 conserva una nota de embalaje del lote de ensayo 9.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/056/25"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev3_056_17",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_056",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En registro Trama, el registro auxiliar 1 conserva una nota de embalaje del lote de ensayo 1.",
+    "summary": "En registro Trama, el registro auxiliar 1 conserva una nota de embalaje del lote de ensayo 1.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v3/056/17"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  }
+]

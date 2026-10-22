@@ -1,0 +1,18 @@
+{
+  "version": "evidence-contribution-v3-reviewed",
+  "provider_calls_before_freeze": 0,
+  "questions": 16,
+  "candidate_judgments": 64,
+  "files_sha256": {
+    "adjudication.json": "2c5466877ed96660cceb06b7d90722040aac0685908c906c977f9b6a298f7949",
+    "author-initial.json": "3491a1252a94c91a8e0fca6eda5d09403eb92f254d38c01491b55fa46dac5d25",
+    "blind-review-final.json": "7a6edea60ad9e79ac7b155367c8a1e1c2cae9c16c3cba248d32e5a90a93d4b8f",
+    "blind-review-initial.json": "2fe4844b1b6add707c5c255faa9e75feb461e4ceebb3a2e2a441191ccbac2d82",
+    "development.json": "6940cf722b97b1570862c4a6666e7095e99fae609247d1f33d550a17340b91b3",
+    "initial-manifest.json": "b9c8a3f689f9f8e0889d308775cfa80648ccf2cf7cc3c596f2dbf6b3858ccdca",
+    "source-only-reviewed.json": "cf4c96b2f890d0a4d536422a68c7415259cc9ef11c23402b6489b94c3270c555",
+    "source-only.json": "b7e83eac05d18d66af58033c76eb1f450220659061a546c64a2ff1d6dcbb4fcb"
+  },
+  "contract_path": "docs/evaluation/evidence-contribution-v3-contract.md",
+  "contract_sha256": "11e6f9e2b1eddfba4446410301a0a3cd1610a09ac69c1d63295c7c1cc23d70e9"
+}

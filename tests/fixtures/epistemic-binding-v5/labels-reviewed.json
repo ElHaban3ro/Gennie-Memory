@@ -1,0 +1,280 @@
+{
+  "version": "epistemic-binding-v5-reviewed-labels",
+  "pairs": [
+    {
+      "id": "ebv5_01",
+      "relation": "A",
+      "selected": true,
+      "basis": "record_uncertainty",
+      "assertable_facts": 0,
+      "epistemic_contribution": true,
+      "world_roles": [
+        "A",
+        "none"
+      ],
+      "review_required": false,
+      "rationale": "No número atribuible a K6; solo contribución del registro no invariante.",
+      "coverage_incomplete": false,
+      "qualification_required": true
+    },
+    {
+      "id": "ebv5_02",
+      "relation": "A",
+      "selected": true,
+      "basis": "record_uncertainty",
+      "assertable_facts": 0,
+      "epistemic_contribution": true,
+      "world_roles": [
+        "A",
+        "none"
+      ],
+      "review_required": false,
+      "rationale": "",
+      "coverage_incomplete": false,
+      "qualification_required": true
+    },
+    {
+      "id": "ebv5_03",
+      "relation": "none",
+      "selected": false,
+      "basis": "unrelated",
+      "assertable_facts": 0,
+      "epistemic_contribution": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "rationale": "",
+      "coverage_incomplete": false,
+      "qualification_required": false
+    },
+    {
+      "id": "ebv5_04",
+      "relation": "none",
+      "selected": false,
+      "basis": "unrelated",
+      "assertable_facts": 0,
+      "epistemic_contribution": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "rationale": "",
+      "coverage_incomplete": false,
+      "qualification_required": false
+    },
+    {
+      "id": "ebv5_05",
+      "relation": "none",
+      "selected": false,
+      "basis": "unrelated",
+      "assertable_facts": 0,
+      "epistemic_contribution": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "rationale": "",
+      "coverage_incomplete": false,
+      "qualification_required": false
+    },
+    {
+      "id": "ebv5_06",
+      "relation": "A",
+      "selected": true,
+      "basis": "assertable",
+      "assertable_facts": 1,
+      "epistemic_contribution": false,
+      "world_roles": [
+        "A"
+      ],
+      "review_required": false,
+      "rationale": "",
+      "coverage_incomplete": false,
+      "qualification_required": false
+    },
+    {
+      "id": "ebv5_07",
+      "relation": "A",
+      "selected": true,
+      "basis": "assertable",
+      "assertable_facts": 1,
+      "epistemic_contribution": false,
+      "world_roles": [
+        "A"
+      ],
+      "review_required": false,
+      "rationale": "",
+      "coverage_incomplete": false,
+      "qualification_required": false
+    },
+    {
+      "id": "ebv5_08",
+      "relation": "A",
+      "selected": true,
+      "basis": "assertable_and_record_uncertainty",
+      "assertable_facts": 1,
+      "epistemic_contribution": true,
+      "world_roles": [
+        "A"
+      ],
+      "review_required": false,
+      "rationale": "Dato cierto 0177 no borrado; 0166 no transferido a K6.",
+      "coverage_incomplete": false,
+      "qualification_required": true
+    },
+    {
+      "id": "ebv5_09",
+      "relation": "A",
+      "selected": true,
+      "basis": "assertable",
+      "assertable_facts": 1,
+      "epistemic_contribution": false,
+      "world_roles": [
+        "A"
+      ],
+      "review_required": false,
+      "rationale": "El dato pedido es invariante por la cláusula cierta; no afirmar que sea desconocido.",
+      "coverage_incomplete": false,
+      "qualification_required": false
+    },
+    {
+      "id": "ebv5_10",
+      "relation": "A",
+      "selected": true,
+      "basis": "record_uncertainty",
+      "assertable_facts": 0,
+      "epistemic_contribution": true,
+      "world_roles": [
+        "A"
+      ],
+      "review_required": false,
+      "rationale": "Valores alternativos, ningún número concreto afirmable.",
+      "coverage_incomplete": false,
+      "qualification_required": true
+    },
+    {
+      "id": "ebv5_11",
+      "relation": "A",
+      "selected": true,
+      "basis": "record_uncertainty",
+      "assertable_facts": 0,
+      "epistemic_contribution": true,
+      "world_roles": [
+        "A"
+      ],
+      "review_required": true,
+      "rationale": "No usar la única lectura enumerada como dato cierto.",
+      "coverage_incomplete": true,
+      "qualification_required": true
+    },
+    {
+      "id": "ebv5_12",
+      "relation": "unresolved",
+      "selected": false,
+      "basis": "requires_review",
+      "assertable_facts": 0,
+      "epistemic_contribution": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": true,
+      "rationale": "K6 no nombrado y lista abierta: no declarar ajeno ni fabricar A.",
+      "coverage_incomplete": true,
+      "qualification_required": false
+    },
+    {
+      "id": "ebv5_13",
+      "relation": "unresolved",
+      "selected": false,
+      "basis": "requires_review",
+      "assertable_facts": 0,
+      "epistemic_contribution": false,
+      "world_roles": [
+        "B",
+        "none"
+      ],
+      "review_required": true,
+      "rationale": "",
+      "coverage_incomplete": false,
+      "qualification_required": false
+    },
+    {
+      "id": "ebv5_14",
+      "relation": "unresolved",
+      "selected": false,
+      "basis": "requires_review",
+      "assertable_facts": 0,
+      "epistemic_contribution": false,
+      "world_roles": [
+        "C",
+        "none"
+      ],
+      "review_required": true,
+      "rationale": "",
+      "coverage_incomplete": false,
+      "qualification_required": false
+    },
+    {
+      "id": "ebv5_15",
+      "relation": "none",
+      "selected": false,
+      "basis": "unrelated",
+      "assertable_facts": 0,
+      "epistemic_contribution": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "rationale": "",
+      "coverage_incomplete": false,
+      "qualification_required": false
+    },
+    {
+      "id": "ebv5_16",
+      "relation": "A",
+      "selected": true,
+      "basis": "assertable",
+      "assertable_facts": 1,
+      "epistemic_contribution": false,
+      "world_roles": [
+        "A"
+      ],
+      "review_required": false,
+      "rationale": "Ausencia explícita del dato en un registro, no inferencia desde incertidumbre de otro atributo.",
+      "coverage_incomplete": false,
+      "qualification_required": true
+    },
+    {
+      "id": "ebv5_17",
+      "relation": "A",
+      "selected": true,
+      "basis": "assertable",
+      "assertable_facts": 1,
+      "epistemic_contribution": false,
+      "world_roles": [
+        "A"
+      ],
+      "review_required": false,
+      "rationale": "",
+      "coverage_incomplete": false,
+      "qualification_required": false
+    },
+    {
+      "id": "ebv5_18",
+      "relation": "unresolved",
+      "selected": false,
+      "basis": "requires_review",
+      "assertable_facts": 0,
+      "epistemic_contribution": false,
+      "world_roles": [
+        "A",
+        "none"
+      ],
+      "review_required": true,
+      "rationale": "Slash notation preserves named candidates, without a documented uncertainty cue or exhaustive enumeration; do not manufacture A.",
+      "coverage_incomplete": true,
+      "qualification_required": false
+    }
+  ]
+}

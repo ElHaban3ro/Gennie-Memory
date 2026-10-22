@@ -1,0 +1,952 @@
+{
+  "version": "conversation-evidence-v3",
+  "synthetic": true,
+  "human_review": false,
+  "independent_review": false,
+  "conversations": [
+    {
+      "scope_id": "synthetic_conversation_evidence_050",
+      "title": "archivo Coral",
+      "statements": [
+        {
+          "id": "050_01",
+          "text": "En archivo Coral, para equipo Ópalo, Mina coordina el registro."
+        },
+        {
+          "id": "050_02",
+          "text": "En archivo Coral, para equipo Ópalo, los documentos se guardan en estante siete."
+        },
+        {
+          "id": "050_03",
+          "text": "En archivo Coral, para equipo Ópalo, se canceló la compra de vehículos; se recibieron vehículos donados."
+        },
+        {
+          "id": "050_04",
+          "text": "En archivo Coral, para equipo Ópalo, el acto de entrega no será presencial; se celebrará por videollamada."
+        },
+        {
+          "id": "050_05",
+          "text": "En archivo Coral, para equipo Ópalo, hay diecinueve cajas de documentos."
+        },
+        {
+          "id": "050_06",
+          "text": "En archivo Coral, para equipo Ópalo, la revisión comenzará el martes."
+        },
+        {
+          "id": "050_07",
+          "text": "En archivo Coral, para equipo Ágata, la cuenta del registro se llama cuenta-050."
+        },
+        {
+          "id": "050_08",
+          "text": "En archivo Coral, para equipo Ágata, el transporte usa el código TR-050."
+        },
+        {
+          "id": "050_09",
+          "text": "En archivo Coral, para equipo Ágata, Dana coordina el registro."
+        },
+        {
+          "id": "050_10",
+          "text": "En archivo Coral, para equipo Ágata, los documentos se guardan en el cajón Gris."
+        },
+        {
+          "id": "050_11",
+          "text": "En archivo Coral, para equipo Ágata, se compraron vehículos por cien unidades ficticias."
+        },
+        {
+          "id": "050_12",
+          "text": "En archivo Coral, para equipo Ágata, el acto de entrega presencial será en el aula nueve."
+        },
+        {
+          "id": "050_13",
+          "text": "En archivo Coral, para equipo Ágata, hay cinco cajas de documentos."
+        },
+        {
+          "id": "050_14",
+          "text": "En archivo Coral, para equipo Ágata, cada caja pesa tres kilogramos."
+        },
+        {
+          "id": "050_15",
+          "text": "En archivo Coral, para equipo Ágata, la revisión comenzará el miércoles."
+        },
+        {
+          "id": "050_16",
+          "text": "En archivo Coral, para equipo Ágata, la revisión durará cuatro horas."
+        },
+        {
+          "id": "050_17",
+          "text": "En archivo Coral, el registro auxiliar 1 conserva una nota de embalaje del lote de ensayo 1."
+        },
+        {
+          "id": "050_18",
+          "text": "En archivo Coral, el registro auxiliar 2 conserva una nota de embalaje del lote de ensayo 2."
+        },
+        {
+          "id": "050_19",
+          "text": "En archivo Coral, el registro auxiliar 3 conserva una nota de embalaje del lote de ensayo 3."
+        },
+        {
+          "id": "050_20",
+          "text": "En archivo Coral, el registro auxiliar 4 conserva una nota de embalaje del lote de ensayo 4."
+        },
+        {
+          "id": "050_21",
+          "text": "En archivo Coral, el registro auxiliar 5 conserva una nota de embalaje del lote de ensayo 5."
+        },
+        {
+          "id": "050_22",
+          "text": "En archivo Coral, el registro auxiliar 6 conserva una nota de embalaje del lote de ensayo 6."
+        },
+        {
+          "id": "050_23",
+          "text": "En archivo Coral, el registro auxiliar 7 conserva una nota de embalaje del lote de ensayo 7."
+        },
+        {
+          "id": "050_24",
+          "text": "En archivo Coral, el registro auxiliar 8 conserva una nota de embalaje del lote de ensayo 8."
+        },
+        {
+          "id": "050_25",
+          "text": "En archivo Coral, el registro auxiliar 9 conserva una nota de embalaje del lote de ensayo 9."
+        },
+        {
+          "id": "050_26",
+          "text": "En archivo Coral, el registro auxiliar 10 conserva una nota de embalaje del lote de ensayo 10."
+        },
+        {
+          "id": "050_27",
+          "text": "En archivo Coral, el registro auxiliar 11 conserva una nota de embalaje del lote de ensayo 11."
+        },
+        {
+          "id": "050_28",
+          "text": "En archivo Coral, el registro auxiliar 12 conserva una nota de embalaje del lote de ensayo 12."
+        }
+      ]
+    },
+    {
+      "scope_id": "synthetic_conversation_evidence_051",
+      "title": "observatorio Linde",
+      "statements": [
+        {
+          "id": "051_01",
+          "text": "En observatorio Linde, para sede Norte, Darío coordina el registro."
+        },
+        {
+          "id": "051_02",
+          "text": "En observatorio Linde, para sede Norte, los documentos se guardan en armario Lila."
+        },
+        {
+          "id": "051_03",
+          "text": "En observatorio Linde, para sede Norte, se canceló la compra de vehículos; se recibieron vehículos donados."
+        },
+        {
+          "id": "051_04",
+          "text": "En observatorio Linde, para sede Norte, el acto de entrega no será presencial; se celebrará por videollamada."
+        },
+        {
+          "id": "051_05",
+          "text": "En observatorio Linde, para sede Norte, hay veintitrés cajas de documentos."
+        },
+        {
+          "id": "051_06",
+          "text": "En observatorio Linde, para sede Norte, la revisión comenzará el jueves."
+        },
+        {
+          "id": "051_07",
+          "text": "En observatorio Linde, para sede Oeste, la cuenta del registro se llama cuenta-051."
+        },
+        {
+          "id": "051_08",
+          "text": "En observatorio Linde, para sede Oeste, el transporte usa el código TR-051."
+        },
+        {
+          "id": "051_09",
+          "text": "En observatorio Linde, para sede Oeste, Dana coordina el registro."
+        },
+        {
+          "id": "051_10",
+          "text": "En observatorio Linde, para sede Oeste, los documentos se guardan en el cajón Gris."
+        },
+        {
+          "id": "051_11",
+          "text": "En observatorio Linde, para sede Oeste, se compraron vehículos por cien unidades ficticias."
+        },
+        {
+          "id": "051_12",
+          "text": "En observatorio Linde, para sede Oeste, el acto de entrega presencial será en el aula nueve."
+        },
+        {
+          "id": "051_13",
+          "text": "En observatorio Linde, para sede Oeste, hay cinco cajas de documentos."
+        },
+        {
+          "id": "051_14",
+          "text": "En observatorio Linde, para sede Oeste, cada caja pesa tres kilogramos."
+        },
+        {
+          "id": "051_15",
+          "text": "En observatorio Linde, para sede Oeste, la revisión comenzará el miércoles."
+        },
+        {
+          "id": "051_16",
+          "text": "En observatorio Linde, para sede Oeste, la revisión durará cuatro horas."
+        },
+        {
+          "id": "051_17",
+          "text": "En observatorio Linde, el registro auxiliar 1 conserva una nota de embalaje del lote de ensayo 1."
+        },
+        {
+          "id": "051_18",
+          "text": "En observatorio Linde, el registro auxiliar 2 conserva una nota de embalaje del lote de ensayo 2."
+        },
+        {
+          "id": "051_19",
+          "text": "En observatorio Linde, el registro auxiliar 3 conserva una nota de embalaje del lote de ensayo 3."
+        },
+        {
+          "id": "051_20",
+          "text": "En observatorio Linde, el registro auxiliar 4 conserva una nota de embalaje del lote de ensayo 4."
+        },
+        {
+          "id": "051_21",
+          "text": "En observatorio Linde, el registro auxiliar 5 conserva una nota de embalaje del lote de ensayo 5."
+        },
+        {
+          "id": "051_22",
+          "text": "En observatorio Linde, el registro auxiliar 6 conserva una nota de embalaje del lote de ensayo 6."
+        },
+        {
+          "id": "051_23",
+          "text": "En observatorio Linde, el registro auxiliar 7 conserva una nota de embalaje del lote de ensayo 7."
+        },
+        {
+          "id": "051_24",
+          "text": "En observatorio Linde, el registro auxiliar 8 conserva una nota de embalaje del lote de ensayo 8."
+        },
+        {
+          "id": "051_25",
+          "text": "En observatorio Linde, el registro auxiliar 9 conserva una nota de embalaje del lote de ensayo 9."
+        },
+        {
+          "id": "051_26",
+          "text": "En observatorio Linde, el registro auxiliar 10 conserva una nota de embalaje del lote de ensayo 10."
+        },
+        {
+          "id": "051_27",
+          "text": "En observatorio Linde, el registro auxiliar 11 conserva una nota de embalaje del lote de ensayo 11."
+        },
+        {
+          "id": "051_28",
+          "text": "En observatorio Linde, el registro auxiliar 12 conserva una nota de embalaje del lote de ensayo 12."
+        }
+      ]
+    },
+    {
+      "scope_id": "synthetic_conversation_evidence_052",
+      "title": "catálogo Umbría",
+      "statements": [
+        {
+          "id": "052_01",
+          "text": "En catálogo Umbría, para edición Nácar, Sira coordina el registro."
+        },
+        {
+          "id": "052_02",
+          "text": "En catálogo Umbría, para edición Nácar, los documentos se guardan en cajón Cedro."
+        },
+        {
+          "id": "052_03",
+          "text": "En catálogo Umbría, para edición Nácar, se canceló la compra de vehículos; se recibieron vehículos donados."
+        },
+        {
+          "id": "052_04",
+          "text": "En catálogo Umbría, para edición Nácar, el acto de entrega no será presencial; se celebrará por videollamada."
+        },
+        {
+          "id": "052_05",
+          "text": "En catálogo Umbría, para edición Nácar, hay trece cajas de documentos."
+        },
+        {
+          "id": "052_06",
+          "text": "En catálogo Umbría, para edición Nácar, la revisión comenzará el lunes."
+        },
+        {
+          "id": "052_07",
+          "text": "En catálogo Umbría, para edición Cobre, la cuenta del registro se llama cuenta-052."
+        },
+        {
+          "id": "052_08",
+          "text": "En catálogo Umbría, para edición Cobre, el transporte usa el código TR-052."
+        },
+        {
+          "id": "052_09",
+          "text": "En catálogo Umbría, para edición Cobre, Dana coordina el registro."
+        },
+        {
+          "id": "052_10",
+          "text": "En catálogo Umbría, para edición Cobre, los documentos se guardan en el cajón Gris."
+        },
+        {
+          "id": "052_11",
+          "text": "En catálogo Umbría, para edición Cobre, se compraron vehículos por cien unidades ficticias."
+        },
+        {
+          "id": "052_12",
+          "text": "En catálogo Umbría, para edición Cobre, el acto de entrega presencial será en el aula nueve."
+        },
+        {
+          "id": "052_13",
+          "text": "En catálogo Umbría, para edición Cobre, hay cinco cajas de documentos."
+        },
+        {
+          "id": "052_14",
+          "text": "En catálogo Umbría, para edición Cobre, cada caja pesa tres kilogramos."
+        },
+        {
+          "id": "052_15",
+          "text": "En catálogo Umbría, para edición Cobre, la revisión comenzará el miércoles."
+        },
+        {
+          "id": "052_16",
+          "text": "En catálogo Umbría, para edición Cobre, la revisión durará cuatro horas."
+        },
+        {
+          "id": "052_17",
+          "text": "En catálogo Umbría, el registro auxiliar 1 conserva una nota de embalaje del lote de ensayo 1."
+        },
+        {
+          "id": "052_18",
+          "text": "En catálogo Umbría, el registro auxiliar 2 conserva una nota de embalaje del lote de ensayo 2."
+        },
+        {
+          "id": "052_19",
+          "text": "En catálogo Umbría, el registro auxiliar 3 conserva una nota de embalaje del lote de ensayo 3."
+        },
+        {
+          "id": "052_20",
+          "text": "En catálogo Umbría, el registro auxiliar 4 conserva una nota de embalaje del lote de ensayo 4."
+        },
+        {
+          "id": "052_21",
+          "text": "En catálogo Umbría, el registro auxiliar 5 conserva una nota de embalaje del lote de ensayo 5."
+        },
+        {
+          "id": "052_22",
+          "text": "En catálogo Umbría, el registro auxiliar 6 conserva una nota de embalaje del lote de ensayo 6."
+        },
+        {
+          "id": "052_23",
+          "text": "En catálogo Umbría, el registro auxiliar 7 conserva una nota de embalaje del lote de ensayo 7."
+        },
+        {
+          "id": "052_24",
+          "text": "En catálogo Umbría, el registro auxiliar 8 conserva una nota de embalaje del lote de ensayo 8."
+        },
+        {
+          "id": "052_25",
+          "text": "En catálogo Umbría, el registro auxiliar 9 conserva una nota de embalaje del lote de ensayo 9."
+        },
+        {
+          "id": "052_26",
+          "text": "En catálogo Umbría, el registro auxiliar 10 conserva una nota de embalaje del lote de ensayo 10."
+        },
+        {
+          "id": "052_27",
+          "text": "En catálogo Umbría, el registro auxiliar 11 conserva una nota de embalaje del lote de ensayo 11."
+        },
+        {
+          "id": "052_28",
+          "text": "En catálogo Umbría, el registro auxiliar 12 conserva una nota de embalaje del lote de ensayo 12."
+        }
+      ]
+    },
+    {
+      "scope_id": "synthetic_conversation_evidence_053",
+      "title": "laboratorio Marea",
+      "statements": [
+        {
+          "id": "053_01",
+          "text": "En laboratorio Marea, para entorno Activo, Hugo coordina el registro."
+        },
+        {
+          "id": "053_02",
+          "text": "En laboratorio Marea, para entorno Activo, los documentos se guardan en estante dos."
+        },
+        {
+          "id": "053_03",
+          "text": "En laboratorio Marea, para entorno Activo, se canceló la compra de vehículos; se recibieron vehículos donados."
+        },
+        {
+          "id": "053_04",
+          "text": "En laboratorio Marea, para entorno Activo, el acto de entrega no será presencial; se celebrará por videollamada."
+        },
+        {
+          "id": "053_05",
+          "text": "En laboratorio Marea, para entorno Activo, hay diecisiete cajas de documentos."
+        },
+        {
+          "id": "053_06",
+          "text": "En laboratorio Marea, para entorno Activo, la revisión comenzará el viernes."
+        },
+        {
+          "id": "053_07",
+          "text": "En laboratorio Marea, para entorno Ensayo, la cuenta del registro se llama cuenta-053."
+        },
+        {
+          "id": "053_08",
+          "text": "En laboratorio Marea, para entorno Ensayo, el transporte usa el código TR-053."
+        },
+        {
+          "id": "053_09",
+          "text": "En laboratorio Marea, para entorno Ensayo, Dana coordina el registro."
+        },
+        {
+          "id": "053_10",
+          "text": "En laboratorio Marea, para entorno Ensayo, los documentos se guardan en el cajón Gris."
+        },
+        {
+          "id": "053_11",
+          "text": "En laboratorio Marea, para entorno Ensayo, se compraron vehículos por cien unidades ficticias."
+        },
+        {
+          "id": "053_12",
+          "text": "En laboratorio Marea, para entorno Ensayo, el acto de entrega presencial será en el aula nueve."
+        },
+        {
+          "id": "053_13",
+          "text": "En laboratorio Marea, para entorno Ensayo, hay cinco cajas de documentos."
+        },
+        {
+          "id": "053_14",
+          "text": "En laboratorio Marea, para entorno Ensayo, cada caja pesa tres kilogramos."
+        },
+        {
+          "id": "053_15",
+          "text": "En laboratorio Marea, para entorno Ensayo, la revisión comenzará el miércoles."
+        },
+        {
+          "id": "053_16",
+          "text": "En laboratorio Marea, para entorno Ensayo, la revisión durará cuatro horas."
+        },
+        {
+          "id": "053_17",
+          "text": "En laboratorio Marea, el registro auxiliar 1 conserva una nota de embalaje del lote de ensayo 1."
+        },
+        {
+          "id": "053_18",
+          "text": "En laboratorio Marea, el registro auxiliar 2 conserva una nota de embalaje del lote de ensayo 2."
+        },
+        {
+          "id": "053_19",
+          "text": "En laboratorio Marea, el registro auxiliar 3 conserva una nota de embalaje del lote de ensayo 3."
+        },
+        {
+          "id": "053_20",
+          "text": "En laboratorio Marea, el registro auxiliar 4 conserva una nota de embalaje del lote de ensayo 4."
+        },
+        {
+          "id": "053_21",
+          "text": "En laboratorio Marea, el registro auxiliar 5 conserva una nota de embalaje del lote de ensayo 5."
+        },
+        {
+          "id": "053_22",
+          "text": "En laboratorio Marea, el registro auxiliar 6 conserva una nota de embalaje del lote de ensayo 6."
+        },
+        {
+          "id": "053_23",
+          "text": "En laboratorio Marea, el registro auxiliar 7 conserva una nota de embalaje del lote de ensayo 7."
+        },
+        {
+          "id": "053_24",
+          "text": "En laboratorio Marea, el registro auxiliar 8 conserva una nota de embalaje del lote de ensayo 8."
+        },
+        {
+          "id": "053_25",
+          "text": "En laboratorio Marea, el registro auxiliar 9 conserva una nota de embalaje del lote de ensayo 9."
+        },
+        {
+          "id": "053_26",
+          "text": "En laboratorio Marea, el registro auxiliar 10 conserva una nota de embalaje del lote de ensayo 10."
+        },
+        {
+          "id": "053_27",
+          "text": "En laboratorio Marea, el registro auxiliar 11 conserva una nota de embalaje del lote de ensayo 11."
+        },
+        {
+          "id": "053_28",
+          "text": "En laboratorio Marea, el registro auxiliar 12 conserva una nota de embalaje del lote de ensayo 12."
+        }
+      ]
+    },
+    {
+      "scope_id": "synthetic_conversation_evidence_054",
+      "title": "inventario Prisma",
+      "statements": [
+        {
+          "id": "054_01",
+          "text": "En inventario Prisma, para colección Aster, Lara coordina el registro."
+        },
+        {
+          "id": "054_02",
+          "text": "En inventario Prisma, para colección Aster, los documentos se guardan en armario Olmo."
+        },
+        {
+          "id": "054_03",
+          "text": "En inventario Prisma, para colección Aster, se canceló la compra de vehículos; se recibieron vehículos donados."
+        },
+        {
+          "id": "054_04",
+          "text": "En inventario Prisma, para colección Aster, el acto de entrega no será presencial; se celebrará por videollamada."
+        },
+        {
+          "id": "054_05",
+          "text": "En inventario Prisma, para colección Aster, hay veintinueve cajas de documentos."
+        },
+        {
+          "id": "054_06",
+          "text": "En inventario Prisma, para colección Aster, la revisión comenzará el miércoles."
+        },
+        {
+          "id": "054_07",
+          "text": "En inventario Prisma, para colección Brezo, la cuenta del registro se llama cuenta-054."
+        },
+        {
+          "id": "054_08",
+          "text": "En inventario Prisma, para colección Brezo, el transporte usa el código TR-054."
+        },
+        {
+          "id": "054_09",
+          "text": "En inventario Prisma, para colección Brezo, Dana coordina el registro."
+        },
+        {
+          "id": "054_10",
+          "text": "En inventario Prisma, para colección Brezo, los documentos se guardan en el cajón Gris."
+        },
+        {
+          "id": "054_11",
+          "text": "En inventario Prisma, para colección Brezo, se compraron vehículos por cien unidades ficticias."
+        },
+        {
+          "id": "054_12",
+          "text": "En inventario Prisma, para colección Brezo, el acto de entrega presencial será en el aula nueve."
+        },
+        {
+          "id": "054_13",
+          "text": "En inventario Prisma, para colección Brezo, hay cinco cajas de documentos."
+        },
+        {
+          "id": "054_14",
+          "text": "En inventario Prisma, para colección Brezo, cada caja pesa tres kilogramos."
+        },
+        {
+          "id": "054_15",
+          "text": "En inventario Prisma, para colección Brezo, la revisión comenzará el miércoles."
+        },
+        {
+          "id": "054_16",
+          "text": "En inventario Prisma, para colección Brezo, la revisión durará cuatro horas."
+        },
+        {
+          "id": "054_17",
+          "text": "En inventario Prisma, el registro auxiliar 1 conserva una nota de embalaje del lote de ensayo 1."
+        },
+        {
+          "id": "054_18",
+          "text": "En inventario Prisma, el registro auxiliar 2 conserva una nota de embalaje del lote de ensayo 2."
+        },
+        {
+          "id": "054_19",
+          "text": "En inventario Prisma, el registro auxiliar 3 conserva una nota de embalaje del lote de ensayo 3."
+        },
+        {
+          "id": "054_20",
+          "text": "En inventario Prisma, el registro auxiliar 4 conserva una nota de embalaje del lote de ensayo 4."
+        },
+        {
+          "id": "054_21",
+          "text": "En inventario Prisma, el registro auxiliar 5 conserva una nota de embalaje del lote de ensayo 5."
+        },
+        {
+          "id": "054_22",
+          "text": "En inventario Prisma, el registro auxiliar 6 conserva una nota de embalaje del lote de ensayo 6."
+        },
+        {
+          "id": "054_23",
+          "text": "En inventario Prisma, el registro auxiliar 7 conserva una nota de embalaje del lote de ensayo 7."
+        },
+        {
+          "id": "054_24",
+          "text": "En inventario Prisma, el registro auxiliar 8 conserva una nota de embalaje del lote de ensayo 8."
+        },
+        {
+          "id": "054_25",
+          "text": "En inventario Prisma, el registro auxiliar 9 conserva una nota de embalaje del lote de ensayo 9."
+        },
+        {
+          "id": "054_26",
+          "text": "En inventario Prisma, el registro auxiliar 10 conserva una nota de embalaje del lote de ensayo 10."
+        },
+        {
+          "id": "054_27",
+          "text": "En inventario Prisma, el registro auxiliar 11 conserva una nota de embalaje del lote de ensayo 11."
+        },
+        {
+          "id": "054_28",
+          "text": "En inventario Prisma, el registro auxiliar 12 conserva una nota de embalaje del lote de ensayo 12."
+        }
+      ]
+    },
+    {
+      "scope_id": "synthetic_conversation_evidence_055",
+      "title": "proyecto Encina",
+      "statements": [
+        {
+          "id": "055_01",
+          "text": "En proyecto Encina, para modalidad diurna, Biel coordina el registro."
+        },
+        {
+          "id": "055_02",
+          "text": "En proyecto Encina, para modalidad diurna, los documentos se guardan en cajón Pino."
+        },
+        {
+          "id": "055_03",
+          "text": "En proyecto Encina, para modalidad diurna, se canceló la compra de vehículos; se recibieron vehículos donados."
+        },
+        {
+          "id": "055_04",
+          "text": "En proyecto Encina, para modalidad diurna, el acto de entrega no será presencial; se celebrará por videollamada."
+        },
+        {
+          "id": "055_05",
+          "text": "En proyecto Encina, para modalidad diurna, hay once cajas de documentos."
+        },
+        {
+          "id": "055_06",
+          "text": "En proyecto Encina, para modalidad diurna, la revisión comenzará el sábado."
+        },
+        {
+          "id": "055_07",
+          "text": "En proyecto Encina, para modalidad nocturna, la cuenta del registro se llama cuenta-055."
+        },
+        {
+          "id": "055_08",
+          "text": "En proyecto Encina, para modalidad nocturna, el transporte usa el código TR-055."
+        },
+        {
+          "id": "055_09",
+          "text": "En proyecto Encina, para modalidad nocturna, Dana coordina el registro."
+        },
+        {
+          "id": "055_10",
+          "text": "En proyecto Encina, para modalidad nocturna, los documentos se guardan en el cajón Gris."
+        },
+        {
+          "id": "055_11",
+          "text": "En proyecto Encina, para modalidad nocturna, se compraron vehículos por cien unidades ficticias."
+        },
+        {
+          "id": "055_12",
+          "text": "En proyecto Encina, para modalidad nocturna, el acto de entrega presencial será en el aula nueve."
+        },
+        {
+          "id": "055_13",
+          "text": "En proyecto Encina, para modalidad nocturna, hay cinco cajas de documentos."
+        },
+        {
+          "id": "055_14",
+          "text": "En proyecto Encina, para modalidad nocturna, cada caja pesa tres kilogramos."
+        },
+        {
+          "id": "055_15",
+          "text": "En proyecto Encina, para modalidad nocturna, la revisión comenzará el miércoles."
+        },
+        {
+          "id": "055_16",
+          "text": "En proyecto Encina, para modalidad nocturna, la revisión durará cuatro horas."
+        },
+        {
+          "id": "055_17",
+          "text": "En proyecto Encina, el registro auxiliar 1 conserva una nota de embalaje del lote de ensayo 1."
+        },
+        {
+          "id": "055_18",
+          "text": "En proyecto Encina, el registro auxiliar 2 conserva una nota de embalaje del lote de ensayo 2."
+        },
+        {
+          "id": "055_19",
+          "text": "En proyecto Encina, el registro auxiliar 3 conserva una nota de embalaje del lote de ensayo 3."
+        },
+        {
+          "id": "055_20",
+          "text": "En proyecto Encina, el registro auxiliar 4 conserva una nota de embalaje del lote de ensayo 4."
+        },
+        {
+          "id": "055_21",
+          "text": "En proyecto Encina, el registro auxiliar 5 conserva una nota de embalaje del lote de ensayo 5."
+        },
+        {
+          "id": "055_22",
+          "text": "En proyecto Encina, el registro auxiliar 6 conserva una nota de embalaje del lote de ensayo 6."
+        },
+        {
+          "id": "055_23",
+          "text": "En proyecto Encina, el registro auxiliar 7 conserva una nota de embalaje del lote de ensayo 7."
+        },
+        {
+          "id": "055_24",
+          "text": "En proyecto Encina, el registro auxiliar 8 conserva una nota de embalaje del lote de ensayo 8."
+        },
+        {
+          "id": "055_25",
+          "text": "En proyecto Encina, el registro auxiliar 9 conserva una nota de embalaje del lote de ensayo 9."
+        },
+        {
+          "id": "055_26",
+          "text": "En proyecto Encina, el registro auxiliar 10 conserva una nota de embalaje del lote de ensayo 10."
+        },
+        {
+          "id": "055_27",
+          "text": "En proyecto Encina, el registro auxiliar 11 conserva una nota de embalaje del lote de ensayo 11."
+        },
+        {
+          "id": "055_28",
+          "text": "En proyecto Encina, el registro auxiliar 12 conserva una nota de embalaje del lote de ensayo 12."
+        }
+      ]
+    },
+    {
+      "scope_id": "synthetic_conversation_evidence_056",
+      "title": "registro Trama",
+      "statements": [
+        {
+          "id": "056_01",
+          "text": "En registro Trama, para ciclo 2031, Nora coordina el registro."
+        },
+        {
+          "id": "056_02",
+          "text": "En registro Trama, para ciclo 2031, los documentos se guardan en estante cinco."
+        },
+        {
+          "id": "056_03",
+          "text": "En registro Trama, para ciclo 2031, se canceló la compra de vehículos; se recibieron vehículos donados."
+        },
+        {
+          "id": "056_04",
+          "text": "En registro Trama, para ciclo 2031, el acto de entrega no será presencial; se celebrará por videollamada."
+        },
+        {
+          "id": "056_05",
+          "text": "En registro Trama, para ciclo 2031, hay treinta y siete cajas de documentos."
+        },
+        {
+          "id": "056_06",
+          "text": "En registro Trama, para ciclo 2031, la revisión comenzará el domingo."
+        },
+        {
+          "id": "056_07",
+          "text": "En registro Trama, para ciclo 2032, la cuenta del registro se llama cuenta-056."
+        },
+        {
+          "id": "056_08",
+          "text": "En registro Trama, para ciclo 2032, el transporte usa el código TR-056."
+        },
+        {
+          "id": "056_09",
+          "text": "En registro Trama, para ciclo 2032, Dana coordina el registro."
+        },
+        {
+          "id": "056_10",
+          "text": "En registro Trama, para ciclo 2032, los documentos se guardan en el cajón Gris."
+        },
+        {
+          "id": "056_11",
+          "text": "En registro Trama, para ciclo 2032, se compraron vehículos por cien unidades ficticias."
+        },
+        {
+          "id": "056_12",
+          "text": "En registro Trama, para ciclo 2032, el acto de entrega presencial será en el aula nueve."
+        },
+        {
+          "id": "056_13",
+          "text": "En registro Trama, para ciclo 2032, hay cinco cajas de documentos."
+        },
+        {
+          "id": "056_14",
+          "text": "En registro Trama, para ciclo 2032, cada caja pesa tres kilogramos."
+        },
+        {
+          "id": "056_15",
+          "text": "En registro Trama, para ciclo 2032, la revisión comenzará el miércoles."
+        },
+        {
+          "id": "056_16",
+          "text": "En registro Trama, para ciclo 2032, la revisión durará cuatro horas."
+        },
+        {
+          "id": "056_17",
+          "text": "En registro Trama, el registro auxiliar 1 conserva una nota de embalaje del lote de ensayo 1."
+        },
+        {
+          "id": "056_18",
+          "text": "En registro Trama, el registro auxiliar 2 conserva una nota de embalaje del lote de ensayo 2."
+        },
+        {
+          "id": "056_19",
+          "text": "En registro Trama, el registro auxiliar 3 conserva una nota de embalaje del lote de ensayo 3."
+        },
+        {
+          "id": "056_20",
+          "text": "En registro Trama, el registro auxiliar 4 conserva una nota de embalaje del lote de ensayo 4."
+        },
+        {
+          "id": "056_21",
+          "text": "En registro Trama, el registro auxiliar 5 conserva una nota de embalaje del lote de ensayo 5."
+        },
+        {
+          "id": "056_22",
+          "text": "En registro Trama, el registro auxiliar 6 conserva una nota de embalaje del lote de ensayo 6."
+        },
+        {
+          "id": "056_23",
+          "text": "En registro Trama, el registro auxiliar 7 conserva una nota de embalaje del lote de ensayo 7."
+        },
+        {
+          "id": "056_24",
+          "text": "En registro Trama, el registro auxiliar 8 conserva una nota de embalaje del lote de ensayo 8."
+        },
+        {
+          "id": "056_25",
+          "text": "En registro Trama, el registro auxiliar 9 conserva una nota de embalaje del lote de ensayo 9."
+        },
+        {
+          "id": "056_26",
+          "text": "En registro Trama, el registro auxiliar 10 conserva una nota de embalaje del lote de ensayo 10."
+        },
+        {
+          "id": "056_27",
+          "text": "En registro Trama, el registro auxiliar 11 conserva una nota de embalaje del lote de ensayo 11."
+        },
+        {
+          "id": "056_28",
+          "text": "En registro Trama, el registro auxiliar 12 conserva una nota de embalaje del lote de ensayo 12."
+        }
+      ]
+    },
+    {
+      "scope_id": "synthetic_conversation_evidence_057",
+      "title": "programa Albor",
+      "statements": [
+        {
+          "id": "057_01",
+          "text": "En programa Albor, para responsable Ada, Teo coordina el registro."
+        },
+        {
+          "id": "057_02",
+          "text": "En programa Albor, para responsable Ada, los documentos se guardan en armario Nube."
+        },
+        {
+          "id": "057_03",
+          "text": "En programa Albor, para responsable Ada, se canceló la compra de vehículos; se recibieron vehículos donados."
+        },
+        {
+          "id": "057_04",
+          "text": "En programa Albor, para responsable Ada, el acto de entrega no será presencial; se celebrará por videollamada."
+        },
+        {
+          "id": "057_05",
+          "text": "En programa Albor, para responsable Ada, hay cuarenta y una cajas de documentos."
+        },
+        {
+          "id": "057_06",
+          "text": "En programa Albor, para responsable Ada, la revisión comenzará el martes."
+        },
+        {
+          "id": "057_07",
+          "text": "En programa Albor, para responsable Ivo, la cuenta del registro se llama cuenta-057."
+        },
+        {
+          "id": "057_08",
+          "text": "En programa Albor, para responsable Ivo, el transporte usa el código TR-057."
+        },
+        {
+          "id": "057_09",
+          "text": "En programa Albor, para responsable Ivo, Dana coordina el registro."
+        },
+        {
+          "id": "057_10",
+          "text": "En programa Albor, para responsable Ivo, los documentos se guardan en el cajón Gris."
+        },
+        {
+          "id": "057_11",
+          "text": "En programa Albor, para responsable Ivo, se compraron vehículos por cien unidades ficticias."
+        },
+        {
+          "id": "057_12",
+          "text": "En programa Albor, para responsable Ivo, el acto de entrega presencial será en el aula nueve."
+        },
+        {
+          "id": "057_13",
+          "text": "En programa Albor, para responsable Ivo, hay cinco cajas de documentos."
+        },
+        {
+          "id": "057_14",
+          "text": "En programa Albor, para responsable Ivo, cada caja pesa tres kilogramos."
+        },
+        {
+          "id": "057_15",
+          "text": "En programa Albor, para responsable Ivo, la revisión comenzará el miércoles."
+        },
+        {
+          "id": "057_16",
+          "text": "En programa Albor, para responsable Ivo, la revisión durará cuatro horas."
+        },
+        {
+          "id": "057_17",
+          "text": "En programa Albor, el registro auxiliar 1 conserva una nota de embalaje del lote de ensayo 1."
+        },
+        {
+          "id": "057_18",
+          "text": "En programa Albor, el registro auxiliar 2 conserva una nota de embalaje del lote de ensayo 2."
+        },
+        {
+          "id": "057_19",
+          "text": "En programa Albor, el registro auxiliar 3 conserva una nota de embalaje del lote de ensayo 3."
+        },
+        {
+          "id": "057_20",
+          "text": "En programa Albor, el registro auxiliar 4 conserva una nota de embalaje del lote de ensayo 4."
+        },
+        {
+          "id": "057_21",
+          "text": "En programa Albor, el registro auxiliar 5 conserva una nota de embalaje del lote de ensayo 5."
+        },
+        {
+          "id": "057_22",
+          "text": "En programa Albor, el registro auxiliar 6 conserva una nota de embalaje del lote de ensayo 6."
+        },
+        {
+          "id": "057_23",
+          "text": "En programa Albor, el registro auxiliar 7 conserva una nota de embalaje del lote de ensayo 7."
+        },
+        {
+          "id": "057_24",
+          "text": "En programa Albor, el registro auxiliar 8 conserva una nota de embalaje del lote de ensayo 8."
+        },
+        {
+          "id": "057_25",
+          "text": "En programa Albor, el registro auxiliar 9 conserva una nota de embalaje del lote de ensayo 9."
+        },
+        {
+          "id": "057_26",
+          "text": "En programa Albor, el registro auxiliar 10 conserva una nota de embalaje del lote de ensayo 10."
+        },
+        {
+          "id": "057_27",
+          "text": "En programa Albor, el registro auxiliar 11 conserva una nota de embalaje del lote de ensayo 11."
+        },
+        {
+          "id": "057_28",
+          "text": "En programa Albor, el registro auxiliar 12 conserva una nota de embalaje del lote de ensayo 12."
+        }
+      ]
+    }
+  ]
+}

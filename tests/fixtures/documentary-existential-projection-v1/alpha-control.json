@@ -1,0 +1,1876 @@
+{
+  "vocabulary": {
+    "version": "documentary_consolidated_prospective_extraction_contract_v1-local-attributes-v1",
+    "predicate_rows": [
+      {
+        "id": "property",
+        "roles": {
+          "subject": "ref",
+          "attribute": "attribute_id",
+          "value": "term"
+        },
+        "distributive": true
+      },
+      {
+        "id": "quantity",
+        "roles": {
+          "subject": "ref",
+          "attribute": "attribute_id",
+          "amount": "quantity"
+        },
+        "distributive": true
+      },
+      {
+        "id": "has_item",
+        "roles": {
+          "bearer": "ref",
+          "item": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "action",
+        "roles": {
+          "actor": "ref",
+          "action_kind": "action_id",
+          "object": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "entry_via",
+        "roles": {
+          "substance": "ref",
+          "destination": "ref",
+          "via": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "supplied_by",
+        "roles": {
+          "substance": "ref",
+          "destination": "ref",
+          "supplier": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "upstream_origin",
+        "roles": {
+          "substance": "ref",
+          "destination": "ref",
+          "origin": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "made_by",
+        "roles": {
+          "object": "ref",
+          "maker": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "owns",
+        "roles": {
+          "owner": "ref",
+          "object": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "located_at",
+        "roles": {
+          "object": "ref",
+          "place": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "member_of",
+        "roles": {
+          "member": "ref",
+          "group": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "part_of",
+        "roles": {
+          "component": "ref",
+          "whole": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "custodies",
+        "roles": {
+          "custodian": "ref",
+          "object": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "uses",
+        "roles": {
+          "subject": "ref",
+          "object": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "admits",
+        "roles": {
+          "subject": "ref",
+          "object": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "receives_from",
+        "roles": {
+          "destination": "ref",
+          "source": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "mixes",
+        "roles": {
+          "subject": "ref",
+          "left": "ref",
+          "right": "ref"
+        },
+        "distributive": false
+      },
+      {
+        "id": "documentary_availability",
+        "roles": {
+          "subject": "ref",
+          "attribute": "attribute_id",
+          "state": "term",
+          "document_scope": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "volume_received",
+        "roles": {
+          "subject": "ref",
+          "amount": "quantity"
+        },
+        "distributive": true
+      },
+      {
+        "id": "retention_for",
+        "roles": {
+          "policy": "ref",
+          "subject": "ref",
+          "duration": "quantity"
+        },
+        "distributive": true
+      },
+      {
+        "id": "improves",
+        "roles": {
+          "subject": "ref",
+          "attribute": "attribute_id"
+        },
+        "distributive": true
+      },
+      {
+        "id": "prepared_for",
+        "roles": {
+          "object": "ref",
+          "destination": "ref"
+        },
+        "distributive": false
+      },
+      {
+        "id": "route_entry",
+        "roles": {
+          "subject": "ref",
+          "via": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "action_actor",
+        "roles": {
+          "actor": "ref",
+          "action_kind": "action_id"
+        },
+        "distributive": true
+      },
+      {
+        "id": "action_undergoer",
+        "roles": {
+          "subject": "ref",
+          "action_kind": "action_id"
+        },
+        "distributive": false
+      },
+      {
+        "id": "requirement_attribute",
+        "roles": {
+          "subject": "ref",
+          "attribute": "attribute_id"
+        },
+        "distributive": true
+      },
+      {
+        "id": "requirement_class",
+        "roles": {
+          "subject": "ref",
+          "class": "term"
+        },
+        "distributive": true
+      },
+      {
+        "id": "information_state",
+        "roles": {
+          "subject": "ref",
+          "attribute": "attribute_id",
+          "state": "term"
+        },
+        "distributive": false
+      },
+      {
+        "id": "action_beneficiary",
+        "roles": {
+          "subject": "ref",
+          "action_kind": "action_id",
+          "beneficiary": "ref"
+        },
+        "distributive": false
+      },
+      {
+        "id": "for_purpose",
+        "roles": {
+          "object": "ref",
+          "purpose": "ref"
+        },
+        "distributive": false
+      },
+      {
+        "id": "class_suffices",
+        "roles": {
+          "subject": "ref",
+          "class": "term"
+        },
+        "distributive": true
+      },
+      {
+        "id": "operates_mode",
+        "roles": {
+          "subject": "ref",
+          "mode": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "receives_item",
+        "roles": {
+          "recipient": "ref",
+          "item": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "action_material_undergoer",
+        "roles": {
+          "subject": "ref",
+          "action_kind": "action_id",
+          "material": "ref"
+        },
+        "distributive": false
+      },
+      {
+        "id": "material_origin",
+        "roles": {
+          "material": "ref",
+          "origin": "ref"
+        },
+        "distributive": false
+      }
+    ],
+    "fixed_attribute_rows": [
+      "attachment_force",
+      "authorization_state",
+      "automatic_deletion_delay",
+      "autonomy",
+      "availability",
+      "battery_reserved",
+      "cartridge_color",
+      "case_color",
+      "closed_state",
+      "color",
+      "component_count",
+      "confirmed_musicians",
+      "contact_phone",
+      "deletion_age",
+      "delivered_image_format",
+      "delivery_location",
+      "digitized_pages",
+      "documentary_state",
+      "duration",
+      "duration_until_shutdown",
+      "enrollment_delivery_location",
+      "entry_via",
+      "export_date",
+      "export_image_format",
+      "exposure",
+      "fixing_force",
+      "frequency",
+      "generic_format",
+      "generic_location",
+      "generic_schedule",
+      "image_format",
+      "inaugurated_by",
+      "inauguration_date",
+      "ingestion_schedule",
+      "irrigation_method",
+      "lid_color",
+      "line_detail",
+      "mass",
+      "measurement",
+      "measurement_date",
+      "mode",
+      "music_stands_prepared",
+      "network_provenance",
+      "operating_duration",
+      "orientation",
+      "paper_tray_size",
+      "pending_pages",
+      "photograph_preparation",
+      "pickup_location",
+      "policy_retention",
+      "pressure",
+      "profile",
+      "program",
+      "quantity_extent",
+      "rainwater_mixed",
+      "rehearsal_location",
+      "requires",
+      "resolution",
+      "retention_policy",
+      "review_schedule",
+      "reviewed_by",
+      "rotation_state",
+      "salt_quantity",
+      "sample_rate",
+      "service_schedule",
+      "session_length_capability",
+      "storage",
+      "strap_color",
+      "temperature",
+      "terminal_condition",
+      "tray_count",
+      "tutor_identity",
+      "validity_state",
+      "volume",
+      "water_origin",
+      "water_supply",
+      "water_volume_per_period",
+      "watering_time",
+      "weight",
+      "nominal_qualitative_descriptor",
+      "action_progress_state",
+      "enrollment_required_class"
+    ],
+    "fixed_action_rows": [
+      "accompany",
+      "confirm",
+      "delete",
+      "deliver",
+      "digitize",
+      "enroll",
+      "enter",
+      "export",
+      "feed",
+      "inaugurate",
+      "ingest",
+      "inspect",
+      "irrigate",
+      "measure",
+      "open",
+      "operate",
+      "photograph",
+      "prepare",
+      "present",
+      "register",
+      "rehearse",
+      "reserve",
+      "retain",
+      "review",
+      "store",
+      "switch_off",
+      "transmit",
+      "transport",
+      "validate",
+      "withdraw"
+    ],
+    "semantic_type_rows": [
+      {
+        "id": "phone",
+        "class_quotes": [
+          "teléfono",
+          "teléfono de contacto"
+        ]
+      },
+      {
+        "id": "retention_policy",
+        "class_quotes": [
+          "política de retención"
+        ]
+      },
+      {
+        "id": "rainwater_reservoir",
+        "class_quotes": [
+          "depósito de lluvia"
+        ]
+      },
+      {
+        "id": "raw_file",
+        "class_quotes": [
+          "archivo crudo",
+          "archivos crudos"
+        ]
+      }
+    ],
+    "relevance_links": [
+      {
+        "id": "via_context_for_supply",
+        "source_predicate": "entry_via",
+        "target_predicate": "supplied_by",
+        "bindings": [
+          [
+            "source.substance",
+            "target.substance"
+          ],
+          [
+            "source.destination",
+            "target.destination"
+          ]
+        ],
+        "carry_roles": [
+          "source.via"
+        ],
+        "conclusion": "partial_intermediate_only",
+        "max_hops": 1,
+        "allow_reverse": false,
+        "allow_transitive_composition": false
+      },
+      {
+        "id": "supply_context_for_origin",
+        "source_predicate": "supplied_by",
+        "target_predicate": "upstream_origin",
+        "bindings": [
+          [
+            "source.substance",
+            "target.substance"
+          ],
+          [
+            "source.destination",
+            "target.destination"
+          ]
+        ],
+        "carry_roles": [
+          "source.supplier"
+        ],
+        "conclusion": "partial_intermediate_only",
+        "max_hops": 1,
+        "allow_reverse": false,
+        "allow_transitive_composition": false
+      },
+      {
+        "id": "documentary_availability_context_for_property",
+        "source_predicate": "documentary_availability",
+        "target_predicate": "property",
+        "bindings": [
+          [
+            "source.subject",
+            "target.subject"
+          ],
+          [
+            "source.attribute",
+            "target.attribute"
+          ]
+        ],
+        "carry_roles": [
+          "source.state",
+          "source.document_scope"
+        ],
+        "conclusion": "partial_intermediate_only",
+        "max_hops": 1,
+        "allow_reverse": false,
+        "allow_transitive_composition": false
+      },
+      {
+        "id": "documentary_availability_context_for_quantity",
+        "source_predicate": "documentary_availability",
+        "target_predicate": "quantity",
+        "bindings": [
+          [
+            "source.subject",
+            "target.subject"
+          ],
+          [
+            "source.attribute",
+            "target.attribute"
+          ]
+        ],
+        "carry_roles": [
+          "source.state",
+          "source.document_scope"
+        ],
+        "conclusion": "partial_intermediate_only",
+        "max_hops": 1,
+        "allow_reverse": false,
+        "allow_transitive_composition": false
+      },
+      {
+        "id": "information_state_context_for_property",
+        "source_predicate": "information_state",
+        "target_predicate": "property",
+        "bindings": [
+          [
+            "source.subject",
+            "target.subject"
+          ],
+          [
+            "source.attribute",
+            "target.attribute"
+          ]
+        ],
+        "carry_roles": [
+          "source.state"
+        ],
+        "conclusion": "partial_intermediate_only",
+        "max_hops": 1,
+        "allow_reverse": false,
+        "allow_transitive_composition": false
+      },
+      {
+        "id": "information_state_context_for_quantity",
+        "source_predicate": "information_state",
+        "target_predicate": "quantity",
+        "bindings": [
+          [
+            "source.subject",
+            "target.subject"
+          ],
+          [
+            "source.attribute",
+            "target.attribute"
+          ]
+        ],
+        "carry_roles": [
+          "source.state"
+        ],
+        "conclusion": "partial_intermediate_only",
+        "max_hops": 1,
+        "allow_reverse": false,
+        "allow_transitive_composition": false
+      },
+      {
+        "id": "admission_caution_for_assignment",
+        "source_predicate": "admits",
+        "target_predicate": "quantity",
+        "bindings": [
+          [
+            "source.subject",
+            "target.subject"
+          ]
+        ],
+        "carry_roles": [
+          "source.object"
+        ],
+        "conclusion": "partial_intermediate_only",
+        "max_hops": 1,
+        "allow_reverse": false,
+        "allow_transitive_composition": false
+      },
+      {
+        "id": "receiver_context_for_origin",
+        "source_predicate": "receives_from",
+        "target_predicate": "upstream_origin",
+        "bindings": [
+          [
+            "source.destination",
+            "target.destination"
+          ]
+        ],
+        "carry_roles": [
+          "source.source"
+        ],
+        "conclusion": "partial_intermediate_only",
+        "max_hops": 1,
+        "allow_reverse": false,
+        "allow_transitive_composition": false
+      },
+      {
+        "id": "supply_context_for_receiver",
+        "source_predicate": "supplied_by",
+        "target_predicate": "receives_from",
+        "bindings": [
+          [
+            "source.destination",
+            "target.destination"
+          ]
+        ],
+        "carry_roles": [
+          "source.supplier"
+        ],
+        "conclusion": "partial_intermediate_only",
+        "max_hops": 1,
+        "allow_reverse": false,
+        "allow_transitive_composition": false
+      },
+      {
+        "id": "admission_caution_for_property_assignment",
+        "source_predicate": "admits",
+        "target_predicate": "property",
+        "bindings": [
+          [
+            "source.subject",
+            "target.subject"
+          ]
+        ],
+        "carry_roles": [
+          "source.object"
+        ],
+        "conclusion": "partial_intermediate_only",
+        "max_hops": 1,
+        "allow_reverse": false,
+        "allow_transitive_composition": false
+      }
+    ],
+    "assignment_projection": {
+      "version": "uses_qualifier_assignment_v1",
+      "context_keys": [
+        "mode",
+        "profile",
+        "program"
+      ]
+    },
+    "relevance_profiles": {
+      "version": "documentary_relevance_profiles_v1",
+      "rows": [
+        {
+          "link_id": "receiver_context_for_origin",
+          "alternatives": [
+            {
+              "kind": "class_context",
+              "source_role": "source",
+              "source_classes": [
+                "depósito de lluvia"
+              ],
+              "target_role": "substance",
+              "target_classes": [
+                "agua"
+              ]
+            },
+            {
+              "kind": "corroborating_claim",
+              "predicate": "upstream_origin",
+              "bindings": [
+                [
+                  "source.source",
+                  "evidence.destination"
+                ],
+                [
+                  "target.substance",
+                  "evidence.substance"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "link_id": "supply_context_for_receiver",
+          "alternatives": [
+            {
+              "kind": "answer_filter",
+              "source_role": "supplier"
+            }
+          ]
+        }
+      ]
+    },
+    "measurement_context": {
+      "version": "negative_measurement_context_v1",
+      "rows": [
+        {
+          "id": "terminal_duration_gap",
+          "event_aspect": "duration",
+          "target_attribute": "autonomy",
+          "source_configuration": [
+            {
+              "key": "terminal_condition",
+              "value": "hasta apagarse"
+            }
+          ],
+          "target_configuration": [
+            {
+              "key": "quantity_extent",
+              "value": "máxima"
+            }
+          ],
+          "context_bindings": []
+        },
+        {
+          "id": "shutdown_duration_gap",
+          "event_aspect": "duration_until_shutdown",
+          "target_attribute": "autonomy",
+          "source_configuration": [],
+          "target_configuration": [
+            {
+              "key": "quantity_extent",
+              "value": "máxima"
+            }
+          ],
+          "context_bindings": [
+            [
+              "context",
+              "route"
+            ]
+          ]
+        }
+      ]
+    },
+    "documentary_anchor_context": {
+      "version": "anchored_documentary_context_v1",
+      "rows": [
+        {
+          "id": "delivered_format_record_context",
+          "link_id": "information_state_context_for_property",
+          "attribute_id": "delivered_image_format",
+          "target_status": "occurred",
+          "source_link_kind": "owned_by",
+          "question_link_kind": "part_of",
+          "source_configuration": [
+            {
+              "key": "delivery_state",
+              "value": "ya entregadas"
+            }
+          ]
+        }
+      ]
+    },
+    "restriction_domain_profile": {
+      "version": "explicit_answer_domains_v1"
+    },
+    "term_description_profile": {
+      "version": "local_reference_descriptions_v1"
+    },
+    "described_term_role_profile": {
+      "version": "described_reference_term_roles_v1"
+    },
+    "configuration_request_profile": {
+      "version": "documentary_configuration_slots_v1",
+      "keys": [
+        "attachment_force",
+        "authorization_state",
+        "automatic_deletion_delay",
+        "autonomy",
+        "availability",
+        "battery_reserved",
+        "cartridge_color",
+        "case_color",
+        "closed_state",
+        "color",
+        "component_count",
+        "confirmed_musicians",
+        "contact_phone",
+        "context",
+        "deletion_age",
+        "delivered_image_format",
+        "delivery_location",
+        "delivery_state",
+        "digitized_pages",
+        "document_preservation_state",
+        "documentary_state",
+        "duration",
+        "duration_until_shutdown",
+        "enrollment_delivery_location",
+        "entry_via",
+        "export_date",
+        "export_image_format",
+        "exposure",
+        "fixing_force",
+        "frequency",
+        "generic_format",
+        "generic_location",
+        "generic_schedule",
+        "image_format",
+        "inaugurated_by",
+        "inauguration_date",
+        "ingestion_schedule",
+        "irrigation_method",
+        "lid_color",
+        "line_detail",
+        "mass",
+        "measurement",
+        "measurement_date",
+        "mode",
+        "music_stands_prepared",
+        "network_provenance",
+        "operating_duration",
+        "orientation",
+        "paper_tray_size",
+        "past_tense",
+        "pending_action",
+        "pending_pages",
+        "photograph_preparation",
+        "pickup_location",
+        "policy_retention",
+        "pressure",
+        "profile",
+        "program",
+        "quantity_extent",
+        "rainwater_mixed",
+        "rehearsal_location",
+        "requires",
+        "resolution",
+        "retention_policy",
+        "review_schedule",
+        "reviewed_by",
+        "rotation_state",
+        "route",
+        "salt_quantity",
+        "sample_rate",
+        "service_schedule",
+        "session_length_capability",
+        "storage",
+        "strap_color",
+        "subject_extent",
+        "temperature",
+        "terminal_condition",
+        "terminal_operation",
+        "tray_count",
+        "tutor_identity",
+        "validity_state",
+        "volume",
+        "water_origin",
+        "water_supply",
+        "water_volume_per_period",
+        "watering_time",
+        "weight"
+      ]
+    },
+    "admission_request_context": {
+      "version": "admission_request_context_v1",
+      "rows": [
+        {
+          "id": "mode_resolution_assignment_context",
+          "link_id": "admission_caution_for_property_assignment",
+          "target_attribute": "resolution",
+          "request_slot": "value",
+          "setting_key": "mode",
+          "premise_predicate": "operates_mode",
+          "premise_subject_role": "subject",
+          "premise_setting_role": "mode"
+        }
+      ]
+    },
+    "request_context_profile": {
+      "version": "documentary_request_context_v1",
+      "features": [
+        "nominal_complement_de",
+        "existential_conclusion_projection"
+      ]
+    }
+  },
+  "source": {
+    "text": "Senda tiene una bandeja de papel grande.",
+    "raw": {
+      "kind": "source",
+      "text_sha256": "e9c5554e92b7d6002fbb25be26944b0357e3ee243d6f860c1b61dc4520cd5f94",
+      "vocabulary_sha256": "24ff96018e61f7052d83fb954b5b19dddc08312bb1c5f055056681d4a0f2efd6",
+      "domain_namespace": "documentary-v3-known-development",
+      "version": "documentary_reading_set_v1",
+      "closure": "closed",
+      "readings": [
+        {
+          "id": "renamed_adjective_on_tray",
+          "document": {
+            "claims": [
+              {
+                "id": "renamed_possession",
+                "scope_id": "renamed_root",
+                "qualifier_ids": [],
+                "evidence": [
+                  {
+                    "start_byte": 0,
+                    "end_byte": 40,
+                    "quote": "Senda tiene una bandeja de papel grande."
+                  }
+                ],
+                "body": {
+                  "kind": "proposition",
+                  "value": {
+                    "atom": {
+                      "predicate": "has_item",
+                      "arguments": [
+                        {
+                          "role": "bearer",
+                          "value": {
+                            "kind": "ref",
+                            "id": "renamed_senda"
+                          }
+                        },
+                        {
+                          "role": "item",
+                          "value": {
+                            "kind": "ref",
+                            "id": "renamed_tray"
+                          }
+                        }
+                      ],
+                      "polarity": "positive",
+                      "evidence": [
+                        {
+                          "start_byte": 0,
+                          "end_byte": 40,
+                          "quote": "Senda tiene una bandeja de papel grande."
+                        }
+                      ]
+                    },
+                    "judgment": "fact",
+                    "status": "state",
+                    "basis": "description",
+                    "normative_scope": null,
+                    "qualifier_ids": []
+                  }
+                }
+              },
+              {
+                "id": "renamed_local_descriptor",
+                "scope_id": "renamed_root",
+                "qualifier_ids": [],
+                "evidence": [
+                  {
+                    "start_byte": 33,
+                    "end_byte": 39,
+                    "quote": "grande"
+                  }
+                ],
+                "body": {
+                  "kind": "proposition",
+                  "value": {
+                    "atom": {
+                      "predicate": "property",
+                      "arguments": [
+                        {
+                          "role": "subject",
+                          "value": {
+                            "kind": "ref",
+                            "id": "renamed_tray"
+                          }
+                        },
+                        {
+                          "role": "attribute",
+                          "value": {
+                            "kind": "symbol",
+                            "id": "nominal_qualitative_descriptor",
+                            "evidence": [
+                              {
+                                "start_byte": 33,
+                                "end_byte": 39,
+                                "quote": "grande"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "role": "value",
+                          "value": {
+                            "kind": "text",
+                            "value": "grande",
+                            "evidence": [
+                              {
+                                "start_byte": 33,
+                                "end_byte": 39,
+                                "quote": "grande"
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "polarity": "positive",
+                      "evidence": [
+                        {
+                          "start_byte": 16,
+                          "end_byte": 39,
+                          "quote": "bandeja de papel grande"
+                        }
+                      ]
+                    },
+                    "judgment": "fact",
+                    "status": "state",
+                    "basis": "description",
+                    "normative_scope": null,
+                    "qualifier_ids": []
+                  }
+                }
+              }
+            ],
+            "coverage": [
+              {
+                "span": {
+                  "start_byte": 0,
+                  "end_byte": 40,
+                  "quote": "Senda tiene una bandeja de papel grande."
+                },
+                "state": "represented",
+                "owner": {
+                  "kind": "claim",
+                  "id": "renamed_possession"
+                },
+                "issue_id": null
+              },
+              {
+                "span": {
+                  "start_byte": 24,
+                  "end_byte": 32,
+                  "quote": "de papel"
+                },
+                "state": "represented",
+                "owner": {
+                  "kind": "reference",
+                  "id": "renamed_tray"
+                },
+                "issue_id": null
+              },
+              {
+                "span": {
+                  "start_byte": 33,
+                  "end_byte": 39,
+                  "quote": "grande"
+                },
+                "state": "represented",
+                "owner": {
+                  "kind": "claim",
+                  "id": "renamed_local_descriptor"
+                },
+                "issue_id": null
+              }
+            ],
+            "dependencies": [
+              {
+                "consumer": {
+                  "kind": "reference",
+                  "id": "renamed_senda"
+                },
+                "requires": {
+                  "kind": "scope",
+                  "id": "renamed_root"
+                },
+                "role": "binding"
+              },
+              {
+                "consumer": {
+                  "kind": "reference",
+                  "id": "renamed_tray"
+                },
+                "requires": {
+                  "kind": "scope",
+                  "id": "renamed_root"
+                },
+                "role": "binding"
+              },
+              {
+                "consumer": {
+                  "kind": "reference",
+                  "id": "renamed_paper"
+                },
+                "requires": {
+                  "kind": "scope",
+                  "id": "renamed_root"
+                },
+                "role": "binding"
+              },
+              {
+                "consumer": {
+                  "kind": "reference",
+                  "id": "renamed_tray"
+                },
+                "requires": {
+                  "kind": "reference",
+                  "id": "renamed_paper"
+                },
+                "role": "identity"
+              },
+              {
+                "consumer": {
+                  "kind": "claim",
+                  "id": "renamed_possession"
+                },
+                "requires": {
+                  "kind": "scope",
+                  "id": "renamed_root"
+                },
+                "role": "binding"
+              },
+              {
+                "consumer": {
+                  "kind": "claim",
+                  "id": "renamed_local_descriptor"
+                },
+                "requires": {
+                  "kind": "scope",
+                  "id": "renamed_root"
+                },
+                "role": "binding"
+              },
+              {
+                "consumer": {
+                  "kind": "claim",
+                  "id": "renamed_possession"
+                },
+                "requires": {
+                  "kind": "reference",
+                  "id": "renamed_senda"
+                },
+                "role": "identity"
+              },
+              {
+                "consumer": {
+                  "kind": "claim",
+                  "id": "renamed_possession"
+                },
+                "requires": {
+                  "kind": "reference",
+                  "id": "renamed_tray"
+                },
+                "role": "identity"
+              },
+              {
+                "consumer": {
+                  "kind": "claim",
+                  "id": "renamed_local_descriptor"
+                },
+                "requires": {
+                  "kind": "reference",
+                  "id": "renamed_tray"
+                },
+                "role": "identity"
+              }
+            ],
+            "domain_namespace": "documentary-v3-known-development",
+            "identity": [],
+            "kind": "source",
+            "qualifiers": [],
+            "references": [
+              {
+                "anaphora": null,
+                "binding_scope_id": null,
+                "declared_class": null,
+                "denotation": "entity",
+                "id": "renamed_senda",
+                "links": [],
+                "mention": {
+                  "end_byte": 5,
+                  "quote": "Senda",
+                  "start_byte": 0
+                },
+                "name": {
+                  "end_byte": 5,
+                  "quote": "Senda",
+                  "start_byte": 0
+                },
+                "scope_id": "renamed_root",
+                "semantic_type": null
+              },
+              {
+                "anaphora": null,
+                "binding_scope_id": null,
+                "declared_class": {
+                  "start_byte": 16,
+                  "end_byte": 23,
+                  "quote": "bandeja"
+                },
+                "denotation": "entity",
+                "id": "renamed_tray",
+                "links": [
+                  {
+                    "kind": "nominal_complement_de",
+                    "target": "renamed_paper",
+                    "evidence": [
+                      {
+                        "start_byte": 16,
+                        "end_byte": 32,
+                        "quote": "bandeja de papel"
+                      }
+                    ]
+                  }
+                ],
+                "mention": {
+                  "end_byte": 39,
+                  "quote": "una bandeja de papel grande",
+                  "start_byte": 12
+                },
+                "name": null,
+                "scope_id": "renamed_root",
+                "semantic_type": null
+              },
+              {
+                "id": "renamed_paper",
+                "scope_id": "renamed_root",
+                "mention": {
+                  "start_byte": 27,
+                  "end_byte": 32,
+                  "quote": "papel"
+                },
+                "name": null,
+                "declared_class": {
+                  "start_byte": 27,
+                  "end_byte": 32,
+                  "quote": "papel"
+                },
+                "semantic_type": null,
+                "denotation": "entity",
+                "links": [],
+                "binding_scope_id": null,
+                "anaphora": null
+              }
+            ],
+            "requests": [],
+            "scopes": [
+              {
+                "binding": null,
+                "branch_id": null,
+                "id": "renamed_root",
+                "kind": "document",
+                "parent_id": null
+              }
+            ],
+            "text_sha256": "e9c5554e92b7d6002fbb25be26944b0357e3ee243d6f860c1b61dc4520cd5f94",
+            "version": "documentary_evidence_v3",
+            "vocabulary_sha256": "24ff96018e61f7052d83fb954b5b19dddc08312bb1c5f055056681d4a0f2efd6"
+          }
+        },
+        {
+          "id": "renamed_adjective_on_paper",
+          "document": {
+            "claims": [
+              {
+                "id": "renamed_possession",
+                "scope_id": "renamed_root",
+                "qualifier_ids": [],
+                "evidence": [
+                  {
+                    "start_byte": 0,
+                    "end_byte": 40,
+                    "quote": "Senda tiene una bandeja de papel grande."
+                  }
+                ],
+                "body": {
+                  "kind": "proposition",
+                  "value": {
+                    "atom": {
+                      "predicate": "has_item",
+                      "arguments": [
+                        {
+                          "role": "bearer",
+                          "value": {
+                            "kind": "ref",
+                            "id": "renamed_senda"
+                          }
+                        },
+                        {
+                          "role": "item",
+                          "value": {
+                            "kind": "ref",
+                            "id": "renamed_tray"
+                          }
+                        }
+                      ],
+                      "polarity": "positive",
+                      "evidence": [
+                        {
+                          "start_byte": 0,
+                          "end_byte": 40,
+                          "quote": "Senda tiene una bandeja de papel grande."
+                        }
+                      ]
+                    },
+                    "judgment": "fact",
+                    "status": "state",
+                    "basis": "description",
+                    "normative_scope": null,
+                    "qualifier_ids": []
+                  }
+                }
+              },
+              {
+                "id": "renamed_local_descriptor",
+                "scope_id": "renamed_root",
+                "qualifier_ids": [],
+                "evidence": [
+                  {
+                    "start_byte": 33,
+                    "end_byte": 39,
+                    "quote": "grande"
+                  }
+                ],
+                "body": {
+                  "kind": "proposition",
+                  "value": {
+                    "atom": {
+                      "predicate": "property",
+                      "arguments": [
+                        {
+                          "role": "subject",
+                          "value": {
+                            "kind": "ref",
+                            "id": "renamed_paper"
+                          }
+                        },
+                        {
+                          "role": "attribute",
+                          "value": {
+                            "kind": "symbol",
+                            "id": "nominal_qualitative_descriptor",
+                            "evidence": [
+                              {
+                                "start_byte": 33,
+                                "end_byte": 39,
+                                "quote": "grande"
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "role": "value",
+                          "value": {
+                            "kind": "text",
+                            "value": "grande",
+                            "evidence": [
+                              {
+                                "start_byte": 33,
+                                "end_byte": 39,
+                                "quote": "grande"
+                              }
+                            ]
+                          }
+                        }
+                      ],
+                      "polarity": "positive",
+                      "evidence": [
+                        {
+                          "start_byte": 16,
+                          "end_byte": 39,
+                          "quote": "bandeja de papel grande"
+                        }
+                      ]
+                    },
+                    "judgment": "fact",
+                    "status": "state",
+                    "basis": "description",
+                    "normative_scope": null,
+                    "qualifier_ids": []
+                  }
+                }
+              }
+            ],
+            "coverage": [
+              {
+                "span": {
+                  "start_byte": 0,
+                  "end_byte": 40,
+                  "quote": "Senda tiene una bandeja de papel grande."
+                },
+                "state": "represented",
+                "owner": {
+                  "kind": "claim",
+                  "id": "renamed_possession"
+                },
+                "issue_id": null
+              },
+              {
+                "span": {
+                  "start_byte": 24,
+                  "end_byte": 32,
+                  "quote": "de papel"
+                },
+                "state": "represented",
+                "owner": {
+                  "kind": "reference",
+                  "id": "renamed_tray"
+                },
+                "issue_id": null
+              },
+              {
+                "span": {
+                  "start_byte": 33,
+                  "end_byte": 39,
+                  "quote": "grande"
+                },
+                "state": "represented",
+                "owner": {
+                  "kind": "claim",
+                  "id": "renamed_local_descriptor"
+                },
+                "issue_id": null
+              }
+            ],
+            "dependencies": [
+              {
+                "consumer": {
+                  "kind": "reference",
+                  "id": "renamed_senda"
+                },
+                "requires": {
+                  "kind": "scope",
+                  "id": "renamed_root"
+                },
+                "role": "binding"
+              },
+              {
+                "consumer": {
+                  "kind": "reference",
+                  "id": "renamed_tray"
+                },
+                "requires": {
+                  "kind": "scope",
+                  "id": "renamed_root"
+                },
+                "role": "binding"
+              },
+              {
+                "consumer": {
+                  "kind": "reference",
+                  "id": "renamed_paper"
+                },
+                "requires": {
+                  "kind": "scope",
+                  "id": "renamed_root"
+                },
+                "role": "binding"
+              },
+              {
+                "consumer": {
+                  "kind": "reference",
+                  "id": "renamed_tray"
+                },
+                "requires": {
+                  "kind": "reference",
+                  "id": "renamed_paper"
+                },
+                "role": "identity"
+              },
+              {
+                "consumer": {
+                  "kind": "claim",
+                  "id": "renamed_possession"
+                },
+                "requires": {
+                  "kind": "scope",
+                  "id": "renamed_root"
+                },
+                "role": "binding"
+              },
+              {
+                "consumer": {
+                  "kind": "claim",
+                  "id": "renamed_local_descriptor"
+                },
+                "requires": {
+                  "kind": "scope",
+                  "id": "renamed_root"
+                },
+                "role": "binding"
+              },
+              {
+                "consumer": {
+                  "kind": "claim",
+                  "id": "renamed_possession"
+                },
+                "requires": {
+                  "kind": "reference",
+                  "id": "renamed_senda"
+                },
+                "role": "identity"
+              },
+              {
+                "consumer": {
+                  "kind": "claim",
+                  "id": "renamed_possession"
+                },
+                "requires": {
+                  "kind": "reference",
+                  "id": "renamed_tray"
+                },
+                "role": "identity"
+              },
+              {
+                "consumer": {
+                  "kind": "claim",
+                  "id": "renamed_local_descriptor"
+                },
+                "requires": {
+                  "kind": "reference",
+                  "id": "renamed_paper"
+                },
+                "role": "identity"
+              }
+            ],
+            "domain_namespace": "documentary-v3-known-development",
+            "identity": [],
+            "kind": "source",
+            "qualifiers": [],
+            "references": [
+              {
+                "anaphora": null,
+                "binding_scope_id": null,
+                "declared_class": null,
+                "denotation": "entity",
+                "id": "renamed_senda",
+                "links": [],
+                "mention": {
+                  "end_byte": 5,
+                  "quote": "Senda",
+                  "start_byte": 0
+                },
+                "name": {
+                  "end_byte": 5,
+                  "quote": "Senda",
+                  "start_byte": 0
+                },
+                "scope_id": "renamed_root",
+                "semantic_type": null
+              },
+              {
+                "anaphora": null,
+                "binding_scope_id": null,
+                "declared_class": {
+                  "start_byte": 16,
+                  "end_byte": 23,
+                  "quote": "bandeja"
+                },
+                "denotation": "entity",
+                "id": "renamed_tray",
+                "links": [
+                  {
+                    "kind": "nominal_complement_de",
+                    "target": "renamed_paper",
+                    "evidence": [
+                      {
+                        "start_byte": 16,
+                        "end_byte": 32,
+                        "quote": "bandeja de papel"
+                      }
+                    ]
+                  }
+                ],
+                "mention": {
+                  "end_byte": 39,
+                  "quote": "una bandeja de papel grande",
+                  "start_byte": 12
+                },
+                "name": null,
+                "scope_id": "renamed_root",
+                "semantic_type": null
+              },
+              {
+                "id": "renamed_paper",
+                "scope_id": "renamed_root",
+                "mention": {
+                  "start_byte": 27,
+                  "end_byte": 32,
+                  "quote": "papel"
+                },
+                "name": null,
+                "declared_class": {
+                  "start_byte": 27,
+                  "end_byte": 32,
+                  "quote": "papel"
+                },
+                "semantic_type": null,
+                "denotation": "entity",
+                "links": [],
+                "binding_scope_id": null,
+                "anaphora": null
+              }
+            ],
+            "requests": [],
+            "scopes": [
+              {
+                "binding": null,
+                "branch_id": null,
+                "id": "renamed_root",
+                "kind": "document",
+                "parent_id": null
+              }
+            ],
+            "text_sha256": "e9c5554e92b7d6002fbb25be26944b0357e3ee243d6f860c1b61dc4520cd5f94",
+            "version": "documentary_evidence_v3",
+            "vocabulary_sha256": "24ff96018e61f7052d83fb954b5b19dddc08312bb1c5f055056681d4a0f2efd6"
+          }
+        }
+      ],
+      "ambiguities": [
+        {
+          "id": "adjective_attachment",
+          "span": {
+            "start_byte": 16,
+            "end_byte": 39,
+            "quote": "bandeja de papel grande"
+          },
+          "dimension": "reference",
+          "candidate_reading_ids": [
+            "renamed_adjective_on_tray",
+            "renamed_adjective_on_paper"
+          ],
+          "closure": "closed",
+          "evidence": [
+            {
+              "start_byte": 16,
+              "end_byte": 39,
+              "quote": "bandeja de papel grande"
+            }
+          ]
+        }
+      ],
+      "unresolved_dimensions": []
+    }
+  },
+  "question": {
+    "text": "Senda tiene una bandeja de papel grande.",
+    "raw": {
+      "claims": [],
+      "coverage": [
+        {
+          "span": {
+            "start_byte": 0,
+            "end_byte": 40,
+            "quote": "Senda tiene una bandeja de papel grande."
+          },
+          "state": "represented",
+          "owner": {
+            "kind": "request",
+            "id": "renamed_manual-ask-item"
+          },
+          "issue_id": null
+        }
+      ],
+      "dependencies": [
+        {
+          "consumer": {
+            "kind": "reference",
+            "id": "renamed_senda"
+          },
+          "requires": {
+            "kind": "scope",
+            "id": "renamed_root"
+          },
+          "role": "binding"
+        },
+        {
+          "consumer": {
+            "kind": "reference",
+            "id": "renamed_tray"
+          },
+          "requires": {
+            "kind": "scope",
+            "id": "renamed_root"
+          },
+          "role": "binding"
+        },
+        {
+          "consumer": {
+            "kind": "reference",
+            "id": "renamed_paper"
+          },
+          "requires": {
+            "kind": "scope",
+            "id": "renamed_root"
+          },
+          "role": "binding"
+        },
+        {
+          "consumer": {
+            "kind": "reference",
+            "id": "renamed_tray"
+          },
+          "requires": {
+            "kind": "reference",
+            "id": "renamed_paper"
+          },
+          "role": "identity"
+        },
+        {
+          "consumer": {
+            "kind": "request",
+            "id": "renamed_manual-ask-item"
+          },
+          "requires": {
+            "kind": "scope",
+            "id": "renamed_root"
+          },
+          "role": "binding"
+        },
+        {
+          "consumer": {
+            "kind": "request",
+            "id": "renamed_manual-ask-item"
+          },
+          "requires": {
+            "kind": "reference",
+            "id": "renamed_senda"
+          },
+          "role": "identity"
+        }
+      ],
+      "domain_namespace": "documentary-v3-known-development",
+      "identity": [],
+      "kind": "question",
+      "qualifiers": [],
+      "references": [
+        {
+          "anaphora": null,
+          "binding_scope_id": null,
+          "declared_class": null,
+          "denotation": "entity",
+          "id": "renamed_senda",
+          "links": [],
+          "mention": {
+            "end_byte": 5,
+            "quote": "Senda",
+            "start_byte": 0
+          },
+          "name": {
+            "end_byte": 5,
+            "quote": "Senda",
+            "start_byte": 0
+          },
+          "scope_id": "renamed_root",
+          "semantic_type": null
+        },
+        {
+          "anaphora": null,
+          "binding_scope_id": null,
+          "declared_class": {
+            "start_byte": 16,
+            "end_byte": 23,
+            "quote": "bandeja"
+          },
+          "denotation": "entity",
+          "id": "renamed_tray",
+          "links": [
+            {
+              "kind": "nominal_complement_de",
+              "target": "renamed_paper",
+              "evidence": [
+                {
+                  "start_byte": 16,
+                  "end_byte": 32,
+                  "quote": "bandeja de papel"
+                }
+              ]
+            }
+          ],
+          "mention": {
+            "end_byte": 39,
+            "quote": "una bandeja de papel grande",
+            "start_byte": 12
+          },
+          "name": null,
+          "scope_id": "renamed_root",
+          "semantic_type": null
+        },
+        {
+          "id": "renamed_paper",
+          "scope_id": "renamed_root",
+          "mention": {
+            "start_byte": 27,
+            "end_byte": 32,
+            "quote": "papel"
+          },
+          "name": null,
+          "declared_class": {
+            "start_byte": 27,
+            "end_byte": 32,
+            "quote": "papel"
+          },
+          "semantic_type": null,
+          "denotation": "entity",
+          "links": [],
+          "binding_scope_id": null,
+          "anaphora": null
+        }
+      ],
+      "requests": [
+        {
+          "id": "renamed_manual-ask-item",
+          "scope_id": "renamed_root",
+          "mode": "answer",
+          "target": {
+            "atom": {
+              "predicate": "has_item",
+              "arguments": [
+                {
+                  "role": "bearer",
+                  "value": {
+                    "kind": "ref",
+                    "id": "renamed_senda"
+                  }
+                }
+              ],
+              "polarity": "positive",
+              "evidence": [
+                {
+                  "start_byte": 0,
+                  "end_byte": 40,
+                  "quote": "Senda tiene una bandeja de papel grande."
+                }
+              ]
+            },
+            "judgment": "fact",
+            "status": "state",
+            "qualifier_ids": []
+          },
+          "slot": "item",
+          "class_filter": null,
+          "unit": null,
+          "basis_requirement": {
+            "kind": "any"
+          },
+          "required_answer_extent": "one_value",
+          "normative_scope_filter": null,
+          "qualifier_ids": [],
+          "premise_ids": [],
+          "evidence": [
+            {
+              "start_byte": 0,
+              "end_byte": 40,
+              "quote": "Senda tiene una bandeja de papel grande."
+            }
+          ]
+        }
+      ],
+      "scopes": [
+        {
+          "binding": null,
+          "branch_id": null,
+          "id": "renamed_root",
+          "kind": "document",
+          "parent_id": null
+        }
+      ],
+      "text_sha256": "e9c5554e92b7d6002fbb25be26944b0357e3ee243d6f860c1b61dc4520cd5f94",
+      "version": "documentary_evidence_v3",
+      "vocabulary_sha256": "24ff96018e61f7052d83fb954b5b19dddc08312bb1c5f055056681d4a0f2efd6"
+    }
+  },
+  "pair_scope": {
+    "namespace": "documentary-v3-known-development",
+    "configuration": [],
+    "time_selector": null,
+    "closed_world": false
+  }
+}

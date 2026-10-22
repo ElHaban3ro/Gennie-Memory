@@ -1,0 +1,25 @@
+{
+  "version": "epistemic-binding-v5-preexecution-adjudication",
+  "all_objections_resolved_before_execution": true,
+  "execution_scope": "manual boundary only; source-only extraction/semantic correctness not automated",
+  "reviewed_source_sha256": "10e131b4ca0c1569eb40217131af50697e2d11624833b8577a6341df8b134376",
+  "labels_reviewed_sha256": "ce099e744a2f12987adc9c45907c7557a3eb6a87484cac56dcd7187bfd78dfeb",
+  "blind_final_sha256": "0eff35cdb570ab9f07dcf41424c9b10793eaf309035aabdef9cfb64eb5db6a9f",
+  "source_corrections": [
+    "Explicit exclusive readings for closed documentary lists",
+    "a013 north now literal in new source; invalid draft retained",
+    "a014 names literal but analytic open alternatives; no documentary cue; unresolved retained"
+  ],
+  "contract_clarifications": [
+    "Propositional invariance over whole statement, not clause identity",
+    "Assertable is according to source, no currency or external-truth claim",
+    "Open named binding preserves possibility with review, not invariant data",
+    "All 18 boundary fields agree independently authored and blind reviewed labels"
+  ],
+  "remaining_limits": [
+    "same model family blind review, not independent human",
+    "18 development pairs not semantic coverage or automatic extraction",
+    "Clause-level provenance not modeled; entire record quoted",
+    "B/none, C/none, open unbound remain unresolved and block autonomy"
+  ]
+}

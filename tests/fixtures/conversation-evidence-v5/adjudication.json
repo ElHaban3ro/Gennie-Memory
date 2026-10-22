@@ -1,0 +1,96 @@
+{
+  "version": "evidence-v5-adjudication-v1",
+  "blind_review_sha256": "fac07dfc3744363f12a9c6adda4691378d8ba42189c8016a63b5b352dc6d07dd",
+  "source_sha256": "fceab0d65b8974891b3afcbb962b3e907e7f43e6ce291a0f8f29ae776648d4ef",
+  "questions_sha256": "b967bc4383df9f5f673440fc514a5849b2c2b22e8f3c79189925c603149863de",
+  "final_labels_sha256": "b4a3a47863c92b95a2ec7c4381143dccf4e016fadcedf7d3b4a5ed745751c0b0",
+  "unresolved_case_ids": [],
+  "human_review": false,
+  "independent_review": false,
+  "separate_agent_blind_review": true,
+  "changes_before_provider": [
+    {
+      "id": "cev5q_066_03",
+      "initial_relation": "refutes_premise",
+      "initial_expected_ids": [
+        "cev5_066_06"
+      ],
+      "final_relation": "refutes_premise",
+      "final_expected_ids": [
+        "cev5_066_06",
+        "cev5_066_07"
+      ],
+      "reason": "La captura con redes no corresponde al censo Ribera."
+    },
+    {
+      "id": "cev5q_071_04",
+      "initial_relation": "refutes_premise",
+      "initial_expected_ids": [
+        "cev5_071_08",
+        "cev5_071_03"
+      ],
+      "final_relation": "refutes_premise",
+      "final_expected_ids": [
+        "cev5_071_08"
+      ],
+      "reason": "Olmo no requiere el avalista presupuesto."
+    },
+    {
+      "id": "cev5q_071_05",
+      "initial_relation": "pending_or_partial",
+      "initial_expected_ids": [
+        "cev5_071_09",
+        "cev5_071_10"
+      ],
+      "final_relation": "pending_or_partial",
+      "final_expected_ids": [
+        "cev5_071_10",
+        "cev5_071_11"
+      ],
+      "reason": "La revisión es parcial y el aislamiento está pendiente."
+    }
+  ],
+  "ambiguity_resolution": [
+    {
+      "id": "cev5q_066_06",
+      "notes": [
+        "La primera parte admite una respuesta negativa explícita; se conserva pending_or_partial por el estado de decisión pendiente y la ausencia de fecha de decisión."
+      ],
+      "resolution": "La relación parcial describe trabajo/permiso pendiente, no resultado completo; se admite preparación concreta solicitada sin afirmar que la totalidad esté lista."
+    },
+    {
+      "id": "cev5q_068_05",
+      "notes": [
+        "La pregunta de estado admite un no a partir de las páginas pendientes; se usa pending_or_partial por el trabajo incompleto. El control de enfoque es evidencia parcial de preparación, no prueba de que toda la copia esté lista."
+      ],
+      "resolution": "La relación parcial describe trabajo/permiso pendiente, no resultado completo; se admite preparación concreta solicitada sin afirmar que la totalidad esté lista."
+    },
+    {
+      "id": "cev5q_069_05",
+      "notes": [
+        "El estado global permite contestar no, pero se conserva pending_or_partial porque las pruebas de todo el conjunto no están completas."
+      ],
+      "resolution": "La relación parcial describe trabajo/permiso pendiente, no resultado completo; se admite preparación concreta solicitada sin afirmar que la totalidad esté lista."
+    },
+    {
+      "id": "cev5q_069_06",
+      "notes": [
+        "Recibir el mapa no permite fechar una aprobación; es estado del trámite pendiente."
+      ],
+      "resolution": "La relación parcial describe trabajo/permiso pendiente, no resultado completo; se admite preparación concreta solicitada sin afirmar que la totalidad esté lista."
+    },
+    {
+      "id": "cev5q_071_05",
+      "notes": [
+        "La formulación permite responder no a la comprobación conjunta; se usa pending_or_partial por la prueba pendiente."
+      ],
+      "resolution": "La relación parcial describe trabajo/permiso pendiente, no resultado completo; se admite preparación concreta solicitada sin afirmar que la totalidad esté lista."
+    }
+  ],
+  "category_counts": {
+    "supports_answer": 16,
+    "refutes_premise": 16,
+    "pending_or_partial": 16,
+    "unrelated": 16
+  }
+}

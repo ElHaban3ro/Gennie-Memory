@@ -1,0 +1,50 @@
+[
+  {
+    "id": "pcv1_control_17",
+    "factor": "quota_control",
+    "labels": [
+      {
+        "id": "claim_00",
+        "grounded": true,
+        "role": "A",
+        "source_quote": "El reproductor Lino funcionó setenta y cinco minutos sin apagarse; no se midió su duración hasta apagarse.",
+        "question_quote": "¿Cuál es la autonomía máxima del reproductor Lino?",
+        "proposition_quote": "La autonomía del reproductor Lino es de al menos setenta y cinco minutos.",
+        "origin": "author_controls_before_review"
+      },
+      {
+        "id": "claim_01",
+        "grounded": true,
+        "role": "A",
+        "source_quote": "El reproductor Lino funcionó setenta y cinco minutos sin apagarse; no se midió su duración hasta apagarse.",
+        "question_quote": "¿Cuál es la autonomía máxima del reproductor Lino?",
+        "proposition_quote": "No se midió la duración del reproductor Lino hasta apagarse.",
+        "origin": "author_controls_before_review"
+      }
+    ]
+  },
+  {
+    "id": "pcv1_control_18",
+    "factor": "quota_control",
+    "labels": [
+      {
+        "id": "claim_00",
+        "grounded": false,
+        "role": "A",
+        "source_quote": "Del expediente Atlas se digitalizaron doce páginas; sus cuatro páginas restantes siguen pendientes.",
+        "question_quote": "¿Cuántas páginas del expediente Atlas están digitalizadas y cuántas quedan pendientes?",
+        "proposition_quote": "Del expediente Atlas están digitalizadas trece páginas.",
+        "origin": "author_controls_before_review"
+      },
+      {
+        "id": "claim_01",
+        "grounded": false,
+        "role": "A",
+        "source_quote": "Del expediente Atlas se digitalizaron doce páginas; sus cuatro páginas restantes siguen pendientes.",
+        "question_quote": "¿Cuántas páginas del expediente Atlas están digitalizadas y cuántas quedan pendientes?",
+        "proposition_quote": "Del expediente Atlas no quedan páginas pendientes.",
+        "origin": "author_controls_before_review"
+      }
+    ]
+  }
+]

@@ -1,0 +1,1238 @@
+{
+  "version": "blind-evidence-review-v1",
+  "reviewer_kind": "separate_agent_same_model_family",
+  "human_review": false,
+  "blind_inputs": [
+    "tests/fixtures/conversation-evidence-v3/source.json",
+    "tests/fixtures/conversation-evidence-v3/blind-questions.json"
+  ],
+  "cases": [
+    {
+      "id": "cev3q_056_01",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "056_01"
+      ],
+      "rationale": "En registro Trama, para ciclo 2031, Nora coordina el registro. Responde quién coordina para el referente exacto. La coordinación de otra variante no lo sustituye.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "registro Trama"
+        },
+        {
+          "dimension": "time",
+          "quote": "ciclo 2031"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_052_05",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "052_05"
+      ],
+      "rationale": "En catálogo Umbría, para edición Nácar, hay trece cajas de documentos. Aporta la cantidad pedida, pero ninguna frase da el peso de cada caja para este referente. El peso de otra variante no completa la respuesta.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "catálogo Umbría"
+        },
+        {
+          "dimension": "edition",
+          "quote": "edición Nácar"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_050_05",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "050_05"
+      ],
+      "rationale": "En archivo Coral, para equipo Ópalo, hay diecinueve cajas de documentos. Aporta la cantidad pedida, pero ninguna frase da el peso de cada caja para este referente. El peso de otra variante no completa la respuesta.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "archivo Coral"
+        },
+        {
+          "dimension": "team",
+          "quote": "equipo Ópalo"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_050_02",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "050_02"
+      ],
+      "rationale": "En archivo Coral, para equipo Ópalo, los documentos se guardan en estante siete. Aporta la ubicación pedida para el referente exacto.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "archivo Coral"
+        },
+        {
+          "dimension": "team",
+          "quote": "equipo Ópalo"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_052_08",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "rationale": "Tras revisar las 28 frases del ámbito, ninguna aporta, corrige ni responde parcialmente el código de transporte para edición Ámbar. Las frases de cuenta y transporte pertenecen a otra variante y las notas auxiliares no aportan ese dato. La ausencia no niega que exista.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "catálogo Umbría"
+        },
+        {
+          "dimension": "edition",
+          "quote": "edición Ámbar"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_057_04",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "057_04"
+      ],
+      "rationale": "En programa Albor, para responsable Ada, el acto de entrega no será presencial; se celebrará por videollamada. Niega expresamente la presencialidad presupuesta. El aula de otra variante no responde para este referente.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "programa Albor"
+        },
+        {
+          "dimension": "person",
+          "quote": "responsable Ada"
+        },
+        {
+          "dimension": "condition",
+          "quote": "presencial"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_053_03",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "053_03"
+      ],
+      "rationale": "En laboratorio Marea, para entorno Activo, se canceló la compra de vehículos; se recibieron vehículos donados. Corrige explícitamente la premisa de compra para este referente; no fija un precio pagado ni autoriza inferir cero. La compra de otra variante no aplica.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "laboratorio Marea"
+        },
+        {
+          "dimension": "environment",
+          "quote": "entorno Activo"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_051_05",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "051_05"
+      ],
+      "rationale": "En observatorio Linde, para sede Norte, hay veintitrés cajas de documentos. Aporta la cantidad pedida, pero ninguna frase da el peso de cada caja para este referente. El peso de otra variante no completa la respuesta.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "observatorio Linde"
+        },
+        {
+          "dimension": "site",
+          "quote": "sede Norte"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_050_04",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "050_04"
+      ],
+      "rationale": "En archivo Coral, para equipo Ópalo, el acto de entrega no será presencial; se celebrará por videollamada. Niega expresamente la presencialidad presupuesta. El aula de otra variante no responde para este referente.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "archivo Coral"
+        },
+        {
+          "dimension": "team",
+          "quote": "equipo Ópalo"
+        },
+        {
+          "dimension": "condition",
+          "quote": "presencial"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_051_03",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "051_03"
+      ],
+      "rationale": "En observatorio Linde, para sede Norte, se canceló la compra de vehículos; se recibieron vehículos donados. Corrige explícitamente la premisa de compra para este referente; no fija un precio pagado ni autoriza inferir cero. La compra de otra variante no aplica.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "observatorio Linde"
+        },
+        {
+          "dimension": "site",
+          "quote": "sede Norte"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_055_02",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "055_02"
+      ],
+      "rationale": "En proyecto Encina, para modalidad diurna, los documentos se guardan en cajón Pino. Aporta la ubicación pedida para el referente exacto.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "proyecto Encina"
+        },
+        {
+          "dimension": "condition",
+          "quote": "modalidad diurna"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_050_01",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "050_01"
+      ],
+      "rationale": "En archivo Coral, para equipo Ópalo, Mina coordina el registro. Responde quién coordina para el referente exacto. La coordinación de otra variante no lo sustituye.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "archivo Coral"
+        },
+        {
+          "dimension": "team",
+          "quote": "equipo Ópalo"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_057_05",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "057_05"
+      ],
+      "rationale": "En programa Albor, para responsable Ada, hay cuarenta y una cajas de documentos. Aporta la cantidad pedida, pero ninguna frase da el peso de cada caja para este referente. El peso de otra variante no completa la respuesta.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "programa Albor"
+        },
+        {
+          "dimension": "person",
+          "quote": "responsable Ada"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_057_07",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "rationale": "Tras revisar las 28 frases del ámbito, ninguna aporta, corrige ni responde parcialmente el nombre de cuenta del registro para responsable Ema. Las frases de cuenta y transporte pertenecen a otra variante y las notas auxiliares no aportan ese dato. La ausencia no niega que exista.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "programa Albor"
+        },
+        {
+          "dimension": "person",
+          "quote": "responsable Ema"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_053_02",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "053_02"
+      ],
+      "rationale": "En laboratorio Marea, para entorno Activo, los documentos se guardan en estante dos. Aporta la ubicación pedida para el referente exacto.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "laboratorio Marea"
+        },
+        {
+          "dimension": "environment",
+          "quote": "entorno Activo"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_057_06",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "057_06"
+      ],
+      "rationale": "En programa Albor, para responsable Ada, la revisión comenzará el martes. Aporta el día pedido, pero ninguna frase da las horas de duración para este referente. La duración de otra variante no aplica.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "programa Albor"
+        },
+        {
+          "dimension": "person",
+          "quote": "responsable Ada"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_054_01",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "054_01"
+      ],
+      "rationale": "En inventario Prisma, para colección Aster, Lara coordina el registro. Responde quién coordina para el referente exacto. La coordinación de otra variante no lo sustituye.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "inventario Prisma"
+        },
+        {
+          "dimension": "item",
+          "quote": "colección Aster"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_056_07",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "rationale": "Tras revisar las 28 frases del ámbito, ninguna aporta, corrige ni responde parcialmente el nombre de cuenta del registro para ciclo 2033. Las frases de cuenta y transporte pertenecen a otra variante y las notas auxiliares no aportan ese dato. La ausencia no niega que exista.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "registro Trama"
+        },
+        {
+          "dimension": "time",
+          "quote": "ciclo 2033"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_054_06",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "054_06"
+      ],
+      "rationale": "En inventario Prisma, para colección Aster, la revisión comenzará el miércoles. Aporta el día pedido, pero ninguna frase da las horas de duración para este referente. La duración de otra variante no aplica.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "inventario Prisma"
+        },
+        {
+          "dimension": "item",
+          "quote": "colección Aster"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_055_03",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "055_03"
+      ],
+      "rationale": "En proyecto Encina, para modalidad diurna, se canceló la compra de vehículos; se recibieron vehículos donados. Corrige explícitamente la premisa de compra para este referente; no fija un precio pagado ni autoriza inferir cero. La compra de otra variante no aplica.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "proyecto Encina"
+        },
+        {
+          "dimension": "condition",
+          "quote": "modalidad diurna"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_053_08",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "rationale": "Tras revisar las 28 frases del ámbito, ninguna aporta, corrige ni responde parcialmente el código de transporte para entorno Reserva. Las frases de cuenta y transporte pertenecen a otra variante y las notas auxiliares no aportan ese dato. La ausencia no niega que exista.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "laboratorio Marea"
+        },
+        {
+          "dimension": "environment",
+          "quote": "entorno Reserva"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_050_07",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "rationale": "Tras revisar las 28 frases del ámbito, ninguna aporta, corrige ni responde parcialmente el nombre de cuenta del registro para equipo Jade. Las frases de cuenta y transporte pertenecen a otra variante y las notas auxiliares no aportan ese dato. La ausencia no niega que exista.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "archivo Coral"
+        },
+        {
+          "dimension": "team",
+          "quote": "equipo Jade"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_054_08",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "rationale": "Tras revisar las 28 frases del ámbito, ninguna aporta, corrige ni responde parcialmente el código de transporte para colección Caña. Las frases de cuenta y transporte pertenecen a otra variante y las notas auxiliares no aportan ese dato. La ausencia no niega que exista.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "inventario Prisma"
+        },
+        {
+          "dimension": "item",
+          "quote": "colección Caña"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_057_08",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "rationale": "Tras revisar las 28 frases del ámbito, ninguna aporta, corrige ni responde parcialmente el código de transporte para responsable Ema. Las frases de cuenta y transporte pertenecen a otra variante y las notas auxiliares no aportan ese dato. La ausencia no niega que exista.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "programa Albor"
+        },
+        {
+          "dimension": "person",
+          "quote": "responsable Ema"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_054_03",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "054_03"
+      ],
+      "rationale": "En inventario Prisma, para colección Aster, se canceló la compra de vehículos; se recibieron vehículos donados. Corrige explícitamente la premisa de compra para este referente; no fija un precio pagado ni autoriza inferir cero. La compra de otra variante no aplica.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "inventario Prisma"
+        },
+        {
+          "dimension": "item",
+          "quote": "colección Aster"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_053_07",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "rationale": "Tras revisar las 28 frases del ámbito, ninguna aporta, corrige ni responde parcialmente el nombre de cuenta del registro para entorno Reserva. Las frases de cuenta y transporte pertenecen a otra variante y las notas auxiliares no aportan ese dato. La ausencia no niega que exista.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "laboratorio Marea"
+        },
+        {
+          "dimension": "environment",
+          "quote": "entorno Reserva"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_056_02",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "056_02"
+      ],
+      "rationale": "En registro Trama, para ciclo 2031, los documentos se guardan en estante cinco. Aporta la ubicación pedida para el referente exacto.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "registro Trama"
+        },
+        {
+          "dimension": "time",
+          "quote": "ciclo 2031"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_051_06",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "051_06"
+      ],
+      "rationale": "En observatorio Linde, para sede Norte, la revisión comenzará el jueves. Aporta el día pedido, pero ninguna frase da las horas de duración para este referente. La duración de otra variante no aplica.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "observatorio Linde"
+        },
+        {
+          "dimension": "site",
+          "quote": "sede Norte"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_056_05",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "056_05"
+      ],
+      "rationale": "En registro Trama, para ciclo 2031, hay treinta y siete cajas de documentos. Aporta la cantidad pedida, pero ninguna frase da el peso de cada caja para este referente. El peso de otra variante no completa la respuesta.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "registro Trama"
+        },
+        {
+          "dimension": "time",
+          "quote": "ciclo 2031"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_055_05",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "055_05"
+      ],
+      "rationale": "En proyecto Encina, para modalidad diurna, hay once cajas de documentos. Aporta la cantidad pedida, pero ninguna frase da el peso de cada caja para este referente. El peso de otra variante no completa la respuesta.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "proyecto Encina"
+        },
+        {
+          "dimension": "condition",
+          "quote": "modalidad diurna"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_051_07",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "rationale": "Tras revisar las 28 frases del ámbito, ninguna aporta, corrige ni responde parcialmente el nombre de cuenta del registro para sede Este. Las frases de cuenta y transporte pertenecen a otra variante y las notas auxiliares no aportan ese dato. La ausencia no niega que exista.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "observatorio Linde"
+        },
+        {
+          "dimension": "site",
+          "quote": "sede Este"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_052_01",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "052_01"
+      ],
+      "rationale": "En catálogo Umbría, para edición Nácar, Sira coordina el registro. Responde quién coordina para el referente exacto. La coordinación de otra variante no lo sustituye.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "catálogo Umbría"
+        },
+        {
+          "dimension": "edition",
+          "quote": "edición Nácar"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_051_08",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "rationale": "Tras revisar las 28 frases del ámbito, ninguna aporta, corrige ni responde parcialmente el código de transporte para sede Este. Las frases de cuenta y transporte pertenecen a otra variante y las notas auxiliares no aportan ese dato. La ausencia no niega que exista.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "observatorio Linde"
+        },
+        {
+          "dimension": "site",
+          "quote": "sede Este"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_053_05",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "053_05"
+      ],
+      "rationale": "En laboratorio Marea, para entorno Activo, hay diecisiete cajas de documentos. Aporta la cantidad pedida, pero ninguna frase da el peso de cada caja para este referente. El peso de otra variante no completa la respuesta.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "laboratorio Marea"
+        },
+        {
+          "dimension": "environment",
+          "quote": "entorno Activo"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_053_04",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "053_04"
+      ],
+      "rationale": "En laboratorio Marea, para entorno Activo, el acto de entrega no será presencial; se celebrará por videollamada. Niega expresamente la presencialidad presupuesta. El aula de otra variante no responde para este referente.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "laboratorio Marea"
+        },
+        {
+          "dimension": "environment",
+          "quote": "entorno Activo"
+        },
+        {
+          "dimension": "condition",
+          "quote": "presencial"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_050_06",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "050_06"
+      ],
+      "rationale": "En archivo Coral, para equipo Ópalo, la revisión comenzará el martes. Aporta el día pedido, pero ninguna frase da las horas de duración para este referente. La duración de otra variante no aplica.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "archivo Coral"
+        },
+        {
+          "dimension": "team",
+          "quote": "equipo Ópalo"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_055_08",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "rationale": "Tras revisar las 28 frases del ámbito, ninguna aporta, corrige ni responde parcialmente el código de transporte para modalidad vespertina. Las frases de cuenta y transporte pertenecen a otra variante y las notas auxiliares no aportan ese dato. La ausencia no niega que exista.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "proyecto Encina"
+        },
+        {
+          "dimension": "condition",
+          "quote": "modalidad vespertina"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_057_03",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "057_03"
+      ],
+      "rationale": "En programa Albor, para responsable Ada, se canceló la compra de vehículos; se recibieron vehículos donados. Corrige explícitamente la premisa de compra para este referente; no fija un precio pagado ni autoriza inferir cero. La compra de otra variante no aplica.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "programa Albor"
+        },
+        {
+          "dimension": "person",
+          "quote": "responsable Ada"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_056_08",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "rationale": "Tras revisar las 28 frases del ámbito, ninguna aporta, corrige ni responde parcialmente el código de transporte para ciclo 2033. Las frases de cuenta y transporte pertenecen a otra variante y las notas auxiliares no aportan ese dato. La ausencia no niega que exista.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "registro Trama"
+        },
+        {
+          "dimension": "time",
+          "quote": "ciclo 2033"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_053_01",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "053_01"
+      ],
+      "rationale": "En laboratorio Marea, para entorno Activo, Hugo coordina el registro. Responde quién coordina para el referente exacto. La coordinación de otra variante no lo sustituye.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "laboratorio Marea"
+        },
+        {
+          "dimension": "environment",
+          "quote": "entorno Activo"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_053_06",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "053_06"
+      ],
+      "rationale": "En laboratorio Marea, para entorno Activo, la revisión comenzará el viernes. Aporta el día pedido, pero ninguna frase da las horas de duración para este referente. La duración de otra variante no aplica.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "laboratorio Marea"
+        },
+        {
+          "dimension": "environment",
+          "quote": "entorno Activo"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_054_07",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "rationale": "Tras revisar las 28 frases del ámbito, ninguna aporta, corrige ni responde parcialmente el nombre de cuenta del registro para colección Caña. Las frases de cuenta y transporte pertenecen a otra variante y las notas auxiliares no aportan ese dato. La ausencia no niega que exista.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "inventario Prisma"
+        },
+        {
+          "dimension": "item",
+          "quote": "colección Caña"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_051_01",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "051_01"
+      ],
+      "rationale": "En observatorio Linde, para sede Norte, Darío coordina el registro. Responde quién coordina para el referente exacto. La coordinación de otra variante no lo sustituye.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "observatorio Linde"
+        },
+        {
+          "dimension": "site",
+          "quote": "sede Norte"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_054_02",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "054_02"
+      ],
+      "rationale": "En inventario Prisma, para colección Aster, los documentos se guardan en armario Olmo. Aporta la ubicación pedida para el referente exacto.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "inventario Prisma"
+        },
+        {
+          "dimension": "item",
+          "quote": "colección Aster"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_055_06",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "055_06"
+      ],
+      "rationale": "En proyecto Encina, para modalidad diurna, la revisión comenzará el sábado. Aporta el día pedido, pero ninguna frase da las horas de duración para este referente. La duración de otra variante no aplica.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "proyecto Encina"
+        },
+        {
+          "dimension": "condition",
+          "quote": "modalidad diurna"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_055_07",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "rationale": "Tras revisar las 28 frases del ámbito, ninguna aporta, corrige ni responde parcialmente el nombre de cuenta del registro para modalidad vespertina. Las frases de cuenta y transporte pertenecen a otra variante y las notas auxiliares no aportan ese dato. La ausencia no niega que exista.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "proyecto Encina"
+        },
+        {
+          "dimension": "condition",
+          "quote": "modalidad vespertina"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_056_06",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "056_06"
+      ],
+      "rationale": "En registro Trama, para ciclo 2031, la revisión comenzará el domingo. Aporta el día pedido, pero ninguna frase da las horas de duración para este referente. La duración de otra variante no aplica.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "registro Trama"
+        },
+        {
+          "dimension": "time",
+          "quote": "ciclo 2031"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_056_03",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "056_03"
+      ],
+      "rationale": "En registro Trama, para ciclo 2031, se canceló la compra de vehículos; se recibieron vehículos donados. Corrige explícitamente la premisa de compra para este referente; no fija un precio pagado ni autoriza inferir cero. La compra de otra variante no aplica.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "registro Trama"
+        },
+        {
+          "dimension": "time",
+          "quote": "ciclo 2031"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_050_08",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "rationale": "Tras revisar las 28 frases del ámbito, ninguna aporta, corrige ni responde parcialmente el código de transporte para equipo Jade. Las frases de cuenta y transporte pertenecen a otra variante y las notas auxiliares no aportan ese dato. La ausencia no niega que exista.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "archivo Coral"
+        },
+        {
+          "dimension": "team",
+          "quote": "equipo Jade"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_052_04",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "052_04"
+      ],
+      "rationale": "En catálogo Umbría, para edición Nácar, el acto de entrega no será presencial; se celebrará por videollamada. Niega expresamente la presencialidad presupuesta. El aula de otra variante no responde para este referente.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "catálogo Umbría"
+        },
+        {
+          "dimension": "edition",
+          "quote": "edición Nácar"
+        },
+        {
+          "dimension": "condition",
+          "quote": "presencial"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_052_03",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "052_03"
+      ],
+      "rationale": "En catálogo Umbría, para edición Nácar, se canceló la compra de vehículos; se recibieron vehículos donados. Corrige explícitamente la premisa de compra para este referente; no fija un precio pagado ni autoriza inferir cero. La compra de otra variante no aplica.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "catálogo Umbría"
+        },
+        {
+          "dimension": "edition",
+          "quote": "edición Nácar"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_052_06",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "052_06"
+      ],
+      "rationale": "En catálogo Umbría, para edición Nácar, la revisión comenzará el lunes. Aporta el día pedido, pero ninguna frase da las horas de duración para este referente. La duración de otra variante no aplica.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "catálogo Umbría"
+        },
+        {
+          "dimension": "edition",
+          "quote": "edición Nácar"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_051_04",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "051_04"
+      ],
+      "rationale": "En observatorio Linde, para sede Norte, el acto de entrega no será presencial; se celebrará por videollamada. Niega expresamente la presencialidad presupuesta. El aula de otra variante no responde para este referente.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "observatorio Linde"
+        },
+        {
+          "dimension": "site",
+          "quote": "sede Norte"
+        },
+        {
+          "dimension": "condition",
+          "quote": "presencial"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_054_05",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "054_05"
+      ],
+      "rationale": "En inventario Prisma, para colección Aster, hay veintinueve cajas de documentos. Aporta la cantidad pedida, pero ninguna frase da el peso de cada caja para este referente. El peso de otra variante no completa la respuesta.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "inventario Prisma"
+        },
+        {
+          "dimension": "item",
+          "quote": "colección Aster"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_057_02",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "057_02"
+      ],
+      "rationale": "En programa Albor, para responsable Ada, los documentos se guardan en armario Nube. Aporta la ubicación pedida para el referente exacto.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "programa Albor"
+        },
+        {
+          "dimension": "person",
+          "quote": "responsable Ada"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_052_02",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "052_02"
+      ],
+      "rationale": "En catálogo Umbría, para edición Nácar, los documentos se guardan en cajón Cedro. Aporta la ubicación pedida para el referente exacto.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "catálogo Umbría"
+        },
+        {
+          "dimension": "edition",
+          "quote": "edición Nácar"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_057_01",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "057_01"
+      ],
+      "rationale": "En programa Albor, para responsable Ada, Teo coordina el registro. Responde quién coordina para el referente exacto. La coordinación de otra variante no lo sustituye.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "programa Albor"
+        },
+        {
+          "dimension": "person",
+          "quote": "responsable Ada"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_052_07",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "rationale": "Tras revisar las 28 frases del ámbito, ninguna aporta, corrige ni responde parcialmente el nombre de cuenta del registro para edición Ámbar. Las frases de cuenta y transporte pertenecen a otra variante y las notas auxiliares no aportan ese dato. La ausencia no niega que exista.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "catálogo Umbría"
+        },
+        {
+          "dimension": "edition",
+          "quote": "edición Ámbar"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_050_03",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "050_03"
+      ],
+      "rationale": "En archivo Coral, para equipo Ópalo, se canceló la compra de vehículos; se recibieron vehículos donados. Corrige explícitamente la premisa de compra para este referente; no fija un precio pagado ni autoriza inferir cero. La compra de otra variante no aplica.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "archivo Coral"
+        },
+        {
+          "dimension": "team",
+          "quote": "equipo Ópalo"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_054_04",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "054_04"
+      ],
+      "rationale": "En inventario Prisma, para colección Aster, el acto de entrega no será presencial; se celebrará por videollamada. Niega expresamente la presencialidad presupuesta. El aula de otra variante no responde para este referente.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "inventario Prisma"
+        },
+        {
+          "dimension": "item",
+          "quote": "colección Aster"
+        },
+        {
+          "dimension": "condition",
+          "quote": "presencial"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_056_04",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "056_04"
+      ],
+      "rationale": "En registro Trama, para ciclo 2031, el acto de entrega no será presencial; se celebrará por videollamada. Niega expresamente la presencialidad presupuesta. El aula de otra variante no responde para este referente.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "registro Trama"
+        },
+        {
+          "dimension": "time",
+          "quote": "ciclo 2031"
+        },
+        {
+          "dimension": "condition",
+          "quote": "presencial"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_055_04",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "055_04"
+      ],
+      "rationale": "En proyecto Encina, para modalidad diurna, el acto de entrega no será presencial; se celebrará por videollamada. Niega expresamente la presencialidad presupuesta. El aula de otra variante no responde para este referente.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "proyecto Encina"
+        },
+        {
+          "dimension": "condition",
+          "quote": "modalidad diurna"
+        },
+        {
+          "dimension": "condition",
+          "quote": "presencial"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_055_01",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "055_01"
+      ],
+      "rationale": "En proyecto Encina, para modalidad diurna, Biel coordina el registro. Responde quién coordina para el referente exacto. La coordinación de otra variante no lo sustituye.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "proyecto Encina"
+        },
+        {
+          "dimension": "condition",
+          "quote": "modalidad diurna"
+        }
+      ]
+    },
+    {
+      "id": "cev3q_051_02",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "051_02"
+      ],
+      "rationale": "En observatorio Linde, para sede Norte, los documentos se guardan en armario Lila. Aporta la ubicación pedida para el referente exacto.",
+      "ambiguities": [],
+      "required_query_bindings": [
+        {
+          "dimension": "subject",
+          "quote": "observatorio Linde"
+        },
+        {
+          "dimension": "site",
+          "quote": "sede Norte"
+        }
+      ]
+    }
+  ],
+  "overall_limitations": [
+    "Revisión entre agentes de la misma familia de modelos; no es revisión humana ni independencia de familia o método.",
+    "Se revisaron todas las frases de cada ámbito y únicamente los dos insumos declarados; no se consultaron etiquetas del autor, recuerdos derivados, informes ni salidas de recuperación.",
+    "Los ámbitos son sintéticos y repiten una misma estructura; este conjunto no demuestra generalización a conversaciones naturales o relaciones nuevas.",
+    "El orden y los identificadores visibles pueden revelar regularidades; el juicio se fundamenta en texto y referente, no en distribución objetivo de relaciones.",
+    "La ausencia de dato no implica negación: las preguntas sin evidencia aplicable son unrelated, y las compuestas con una parte concreta son pending_or_partial.",
+    "Las horas o pesos de otra variante no se heredan. Cancelar la compra no permite inferir un precio cero.",
+    "Se interpretó colección como item, modalidad como condition, ciclo como time y responsable como person; son decisiones explícitas del vocabulario de bindings. Los objetos genéricos preguntados no se duplican como calificadores item.",
+    "Las preguntas de entrega añaden condition presencial porque esa condición explícita es la premisa que niega la evidencia. No se identificaron respuestas alternativas compatibles ni ambigüedades sustantivas por caso dentro del texto dado.",
+    "Los días de semana son las respuestas solicitadas y no restricciones temporales impuestas por las preguntas; no se añaden como bindings time."
+  ]
+}

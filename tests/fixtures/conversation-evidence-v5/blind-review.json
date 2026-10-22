@@ -1,0 +1,1045 @@
+{
+  "human_review": false,
+  "reviewer_kind": "separate_agent_same_model_family",
+  "reviewer": "roles_v5_blind_review",
+  "cases": [
+    {
+      "id": "cev5q_066_01",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "066_01"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "066_01",
+          "relation": "supports_answer",
+          "rationale": "Da 05:40 y puesto Sauce para Dalia en octubre."
+        }
+      ],
+      "rationale": "La hora y el puesto solicitados constan expresamente.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_066_02",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "066_04"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "066_04",
+          "relation": "supports_answer",
+          "rationale": "Indica CSV para el formulario Ribera."
+        }
+      ],
+      "rationale": "El formato solicitado está explícito.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_066_03",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "066_06",
+        "066_07"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "066_06",
+          "relation": "refutes_premise",
+          "rationale": "Niega que se capturen aves en Ribera y explica la lectura desde la orilla."
+        },
+        {
+          "statement_id": "066_07",
+          "relation": "refutes_premise",
+          "rationale": "Sitúa expresamente la captura con redes en Veta, separado de Ribera."
+        }
+      ],
+      "rationale": "La captura con redes no corresponde al censo Ribera.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_066_04",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "066_08"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "066_08",
+          "relation": "refutes_premise",
+          "rationale": "La lancha Ribera fue anulada y el recorrido de octubre será a pie."
+        }
+      ],
+      "rationale": "No hay zarpe de la lancha contratada porque fue anulada.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_066_05",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "066_10",
+        "066_11",
+        "066_12"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "066_10",
+          "relation": "pending_or_partial",
+          "rationale": "Faltan los recuentos de Brezo y Limo para el total de los cuatro sectores."
+        },
+        {
+          "statement_id": "066_11",
+          "relation": "pending_or_partial",
+          "rationale": "Aporta veinticuatro garzas de Sauce en octubre, parte concreta del total pedido."
+        },
+        {
+          "statement_id": "066_12",
+          "relation": "pending_or_partial",
+          "rationale": "Aporta diecisiete garzas de Junco en octubre, parte concreta del total pedido."
+        }
+      ],
+      "rationale": "Solo hay cifras de dos sectores y quedan dos sin contar; no consta el total de octubre.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_066_06",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "066_14",
+        "066_15"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "066_14",
+          "relation": "pending_or_partial",
+          "rationale": "Falta la firma de tesorería para autorizar el pago."
+        },
+        {
+          "statement_id": "066_15",
+          "relation": "pending_or_partial",
+          "rationale": "Tesorería todavía no ha decidido; recibir el expediente no es decidir."
+        }
+      ],
+      "rationale": "La autorización y la decisión de tesorería siguen pendientes.",
+      "ambiguities": [
+        "La primera parte admite una respuesta negativa explícita; se conserva pending_or_partial por el estado de decisión pendiente y la ausencia de fecha de decisión."
+      ]
+    },
+    {
+      "id": "cev5q_066_07",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "evidence_relations": [],
+      "rationale": "El nombre del buzón Ribera no es su contraseña; la contraseña de Salitre pertenece a otro buzón.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_066_08",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "evidence_relations": [],
+      "rationale": "El precio citado es para Veta en septiembre; ningún precio corresponde al alquiler Ribera de octubre.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_067_01",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "067_01"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "067_01",
+          "relation": "supports_answer",
+          "rationale": "Indica ciento veinte gramos por kilo para Aurora el 18 de octubre."
+        }
+      ],
+      "rationale": "La proporción pedida está completa.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_067_02",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "067_03"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "067_03",
+          "relation": "supports_answer",
+          "rationale": "Da 235 grados de precalentamiento y 210 al cargar Aurora."
+        }
+      ],
+      "rationale": "Se indican ambas temperaturas.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_067_03",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "067_06"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "067_06",
+          "relation": "refutes_premise",
+          "rationale": "Corrige expresamente que Aurora no lleva miel y que el dulzor es de malta."
+        }
+      ],
+      "rationale": "La pregunta presupone miel que la fuente excluye.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_067_04",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "067_08"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "067_08",
+          "relation": "refutes_premise",
+          "rationale": "Niega la venta de Aurora el 18 de octubre y afirma reparto gratuito."
+        }
+      ],
+      "rationale": "Las piezas no se vendieron, así que la premisa de precio de venta es incorrecta.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_067_05",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "067_10"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "067_10",
+          "relation": "pending_or_partial",
+          "rationale": "Da comienzo a las 08:10 y señala que no se registró el final."
+        }
+      ],
+      "rationale": "Se conoce el inicio, pero no el final de la fermentación final.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_067_06",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "067_13",
+        "067_14"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "067_13",
+          "relation": "pending_or_partial",
+          "rationale": "Da resistencia a humedad de dos días y prueba de aplastamiento pendiente."
+        },
+        {
+          "statement_id": "067_14",
+          "relation": "pending_or_partial",
+          "rationale": "Aporta cierre hermético en sellado, una de las tres pruebas pedidas."
+        }
+      ],
+      "rationale": "Hay resultados de humedad y sellado, pero falta medir aplastamiento.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_067_07",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "evidence_relations": [],
+      "rationale": "La factura FAC-731 es de Bruma; la posición del molino Aurora no aporta factura.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_067_08",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "evidence_relations": [],
+      "rationale": "El vencimiento citado es de Bruma; el recipiente de Aurora no informa una fecha.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_068_01",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "068_01"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "068_01",
+          "relation": "supports_answer",
+          "rationale": "Da TIFF y 600 puntos por pulgada para Luciérnaga."
+        }
+      ],
+      "rationale": "Constan formato y resolución completos.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_068_02",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "068_03"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "068_03",
+          "relation": "supports_answer",
+          "rationale": "Exige guantes de nitrilo sin polvo para el original Luciérnaga."
+        }
+      ],
+      "rationale": "Consta el tipo de guantes solicitado.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_068_03",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "068_06"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "068_06",
+          "relation": "refutes_premise",
+          "rationale": "Corrige la atribución a Teo e identifica a Sara Olmedo como autora."
+        }
+      ],
+      "rationale": "Teo no es el autor del libreto Luciérnaga.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_068_04",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "068_08"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "068_08",
+          "relation": "refutes_premise",
+          "rationale": "La sesión Luciérnaga del viernes es cerrada al público."
+        }
+      ],
+      "rationale": "No existe la entrada de público presupuesta para esa sesión.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_068_05",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "068_10",
+        "068_11",
+        "068_12"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "068_10",
+          "relation": "pending_or_partial",
+          "rationale": "Da dieciocho páginas digitalizadas y seis pendientes de las veinticuatro."
+        },
+        {
+          "statement_id": "068_11",
+          "relation": "pending_or_partial",
+          "rationale": "Aporta control de enfoque superado de las páginas 1 a 18, estado concreto de la preparación de la copia."
+        },
+        {
+          "statement_id": "068_12",
+          "relation": "pending_or_partial",
+          "rationale": "Condiciona la publicación a tener digitalizadas las veinticuatro páginas."
+        }
+      ],
+      "rationale": "La digitalización y la preparación para publicar siguen incompletas.",
+      "ambiguities": [
+        "La pregunta de estado admite un no a partir de las páginas pendientes; se usa pending_or_partial por el trabajo incompleto. El control de enfoque es evidencia parcial de preparación, no prueba de que toda la copia esté lista."
+      ]
+    },
+    {
+      "id": "cev5q_068_06",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "068_13",
+        "068_14"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "068_13",
+          "relation": "pending_or_partial",
+          "rationale": "Confirma embalaje para el 27 de octubre pero recogida sin fijar."
+        },
+        {
+          "statement_id": "068_14",
+          "relation": "pending_or_partial",
+          "rationale": "La asignación de vehículo pendiente impide fijar la hora de recogida."
+        }
+      ],
+      "rationale": "Hay fecha de embalaje, pero no hora de recogida.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_068_07",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "evidence_relations": [],
+      "rationale": "El valor asegurado es del cartel Neblina y no del libreto Luciérnaga.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_068_08",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "evidence_relations": [],
+      "rationale": "El código es de la sala Neblina; la planta de la sala Luciérnaga no da su código.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_069_01",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "069_01"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "069_01",
+          "relation": "supports_answer",
+          "rationale": "Celia lleva la brújula y Omar el botiquín en Nadir el 24 de octubre."
+        }
+      ],
+      "rationale": "Se identifican ambos responsables en la ruta y fecha pedidas.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_069_02",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "069_03"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "069_03",
+          "relation": "supports_answer",
+          "rationale": "Da portón del pinar y 19:20 para la salida Nadir."
+        }
+      ],
+      "rationale": "Constan lugar y hora de salida.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_069_03",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "069_06"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "069_06",
+          "relation": "refutes_premise",
+          "rationale": "Nadir no cruza el vado; cruza el puente de piedra."
+        }
+      ],
+      "rationale": "La pregunta presupone un cruce del vado que fue retirado.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_069_04",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "069_08"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "069_08",
+          "relation": "refutes_premise",
+          "rationale": "Nadir no es cronometrada ni tiene clasificación."
+        }
+      ],
+      "rationale": "No se puede ganar una clasificación inexistente.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_069_05",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "069_10",
+        "069_11",
+        "069_12"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "069_10",
+          "relation": "pending_or_partial",
+          "rationale": "Solo seis parejas presentaron faros verificados; faltan dos."
+        },
+        {
+          "statement_id": "069_11",
+          "relation": "pending_or_partial",
+          "rationale": "Los seis juegos probados funcionaron una hora, evidencia concreta sobre autonomía de parte del conjunto."
+        },
+        {
+          "statement_id": "069_12",
+          "relation": "pending_or_partial",
+          "rationale": "Las dos parejas pendientes tienen comprobación citada para el martes."
+        }
+      ],
+      "rationale": "Hay comprobación parcial y faltan dos parejas.",
+      "ambiguities": [
+        "El estado global permite contestar no, pero se conserva pending_or_partial porque las pruebas de todo el conjunto no están completas."
+      ]
+    },
+    {
+      "id": "cev5q_069_06",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "069_13",
+        "069_14"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "069_13",
+          "relation": "pending_or_partial",
+          "rationale": "El pinar está cubierto y el roquedo sigue pendiente de autorización."
+        },
+        {
+          "statement_id": "069_14",
+          "relation": "pending_or_partial",
+          "rationale": "La entidad recibió el mapa corregido, estado del trámite concreto del permiso del roquedo."
+        }
+      ],
+      "rationale": "La autorización del trazado está incompleta y no consta aprobación del roquedo.",
+      "ambiguities": [
+        "Recibir el mapa no permite fechar una aprobación; es estado del trámite pendiente."
+      ]
+    },
+    {
+      "id": "cev5q_069_07",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "evidence_relations": [],
+      "rationale": "La cuota dada es de Cenit; la hoja de inscripción Nadir no contiene importes.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_069_08",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "evidence_relations": [],
+      "rationale": "Se identifica a Marta, pero no consta su teléfono; el número dado pertenece a la guardesa de Cenit.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_070_01",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "070_01"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "070_01",
+          "relation": "supports_answer",
+          "rationale": "Índigo I4 se fija veinte minutos en vapor."
+        }
+      ],
+      "rationale": "Método y duración están explícitos.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_070_02",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "070_02"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "070_02",
+          "relation": "supports_answer",
+          "rationale": "Indica luz D65 y fondo blanco mate para Índigo I4."
+        }
+      ],
+      "rationale": "Constan iluminación y fondo completos.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_070_03",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "070_06"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "070_06",
+          "relation": "refutes_premise",
+          "rationale": "Excluye añil natural y documenta pigmento sintético en Índigo I4."
+        }
+      ],
+      "rationale": "La pregunta presupone una extracción vegetal que no ocurrió.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_070_04",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "070_08"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "070_08",
+          "relation": "refutes_premise",
+          "rationale": "Niega lavado caliente y afirma aclarado frío de Índigo I4."
+        }
+      ],
+      "rationale": "La premisa de agua caliente es incorrecta.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_070_05",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "070_10",
+        "070_11"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "070_10",
+          "relation": "pending_or_partial",
+          "rationale": "Da grado cuatro en seco y prueba húmeda aún sin hacer."
+        },
+        {
+          "statement_id": "070_11",
+          "relation": "pending_or_partial",
+          "rationale": "La muestra para la prueba húmeda está preparada y sellada, estado concreto del ensayo pendiente."
+        }
+      ],
+      "rationale": "Se conoce el grado en seco; falta medir el húmedo.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_070_06",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "070_13",
+        "070_14"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "070_13",
+          "relation": "pending_or_partial",
+          "rationale": "Dos metros de lino reservados y día de repetición aún no confirmado."
+        },
+        {
+          "statement_id": "070_14",
+          "relation": "pending_or_partial",
+          "rationale": "La fecha se responderá después de reparar la caldera, estado pendiente de la confirmación pedida."
+        }
+      ],
+      "rationale": "Cantidad reservada conocida, fecha sin confirmar.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_070_07",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "evidence_relations": [],
+      "rationale": "El precio por kilo corresponde al extracto Rubia R8; el recipiente Índigo I4 no aporta coste.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_070_08",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "evidence_relations": [],
+      "rationale": "La densidad citada es de Rubia R8; la cuba de Índigo I4 no informa densidad.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_071_01",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "071_01"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "071_01",
+          "relation": "supports_answer",
+          "rationale": "Olmo se recoge miércoles de 16:00 a 18:00 en caseta norte."
+        }
+      ],
+      "rationale": "Constan lugar y horario de recogida.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_071_02",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "071_03",
+        "071_08"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "071_03",
+          "relation": "supports_answer",
+          "rationale": "Para reservar Olmo se presenta carné vecinal vigente."
+        },
+        {
+          "statement_id": "071_08",
+          "relation": "supports_answer",
+          "rationale": "Afirma que basta el carné vecinal vigente para Olmo."
+        }
+      ],
+      "rationale": "Ambas frases identifican de forma suficiente el documento exigido.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_071_03",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "071_06"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "071_06",
+          "relation": "refutes_premise",
+          "rationale": "Olmo sigue siendo propiedad de la red; es préstamo y no regalo."
+        }
+      ],
+      "rationale": "La adquisición por regalo presupuesta no sucede.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_071_04",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "071_08"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "071_08",
+          "relation": "refutes_premise",
+          "rationale": "Se eliminó expresamente la exigencia de avalista en Olmo."
+        }
+      ],
+      "rationale": "Olmo no requiere el avalista presupuesto.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_071_05",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "071_10",
+        "071_11"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "071_10",
+          "relation": "pending_or_partial",
+          "rationale": "Cable comprobado en buen estado y aislamiento todavía sin comprobar."
+        },
+        {
+          "statement_id": "071_11",
+          "relation": "pending_or_partial",
+          "rationale": "La prueba de aislamiento está asignada a Luz para la próxima semana."
+        }
+      ],
+      "rationale": "La revisión es parcial y el aislamiento está pendiente.",
+      "ambiguities": [
+        "La formulación permite responder no a la comprobación conjunta; se usa pending_or_partial por la prueba pendiente."
+      ]
+    },
+    {
+      "id": "cev5q_071_06",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "071_13",
+        "071_14",
+        "071_15"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "071_13",
+          "relation": "pending_or_partial",
+          "rationale": "Se devolvieron cuatro de seis brocas y se averigua el poseedor de las dos restantes."
+        },
+        {
+          "statement_id": "071_14",
+          "relation": "pending_or_partial",
+          "rationale": "Identifica las brocas devueltas como 3, 4, 5 y 6 milímetros."
+        },
+        {
+          "statement_id": "071_15",
+          "relation": "pending_or_partial",
+          "rationale": "Todavía no se identifica a quien tiene las dos brocas pendientes."
+        }
+      ],
+      "rationale": "Se conocen las brocas devueltas; falta identificar a la persona que tiene las restantes.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_071_07",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "evidence_relations": [],
+      "rationale": "El depósito reembolsable indicado corresponde a Fresno; el resguardo de Olmo no da importe.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_071_08",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "evidence_relations": [],
+      "rationale": "La serie dada es de Abedul; el color y ubicación de la placa Olmo no aportan su número.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_072_01",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "072_01"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "072_01",
+          "relation": "supports_answer",
+          "rationale": "Para Delta se eligió papel japonés de nueve gramos por metro cuadrado."
+        }
+      ],
+      "rationale": "Constan papel y gramaje pedidos.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_072_02",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "072_03"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "072_03",
+          "relation": "supports_answer",
+          "rationale": "Delta se guarda horizontalmente en el cajón 4."
+        }
+      ],
+      "rationale": "Constan cajón y posición.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_072_03",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "072_06"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "072_06",
+          "relation": "refutes_premise",
+          "rationale": "Niega impresión en 1920 y fecha Delta en 1936."
+        }
+      ],
+      "rationale": "La pregunta atribuye a Delta un año de impresión explícitamente incorrecto.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_072_04",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "072_08"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "072_08",
+          "relation": "refutes_premise",
+          "rationale": "Se descartó cinta comercial y se usará engrudo de almidón."
+        }
+      ],
+      "rationale": "No se pondrá la cinta comercial presupuesta.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_072_05",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "072_10",
+        "072_11",
+        "072_12"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "072_10",
+          "relation": "pending_or_partial",
+          "rationale": "Dos esquinas superiores limpiadas y dos inferiores sin tratar."
+        },
+        {
+          "statement_id": "072_11",
+          "relation": "pending_or_partial",
+          "rationale": "Describe sin manchas visibles la esquina superior izquierda."
+        },
+        {
+          "statement_id": "072_12",
+          "relation": "pending_or_partial",
+          "rationale": "Describe una mancha tenue persistente en la esquina superior derecha."
+        }
+      ],
+      "rationale": "Hay resultados individuales de dos esquinas; las otras dos aún no se trataron.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_072_06",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "072_13",
+        "072_14"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "072_13",
+          "relation": "pending_or_partial",
+          "rationale": "Aporta 180 unidades aprobadas para materiales y mano de obra sin cuantificar."
+        },
+        {
+          "statement_id": "072_14",
+          "relation": "pending_or_partial",
+          "rationale": "Falta estimación de horas de Alba para aprobar mano de obra."
+        }
+      ],
+      "rationale": "No se puede sumar el total porque la mano de obra sigue pendiente.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_072_07",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "evidence_relations": [],
+      "rationale": "Las medidas citadas son de Sierra; no hay dimensiones de Delta.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_072_08",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "evidence_relations": [],
+      "rationale": "La donante identificada es del mapa Sierra; no consta quién donó Delta.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_073_01",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "073_01"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "073_01",
+          "relation": "supports_answer",
+          "rationale": "Laurel recibe seis litros a las 07:00 martes y jueves."
+        }
+      ],
+      "rationale": "Constan cantidad, hora y días completos.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_073_02",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "073_03"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "073_03",
+          "relation": "supports_answer",
+          "rationale": "La sonda Laurel va a quince centímetros junto al borde este."
+        }
+      ],
+      "rationale": "Constan profundidad y lado.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_073_03",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "073_06"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "073_06",
+          "relation": "refutes_premise",
+          "rationale": "Laurel no usa agua de red; usa agua de lluvia del depósito L."
+        }
+      ],
+      "rationale": "La pregunta presupone una acometida de red que no abastece Laurel.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_073_04",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "073_08"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "073_08",
+          "relation": "refutes_premise",
+          "rationale": "No se aplicó fertilizante nitrogenado a Laurel en octubre."
+        }
+      ],
+      "rationale": "La aplicación de fertilizante presupuesta está explícitamente negada.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_073_05",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "073_10",
+        "073_11"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "073_10",
+          "relation": "pending_or_partial",
+          "rationale": "Da 32 por ciento a las 07:00 y lectura de las 19:00 pendiente."
+        },
+        {
+          "statement_id": "073_11",
+          "relation": "pending_or_partial",
+          "rationale": "La lectura de las 19:00 se asignó a Maite para esta tarde."
+        }
+      ],
+      "rationale": "Hay valor matinal y estado pendiente de la lectura vespertina.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_073_06",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "073_13",
+        "073_14"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "073_13",
+          "relation": "pending_or_partial",
+          "rationale": "Confirma válvula de media pulgada, pero no día de llegada."
+        },
+        {
+          "statement_id": "073_14",
+          "relation": "pending_or_partial",
+          "rationale": "El proveedor aún debe liberar inventario para enviar fecha de entrega."
+        }
+      ],
+      "rationale": "Se confirma el tamaño; sigue sin fecha de llegada.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_073_07",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "evidence_relations": [],
+      "rationale": "La conductividad indicada corresponde al depósito Romero; la tapa de L no informa ese valor.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev5q_073_08",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "evidence_relations": [],
+      "rationale": "El precio dado es del contador Romero; la ubicación del contador Laurel no aporta coste.",
+      "ambiguities": []
+    }
+  ]
+}

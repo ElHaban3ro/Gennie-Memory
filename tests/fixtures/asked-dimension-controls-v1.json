@@ -1,0 +1,9 @@
+{
+  "version":"asked-dimension-development-controls-v1",
+  "label_source":"agent_synthetic_development_control",
+  "independent_review":false,
+  "cases":[
+    {"id":"format_requested","source_original_case_id":"cev5q_068_05","source_memory_id":"cev5_068_01","query":"¿En qué formato se hará la digitalización del libreto Luciérnaga?","expected_useful":true},
+    {"id":"resolution_requested","source_original_case_id":"cev5q_068_05","source_memory_id":"cev5_068_01","query":"¿A cuántos puntos por pulgada se hará la digitalización del libreto Luciérnaga?","expected_useful":true}
+  ]
+}

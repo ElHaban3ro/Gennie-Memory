@@ -1,0 +1,4034 @@
+[
+  {
+    "id": "cev6_074_01",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_074",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El parte de restauración del mosaico ficticio Nuvarel del 14 de octubre asigna a Iverna la limpieza de las teselas azules.",
+    "summary": "El parte de restauración del mosaico ficticio Nuvarel del 14 de octubre asigna a Iverna la limpieza de las teselas azules.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/074/01"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_074_02",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_074",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Según la ficha del taller, Iverna debe usar agua desmineralizada para limpiar las teselas azules de Nuvarel.",
+    "summary": "Según la ficha del taller, Iverna debe usar agua desmineralizada para limpiar las teselas azules de Nuvarel.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/074/02"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_074_03",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_074",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La copia firmada del parte del 14 de octubre confirma que la limpieza de las teselas azules corresponde a Iverna.",
+    "summary": "La copia firmada del parte del 14 de octubre confirma que la limpieza de las teselas azules corresponde a Iverna.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/074/03"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_074_04",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_074",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "En el registro de entrega, el mosaico Nuvarel figura como cedido temporalmente; el taller no lo compró.",
+    "summary": "En el registro de entrega, el mosaico Nuvarel figura como cedido temporalmente; el taller no lo compró.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/074/04"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_074_05",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_074",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El acta de custodia dice expresamente que Nuvarel sigue siendo propiedad del archivo Orvane.",
+    "summary": "El acta de custodia dice expresamente que Nuvarel sigue siendo propiedad del archivo Orvane.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/074/05"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_074_06",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_074",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La propuesta de compra del mosaico Nuvarel fue retirada el 9 de octubre sin efectuar pago.",
+    "summary": "La propuesta de compra del mosaico Nuvarel fue retirada el 9 de octubre sin efectuar pago.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/074/06"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_074_07",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_074",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El informe de conservación de Nuvarel registra que la prueba de adhesivo empezó el 15 de octubre.",
+    "summary": "El informe de conservación de Nuvarel registra que la prueba de adhesivo empezó el 15 de octubre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/074/07"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_074_08",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_074",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El resultado de la prueba de adhesivo de Nuvarel aún no está redactado, según la anotación del 18 de octubre.",
+    "summary": "El resultado de la prueba de adhesivo de Nuvarel aún no está redactado, según la anotación del 18 de octubre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/074/08"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_074_09",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_074",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La hoja de embalaje de Nuvarel registra cuatro cajas numeradas del 1 al 4.",
+    "summary": "La hoja de embalaje de Nuvarel registra cuatro cajas numeradas del 1 al 4.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/074/09"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_074_10",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_074",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La hoja de embalaje de Nuvarel deja en blanco el peso conjunto de las cuatro cajas.",
+    "summary": "La hoja de embalaje de Nuvarel deja en blanco el peso conjunto de las cuatro cajas.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/074/10"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_074_11",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_074",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Para retirar Nuvarel del taller es obligatorio presentar la autorización de custodia del archivo Orvane, según la recepción.",
+    "summary": "Para retirar Nuvarel del taller es obligatorio presentar la autorización de custodia del archivo Orvane, según la recepción.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/074/11"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_074_12",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_074",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La recepción aclara que la autorización de custodia para retirar Nuvarel debe estar firmada por la archivera.",
+    "summary": "La recepción aclara que la autorización de custodia para retirar Nuvarel debe estar firmada por la archivera.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/074/12"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_074_13",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_074",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "En la sesión anterior de septiembre, la limpieza de Nuvarel estuvo a cargo de Tesvan.",
+    "summary": "En la sesión anterior de septiembre, la limpieza de Nuvarel estuvo a cargo de Tesvan.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/074/13"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_074_14",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_074",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Tesvan limpia ahora las teselas rojas del panel Erunco, no las azules de Nuvarel.",
+    "summary": "Tesvan limpia ahora las teselas rojas del panel Erunco, no las azules de Nuvarel.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/074/14"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_074_15",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_074",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La factura del panel Erunco registra un precio de 430 unidades ficticias.",
+    "summary": "La factura del panel Erunco registra un precio de 430 unidades ficticias.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/074/15"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_074_16",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_074",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El adhesivo del panel Erunco superó la prueba de tracción el 16 de octubre.",
+    "summary": "El adhesivo del panel Erunco superó la prueba de tracción el 16 de octubre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/074/16"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_074_17",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_074",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Las cuatro cajas de Erunco pesan juntas 31 kilogramos, según su hoja de embalaje.",
+    "summary": "Las cuatro cajas de Erunco pesan juntas 31 kilogramos, según su hoja de embalaje.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/074/17"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_074_18",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_074",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El archivo Orvane dispone de una puerta lateral para las entregas de gran tamaño.",
+    "summary": "El archivo Orvane dispone de una puerta lateral para las entregas de gran tamaño.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/074/18"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_074_19",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_074",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El inventario del taller ubica Nuvarel en el banco B durante las labores de conservación.",
+    "summary": "El inventario del taller ubica Nuvarel en el banco B durante las labores de conservación.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/074/19"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_074_20",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_074",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La fotografía de Nuvarel tomada el 14 de octubre muestra una esquina cubierta con papel neutro.",
+    "summary": "La fotografía de Nuvarel tomada el 14 de octubre muestra una esquina cubierta con papel neutro.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/074/20"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_074_21",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_074",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El parte de Nuvarel limita la limpieza de Iverna a la jornada del 14 de octubre.",
+    "summary": "El parte de Nuvarel limita la limpieza de Iverna a la jornada del 14 de octubre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/074/21"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_074_22",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_074",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La carta del archivo pide que se conserve la numeración de las cajas de Nuvarel.",
+    "summary": "La carta del archivo pide que se conserve la numeración de las cajas de Nuvarel.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/074/22"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_074_23",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_074",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "En el taller hay dos carros vacíos reservados para futuros traslados.",
+    "summary": "En el taller hay dos carros vacíos reservados para futuros traslados.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/074/23"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_074_24",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_074",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El panel Erunco pertenece a una colección particular diferente del archivo Orvane.",
+    "summary": "El panel Erunco pertenece a una colección particular diferente del archivo Orvane.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/074/24"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_074_25",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_074",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La propuesta retirada de Nuvarel contemplaba una compra, pero nunca llegó a convertirse en contrato.",
+    "summary": "La propuesta retirada de Nuvarel contemplaba una compra, pero nunca llegó a convertirse en contrato.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/074/25"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_074_26",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_074",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El cuaderno de Iverna anota una pausa de limpieza a las 11:20 el 14 de octubre.",
+    "summary": "El cuaderno de Iverna anota una pausa de limpieza a las 11:20 el 14 de octubre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/074/26"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_074_27",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_074",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La prueba de adhesivo de Nuvarel se realiza sobre una muestra separada del mosaico.",
+    "summary": "La prueba de adhesivo de Nuvarel se realiza sobre una muestra separada del mosaico.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/074/27"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_074_28",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_074",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El sello azul de la hoja de embalaje de Nuvarel identifica la revisión de octubre.",
+    "summary": "El sello azul de la hoja de embalaje de Nuvarel identifica la revisión de octubre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/074/28"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_075_01",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_075",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El cuaderno de la expedición espeleológica ficticia Heskora sitúa la estación de muestreo de Veldis en la galería de las Agujas.",
+    "summary": "El cuaderno de la expedición espeleológica ficticia Heskora sitúa la estación de muestreo de Veldis en la galería de las Agujas.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/075/01"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_075_02",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_075",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La guía de campo indica que Veldis recoge las muestras de Heskora con tubos estériles de tapa ámbar.",
+    "summary": "La guía de campo indica que Veldis recoge las muestras de Heskora con tubos estériles de tapa ámbar.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/075/02"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_075_03",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_075",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El acta de salida de Heskora exige registrar el código del tubo antes de abandonar cada estación.",
+    "summary": "El acta de salida de Heskora exige registrar el código del tubo antes de abandonar cada estación.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/075/03"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_075_04",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_075",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El cartel de la galería de las Agujas confirma que allí está la estación asignada a Veldis.",
+    "summary": "El cartel de la galería de las Agujas confirma que allí está la estación asignada a Veldis.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/075/04"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_075_05",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_075",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El diario de Heskora del 16 de octubre dice que el equipo suspendió el descenso al pozo por una crecida.",
+    "summary": "El diario de Heskora del 16 de octubre dice que el equipo suspendió el descenso al pozo por una crecida.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/075/05"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_075_06",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_075",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El parte de seguridad confirma que nadie del equipo Heskora llegó al fondo del pozo el 16 de octubre.",
+    "summary": "El parte de seguridad confirma que nadie del equipo Heskora llegó al fondo del pozo el 16 de octubre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/075/06"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_075_07",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_075",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La ficha de la muestra HK-7 la identifica expresamente como cultivo de hongo, no como muestra de polen.",
+    "summary": "La ficha de la muestra HK-7 la identifica expresamente como cultivo de hongo, no como muestra de polen.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/075/07"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_075_08",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_075",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La ficha de laboratorio de HK-7 registra su ingreso el 17 de octubre a las 09:10.",
+    "summary": "La ficha de laboratorio de HK-7 registra su ingreso el 17 de octubre a las 09:10.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/075/08"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_075_09",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_075",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La ficha de HK-7 todavía no tiene completada la casilla de especie.",
+    "summary": "La ficha de HK-7 todavía no tiene completada la casilla de especie.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/075/09"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_075_10",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_075",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El registro de campo de Heskora identifica a Drezan como responsable de guardar los tubos usados.",
+    "summary": "El registro de campo de Heskora identifica a Drezan como responsable de guardar los tubos usados.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/075/10"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_075_11",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_075",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La nota de gastos de Heskora dice que los tubos usados se enviaron al laboratorio, pero no registra el coste de envío.",
+    "summary": "La nota de gastos de Heskora dice que los tubos usados se enviaron al laboratorio, pero no registra el coste de envío.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/075/11"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_075_12",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_075",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El informe de agosto de la expedición Olsuna sitúa su estación en la sala del Viento.",
+    "summary": "El informe de agosto de la expedición Olsuna sitúa su estación en la sala del Viento.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/075/12"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_075_13",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_075",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El 16 de octubre el equipo Olsuna sí alcanzó el fondo de su pozo, según su propio parte.",
+    "summary": "El 16 de octubre el equipo Olsuna sí alcanzó el fondo de su pozo, según su propio parte.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/075/13"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_075_14",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_075",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La muestra OS-7 de Olsuna está descrita como polen de conífera.",
+    "summary": "La muestra OS-7 de Olsuna está descrita como polen de conífera.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/075/14"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_075_15",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_075",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La especie de OS-7 fue identificada en el informe de Olsuna, separado del registro HK-7.",
+    "summary": "La especie de OS-7 fue identificada en el informe de Olsuna, separado del registro HK-7.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/075/15"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_075_16",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_075",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La nota de Olsuna registra 24 unidades ficticias de porte de sus tubos.",
+    "summary": "La nota de Olsuna registra 24 unidades ficticias de porte de sus tubos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/075/16"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_075_17",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_075",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El mapa de Heskora usa una línea punteada para las zonas que aún no fueron inspeccionadas.",
+    "summary": "El mapa de Heskora usa una línea punteada para las zonas que aún no fueron inspeccionadas.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/075/17"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_075_18",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_075",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La libreta de Veldis recomienda mantener legibles los códigos escritos en las tapas.",
+    "summary": "La libreta de Veldis recomienda mantener legibles los códigos escritos en las tapas.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/075/18"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_075_19",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_075",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El almacén de Heskora guarda los tubos nuevos en una caja con precinto verde.",
+    "summary": "El almacén de Heskora guarda los tubos nuevos en una caja con precinto verde.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/075/19"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_075_20",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_075",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La inspección de Heskora del 18 de octubre encontró intacto el precinto de la caja de tubos nuevos.",
+    "summary": "La inspección de Heskora del 18 de octubre encontró intacto el precinto de la caja de tubos nuevos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/075/20"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_075_21",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_075",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La estación de Veldis tiene una lámpara portátil de luz blanca.",
+    "summary": "La estación de Veldis tiene una lámpara portátil de luz blanca.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/075/21"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_075_22",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_075",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El inventario de Heskora reserva seis tubos vacíos para una futura visita.",
+    "summary": "El inventario de Heskora reserva seis tubos vacíos para una futura visita.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/075/22"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_075_23",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_075",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El registro del refugio anota que Veldis devolvió la lámpara el 17 de octubre.",
+    "summary": "El registro del refugio anota que Veldis devolvió la lámpara el 17 de octubre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/075/23"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_075_24",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_075",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Drezan anotó en el cuaderno de Heskora que separó los tubos usados de los nuevos.",
+    "summary": "Drezan anotó en el cuaderno de Heskora que separó los tubos usados de los nuevos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/075/24"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_075_25",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_075",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El responsable del refugio firma el parte de recepción de equipos de Heskora.",
+    "summary": "El responsable del refugio firma el parte de recepción de equipos de Heskora.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/075/25"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_075_26",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_075",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El informe de Heskora conserva como pendiente la identificación taxonómica de HK-7.",
+    "summary": "El informe de Heskora conserva como pendiente la identificación taxonómica de HK-7.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/075/26"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_075_27",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_075",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El croquis de la galería de las Agujas marca una bifurcación antes de la estación de Veldis.",
+    "summary": "El croquis de la galería de las Agujas marca una bifurcación antes de la estación de Veldis.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/075/27"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_075_28",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_075",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Los tubos de tapa ámbar de Heskora proceden del lote ficticio TA-6.",
+    "summary": "Los tubos de tapa ámbar de Heskora proceden del lote ficticio TA-6.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/075/28"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_076_01",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_076",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La biblioteca ambulante ficticia Queldra presta su carrito táctil los miércoles por la mañana, según el horario de octubre.",
+    "summary": "La biblioteca ambulante ficticia Queldra presta su carrito táctil los miércoles por la mañana, según el horario de octubre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/076/01"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_076_02",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_076",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El aviso de octubre de Queldra anuncia la salida del carrito táctil los miércoles por la mañana.",
+    "summary": "El aviso de octubre de Queldra anuncia la salida del carrito táctil los miércoles por la mañana.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/076/02"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_076_03",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_076",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La ficha de préstamo de Queldra indica que los libros en relieve se devuelven en el mostrador Nido.",
+    "summary": "La ficha de préstamo de Queldra indica que los libros en relieve se devuelven en el mostrador Nido.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/076/03"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_076_04",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_076",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El reglamento de Queldra permite renovar los libros en relieve una vez si no tienen reservas.",
+    "summary": "El reglamento de Queldra permite renovar los libros en relieve una vez si no tienen reservas.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/076/04"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_076_05",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_076",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El acta del 12 de octubre de Queldra deja claro que la rampa nueva aún no se ha instalado.",
+    "summary": "El acta del 12 de octubre de Queldra deja claro que la rampa nueva aún no se ha instalado.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/076/05"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_076_06",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_076",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La solicitud de compra de la rampa de Queldra sigue esperando aprobación el 18 de octubre.",
+    "summary": "La solicitud de compra de la rampa de Queldra sigue esperando aprobación el 18 de octubre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/076/06"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_076_07",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_076",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La ficha de Queldra clasifica el volumen Senderos de Sal como edición en macrotipo, no en braille.",
+    "summary": "La ficha de Queldra clasifica el volumen Senderos de Sal como edición en macrotipo, no en braille.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/076/07"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_076_08",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_076",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El inventario de Queldra describe Senderos de Sal como libro de letras ampliadas sin celdas braille.",
+    "summary": "El inventario de Queldra describe Senderos de Sal como libro de letras ampliadas sin celdas braille.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/076/08"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_076_09",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_076",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La ruta piloto del carrito de Queldra empieza en la plaza del Tejo.",
+    "summary": "La ruta piloto del carrito de Queldra empieza en la plaza del Tejo.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/076/09"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_076_10",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_076",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La hoja de ruta piloto de Queldra no especifica el punto de llegada.",
+    "summary": "La hoja de ruta piloto de Queldra no especifica el punto de llegada.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/076/10"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_076_11",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_076",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La hoja de ruta piloto de Queldra confirma como primera parada la plaza del Tejo.",
+    "summary": "La hoja de ruta piloto de Queldra confirma como primera parada la plaza del Tejo.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/076/11"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_076_12",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_076",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El registro del préstamo de Yosmar anota que devolvió la caja de láminas táctiles el 13 de octubre.",
+    "summary": "El registro del préstamo de Yosmar anota que devolvió la caja de láminas táctiles el 13 de octubre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/076/12"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_076_13",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_076",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El recibo de devolución de Yosmar no detalla cuántas láminas había dentro de la caja.",
+    "summary": "El recibo de devolución de Yosmar no detalla cuántas láminas había dentro de la caja.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/076/13"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_076_14",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_076",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La ficha de préstamo de Belnar anota diez láminas devueltas en otra caja el 11 de octubre.",
+    "summary": "La ficha de préstamo de Belnar anota diez láminas devueltas en otra caja el 11 de octubre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/076/14"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_076_15",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_076",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La biblioteca fija Lurenta abre su carrito de lectura los sábados por la tarde.",
+    "summary": "La biblioteca fija Lurenta abre su carrito de lectura los sábados por la tarde.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/076/15"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_076_16",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_076",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La rampa de Lurenta quedó instalada el 10 de octubre, según su acta de obra.",
+    "summary": "La rampa de Lurenta quedó instalada el 10 de octubre, según su acta de obra.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/076/16"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_076_17",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_076",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La edición braille de Senderos del Río está guardada en Lurenta.",
+    "summary": "La edición braille de Senderos del Río está guardada en Lurenta.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/076/17"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_076_18",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_076",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La ruta de Lurenta termina en el parque del Norte y no pertenece al piloto de Queldra.",
+    "summary": "La ruta de Lurenta termina en el parque del Norte y no pertenece al piloto de Queldra.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/076/18"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_076_19",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_076",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El carrito de Queldra tiene tres bandejas etiquetadas con figuras geométricas.",
+    "summary": "El carrito de Queldra tiene tres bandejas etiquetadas con figuras geométricas.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/076/19"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_076_20",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_076",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La encargada Evsira revisa las ruedas del carrito de Queldra cada lunes.",
+    "summary": "La encargada Evsira revisa las ruedas del carrito de Queldra cada lunes.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/076/20"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_076_21",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_076",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El mostrador Nido de Queldra tiene un timbre de asistencia.",
+    "summary": "El mostrador Nido de Queldra tiene un timbre de asistencia.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/076/21"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_076_22",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_076",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El reglamento de Queldra pide proteger los relieves de los libros durante su devolución.",
+    "summary": "El reglamento de Queldra pide proteger los relieves de los libros durante su devolución.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/076/22"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_076_23",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_076",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El horario de octubre de Queldra sustituye el horario provisional de septiembre.",
+    "summary": "El horario de octubre de Queldra sustituye el horario provisional de septiembre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/076/23"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_076_24",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_076",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "En septiembre, Queldra ensayó una salida del carrito un martes.",
+    "summary": "En septiembre, Queldra ensayó una salida del carrito un martes.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/076/24"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_076_25",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_076",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El registro de Queldra muestra que Yosmar recibió el justificante de devolución el mismo 13 de octubre.",
+    "summary": "El registro de Queldra muestra que Yosmar recibió el justificante de devolución el mismo 13 de octubre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/076/25"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_076_26",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_076",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El equipo de Queldra guardó la caja vacía de transporte bajo el mostrador Nido.",
+    "summary": "El equipo de Queldra guardó la caja vacía de transporte bajo el mostrador Nido.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/076/26"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_076_27",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_076",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Las reservas de Queldra se identifican por un número de turno impreso en el comprobante.",
+    "summary": "Las reservas de Queldra se identifican por un número de turno impreso en el comprobante.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/076/27"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_076_28",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_076",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La ficha de Queldra describe la cubierta de Senderos de Sal como lavable.",
+    "summary": "La ficha de Queldra describe la cubierta de Senderos de Sal como lavable.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/076/28"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_077_01",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_077",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La compañía de títeres ficticia Jorveta presenta El Farol Sumergido con subtítulos en la función del 22 de octubre, según su programa.",
+    "summary": "La compañía de títeres ficticia Jorveta presenta El Farol Sumergido con subtítulos en la función del 22 de octubre, según su programa.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/077/01"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_077_02",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_077",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El programa de Jorveta fija el comienzo de El Farol Sumergido del 22 de octubre a las 18:45.",
+    "summary": "El programa de Jorveta fija el comienzo de El Farol Sumergido del 22 de octubre a las 18:45.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/077/02"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_077_03",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_077",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La hoja técnica de Jorveta asigna a Naevor el manejo de los subtítulos el 22 de octubre.",
+    "summary": "La hoja técnica de Jorveta asigna a Naevor el manejo de los subtítulos el 22 de octubre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/077/03"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_077_04",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_077",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El aviso al público de Jorveta confirma que Naevor operará los subtítulos de El Farol Sumergido el 22 de octubre.",
+    "summary": "El aviso al público de Jorveta confirma que Naevor operará los subtítulos de El Farol Sumergido el 22 de octubre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/077/04"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_077_05",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_077",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La productora aclara por escrito que El Farol Sumergido no se emitirá por radio el 22 de octubre.",
+    "summary": "La productora aclara por escrito que El Farol Sumergido no se emitirá por radio el 22 de octubre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/077/05"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_077_06",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_077",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La ficha de difusión de El Farol Sumergido marca la opción radio como descartada para el 22 de octubre.",
+    "summary": "La ficha de difusión de El Farol Sumergido marca la opción radio como descartada para el 22 de octubre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/077/06"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_077_07",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_077",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "En Jorveta, el títere Arenal se mueve con varillas; la ficha niega que lleve motor.",
+    "summary": "En Jorveta, el títere Arenal se mueve con varillas; la ficha niega que lleve motor.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/077/07"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_077_08",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_077",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El inventario de Jorveta registra dos varillas desmontables para el títere Arenal.",
+    "summary": "El inventario de Jorveta registra dos varillas desmontables para el títere Arenal.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/077/08"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_077_09",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_077",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La reserva de la función de Jorveta para el grupo de Ulsira tiene confirmadas doce plazas.",
+    "summary": "La reserva de la función de Jorveta para el grupo de Ulsira tiene confirmadas doce plazas.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/077/09"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_077_10",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_077",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El correo de Ulsira indica que la distribución de esas doce plazas por fila aún se decidirá.",
+    "summary": "El correo de Ulsira indica que la distribución de esas doce plazas por fila aún se decidirá.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/077/10"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_077_11",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_077",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La nota de sala confirma doce localidades reservadas para el grupo de Ulsira.",
+    "summary": "La nota de sala confirma doce localidades reservadas para el grupo de Ulsira.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/077/11"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_077_12",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_077",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La bitácora de Jorveta registra que la proyección de prueba comenzó a las 15:05 el 18 de octubre.",
+    "summary": "La bitácora de Jorveta registra que la proyección de prueba comenzó a las 15:05 el 18 de octubre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/077/12"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_077_13",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_077",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La bitácora de Jorveta no consigna la duración de la proyección de prueba del 18 de octubre.",
+    "summary": "La bitácora de Jorveta no consigna la duración de la proyección de prueba del 18 de octubre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/077/13"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_077_14",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_077",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La compañía Marveta ofrece una emisión radial de otro espectáculo el 22 de octubre.",
+    "summary": "La compañía Marveta ofrece una emisión radial de otro espectáculo el 22 de octubre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/077/14"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_077_15",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_077",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "En Marveta, el títere Arenal de Invierno lleva un motor de bajo voltaje.",
+    "summary": "En Marveta, el títere Arenal de Invierno lleva un motor de bajo voltaje.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/077/15"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_077_16",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_077",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La reserva del grupo de Pretal tiene ocho plazas en la fila C, separada de la reserva de Ulsira.",
+    "summary": "La reserva del grupo de Pretal tiene ocho plazas en la fila C, separada de la reserva de Ulsira.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/077/16"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_077_17",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_077",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La prueba de luces de Marveta duró veinticinco minutos el 18 de octubre.",
+    "summary": "La prueba de luces de Marveta duró veinticinco minutos el 18 de octubre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/077/17"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_077_18",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_077",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El ensayo de Jorveta del 12 de octubre empezó a las 17:30.",
+    "summary": "El ensayo de Jorveta del 12 de octubre empezó a las 17:30.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/077/18"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_077_19",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_077",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La hoja técnica de Jorveta nombra a Sevrin como responsable del telón.",
+    "summary": "La hoja técnica de Jorveta nombra a Sevrin como responsable del telón.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/077/19"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_077_20",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_077",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El títere Arenal de Jorveta está guardado en un estuche de tela gris.",
+    "summary": "El títere Arenal de Jorveta está guardado en un estuche de tela gris.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/077/20"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_077_21",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_077",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La compañía Jorveta pidió que los subtítulos usen un fondo oscuro.",
+    "summary": "La compañía Jorveta pidió que los subtítulos usen un fondo oscuro.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/077/21"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_077_22",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_077",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El programa de Jorveta identifica El Farol Sumergido como una pieza de títeres de mesa.",
+    "summary": "El programa de Jorveta identifica El Farol Sumergido como una pieza de títeres de mesa.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/077/22"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_077_23",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_077",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La sala de Jorveta reserva un pasillo para el desplazamiento del equipo técnico.",
+    "summary": "La sala de Jorveta reserva un pasillo para el desplazamiento del equipo técnico.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/077/23"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_077_24",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_077",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La hoja de Jorveta del 18 de octubre registra una corrección ortográfica en el archivo de subtítulos.",
+    "summary": "La hoja de Jorveta del 18 de octubre registra una corrección ortográfica en el archivo de subtítulos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/077/24"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_077_25",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_077",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Ulsira recibió el correo de reserva de Jorveta el 17 de octubre.",
+    "summary": "Ulsira recibió el correo de reserva de Jorveta el 17 de octubre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/077/25"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_077_26",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_077",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Las varillas de Arenal se colocan en su estuche después de cada ensayo de Jorveta.",
+    "summary": "Las varillas de Arenal se colocan en su estuche después de cada ensayo de Jorveta.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/077/26"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_077_27",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_077",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La mesa de subtítulos de Jorveta está junto al puesto del telón.",
+    "summary": "La mesa de subtítulos de Jorveta está junto al puesto del telón.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/077/27"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_077_28",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_077",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El programa impreso de Jorveta lleva una ilustración de un farol azul.",
+    "summary": "El programa impreso de Jorveta lleva una ilustración de un farol azul.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/077/28"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_078_01",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_078",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El acta del ensayo de trazador del canal ficticio Odravel del 17 de octubre fija el vertido en la compuerta Espiga.",
+    "summary": "El acta del ensayo de trazador del canal ficticio Odravel del 17 de octubre fija el vertido en la compuerta Espiga.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/078/01"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_078_02",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_078",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La orden de campo de Odravel autoriza a Vensar a efectuar el vertido del trazador el 17 de octubre.",
+    "summary": "La orden de campo de Odravel autoriza a Vensar a efectuar el vertido del trazador el 17 de octubre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/078/02"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_078_03",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_078",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La bitácora del equipo de Odravel confirma que Vensar realizó el vertido del 17 de octubre en la compuerta Espiga.",
+    "summary": "La bitácora del equipo de Odravel confirma que Vensar realizó el vertido del 17 de octubre en la compuerta Espiga.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/078/03"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_078_04",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_078",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Para observar el trazador de Odravel, el protocolo indica usar la lámpara violeta del puesto de lectura.",
+    "summary": "Para observar el trazador de Odravel, el protocolo indica usar la lámpara violeta del puesto de lectura.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/078/04"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_078_05",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_078",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El protocolo de Odravel exige anotar la hora de cada observación del trazador.",
+    "summary": "El protocolo de Odravel exige anotar la hora de cada observación del trazador.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/078/05"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_078_06",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_078",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El informe del canal Odravel dice que el agua del ensayo circuló por un circuito cerrado sin descarga al río.",
+    "summary": "El informe del canal Odravel dice que el agua del ensayo circuló por un circuito cerrado sin descarga al río.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/078/06"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_078_07",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_078",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La inspección del ensayo de Odravel confirma que la salida al río permaneció cerrada durante toda la prueba.",
+    "summary": "La inspección del ensayo de Odravel confirma que la salida al río permaneció cerrada durante toda la prueba.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/078/07"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_078_08",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_078",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La ficha del trazador de Odravel identifica un colorante visible y descarta el uso de organismos vivos.",
+    "summary": "La ficha del trazador de Odravel identifica un colorante visible y descarta el uso de organismos vivos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/078/08"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_078_09",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_078",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El registro de Odravel anota la primera lectura del trazador a las 08:32 el 17 de octubre.",
+    "summary": "El registro de Odravel anota la primera lectura del trazador a las 08:32 el 17 de octubre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/078/09"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_078_10",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_078",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El registro de Odravel deja sin rellenar la concentración medida en esa primera lectura.",
+    "summary": "El registro de Odravel deja sin rellenar la concentración medida en esa primera lectura.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/078/10"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_078_11",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_078",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La hoja de mantenimiento de Odravel identifica a Ruveta como responsable de la limpieza posterior al ensayo.",
+    "summary": "La hoja de mantenimiento de Odravel identifica a Ruveta como responsable de la limpieza posterior al ensayo.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/078/11"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_078_12",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_078",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El parte de limpieza de Odravel confirma que Ruveta lavó el recipiente del trazador.",
+    "summary": "El parte de limpieza de Odravel confirma que Ruveta lavó el recipiente del trazador.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/078/12"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_078_13",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_078",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El parte de limpieza de Odravel no incluye el volumen de agua usado para lavar el recipiente.",
+    "summary": "El parte de limpieza de Odravel no incluye el volumen de agua usado para lavar el recipiente.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/078/13"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_078_14",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_078",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El ensayo del canal Aveldria descargó al río bajo su propio protocolo, distinto al de Odravel.",
+    "summary": "El ensayo del canal Aveldria descargó al río bajo su propio protocolo, distinto al de Odravel.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/078/14"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_078_15",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_078",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La primera lectura del canal Aveldria registró una concentración de 6 unidades ficticias.",
+    "summary": "La primera lectura del canal Aveldria registró una concentración de 6 unidades ficticias.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/078/15"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_078_16",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_078",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "En Aveldria, el recipiente del trazador se lavó con nueve litros de agua.",
+    "summary": "En Aveldria, el recipiente del trazador se lavó con nueve litros de agua.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/078/16"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_078_17",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_078",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El piloto de Odravel de agosto situaba el vertido en la compuerta Junco.",
+    "summary": "El piloto de Odravel de agosto situaba el vertido en la compuerta Junco.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/078/17"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_078_18",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_078",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La orden de campo de octubre de Odravel reemplaza la ubicación del piloto de agosto.",
+    "summary": "La orden de campo de octubre de Odravel reemplaza la ubicación del piloto de agosto.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/078/18"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_078_19",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_078",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El puesto de lectura de Odravel tiene una mesa protegida por un toldo.",
+    "summary": "El puesto de lectura de Odravel tiene una mesa protegida por un toldo.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/078/19"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_078_20",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_078",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El inventario de Odravel cuenta dos recipientes de reserva vacíos.",
+    "summary": "El inventario de Odravel cuenta dos recipientes de reserva vacíos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/078/20"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_078_21",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_078",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El plano de Odravel marca la compuerta Espiga con un triángulo naranja.",
+    "summary": "El plano de Odravel marca la compuerta Espiga con un triángulo naranja.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/078/21"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_078_22",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_078",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El puesto de Vensar en Odravel dispone de guantes y una bandeja colectora.",
+    "summary": "El puesto de Vensar en Odravel dispone de guantes y una bandeja colectora.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/078/22"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_078_23",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_078",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La lámpara violeta de Odravel se guardó en el armario de instrumentación después del ensayo.",
+    "summary": "La lámpara violeta de Odravel se guardó en el armario de instrumentación después del ensayo.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/078/23"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_078_24",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_078",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El acta del 17 de octubre de Odravel fue firmada por el coordinador de campo.",
+    "summary": "El acta del 17 de octubre de Odravel fue firmada por el coordinador de campo.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/078/24"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_078_25",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_078",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La ficha del colorante de Odravel indica que se presenta en un frasco opaco.",
+    "summary": "La ficha del colorante de Odravel indica que se presenta en un frasco opaco.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/078/25"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_078_26",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_078",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El circuito de Odravel tenía una malla en el retorno para retener hojas.",
+    "summary": "El circuito de Odravel tenía una malla en el retorno para retener hojas.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/078/26"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_078_27",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_078",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Ruveta entregó el parte de limpieza de Odravel el 18 de octubre.",
+    "summary": "Ruveta entregó el parte de limpieza de Odravel el 18 de octubre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/078/27"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_078_28",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_078",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La bitácora de Odravel identifica la primera lectura con el código local L1.",
+    "summary": "La bitácora de Odravel identifica la primera lectura con el código local L1.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/078/28"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_079_01",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_079",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El banco de semillas ficticio Eznora trasladará su lote de acedera AL-4 al congelador Tres, según la orden del 18 de octubre.",
+    "summary": "El banco de semillas ficticio Eznora trasladará su lote de acedera AL-4 al congelador Tres, según la orden del 18 de octubre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/079/01"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_079_02",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_079",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La orden de Eznora del 18 de octubre encarga a Luvren registrar el traslado del lote AL-4.",
+    "summary": "La orden de Eznora del 18 de octubre encarga a Luvren registrar el traslado del lote AL-4.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/079/02"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_079_03",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_079",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La etiqueta de destino de AL-4 en Eznora dice congelador Tres.",
+    "summary": "La etiqueta de destino de AL-4 en Eznora dice congelador Tres.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/079/03"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_079_04",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_079",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La ficha de conservación de AL-4 indica mantener el lote a menos dieciséis grados Celsius.",
+    "summary": "La ficha de conservación de AL-4 indica mantener el lote a menos dieciséis grados Celsius.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/079/04"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_079_05",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_079",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El parte de Eznora aclara que el lote AL-4 fue recibido como donación sin pago a la entidad donante.",
+    "summary": "El parte de Eznora aclara que el lote AL-4 fue recibido como donación sin pago a la entidad donante.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/079/05"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_079_06",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_079",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El recibo de ingreso de AL-4 identifica a la cooperativa ficticia Sirven como donante, sin venta del lote.",
+    "summary": "El recibo de ingreso de AL-4 identifica a la cooperativa ficticia Sirven como donante, sin venta del lote.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/079/06"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_079_07",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_079",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La nota técnica de Eznora identifica AL-4 como semillas secas; no contiene plántulas germinadas.",
+    "summary": "La nota técnica de Eznora identifica AL-4 como semillas secas; no contiene plántulas germinadas.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/079/07"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_079_08",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_079",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El acta de recuento de Eznora registra 320 sobres del lote AL-4.",
+    "summary": "El acta de recuento de Eznora registra 320 sobres del lote AL-4.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/079/08"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_079_09",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_079",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El acta de recuento de AL-4 no incluye el peso total de las semillas.",
+    "summary": "El acta de recuento de AL-4 no incluye el peso total de las semillas.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/079/09"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_079_10",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_079",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El correo de recepción de Eznora confirma 320 sobres recibidos para AL-4.",
+    "summary": "El correo de recepción de Eznora confirma 320 sobres recibidos para AL-4.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/079/10"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_079_11",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_079",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La solicitud de ensayo de AL-4 indica que la prueba de germinación se inició el 17 de octubre.",
+    "summary": "La solicitud de ensayo de AL-4 indica que la prueba de germinación se inició el 17 de octubre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/079/11"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_079_12",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_079",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El informe de AL-4 del 18 de octubre todavía no presenta porcentaje de germinación.",
+    "summary": "El informe de AL-4 del 18 de octubre todavía no presenta porcentaje de germinación.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/079/12"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_079_13",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_079",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El lote BR-4 del banco Nesmora fue comprado por 290 unidades ficticias.",
+    "summary": "El lote BR-4 del banco Nesmora fue comprado por 290 unidades ficticias.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/079/13"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_079_14",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_079",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El lote BR-4 de Nesmora contiene plántulas listas para trasplante.",
+    "summary": "El lote BR-4 de Nesmora contiene plántulas listas para trasplante.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/079/14"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_079_15",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_079",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Los 320 sobres del lote BR-4 de Nesmora pesan en total doce kilogramos.",
+    "summary": "Los 320 sobres del lote BR-4 de Nesmora pesan en total doce kilogramos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/079/15"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_079_16",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_079",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El ensayo de germinación de BR-4 obtuvo 82 por ciento en su informe final.",
+    "summary": "El ensayo de germinación de BR-4 obtuvo 82 por ciento en su informe final.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/079/16"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_079_17",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_079",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Una propuesta de septiembre ubicaba AL-4 en el congelador Uno de Eznora.",
+    "summary": "Una propuesta de septiembre ubicaba AL-4 en el congelador Uno de Eznora.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/079/17"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_079_18",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_079",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La orden del 18 de octubre de Eznora anula la propuesta de destino de septiembre para AL-4.",
+    "summary": "La orden del 18 de octubre de Eznora anula la propuesta de destino de septiembre para AL-4.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/079/18"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_079_19",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_079",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Luvren mantiene un cuaderno con la posición de las bandejas de Eznora.",
+    "summary": "Luvren mantiene un cuaderno con la posición de las bandejas de Eznora.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/079/19"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_079_20",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_079",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El congelador Tres de Eznora tiene sus bandejas identificadas por letras.",
+    "summary": "El congelador Tres de Eznora tiene sus bandejas identificadas por letras.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/079/20"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_079_21",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_079",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Los sobres de AL-4 llevan una etiqueta de papel resistente a la humedad.",
+    "summary": "Los sobres de AL-4 llevan una etiqueta de papel resistente a la humedad.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/079/21"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_079_22",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_079",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La cooperativa Sirven envió el lote AL-4 en una caja de cartón precintada.",
+    "summary": "La cooperativa Sirven envió el lote AL-4 en una caja de cartón precintada.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/079/22"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_079_23",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_079",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La ficha de AL-4 reserva cinco sobres para un examen futuro de pureza.",
+    "summary": "La ficha de AL-4 reserva cinco sobres para un examen futuro de pureza.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/079/23"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_079_24",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_079",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El banco Eznora separa las semillas del embalaje exterior al recibir cada lote.",
+    "summary": "El banco Eznora separa las semillas del embalaje exterior al recibir cada lote.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/079/24"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_079_25",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_079",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La lista de control de Eznora marca completa la lectura de etiquetas del lote AL-4.",
+    "summary": "La lista de control de Eznora marca completa la lectura de etiquetas del lote AL-4.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/079/25"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_079_26",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_079",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La prueba de germinación de AL-4 usa una muestra separada del lote almacenado.",
+    "summary": "La prueba de germinación de AL-4 usa una muestra separada del lote almacenado.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/079/26"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_079_27",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_079",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El correo de recepción de Eznora fue archivado en la carpeta Donaciones de Octubre.",
+    "summary": "El correo de recepción de Eznora fue archivado en la carpeta Donaciones de Octubre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/079/27"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_079_28",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_079",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El inventario de Eznora tiene un apartado para los sobres aún vacíos.",
+    "summary": "El inventario de Eznora tiene un apartado para los sobres aún vacíos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/079/28"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_080_01",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_080",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La orden de traslado del espejo astronómico ficticio Zavrion asigna la recogida del 20 de octubre al vehículo Caja Nueve.",
+    "summary": "La orden de traslado del espejo astronómico ficticio Zavrion asigna la recogida del 20 de octubre al vehículo Caja Nueve.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/080/01"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_080_02",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_080",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La hoja logística de Zavrion fija la recogida del 20 de octubre a las 07:15.",
+    "summary": "La hoja logística de Zavrion fija la recogida del 20 de octubre a las 07:15.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/080/02"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_080_03",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_080",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La etiqueta de envío de Zavrion confirma que el vehículo de recogida es Caja Nueve.",
+    "summary": "La etiqueta de envío de Zavrion confirma que el vehículo de recogida es Caja Nueve.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/080/03"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_080_04",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_080",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La instrucción de desembalaje de Zavrion pide apoyar la caja sobre los topes de corcho antes de abrirla.",
+    "summary": "La instrucción de desembalaje de Zavrion pide apoyar la caja sobre los topes de corcho antes de abrirla.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/080/04"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_080_05",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_080",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La instrucción de desembalaje de Zavrion indica que solo se retirará la tapa cuando la caja esté apoyada sobre los topes de corcho.",
+    "summary": "La instrucción de desembalaje de Zavrion indica que solo se retirará la tapa cuando la caja esté apoyada sobre los topes de corcho.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/080/05"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_080_06",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_080",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El informe del observatorio declara que Zavrion es un espejo sin recubrimiento reflectante aplicado todavía.",
+    "summary": "El informe del observatorio declara que Zavrion es un espejo sin recubrimiento reflectante aplicado todavía.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/080/06"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_080_07",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_080",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La ficha de taller de Zavrion dice que su aluminizado está pendiente y aún no ha comenzado.",
+    "summary": "La ficha de taller de Zavrion dice que su aluminizado está pendiente y aún no ha comenzado.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/080/07"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_080_08",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_080",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La hoja de aduanas de Zavrion aclara que el traslado ocurre dentro del mismo distrito ficticio y no cruza una frontera nacional.",
+    "summary": "La hoja de aduanas de Zavrion aclara que el traslado ocurre dentro del mismo distrito ficticio y no cruza una frontera nacional.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/080/08"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_080_09",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_080",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El registro de reservas de Zavrion confirma que Orvila acompañará la recogida.",
+    "summary": "El registro de reservas de Zavrion confirma que Orvila acompañará la recogida.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/080/09"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_080_10",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_080",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La hoja de viaje de Zavrion no registra el teléfono de contacto de Orvila.",
+    "summary": "La hoja de viaje de Zavrion no registra el teléfono de contacto de Orvila.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/080/10"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_080_11",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_080",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El acta de inspección de la caja de Zavrion registra una grieta superficial en la cara oeste.",
+    "summary": "El acta de inspección de la caja de Zavrion registra una grieta superficial en la cara oeste.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/080/11"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_080_12",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_080",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La orden de reparación de la caja de Zavrion sigue sin presupuesto aprobado.",
+    "summary": "La orden de reparación de la caja de Zavrion sigue sin presupuesto aprobado.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/080/12"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_080_13",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_080",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El espejo Tervion del observatorio Olnes fue aluminizado el 12 de octubre.",
+    "summary": "El espejo Tervion del observatorio Olnes fue aluminizado el 12 de octubre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/080/13"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_080_14",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_080",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El traslado de Tervion cruzó una frontera nacional con su propia declaración aduanera.",
+    "summary": "El traslado de Tervion cruzó una frontera nacional con su propia declaración aduanera.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/080/14"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_080_15",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_080",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La acompañante del traslado de Tervion es Urdela, cuyo teléfono figura en otro expediente.",
+    "summary": "La acompañante del traslado de Tervion es Urdela, cuyo teléfono figura en otro expediente.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/080/15"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_080_16",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_080",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El presupuesto de reparación de la caja de Tervion fue de 170 unidades ficticias.",
+    "summary": "El presupuesto de reparación de la caja de Tervion fue de 170 unidades ficticias.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/080/16"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_080_17",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_080",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La propuesta de traslado de Zavrion del 5 de octubre nombraba el vehículo Caja Dos.",
+    "summary": "La propuesta de traslado de Zavrion del 5 de octubre nombraba el vehículo Caja Dos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/080/17"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_080_18",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_080",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La orden del 18 de octubre sustituyó Caja Dos por Caja Nueve para recoger Zavrion el día 20.",
+    "summary": "La orden del 18 de octubre sustituyó Caja Dos por Caja Nueve para recoger Zavrion el día 20.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/080/18"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_080_19",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_080",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La cubierta protectora de Zavrion es de tejido sin pelusa.",
+    "summary": "La cubierta protectora de Zavrion es de tejido sin pelusa.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/080/19"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_080_20",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_080",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El inventario de embalaje de Zavrion cuenta seis topes de corcho.",
+    "summary": "El inventario de embalaje de Zavrion cuenta seis topes de corcho.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/080/20"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_080_21",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_080",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El técnico Nelvran comprobó el cierre de la caja de Zavrion el 18 de octubre.",
+    "summary": "El técnico Nelvran comprobó el cierre de la caja de Zavrion el 18 de octubre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/080/21"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_080_22",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_080",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La recogida de Zavrion está prevista en la puerta de carga del taller.",
+    "summary": "La recogida de Zavrion está prevista en la puerta de carga del taller.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/080/22"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_080_23",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_080",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La bitácora del taller registra que Zavrion permanece embalado el 18 de octubre.",
+    "summary": "La bitácora del taller registra que Zavrion permanece embalado el 18 de octubre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/080/23"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_080_24",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_080",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La hoja de control de Zavrion requiere conservar los topes después del desembalaje.",
+    "summary": "La hoja de control de Zavrion requiere conservar los topes después del desembalaje.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/080/24"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_080_25",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_080",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El equipo de óptica fotografió la grieta de la caja de Zavrion para adjuntarla al acta.",
+    "summary": "El equipo de óptica fotografió la grieta de la caja de Zavrion para adjuntarla al acta.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/080/25"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_080_26",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_080",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El acta de inspección de Zavrion usa la palabra superficial para describir la grieta de su caja.",
+    "summary": "El acta de inspección de Zavrion usa la palabra superficial para describir la grieta de su caja.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/080/26"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_080_27",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_080",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La etiqueta de Zavrion pide que las flechas impresas permanezcan hacia arriba.",
+    "summary": "La etiqueta de Zavrion pide que las flechas impresas permanezcan hacia arriba.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/080/27"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_080_28",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_080",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La hoja logística de Zavrion fue entregada al conductor el 18 de octubre.",
+    "summary": "La hoja logística de Zavrion fue entregada al conductor el 18 de octubre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/080/28"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_081_01",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_081",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El catálogo de la muestra de mapas tejidos ficticia Yelvria atribuye la pieza Rutas del Estuario a la tejedora Dovren.",
+    "summary": "El catálogo de la muestra de mapas tejidos ficticia Yelvria atribuye la pieza Rutas del Estuario a la tejedora Dovren.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/081/01"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_081_02",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_081",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La cartela de Rutas del Estuario de Yelvria también nombra a Dovren como autora.",
+    "summary": "La cartela de Rutas del Estuario de Yelvria también nombra a Dovren como autora.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/081/02"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_081_03",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_081",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La ficha de montaje de Yelvria indica que Rutas del Estuario se cuelga con bastidor de abedul.",
+    "summary": "La ficha de montaje de Yelvria indica que Rutas del Estuario se cuelga con bastidor de abedul.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/081/03"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_081_04",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_081",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El catálogo de Yelvria describe el material de Rutas del Estuario como hilo de lino.",
+    "summary": "El catálogo de Yelvria describe el material de Rutas del Estuario como hilo de lino.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/081/04"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_081_05",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_081",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El acta de ingreso de Yelvria especifica que Rutas del Estuario es una obra original única y no una reproducción impresa.",
+    "summary": "El acta de ingreso de Yelvria especifica que Rutas del Estuario es una obra original única y no una reproducción impresa.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/081/05"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_081_06",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_081",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La ficha de conservación de Yelvria aclara que Rutas del Estuario no lleva tinta de impresión.",
+    "summary": "La ficha de conservación de Yelvria aclara que Rutas del Estuario no lleva tinta de impresión.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/081/06"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_081_07",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_081",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El comunicado de Yelvria anuncia que se canceló la visita guiada del 24 de octubre y que no se realizará ese día.",
+    "summary": "El comunicado de Yelvria anuncia que se canceló la visita guiada del 24 de octubre y que no se realizará ese día.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/081/07"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_081_08",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_081",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La agenda corregida de Yelvria marca cancelada la visita guiada del 24 de octubre.",
+    "summary": "La agenda corregida de Yelvria marca cancelada la visita guiada del 24 de octubre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/081/08"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_081_09",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_081",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El plan de iluminación de Yelvria asigna a Rutas del Estuario la luminaria L-8.",
+    "summary": "El plan de iluminación de Yelvria asigna a Rutas del Estuario la luminaria L-8.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/081/09"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_081_10",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_081",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El plan de iluminación de Yelvria no incluye una lectura de iluminancia sobre Rutas del Estuario.",
+    "summary": "El plan de iluminación de Yelvria no incluye una lectura de iluminancia sobre Rutas del Estuario.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/081/10"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_081_11",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_081",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La hoja de sala de Yelvria confirma la luminaria L-8 sobre Rutas del Estuario.",
+    "summary": "La hoja de sala de Yelvria confirma la luminaria L-8 sobre Rutas del Estuario.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/081/11"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_081_12",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_081",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El registro de montaje de Yelvria anota que el bastidor de Rutas del Estuario se colocó el 16 de octubre.",
+    "summary": "El registro de montaje de Yelvria anota que el bastidor de Rutas del Estuario se colocó el 16 de octubre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/081/12"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_081_13",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_081",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La hoja de mano de obra de Yelvria no consigna cuántas personas colocaron el bastidor.",
+    "summary": "La hoja de mano de obra de Yelvria no consigna cuántas personas colocaron el bastidor.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/081/13"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_081_14",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_081",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La muestra del centro Jenvria incluye una impresión titulada Rutas de la Bahía.",
+    "summary": "La muestra del centro Jenvria incluye una impresión titulada Rutas de la Bahía.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/081/14"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_081_15",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_081",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Rutas de la Bahía de Jenvria fue impresa con tinta mineral según su ficha técnica.",
+    "summary": "Rutas de la Bahía de Jenvria fue impresa con tinta mineral según su ficha técnica.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/081/15"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_081_16",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_081",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La visita guiada de Jenvria del 24 de octubre permanece programada.",
+    "summary": "La visita guiada de Jenvria del 24 de octubre permanece programada.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/081/16"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_081_17",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_081",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La luminaria J-3 de Jenvria produjo una lectura de 42 lux sobre Rutas de la Bahía.",
+    "summary": "La luminaria J-3 de Jenvria produjo una lectura de 42 lux sobre Rutas de la Bahía.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/081/17"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_081_18",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_081",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Cuatro personas colocaron el bastidor de Rutas de la Bahía en Jenvria.",
+    "summary": "Cuatro personas colocaron el bastidor de Rutas de la Bahía en Jenvria.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/081/18"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_081_19",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_081",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La versión preliminar de la agenda de Yelvria incluía una visita el 24 de octubre.",
+    "summary": "La versión preliminar de la agenda de Yelvria incluía una visita el 24 de octubre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/081/19"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_081_20",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_081",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La agenda corregida de Yelvria sustituye a la versión preliminar en el tablón de sala.",
+    "summary": "La agenda corregida de Yelvria sustituye a la versión preliminar en el tablón de sala.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/081/20"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_081_21",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_081",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La tejedora Dovren entregó a Yelvria una muestra suelta de hilo de lino.",
+    "summary": "La tejedora Dovren entregó a Yelvria una muestra suelta de hilo de lino.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/081/21"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_081_22",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_081",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El bastidor de abedul de Rutas del Estuario tiene un protector de esquinas.",
+    "summary": "El bastidor de abedul de Rutas del Estuario tiene un protector de esquinas.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/081/22"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_081_23",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_081",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El catálogo de Yelvria lleva una cubierta en color terracota.",
+    "summary": "El catálogo de Yelvria lleva una cubierta en color terracota.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/081/23"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_081_24",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_081",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La cartela de Rutas del Estuario se sitúa a la izquierda de la pieza.",
+    "summary": "La cartela de Rutas del Estuario se sitúa a la izquierda de la pieza.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/081/24"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_081_25",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_081",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El registro de Yelvria anota la limpieza del cristal del tablón el 18 de octubre.",
+    "summary": "El registro de Yelvria anota la limpieza del cristal del tablón el 18 de octubre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/081/25"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_081_26",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_081",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El equipo de Yelvria reserva una mesa para consultar el catálogo de la muestra.",
+    "summary": "El equipo de Yelvria reserva una mesa para consultar el catálogo de la muestra.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/081/26"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_081_27",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_081",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La ficha de montaje de Rutas del Estuario lleva el visto bueno de la responsable de sala.",
+    "summary": "La ficha de montaje de Rutas del Estuario lleva el visto bueno de la responsable de sala.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/081/27"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev6_081_28",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_081",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El plano de Yelvria identifica el acceso a la sala con una flecha blanca.",
+    "summary": "El plano de Yelvria identifica el acceso a la sala con una flecha blanca.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v6/081/28"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  }
+]

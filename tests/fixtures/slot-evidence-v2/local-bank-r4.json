@@ -1,0 +1,1115 @@
+{
+  "version": "slot-evidence-v2-local-bank-r4",
+  "synthetic": true,
+  "cases": [
+    {
+      "id": "support-correction-premise",
+      "query": "Which city for employee Ana Ruiz E-17? Does the premise 'Ana Ruiz lives in Quito' hold?",
+      "candidate": {
+        "memory_id": "support-m1",
+        "revision": 1,
+        "summary": "Employee Ana Ruiz E-17 lives in Quito."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "person",
+            "kind": "employee",
+            "stable_id": "E-17",
+            "quote": "employee Ana Ruiz E-17"
+          }
+        ],
+        "slots": [
+          {
+            "id": "city",
+            "dimension": "requested_slot",
+            "quote": "Which city"
+          }
+        ],
+        "premises": [
+          {
+            "id": "premise",
+            "dimension": "correction_premise",
+            "quote": "Ana Ruiz lives in Quito"
+          }
+        ],
+        "candidates": [
+          {
+            "memory_id": "support-m1",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "person",
+              "stable_id_quote": "E-17",
+              "subject_quote": "Ana Ruiz E-17"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "Employee Ana Ruiz E-17 lives in Quito.",
+                "subject_quote": "Ana Ruiz E-17",
+                "identity_anchor_id": "person",
+                "relation": "supports",
+                "target_id": "premise"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": true,
+      "expected_selected": [
+        "support-m1"
+      ]
+    },
+    {
+      "id": "refute-correction-premise",
+      "query": "Which city for employee Ana Ruiz E-17? Does the premise 'Ana Ruiz lives in Quito' hold?",
+      "candidate": {
+        "memory_id": "refute-m1",
+        "revision": 1,
+        "summary": "Employee Ana Ruiz E-17 lives in Lima."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "person",
+            "kind": "employee",
+            "stable_id": "E-17",
+            "quote": "employee Ana Ruiz E-17"
+          }
+        ],
+        "slots": [
+          {
+            "id": "city",
+            "dimension": "requested_slot",
+            "quote": "Which city"
+          }
+        ],
+        "premises": [
+          {
+            "id": "premise",
+            "dimension": "correction_premise",
+            "quote": "Ana Ruiz lives in Quito"
+          }
+        ],
+        "candidates": [
+          {
+            "memory_id": "refute-m1",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "person",
+              "stable_id_quote": "E-17",
+              "subject_quote": "Ana Ruiz E-17"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "Employee Ana Ruiz E-17 lives in Lima.",
+                "subject_quote": "Ana Ruiz E-17",
+                "identity_anchor_id": "person",
+                "relation": "refutes",
+                "target_id": "premise"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": true,
+      "expected_selected": [
+        "refute-m1"
+      ]
+    },
+    {
+      "id": "partial-requested-slot",
+      "query": "Which city did employee Ana Ruiz E-17 stay in during the trip?",
+      "candidate": {
+        "memory_id": "partial-m1",
+        "revision": 1,
+        "summary": "Employee Ana Ruiz E-17 stayed in Lima during the trip."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "person",
+            "kind": "employee",
+            "stable_id": "E-17",
+            "quote": "employee Ana Ruiz E-17"
+          }
+        ],
+        "slots": [
+          {
+            "id": "trip_city",
+            "dimension": "requested_slot",
+            "quote": "Which city"
+          }
+        ],
+        "premises": [],
+        "candidates": [
+          {
+            "memory_id": "partial-m1",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "person",
+              "stable_id_quote": "E-17",
+              "subject_quote": "Ana Ruiz E-17"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "Employee Ana Ruiz E-17 stayed in Lima during the trip.",
+                "subject_quote": "Ana Ruiz E-17",
+                "identity_anchor_id": "person",
+                "relation": "partial",
+                "target_id": "trip_city"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": true,
+      "expected_selected": [
+        "partial-m1"
+      ]
+    },
+    {
+      "id": "wrong-subject-direct-proposal",
+      "query": "Which city for employee Ana Ruiz E-17?",
+      "candidate": {
+        "memory_id": "wrong-direct-m1",
+        "revision": 1,
+        "summary": "Employee Ana Ruiz E-17 discussed Bob Torres B-29, who lives in Cusco."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "person",
+            "kind": "employee",
+            "stable_id": "E-17",
+            "quote": "employee Ana Ruiz E-17"
+          }
+        ],
+        "slots": [
+          {
+            "id": "city",
+            "dimension": "requested_slot",
+            "quote": "Which city"
+          }
+        ],
+        "premises": [],
+        "candidates": [
+          {
+            "memory_id": "wrong-direct-m1",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "person",
+              "stable_id_quote": "E-17",
+              "subject_quote": "Ana Ruiz E-17"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "Bob Torres B-29, who lives in Cusco.",
+                "subject_quote": "Bob Torres B-29",
+                "identity_anchor_id": "person",
+                "relation": "answers",
+                "target_id": "city"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": false,
+      "expected_selected": [],
+      "expected_error": "proposition_subject_mismatch"
+    },
+    {
+      "id": "wrong-subject-compound-proposal",
+      "query": "Which city for employee Ana Ruiz E-17?",
+      "candidate": {
+        "memory_id": "wrong-compound-m1",
+        "revision": 1,
+        "summary": "Employee Ana Ruiz E-17 discussed Bob Torres B-29, who lives in Cusco."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "person",
+            "kind": "employee",
+            "stable_id": "E-17",
+            "quote": "employee Ana Ruiz E-17"
+          }
+        ],
+        "slots": [
+          {
+            "id": "city",
+            "dimension": "requested_slot",
+            "quote": "Which city"
+          }
+        ],
+        "premises": [],
+        "candidates": [
+          {
+            "memory_id": "wrong-compound-m1",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "person",
+              "stable_id_quote": "E-17",
+              "subject_quote": "Ana Ruiz E-17"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "Employee Ana Ruiz E-17 discussed Bob Torres B-29, who lives in Cusco.",
+                "subject_quote": "Bob Torres B-29",
+                "identity_anchor_id": "person",
+                "relation": "answers",
+                "target_id": "city"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": false,
+      "expected_selected": [],
+      "expected_error": "proposition_subject_mismatch"
+    },
+    {
+      "id": "near-colliding-stable-id",
+      "query": "Which city for employee Ana Ruiz E-17?",
+      "candidate": {
+        "memory_id": "wrong-id-m1",
+        "revision": 1,
+        "summary": "Employee Ana Ruiz E-170 lives in Valencia."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "person",
+            "kind": "employee",
+            "stable_id": "E-17",
+            "quote": "employee Ana Ruiz E-17"
+          }
+        ],
+        "slots": [
+          {
+            "id": "city",
+            "dimension": "requested_slot",
+            "quote": "Which city"
+          }
+        ],
+        "premises": [],
+        "candidates": [
+          {
+            "memory_id": "wrong-id-m1",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "person",
+              "stable_id_quote": "E-17",
+              "subject_quote": "Ana Ruiz E-17"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "Employee Ana Ruiz E-170 lives in Valencia.",
+                "subject_quote": "Ana Ruiz E-17",
+                "identity_anchor_id": "person",
+                "relation": "answers",
+                "target_id": "city"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": false,
+      "expected_selected": [],
+      "expected_error": "matched_identity_id_absent_from_memory"
+    },
+    {
+      "id": "useful-action-with-other-entity-as-object",
+      "query": "Which request did employee Ana Ruiz E-17 approve for contractor Bob Torres B-29?",
+      "candidate": {
+        "memory_id": "useful-multi-entity-m1",
+        "revision": 1,
+        "summary": "Employee Ana Ruiz E-17 approved request R-5 for contractor Bob Torres (B-29), who lives in Cusco."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "ana",
+            "kind": "employee",
+            "stable_id": "E-17",
+            "quote": "employee Ana Ruiz E-17"
+          },
+          {
+            "id": "bob",
+            "kind": "contractor",
+            "stable_id": "B-29",
+            "quote": "contractor Bob Torres B-29"
+          }
+        ],
+        "slots": [
+          {
+            "id": "request",
+            "dimension": "requested_slot",
+            "quote": "Which request"
+          }
+        ],
+        "premises": [],
+        "candidates": [
+          {
+            "memory_id": "useful-multi-entity-m1",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "ana",
+              "stable_id_quote": "E-17",
+              "subject_quote": "Ana Ruiz E-17"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "Employee Ana Ruiz E-17 approved request R-5 for contractor Bob Torres (B-29)",
+                "subject_quote": "Ana Ruiz E-17",
+                "identity_anchor_id": "ana",
+                "relation": "answers",
+                "target_id": "request"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": true,
+      "expected_selected": [
+        "useful-multi-entity-m1"
+      ]
+    },
+    {
+      "id": "foreign-relative-clause-subject-quote-lie",
+      "query": "Which city for employee Ana Ruiz E-17?",
+      "candidate": {
+        "memory_id": "foreign-relative-lie-m1",
+        "revision": 1,
+        "summary": "Employee Ana Ruiz E-17 discussed Bob Torres (B-29), who lives in Cusco."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "person",
+            "kind": "employee",
+            "stable_id": "E-17",
+            "quote": "employee Ana Ruiz E-17"
+          }
+        ],
+        "slots": [
+          {
+            "id": "city",
+            "dimension": "requested_slot",
+            "quote": "Which city"
+          }
+        ],
+        "premises": [],
+        "candidates": [
+          {
+            "memory_id": "foreign-relative-lie-m1",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "person",
+              "stable_id_quote": "E-17",
+              "subject_quote": "Ana Ruiz E-17"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "Employee Ana Ruiz E-17 discussed Bob Torres (B-29), who lives in Cusco.",
+                "subject_quote": "Ana Ruiz E-17",
+                "identity_anchor_id": "person",
+                "relation": "answers",
+                "target_id": "city"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": false,
+      "expected_selected": [],
+      "expected_error": "proposition_foreign_relative_clause"
+    },
+    {
+      "id": "foreign-relative-clause-spanish-que-subject-quote-lie",
+      "query": "¿En qué ciudad vive la empleada Ana Ruiz E-17?",
+      "candidate": {
+        "memory_id": "foreign-relative-que-m1",
+        "revision": 1,
+        "summary": "La empleada Ana Ruiz E-17 habló con Bob Torres B-29, que vive en Cusco."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "person",
+            "kind": "empleada",
+            "stable_id": "E-17",
+            "quote": "empleada Ana Ruiz E-17"
+          }
+        ],
+        "slots": [
+          {
+            "id": "city",
+            "dimension": "requested_slot",
+            "quote": "¿En qué ciudad"
+          }
+        ],
+        "premises": [],
+        "candidates": [
+          {
+            "memory_id": "foreign-relative-que-m1",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "person",
+              "stable_id_quote": "E-17",
+              "subject_quote": "Ana Ruiz E-17"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "La empleada Ana Ruiz E-17 habló con Bob Torres B-29, que vive en Cusco.",
+                "subject_quote": "Ana Ruiz E-17",
+                "identity_anchor_id": "person",
+                "relation": "answers",
+                "target_id": "city"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": false,
+      "expected_selected": [],
+      "expected_error": "proposition_foreign_relative_clause"
+    },
+    {
+      "id": "foreign-relative-clause-em-dash-subject-quote-lie",
+      "query": "Which city for employee Ana Ruiz E-17?",
+      "candidate": {
+        "memory_id": "foreign-relative-dash-m1",
+        "revision": 1,
+        "summary": "Employee Ana Ruiz E-17 discussed Bob Torres (B-29) — who lives in Cusco."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "person",
+            "kind": "employee",
+            "stable_id": "E-17",
+            "quote": "employee Ana Ruiz E-17"
+          }
+        ],
+        "slots": [
+          {
+            "id": "city",
+            "dimension": "requested_slot",
+            "quote": "Which city"
+          }
+        ],
+        "premises": [],
+        "candidates": [
+          {
+            "memory_id": "foreign-relative-dash-m1",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "person",
+              "stable_id_quote": "E-17",
+              "subject_quote": "Ana Ruiz E-17"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "Employee Ana Ruiz E-17 discussed Bob Torres (B-29) — who lives in Cusco.",
+                "subject_quote": "Ana Ruiz E-17",
+                "identity_anchor_id": "person",
+                "relation": "answers",
+                "target_id": "city"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": false,
+      "expected_selected": [],
+      "expected_error": "proposition_foreign_relative_clause"
+    },
+    {
+      "id": "foreign-relative-clause-ellipsis-subject-quote-lie",
+      "query": "Which city for employee Ana Ruiz E-17?",
+      "candidate": {
+        "memory_id": "foreign-relative-ellipsis-m1",
+        "revision": 1,
+        "summary": "Employee Ana Ruiz E-17 discussed Bob Torres (B-29)…who lives in Cusco."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "person",
+            "kind": "employee",
+            "stable_id": "E-17",
+            "quote": "employee Ana Ruiz E-17"
+          }
+        ],
+        "slots": [
+          {
+            "id": "city",
+            "dimension": "requested_slot",
+            "quote": "Which city"
+          }
+        ],
+        "premises": [],
+        "candidates": [
+          {
+            "memory_id": "foreign-relative-ellipsis-m1",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "person",
+              "stable_id_quote": "E-17",
+              "subject_quote": "Ana Ruiz E-17"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "Employee Ana Ruiz E-17 discussed Bob Torres (B-29)…who lives in Cusco.",
+                "subject_quote": "Ana Ruiz E-17",
+                "identity_anchor_id": "person",
+                "relation": "answers",
+                "target_id": "city"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": false,
+      "expected_selected": [],
+      "expected_error": "proposition_foreign_relative_clause"
+    },
+    {
+      "id": "foreign-relative-dot-id-subject-quote-lie",
+      "query": "Which city for employee Ana Ruiz E-17?",
+      "candidate": {
+        "memory_id": "foreign-relative-dot-m1",
+        "revision": 1,
+        "summary": "Employee Ana Ruiz E-17 discussed Bob Torres B.29, who lives in Cusco."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "person",
+            "kind": "employee",
+            "stable_id": "E-17",
+            "quote": "employee Ana Ruiz E-17"
+          }
+        ],
+        "slots": [
+          {
+            "id": "city",
+            "dimension": "requested_slot",
+            "quote": "Which city"
+          }
+        ],
+        "premises": [],
+        "candidates": [
+          {
+            "memory_id": "foreign-relative-dot-m1",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "person",
+              "stable_id_quote": "E-17",
+              "subject_quote": "Ana Ruiz E-17"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "Employee Ana Ruiz E-17 discussed Bob Torres B.29, who lives in Cusco.",
+                "subject_quote": "Ana Ruiz E-17",
+                "identity_anchor_id": "person",
+                "relation": "answers",
+                "target_id": "city"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": false,
+      "expected_selected": [],
+      "expected_error": "proposition_foreign_relative_clause"
+    },
+    {
+      "id": "foreign-relative-slash-id-subject-quote-lie",
+      "query": "¿En qué ciudad vive la empleada Ana Ruiz E-17?",
+      "candidate": {
+        "memory_id": "foreign-relative-slash-m1",
+        "revision": 1,
+        "summary": "La empleada Ana Ruiz E-17 habló con Bob Torres B/29, que vive en Cusco."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "person",
+            "kind": "empleada",
+            "stable_id": "E-17",
+            "quote": "empleada Ana Ruiz E-17"
+          }
+        ],
+        "slots": [
+          {
+            "id": "city",
+            "dimension": "requested_slot",
+            "quote": "¿En qué ciudad"
+          }
+        ],
+        "premises": [],
+        "candidates": [
+          {
+            "memory_id": "foreign-relative-slash-m1",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "person",
+              "stable_id_quote": "E-17",
+              "subject_quote": "Ana Ruiz E-17"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "La empleada Ana Ruiz E-17 habló con Bob Torres B/29, que vive en Cusco.",
+                "subject_quote": "Ana Ruiz E-17",
+                "identity_anchor_id": "person",
+                "relation": "answers",
+                "target_id": "city"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": false,
+      "expected_selected": [],
+      "expected_error": "proposition_foreign_relative_clause"
+    },
+    {
+      "id": "foreign-relative-appositive-who-subject-quote-lie",
+      "query": "Which city for employee Ana Ruiz E-17?",
+      "candidate": {
+        "memory_id": "foreign-relative-appositive-who-subject-quote-lie-m1",
+        "revision": 1,
+        "summary": "Employee Ana Ruiz E-17 discussed Bob (B-29), a contractor who lives in Cusco."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "person",
+            "kind": "employee",
+            "stable_id": "E-17",
+            "quote": "employee Ana Ruiz E-17"
+          }
+        ],
+        "slots": [
+          {
+            "id": "city",
+            "dimension": "requested_slot",
+            "quote": "Which city"
+          }
+        ],
+        "premises": [],
+        "candidates": [
+          {
+            "memory_id": "foreign-relative-appositive-who-subject-quote-lie-m1",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "person",
+              "stable_id_quote": "E-17",
+              "subject_quote": "Ana Ruiz E-17"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "Employee Ana Ruiz E-17 discussed Bob (B-29), a contractor who lives in Cusco.",
+                "subject_quote": "Ana Ruiz E-17",
+                "identity_anchor_id": "person",
+                "relation": "answers",
+                "target_id": "city"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": false,
+      "expected_selected": [],
+      "expected_error": "proposition_foreign_relative_clause"
+    },
+    {
+      "id": "foreign-relative-appositive-que-subject-quote-lie",
+      "query": "¿En qué ciudad vive la empleada Ana Ruiz E-17?",
+      "candidate": {
+        "memory_id": "foreign-relative-appositive-que-subject-quote-lie-m1",
+        "revision": 1,
+        "summary": "La empleada Ana Ruiz E-17 habló con Bob (B-29), el contratista que vive en Cusco."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "person",
+            "kind": "empleada",
+            "stable_id": "E-17",
+            "quote": "empleada Ana Ruiz E-17"
+          }
+        ],
+        "slots": [
+          {
+            "id": "city",
+            "dimension": "requested_slot",
+            "quote": "¿En qué ciudad"
+          }
+        ],
+        "premises": [],
+        "candidates": [
+          {
+            "memory_id": "foreign-relative-appositive-que-subject-quote-lie-m1",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "person",
+              "stable_id_quote": "E-17",
+              "subject_quote": "Ana Ruiz E-17"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "La empleada Ana Ruiz E-17 habló con Bob (B-29), el contratista que vive en Cusco.",
+                "subject_quote": "Ana Ruiz E-17",
+                "identity_anchor_id": "person",
+                "relation": "answers",
+                "target_id": "city"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": false,
+      "expected_selected": [],
+      "expected_error": "proposition_foreign_relative_clause"
+    },
+    {
+      "id": "useful-indirect-question-about-foreign-person",
+      "query": "What did employee Ana Ruiz E-17 ask contractor Bob Torres B-29?",
+      "candidate": {
+        "memory_id": "useful-indirect-question-about-foreign-person-m1",
+        "revision": 1,
+        "summary": "Employee Ana Ruiz E-17 asked contractor Bob Torres B-29 which supplier our team should contact."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "ana",
+            "kind": "employee",
+            "stable_id": "E-17",
+            "quote": "employee Ana Ruiz E-17"
+          },
+          {
+            "id": "bob",
+            "kind": "contractor",
+            "stable_id": "B-29",
+            "quote": "contractor Bob Torres B-29"
+          }
+        ],
+        "slots": [
+          {
+            "id": "answer",
+            "dimension": "requested_slot",
+            "quote": "What did"
+          }
+        ],
+        "premises": [],
+        "candidates": [
+          {
+            "memory_id": "useful-indirect-question-about-foreign-person-m1",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "ana",
+              "stable_id_quote": "E-17",
+              "subject_quote": "Ana Ruiz E-17"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "Employee Ana Ruiz E-17 asked contractor Bob Torres B-29 which supplier our team should contact.",
+                "subject_quote": "Ana Ruiz E-17",
+                "identity_anchor_id": "ana",
+                "relation": "answers",
+                "target_id": "answer"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": true,
+      "expected_selected": [
+        "useful-indirect-question-about-foreign-person-m1"
+      ]
+    },
+    {
+      "id": "useful-complement-about-foreign-person",
+      "query": "What did employee Ana Ruiz E-17 tell contractor Bob Torres B-29?",
+      "candidate": {
+        "memory_id": "useful-complement-about-foreign-person-m1",
+        "revision": 1,
+        "summary": "Employee Ana Ruiz E-17 told contractor Bob Torres B-29 that rain was expected tomorrow."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "ana",
+            "kind": "employee",
+            "stable_id": "E-17",
+            "quote": "employee Ana Ruiz E-17"
+          },
+          {
+            "id": "bob",
+            "kind": "contractor",
+            "stable_id": "B-29",
+            "quote": "contractor Bob Torres B-29"
+          }
+        ],
+        "slots": [
+          {
+            "id": "answer",
+            "dimension": "requested_slot",
+            "quote": "What did"
+          }
+        ],
+        "premises": [],
+        "candidates": [
+          {
+            "memory_id": "useful-complement-about-foreign-person-m1",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "ana",
+              "stable_id_quote": "E-17",
+              "subject_quote": "Ana Ruiz E-17"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "Employee Ana Ruiz E-17 told contractor Bob Torres B-29 that rain was expected tomorrow.",
+                "subject_quote": "Ana Ruiz E-17",
+                "identity_anchor_id": "ana",
+                "relation": "answers",
+                "target_id": "answer"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": true,
+      "expected_selected": [
+        "useful-complement-about-foreign-person-m1"
+      ]
+    },
+    {
+      "id": "useful-spanish-complement-about-foreign-person",
+      "query": "¿Qué le dijo la empleada Ana Ruiz E-17 al contratista Bob Torres B-29?",
+      "candidate": {
+        "memory_id": "useful-spanish-complement-about-foreign-person-m1",
+        "revision": 1,
+        "summary": "La empleada Ana Ruiz E-17 dijo al contratista Bob Torres B-29 que estaría ocupada."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "ana",
+            "kind": "empleada",
+            "stable_id": "E-17",
+            "quote": "empleada Ana Ruiz E-17"
+          },
+          {
+            "id": "bob",
+            "kind": "contratista",
+            "stable_id": "B-29",
+            "quote": "contratista Bob Torres B-29"
+          }
+        ],
+        "slots": [
+          {
+            "id": "answer",
+            "dimension": "requested_slot",
+            "quote": "¿Qué le dijo"
+          }
+        ],
+        "premises": [],
+        "candidates": [
+          {
+            "memory_id": "useful-spanish-complement-about-foreign-person-m1",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "ana",
+              "stable_id_quote": "E-17",
+              "subject_quote": "Ana Ruiz E-17"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "La empleada Ana Ruiz E-17 dijo al contratista Bob Torres B-29 que estaría ocupada.",
+                "subject_quote": "Ana Ruiz E-17",
+                "identity_anchor_id": "ana",
+                "relation": "answers",
+                "target_id": "answer"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": true,
+      "expected_selected": [
+        "useful-spanish-complement-about-foreign-person-m1"
+      ]
+    },
+    {
+      "id": "foreign-relative-spanish-que-comma-ambiguous-verb",
+      "query": "¿Qué le dijo la empleada Ana Ruiz E-17 al contratista Bob Torres B-29?",
+      "candidate": {
+        "memory_id": "foreign-relative-que-comma-m1",
+        "revision": 1,
+        "summary": "La empleada Ana Ruiz E-17 habló con Bob Torres B-29, que estaría en Cusco."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "ana",
+            "kind": "empleada",
+            "stable_id": "E-17",
+            "quote": "empleada Ana Ruiz E-17"
+          },
+          {
+            "id": "bob",
+            "kind": "contratista",
+            "stable_id": "B-29",
+            "quote": "contratista Bob Torres B-29"
+          }
+        ],
+        "slots": [
+          {
+            "id": "answer",
+            "dimension": "requested_slot",
+            "quote": "¿Qué le dijo"
+          }
+        ],
+        "premises": [],
+        "candidates": [
+          {
+            "memory_id": "foreign-relative-que-comma-m1",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "ana",
+              "stable_id_quote": "E-17",
+              "subject_quote": "Ana Ruiz E-17"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "La empleada Ana Ruiz E-17 habló con Bob Torres B-29, que estaría en Cusco.",
+                "subject_quote": "Ana Ruiz E-17",
+                "identity_anchor_id": "ana",
+                "relation": "answers",
+                "target_id": "answer"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": false,
+      "expected_selected": [],
+      "expected_error": "proposition_foreign_relative_clause"
+    },
+    {
+      "id": "speech-query-does-not-rescue-unrelated-recipient-relative",
+      "query": "¿Qué le dijo employee Ana Ruiz E-17 a Bob Torres B-29?",
+      "candidate": {
+        "memory_id": "unrelated-recipient-relative-m1",
+        "revision": 1,
+        "summary": "employee Ana Ruiz E-17 dijo al equipo que Bob Torres B-29 que estaría en Cusco sería el contratista elegido."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "ana",
+            "kind": "employee",
+            "stable_id": "E-17",
+            "quote": "employee Ana Ruiz E-17"
+          }
+        ],
+        "slots": [
+          {
+            "id": "answer",
+            "dimension": "requested_slot",
+            "quote": "¿Qué le dijo"
+          }
+        ],
+        "premises": [],
+        "candidates": [
+          {
+            "memory_id": "unrelated-recipient-relative-m1",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "ana",
+              "stable_id_quote": "E-17",
+              "subject_quote": "Ana Ruiz E-17"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "employee Ana Ruiz E-17 dijo al equipo que Bob Torres B-29 que estaría en Cusco sería el contratista elegido.",
+                "subject_quote": "Ana Ruiz E-17",
+                "identity_anchor_id": "ana",
+                "relation": "answers",
+                "target_id": "answer"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": true,
+      "expected_selected": [],
+      "expected_error": null
+    }
+  ]
+}

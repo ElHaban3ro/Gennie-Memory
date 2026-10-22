@@ -1,0 +1,5 @@
+# Banco sintético de desarrollo M5 v3
+
+Tres conversaciones ficticias nuevas (`031`–`033`) contienen 36 recuerdos y 36 preguntas: 24 positivas y 12 negativas. Exploran si una pregunta por un resultado confirmado puede recibir falsamente un recuerdo que describe una propuesta, solicitud, prueba preliminar o negación explícita. Incluyen también positivos con hechos negativos válidos, como una prohibición, para detectar abstención excesiva. No contienen datos reales de usuarios.
+
+`source.json` fija hechos, preguntas y etiquetas; `build.py` genera IDs opacos, baraja memorias y casos con semillas distintas y escribe `memories.json`, `development.jsonl` y `manifest.json` con hashes. Se ejecuta con `python3 tests/fixtures/conversation-m5-v3-development/build.py`. Solo `request.search` llega al clasificador; la etiqueta y el segmento quedan en el evaluador. Las etiquetas proceden de un agente y no tienen adjudicación humana independiente. Esta partición solo sirve para diagnóstico: no es calibración, reserva ni una estimación poblacional.

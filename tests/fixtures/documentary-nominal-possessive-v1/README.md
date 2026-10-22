@@ -1,0 +1,1 @@
+Controles manuales sintéticos del mecanismo nominal posesivo. No son extracción autónoma ni validación de calidad. El referente de «su» permanece abierto; Nora es beneficiaria, Lumen es el ámbito normativo.

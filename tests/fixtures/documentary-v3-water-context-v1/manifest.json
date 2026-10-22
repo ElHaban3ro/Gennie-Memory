@@ -1,0 +1,24 @@
+{
+  "version": "documentary_v3_water_context_regression_inputs_v1",
+  "status": "known development regression fixtures; not fresh or fidelity proof",
+  "inputs": [
+    {
+      "path": "tests/fixtures/documentary-v3-water-context-v1/receiver-class.json",
+      "original_path": "outputs/iromem/evaluation/documentary-v3-readings-campaign-2026-10-21/automatic-utility-v2/016-automatic-input.json",
+      "sha256": "e6cc726dce48428ec9bd938f2872a0bfaf19948b4d74437619edfc2300b064f0",
+      "unchanged_bytes": true
+    },
+    {
+      "path": "tests/fixtures/documentary-v3-water-context-v1/receiver-local-origin.json",
+      "original_path": "outputs/iromem/evaluation/documentary-v3-readings-campaign-2026-10-21/automatic-utility-v2/024-automatic-input.json",
+      "sha256": "ef1f9041d549a04b7ab75e624e1cf767fdac9802f2415424b4be8998ed2c5990",
+      "unchanged_bytes": true
+    },
+    {
+      "path": "tests/fixtures/documentary-v3-water-context-v1/supply-local-operand.json",
+      "original_path": "outputs/iromem/evaluation/documentary-v3-readings-campaign-2026-10-21/automatic-utility-v2/093-automatic-input.json",
+      "sha256": "3cd59b0cc00b9ee6e96a6c8f165869ef1f31ad7be4a93e1eb866cf9218f34b38",
+      "unchanged_bytes": true
+    }
+  ]
+}

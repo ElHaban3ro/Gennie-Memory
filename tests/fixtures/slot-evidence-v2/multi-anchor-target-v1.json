@@ -1,0 +1,132 @@
+{
+  "version": "slot-evidence-v2-multi-anchor-target-v1",
+  "synthetic": true,
+  "cases": [
+    {
+      "id": "multi-anchor-ambiguous",
+      "query": "In what city does project Atlas A-1 live after meeting project Boreal B-2?",
+      "candidate": {
+        "memory_id": "m-atlas-boreal",
+        "revision": 1,
+        "summary": "Project Atlas A-1 was discussed. Project Boreal B-2 lives in Quito."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "atlas",
+            "kind": "project",
+            "subject": "Atlas",
+            "stable_id": "A-1",
+            "quote": "project Atlas A-1"
+          },
+          {
+            "id": "boreal",
+            "kind": "project",
+            "subject": "Boreal",
+            "stable_id": "B-2",
+            "quote": "project Boreal B-2"
+          }
+        ],
+        "slots": [
+          {
+            "id": "city",
+            "dimension": "requested_city",
+            "quote": "In what city does project Atlas A-1 live after meeting project Boreal B-2"
+          }
+        ],
+        "premises": [],
+        "candidates": [
+          {
+            "memory_id": "m-atlas-boreal",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "atlas",
+              "stable_id_quote": "A-1",
+              "subject_quote": "Project Atlas A-1"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "Project Boreal B-2 lives in Quito.",
+                "subject_quote": "Project Boreal B-2",
+                "identity_anchor_id": "boreal",
+                "relation": "answers",
+                "target_id": "city"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": false,
+      "expected_selected": [],
+      "expected_relation": "answers",
+      "expected_demoted": 1
+    },
+    {
+      "id": "multi-anchor-subject-isolated",
+      "query": "In what city does project Boreal B-2 live after meeting project Atlas A-1?",
+      "candidate": {
+        "memory_id": "m-atlas-boreal",
+        "revision": 1,
+        "summary": "Project Atlas A-1 was discussed. Project Boreal B-2 lives in Quito."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "atlas",
+            "kind": "project",
+            "subject": "Atlas",
+            "stable_id": "A-1",
+            "quote": "project Atlas A-1"
+          },
+          {
+            "id": "boreal",
+            "kind": "project",
+            "subject": "Boreal",
+            "stable_id": "B-2",
+            "quote": "project Boreal B-2"
+          }
+        ],
+        "slots": [
+          {
+            "id": "city",
+            "dimension": "requested_city",
+            "quote": "In what city does project Boreal B-2 live"
+          }
+        ],
+        "premises": [],
+        "candidates": [
+          {
+            "memory_id": "m-atlas-boreal",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "atlas",
+              "stable_id_quote": "A-1",
+              "subject_quote": "Project Atlas A-1"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "Project Boreal B-2 lives in Quito.",
+                "subject_quote": "Project Boreal B-2",
+                "identity_anchor_id": "boreal",
+                "relation": "answers",
+                "target_id": "city"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": true,
+      "expected_selected": [
+        "m-atlas-boreal"
+      ],
+      "expected_relation": "answers",
+      "expected_demoted": 0
+    }
+  ]
+}

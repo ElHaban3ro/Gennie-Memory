@@ -1,0 +1,4034 @@
+[
+  {
+    "id": "cev2_047_16",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_047",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El informe de cuarzo del archivo mineralógico lo firma Eva.",
+    "summary": "El informe de cuarzo del archivo mineralógico lo firma Eva.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/047/16"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_042_22",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_042",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En plano hidrográfico, el registro auxiliar 06 conserva una copia del croquis de embalaje del lote de ensayo 06.",
+    "summary": "En plano hidrográfico, el registro auxiliar 06 conserva una copia del croquis de embalaje del lote de ensayo 06.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/042/22"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_049_09",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_049",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El inventario de senderos costeros del tramo norte lo actualiza Gaspar.",
+    "summary": "El inventario de senderos costeros del tramo norte lo actualiza Gaspar.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/049/09"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_044_21",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_044",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En microcine itinerante, el registro auxiliar 05 conserva una copia del croquis de embalaje del lote de ensayo 05.",
+    "summary": "En microcine itinerante, el registro auxiliar 05 conserva una copia del croquis de embalaje del lote de ensayo 05.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/044/21"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_046_23",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_046",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En traducción técnica, el registro auxiliar 07 conserva una copia del croquis de embalaje del lote de ensayo 07.",
+    "summary": "En traducción técnica, el registro auxiliar 07 conserva una copia del croquis de embalaje del lote de ensayo 07.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/046/23"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_047_12",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_047",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El archivo mineralógico compró la colección de cuarzo por cien unidades ficticias.",
+    "summary": "El archivo mineralógico compró la colección de cuarzo por cien unidades ficticias.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/047/12"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_049_10",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_049",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El mapa del tramo norte de senderos costeros se guarda en el puesto Roca.",
+    "summary": "El mapa del tramo norte de senderos costeros se guarda en el puesto Roca.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/049/10"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_046_22",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_046",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En traducción técnica, el registro auxiliar 06 conserva una copia del croquis de embalaje del lote de ensayo 06.",
+    "summary": "En traducción técnica, el registro auxiliar 06 conserva una copia del croquis de embalaje del lote de ensayo 06.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/046/22"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_043_12",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_043",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El catálogo histórico de la biblioteca de herramientas incluye taladros inalámbricos.",
+    "summary": "El catálogo histórico de la biblioteca de herramientas incluye taladros inalámbricos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/043/12"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_045_15",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_045",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La nave B del invernadero experimental tiene macetas de barro.",
+    "summary": "La nave B del invernadero experimental tiene macetas de barro.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/045/15"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_043_17",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_043",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En biblioteca de herramientas, el registro auxiliar 01 conserva una copia del croquis de embalaje del lote de ensayo 01.",
+    "summary": "En biblioteca de herramientas, el registro auxiliar 01 conserva una copia del croquis de embalaje del lote de ensayo 01.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/043/17"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_042_24",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_042",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En plano hidrográfico, el registro auxiliar 08 conserva una copia del croquis de embalaje del lote de ensayo 08.",
+    "summary": "En plano hidrográfico, el registro auxiliar 08 conserva una copia del croquis de embalaje del lote de ensayo 08.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/042/24"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_046_26",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_046",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En traducción técnica, el registro auxiliar 10 conserva una copia del croquis de embalaje del lote de ensayo 10.",
+    "summary": "En traducción técnica, el registro auxiliar 10 conserva una copia del croquis de embalaje del lote de ensayo 10.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/046/26"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_048_08",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_048",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La reserva de la sala Eco del laboratorio de acústica tiene el código RE-50.",
+    "summary": "La reserva de la sala Eco del laboratorio de acústica tiene el código RE-50.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/048/08"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_048_23",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_048",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En laboratorio de acústica, el registro auxiliar 07 conserva una copia del croquis de embalaje del lote de ensayo 07.",
+    "summary": "En laboratorio de acústica, el registro auxiliar 07 conserva una copia del croquis de embalaje del lote de ensayo 07.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/048/23"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_048_24",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_048",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En laboratorio de acústica, el registro auxiliar 08 conserva una copia del croquis de embalaje del lote de ensayo 08.",
+    "summary": "En laboratorio de acústica, el registro auxiliar 08 conserva una copia del croquis de embalaje del lote de ensayo 08.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/048/24"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_049_11",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_049",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El acceso al farallón del tramo norte se hace por la entrada dos.",
+    "summary": "El acceso al farallón del tramo norte se hace por la entrada dos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/049/11"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_048_05",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_048",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La sala Sombra del laboratorio de acústica usa ocho micrófonos.",
+    "summary": "La sala Sombra del laboratorio de acústica usa ocho micrófonos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/048/05"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_044_13",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_044",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La edición costera del microcine itinerante proyectó nueve cortos.",
+    "summary": "La edición costera del microcine itinerante proyectó nueve cortos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/044/13"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_049_05",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_049",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El circuito de senderos costeros del tramo sur tiene once kilómetros.",
+    "summary": "El circuito de senderos costeros del tramo sur tiene once kilómetros.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/049/05"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_045_19",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_045",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En sensores de invernadero, el registro auxiliar 03 conserva una copia del croquis de embalaje del lote de ensayo 03.",
+    "summary": "En sensores de invernadero, el registro auxiliar 03 conserva una copia del croquis de embalaje del lote de ensayo 03.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/045/19"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_048_16",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_048",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Los cables de la sala Sombra del laboratorio de acústica van por el suelo.",
+    "summary": "Los cables de la sala Sombra del laboratorio de acústica van por el suelo.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/048/16"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_047_19",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_047",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En archivo mineralógico, el registro auxiliar 03 conserva una copia del croquis de embalaje del lote de ensayo 03.",
+    "summary": "En archivo mineralógico, el registro auxiliar 03 conserva una copia del croquis de embalaje del lote de ensayo 03.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/047/19"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_047_03",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_047",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El archivo mineralógico retiró las muestras de basaltos de la vitrina pública; ahora solo se consultan en la cámara.",
+    "summary": "El archivo mineralógico retiró las muestras de basaltos de la vitrina pública; ahora solo se consultan en la cámara.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/047/03"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_049_04",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_049",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El recorrido de senderos costeros del tramo sur evita la playa; se realiza íntegramente por la pasarela.",
+    "summary": "El recorrido de senderos costeros del tramo sur evita la playa; se realiza íntegramente por la pasarela.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/049/04"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_042_04",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_042",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El acceso público al plano hidrográfico fue retirado; ahora su consulta requiere autorización del archivo.",
+    "summary": "El acceso público al plano hidrográfico fue retirado; ahora su consulta requiere autorización del archivo.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/042/04"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_047_11",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_047",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El cuarzo del archivo mineralógico está en la vitrina pública dos.",
+    "summary": "El cuarzo del archivo mineralógico está en la vitrina pública dos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/047/11"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_044_27",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_044",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En microcine itinerante, el registro auxiliar 11 conserva una copia del croquis de embalaje del lote de ensayo 11.",
+    "summary": "En microcine itinerante, el registro auxiliar 11 conserva una copia del croquis de embalaje del lote de ensayo 11.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/044/27"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_042_07",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_042",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En la edición de sala del plano hidrográfico, la escala es uno a cinco mil.",
+    "summary": "En la edición de sala del plano hidrográfico, la escala es uno a cinco mil.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/042/07"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_049_03",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_049",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Los senderos costeros del tramo sur cerraron el acceso al farallón por erosión.",
+    "summary": "Los senderos costeros del tramo sur cerraron el acceso al farallón por erosión.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/049/03"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_047_05",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_047",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La colección de basaltos del archivo mineralógico incluye treinta y una muestras.",
+    "summary": "La colección de basaltos del archivo mineralógico incluye treinta y una muestras.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/047/05"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_047_17",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_047",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En archivo mineralógico, el registro auxiliar 01 conserva una copia del croquis de embalaje del lote de ensayo 01.",
+    "summary": "En archivo mineralógico, el registro auxiliar 01 conserva una copia del croquis de embalaje del lote de ensayo 01.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/047/17"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_049_23",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_049",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En senderos costeros, el registro auxiliar 07 conserva una copia del croquis de embalaje del lote de ensayo 07.",
+    "summary": "En senderos costeros, el registro auxiliar 07 conserva una copia del croquis de embalaje del lote de ensayo 07.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/049/23"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_044_02",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_044",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La edición serrana del microcine itinerante utiliza subtítulos en formato SRT.",
+    "summary": "La edición serrana del microcine itinerante utiliza subtítulos en formato SRT.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/044/02"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_042_13",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_042",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La sesión de sala del plano hidrográfico empieza a las ocho.",
+    "summary": "La sesión de sala del plano hidrográfico empieza a las ocho.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/042/13"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_047_06",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_047",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La inspección de basaltos del archivo mineralógico será el miércoles.",
+    "summary": "La inspección de basaltos del archivo mineralógico será el miércoles.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/047/06"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_047_18",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_047",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En archivo mineralógico, el registro auxiliar 02 conserva una copia del croquis de embalaje del lote de ensayo 02.",
+    "summary": "En archivo mineralógico, el registro auxiliar 02 conserva una copia del croquis de embalaje del lote de ensayo 02.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/047/18"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_046_06",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_046",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La videollamada de revisión portuguesa del manual de bombas hidráulicas comenzará a las quince horas.",
+    "summary": "La videollamada de revisión portuguesa del manual de bombas hidráulicas comenzará a las quince horas.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/046/06"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_042_12",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_042",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La versión de archivo del plano hidrográfico contiene nueve láminas.",
+    "summary": "La versión de archivo del plano hidrográfico contiene nueve láminas.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/042/12"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_045_08",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_045",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La cuenta de transmisión de pruebas del invernadero experimental se llama ensayo-verde.",
+    "summary": "La cuenta de transmisión de pruebas del invernadero experimental se llama ensayo-verde.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/045/08"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_048_10",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_048",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La sala Eco del laboratorio de acústica exporta grabaciones en FLAC.",
+    "summary": "La sala Eco del laboratorio de acústica exporta grabaciones en FLAC.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/048/10"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_042_18",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_042",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En plano hidrográfico, el registro auxiliar 02 conserva una copia del croquis de embalaje del lote de ensayo 02.",
+    "summary": "En plano hidrográfico, el registro auxiliar 02 conserva una copia del croquis de embalaje del lote de ensayo 02.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/042/18"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_046_04",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_046",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La revisión portuguesa del manual de bombas hidráulicas no se hará presencialmente; será por videollamada.",
+    "summary": "La revisión portuguesa del manual de bombas hidráulicas no se hará presencialmente; será por videollamada.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/046/04"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_044_26",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_044",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En microcine itinerante, el registro auxiliar 10 conserva una copia del croquis de embalaje del lote de ensayo 10.",
+    "summary": "En microcine itinerante, el registro auxiliar 10 conserva una copia del croquis de embalaje del lote de ensayo 10.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/044/26"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_048_04",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_048",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El laboratorio de acústica desconectó el altavoz central de la sala Sombra por una avería; ese altavoz no está emitiendo ninguna señal.",
+    "summary": "El laboratorio de acústica desconectó el altavoz central de la sala Sombra por una avería; ese altavoz no está emitiendo ninguna señal.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/048/04"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_045_25",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_045",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En sensores de invernadero, el registro auxiliar 09 conserva una copia del croquis de embalaje del lote de ensayo 09.",
+    "summary": "En sensores de invernadero, el registro auxiliar 09 conserva una copia del croquis de embalaje del lote de ensayo 09.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/045/25"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_047_25",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_047",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En archivo mineralógico, el registro auxiliar 09 conserva una copia del croquis de embalaje del lote de ensayo 09.",
+    "summary": "En archivo mineralógico, el registro auxiliar 09 conserva una copia del croquis de embalaje del lote de ensayo 09.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/047/25"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_042_16",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_042",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El acta de la sesión de sala del plano hidrográfico la firmó Elsa.",
+    "summary": "El acta de la sesión de sala del plano hidrográfico la firmó Elsa.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/042/16"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_044_23",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_044",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En microcine itinerante, el registro auxiliar 07 conserva una copia del croquis de embalaje del lote de ensayo 07.",
+    "summary": "En microcine itinerante, el registro auxiliar 07 conserva una copia del croquis de embalaje del lote de ensayo 07.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/044/23"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_046_25",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_046",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En traducción técnica, el registro auxiliar 09 conserva una copia del croquis de embalaje del lote de ensayo 09.",
+    "summary": "En traducción técnica, el registro auxiliar 09 conserva una copia del croquis de embalaje del lote de ensayo 09.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/046/25"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_045_24",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_045",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En sensores de invernadero, el registro auxiliar 08 conserva una copia del croquis de embalaje del lote de ensayo 08.",
+    "summary": "En sensores de invernadero, el registro auxiliar 08 conserva una copia del croquis de embalaje del lote de ensayo 08.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/045/24"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_046_18",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_046",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En traducción técnica, el registro auxiliar 02 conserva una copia del croquis de embalaje del lote de ensayo 02.",
+    "summary": "En traducción técnica, el registro auxiliar 02 conserva una copia del croquis de embalaje del lote de ensayo 02.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/046/18"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_044_06",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_044",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El equipo de la edición serrana del microcine itinerante recogerá su proyector el jueves.",
+    "summary": "El equipo de la edición serrana del microcine itinerante recogerá su proyector el jueves.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/044/06"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_047_04",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_047",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La colección de basaltos del archivo mineralógico se recibió en donación, no se compró.",
+    "summary": "La colección de basaltos del archivo mineralógico se recibió en donación, no se compró.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/047/04"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_042_25",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_042",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En plano hidrográfico, el registro auxiliar 09 conserva una copia del croquis de embalaje del lote de ensayo 09.",
+    "summary": "En plano hidrográfico, el registro auxiliar 09 conserva una copia del croquis de embalaje del lote de ensayo 09.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/042/25"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_045_21",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_045",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En sensores de invernadero, el registro auxiliar 05 conserva una copia del croquis de embalaje del lote de ensayo 05.",
+    "summary": "En sensores de invernadero, el registro auxiliar 05 conserva una copia del croquis de embalaje del lote de ensayo 05.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/045/21"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_042_06",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_042",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La revisión del plano hidrográfico en el muelle comenzará a las diez de la mañana.",
+    "summary": "La revisión del plano hidrográfico en el muelle comenzará a las diez de la mañana.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/042/06"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_047_28",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_047",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En archivo mineralógico, el registro auxiliar 12 conserva una copia del croquis de embalaje del lote de ensayo 12.",
+    "summary": "En archivo mineralógico, el registro auxiliar 12 conserva una copia del croquis de embalaje del lote de ensayo 12.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/047/28"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_046_10",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_046",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La edición italiana del manual de bombas hidráulicas se entrega en EPUB.",
+    "summary": "La edición italiana del manual de bombas hidráulicas se entrega en EPUB.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/046/10"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_045_06",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_045",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El mantenimiento de sensores de la nave B del invernadero experimental será en febrero.",
+    "summary": "El mantenimiento de sensores de la nave B del invernadero experimental será en febrero.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/045/06"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_043_20",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_043",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En biblioteca de herramientas, el registro auxiliar 04 conserva una copia del croquis de embalaje del lote de ensayo 04.",
+    "summary": "En biblioteca de herramientas, el registro auxiliar 04 conserva una copia del croquis de embalaje del lote de ensayo 04.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/043/20"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_043_05",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_043",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La biblioteca de herramientas recibió catorce sierras para la sede oeste.",
+    "summary": "La biblioteca de herramientas recibió catorce sierras para la sede oeste.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/043/05"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_042_28",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_042",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En plano hidrográfico, el registro auxiliar 12 conserva una copia del croquis de embalaje del lote de ensayo 12.",
+    "summary": "En plano hidrográfico, el registro auxiliar 12 conserva una copia del croquis de embalaje del lote de ensayo 12.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/042/28"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_042_17",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_042",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En plano hidrográfico, el registro auxiliar 01 conserva una copia del croquis de embalaje del lote de ensayo 01.",
+    "summary": "En plano hidrográfico, el registro auxiliar 01 conserva una copia del croquis de embalaje del lote de ensayo 01.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/042/17"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_043_03",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_043",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La biblioteca de herramientas dejó de prestar taladros a domicilio; solo los entrega presencialmente.",
+    "summary": "La biblioteca de herramientas dejó de prestar taladros a domicilio; solo los entrega presencialmente.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/043/03"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_042_23",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_042",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En plano hidrográfico, el registro auxiliar 07 conserva una copia del croquis de embalaje del lote de ensayo 07.",
+    "summary": "En plano hidrográfico, el registro auxiliar 07 conserva una copia del croquis de embalaje del lote de ensayo 07.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/042/23"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_048_18",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_048",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En laboratorio de acústica, el registro auxiliar 02 conserva una copia del croquis de embalaje del lote de ensayo 02.",
+    "summary": "En laboratorio de acústica, el registro auxiliar 02 conserva una copia del croquis de embalaje del lote de ensayo 02.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/048/18"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_042_21",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_042",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En plano hidrográfico, el registro auxiliar 05 conserva una copia del croquis de embalaje del lote de ensayo 05.",
+    "summary": "En plano hidrográfico, el registro auxiliar 05 conserva una copia del croquis de embalaje del lote de ensayo 05.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/042/21"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_042_10",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_042",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Las copias de sala del plano hidrográfico se guardan en el cajón Niebla.",
+    "summary": "Las copias de sala del plano hidrográfico se guardan en el cajón Niebla.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/042/10"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_043_24",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_043",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En biblioteca de herramientas, el registro auxiliar 08 conserva una copia del croquis de embalaje del lote de ensayo 08.",
+    "summary": "En biblioteca de herramientas, el registro auxiliar 08 conserva una copia del croquis de embalaje del lote de ensayo 08.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/043/24"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_043_28",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_043",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En biblioteca de herramientas, el registro auxiliar 12 conserva una copia del croquis de embalaje del lote de ensayo 12.",
+    "summary": "En biblioteca de herramientas, el registro auxiliar 12 conserva una copia del croquis de embalaje del lote de ensayo 12.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/043/28"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_047_02",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_047",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Las muestras de basaltos del archivo mineralógico se guardan en la cámara Ceniza.",
+    "summary": "Las muestras de basaltos del archivo mineralógico se guardan en la cámara Ceniza.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/047/02"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_043_23",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_043",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En biblioteca de herramientas, el registro auxiliar 07 conserva una copia del croquis de embalaje del lote de ensayo 07.",
+    "summary": "En biblioteca de herramientas, el registro auxiliar 07 conserva una copia del croquis de embalaje del lote de ensayo 07.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/043/23"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_043_14",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_043",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La biblioteca de herramientas pintó la sede oeste de blanco.",
+    "summary": "La biblioteca de herramientas pintó la sede oeste de blanco.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/043/14"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_044_25",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_044",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En microcine itinerante, el registro auxiliar 09 conserva una copia del croquis de embalaje del lote de ensayo 09.",
+    "summary": "En microcine itinerante, el registro auxiliar 09 conserva una copia del croquis de embalaje del lote de ensayo 09.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/044/25"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_046_28",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_046",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En traducción técnica, el registro auxiliar 12 conserva una copia del croquis de embalaje del lote de ensayo 12.",
+    "summary": "En traducción técnica, el registro auxiliar 12 conserva una copia del croquis de embalaje del lote de ensayo 12.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/046/28"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_048_09",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_048",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En la sala Eco del laboratorio de acústica las grabaciones las administra Celia.",
+    "summary": "En la sala Eco del laboratorio de acústica las grabaciones las administra Celia.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/048/09"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_046_24",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_046",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En traducción técnica, el registro auxiliar 08 conserva una copia del croquis de embalaje del lote de ensayo 08.",
+    "summary": "En traducción técnica, el registro auxiliar 08 conserva una copia del croquis de embalaje del lote de ensayo 08.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/046/24"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_045_09",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_045",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La nave A del invernadero experimental registra humedad cada cinco minutos.",
+    "summary": "La nave A del invernadero experimental registra humedad cada cinco minutos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/045/09"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_045_27",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_045",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En sensores de invernadero, el registro auxiliar 11 conserva una copia del croquis de embalaje del lote de ensayo 11.",
+    "summary": "En sensores de invernadero, el registro auxiliar 11 conserva una copia del croquis de embalaje del lote de ensayo 11.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/045/27"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_045_16",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_045",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La transmisión de pruebas del invernadero experimental usa un icono de hoja.",
+    "summary": "La transmisión de pruebas del invernadero experimental usa un icono de hoja.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/045/16"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_045_23",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_045",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En sensores de invernadero, el registro auxiliar 07 conserva una copia del croquis de embalaje del lote de ensayo 07.",
+    "summary": "En sensores de invernadero, el registro auxiliar 07 conserva una copia del croquis de embalaje del lote de ensayo 07.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/045/23"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_042_27",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_042",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En plano hidrográfico, el registro auxiliar 11 conserva una copia del croquis de embalaje del lote de ensayo 11.",
+    "summary": "En plano hidrográfico, el registro auxiliar 11 conserva una copia del croquis de embalaje del lote de ensayo 11.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/042/27"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_047_01",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_047",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La colección de basaltos del archivo mineralógico la cataloga Dalia.",
+    "summary": "La colección de basaltos del archivo mineralógico la cataloga Dalia.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/047/01"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_045_22",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_045",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En sensores de invernadero, el registro auxiliar 06 conserva una copia del croquis de embalaje del lote de ensayo 06.",
+    "summary": "En sensores de invernadero, el registro auxiliar 06 conserva una copia del croquis de embalaje del lote de ensayo 06.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/045/22"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_046_12",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_046",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La revisión italiana del manual de bombas hidráulicas será en el aula tres.",
+    "summary": "La revisión italiana del manual de bombas hidráulicas será en el aula tres.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/046/12"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_045_18",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_045",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En sensores de invernadero, el registro auxiliar 02 conserva una copia del croquis de embalaje del lote de ensayo 02.",
+    "summary": "En sensores de invernadero, el registro auxiliar 02 conserva una copia del croquis de embalaje del lote de ensayo 02.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/045/18"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_046_05",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_046",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La edición portuguesa del manual de bombas hidráulicas tiene veintidós diagramas.",
+    "summary": "La edición portuguesa del manual de bombas hidráulicas tiene veintidós diagramas.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/046/05"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_043_11",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_043",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La sede este de la biblioteca de herramientas abre el domingo a las once.",
+    "summary": "La sede este de la biblioteca de herramientas abre el domingo a las once.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/043/11"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_046_03",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_046",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La edición portuguesa del manual de bombas hidráulicas eliminó el apéndice de repuestos; ese apéndice no forma parte de la edición.",
+    "summary": "La edición portuguesa del manual de bombas hidráulicas eliminó el apéndice de repuestos; ese apéndice no forma parte de la edición.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/046/03"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_042_01",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_042",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Para la edición de campo del plano hidrográfico, Vera coordina la revisión de símbolos.",
+    "summary": "Para la edición de campo del plano hidrográfico, Vera coordina la revisión de símbolos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/042/01"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_049_06",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_049",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La inspección de senderos costeros del tramo sur se hará el martes.",
+    "summary": "La inspección de senderos costeros del tramo sur se hará el martes.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/049/06"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_047_27",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_047",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En archivo mineralógico, el registro auxiliar 11 conserva una copia del croquis de embalaje del lote de ensayo 11.",
+    "summary": "En archivo mineralógico, el registro auxiliar 11 conserva una copia del croquis de embalaje del lote de ensayo 11.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/047/27"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_046_17",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_046",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En traducción técnica, el registro auxiliar 01 conserva una copia del croquis de embalaje del lote de ensayo 01.",
+    "summary": "En traducción técnica, el registro auxiliar 01 conserva una copia del croquis de embalaje del lote de ensayo 01.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/046/17"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_045_12",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_045",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El riego nocturno de la nave A del invernadero experimental comienza a las dos.",
+    "summary": "El riego nocturno de la nave A del invernadero experimental comienza a las dos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/045/12"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_049_07",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_049",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El circuito de senderos costeros del tramo norte acumula doscientos metros de desnivel.",
+    "summary": "El circuito de senderos costeros del tramo norte acumula doscientos metros de desnivel.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/049/07"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_042_05",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_042",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La edición de campo del plano hidrográfico contiene diecisiete láminas.",
+    "summary": "La edición de campo del plano hidrográfico contiene diecisiete láminas.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/042/05"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_043_13",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_043",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El curso de carpintería de la biblioteca de herramientas dura tres horas.",
+    "summary": "El curso de carpintería de la biblioteca de herramientas dura tres horas.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/043/13"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_044_12",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_044",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El premio del público de la edición costera lo ganó el corto Puentes.",
+    "summary": "El premio del público de la edición costera lo ganó el corto Puentes.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/044/12"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_048_26",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_048",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En laboratorio de acústica, el registro auxiliar 10 conserva una copia del croquis de embalaje del lote de ensayo 10.",
+    "summary": "En laboratorio de acústica, el registro auxiliar 10 conserva una copia del croquis de embalaje del lote de ensayo 10.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/048/26"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_049_26",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_049",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En senderos costeros, el registro auxiliar 10 conserva una copia del croquis de embalaje del lote de ensayo 10.",
+    "summary": "En senderos costeros, el registro auxiliar 10 conserva una copia del croquis de embalaje del lote de ensayo 10.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/049/26"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_042_26",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_042",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En plano hidrográfico, el registro auxiliar 10 conserva una copia del croquis de embalaje del lote de ensayo 10.",
+    "summary": "En plano hidrográfico, el registro auxiliar 10 conserva una copia del croquis de embalaje del lote de ensayo 10.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/042/26"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_043_09",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_043",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La sede este de la biblioteca de herramientas registra devoluciones con Alba.",
+    "summary": "La sede este de la biblioteca de herramientas registra devoluciones con Alba.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/043/09"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_044_14",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_044",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El equipo litoral recogió su proyector el martes.",
+    "summary": "El equipo litoral recogió su proyector el martes.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/044/14"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_049_08",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_049",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El permiso de filmación del tramo norte de senderos costeros tiene el código PN-71.",
+    "summary": "El permiso de filmación del tramo norte de senderos costeros tiene el código PN-71.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/049/08"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_049_22",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_049",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En senderos costeros, el registro auxiliar 06 conserva una copia del croquis de embalaje del lote de ensayo 06.",
+    "summary": "En senderos costeros, el registro auxiliar 06 conserva una copia del croquis de embalaje del lote de ensayo 06.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/049/22"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_044_11",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_044",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La función de ensayo del microcine itinerante se hizo en la plaza norte.",
+    "summary": "La función de ensayo del microcine itinerante se hizo en la plaza norte.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/044/11"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_048_17",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_048",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En laboratorio de acústica, el registro auxiliar 01 conserva una copia del croquis de embalaje del lote de ensayo 01.",
+    "summary": "En laboratorio de acústica, el registro auxiliar 01 conserva una copia del croquis de embalaje del lote de ensayo 01.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/048/17"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_044_03",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_044",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La edición serrana del microcine itinerante excluyó la votación del público; no se otorgará premio del público.",
+    "summary": "La edición serrana del microcine itinerante excluyó la votación del público; no se otorgará premio del público.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/044/03"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_043_22",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_043",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En biblioteca de herramientas, el registro auxiliar 06 conserva una copia del croquis de embalaje del lote de ensayo 06.",
+    "summary": "En biblioteca de herramientas, el registro auxiliar 06 conserva una copia del croquis de embalaje del lote de ensayo 06.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/043/22"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_045_14",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_045",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El mantenimiento de la nave A duró dos días en enero.",
+    "summary": "El mantenimiento de la nave A duró dos días en enero.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/045/14"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_047_23",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_047",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En archivo mineralógico, el registro auxiliar 07 conserva una copia del croquis de embalaje del lote de ensayo 07.",
+    "summary": "En archivo mineralógico, el registro auxiliar 07 conserva una copia del croquis de embalaje del lote de ensayo 07.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/047/23"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_042_03",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_042",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La edición de campo del plano hidrográfico descartó la impresión en papel; solo se distribuirá como archivo digital.",
+    "summary": "La edición de campo del plano hidrográfico descartó la impresión en papel; solo se distribuirá como archivo digital.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/042/03"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_044_05",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_044",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La edición serrana del microcine itinerante proyectará seis cortometrajes.",
+    "summary": "La edición serrana del microcine itinerante proyectará seis cortometrajes.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/044/05"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_049_12",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_049",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El tramo norte de senderos costeros baja a la playa por unas escaleras.",
+    "summary": "El tramo norte de senderos costeros baja a la playa por unas escaleras.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/049/12"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_047_26",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_047",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En archivo mineralógico, el registro auxiliar 10 conserva una copia del croquis de embalaje del lote de ensayo 10.",
+    "summary": "En archivo mineralógico, el registro auxiliar 10 conserva una copia del croquis de embalaje del lote de ensayo 10.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/047/26"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_043_25",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_043",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En biblioteca de herramientas, el registro auxiliar 09 conserva una copia del croquis de embalaje del lote de ensayo 09.",
+    "summary": "En biblioteca de herramientas, el registro auxiliar 09 conserva una copia del croquis de embalaje del lote de ensayo 09.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/043/25"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_049_21",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_049",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En senderos costeros, el registro auxiliar 05 conserva una copia del croquis de embalaje del lote de ensayo 05.",
+    "summary": "En senderos costeros, el registro auxiliar 05 conserva una copia del croquis de embalaje del lote de ensayo 05.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/049/21"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_042_20",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_042",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En plano hidrográfico, el registro auxiliar 04 conserva una copia del croquis de embalaje del lote de ensayo 04.",
+    "summary": "En plano hidrográfico, el registro auxiliar 04 conserva una copia del croquis de embalaje del lote de ensayo 04.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/042/20"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_044_24",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_044",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En microcine itinerante, el registro auxiliar 08 conserva una copia del croquis de embalaje del lote de ensayo 08.",
+    "summary": "En microcine itinerante, el registro auxiliar 08 conserva una copia del croquis de embalaje del lote de ensayo 08.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/044/24"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_043_26",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_043",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En biblioteca de herramientas, el registro auxiliar 10 conserva una copia del croquis de embalaje del lote de ensayo 10.",
+    "summary": "En biblioteca de herramientas, el registro auxiliar 10 conserva una copia del croquis de embalaje del lote de ensayo 10.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/043/26"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_045_17",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_045",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En sensores de invernadero, el registro auxiliar 01 conserva una copia del croquis de embalaje del lote de ensayo 01.",
+    "summary": "En sensores de invernadero, el registro auxiliar 01 conserva una copia del croquis de embalaje del lote de ensayo 01.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/045/17"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_048_27",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_048",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En laboratorio de acústica, el registro auxiliar 11 conserva una copia del croquis de embalaje del lote de ensayo 11.",
+    "summary": "En laboratorio de acústica, el registro auxiliar 11 conserva una copia del croquis de embalaje del lote de ensayo 11.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/048/27"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_046_27",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_046",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En traducción técnica, el registro auxiliar 11 conserva una copia del croquis de embalaje del lote de ensayo 11.",
+    "summary": "En traducción técnica, el registro auxiliar 11 conserva una copia del croquis de embalaje del lote de ensayo 11.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/046/27"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_047_21",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_047",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En archivo mineralógico, el registro auxiliar 05 conserva una copia del croquis de embalaje del lote de ensayo 05.",
+    "summary": "En archivo mineralógico, el registro auxiliar 05 conserva una copia del croquis de embalaje del lote de ensayo 05.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/047/21"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_045_20",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_045",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En sensores de invernadero, el registro auxiliar 04 conserva una copia del croquis de embalaje del lote de ensayo 04.",
+    "summary": "En sensores de invernadero, el registro auxiliar 04 conserva una copia del croquis de embalaje del lote de ensayo 04.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/045/20"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_049_18",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_049",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En senderos costeros, el registro auxiliar 02 conserva una copia del croquis de embalaje del lote de ensayo 02.",
+    "summary": "En senderos costeros, el registro auxiliar 02 conserva una copia del croquis de embalaje del lote de ensayo 02.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/049/18"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_046_13",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_046",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La edición italiana del manual de bombas hidráulicas contiene trece diagramas.",
+    "summary": "La edición italiana del manual de bombas hidráulicas contiene trece diagramas.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/046/13"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_043_01",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_043",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En la sede del oeste de la biblioteca de herramientas, Joel registra las devoluciones.",
+    "summary": "En la sede del oeste de la biblioteca de herramientas, Joel registra las devoluciones.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/043/01"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_044_22",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_044",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En microcine itinerante, el registro auxiliar 06 conserva una copia del croquis de embalaje del lote de ensayo 06.",
+    "summary": "En microcine itinerante, el registro auxiliar 06 conserva una copia del croquis de embalaje del lote de ensayo 06.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/044/22"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_044_18",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_044",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En microcine itinerante, el registro auxiliar 02 conserva una copia del croquis de embalaje del lote de ensayo 02.",
+    "summary": "En microcine itinerante, el registro auxiliar 02 conserva una copia del croquis de embalaje del lote de ensayo 02.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/044/18"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_045_10",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_045",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El archivo de la nave A del invernadero experimental lo custodia Mateo.",
+    "summary": "El archivo de la nave A del invernadero experimental lo custodia Mateo.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/045/10"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_049_20",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_049",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En senderos costeros, el registro auxiliar 04 conserva una copia del croquis de embalaje del lote de ensayo 04.",
+    "summary": "En senderos costeros, el registro auxiliar 04 conserva una copia del croquis de embalaje del lote de ensayo 04.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/049/20"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_049_25",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_049",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En senderos costeros, el registro auxiliar 09 conserva una copia del croquis de embalaje del lote de ensayo 09.",
+    "summary": "En senderos costeros, el registro auxiliar 09 conserva una copia del croquis de embalaje del lote de ensayo 09.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/049/25"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_046_14",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_046",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Los diagramas de la edición italiana se dibujaron con Inkscape.",
+    "summary": "Los diagramas de la edición italiana se dibujaron con Inkscape.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/046/14"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_048_20",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_048",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En laboratorio de acústica, el registro auxiliar 04 conserva una copia del croquis de embalaje del lote de ensayo 04.",
+    "summary": "En laboratorio de acústica, el registro auxiliar 04 conserva una copia del croquis de embalaje del lote de ensayo 04.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/048/20"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_046_08",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_046",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El paquete de la edición italiana del manual de bombas hidráulicas tiene el identificador IT-84.",
+    "summary": "El paquete de la edición italiana del manual de bombas hidráulicas tiene el identificador IT-84.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/046/08"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_044_07",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_044",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La edición costera del microcine itinerante usa subtítulos de color amarillo.",
+    "summary": "La edición costera del microcine itinerante usa subtítulos de color amarillo.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/044/07"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_049_28",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_049",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En senderos costeros, el registro auxiliar 12 conserva una copia del croquis de embalaje del lote de ensayo 12.",
+    "summary": "En senderos costeros, el registro auxiliar 12 conserva una copia del croquis de embalaje del lote de ensayo 12.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/049/28"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_044_10",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_044",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Los subtítulos de la edición costera del microcine itinerante usan formato VTT.",
+    "summary": "Los subtítulos de la edición costera del microcine itinerante usan formato VTT.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/044/10"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_043_10",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_043",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Las herramientas eléctricas de la sede este van en el estante siete.",
+    "summary": "Las herramientas eléctricas de la sede este van en el estante siete.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/043/10"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_047_10",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_047",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Las muestras de cuarzo del archivo mineralógico se guardan en la cámara Cristal.",
+    "summary": "Las muestras de cuarzo del archivo mineralógico se guardan en la cámara Cristal.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/047/10"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_044_09",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_044",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La edición costera del microcine itinerante la programa Fabio.",
+    "summary": "La edición costera del microcine itinerante la programa Fabio.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/044/09"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_044_20",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_044",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En microcine itinerante, el registro auxiliar 04 conserva una copia del croquis de embalaje del lote de ensayo 04.",
+    "summary": "En microcine itinerante, el registro auxiliar 04 conserva una copia del croquis de embalaje del lote de ensayo 04.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/044/20"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_043_08",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_043",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El casillero del equipo rojo de la biblioteca de herramientas usa el identificador CR-17.",
+    "summary": "El casillero del equipo rojo de la biblioteca de herramientas usa el identificador CR-17.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/043/08"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_046_01",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_046",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Para la edición portuguesa del manual de bombas hidráulicas, Noelia valida el glosario.",
+    "summary": "Para la edición portuguesa del manual de bombas hidráulicas, Noelia valida el glosario.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/046/01"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_048_01",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_048",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En la sala Sombra del laboratorio de acústica, Eloy administra las grabaciones.",
+    "summary": "En la sala Sombra del laboratorio de acústica, Eloy administra las grabaciones.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/048/01"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_043_02",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_043",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Las herramientas de medición de la sede oeste de la biblioteca de herramientas van en el estante cuatro.",
+    "summary": "Las herramientas de medición de la sede oeste de la biblioteca de herramientas van en el estante cuatro.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/043/02"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_049_01",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_049",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El inventario de senderos costeros del tramo sur lo actualiza Maite.",
+    "summary": "El inventario de senderos costeros del tramo sur lo actualiza Maite.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/049/01"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_042_08",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_042",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El sobre de transporte del plano hidrográfico del equipo norte lleva el código TN-42.",
+    "summary": "El sobre de transporte del plano hidrográfico del equipo norte lleva el código TN-42.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/042/08"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_042_02",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_042",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Los originales de la edición de campo del plano hidrográfico se guardan en el armario Bruma.",
+    "summary": "Los originales de la edición de campo del plano hidrográfico se guardan en el armario Bruma.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/042/02"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_045_02",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_045",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El archivo de mediciones de la nave B del invernadero experimental lo custodia Irene.",
+    "summary": "El archivo de mediciones de la nave B del invernadero experimental lo custodia Irene.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/045/02"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_046_19",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_046",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En traducción técnica, el registro auxiliar 03 conserva una copia del croquis de embalaje del lote de ensayo 03.",
+    "summary": "En traducción técnica, el registro auxiliar 03 conserva una copia del croquis de embalaje del lote de ensayo 03.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/046/19"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_047_08",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_047",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El transporte de cuarzo del archivo mineralógico tiene el código TQ-28.",
+    "summary": "El transporte de cuarzo del archivo mineralógico tiene el código TQ-28.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/047/08"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_045_04",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_045",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El invernadero experimental sustituyó la transmisión inalámbrica de la nave B por una conexión de cable.",
+    "summary": "El invernadero experimental sustituyó la transmisión inalámbrica de la nave B por una conexión de cable.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/045/04"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_046_11",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_046",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El apéndice de repuestos de la edición italiana empieza en la página ochenta.",
+    "summary": "El apéndice de repuestos de la edición italiana empieza en la página ochenta.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/046/11"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_048_02",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_048",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La sala Sombra del laboratorio de acústica exporta las grabaciones en WAV.",
+    "summary": "La sala Sombra del laboratorio de acústica exporta las grabaciones en WAV.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/048/02"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_048_25",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_048",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En laboratorio de acústica, el registro auxiliar 09 conserva una copia del croquis de embalaje del lote de ensayo 09.",
+    "summary": "En laboratorio de acústica, el registro auxiliar 09 conserva una copia del croquis de embalaje del lote de ensayo 09.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/048/25"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_042_19",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_042",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En plano hidrográfico, el registro auxiliar 03 conserva una copia del croquis de embalaje del lote de ensayo 03.",
+    "summary": "En plano hidrográfico, el registro auxiliar 03 conserva una copia del croquis de embalaje del lote de ensayo 03.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/042/19"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_048_07",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_048",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Los micrófonos de la sala Eco del laboratorio de acústica son de la marca ficticia Sonal.",
+    "summary": "Los micrófonos de la sala Eco del laboratorio de acústica son de la marca ficticia Sonal.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/048/07"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_043_07",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_043",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En la sede este de la biblioteca de herramientas, cada sierra lleva una hoja de treinta centímetros.",
+    "summary": "En la sede este de la biblioteca de herramientas, cada sierra lleva una hoja de treinta centímetros.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/043/07"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_048_28",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_048",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En laboratorio de acústica, el registro auxiliar 12 conserva una copia del croquis de embalaje del lote de ensayo 12.",
+    "summary": "En laboratorio de acústica, el registro auxiliar 12 conserva una copia del croquis de embalaje del lote de ensayo 12.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/048/28"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_049_16",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_049",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El puesto Arena de senderos costeros tiene un toldo azul.",
+    "summary": "El puesto Arena de senderos costeros tiene un toldo azul.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/049/16"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_047_24",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_047",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En archivo mineralógico, el registro auxiliar 08 conserva una copia del croquis de embalaje del lote de ensayo 08.",
+    "summary": "En archivo mineralógico, el registro auxiliar 08 conserva una copia del croquis de embalaje del lote de ensayo 08.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/047/24"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_049_13",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_049",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El circuito del tramo norte de senderos costeros tiene siete kilómetros.",
+    "summary": "El circuito del tramo norte de senderos costeros tiene siete kilómetros.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/049/13"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_046_09",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_046",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La edición italiana del manual de bombas hidráulicas la revisa Dante.",
+    "summary": "La edición italiana del manual de bombas hidráulicas la revisa Dante.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/046/09"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_049_02",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_049",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El mapa de los senderos costeros del tramo sur se guarda en el puesto Arena.",
+    "summary": "El mapa de los senderos costeros del tramo sur se guarda en el puesto Arena.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/049/02"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_047_14",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_047",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Cada muestra de cuarzo del archivo mineralógico tiene una masa de veinte gramos.",
+    "summary": "Cada muestra de cuarzo del archivo mineralógico tiene una masa de veinte gramos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/047/14"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_048_14",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_048",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La calibración de sala Eco empieza a las once y la hace Nico.",
+    "summary": "La calibración de sala Eco empieza a las once y la hace Nico.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/048/14"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_048_12",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_048",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El altavoz central de la sala Eco emite ruido rosa.",
+    "summary": "El altavoz central de la sala Eco emite ruido rosa.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/048/12"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_043_19",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_043",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En biblioteca de herramientas, el registro auxiliar 03 conserva una copia del croquis de embalaje del lote de ensayo 03.",
+    "summary": "En biblioteca de herramientas, el registro auxiliar 03 conserva una copia del croquis de embalaje del lote de ensayo 03.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/043/19"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_045_01",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_045",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En el invernadero experimental, la red de sensores de la nave B registra humedad cada veinte minutos.",
+    "summary": "En el invernadero experimental, la red de sensores de la nave B registra humedad cada veinte minutos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/045/01"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_044_28",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_044",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En microcine itinerante, el registro auxiliar 12 conserva una copia del croquis de embalaje del lote de ensayo 12.",
+    "summary": "En microcine itinerante, el registro auxiliar 12 conserva una copia del croquis de embalaje del lote de ensayo 12.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/044/28"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_044_17",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_044",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En microcine itinerante, el registro auxiliar 01 conserva una copia del croquis de embalaje del lote de ensayo 01.",
+    "summary": "En microcine itinerante, el registro auxiliar 01 conserva una copia del croquis de embalaje del lote de ensayo 01.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/044/17"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_046_02",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_046",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La edición portuguesa del manual de bombas hidráulicas se entrega en PDF accesible.",
+    "summary": "La edición portuguesa del manual de bombas hidráulicas se entrega en PDF accesible.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/046/02"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_048_21",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_048",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En laboratorio de acústica, el registro auxiliar 05 conserva una copia del croquis de embalaje del lote de ensayo 05.",
+    "summary": "En laboratorio de acústica, el registro auxiliar 05 conserva una copia del croquis de embalaje del lote de ensayo 05.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/048/21"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_047_09",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_047",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La colección de cuarzo del archivo mineralógico la cataloga Omar.",
+    "summary": "La colección de cuarzo del archivo mineralógico la cataloga Omar.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/047/09"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_047_13",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_047",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La colección de cuarzo del archivo mineralógico tiene once muestras.",
+    "summary": "La colección de cuarzo del archivo mineralógico tiene once muestras.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/047/13"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_044_15",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_044",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El alquiler del proyector de la sede costera costó ochenta unidades ficticias.",
+    "summary": "El alquiler del proyector de la sede costera costó ochenta unidades ficticias.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/044/15"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_046_07",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_046",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La edición italiana del manual de bombas hidráulicas utiliza la tipografía Lato.",
+    "summary": "La edición italiana del manual de bombas hidráulicas utiliza la tipografía Lato.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/046/07"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_044_01",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_044",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La edición serrana del microcine itinerante la programa Abril.",
+    "summary": "La edición serrana del microcine itinerante la programa Abril.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/044/01"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_044_19",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_044",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En microcine itinerante, el registro auxiliar 03 conserva una copia del croquis de embalaje del lote de ensayo 03.",
+    "summary": "En microcine itinerante, el registro auxiliar 03 conserva una copia del croquis de embalaje del lote de ensayo 03.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/044/19"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_045_26",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_045",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En sensores de invernadero, el registro auxiliar 10 conserva una copia del croquis de embalaje del lote de ensayo 10.",
+    "summary": "En sensores de invernadero, el registro auxiliar 10 conserva una copia del croquis de embalaje del lote de ensayo 10.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/045/26"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_045_13",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_045",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La nave A del invernadero experimental tiene treinta sensores de humedad.",
+    "summary": "La nave A del invernadero experimental tiene treinta sensores de humedad.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/045/13"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_043_16",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_043",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Las sierras de exhibición de la biblioteca de herramientas están bajo una vitrina.",
+    "summary": "Las sierras de exhibición de la biblioteca de herramientas están bajo una vitrina.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/043/16"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_042_11",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_042",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La imprenta Faro imprimió el plano hidrográfico de la muestra de 2024.",
+    "summary": "La imprenta Faro imprimió el plano hidrográfico de la muestra de 2024.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/042/11"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_044_16",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_044",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El gimnasio del microcine itinerante tiene cortinas negras.",
+    "summary": "El gimnasio del microcine itinerante tiene cortinas negras.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/044/16"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_047_07",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_047",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Las muestras de cuarzo del archivo mineralógico tienen dureza siete.",
+    "summary": "Las muestras de cuarzo del archivo mineralógico tienen dureza siete.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/047/07"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_047_22",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_047",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En archivo mineralógico, el registro auxiliar 06 conserva una copia del croquis de embalaje del lote de ensayo 06.",
+    "summary": "En archivo mineralógico, el registro auxiliar 06 conserva una copia del croquis de embalaje del lote de ensayo 06.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/047/22"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_048_13",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_048",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La sala Eco del laboratorio de acústica usa cuatro micrófonos.",
+    "summary": "La sala Eco del laboratorio de acústica usa cuatro micrófonos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/048/13"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_047_20",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_047",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En archivo mineralógico, el registro auxiliar 04 conserva una copia del croquis de embalaje del lote de ensayo 04.",
+    "summary": "En archivo mineralógico, el registro auxiliar 04 conserva una copia del croquis de embalaje del lote de ensayo 04.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/047/20"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_043_21",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_043",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En biblioteca de herramientas, el registro auxiliar 05 conserva una copia del croquis de embalaje del lote de ensayo 05.",
+    "summary": "En biblioteca de herramientas, el registro auxiliar 05 conserva una copia del croquis de embalaje del lote de ensayo 05.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/043/21"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_049_14",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_049",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La inspección de senderos costeros del tramo norte será el viernes.",
+    "summary": "La inspección de senderos costeros del tramo norte será el viernes.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/049/14"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_047_15",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_047",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La inspección de cuarzo del archivo mineralógico será el viernes.",
+    "summary": "La inspección de cuarzo del archivo mineralógico será el viernes.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/047/15"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_048_11",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_048",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El público de la sala Eco del laboratorio de acústica se sienta en la grada.",
+    "summary": "El público de la sala Eco del laboratorio de acústica se sienta en la grada.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/048/11"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_045_11",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_045",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La nave A del invernadero experimental transmite por el canal inalámbrico seis.",
+    "summary": "La nave A del invernadero experimental transmite por el canal inalámbrico seis.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/045/11"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_049_19",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_049",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En senderos costeros, el registro auxiliar 03 conserva una copia del croquis de embalaje del lote de ensayo 03.",
+    "summary": "En senderos costeros, el registro auxiliar 03 conserva una copia del croquis de embalaje del lote de ensayo 03.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/049/19"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_045_05",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_045",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La nave B del invernadero experimental tiene dieciocho sensores de humedad.",
+    "summary": "La nave B del invernadero experimental tiene dieciocho sensores de humedad.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/045/05"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_049_24",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_049",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En senderos costeros, el registro auxiliar 08 conserva una copia del croquis de embalaje del lote de ensayo 08.",
+    "summary": "En senderos costeros, el registro auxiliar 08 conserva una copia del croquis de embalaje del lote de ensayo 08.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/049/24"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_043_04",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_043",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La sede oeste de la biblioteca de herramientas permanecerá cerrada el domingo por mantenimiento.",
+    "summary": "La sede oeste de la biblioteca de herramientas permanecerá cerrada el domingo por mantenimiento.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/043/04"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_046_15",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_046",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La minuta italiana del manual de bombas hidráulicas la redacta Rosa.",
+    "summary": "La minuta italiana del manual de bombas hidráulicas la redacta Rosa.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/046/15"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_043_27",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_043",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En biblioteca de herramientas, el registro auxiliar 11 conserva una copia del croquis de embalaje del lote de ensayo 11.",
+    "summary": "En biblioteca de herramientas, el registro auxiliar 11 conserva una copia del croquis de embalaje del lote de ensayo 11.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/043/27"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_048_03",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_048",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La sala Sombra del laboratorio de acústica suspendió las sesiones con público; las mediciones serán a puerta cerrada.",
+    "summary": "La sala Sombra del laboratorio de acústica suspendió las sesiones con público; las mediciones serán a puerta cerrada.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/048/03"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_045_07",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_045",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Los sensores de humedad de la nave A del invernadero experimental tienen precisión de dos puntos porcentuales.",
+    "summary": "Los sensores de humedad de la nave A del invernadero experimental tienen precisión de dos puntos porcentuales.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/045/07"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_048_22",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_048",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En laboratorio de acústica, el registro auxiliar 06 conserva una copia del croquis de embalaje del lote de ensayo 06.",
+    "summary": "En laboratorio de acústica, el registro auxiliar 06 conserva una copia del croquis de embalaje del lote de ensayo 06.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/048/22"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_046_21",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_046",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En traducción técnica, el registro auxiliar 05 conserva una copia del croquis de embalaje del lote de ensayo 05.",
+    "summary": "En traducción técnica, el registro auxiliar 05 conserva una copia del croquis de embalaje del lote de ensayo 05.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/046/21"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_049_17",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_049",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En senderos costeros, el registro auxiliar 01 conserva una copia del croquis de embalaje del lote de ensayo 01.",
+    "summary": "En senderos costeros, el registro auxiliar 01 conserva una copia del croquis de embalaje del lote de ensayo 01.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/049/17"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_043_18",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_043",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En biblioteca de herramientas, el registro auxiliar 02 conserva una copia del croquis de embalaje del lote de ensayo 02.",
+    "summary": "En biblioteca de herramientas, el registro auxiliar 02 conserva una copia del croquis de embalaje del lote de ensayo 02.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/043/18"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_048_15",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_048",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La sala Sombra del laboratorio de acústica tiene paneles blancos.",
+    "summary": "La sala Sombra del laboratorio de acústica tiene paneles blancos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/048/15"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_048_19",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_048",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En laboratorio de acústica, el registro auxiliar 03 conserva una copia del croquis de embalaje del lote de ensayo 03.",
+    "summary": "En laboratorio de acústica, el registro auxiliar 03 conserva una copia del croquis de embalaje del lote de ensayo 03.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/048/19"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_044_04",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_044",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La función del microcine itinerante prevista en la plaza se trasladó al gimnasio por lluvia.",
+    "summary": "La función del microcine itinerante prevista en la plaza se trasladó al gimnasio por lluvia.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/044/04"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_042_14",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_042",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Los símbolos del plano hidrográfico de ensayo se dibujan en azul.",
+    "summary": "Los símbolos del plano hidrográfico de ensayo se dibujan en azul.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/042/14"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_048_06",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_048",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La calibración de la sala Sombra del laboratorio de acústica comenzará a las siete.",
+    "summary": "La calibración de la sala Sombra del laboratorio de acústica comenzará a las siete.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/048/06"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_042_09",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_042",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La edición de sala del plano hidrográfico la coordina Luis.",
+    "summary": "La edición de sala del plano hidrográfico la coordina Luis.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/042/09"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_044_08",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_044",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El remolque del equipo litoral del microcine itinerante lleva la matrícula ML-303.",
+    "summary": "El remolque del equipo litoral del microcine itinerante lleva la matrícula ML-303.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/044/08"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_045_03",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_045",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La nave B del invernadero experimental eliminó el riego automático nocturno; el riego nocturno quedó desactivado.",
+    "summary": "La nave B del invernadero experimental eliminó el riego automático nocturno; el riego nocturno quedó desactivado.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/045/03"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_042_15",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_042",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Las láminas de sala del plano hidrográfico tienen marcos grises.",
+    "summary": "Las láminas de sala del plano hidrográfico tienen marcos grises.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/042/15"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_045_28",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_045",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En sensores de invernadero, el registro auxiliar 12 conserva una copia del croquis de embalaje del lote de ensayo 12.",
+    "summary": "En sensores de invernadero, el registro auxiliar 12 conserva una copia del croquis de embalaje del lote de ensayo 12.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/045/28"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_046_16",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_046",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La reunión italiana del manual de bombas hidráulicas empieza a las doce.",
+    "summary": "La reunión italiana del manual de bombas hidráulicas empieza a las doce.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/046/16"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_049_27",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_049",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En senderos costeros, el registro auxiliar 11 conserva una copia del croquis de embalaje del lote de ensayo 11.",
+    "summary": "En senderos costeros, el registro auxiliar 11 conserva una copia del croquis de embalaje del lote de ensayo 11.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/049/27"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_049_15",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_049",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El informe del tramo norte de senderos costeros lo autoriza Paz.",
+    "summary": "El informe del tramo norte de senderos costeros lo autoriza Paz.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/049/15"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_046_20",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_046",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En traducción técnica, el registro auxiliar 04 conserva una copia del croquis de embalaje del lote de ensayo 04.",
+    "summary": "En traducción técnica, el registro auxiliar 04 conserva una copia del croquis de embalaje del lote de ensayo 04.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/046/20"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_043_06",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_043",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El taller de afilado de la biblioteca de herramientas durará noventa minutos.",
+    "summary": "El taller de afilado de la biblioteca de herramientas durará noventa minutos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/043/06"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev2_043_15",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_043",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El equipo rojo de la biblioteca de herramientas utiliza guantes de cuero.",
+    "summary": "El equipo rojo de la biblioteca de herramientas utiliza guantes de cuero.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v2/043/15"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  }
+]

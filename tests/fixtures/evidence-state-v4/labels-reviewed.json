@@ -1,0 +1,359 @@
+{
+  "version": "evidence-state-v4-reviewed-labels",
+  "pairs": [
+    {
+      "id": "esv4_01",
+      "roles": [
+        "A"
+      ],
+      "selected": true,
+      "measurement_status": true,
+      "requires_review": false,
+      "qualification_required": true,
+      "rationale": "Estado negativo de procedimiento explícito de la magnitud; no desconocimiento."
+    },
+    {
+      "id": "esv4_02",
+      "roles": [
+        "none"
+      ],
+      "selected": false,
+      "measurement_status": false,
+      "requires_review": false,
+      "qualification_required": false,
+      "rationale": "Plan, sin estado de realización."
+    },
+    {
+      "id": "esv4_03",
+      "roles": [
+        "none"
+      ],
+      "selected": false,
+      "measurement_status": false,
+      "requires_review": false,
+      "qualification_required": false,
+      "rationale": ""
+    },
+    {
+      "id": "esv4_04",
+      "roles": [
+        "none"
+      ],
+      "selected": false,
+      "measurement_status": false,
+      "requires_review": false,
+      "qualification_required": false,
+      "rationale": ""
+    },
+    {
+      "id": "esv4_05",
+      "roles": [
+        "none"
+      ],
+      "selected": false,
+      "measurement_status": false,
+      "requires_review": false,
+      "qualification_required": false,
+      "rationale": ""
+    },
+    {
+      "id": "esv4_06",
+      "roles": [
+        "none"
+      ],
+      "selected": false,
+      "measurement_status": false,
+      "requires_review": false,
+      "qualification_required": false,
+      "rationale": "Componente, no autonomía del reproductor completo."
+    },
+    {
+      "id": "esv4_07",
+      "roles": [
+        "A"
+      ],
+      "selected": true,
+      "measurement_status": false,
+      "requires_review": false,
+      "qualification_required": false,
+      "rationale": ""
+    },
+    {
+      "id": "esv4_08",
+      "roles": [
+        "A"
+      ],
+      "selected": true,
+      "measurement_status": true,
+      "requires_review": false,
+      "qualification_required": true,
+      "rationale": ""
+    },
+    {
+      "id": "esv4_09",
+      "roles": [
+        "A"
+      ],
+      "selected": true,
+      "measurement_status": true,
+      "requires_review": false,
+      "qualification_required": true,
+      "rationale": "Realización, sin inventar valor ni desconocimiento global."
+    },
+    {
+      "id": "esv4_10",
+      "roles": [
+        "none"
+      ],
+      "selected": false,
+      "measurement_status": false,
+      "requires_review": false,
+      "qualification_required": false,
+      "rationale": ""
+    },
+    {
+      "id": "esv4_11",
+      "roles": [
+        "none"
+      ],
+      "selected": false,
+      "measurement_status": false,
+      "requires_review": false,
+      "qualification_required": false,
+      "rationale": ""
+    },
+    {
+      "id": "esv4_12",
+      "roles": [
+        "A"
+      ],
+      "selected": true,
+      "measurement_status": false,
+      "requires_review": false,
+      "qualification_required": false,
+      "rationale": "Responde directamente al estado del procedimiento preguntado, no puente a magnitud."
+    },
+    {
+      "id": "esv4_13",
+      "roles": [
+        "A",
+        "B"
+      ],
+      "selected": true,
+      "measurement_status": false,
+      "requires_review": false,
+      "qualification_required": true,
+      "rationale": "Lecturas inmediata y exclusión de toda red, explícitas y no exhaustividad del español."
+    },
+    {
+      "id": "esv4_14",
+      "roles": [
+        "B"
+      ],
+      "selected": true,
+      "measurement_status": false,
+      "requires_review": false,
+      "qualification_required": false,
+      "rationale": ""
+    },
+    {
+      "id": "esv4_15",
+      "roles": [
+        "A"
+      ],
+      "selected": true,
+      "measurement_status": false,
+      "requires_review": false,
+      "qualification_required": false,
+      "rationale": ""
+    },
+    {
+      "id": "esv4_16",
+      "roles": [
+        "A",
+        "none"
+      ],
+      "selected": false,
+      "measurement_status": false,
+      "requires_review": true,
+      "qualification_required": false,
+      "rationale": "Ambigüedad de identidad, no elegir la lectura útil."
+    },
+    {
+      "id": "esv4_17",
+      "roles": [
+        "C"
+      ],
+      "selected": true,
+      "measurement_status": false,
+      "requires_review": false,
+      "qualification_required": false,
+      "rationale": ""
+    },
+    {
+      "id": "esv4_18",
+      "roles": [
+        "B"
+      ],
+      "selected": true,
+      "measurement_status": false,
+      "requires_review": false,
+      "qualification_required": false,
+      "rationale": ""
+    },
+    {
+      "id": "esv4_19",
+      "roles": [
+        "none"
+      ],
+      "selected": false,
+      "measurement_status": false,
+      "requires_review": false,
+      "qualification_required": false,
+      "rationale": ""
+    },
+    {
+      "id": "esv4_20",
+      "roles": [
+        "A"
+      ],
+      "selected": true,
+      "measurement_status": false,
+      "requires_review": false,
+      "qualification_required": false,
+      "rationale": ""
+    },
+    {
+      "id": "esv4_21",
+      "roles": [
+        "A"
+      ],
+      "selected": true,
+      "measurement_status": true,
+      "requires_review": false,
+      "qualification_required": true,
+      "rationale": ""
+    },
+    {
+      "id": "esv4_22",
+      "roles": [
+        "none"
+      ],
+      "selected": false,
+      "measurement_status": false,
+      "requires_review": false,
+      "qualification_required": false,
+      "rationale": ""
+    },
+    {
+      "id": "esv4_23",
+      "roles": [
+        "none"
+      ],
+      "selected": false,
+      "measurement_status": false,
+      "requires_review": false,
+      "qualification_required": false,
+      "rationale": "No publicar no afirma no medir ni falta del dato en todos los registros."
+    },
+    {
+      "id": "esv4_24",
+      "roles": [
+        "A"
+      ],
+      "selected": true,
+      "measurement_status": false,
+      "requires_review": false,
+      "qualification_required": false,
+      "rationale": ""
+    },
+    {
+      "id": "esv4_25",
+      "roles": [
+        "A"
+      ],
+      "selected": true,
+      "measurement_status": true,
+      "requires_review": false,
+      "qualification_required": true,
+      "rationale": "No ejecutada, sin afirmar pendiente; la cancelación se conserva en texto."
+    },
+    {
+      "id": "esv4_26",
+      "roles": [
+        "A"
+      ],
+      "selected": true,
+      "measurement_status": true,
+      "requires_review": false,
+      "qualification_required": true,
+      "rationale": "Pending execution is actual incomplete procedure state, not mere intent; no statement about globally unknown quantity."
+    },
+    {
+      "id": "esv4_27",
+      "roles": [
+        "A"
+      ],
+      "selected": true,
+      "measurement_status": true,
+      "requires_review": false,
+      "qualification_required": true,
+      "rationale": ""
+    },
+    {
+      "id": "esv4_28",
+      "roles": [
+        "A"
+      ],
+      "selected": true,
+      "measurement_status": true,
+      "requires_review": false,
+      "qualification_required": true,
+      "rationale": ""
+    },
+    {
+      "id": "esv4_29",
+      "roles": [
+        "A"
+      ],
+      "selected": true,
+      "measurement_status": true,
+      "requires_review": false,
+      "qualification_required": true,
+      "rationale": ""
+    },
+    {
+      "id": "esv4_30",
+      "roles": [
+        "A"
+      ],
+      "selected": true,
+      "measurement_status": false,
+      "requires_review": false,
+      "qualification_required": false,
+      "rationale": ""
+    },
+    {
+      "id": "esv4_31",
+      "roles": [
+        "none"
+      ],
+      "selected": false,
+      "measurement_status": false,
+      "requires_review": false,
+      "qualification_required": false,
+      "rationale": ""
+    },
+    {
+      "id": "esv4_32",
+      "roles": [
+        "A"
+      ],
+      "selected": true,
+      "measurement_status": false,
+      "requires_review": false,
+      "qualification_required": false,
+      "rationale": ""
+    }
+  ]
+}

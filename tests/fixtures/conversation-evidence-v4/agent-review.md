@@ -1,0 +1,3 @@
+# Procedencia y revisión
+
+El autor creó fuente/preguntas/etiquetas sin consultar política o resultados. La interrupción ocurrió después de guardar los cuatro archivos de datos; el coordinador validó integridad y completó documentación. `roles_fresh_blind_review` vio solo source.json y blind-questions.json, sin etiquetas ni resultados/cuotas. Se conserva su revisión inicial y una ampliación solicitando todas las evidencias individualmente útiles, incluso parciales. No recibió gold. Conciliación previa en adjudication.json, con una corrección de categoría y cuatro ampliaciones de IDs. Las ambigüedades se delimitan explícitamente; no se infiere imposibilidad técnica, domicilio inexistente o resultado completo a partir de información pendiente.

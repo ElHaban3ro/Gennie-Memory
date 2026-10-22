@@ -1,0 +1,2349 @@
+{
+  "human_review": false,
+  "reviewer_kind": "separate_agent_same_model_family",
+  "stage": "parent-normalized reconciled labels; raw blind review and all disagreements preserved separately",
+  "cases": [
+    {
+      "id": "cev6q_074_01",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "074_01",
+        "074_03",
+        "074_21"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "074_01",
+          "relation": "supports_answer"
+        },
+        {
+          "statement_id": "074_03",
+          "relation": "supports_answer"
+        },
+        {
+          "statement_id": "074_21",
+          "relation": "pending_or_partial"
+        }
+      ],
+      "requested_parts": [
+        {
+          "id": "cleaner",
+          "kind": "requested",
+          "query_quote": "Quién quedó a cargo de limpiar las teselas azules de Nuvarel el 14 de octubre"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_074_01",
+          "quote": "El parte de restauración del mosaico ficticio Nuvarel del 14 de octubre asigna a Iverna la limpieza de las teselas azules.",
+          "relation": "supports_answer",
+          "covers": [
+            "cleaner"
+          ],
+          "statement_id": "074_01"
+        },
+        {
+          "memory_id": "cev6_074_03",
+          "quote": "La copia firmada del parte del 14 de octubre confirma que la limpieza de las teselas azules corresponde a Iverna.",
+          "relation": "supports_answer",
+          "covers": [
+            "cleaner"
+          ],
+          "statement_id": "074_03"
+        },
+        {
+          "memory_id": "cev6_074_21",
+          "quote": "El parte de Nuvarel limita la limpieza de Iverna a la jornada del 14 de octubre.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "cleaner"
+          ],
+          "statement_id": "074_21"
+        }
+      ]
+    },
+    {
+      "id": "cev6q_074_02",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "074_11",
+        "074_12"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "074_11",
+          "relation": "pending_or_partial"
+        },
+        {
+          "statement_id": "074_12",
+          "relation": "supports_answer"
+        }
+      ],
+      "requested_parts": [
+        {
+          "id": "document",
+          "kind": "requested",
+          "query_quote": "qué documento hay que llevar"
+        },
+        {
+          "id": "signer",
+          "kind": "requested",
+          "query_quote": "quién debe firmarlo"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_074_11",
+          "quote": "Para retirar Nuvarel del taller es obligatorio presentar la autorización de custodia del archivo Orvane, según la recepción.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "document"
+          ],
+          "statement_id": "074_11"
+        },
+        {
+          "memory_id": "cev6_074_12",
+          "quote": "La recepción aclara que la autorización de custodia para retirar Nuvarel debe estar firmada por la archivera.",
+          "relation": "supports_answer",
+          "covers": [
+            "document",
+            "signer"
+          ],
+          "statement_id": "074_12"
+        }
+      ]
+    },
+    {
+      "id": "cev6q_074_03",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "074_04",
+        "074_06",
+        "074_25"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "074_04",
+          "relation": "refutes_premise"
+        },
+        {
+          "statement_id": "074_06",
+          "relation": "refutes_premise"
+        },
+        {
+          "statement_id": "074_25",
+          "relation": "refutes_premise"
+        }
+      ],
+      "requested_parts": [
+        {
+          "id": "purchase",
+          "kind": "premise",
+          "query_quote": "cuando compró Nuvarel"
+        },
+        {
+          "id": "price",
+          "kind": "requested",
+          "query_quote": "Cuánto pagó el taller"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_074_04",
+          "quote": "En el registro de entrega, el mosaico Nuvarel figura como cedido temporalmente; el taller no lo compró.",
+          "relation": "refutes_premise",
+          "covers": [
+            "purchase"
+          ],
+          "statement_id": "074_04"
+        },
+        {
+          "memory_id": "cev6_074_06",
+          "quote": "La propuesta de compra del mosaico Nuvarel fue retirada el 9 de octubre sin efectuar pago.",
+          "relation": "refutes_premise",
+          "covers": [
+            "purchase"
+          ],
+          "statement_id": "074_06"
+        },
+        {
+          "memory_id": "cev6_074_25",
+          "quote": "La propuesta retirada de Nuvarel contemplaba una compra, pero nunca llegó a convertirse en contrato.",
+          "relation": "refutes_premise",
+          "covers": [
+            "purchase"
+          ],
+          "statement_id": "074_25"
+        }
+      ]
+    },
+    {
+      "id": "cev6q_074_04",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "074_05"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "074_05",
+          "relation": "refutes_premise"
+        }
+      ],
+      "requested_parts": [
+        {
+          "id": "ownership_transfer",
+          "kind": "premise",
+          "query_quote": "transfirió el archivo la propiedad de Nuvarel"
+        },
+        {
+          "id": "buyer",
+          "kind": "requested",
+          "query_quote": "A qué comprador"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_074_05",
+          "quote": "El acta de custodia dice expresamente que Nuvarel sigue siendo propiedad del archivo Orvane.",
+          "relation": "refutes_premise",
+          "covers": [
+            "ownership_transfer"
+          ],
+          "statement_id": "074_05"
+        }
+      ]
+    },
+    {
+      "id": "cev6q_074_05",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "074_07"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "074_07",
+          "relation": "pending_or_partial"
+        }
+      ],
+      "requested_parts": [
+        {
+          "id": "start",
+          "kind": "requested",
+          "query_quote": "Qué día arrancó la prueba de adhesivo de Nuvarel"
+        },
+        {
+          "id": "result",
+          "kind": "requested",
+          "query_quote": "qué resultado dio"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_074_07",
+          "quote": "El informe de conservación de Nuvarel registra que la prueba de adhesivo empezó el 15 de octubre.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "start"
+          ],
+          "statement_id": "074_07"
+        }
+      ]
+    },
+    {
+      "id": "cev6q_074_06",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "074_09",
+        "074_10"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "074_09",
+          "relation": "pending_or_partial"
+        },
+        {
+          "statement_id": "074_10",
+          "relation": "pending_or_partial"
+        }
+      ],
+      "requested_parts": [
+        {
+          "id": "count",
+          "kind": "requested",
+          "query_quote": "Cuántas cajas lleva Nuvarel"
+        },
+        {
+          "id": "weight",
+          "kind": "requested",
+          "query_quote": "cuánto pesan entre todas"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_074_09",
+          "quote": "La hoja de embalaje de Nuvarel registra cuatro cajas numeradas del 1 al 4.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "count"
+          ],
+          "statement_id": "074_09"
+        },
+        {
+          "memory_id": "cev6_074_10",
+          "quote": "La hoja de embalaje de Nuvarel deja en blanco el peso conjunto de las cuatro cajas.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "count"
+          ],
+          "statement_id": "074_10"
+        }
+      ]
+    },
+    {
+      "id": "cev6q_074_07",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "evidence_relations": [],
+      "requested_parts": [
+        {
+          "id": "lock_code",
+          "kind": "requested",
+          "query_quote": "Cuál es la clave del candado del banco donde está Nuvarel"
+        }
+      ],
+      "evidence": []
+    },
+    {
+      "id": "cev6q_074_08",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "evidence_relations": [],
+      "requested_parts": [
+        {
+          "id": "ship",
+          "kind": "requested",
+          "query_quote": "el nombre del barco que trajo Nuvarel desde su lugar de origen"
+        }
+      ],
+      "evidence": []
+    },
+    {
+      "id": "cev6q_075_01",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "075_01",
+        "075_04"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "075_01",
+          "relation": "supports_answer"
+        },
+        {
+          "statement_id": "075_04",
+          "relation": "supports_answer"
+        }
+      ],
+      "requested_parts": [
+        {
+          "id": "gallery",
+          "kind": "requested",
+          "query_quote": "En qué galería tiene Veldis su estación de muestreo en Heskora"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_075_01",
+          "quote": "El cuaderno de la expedición espeleológica ficticia Heskora sitúa la estación de muestreo de Veldis en la galería de las Agujas.",
+          "relation": "supports_answer",
+          "covers": [
+            "gallery"
+          ],
+          "statement_id": "075_01"
+        },
+        {
+          "memory_id": "cev6_075_04",
+          "quote": "El cartel de la galería de las Agujas confirma que allí está la estación asignada a Veldis.",
+          "relation": "supports_answer",
+          "covers": [
+            "gallery"
+          ],
+          "statement_id": "075_04"
+        }
+      ]
+    },
+    {
+      "id": "cev6q_075_02",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "075_02"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "075_02",
+          "relation": "supports_answer"
+        }
+      ],
+      "requested_parts": [
+        {
+          "id": "container",
+          "kind": "requested",
+          "query_quote": "Con qué recipientes recoge Veldis las muestras de Heskora"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_075_02",
+          "quote": "La guía de campo indica que Veldis recoge las muestras de Heskora con tubos estériles de tapa ámbar.",
+          "relation": "supports_answer",
+          "covers": [
+            "container"
+          ],
+          "statement_id": "075_02"
+        }
+      ]
+    },
+    {
+      "id": "cev6q_075_03",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "075_05",
+        "075_06"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "075_05",
+          "relation": "refutes_premise"
+        },
+        {
+          "statement_id": "075_06",
+          "relation": "refutes_premise"
+        }
+      ],
+      "requested_parts": [
+        {
+          "id": "bottom_arrival",
+          "kind": "premise",
+          "query_quote": "al llegar al fondo del pozo el 16 de octubre"
+        },
+        {
+          "id": "observation",
+          "kind": "requested",
+          "query_quote": "Qué vio Heskora"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_075_05",
+          "quote": "El diario de Heskora del 16 de octubre dice que el equipo suspendió el descenso al pozo por una crecida.",
+          "relation": "refutes_premise",
+          "covers": [
+            "bottom_arrival"
+          ],
+          "statement_id": "075_05"
+        },
+        {
+          "memory_id": "cev6_075_06",
+          "quote": "El parte de seguridad confirma que nadie del equipo Heskora llegó al fondo del pozo el 16 de octubre.",
+          "relation": "refutes_premise",
+          "covers": [
+            "bottom_arrival"
+          ],
+          "statement_id": "075_06"
+        }
+      ]
+    },
+    {
+      "id": "cev6q_075_04",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "075_07"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "075_07",
+          "relation": "refutes_premise"
+        }
+      ],
+      "requested_parts": [
+        {
+          "id": "pollen",
+          "kind": "premise",
+          "query_quote": "el polen de la muestra HK-7"
+        },
+        {
+          "id": "plant",
+          "kind": "requested",
+          "query_quote": "De qué planta"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_075_07",
+          "quote": "La ficha de la muestra HK-7 la identifica expresamente como cultivo de hongo, no como muestra de polen.",
+          "relation": "refutes_premise",
+          "covers": [
+            "pollen"
+          ],
+          "statement_id": "075_07"
+        }
+      ]
+    },
+    {
+      "id": "cev6q_075_05",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "075_08",
+        "075_26"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "075_08",
+          "relation": "pending_or_partial"
+        },
+        {
+          "statement_id": "075_26",
+          "relation": "pending_or_partial"
+        }
+      ],
+      "requested_parts": [
+        {
+          "id": "arrival_time",
+          "kind": "requested",
+          "query_quote": "la hora de ingreso"
+        },
+        {
+          "id": "identification_status",
+          "kind": "requested",
+          "query_quote": "el estado de su identificación taxonómica"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_075_08",
+          "quote": "La ficha de laboratorio de HK-7 registra su ingreso el 17 de octubre a las 09:10.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "arrival_time"
+          ],
+          "statement_id": "075_08"
+        },
+        {
+          "memory_id": "cev6_075_26",
+          "quote": "El informe de Heskora conserva como pendiente la identificación taxonómica de HK-7.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "identification_status"
+          ],
+          "statement_id": "075_26"
+        }
+      ]
+    },
+    {
+      "id": "cev6q_075_06",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "075_10"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "075_10",
+          "relation": "pending_or_partial"
+        }
+      ],
+      "requested_parts": [
+        {
+          "id": "custodian",
+          "kind": "requested",
+          "query_quote": "Quién era responsable de guardar los tubos usados de Heskora"
+        },
+        {
+          "id": "shipping_cost",
+          "kind": "requested",
+          "query_quote": "cuánto costó enviarlos al laboratorio"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_075_10",
+          "quote": "El registro de campo de Heskora identifica a Drezan como responsable de guardar los tubos usados.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "custodian"
+          ],
+          "statement_id": "075_10"
+        }
+      ]
+    },
+    {
+      "id": "cev6q_075_07",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "evidence_relations": [],
+      "requested_parts": [
+        {
+          "id": "humidity",
+          "kind": "requested",
+          "query_quote": "Qué porcentaje de humedad había en la estación de Veldis"
+        }
+      ],
+      "evidence": []
+    },
+    {
+      "id": "cev6q_075_08",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "evidence_relations": [],
+      "requested_parts": [
+        {
+          "id": "vehicle_registration",
+          "kind": "requested",
+          "query_quote": "Cuál es el número de matrícula del vehículo de Heskora"
+        }
+      ],
+      "evidence": []
+    },
+    {
+      "id": "cev6q_076_01",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "076_01",
+        "076_02"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "076_01",
+          "relation": "supports_answer"
+        },
+        {
+          "statement_id": "076_02",
+          "relation": "supports_answer"
+        }
+      ],
+      "requested_parts": [
+        {
+          "id": "schedule",
+          "kind": "requested",
+          "query_quote": "cuándo sale el carrito táctil de Queldra"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_076_01",
+          "quote": "La biblioteca ambulante ficticia Queldra presta su carrito táctil los miércoles por la mañana, según el horario de octubre.",
+          "relation": "supports_answer",
+          "covers": [
+            "schedule"
+          ],
+          "statement_id": "076_01"
+        },
+        {
+          "memory_id": "cev6_076_02",
+          "quote": "El aviso de octubre de Queldra anuncia la salida del carrito táctil los miércoles por la mañana.",
+          "relation": "supports_answer",
+          "covers": [
+            "schedule"
+          ],
+          "statement_id": "076_02"
+        }
+      ]
+    },
+    {
+      "id": "cev6q_076_02",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "076_03",
+        "076_04"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "076_03",
+          "relation": "pending_or_partial"
+        },
+        {
+          "statement_id": "076_04",
+          "relation": "pending_or_partial"
+        }
+      ],
+      "requested_parts": [
+        {
+          "id": "return_desk",
+          "kind": "requested",
+          "query_quote": "Dónde devuelvo los libros en relieve de Queldra"
+        },
+        {
+          "id": "renewal",
+          "kind": "requested",
+          "query_quote": "en qué condición puedo renovarlos"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_076_03",
+          "quote": "La ficha de préstamo de Queldra indica que los libros en relieve se devuelven en el mostrador Nido.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "return_desk"
+          ],
+          "statement_id": "076_03"
+        },
+        {
+          "memory_id": "cev6_076_04",
+          "quote": "El reglamento de Queldra permite renovar los libros en relieve una vez si no tienen reservas.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "renewal"
+          ],
+          "statement_id": "076_04"
+        }
+      ]
+    },
+    {
+      "id": "cev6q_076_03",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "076_05"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "076_05",
+          "relation": "refutes_premise"
+        }
+      ],
+      "requested_parts": [
+        {
+          "id": "installed",
+          "kind": "premise",
+          "query_quote": "terminó Queldra de instalar su rampa nueva"
+        },
+        {
+          "id": "completion_date",
+          "kind": "requested",
+          "query_quote": "En qué fecha"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_076_05",
+          "quote": "El acta del 12 de octubre de Queldra deja claro que la rampa nueva aún no se ha instalado.",
+          "relation": "refutes_premise",
+          "covers": [
+            "installed"
+          ],
+          "statement_id": "076_05"
+        }
+      ]
+    },
+    {
+      "id": "cev6q_076_04",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "076_07",
+        "076_08"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "076_07",
+          "relation": "refutes_premise"
+        },
+        {
+          "statement_id": "076_08",
+          "relation": "refutes_premise"
+        }
+      ],
+      "requested_parts": [
+        {
+          "id": "cell_type",
+          "kind": "requested",
+          "query_quote": "Qué tipo de celdas braille"
+        },
+        {
+          "id": "braille_use",
+          "kind": "premise",
+          "query_quote": "celdas braille utiliza la edición Senderos de Sal de Queldra"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_076_07",
+          "quote": "La ficha de Queldra clasifica el volumen Senderos de Sal como edición en macrotipo, no en braille.",
+          "relation": "refutes_premise",
+          "covers": [
+            "braille_use"
+          ],
+          "statement_id": "076_07"
+        },
+        {
+          "memory_id": "cev6_076_08",
+          "quote": "El inventario de Queldra describe Senderos de Sal como libro de letras ampliadas sin celdas braille.",
+          "relation": "refutes_premise",
+          "covers": [
+            "braille_use"
+          ],
+          "statement_id": "076_08"
+        }
+      ]
+    },
+    {
+      "id": "cev6q_076_05",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "076_09",
+        "076_11"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "076_09",
+          "relation": "pending_or_partial"
+        },
+        {
+          "statement_id": "076_11",
+          "relation": "pending_or_partial"
+        }
+      ],
+      "requested_parts": [
+        {
+          "id": "route_start",
+          "kind": "requested",
+          "query_quote": "el inicio"
+        },
+        {
+          "id": "route_end",
+          "kind": "requested",
+          "query_quote": "el final del recorrido"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_076_09",
+          "quote": "La ruta piloto del carrito de Queldra empieza en la plaza del Tejo.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "route_start"
+          ],
+          "statement_id": "076_09"
+        },
+        {
+          "memory_id": "cev6_076_11",
+          "quote": "La hoja de ruta piloto de Queldra confirma como primera parada la plaza del Tejo.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "route_start"
+          ],
+          "statement_id": "076_11"
+        }
+      ]
+    },
+    {
+      "id": "cev6q_076_06",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "076_12"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "076_12",
+          "relation": "pending_or_partial"
+        }
+      ],
+      "requested_parts": [
+        {
+          "id": "return_date",
+          "kind": "requested",
+          "query_quote": "Qué día devolvió Yosmar la caja de láminas táctiles"
+        },
+        {
+          "id": "sheet_count",
+          "kind": "requested",
+          "query_quote": "cuántas láminas traía"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_076_12",
+          "quote": "El registro del préstamo de Yosmar anota que devolvió la caja de láminas táctiles el 13 de octubre.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "return_date"
+          ],
+          "statement_id": "076_12"
+        }
+      ]
+    },
+    {
+      "id": "cev6q_076_07",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "evidence_relations": [],
+      "requested_parts": [
+        {
+          "id": "printer_brand",
+          "kind": "requested",
+          "query_quote": "Qué marca de impresora produjo los comprobantes de Queldra"
+        }
+      ],
+      "evidence": []
+    },
+    {
+      "id": "cev6q_076_08",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "evidence_relations": [],
+      "requested_parts": [
+        {
+          "id": "satisfaction_score",
+          "kind": "requested",
+          "query_quote": "Cuál fue la puntuación de satisfacción de quienes usaron el carrito táctil de Queldra"
+        }
+      ],
+      "evidence": []
+    },
+    {
+      "id": "cev6q_077_01",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "077_02"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "077_02",
+          "relation": "supports_answer"
+        }
+      ],
+      "requested_parts": [
+        {
+          "id": "start_time",
+          "kind": "requested",
+          "query_quote": "A qué hora empieza El Farol Sumergido de Jorveta el 22 de octubre"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_077_02",
+          "quote": "El programa de Jorveta fija el comienzo de El Farol Sumergido del 22 de octubre a las 18:45.",
+          "relation": "supports_answer",
+          "covers": [
+            "start_time"
+          ],
+          "statement_id": "077_02"
+        }
+      ]
+    },
+    {
+      "id": "cev6q_077_02",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "077_03",
+        "077_04"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "077_03",
+          "relation": "supports_answer"
+        },
+        {
+          "statement_id": "077_04",
+          "relation": "supports_answer"
+        }
+      ],
+      "requested_parts": [
+        {
+          "id": "operator",
+          "kind": "requested",
+          "query_quote": "Quién se ocupa de los subtítulos de Jorveta el 22 de octubre"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_077_03",
+          "quote": "La hoja técnica de Jorveta asigna a Naevor el manejo de los subtítulos el 22 de octubre.",
+          "relation": "supports_answer",
+          "covers": [
+            "operator"
+          ],
+          "statement_id": "077_03"
+        },
+        {
+          "memory_id": "cev6_077_04",
+          "quote": "El aviso al público de Jorveta confirma que Naevor operará los subtítulos de El Farol Sumergido el 22 de octubre.",
+          "relation": "supports_answer",
+          "covers": [
+            "operator"
+          ],
+          "statement_id": "077_04"
+        }
+      ]
+    },
+    {
+      "id": "cev6q_077_03",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "077_05",
+        "077_06"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "077_05",
+          "relation": "refutes_premise"
+        },
+        {
+          "statement_id": "077_06",
+          "relation": "refutes_premise"
+        }
+      ],
+      "requested_parts": [
+        {
+          "id": "radio_broadcast",
+          "kind": "premise",
+          "query_quote": "se escuchará El Farol Sumergido de Jorveta el 22 de octubre"
+        },
+        {
+          "id": "radio_station",
+          "kind": "requested",
+          "query_quote": "En qué emisora"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_077_05",
+          "quote": "La productora aclara por escrito que El Farol Sumergido no se emitirá por radio el 22 de octubre.",
+          "relation": "refutes_premise",
+          "covers": [
+            "radio_broadcast"
+          ],
+          "statement_id": "077_05"
+        },
+        {
+          "memory_id": "cev6_077_06",
+          "quote": "La ficha de difusión de El Farol Sumergido marca la opción radio como descartada para el 22 de octubre.",
+          "relation": "refutes_premise",
+          "covers": [
+            "radio_broadcast"
+          ],
+          "statement_id": "077_06"
+        }
+      ]
+    },
+    {
+      "id": "cev6q_077_04",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "077_07"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "077_07",
+          "relation": "refutes_premise"
+        }
+      ],
+      "requested_parts": [
+        {
+          "id": "motor",
+          "kind": "premise",
+          "query_quote": "el motor del títere Arenal de Jorveta"
+        },
+        {
+          "id": "voltage",
+          "kind": "requested",
+          "query_quote": "qué voltaje usa"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_077_07",
+          "quote": "En Jorveta, el títere Arenal se mueve con varillas; la ficha niega que lleve motor.",
+          "relation": "refutes_premise",
+          "covers": [
+            "motor"
+          ],
+          "statement_id": "077_07"
+        }
+      ]
+    },
+    {
+      "id": "cev6q_077_05",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "077_09",
+        "077_10",
+        "077_11"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "077_09",
+          "relation": "pending_or_partial"
+        },
+        {
+          "statement_id": "077_10",
+          "relation": "pending_or_partial"
+        },
+        {
+          "statement_id": "077_11",
+          "relation": "pending_or_partial"
+        }
+      ],
+      "requested_parts": [
+        {
+          "id": "seats",
+          "kind": "requested",
+          "query_quote": "cuántas plazas están reservadas"
+        },
+        {
+          "id": "rows",
+          "kind": "requested",
+          "query_quote": "en qué filas"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_077_09",
+          "quote": "La reserva de la función de Jorveta para el grupo de Ulsira tiene confirmadas doce plazas.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "seats"
+          ],
+          "statement_id": "077_09"
+        },
+        {
+          "memory_id": "cev6_077_10",
+          "quote": "El correo de Ulsira indica que la distribución de esas doce plazas por fila aún se decidirá.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "seats"
+          ],
+          "statement_id": "077_10"
+        },
+        {
+          "memory_id": "cev6_077_11",
+          "quote": "La nota de sala confirma doce localidades reservadas para el grupo de Ulsira.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "seats"
+          ],
+          "statement_id": "077_11"
+        }
+      ]
+    },
+    {
+      "id": "cev6q_077_06",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "077_12"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "077_12",
+          "relation": "pending_or_partial"
+        }
+      ],
+      "requested_parts": [
+        {
+          "id": "test_start",
+          "kind": "requested",
+          "query_quote": "Cuándo comenzó la proyección de prueba de Jorveta del 18 de octubre"
+        },
+        {
+          "id": "test_duration",
+          "kind": "requested",
+          "query_quote": "cuánto duró"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_077_12",
+          "quote": "La bitácora de Jorveta registra que la proyección de prueba comenzó a las 15:05 el 18 de octubre.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "test_start"
+          ],
+          "statement_id": "077_12"
+        }
+      ]
+    },
+    {
+      "id": "cev6q_077_07",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "evidence_relations": [],
+      "requested_parts": [
+        {
+          "id": "university",
+          "kind": "requested",
+          "query_quote": "De qué universidad se graduó Naevor"
+        }
+      ],
+      "evidence": []
+    },
+    {
+      "id": "cev6q_077_08",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "evidence_relations": [],
+      "requested_parts": [
+        {
+          "id": "temperature",
+          "kind": "requested",
+          "query_quote": "Qué temperatura tendrá la sala de Jorveta durante la función"
+        }
+      ],
+      "evidence": []
+    },
+    {
+      "id": "cev6q_078_01",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "078_01",
+        "078_03"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "078_01",
+          "relation": "pending_or_partial"
+        },
+        {
+          "statement_id": "078_03",
+          "relation": "supports_answer"
+        }
+      ],
+      "requested_parts": [
+        {
+          "id": "pourer",
+          "kind": "requested",
+          "query_quote": "quién vertió el trazador"
+        },
+        {
+          "id": "pour_location",
+          "kind": "requested",
+          "query_quote": "dónde"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_078_01",
+          "quote": "El acta del ensayo de trazador del canal ficticio Odravel del 17 de octubre fija el vertido en la compuerta Espiga.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "pour_location"
+          ],
+          "statement_id": "078_01"
+        },
+        {
+          "memory_id": "cev6_078_03",
+          "quote": "La bitácora del equipo de Odravel confirma que Vensar realizó el vertido del 17 de octubre en la compuerta Espiga.",
+          "relation": "supports_answer",
+          "covers": [
+            "pourer",
+            "pour_location"
+          ],
+          "statement_id": "078_03"
+        }
+      ]
+    },
+    {
+      "id": "cev6q_078_02",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "078_04"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "078_04",
+          "relation": "supports_answer"
+        }
+      ],
+      "requested_parts": [
+        {
+          "id": "viewing_equipment",
+          "kind": "requested",
+          "query_quote": "Qué equipo indica el protocolo para observar el trazador de Odravel"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_078_04",
+          "quote": "Para observar el trazador de Odravel, el protocolo indica usar la lámpara violeta del puesto de lectura.",
+          "relation": "supports_answer",
+          "covers": [
+            "viewing_equipment"
+          ],
+          "statement_id": "078_04"
+        }
+      ]
+    },
+    {
+      "id": "cev6q_078_03",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "078_06",
+        "078_07"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "078_06",
+          "relation": "refutes_premise"
+        },
+        {
+          "statement_id": "078_07",
+          "relation": "refutes_premise"
+        }
+      ],
+      "requested_parts": [
+        {
+          "id": "river_discharge",
+          "kind": "premise",
+          "query_quote": "el agua descargada durante el ensayo de Odravel"
+        },
+        {
+          "id": "river_arrival",
+          "kind": "requested",
+          "query_quote": "A qué hora llegó al río"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_078_06",
+          "quote": "El informe del canal Odravel dice que el agua del ensayo circuló por un circuito cerrado sin descarga al río.",
+          "relation": "refutes_premise",
+          "covers": [
+            "river_discharge"
+          ],
+          "statement_id": "078_06"
+        },
+        {
+          "memory_id": "cev6_078_07",
+          "quote": "La inspección del ensayo de Odravel confirma que la salida al río permaneció cerrada durante toda la prueba.",
+          "relation": "refutes_premise",
+          "covers": [
+            "river_discharge"
+          ],
+          "statement_id": "078_07"
+        }
+      ]
+    },
+    {
+      "id": "cev6q_078_04",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "078_08"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "078_08",
+          "relation": "refutes_premise"
+        }
+      ],
+      "requested_parts": [
+        {
+          "id": "living_tracer",
+          "kind": "premise",
+          "query_quote": "organismo vivo se liberó como trazador en Odravel"
+        },
+        {
+          "id": "organism_species",
+          "kind": "requested",
+          "query_quote": "Qué especie"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_078_08",
+          "quote": "La ficha del trazador de Odravel identifica un colorante visible y descarta el uso de organismos vivos.",
+          "relation": "refutes_premise",
+          "covers": [
+            "living_tracer"
+          ],
+          "statement_id": "078_08"
+        }
+      ]
+    },
+    {
+      "id": "cev6q_078_05",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "078_09"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "078_09",
+          "relation": "pending_or_partial"
+        }
+      ],
+      "requested_parts": [
+        {
+          "id": "reading_time",
+          "kind": "requested",
+          "query_quote": "a qué hora se observó el trazador"
+        },
+        {
+          "id": "concentration",
+          "kind": "requested",
+          "query_quote": "con qué concentración"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_078_09",
+          "quote": "El registro de Odravel anota la primera lectura del trazador a las 08:32 el 17 de octubre.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "reading_time"
+          ],
+          "statement_id": "078_09"
+        }
+      ]
+    },
+    {
+      "id": "cev6q_078_06",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "078_12"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "078_12",
+          "relation": "pending_or_partial"
+        }
+      ],
+      "requested_parts": [
+        {
+          "id": "cleaner",
+          "kind": "requested",
+          "query_quote": "Quién se encargó de limpiar el recipiente de Odravel"
+        },
+        {
+          "id": "wash_volume",
+          "kind": "requested",
+          "query_quote": "cuántos litros gastó"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_078_12",
+          "quote": "El parte de limpieza de Odravel confirma que Ruveta lavó el recipiente del trazador.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "cleaner"
+          ],
+          "statement_id": "078_12"
+        }
+      ]
+    },
+    {
+      "id": "cev6q_078_07",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "evidence_relations": [],
+      "requested_parts": [
+        {
+          "id": "water_ph",
+          "kind": "requested",
+          "query_quote": "Cuál era el pH del agua del canal Odravel antes del ensayo"
+        }
+      ],
+      "evidence": []
+    },
+    {
+      "id": "cev6q_078_08",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "evidence_relations": [],
+      "requested_parts": [
+        {
+          "id": "insurer",
+          "kind": "requested",
+          "query_quote": "Qué aseguradora cubría a Vensar durante la prueba de Odravel"
+        }
+      ],
+      "evidence": []
+    },
+    {
+      "id": "cev6q_079_01",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "079_01",
+        "079_03"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "079_01",
+          "relation": "supports_answer"
+        },
+        {
+          "statement_id": "079_03",
+          "relation": "supports_answer"
+        }
+      ],
+      "requested_parts": [
+        {
+          "id": "freezer",
+          "kind": "requested",
+          "query_quote": "a qué congelador va AL-4 en Eznora"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_079_01",
+          "quote": "El banco de semillas ficticio Eznora trasladará su lote de acedera AL-4 al congelador Tres, según la orden del 18 de octubre.",
+          "relation": "supports_answer",
+          "covers": [
+            "freezer"
+          ],
+          "statement_id": "079_01"
+        },
+        {
+          "memory_id": "cev6_079_03",
+          "quote": "La etiqueta de destino de AL-4 en Eznora dice congelador Tres.",
+          "relation": "supports_answer",
+          "covers": [
+            "freezer"
+          ],
+          "statement_id": "079_03"
+        }
+      ]
+    },
+    {
+      "id": "cev6q_079_02",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "079_04"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "079_04",
+          "relation": "supports_answer"
+        }
+      ],
+      "requested_parts": [
+        {
+          "id": "storage_temperature",
+          "kind": "requested",
+          "query_quote": "A qué temperatura exige la ficha conservar AL-4"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_079_04",
+          "quote": "La ficha de conservación de AL-4 indica mantener el lote a menos dieciséis grados Celsius.",
+          "relation": "supports_answer",
+          "covers": [
+            "storage_temperature"
+          ],
+          "statement_id": "079_04"
+        }
+      ]
+    },
+    {
+      "id": "cev6q_079_03",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "079_05",
+        "079_06"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "079_05",
+          "relation": "refutes_premise"
+        },
+        {
+          "statement_id": "079_06",
+          "relation": "refutes_premise"
+        }
+      ],
+      "requested_parts": [
+        {
+          "id": "sale",
+          "kind": "premise",
+          "query_quote": "quien le vendió AL-4"
+        },
+        {
+          "id": "payment",
+          "kind": "requested",
+          "query_quote": "Cuánto le pagó Eznora"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_079_05",
+          "quote": "El parte de Eznora aclara que el lote AL-4 fue recibido como donación sin pago a la entidad donante.",
+          "relation": "refutes_premise",
+          "covers": [
+            "sale"
+          ],
+          "statement_id": "079_05"
+        },
+        {
+          "memory_id": "cev6_079_06",
+          "quote": "El recibo de ingreso de AL-4 identifica a la cooperativa ficticia Sirven como donante, sin venta del lote.",
+          "relation": "refutes_premise",
+          "covers": [
+            "sale"
+          ],
+          "statement_id": "079_06"
+        }
+      ]
+    },
+    {
+      "id": "cev6q_079_04",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "079_07"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "079_07",
+          "relation": "refutes_premise"
+        }
+      ],
+      "requested_parts": [
+        {
+          "id": "seedlings",
+          "kind": "premise",
+          "query_quote": "las plántulas del lote AL-4"
+        },
+        {
+          "id": "pots",
+          "kind": "requested",
+          "query_quote": "En qué macetas están creciendo"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_079_07",
+          "quote": "La nota técnica de Eznora identifica AL-4 como semillas secas; no contiene plántulas germinadas.",
+          "relation": "refutes_premise",
+          "covers": [
+            "seedlings"
+          ],
+          "statement_id": "079_07"
+        }
+      ]
+    },
+    {
+      "id": "cev6q_079_05",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "079_08",
+        "079_10"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "079_08",
+          "relation": "pending_or_partial"
+        },
+        {
+          "statement_id": "079_10",
+          "relation": "pending_or_partial"
+        }
+      ],
+      "requested_parts": [
+        {
+          "id": "packet_count",
+          "kind": "requested",
+          "query_quote": "Cuántos sobres de AL-4 recibió Eznora"
+        },
+        {
+          "id": "seed_weight",
+          "kind": "requested",
+          "query_quote": "cuál es el peso total de sus semillas"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_079_08",
+          "quote": "El acta de recuento de Eznora registra 320 sobres del lote AL-4.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "packet_count"
+          ],
+          "statement_id": "079_08"
+        },
+        {
+          "memory_id": "cev6_079_10",
+          "quote": "El correo de recepción de Eznora confirma 320 sobres recibidos para AL-4.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "packet_count"
+          ],
+          "statement_id": "079_10"
+        }
+      ]
+    },
+    {
+      "id": "cev6q_079_06",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "079_11"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "079_11",
+          "relation": "pending_or_partial"
+        }
+      ],
+      "requested_parts": [
+        {
+          "id": "germination_start",
+          "kind": "requested",
+          "query_quote": "cuándo arrancó el ensayo de germinación"
+        },
+        {
+          "id": "germination_percentage",
+          "kind": "requested",
+          "query_quote": "qué porcentaje obtuvo"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_079_11",
+          "quote": "La solicitud de ensayo de AL-4 indica que la prueba de germinación se inició el 17 de octubre.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "germination_start"
+          ],
+          "statement_id": "079_11"
+        }
+      ]
+    },
+    {
+      "id": "cev6q_079_07",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "evidence_relations": [],
+      "requested_parts": [
+        {
+          "id": "freezer_combination",
+          "kind": "requested",
+          "query_quote": "Cuál es la combinación de apertura del congelador Tres de Eznora"
+        }
+      ],
+      "evidence": []
+    },
+    {
+      "id": "cev6q_079_08",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "evidence_relations": [],
+      "requested_parts": [
+        {
+          "id": "travel_duration",
+          "kind": "requested",
+          "query_quote": "Cuántas horas duró el viaje del lote AL-4 desde Sirven hasta Eznora"
+        }
+      ],
+      "evidence": []
+    },
+    {
+      "id": "cev6q_080_01",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "080_01",
+        "080_03",
+        "080_18"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "080_01",
+          "relation": "supports_answer"
+        },
+        {
+          "statement_id": "080_03",
+          "relation": "supports_answer"
+        },
+        {
+          "statement_id": "080_18",
+          "relation": "supports_answer"
+        }
+      ],
+      "requested_parts": [
+        {
+          "id": "pickup_vehicle",
+          "kind": "requested",
+          "query_quote": "Qué vehículo recogerá Zavrion el 20 de octubre"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_080_01",
+          "quote": "La orden de traslado del espejo astronómico ficticio Zavrion asigna la recogida del 20 de octubre al vehículo Caja Nueve.",
+          "relation": "supports_answer",
+          "covers": [
+            "pickup_vehicle"
+          ],
+          "statement_id": "080_01"
+        },
+        {
+          "memory_id": "cev6_080_03",
+          "quote": "La etiqueta de envío de Zavrion confirma que el vehículo de recogida es Caja Nueve.",
+          "relation": "supports_answer",
+          "covers": [
+            "pickup_vehicle"
+          ],
+          "statement_id": "080_03"
+        },
+        {
+          "memory_id": "cev6_080_18",
+          "quote": "La orden del 18 de octubre sustituyó Caja Dos por Caja Nueve para recoger Zavrion el día 20.",
+          "relation": "supports_answer",
+          "covers": [
+            "pickup_vehicle"
+          ],
+          "statement_id": "080_18"
+        }
+      ]
+    },
+    {
+      "id": "cev6q_080_02",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "080_04",
+        "080_05"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "080_04",
+          "relation": "supports_answer"
+        },
+        {
+          "statement_id": "080_05",
+          "relation": "supports_answer"
+        }
+      ],
+      "requested_parts": [
+        {
+          "id": "box_support",
+          "kind": "requested",
+          "query_quote": "sobre qué hay que apoyarla"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_080_04",
+          "quote": "La instrucción de desembalaje de Zavrion pide apoyar la caja sobre los topes de corcho antes de abrirla.",
+          "relation": "supports_answer",
+          "covers": [
+            "box_support"
+          ],
+          "statement_id": "080_04"
+        },
+        {
+          "memory_id": "cev6_080_05",
+          "quote": "La instrucción de desembalaje de Zavrion indica que solo se retirará la tapa cuando la caja esté apoyada sobre los topes de corcho.",
+          "relation": "supports_answer",
+          "covers": [
+            "box_support"
+          ],
+          "statement_id": "080_05"
+        }
+      ]
+    },
+    {
+      "id": "cev6q_080_03",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "080_06",
+        "080_07"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "080_06",
+          "relation": "refutes_premise"
+        },
+        {
+          "statement_id": "080_07",
+          "relation": "refutes_premise"
+        }
+      ],
+      "requested_parts": [
+        {
+          "id": "applied_coating",
+          "kind": "premise",
+          "query_quote": "se aplicó el recubrimiento reflectante del espejo Zavrion"
+        },
+        {
+          "id": "coating_date",
+          "kind": "requested",
+          "query_quote": "En qué fecha"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_080_06",
+          "quote": "El informe del observatorio declara que Zavrion es un espejo sin recubrimiento reflectante aplicado todavía.",
+          "relation": "refutes_premise",
+          "covers": [
+            "applied_coating"
+          ],
+          "statement_id": "080_06"
+        },
+        {
+          "memory_id": "cev6_080_07",
+          "quote": "La ficha de taller de Zavrion dice que su aluminizado está pendiente y aún no ha comenzado.",
+          "relation": "refutes_premise",
+          "covers": [
+            "applied_coating"
+          ],
+          "statement_id": "080_07"
+        }
+      ]
+    },
+    {
+      "id": "cev6q_080_04",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "080_08"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "080_08",
+          "relation": "refutes_premise"
+        }
+      ],
+      "requested_parts": [
+        {
+          "id": "international_crossing",
+          "kind": "premise",
+          "query_quote": "puesto fronterizo internacional pasará el traslado de Zavrion"
+        },
+        {
+          "id": "border_post",
+          "kind": "requested",
+          "query_quote": "Por qué puesto fronterizo internacional"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_080_08",
+          "quote": "La hoja de aduanas de Zavrion aclara que el traslado ocurre dentro del mismo distrito ficticio y no cruza una frontera nacional.",
+          "relation": "refutes_premise",
+          "covers": [
+            "international_crossing"
+          ],
+          "statement_id": "080_08"
+        }
+      ]
+    },
+    {
+      "id": "cev6q_080_05",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "080_09"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "080_09",
+          "relation": "pending_or_partial"
+        }
+      ],
+      "requested_parts": [
+        {
+          "id": "escort",
+          "kind": "requested",
+          "query_quote": "quién irá de acompañante"
+        },
+        {
+          "id": "escort_phone",
+          "kind": "requested",
+          "query_quote": "cuál es su teléfono"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_080_09",
+          "quote": "El registro de reservas de Zavrion confirma que Orvila acompañará la recogida.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "escort"
+          ],
+          "statement_id": "080_09"
+        }
+      ]
+    },
+    {
+      "id": "cev6q_080_06",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "080_11"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "080_11",
+          "relation": "pending_or_partial"
+        }
+      ],
+      "requested_parts": [
+        {
+          "id": "crack_side",
+          "kind": "requested",
+          "query_quote": "En qué cara de la caja de Zavrion está la grieta"
+        },
+        {
+          "id": "repair_cost",
+          "kind": "requested",
+          "query_quote": "cuánto costará repararla"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_080_11",
+          "quote": "El acta de inspección de la caja de Zavrion registra una grieta superficial en la cara oeste.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "crack_side"
+          ],
+          "statement_id": "080_11"
+        }
+      ]
+    },
+    {
+      "id": "cev6q_080_07",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "evidence_relations": [],
+      "requested_parts": [
+        {
+          "id": "focal_length",
+          "kind": "requested",
+          "query_quote": "Cuál es la distancia focal del espejo Zavrion"
+        }
+      ],
+      "evidence": []
+    },
+    {
+      "id": "cev6q_080_08",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "evidence_relations": [],
+      "requested_parts": [
+        {
+          "id": "foundation_year",
+          "kind": "requested",
+          "query_quote": "En qué año se fundó el observatorio que encargó Zavrion"
+        }
+      ],
+      "evidence": []
+    },
+    {
+      "id": "cev6q_081_01",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "081_01",
+        "081_02"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "081_01",
+          "relation": "supports_answer"
+        },
+        {
+          "statement_id": "081_02",
+          "relation": "supports_answer"
+        }
+      ],
+      "requested_parts": [
+        {
+          "id": "author",
+          "kind": "requested",
+          "query_quote": "Quién tejió Rutas del Estuario para la muestra Yelvria"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_081_01",
+          "quote": "El catálogo de la muestra de mapas tejidos ficticia Yelvria atribuye la pieza Rutas del Estuario a la tejedora Dovren.",
+          "relation": "supports_answer",
+          "covers": [
+            "author"
+          ],
+          "statement_id": "081_01"
+        },
+        {
+          "memory_id": "cev6_081_02",
+          "quote": "La cartela de Rutas del Estuario de Yelvria también nombra a Dovren como autora.",
+          "relation": "supports_answer",
+          "covers": [
+            "author"
+          ],
+          "statement_id": "081_02"
+        }
+      ]
+    },
+    {
+      "id": "cev6q_081_02",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "081_03",
+        "081_04",
+        "081_22"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "081_03",
+          "relation": "pending_or_partial"
+        },
+        {
+          "statement_id": "081_04",
+          "relation": "pending_or_partial"
+        },
+        {
+          "statement_id": "081_22",
+          "relation": "pending_or_partial"
+        }
+      ],
+      "requested_parts": [
+        {
+          "id": "fiber",
+          "kind": "requested",
+          "query_quote": "De qué hilo está hecha Rutas del Estuario"
+        },
+        {
+          "id": "frame_wood",
+          "kind": "requested",
+          "query_quote": "de qué madera es su bastidor"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_081_03",
+          "quote": "La ficha de montaje de Yelvria indica que Rutas del Estuario se cuelga con bastidor de abedul.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "frame_wood"
+          ],
+          "statement_id": "081_03"
+        },
+        {
+          "memory_id": "cev6_081_04",
+          "quote": "El catálogo de Yelvria describe el material de Rutas del Estuario como hilo de lino.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "fiber"
+          ],
+          "statement_id": "081_04"
+        },
+        {
+          "memory_id": "cev6_081_22",
+          "quote": "El bastidor de abedul de Rutas del Estuario tiene un protector de esquinas.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "frame_wood"
+          ],
+          "statement_id": "081_22"
+        }
+      ]
+    },
+    {
+      "id": "cev6q_081_03",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "081_05",
+        "081_06"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "081_05",
+          "relation": "refutes_premise"
+        },
+        {
+          "statement_id": "081_06",
+          "relation": "refutes_premise"
+        }
+      ],
+      "requested_parts": [
+        {
+          "id": "printed_work",
+          "kind": "premise",
+          "query_quote": "imprimir Rutas del Estuario de Yelvria"
+        },
+        {
+          "id": "ink",
+          "kind": "requested",
+          "query_quote": "Qué tinta se usó"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_081_05",
+          "quote": "El acta de ingreso de Yelvria especifica que Rutas del Estuario es una obra original única y no una reproducción impresa.",
+          "relation": "refutes_premise",
+          "covers": [
+            "printed_work"
+          ],
+          "statement_id": "081_05"
+        },
+        {
+          "memory_id": "cev6_081_06",
+          "quote": "La ficha de conservación de Yelvria aclara que Rutas del Estuario no lleva tinta de impresión.",
+          "relation": "refutes_premise",
+          "covers": [
+            "printed_work"
+          ],
+          "statement_id": "081_06"
+        }
+      ]
+    },
+    {
+      "id": "cev6q_081_04",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "081_07",
+        "081_08"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "081_07",
+          "relation": "refutes_premise"
+        },
+        {
+          "statement_id": "081_08",
+          "relation": "refutes_premise"
+        }
+      ],
+      "requested_parts": [
+        {
+          "id": "scheduled_tour",
+          "kind": "premise",
+          "query_quote": "se hará la visita guiada de Yelvria el 24 de octubre"
+        },
+        {
+          "id": "tour_time",
+          "kind": "requested",
+          "query_quote": "A qué hora"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_081_07",
+          "quote": "El comunicado de Yelvria anuncia que se canceló la visita guiada del 24 de octubre y que no se realizará ese día.",
+          "relation": "refutes_premise",
+          "covers": [
+            "scheduled_tour"
+          ],
+          "statement_id": "081_07"
+        },
+        {
+          "memory_id": "cev6_081_08",
+          "quote": "La agenda corregida de Yelvria marca cancelada la visita guiada del 24 de octubre.",
+          "relation": "refutes_premise",
+          "covers": [
+            "scheduled_tour"
+          ],
+          "statement_id": "081_08"
+        }
+      ]
+    },
+    {
+      "id": "cev6q_081_05",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "081_09",
+        "081_11"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "081_09",
+          "relation": "pending_or_partial"
+        },
+        {
+          "statement_id": "081_11",
+          "relation": "pending_or_partial"
+        }
+      ],
+      "requested_parts": [
+        {
+          "id": "light_id",
+          "kind": "requested",
+          "query_quote": "Qué luminaria ilumina Rutas del Estuario"
+        },
+        {
+          "id": "illuminance",
+          "kind": "requested",
+          "query_quote": "cuántos lux le llegan"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_081_09",
+          "quote": "El plan de iluminación de Yelvria asigna a Rutas del Estuario la luminaria L-8.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "light_id"
+          ],
+          "statement_id": "081_09"
+        },
+        {
+          "memory_id": "cev6_081_11",
+          "quote": "La hoja de sala de Yelvria confirma la luminaria L-8 sobre Rutas del Estuario.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "light_id"
+          ],
+          "statement_id": "081_11"
+        }
+      ]
+    },
+    {
+      "id": "cev6q_081_06",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "081_12"
+      ],
+      "evidence_relations": [
+        {
+          "statement_id": "081_12",
+          "relation": "pending_or_partial"
+        }
+      ],
+      "requested_parts": [
+        {
+          "id": "installation_date",
+          "kind": "requested",
+          "query_quote": "Qué día colocaron el bastidor de Rutas del Estuario"
+        },
+        {
+          "id": "crew_count",
+          "kind": "requested",
+          "query_quote": "cuántas personas lo hicieron"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_081_12",
+          "quote": "El registro de montaje de Yelvria anota que el bastidor de Rutas del Estuario se colocó el 16 de octubre.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "installation_date"
+          ],
+          "statement_id": "081_12"
+        }
+      ]
+    },
+    {
+      "id": "cev6q_081_07",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "evidence_relations": [],
+      "requested_parts": [
+        {
+          "id": "artist_fee",
+          "kind": "requested",
+          "query_quote": "Cuánto cobró Dovren por tejer Rutas del Estuario"
+        }
+      ],
+      "evidence": []
+    },
+    {
+      "id": "cev6q_081_08",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "evidence_relations": [],
+      "requested_parts": [
+        {
+          "id": "postal_code",
+          "kind": "requested",
+          "query_quote": "Cuál es el código postal de la sala de Yelvria"
+        }
+      ],
+      "evidence": []
+    }
+  ]
+}

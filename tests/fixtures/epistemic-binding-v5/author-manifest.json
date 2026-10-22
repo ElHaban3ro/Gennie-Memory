@@ -1,0 +1,11 @@
+{
+  "version": "epistemic-binding-v5-author-before-review",
+  "provider_calls": 0,
+  "fresh_validation": false,
+  "cases": 18,
+  "files_sha256": {
+    "source-only-draft.json": "1f9898608fc1b68eb1691b2db2dcc1e8472dcb199a0ce323a43d9f835d26db6e",
+    "author-labels.json": "fd04ffe643249357220719af8b672eb5cba1bdb25377076c652826dc663e74e0"
+  },
+  "contract_sha256": "5c3b200e2ba47c055eab1db4cc3f5e63991cb39f1a9a3ffa5e6d2eb3d1b115de"
+}

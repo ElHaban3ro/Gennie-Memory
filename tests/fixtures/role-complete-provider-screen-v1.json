@@ -1,0 +1,28 @@
+{
+  "version": "role-complete-provider-screen-v1",
+  "base_directory": "outputs/iromem/evaluation/role-isolated-provider-probe-2026-10-19",
+  "catalog_observation": "outputs/iromem/evaluation/decision-catalog-observation-2026-10-19.json",
+  "models": [
+    {"id":"perplexity/pplx-decider-v1.2","expected_served_model":"perplexity/pplx-decider-v1.2-20261016"},
+    {"id":"respan/span-02","expected_served_model":"respan/span-02-20261015"},
+    {"id":"liquid/d1-ultra","expected_served_model":"liquid/d1-ultra-20261015"}
+  ],
+  "screen": [
+    ["cev5q_073_03","cev5_073_06"],
+    ["cev5q_066_03","cev5_066_06"],
+    ["cev5q_066_03","cev5_066_07"],
+    ["cev4q_062_01","cev4_062_27"],
+    ["cev4q_063_05","cev4_063_09"],
+    ["cev5q_068_05","cev5_068_12"],
+    ["cev5q_069_05","cev5_069_12"],
+    ["cev4q_065_04","cev4_065_03"],
+    ["cev4q_061_06","cev4_061_10"],
+    ["cev5q_071_04","cev5_071_03"],
+    ["cev5q_068_03","cev5_068_07"],
+    ["cev4q_062_01","cev4_062_17"]
+  ],
+  "max_http_requests":129,
+  "initial_screen_requests":36,
+  "fresh_validation":false,
+  "promoted":false
+}

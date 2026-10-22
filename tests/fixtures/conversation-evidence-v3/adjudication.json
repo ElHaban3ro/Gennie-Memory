@@ -1,0 +1,23 @@
+{
+  "version": "evidence-v3-adjudication-v1",
+  "blind_review_sha256": "1afb07b1d694c68969b585391189af0f8be3a7e1e65b541920b39818784fdc94",
+  "source_sha256": "9766e4a68932fe53f01e8165272bbb778f07b639a51bcaead2628eeeef7223a7",
+  "questions_sha256": "5b064fb45bcf50bbbee5456fc24afd669fc52450edffd4e7d6056d1c61521c66",
+  "final_labels_sha256": "bceee24b16387825582c44396541e6043fd899c1904a064cd1261673b8e478ff",
+  "unresolved_case_ids": [],
+  "categories_and_evidence_agreed": 64,
+  "binding_corrections_before_provider": [
+    "cev3q_056_04",
+    "cev3q_054_04",
+    "cev3q_057_04",
+    "cev3q_051_04",
+    "cev3q_053_04",
+    "cev3q_052_04",
+    "cev3q_055_04",
+    "cev3q_050_04"
+  ],
+  "correction": "Add the literal condition presencial to eight required-query annotations; allow multiple conditions in the contract. No outcome categories changed.",
+  "human_review": false,
+  "independent_review": false,
+  "separate_agent_blind_review": true
+}

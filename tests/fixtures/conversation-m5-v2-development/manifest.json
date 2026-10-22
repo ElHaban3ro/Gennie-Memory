@@ -1,0 +1,23 @@
+{
+  "version": "conversation-m5-v2-development",
+  "scope_count": 5,
+  "memories": 150,
+  "cases": 100,
+  "positive": 75,
+  "negative": 25,
+  "label_source": "agent_synthetic_unreviewed",
+  "author": "agent_synthetic",
+  "human_review": "pending",
+  "scored_split": "development",
+  "files_sha256": {
+    "memories.json": "3cf0394ff2013db264877a90fd483e77c01ae559b03a8270fd3e42376150f4e8",
+    "development.jsonl": "b755025aa45893438db9c6b4a833d9aee84f5d5e822a42c24121cd5aebf0355e",
+    "label-audit.md": "ae93bf81bc2b1aff1d968c304f504f7231b1ea96ca27fd80aa3b847c7be28843",
+    "README.md": "81a885e0202b1ca3c6787e9e4b75874f26935a315a94f4c4c60f6a246af40b27"
+  },
+  "shuffle": {
+    "method": "sort source.ref or case id ascending, then Python 3 random.Random(seed).shuffle",
+    "memories_seed": 2026101701,
+    "cases_seed": 2026101702
+  }
+}

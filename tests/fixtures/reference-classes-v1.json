@@ -1,0 +1,17 @@
+{
+  "version": "reference-classes-v1",
+  "classes": [
+    {
+      "id": "sensor",
+      "definition": "The exact unqualified class of sensing devices. This class definition excludes additional pressure, temperature, operational-state or other subtype restrictions unless they are separately retained as conditions. It is not an equivalence target for any restricted subclass phrase."
+    },
+    {
+      "id": "pressure_sensor",
+      "definition": "The exact class of sensors restricted to pressure sensing. It is not equivalent to sensors in general or temperature sensors."
+    },
+    {
+      "id": "temperature_sensor",
+      "definition": "The exact class of sensors restricted to temperature sensing. It is not equivalent to sensors in general or pressure sensors."
+    }
+  ]
+}

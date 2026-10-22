@@ -1,0 +1,19 @@
+{
+  "version": "conversation-m5-v3-development",
+  "scope_count": 3,
+  "memories": 36,
+  "cases": 36,
+  "positive": 24,
+  "negative": 12,
+  "label_source": "agent_synthetic_unreviewed",
+  "human_review": "pending",
+  "scored_split": "development",
+  "files_sha256": {
+    "source.json": "200e5342aca21a23b9a4ce97564e4038067cc7576289b3ea8fd37ba69cb78d8c",
+    "build.py": "850761c9d30d9c4ec388138f190cca932df78c61e5cf07f23160f020c36a118a",
+    "README.md": "49239bf916a29c3a9f17a62a896f10b79d4b670b9673a6ba8882a31f5d61a013",
+    "label-audit.md": "69f5caa4781c0ebf1d9bca0820e3faf088d7117b7d19a5a3c3764d1ea600b0e9",
+    "memories.json": "062270aa79a79c158157f5f864f06c381e7b9d719e3fe93cf01077c46db517a8",
+    "development.jsonl": "a3965c56b3f15db657672653b9959569e15a481bd1be3c3b3498ead298f08ac4"
+  }
+}

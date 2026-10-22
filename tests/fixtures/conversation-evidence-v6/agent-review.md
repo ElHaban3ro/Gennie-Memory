@@ -1,0 +1,3 @@
+# Revisión y conciliación v6
+
+Autor y crítico separados; crítico recibió exclusivamente fuente, recuerdos y consultas sin etiquetas/resultados/políticas. Revisión inicial:64casos,22discrepancias. Conciliación posterior con autor visible:20resueltas y2ambigüedades; dos preguntas versionadas antes de llamadas resuelven estas últimas. Las incorporaciones preservan cantidades explícitas ocultas en notas sobre campos vacíos. Se excluyen meras casillas vacías y autorización que no prueba ejecución. Historial íntegro en los JSON adjuntos. Normalización final mecánica realizada por el coordinador; no constituye una nueva revisión independiente. No hubo revisión humana ni llamadas remotas v6 durante la preparación.

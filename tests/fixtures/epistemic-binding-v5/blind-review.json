@@ -1,0 +1,525 @@
+{
+  "review_type": "blind_contract_and_source_critique",
+  "reviewer": "same-family model; no human adjudication",
+  "inputs_read": [
+    "docs/evaluation/epistemic-binding-v5-contract.md",
+    "docs/evaluation/evidence-contribution-v4-contract.md",
+    "docs/evaluation/evidence-contribution-v3-contract.md",
+    "tests/fixtures/epistemic-binding-v5/source-only-draft.json"
+  ],
+  "scope": "No labels, manifests, history, results, implementation, V6 or API inspected. This is a prospective criticism, not execution or validation.",
+  "verdict": {
+    "bounded_contribution": "Legítima como conocimiento condicional de procedencia: una etiqueta explícitamente ambigua puede aportar al campo pedido sin autorizar atribuir su número al sujeto. Se vuelve un truco si A se contabiliza como dato concreto recuperado, si las alternativas son inventadas o si se proyectan requisitos, otro sujeto u otras condiciones.",
+    "bank_ready": false,
+    "must_rectify_before_execution": [
+      "a014: identidades K6/K7 y exhaustividad no proceden del texto; adjudicar o rectificar texto/representación sin forzar etiqueta.",
+      "a013: north no aparece en el texto; retirar ese valor o rectificar la fuente antes de declarar fidelidad de banco.",
+      "Precisar tratamiento de lista abierta a007 y granularidad de contribución a005 antes de exigir una única etiqueta de todos los campos."
+    ]
+  },
+  "field_semantics": {
+    "assertable_facts": "Solo hechos invariantes pertinentes a la pregunta, conservando procedencia y calificadores. count no cuenta todos los hechos ajenos que el registro también afirma. Un estado de disponibilidad acotado puede contarse como hecho aunque no aporte un número.",
+    "world_roles": "Nombre heredado solicitado; son roles por lectura documental con certain_facts añadidos, no mundos físicos completos ni negación global por ausencia.",
+    "provisional": "Una clasificación provisional no es etiqueta ejecutable ni decisión firme. selected=null expresa selección automática sin resolver; review_required se refiere al par y a su procedencia, no a que la respuesta total esté completa."
+  },
+  "contract_criticisms": [
+    {
+      "id": "c1",
+      "severity": "high",
+      "finding": "V5 cambia explícitamente qué cuenta como A. Es defendible, pero selection A con assertable_count=0 debe separarse de recuperación de un valor y de suficiencia para responder. Un 100% de A no demostraría ninguna respuesta telefónica concreta."
+    },
+    {
+      "id": "c2",
+      "severity": "high",
+      "finding": "La variación de contribución no está definida a un nivel único. En a005, la unión de hechos para K6 es igual en ambas lecturas debido al dato cierto, pero la segunda etiqueta sí cambia de atribución. Para afirmar esto último se necesitan identidad de cláusula/procedencia y contribuciones con esa identidad, no solo conjuntos de hechos y calificadores actuales."
+    },
+    {
+      "id": "c3",
+      "severity": "medium",
+      "finding": "La lista abierta a007 tiene una sola lectura enumerada que aporta A; literalidad de entre sus lecturas declaradas no prueba no invariancia. El texto sí afirma otras identidades. El contrato debe definir contribución de alternativas no enumeradas y cobertura, evitando inventar hechos o un sujeto residual cerrado."
+    },
+    {
+      "id": "c4",
+      "severity": "medium",
+      "finding": "Puede ser X o Y suele indicar las opciones contempladas, pero no prueba por sí solo exhaustividad lógica. El cierre es una anotación interpretativa que requiere adjudicación semántica; la mera cita o un boolean no la valida. Esto afecta a001/a004/a005/a006/a009/a010/a011 y la identidad de a013."
+    },
+    {
+      "id": "c5",
+      "severity": "medium",
+      "finding": "La revisión obligatoria está explícita para none mezclado con B/C y listas abiertas sin vínculo. No se fija de forma igualmente clara si la nueva A epistémica cerrada exige revisión humana o solo calificación. Aquí false significa relación determinable condicionalmente a una representación fiel, no permiso de autonomía del sistema."
+    },
+    {
+      "id": "c6",
+      "severity": "high",
+      "finding": "El banco no cubre todos los límites que anuncia el contrato: faltan variación explícita de condición/alcance con rama A, componentes y universales, cantidades parciales y una combinación de B/A. Los controles B/none y C/none sí comprueban que la nueva vía no expanda cualquier relevancia posible."
+    }
+  ],
+  "question_fidelity": [
+    {
+      "id": "q001",
+      "status": "faithful",
+      "note": "K6, Alerce y phone explícitos."
+    },
+    {
+      "id": "q002",
+      "status": "faithful",
+      "note": "K7, Alerce y phone explícitos."
+    },
+    {
+      "id": "q003",
+      "status": "faithful",
+      "note": "K8, Alerce y phone explícitos."
+    },
+    {
+      "id": "q004",
+      "status": "faithful",
+      "note": "recogida como pickup_location es traducción adecuada."
+    },
+    {
+      "id": "q005",
+      "status": "faithful",
+      "note": "Fresno difiere de Alerce; no transferir contexto."
+    },
+    {
+      "id": "q006",
+      "status": "faithful",
+      "note": "La pregunta presupone inaugurated_by=Vera y solicita fecha para Linde."
+    },
+    {
+      "id": "q007",
+      "status": "faithful_with_assumption",
+      "note": "Pregunta condicionada a Fino; representar modo como premisa debe conservar que no excluye otros modos posibles."
+    }
+  ],
+  "record_fidelity": [
+    {
+      "id": "a001",
+      "status": "conditional_faithful",
+      "note": "Identidad y teléfono constan; cierre K6/K7 requiere lectura de enumeración exhaustiva."
+    },
+    {
+      "id": "a002",
+      "status": "faithful",
+      "note": "Un hecho cierto en una única alternativa equivale aquí a certain_facts; no incertidumbre."
+    },
+    {
+      "id": "a003",
+      "status": "faithful",
+      "note": "Ambos pedidos tienen el teléfono; no confundir conjunción con disyunción."
+    },
+    {
+      "id": "a004",
+      "status": "faithful_with_provenance_limit",
+      "note": "555-0177 consta en agenda; no prueba vigencia o unicidad. La otra etiqueta puede atribuir un segundo número a K6 sin negar el primero."
+    },
+    {
+      "id": "a005",
+      "status": "faithful_with_representation_gap",
+      "note": "El teléfono cierto es invariante. La atribución de la segunda etiqueta varía, pero los hechos no llevan identidad de cláusula que permita calcular esa variación tras deduplicar."
+    },
+    {
+      "id": "a006",
+      "status": "conditional_faithful",
+      "note": "Incertidumbre de cifra y ambas posibilidades explícitas. No afirmar ninguno como teléfono cierto."
+    },
+    {
+      "id": "a007",
+      "status": "faithful_open",
+      "note": "Solo K6 es opción nombrada; otras identificaciones explícitas no se enumeran. No tratar lista como cerrada ni dar K6 cierto."
+    },
+    {
+      "id": "a008",
+      "status": "faithful_open",
+      "note": "Solo K7 es opción nombrada; no permite excluir K6 ni afirmar su vínculo."
+    },
+    {
+      "id": "a009",
+      "status": "conditional_faithful",
+      "note": "Negación por puente identificado condicionalmente; no aporta fecha ni refuta Linde con certeza."
+    },
+    {
+      "id": "a010",
+      "status": "faithful_with_encoding_note",
+      "note": "Borrador/150 y Yema/Fino/600 explícitos. configuration codifica asignación, pero no exclusividad. Ninguna lectura aporta resolución Nava/Fino."
+    },
+    {
+      "id": "a011",
+      "status": "faithful",
+      "note": "No exigir teléfono es requires negativo, no ausencia ni desconocimiento de phone."
+    },
+    {
+      "id": "a012",
+      "status": "faithful_scoped",
+      "note": "unknown con availability_scope conserva ausencia solo del registro de mantenimiento; no ausencia de teléfono global."
+    },
+    {
+      "id": "a013",
+      "status": "unfaithful_incidental_value",
+      "note": "north no consta en texto. K7/K8 constan como identidad de etiqueta; no consta ningún lugar de recogida. El phone cierto de K6 sí es fiel."
+    },
+    {
+      "id": "a014",
+      "status": "unfaithful_blocking",
+      "note": "No constan K6 ni K7; tampoco lista exhaustiva ni incertidumbre documental explícita. Alternativas analíticas no satisfacen V5. No reparar asignando una etiqueta conveniente."
+    }
+  ],
+  "counterexamples": [
+    {
+      "case": "Mismo número ya cierto más etiqueta incierta",
+      "example": "a005",
+      "challenge": "Proyectar conjuntos de hechos produce el mismo phone(K6)=555-0166 en cada lectura. Si el motor declara que el valor/contribución del registro varía, sobregeneraliza. Solo varía contribución de una cláusula identificada."
+    },
+    {
+      "case": "Alternativas añadidas por analista",
+      "example": "a014",
+      "challenge": "Cambiar El teléfono del pedido... a alternativas K6/K7 crea pertinencia seleccionable desde ninguna evidencia de identidad. El veto de procedencia es indispensable."
+    },
+    {
+      "case": "Sujeto no nombrado en lista abierta",
+      "example": "a008/q001",
+      "challenge": "Posibilidad no excluida de K6 no es vínculo explícito a K6. Seleccionar como A sería contexto ajeno potencial, aunque tampoco sea rechazo seguro."
+    },
+    {
+      "case": "Requisito negado",
+      "example": "a011/q001",
+      "challenge": "No exige teléfono puede coexistir con teléfono conocido, desconocido o varios. La incertidumbre sobre su sujeto no cambia de atributo."
+    },
+    {
+      "case": "Condición distinta y dato útil en otro sujeto",
+      "example": "a010/q007",
+      "challenge": "Nava/Borrador/150 y Yema/Fino/600 no producen Nava/Fino ni desconocimiento global. C/none debe seguir en revisión."
+    },
+    {
+      "case": "Fuente cierta adicional con número distinto",
+      "example": "a004",
+      "challenge": "No decir teléfono de K6 desconocido ni escoger 555-0166; conservar 555-0177 como dato de agenda y el conflicto solo potencial."
+    },
+    {
+      "case": "Disponibilidad explícita frente a ambigüedad",
+      "example": "a012 contra a001",
+      "challenge": "No consta en mantenimiento es hecho cierto de disponibilidad. a001 no afirma ausencia en ningún registro de K6; fusionarlos en unknown eliminaría diferencia semántica."
+    },
+    {
+      "case": "Texto literal no sostiene valor extra",
+      "example": "a013",
+      "challenge": "El control de cita de incertidumbre pasaría, pero north sigue inventado. Hay que validar cada hecho, no solo la cita o el hecho usado por la etiqueta final."
+    }
+  ],
+  "pairs": [
+    {
+      "id": "ebv5_01",
+      "relation": "A",
+      "selected": true,
+      "basis": "Nueva vía V5: identidad documental explícita, lectura directa A y lectura none.",
+      "assertable_facts": {
+        "count": 0,
+        "facts": []
+      },
+      "epistemic_contribution": "La contribución de esta etiqueta al teléfono de K6/Alerce varía según su identidad declarada; no se atribuye 555-0166 como hecho de ese pedido.",
+      "world_roles": [
+        "A",
+        "none"
+      ],
+      "review_required": false,
+      "provisional": false
+    },
+    {
+      "id": "ebv5_02",
+      "relation": "A",
+      "selected": true,
+      "basis": "Misma etiqueta, consulta K7; simetría de identidad.",
+      "assertable_facts": {
+        "count": 0,
+        "facts": []
+      },
+      "epistemic_contribution": "La contribución de esta etiqueta al teléfono de K7/Alerce varía según su identidad declarada; no se atribuye 555-0166 como hecho de ese pedido.",
+      "world_roles": [
+        "none",
+        "A"
+      ],
+      "review_required": false,
+      "provisional": false
+    },
+    {
+      "id": "ebv5_03",
+      "relation": "none",
+      "selected": false,
+      "basis": "K8 no figura en las alternativas cerradas; mismo atributo no basta.",
+      "assertable_facts": {
+        "count": 0,
+        "facts": []
+      },
+      "epistemic_contribution": "Ninguna contribución al campo solicitado; no se deriva desconocimiento global.",
+      "world_roles": [
+        "none",
+        "none"
+      ],
+      "review_required": false,
+      "provisional": false
+    },
+    {
+      "id": "ebv5_04",
+      "relation": "none",
+      "selected": false,
+      "basis": "phone no es pickup_location; incertidumbre de otro atributo no habilita A.",
+      "assertable_facts": {
+        "count": 0,
+        "facts": []
+      },
+      "epistemic_contribution": "Ninguna contribución al campo solicitado; no se deriva desconocimiento global.",
+      "world_roles": [
+        "none",
+        "none"
+      ],
+      "review_required": false,
+      "provisional": false
+    },
+    {
+      "id": "ebv5_05",
+      "relation": "none",
+      "selected": false,
+      "basis": "Alerce no es Fresno; contexto incompatible.",
+      "assertable_facts": {
+        "count": 0,
+        "facts": []
+      },
+      "epistemic_contribution": "Ninguna contribución al campo solicitado; no se deriva desconocimiento global.",
+      "world_roles": [
+        "none",
+        "none"
+      ],
+      "review_required": false,
+      "provisional": false
+    },
+    {
+      "id": "ebv5_06",
+      "relation": "A",
+      "selected": true,
+      "basis": "Valor directo único, sin ambigüedad.",
+      "assertable_facts": {
+        "count": 1,
+        "facts": [
+          "El registro afirma phone(K6/Alerce)=555-0166."
+        ]
+      },
+      "epistemic_contribution": "Dato concreto documentado.",
+      "world_roles": [
+        "A"
+      ],
+      "review_required": false,
+      "provisional": false
+    },
+    {
+      "id": "ebv5_07",
+      "relation": "A",
+      "selected": true,
+      "basis": "La conjunción contiene el valor de K6.",
+      "assertable_facts": {
+        "count": 1,
+        "facts": [
+          "El registro afirma phone(K6/Alerce)=555-0166."
+        ]
+      },
+      "epistemic_contribution": "El hecho de K7 también es cierto en la fuente, pero no se transfiere ni cuenta como dato pedido.",
+      "world_roles": [
+        "A"
+      ],
+      "review_required": false,
+      "provisional": false
+    },
+    {
+      "id": "ebv5_08",
+      "relation": "A",
+      "selected": true,
+      "basis": "El dato cierto se añade a cada lectura; A ya es invariante.",
+      "assertable_facts": {
+        "count": 1,
+        "facts": [
+          "En la agenda consta phone(K6/Alerce)=555-0177."
+        ]
+      },
+      "epistemic_contribution": "La segunda etiqueta puede aportar 555-0166 a K6 o a K7; no invalida el dato de agenda ni acredita unicidad.",
+      "world_roles": [
+        "A",
+        "A"
+      ],
+      "review_required": false,
+      "provisional": false
+    },
+    {
+      "id": "ebv5_09",
+      "relation": "A",
+      "selected": true,
+      "basis": "El dato cierto basta para A en ambas lecturas.",
+      "assertable_facts": {
+        "count": 1,
+        "facts": [
+          "En la agenda consta phone(K6/Alerce)=555-0166."
+        ]
+      },
+      "epistemic_contribution": "El valor de K6 no cambia. Solo varía atribución/procedencia de la segunda etiqueta; esa contribución por cláusula es provisional sin identidad de fuente interna.",
+      "world_roles": [
+        "A",
+        "A"
+      ],
+      "review_required": false,
+      "provisional": false
+    },
+    {
+      "id": "ebv5_10",
+      "relation": "A",
+      "selected": true,
+      "basis": "A en ambas lecturas por V4 y nueva vía de incertidumbre de valor explícita. No hay un valor común.",
+      "assertable_facts": {
+        "count": 0,
+        "facts": []
+      },
+      "epistemic_contribution": "La cifra final de este registro es incierta entre 555-0166 y 555-0167. No es desconocimiento global del teléfono de K6.",
+      "world_roles": [
+        "A",
+        "A"
+      ],
+      "review_required": false,
+      "provisional": false
+    },
+    {
+      "id": "ebv5_11",
+      "relation": "A",
+      "selected": true,
+      "basis": "Propuesta V5 con vínculo K6 explícito y otras identidades declaradas; no invariancia no queda formalizada por una única lectura enumerada.",
+      "assertable_facts": {
+        "count": 0,
+        "facts": []
+      },
+      "epistemic_contribution": "Puede aportar teléfono a K6, pero la cobertura abierta impide darlo como dato cierto. A epistémica plausible; semántica exacta y revisión necesitan precisión contractual.",
+      "world_roles": [
+        "A",
+        "unrepresented_open_readings"
+      ],
+      "review_required": true,
+      "provisional": true
+    },
+    {
+      "id": "ebv5_12",
+      "relation": null,
+      "selected": null,
+      "basis": "Lista abierta sin vínculo explícito a K6; V5 exige cobertura incompleta y revisión.",
+      "assertable_facts": {
+        "count": 0,
+        "facts": []
+      },
+      "epistemic_contribution": "No se puede declarar ajeno ni aportar el teléfono de K6 desde K7.",
+      "world_roles": [
+        "none",
+        "unrepresented_open_readings"
+      ],
+      "review_required": true,
+      "provisional": false
+    },
+    {
+      "id": "ebv5_13",
+      "relation": null,
+      "selected": null,
+      "basis": "V4 {B,none}; falta fecha, y refutación de premisa solo en una lectura.",
+      "assertable_facts": {
+        "count": 0,
+        "facts": []
+      },
+      "epistemic_contribution": "La etiqueta puede negar la inauguración por Vera para Linde; no autoriza B cierta ni A sobre fecha.",
+      "world_roles": [
+        "B",
+        "none"
+      ],
+      "review_required": true,
+      "provisional": false
+    },
+    {
+      "id": "ebv5_14",
+      "relation": null,
+      "selected": null,
+      "basis": "V4 {C,none}: Nava/Borrador/150 frente a Yema/Fino/600 en una lectura; en la otra Nava no aparece.",
+      "assertable_facts": {
+        "count": 0,
+        "facts": []
+      },
+      "epistemic_contribution": "Contraste condicional sin resolución de Nava/Fino; no se puede usar C posible como atajo a A.",
+      "world_roles": [
+        "C",
+        "none"
+      ],
+      "review_required": true,
+      "provisional": false
+    },
+    {
+      "id": "ebv5_15",
+      "relation": "none",
+      "selected": false,
+      "basis": "requires no es phone; ni B ni C sobre premisas de pregunta.",
+      "assertable_facts": {
+        "count": 0,
+        "facts": []
+      },
+      "epistemic_contribution": "Ninguna contribución al campo solicitado; no se deriva desconocimiento global.",
+      "world_roles": [
+        "none",
+        "none"
+      ],
+      "review_required": false,
+      "provisional": false
+    },
+    {
+      "id": "ebv5_16",
+      "relation": "A",
+      "selected": true,
+      "basis": "Disponibilidad acotada V3/V4.",
+      "assertable_facts": {
+        "count": 1,
+        "facts": [
+          "El teléfono de K6/Alerce no consta en el registro de mantenimiento."
+        ]
+      },
+      "epistemic_contribution": "Se conoce ausencia documental en esa fuente; no inexistencia ni desconocimiento global del teléfono.",
+      "world_roles": [
+        "A"
+      ],
+      "review_required": false,
+      "provisional": false
+    },
+    {
+      "id": "ebv5_17",
+      "relation": "A",
+      "selected": true,
+      "basis": "El hecho cierto phone de K6 basta en ambas lecturas; incertidumbre ajena no debe contaminarlo.",
+      "assertable_facts": {
+        "count": 1,
+        "facts": [
+          "El registro afirma phone(K6/Alerce)=555-0166."
+        ]
+      },
+      "epistemic_contribution": "La etiqueta de recogida incierta no altera el teléfono. Corregir north inventado antes de ejecutar banco válido.",
+      "world_roles": [
+        "A",
+        "A"
+      ],
+      "review_required": true,
+      "provisional": false
+    },
+    {
+      "id": "ebv5_18",
+      "relation": null,
+      "selected": null,
+      "basis": "Procedencia inválida: texto sin IDs, sin cierre y sin incertidumbre documental explícita.",
+      "assertable_facts": {
+        "count": 0,
+        "facts": []
+      },
+      "epistemic_contribution": "No hay conocimiento fuente de una disyunción K6/K7. Rectificar texto o representación y adjudicar después; no forzar A/none.",
+      "world_roles": [
+        "provisional_A",
+        "provisional_none"
+      ],
+      "review_required": true,
+      "provisional": true
+    }
+  ]
+}

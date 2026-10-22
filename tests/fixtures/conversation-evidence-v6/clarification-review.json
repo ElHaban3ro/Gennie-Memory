@@ -1,0 +1,457 @@
+{
+  "version": "v6-clarification-review-2026-10-19",
+  "stage": "post_reconciliation_pre_execution_clarification",
+  "is_blind_review": false,
+  "initial_queries_and_annotations_immutable": true,
+  "inputs_read": [
+    "AGENTS.md",
+    "docs/evaluation/evidence-rubric-v1.md",
+    "tests/fixtures/conversation-evidence-v6-preparation/source.json",
+    "tests/fixtures/conversation-evidence-v6-preparation/memories.json",
+    "tests/fixtures/conversation-evidence-v6-preparation/blind-questions.jsonl",
+    "tests/fixtures/conversation-evidence-v6-preparation/author-cases.jsonl",
+    "outputs/iromem/evaluation/v6-preparation-2026-10-19/blind-review-initial.json",
+    "outputs/iromem/evaluation/v6-preparation-2026-10-19/reconciliation-proposal.json"
+  ],
+  "review_scope": "Se releyeron los 28 fragmentos de cada ámbito 075 y 076 para las consultas aclaradas. Para 074_21, 074_10 y 077_10 se comprobaron los fragmentos literales y los conjuntos de evidencia ya contrastados. No se leyeron resultados, políticas remotas, código ni otros bancos.",
+  "items": [
+    {
+      "id": "cev6q_075_05",
+      "scope_id": "synthetic_conversation_evidence_075",
+      "initial_query": "De HK-7, dime la hora de ingreso y la especie identificada.",
+      "final_query": "De HK-7, dime la hora de ingreso y el estado de su identificación taxonómica.",
+      "requested_parts": [
+        {
+          "id": "arrival_time",
+          "kind": "requested",
+          "query_quote": "la hora de ingreso"
+        },
+        {
+          "id": "identification_status",
+          "kind": "requested",
+          "query_quote": "el estado de su identificación taxonómica"
+        }
+      ],
+      "decision": "accept_as_versioned_semantic_change",
+      "rationale": "La reformulación pide expresamente el estado del proceso. El informe declara pendiente la identificación, una afirmación positiva de estado que responde esa parte. La hora consta en la ficha. Esta pregunta tiene cobertura conjunta completa, a diferencia de la anterior que pedía una especie. No se debe preservar la anterior etiqueta de respuesta incompleta por simple continuidad.",
+      "evidence": [
+        {
+          "memory_id": "cev6_075_08",
+          "quote": "La ficha de laboratorio de HK-7 registra su ingreso el 17 de octubre a las 09:10.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "arrival_time"
+          ]
+        },
+        {
+          "memory_id": "cev6_075_26",
+          "quote": "El informe de Heskora conserva como pendiente la identificación taxonómica de HK-7.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "identification_status"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_075_08",
+        "cev6_075_26"
+      ],
+      "answer_boundary": "Ingresó a las 09:10 del 17 de octubre; la identificación taxonómica figura pendiente. No se identifica una especie ni se afirma que una casilla vacía pruebe el estado.",
+      "unselected_ids": [
+        "cev6_075_01",
+        "cev6_075_02",
+        "cev6_075_03",
+        "cev6_075_04",
+        "cev6_075_05",
+        "cev6_075_06",
+        "cev6_075_07",
+        "cev6_075_09",
+        "cev6_075_10",
+        "cev6_075_11",
+        "cev6_075_12",
+        "cev6_075_13",
+        "cev6_075_14",
+        "cev6_075_15",
+        "cev6_075_16",
+        "cev6_075_17",
+        "cev6_075_18",
+        "cev6_075_19",
+        "cev6_075_20",
+        "cev6_075_21",
+        "cev6_075_22",
+        "cev6_075_23",
+        "cev6_075_24",
+        "cev6_075_25",
+        "cev6_075_27",
+        "cev6_075_28"
+      ],
+      "aggregate_evidence_coverage": "complete",
+      "case_relation_recommendation": "supports_answer",
+      "individual_evidence_note": "Cada recuerdo cubre solo una parte y por eso conserva pending_or_partial como relación individual; unidos responden todas las partes. El estado pendiente del fenómeno no equivale a cobertura incompleta de una pregunta que pide precisamente ese estado.",
+      "target_change": "De nombre de especie identificada a estado explícito del proceso de identificación.",
+      "specific_exclusions": [
+        {
+          "memory_id": "cev6_075_09",
+          "quote": "La ficha de HK-7 todavía no tiene completada la casilla de especie.",
+          "rationale": "No completar la casilla de especie no establece si el proceso está pendiente, concluido pero aún no transcrito, u otra situación. No sustituye la declaración de estado de 075_26."
+        },
+        {
+          "memory_id": "cev6_075_07",
+          "quote": "La ficha de la muestra HK-7 la identifica expresamente como cultivo de hongo, no como muestra de polen.",
+          "rationale": "Identifica la clase de muestra como cultivo de hongo y corrige polen; no declara el estado del proceso de identificación taxonómica ni hora de ingreso."
+        }
+      ],
+      "open_ambiguity": false
+    },
+    {
+      "id": "cev6q_076_04",
+      "scope_id": "synthetic_conversation_evidence_076",
+      "initial_query": "¿Cuántas celdas braille tiene la edición Senderos de Sal de Queldra?",
+      "final_query": "¿Qué tipo de celdas braille utiliza la edición Senderos de Sal de Queldra?",
+      "requested_parts": [
+        {
+          "id": "cell_type",
+          "kind": "requested",
+          "query_quote": "Qué tipo de celdas braille"
+        },
+        {
+          "id": "braille_use",
+          "kind": "premise",
+          "query_quote": "celdas braille utiliza la edición Senderos de Sal de Queldra"
+        }
+      ],
+      "decision": "accept_as_versioned_semantic_change",
+      "rationale": "Preguntar el tipo de celdas utilizadas presupone su uso. Las dos fuentes niegan el formato braille o las celdas. La respuesta adecuada corrige esa premisa, sin inventar un tipo; cero deja de ser una respuesta de cantidad solicitada.",
+      "evidence": [
+        {
+          "memory_id": "cev6_076_07",
+          "quote": "La ficha de Queldra clasifica el volumen Senderos de Sal como edición en macrotipo, no en braille.",
+          "relation": "refutes_premise",
+          "covers": [
+            "braille_use"
+          ]
+        },
+        {
+          "memory_id": "cev6_076_08",
+          "quote": "El inventario de Queldra describe Senderos de Sal como libro de letras ampliadas sin celdas braille.",
+          "relation": "refutes_premise",
+          "covers": [
+            "braille_use"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_076_07",
+        "cev6_076_08"
+      ],
+      "answer_boundary": "Es una edición en macrotipo/letras ampliadas, sin celdas braille; no atribuirle un tipo de celda.",
+      "unselected_ids": [
+        "cev6_076_01",
+        "cev6_076_02",
+        "cev6_076_03",
+        "cev6_076_04",
+        "cev6_076_05",
+        "cev6_076_06",
+        "cev6_076_09",
+        "cev6_076_10",
+        "cev6_076_11",
+        "cev6_076_12",
+        "cev6_076_13",
+        "cev6_076_14",
+        "cev6_076_15",
+        "cev6_076_16",
+        "cev6_076_17",
+        "cev6_076_18",
+        "cev6_076_19",
+        "cev6_076_20",
+        "cev6_076_21",
+        "cev6_076_22",
+        "cev6_076_23",
+        "cev6_076_24",
+        "cev6_076_25",
+        "cev6_076_26",
+        "cev6_076_27",
+        "cev6_076_28"
+      ],
+      "aggregate_evidence_coverage": "explicit_premise_correction",
+      "case_relation_recommendation": "refutes_premise",
+      "target_change": "De cantidad de celdas a tipo de celdas supuestamente utilizadas; mantiene el objetivo de corrección de una premisa de braille.",
+      "specific_exclusions": [
+        {
+          "memory_id": "cev6_076_17",
+          "quote": "La edición braille de Senderos del Río está guardada en Lurenta.",
+          "rationale": "Se refiere a Senderos del Río en Lurenta, no a Senderos de Sal en Queldra."
+        }
+      ],
+      "open_ambiguity": false
+    },
+    {
+      "id": "cev6q_074_01",
+      "scope_id": "synthetic_conversation_evidence_074",
+      "initial_query": "¿Quién quedó a cargo de limpiar las teselas azules de Nuvarel el 14 de octubre?",
+      "final_query": "¿Quién quedó a cargo de limpiar las teselas azules de Nuvarel el 14 de octubre?",
+      "requested_parts": [
+        {
+          "id": "cleaner",
+          "kind": "requested",
+          "query_quote": "Quién quedó a cargo de limpiar las teselas azules de Nuvarel el 14 de octubre"
+        }
+      ],
+      "decision": "confirm_partial_evidence_addition",
+      "rationale": "074_21 identifica directamente la limpieza de Iverna en Nuvarel durante el 14 de octubre. Aporta identidad y condición temporal de la tarea, aunque no menciona el color de las teselas. Los otros dos partes dan la asignación completa; no se exige que el dato parcial repita todos los calificadores.",
+      "evidence": [
+        {
+          "memory_id": "cev6_074_01",
+          "quote": "El parte de restauración del mosaico ficticio Nuvarel del 14 de octubre asigna a Iverna la limpieza de las teselas azules.",
+          "relation": "supports_answer",
+          "covers": [
+            "cleaner"
+          ]
+        },
+        {
+          "memory_id": "cev6_074_03",
+          "quote": "La copia firmada del parte del 14 de octubre confirma que la limpieza de las teselas azules corresponde a Iverna.",
+          "relation": "supports_answer",
+          "covers": [
+            "cleaner"
+          ]
+        },
+        {
+          "memory_id": "cev6_074_21",
+          "quote": "El parte de Nuvarel limita la limpieza de Iverna a la jornada del 14 de octubre.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "cleaner"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_074_01",
+        "cev6_074_03",
+        "cev6_074_21"
+      ],
+      "answer_boundary": "Iverna quedó asignada a las teselas azules el 14 de octubre. 074_21 por sí solo no permite afirmar el color; la limitación al día no identifica un sustituto posterior.",
+      "unselected_ids": [
+        "cev6_074_02",
+        "cev6_074_04",
+        "cev6_074_05",
+        "cev6_074_06",
+        "cev6_074_07",
+        "cev6_074_08",
+        "cev6_074_09",
+        "cev6_074_10",
+        "cev6_074_11",
+        "cev6_074_12",
+        "cev6_074_13",
+        "cev6_074_14",
+        "cev6_074_15",
+        "cev6_074_16",
+        "cev6_074_17",
+        "cev6_074_18",
+        "cev6_074_19",
+        "cev6_074_20",
+        "cev6_074_22",
+        "cev6_074_23",
+        "cev6_074_24",
+        "cev6_074_25",
+        "cev6_074_26",
+        "cev6_074_27",
+        "cev6_074_28"
+      ],
+      "accepted_memory_id": "cev6_074_21",
+      "coverage_detail": {
+        "concrete_information": [
+          "Iverna",
+          "limpieza de Nuvarel",
+          "jornada del 14 de octubre"
+        ],
+        "missing_qualifier": "teselas azules"
+      },
+      "case_relation_recommendation": "supports_answer",
+      "aggregate_evidence_coverage": "complete"
+    },
+    {
+      "id": "cev6q_074_06",
+      "scope_id": "synthetic_conversation_evidence_074",
+      "initial_query": "¿Cuántas cajas lleva Nuvarel y cuánto pesan entre todas?",
+      "final_query": "¿Cuántas cajas lleva Nuvarel y cuánto pesan entre todas?",
+      "requested_parts": [
+        {
+          "id": "count",
+          "kind": "requested",
+          "query_quote": "Cuántas cajas lleva Nuvarel"
+        },
+        {
+          "id": "weight",
+          "kind": "requested",
+          "query_quote": "cuánto pesan entre todas"
+        }
+      ],
+      "decision": "confirm_partial_evidence_addition",
+      "rationale": "La frase sobre peso en blanco contiene la cantidad explícita «las cuatro cajas». Se conserva por esa cantidad, no por convertir la ausencia de peso en un peso conocido.",
+      "evidence": [
+        {
+          "memory_id": "cev6_074_09",
+          "quote": "La hoja de embalaje de Nuvarel registra cuatro cajas numeradas del 1 al 4.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "count"
+          ]
+        },
+        {
+          "memory_id": "cev6_074_10",
+          "quote": "La hoja de embalaje de Nuvarel deja en blanco el peso conjunto de las cuatro cajas.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "count"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_074_09",
+        "cev6_074_10"
+      ],
+      "answer_boundary": "Son cuatro cajas; el peso conjunto no está registrado. No importar el peso de Erunco.",
+      "unselected_ids": [
+        "cev6_074_01",
+        "cev6_074_02",
+        "cev6_074_03",
+        "cev6_074_04",
+        "cev6_074_05",
+        "cev6_074_06",
+        "cev6_074_07",
+        "cev6_074_08",
+        "cev6_074_11",
+        "cev6_074_12",
+        "cev6_074_13",
+        "cev6_074_14",
+        "cev6_074_15",
+        "cev6_074_16",
+        "cev6_074_17",
+        "cev6_074_18",
+        "cev6_074_19",
+        "cev6_074_20",
+        "cev6_074_21",
+        "cev6_074_22",
+        "cev6_074_23",
+        "cev6_074_24",
+        "cev6_074_25",
+        "cev6_074_26",
+        "cev6_074_27",
+        "cev6_074_28"
+      ],
+      "accepted_memory_id": "cev6_074_10",
+      "coverage_detail": {
+        "covers_only": [
+          "count"
+        ],
+        "does_not_cover": [
+          "weight"
+        ]
+      },
+      "case_relation_recommendation": "pending_or_partial",
+      "aggregate_evidence_coverage": "partial"
+    },
+    {
+      "id": "cev6q_077_05",
+      "scope_id": "synthetic_conversation_evidence_077",
+      "initial_query": "Para el grupo de Ulsira, ¿cuántas plazas están reservadas y en qué filas?",
+      "final_query": "Para el grupo de Ulsira, ¿cuántas plazas están reservadas y en qué filas?",
+      "requested_parts": [
+        {
+          "id": "seats",
+          "kind": "requested",
+          "query_quote": "cuántas plazas están reservadas"
+        },
+        {
+          "id": "rows",
+          "kind": "requested",
+          "query_quote": "en qué filas"
+        }
+      ],
+      "decision": "confirm_partial_evidence_addition",
+      "rationale": "El correo dice expresamente «esas doce plazas», por lo que aporta cantidad concreta. La distribución aún por decidir limita la respuesta, pero no proporciona filas; el recuerdo se conserva por doce plazas.",
+      "evidence": [
+        {
+          "memory_id": "cev6_077_09",
+          "quote": "La reserva de la función de Jorveta para el grupo de Ulsira tiene confirmadas doce plazas.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "seats"
+          ]
+        },
+        {
+          "memory_id": "cev6_077_10",
+          "quote": "El correo de Ulsira indica que la distribución de esas doce plazas por fila aún se decidirá.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "seats"
+          ]
+        },
+        {
+          "memory_id": "cev6_077_11",
+          "quote": "La nota de sala confirma doce localidades reservadas para el grupo de Ulsira.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "seats"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_077_09",
+        "cev6_077_10",
+        "cev6_077_11"
+      ],
+      "answer_boundary": "Hay doce plazas para Ulsira; no están decididas las filas. No usar la reserva de Pretal.",
+      "unselected_ids": [
+        "cev6_077_01",
+        "cev6_077_02",
+        "cev6_077_03",
+        "cev6_077_04",
+        "cev6_077_05",
+        "cev6_077_06",
+        "cev6_077_07",
+        "cev6_077_08",
+        "cev6_077_12",
+        "cev6_077_13",
+        "cev6_077_14",
+        "cev6_077_15",
+        "cev6_077_16",
+        "cev6_077_17",
+        "cev6_077_18",
+        "cev6_077_19",
+        "cev6_077_20",
+        "cev6_077_21",
+        "cev6_077_22",
+        "cev6_077_23",
+        "cev6_077_24",
+        "cev6_077_25",
+        "cev6_077_26",
+        "cev6_077_27",
+        "cev6_077_28"
+      ],
+      "accepted_memory_id": "cev6_077_10",
+      "coverage_detail": {
+        "covers_only": [
+          "seats"
+        ],
+        "does_not_cover": [
+          "rows"
+        ]
+      },
+      "case_relation_recommendation": "pending_or_partial",
+      "aggregate_evidence_coverage": "partial"
+    }
+  ],
+  "required_reporting_changes": [
+    "Guardar las dos consultas finales como revisión nueva; no atribuirlas a la revisión ciega inicial.",
+    "075_05 cambia el dato pedido y ahora tiene respuesta conjunta completa: hora más estado pendiente. Actualizar la relación de caso y los denominadores que dependan de ella; no llamar dato ausente a un estado explícitamente solicitado y conocido.",
+    "076_04 pasa de cantidad, que admitía cero, a tipo de celdas cuyo uso queda refutado. Mantener trazabilidad del cambio de atributo solicitado.",
+    "En 074_10 y 077_10 la cobertura útil es solo cantidad, aunque el texto también limite lo afirmable sobre peso o filas."
+  ],
+  "limitations": [
+    "Son cambios previos a ejecución sobre un banco sintético de desarrollo; no constituyen una segunda revisión ciega ni una adjudicación humana.",
+    "No se ha ejecutado ningún modelo ni usado resultados para elegir estas reformulaciones.",
+    "Este archivo no modifica las consultas, las etiquetas ni los archivos de revisión anteriores; expresa la revisión de las variantes propuestas."
+  ]
+}

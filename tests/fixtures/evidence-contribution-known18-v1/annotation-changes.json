@@ -1,0 +1,10 @@
+{
+  "before_provider_calls": true,
+  "role_changes_after_manifest_review": 0,
+  "annotation_changes": [
+    "cev5_066_01: flag residual ambiguity and bound to team",
+    "cev5_069_11: bound sustained hour, not max autonomy or certified protocol"
+  ],
+  "basis": "adjudication-review.json",
+  "original_gold_modified": false
+}

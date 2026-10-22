@@ -1,0 +1,8 @@
+{
+  "relation_instruction": "Classify state.memories.{key} against state.user_prompt under state.rules.",
+  "criteria": {
+    "A": "Same target/context: requested part, bound, partial count or explicit pending/unknown/unreadable measurement status. A missing total does not erase supplied evidence.",
+    "B": "Same target: explicitly incompatible assertion or presupposition. The memory and premise cannot both hold. Another listed requirement or unrecorded property is not exclusion.",
+    "none": "Different target/context, merely related, or no explicit requested contribution or refutation."
+  }
+}

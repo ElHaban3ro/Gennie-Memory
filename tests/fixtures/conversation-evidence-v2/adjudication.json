@@ -1,0 +1,34 @@
+{
+  "version": "evidence-v2-adjudication-v1",
+  "human_review": false,
+  "independent_review": false,
+  "separate_agent_blind_review": true,
+  "reviewer_kind": "separate_agent_same_model_family",
+  "agreed_relations_and_evidence": 64,
+  "unresolved_case_ids": [],
+  "blind_review_sha256": "7649d20e136af1de1afdc60032978cb30f3fcba4f6ed0803e9dc6a66f2a0bc32",
+  "source_sha256": "6b3b32bbd7fd98b8011d199f804bcab2203f2b1e815768e870f9fdbf3cec24ae",
+  "questions_sha256": "4a4839a6ddb5ef7ca0f870378c3d7fe23ef475a8e6661b1707d3b67ac291c273",
+  "final_labels_sha256": "99536ec737ac35c15f8eb69c757ccdb3bde7e2b0274d11738571838b8e80a47c",
+  "author_initial_labels_sha256": "d8c25782206d09be85dd8f6f7475fe3397774859cedf617d355841a7de27ca53",
+  "changes_before_provider": [
+    {
+      "case_id": "cev2q_044_06",
+      "change": "Specify serrana edition in source and question to avoid merging a coastal rental with generic pickup."
+    },
+    {
+      "case_id": "cev2q_044_03",
+      "change": "Question now future tense to match prospective no-award source."
+    },
+    {
+      "case_id": "cev2q_043_04",
+      "change": "Question specifies Sunday of maintenance rather than any Sunday."
+    },
+    {
+      "case_id": "cev2q_048_04",
+      "change": "Source explicitly states speaker emits no signal, avoiding inference from disconnection alone."
+    }
+  ],
+  "category_changes": [],
+  "limitations": "Separate blind agent annotation shares model family and synthetic source; not human validation or final-answer truth."
+}

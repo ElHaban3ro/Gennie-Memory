@@ -1,0 +1,23 @@
+{
+  "version": "documentary-known100-v1-reviewed",
+  "pairs": 100,
+  "provider_calls": 0,
+  "fresh_validation": false,
+  "files_sha256": {
+    "adjudication.json": "b6df8a72039f34cc284c4f9f56c5cca41b11902fe4ee171a6166d28ce756b362",
+    "author-labels.json": "c42bb2690cc4df393bbff745edf60d853d51e274ca464c994f708c732a8dc3d7",
+    "author-manifest.json": "716974731b399a27e344b72e376d88ccfc3c781ad486ffcddb7039b97c20ce58",
+    "blind-review-counts.json": "7eb7b2c9735dece898ef4e217488ce3775180d743128e78561df3f7fbcb9ac6a",
+    "blind-review-final.json": "b46da0fd6028c0da86ff6693e41b5f1b1c0efbff27c5cde098bdccfcbd048451",
+    "blind-review.json": "32c39b26819ecc06624f3854894db156c37330432752200ae7940364d00d7c23",
+    "source-only-draft.json": "856efe75cfea87c9589baf6c17ce50ab1736974cb935ec6ac0b9cb8298036932",
+    "source-only-reviewed.json": "6a525084d75ec9fec40f65b1a8f221c7ec341285e94b9d36b2ae9c06637c5b26"
+  },
+  "external_sha256": {
+    "docs/evaluation/evidence-contribution-v3-contract.md": "11e6f9e2b1eddfba4446410301a0a3cd1610a09ac69c1d63295c7c1cc23d70e9",
+    "docs/evaluation/evidence-contribution-v4-contract.md": "d225e4153cff9651452f2e7429c0bb519ed55002f1746a3c03e2fae829cc85ea",
+    "docs/evaluation/epistemic-binding-v5-contract.md": "011da869f6fac8ae5d67e72d661f0324e5695968161bef1b13377e6b791e0fe2",
+    "docs/evaluation/measurement-identity-v1-extension.md": "c0dc17ee7cc65849f80aad679023c8e4f27e28088f9810f8b9f18f0db90bb521",
+    "docs/evaluation/request-basis-v1-extension.md": "a2921996b3ed051dd2c87ebaacc4b8c21dfd0d887e38c438463bf799f713ea03"
+  }
+}

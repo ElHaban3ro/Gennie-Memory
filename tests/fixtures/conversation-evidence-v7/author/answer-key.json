@@ -1,0 +1,1194 @@
+[
+  {
+    "id": "v7_harbor_ops_q01",
+    "relation": "supports_answer",
+    "evidence": [
+      {
+        "memory_id": "v7_harbor_ops_01",
+        "relation": "supports_answer",
+        "source_citation": {
+          "source_id": "msg_harbor_ops_01",
+          "quote": "Mara Velez (OPS-41), the harbor engineer, is based at Puerto Niebla."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_harbor_ops_01"
+    ],
+    "concise_rationale": "The source directly states the base location.",
+    "answer_boundary": "Puerto Niebla is stated; no broader location history is implied.",
+    "expected_answer": "Puerto Niebla"
+  },
+  {
+    "id": "v7_harbor_ops_q02",
+    "relation": "supports_answer",
+    "evidence": [
+      {
+        "memory_id": "v7_harbor_ops_02",
+        "relation": "supports_answer",
+        "source_citation": {
+          "source_id": "msg_harbor_ops_02",
+          "quote": "Mara Velez (OPS-41) uses the tide gauge TG-8 for routine field checks."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_harbor_ops_02"
+    ],
+    "concise_rationale": "The source directly names the instrument.",
+    "answer_boundary": "The named instrument is tide gauge TG-8 for routine field checks.",
+    "expected_answer": "tide gauge TG-8"
+  },
+  {
+    "id": "v7_harbor_ops_q03",
+    "relation": "refutes_premise",
+    "evidence": [
+      {
+        "memory_id": "v7_harbor_ops_05",
+        "relation": "refutes_premise",
+        "source_citation": {
+          "source_id": "msg_harbor_ops_05",
+          "quote": "Correction: Mara Velez (OPS-41) did not base operations in Caleta Gris; that site belongs to Bruma."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_harbor_ops_05"
+    ],
+    "concise_rationale": "The source explicitly corrects the false location premise and assigns that site to another named entity.",
+    "answer_boundary": "The premise is false: Mara Velez is not based there; Bruma is associated with that site.",
+    "expected_answer": "No; the source says operations were not based there and assigns that site to the other named entity."
+  },
+  {
+    "id": "v7_harbor_ops_q04",
+    "relation": "refutes_premise",
+    "evidence": [
+      {
+        "memory_id": "v7_harbor_ops_06",
+        "relation": "refutes_premise",
+        "source_citation": {
+          "source_id": "msg_harbor_ops_06",
+          "quote": "Correction: Mara Velez (OPS-41) did not approve inspection I-41; the approval log records it as declined."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_harbor_ops_06"
+    ],
+    "concise_rationale": "The approval record explicitly says the item was declined.",
+    "answer_boundary": "No. The approval log records a decline.",
+    "expected_answer": "No; the approval log records the item as declined."
+  },
+  {
+    "id": "v7_harbor_ops_q05",
+    "relation": "pending_or_partial",
+    "evidence": [
+      {
+        "memory_id": "v7_harbor_ops_07",
+        "relation": "pending_or_partial",
+        "source_citation": {
+          "source_id": "msg_harbor_ops_07",
+          "quote": "The inspection I-41 work window for Mara Velez (OPS-41) is 6 hours; an end date is not recorded."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_harbor_ops_07"
+    ],
+    "concise_rationale": "The window duration is concrete but the requested dates are not fully supplied; its end date is expressly unrecorded.",
+    "answer_boundary": "Only 6 hours is documented; the end date is not recorded, so the requested date pair cannot be completed.",
+    "expected_answer": "6 hours; the end date is not recorded."
+  },
+  {
+    "id": "v7_harbor_ops_q06",
+    "relation": "pending_or_partial",
+    "evidence": [
+      {
+        "memory_id": "v7_harbor_ops_08",
+        "relation": "pending_or_partial",
+        "source_citation": {
+          "source_id": "msg_harbor_ops_08",
+          "quote": "For Mara Velez (OPS-41), the checklist records the start date as 2026-04-12 but gives no completion date."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_harbor_ops_08"
+    ],
+    "concise_rationale": "The source supplies the start date and explicitly says no completion date is given.",
+    "answer_boundary": "Start date: 2026-04-12. Completion date: not given in the record.",
+    "expected_answer": "Start date: 2026-04-12. Completion date: not given."
+  },
+  {
+    "id": "v7_harbor_ops_q07",
+    "relation": "explicit_unmeasured",
+    "evidence": [
+      {
+        "memory_id": "v7_harbor_ops_09",
+        "relation": "explicit_unmeasured",
+        "source_citation": {
+          "source_id": "msg_harbor_ops_09",
+          "quote": "A temperature reading for inspection I-41 by Mara Velez (OPS-41) has not been measured yet."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_harbor_ops_09"
+    ],
+    "concise_rationale": "The source explicitly states that the requested measurement has not yet been made.",
+    "answer_boundary": "No measurement has been made yet; this does not establish what the temperature would be.",
+    "expected_answer": "Not measured yet."
+  },
+  {
+    "id": "v7_harbor_ops_q08",
+    "relation": "unrelated",
+    "evidence": [],
+    "expected_memory_ids": [],
+    "concise_rationale": "The full conversation contains no music preference; matching the person ID alone does not answer this attribute.",
+    "answer_boundary": "No music preference is stated in this conversation.",
+    "expected_answer": "No music preference is stated in the conversation."
+  },
+  {
+    "id": "v7_orchard_lab_q01",
+    "relation": "supports_answer",
+    "evidence": [
+      {
+        "memory_id": "v7_orchard_lab_01",
+        "relation": "supports_answer",
+        "source_citation": {
+          "source_id": "msg_orchard_lab_01",
+          "quote": "Ivo Serrano (LAB-62), the orchard botanist, is based at Valle Claro."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_orchard_lab_01"
+    ],
+    "concise_rationale": "The source directly states the base location.",
+    "answer_boundary": "Valle Claro is stated; no broader location history is implied.",
+    "expected_answer": "Valle Claro"
+  },
+  {
+    "id": "v7_orchard_lab_q02",
+    "relation": "supports_answer",
+    "evidence": [
+      {
+        "memory_id": "v7_orchard_lab_02",
+        "relation": "supports_answer",
+        "source_citation": {
+          "source_id": "msg_orchard_lab_02",
+          "quote": "Ivo Serrano (LAB-62) uses the soil probe SP-6 for routine field checks."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_orchard_lab_02"
+    ],
+    "concise_rationale": "The source directly names the instrument.",
+    "answer_boundary": "The named instrument is soil probe SP-6 for routine field checks.",
+    "expected_answer": "soil probe SP-6"
+  },
+  {
+    "id": "v7_orchard_lab_q03",
+    "relation": "refutes_premise",
+    "evidence": [
+      {
+        "memory_id": "v7_orchard_lab_05",
+        "relation": "refutes_premise",
+        "source_citation": {
+          "source_id": "msg_orchard_lab_05",
+          "quote": "Correction: Ivo Serrano (LAB-62) did not base operations in Monte Azul; that site belongs to Risco."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_orchard_lab_05"
+    ],
+    "concise_rationale": "The source explicitly corrects the false location premise and assigns that site to another named entity.",
+    "answer_boundary": "The premise is false: Ivo Serrano is not based there; Risco is associated with that site.",
+    "expected_answer": "No; the source says operations were not based there and assigns that site to the other named entity."
+  },
+  {
+    "id": "v7_orchard_lab_q04",
+    "relation": "refutes_premise",
+    "evidence": [
+      {
+        "memory_id": "v7_orchard_lab_06",
+        "relation": "refutes_premise",
+        "source_citation": {
+          "source_id": "msg_orchard_lab_06",
+          "quote": "Correction: Ivo Serrano (LAB-62) did not approve trial T-62; the approval log records it as declined."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_orchard_lab_06"
+    ],
+    "concise_rationale": "The approval record explicitly says the item was declined.",
+    "answer_boundary": "No. The approval log records a decline.",
+    "expected_answer": "No; the approval log records the item as declined."
+  },
+  {
+    "id": "v7_orchard_lab_q05",
+    "relation": "pending_or_partial",
+    "evidence": [
+      {
+        "memory_id": "v7_orchard_lab_07",
+        "relation": "pending_or_partial",
+        "source_citation": {
+          "source_id": "msg_orchard_lab_07",
+          "quote": "The trial T-62 work window for Ivo Serrano (LAB-62) is 4 hours; an end date is not recorded."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_orchard_lab_07"
+    ],
+    "concise_rationale": "The window duration is concrete but the requested dates are not fully supplied; its end date is expressly unrecorded.",
+    "answer_boundary": "Only 4 hours is documented; the end date is not recorded, so the requested date pair cannot be completed.",
+    "expected_answer": "4 hours; the end date is not recorded."
+  },
+  {
+    "id": "v7_orchard_lab_q06",
+    "relation": "pending_or_partial",
+    "evidence": [
+      {
+        "memory_id": "v7_orchard_lab_08",
+        "relation": "pending_or_partial",
+        "source_citation": {
+          "source_id": "msg_orchard_lab_08",
+          "quote": "For Ivo Serrano (LAB-62), the checklist records the start date as 2026-05-08 but gives no completion date."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_orchard_lab_08"
+    ],
+    "concise_rationale": "The source supplies the start date and explicitly says no completion date is given.",
+    "answer_boundary": "Start date: 2026-05-08. Completion date: not given in the record.",
+    "expected_answer": "Start date: 2026-05-08. Completion date: not given."
+  },
+  {
+    "id": "v7_orchard_lab_q07",
+    "relation": "explicit_unmeasured",
+    "evidence": [
+      {
+        "memory_id": "v7_orchard_lab_09",
+        "relation": "explicit_unmeasured",
+        "source_citation": {
+          "source_id": "msg_orchard_lab_09",
+          "quote": "A temperature reading for trial T-62 by Ivo Serrano (LAB-62) has not been measured yet."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_orchard_lab_09"
+    ],
+    "concise_rationale": "The source explicitly states that the requested measurement has not yet been made.",
+    "answer_boundary": "No measurement has been made yet; this does not establish what the temperature would be.",
+    "expected_answer": "Not measured yet."
+  },
+  {
+    "id": "v7_orchard_lab_q08",
+    "relation": "unrelated",
+    "evidence": [],
+    "expected_memory_ids": [],
+    "concise_rationale": "The full conversation contains no music preference; matching the person ID alone does not answer this attribute.",
+    "answer_boundary": "No music preference is stated in this conversation.",
+    "expected_answer": "No music preference is stated in the conversation."
+  },
+  {
+    "id": "v7_archive_team_q01",
+    "relation": "supports_answer",
+    "evidence": [
+      {
+        "memory_id": "v7_archive_team_01",
+        "relation": "supports_answer",
+        "source_citation": {
+          "source_id": "msg_archive_team_01",
+          "quote": "Neri Okafor (ARC-83), the archive conservator, is based at Lumen Quay."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_archive_team_01"
+    ],
+    "concise_rationale": "The source directly states the base location.",
+    "answer_boundary": "Lumen Quay is stated; no broader location history is implied.",
+    "expected_answer": "Lumen Quay"
+  },
+  {
+    "id": "v7_archive_team_q02",
+    "relation": "supports_answer",
+    "evidence": [
+      {
+        "memory_id": "v7_archive_team_02",
+        "relation": "supports_answer",
+        "source_citation": {
+          "source_id": "msg_archive_team_02",
+          "quote": "Neri Okafor (ARC-83) uses the humidity logger HL-3 for routine field checks."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_archive_team_02"
+    ],
+    "concise_rationale": "The source directly names the instrument.",
+    "answer_boundary": "The named instrument is humidity logger HL-3 for routine field checks.",
+    "expected_answer": "humidity logger HL-3"
+  },
+  {
+    "id": "v7_archive_team_q03",
+    "relation": "refutes_premise",
+    "evidence": [
+      {
+        "memory_id": "v7_archive_team_05",
+        "relation": "refutes_premise",
+        "source_citation": {
+          "source_id": "msg_archive_team_05",
+          "quote": "Correction: Neri Okafor (ARC-83) did not base operations in Cinder Bay; that site belongs to Aster."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_archive_team_05"
+    ],
+    "concise_rationale": "The source explicitly corrects the false location premise and assigns that site to another named entity.",
+    "answer_boundary": "The premise is false: Neri Okafor is not based there; Aster is associated with that site.",
+    "expected_answer": "No; the source says operations were not based there and assigns that site to the other named entity."
+  },
+  {
+    "id": "v7_archive_team_q04",
+    "relation": "refutes_premise",
+    "evidence": [
+      {
+        "memory_id": "v7_archive_team_06",
+        "relation": "refutes_premise",
+        "source_citation": {
+          "source_id": "msg_archive_team_06",
+          "quote": "Correction: Neri Okafor (ARC-83) did not approve box B-83; the approval log records it as declined."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_archive_team_06"
+    ],
+    "concise_rationale": "The approval record explicitly says the item was declined.",
+    "answer_boundary": "No. The approval log records a decline.",
+    "expected_answer": "No; the approval log records the item as declined."
+  },
+  {
+    "id": "v7_archive_team_q05",
+    "relation": "pending_or_partial",
+    "evidence": [
+      {
+        "memory_id": "v7_archive_team_07",
+        "relation": "pending_or_partial",
+        "source_citation": {
+          "source_id": "msg_archive_team_07",
+          "quote": "The box B-83 work window for Neri Okafor (ARC-83) is 5 hours; an end date is not recorded."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_archive_team_07"
+    ],
+    "concise_rationale": "The window duration is concrete but the requested dates are not fully supplied; its end date is expressly unrecorded.",
+    "answer_boundary": "Only 5 hours is documented; the end date is not recorded, so the requested date pair cannot be completed.",
+    "expected_answer": "5 hours; the end date is not recorded."
+  },
+  {
+    "id": "v7_archive_team_q06",
+    "relation": "pending_or_partial",
+    "evidence": [
+      {
+        "memory_id": "v7_archive_team_08",
+        "relation": "pending_or_partial",
+        "source_citation": {
+          "source_id": "msg_archive_team_08",
+          "quote": "For Neri Okafor (ARC-83), the checklist records the start date as 2026-06-19 but gives no completion date."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_archive_team_08"
+    ],
+    "concise_rationale": "The source supplies the start date and explicitly says no completion date is given.",
+    "answer_boundary": "Start date: 2026-06-19. Completion date: not given in the record.",
+    "expected_answer": "Start date: 2026-06-19. Completion date: not given."
+  },
+  {
+    "id": "v7_archive_team_q07",
+    "relation": "explicit_unmeasured",
+    "evidence": [
+      {
+        "memory_id": "v7_archive_team_09",
+        "relation": "explicit_unmeasured",
+        "source_citation": {
+          "source_id": "msg_archive_team_09",
+          "quote": "A temperature reading for box B-83 by Neri Okafor (ARC-83) has not been measured yet."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_archive_team_09"
+    ],
+    "concise_rationale": "The source explicitly states that the requested measurement has not yet been made.",
+    "answer_boundary": "No measurement has been made yet; this does not establish what the temperature would be.",
+    "expected_answer": "Not measured yet."
+  },
+  {
+    "id": "v7_archive_team_q08",
+    "relation": "unrelated",
+    "evidence": [],
+    "expected_memory_ids": [],
+    "concise_rationale": "The full conversation contains no music preference; matching the person ID alone does not answer this attribute.",
+    "answer_boundary": "No music preference is stated in this conversation.",
+    "expected_answer": "No music preference is stated in the conversation."
+  },
+  {
+    "id": "v7_rail_survey_q01",
+    "relation": "supports_answer",
+    "evidence": [
+      {
+        "memory_id": "v7_rail_survey_01",
+        "relation": "supports_answer",
+        "source_citation": {
+          "source_id": "msg_rail_survey_01",
+          "quote": "Tala Kim (RAIL-24), the rail surveyor, is based at North Fen."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_rail_survey_01"
+    ],
+    "concise_rationale": "The source directly states the base location.",
+    "answer_boundary": "North Fen is stated; no broader location history is implied.",
+    "expected_answer": "North Fen"
+  },
+  {
+    "id": "v7_rail_survey_q02",
+    "relation": "supports_answer",
+    "evidence": [
+      {
+        "memory_id": "v7_rail_survey_02",
+        "relation": "supports_answer",
+        "source_citation": {
+          "source_id": "msg_rail_survey_02",
+          "quote": "Tala Kim (RAIL-24) uses the laser rangefinder LR-24 for routine field checks."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_rail_survey_02"
+    ],
+    "concise_rationale": "The source directly names the instrument.",
+    "answer_boundary": "The named instrument is laser rangefinder LR-24 for routine field checks.",
+    "expected_answer": "laser rangefinder LR-24"
+  },
+  {
+    "id": "v7_rail_survey_q03",
+    "relation": "refutes_premise",
+    "evidence": [
+      {
+        "memory_id": "v7_rail_survey_05",
+        "relation": "refutes_premise",
+        "source_citation": {
+          "source_id": "msg_rail_survey_05",
+          "quote": "Correction: Tala Kim (RAIL-24) did not base operations in East Fen; that site belongs to South Fen."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_rail_survey_05"
+    ],
+    "concise_rationale": "The source explicitly corrects the false location premise and assigns that site to another named entity.",
+    "answer_boundary": "The premise is false: Tala Kim is not based there; South Fen is associated with that site.",
+    "expected_answer": "No; the source says operations were not based there and assigns that site to the other named entity."
+  },
+  {
+    "id": "v7_rail_survey_q04",
+    "relation": "refutes_premise",
+    "evidence": [
+      {
+        "memory_id": "v7_rail_survey_06",
+        "relation": "refutes_premise",
+        "source_citation": {
+          "source_id": "msg_rail_survey_06",
+          "quote": "Correction: Tala Kim (RAIL-24) did not approve survey S-24; the approval log records it as declined."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_rail_survey_06"
+    ],
+    "concise_rationale": "The approval record explicitly says the item was declined.",
+    "answer_boundary": "No. The approval log records a decline.",
+    "expected_answer": "No; the approval log records the item as declined."
+  },
+  {
+    "id": "v7_rail_survey_q05",
+    "relation": "pending_or_partial",
+    "evidence": [
+      {
+        "memory_id": "v7_rail_survey_07",
+        "relation": "pending_or_partial",
+        "source_citation": {
+          "source_id": "msg_rail_survey_07",
+          "quote": "The survey S-24 work window for Tala Kim (RAIL-24) is 7 hours; an end date is not recorded."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_rail_survey_07"
+    ],
+    "concise_rationale": "The window duration is concrete but the requested dates are not fully supplied; its end date is expressly unrecorded.",
+    "answer_boundary": "Only 7 hours is documented; the end date is not recorded, so the requested date pair cannot be completed.",
+    "expected_answer": "7 hours; the end date is not recorded."
+  },
+  {
+    "id": "v7_rail_survey_q06",
+    "relation": "pending_or_partial",
+    "evidence": [
+      {
+        "memory_id": "v7_rail_survey_08",
+        "relation": "pending_or_partial",
+        "source_citation": {
+          "source_id": "msg_rail_survey_08",
+          "quote": "For Tala Kim (RAIL-24), the checklist records the start date as 2026-07-03 but gives no completion date."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_rail_survey_08"
+    ],
+    "concise_rationale": "The source supplies the start date and explicitly says no completion date is given.",
+    "answer_boundary": "Start date: 2026-07-03. Completion date: not given in the record.",
+    "expected_answer": "Start date: 2026-07-03. Completion date: not given."
+  },
+  {
+    "id": "v7_rail_survey_q07",
+    "relation": "explicit_unmeasured",
+    "evidence": [
+      {
+        "memory_id": "v7_rail_survey_09",
+        "relation": "explicit_unmeasured",
+        "source_citation": {
+          "source_id": "msg_rail_survey_09",
+          "quote": "A temperature reading for survey S-24 by Tala Kim (RAIL-24) has not been measured yet."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_rail_survey_09"
+    ],
+    "concise_rationale": "The source explicitly states that the requested measurement has not yet been made.",
+    "answer_boundary": "No measurement has been made yet; this does not establish what the temperature would be.",
+    "expected_answer": "Not measured yet."
+  },
+  {
+    "id": "v7_rail_survey_q08",
+    "relation": "unrelated",
+    "evidence": [],
+    "expected_memory_ids": [],
+    "concise_rationale": "The full conversation contains no music preference; matching the person ID alone does not answer this attribute.",
+    "answer_boundary": "No music preference is stated in this conversation.",
+    "expected_answer": "No music preference is stated in the conversation."
+  },
+  {
+    "id": "v7_clinic_trials_q01",
+    "relation": "supports_answer",
+    "evidence": [
+      {
+        "memory_id": "v7_clinic_trials_01",
+        "relation": "supports_answer",
+        "source_citation": {
+          "source_id": "msg_clinic_trials_01",
+          "quote": "Pavel Duarte (CLN-55), the clinical coordinator, is based at San Telmo."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_clinic_trials_01"
+    ],
+    "concise_rationale": "The source directly states the base location.",
+    "answer_boundary": "San Telmo is stated; no broader location history is implied.",
+    "expected_answer": "San Telmo"
+  },
+  {
+    "id": "v7_clinic_trials_q02",
+    "relation": "supports_answer",
+    "evidence": [
+      {
+        "memory_id": "v7_clinic_trials_02",
+        "relation": "supports_answer",
+        "source_citation": {
+          "source_id": "msg_clinic_trials_02",
+          "quote": "Pavel Duarte (CLN-55) uses the pulse monitor PM-5 for routine field checks."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_clinic_trials_02"
+    ],
+    "concise_rationale": "The source directly names the instrument.",
+    "answer_boundary": "The named instrument is pulse monitor PM-5 for routine field checks.",
+    "expected_answer": "pulse monitor PM-5"
+  },
+  {
+    "id": "v7_clinic_trials_q03",
+    "relation": "refutes_premise",
+    "evidence": [
+      {
+        "memory_id": "v7_clinic_trials_05",
+        "relation": "refutes_premise",
+        "source_citation": {
+          "source_id": "msg_clinic_trials_05",
+          "quote": "Correction: Pavel Duarte (CLN-55) did not base operations in Santa Isla; that site belongs to Las Rocas."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_clinic_trials_05"
+    ],
+    "concise_rationale": "The source explicitly corrects the false location premise and assigns that site to another named entity.",
+    "answer_boundary": "The premise is false: Pavel Duarte is not based there; Las Rocas is associated with that site.",
+    "expected_answer": "No; the source says operations were not based there and assigns that site to the other named entity."
+  },
+  {
+    "id": "v7_clinic_trials_q04",
+    "relation": "refutes_premise",
+    "evidence": [
+      {
+        "memory_id": "v7_clinic_trials_06",
+        "relation": "refutes_premise",
+        "source_citation": {
+          "source_id": "msg_clinic_trials_06",
+          "quote": "Correction: Pavel Duarte (CLN-55) did not approve protocol P-55; the approval log records it as declined."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_clinic_trials_06"
+    ],
+    "concise_rationale": "The approval record explicitly says the item was declined.",
+    "answer_boundary": "No. The approval log records a decline.",
+    "expected_answer": "No; the approval log records the item as declined."
+  },
+  {
+    "id": "v7_clinic_trials_q05",
+    "relation": "pending_or_partial",
+    "evidence": [
+      {
+        "memory_id": "v7_clinic_trials_07",
+        "relation": "pending_or_partial",
+        "source_citation": {
+          "source_id": "msg_clinic_trials_07",
+          "quote": "The protocol P-55 work window for Pavel Duarte (CLN-55) is 3 hours; an end date is not recorded."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_clinic_trials_07"
+    ],
+    "concise_rationale": "The window duration is concrete but the requested dates are not fully supplied; its end date is expressly unrecorded.",
+    "answer_boundary": "Only 3 hours is documented; the end date is not recorded, so the requested date pair cannot be completed.",
+    "expected_answer": "3 hours; the end date is not recorded."
+  },
+  {
+    "id": "v7_clinic_trials_q06",
+    "relation": "pending_or_partial",
+    "evidence": [
+      {
+        "memory_id": "v7_clinic_trials_08",
+        "relation": "pending_or_partial",
+        "source_citation": {
+          "source_id": "msg_clinic_trials_08",
+          "quote": "For Pavel Duarte (CLN-55), the checklist records the start date as 2026-08-14 but gives no completion date."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_clinic_trials_08"
+    ],
+    "concise_rationale": "The source supplies the start date and explicitly says no completion date is given.",
+    "answer_boundary": "Start date: 2026-08-14. Completion date: not given in the record.",
+    "expected_answer": "Start date: 2026-08-14. Completion date: not given."
+  },
+  {
+    "id": "v7_clinic_trials_q07",
+    "relation": "explicit_unmeasured",
+    "evidence": [
+      {
+        "memory_id": "v7_clinic_trials_09",
+        "relation": "explicit_unmeasured",
+        "source_citation": {
+          "source_id": "msg_clinic_trials_09",
+          "quote": "A temperature reading for protocol P-55 by Pavel Duarte (CLN-55) has not been measured yet."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_clinic_trials_09"
+    ],
+    "concise_rationale": "The source explicitly states that the requested measurement has not yet been made.",
+    "answer_boundary": "No measurement has been made yet; this does not establish what the temperature would be.",
+    "expected_answer": "Not measured yet."
+  },
+  {
+    "id": "v7_clinic_trials_q08",
+    "relation": "unrelated",
+    "evidence": [],
+    "expected_memory_ids": [],
+    "concise_rationale": "The full conversation contains no music preference; matching the person ID alone does not answer this attribute.",
+    "answer_boundary": "No music preference is stated in this conversation.",
+    "expected_answer": "No music preference is stated in the conversation."
+  },
+  {
+    "id": "v7_canopy_field_q01",
+    "relation": "supports_answer",
+    "evidence": [
+      {
+        "memory_id": "v7_canopy_field_01",
+        "relation": "supports_answer",
+        "source_citation": {
+          "source_id": "msg_canopy_field_01",
+          "quote": "Yara Mensah (BIO-76), the canopy ecologist, is based at Koru Ridge."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_canopy_field_01"
+    ],
+    "concise_rationale": "The source directly states the base location.",
+    "answer_boundary": "Koru Ridge is stated; no broader location history is implied.",
+    "expected_answer": "Koru Ridge"
+  },
+  {
+    "id": "v7_canopy_field_q02",
+    "relation": "supports_answer",
+    "evidence": [
+      {
+        "memory_id": "v7_canopy_field_02",
+        "relation": "supports_answer",
+        "source_citation": {
+          "source_id": "msg_canopy_field_02",
+          "quote": "Yara Mensah (BIO-76) uses the acoustic recorder AR-7 for routine field checks."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_canopy_field_02"
+    ],
+    "concise_rationale": "The source directly names the instrument.",
+    "answer_boundary": "The named instrument is acoustic recorder AR-7 for routine field checks.",
+    "expected_answer": "acoustic recorder AR-7"
+  },
+  {
+    "id": "v7_canopy_field_q03",
+    "relation": "refutes_premise",
+    "evidence": [
+      {
+        "memory_id": "v7_canopy_field_05",
+        "relation": "refutes_premise",
+        "source_citation": {
+          "source_id": "msg_canopy_field_05",
+          "quote": "Correction: Yara Mensah (BIO-76) did not base operations in Tern Point; that site belongs to Moss Shelf."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_canopy_field_05"
+    ],
+    "concise_rationale": "The source explicitly corrects the false location premise and assigns that site to another named entity.",
+    "answer_boundary": "The premise is false: Yara Mensah is not based there; Moss Shelf is associated with that site.",
+    "expected_answer": "No; the source says operations were not based there and assigns that site to the other named entity."
+  },
+  {
+    "id": "v7_canopy_field_q04",
+    "relation": "refutes_premise",
+    "evidence": [
+      {
+        "memory_id": "v7_canopy_field_06",
+        "relation": "refutes_premise",
+        "source_citation": {
+          "source_id": "msg_canopy_field_06",
+          "quote": "Correction: Yara Mensah (BIO-76) did not approve transect X-76; the approval log records it as declined."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_canopy_field_06"
+    ],
+    "concise_rationale": "The approval record explicitly says the item was declined.",
+    "answer_boundary": "No. The approval log records a decline.",
+    "expected_answer": "No; the approval log records the item as declined."
+  },
+  {
+    "id": "v7_canopy_field_q05",
+    "relation": "pending_or_partial",
+    "evidence": [
+      {
+        "memory_id": "v7_canopy_field_07",
+        "relation": "pending_or_partial",
+        "source_citation": {
+          "source_id": "msg_canopy_field_07",
+          "quote": "The transect X-76 work window for Yara Mensah (BIO-76) is 8 hours; an end date is not recorded."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_canopy_field_07"
+    ],
+    "concise_rationale": "The window duration is concrete but the requested dates are not fully supplied; its end date is expressly unrecorded.",
+    "answer_boundary": "Only 8 hours is documented; the end date is not recorded, so the requested date pair cannot be completed.",
+    "expected_answer": "8 hours; the end date is not recorded."
+  },
+  {
+    "id": "v7_canopy_field_q06",
+    "relation": "pending_or_partial",
+    "evidence": [
+      {
+        "memory_id": "v7_canopy_field_08",
+        "relation": "pending_or_partial",
+        "source_citation": {
+          "source_id": "msg_canopy_field_08",
+          "quote": "For Yara Mensah (BIO-76), the checklist records the start date as 2026-09-02 but gives no completion date."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_canopy_field_08"
+    ],
+    "concise_rationale": "The source supplies the start date and explicitly says no completion date is given.",
+    "answer_boundary": "Start date: 2026-09-02. Completion date: not given in the record.",
+    "expected_answer": "Start date: 2026-09-02. Completion date: not given."
+  },
+  {
+    "id": "v7_canopy_field_q07",
+    "relation": "explicit_unmeasured",
+    "evidence": [
+      {
+        "memory_id": "v7_canopy_field_09",
+        "relation": "explicit_unmeasured",
+        "source_citation": {
+          "source_id": "msg_canopy_field_09",
+          "quote": "A temperature reading for transect X-76 by Yara Mensah (BIO-76) has not been measured yet."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_canopy_field_09"
+    ],
+    "concise_rationale": "The source explicitly states that the requested measurement has not yet been made.",
+    "answer_boundary": "No measurement has been made yet; this does not establish what the temperature would be.",
+    "expected_answer": "Not measured yet."
+  },
+  {
+    "id": "v7_canopy_field_q08",
+    "relation": "unrelated",
+    "evidence": [],
+    "expected_memory_ids": [],
+    "concise_rationale": "The full conversation contains no music preference; matching the person ID alone does not answer this attribute.",
+    "answer_boundary": "No music preference is stated in this conversation.",
+    "expected_answer": "No music preference is stated in the conversation."
+  },
+  {
+    "id": "v7_kiln_studio_q01",
+    "relation": "supports_answer",
+    "evidence": [
+      {
+        "memory_id": "v7_kiln_studio_01",
+        "relation": "supports_answer",
+        "source_citation": {
+          "source_id": "msg_kiln_studio_01",
+          "quote": "Oren Petrov (KILN-37), the ceramic technician, is based at Redclay Works."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_kiln_studio_01"
+    ],
+    "concise_rationale": "The source directly states the base location.",
+    "answer_boundary": "Redclay Works is stated; no broader location history is implied.",
+    "expected_answer": "Redclay Works"
+  },
+  {
+    "id": "v7_kiln_studio_q02",
+    "relation": "supports_answer",
+    "evidence": [
+      {
+        "memory_id": "v7_kiln_studio_02",
+        "relation": "supports_answer",
+        "source_citation": {
+          "source_id": "msg_kiln_studio_02",
+          "quote": "Oren Petrov (KILN-37) uses the kiln sensor KS-37 for routine field checks."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_kiln_studio_02"
+    ],
+    "concise_rationale": "The source directly names the instrument.",
+    "answer_boundary": "The named instrument is kiln sensor KS-37 for routine field checks.",
+    "expected_answer": "kiln sensor KS-37"
+  },
+  {
+    "id": "v7_kiln_studio_q03",
+    "relation": "refutes_premise",
+    "evidence": [
+      {
+        "memory_id": "v7_kiln_studio_05",
+        "relation": "refutes_premise",
+        "source_citation": {
+          "source_id": "msg_kiln_studio_05",
+          "quote": "Correction: Oren Petrov (KILN-37) did not base operations in Ashbank; that site belongs to Whiteclay Works."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_kiln_studio_05"
+    ],
+    "concise_rationale": "The source explicitly corrects the false location premise and assigns that site to another named entity.",
+    "answer_boundary": "The premise is false: Oren Petrov is not based there; Whiteclay Works is associated with that site.",
+    "expected_answer": "No; the source says operations were not based there and assigns that site to the other named entity."
+  },
+  {
+    "id": "v7_kiln_studio_q04",
+    "relation": "refutes_premise",
+    "evidence": [
+      {
+        "memory_id": "v7_kiln_studio_06",
+        "relation": "refutes_premise",
+        "source_citation": {
+          "source_id": "msg_kiln_studio_06",
+          "quote": "Correction: Oren Petrov (KILN-37) did not approve firing F-37; the approval log records it as declined."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_kiln_studio_06"
+    ],
+    "concise_rationale": "The approval record explicitly says the item was declined.",
+    "answer_boundary": "No. The approval log records a decline.",
+    "expected_answer": "No; the approval log records the item as declined."
+  },
+  {
+    "id": "v7_kiln_studio_q05",
+    "relation": "pending_or_partial",
+    "evidence": [
+      {
+        "memory_id": "v7_kiln_studio_07",
+        "relation": "pending_or_partial",
+        "source_citation": {
+          "source_id": "msg_kiln_studio_07",
+          "quote": "The firing F-37 work window for Oren Petrov (KILN-37) is 2 hours; an end date is not recorded."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_kiln_studio_07"
+    ],
+    "concise_rationale": "The window duration is concrete but the requested dates are not fully supplied; its end date is expressly unrecorded.",
+    "answer_boundary": "Only 2 hours is documented; the end date is not recorded, so the requested date pair cannot be completed.",
+    "expected_answer": "2 hours; the end date is not recorded."
+  },
+  {
+    "id": "v7_kiln_studio_q06",
+    "relation": "pending_or_partial",
+    "evidence": [
+      {
+        "memory_id": "v7_kiln_studio_08",
+        "relation": "pending_or_partial",
+        "source_citation": {
+          "source_id": "msg_kiln_studio_08",
+          "quote": "For Oren Petrov (KILN-37), the checklist records the start date as 2026-03-27 but gives no completion date."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_kiln_studio_08"
+    ],
+    "concise_rationale": "The source supplies the start date and explicitly says no completion date is given.",
+    "answer_boundary": "Start date: 2026-03-27. Completion date: not given in the record.",
+    "expected_answer": "Start date: 2026-03-27. Completion date: not given."
+  },
+  {
+    "id": "v7_kiln_studio_q07",
+    "relation": "explicit_unmeasured",
+    "evidence": [
+      {
+        "memory_id": "v7_kiln_studio_09",
+        "relation": "explicit_unmeasured",
+        "source_citation": {
+          "source_id": "msg_kiln_studio_09",
+          "quote": "A temperature reading for firing F-37 by Oren Petrov (KILN-37) has not been measured yet."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_kiln_studio_09"
+    ],
+    "concise_rationale": "The source explicitly states that the requested measurement has not yet been made.",
+    "answer_boundary": "No measurement has been made yet; this does not establish what the temperature would be.",
+    "expected_answer": "Not measured yet."
+  },
+  {
+    "id": "v7_kiln_studio_q08",
+    "relation": "unrelated",
+    "evidence": [],
+    "expected_memory_ids": [],
+    "concise_rationale": "The full conversation contains no music preference; matching the person ID alone does not answer this attribute.",
+    "answer_boundary": "No music preference is stated in this conversation.",
+    "expected_answer": "No music preference is stated in the conversation."
+  },
+  {
+    "id": "v7_ice_station_q01",
+    "relation": "supports_answer",
+    "evidence": [
+      {
+        "memory_id": "v7_ice_station_01",
+        "relation": "supports_answer",
+        "source_citation": {
+          "source_id": "msg_ice_station_01",
+          "quote": "Sumi Arora (ICE-98), the glacier technician, is based at Morrow Shelf."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_ice_station_01"
+    ],
+    "concise_rationale": "The source directly states the base location.",
+    "answer_boundary": "Morrow Shelf is stated; no broader location history is implied.",
+    "expected_answer": "Morrow Shelf"
+  },
+  {
+    "id": "v7_ice_station_q02",
+    "relation": "supports_answer",
+    "evidence": [
+      {
+        "memory_id": "v7_ice_station_02",
+        "relation": "supports_answer",
+        "source_citation": {
+          "source_id": "msg_ice_station_02",
+          "quote": "Sumi Arora (ICE-98) uses the ice radar IR-9 for routine field checks."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_ice_station_02"
+    ],
+    "concise_rationale": "The source directly names the instrument.",
+    "answer_boundary": "The named instrument is ice radar IR-9 for routine field checks.",
+    "expected_answer": "ice radar IR-9"
+  },
+  {
+    "id": "v7_ice_station_q03",
+    "relation": "refutes_premise",
+    "evidence": [
+      {
+        "memory_id": "v7_ice_station_05",
+        "relation": "refutes_premise",
+        "source_citation": {
+          "source_id": "msg_ice_station_05",
+          "quote": "Correction: Sumi Arora (ICE-98) did not base operations in Dawn Shelf; that site belongs to Lark Shelf."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_ice_station_05"
+    ],
+    "concise_rationale": "The source explicitly corrects the false location premise and assigns that site to another named entity.",
+    "answer_boundary": "The premise is false: Sumi Arora is not based there; Lark Shelf is associated with that site.",
+    "expected_answer": "No; the source says operations were not based there and assigns that site to the other named entity."
+  },
+  {
+    "id": "v7_ice_station_q04",
+    "relation": "refutes_premise",
+    "evidence": [
+      {
+        "memory_id": "v7_ice_station_06",
+        "relation": "refutes_premise",
+        "source_citation": {
+          "source_id": "msg_ice_station_06",
+          "quote": "Correction: Sumi Arora (ICE-98) did not approve core C-98; the approval log records it as declined."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_ice_station_06"
+    ],
+    "concise_rationale": "The approval record explicitly says the item was declined.",
+    "answer_boundary": "No. The approval log records a decline.",
+    "expected_answer": "No; the approval log records the item as declined."
+  },
+  {
+    "id": "v7_ice_station_q05",
+    "relation": "pending_or_partial",
+    "evidence": [
+      {
+        "memory_id": "v7_ice_station_07",
+        "relation": "pending_or_partial",
+        "source_citation": {
+          "source_id": "msg_ice_station_07",
+          "quote": "The core C-98 work window for Sumi Arora (ICE-98) is 9 hours; an end date is not recorded."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_ice_station_07"
+    ],
+    "concise_rationale": "The window duration is concrete but the requested dates are not fully supplied; its end date is expressly unrecorded.",
+    "answer_boundary": "Only 9 hours is documented; the end date is not recorded, so the requested date pair cannot be completed.",
+    "expected_answer": "9 hours; the end date is not recorded."
+  },
+  {
+    "id": "v7_ice_station_q06",
+    "relation": "pending_or_partial",
+    "evidence": [
+      {
+        "memory_id": "v7_ice_station_08",
+        "relation": "pending_or_partial",
+        "source_citation": {
+          "source_id": "msg_ice_station_08",
+          "quote": "For Sumi Arora (ICE-98), the checklist records the start date as 2026-02-11 but gives no completion date."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_ice_station_08"
+    ],
+    "concise_rationale": "The source supplies the start date and explicitly says no completion date is given.",
+    "answer_boundary": "Start date: 2026-02-11. Completion date: not given in the record.",
+    "expected_answer": "Start date: 2026-02-11. Completion date: not given."
+  },
+  {
+    "id": "v7_ice_station_q07",
+    "relation": "explicit_unmeasured",
+    "evidence": [
+      {
+        "memory_id": "v7_ice_station_09",
+        "relation": "explicit_unmeasured",
+        "source_citation": {
+          "source_id": "msg_ice_station_09",
+          "quote": "A temperature reading for core C-98 by Sumi Arora (ICE-98) has not been measured yet."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v7_ice_station_09"
+    ],
+    "concise_rationale": "The source explicitly states that the requested measurement has not yet been made.",
+    "answer_boundary": "No measurement has been made yet; this does not establish what the temperature would be.",
+    "expected_answer": "Not measured yet."
+  },
+  {
+    "id": "v7_ice_station_q08",
+    "relation": "unrelated",
+    "evidence": [],
+    "expected_memory_ids": [],
+    "concise_rationale": "The full conversation contains no music preference; matching the person ID alone does not answer this attribute.",
+    "answer_boundary": "No music preference is stated in this conversation.",
+    "expected_answer": "No music preference is stated in the conversation."
+  }
+]

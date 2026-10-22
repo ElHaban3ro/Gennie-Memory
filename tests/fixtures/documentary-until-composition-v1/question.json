@@ -1,0 +1,158 @@
+{
+  "version": "documentary_evidence_v3",
+  "kind": "question",
+  "text_sha256": "2e9d133127a2544cc933213c9d8af7248e8e643d3b53fa87df4d2dea18a98d59",
+  "vocabulary_sha256": "aec831bc31a158e4c497df70398c2eba374539955ac8064ff073133a8c8a648d",
+  "domain_namespace": "until-controls",
+  "scopes": [
+    {
+      "id": "root",
+      "parent_id": null,
+      "kind": "document",
+      "branch_id": null,
+      "binding": null
+    }
+  ],
+  "references": [
+    {
+      "id": "requested-player",
+      "scope_id": "root",
+      "mention": {
+        "start_byte": 26,
+        "end_byte": 42,
+        "quote": "reproductor Rumo"
+      },
+      "name": {
+        "start_byte": 38,
+        "end_byte": 42,
+        "quote": "Rumo"
+      },
+      "declared_class": {
+        "start_byte": 26,
+        "end_byte": 37,
+        "quote": "reproductor"
+      },
+      "semantic_type": null,
+      "denotation": "entity",
+      "links": [],
+      "binding_scope_id": null,
+      "anaphora": null
+    }
+  ],
+  "identity": [],
+  "qualifiers": [],
+  "claims": [],
+  "requests": [
+    {
+      "id": "duration-request",
+      "scope_id": "root",
+      "mode": "answer",
+      "target": {
+        "atom": {
+          "predicate": "quantity",
+          "arguments": [
+            {
+              "role": "subject",
+              "value": {
+                "kind": "ref",
+                "id": "requested-player"
+              }
+            },
+            {
+              "role": "attribute",
+              "value": {
+                "kind": "symbol",
+                "id": "duration",
+                "evidence": [
+                  {
+                    "start_byte": 7,
+                    "end_byte": 16,
+                    "quote": "duración"
+                  }
+                ]
+              }
+            }
+          ],
+          "polarity": "positive",
+          "evidence": [
+            {
+              "start_byte": 0,
+              "end_byte": 43,
+              "quote": "¿Qué duración tiene el reproductor Rumo?"
+            }
+          ]
+        },
+        "judgment": "fact",
+        "status": "state",
+        "qualifier_ids": []
+      },
+      "slot": "amount",
+      "class_filter": null,
+      "unit": null,
+      "basis_requirement": {
+        "kind": "any"
+      },
+      "required_answer_extent": "one_value",
+      "normative_scope_filter": null,
+      "qualifier_ids": [],
+      "premise_ids": [],
+      "evidence": [
+        {
+          "start_byte": 0,
+          "end_byte": 43,
+          "quote": "¿Qué duración tiene el reproductor Rumo?"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "consumer": {
+        "kind": "reference",
+        "id": "requested-player"
+      },
+      "requires": {
+        "kind": "scope",
+        "id": "root"
+      },
+      "role": "binding"
+    },
+    {
+      "consumer": {
+        "kind": "request",
+        "id": "duration-request"
+      },
+      "requires": {
+        "kind": "reference",
+        "id": "requested-player"
+      },
+      "role": "identity"
+    },
+    {
+      "consumer": {
+        "kind": "request",
+        "id": "duration-request"
+      },
+      "requires": {
+        "kind": "scope",
+        "id": "root"
+      },
+      "role": "binding"
+    }
+  ],
+  "coverage": [
+    {
+      "span": {
+        "start_byte": 0,
+        "end_byte": 43,
+        "quote": "¿Qué duración tiene el reproductor Rumo?"
+      },
+      "state": "represented",
+      "owner": {
+        "kind": "request",
+        "id": "duration-request"
+      },
+      "issue_id": null
+    }
+  ]
+}

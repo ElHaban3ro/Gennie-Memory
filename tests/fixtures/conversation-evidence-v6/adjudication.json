@@ -1,0 +1,21 @@
+{
+  "unresolved_case_ids": [],
+  "source_sha256": "9283459e5a3a77f682ca033bd09e28af95f1dc2ed3c82535007e5d1de6766808",
+  "questions_sha256": "e8e835486b42dd5400ffa0309b354a557762e4e1c36cdc5337ac557111a8de4d",
+  "blind_review_sha256": "a96d7c75909381bf3becbc17d321f275ce25e30e81c9f3330c47b5c31130394c",
+  "final_labels_sha256": "e29390778cfe26943247ef0a856a58e5c34c3e54f9628b818f952aebdf4ab8f1",
+  "author_initial_sha256": "f6a71daae8ca5ea7b2c56ec8e9565bdeadb98a82db3f4a3b7ac703e2a98aa103",
+  "raw_blind_review_sha256": "bf61e231d378cc364b634d55070410f9e538e0f53e03c3455f22169e119ff0f6",
+  "reconciliation_sha256": "a9ba2cbe0393d42c7517ae1d211be21882cb3db6f4c31ea5392c3fc3406d52ab",
+  "clarification_sha256": "1ae659ad17591b2021bbee1dbd9d5b3e5279a460e26a61417cb511891273e8e9",
+  "query_changes_before_any_provider_call": [
+    "cev6q_075_05",
+    "cev6q_076_04"
+  ],
+  "evidence_additions_from_review": [
+    "cev6_074_21",
+    "cev6_074_10",
+    "cev6_077_10"
+  ],
+  "note": "075_05 now asks arrival and identification status, jointly complete; changed question, not retroactive reannotation. 076_04 asks type of supposed braille, explicit premise correction. All other initial author labels retained after reconciliation. No provider results seen for this bank."
+}

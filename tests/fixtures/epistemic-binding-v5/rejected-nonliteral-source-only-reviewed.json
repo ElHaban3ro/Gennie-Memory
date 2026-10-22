@@ -1,0 +1,1421 @@
+{
+  "version": "epistemic-binding-v5",
+  "annotation_notice": "Manually supplied source-only development. Original draft preserved. All outputs describe the quoted record, not verified external truth. Closed lists explicitly stated. Slash notation remains open analytic ambiguity, not documentary uncertainty.",
+  "ontology": {
+    "phone": {
+      "kind": "property",
+      "additive": false,
+      "intermediate_types": []
+    },
+    "pickup_location": {
+      "kind": "property",
+      "additive": false,
+      "intermediate_types": []
+    },
+    "inaugurated_by": {
+      "kind": "property",
+      "additive": false,
+      "intermediate_types": []
+    },
+    "inauguration_date": {
+      "kind": "property",
+      "additive": false,
+      "intermediate_types": []
+    },
+    "mode": {
+      "kind": "property",
+      "additive": false,
+      "intermediate_types": []
+    },
+    "resolution": {
+      "kind": "property",
+      "additive": false,
+      "intermediate_types": []
+    },
+    "requires": {
+      "kind": "property",
+      "additive": false,
+      "intermediate_types": []
+    }
+  },
+  "questions": {
+    "q001": {
+      "text": "¿Cuál es el teléfono del pedido K6 de Alerce?",
+      "frame": {
+        "subject": {
+          "entity": "K6",
+          "all": false,
+          "member_of": null,
+          "part_of": null
+        },
+        "context": {
+          "account": "Alerce"
+        },
+        "configuration": {},
+        "requests": [
+          {
+            "attribute": "phone",
+            "modality": "state",
+            "value": null,
+            "path": "direct"
+          }
+        ],
+        "premises": []
+      }
+    },
+    "q002": {
+      "text": "¿Cuál es el teléfono del pedido K7 de Alerce?",
+      "frame": {
+        "subject": {
+          "entity": "K7",
+          "all": false,
+          "member_of": null,
+          "part_of": null
+        },
+        "context": {
+          "account": "Alerce"
+        },
+        "configuration": {},
+        "requests": [
+          {
+            "attribute": "phone",
+            "modality": "state",
+            "value": null,
+            "path": "direct"
+          }
+        ],
+        "premises": []
+      }
+    },
+    "q003": {
+      "text": "¿Cuál es el teléfono del pedido K8 de Alerce?",
+      "frame": {
+        "subject": {
+          "entity": "K8",
+          "all": false,
+          "member_of": null,
+          "part_of": null
+        },
+        "context": {
+          "account": "Alerce"
+        },
+        "configuration": {},
+        "requests": [
+          {
+            "attribute": "phone",
+            "modality": "state",
+            "value": null,
+            "path": "direct"
+          }
+        ],
+        "premises": []
+      }
+    },
+    "q004": {
+      "text": "¿Dónde se recoge el pedido K6 de Alerce?",
+      "frame": {
+        "subject": {
+          "entity": "K6",
+          "all": false,
+          "member_of": null,
+          "part_of": null
+        },
+        "context": {
+          "account": "Alerce"
+        },
+        "configuration": {},
+        "requests": [
+          {
+            "attribute": "pickup_location",
+            "modality": "state",
+            "value": null,
+            "path": "direct"
+          }
+        ],
+        "premises": []
+      }
+    },
+    "q005": {
+      "text": "¿Cuál es el teléfono del pedido K6 de Fresno?",
+      "frame": {
+        "subject": {
+          "entity": "K6",
+          "all": false,
+          "member_of": null,
+          "part_of": null
+        },
+        "context": {
+          "account": "Fresno"
+        },
+        "configuration": {},
+        "requests": [
+          {
+            "attribute": "phone",
+            "modality": "state",
+            "value": null,
+            "path": "direct"
+          }
+        ],
+        "premises": []
+      }
+    },
+    "q006": {
+      "text": "¿En qué fecha inauguró Vera el puente Linde?",
+      "frame": {
+        "subject": {
+          "entity": "Linde",
+          "all": false,
+          "member_of": null,
+          "part_of": null
+        },
+        "context": {},
+        "configuration": {},
+        "requests": [
+          {
+            "attribute": "inauguration_date",
+            "modality": "state",
+            "value": null,
+            "path": "direct"
+          }
+        ],
+        "premises": [
+          {
+            "subject": {
+              "entity": "Linde",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "inaugurated_by",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "Vera",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          }
+        ]
+      }
+    },
+    "q007": {
+      "text": "¿Qué resolución usa Nava con Fino?",
+      "frame": {
+        "subject": {
+          "entity": "Nava",
+          "all": false,
+          "member_of": null,
+          "part_of": null
+        },
+        "context": {},
+        "configuration": {
+          "mode": "Fino"
+        },
+        "requests": [
+          {
+            "attribute": "resolution",
+            "modality": "state",
+            "value": null,
+            "path": "direct"
+          }
+        ],
+        "premises": [
+          {
+            "subject": {
+              "entity": "Nava",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "mode",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "Fino",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          }
+        ]
+      }
+    }
+  },
+  "assertions": {
+    "a001": {
+      "text": "El teléfono en la etiqueta del pedido de Alerce es 555-0166; el identificador está cortado y puede ser K6 o K7. Estas son las únicas lecturas documentales admitidas.",
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "K6",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "phone",
+            "modality": "state",
+            "context": {
+              "account": "Alerce"
+            },
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "555-0166",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          }
+        ],
+        [
+          {
+            "subject": {
+              "entity": "K7",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "phone",
+            "modality": "state",
+            "context": {
+              "account": "Alerce"
+            },
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "555-0166",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          }
+        ]
+      ],
+      "alternatives_exhaustive": true,
+      "uncertainty": {
+        "kind": "identity",
+        "quote": "el identificador está cortado y puede ser K6 o K7"
+      },
+      "interpretations": [
+        "Declared conditional record reading 1",
+        "Declared conditional record reading 2"
+      ]
+    },
+    "a002": {
+      "text": "El teléfono del pedido K6 de Alerce es 555-0166.",
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "K6",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "phone",
+            "modality": "state",
+            "context": {
+              "account": "Alerce"
+            },
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "555-0166",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          }
+        ]
+      ],
+      "alternatives_exhaustive": true,
+      "uncertainty": null,
+      "interpretations": [
+        "Declared conditional record reading 1"
+      ]
+    },
+    "a003": {
+      "text": "Los pedidos K6 y K7 de Alerce tienen ambos el teléfono 555-0166.",
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "K6",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "phone",
+            "modality": "state",
+            "context": {
+              "account": "Alerce"
+            },
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "555-0166",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          },
+          {
+            "subject": {
+              "entity": "K7",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "phone",
+            "modality": "state",
+            "context": {
+              "account": "Alerce"
+            },
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "555-0166",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          }
+        ]
+      ],
+      "alternatives_exhaustive": true,
+      "uncertainty": null,
+      "interpretations": [
+        "Declared conditional record reading 1"
+      ]
+    },
+    "a004": {
+      "text": "En la agenda consta 555-0177 para K6 de Alerce. Otra etiqueta tiene 555-0166, pero su identificador está cortado y puede ser K6 o K7. Estas son las únicas lecturas documentales admitidas.",
+      "record_scope": "the quoted statement only",
+      "certain_facts": [
+        {
+          "subject": {
+            "entity": "K6",
+            "all": false,
+            "member_of": null,
+            "part_of": null
+          },
+          "attribute": "phone",
+          "modality": "state",
+          "context": {
+            "account": "Alerce"
+          },
+          "configuration": {},
+          "positive": true,
+          "datum": {
+            "kind": "known",
+            "text": "555-0177",
+            "value_type": null
+          },
+          "only_values": null,
+          "availability_scope": null,
+          "flow_scope": "property",
+          "basis": "description",
+          "quantity_scope": "unspecified",
+          "measured_attribute": null,
+          "measurement_method": null
+        }
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "K6",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "phone",
+            "modality": "state",
+            "context": {
+              "account": "Alerce"
+            },
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "555-0166",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          }
+        ],
+        [
+          {
+            "subject": {
+              "entity": "K7",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "phone",
+            "modality": "state",
+            "context": {
+              "account": "Alerce"
+            },
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "555-0166",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          }
+        ]
+      ],
+      "alternatives_exhaustive": true,
+      "uncertainty": {
+        "kind": "identity",
+        "quote": "el identificador está cortado y puede ser K6 o K7"
+      },
+      "interpretations": [
+        "Declared conditional record reading 1",
+        "Declared conditional record reading 2"
+      ]
+    },
+    "a005": {
+      "text": "En la agenda consta 555-0166 para K6 de Alerce. Otra etiqueta tiene también 555-0166, pero su identificador está cortado y puede ser K6 o K7. Estas son las únicas lecturas documentales admitidas.",
+      "record_scope": "the quoted statement only",
+      "certain_facts": [
+        {
+          "subject": {
+            "entity": "K6",
+            "all": false,
+            "member_of": null,
+            "part_of": null
+          },
+          "attribute": "phone",
+          "modality": "state",
+          "context": {
+            "account": "Alerce"
+          },
+          "configuration": {},
+          "positive": true,
+          "datum": {
+            "kind": "known",
+            "text": "555-0166",
+            "value_type": null
+          },
+          "only_values": null,
+          "availability_scope": null,
+          "flow_scope": "property",
+          "basis": "description",
+          "quantity_scope": "unspecified",
+          "measured_attribute": null,
+          "measurement_method": null
+        }
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "K6",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "phone",
+            "modality": "state",
+            "context": {
+              "account": "Alerce"
+            },
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "555-0166",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          }
+        ],
+        [
+          {
+            "subject": {
+              "entity": "K7",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "phone",
+            "modality": "state",
+            "context": {
+              "account": "Alerce"
+            },
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "555-0166",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          }
+        ]
+      ],
+      "alternatives_exhaustive": true,
+      "uncertainty": {
+        "kind": "identity",
+        "quote": "el identificador está cortado y puede ser K6 o K7"
+      },
+      "interpretations": [
+        "Declared conditional record reading 1",
+        "Declared conditional record reading 2"
+      ]
+    },
+    "a006": {
+      "text": "El pedido es K6 de Alerce; la última cifra del teléfono está borrosa y el número puede ser 555-0166 o 555-0167. Estas son las únicas lecturas documentales admitidas.",
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "K6",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "phone",
+            "modality": "state",
+            "context": {
+              "account": "Alerce"
+            },
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "555-0166",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          }
+        ],
+        [
+          {
+            "subject": {
+              "entity": "K6",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "phone",
+            "modality": "state",
+            "context": {
+              "account": "Alerce"
+            },
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "555-0167",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          }
+        ]
+      ],
+      "alternatives_exhaustive": true,
+      "uncertainty": {
+        "kind": "value",
+        "quote": "la última cifra del teléfono está borrosa"
+      },
+      "interpretations": [
+        "Declared conditional record reading 1",
+        "Declared conditional record reading 2"
+      ]
+    },
+    "a007": {
+      "text": "La etiqueta de Alerce tiene teléfono 555-0166. Podría ser K6, pero existen otras identificaciones no enumeradas.",
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "K6",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "phone",
+            "modality": "state",
+            "context": {
+              "account": "Alerce"
+            },
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "555-0166",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          }
+        ]
+      ],
+      "alternatives_exhaustive": false,
+      "uncertainty": {
+        "kind": "identity",
+        "quote": "Podría ser K6, pero existen otras identificaciones no enumeradas"
+      },
+      "interpretations": [
+        "Declared conditional record reading 1"
+      ]
+    },
+    "a008": {
+      "text": "La etiqueta de Alerce tiene teléfono 555-0166. Podría ser K7, pero existen otras identificaciones no enumeradas.",
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "K7",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "phone",
+            "modality": "state",
+            "context": {
+              "account": "Alerce"
+            },
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "555-0166",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          }
+        ]
+      ],
+      "alternatives_exhaustive": false,
+      "uncertainty": {
+        "kind": "identity",
+        "quote": "Podría ser K7, pero existen otras identificaciones no enumeradas"
+      },
+      "interpretations": [
+        "Declared conditional record reading 1"
+      ]
+    },
+    "a009": {
+      "text": "Vera no inauguró el puente citado en la etiqueta; el nombre está cortado y puede ser Linde o Muelle. Estas son las únicas lecturas documentales admitidas.",
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Linde",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "inaugurated_by",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": false,
+            "datum": {
+              "kind": "known",
+              "text": "Vera",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          }
+        ],
+        [
+          {
+            "subject": {
+              "entity": "Muelle",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "inaugurated_by",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": false,
+            "datum": {
+              "kind": "known",
+              "text": "Vera",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          }
+        ]
+      ],
+      "alternatives_exhaustive": true,
+      "uncertainty": {
+        "kind": "identity",
+        "quote": "el nombre está cortado y puede ser Linde o Muelle"
+      },
+      "interpretations": [
+        "Declared conditional record reading 1",
+        "Declared conditional record reading 2"
+      ]
+    },
+    "a010": {
+      "text": "La impresora de la etiqueta usa Borrador a 150 ppp; su nombre está cortado y puede ser Nava o Zeta. Yema usa Fino a 600 ppp. Estas son las únicas lecturas documentales admitidas.",
+      "record_scope": "the quoted statement only",
+      "certain_facts": [
+        {
+          "subject": {
+            "entity": "Yema",
+            "all": false,
+            "member_of": null,
+            "part_of": null
+          },
+          "attribute": "resolution",
+          "modality": "state",
+          "context": {},
+          "configuration": {
+            "mode": "Fino"
+          },
+          "positive": true,
+          "datum": {
+            "kind": "known",
+            "text": "600 ppp",
+            "value_type": null
+          },
+          "only_values": null,
+          "availability_scope": null,
+          "flow_scope": "property",
+          "basis": "description",
+          "quantity_scope": "unspecified",
+          "measured_attribute": null,
+          "measurement_method": null
+        }
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Nava",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "resolution",
+            "modality": "state",
+            "context": {},
+            "configuration": {
+              "mode": "Borrador"
+            },
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "150 ppp",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          }
+        ],
+        [
+          {
+            "subject": {
+              "entity": "Zeta",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "resolution",
+            "modality": "state",
+            "context": {},
+            "configuration": {
+              "mode": "Borrador"
+            },
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "150 ppp",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          }
+        ]
+      ],
+      "alternatives_exhaustive": true,
+      "uncertainty": {
+        "kind": "identity",
+        "quote": "su nombre está cortado y puede ser Nava o Zeta"
+      },
+      "interpretations": [
+        "Declared conditional record reading 1",
+        "Declared conditional record reading 2"
+      ]
+    },
+    "a011": {
+      "text": "El formulario de Alerce no exige teléfono; su pedido está cortado y puede ser K6 o K7. Estas son las únicas lecturas documentales admitidas.",
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "K6",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "requires",
+            "modality": "state",
+            "context": {
+              "account": "Alerce"
+            },
+            "configuration": {},
+            "positive": false,
+            "datum": {
+              "kind": "known",
+              "text": "phone",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          }
+        ],
+        [
+          {
+            "subject": {
+              "entity": "K7",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "requires",
+            "modality": "state",
+            "context": {
+              "account": "Alerce"
+            },
+            "configuration": {},
+            "positive": false,
+            "datum": {
+              "kind": "known",
+              "text": "phone",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          }
+        ]
+      ],
+      "alternatives_exhaustive": true,
+      "uncertainty": {
+        "kind": "identity",
+        "quote": "su pedido está cortado y puede ser K6 o K7"
+      },
+      "interpretations": [
+        "Declared conditional record reading 1",
+        "Declared conditional record reading 2"
+      ]
+    },
+    "a012": {
+      "text": "El teléfono de K6 de Alerce no consta en el registro de mantenimiento.",
+      "record_scope": "the quoted statement only",
+      "certain_facts": [
+        {
+          "subject": {
+            "entity": "K6",
+            "all": false,
+            "member_of": null,
+            "part_of": null
+          },
+          "attribute": "phone",
+          "modality": "state",
+          "context": {
+            "account": "Alerce"
+          },
+          "configuration": {},
+          "positive": true,
+          "datum": {
+            "kind": "unknown",
+            "text": null,
+            "value_type": null
+          },
+          "only_values": null,
+          "availability_scope": "the maintenance record",
+          "flow_scope": "property",
+          "basis": "description",
+          "quantity_scope": "unspecified",
+          "measured_attribute": null,
+          "measurement_method": null
+        }
+      ],
+      "alternatives": [
+        []
+      ],
+      "alternatives_exhaustive": true,
+      "uncertainty": null,
+      "interpretations": [
+        "Declared conditional record reading 1"
+      ]
+    },
+    "a013": {
+      "text": "El teléfono de K6 de Alerce es 555-0166; otra etiqueta de recogida del punto norte está cortada y puede ser K7 o K8. Estas son las únicas lecturas documentales admitidas.",
+      "record_scope": "the quoted statement only",
+      "certain_facts": [
+        {
+          "subject": {
+            "entity": "K6",
+            "all": false,
+            "member_of": null,
+            "part_of": null
+          },
+          "attribute": "phone",
+          "modality": "state",
+          "context": {
+            "account": "Alerce"
+          },
+          "configuration": {},
+          "positive": true,
+          "datum": {
+            "kind": "known",
+            "text": "555-0166",
+            "value_type": null
+          },
+          "only_values": null,
+          "availability_scope": null,
+          "flow_scope": "property",
+          "basis": "description",
+          "quantity_scope": "unspecified",
+          "measured_attribute": null,
+          "measurement_method": null
+        }
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "K7",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "pickup_location",
+            "modality": "state",
+            "context": {
+              "account": "Alerce"
+            },
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "north",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          }
+        ],
+        [
+          {
+            "subject": {
+              "entity": "K8",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "pickup_location",
+            "modality": "state",
+            "context": {
+              "account": "Alerce"
+            },
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "north",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          }
+        ]
+      ],
+      "alternatives_exhaustive": true,
+      "uncertainty": {
+        "kind": "identity",
+        "quote": "otra etiqueta de recogida del punto norte está cortada y puede ser K7 o K8"
+      },
+      "interpretations": [
+        "Declared conditional record reading 1",
+        "Declared conditional record reading 2"
+      ]
+    },
+    "a014": {
+      "text": "En la nota de Alerce figura «K6/K7: 555-0166».",
+      "record_scope": "the quoted statement only",
+      "certain_facts": [],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "K6",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "phone",
+            "modality": "state",
+            "context": {
+              "account": "Alerce"
+            },
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "555-0166",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          }
+        ],
+        [
+          {
+            "subject": {
+              "entity": "K7",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "phone",
+            "modality": "state",
+            "context": {
+              "account": "Alerce"
+            },
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "555-0166",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          }
+        ],
+        [
+          {
+            "subject": {
+              "entity": "K6",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "phone",
+            "modality": "state",
+            "context": {
+              "account": "Alerce"
+            },
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "555-0166",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          },
+          {
+            "subject": {
+              "entity": "K7",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "phone",
+            "modality": "state",
+            "context": {
+              "account": "Alerce"
+            },
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "555-0166",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          }
+        ]
+      ],
+      "alternatives_exhaustive": false,
+      "uncertainty": null,
+      "interpretations": [
+        "Anotación posible para K6",
+        "Anotación posible para K7",
+        "Anotación conjunta posible para K6 y K7"
+      ]
+    }
+  },
+  "pairs": [
+    {
+      "id": "ebv5_01",
+      "question": "q001",
+      "assertion": "a001"
+    },
+    {
+      "id": "ebv5_02",
+      "question": "q002",
+      "assertion": "a001"
+    },
+    {
+      "id": "ebv5_03",
+      "question": "q003",
+      "assertion": "a001"
+    },
+    {
+      "id": "ebv5_04",
+      "question": "q004",
+      "assertion": "a001"
+    },
+    {
+      "id": "ebv5_05",
+      "question": "q005",
+      "assertion": "a001"
+    },
+    {
+      "id": "ebv5_06",
+      "question": "q001",
+      "assertion": "a002"
+    },
+    {
+      "id": "ebv5_07",
+      "question": "q001",
+      "assertion": "a003"
+    },
+    {
+      "id": "ebv5_08",
+      "question": "q001",
+      "assertion": "a004"
+    },
+    {
+      "id": "ebv5_09",
+      "question": "q001",
+      "assertion": "a005"
+    },
+    {
+      "id": "ebv5_10",
+      "question": "q001",
+      "assertion": "a006"
+    },
+    {
+      "id": "ebv5_11",
+      "question": "q001",
+      "assertion": "a007"
+    },
+    {
+      "id": "ebv5_12",
+      "question": "q001",
+      "assertion": "a008"
+    },
+    {
+      "id": "ebv5_13",
+      "question": "q006",
+      "assertion": "a009"
+    },
+    {
+      "id": "ebv5_14",
+      "question": "q007",
+      "assertion": "a010"
+    },
+    {
+      "id": "ebv5_15",
+      "question": "q001",
+      "assertion": "a011"
+    },
+    {
+      "id": "ebv5_16",
+      "question": "q001",
+      "assertion": "a012"
+    },
+    {
+      "id": "ebv5_17",
+      "question": "q001",
+      "assertion": "a013"
+    },
+    {
+      "id": "ebv5_18",
+      "question": "q001",
+      "assertion": "a014"
+    }
+  ]
+}

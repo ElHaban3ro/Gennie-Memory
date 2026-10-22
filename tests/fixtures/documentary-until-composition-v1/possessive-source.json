@@ -1,0 +1,153 @@
+{
+  "version": "documentary_evidence_v3",
+  "kind": "source",
+  "text_sha256": "40e1ae6fde13d508c4ff58853c96e04d4720be205ac80dd2d2cfbf9e2fee9da4",
+  "vocabulary_sha256": "aec831bc31a158e4c497df70398c2eba374539955ac8064ff073133a8c8a648d",
+  "domain_namespace": "until-controls",
+  "scopes": [
+    {
+      "id": "root",
+      "parent_id": null,
+      "kind": "document",
+      "branch_id": null,
+      "binding": null
+    }
+  ],
+  "references": [],
+  "identity": [],
+  "qualifiers": [],
+  "claims": [
+    {
+      "id": "composition",
+      "scope_id": "root",
+      "qualifier_ids": [],
+      "evidence": [
+        {
+          "start_byte": 0,
+          "end_byte": 40,
+          "quote": "No se midió su duración hasta apagarse"
+        }
+      ],
+      "body": {
+        "kind": "linguistic_composition",
+        "construction": "negative_se_measurement_with_until_v1",
+        "clause_evidence": {
+          "start_byte": 0,
+          "end_byte": 40,
+          "quote": "No se midió su duración hasta apagarse"
+        },
+        "core": {
+          "id": "core",
+          "kind": "negation",
+          "evidence": {
+            "start_byte": 0,
+            "end_byte": 2,
+            "quote": "No"
+          },
+          "operand": {
+            "id": "measurement",
+            "kind": "measurement_predicate",
+            "predicate": "measure",
+            "head_evidence": {
+              "start_byte": 6,
+              "end_byte": 12,
+              "quote": "midió"
+            },
+            "voice": {
+              "kind": "nonagentive_se",
+              "evidence": {
+                "start_byte": 3,
+                "end_byte": 5,
+                "quote": "se"
+              }
+            },
+            "object": {
+              "id": "description",
+              "kind": "quantity_description",
+              "attribute": "duration",
+              "head_evidence": {
+                "start_byte": 16,
+                "end_byte": 25,
+                "quote": "duración"
+              },
+              "owner": {
+                "kind": "possessive_argument",
+                "id": "owner-hole",
+                "semantic_type": "entity",
+                "grammatical_person": "third",
+                "possessed_head": "duration",
+                "determiner_evidence": {
+                  "start_byte": 13,
+                  "end_byte": 15,
+                  "quote": "su"
+                },
+                "resolution": null
+              }
+            }
+          }
+        },
+        "operators": [
+          {
+            "id": "until",
+            "kind": "lexical_temporal_boundary",
+            "relation": "until",
+            "connective_evidence": {
+              "start_byte": 26,
+              "end_byte": 31,
+              "quote": "hasta"
+            },
+            "phrase_evidence": {
+              "start_byte": 26,
+              "end_byte": 40,
+              "quote": "hasta apagarse"
+            },
+            "attachment": {
+              "kind": "source_underspecified",
+              "region_root_id": "core",
+              "resolution": null
+            },
+            "boundary": {
+              "id": "boundary",
+              "kind": "event_predicate",
+              "predicate": "switch_off",
+              "head_evidence": {
+                "start_byte": 32,
+                "end_byte": 40,
+                "quote": "apagarse"
+              },
+              "form": "reflexive_infinitive",
+              "subject": {
+                "id": "subject-hole",
+                "kind": "implicit_argument",
+                "semantic_type": "entity",
+                "realization_evidence": {
+                  "start_byte": 32,
+                  "end_byte": 40,
+                  "quote": "apagarse"
+                },
+                "resolution": null
+              }
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "requests": [],
+  "dependencies": [],
+  "coverage": [
+    {
+      "span": {
+        "start_byte": 0,
+        "end_byte": 40,
+        "quote": "No se midió su duración hasta apagarse"
+      },
+      "state": "represented",
+      "owner": {
+        "kind": "claim",
+        "id": "composition"
+      },
+      "issue_id": null
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "version": "evidence-state-v4-author-before-review",
+  "provider_calls": 0,
+  "fresh_validation": false,
+  "files_sha256": {
+    "source-only-draft.json": "ea4da549778c909531eb1a8742c10ef920d1ac1e447bafa1f2b3656d3817242a",
+    "author-labels.json": "7ad6351bfa3e1fbba0782b67b47954d7cc86ad019392968f50c524e2d8616c17"
+  },
+  "contract_sha256": "f7251937ed6863288e981a959a656c602ed32f10530794f396b98cb127ff4798",
+  "cases": 32
+}

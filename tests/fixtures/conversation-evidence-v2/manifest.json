@@ -1,0 +1,29 @@
+{
+  "version": "conversation-evidence-v2",
+  "scope_count": 8,
+  "memories": 224,
+  "cases": 64,
+  "by_relation": {
+    "supports_answer": 16,
+    "refutes_premise": 16,
+    "pending_or_partial": 16,
+    "unrelated": 16
+  },
+  "human_review": false,
+  "independent_review": false,
+  "review_status": "separate_agent_blind_reconciled",
+  "split": "development",
+  "label_source": "agent_synthetic_unreviewed",
+  "rubric_path": "docs/evaluation/evidence-rubric-v1.md",
+  "rubric_sha256": "56a104869155294906053724d174bc17dc4d6808f6c97e959e012b7b0835b08d",
+  "files_sha256": {
+    "README.md": "fa354259ba0c313a2bfbadd451f6cbe20d7355c91e5f14eada31975444f75fa0",
+    "adjudication.json": "fc9b6315dab35e0b698c0427fb7a9860fbd07d90f8c86cfb34bde4adee9c302c",
+    "agent-review.md": "48837d80191812f5d1603235357f2d4ed0181ffac85d706c6a7808addf242dc7",
+    "blind-questions.json": "4a4839a6ddb5ef7ca0f870378c3d7fe23ef475a8e6661b1707d3b67ac291c273",
+    "blind-review.json": "7649d20e136af1de1afdc60032978cb30f3fcba4f6ed0803e9dc6a66f2a0bc32",
+    "development.jsonl": "99536ec737ac35c15f8eb69c757ccdb3bde7e2b0274d11738571838b8e80a47c",
+    "memories.json": "bc4569d63af481126ef7d3d422452301f1aa4d0efe09194f5b6bd2d65963b05a",
+    "source.json": "6b3b32bbd7fd98b8011d199f804bcab2203f2b1e815768e870f9fdbf3cec24ae"
+  }
+}

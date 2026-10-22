@@ -1,0 +1,305 @@
+{
+  "version": "documentary_evidence_v3",
+  "kind": "source",
+  "text_sha256": "b02fd60c85d4a30336722bca3b60e4d9c36ad82d82ed61bd4eb3812befd2c8be",
+  "vocabulary_sha256": "46b19d0249fe8e9eda4c86f2268534f4bb9639ee38ed4a0b2e939eb76e7f4613",
+  "domain_namespace": "normative-indeterminacy-controls",
+  "scopes": [
+    {
+      "id": "root",
+      "parent_id": null,
+      "kind": "document",
+      "branch_id": null,
+      "binding": null
+    }
+  ],
+  "references": [
+    {
+      "id": "person",
+      "scope_id": "root",
+      "mention": {
+        "start_byte": 32,
+        "end_byte": 36,
+        "quote": "Vera"
+      },
+      "name": {
+        "start_byte": 32,
+        "end_byte": 36,
+        "quote": "Vera"
+      },
+      "declared_class": null,
+      "semantic_type": null,
+      "denotation": "entity",
+      "links": [],
+      "binding_scope_id": null,
+      "anaphora": null
+    },
+    {
+      "id": "course",
+      "scope_id": "root",
+      "mention": {
+        "start_byte": 57,
+        "end_byte": 62,
+        "quote": "Delta"
+      },
+      "name": {
+        "start_byte": 57,
+        "end_byte": 62,
+        "quote": "Delta"
+      },
+      "declared_class": null,
+      "semantic_type": null,
+      "denotation": "entity",
+      "links": [],
+      "binding_scope_id": null,
+      "anaphora": null
+    },
+    {
+      "id": "tutor",
+      "scope_id": "root",
+      "mention": {
+        "start_byte": 9,
+        "end_byte": 13,
+        "quote": "Noah"
+      },
+      "name": {
+        "start_byte": 9,
+        "end_byte": 13,
+        "quote": "Noah"
+      },
+      "declared_class": {
+        "start_byte": 3,
+        "end_byte": 8,
+        "quote": "tutor"
+      },
+      "semantic_type": null,
+      "denotation": "entity",
+      "links": [],
+      "binding_scope_id": null,
+      "anaphora": null
+    }
+  ],
+  "identity": [],
+  "qualifiers": [],
+  "claims": [
+    {
+      "id": "accompany",
+      "scope_id": "root",
+      "qualifier_ids": [],
+      "evidence": [
+        {
+          "start_byte": 0,
+          "end_byte": 63,
+          "quote": "El tutor Noah debe acompañar a Vera para inscribirse en Delta."
+        }
+      ],
+      "context_bindings": [
+        {
+          "id": "purpose",
+          "kind": "normative_action_relation",
+          "relation": {
+            "kind": "purpose",
+            "evidence": [
+              {
+                "start_byte": 37,
+                "end_byte": 41,
+                "quote": "para"
+              }
+            ]
+          },
+          "action": {
+            "action_kind": {
+              "kind": "symbol",
+              "id": "enroll",
+              "evidence": [
+                {
+                  "start_byte": 42,
+                  "end_byte": 53,
+                  "quote": "inscribirse"
+                }
+              ]
+            },
+            "actor": {
+              "kind": "reference",
+              "value": {
+                "kind": "ref",
+                "id": "person"
+              },
+              "evidence": [
+                {
+                  "start_byte": 32,
+                  "end_byte": 36,
+                  "quote": "Vera"
+                }
+              ]
+            },
+            "destination": {
+              "kind": "ref",
+              "id": "course"
+            },
+            "evidence": [
+              {
+                "start_byte": 42,
+                "end_byte": 62,
+                "quote": "inscribirse en Delta"
+              }
+            ]
+          },
+          "evidence": [
+            {
+              "start_byte": 37,
+              "end_byte": 62,
+              "quote": "para inscribirse en Delta"
+            }
+          ]
+        }
+      ],
+      "body": {
+        "kind": "proposition",
+        "value": {
+          "atom": {
+            "predicate": "action",
+            "arguments": [
+              {
+                "role": "actor",
+                "value": {
+                  "kind": "ref",
+                  "id": "tutor"
+                }
+              },
+              {
+                "role": "action_kind",
+                "value": {
+                  "kind": "symbol",
+                  "id": "accompany",
+                  "evidence": [
+                    {
+                      "start_byte": 19,
+                      "end_byte": 29,
+                      "quote": "acompañar"
+                    }
+                  ]
+                }
+              },
+              {
+                "role": "object",
+                "value": {
+                  "kind": "ref",
+                  "id": "person"
+                }
+              }
+            ],
+            "polarity": "positive",
+            "evidence": [
+              {
+                "start_byte": 0,
+                "end_byte": 63,
+                "quote": "El tutor Noah debe acompañar a Vera para inscribirse en Delta."
+              }
+            ]
+          },
+          "judgment": "required",
+          "status": "state",
+          "basis": "normative",
+          "normative_scope": "course",
+          "qualifier_ids": []
+        }
+      }
+    }
+  ],
+  "requests": [],
+  "dependencies": [
+    {
+      "consumer": {
+        "kind": "reference",
+        "id": "person"
+      },
+      "requires": {
+        "kind": "scope",
+        "id": "root"
+      },
+      "role": "binding"
+    },
+    {
+      "consumer": {
+        "kind": "reference",
+        "id": "course"
+      },
+      "requires": {
+        "kind": "scope",
+        "id": "root"
+      },
+      "role": "binding"
+    },
+    {
+      "consumer": {
+        "kind": "reference",
+        "id": "tutor"
+      },
+      "requires": {
+        "kind": "scope",
+        "id": "root"
+      },
+      "role": "binding"
+    },
+    {
+      "consumer": {
+        "kind": "claim",
+        "id": "accompany"
+      },
+      "requires": {
+        "kind": "scope",
+        "id": "root"
+      },
+      "role": "binding"
+    },
+    {
+      "consumer": {
+        "kind": "claim",
+        "id": "accompany"
+      },
+      "requires": {
+        "kind": "reference",
+        "id": "course"
+      },
+      "role": "identity"
+    },
+    {
+      "consumer": {
+        "kind": "claim",
+        "id": "accompany"
+      },
+      "requires": {
+        "kind": "reference",
+        "id": "person"
+      },
+      "role": "identity"
+    },
+    {
+      "consumer": {
+        "kind": "claim",
+        "id": "accompany"
+      },
+      "requires": {
+        "kind": "reference",
+        "id": "tutor"
+      },
+      "role": "identity"
+    }
+  ],
+  "coverage": [
+    {
+      "span": {
+        "start_byte": 0,
+        "end_byte": 63,
+        "quote": "El tutor Noah debe acompañar a Vera para inscribirse en Delta."
+      },
+      "state": "represented",
+      "owner": {
+        "kind": "claim",
+        "id": "accompany"
+      },
+      "issue_id": null
+    }
+  ]
+}

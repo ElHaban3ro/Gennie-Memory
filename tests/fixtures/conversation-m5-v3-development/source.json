@@ -1,0 +1,59 @@
+{
+  "version": "conversation-m5-v3-development",
+  "scopes": [
+    {
+      "id": "synthetic_conversation_m5_031",
+      "topic": "la restauración de un reloj de torre",
+      "items": [
+        {"slug":"repair_lead","fact":"La restauración del reloj de torre la dirigió Inés Valdés.","question":"¿Quién dirigió la restauración del reloj de torre?","answerable":true},
+        {"slug":"gear_material","fact":"El engranaje de recambio del reloj de torre se fabricó en bronce.","question":"¿De qué material fue el engranaje de recambio del reloj de torre?","answerable":true},
+        {"slug":"inspection_date","fact":"La inspección final del reloj de torre quedó fijada para el 18 de noviembre.","question":"¿Para qué fecha quedó fijada la inspección final del reloj de torre?","answerable":true},
+        {"slug":"bell_pause","fact":"La campana del reloj de torre no sonará entre las 22:00 y las 06:00.","question":"¿Entre qué horas se decidió silenciar la campana del reloj de torre?","answerable":true},
+        {"slug":"workshop_location","fact":"El taller de restauración del reloj de torre se instaló en el sótano del ayuntamiento.","question":"¿Dónde se instaló el taller para restaurar el reloj de torre?","answerable":true},
+        {"slug":"paint_rejected","fact":"Se decidió no usar pintura roja en la esfera del reloj de torre.","question":"¿Qué color se decidió no usar en la esfera del reloj de torre?","answerable":true},
+        {"slug":"incident_channel","fact":"Las incidencias del reloj de torre se registrarán en el portal municipal.","question":"¿Por qué canal se registrarán las incidencias del reloj de torre?","answerable":true},
+        {"slug":"approved_budget","fact":"El presupuesto aprobado para restaurar el reloj de torre fue de 2.400 unidades.","question":"¿Qué presupuesto se aprobó para restaurar el reloj de torre?","answerable":true},
+        {"slug":"contract_unawarded","fact":"Se compararon Taller Norte y Taller Sur para restaurar el reloj de torre; no se adjudicó el contrato a ninguno.","question":"¿A qué taller se adjudicó el contrato de restauración del reloj de torre?","answerable":false},
+        {"slug":"permit_pending","fact":"Se presentó una solicitud de permiso nocturno para trabajar en el reloj de torre; todavía no hubo respuesta.","question":"¿Qué permiso nocturno fue concedido para trabajar en el reloj de torre?","answerable":false},
+        {"slug":"drift_preliminary","fact":"Una medición preliminar del reloj de torre mostró un desvío de siete segundos; la medición final aún no se hizo.","question":"¿Cuál fue el desvío final medido en el reloj de torre?","answerable":false},
+        {"slug":"opening_unconfirmed","fact":"Se propuso reabrir el reloj de torre el lunes, pero no se confirmó fecha de reapertura.","question":"¿Qué fecha quedó confirmada para reabrir el reloj de torre?","answerable":false}
+      ]
+    },
+    {
+      "id": "synthetic_conversation_m5_032",
+      "topic": "un festival de cine barrial",
+      "items": [
+        {"slug":"opening_film","fact":"El festival de cine barrial abrirá con la película Horizonte de cartón.","question":"¿Con qué película abrirá el festival de cine barrial?","answerable":true},
+        {"slug":"projection_site","fact":"Las proyecciones del festival de cine barrial se harán en el patio de la biblioteca.","question":"¿Dónde se harán las proyecciones del festival de cine barrial?","answerable":true},
+        {"slug":"ticket_price","fact":"La entrada del festival de cine barrial será gratuita.","question":"¿Cuánto costará entrar al festival de cine barrial?","answerable":true},
+        {"slug":"subtitle_language","fact":"La película inaugural del festival de cine barrial tendrá subtítulos en portugués.","question":"¿En qué idioma estarán los subtítulos de la película inaugural del festival de cine barrial?","answerable":true},
+        {"slug":"jury_chair","fact":"El jurado del festival de cine barrial estará presidido por Mara Solís.","question":"¿Quién presidirá el jurado del festival de cine barrial?","answerable":true},
+        {"slug":"poster_color","fact":"El cartel del festival de cine barrial usará fondo amarillo.","question":"¿Qué color tendrá el fondo del cartel del festival de cine barrial?","answerable":true},
+        {"slug":"recording_ban","fact":"Se prohibió grabar con teléfonos durante las proyecciones del festival de cine barrial.","question":"¿Qué se prohibió durante las proyecciones del festival de cine barrial?","answerable":true},
+        {"slug":"discussion_slot","fact":"El coloquio del festival de cine barrial empezará a las 19:30.","question":"¿A qué hora comenzará el coloquio del festival de cine barrial?","answerable":true},
+        {"slug":"grant_pending","fact":"El festival de cine barrial solicitó una subvención cultural; la entidad aún no decidió si la concede.","question":"¿Qué subvención cultural le fue concedida al festival de cine barrial?","answerable":false},
+        {"slug":"winner_unselected","fact":"Se nominaron tres cortos del festival de cine barrial; el jurado todavía no eligió ganador.","question":"¿Qué corto ganó el premio del festival de cine barrial?","answerable":false},
+        {"slug":"streaming_unsigned","fact":"El festival de cine barrial consultó los derechos de streaming, pero no firmó licencia de emisión.","question":"¿Qué licencia de streaming se firmó para el festival de cine barrial?","answerable":false},
+        {"slug":"attendance_estimate","fact":"El festival de cine barrial calculó una asistencia provisional de 80 personas; aún no existe el recuento final.","question":"¿Cuál fue la asistencia final del festival de cine barrial?","answerable":false}
+      ]
+    },
+    {
+      "id": "synthetic_conversation_m5_033",
+      "topic": "una exposición de robots universitarios",
+      "items": [
+        {"slug":"demo_room","fact":"La demostración principal de la exposición de robots universitarios será en la sala Atlas.","question":"¿En qué sala será la demostración principal de robots universitarios?","answerable":true},
+        {"slug":"guide_author","fact":"La guía de la exposición de robots universitarios la redactó Noa Paredes.","question":"¿Quién redactó la guía de la exposición de robots universitarios?","answerable":true},
+        {"slug":"battery_type","fact":"El robot de bienvenida de la exposición usa baterías de litio-ferrofosfato.","question":"¿Qué tipo de baterías usa el robot de bienvenida de la exposición?","answerable":true},
+        {"slug":"sensor_limit","fact":"Los sensores del robot de bienvenida se limitaron a dos metros por seguridad.","question":"¿A qué distancia se limitaron los sensores del robot de bienvenida?","answerable":true},
+        {"slug":"visitor_capacity","fact":"La sala Atlas admite 40 visitantes por turno durante la exposición de robots universitarios.","question":"¿Cuántos visitantes admite la sala Atlas por turno en la exposición de robots?","answerable":true},
+        {"slug":"remote_control_ban","fact":"No se permitirá controlar los robots universitarios desde teléfonos de visitantes.","question":"¿Qué forma de control de los robots universitarios no se permitirá?","answerable":true},
+        {"slug":"charging_site","fact":"Los robots universitarios se cargarán en el laboratorio Delta.","question":"¿Dónde se cargarán los robots universitarios?","answerable":true},
+        {"slug":"closing_talk","fact":"La charla de cierre de la exposición de robots universitarios será sobre navegación autónoma.","question":"¿Cuál será el tema de la charla de cierre de la exposición de robots?","answerable":true},
+        {"slug":"winner_pending","fact":"Dos robots universitarios llegaron a la final; el jurado aún no declaró un ganador.","question":"¿Qué robot universitario ganó la final?","answerable":false},
+        {"slug":"certificate_pending","fact":"Se solicitó la certificación de seguridad del robot de bienvenida; todavía no fue emitida.","question":"¿Qué certificación de seguridad se emitió para el robot de bienvenida?","answerable":false},
+        {"slug":"endurance_trial","fact":"Una prueba inicial del robot de bienvenida duró 90 minutos; falta medir su autonomía final.","question":"¿Cuál fue la autonomía final medida del robot de bienvenida?","answerable":false},
+        {"slug":"sponsor_unsigned","fact":"La exposición de robots universitarios negoció con Fundación Prisma, pero no firmó patrocinio.","question":"¿Qué patrocinio firmó la exposición de robots universitarios?","answerable":false}
+      ]
+    }
+  ]
+}

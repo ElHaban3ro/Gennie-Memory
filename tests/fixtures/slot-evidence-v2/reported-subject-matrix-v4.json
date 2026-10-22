@@ -1,0 +1,502 @@
+{
+  "version": "slot-evidence-v2-reported-subject-matrix-v4",
+  "synthetic": true,
+  "cases": [
+    {
+      "id": "compound-name-same-subject-retained",
+      "query": "Which city does employee Ana de la Cruz E-17 live in?",
+      "candidate": {
+        "memory_id": "compound-name-same-subject-retained-m1",
+        "revision": 1,
+        "summary": "Employee Ana de la Cruz E-17 reported that Ana de la Cruz lives in Quito."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "person",
+            "kind": "employee",
+            "subject": "Ana de la Cruz",
+            "stable_id": "E-17",
+            "quote": "employee Ana de la Cruz E-17"
+          }
+        ],
+        "slots": [
+          {
+            "id": "requested",
+            "dimension": "requested_slot",
+            "quote": "Which city"
+          }
+        ],
+        "premises": [],
+        "candidates": [
+          {
+            "memory_id": "compound-name-same-subject-retained-m1",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "person",
+              "stable_id_quote": "E-17",
+              "subject_quote": "Ana de la Cruz E-17"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "Employee Ana de la Cruz E-17 reported that Ana de la Cruz lives in Quito.",
+                "subject_quote": "Ana de la Cruz E-17",
+                "identity_anchor_id": "person",
+                "predicate_quote": "lives in",
+                "value": "Quito",
+                "polarity_quote": null,
+                "modality_quote": null,
+                "event_quote": null,
+                "time_quote": null,
+                "conditions_quote": null,
+                "relation": "answers",
+                "target_id": "requested"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": true,
+      "expected_selected": [
+        "compound-name-same-subject-retained-m1"
+      ],
+      "expected_demoted": 0
+    },
+    {
+      "id": "compound-name-prefix-does-not-bind-full-name",
+      "query": "Which city does employee Ana E-17 live in?",
+      "candidate": {
+        "memory_id": "compound-name-prefix-does-not-bind-full-name-m1",
+        "revision": 1,
+        "summary": "Employee Ana E-17 reported that Ana de la Cruz lives in Quito."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "person",
+            "kind": "employee",
+            "subject": "Ana",
+            "stable_id": "E-17",
+            "quote": "employee Ana E-17"
+          }
+        ],
+        "slots": [
+          {
+            "id": "requested",
+            "dimension": "requested_slot",
+            "quote": "Which city"
+          }
+        ],
+        "premises": [],
+        "candidates": [
+          {
+            "memory_id": "compound-name-prefix-does-not-bind-full-name-m1",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "person",
+              "stable_id_quote": "E-17",
+              "subject_quote": "Ana E-17"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "Employee Ana E-17 reported that Ana de la Cruz lives in Quito.",
+                "subject_quote": "Ana E-17",
+                "identity_anchor_id": "person",
+                "predicate_quote": "lives in",
+                "value": "Quito",
+                "polarity_quote": null,
+                "modality_quote": null,
+                "event_quote": null,
+                "time_quote": null,
+                "conditions_quote": null,
+                "relation": "answers",
+                "target_id": "requested"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": true,
+      "expected_selected": [],
+      "expected_demoted": 1
+    },
+    {
+      "id": "compound-name-lowercase-particle-cannot-bind-prefix",
+      "query": "Which city does employee Ana Ruiz E-17 live in?",
+      "candidate": {
+        "memory_id": "compound-name-lowercase-particle-cannot-bind-prefix-m1",
+        "revision": 1,
+        "summary": "Employee Ana Ruiz E-17 reported that Ana Ruiz al-Farabi lives in Quito."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "person",
+            "kind": "employee",
+            "subject": "Ana Ruiz",
+            "stable_id": "E-17",
+            "quote": "employee Ana Ruiz E-17"
+          }
+        ],
+        "slots": [
+          {
+            "id": "requested",
+            "dimension": "requested_slot",
+            "quote": "Which city"
+          }
+        ],
+        "premises": [],
+        "candidates": [
+          {
+            "memory_id": "compound-name-lowercase-particle-cannot-bind-prefix-m1",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "person",
+              "stable_id_quote": "E-17",
+              "subject_quote": "Ana Ruiz E-17"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "Employee Ana Ruiz E-17 reported that Ana Ruiz al-Farabi lives in Quito.",
+                "subject_quote": "Ana Ruiz E-17",
+                "identity_anchor_id": "person",
+                "predicate_quote": "lives in",
+                "value": "Quito",
+                "polarity_quote": null,
+                "modality_quote": null,
+                "event_quote": null,
+                "time_quote": null,
+                "conditions_quote": null,
+                "relation": "answers",
+                "target_id": "requested"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": true,
+      "expected_selected": [],
+      "expected_demoted": 1
+    },
+    {
+      "id": "spanish-compound-surname-conjunction",
+      "query": "Which city does employee Ana Ruiz E-17 live in?",
+      "candidate": {
+        "memory_id": "spanish-compound-surname-conjunction-m1",
+        "revision": 1,
+        "summary": "Employee Ana Ruiz E-17 reported that Ana Ruiz y Pérez lives in Quito."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "person",
+            "kind": "employee",
+            "subject": "Ana Ruiz",
+            "stable_id": "E-17",
+            "quote": "employee Ana Ruiz E-17"
+          }
+        ],
+        "slots": [
+          {
+            "id": "requested",
+            "dimension": "requested_slot",
+            "quote": "Which city"
+          }
+        ],
+        "premises": [],
+        "candidates": [
+          {
+            "memory_id": "spanish-compound-surname-conjunction-m1",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "person",
+              "stable_id_quote": "E-17",
+              "subject_quote": "Ana Ruiz E-17"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "Employee Ana Ruiz E-17 reported that Ana Ruiz y Pérez lives in Quito.",
+                "subject_quote": "Ana Ruiz E-17",
+                "identity_anchor_id": "person",
+                "predicate_quote": "lives in",
+                "value": "Quito",
+                "polarity_quote": null,
+                "modality_quote": null,
+                "event_quote": null,
+                "time_quote": null,
+                "conditions_quote": null,
+                "relation": "answers",
+                "target_id": "requested"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": true,
+      "expected_selected": [],
+      "expected_demoted": 1
+    },
+    {
+      "id": "coordinated-person-is-not-surname-particle",
+      "query": "Which city does employee Ana Ruiz E-17 live in?",
+      "candidate": {
+        "memory_id": "coordinated-person-is-not-surname-particle-m1",
+        "revision": 1,
+        "summary": "Employee Ana Ruiz E-17 reported that Ana Ruiz y su hija viven en Quito."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "person",
+            "kind": "employee",
+            "subject": "Ana Ruiz",
+            "stable_id": "E-17",
+            "quote": "employee Ana Ruiz E-17"
+          }
+        ],
+        "slots": [
+          {
+            "id": "requested",
+            "dimension": "requested_slot",
+            "quote": "Which city"
+          }
+        ],
+        "premises": [],
+        "candidates": [
+          {
+            "memory_id": "coordinated-person-is-not-surname-particle-m1",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "person",
+              "stable_id_quote": "E-17",
+              "subject_quote": "Ana Ruiz E-17"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "Employee Ana Ruiz E-17 reported that Ana Ruiz y su hija viven en Quito.",
+                "subject_quote": "Ana Ruiz E-17",
+                "identity_anchor_id": "person",
+                "predicate_quote": "lives in",
+                "value": "Quito",
+                "polarity_quote": null,
+                "modality_quote": null,
+                "event_quote": null,
+                "time_quote": null,
+                "conditions_quote": null,
+                "relation": "answers",
+                "target_id": "requested"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": true,
+      "expected_selected": [
+        "coordinated-person-is-not-surname-particle-m1"
+      ],
+      "expected_demoted": 0
+    },
+    {
+      "id": "possessive-owner-does-not-bind-possessed-person",
+      "query": "Which city does employee Ana Ruiz E-17 live in?",
+      "candidate": {
+        "memory_id": "possessive-owner-does-not-bind-possessed-person-m1",
+        "revision": 1,
+        "summary": "Employee Ana Ruiz E-17 reported that Ana Ruiz's colleague Bob Torres lives in Quito."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "person",
+            "kind": "employee",
+            "subject": "Ana Ruiz",
+            "stable_id": "E-17",
+            "quote": "employee Ana Ruiz E-17"
+          }
+        ],
+        "slots": [
+          {
+            "id": "requested",
+            "dimension": "requested_slot",
+            "quote": "Which city"
+          }
+        ],
+        "premises": [],
+        "candidates": [
+          {
+            "memory_id": "possessive-owner-does-not-bind-possessed-person-m1",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "person",
+              "stable_id_quote": "E-17",
+              "subject_quote": "Ana Ruiz E-17"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "Employee Ana Ruiz E-17 reported that Ana Ruiz's colleague Bob Torres lives in Quito.",
+                "subject_quote": "Ana Ruiz E-17",
+                "identity_anchor_id": "person",
+                "predicate_quote": "lives in",
+                "value": "Quito",
+                "polarity_quote": null,
+                "modality_quote": null,
+                "event_quote": null,
+                "time_quote": null,
+                "conditions_quote": null,
+                "relation": "answers",
+                "target_id": "requested"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": true,
+      "expected_selected": [],
+      "expected_demoted": 1
+    },
+    {
+      "id": "descriptive-modifier-preserves-explicit-subject",
+      "query": "Which city does employee Ana Ruiz E-17 live in?",
+      "candidate": {
+        "memory_id": "descriptive-modifier-preserves-explicit-subject-m1",
+        "revision": 1,
+        "summary": "Employee Ana Ruiz E-17 reported that the well-known Ana Ruiz lives in Quito."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "person",
+            "kind": "employee",
+            "subject": "Ana Ruiz",
+            "stable_id": "E-17",
+            "quote": "employee Ana Ruiz E-17"
+          }
+        ],
+        "slots": [
+          {
+            "id": "requested",
+            "dimension": "requested_slot",
+            "quote": "Which city"
+          }
+        ],
+        "premises": [],
+        "candidates": [
+          {
+            "memory_id": "descriptive-modifier-preserves-explicit-subject-m1",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "person",
+              "stable_id_quote": "E-17",
+              "subject_quote": "Ana Ruiz E-17"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "Employee Ana Ruiz E-17 reported that the well-known Ana Ruiz lives in Quito.",
+                "subject_quote": "Ana Ruiz E-17",
+                "identity_anchor_id": "person",
+                "predicate_quote": "lives in",
+                "value": "Quito",
+                "polarity_quote": null,
+                "modality_quote": null,
+                "event_quote": null,
+                "time_quote": null,
+                "conditions_quote": null,
+                "relation": "answers",
+                "target_id": "requested"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": true,
+      "expected_selected": [
+        "descriptive-modifier-preserves-explicit-subject-m1"
+      ],
+      "expected_demoted": 0
+    },
+    {
+      "id": "spanish_plural_coordination_keeps_bound_subject",
+      "query": "Which city does employee Ana Ruiz E-17 live in?",
+      "candidate": {
+        "memory_id": "spanish_plural_coordination_keeps_bound_subject-m1",
+        "revision": 1,
+        "summary": "Employee Ana Ruiz E-17 reported that Ana Ruiz e Isabel viven en Quito."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "person",
+            "kind": "employee",
+            "subject": "Ana Ruiz",
+            "stable_id": "E-17",
+            "quote": "employee Ana Ruiz E-17"
+          }
+        ],
+        "slots": [
+          {
+            "id": "requested",
+            "dimension": "requested_slot",
+            "quote": "Which city"
+          }
+        ],
+        "premises": [],
+        "candidates": [
+          {
+            "memory_id": "spanish_plural_coordination_keeps_bound_subject-m1",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "person",
+              "stable_id_quote": "E-17",
+              "subject_quote": "Ana Ruiz E-17"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "Employee Ana Ruiz E-17 reported that Ana Ruiz e Isabel viven en Quito.",
+                "subject_quote": "Ana Ruiz E-17",
+                "identity_anchor_id": "person",
+                "predicate_quote": "lives in",
+                "value": "Quito",
+                "polarity_quote": null,
+                "modality_quote": null,
+                "event_quote": null,
+                "time_quote": null,
+                "conditions_quote": null,
+                "relation": "answers",
+                "target_id": "requested"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": true,
+      "expected_selected": [
+        "spanish_plural_coordination_keeps_bound_subject-m1"
+      ],
+      "expected_demoted": 0
+    }
+  ]
+}

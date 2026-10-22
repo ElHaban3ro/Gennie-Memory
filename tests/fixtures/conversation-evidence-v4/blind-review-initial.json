@@ -1,0 +1,573 @@
+{
+  "human_review": false,
+  "reviewer_kind": "separate_agent_same_model_family",
+  "reviewer": "roles_fresh_blind_review",
+  "cases": [
+    {
+      "id": "cev4q_062_06",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "062_16"
+      ],
+      "rationale": "Se ensayó a negra igual a 84, pero la directora todavía no decidió el tempo de la función.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_058_01",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "058_03"
+      ],
+      "rationale": "La custodia de Nimbo fue cancelada para Ocre; acompaña el personal del museo.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_062_08",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "062_17"
+      ],
+      "rationale": "No habrá solista invitado en Fresnal el 25; Tiza se reparte entre los violines.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_065_05",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "065_08"
+      ],
+      "rationale": "El 27 de octubre Puente en Sarga usa Pino y canal 6.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_061_03",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "061_26"
+      ],
+      "rationale": "Hay dos plazas confirmadas y una tercera en evaluación; no se ha fijado la capacidad definitiva.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_061_07",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "061_19"
+      ],
+      "rationale": "La señal doble era un reflejo interno y no dos meteoros distintos.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_059_05",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "059_03"
+      ],
+      "rationale": "La instrucción completa es pulsar dos veces el botón relieve de la pantalla inicial.",
+      "ambiguities": [
+        "059_18 confirma el inicio con botón relieve, pero no expresa las dos pulsaciones; no basta individualmente para la instrucción completa solicitada."
+      ]
+    },
+    {
+      "id": "cev4q_058_02",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "rationale": "Se menciona el álbum Arcilla, pero no su contraseña ni un estado de acceso.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_064_02",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "064_15"
+      ],
+      "rationale": "Eje mantuvo la batería original y reparó el conector; no instaló una batería nueva en la Nacar de Eloy.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_061_04",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "061_06"
+      ],
+      "rationale": "M4 usa Umbral e integración de dos segundos por fotograma.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_058_07",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "058_02"
+      ],
+      "rationale": "Las cajas deben permanecer verticales y la flecha azul identifica la cara superior.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_059_01",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "059_24"
+      ],
+      "rationale": "Mara no necesita internet para Veta porque ya tiene descargados audios y mapa.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_065_04",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "065_21"
+      ],
+      "rationale": "Puente a Mimbre mide seiscientos metros; falta medir Mimbre a salida para obtener el total.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_061_01",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "061_06"
+      ],
+      "rationale": "La asignación explícita es M4 con Umbral a dos segundos y M8 con Silente a cuatro; la pregunta cruza cámara y perfil.",
+      "ambiguities": [
+        "El texto asigna perfiles a cámaras y no declara una imposibilidad técnica de configurar Silente en M4. La refutación se limita a la asignación documentada."
+      ]
+    },
+    {
+      "id": "cev4q_061_08",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "061_03"
+      ],
+      "rationale": "Se conoce el inicio a las 02:00 UTC del 21 de octubre, pero falta aprobar el cierre y por ello la duración.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_058_06",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "058_21"
+      ],
+      "rationale": "Sale el 22 de octubre en Lucero hacia la sede del río.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_058_04",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "058_26"
+      ],
+      "rationale": "Se conoce el mínimo de veinte mil unidades, pero el techo sigue pendiente.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_060_08",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "rationale": "El aislamiento de la bandeja para análisis no identifica laboratorio receptor; Noria corresponde a rábano R5.",
+      "ambiguities": [
+        "Apartar una bandeja para análisis no confirma envío a un laboratorio externo ni aporta una parte concreta de la identidad solicitada."
+      ]
+    },
+    {
+      "id": "cev4q_061_02",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "rationale": "La separación de máquinas en la red no proporciona dirección IP.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_059_07",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "059_07"
+      ],
+      "rationale": "La voz de Veta es la voz propia de Ilse, no una clonación de la madre de Mara.",
+      "ambiguities": [
+        "059_14 excluye el saludo privado del paseo, pero no descarta individualmente que existieran otras grabaciones maternas para una clonación; la refutación completa está en 059_07."
+      ]
+    },
+    {
+      "id": "cev4q_063_07",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "063_21"
+      ],
+      "rationale": "El permiso de publicar imágenes fue revocado; solo está permitida la consulta presencial.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_060_05",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "060_06"
+      ],
+      "rationale": "La recomendación de sol directo fue retirada; actualmente se usa luz indirecta.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_064_06",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "rationale": "Los cuarenta y dos kilómetros corresponden a Ivo, no a Eloy; no consta prueba de autonomía de este último.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_063_02",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "rationale": "La levadura de masa madre corresponde a Laurel, sin receta de pan de Azafrán documentada.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_063_06",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "063_20"
+      ],
+      "rationale": "La instrucción dice sol, no sal; sal era un error del OCR.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_062_04",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "062_13"
+      ],
+      "rationale": "La versión del 24 corta después del compás 38 y retoma en el 45; la del 17 corresponde a otro ensayo.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_059_04",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "rationale": "Hay fecha de envío del correo, pero no dirección de Mara.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_063_05",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "063_09"
+      ],
+      "rationale": "Se identifican peras y miel, pero una rotura impide leer las cantidades.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_060_04",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "060_20"
+      ],
+      "rationale": "La lenteja L17 de Alcor requiere ocho horas de remojo.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_059_08",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "059_21"
+      ],
+      "rationale": "Se probaron noventa minutos sin agotar batería y no se midió el tiempo hasta apagarse.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_060_02",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "060_14"
+      ],
+      "rationale": "La causa del olor sigue sin identificar; sí consta que se apartó una bandeja para análisis.",
+      "ambiguities": [
+        "La pregunta abierta permite una respuesta completa de lo actualmente conocido, pero el estado de causa no identificada se clasifica pending_or_partial conforme a la definición de estado pendiente útil."
+      ]
+    },
+    {
+      "id": "cev4q_061_06",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "061_01"
+      ],
+      "rationale": "Los crudos de M4 se conservan catorce días antes del borrado automático.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_062_05",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "062_12"
+      ],
+      "rationale": "La compra para Fresnal fue anulada y la biblioteca cede los atriles gratuitamente.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_065_06",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "065_14"
+      ],
+      "rationale": "Se verificó recepción en Puente y Juncal, pero falta Mirador.",
+      "ambiguities": [
+        "Aunque la pregunta binaria admite no, la evidencia documenta una verificación incompleta; se usa pending_or_partial."
+      ]
+    },
+    {
+      "id": "cev4q_060_07",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "060_18"
+      ],
+      "rationale": "El sobre testigo está en Secano separado de las semillas que se prestan.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_060_06",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "rationale": "La política no exige registrar domicilio, pero no aporta la identidad del receptor de L17 ni su dirección.",
+      "ambiguities": [
+        "Que no se exija registrar domicilio no prueba que el domicilio sea inexistente o que nunca se registrara; por eso no se clasifica refutes_premise."
+      ]
+    },
+    {
+      "id": "cev4q_063_01",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "063_27"
+      ],
+      "rationale": "La datación es posterior a 1870 y el año exacto sigue sin establecer.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_065_07",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "065_19"
+      ],
+      "rationale": "La alarma de Sarga el 18 fue una prueba grabada y no hubo evacuación real.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_060_03",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "060_24"
+      ],
+      "rationale": "Hay dieciocho germinadas en el primer recuento y el segundo aún no se ha hecho.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_062_03",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "062_04"
+      ],
+      "rationale": "Noa debe devolverla a Junco antes de las 18:00 del 26 de octubre.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_062_02",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "rationale": "La devolución y etiqueta de la viola de Ada no indican importe del depósito.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_063_04",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "063_01"
+      ],
+      "rationale": "Se asigna el prefijo SN seguido del orden de aparición.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_063_08",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "rationale": "Se documenta respaldo nocturno en disco local, pero ningún algoritmo de cifrado.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_065_02",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "rationale": "Las asignaciones existentes son del 20 y 27 de octubre, sin asignación ni continuidad declarada para el 3 de noviembre.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_058_05",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "058_15"
+      ],
+      "rationale": "Los originales enviados al río no se vendieron: son préstamo y siguen perteneciendo al museo.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_059_06",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "rationale": "El gesto de Duna está documentado para Ulises; los datos de Mara se refieren a Veta. No son transferibles.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_065_03",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "rationale": "No se documenta el teléfono personal de quien coordina Sarga.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_064_07",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "064_06"
+      ],
+      "rationale": "Eje descartó el motor y localizó un radio flojo delantero en la Nacar de Eloy; el motor corresponde a Brisa.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_064_03",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "064_19"
+      ],
+      "rationale": "La llave quedó en el bolsillo interior del bolso gris de entrega.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_064_05",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "rationale": "Se confirma que la batería es original, pero no se proporciona su número de serie.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_059_02",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "059_18"
+      ],
+      "rationale": "El inicio está confirmado, mientras que la pausa por gesto sigue sin probar en ese teléfono.",
+      "ambiguities": [
+        "La pregunta binaria se puede contestar no con el estado pendiente; se conserva pending_or_partial porque el dato central es verificación incompleta, no una afirmación de controles ya verificados."
+      ]
+    },
+    {
+      "id": "cev4q_058_03",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "058_25"
+      ],
+      "rationale": "Nueve de doce no tienen fracturas; tres no fueron inspeccionados. No hay distribución completa de conservación.",
+      "ambiguities": [
+        "La distribución de inspecciones es explícita, pero no equivale a la distribución completa de estados de conservación de los doce moldes."
+      ]
+    },
+    {
+      "id": "cev4q_065_08",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "065_04"
+      ],
+      "rationale": "Desde el 27 Puente comunica ubicaciones únicamente por voz de radio; dejó de enviarlas por texto.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_059_03",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "059_16"
+      ],
+      "rationale": "En el tramo Veta entre el faro y la plaza hay tres puntos de descanso señalizados.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_058_08",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "rationale": "Solo se documenta adquisición de Marfil, y ventas de réplicas; ninguno determina la adquisición de originales Ocre.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_061_05",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "061_04"
+      ],
+      "rationale": "La apertura actual ya no depende de horario fijo; el sensor de lluvia bloquea cuando detecta agua.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_063_03",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "063_10"
+      ],
+      "rationale": "La edición diplomática usa UTF-8 y conserva la grafía original sin modernización.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_062_07",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "rationale": "Se conoce formato WAV y soporte extraíble, pero no duración de la grabación completa.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_062_01",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "062_27"
+      ],
+      "rationale": "Hay siete músicos de cuerda confirmados; las confirmaciones de viento aún no cerraron.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_064_08",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "064_07"
+      ],
+      "rationale": "Hay cuarenta unidades presupuestadas de mano de obra, pero el conector aún no se ha cotizado.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_064_04",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "064_10"
+      ],
+      "rationale": "Solo se verificó el delantero en seco; faltan el trasero y las pruebas con lluvia.",
+      "ambiguities": [
+        "El enunciado podría leerse como premisa de verificación completa. Predomina la solicitud de respaldo de pruebas, cuyo estado es explícitamente parcial."
+      ]
+    },
+    {
+      "id": "cev4q_065_01",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "065_05"
+      ],
+      "rationale": "Si pierde enlace el 27, Puente debe esperar cinco minutos y luego volver a Mimbre.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_064_01",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "064_12"
+      ],
+      "rationale": "El eje pasante trasero lleva 15 N·m aplicados con llave dinamométrica.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev4q_060_01",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "060_07"
+      ],
+      "rationale": "El brote de L17 fue identificado como raíz y se descartó moho; no procede la premisa de tratamiento del moho identificado.",
+      "ambiguities": []
+    }
+  ]
+}

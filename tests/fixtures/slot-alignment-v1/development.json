@@ -1,0 +1,828 @@
+{
+  "version": "slot-alignment-contract-v1",
+  "synthetic": true,
+  "annotation_only": true,
+  "cases": [
+    {
+      "id": "S01",
+      "query": {
+        "scope": "current",
+        "slots": [
+          "city"
+        ],
+        "premises": [],
+        "identity_anchors": [
+          "E-17"
+        ]
+      },
+      "candidate_set": [
+        {
+          "memory_id": "M01",
+          "text": "Ana Ruiz (E-17) es arquitecta.",
+          "source_coverage": [
+            {
+              "slot_id": "city",
+              "scope": "current",
+              "status": "complete"
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "fact_id": "F01",
+          "memory_id": "M01",
+          "source_quote": "Ana Ruiz (E-17) es arquitecta.",
+          "subject_ref": "E-17",
+          "identity_link": "match",
+          "scope_status": "compatible"
+        }
+      ],
+      "expected": {
+        "observations": [
+          {
+            "memory_id": "M01",
+            "slot_id": "city",
+            "status": "not_observed_in_this_memory",
+            "value": null,
+            "fact_ids": []
+          }
+        ],
+        "premise_relations": [],
+        "aggregate": "unanswered"
+      }
+    },
+    {
+      "id": "S02",
+      "query": {
+        "scope": "current",
+        "slots": [
+          "city"
+        ],
+        "premises": [
+          "p_city"
+        ],
+        "identity_anchors": [
+          "E-17"
+        ]
+      },
+      "candidate_set": [
+        {
+          "memory_id": "M02",
+          "text": "Ana Ruiz (E-17) vive en Quito.",
+          "source_coverage": [
+            {
+              "slot_id": "city",
+              "scope": "current",
+              "status": "complete"
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "fact_id": "F02",
+          "memory_id": "M02",
+          "source_quote": "Ana Ruiz (E-17) vive en Quito.",
+          "subject_ref": "E-17",
+          "identity_link": "match",
+          "scope_status": "compatible",
+          "slot_id": "city",
+          "slot_status": "answers",
+          "value": "Quito",
+          "premise_id": "p_city",
+          "premise_relation": "refutes"
+        }
+      ],
+      "expected": {
+        "observations": [
+          {
+            "memory_id": "M02",
+            "slot_id": "city",
+            "status": "answers",
+            "value": "Quito",
+            "fact_ids": [
+              "F02"
+            ]
+          }
+        ],
+        "premise_relations": [
+          {
+            "premise_id": "p_city",
+            "relation": "refutes"
+          }
+        ],
+        "aggregate": "complete"
+      }
+    },
+    {
+      "id": "S03",
+      "query": {
+        "scope": "published",
+        "slots": [
+          "version"
+        ],
+        "premises": [
+          "p_ver"
+        ],
+        "identity_anchors": [
+          "D-42"
+        ]
+      },
+      "candidate_set": [
+        {
+          "memory_id": "M03",
+          "text": "El despliegue D-42 publicado el martes fue 4.1.",
+          "source_coverage": [
+            {
+              "slot_id": "version",
+              "scope": "published",
+              "status": "complete"
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "fact_id": "F03",
+          "memory_id": "M03",
+          "source_quote": "El despliegue D-42 publicado el martes fue 4.1.",
+          "subject_ref": "D-42",
+          "identity_link": "match",
+          "scope_status": "compatible",
+          "slot_id": "version",
+          "slot_status": "answers",
+          "value": "4.1",
+          "premise_id": "p_ver",
+          "premise_relation": "refutes"
+        }
+      ],
+      "expected": {
+        "observations": [
+          {
+            "memory_id": "M03",
+            "slot_id": "version",
+            "status": "answers",
+            "value": "4.1",
+            "fact_ids": [
+              "F03"
+            ]
+          }
+        ],
+        "premise_relations": [
+          {
+            "premise_id": "p_ver",
+            "relation": "refutes"
+          }
+        ],
+        "aggregate": "complete"
+      }
+    },
+    {
+      "id": "S04",
+      "query": {
+        "scope": "opening",
+        "slots": [
+          "city",
+          "year"
+        ],
+        "premises": [],
+        "identity_anchors": [
+          "T-8"
+        ]
+      },
+      "candidate_set": [
+        {
+          "memory_id": "M04",
+          "text": "El taller T-8 abrió en Rosario.",
+          "source_coverage": [
+            {
+              "slot_id": "city",
+              "scope": "opening",
+              "status": "complete"
+            },
+            {
+              "slot_id": "year",
+              "scope": "opening",
+              "status": "complete"
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "fact_id": "F04",
+          "memory_id": "M04",
+          "source_quote": "El taller T-8 abrió en Rosario.",
+          "subject_ref": "T-8",
+          "identity_link": "match",
+          "scope_status": "compatible",
+          "slot_id": "city",
+          "slot_status": "answers",
+          "value": "Rosario"
+        }
+      ],
+      "expected": {
+        "observations": [
+          {
+            "memory_id": "M04",
+            "slot_id": "city",
+            "status": "answers",
+            "value": "Rosario",
+            "fact_ids": [
+              "F04"
+            ]
+          },
+          {
+            "memory_id": "M04",
+            "slot_id": "year",
+            "status": "not_observed_in_this_memory",
+            "value": null,
+            "fact_ids": []
+          }
+        ],
+        "premise_relations": [],
+        "aggregate": "partial"
+      }
+    },
+    {
+      "id": "S05",
+      "query": {
+        "scope": "current",
+        "slots": [
+          "material",
+          "finish"
+        ],
+        "premises": [],
+        "identity_anchors": [
+          "M-6"
+        ]
+      },
+      "candidate_set": [
+        {
+          "memory_id": "M05",
+          "text": "La mesa M-6 es de roble y tiene acabado mate.",
+          "source_coverage": [
+            {
+              "slot_id": "material",
+              "scope": "current",
+              "status": "complete"
+            },
+            {
+              "slot_id": "finish",
+              "scope": "current",
+              "status": "complete"
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "fact_id": "F05a",
+          "memory_id": "M05",
+          "source_quote": "La mesa M-6 es de roble",
+          "subject_ref": "M-6",
+          "identity_link": "match",
+          "scope_status": "compatible",
+          "slot_id": "material",
+          "slot_status": "answers",
+          "value": "roble"
+        },
+        {
+          "fact_id": "F05b",
+          "memory_id": "M05",
+          "source_quote": "tiene acabado mate",
+          "subject_ref": "M-6",
+          "identity_link": "match",
+          "scope_status": "compatible",
+          "slot_id": "finish",
+          "slot_status": "answers",
+          "value": "mate"
+        }
+      ],
+      "expected": {
+        "observations": [
+          {
+            "memory_id": "M05",
+            "slot_id": "material",
+            "status": "answers",
+            "value": "roble",
+            "fact_ids": [
+              "F05a"
+            ]
+          },
+          {
+            "memory_id": "M05",
+            "slot_id": "finish",
+            "status": "answers",
+            "value": "mate",
+            "fact_ids": [
+              "F05b"
+            ]
+          }
+        ],
+        "premise_relations": [],
+        "aggregate": "complete"
+      }
+    },
+    {
+      "id": "S06",
+      "query": {
+        "scope": "current",
+        "slots": [
+          "email"
+        ],
+        "premises": [],
+        "identity_anchors": [
+          "E-22"
+        ]
+      },
+      "candidate_set": [
+        {
+          "memory_id": "M06",
+          "text": "Bruno (E-22) vive en Córdoba.",
+          "source_coverage": [
+            {
+              "slot_id": "email",
+              "scope": "current",
+              "status": "unknown"
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "fact_id": "F06",
+          "memory_id": "M06",
+          "source_quote": "Bruno (E-22) vive en Córdoba.",
+          "subject_ref": "E-22",
+          "identity_link": "match",
+          "scope_status": "compatible"
+        }
+      ],
+      "expected": {
+        "observations": [
+          {
+            "memory_id": "M06",
+            "slot_id": "email",
+            "status": "unknown",
+            "value": null,
+            "fact_ids": []
+          }
+        ],
+        "premise_relations": [],
+        "aggregate": "unknown"
+      }
+    },
+    {
+      "id": "S07",
+      "query": {
+        "scope": "current",
+        "slots": [
+          "editor"
+        ],
+        "premises": [
+          "p_vim"
+        ],
+        "identity_anchors": [
+          "E-31"
+        ]
+      },
+      "candidate_set": [
+        {
+          "memory_id": "M07",
+          "text": "Lina (E-31) no usa Vim; usa Helix.",
+          "source_coverage": [
+            {
+              "slot_id": "editor",
+              "scope": "current",
+              "status": "complete"
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "fact_id": "F07a",
+          "memory_id": "M07",
+          "source_quote": "Lina (E-31) no usa Vim",
+          "subject_ref": "E-31",
+          "identity_link": "match",
+          "scope_status": "compatible",
+          "premise_id": "p_vim",
+          "premise_relation": "refutes"
+        },
+        {
+          "fact_id": "F07b",
+          "memory_id": "M07",
+          "source_quote": "usa Helix",
+          "subject_ref": "E-31",
+          "identity_link": "match",
+          "scope_status": "compatible",
+          "slot_id": "editor",
+          "slot_status": "answers",
+          "value": "Helix"
+        }
+      ],
+      "expected": {
+        "observations": [
+          {
+            "memory_id": "M07",
+            "slot_id": "editor",
+            "status": "answers",
+            "value": "Helix",
+            "fact_ids": [
+              "F07b"
+            ]
+          }
+        ],
+        "premise_relations": [
+          {
+            "premise_id": "p_vim",
+            "relation": "refutes"
+          }
+        ],
+        "aggregate": "complete"
+      }
+    },
+    {
+      "id": "S08",
+      "query": {
+        "scope": "final_june",
+        "slots": [
+          "destination"
+        ],
+        "premises": [],
+        "identity_anchors": [
+          "V-5"
+        ]
+      },
+      "candidate_set": [
+        {
+          "memory_id": "M08a",
+          "text": "En mayo se planeó Cusco para V-5.",
+          "source_coverage": [
+            {
+              "slot_id": "destination",
+              "scope": "final_june",
+              "status": "incomplete"
+            }
+          ]
+        },
+        {
+          "memory_id": "M08b",
+          "text": "El viaje V-5 terminó en Arequipa en junio.",
+          "source_coverage": [
+            {
+              "slot_id": "destination",
+              "scope": "final_june",
+              "status": "complete"
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "fact_id": "F08a",
+          "memory_id": "M08a",
+          "source_quote": "En mayo se planeó Cusco para V-5.",
+          "subject_ref": "V-5",
+          "identity_link": "match",
+          "scope_status": "different",
+          "slot_id": "destination",
+          "slot_status": "not_applicable"
+        },
+        {
+          "fact_id": "F08b",
+          "memory_id": "M08b",
+          "source_quote": "El viaje V-5 terminó en Arequipa en junio.",
+          "subject_ref": "V-5",
+          "identity_link": "match",
+          "scope_status": "compatible",
+          "slot_id": "destination",
+          "slot_status": "answers",
+          "value": "Arequipa"
+        }
+      ],
+      "expected": {
+        "observations": [
+          {
+            "memory_id": "M08a",
+            "slot_id": "destination",
+            "status": "unknown",
+            "value": null,
+            "fact_ids": []
+          },
+          {
+            "memory_id": "M08b",
+            "slot_id": "destination",
+            "status": "answers",
+            "value": "Arequipa",
+            "fact_ids": [
+              "F08b"
+            ]
+          }
+        ],
+        "premise_relations": [],
+        "aggregate": "complete"
+      }
+    },
+    {
+      "id": "S09",
+      "query": {
+        "scope": "monday",
+        "slots": [
+          "provider"
+        ],
+        "premises": [],
+        "identity_anchors": [
+          "C-3"
+        ]
+      },
+      "candidate_set": [
+        {
+          "memory_id": "M09",
+          "text": "El comité C-3 podría aprobar Nube Sur la próxima semana.",
+          "source_coverage": [
+            {
+              "slot_id": "provider",
+              "scope": "monday",
+              "status": "unknown"
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "fact_id": "F09",
+          "memory_id": "M09",
+          "source_quote": "El comité C-3 podría aprobar Nube Sur la próxima semana.",
+          "subject_ref": "C-3",
+          "identity_link": "match",
+          "scope_status": "different",
+          "slot_id": "provider",
+          "slot_status": "not_applicable"
+        }
+      ],
+      "expected": {
+        "observations": [
+          {
+            "memory_id": "M09",
+            "slot_id": "provider",
+            "status": "unknown",
+            "value": null,
+            "fact_ids": []
+          }
+        ],
+        "premise_relations": [],
+        "aggregate": "unknown"
+      }
+    },
+    {
+      "id": "S10",
+      "query": {
+        "scope": "batch_L9",
+        "slots": [
+          "average"
+        ],
+        "premises": [],
+        "identity_anchors": [
+          "L-9"
+        ]
+      },
+      "candidate_set": [
+        {
+          "memory_id": "M10a",
+          "text": "L-9 tuvo 40 casos.",
+          "source_coverage": [
+            {
+              "slot_id": "average",
+              "scope": "batch_L9",
+              "status": "complete"
+            }
+          ]
+        },
+        {
+          "memory_id": "M10b",
+          "text": "El promedio de espera de L-9 no se midió.",
+          "source_coverage": [
+            {
+              "slot_id": "average",
+              "scope": "batch_L9",
+              "status": "complete"
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "fact_id": "F10a",
+          "memory_id": "M10a",
+          "source_quote": "L-9 tuvo 40 casos.",
+          "subject_ref": "L-9",
+          "identity_link": "match",
+          "scope_status": "compatible"
+        },
+        {
+          "fact_id": "F10b",
+          "memory_id": "M10b",
+          "source_quote": "El promedio de espera de L-9 no se midió.",
+          "subject_ref": "L-9",
+          "identity_link": "match",
+          "scope_status": "compatible",
+          "slot_id": "average",
+          "slot_status": "explicit_unmeasured",
+          "explicit_state_quote": "no se midió"
+        }
+      ],
+      "expected": {
+        "observations": [
+          {
+            "memory_id": "M10a",
+            "slot_id": "average",
+            "status": "not_observed_in_this_memory",
+            "value": null,
+            "fact_ids": []
+          },
+          {
+            "memory_id": "M10b",
+            "slot_id": "average",
+            "status": "explicit_unmeasured",
+            "value": null,
+            "fact_ids": [
+              "F10b"
+            ]
+          }
+        ],
+        "premise_relations": [],
+        "aggregate": "complete"
+      }
+    },
+    {
+      "id": "S11",
+      "query": {
+        "scope": "current",
+        "slots": [
+          "city"
+        ],
+        "premises": [],
+        "identity_anchors": [
+          "Alex"
+        ]
+      },
+      "candidate_set": [
+        {
+          "memory_id": "M11a",
+          "text": "Alex vive en Salta.",
+          "source_coverage": [
+            {
+              "slot_id": "city",
+              "scope": "current",
+              "status": "complete"
+            }
+          ]
+        },
+        {
+          "memory_id": "M11b",
+          "text": "Alex vive en Neuquén.",
+          "source_coverage": [
+            {
+              "slot_id": "city",
+              "scope": "current",
+              "status": "complete"
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "fact_id": "F11a",
+          "memory_id": "M11a",
+          "source_quote": "Alex vive en Salta.",
+          "subject_ref": "Alex",
+          "identity_link": "unresolved",
+          "scope_status": "compatible",
+          "slot_id": "city",
+          "slot_status": "answers",
+          "value": "Salta"
+        },
+        {
+          "fact_id": "F11b",
+          "memory_id": "M11b",
+          "source_quote": "Alex vive en Neuquén.",
+          "subject_ref": "Alex",
+          "identity_link": "unresolved",
+          "scope_status": "compatible",
+          "slot_id": "city",
+          "slot_status": "answers",
+          "value": "Neuquén"
+        }
+      ],
+      "expected": {
+        "observations": [
+          {
+            "memory_id": "M11a",
+            "slot_id": "city",
+            "status": "ambiguous",
+            "value": null,
+            "fact_ids": [
+              "F11a"
+            ]
+          },
+          {
+            "memory_id": "M11b",
+            "slot_id": "city",
+            "status": "ambiguous",
+            "value": null,
+            "fact_ids": [
+              "F11b"
+            ]
+          }
+        ],
+        "premise_relations": [],
+        "aggregate": "ambiguous"
+      }
+    },
+    {
+      "id": "S12",
+      "query": {
+        "scope": "event_EV9",
+        "slots": [
+          "reservation"
+        ],
+        "premises": [],
+        "identity_anchors": [
+          "E-44",
+          "EV-9"
+        ]
+      },
+      "candidate_set": [
+        {
+          "memory_id": "M12a",
+          "text": "Elena (E-44) es fotógrafa.",
+          "source_coverage": [
+            {
+              "slot_id": "reservation",
+              "scope": "event_EV9",
+              "status": "complete"
+            }
+          ]
+        },
+        {
+          "memory_id": "M12b",
+          "text": "Elena tiene la reserva QZ-81.",
+          "source_coverage": [
+            {
+              "slot_id": "reservation",
+              "scope": "event_EV9",
+              "status": "complete"
+            }
+          ]
+        }
+      ],
+      "facts": [
+        {
+          "fact_id": "F12a",
+          "memory_id": "M12a",
+          "source_quote": "Elena (E-44) es fotógrafa.",
+          "subject_ref": "E-44",
+          "identity_link": "match",
+          "scope_status": "compatible"
+        },
+        {
+          "fact_id": "F12b",
+          "memory_id": "M12b",
+          "source_quote": "Elena tiene la reserva QZ-81.",
+          "subject_ref": "EV-9",
+          "identity_link": "unresolved",
+          "scope_status": "unresolved",
+          "slot_id": "reservation",
+          "slot_status": "answers",
+          "value": "QZ-81"
+        }
+      ],
+      "expected": {
+        "observations": [
+          {
+            "memory_id": "M12a",
+            "slot_id": "reservation",
+            "status": "not_observed_in_this_memory",
+            "value": null,
+            "fact_ids": []
+          },
+          {
+            "memory_id": "M12b",
+            "slot_id": "reservation",
+            "status": "ambiguous",
+            "value": null,
+            "fact_ids": [
+              "F12b"
+            ]
+          }
+        ],
+        "premise_relations": [],
+        "aggregate": "ambiguous"
+      }
+    }
+  ]
+}

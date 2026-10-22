@@ -1,0 +1,304 @@
+{
+  "version": "documentary_evidence_v3",
+  "kind": "question",
+  "text_sha256": "da0af8a1609e89b56fb1c8e2a6ec0ff71866a3d302be3e61661db921e65a60b3",
+  "vocabulary_sha256": "d46ace1e39d88cde841edc3d85b51da5ad24c3c3fb80a4988c5e66c2ecca492f",
+  "domain_namespace": "possessive-controls",
+  "scopes": [
+    {
+      "id": "root",
+      "parent_id": null,
+      "kind": "document",
+      "branch_id": null,
+      "binding": null
+    }
+  ],
+  "references": [
+    {
+      "id": "person",
+      "scope_id": "root",
+      "mention": {
+        "start_byte": 2,
+        "end_byte": 6,
+        "quote": "Nora"
+      },
+      "name": {
+        "start_byte": 2,
+        "end_byte": 6,
+        "quote": "Nora"
+      },
+      "declared_class": null,
+      "semantic_type": null,
+      "denotation": "entity",
+      "links": [],
+      "binding_scope_id": null,
+      "anaphora": null
+    },
+    {
+      "id": "regime",
+      "scope_id": "root",
+      "mention": {
+        "start_byte": 45,
+        "end_byte": 50,
+        "quote": "Lumen"
+      },
+      "name": {
+        "start_byte": 45,
+        "end_byte": 50,
+        "quote": "Lumen"
+      },
+      "declared_class": null,
+      "semantic_type": null,
+      "denotation": "entity",
+      "links": [],
+      "binding_scope_id": null,
+      "anaphora": null
+    },
+    {
+      "id": "head",
+      "scope_id": "root",
+      "mention": {
+        "start_byte": 19,
+        "end_byte": 41,
+        "quote": "ficha de socia de Nora"
+      },
+      "name": null,
+      "declared_class": {
+        "start_byte": 19,
+        "end_byte": 24,
+        "quote": "ficha"
+      },
+      "semantic_type": null,
+      "denotation": "entity",
+      "links": [
+        {
+          "kind": "nominal_complement_de",
+          "target": "descriptor",
+          "evidence": [
+            {
+              "start_byte": 19,
+              "end_byte": 33,
+              "quote": "ficha de socia"
+            }
+          ]
+        },
+        {
+          "kind": "owned_by",
+          "target": "person",
+          "evidence": [
+            {
+              "start_byte": 34,
+              "end_byte": 41,
+              "quote": "de Nora"
+            }
+          ]
+        }
+      ],
+      "binding_scope_id": null,
+      "anaphora": null
+    },
+    {
+      "id": "descriptor",
+      "scope_id": "root",
+      "mention": {
+        "start_byte": 28,
+        "end_byte": 33,
+        "quote": "socia"
+      },
+      "name": null,
+      "declared_class": {
+        "start_byte": 28,
+        "end_byte": 33,
+        "quote": "socia"
+      },
+      "semantic_type": null,
+      "denotation": "entity",
+      "links": [],
+      "binding_scope_id": null,
+      "anaphora": null
+    }
+  ],
+  "identity": [],
+  "qualifiers": [],
+  "claims": [],
+  "requests": [
+    {
+      "id": "ask",
+      "scope_id": "root",
+      "mode": "truth",
+      "target": {
+        "atom": {
+          "predicate": "condition_suffices",
+          "arguments": [
+            {
+              "role": "beneficiary",
+              "value": {
+                "kind": "ref",
+                "id": "person"
+              }
+            },
+            {
+              "role": "condition",
+              "value": {
+                "kind": "ref",
+                "id": "head"
+              }
+            }
+          ],
+          "polarity": "positive",
+          "evidence": [
+            {
+              "start_byte": 0,
+              "end_byte": 51,
+              "quote": "A Nora le basta la ficha de socia de Nora en Lumen."
+            }
+          ]
+        },
+        "judgment": "fact",
+        "status": "state",
+        "qualifier_ids": []
+      },
+      "slot": "status",
+      "class_filter": null,
+      "unit": null,
+      "basis_requirement": {
+        "kind": "any"
+      },
+      "required_answer_extent": "truth_status",
+      "normative_scope_filter": "regime",
+      "qualifier_ids": [],
+      "premise_ids": [],
+      "evidence": [
+        {
+          "start_byte": 0,
+          "end_byte": 51,
+          "quote": "A Nora le basta la ficha de socia de Nora en Lumen."
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "consumer": {
+        "kind": "reference",
+        "id": "person"
+      },
+      "requires": {
+        "kind": "scope",
+        "id": "root"
+      },
+      "role": "binding"
+    },
+    {
+      "consumer": {
+        "kind": "reference",
+        "id": "regime"
+      },
+      "requires": {
+        "kind": "scope",
+        "id": "root"
+      },
+      "role": "binding"
+    },
+    {
+      "consumer": {
+        "kind": "reference",
+        "id": "head"
+      },
+      "requires": {
+        "kind": "scope",
+        "id": "root"
+      },
+      "role": "binding"
+    },
+    {
+      "consumer": {
+        "kind": "reference",
+        "id": "head"
+      },
+      "requires": {
+        "kind": "reference",
+        "id": "descriptor"
+      },
+      "role": "identity"
+    },
+    {
+      "consumer": {
+        "kind": "reference",
+        "id": "head"
+      },
+      "requires": {
+        "kind": "reference",
+        "id": "person"
+      },
+      "role": "identity"
+    },
+    {
+      "consumer": {
+        "kind": "reference",
+        "id": "descriptor"
+      },
+      "requires": {
+        "kind": "scope",
+        "id": "root"
+      },
+      "role": "binding"
+    },
+    {
+      "consumer": {
+        "kind": "request",
+        "id": "ask"
+      },
+      "requires": {
+        "kind": "scope",
+        "id": "root"
+      },
+      "role": "binding"
+    },
+    {
+      "consumer": {
+        "kind": "request",
+        "id": "ask"
+      },
+      "requires": {
+        "kind": "reference",
+        "id": "person"
+      },
+      "role": "identity"
+    },
+    {
+      "consumer": {
+        "kind": "request",
+        "id": "ask"
+      },
+      "requires": {
+        "kind": "reference",
+        "id": "head"
+      },
+      "role": "identity"
+    },
+    {
+      "consumer": {
+        "kind": "request",
+        "id": "ask"
+      },
+      "requires": {
+        "kind": "reference",
+        "id": "regime"
+      },
+      "role": "identity"
+    }
+  ],
+  "coverage": [
+    {
+      "span": {
+        "start_byte": 0,
+        "end_byte": 51,
+        "quote": "A Nora le basta la ficha de socia de Nora en Lumen."
+      },
+      "state": "represented",
+      "owner": null,
+      "issue_id": null
+    }
+  ]
+}

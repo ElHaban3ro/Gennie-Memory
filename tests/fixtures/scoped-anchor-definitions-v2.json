@@ -1,0 +1,5 @@
+{
+  "evidence_tests": "First match the specific target and context; a shared place or actor alone is insufficient. REQUESTED EVIDENCE includes any requested component, bound, partial count, or explicit pending, unknown or unreadable measurement status. An unavailable exact total does not erase a known part or lower bound. One observed event lacking the requested target does not establish a policy for that target. REFUTATION requires explicit incompatibility with an assertion about the asked target. Absence of an obligation to record a property does not deny the property. Missing requested values alone are not a premise contradiction. Preserve scope, negation, time and conditions.",
+  "fact_instruction": "Using state.evidence_tests, does state.memories.{key} provide requested evidence for state.user_prompt?",
+  "correction_instruction": "Using state.evidence_tests, does state.memories.{key} refute an assertion in state.user_prompt?"
+}

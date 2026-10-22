@@ -1,0 +1,1949 @@
+{
+  "version": "typed-facts-v2",
+  "annotation_notice": "Synthetic controlled development, not V6 or extraction. Manual factual decomposition; measurement target and method independent from question. Source text retained. Multiple readings declared without claiming exhaustive Spanish semantics. Qualifiers and original text must be preserved, especially publication/cancellation and availability scope. Reviewed revision distinguishes pending completion from planning and retains maximum/specification, actual text result availability, definitive cancellation, trial observation, normative policy and measurement identity. Original draft and criticism preserved.",
+  "ontology": {
+    "autonomy": {
+      "kind": "quantity",
+      "additive": false,
+      "intermediate_types": []
+    },
+    "measurement": {
+      "kind": "measurement",
+      "additive": false,
+      "intermediate_types": []
+    },
+    "mass": {
+      "kind": "quantity",
+      "additive": false,
+      "intermediate_types": []
+    },
+    "measurement_date": {
+      "kind": "property",
+      "additive": false,
+      "intermediate_types": []
+    },
+    "water_supply": {
+      "kind": "property",
+      "additive": false,
+      "intermediate_types": [
+        "rainwater_reservoir",
+        "reservoir"
+      ]
+    },
+    "network_provenance": {
+      "kind": "property",
+      "additive": false,
+      "intermediate_types": []
+    },
+    "water_origin": {
+      "kind": "property",
+      "additive": false,
+      "intermediate_types": []
+    },
+    "phone": {
+      "kind": "property",
+      "additive": false,
+      "intermediate_types": []
+    },
+    "resolution": {
+      "kind": "property",
+      "additive": false,
+      "intermediate_types": []
+    },
+    "mode": {
+      "kind": "property",
+      "additive": false,
+      "intermediate_types": []
+    },
+    "measurement_publication": {
+      "kind": "property",
+      "additive": false,
+      "intermediate_types": []
+    },
+    "measurement_result": {
+      "kind": "property",
+      "additive": false,
+      "intermediate_types": []
+    },
+    "measurement_cancellation": {
+      "kind": "property",
+      "additive": false,
+      "intermediate_types": []
+    },
+    "retention_policy": {
+      "kind": "property",
+      "additive": false,
+      "intermediate_types": []
+    },
+    "retention_duration": {
+      "kind": "property",
+      "additive": false,
+      "intermediate_types": []
+    }
+  },
+  "questions": {
+    "q001": {
+      "text": "¿Cuál es la autonomía máxima del reproductor Mica?",
+      "frame": {
+        "subject": {
+          "entity": "Mica",
+          "all": false,
+          "member_of": null,
+          "part_of": null
+        },
+        "context": {},
+        "configuration": {},
+        "requests": [
+          {
+            "attribute": "autonomy",
+            "modality": "state",
+            "value": null,
+            "value_type": null,
+            "path": "direct",
+            "extent": "maximum"
+          }
+        ],
+        "premises": []
+      }
+    },
+    "q002": {
+      "text": "¿Cuál es la autonomía máxima de Mica en la ruta Riachuelo?",
+      "frame": {
+        "subject": {
+          "entity": "Mica",
+          "all": false,
+          "member_of": null,
+          "part_of": null
+        },
+        "context": {
+          "route": "Riachuelo"
+        },
+        "configuration": {},
+        "requests": [
+          {
+            "attribute": "autonomy",
+            "modality": "state",
+            "value": null,
+            "value_type": null,
+            "path": "direct",
+            "extent": "maximum"
+          }
+        ],
+        "premises": []
+      }
+    },
+    "q003": {
+      "text": "¿Para qué día está programada la medición de autonomía de Mica?",
+      "frame": {
+        "subject": {
+          "entity": "Mica",
+          "all": false,
+          "member_of": null,
+          "part_of": null
+        },
+        "context": {
+          "measurement_aspect": "autonomy"
+        },
+        "configuration": {},
+        "requests": [
+          {
+            "attribute": "measurement_date",
+            "modality": "planned",
+            "value": null,
+            "value_type": null,
+            "path": "direct",
+            "extent": "unspecified"
+          }
+        ],
+        "premises": []
+      }
+    },
+    "q004": {
+      "text": "¿Se realizó la prueba de autonomía de Mica por descarga hasta apagarse?",
+      "frame": {
+        "subject": {
+          "entity": "Mica",
+          "all": false,
+          "member_of": null,
+          "part_of": null
+        },
+        "context": {},
+        "configuration": {},
+        "requests": [
+          {
+            "attribute": "measurement",
+            "modality": "occurred",
+            "value": "discharge_until_poweroff",
+            "value_type": null,
+            "path": "direct",
+            "extent": "unspecified",
+            "measured_attribute": "autonomy"
+          }
+        ],
+        "premises": []
+      }
+    },
+    "q005": {
+      "text": "¿De qué tubería de la red procede el agua del jardín Jara?",
+      "frame": {
+        "subject": {
+          "entity": "Jara",
+          "all": false,
+          "member_of": null,
+          "part_of": null
+        },
+        "context": {},
+        "configuration": {},
+        "requests": [
+          {
+            "attribute": "water_supply",
+            "modality": "state",
+            "value": null,
+            "value_type": "network_pipe",
+            "path": "transitive",
+            "extent": "unspecified"
+          }
+        ],
+        "premises": [
+          {
+            "subject": {
+              "entity": "Jara",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "network_provenance",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "present",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          }
+        ]
+      }
+    },
+    "q006": {
+      "text": "¿Cuál es el teléfono del pedido Q2 de Liria?",
+      "frame": {
+        "subject": {
+          "entity": "Liria/Q2",
+          "all": false,
+          "member_of": null,
+          "part_of": null
+        },
+        "context": {},
+        "configuration": {},
+        "requests": [
+          {
+            "attribute": "phone",
+            "modality": "state",
+            "value": null,
+            "value_type": null,
+            "path": "direct",
+            "extent": "unspecified"
+          }
+        ],
+        "premises": []
+      }
+    },
+    "q007": {
+      "text": "¿Qué resolución usa la impresora Estepa con el modo Fino?",
+      "frame": {
+        "subject": {
+          "entity": "Estepa",
+          "all": false,
+          "member_of": null,
+          "part_of": null
+        },
+        "context": {},
+        "configuration": {
+          "mode": "Fino"
+        },
+        "requests": [
+          {
+            "attribute": "resolution",
+            "modality": "state",
+            "value": null,
+            "value_type": null,
+            "path": "direct",
+            "extent": "unspecified"
+          }
+        ],
+        "premises": [
+          {
+            "subject": {
+              "entity": "Estepa",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "mode",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "Fino",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          }
+        ]
+      }
+    },
+    "q008": {
+      "text": "¿Cuál es la masa máxima de la caja Laja?",
+      "frame": {
+        "subject": {
+          "entity": "Laja",
+          "all": false,
+          "member_of": null,
+          "part_of": null
+        },
+        "context": {},
+        "configuration": {},
+        "requests": [
+          {
+            "attribute": "mass",
+            "modality": "state",
+            "value": null,
+            "value_type": null,
+            "path": "direct",
+            "extent": "maximum"
+          }
+        ],
+        "premises": []
+      }
+    },
+    "q009": {
+      "text": "¿Qué plazo común establece la política de toda la colección Musgo?",
+      "frame": {
+        "subject": {
+          "entity": "Musgo",
+          "all": true,
+          "member_of": null,
+          "part_of": null
+        },
+        "context": {},
+        "configuration": {},
+        "requests": [
+          {
+            "attribute": "retention_policy",
+            "modality": "state",
+            "value": null,
+            "value_type": null,
+            "path": "direct",
+            "extent": "unspecified"
+          }
+        ],
+        "premises": []
+      }
+    }
+  },
+  "assertions": {
+    "a001": {
+      "text": "La prueba de autonomía de Mica por descarga hasta apagarse no se realizó.",
+      "interpretations": [
+        "Literal factual decomposition, evaluated independently from question."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Mica",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "measurement",
+            "modality": "occurred",
+            "context": {},
+            "configuration": {},
+            "positive": false,
+            "datum": {
+              "kind": "known",
+              "text": "discharge_until_poweroff",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": "autonomy",
+            "measurement_method": "discharge_until_poweroff"
+          }
+        ]
+      ]
+    },
+    "a002": {
+      "text": "Está previsto medir la autonomía de Mica mediante descarga hasta apagarse.",
+      "interpretations": [
+        "Literal factual decomposition, evaluated independently from question."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Mica",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "measurement",
+            "modality": "planned",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "discharge_until_poweroff",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": "autonomy",
+            "measurement_method": "discharge_until_poweroff"
+          }
+        ]
+      ]
+    },
+    "a003": {
+      "text": "La prueba de masa de Mica con balanza no se realizó.",
+      "interpretations": [
+        "Literal factual decomposition, evaluated independently from question."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Mica",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "measurement",
+            "modality": "occurred",
+            "context": {},
+            "configuration": {},
+            "positive": false,
+            "datum": {
+              "kind": "known",
+              "text": "scale",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": "mass",
+            "measurement_method": "scale"
+          }
+        ]
+      ]
+    },
+    "a004": {
+      "text": "La prueba de autonomía de Cuarzo por descarga hasta apagarse no se realizó.",
+      "interpretations": [
+        "Literal factual decomposition, evaluated independently from question."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Cuarzo",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "measurement",
+            "modality": "occurred",
+            "context": {},
+            "configuration": {},
+            "positive": false,
+            "datum": {
+              "kind": "known",
+              "text": "discharge_until_poweroff",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": "autonomy",
+            "measurement_method": "discharge_until_poweroff"
+          }
+        ]
+      ]
+    },
+    "a005": {
+      "text": "En la ruta Bosque no se realizó la prueba de autonomía de Mica por descarga hasta apagarse.",
+      "interpretations": [
+        "Literal factual decomposition, evaluated independently from question."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Mica",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "measurement",
+            "modality": "occurred",
+            "context": {
+              "route": "Bosque"
+            },
+            "configuration": {},
+            "positive": false,
+            "datum": {
+              "kind": "known",
+              "text": "discharge_until_poweroff",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": "autonomy",
+            "measurement_method": "discharge_until_poweroff"
+          }
+        ]
+      ]
+    },
+    "a006": {
+      "text": "No se realizó la prueba de autonomía del módulo de radio de Mica mediante descarga.",
+      "interpretations": [
+        "Literal factual decomposition, evaluated independently from question."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Mica/radio",
+              "all": false,
+              "member_of": null,
+              "part_of": "Mica"
+            },
+            "attribute": "measurement",
+            "modality": "occurred",
+            "context": {},
+            "configuration": {},
+            "positive": false,
+            "datum": {
+              "kind": "known",
+              "text": "discharge",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": "autonomy",
+            "measurement_method": "discharge"
+          }
+        ]
+      ]
+    },
+    "a007": {
+      "text": "La autonomía máxima de Mica no consta en el registro de mantenimiento.",
+      "interpretations": [
+        "Literal factual decomposition, evaluated independently from question."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Mica",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "autonomy",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "unknown",
+              "text": null,
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": "maintenance record",
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "maximum",
+            "measured_attribute": null,
+            "measurement_method": null
+          }
+        ]
+      ]
+    },
+    "a008": {
+      "text": "No se realizó la prueba de autonomía de Mica por descarga hasta apagarse; la especificación fija un máximo de 90 minutos.",
+      "interpretations": [
+        "Literal factual decomposition, evaluated independently from question."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Mica",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "measurement",
+            "modality": "occurred",
+            "context": {},
+            "configuration": {},
+            "positive": false,
+            "datum": {
+              "kind": "known",
+              "text": "discharge_until_poweroff",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": "autonomy",
+            "measurement_method": "discharge_until_poweroff"
+          },
+          {
+            "subject": {
+              "entity": "Mica",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "autonomy",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "90 minutes",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "specification",
+            "quantity_scope": "maximum",
+            "measured_attribute": null,
+            "measurement_method": null
+          }
+        ]
+      ]
+    },
+    "a009": {
+      "text": "Se realizó la prueba de autonomía de Mica por descarga hasta apagarse; este texto no incluye el resultado.",
+      "interpretations": [
+        "Literal factual decomposition, evaluated independently from question."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Mica",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "measurement",
+            "modality": "occurred",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "discharge_until_poweroff",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": "autonomy",
+            "measurement_method": "discharge_until_poweroff"
+          },
+          {
+            "subject": {
+              "entity": "Mica",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "measurement_result",
+            "modality": "state",
+            "context": {
+              "measurement_aspect": "autonomy",
+              "measurement_method": "discharge_until_poweroff"
+            },
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "unknown",
+              "text": null,
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": "this text",
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          }
+        ]
+      ]
+    },
+    "a010": {
+      "text": "No está previsto medir la autonomía de Mica mediante descarga hasta apagarse.",
+      "interpretations": [
+        "Literal factual decomposition, evaluated independently from question."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Mica",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "measurement",
+            "modality": "planned",
+            "context": {},
+            "configuration": {},
+            "positive": false,
+            "datum": {
+              "kind": "known",
+              "text": "discharge_until_poweroff",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": "autonomy",
+            "measurement_method": "discharge_until_poweroff"
+          }
+        ]
+      ]
+    },
+    "a011": {
+      "text": "Jara recibe agua exclusivamente del depósito de lluvia L.",
+      "interpretations": [
+        "Exclusive immediate supplier; upstream network remains possible.",
+        "Pragmatic exclusion of any network path; extra interpretation, not entailed by reservoir name."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Jara",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "water_supply",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "L",
+              "value_type": "rainwater_reservoir"
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "immediate",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          },
+          {
+            "subject": {
+              "entity": "Jara",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "water_supply",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": null,
+            "only_values": [
+              "L"
+            ],
+            "availability_scope": null,
+            "flow_scope": "immediate",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          }
+        ],
+        [
+          {
+            "subject": {
+              "entity": "Jara",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "water_supply",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "L",
+              "value_type": "rainwater_reservoir"
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "immediate",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          },
+          {
+            "subject": {
+              "entity": "Jara",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "water_supply",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": null,
+            "only_values": [
+              "L"
+            ],
+            "availability_scope": null,
+            "flow_scope": "immediate",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          },
+          {
+            "subject": {
+              "entity": "Jara",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "network_provenance",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": false,
+            "datum": {
+              "kind": "known",
+              "text": "present",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          }
+        ]
+      ]
+    },
+    "a012": {
+      "text": "Jara no recibe agua procedente de la red por ningún recorrido; solo utiliza lluvia del depósito L.",
+      "interpretations": [
+        "Literal factual decomposition, evaluated independently from question."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Jara",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "network_provenance",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": false,
+            "datum": {
+              "kind": "known",
+              "text": "present",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          },
+          {
+            "subject": {
+              "entity": "Jara",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "water_supply",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "L",
+              "value_type": "rainwater_reservoir"
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "immediate",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          },
+          {
+            "subject": {
+              "entity": "Jara",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "water_origin",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": null,
+            "only_values": [
+              "rainfall"
+            ],
+            "availability_scope": null,
+            "flow_scope": "upstream",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          }
+        ]
+      ]
+    },
+    "a013": {
+      "text": "El depósito de lluvia L alimenta Jara.",
+      "interpretations": [
+        "Literal factual decomposition, evaluated independently from question."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Jara",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "water_supply",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "L",
+              "value_type": "rainwater_reservoir"
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "immediate",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          }
+        ]
+      ]
+    },
+    "a014": {
+      "text": "El teléfono del pedido Q de Liria es 555-0112; la etiqueta del pedido está cortada y puede ser Q2 o Q3.",
+      "interpretations": [
+        "Truncated ID is Q2.",
+        "Truncated ID is Q3."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Liria/Q2",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "phone",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "555-0112",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          }
+        ],
+        [
+          {
+            "subject": {
+              "entity": "Liria/Q3",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "phone",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "555-0112",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          }
+        ]
+      ]
+    },
+    "a015": {
+      "text": "Estepa usa Borrador a 150 ppp; Loma2 usa Fino a 600 ppp.",
+      "interpretations": [
+        "Literal factual decomposition, evaluated independently from question."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Estepa",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "resolution",
+            "modality": "state",
+            "context": {},
+            "configuration": {
+              "mode": "Borrador"
+            },
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "150 ppp",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "assignment",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          },
+          {
+            "subject": {
+              "entity": "Loma2",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "resolution",
+            "modality": "state",
+            "context": {},
+            "configuration": {
+              "mode": "Fino"
+            },
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "600 ppp",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "assignment",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          }
+        ]
+      ]
+    },
+    "a016": {
+      "text": "Estepa solo admite Borrador a 150 ppp y no admite Fino.",
+      "interpretations": [
+        "Literal factual decomposition, evaluated independently from question."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Estepa",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "resolution",
+            "modality": "state",
+            "context": {},
+            "configuration": {
+              "mode": "Borrador"
+            },
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "150 ppp",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "admission",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          },
+          {
+            "subject": {
+              "entity": "Estepa",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "mode",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": null,
+            "only_values": [
+              "Borrador"
+            ],
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "admission",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          },
+          {
+            "subject": {
+              "entity": "Estepa",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "mode",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": false,
+            "datum": {
+              "kind": "known",
+              "text": "Fino",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "admission",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          }
+        ]
+      ]
+    },
+    "a017": {
+      "text": "Loma2 usa Fino a 600 ppp.",
+      "interpretations": [
+        "Literal factual decomposition, evaluated independently from question."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Loma2",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "resolution",
+            "modality": "state",
+            "context": {},
+            "configuration": {
+              "mode": "Fino"
+            },
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "600 ppp",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "assignment",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          }
+        ]
+      ]
+    },
+    "a018": {
+      "text": "Estepa usa Fino a 600 ppp.",
+      "interpretations": [
+        "Literal factual decomposition, evaluated independently from question."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Estepa",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "resolution",
+            "modality": "state",
+            "context": {},
+            "configuration": {
+              "mode": "Fino"
+            },
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "600 ppp",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "assignment",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          }
+        ]
+      ]
+    },
+    "a019": {
+      "text": "No se realizó la prueba de autonomía de Mica mediante estimación de consumo y capacidad.",
+      "interpretations": [
+        "Literal factual decomposition, evaluated independently from question."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Mica",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "measurement",
+            "modality": "occurred",
+            "context": {},
+            "configuration": {},
+            "positive": false,
+            "datum": {
+              "kind": "known",
+              "text": "capacity_consumption_estimation",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": "autonomy",
+            "measurement_method": "capacity_consumption_estimation"
+          }
+        ]
+      ]
+    },
+    "a020": {
+      "text": "No se realizaron las mediciones de Mica; este texto no indica qué magnitud ni método.",
+      "interpretations": [
+        "Literal factual decomposition, evaluated independently from question."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Mica",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "measurement",
+            "modality": "occurred",
+            "context": {},
+            "configuration": {},
+            "positive": false,
+            "datum": {
+              "kind": "known",
+              "text": "unspecified",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          }
+        ]
+      ]
+    },
+    "a021": {
+      "text": "No se publicó el resultado de la prueba de autonomía de Mica por descarga hasta apagarse.",
+      "interpretations": [
+        "Literal factual decomposition, evaluated independently from question."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Mica",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "measurement_publication",
+            "modality": "occurred",
+            "context": {
+              "measurement_aspect": "autonomy",
+              "measurement_method": "discharge_until_poweroff"
+            },
+            "configuration": {},
+            "positive": false,
+            "datum": {
+              "kind": "known",
+              "text": "discharge_until_poweroff",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          }
+        ]
+      ]
+    },
+    "a022": {
+      "text": "En el registro A la autonomía máxima de Mica está ilegible, aunque en otro documento pueda constar.",
+      "interpretations": [
+        "Literal factual decomposition, evaluated independently from question."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Mica",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "autonomy",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "illegible",
+              "text": null,
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": "record A",
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "maximum",
+            "measured_attribute": null,
+            "measurement_method": null
+          }
+        ]
+      ]
+    },
+    "a023": {
+      "text": "La prueba de autonomía de Mica por descarga hasta apagarse se canceló definitivamente sin realizarse.",
+      "interpretations": [
+        "Literal factual decomposition, evaluated independently from question."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Mica",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "measurement",
+            "modality": "occurred",
+            "context": {},
+            "configuration": {},
+            "positive": false,
+            "datum": {
+              "kind": "known",
+              "text": "discharge_until_poweroff",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": "autonomy",
+            "measurement_method": "discharge_until_poweroff"
+          },
+          {
+            "subject": {
+              "entity": "Mica",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "measurement_cancellation",
+            "modality": "state",
+            "context": {
+              "measurement_aspect": "autonomy",
+              "measurement_method": "discharge_until_poweroff"
+            },
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "definitive",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          }
+        ]
+      ]
+    },
+    "a024": {
+      "text": "La prueba de autonomía de Mica por descarga hasta apagarse está pendiente, sin indicación de si existe un máximo especificado.",
+      "interpretations": [
+        "Literal factual decomposition, evaluated independently from question."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Mica",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "measurement",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "pending",
+              "text": null,
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": "autonomy",
+            "measurement_method": "discharge_until_poweroff"
+          }
+        ]
+      ]
+    },
+    "a025": {
+      "text": "La medición de masa de Laja con balanza se realizó, sin resultado incluido en este texto.",
+      "interpretations": [
+        "Literal factual decomposition, evaluated independently from question."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Laja",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "measurement",
+            "modality": "occurred",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "scale",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": "mass",
+            "measurement_method": "scale"
+          },
+          {
+            "subject": {
+              "entity": "Laja",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "measurement_result",
+            "modality": "state",
+            "context": {
+              "measurement_aspect": "mass",
+              "measurement_method": "scale"
+            },
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "unknown",
+              "text": null,
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": "this text",
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          }
+        ]
+      ]
+    },
+    "a026": {
+      "text": "La medición de masa de la caja Laja con balanza no se realizó.",
+      "interpretations": [
+        "Literal factual decomposition, evaluated independently from question."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Laja",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "measurement",
+            "modality": "occurred",
+            "context": {},
+            "configuration": {},
+            "positive": false,
+            "datum": {
+              "kind": "known",
+              "text": "scale",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": "mass",
+            "measurement_method": "scale"
+          }
+        ]
+      ]
+    },
+    "a027": {
+      "text": "En la ruta Riachuelo se realizó la prueba de autonomía de Mica por descarga hasta apagarse.",
+      "interpretations": [
+        "Literal factual decomposition, evaluated independently from question."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Mica",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "measurement",
+            "modality": "occurred",
+            "context": {
+              "route": "Riachuelo"
+            },
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "discharge_until_poweroff",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": "autonomy",
+            "measurement_method": "discharge_until_poweroff"
+          }
+        ]
+      ]
+    },
+    "a028": {
+      "text": "Mica funcionó al menos 70 minutos sin apagarse en una prueba; no se afirma un máximo exacto.",
+      "interpretations": [
+        "Literal factual decomposition, evaluated independently from question."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Mica",
+              "all": false,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "autonomy",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "lower_bound",
+              "text": "70 minutes",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "observation",
+            "quantity_scope": "trial",
+            "measured_attribute": null,
+            "measurement_method": null
+          }
+        ]
+      ]
+    },
+    "a029": {
+      "text": "El elemento M4 de la colección Musgo se conserva 18 días.",
+      "interpretations": [
+        "Literal factual decomposition, evaluated independently from question."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Musgo/M4",
+              "all": false,
+              "member_of": "Musgo",
+              "part_of": null
+            },
+            "attribute": "retention_duration",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "18 days",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "description",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          }
+        ]
+      ]
+    },
+    "a030": {
+      "text": "La política de toda la colección Musgo es retención indefinida.",
+      "interpretations": [
+        "Literal factual decomposition, evaluated independently from question."
+      ],
+      "alternatives": [
+        [
+          {
+            "subject": {
+              "entity": "Musgo",
+              "all": true,
+              "member_of": null,
+              "part_of": null
+            },
+            "attribute": "retention_policy",
+            "modality": "state",
+            "context": {},
+            "configuration": {},
+            "positive": true,
+            "datum": {
+              "kind": "known",
+              "text": "indefinite",
+              "value_type": null
+            },
+            "only_values": null,
+            "availability_scope": null,
+            "flow_scope": "property",
+            "basis": "normative",
+            "quantity_scope": "unspecified",
+            "measured_attribute": null,
+            "measurement_method": null
+          }
+        ]
+      ]
+    }
+  },
+  "pairs": [
+    {
+      "id": "esv4_01",
+      "question": "q001",
+      "assertion": "a001"
+    },
+    {
+      "id": "esv4_02",
+      "question": "q001",
+      "assertion": "a002"
+    },
+    {
+      "id": "esv4_03",
+      "question": "q001",
+      "assertion": "a003"
+    },
+    {
+      "id": "esv4_04",
+      "question": "q001",
+      "assertion": "a004"
+    },
+    {
+      "id": "esv4_05",
+      "question": "q002",
+      "assertion": "a005"
+    },
+    {
+      "id": "esv4_06",
+      "question": "q001",
+      "assertion": "a006"
+    },
+    {
+      "id": "esv4_07",
+      "question": "q001",
+      "assertion": "a007"
+    },
+    {
+      "id": "esv4_08",
+      "question": "q001",
+      "assertion": "a008"
+    },
+    {
+      "id": "esv4_09",
+      "question": "q001",
+      "assertion": "a009"
+    },
+    {
+      "id": "esv4_10",
+      "question": "q001",
+      "assertion": "a010"
+    },
+    {
+      "id": "esv4_11",
+      "question": "q003",
+      "assertion": "a001"
+    },
+    {
+      "id": "esv4_12",
+      "question": "q004",
+      "assertion": "a001"
+    },
+    {
+      "id": "esv4_13",
+      "question": "q005",
+      "assertion": "a011"
+    },
+    {
+      "id": "esv4_14",
+      "question": "q005",
+      "assertion": "a012"
+    },
+    {
+      "id": "esv4_15",
+      "question": "q005",
+      "assertion": "a013"
+    },
+    {
+      "id": "esv4_16",
+      "question": "q006",
+      "assertion": "a014"
+    },
+    {
+      "id": "esv4_17",
+      "question": "q007",
+      "assertion": "a015"
+    },
+    {
+      "id": "esv4_18",
+      "question": "q007",
+      "assertion": "a016"
+    },
+    {
+      "id": "esv4_19",
+      "question": "q007",
+      "assertion": "a017"
+    },
+    {
+      "id": "esv4_20",
+      "question": "q007",
+      "assertion": "a018"
+    },
+    {
+      "id": "esv4_21",
+      "question": "q001",
+      "assertion": "a019"
+    },
+    {
+      "id": "esv4_22",
+      "question": "q001",
+      "assertion": "a020"
+    },
+    {
+      "id": "esv4_23",
+      "question": "q001",
+      "assertion": "a021"
+    },
+    {
+      "id": "esv4_24",
+      "question": "q001",
+      "assertion": "a022"
+    },
+    {
+      "id": "esv4_25",
+      "question": "q001",
+      "assertion": "a023"
+    },
+    {
+      "id": "esv4_26",
+      "question": "q001",
+      "assertion": "a024"
+    },
+    {
+      "id": "esv4_27",
+      "question": "q008",
+      "assertion": "a025"
+    },
+    {
+      "id": "esv4_28",
+      "question": "q008",
+      "assertion": "a026"
+    },
+    {
+      "id": "esv4_29",
+      "question": "q002",
+      "assertion": "a027"
+    },
+    {
+      "id": "esv4_30",
+      "question": "q001",
+      "assertion": "a028"
+    },
+    {
+      "id": "esv4_31",
+      "question": "q009",
+      "assertion": "a029"
+    },
+    {
+      "id": "esv4_32",
+      "question": "q009",
+      "assertion": "a030"
+    }
+  ]
+}

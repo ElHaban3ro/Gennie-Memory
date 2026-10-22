@@ -1,0 +1,32 @@
+{
+  "version": "documentary-known100-v1-preexecution-adjudication",
+  "reconciled_before_execution": true,
+  "source_sha256": "6a525084d75ec9fec40f65b1a8f221c7ec341285e94b9d36b2ae9c06637c5b26",
+  "author_labels_sha256": "c42bb2690cc4df393bbff745edf60d853d51e274ca464c994f708c732a8dc3d7",
+  "blind_review_sha256": "b46da0fd6028c0da86ff6693e41b5f1b1c0efbff27c5cde098bdccfcbd048451",
+  "blind_counts_sha256": "7eb7b2c9735dece898ef4e217488ce3775180d743128e78561df3f7fbcb9ac6a",
+  "legacy_role_metrics_unchanged": true,
+  "all100_roles_selections_review_and_counts_agree": true,
+  "qualification_semantics": "true is mandatory minimum from either independent annotation; additional conservative qualification allowed and counted separately, specified before execution",
+  "qualification_annotation_disagreements": [
+    {
+      "id": "pcv1_08_01/claim_01",
+      "author_minimum": false,
+      "blind_minimum": true,
+      "combined_mandatory": true
+    }
+  ],
+  "prospective_changes": [
+    "Missing measurement method explicit, not wildcard",
+    "All seven usa questions explicitly require actual assignment",
+    "Three Duna pairs none under that reading, no historic relabel",
+    "Olmo source readings remain open, literal immediate supplier retained, A/B relation never B certain"
+  ],
+  "semantic_limits": [
+    "All known development, not fresh validation",
+    "Source facts manually supplied, not extraction",
+    "Same-family blind critic, not human or ground truth",
+    "Conditional propositions not grounded in original conversation by this audit"
+  ],
+  "resolved_labels_sha256": "8171ed4c4804c8387c6afad6a655e3f394e908e9d3ddd7e45a5c05026a282b21"
+}

@@ -1,0 +1,35 @@
+{
+  "version": "possessive-manual-v1",
+  "predicate_rows": [
+    {
+      "id": "condition_suffices",
+      "roles": {
+        "beneficiary": "ref",
+        "condition": "term"
+      },
+      "distributive": false
+    },
+    {
+      "id": "property",
+      "roles": {
+        "subject": "ref",
+        "attribute": "attribute_id",
+        "value": "term"
+      },
+      "distributive": true
+    }
+  ],
+  "fixed_attribute_rows": [
+    "color"
+  ],
+  "fixed_action_rows": [],
+  "semantic_type_rows": [],
+  "relevance_links": [],
+  "request_context_profile": {
+    "version": "documentary_request_context_v1",
+    "features": [
+      "nominal_complement_de",
+      "nominal_possessive"
+    ]
+  }
+}

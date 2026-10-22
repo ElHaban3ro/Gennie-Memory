@@ -1,0 +1,37 @@
+{
+  "version": "epistemic-binding-v5-preexecution-adjudication",
+  "all_objections_resolved_before_execution": true,
+  "execution_scope": "manual boundary only; source-only extraction/semantic correctness not automated",
+  "reviewed_source_sha256": "42909db60639c35865f814be8adb3bbbe76a8ec9d8aac44d57f7ce132117c2a4",
+  "labels_reviewed_sha256": "2f836a1b3d9dfd5cd88abc9a31dadfe5680bc96664175d2c877f69a59c568edf",
+  "blind_final_sha256": "6b06071e6d249d5106888356c0a8c559a2f368469f9dca9925c7e5b36b9b1fb8",
+  "source_corrections": [
+    "Explicit exclusive readings for closed documentary lists",
+    "a013 north now literal in new source; invalid draft retained",
+    "a014 names literal but analytic open alternatives; no documentary cue; unresolved retained"
+  ],
+  "contract_clarifications": [
+    "Propositional invariance over whole statement, not clause identity",
+    "Assertable is according to source, no currency or external-truth claim",
+    "Open named binding preserves possibility with review, not invariant data",
+    "All 18 boundary fields agree independently authored and blind reviewed labels",
+    "Qualification reviewed independently including explicit scoped availability in pair16, not just new epistemic output. Prior freeze preserved before any bank execution."
+  ],
+  "remaining_limits": [
+    "same model family blind review, not independent human",
+    "18 development pairs not semantic coverage or automatic extraction",
+    "Clause-level provenance not modeled; entire record quoted",
+    "B/none, C/none, open unbound remain unresolved and block autonomy"
+  ],
+  "literal_repair_after_structural_rejection": {
+    "assertions": [
+      "a004",
+      "a005"
+    ],
+    "old_quote": "el identificador está cortado y puede ser K6 o K7",
+    "new_quote": "su identificador está cortado y puede ser K6 o K7",
+    "semantic_facts_labels_unchanged": true,
+    "blind_semantic_review_preserved": true,
+    "structural_failure_not_semantic_score": true
+  }
+}

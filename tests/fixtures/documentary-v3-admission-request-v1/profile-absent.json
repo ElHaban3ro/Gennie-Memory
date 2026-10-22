@@ -1,0 +1,1297 @@
+{
+  "vocabulary": {
+    "version": "documentary_pair_vocabulary_v3_receipt_item_v1",
+    "predicate_rows": [
+      {
+        "id": "property",
+        "roles": {
+          "subject": "ref",
+          "attribute": "attribute_id",
+          "value": "term"
+        },
+        "distributive": true
+      },
+      {
+        "id": "quantity",
+        "roles": {
+          "subject": "ref",
+          "attribute": "attribute_id",
+          "amount": "quantity"
+        },
+        "distributive": true
+      },
+      {
+        "id": "has_item",
+        "roles": {
+          "bearer": "ref",
+          "item": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "action",
+        "roles": {
+          "actor": "ref",
+          "action_kind": "action_id",
+          "object": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "entry_via",
+        "roles": {
+          "substance": "ref",
+          "destination": "ref",
+          "via": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "supplied_by",
+        "roles": {
+          "substance": "ref",
+          "destination": "ref",
+          "supplier": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "upstream_origin",
+        "roles": {
+          "substance": "ref",
+          "destination": "ref",
+          "origin": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "made_by",
+        "roles": {
+          "object": "ref",
+          "maker": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "owns",
+        "roles": {
+          "owner": "ref",
+          "object": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "located_at",
+        "roles": {
+          "object": "ref",
+          "place": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "member_of",
+        "roles": {
+          "member": "ref",
+          "group": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "part_of",
+        "roles": {
+          "component": "ref",
+          "whole": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "custodies",
+        "roles": {
+          "custodian": "ref",
+          "object": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "uses",
+        "roles": {
+          "subject": "ref",
+          "object": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "admits",
+        "roles": {
+          "subject": "ref",
+          "object": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "receives_from",
+        "roles": {
+          "destination": "ref",
+          "source": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "mixes",
+        "roles": {
+          "subject": "ref",
+          "left": "ref",
+          "right": "ref"
+        },
+        "distributive": false
+      },
+      {
+        "id": "documentary_availability",
+        "roles": {
+          "subject": "ref",
+          "attribute": "attribute_id",
+          "state": "term",
+          "document_scope": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "volume_received",
+        "roles": {
+          "subject": "ref",
+          "amount": "quantity"
+        },
+        "distributive": true
+      },
+      {
+        "id": "retention_for",
+        "roles": {
+          "policy": "ref",
+          "subject": "ref",
+          "duration": "quantity"
+        },
+        "distributive": true
+      },
+      {
+        "id": "improves",
+        "roles": {
+          "subject": "ref",
+          "attribute": "attribute_id"
+        },
+        "distributive": true
+      },
+      {
+        "id": "prepared_for",
+        "roles": {
+          "object": "ref",
+          "destination": "ref"
+        },
+        "distributive": false
+      },
+      {
+        "id": "route_entry",
+        "roles": {
+          "subject": "ref",
+          "via": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "action_actor",
+        "roles": {
+          "actor": "ref",
+          "action_kind": "action_id"
+        },
+        "distributive": true
+      },
+      {
+        "id": "action_undergoer",
+        "roles": {
+          "subject": "ref",
+          "action_kind": "action_id"
+        },
+        "distributive": false
+      },
+      {
+        "id": "requirement_attribute",
+        "roles": {
+          "subject": "ref",
+          "attribute": "attribute_id"
+        },
+        "distributive": true
+      },
+      {
+        "id": "requirement_class",
+        "roles": {
+          "subject": "ref",
+          "class": "term"
+        },
+        "distributive": true
+      },
+      {
+        "id": "information_state",
+        "roles": {
+          "subject": "ref",
+          "attribute": "attribute_id",
+          "state": "term"
+        },
+        "distributive": false
+      },
+      {
+        "id": "action_beneficiary",
+        "roles": {
+          "subject": "ref",
+          "action_kind": "action_id",
+          "beneficiary": "ref"
+        },
+        "distributive": false
+      },
+      {
+        "id": "for_purpose",
+        "roles": {
+          "object": "ref",
+          "purpose": "ref"
+        },
+        "distributive": false
+      },
+      {
+        "id": "class_suffices",
+        "roles": {
+          "subject": "ref",
+          "class": "term"
+        },
+        "distributive": true
+      },
+      {
+        "id": "operates_mode",
+        "roles": {
+          "subject": "ref",
+          "mode": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "receives_item",
+        "roles": {
+          "recipient": "ref",
+          "item": "ref"
+        },
+        "distributive": true
+      }
+    ],
+    "fixed_attribute_rows": [
+      "attachment_force",
+      "authorization_state",
+      "automatic_deletion_delay",
+      "autonomy",
+      "availability",
+      "battery_reserved",
+      "cartridge_color",
+      "case_color",
+      "closed_state",
+      "color",
+      "component_count",
+      "confirmed_musicians",
+      "contact_phone",
+      "deletion_age",
+      "delivered_image_format",
+      "delivery_location",
+      "digitized_pages",
+      "documentary_state",
+      "duration",
+      "duration_until_shutdown",
+      "enrollment_delivery_location",
+      "entry_via",
+      "export_date",
+      "export_image_format",
+      "exposure",
+      "fixing_force",
+      "frequency",
+      "generic_format",
+      "generic_location",
+      "generic_schedule",
+      "image_format",
+      "inaugurated_by",
+      "inauguration_date",
+      "ingestion_schedule",
+      "irrigation_method",
+      "lid_color",
+      "line_detail",
+      "mass",
+      "measurement",
+      "measurement_date",
+      "mode",
+      "music_stands_prepared",
+      "network_provenance",
+      "operating_duration",
+      "orientation",
+      "paper_tray_size",
+      "pending_pages",
+      "photograph_preparation",
+      "pickup_location",
+      "policy_retention",
+      "pressure",
+      "profile",
+      "program",
+      "quantity_extent",
+      "rainwater_mixed",
+      "rehearsal_location",
+      "requires",
+      "resolution",
+      "retention_policy",
+      "review_schedule",
+      "reviewed_by",
+      "rotation_state",
+      "salt_quantity",
+      "sample_rate",
+      "service_schedule",
+      "session_length_capability",
+      "storage",
+      "strap_color",
+      "temperature",
+      "terminal_condition",
+      "tray_count",
+      "tutor_identity",
+      "validity_state",
+      "volume",
+      "water_origin",
+      "water_supply",
+      "water_volume_per_period",
+      "watering_time",
+      "weight"
+    ],
+    "fixed_action_rows": [
+      "accompany",
+      "confirm",
+      "delete",
+      "deliver",
+      "digitize",
+      "enroll",
+      "enter",
+      "export",
+      "feed",
+      "inaugurate",
+      "ingest",
+      "inspect",
+      "irrigate",
+      "measure",
+      "open",
+      "operate",
+      "photograph",
+      "prepare",
+      "present",
+      "register",
+      "rehearse",
+      "reserve",
+      "retain",
+      "review",
+      "store",
+      "switch_off",
+      "transmit",
+      "transport",
+      "validate",
+      "withdraw"
+    ],
+    "semantic_type_rows": [
+      {
+        "id": "phone",
+        "class_quotes": [
+          "teléfono",
+          "teléfono de contacto"
+        ]
+      },
+      {
+        "id": "retention_policy",
+        "class_quotes": [
+          "política de retención"
+        ]
+      },
+      {
+        "id": "rainwater_reservoir",
+        "class_quotes": [
+          "depósito de lluvia"
+        ]
+      }
+    ],
+    "relevance_links": [
+      {
+        "id": "via_context_for_supply",
+        "source_predicate": "entry_via",
+        "target_predicate": "supplied_by",
+        "bindings": [
+          [
+            "source.substance",
+            "target.substance"
+          ],
+          [
+            "source.destination",
+            "target.destination"
+          ]
+        ],
+        "carry_roles": [
+          "source.via"
+        ],
+        "conclusion": "partial_intermediate_only",
+        "max_hops": 1,
+        "allow_reverse": false,
+        "allow_transitive_composition": false
+      },
+      {
+        "id": "supply_context_for_origin",
+        "source_predicate": "supplied_by",
+        "target_predicate": "upstream_origin",
+        "bindings": [
+          [
+            "source.substance",
+            "target.substance"
+          ],
+          [
+            "source.destination",
+            "target.destination"
+          ]
+        ],
+        "carry_roles": [
+          "source.supplier"
+        ],
+        "conclusion": "partial_intermediate_only",
+        "max_hops": 1,
+        "allow_reverse": false,
+        "allow_transitive_composition": false
+      },
+      {
+        "id": "documentary_availability_context_for_property",
+        "source_predicate": "documentary_availability",
+        "target_predicate": "property",
+        "bindings": [
+          [
+            "source.subject",
+            "target.subject"
+          ],
+          [
+            "source.attribute",
+            "target.attribute"
+          ]
+        ],
+        "carry_roles": [
+          "source.state",
+          "source.document_scope"
+        ],
+        "conclusion": "partial_intermediate_only",
+        "max_hops": 1,
+        "allow_reverse": false,
+        "allow_transitive_composition": false
+      },
+      {
+        "id": "documentary_availability_context_for_quantity",
+        "source_predicate": "documentary_availability",
+        "target_predicate": "quantity",
+        "bindings": [
+          [
+            "source.subject",
+            "target.subject"
+          ],
+          [
+            "source.attribute",
+            "target.attribute"
+          ]
+        ],
+        "carry_roles": [
+          "source.state",
+          "source.document_scope"
+        ],
+        "conclusion": "partial_intermediate_only",
+        "max_hops": 1,
+        "allow_reverse": false,
+        "allow_transitive_composition": false
+      },
+      {
+        "id": "information_state_context_for_property",
+        "source_predicate": "information_state",
+        "target_predicate": "property",
+        "bindings": [
+          [
+            "source.subject",
+            "target.subject"
+          ],
+          [
+            "source.attribute",
+            "target.attribute"
+          ]
+        ],
+        "carry_roles": [
+          "source.state"
+        ],
+        "conclusion": "partial_intermediate_only",
+        "max_hops": 1,
+        "allow_reverse": false,
+        "allow_transitive_composition": false
+      },
+      {
+        "id": "information_state_context_for_quantity",
+        "source_predicate": "information_state",
+        "target_predicate": "quantity",
+        "bindings": [
+          [
+            "source.subject",
+            "target.subject"
+          ],
+          [
+            "source.attribute",
+            "target.attribute"
+          ]
+        ],
+        "carry_roles": [
+          "source.state"
+        ],
+        "conclusion": "partial_intermediate_only",
+        "max_hops": 1,
+        "allow_reverse": false,
+        "allow_transitive_composition": false
+      },
+      {
+        "id": "admission_caution_for_assignment",
+        "source_predicate": "admits",
+        "target_predicate": "quantity",
+        "bindings": [
+          [
+            "source.subject",
+            "target.subject"
+          ]
+        ],
+        "carry_roles": [
+          "source.object"
+        ],
+        "conclusion": "partial_intermediate_only",
+        "max_hops": 1,
+        "allow_reverse": false,
+        "allow_transitive_composition": false
+      },
+      {
+        "id": "receiver_context_for_origin",
+        "source_predicate": "receives_from",
+        "target_predicate": "upstream_origin",
+        "bindings": [
+          [
+            "source.destination",
+            "target.destination"
+          ]
+        ],
+        "carry_roles": [
+          "source.source"
+        ],
+        "conclusion": "partial_intermediate_only",
+        "max_hops": 1,
+        "allow_reverse": false,
+        "allow_transitive_composition": false
+      },
+      {
+        "id": "supply_context_for_receiver",
+        "source_predicate": "supplied_by",
+        "target_predicate": "receives_from",
+        "bindings": [
+          [
+            "source.destination",
+            "target.destination"
+          ]
+        ],
+        "carry_roles": [
+          "source.supplier"
+        ],
+        "conclusion": "partial_intermediate_only",
+        "max_hops": 1,
+        "allow_reverse": false,
+        "allow_transitive_composition": false
+      },
+      {
+        "id": "admission_caution_for_property_assignment",
+        "source_predicate": "admits",
+        "target_predicate": "property",
+        "bindings": [
+          [
+            "source.subject",
+            "target.subject"
+          ]
+        ],
+        "carry_roles": [
+          "source.object"
+        ],
+        "conclusion": "partial_intermediate_only",
+        "max_hops": 1,
+        "allow_reverse": false,
+        "allow_transitive_composition": false
+      }
+    ],
+    "assignment_projection": {
+      "version": "uses_qualifier_assignment_v1",
+      "context_keys": [
+        "mode",
+        "profile",
+        "program"
+      ]
+    },
+    "relevance_profiles": {
+      "version": "documentary_relevance_profiles_v1",
+      "rows": [
+        {
+          "link_id": "receiver_context_for_origin",
+          "alternatives": [
+            {
+              "kind": "class_context",
+              "source_role": "source",
+              "source_classes": [
+                "depósito de lluvia"
+              ],
+              "target_role": "substance",
+              "target_classes": [
+                "agua"
+              ]
+            },
+            {
+              "kind": "corroborating_claim",
+              "predicate": "upstream_origin",
+              "bindings": [
+                [
+                  "source.source",
+                  "evidence.destination"
+                ],
+                [
+                  "target.substance",
+                  "evidence.substance"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "link_id": "supply_context_for_receiver",
+          "alternatives": [
+            {
+              "kind": "answer_filter",
+              "source_role": "supplier"
+            }
+          ]
+        }
+      ]
+    },
+    "measurement_context": {
+      "version": "negative_measurement_context_v1",
+      "rows": [
+        {
+          "id": "terminal_duration_gap",
+          "event_aspect": "duration",
+          "target_attribute": "autonomy",
+          "source_configuration": [
+            {
+              "key": "terminal_condition",
+              "value": "hasta apagarse"
+            }
+          ],
+          "target_configuration": [
+            {
+              "key": "quantity_extent",
+              "value": "máxima"
+            }
+          ],
+          "context_bindings": []
+        },
+        {
+          "id": "shutdown_duration_gap",
+          "event_aspect": "duration_until_shutdown",
+          "target_attribute": "autonomy",
+          "source_configuration": [],
+          "target_configuration": [
+            {
+              "key": "quantity_extent",
+              "value": "máxima"
+            }
+          ],
+          "context_bindings": [
+            [
+              "context",
+              "route"
+            ]
+          ]
+        }
+      ]
+    },
+    "documentary_anchor_context": {
+      "version": "anchored_documentary_context_v1",
+      "rows": [
+        {
+          "id": "delivered_format_record_context",
+          "link_id": "information_state_context_for_property",
+          "attribute_id": "delivered_image_format",
+          "target_status": "occurred",
+          "source_link_kind": "owned_by",
+          "question_link_kind": "part_of",
+          "source_configuration": [
+            {
+              "key": "delivery_state",
+              "value": "ya entregadas"
+            }
+          ]
+        }
+      ]
+    },
+    "restriction_domain_profile": {
+      "version": "explicit_answer_domains_v1"
+    },
+    "term_description_profile": {
+      "version": "local_reference_descriptions_v1"
+    }
+  },
+  "source": {
+    "text": "La impresora Helia no admite el modo Fino.",
+    "raw": {
+      "claims": [
+        {
+          "id": "admission",
+          "scope_id": "doc",
+          "qualifier_ids": [],
+          "evidence": [
+            {
+              "start_byte": 0,
+              "end_byte": 42,
+              "quote": "La impresora Helia no admite el modo Fino."
+            }
+          ],
+          "body": {
+            "kind": "proposition",
+            "value": {
+              "atom": {
+                "predicate": "admits",
+                "polarity": "negative",
+                "arguments": [
+                  {
+                    "role": "subject",
+                    "value": {
+                      "kind": "ref",
+                      "id": "printer"
+                    }
+                  },
+                  {
+                    "role": "object",
+                    "value": {
+                      "kind": "ref",
+                      "id": "mode"
+                    }
+                  }
+                ],
+                "evidence": [
+                  {
+                    "start_byte": 0,
+                    "end_byte": 42,
+                    "quote": "La impresora Helia no admite el modo Fino."
+                  }
+                ]
+              },
+              "judgment": "fact",
+              "status": "state",
+              "basis": "capability",
+              "normative_scope": null,
+              "qualifier_ids": []
+            }
+          }
+        }
+      ],
+      "coverage": [
+        {
+          "issue_id": null,
+          "owner": {
+            "kind": "claim",
+            "id": "admission"
+          },
+          "span": {
+            "start_byte": 0,
+            "end_byte": 42,
+            "quote": "La impresora Helia no admite el modo Fino."
+          },
+          "state": "represented"
+        }
+      ],
+      "dependencies": [
+        {
+          "consumer": {
+            "kind": "reference",
+            "id": "printer"
+          },
+          "requires": {
+            "kind": "scope",
+            "id": "doc"
+          },
+          "role": "binding"
+        },
+        {
+          "consumer": {
+            "kind": "reference",
+            "id": "mode"
+          },
+          "requires": {
+            "kind": "scope",
+            "id": "doc"
+          },
+          "role": "binding"
+        },
+        {
+          "consumer": {
+            "kind": "claim",
+            "id": "admission"
+          },
+          "requires": {
+            "kind": "scope",
+            "id": "doc"
+          },
+          "role": "binding"
+        },
+        {
+          "consumer": {
+            "kind": "claim",
+            "id": "admission"
+          },
+          "requires": {
+            "kind": "reference",
+            "id": "printer"
+          },
+          "role": "identity"
+        },
+        {
+          "consumer": {
+            "kind": "claim",
+            "id": "admission"
+          },
+          "requires": {
+            "kind": "reference",
+            "id": "mode"
+          },
+          "role": "identity"
+        }
+      ],
+      "domain_namespace": "documentary-v3-known-development",
+      "identity": [],
+      "kind": "source",
+      "qualifiers": [],
+      "references": [
+        {
+          "id": "printer",
+          "scope_id": "doc",
+          "mention": {
+            "start_byte": 13,
+            "end_byte": 18,
+            "quote": "Helia"
+          },
+          "name": {
+            "start_byte": 13,
+            "end_byte": 18,
+            "quote": "Helia"
+          },
+          "declared_class": {
+            "start_byte": 3,
+            "end_byte": 12,
+            "quote": "impresora"
+          },
+          "semantic_type": null,
+          "denotation": "entity",
+          "binding_scope_id": null,
+          "anaphora": null,
+          "links": []
+        },
+        {
+          "id": "mode",
+          "scope_id": "doc",
+          "mention": {
+            "start_byte": 37,
+            "end_byte": 41,
+            "quote": "Fino"
+          },
+          "name": {
+            "start_byte": 37,
+            "end_byte": 41,
+            "quote": "Fino"
+          },
+          "declared_class": {
+            "start_byte": 32,
+            "end_byte": 36,
+            "quote": "modo"
+          },
+          "semantic_type": null,
+          "denotation": "entity",
+          "binding_scope_id": null,
+          "anaphora": null,
+          "links": []
+        }
+      ],
+      "requests": [],
+      "scopes": [
+        {
+          "binding": null,
+          "branch_id": null,
+          "id": "doc",
+          "kind": "document",
+          "parent_id": null
+        }
+      ],
+      "text_sha256": "0e0155a4d941435e09874749c83df53c394e253b27959d6c5fc0304b4e61a4dc",
+      "version": "documentary_evidence_v3",
+      "vocabulary_sha256": "096f5196f60b3e31f2037418a3615ea974f77ec643678b1af3d1707ad3bad799"
+    }
+  },
+  "question": {
+    "text": "¿Qué resolución usa la impresora Helia con el modo Fino?",
+    "raw": {
+      "claims": [
+        {
+          "id": "operating-premise",
+          "scope_id": "doc",
+          "qualifier_ids": [],
+          "evidence": [
+            {
+              "start_byte": 19,
+              "end_byte": 58,
+              "quote": "usa la impresora Helia con el modo Fino"
+            }
+          ],
+          "body": {
+            "kind": "proposition",
+            "value": {
+              "atom": {
+                "predicate": "operates_mode",
+                "polarity": "positive",
+                "arguments": [
+                  {
+                    "role": "subject",
+                    "value": {
+                      "kind": "ref",
+                      "id": "printer"
+                    }
+                  },
+                  {
+                    "role": "mode",
+                    "value": {
+                      "kind": "ref",
+                      "id": "mode"
+                    }
+                  }
+                ],
+                "evidence": [
+                  {
+                    "start_byte": 19,
+                    "end_byte": 58,
+                    "quote": "usa la impresora Helia con el modo Fino"
+                  }
+                ]
+              },
+              "judgment": "fact",
+              "status": "state",
+              "basis": "assignment",
+              "normative_scope": null,
+              "qualifier_ids": []
+            }
+          }
+        }
+      ],
+      "coverage": [
+        {
+          "issue_id": null,
+          "owner": {
+            "kind": "claim",
+            "id": "operating-premise"
+          },
+          "span": {
+            "start_byte": 0,
+            "end_byte": 59,
+            "quote": "¿Qué resolución usa la impresora Helia con el modo Fino?"
+          },
+          "state": "represented"
+        },
+        {
+          "issue_id": null,
+          "owner": {
+            "kind": "request",
+            "id": "ask"
+          },
+          "span": {
+            "start_byte": 0,
+            "end_byte": 59,
+            "quote": "¿Qué resolución usa la impresora Helia con el modo Fino?"
+          },
+          "state": "represented"
+        }
+      ],
+      "dependencies": [
+        {
+          "consumer": {
+            "kind": "reference",
+            "id": "printer"
+          },
+          "requires": {
+            "kind": "scope",
+            "id": "doc"
+          },
+          "role": "binding"
+        },
+        {
+          "consumer": {
+            "kind": "reference",
+            "id": "mode"
+          },
+          "requires": {
+            "kind": "scope",
+            "id": "doc"
+          },
+          "role": "binding"
+        },
+        {
+          "consumer": {
+            "kind": "claim",
+            "id": "operating-premise"
+          },
+          "requires": {
+            "kind": "scope",
+            "id": "doc"
+          },
+          "role": "binding"
+        },
+        {
+          "consumer": {
+            "kind": "claim",
+            "id": "operating-premise"
+          },
+          "requires": {
+            "kind": "reference",
+            "id": "printer"
+          },
+          "role": "identity"
+        },
+        {
+          "consumer": {
+            "kind": "claim",
+            "id": "operating-premise"
+          },
+          "requires": {
+            "kind": "reference",
+            "id": "mode"
+          },
+          "role": "identity"
+        },
+        {
+          "consumer": {
+            "kind": "request",
+            "id": "ask"
+          },
+          "requires": {
+            "kind": "scope",
+            "id": "doc"
+          },
+          "role": "binding"
+        },
+        {
+          "consumer": {
+            "kind": "request",
+            "id": "ask"
+          },
+          "requires": {
+            "kind": "reference",
+            "id": "printer"
+          },
+          "role": "identity"
+        },
+        {
+          "consumer": {
+            "kind": "request",
+            "id": "ask"
+          },
+          "requires": {
+            "kind": "reference",
+            "id": "mode"
+          },
+          "role": "identity"
+        },
+        {
+          "consumer": {
+            "kind": "request",
+            "id": "ask"
+          },
+          "requires": {
+            "kind": "qualifier",
+            "id": "mode-context"
+          },
+          "role": "configuration"
+        },
+        {
+          "consumer": {
+            "kind": "request",
+            "id": "ask"
+          },
+          "requires": {
+            "kind": "claim",
+            "id": "operating-premise"
+          },
+          "role": "premise"
+        }
+      ],
+      "domain_namespace": "documentary-v3-known-development",
+      "identity": [],
+      "kind": "question",
+      "qualifiers": [
+        {
+          "id": "mode-context",
+          "scope_id": "doc",
+          "kind": "configuration",
+          "body": {
+            "key": "mode",
+            "value": {
+              "kind": "ref",
+              "id": "mode"
+            }
+          },
+          "resolution": "known",
+          "evidence": [
+            {
+              "start_byte": 42,
+              "end_byte": 58,
+              "quote": "con el modo Fino"
+            }
+          ]
+        }
+      ],
+      "references": [
+        {
+          "id": "printer",
+          "scope_id": "doc",
+          "mention": {
+            "start_byte": 36,
+            "end_byte": 41,
+            "quote": "Helia"
+          },
+          "name": {
+            "start_byte": 36,
+            "end_byte": 41,
+            "quote": "Helia"
+          },
+          "declared_class": {
+            "start_byte": 26,
+            "end_byte": 35,
+            "quote": "impresora"
+          },
+          "semantic_type": null,
+          "denotation": "entity",
+          "binding_scope_id": null,
+          "anaphora": null,
+          "links": []
+        },
+        {
+          "id": "mode",
+          "scope_id": "doc",
+          "mention": {
+            "start_byte": 54,
+            "end_byte": 58,
+            "quote": "Fino"
+          },
+          "name": {
+            "start_byte": 54,
+            "end_byte": 58,
+            "quote": "Fino"
+          },
+          "declared_class": {
+            "start_byte": 49,
+            "end_byte": 53,
+            "quote": "modo"
+          },
+          "semantic_type": null,
+          "denotation": "entity",
+          "binding_scope_id": null,
+          "anaphora": null,
+          "links": []
+        }
+      ],
+      "requests": [
+        {
+          "basis_requirement": {
+            "kind": "exact",
+            "value": "assignment"
+          },
+          "class_filter": null,
+          "evidence": [
+            {
+              "start_byte": 0,
+              "end_byte": 59,
+              "quote": "¿Qué resolución usa la impresora Helia con el modo Fino?"
+            }
+          ],
+          "id": "ask",
+          "mode": "answer",
+          "normative_scope_filter": null,
+          "premise_ids": [
+            "operating-premise"
+          ],
+          "qualifier_ids": [
+            "mode-context"
+          ],
+          "required_answer_extent": "one_value",
+          "scope_id": "doc",
+          "slot": "value",
+          "target": {
+            "atom": {
+              "arguments": [
+                {
+                  "role": "subject",
+                  "value": {
+                    "id": "printer",
+                    "kind": "ref"
+                  }
+                },
+                {
+                  "role": "attribute",
+                  "value": {
+                    "evidence": [
+                      {
+                        "start_byte": 7,
+                        "end_byte": 18,
+                        "quote": "resolución"
+                      }
+                    ],
+                    "id": "resolution",
+                    "kind": "symbol"
+                  }
+                }
+              ],
+              "evidence": [
+                {
+                  "start_byte": 0,
+                  "end_byte": 59,
+                  "quote": "¿Qué resolución usa la impresora Helia con el modo Fino?"
+                }
+              ],
+              "polarity": "positive",
+              "predicate": "property"
+            },
+            "judgment": "fact",
+            "qualifier_ids": [
+              "mode-context"
+            ],
+            "status": "state"
+          },
+          "unit": null
+        }
+      ],
+      "scopes": [
+        {
+          "binding": null,
+          "branch_id": null,
+          "id": "doc",
+          "kind": "document",
+          "parent_id": null
+        }
+      ],
+      "text_sha256": "8bc8af8684d8c7e14493224178cd4a227b604269738f46a7d9d0e4db56290f6c",
+      "version": "documentary_evidence_v3",
+      "vocabulary_sha256": "096f5196f60b3e31f2037418a3615ea974f77ec643678b1af3d1707ad3bad799"
+    }
+  },
+  "pair_scope": {
+    "namespace": "documentary-v3-known-development",
+    "configuration": [],
+    "time_selector": null,
+    "closed_world": false
+  }
+}

@@ -1,0 +1,463 @@
+{
+  "version": "slot-evidence-v2-revision-matrix-v1",
+  "synthetic": true,
+  "cases": [
+    {
+      "id": "revision-01",
+      "query": "For project Atlas (ID AT-17), what is the final launch date?",
+      "candidate": {
+        "memory_id": "revision-01",
+        "revision": 1,
+        "summary": "For project Atlas (ID AT-17), an earlier draft lists the launch date as 12 May. For project Atlas (ID AT-17), the final version lists the launch date as 19 May."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "subject",
+            "kind": "project",
+            "subject": "Atlas",
+            "stable_id": "AT-17",
+            "quote": "project Atlas (ID AT-17)"
+          }
+        ],
+        "slots": [
+          {
+            "id": "date",
+            "dimension": "requested_slot",
+            "quote": "final launch date"
+          }
+        ],
+        "premises": [],
+        "candidates": [
+          {
+            "memory_id": "revision-01",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "subject",
+              "stable_id_quote": "AT-17",
+              "subject_quote": "project Atlas (ID AT-17)"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "For project Atlas (ID AT-17), the final version lists the launch date as 19 May.",
+                "subject_quote": "project Atlas (ID AT-17)",
+                "identity_anchor_id": "subject",
+                "relation": "answers",
+                "target_id": "date"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": true,
+      "expected_selected": [
+        "revision-01"
+      ],
+      "expected_relation": "answers"
+    },
+    {
+      "id": "revision-02",
+      "query": "For project Beacon (ID BE-24), what launch date did the earlier draft state?",
+      "candidate": {
+        "memory_id": "revision-02",
+        "revision": 1,
+        "summary": "For project Beacon (ID BE-24), an earlier draft lists the launch date as 12 May. For project Beacon (ID BE-24), the final version lists the launch date as 19 May."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "subject",
+            "kind": "project",
+            "subject": "Beacon",
+            "stable_id": "BE-24",
+            "quote": "project Beacon (ID BE-24)"
+          }
+        ],
+        "slots": [
+          {
+            "id": "date",
+            "dimension": "requested_slot",
+            "quote": "launch date did the earlier draft state"
+          }
+        ],
+        "premises": [],
+        "candidates": [
+          {
+            "memory_id": "revision-02",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "subject",
+              "stable_id_quote": "BE-24",
+              "subject_quote": "project Beacon (ID BE-24)"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "For project Beacon (ID BE-24), an earlier draft lists the launch date as 12 May.",
+                "subject_quote": "project Beacon (ID BE-24)",
+                "identity_anchor_id": "subject",
+                "relation": "answers",
+                "target_id": "date"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": true,
+      "expected_selected": [
+        "revision-02"
+      ],
+      "expected_relation": "answers"
+    },
+    {
+      "id": "revision-03",
+      "query": "For project Cedar (ID CE-31), what is the current launch date?",
+      "candidate": {
+        "memory_id": "revision-03",
+        "revision": 1,
+        "summary": "For project Cedar (ID CE-31), an earlier draft lists the launch date as 12 May. For project Cedar (ID CE-31), the final version lists the launch date as 19 May."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "subject",
+            "kind": "project",
+            "subject": "Cedar",
+            "stable_id": "CE-31",
+            "quote": "project Cedar (ID CE-31)"
+          }
+        ],
+        "slots": [
+          {
+            "id": "date",
+            "dimension": "requested_slot",
+            "quote": "current launch date"
+          }
+        ],
+        "premises": [],
+        "candidates": [
+          {
+            "memory_id": "revision-03",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "subject",
+              "stable_id_quote": "CE-31",
+              "subject_quote": "project Cedar (ID CE-31)"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "For project Cedar (ID CE-31), the final version lists the launch date as 19 May.",
+                "subject_quote": "project Cedar (ID CE-31)",
+                "identity_anchor_id": "subject",
+                "relation": "partial",
+                "target_id": "date"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": true,
+      "expected_selected": [
+        "revision-03"
+      ],
+      "expected_relation": "partial"
+    },
+    {
+      "id": "revision-04",
+      "query": "For project Delta (ID DE-42), what is the current launch date?",
+      "candidate": {
+        "memory_id": "revision-04",
+        "revision": 1,
+        "summary": "For project Delta (ID DE-42), an earlier draft lists the launch date as 12 May. For project Delta (ID DE-42), no final or current launch date is recorded."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "subject",
+            "kind": "project",
+            "subject": "Delta",
+            "stable_id": "DE-42",
+            "quote": "project Delta (ID DE-42)"
+          }
+        ],
+        "slots": [
+          {
+            "id": "date",
+            "dimension": "requested_slot",
+            "quote": "current launch date"
+          }
+        ],
+        "premises": [],
+        "candidates": [
+          {
+            "memory_id": "revision-04",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "subject",
+              "stable_id_quote": "DE-42",
+              "subject_quote": "project Delta (ID DE-42)"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "For project Delta (ID DE-42), no final or current launch date is recorded.",
+                "subject_quote": "project Delta (ID DE-42)",
+                "identity_anchor_id": "subject",
+                "relation": "explicit_unmeasured",
+                "target_id": "date"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": true,
+      "expected_selected": [
+        "revision-04"
+      ],
+      "expected_relation": "explicit_unmeasured"
+    },
+    {
+      "id": "revision-05",
+      "query": "For project Elm (ID EL-56), what is the final launch date?",
+      "candidate": {
+        "memory_id": "revision-05",
+        "revision": 1,
+        "summary": "For project Elm (ID EL-56), an earlier draft lists the launch date as 12 May. For project Elm (ID EL-56), the final version also lists the launch date as 12 May."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "subject",
+            "kind": "project",
+            "subject": "Elm",
+            "stable_id": "EL-56",
+            "quote": "project Elm (ID EL-56)"
+          }
+        ],
+        "slots": [
+          {
+            "id": "date",
+            "dimension": "requested_slot",
+            "quote": "final launch date"
+          }
+        ],
+        "premises": [],
+        "candidates": [
+          {
+            "memory_id": "revision-05",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "subject",
+              "stable_id_quote": "EL-56",
+              "subject_quote": "project Elm (ID EL-56)"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "For project Elm (ID EL-56), the final version also lists the launch date as 12 May.",
+                "subject_quote": "project Elm (ID EL-56)",
+                "identity_anchor_id": "subject",
+                "relation": "answers",
+                "target_id": "date"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": true,
+      "expected_selected": [
+        "revision-05"
+      ],
+      "expected_relation": "answers"
+    },
+    {
+      "id": "revision-06",
+      "query": "For project Fjord (ID FJ-63), what is the current launch date?",
+      "candidate": {
+        "memory_id": "revision-06",
+        "revision": 1,
+        "summary": "For project Fjord (ID FJ-63), one final version lists the launch date as 12 May and the other lists it as 19 May; neither is identified as current."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "subject",
+            "kind": "project",
+            "subject": "Fjord",
+            "stable_id": "FJ-63",
+            "quote": "project Fjord (ID FJ-63)"
+          }
+        ],
+        "slots": [
+          {
+            "id": "date",
+            "dimension": "requested_slot",
+            "quote": "current launch date"
+          }
+        ],
+        "premises": [],
+        "candidates": [
+          {
+            "memory_id": "revision-06",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "subject",
+              "stable_id_quote": "FJ-63",
+              "subject_quote": "project Fjord (ID FJ-63)"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "For project Fjord (ID FJ-63), one final version lists the launch date as 12 May and the other lists it as 19 May; neither is identified as current.",
+                "subject_quote": "project Fjord (ID FJ-63)",
+                "identity_anchor_id": "subject",
+                "relation": "partial",
+                "target_id": "date"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": true,
+      "expected_selected": [
+        "revision-06"
+      ],
+      "expected_relation": "partial"
+    },
+    {
+      "id": "revision-07",
+      "query": "Para el proyecto Girasol (ID GI-78), ¿cuál es la fecha de lanzamiento de la versión final?",
+      "candidate": {
+        "memory_id": "revision-07",
+        "revision": 1,
+        "summary": "Para el proyecto Girasol (ID GI-78), un borrador anterior indica que la fecha de lanzamiento es el 12 de mayo. Para el proyecto Girasol (ID GI-78), la versión final indica que la fecha de lanzamiento es el 19 de mayo."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "subject",
+            "kind": "proyecto",
+            "subject": "Girasol",
+            "stable_id": "GI-78",
+            "quote": "proyecto Girasol (ID GI-78)"
+          }
+        ],
+        "slots": [
+          {
+            "id": "date",
+            "dimension": "requested_slot",
+            "quote": "fecha de lanzamiento de la versión final"
+          }
+        ],
+        "premises": [],
+        "candidates": [
+          {
+            "memory_id": "revision-07",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "subject",
+              "stable_id_quote": "GI-78",
+              "subject_quote": "proyecto Girasol (ID GI-78)"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "Para el proyecto Girasol (ID GI-78), la versión final indica que la fecha de lanzamiento es el 19 de mayo.",
+                "subject_quote": "proyecto Girasol (ID GI-78)",
+                "identity_anchor_id": "subject",
+                "relation": "answers",
+                "target_id": "date"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": true,
+      "expected_selected": [
+        "revision-07"
+      ],
+      "expected_relation": "answers"
+    },
+    {
+      "id": "revision-08",
+      "query": "For project Harbor (ID HA-85), is it correct that its launch date was 12 May?",
+      "candidate": {
+        "memory_id": "revision-08",
+        "revision": 1,
+        "summary": "For project Harbor (ID HA-85), an earlier draft lists the launch date as 12 May. For project Harbor (ID HA-85), a correction explicitly says: “12 May was incorrect.” The final version lists the launch date as 19 May."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "subject",
+            "kind": "project",
+            "subject": "Harbor",
+            "stable_id": "HA-85",
+            "quote": "project Harbor (ID HA-85)"
+          }
+        ],
+        "slots": [],
+        "premises": [
+          {
+            "id": "premise",
+            "dimension": "correction_premise",
+            "quote": "its launch date was 12 May"
+          }
+        ],
+        "candidates": [
+          {
+            "memory_id": "revision-08",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "subject",
+              "stable_id_quote": "HA-85",
+              "subject_quote": "project Harbor (ID HA-85)"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "For project Harbor (ID HA-85), a correction explicitly says: “12 May was incorrect.”",
+                "subject_quote": "project Harbor (ID HA-85)",
+                "identity_anchor_id": "subject",
+                "relation": "refutes",
+                "target_id": "premise"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": true,
+      "expected_selected": [
+        "revision-08"
+      ],
+      "expected_relation": "refutes"
+    }
+  ],
+  "annotation": {
+    "method": "blind text annotation plus separate adjudication",
+    "scored_as_classifier_output": false,
+    "notes": [
+      "revision-03 is partial: a final version does not entail that it is current",
+      "revision-06 is partial because final versions conflict and neither is marked current",
+      "revision-08 refutes a literal correction premise"
+    ]
+  }
+}

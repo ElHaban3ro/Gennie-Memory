@@ -1,0 +1,36 @@
+{
+  "version": "normative-indeterminacy-controls-v1",
+  "predicate_rows": [
+    {
+      "id": "action",
+      "roles": {
+        "actor": "ref",
+        "action_kind": "action_id",
+        "object": "ref"
+      },
+      "distributive": true
+    },
+    {
+      "id": "owns",
+      "roles": {
+        "owner": "ref",
+        "object": "ref"
+      },
+      "distributive": true
+    }
+  ],
+  "fixed_attribute_rows": [],
+  "fixed_action_rows": [
+    "accompany",
+    "enroll"
+  ],
+  "semantic_type_rows": [],
+  "relevance_links": [],
+  "request_context_profile": {
+    "version": "documentary_request_context_v1",
+    "features": [
+      "normative_action_relation",
+      "normative_question_indeterminacy"
+    ]
+  }
+}

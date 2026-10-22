@@ -1,0 +1,953 @@
+{
+  "version": "conversation-evidence-v5",
+  "synthetic": true,
+  "human_review": false,
+  "independent_review": false,
+  "as_of": "2026-10-19T12:00:00.000Z",
+  "conversations": [
+    {
+      "scope_id": "synthetic_conversation_evidence_066",
+      "title": "Observatorio de aves del estuario",
+      "statements": [
+        {
+          "id": "066_01",
+          "text": "En el censo de aves Ribera de octubre, el equipo de Dalia empieza a observar a las 05:40 en el puesto Sauce."
+        },
+        {
+          "id": "066_02",
+          "text": "El equipo de Bruno empieza a las 06:15 en el puesto Junco durante el mismo censo Ribera."
+        },
+        {
+          "id": "066_03",
+          "text": "Para Dalia, el punto de reunión antes del censo Ribera es el muelle viejo."
+        },
+        {
+          "id": "066_04",
+          "text": "El formulario Ribera debe enviarse en CSV; el formulario de mareas Salitre se entrega en PDF."
+        },
+        {
+          "id": "066_05",
+          "text": "El parte de Ribera se remite a la coordinadora Inés por el buzón interno del observatorio."
+        },
+        {
+          "id": "066_06",
+          "text": "En Ribera no se capturan aves: las anillas solo se leen con telescopio desde la orilla."
+        },
+        {
+          "id": "066_07",
+          "text": "La captura con redes pertenece al programa sanitario Veta, separado del censo Ribera."
+        },
+        {
+          "id": "066_08",
+          "text": "La lancha contratada para Ribera fue anulada; todo el recorrido de octubre será a pie."
+        },
+        {
+          "id": "066_09",
+          "text": "Para Veta sí está confirmada una lancha con dos tripulantes."
+        },
+        {
+          "id": "066_10",
+          "text": "De los cuatro sectores Ribera, Sauce y Junco tienen el recuento de octubre cerrado; Brezo y Limo siguen sin contar."
+        },
+        {
+          "id": "066_11",
+          "text": "En Sauce se registraron veinticuatro garzas durante el censo Ribera de octubre."
+        },
+        {
+          "id": "066_12",
+          "text": "En Junco se registraron diecisiete garzas durante el censo Ribera de octubre."
+        },
+        {
+          "id": "066_13",
+          "text": "El recuento Ribera de septiembre fue de ochenta y dos garzas entre los cuatro sectores."
+        },
+        {
+          "id": "066_14",
+          "text": "La licencia del nuevo telescopio de Ribera está aprobada por dirección; falta la firma de tesorería para autorizar el pago."
+        },
+        {
+          "id": "066_15",
+          "text": "Tesorería recibió el expediente del telescopio Ribera el 15 de octubre y todavía no ha decidido."
+        },
+        {
+          "id": "066_16",
+          "text": "El permiso del telescopio Veta tiene la firma de dirección y la de tesorería."
+        },
+        {
+          "id": "066_17",
+          "text": "La contraseña del buzón Salitre es ficticiamente SAL-82, solo para esta conversación sintética."
+        },
+        {
+          "id": "066_18",
+          "text": "El buzón interno de Ribera se llama partes-ribera."
+        },
+        {
+          "id": "066_19",
+          "text": "El chaleco del equipo de Dalia lleva una banda naranja."
+        },
+        {
+          "id": "066_20",
+          "text": "El chaleco de Bruno lleva una banda azul."
+        },
+        {
+          "id": "066_21",
+          "text": "El alquiler del telescopio Veta costó setenta unidades en septiembre."
+        },
+        {
+          "id": "066_22",
+          "text": "El telescopio Ribera tiene una funda impermeable gris."
+        },
+        {
+          "id": "066_23",
+          "text": "Las libretas Ribera se guardan en el armario oeste al regresar."
+        },
+        {
+          "id": "066_24",
+          "text": "En octubre la marea se consultará en el tablón del muelle."
+        },
+        {
+          "id": "066_25",
+          "text": "La batería de repuesto del lector de anillas va en la bolsa de Inés."
+        },
+        {
+          "id": "066_26",
+          "text": "El acceso al puesto Brezo tiene una pasarela de madera."
+        },
+        {
+          "id": "066_27",
+          "text": "Las fotos Ribera se ordenan por sector y fecha."
+        },
+        {
+          "id": "066_28",
+          "text": "El programa Salitre mide salinidad una vez por semana."
+        }
+      ]
+    },
+    {
+      "scope_id": "synthetic_conversation_evidence_067",
+      "title": "Laboratorio de pan de centeno",
+      "statements": [
+        {
+          "id": "067_01",
+          "text": "La hornada Aurora del 18 de octubre usó ciento veinte gramos de masa madre por cada kilo de harina."
+        },
+        {
+          "id": "067_02",
+          "text": "La hornada Bruma del mismo día usó noventa gramos de masa madre por kilo de harina."
+        },
+        {
+          "id": "067_03",
+          "text": "El horno de Aurora se precalienta a 235 grados y baja a 210 al cargar los panes."
+        },
+        {
+          "id": "067_04",
+          "text": "El horno de Bruma mantiene 220 grados durante toda su cocción."
+        },
+        {
+          "id": "067_05",
+          "text": "Los sacos de harina Aurora llevan el sello del molino Naranjo."
+        },
+        {
+          "id": "067_06",
+          "text": "Corrijo la ficha de Aurora: no lleva miel; el dulzor procede exclusivamente de la malta."
+        },
+        {
+          "id": "067_07",
+          "text": "Bruma sí lleva miel de la cooperativa Lumbre."
+        },
+        {
+          "id": "067_08",
+          "text": "Los panes Aurora del 18 de octubre no fueron vendidos: se repartieron gratuitamente en una degustación."
+        },
+        {
+          "id": "067_09",
+          "text": "La tienda vendió los panes Bruma del 18 de octubre a seis unidades por pieza."
+        },
+        {
+          "id": "067_10",
+          "text": "La fermentación final de Aurora comenzó a las 08:10; el cuaderno no registra a qué hora terminó."
+        },
+        {
+          "id": "067_11",
+          "text": "El amasado de Aurora concluyó a las 07:35, antes de iniciar la fermentación final."
+        },
+        {
+          "id": "067_12",
+          "text": "El registro de Bruma sí anota fermentación final de 08:00 a 09:20."
+        },
+        {
+          "id": "067_13",
+          "text": "La bolsa candidata para Aurora resiste humedad durante dos días; aún falta medir su resistencia al aplastamiento."
+        },
+        {
+          "id": "067_14",
+          "text": "Para la bolsa candidata Aurora la prueba de sellado dio cierre hermético."
+        },
+        {
+          "id": "067_15",
+          "text": "La bolsa Bruma superó tanto la prueba de humedad como la de aplastamiento."
+        },
+        {
+          "id": "067_16",
+          "text": "El número de factura de compra del molino doméstico de Bruma es FAC-731."
+        },
+        {
+          "id": "067_17",
+          "text": "El molino doméstico asignado a Aurora está sobre una mesa de acero."
+        },
+        {
+          "id": "067_18",
+          "text": "El lote de semillas de lino Bruma vence en diciembre de 2027."
+        },
+        {
+          "id": "067_19",
+          "text": "Las semillas de lino de Aurora se guardan en un tarro ámbar."
+        },
+        {
+          "id": "067_20",
+          "text": "La pala para Aurora tiene mango largo de haya."
+        },
+        {
+          "id": "067_21",
+          "text": "La pala de Bruma tiene mango corto de fresno."
+        },
+        {
+          "id": "067_22",
+          "text": "El curso de noviembre enseñará trenzado de panes de centeno."
+        },
+        {
+          "id": "067_23",
+          "text": "El cartel Aurora utiliza letras verdes."
+        },
+        {
+          "id": "067_24",
+          "text": "Las bandejas vacías se apilan después de enfriarse."
+        },
+        {
+          "id": "067_25",
+          "text": "La balanza pequeña se calibra cada lunes."
+        },
+        {
+          "id": "067_26",
+          "text": "La degustación Aurora se celebró en el patio cubierto."
+        },
+        {
+          "id": "067_27",
+          "text": "Los asistentes recibieron tarjetas para describir la textura."
+        },
+        {
+          "id": "067_28",
+          "text": "Las tarjetas de Bruma se archivan en otra carpeta."
+        }
+      ]
+    },
+    {
+      "scope_id": "synthetic_conversation_evidence_068",
+      "title": "Archivo de teatro de sombras",
+      "statements": [
+        {
+          "id": "068_01",
+          "text": "La digitalización del libreto Luciérnaga se hará en TIFF de 600 puntos por pulgada."
+        },
+        {
+          "id": "068_02",
+          "text": "El cartel de la obra Neblina se digitaliza en JPEG de 300 puntos por pulgada."
+        },
+        {
+          "id": "068_03",
+          "text": "Para consultar el original Luciérnaga hay que usar guantes de nitrilo sin polvo."
+        },
+        {
+          "id": "068_04",
+          "text": "Los visitantes que consulten Luciérnaga deben hacerlo sobre el atril acolchado."
+        },
+        {
+          "id": "068_05",
+          "text": "La restauradora Amaya redacta el registro de intervención Luciérnaga."
+        },
+        {
+          "id": "068_06",
+          "text": "La atribución del libreto Luciérnaga a Teo era errónea: su autora es Sara Olmedo."
+        },
+        {
+          "id": "068_07",
+          "text": "Teo diseñó las siluetas de Neblina, no escribió ese libreto."
+        },
+        {
+          "id": "068_08",
+          "text": "La sesión de sombras Luciérnaga del viernes será cerrada al público; solo entra el equipo técnico."
+        },
+        {
+          "id": "068_09",
+          "text": "La función Neblina del sábado sí admite público con entrada."
+        },
+        {
+          "id": "068_10",
+          "text": "Del libreto Luciérnaga se han digitalizado las páginas 1 a 18; las páginas 19 a 24 siguen pendientes."
+        },
+        {
+          "id": "068_11",
+          "text": "Las páginas 1 a 18 de Luciérnaga ya pasaron el control de enfoque."
+        },
+        {
+          "id": "068_12",
+          "text": "La copia de consulta Luciérnaga solo se publicará cuando estén digitalizadas las veinticuatro páginas."
+        },
+        {
+          "id": "068_13",
+          "text": "El traslado del archivo Luciérnaga tiene confirmado el embalaje para el 27 de octubre, pero el transportista no ha fijado recogida."
+        },
+        {
+          "id": "068_14",
+          "text": "El transportista de Luciérnaga aún debe asignar vehículo antes de fijar la hora de recogida."
+        },
+        {
+          "id": "068_15",
+          "text": "Neblina saldrá en el vehículo Enebro a las 11:30 del 27 de octubre."
+        },
+        {
+          "id": "068_16",
+          "text": "El valor asegurado del cartel Neblina es de doce mil unidades."
+        },
+        {
+          "id": "068_17",
+          "text": "El libreto Luciérnaga se guarda en una caja con cierre de cinta."
+        },
+        {
+          "id": "068_18",
+          "text": "El código de acceso de la sala de Neblina es 5462, dato ficticio de este banco."
+        },
+        {
+          "id": "068_19",
+          "text": "La sala donde se consulta Luciérnaga está en la planta baja."
+        },
+        {
+          "id": "068_20",
+          "text": "Las siluetas antiguas de Luciérnaga se separan con papel neutro."
+        },
+        {
+          "id": "068_21",
+          "text": "El registro de luces usa casillas para intensidad y ángulo."
+        },
+        {
+          "id": "068_22",
+          "text": "Amaya conserva los pinceles finos en un estuche azul."
+        },
+        {
+          "id": "068_23",
+          "text": "El telón de Neblina es de algodón negro."
+        },
+        {
+          "id": "068_24",
+          "text": "Los tornillos del atril se revisan al abrir la sala."
+        },
+        {
+          "id": "068_25",
+          "text": "Las entradas del sábado se imprimen con tinta violeta."
+        },
+        {
+          "id": "068_26",
+          "text": "El archivo prepara una exposición de bocetos para noviembre."
+        },
+        {
+          "id": "068_27",
+          "text": "Las sillas de visitantes son plegables."
+        },
+        {
+          "id": "068_28",
+          "text": "El proyector de repuesto pertenece al taller vecino."
+        }
+      ]
+    },
+    {
+      "scope_id": "synthetic_conversation_evidence_069",
+      "title": "Club de orientación nocturna",
+      "statements": [
+        {
+          "id": "069_01",
+          "text": "Para la ruta Nadir del 24 de octubre, Celia lleva la brújula de placa y Omar lleva el botiquín."
+        },
+        {
+          "id": "069_02",
+          "text": "En la ruta Cenit, Celia lleva el botiquín y Omar se encarga de la brújula."
+        },
+        {
+          "id": "069_03",
+          "text": "El punto de salida Nadir es el portón del pinar a las 19:20."
+        },
+        {
+          "id": "069_04",
+          "text": "La ruta Cenit comienza en la cantera a las 18:50."
+        },
+        {
+          "id": "069_05",
+          "text": "La señal de retirada de Nadir consiste en tres silbidos largos."
+        },
+        {
+          "id": "069_06",
+          "text": "La ruta Nadir no atraviesa el vado del río: se modificó para cruzar por el puente de piedra."
+        },
+        {
+          "id": "069_07",
+          "text": "El itinerario Cenit mantiene el paso por el vado si el nivel es bajo."
+        },
+        {
+          "id": "069_08",
+          "text": "La prueba Nadir no es una competición cronometrada; cada pareja avanza a su ritmo sin clasificación."
+        },
+        {
+          "id": "069_09",
+          "text": "Cenit sí asigna medallas según el tiempo de llegada."
+        },
+        {
+          "id": "069_10",
+          "text": "En el ensayo Nadir se verificaron los faros de seis parejas; las dos parejas restantes todavía no presentaron sus faros."
+        },
+        {
+          "id": "069_11",
+          "text": "Los seis juegos de faros revisados para Nadir funcionaron durante una hora seguida."
+        },
+        {
+          "id": "069_12",
+          "text": "Las dos parejas restantes de Nadir están citadas para comprobar sus faros el martes."
+        },
+        {
+          "id": "069_13",
+          "text": "El permiso Nadir cubre el tramo del pinar; la autorización del tramo del roquedo está pendiente."
+        },
+        {
+          "id": "069_14",
+          "text": "La entidad que decide el permiso del roquedo de Nadir recibió ayer el mapa corregido."
+        },
+        {
+          "id": "069_15",
+          "text": "El permiso Cenit cubre todo su trazado hasta la cantera."
+        },
+        {
+          "id": "069_16",
+          "text": "La cuota de inscripción Cenit fue de quince unidades por persona."
+        },
+        {
+          "id": "069_17",
+          "text": "Las inscripciones de Nadir se apuntan en una hoja de papel azul."
+        },
+        {
+          "id": "069_18",
+          "text": "El teléfono de la guardesa de Cenit es 555-0182 en esta ficción."
+        },
+        {
+          "id": "069_19",
+          "text": "La guardesa del pinar Nadir se llama Marta."
+        },
+        {
+          "id": "069_20",
+          "text": "Los mapas Nadir se plastificaron para resistir lluvia."
+        },
+        {
+          "id": "069_21",
+          "text": "Omar revisó el cierre del botiquín."
+        },
+        {
+          "id": "069_22",
+          "text": "Celia lleva una chaqueta con bandas reflectantes."
+        },
+        {
+          "id": "069_23",
+          "text": "La base presta bastones de aluminio."
+        },
+        {
+          "id": "069_24",
+          "text": "El taller de lectura de curvas será en noviembre."
+        },
+        {
+          "id": "069_25",
+          "text": "El árbol de reunión tiene una marca amarilla."
+        },
+        {
+          "id": "069_26",
+          "text": "La cafetería cierra antes de la salida Nadir."
+        },
+        {
+          "id": "069_27",
+          "text": "El recorrido de prácticas diurnas usa controles verdes."
+        },
+        {
+          "id": "069_28",
+          "text": "Los mapas sobrantes se guardan en un tubo rígido."
+        }
+      ]
+    },
+    {
+      "scope_id": "synthetic_conversation_evidence_070",
+      "title": "Laboratorio de pigmentos textiles",
+      "statements": [
+        {
+          "id": "070_01",
+          "text": "El paño Índigo I4 se fija durante veinte minutos en vapor; el paño Rubia R8 se fija diez minutos en baño ácido."
+        },
+        {
+          "id": "070_02",
+          "text": "Para medir el color de Índigo I4 se usa luz D65 y fondo blanco mate."
+        },
+        {
+          "id": "070_03",
+          "text": "La medición de Rubia R8 utiliza luz A y fondo gris."
+        },
+        {
+          "id": "070_04",
+          "text": "La técnica Nuria prepara las muestras de Índigo I4."
+        },
+        {
+          "id": "070_05",
+          "text": "El lote Índigo I4 tiene tres paños numerados en la esquina inferior."
+        },
+        {
+          "id": "070_06",
+          "text": "El tono Índigo I4 no procede de añil natural: se utilizó pigmento sintético documentado."
+        },
+        {
+          "id": "070_07",
+          "text": "Rubia R8 sí empleó extracto vegetal de raíz."
+        },
+        {
+          "id": "070_08",
+          "text": "No se lavó Índigo I4 con agua caliente; se hizo un aclarado frío para conservar el acabado."
+        },
+        {
+          "id": "070_09",
+          "text": "Rubia R8 tuvo un lavado a sesenta grados."
+        },
+        {
+          "id": "070_10",
+          "text": "Índigo I4 obtuvo grado cuatro de solidez al frote seco; la prueba de frote húmedo aún no se ha hecho."
+        },
+        {
+          "id": "070_11",
+          "text": "La muestra de Índigo I4 destinada a frote húmedo está preparada y sellada."
+        },
+        {
+          "id": "070_12",
+          "text": "Rubia R8 obtuvo grado tres al frote húmedo."
+        },
+        {
+          "id": "070_13",
+          "text": "Para repetir Índigo I4 están reservados dos metros de lino, pero el taller aún no confirmó qué día podrá teñirlos."
+        },
+        {
+          "id": "070_14",
+          "text": "El taller de Índigo I4 contestará la fecha de repetición después de reparar la caldera."
+        },
+        {
+          "id": "070_15",
+          "text": "La repetición de Rubia R8 está confirmada para el 29 de octubre."
+        },
+        {
+          "id": "070_16",
+          "text": "El proveedor de Rubia R8 facturó cuarenta unidades por kilo de extracto."
+        },
+        {
+          "id": "070_17",
+          "text": "El recipiente del pigmento Índigo I4 es de vidrio oscuro."
+        },
+        {
+          "id": "070_18",
+          "text": "La densidad del baño Rubia R8 fue de 1,08 gramos por mililitro."
+        },
+        {
+          "id": "070_19",
+          "text": "El baño Índigo I4 se preparó en la cuba pequeña."
+        },
+        {
+          "id": "070_20",
+          "text": "Las etiquetas de Índigo I4 son resistentes al vapor."
+        },
+        {
+          "id": "070_21",
+          "text": "Los paños secos reposan en una rejilla de acero."
+        },
+        {
+          "id": "070_22",
+          "text": "La ficha de Rubia R8 lleva la firma de Elías."
+        },
+        {
+          "id": "070_23",
+          "text": "El espectrofotómetro se cubre cuando no se usa."
+        },
+        {
+          "id": "070_24",
+          "text": "La puerta del laboratorio tiene un visor circular."
+        },
+        {
+          "id": "070_25",
+          "text": "Los guantes usados van al contenedor señalado."
+        },
+        {
+          "id": "070_26",
+          "text": "El inventario se actualiza al final del turno."
+        },
+        {
+          "id": "070_27",
+          "text": "Nuria compara los bordes para detectar diferencias de tono."
+        },
+        {
+          "id": "070_28",
+          "text": "Las telas de demostración se separan de las muestras medidas."
+        }
+      ]
+    },
+    {
+      "scope_id": "synthetic_conversation_evidence_071",
+      "title": "Red comunitaria de préstamo de herramientas",
+      "statements": [
+        {
+          "id": "071_01",
+          "text": "El taladro Olmo se recoge los miércoles de 16:00 a 18:00 en la caseta norte."
+        },
+        {
+          "id": "071_02",
+          "text": "La sierra Fresno se recoge los viernes de 10:00 a 12:00 en la caseta sur."
+        },
+        {
+          "id": "071_03",
+          "text": "Para reservar Olmo se presenta el carné vecinal vigente en el mostrador."
+        },
+        {
+          "id": "071_04",
+          "text": "La devolución Olmo exige retirar la broca y entregar la maleta cerrada."
+        },
+        {
+          "id": "071_05",
+          "text": "Rita registra las entregas del taladro Olmo; Simón registra las de la sierra Fresno."
+        },
+        {
+          "id": "071_06",
+          "text": "El taladro Olmo sigue siendo propiedad de la red: se presta, no se regala a quien lo usa."
+        },
+        {
+          "id": "071_07",
+          "text": "La antigua lijadora Abedul sí fue donada a la escuela."
+        },
+        {
+          "id": "071_08",
+          "text": "Para Olmo se eliminó la exigencia de avalista; basta el carné vecinal vigente."
+        },
+        {
+          "id": "071_09",
+          "text": "Fresno todavía requiere un avalista con carné."
+        },
+        {
+          "id": "071_10",
+          "text": "La revisión de Olmo confirmó el cable en buen estado; falta comprobar el aislamiento eléctrico."
+        },
+        {
+          "id": "071_11",
+          "text": "La prueba de aislamiento de Olmo está asignada a Luz para la próxima semana."
+        },
+        {
+          "id": "071_12",
+          "text": "En Fresno el cable y el aislamiento ya se revisaron sin defectos."
+        },
+        {
+          "id": "071_13",
+          "text": "Del juego de seis brocas de Olmo se devolvieron cuatro; se está averiguando quién tiene las otras dos."
+        },
+        {
+          "id": "071_14",
+          "text": "Las cuatro brocas de Olmo recibidas están identificadas como 3, 4, 5 y 6 milímetros."
+        },
+        {
+          "id": "071_15",
+          "text": "La persona que tiene las dos brocas pendientes de Olmo no ha sido identificada."
+        },
+        {
+          "id": "071_16",
+          "text": "El depósito reembolsable de Fresno es de treinta unidades."
+        },
+        {
+          "id": "071_17",
+          "text": "La maleta Olmo tiene un compartimento para el resguardo de préstamo."
+        },
+        {
+          "id": "071_18",
+          "text": "El número de serie de la lijadora Abedul es AB-77041."
+        },
+        {
+          "id": "071_19",
+          "text": "La placa de inventario de Olmo es naranja y está en el mango."
+        },
+        {
+          "id": "071_20",
+          "text": "Las herramientas manuales cuelgan de un panel perforado."
+        },
+        {
+          "id": "071_21",
+          "text": "La caseta norte tiene un toldo verde."
+        },
+        {
+          "id": "071_22",
+          "text": "Los resguardos se conservan durante un año."
+        },
+        {
+          "id": "071_23",
+          "text": "Rita abre el armario con una llave de latón."
+        },
+        {
+          "id": "071_24",
+          "text": "Las reservas anuladas se tachan con una sola línea."
+        },
+        {
+          "id": "071_25",
+          "text": "El taller de afilado será en noviembre."
+        },
+        {
+          "id": "071_26",
+          "text": "La sierra Fresno usa gafas de protección durante su demostración."
+        },
+        {
+          "id": "071_27",
+          "text": "La escuela mantiene Abedul en su aula de tecnología."
+        },
+        {
+          "id": "071_28",
+          "text": "El catálogo vecinal enumera los accesorios por separado."
+        }
+      ]
+    },
+    {
+      "scope_id": "synthetic_conversation_evidence_072",
+      "title": "Restauración de mapas escolares",
+      "statements": [
+        {
+          "id": "072_01",
+          "text": "Para el mapa Delta se usará papel japonés de nueve gramos por metro cuadrado en los desgarros."
+        },
+        {
+          "id": "072_02",
+          "text": "Para el mapa Sierra se eligió papel japonés de doce gramos por metro cuadrado."
+        },
+        {
+          "id": "072_03",
+          "text": "La carpeta Delta se guarda horizontalmente en el cajón 4, mientras Sierra ocupa el cajón 7."
+        },
+        {
+          "id": "072_04",
+          "text": "La supervisora de Delta es Alba y el supervisor de Sierra es Ciro."
+        },
+        {
+          "id": "072_05",
+          "text": "El informe Delta lleva fotografías antes y después de cada intervención."
+        },
+        {
+          "id": "072_06",
+          "text": "El mapa Delta no es de 1920: el colofón legible fecha su impresión en 1936."
+        },
+        {
+          "id": "072_07",
+          "text": "La edición Sierra sí fue impresa en 1920."
+        },
+        {
+          "id": "072_08",
+          "text": "Se descartó usar cinta adhesiva comercial en Delta; los refuerzos se fijarán con engrudo de almidón."
+        },
+        {
+          "id": "072_09",
+          "text": "El montaje de la copia didáctica Sierra usa cinta comercial en el reverso del soporte moderno."
+        },
+        {
+          "id": "072_10",
+          "text": "En Delta se limpiaron las dos esquinas superiores; las dos inferiores aún no se han tratado."
+        },
+        {
+          "id": "072_11",
+          "text": "La esquina superior izquierda de Delta quedó sin manchas visibles tras la limpieza."
+        },
+        {
+          "id": "072_12",
+          "text": "La esquina superior derecha de Delta conserva una mancha tenue que no se pudo retirar."
+        },
+        {
+          "id": "072_13",
+          "text": "El presupuesto Delta tiene aprobados ciento ochenta unidades para materiales; la partida de mano de obra sigue sin cuantificar."
+        },
+        {
+          "id": "072_14",
+          "text": "La aprobación de mano de obra Delta depende de que Alba presente una estimación de horas, todavía pendiente."
+        },
+        {
+          "id": "072_15",
+          "text": "El presupuesto completo de Sierra asciende a cuatrocientas veinte unidades."
+        },
+        {
+          "id": "072_16",
+          "text": "El mapa Sierra mide noventa por sesenta centímetros."
+        },
+        {
+          "id": "072_17",
+          "text": "La carpeta Delta es de cartón de conservación sin ácido."
+        },
+        {
+          "id": "072_18",
+          "text": "La donante del mapa Sierra fue Elena Falcón."
+        },
+        {
+          "id": "072_19",
+          "text": "El mapa Delta llegó al taller en una caja gris."
+        },
+        {
+          "id": "072_20",
+          "text": "Las pinzas de punta curva reposan sobre un paño limpio."
+        },
+        {
+          "id": "072_21",
+          "text": "Alba usa una lupa de sobremesa."
+        },
+        {
+          "id": "072_22",
+          "text": "Los pesos de secado están forrados de tela blanca."
+        },
+        {
+          "id": "072_23",
+          "text": "La mesa de limpieza recibe luz lateral."
+        },
+        {
+          "id": "072_24",
+          "text": "El inventario de mapas tiene índice por continente."
+        },
+        {
+          "id": "072_25",
+          "text": "Los informes concluidos se copian a un disco externo."
+        },
+        {
+          "id": "072_26",
+          "text": "La escuela prestó un atril para la exposición."
+        },
+        {
+          "id": "072_27",
+          "text": "La reproducción moderna Delta se imprimirá sin alterar los nombres originales."
+        },
+        {
+          "id": "072_28",
+          "text": "La sala de lectura cierra los domingos."
+        }
+      ]
+    },
+    {
+      "scope_id": "synthetic_conversation_evidence_073",
+      "title": "Ensayo de riego en azotea",
+      "statements": [
+        {
+          "id": "073_01",
+          "text": "El bancal Laurel recibe seis litros de agua a las 07:00 los martes y jueves."
+        },
+        {
+          "id": "073_02",
+          "text": "El bancal Romero recibe cuatro litros a las 18:00 los lunes y viernes."
+        },
+        {
+          "id": "073_03",
+          "text": "La sonda de Laurel se instala a quince centímetros de profundidad junto al borde este."
+        },
+        {
+          "id": "073_04",
+          "text": "La sonda de Romero está a diez centímetros junto al borde oeste."
+        },
+        {
+          "id": "073_05",
+          "text": "Maite anota los riegos Laurel y Darío anota los de Romero."
+        },
+        {
+          "id": "073_06",
+          "text": "El riego de Laurel no utiliza agua de la red: procede del depósito de lluvia identificado como L."
+        },
+        {
+          "id": "073_07",
+          "text": "El bancal Romero sí se abastece de la red municipal."
+        },
+        {
+          "id": "073_08",
+          "text": "No se aplicó fertilizante nitrogenado a Laurel en octubre; solo se añadió acolchado de hojas secas."
+        },
+        {
+          "id": "073_09",
+          "text": "Romero recibió fertilizante nitrogenado el 9 de octubre."
+        },
+        {
+          "id": "073_10",
+          "text": "En Laurel se midió humedad del suelo a las 07:00 y dio treinta y dos por ciento; falta la lectura de las 19:00."
+        },
+        {
+          "id": "073_11",
+          "text": "La lectura de las 19:00 de Laurel está asignada a Maite para esta tarde."
+        },
+        {
+          "id": "073_12",
+          "text": "Romero dio veintiocho por ciento a las 19:00 de ayer."
+        },
+        {
+          "id": "073_13",
+          "text": "La sustitución de la válvula Laurel tiene confirmada una válvula de media pulgada; aún no se sabe qué día llegará el repuesto."
+        },
+        {
+          "id": "073_14",
+          "text": "El proveedor de la válvula Laurel enviará fecha de entrega tras liberar su inventario."
+        },
+        {
+          "id": "073_15",
+          "text": "La válvula Romero de tres cuartos de pulgada ya llegó el 16 de octubre."
+        },
+        {
+          "id": "073_16",
+          "text": "La conductividad del agua del depósito Romero fue de 820 microsiemens por centímetro."
+        },
+        {
+          "id": "073_17",
+          "text": "El depósito de lluvia L que alimenta Laurel tiene tapa verde."
+        },
+        {
+          "id": "073_18",
+          "text": "El precio del contador de Romero fue de cincuenta y cinco unidades."
+        },
+        {
+          "id": "073_19",
+          "text": "El contador de Laurel está fijado a la pared norte."
+        },
+        {
+          "id": "073_20",
+          "text": "Las macetas de demostración se numeran con pintura blanca."
+        },
+        {
+          "id": "073_21",
+          "text": "El cuaderno de riego se guarda bajo el alero."
+        },
+        {
+          "id": "073_22",
+          "text": "El sensor de viento va en un mástil corto."
+        },
+        {
+          "id": "073_23",
+          "text": "La escalera de la azotea tiene pasamanos metálico."
+        },
+        {
+          "id": "073_24",
+          "text": "Las hojas secas se guardan en sacos de yute."
+        },
+        {
+          "id": "073_25",
+          "text": "Darío barre el pasillo al terminar su turno."
+        },
+        {
+          "id": "073_26",
+          "text": "El ensayo de noviembre comparará dos tipos de acolchado."
+        },
+        {
+          "id": "073_27",
+          "text": "Las herramientas se limpian antes de entrar al almacén."
+        },
+        {
+          "id": "073_28",
+          "text": "El cartel de la azotea pide cerrar la puerta al salir."
+        }
+      ]
+    }
+  ]
+}

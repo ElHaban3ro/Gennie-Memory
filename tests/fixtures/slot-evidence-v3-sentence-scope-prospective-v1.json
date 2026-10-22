@@ -1,0 +1,56 @@
+{
+  "version": "slot-evidence-v3-sentence-scope-prospective-v1",
+  "synthetic": true,
+  "cases": [
+    {
+      "id": "sentence-01",
+      "query": "Where does engineer Marta Solis M-58 work now?",
+      "summary": "Engineer Marta Solis M-58 currently works from Valencia. Archivist Teo Rivas T-26 lives in Girona and catalogued the flood maps."
+    },
+    {
+      "id": "sentence-02",
+      "query": "Which city does employee Dana Ruiz D-44 live in?",
+      "summary": "Consultant Lee Park L-81 lives in Lisbon. Employee Dana Ruiz D-44 lives in Bogotá."
+    },
+    {
+      "id": "sentence-03",
+      "query": "What city does contractor Bob Torres B-29 live in?",
+      "summary": "Contractor Bob Torres B-29 told employee Carlos C-3 a joke and lives in Quito. Employee Dana Ruiz D-44 lives in Lima."
+    },
+    {
+      "id": "sentence-04",
+      "query": "What city does project manager Ana Ruiz A-12 live in?",
+      "summary": "Project manager Ana Ruiz A-12 is a colleague of analyst Bruno Vale B-8. Analyst Bruno Vale B-8 lives in Lima."
+    },
+    {
+      "id": "sentence-05",
+      "query": "What city does contractor Bob Torres B-29 live in?",
+      "summary": "Contractor Bob Torres B-29 said employee Carlos Ruiz C-3 lives in Lima."
+    },
+    {
+      "id": "sentence-06",
+      "query": "Which city does engineer Marta Solis M-58 work from?",
+      "summary": "Engineer Marta Solis M-58 works from Valencia, while archivist Teo Rivas T-26 lives in Girona."
+    },
+    {
+      "id": "sentence-07",
+      "query": "Which city does engineer Marta Solis M-58 work from?",
+      "summary": "Engineer Marta Solis M-58 works from Valencia; archivist Teo Rivas T-26 lives in Girona."
+    },
+    {
+      "id": "sentence-08",
+      "query": "Where does architect Noor Vale N-13 work now?",
+      "summary": "Architect Noor Vale N-13 left Porto last year. Consultant Sam Ivo S-21 currently works from Dakar."
+    },
+    {
+      "id": "sentence-09",
+      "query": "¿En qué ciudad trabaja ahora la ingeniera Marta Solis M-58?",
+      "summary": "La ingeniera Marta Solis M-58 trabaja actualmente desde Valencia. El archivista Teo Rivas T-26 vive en Girona."
+    },
+    {
+      "id": "sentence-10",
+      "query": "Which city does contractor Yara Bell Y-74 live in?",
+      "summary": "Contractor Yara Bell Y-74, who joined the team in 2020, lives in Galway. Researcher Keon Shaw K-13 lives in Limerick."
+    }
+  ]
+}

@@ -1,0 +1,2702 @@
+[
+  {
+    "id": "cm5v2_d8b6bbf0a9927c25fb71",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_028",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, el agua de las mesas se servirá en jarras de vidrio reutilizables.",
+    "summary": "En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, el agua de las mesas se servirá en jarras de vidrio reutilizables.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/028/water_jug"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_077921e1e144909a2e3a",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_026",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 26 sobre un herbario comunitario, el cuaderno de campo conserva el nombre local de cada planta.",
+    "summary": "En la conversación ficticia 26 sobre un herbario comunitario, el cuaderno de campo conserva el nombre local de cada planta.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/026/context_01"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_d182c2bd3bb630ca72d8",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_028",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, una mesa mostrará semillas secas de fríjol y calabaza.",
+    "summary": "En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, una mesa mostrará semillas secas de fríjol y calabaza.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/028/seed_display"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_9322890e06d78c6fcb13",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_028",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, la opinión del alumnado se recogerá con fichas de colores.",
+    "summary": "En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, la opinión del alumnado se recogerá con fichas de colores.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/028/survey_method"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_9d052eea47f31624e3b7",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_027",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 27 sobre un taller de radio barrial, mateo quedó encargado de corregir la transcripción.",
+    "summary": "En la conversación ficticia 27 sobre un taller de radio barrial, mateo quedó encargado de corregir la transcripción.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/027/transcript_owner"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_5d12fb0557ace28abb72",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_027",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 27 sobre un taller de radio barrial, la segunda toma se etiquetó como ensayo.",
+    "summary": "En la conversación ficticia 27 sobre un taller de radio barrial, la segunda toma se etiquetó como ensayo.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/027/context_05"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_dcaa1cf3f36f5e1d2b87",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_027",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 27 sobre un taller de radio barrial, la mesa de mezcla tiene cuatro canales disponibles.",
+    "summary": "En la conversación ficticia 27 sobre un taller de radio barrial, la mesa de mezcla tiene cuatro canales disponibles.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/027/context_01"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_f996eb9291a25747a18f",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_028",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, las zanahorias llegarán de la huerta del barrio La Palma.",
+    "summary": "En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, las zanahorias llegarán de la huerta del barrio La Palma.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/028/vegetable_source"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_4022d99adb1e1d662d77",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_029",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 29 sobre una exposición de mapas antiguos, la pared occidental se pintó antes de montar las piezas.",
+    "summary": "En la conversación ficticia 29 sobre una exposición de mapas antiguos, la pared occidental se pintó antes de montar las piezas.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/029/context_02"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_388ee0e6d9f2a7e8ee6e",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_029",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 29 sobre una exposición de mapas antiguos, el equipo tomó medidas de humedad en el depósito.",
+    "summary": "En la conversación ficticia 29 sobre una exposición de mapas antiguos, el equipo tomó medidas de humedad en el depósito.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/029/context_12"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_24931a5f85b5b3585a81",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_030",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 30 sobre un observatorio de aves urbanas, cada conteo durará siete minutos.",
+    "summary": "En la conversación ficticia 30 sobre un observatorio de aves urbanas, cada conteo durará siete minutos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/030/count_window"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_e1e2230a7d96d0d72790",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_026",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 26 sobre un herbario comunitario, la muestra de musgo recibió el código HBR-47.",
+    "summary": "En la conversación ficticia 26 sobre un herbario comunitario, la muestra de musgo recibió el código HBR-47.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/026/catalog_code"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_abec4d13708ccedf0ea4",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_030",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 30 sobre un observatorio de aves urbanas, el canto de la mirla se grabó al amanecer.",
+    "summary": "En la conversación ficticia 30 sobre un observatorio de aves urbanas, el canto de la mirla se grabó al amanecer.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/030/call_recording"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_6b87f59527e379cdf9f5",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_029",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 29 sobre una exposición de mapas antiguos, el inventario de préstamos distingue originales y copias.",
+    "summary": "En la conversación ficticia 29 sobre una exposición de mapas antiguos, el inventario de préstamos distingue originales y copias.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/029/context_08"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_10380c86c152c04e3779",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_030",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 30 sobre un observatorio de aves urbanas, se preparó una solicitud para instalar cámaras cerca de los nidos.",
+    "summary": "En la conversación ficticia 30 sobre un observatorio de aves urbanas, se preparó una solicitud para instalar cámaras cerca de los nidos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/030/context_15"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_e5cf109c204fa4abade9",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_028",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, el inventario de alimentos se contará cada lunes a las 16:00.",
+    "summary": "En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, el inventario de alimentos se contará cada lunes a las 16:00.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/028/inventory_time"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_e8e8b9050ea6a6954b4f",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_027",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 27 sobre un taller de radio barrial, se conservará el sonido ambiente de la calle durante diez segundos.",
+    "summary": "En la conversación ficticia 27 sobre un taller de radio barrial, se conservará el sonido ambiente de la calle durante diez segundos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/027/context_03"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_d806009d69c8b5437f83",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_027",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 27 sobre un taller de radio barrial, la grabadora portátil se probó con pilas nuevas.",
+    "summary": "En la conversación ficticia 27 sobre un taller de radio barrial, la grabadora portátil se probó con pilas nuevas.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/027/context_02"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_44e34883678ac826cd9c",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_029",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 29 sobre una exposición de mapas antiguos, la nota marginal del plano portuario menciona una crecida de invierno.",
+    "summary": "En la conversación ficticia 29 sobre una exposición de mapas antiguos, la nota marginal del plano portuario menciona una crecida de invierno.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/029/margin_note"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_98e33d644bac07d2c3cf",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_030",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 30 sobre un observatorio de aves urbanas, el primer informe se centrará en los colibríes del parque.",
+    "summary": "En la conversación ficticia 30 sobre un observatorio de aves urbanas, el primer informe se centrará en los colibríes del parque.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/030/species_focus"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_354602b38003c9f58f4c",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_028",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, se descartó imprimir un menú diario en papel.",
+    "summary": "En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, se descartó imprimir un menú diario en papel.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/028/context_06"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_f5919bec0768604d4f09",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_026",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 26 sobre un herbario comunitario, se descartó usar bolsas húmedas durante el transporte.",
+    "summary": "En la conversación ficticia 26 sobre un herbario comunitario, se descartó usar bolsas húmedas durante el transporte.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/026/context_07"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_d24af15c9fb32c5cdb47",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_026",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 26 sobre un herbario comunitario, las fotografías del herbario deben incluir una regla métrica en el encuadre.",
+    "summary": "En la conversación ficticia 26 sobre un herbario comunitario, las fotografías del herbario deben incluir una regla métrica en el encuadre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/026/photo_rule"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_2155cb370088eaa59682",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_028",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, se compararon dos proveedores de refrigeradores, sin seleccionar uno en esa reunión.",
+    "summary": "En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, se compararon dos proveedores de refrigeradores, sin seleccionar uno en esa reunión.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/028/context_15"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_cb95a8efd46cdbe23db3",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_029",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 29 sobre una exposición de mapas antiguos, la visita de prueba se realizó con seis voluntarios.",
+    "summary": "En la conversación ficticia 29 sobre una exposición de mapas antiguos, la visita de prueba se realizó con seis voluntarios.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/029/context_13"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_7b89263f38945eb42664",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_029",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 29 sobre una exposición de mapas antiguos, las digitalizaciones de consulta tendrán 300 ppp.",
+    "summary": "En la conversación ficticia 29 sobre una exposición de mapas antiguos, las digitalizaciones de consulta tendrán 300 ppp.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/029/digitization_size"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_3b3153fb64abce7a804e",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_029",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 29 sobre una exposición de mapas antiguos, las visitas escolares comenzarán a las 09:15.",
+    "summary": "En la conversación ficticia 29 sobre una exposición de mapas antiguos, las visitas escolares comenzarán a las 09:15.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/029/opening_hour"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_87b165c1930257960478",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_030",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 30 sobre un observatorio de aves urbanas, los estudiantes dibujarán la silueta de las aves observadas.",
+    "summary": "En la conversación ficticia 30 sobre un observatorio de aves urbanas, los estudiantes dibujarán la silueta de las aves observadas.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/030/student_task"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_edaa0770b919e2079c20",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_028",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, las recetas aprobadas se archivarán en un cuaderno de tapa verde.",
+    "summary": "En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, las recetas aprobadas se archivarán en un cuaderno de tapa verde.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/028/recipe_archive"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_8c741ff78027673a5462",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_027",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 27 sobre un taller de radio barrial, la versión editada del episodio durará doce minutos.",
+    "summary": "En la conversación ficticia 27 sobre un taller de radio barrial, la versión editada del episodio durará doce minutos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/027/episode_length"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_b4f7b22328808660f18e",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_026",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 26 sobre un herbario comunitario, para llegar al vivero se recomendó entrar por la puerta oriental.",
+    "summary": "En la conversación ficticia 26 sobre un herbario comunitario, para llegar al vivero se recomendó entrar por la puerta oriental.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/026/access_route"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_25ee190345a7ee3e4ddb",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_029",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 29 sobre una exposición de mapas antiguos, una etiqueta provisional quedó pendiente de corrección ortográfica.",
+    "summary": "En la conversación ficticia 29 sobre una exposición de mapas antiguos, una etiqueta provisional quedó pendiente de corrección ortográfica.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/029/context_04"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_4bc30d3d3f55b88d6a10",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_027",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 27 sobre un taller de radio barrial, el teléfono de la cabina no se usó como grabadora.",
+    "summary": "En la conversación ficticia 27 sobre un taller de radio barrial, el teléfono de la cabina no se usó como grabadora.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/027/context_11"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_a24fe7907fbc59ca500f",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_029",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 29 sobre una exposición de mapas antiguos, se calculó un valor de referencia del mapa central para estudiar su seguro.",
+    "summary": "En la conversación ficticia 29 sobre una exposición de mapas antiguos, se calculó un valor de referencia del mapa central para estudiar su seguro.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/029/context_14"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_3040d0854baf85952aca",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_028",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, la despensa se ordenó por fecha de ingreso.",
+    "summary": "En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, la despensa se ordenó por fecha de ingreso.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/028/context_01"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_3302f0f42667936cea7b",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_027",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 27 sobre un taller de radio barrial, la copia de respaldo del audio se guardará en la unidad Archivo-B.",
+    "summary": "En la conversación ficticia 27 sobre un taller de radio barrial, la copia de respaldo del audio se guardará en la unidad Archivo-B.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/027/backup_location"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_54f99ad48c476f7edfc1",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_030",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 30 sobre un observatorio de aves urbanas, las fotos de la guía se acreditarán a Paula Mena.",
+    "summary": "En la conversación ficticia 30 sobre un observatorio de aves urbanas, las fotos de la guía se acreditarán a Paula Mena.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/030/photo_credit"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_f074651b7cde23b30f0d",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_027",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 27 sobre un taller de radio barrial, el título provisional menciona oficios del barrio.",
+    "summary": "En la conversación ficticia 27 sobre un taller de radio barrial, el título provisional menciona oficios del barrio.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/027/context_10"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_08c34fdeb09e0a2358e9",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_028",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, el comedor probará una fila de autoservicio.",
+    "summary": "En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, el comedor probará una fila de autoservicio.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/028/context_13"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_60cfbf09b6dc8fe02617",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_026",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 26 sobre un herbario comunitario, el plano del sendero se corrigió en la revisión 3.",
+    "summary": "En la conversación ficticia 26 sobre un herbario comunitario, el plano del sendero se corrigió en la revisión 3.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/026/map_revision"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_cb7a6b5570d6eccfddbc",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_026",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 26 sobre un herbario comunitario, la muestra de musgo se tomó junto al muro norte del vivero.",
+    "summary": "En la conversación ficticia 26 sobre un herbario comunitario, la muestra de musgo se tomó junto al muro norte del vivero.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/026/sample_site"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_5f8b0f4847af6c9f3dce",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_026",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 26 sobre un herbario comunitario, las etiquetas borrador se marcaron con un punto rojo.",
+    "summary": "En la conversación ficticia 26 sobre un herbario comunitario, las etiquetas borrador se marcaron con un punto rojo.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/026/context_10"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_d50679283a8be4cc94dd",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_028",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, las cajas vacías se plegarán antes de reciclarlas.",
+    "summary": "En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, las cajas vacías se plegarán antes de reciclarlas.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/028/context_05"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_a7ac9a9cc4daecb45f15",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_028",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, una pizarra mostrará el menú de la semana.",
+    "summary": "En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, una pizarra mostrará el menú de la semana.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/028/context_04"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_cc13c4b70a3c54bf4b5c",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_028",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, las bandejas de servicio se lavarán al terminar cada turno.",
+    "summary": "En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, las bandejas de servicio se lavarán al terminar cada turno.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/028/context_02"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_11e00cf767dd685b9634",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_030",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 30 sobre un observatorio de aves urbanas, el equipo anotó la sombra de los edificios al mediodía.",
+    "summary": "En la conversación ficticia 30 sobre un observatorio de aves urbanas, el equipo anotó la sombra de los edificios al mediodía.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/030/context_09"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_bbf0b541714d31c376b1",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_030",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 30 sobre un observatorio de aves urbanas, los voluntarios revisaron baterías antes de salir.",
+    "summary": "En la conversación ficticia 30 sobre un observatorio de aves urbanas, los voluntarios revisaron baterías antes de salir.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/030/context_06"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_9c24b50bf81dbd4d63ec",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_027",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 27 sobre un taller de radio barrial, la cortina de apertura usa el sonido de una bicicleta pasando sobre adoquines.",
+    "summary": "En la conversación ficticia 27 sobre un taller de radio barrial, la cortina de apertura usa el sonido de una bicicleta pasando sobre adoquines.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/027/opening_sound"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_797733fd53e889c70670",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_029",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 29 sobre una exposición de mapas antiguos, las reproducciones llevarán una marca triangular en la esquina inferior.",
+    "summary": "En la conversación ficticia 29 sobre una exposición de mapas antiguos, las reproducciones llevarán una marca triangular en la esquina inferior.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/029/replica_marker"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_ab42b0e10ca1342b1f43",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_028",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, la receta de arepas de maíz fue propuesta por Eliana.",
+    "summary": "En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, la receta de arepas de maíz fue propuesta por Eliana.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/028/recipe_author"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_1a6d90d5bbf6defb0bae",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_029",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 29 sobre una exposición de mapas antiguos, el catálogo marcará con una estrella los mapas restaurados.",
+    "summary": "En la conversación ficticia 29 sobre una exposición de mapas antiguos, el catálogo marcará con una estrella los mapas restaurados.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/029/catalog_symbol"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_80301ecc6aceb151fe0a",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_026",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 26 sobre un herbario comunitario, se sugirió inaugurar el herbario el 20 de noviembre, sujeto a confirmación.",
+    "summary": "En la conversación ficticia 26 sobre un herbario comunitario, se sugirió inaugurar el herbario el 20 de noviembre, sujeto a confirmación.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/026/context_15"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_6668b3f20097d1298521",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_030",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 30 sobre un observatorio de aves urbanas, la ruta corta está marcada en color violeta.",
+    "summary": "En la conversación ficticia 30 sobre un observatorio de aves urbanas, la ruta corta está marcada en color violeta.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/030/route_color"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_2e917418292a54c98804",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_030",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 30 sobre un observatorio de aves urbanas, el grupo mantendrá al menos quince metros de distancia de los nidos.",
+    "summary": "En la conversación ficticia 30 sobre un observatorio de aves urbanas, el grupo mantendrá al menos quince metros de distancia de los nidos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/030/nest_distance"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_496e1941ae424d4ffe9b",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_027",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 27 sobre un taller de radio barrial, se revisó que las voces no saturaran el medidor.",
+    "summary": "En la conversación ficticia 27 sobre un taller de radio barrial, se revisó que las voces no saturaran el medidor.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/027/context_12"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_c07223723c5cb5e8fa25",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_027",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 27 sobre un taller de radio barrial, la edición retirará una sirena que tapó una respuesta.",
+    "summary": "En la conversación ficticia 27 sobre un taller de radio barrial, la edición retirará una sirena que tapó una respuesta.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/027/context_07"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_2eefd2d78effd47dfdb5",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_027",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 27 sobre un taller de radio barrial, el taller pidió evitar publicidad dentro de la entrevista.",
+    "summary": "En la conversación ficticia 27 sobre un taller de radio barrial, el taller pidió evitar publicidad dentro de la entrevista.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/027/context_06"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_ff5672b95eb84937e959",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_026",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 26 sobre un herbario comunitario, las hojas de la colección se dejaron secar durante nueve días.",
+    "summary": "En la conversación ficticia 26 sobre un herbario comunitario, las hojas de la colección se dejaron secar durante nueve días.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/026/drying_time"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_9ef55bea2532d593fa9f",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_029",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 29 sobre una exposición de mapas antiguos, una vitrina tiene una alarma de apertura.",
+    "summary": "En la conversación ficticia 29 sobre una exposición de mapas antiguos, una vitrina tiene una alarma de apertura.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/029/context_11"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_15cb04c538f82ffb4f6a",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_029",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 29 sobre una exposición de mapas antiguos, la audioguía se grabará en español y portugués.",
+    "summary": "En la conversación ficticia 29 sobre una exposición de mapas antiguos, la audioguía se grabará en español y portugués.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/029/audio_language"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_012df9b0a8f4a92a4eb1",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_029",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 29 sobre una exposición de mapas antiguos, la línea de tiempo de la sala termina en 1978.",
+    "summary": "En la conversación ficticia 29 sobre una exposición de mapas antiguos, la línea de tiempo de la sala termina en 1978.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/029/timeline_end"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_12377ab2c859e35cc333",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_029",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 29 sobre una exposición de mapas antiguos, la iluminación de los originales se limitará a 50 lux.",
+    "summary": "En la conversación ficticia 29 sobre una exposición de mapas antiguos, la iluminación de los originales se limitará a 50 lux.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/029/light_limit"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_731d5e31780bd5782f46",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_027",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 27 sobre un taller de radio barrial, el episodio se publicará primero en el sitio de la emisora.",
+    "summary": "En la conversación ficticia 27 sobre un taller de radio barrial, el episodio se publicará primero en el sitio de la emisora.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/027/publication_channel"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_308f9c1a5bd58740a4b5",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_029",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 29 sobre una exposición de mapas antiguos, clara redactará los textos de las cartelas.",
+    "summary": "En la conversación ficticia 29 sobre una exposición de mapas antiguos, clara redactará los textos de las cartelas.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/029/caption_author"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_aec22497f802b54806aa",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_027",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 27 sobre un taller de radio barrial, el guion incluye una pausa breve antes de las citas.",
+    "summary": "En la conversación ficticia 27 sobre un taller de radio barrial, el guion incluye una pausa breve antes de las citas.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/027/context_04"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_46b1f2e6f992a413bb8c",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_029",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 29 sobre una exposición de mapas antiguos, el atlas prestado proviene de la biblioteca de San Jerónimo.",
+    "summary": "En la conversación ficticia 29 sobre una exposición de mapas antiguos, el atlas prestado proviene de la biblioteca de San Jerónimo.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/029/loan_origin"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_9887dc47390d82df98b7",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_026",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 26 sobre un herbario comunitario, la colección de frutos secos se revisa una vez por mes.",
+    "summary": "En la conversación ficticia 26 sobre un herbario comunitario, la colección de frutos secos se revisa una vez por mes.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/026/context_12"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_fe38b7f85f9ec175a523",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_028",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, un cartel explica cómo separar residuos orgánicos.",
+    "summary": "En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, un cartel explica cómo separar residuos orgánicos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/028/context_09"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_58c9e5ac6d765b8a85a9",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_027",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 27 sobre un taller de radio barrial, la escaleta tiene tres bloques temáticos.",
+    "summary": "En la conversación ficticia 27 sobre un taller de radio barrial, la escaleta tiene tres bloques temáticos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/027/context_13"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_579d03e4943e157b58fa",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_029",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 29 sobre una exposición de mapas antiguos, el mapa central se montará en un marco de roble claro.",
+    "summary": "En la conversación ficticia 29 sobre una exposición de mapas antiguos, el mapa central se montará en un marco de roble claro.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/029/frame_material"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_10ee91c6b736e6fa9602",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_027",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 27 sobre un taller de radio barrial, las correcciones recibidas se leerán al comienzo del siguiente episodio.",
+    "summary": "En la conversación ficticia 27 sobre un taller de radio barrial, las correcciones recibidas se leerán al comienzo del siguiente episodio.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/027/correction_slot"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_b521ee50bb01207dcf21",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_029",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 29 sobre una exposición de mapas antiguos, una mesa auxiliar sostiene lupas para consulta.",
+    "summary": "En la conversación ficticia 29 sobre una exposición de mapas antiguos, una mesa auxiliar sostiene lupas para consulta.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/029/context_01"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_cf49767b771b008b5a6f",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_029",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 29 sobre una exposición de mapas antiguos, los planos de gran tamaño se desplegarán entre dos personas.",
+    "summary": "En la conversación ficticia 29 sobre una exposición de mapas antiguos, los planos de gran tamaño se desplegarán entre dos personas.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/029/context_05"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_d362a8a196d46f9384bd",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_030",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 30 sobre un observatorio de aves urbanas, si la lluvia es intensa, se suspenderá el conteo.",
+    "summary": "En la conversación ficticia 30 sobre un observatorio de aves urbanas, si la lluvia es intensa, se suspenderá el conteo.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/030/weather_cutoff"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_da7230b8c12599e52561",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_030",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 30 sobre un observatorio de aves urbanas, la salida de prueba anotó dos aves migratorias en un conteo preliminar.",
+    "summary": "En la conversación ficticia 30 sobre un observatorio de aves urbanas, la salida de prueba anotó dos aves migratorias en un conteo preliminar.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/030/context_14"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_0c06bc89dba3aeeb6c64",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_028",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, se compararon dos versiones de una receta de ensalada.",
+    "summary": "En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, se compararon dos versiones de una receta de ensalada.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/028/context_12"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_6b35844ff862f6fa21c0",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_030",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 30 sobre un observatorio de aves urbanas, la cuadrícula del plano incluye los árboles grandes.",
+    "summary": "En la conversación ficticia 30 sobre un observatorio de aves urbanas, la cuadrícula del plano incluye los árboles grandes.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/030/context_04"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_d1fb6b437ca826f46a0a",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_030",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 30 sobre un observatorio de aves urbanas, el primer punto de conteo se ubicó junto al puente peatonal.",
+    "summary": "En la conversación ficticia 30 sobre un observatorio de aves urbanas, el primer punto de conteo se ubicó junto al puente peatonal.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/030/observation_point"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_3ad4a43a48bd22ff3bdd",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_026",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 26 sobre un herbario comunitario, para prensar las hojas se eligió cartón corrugado.",
+    "summary": "En la conversación ficticia 26 sobre un herbario comunitario, para prensar las hojas se eligió cartón corrugado.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/026/press_material"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_134acecb3d506dd9cf86",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_026",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 26 sobre un herbario comunitario, el coste del armario de semillas se estimó preliminarmente en 320 unidades, antes de aprobar una compra.",
+    "summary": "En la conversación ficticia 26 sobre un herbario comunitario, el coste del armario de semillas se estimó preliminarmente en 320 unidades, antes de aprobar una compra.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/026/context_14"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_9fd38ddd150069750701",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_028",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, el equipo calculó un coste provisional de 4 unidades por almuerzo para comparar menús.",
+    "summary": "En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, el equipo calculó un coste provisional de 4 unidades por almuerzo para comparar menús.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/028/context_14"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_75967a4193edc71943a2",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_030",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 30 sobre un observatorio de aves urbanas, el grupo se reunirá frente a la fuente seca.",
+    "summary": "En la conversación ficticia 30 sobre un observatorio de aves urbanas, el grupo se reunirá frente a la fuente seca.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/030/meeting_place"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_5d4d26e714d3a6a7dde9",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_030",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 30 sobre un observatorio de aves urbanas, una señal pide caminar sin altavoces.",
+    "summary": "En la conversación ficticia 30 sobre un observatorio de aves urbanas, una señal pide caminar sin altavoces.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/030/context_02"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_9c8ba133032336911653",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_028",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, las cáscaras de plátano se destinarán al compostaje.",
+    "summary": "En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, las cáscaras de plátano se destinarán al compostaje.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/028/peel_use"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_451deed83efbba26bc9a",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_027",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 27 sobre un taller de radio barrial, los auriculares de monitoreo se guardan en una caja gris.",
+    "summary": "En la conversación ficticia 27 sobre un taller de radio barrial, los auriculares de monitoreo se guardan en una caja gris.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/027/context_08"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_e014005607c3940e148a",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_030",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 30 sobre un observatorio de aves urbanas, el registro anotará por separado el ruido de obras cercanas.",
+    "summary": "En la conversación ficticia 30 sobre un observatorio de aves urbanas, el registro anotará por separado el ruido de obras cercanas.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/030/noise_note"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_ddd34387a47ad2d82242",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_030",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 30 sobre un observatorio de aves urbanas, el informe incluirá una tabla de horarios.",
+    "summary": "En la conversación ficticia 30 sobre un observatorio de aves urbanas, el informe incluirá una tabla de horarios.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/030/context_12"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_0664de94c6c061d98c2d",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_026",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 26 sobre un herbario comunitario, el musgo se guardó en un sobre de papel sin plastificar.",
+    "summary": "En la conversación ficticia 26 sobre un herbario comunitario, el musgo se guardó en un sobre de papel sin plastificar.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/026/sample_container"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_92313614af2bf4862b32",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_026",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 26 sobre un herbario comunitario, el turno de catalogación de Lucía comienza los miércoles a las 08:30.",
+    "summary": "En la conversación ficticia 26 sobre un herbario comunitario, el turno de catalogación de Lucía comienza los miércoles a las 08:30.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/026/volunteer_shift"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_2ddf25efd26c12f7c02f",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_029",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 29 sobre una exposición de mapas antiguos, la sala sur contiene un banco para lectura.",
+    "summary": "En la conversación ficticia 29 sobre una exposición de mapas antiguos, la sala sur contiene un banco para lectura.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/029/context_07"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_73f17a694b0186a8b126",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_026",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 26 sobre un herbario comunitario, se acordó tomar como máximo dos ejemplares por especie.",
+    "summary": "En la conversación ficticia 26 sobre un herbario comunitario, se acordó tomar como máximo dos ejemplares por especie.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/026/specimen_limit"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_f542e48884a2cc0e38f0",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_027",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 27 sobre un taller de radio barrial, para evitar el tráfico, la entrevista se grabará antes de las 07:00.",
+    "summary": "En la conversación ficticia 27 sobre un taller de radio barrial, para evitar el tráfico, la entrevista se grabará antes de las 07:00.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/027/noise_window"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_c945722413d5fc00c5d6",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_029",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 29 sobre una exposición de mapas antiguos, un folleto explica la escala cartográfica.",
+    "summary": "En la conversación ficticia 29 sobre una exposición de mapas antiguos, un folleto explica la escala cartográfica.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/029/context_09"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_c37818d9c400b703dc90",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_026",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 26 sobre un herbario comunitario, el mapa antiguo mostraba una entrada que ya está cerrada.",
+    "summary": "En la conversación ficticia 26 sobre un herbario comunitario, el mapa antiguo mostraba una entrada que ya está cerrada.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/026/context_06"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_47a1bd75e624d07b757f",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_028",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, se reservó una mesa baja para estudiantes pequeños.",
+    "summary": "En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, se reservó una mesa baja para estudiantes pequeños.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/028/context_03"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_702260c4e732cde2e126",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_030",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 30 sobre un observatorio de aves urbanas, las fichas se subirán al archivo local los viernes.",
+    "summary": "En la conversación ficticia 30 sobre un observatorio de aves urbanas, las fichas se subirán al archivo local los viernes.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/030/upload_day"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_311d531c86e3c0d4707d",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_028",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, la capacitación de cocina se hará en el aula 4.",
+    "summary": "En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, la capacitación de cocina se hará en el aula 4.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/028/training_room"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_b7acafdb3ffc9c0bbd6c",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_026",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 26 sobre un herbario comunitario, el pasillo sur se limpió antes de instalar los estantes.",
+    "summary": "En la conversación ficticia 26 sobre un herbario comunitario, el pasillo sur se limpió antes de instalar los estantes.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/026/context_04"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_b8754651040e26bec564",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_028",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, el pan sobrante del día se ofrecerá al comedor vecinal.",
+    "summary": "En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, el pan sobrante del día se ofrecerá al comedor vecinal.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/028/surplus_route"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_cdbc4d49584f1a044542",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_029",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 29 sobre una exposición de mapas antiguos, la actividad escolar consistirá en comparar dos trazados de una calle.",
+    "summary": "En la conversación ficticia 29 sobre una exposición de mapas antiguos, la actividad escolar consistirá en comparar dos trazados de una calle.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/029/school_activity"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_d9b3be67906f497540b6",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_030",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 30 sobre un observatorio de aves urbanas, se descartó usar comida para atraer aves.",
+    "summary": "En la conversación ficticia 30 sobre un observatorio de aves urbanas, se descartó usar comida para atraer aves.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/030/context_05"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_0090b9f12bfba525fba9",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_030",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 30 sobre un observatorio de aves urbanas, se usará una bolsa reutilizable para retirar basura del recorrido.",
+    "summary": "En la conversación ficticia 30 sobre un observatorio de aves urbanas, se usará una bolsa reutilizable para retirar basura del recorrido.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/030/context_11"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_4e1cda7123c835afe7b5",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_028",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, las frutas cortadas se guardarán en el estante superior del refrigerador.",
+    "summary": "En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, las frutas cortadas se guardarán en el estante superior del refrigerador.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/028/refrigerator_zone"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_f538d109d6af269da5bc",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_030",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 30 sobre un observatorio de aves urbanas, el plano de observación se imprimirá a escala 1:2500.",
+    "summary": "En la conversación ficticia 30 sobre un observatorio de aves urbanas, el plano de observación se imprimirá a escala 1:2500.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/030/map_scale"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_9206aa705e4ff48da5ce",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_027",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 27 sobre un taller de radio barrial, una versión sin música servirá para archivo interno.",
+    "summary": "En la conversación ficticia 27 sobre un taller de radio barrial, una versión sin música servirá para archivo interno.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/027/context_09"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_1414674ac6018b8c78bc",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_027",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 27 sobre un taller de radio barrial, una panadería expresó interés preliminar en patrocinar el episodio, pendiente de acuerdo.",
+    "summary": "En la conversación ficticia 27 sobre un taller de radio barrial, una panadería expresó interés preliminar en patrocinar el episodio, pendiente de acuerdo.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/027/context_14"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_0f7b6a27029b85523ca5",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_026",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 26 sobre un herbario comunitario, la humedad objetivo del armario de semillas es 45 %.",
+    "summary": "En la conversación ficticia 26 sobre un herbario comunitario, la humedad objetivo del armario de semillas es 45 %.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/026/humidity_target"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_3ca079a84f414caa9ba8",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_027",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 27 sobre un taller de radio barrial, el taller solicitó información sobre una licencia de emisión comercial para el episodio.",
+    "summary": "En la conversación ficticia 27 sobre un taller de radio barrial, el taller solicitó información sobre una licencia de emisión comercial para el episodio.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/027/context_15"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_a3180c3fd2203aa164cc",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_028",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, la sopa de lentejas se servirá los jueves.",
+    "summary": "En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, la sopa de lentejas se servirá los jueves.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/028/menu_day"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_247373086c435c8ff2d5",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_026",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 26 sobre un herbario comunitario, la lista de visitantes se guarda separada del inventario.",
+    "summary": "En la conversación ficticia 26 sobre un herbario comunitario, la lista de visitantes se guarda separada del inventario.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/026/context_05"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_842684890d642619aa0c",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_026",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 26 sobre un herbario comunitario, se pidió no alterar el orden original de las fichas.",
+    "summary": "En la conversación ficticia 26 sobre un herbario comunitario, se pidió no alterar el orden original de las fichas.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/026/context_13"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_9f469e1409ff41743f86",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_029",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 29 sobre una exposición de mapas antiguos, las flechas del piso se retirarán al cerrar la muestra.",
+    "summary": "En la conversación ficticia 29 sobre una exposición de mapas antiguos, las flechas del piso se retirarán al cerrar la muestra.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/029/context_10"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_ebbf93bb7121c399c8ff",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_030",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 30 sobre un observatorio de aves urbanas, la libreta de campo se protege con una cubierta impermeable.",
+    "summary": "En la conversación ficticia 30 sobre un observatorio de aves urbanas, la libreta de campo se protege con una cubierta impermeable.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/030/context_01"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_935c00792eae810cf257",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_026",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 26 sobre un herbario comunitario, los ejemplares frágiles solo se consultan en la mesa del herbario.",
+    "summary": "En la conversación ficticia 26 sobre un herbario comunitario, los ejemplares frágiles solo se consultan en la mesa del herbario.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/026/loan_rule"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_1e838c61fa4290a1ffce",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_026",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 26 sobre un herbario comunitario, una bandeja azul quedó reservada para sobres sin clasificar.",
+    "summary": "En la conversación ficticia 26 sobre un herbario comunitario, una bandeja azul quedó reservada para sobres sin clasificar.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/026/context_02"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_15b86317149b34effac1",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_028",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, la tarjeta del postre advertirá que contiene maní.",
+    "summary": "En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, la tarjeta del postre advertirá que contiene maní.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/028/allergen_card"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_223e006b81d8794c482d",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_030",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 30 sobre un observatorio de aves urbanas, el equipo usará binoculares de 8 aumentos.",
+    "summary": "En la conversación ficticia 30 sobre un observatorio de aves urbanas, el equipo usará binoculares de 8 aumentos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/030/binocular_model"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_8cba42a38b30bb6534c8",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_029",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 29 sobre una exposición de mapas antiguos, se descartó proyectar luz directa sobre los originales.",
+    "summary": "En la conversación ficticia 29 sobre una exposición de mapas antiguos, se descartó proyectar luz directa sobre los originales.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/029/context_06"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_e6812e7af76cf1b8f57f",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_026",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 26 sobre un herbario comunitario, las etiquetas para visitantes se redactaron en español y nasa yuwe.",
+    "summary": "En la conversación ficticia 26 sobre un herbario comunitario, las etiquetas para visitantes se redactaron en español y nasa yuwe.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/026/label_language"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_148d950f2bc8d32dc333",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_029",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 29 sobre una exposición de mapas antiguos, los documentos originales viajarán en cajas de espuma neutra.",
+    "summary": "En la conversación ficticia 29 sobre una exposición de mapas antiguos, los documentos originales viajarán en cajas de espuma neutra.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/029/transport_case"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_8edbc7080a059b59ad44",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_030",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 30 sobre un observatorio de aves urbanas, las fotografías borrosas se conservaron solo para referencia interna.",
+    "summary": "En la conversación ficticia 30 sobre un observatorio de aves urbanas, las fotografías borrosas se conservaron solo para referencia interna.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/030/context_10"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_f6e3db9536b962cb4c43",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_030",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 30 sobre un observatorio de aves urbanas, la salida de prueba terminó antes del atardecer.",
+    "summary": "En la conversación ficticia 30 sobre un observatorio de aves urbanas, la salida de prueba terminó antes del atardecer.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/030/context_13"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_62141a34bd73488ff7d7",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_029",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 29 sobre una exposición de mapas antiguos, el recorrido para visitantes comenzará por la sala norte.",
+    "summary": "En la conversación ficticia 29 sobre una exposición de mapas antiguos, el recorrido para visitantes comenzará por la sala norte.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/029/visitor_route"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_c999536a14286e082a38",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_027",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 27 sobre un taller de radio barrial, la primera entrevista del episodio será con la panadera Olga Rivera.",
+    "summary": "En la conversación ficticia 27 sobre un taller de radio barrial, la primera entrevista del episodio será con la panadera Olga Rivera.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/027/interview_guest"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_9a3be73fb4de1a2a23dc",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_027",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 27 sobre un taller de radio barrial, se acordó conservar íntegra la frase sobre el horno comunitario.",
+    "summary": "En la conversación ficticia 27 sobre un taller de radio barrial, se acordó conservar íntegra la frase sobre el horno comunitario.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/027/quote_cut"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_05972bebce5eafddee28",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_030",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 30 sobre un observatorio de aves urbanas, la lista de especies mantiene nombres comunes y científicos.",
+    "summary": "En la conversación ficticia 30 sobre un observatorio de aves urbanas, la lista de especies mantiene nombres comunes y científicos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/030/context_07"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_5f3eb232abd545d0afb0",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_028",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, el equipo anotará los sobrantes por tipo de alimento.",
+    "summary": "En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, el equipo anotará los sobrantes por tipo de alimento.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/028/context_07"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_2eb1e1317b3455244110",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_027",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 27 sobre un taller de radio barrial, la pregunta para oyentes será cuál oficio quieren escuchar después.",
+    "summary": "En la conversación ficticia 27 sobre un taller de radio barrial, la pregunta para oyentes será cuál oficio quieren escuchar después.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/027/listener_prompt"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_0658c051fa1724da0fc8",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_026",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 26 sobre un herbario comunitario, la mesa de trabajo tiene una superficie lavable.",
+    "summary": "En la conversación ficticia 26 sobre un herbario comunitario, la mesa de trabajo tiene una superficie lavable.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/026/context_08"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_0da4f518767c948fbde4",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_029",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 29 sobre una exposición de mapas antiguos, se fotografió el reverso de cada documento.",
+    "summary": "En la conversación ficticia 29 sobre una exposición de mapas antiguos, se fotografió el reverso de cada documento.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/029/context_03"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_1b13b87f45a8c5bda8d6",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_028",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, la porción de arroz se medirá con una taza de 180 mililitros.",
+    "summary": "En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, la porción de arroz se medirá con una taza de 180 mililitros.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/028/portion_measure"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_bd7cbef1a1b309b25c71",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_027",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 27 sobre un taller de radio barrial, el permiso de la persona entrevistada se registrará en audio antes de grabar.",
+    "summary": "En la conversación ficticia 27 sobre un taller de radio barrial, el permiso de la persona entrevistada se registrará en audio antes de grabar.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/027/consent_method"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_f468a559a6675afed86d",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_028",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, las cucharas de muestra se guardan en un cajón distinto.",
+    "summary": "En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, las cucharas de muestra se guardan en un cajón distinto.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/028/context_10"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_66a8c4154bf11bc2ef73",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_026",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 26 sobre un herbario comunitario, el armario auxiliar contiene guantes y lápices de grafito.",
+    "summary": "En la conversación ficticia 26 sobre un herbario comunitario, el armario auxiliar contiene guantes y lápices de grafito.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/026/context_11"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_f15dc5dc16c33ee64fbf",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_026",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 26 sobre un herbario comunitario, las semillas de guayacán se separaron por tamaño, no por color.",
+    "summary": "En la conversación ficticia 26 sobre un herbario comunitario, las semillas de guayacán se separaron por tamaño, no por color.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/026/seed_sort"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_c08a329d3474d1b98bb0",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_029",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 29 sobre una exposición de mapas antiguos, el mapa central de la exposición representa el cauce del río en 1932.",
+    "summary": "En la conversación ficticia 29 sobre una exposición de mapas antiguos, el mapa central de la exposición representa el cauce del río en 1932.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/029/featured_map"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_747556bef60688099990",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_028",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, la puerta del depósito debe quedar cerrada entre turnos.",
+    "summary": "En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, la puerta del depósito debe quedar cerrada entre turnos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/028/context_11"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_d905227d5cb648eeb0c1",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_029",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 29 sobre una exposición de mapas antiguos, se recibieron dos cotizaciones de seguro para el atlas prestado.",
+    "summary": "En la conversación ficticia 29 sobre una exposición de mapas antiguos, se recibieron dos cotizaciones de seguro para el atlas prestado.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/029/context_15"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_ea667e91823d1500d09a",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_030",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 30 sobre un observatorio de aves urbanas, una sesión de práctica se hizo en el patio escolar.",
+    "summary": "En la conversación ficticia 30 sobre un observatorio de aves urbanas, una sesión de práctica se hizo en el patio escolar.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/030/context_08"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_857528ef3b02d9e40edb",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_030",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 30 sobre un observatorio de aves urbanas, los avistamientos se anotarán en una hoja con columnas por hora y especie.",
+    "summary": "En la conversación ficticia 30 sobre un observatorio de aves urbanas, los avistamientos se anotarán en una hoja con columnas por hora y especie.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/030/data_sheet"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_f39fa843ee4f0376c519",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_028",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, la olla grande se reparó antes del ensayo.",
+    "summary": "En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, la olla grande se reparó antes del ensayo.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/028/context_08"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_4a7ba0008cea18261309",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_027",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 27 sobre un taller de radio barrial, la música de cierre se eligió del catálogo con licencia CC BY.",
+    "summary": "En la conversación ficticia 27 sobre un taller de radio barrial, la música de cierre se eligió del catálogo con licencia CC BY.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/027/music_license"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_2a4466dc1b5b9b7d6642",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_026",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 26 sobre un herbario comunitario, una copia del catálogo se guardó sin imágenes.",
+    "summary": "En la conversación ficticia 26 sobre un herbario comunitario, una copia del catálogo se guardó sin imágenes.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/026/context_09"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_8f4382f3c2e37f2928d1",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_026",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 26 sobre un herbario comunitario, el inventario exportado se entregó como archivo TSV.",
+    "summary": "En la conversación ficticia 26 sobre un herbario comunitario, el inventario exportado se entregó como archivo TSV.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/026/archive_format"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_2c25f8feb5786cdc5bb9",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_027",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 27 sobre un taller de radio barrial, el archivo maestro de audio se exportará en FLAC.",
+    "summary": "En la conversación ficticia 27 sobre un taller de radio barrial, el archivo maestro de audio se exportará en FLAC.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/027/file_codec"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_8a7df84c0d7f4e8fa2ef",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_030",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 30 sobre un observatorio de aves urbanas, el sendero oeste se reparó después de una tormenta.",
+    "summary": "En la conversación ficticia 30 sobre un observatorio de aves urbanas, el sendero oeste se reparó después de una tormenta.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/030/context_03"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_dba6f4609ec343ffa844",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_027",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 27 sobre un taller de radio barrial, la introducción será narrada por Salomé.",
+    "summary": "En la conversación ficticia 27 sobre un taller de radio barrial, la introducción será narrada por Salomé.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/027/intro_voice"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_7840a8ac823929ddddba",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_028",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, el aceite usado se almacenará en bidones amarillos cerrados.",
+    "summary": "En la conversación ficticia 28 sobre una cocina escolar sin desperdicio, el aceite usado se almacenará en bidones amarillos cerrados.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/028/oil_collection"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_665e68d99ca2b2fe48f2",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_027",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 27 sobre un taller de radio barrial, el micrófono principal debe situarse a veinte centímetros de la voz invitada.",
+    "summary": "En la conversación ficticia 27 sobre un taller de radio barrial, el micrófono principal debe situarse a veinte centímetros de la voz invitada.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/027/microphone_position"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cm5v2_9e9bd0dcccaedad39305",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_m5_026",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Ejemplo completamente sintético. En la conversación ficticia 26 sobre un herbario comunitario, la cámara del vivero usa luz difusa para evitar reflejos.",
+    "summary": "En la conversación ficticia 26 sobre un herbario comunitario, la cámara del vivero usa luz difusa para evitar reflejos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-m5-v2/026/context_03"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  }
+]

@@ -1,0 +1,586 @@
+{
+  "version": "semantic-representation-controls-v1",
+  "registry_sha256": "6c24ac0ee19ef567aac3af5ed2bab572d1e34629de3d32ae742c34155cac142d",
+  "controls": [
+    {
+      "id": "qualified_owner_raw_only",
+      "kind": "source",
+      "ontology": {
+        "color": {
+          "kind": "property",
+          "intermediate_types": [],
+          "additive": false
+        },
+        "mass": {
+          "kind": "quantity",
+          "intermediate_types": [],
+          "additive": true
+        }
+      },
+      "side": {
+        "text": "El formulario F del equipo X del norte es verde.",
+        "catalog": [
+          {
+            "id": "r0",
+            "reference": {
+              "mention_quote": "El formulario F del equipo X del norte",
+              "type_quote": "formulario",
+              "class_binding": null,
+              "name": "F",
+              "scope": "single",
+              "owners": [
+                {
+                  "mention_quote": "equipo X del norte",
+                  "type_quote": "equipo",
+                  "class_binding": null,
+                  "name": "X",
+                  "ownership_support": {
+                    "holder": "subject",
+                    "quote": "El formulario F del equipo X del norte es verde.",
+                    "bearer_quote": "El formulario F del equipo X del norte",
+                    "owner_quote": "equipo X del norte",
+                    "positive": true,
+                    "role": "fixed_identity",
+                    "basis": "described_fact",
+                    "relation_modality": "state",
+                    "applicability": "identifier_only",
+                    "context": [],
+                    "configuration": []
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "stage2": {
+          "status": "ok",
+          "document": {
+            "certain": [
+              {
+                "quote": "El formulario F del equipo X del norte es verde.",
+                "subject": {
+                  "reference_id": "r0"
+                },
+                "time": "state",
+                "context": [],
+                "configuration": [],
+                "statement": {
+                  "type": "property",
+                  "attribute": "color",
+                  "value": {
+                    "type": "text",
+                    "value": "verde"
+                  },
+                  "affirmed": true,
+                  "basis": "described_fact"
+                }
+              }
+            ],
+            "readings": [],
+            "readings_complete": true
+          }
+        }
+      }
+    },
+    {
+      "id": "qualified_owner_condition_kept",
+      "kind": "source",
+      "ontology": {
+        "color": {
+          "kind": "property",
+          "intermediate_types": [],
+          "additive": false
+        },
+        "mass": {
+          "kind": "quantity",
+          "intermediate_types": [],
+          "additive": true
+        }
+      },
+      "side": {
+        "text": "El formulario F del equipo X del norte es verde.",
+        "catalog": [
+          {
+            "id": "r0",
+            "reference": {
+              "mention_quote": "El formulario F del equipo X del norte",
+              "type_quote": "formulario",
+              "class_binding": null,
+              "name": "F",
+              "scope": "single",
+              "owners": [
+                {
+                  "mention_quote": "equipo X del norte",
+                  "type_quote": "equipo",
+                  "class_binding": null,
+                  "name": "X",
+                  "ownership_support": {
+                    "holder": "subject",
+                    "quote": "El formulario F del equipo X del norte es verde.",
+                    "bearer_quote": "El formulario F del equipo X del norte",
+                    "owner_quote": "equipo X del norte",
+                    "positive": true,
+                    "role": "fixed_identity",
+                    "basis": "described_fact",
+                    "relation_modality": "state",
+                    "applicability": "identifier_only",
+                    "context": [],
+                    "configuration": []
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "stage2": {
+          "status": "ok",
+          "document": {
+            "certain": [
+              {
+                "quote": "El formulario F del equipo X del norte es verde.",
+                "subject": {
+                  "reference_id": "r0"
+                },
+                "time": "state",
+                "context": [
+                  {
+                    "key": "owner_location",
+                    "value": "norte",
+                    "quote": "del norte"
+                  }
+                ],
+                "configuration": [],
+                "statement": {
+                  "type": "property",
+                  "attribute": "color",
+                  "value": {
+                    "type": "text",
+                    "value": "verde"
+                  },
+                  "affirmed": true,
+                  "basis": "described_fact"
+                }
+              }
+            ],
+            "readings": [],
+            "readings_complete": true
+          }
+        }
+      }
+    },
+    {
+      "id": "different_request_intervals_collapsed",
+      "kind": "question",
+      "ontology": {
+        "color": {
+          "kind": "property",
+          "intermediate_types": [],
+          "additive": false
+        },
+        "mass": {
+          "kind": "quantity",
+          "intermediate_types": [],
+          "additive": true
+        }
+      },
+      "side": {
+        "text": "¿Qué color tenía ayer el formulario F y qué masa tiene hoy?",
+        "catalog": [
+          {
+            "id": "r0",
+            "reference": {
+              "mention_quote": "el formulario F",
+              "type_quote": "formulario",
+              "class_binding": null,
+              "name": "F",
+              "scope": "single",
+              "owners": []
+            }
+          }
+        ],
+        "stage2": {
+          "status": "ok",
+          "question": {
+            "subject": {
+              "reference_id": "r0"
+            },
+            "context": [
+              {
+                "key": "identity_interval",
+                "value": "ayer",
+                "quote": "ayer"
+              }
+            ],
+            "configuration": [],
+            "assumptions": [],
+            "requested": [
+              {
+                "quote": "¿Qué color tenía ayer el formulario F y qué masa tiene hoy?",
+                "time": "state",
+                "extent": "unspecified",
+                "slot": {
+                  "type": "property",
+                  "attribute": "color",
+                  "basis": "any",
+                  "path": "direct"
+                }
+              },
+              {
+                "quote": "¿Qué color tenía ayer el formulario F y qué masa tiene hoy?",
+                "time": "state",
+                "extent": "unspecified",
+                "slot": {
+                  "type": "quantity",
+                  "attribute": "mass",
+                  "basis": "any"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "same_request_interval_preserved",
+      "kind": "question",
+      "ontology": {
+        "color": {
+          "kind": "property",
+          "intermediate_types": [],
+          "additive": false
+        },
+        "mass": {
+          "kind": "quantity",
+          "intermediate_types": [],
+          "additive": true
+        }
+      },
+      "side": {
+        "text": "¿Qué color tiene hoy el formulario F y qué masa tiene hoy?",
+        "catalog": [
+          {
+            "id": "r0",
+            "reference": {
+              "mention_quote": "el formulario F",
+              "type_quote": "formulario",
+              "class_binding": null,
+              "name": "F",
+              "scope": "single",
+              "owners": []
+            }
+          }
+        ],
+        "stage2": {
+          "status": "ok",
+          "question": {
+            "subject": {
+              "reference_id": "r0"
+            },
+            "context": [
+              {
+                "key": "identity_interval",
+                "value": "hoy",
+                "quote": "hoy"
+              }
+            ],
+            "configuration": [],
+            "assumptions": [],
+            "requested": [
+              {
+                "quote": "¿Qué color tiene hoy el formulario F y qué masa tiene hoy?",
+                "time": "state",
+                "extent": "unspecified",
+                "slot": {
+                  "type": "property",
+                  "attribute": "color",
+                  "basis": "any",
+                  "path": "direct"
+                }
+              },
+              {
+                "quote": "¿Qué color tiene hoy el formulario F y qué masa tiene hoy?",
+                "time": "state",
+                "extent": "unspecified",
+                "slot": {
+                  "type": "quantity",
+                  "attribute": "mass",
+                  "basis": "any"
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "second_fact_omitted",
+      "kind": "source",
+      "ontology": {
+        "color": {
+          "kind": "property",
+          "intermediate_types": [],
+          "additive": false
+        },
+        "mass": {
+          "kind": "quantity",
+          "intermediate_types": [],
+          "additive": true
+        }
+      },
+      "side": {
+        "text": "El formulario F es verde y tiene una masa de 2 kg.",
+        "catalog": [
+          {
+            "id": "r0",
+            "reference": {
+              "mention_quote": "El formulario F",
+              "type_quote": "formulario",
+              "class_binding": null,
+              "name": "F",
+              "scope": "single",
+              "owners": []
+            }
+          }
+        ],
+        "stage2": {
+          "status": "ok",
+          "document": {
+            "certain": [
+              {
+                "quote": "El formulario F es verde y tiene una masa de 2 kg.",
+                "subject": {
+                  "reference_id": "r0"
+                },
+                "time": "state",
+                "context": [],
+                "configuration": [],
+                "statement": {
+                  "type": "property",
+                  "attribute": "color",
+                  "value": {
+                    "type": "text",
+                    "value": "verde"
+                  },
+                  "affirmed": true,
+                  "basis": "described_fact"
+                }
+              }
+            ],
+            "readings": [],
+            "readings_complete": true
+          }
+        }
+      }
+    },
+    {
+      "id": "all_facts_preserved",
+      "kind": "source",
+      "ontology": {
+        "color": {
+          "kind": "property",
+          "intermediate_types": [],
+          "additive": false
+        },
+        "mass": {
+          "kind": "quantity",
+          "intermediate_types": [],
+          "additive": true
+        }
+      },
+      "side": {
+        "text": "El formulario F es verde y tiene una masa de 2 kg.",
+        "catalog": [
+          {
+            "id": "r0",
+            "reference": {
+              "mention_quote": "El formulario F",
+              "type_quote": "formulario",
+              "class_binding": null,
+              "name": "F",
+              "scope": "single",
+              "owners": []
+            }
+          },
+          {
+            "id": "r1",
+            "reference": {
+              "mention_quote": "El formulario F",
+              "type_quote": "formulario",
+              "class_binding": null,
+              "name": "F",
+              "scope": "single",
+              "owners": []
+            }
+          }
+        ],
+        "stage2": {
+          "status": "ok",
+          "document": {
+            "certain": [
+              {
+                "quote": "El formulario F es verde y tiene una masa de 2 kg.",
+                "subject": {
+                  "reference_id": "r0"
+                },
+                "time": "state",
+                "context": [],
+                "configuration": [],
+                "statement": {
+                  "type": "property",
+                  "attribute": "color",
+                  "value": {
+                    "type": "text",
+                    "value": "verde"
+                  },
+                  "affirmed": true,
+                  "basis": "described_fact"
+                }
+              },
+              {
+                "quote": "El formulario F es verde y tiene una masa de 2 kg.",
+                "subject": {
+                  "reference_id": "r1"
+                },
+                "time": "state",
+                "context": [],
+                "configuration": [],
+                "statement": {
+                  "type": "quantity",
+                  "attribute": "mass",
+                  "amount": "2",
+                  "unit": "kg",
+                  "bound": "exact",
+                  "extent": "unspecified",
+                  "affirmed": true,
+                  "basis": "described_fact"
+                }
+              }
+            ],
+            "readings": [],
+            "readings_complete": true
+          }
+        }
+      }
+    },
+    {
+      "id": "negation_inverted",
+      "kind": "source",
+      "ontology": {
+        "color": {
+          "kind": "property",
+          "intermediate_types": [],
+          "additive": false
+        },
+        "mass": {
+          "kind": "quantity",
+          "intermediate_types": [],
+          "additive": true
+        }
+      },
+      "side": {
+        "text": "El formulario F no es verde.",
+        "catalog": [
+          {
+            "id": "r0",
+            "reference": {
+              "mention_quote": "El formulario F",
+              "type_quote": "formulario",
+              "class_binding": null,
+              "name": "F",
+              "scope": "single",
+              "owners": []
+            }
+          }
+        ],
+        "stage2": {
+          "status": "ok",
+          "document": {
+            "certain": [
+              {
+                "quote": "El formulario F no es verde.",
+                "subject": {
+                  "reference_id": "r0"
+                },
+                "time": "state",
+                "context": [],
+                "configuration": [],
+                "statement": {
+                  "type": "property",
+                  "attribute": "color",
+                  "value": {
+                    "type": "text",
+                    "value": "verde"
+                  },
+                  "affirmed": true,
+                  "basis": "described_fact"
+                }
+              }
+            ],
+            "readings": [],
+            "readings_complete": true
+          }
+        }
+      }
+    },
+    {
+      "id": "negation_preserved",
+      "kind": "source",
+      "ontology": {
+        "color": {
+          "kind": "property",
+          "intermediate_types": [],
+          "additive": false
+        },
+        "mass": {
+          "kind": "quantity",
+          "intermediate_types": [],
+          "additive": true
+        }
+      },
+      "side": {
+        "text": "El formulario F no es verde.",
+        "catalog": [
+          {
+            "id": "r0",
+            "reference": {
+              "mention_quote": "El formulario F",
+              "type_quote": "formulario",
+              "class_binding": null,
+              "name": "F",
+              "scope": "single",
+              "owners": []
+            }
+          }
+        ],
+        "stage2": {
+          "status": "ok",
+          "document": {
+            "certain": [
+              {
+                "quote": "El formulario F no es verde.",
+                "subject": {
+                  "reference_id": "r0"
+                },
+                "time": "state",
+                "context": [],
+                "configuration": [],
+                "statement": {
+                  "type": "property",
+                  "attribute": "color",
+                  "value": {
+                    "type": "text",
+                    "value": "verde"
+                  },
+                  "affirmed": false,
+                  "basis": "described_fact"
+                }
+              }
+            ],
+            "readings": [],
+            "readings_complete": true
+          }
+        }
+      }
+    }
+  ]
+}

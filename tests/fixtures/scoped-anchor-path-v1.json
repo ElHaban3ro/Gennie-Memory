@@ -1,0 +1,5 @@
+{
+  "path_syntax": true,
+  "query_path": {"before": "state.user_prompt", "after": "`user_prompt`"},
+  "memory_path": {"before": "state.memories.{key}", "after": "`memories.{key}`"}
+}

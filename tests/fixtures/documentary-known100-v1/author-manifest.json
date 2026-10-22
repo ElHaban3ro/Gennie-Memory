@@ -1,0 +1,19 @@
+{
+  "version": "documentary-known100-v1-before-review",
+  "pairs": 100,
+  "questions": 33,
+  "assertions": 83,
+  "source_only_sha256": "856efe75cfea87c9589baf6c17ce50ab1736974cb935ec6ac0b9cb8298036932",
+  "legacy_input_sha256": "228291e701036af5dd4c43100320b2a888797d1176f14b92d6e8e11420eb6c0a",
+  "legacy_labels_sha256": "095843d2ae6f64c208b225c6a2485c26cd99bf453d9ed76171e2c9e39ac01866",
+  "facts_extracted_automatically": false,
+  "source_texts_changed": false,
+  "provider_calls": 0,
+  "changes": [
+    "Explicit ontology kinds; attachment_force quantity declared",
+    "Generic measurement question uses explicit any; specific until-poweroff method preserved",
+    "Unknown methods use explicit unspecified source scope and neutral measurement datum",
+    "Olmo pragmatic alternatives open; literal immediate supply facts certain, no documentary uncertainty cue"
+  ],
+  "labels_prepared": false
+}

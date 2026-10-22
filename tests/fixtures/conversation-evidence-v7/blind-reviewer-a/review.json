@@ -1,0 +1,818 @@
+[
+  {
+    "case_id": "v7_harbor_ops_q01",
+    "answerability": "answerable",
+    "referent": "Mara Velez (OPS-41)",
+    "message_ids": [
+      "msg_harbor_ops_01"
+    ],
+    "exact_quote": "harbor engineer, is based at Puerto Niebla.",
+    "relation": "answers",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Directly states the person’s base."
+  },
+  {
+    "case_id": "v7_harbor_ops_q02",
+    "answerability": "answerable",
+    "referent": "Mara Velez (OPS-41)",
+    "message_ids": [
+      "msg_harbor_ops_02"
+    ],
+    "exact_quote": "uses the tide gauge TG-8 for routine field checks.",
+    "relation": "answers",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Directly states the instrument used."
+  },
+  {
+    "case_id": "v7_harbor_ops_q03",
+    "answerability": "answerable",
+    "referent": "Mara Velez (OPS-41)",
+    "message_ids": [
+      "msg_harbor_ops_05"
+    ],
+    "exact_quote": "Mara Velez (OPS-41) did not base operations in Caleta Gris; that site belongs to Bruma.",
+    "relation": "refutes premise",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Explicit correction denies the queried location."
+  },
+  {
+    "case_id": "v7_harbor_ops_q04",
+    "answerability": "answerable",
+    "referent": "Mara Velez (OPS-41); inspection I-41",
+    "message_ids": [
+      "msg_harbor_ops_06"
+    ],
+    "exact_quote": "Mara Velez (OPS-41) did not approve inspection I-41; the approval log records it as declined.",
+    "relation": "refutes premise",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Correction says the approval was declined."
+  },
+  {
+    "case_id": "v7_harbor_ops_q05",
+    "answerability": "partial",
+    "referent": "Mara Velez (OPS-41); inspection I-41",
+    "message_ids": [
+      "msg_harbor_ops_07"
+    ],
+    "exact_quote": "inspection I-41 work window for Mara Velez (OPS-41) is 6 hours; an end date is not recorded.",
+    "relation": "partial",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Duration is known; the end date is explicitly unrecorded."
+  },
+  {
+    "case_id": "v7_harbor_ops_q06",
+    "answerability": "partial",
+    "referent": "Mara Velez (OPS-41); inspection I-41",
+    "message_ids": [
+      "msg_harbor_ops_08"
+    ],
+    "exact_quote": "records the start date as 2026-04-12 but gives no completion date.",
+    "relation": "partial",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Start date is recorded; completion date is absent."
+  },
+  {
+    "case_id": "v7_harbor_ops_q07",
+    "answerability": "answerable",
+    "referent": "Mara Velez (OPS-41); inspection I-41",
+    "message_ids": [
+      "msg_harbor_ops_09"
+    ],
+    "exact_quote": "temperature reading for inspection I-41 by Mara Velez (OPS-41) has not been measured yet.",
+    "relation": "explicit unmeasured",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Explicitly says the reading has not been measured."
+  },
+  {
+    "case_id": "v7_harbor_ops_q08",
+    "answerability": "unanswerable",
+    "referent": "Mara Velez (OPS-41)",
+    "message_ids": [],
+    "exact_quote": null,
+    "relation": "unrelated",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "No music genre evidence; the map-cover preference does not answer this question."
+  },
+  {
+    "case_id": "v7_orchard_lab_q01",
+    "answerability": "answerable",
+    "referent": "Ivo Serrano (LAB-62)",
+    "message_ids": [
+      "msg_orchard_lab_01"
+    ],
+    "exact_quote": "orchard botanist, is based at Valle Claro.",
+    "relation": "answers",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Directly states the person’s base."
+  },
+  {
+    "case_id": "v7_orchard_lab_q02",
+    "answerability": "answerable",
+    "referent": "Ivo Serrano (LAB-62)",
+    "message_ids": [
+      "msg_orchard_lab_02"
+    ],
+    "exact_quote": "uses the soil probe SP-6 for routine field checks.",
+    "relation": "answers",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Directly states the instrument used."
+  },
+  {
+    "case_id": "v7_orchard_lab_q03",
+    "answerability": "answerable",
+    "referent": "Ivo Serrano (LAB-62)",
+    "message_ids": [
+      "msg_orchard_lab_05"
+    ],
+    "exact_quote": "Ivo Serrano (LAB-62) did not base operations in Monte Azul; that site belongs to Risco.",
+    "relation": "refutes premise",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Explicit correction denies the queried location."
+  },
+  {
+    "case_id": "v7_orchard_lab_q04",
+    "answerability": "answerable",
+    "referent": "Ivo Serrano (LAB-62); trial T-62",
+    "message_ids": [
+      "msg_orchard_lab_06"
+    ],
+    "exact_quote": "Ivo Serrano (LAB-62) did not approve trial T-62; the approval log records it as declined.",
+    "relation": "refutes premise",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Correction says the approval was declined."
+  },
+  {
+    "case_id": "v7_orchard_lab_q05",
+    "answerability": "partial",
+    "referent": "Ivo Serrano (LAB-62); trial T-62",
+    "message_ids": [
+      "msg_orchard_lab_07"
+    ],
+    "exact_quote": "trial T-62 work window for Ivo Serrano (LAB-62) is 4 hours; an end date is not recorded.",
+    "relation": "partial",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Duration is known; the end date is explicitly unrecorded."
+  },
+  {
+    "case_id": "v7_orchard_lab_q06",
+    "answerability": "partial",
+    "referent": "Ivo Serrano (LAB-62); trial T-62",
+    "message_ids": [
+      "msg_orchard_lab_08"
+    ],
+    "exact_quote": "records the start date as 2026-05-08 but gives no completion date.",
+    "relation": "partial",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Start date is recorded; completion date is absent."
+  },
+  {
+    "case_id": "v7_orchard_lab_q07",
+    "answerability": "answerable",
+    "referent": "Ivo Serrano (LAB-62); trial T-62",
+    "message_ids": [
+      "msg_orchard_lab_09"
+    ],
+    "exact_quote": "temperature reading for trial T-62 by Ivo Serrano (LAB-62) has not been measured yet.",
+    "relation": "explicit unmeasured",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Explicitly says the reading has not been measured."
+  },
+  {
+    "case_id": "v7_orchard_lab_q08",
+    "answerability": "unanswerable",
+    "referent": "Ivo Serrano (LAB-62)",
+    "message_ids": [],
+    "exact_quote": null,
+    "relation": "unrelated",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "No music genre evidence; the map-cover preference does not answer this question."
+  },
+  {
+    "case_id": "v7_archive_team_q01",
+    "answerability": "answerable",
+    "referent": "Neri Okafor (ARC-83)",
+    "message_ids": [
+      "msg_archive_team_01"
+    ],
+    "exact_quote": "archive conservator, is based at Lumen Quay.",
+    "relation": "answers",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Directly states the person’s base."
+  },
+  {
+    "case_id": "v7_archive_team_q02",
+    "answerability": "answerable",
+    "referent": "Neri Okafor (ARC-83)",
+    "message_ids": [
+      "msg_archive_team_02"
+    ],
+    "exact_quote": "uses the humidity logger HL-3 for routine field checks.",
+    "relation": "answers",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Directly states the instrument used."
+  },
+  {
+    "case_id": "v7_archive_team_q03",
+    "answerability": "answerable",
+    "referent": "Neri Okafor (ARC-83)",
+    "message_ids": [
+      "msg_archive_team_05"
+    ],
+    "exact_quote": "Neri Okafor (ARC-83) did not base operations in Cinder Bay; that site belongs to Aster.",
+    "relation": "refutes premise",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Explicit correction denies the queried location."
+  },
+  {
+    "case_id": "v7_archive_team_q04",
+    "answerability": "answerable",
+    "referent": "Neri Okafor (ARC-83); box B-83",
+    "message_ids": [
+      "msg_archive_team_06"
+    ],
+    "exact_quote": "Neri Okafor (ARC-83) did not approve box B-83; the approval log records it as declined.",
+    "relation": "refutes premise",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Correction says the approval was declined."
+  },
+  {
+    "case_id": "v7_archive_team_q05",
+    "answerability": "partial",
+    "referent": "Neri Okafor (ARC-83); box B-83",
+    "message_ids": [
+      "msg_archive_team_07"
+    ],
+    "exact_quote": "box B-83 work window for Neri Okafor (ARC-83) is 5 hours; an end date is not recorded.",
+    "relation": "partial",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Duration is known; the end date is explicitly unrecorded."
+  },
+  {
+    "case_id": "v7_archive_team_q06",
+    "answerability": "partial",
+    "referent": "Neri Okafor (ARC-83); box B-83",
+    "message_ids": [
+      "msg_archive_team_08"
+    ],
+    "exact_quote": "records the start date as 2026-06-19 but gives no completion date.",
+    "relation": "partial",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Start date is recorded; completion date is absent."
+  },
+  {
+    "case_id": "v7_archive_team_q07",
+    "answerability": "answerable",
+    "referent": "Neri Okafor (ARC-83); box B-83",
+    "message_ids": [
+      "msg_archive_team_09"
+    ],
+    "exact_quote": "temperature reading for box B-83 by Neri Okafor (ARC-83) has not been measured yet.",
+    "relation": "explicit unmeasured",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Explicitly says the reading has not been measured."
+  },
+  {
+    "case_id": "v7_archive_team_q08",
+    "answerability": "unanswerable",
+    "referent": "Neri Okafor (ARC-83)",
+    "message_ids": [],
+    "exact_quote": null,
+    "relation": "unrelated",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "No music genre evidence; the map-cover preference does not answer this question."
+  },
+  {
+    "case_id": "v7_rail_survey_q01",
+    "answerability": "answerable",
+    "referent": "Tala Kim (RAIL-24)",
+    "message_ids": [
+      "msg_rail_survey_01"
+    ],
+    "exact_quote": "rail surveyor, is based at North Fen.",
+    "relation": "answers",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Directly states the person’s base."
+  },
+  {
+    "case_id": "v7_rail_survey_q02",
+    "answerability": "answerable",
+    "referent": "Tala Kim (RAIL-24)",
+    "message_ids": [
+      "msg_rail_survey_02"
+    ],
+    "exact_quote": "uses the laser rangefinder LR-24 for routine field checks.",
+    "relation": "answers",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Directly states the instrument used."
+  },
+  {
+    "case_id": "v7_rail_survey_q03",
+    "answerability": "answerable",
+    "referent": "Tala Kim (RAIL-24)",
+    "message_ids": [
+      "msg_rail_survey_05"
+    ],
+    "exact_quote": "Tala Kim (RAIL-24) did not base operations in East Fen; that site belongs to South Fen.",
+    "relation": "refutes premise",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Explicit correction denies the queried location."
+  },
+  {
+    "case_id": "v7_rail_survey_q04",
+    "answerability": "answerable",
+    "referent": "Tala Kim (RAIL-24); survey S-24",
+    "message_ids": [
+      "msg_rail_survey_06"
+    ],
+    "exact_quote": "Tala Kim (RAIL-24) did not approve survey S-24; the approval log records it as declined.",
+    "relation": "refutes premise",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Correction says the approval was declined."
+  },
+  {
+    "case_id": "v7_rail_survey_q05",
+    "answerability": "partial",
+    "referent": "Tala Kim (RAIL-24); survey S-24",
+    "message_ids": [
+      "msg_rail_survey_07"
+    ],
+    "exact_quote": "survey S-24 work window for Tala Kim (RAIL-24) is 7 hours; an end date is not recorded.",
+    "relation": "partial",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Duration is known; the end date is explicitly unrecorded."
+  },
+  {
+    "case_id": "v7_rail_survey_q06",
+    "answerability": "partial",
+    "referent": "Tala Kim (RAIL-24); survey S-24",
+    "message_ids": [
+      "msg_rail_survey_08"
+    ],
+    "exact_quote": "records the start date as 2026-07-03 but gives no completion date.",
+    "relation": "partial",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Start date is recorded; completion date is absent."
+  },
+  {
+    "case_id": "v7_rail_survey_q07",
+    "answerability": "answerable",
+    "referent": "Tala Kim (RAIL-24); survey S-24",
+    "message_ids": [
+      "msg_rail_survey_09"
+    ],
+    "exact_quote": "temperature reading for survey S-24 by Tala Kim (RAIL-24) has not been measured yet.",
+    "relation": "explicit unmeasured",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Explicitly says the reading has not been measured."
+  },
+  {
+    "case_id": "v7_rail_survey_q08",
+    "answerability": "unanswerable",
+    "referent": "Tala Kim (RAIL-24)",
+    "message_ids": [],
+    "exact_quote": null,
+    "relation": "unrelated",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "No music genre evidence; the map-cover preference does not answer this question."
+  },
+  {
+    "case_id": "v7_clinic_trials_q01",
+    "answerability": "answerable",
+    "referent": "Pavel Duarte (CLN-55)",
+    "message_ids": [
+      "msg_clinic_trials_01"
+    ],
+    "exact_quote": "clinical coordinator, is based at San Telmo.",
+    "relation": "answers",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Directly states the person’s base."
+  },
+  {
+    "case_id": "v7_clinic_trials_q02",
+    "answerability": "answerable",
+    "referent": "Pavel Duarte (CLN-55)",
+    "message_ids": [
+      "msg_clinic_trials_02"
+    ],
+    "exact_quote": "uses the pulse monitor PM-5 for routine field checks.",
+    "relation": "answers",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Directly states the instrument used."
+  },
+  {
+    "case_id": "v7_clinic_trials_q03",
+    "answerability": "answerable",
+    "referent": "Pavel Duarte (CLN-55)",
+    "message_ids": [
+      "msg_clinic_trials_05"
+    ],
+    "exact_quote": "Pavel Duarte (CLN-55) did not base operations in Santa Isla; that site belongs to Las Rocas.",
+    "relation": "refutes premise",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Explicit correction denies the queried location."
+  },
+  {
+    "case_id": "v7_clinic_trials_q04",
+    "answerability": "answerable",
+    "referent": "Pavel Duarte (CLN-55); protocol P-55",
+    "message_ids": [
+      "msg_clinic_trials_06"
+    ],
+    "exact_quote": "Pavel Duarte (CLN-55) did not approve protocol P-55; the approval log records it as declined.",
+    "relation": "refutes premise",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Correction says the approval was declined."
+  },
+  {
+    "case_id": "v7_clinic_trials_q05",
+    "answerability": "partial",
+    "referent": "Pavel Duarte (CLN-55); protocol P-55",
+    "message_ids": [
+      "msg_clinic_trials_07"
+    ],
+    "exact_quote": "protocol P-55 work window for Pavel Duarte (CLN-55) is 3 hours; an end date is not recorded.",
+    "relation": "partial",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Duration is known; the end date is explicitly unrecorded."
+  },
+  {
+    "case_id": "v7_clinic_trials_q06",
+    "answerability": "partial",
+    "referent": "Pavel Duarte (CLN-55); protocol P-55",
+    "message_ids": [
+      "msg_clinic_trials_08"
+    ],
+    "exact_quote": "records the start date as 2026-08-14 but gives no completion date.",
+    "relation": "partial",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Start date is recorded; completion date is absent."
+  },
+  {
+    "case_id": "v7_clinic_trials_q07",
+    "answerability": "answerable",
+    "referent": "Pavel Duarte (CLN-55); protocol P-55",
+    "message_ids": [
+      "msg_clinic_trials_09"
+    ],
+    "exact_quote": "temperature reading for protocol P-55 by Pavel Duarte (CLN-55) has not been measured yet.",
+    "relation": "explicit unmeasured",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Explicitly says the reading has not been measured."
+  },
+  {
+    "case_id": "v7_clinic_trials_q08",
+    "answerability": "unanswerable",
+    "referent": "Pavel Duarte (CLN-55)",
+    "message_ids": [],
+    "exact_quote": null,
+    "relation": "unrelated",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "No music genre evidence; the map-cover preference does not answer this question."
+  },
+  {
+    "case_id": "v7_canopy_field_q01",
+    "answerability": "answerable",
+    "referent": "Yara Mensah (BIO-76)",
+    "message_ids": [
+      "msg_canopy_field_01"
+    ],
+    "exact_quote": "canopy ecologist, is based at Koru Ridge.",
+    "relation": "answers",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Directly states the person’s base."
+  },
+  {
+    "case_id": "v7_canopy_field_q02",
+    "answerability": "answerable",
+    "referent": "Yara Mensah (BIO-76)",
+    "message_ids": [
+      "msg_canopy_field_02"
+    ],
+    "exact_quote": "uses the acoustic recorder AR-7 for routine field checks.",
+    "relation": "answers",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Directly states the instrument used."
+  },
+  {
+    "case_id": "v7_canopy_field_q03",
+    "answerability": "answerable",
+    "referent": "Yara Mensah (BIO-76)",
+    "message_ids": [
+      "msg_canopy_field_05"
+    ],
+    "exact_quote": "Yara Mensah (BIO-76) did not base operations in Tern Point; that site belongs to Moss Shelf.",
+    "relation": "refutes premise",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Explicit correction denies the queried location."
+  },
+  {
+    "case_id": "v7_canopy_field_q04",
+    "answerability": "answerable",
+    "referent": "Yara Mensah (BIO-76); transect X-76",
+    "message_ids": [
+      "msg_canopy_field_06"
+    ],
+    "exact_quote": "Yara Mensah (BIO-76) did not approve transect X-76; the approval log records it as declined.",
+    "relation": "refutes premise",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Correction says the approval was declined."
+  },
+  {
+    "case_id": "v7_canopy_field_q05",
+    "answerability": "partial",
+    "referent": "Yara Mensah (BIO-76); transect X-76",
+    "message_ids": [
+      "msg_canopy_field_07"
+    ],
+    "exact_quote": "transect X-76 work window for Yara Mensah (BIO-76) is 8 hours; an end date is not recorded.",
+    "relation": "partial",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Duration is known; the end date is explicitly unrecorded."
+  },
+  {
+    "case_id": "v7_canopy_field_q06",
+    "answerability": "partial",
+    "referent": "Yara Mensah (BIO-76); transect X-76",
+    "message_ids": [
+      "msg_canopy_field_08"
+    ],
+    "exact_quote": "records the start date as 2026-09-02 but gives no completion date.",
+    "relation": "partial",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Start date is recorded; completion date is absent."
+  },
+  {
+    "case_id": "v7_canopy_field_q07",
+    "answerability": "answerable",
+    "referent": "Yara Mensah (BIO-76); transect X-76",
+    "message_ids": [
+      "msg_canopy_field_09"
+    ],
+    "exact_quote": "temperature reading for transect X-76 by Yara Mensah (BIO-76) has not been measured yet.",
+    "relation": "explicit unmeasured",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Explicitly says the reading has not been measured."
+  },
+  {
+    "case_id": "v7_canopy_field_q08",
+    "answerability": "unanswerable",
+    "referent": "Yara Mensah (BIO-76)",
+    "message_ids": [],
+    "exact_quote": null,
+    "relation": "unrelated",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "No music genre evidence; the map-cover preference does not answer this question."
+  },
+  {
+    "case_id": "v7_kiln_studio_q01",
+    "answerability": "answerable",
+    "referent": "Oren Petrov (KILN-37)",
+    "message_ids": [
+      "msg_kiln_studio_01"
+    ],
+    "exact_quote": "ceramic technician, is based at Redclay Works.",
+    "relation": "answers",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Directly states the person’s base."
+  },
+  {
+    "case_id": "v7_kiln_studio_q02",
+    "answerability": "answerable",
+    "referent": "Oren Petrov (KILN-37)",
+    "message_ids": [
+      "msg_kiln_studio_02"
+    ],
+    "exact_quote": "uses the kiln sensor KS-37 for routine field checks.",
+    "relation": "answers",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Directly states the instrument used."
+  },
+  {
+    "case_id": "v7_kiln_studio_q03",
+    "answerability": "answerable",
+    "referent": "Oren Petrov (KILN-37)",
+    "message_ids": [
+      "msg_kiln_studio_05"
+    ],
+    "exact_quote": "Oren Petrov (KILN-37) did not base operations in Ashbank; that site belongs to Whiteclay Works.",
+    "relation": "refutes premise",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Explicit correction denies the queried location."
+  },
+  {
+    "case_id": "v7_kiln_studio_q04",
+    "answerability": "answerable",
+    "referent": "Oren Petrov (KILN-37); firing F-37",
+    "message_ids": [
+      "msg_kiln_studio_06"
+    ],
+    "exact_quote": "Oren Petrov (KILN-37) did not approve firing F-37; the approval log records it as declined.",
+    "relation": "refutes premise",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Correction says the approval was declined."
+  },
+  {
+    "case_id": "v7_kiln_studio_q05",
+    "answerability": "partial",
+    "referent": "Oren Petrov (KILN-37); firing F-37",
+    "message_ids": [
+      "msg_kiln_studio_07"
+    ],
+    "exact_quote": "firing F-37 work window for Oren Petrov (KILN-37) is 2 hours; an end date is not recorded.",
+    "relation": "partial",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Duration is known; the end date is explicitly unrecorded."
+  },
+  {
+    "case_id": "v7_kiln_studio_q06",
+    "answerability": "partial",
+    "referent": "Oren Petrov (KILN-37); firing F-37",
+    "message_ids": [
+      "msg_kiln_studio_08"
+    ],
+    "exact_quote": "records the start date as 2026-03-27 but gives no completion date.",
+    "relation": "partial",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Start date is recorded; completion date is absent."
+  },
+  {
+    "case_id": "v7_kiln_studio_q07",
+    "answerability": "answerable",
+    "referent": "Oren Petrov (KILN-37); firing F-37",
+    "message_ids": [
+      "msg_kiln_studio_09"
+    ],
+    "exact_quote": "temperature reading for firing F-37 by Oren Petrov (KILN-37) has not been measured yet.",
+    "relation": "explicit unmeasured",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Explicitly says the reading has not been measured."
+  },
+  {
+    "case_id": "v7_kiln_studio_q08",
+    "answerability": "unanswerable",
+    "referent": "Oren Petrov (KILN-37)",
+    "message_ids": [],
+    "exact_quote": null,
+    "relation": "unrelated",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "No music genre evidence; the map-cover preference does not answer this question."
+  },
+  {
+    "case_id": "v7_ice_station_q01",
+    "answerability": "answerable",
+    "referent": "Sumi Arora (ICE-98)",
+    "message_ids": [
+      "msg_ice_station_01"
+    ],
+    "exact_quote": "glacier technician, is based at Morrow Shelf.",
+    "relation": "answers",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Directly states the person’s base."
+  },
+  {
+    "case_id": "v7_ice_station_q02",
+    "answerability": "answerable",
+    "referent": "Sumi Arora (ICE-98)",
+    "message_ids": [
+      "msg_ice_station_02"
+    ],
+    "exact_quote": "uses the ice radar IR-9 for routine field checks.",
+    "relation": "answers",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Directly states the instrument used."
+  },
+  {
+    "case_id": "v7_ice_station_q03",
+    "answerability": "answerable",
+    "referent": "Sumi Arora (ICE-98)",
+    "message_ids": [
+      "msg_ice_station_05"
+    ],
+    "exact_quote": "Sumi Arora (ICE-98) did not base operations in Dawn Shelf; that site belongs to Lark Shelf.",
+    "relation": "refutes premise",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Explicit correction denies the queried location."
+  },
+  {
+    "case_id": "v7_ice_station_q04",
+    "answerability": "answerable",
+    "referent": "Sumi Arora (ICE-98); core C-98",
+    "message_ids": [
+      "msg_ice_station_06"
+    ],
+    "exact_quote": "Sumi Arora (ICE-98) did not approve core C-98; the approval log records it as declined.",
+    "relation": "refutes premise",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Correction says the approval was declined."
+  },
+  {
+    "case_id": "v7_ice_station_q05",
+    "answerability": "partial",
+    "referent": "Sumi Arora (ICE-98); core C-98",
+    "message_ids": [
+      "msg_ice_station_07"
+    ],
+    "exact_quote": "core C-98 work window for Sumi Arora (ICE-98) is 9 hours; an end date is not recorded.",
+    "relation": "partial",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Duration is known; the end date is explicitly unrecorded."
+  },
+  {
+    "case_id": "v7_ice_station_q06",
+    "answerability": "partial",
+    "referent": "Sumi Arora (ICE-98); core C-98",
+    "message_ids": [
+      "msg_ice_station_08"
+    ],
+    "exact_quote": "records the start date as 2026-02-11 but gives no completion date.",
+    "relation": "partial",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Start date is recorded; completion date is absent."
+  },
+  {
+    "case_id": "v7_ice_station_q07",
+    "answerability": "answerable",
+    "referent": "Sumi Arora (ICE-98); core C-98",
+    "message_ids": [
+      "msg_ice_station_09"
+    ],
+    "exact_quote": "temperature reading for core C-98 by Sumi Arora (ICE-98) has not been measured yet.",
+    "relation": "explicit unmeasured",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "Explicitly says the reading has not been measured."
+  },
+  {
+    "case_id": "v7_ice_station_q08",
+    "answerability": "unanswerable",
+    "referent": "Sumi Arora (ICE-98)",
+    "message_ids": [],
+    "exact_quote": null,
+    "relation": "unrelated",
+    "ambiguity": "none",
+    "confidence": "high",
+    "rationale": "No music genre evidence; the map-cover preference does not answer this question."
+  }
+]

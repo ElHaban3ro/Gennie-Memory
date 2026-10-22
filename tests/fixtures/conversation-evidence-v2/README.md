@@ -1,0 +1,11 @@
+# Cohorte nueva de contraste de utilidad v2
+
+Ocho conversaciones sintéticas nuevas 042–049, 224 recuerdos (28 por conversación) y 64 preguntas (16 por relación). Las instrucciones base y `utility_v1` quedan congeladas desde el contraste v1. Esta cohorte no sirve para seguir ajustándolas ni representa evaluación humana.
+
+Cada ámbito incluye ocho hechos ligados a consultas, ocho distractores específicos de otra sede, edición, equipo o condición, y doce registros auxiliares de ensayo. Las preguntas sin evidencia tienen coincidencias cercanas cuyo sujeto o condición no corresponde. La condición relevante se declara en el texto; `conditions` estructurado permanece nulo. No mide filtrado semántico de ese campo, compresión ni multi-recuerdo. Las listas de corpus y casos se mezclaron con semillas 1842/1843; las preguntas ciegas con 1844. Los registros auxiliares son repetitivos: aumentar la lista no equivale por sí solo a dificultad humana.
+
+`source.json` conserva frases por ámbito; `memories.json` conserva literalmente esas frases. `development.jsonl` incluye relación, citas y límite de lo afirmable según la [rúbrica v1](../../../docs/evaluation/evidence-rubric-v1.md). `blind-questions.json` contiene solo ID, ámbito y pregunta. Los IDs estables son `cev2_<conversación>_<frase>` y `cev2q_<conversación>_<caso>`. No se generaron con puntuaciones de búsqueda ni salidas del proveedor.
+
+La revisión separada entre agentes recibe únicamente corpus fuente y preguntas ciegas, sin etiquetas del autor, resultados ni cuota por categoría. `blind-review.json` conserva su anotación y `adjudication.json` compara ambas antes de llamar al clasificador. Esa separación no equivale a anotación humana independiente ni a diversidad de familias de modelo; `human_review` e `independent_review` permanecen falsos. El manifiesto registra el estado concreto de revisión entre agentes.
+
+Validación: `iromem-eval validate-evidence-benchmark tests/fixtures/conversation-evidence-v2`. La preparación y reporte emparejados reutilizan `prepare-utility-comparison` / `report-utility-comparison`. `audit-m5` valida texto y límites estructurados de candidatos/semillas. Ninguno verifica fuentes externas ni la verdad de una respuesta final generada.

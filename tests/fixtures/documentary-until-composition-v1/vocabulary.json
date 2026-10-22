@@ -1,0 +1,27 @@
+{
+  "version": "until-composition-controls-v1",
+  "predicate_rows": [
+    {
+      "id": "quantity",
+      "roles": {
+        "subject": "ref",
+        "attribute": "attribute_id",
+        "amount": "quantity"
+      },
+      "distributive": false
+    }
+  ],
+  "fixed_attribute_rows": [
+    "duration",
+    "weight"
+  ],
+  "fixed_action_rows": [],
+  "semantic_type_rows": [],
+  "relevance_links": [],
+  "request_context_profile": {
+    "version": "documentary_request_context_v1",
+    "features": [
+      "linguistic_composition_until_measurement_v1"
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "version": "evidence-contribution-known18-v1-reviewed",
+  "questions": 18,
+  "reviewed_pairs": 126,
+  "selected_pairs": 17,
+  "provider_calls_before_freeze": 0,
+  "fresh_validation": false,
+  "residual_ambiguities_preserved": true,
+  "files_sha256": {
+    "adjudication-review.json": "bb3cce76a957cbf2ad09bd4fbd735d18fa40981ea4adf2afa09705c2d3f03cd4",
+    "annotation-changes.json": "fb590c5c0023f3e83884dceca754dc6dff0a9d5b2ebaadf2e6fb486ec8824a87",
+    "development-proposed.json": "e67265fa1f343eae44fee3b15dad0081bc7dbeaafd92476d43f0cba92bc2e648",
+    "development.json": "a49d0a6444327f5b2dcd8f95c3c1775f650dfb6657b8eb24bc833f5b62caeada",
+    "provenance.json": "609502026931837a5a2982d4e061798068ee5af8d60b192409424e5b33c79452"
+  },
+  "external_sha256": {
+    "docs/evaluation/contribution-known18-adjudication-2026-10-20.md": "8e5867acebfb179e4e5e95f04e6e684312537a554990146aef006b62dbe24fce",
+    "docs/evaluation/evidence-contribution-v3-contract.md": "11e6f9e2b1eddfba4446410301a0a3cd1610a09ac69c1d63295c7c1cc23d70e9",
+    "outputs/iromem/evaluation/contribution-v3-known18-source-review-2026-10-20/adjudication-critique.json": "4222ddc65101fff3ef4eeb4bd5d764c603fb1e322a925988d62f1724434fcc3e",
+    "outputs/iromem/evaluation/contribution-v3-known18-source-review-2026-10-20/audit-reviews.py": "dfb7fdeaa350f976e398314a10f634c9dea2ff4212bdd5d815c2e9ae519e7f2d",
+    "outputs/iromem/evaluation/contribution-v3-known18-source-review-2026-10-20/private-source-map.json": "b2ca4afaa2d63cc6c55581ec34d445a93f96b517f4ea5c61faf58c947cde0b4e",
+    "outputs/iromem/evaluation/contribution-v3-known18-source-review-2026-10-20/review-audit.json": "f3a84de4abe87e7a5a3e8de66001b8b78b67113ab459e739c3daf4b4c87aeb2c",
+    "outputs/iromem/evaluation/contribution-v3-known18-source-review-2026-10-20/review-initial.json": "26e2ed862d1aa512f880cd9665fd369e92eba3130f4a11032d1e8629d6f556d1",
+    "outputs/iromem/evaluation/contribution-v3-known18-source-review-2026-10-20/review-second.json": "8345c1aa7b7d887f58bfb18fbb564eb3ee65e63cc7361a3179a6e2f6b9c43943",
+    "outputs/iromem/evaluation/contribution-v3-known18-source-review-2026-10-20/source-only.json": "471eef2ddef05659f26812e517e76ef094f4f9fca197ed989a3fbebf1bf8465b",
+    "outputs/iromem/evaluation/direct-role-perplexity-v1-2026-10-20/inputs.jsonl": "fe2f589924cfeafd338679966e72773b60494f1835615f9dc0bfe980d5208e6f"
+  }
+}

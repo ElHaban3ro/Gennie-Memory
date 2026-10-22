@@ -1,0 +1,4512 @@
+{
+  "review_version": "v6-blind-initial-2026-10-19",
+  "review_type": "independent_blind_synthetic_evidence_review",
+  "input_files": [
+    "AGENTS.md",
+    "docs/evaluation/evidence-rubric-v1.md",
+    "tests/fixtures/conversation-evidence-v6-preparation/source.json",
+    "tests/fixtures/conversation-evidence-v6-preparation/memories.json",
+    "tests/fixtures/conversation-evidence-v6-preparation/blind-questions.jsonl"
+  ],
+  "method": "Lectura independiente de las 64 consultas y de los 28 recuerdos de cada ámbito. Las citas son el texto fuente completo comprobado contra original_text. Se clasifica cada ID del ámbito en relations; evidence contiene solo las tres relaciones útiles. supports_answer exige cobertura de la consulta completa por ese recuerdo; pending_or_partial incluye una parte concreta o un estado explícito del dato pendiente. No se infieren valores por ausencia ni unicidad de requisitos.",
+  "items": [
+    {
+      "id": "cev6q_074_01",
+      "scope_id": "synthetic_conversation_evidence_074",
+      "query": "¿Quién quedó a cargo de limpiar las teselas azules de Nuvarel el 14 de octubre?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "Quién quedó a cargo de limpiar las teselas azules de Nuvarel el 14 de octubre"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_074_01",
+          "quote": "El parte de restauración del mosaico ficticio Nuvarel del 14 de octubre asigna a Iverna la limpieza de las teselas azules.",
+          "relation": "supports_answer",
+          "covers": [
+            "p1"
+          ]
+        },
+        {
+          "memory_id": "cev6_074_02",
+          "quote": "Según la ficha del taller, Iverna debe usar agua desmineralizada para limpiar las teselas azules de Nuvarel.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "p1"
+          ]
+        },
+        {
+          "memory_id": "cev6_074_03",
+          "quote": "La copia firmada del parte del 14 de octubre confirma que la limpieza de las teselas azules corresponde a Iverna.",
+          "relation": "supports_answer",
+          "covers": [
+            "p1"
+          ]
+        },
+        {
+          "memory_id": "cev6_074_21",
+          "quote": "El parte de Nuvarel limita la limpieza de Iverna a la jornada del 14 de octubre.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "p1"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_074_01",
+        "cev6_074_02",
+        "cev6_074_03",
+        "cev6_074_21"
+      ],
+      "relations": {
+        "supports_answer": [
+          "cev6_074_01",
+          "cev6_074_03"
+        ],
+        "refutes_premise": [],
+        "pending_or_partial": [
+          "cev6_074_02",
+          "cev6_074_21"
+        ],
+        "unrelated": [
+          "cev6_074_04",
+          "cev6_074_05",
+          "cev6_074_06",
+          "cev6_074_07",
+          "cev6_074_08",
+          "cev6_074_09",
+          "cev6_074_10",
+          "cev6_074_11",
+          "cev6_074_12",
+          "cev6_074_13",
+          "cev6_074_14",
+          "cev6_074_15",
+          "cev6_074_16",
+          "cev6_074_17",
+          "cev6_074_18",
+          "cev6_074_19",
+          "cev6_074_20",
+          "cev6_074_22",
+          "cev6_074_23",
+          "cev6_074_24",
+          "cev6_074_25",
+          "cev6_074_26",
+          "cev6_074_27",
+          "cev6_074_28"
+        ]
+      },
+      "rationale": "Los partes identifican a Iverna; la ficha de limpieza identifica a la misma persona sin fecharla y el límite de jornada confirma su asignación a Nuvarel el día pedido.",
+      "ambiguity": [
+        "074_02 no fecha la instrucción; 074_21 no menciona el color de las teselas. Aportan identificación parcial y condición temporal, respectivamente; no sustituyen solos el parte completo. 074_26 no identifica Nuvarel: una pausa de Iverna no prueba la tarea concreta."
+      ]
+    },
+    {
+      "id": "cev6q_074_02",
+      "scope_id": "synthetic_conversation_evidence_074",
+      "query": "Para retirar Nuvarel, ¿qué documento hay que llevar y quién debe firmarlo?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "qué documento hay que llevar"
+        },
+        {
+          "id": "p2",
+          "kind": "requested_fact",
+          "query_quote": "quién debe firmarlo"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_074_11",
+          "quote": "Para retirar Nuvarel del taller es obligatorio presentar la autorización de custodia del archivo Orvane, según la recepción.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "p1"
+          ]
+        },
+        {
+          "memory_id": "cev6_074_12",
+          "quote": "La recepción aclara que la autorización de custodia para retirar Nuvarel debe estar firmada por la archivera.",
+          "relation": "supports_answer",
+          "covers": [
+            "p1",
+            "p2"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_074_11",
+        "cev6_074_12"
+      ],
+      "relations": {
+        "supports_answer": [
+          "cev6_074_12"
+        ],
+        "refutes_premise": [],
+        "pending_or_partial": [
+          "cev6_074_11"
+        ],
+        "unrelated": [
+          "cev6_074_01",
+          "cev6_074_02",
+          "cev6_074_03",
+          "cev6_074_04",
+          "cev6_074_05",
+          "cev6_074_06",
+          "cev6_074_07",
+          "cev6_074_08",
+          "cev6_074_09",
+          "cev6_074_10",
+          "cev6_074_13",
+          "cev6_074_14",
+          "cev6_074_15",
+          "cev6_074_16",
+          "cev6_074_17",
+          "cev6_074_18",
+          "cev6_074_19",
+          "cev6_074_20",
+          "cev6_074_21",
+          "cev6_074_22",
+          "cev6_074_23",
+          "cev6_074_24",
+          "cev6_074_25",
+          "cev6_074_26",
+          "cev6_074_27",
+          "cev6_074_28"
+        ]
+      },
+      "rationale": "La autorización de custodia de Orvane es el documento y la archivera debe firmarla; el recuerdo 12 contiene ambas partes.",
+      "ambiguity": [
+        "La obligatoriedad de este documento no demuestra que sea el único requisito de retiro."
+      ]
+    },
+    {
+      "id": "cev6q_074_03",
+      "scope_id": "synthetic_conversation_evidence_074",
+      "query": "¿Cuánto pagó el taller cuando compró Nuvarel?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "Cuánto pagó el taller"
+        },
+        {
+          "id": "p2",
+          "kind": "presupposition",
+          "query_quote": "cuando compró Nuvarel"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_074_04",
+          "quote": "En el registro de entrega, el mosaico Nuvarel figura como cedido temporalmente; el taller no lo compró.",
+          "relation": "refutes_premise",
+          "covers": [
+            "p2"
+          ]
+        },
+        {
+          "memory_id": "cev6_074_05",
+          "quote": "El acta de custodia dice expresamente que Nuvarel sigue siendo propiedad del archivo Orvane.",
+          "relation": "refutes_premise",
+          "covers": [
+            "p2"
+          ]
+        },
+        {
+          "memory_id": "cev6_074_06",
+          "quote": "La propuesta de compra del mosaico Nuvarel fue retirada el 9 de octubre sin efectuar pago.",
+          "relation": "refutes_premise",
+          "covers": [
+            "p1",
+            "p2"
+          ]
+        },
+        {
+          "memory_id": "cev6_074_25",
+          "quote": "La propuesta retirada de Nuvarel contemplaba una compra, pero nunca llegó a convertirse en contrato.",
+          "relation": "refutes_premise",
+          "covers": [
+            "p2"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_074_04",
+        "cev6_074_05",
+        "cev6_074_06",
+        "cev6_074_25"
+      ],
+      "relations": {
+        "supports_answer": [],
+        "refutes_premise": [
+          "cev6_074_04",
+          "cev6_074_05",
+          "cev6_074_06",
+          "cev6_074_25"
+        ],
+        "pending_or_partial": [],
+        "unrelated": [
+          "cev6_074_01",
+          "cev6_074_02",
+          "cev6_074_03",
+          "cev6_074_07",
+          "cev6_074_08",
+          "cev6_074_09",
+          "cev6_074_10",
+          "cev6_074_11",
+          "cev6_074_12",
+          "cev6_074_13",
+          "cev6_074_14",
+          "cev6_074_15",
+          "cev6_074_16",
+          "cev6_074_17",
+          "cev6_074_18",
+          "cev6_074_19",
+          "cev6_074_20",
+          "cev6_074_21",
+          "cev6_074_22",
+          "cev6_074_23",
+          "cev6_074_24",
+          "cev6_074_26",
+          "cev6_074_27",
+          "cev6_074_28"
+        ]
+      },
+      "rationale": "El registro niega la compra, describe cesión temporal y propiedad retenida por Orvane; la propuesta se retiró sin pago y no produjo contrato.",
+      "ambiguity": [
+        "La propiedad retenida de 074_05 refuta una compra entendida como adquisición consumada; por sí sola no permite deducir toda forma jurídica posible de promesa de venta. No se afirma un precio cero de una compra realizada."
+      ]
+    },
+    {
+      "id": "cev6q_074_04",
+      "scope_id": "synthetic_conversation_evidence_074",
+      "query": "¿A qué comprador le transfirió el archivo la propiedad de Nuvarel?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "presupposition",
+          "query_quote": "A qué comprador le transfirió el archivo la propiedad de Nuvarel"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_074_04",
+          "quote": "En el registro de entrega, el mosaico Nuvarel figura como cedido temporalmente; el taller no lo compró.",
+          "relation": "refutes_premise",
+          "covers": [
+            "p1"
+          ]
+        },
+        {
+          "memory_id": "cev6_074_05",
+          "quote": "El acta de custodia dice expresamente que Nuvarel sigue siendo propiedad del archivo Orvane.",
+          "relation": "refutes_premise",
+          "covers": [
+            "p1"
+          ]
+        },
+        {
+          "memory_id": "cev6_074_06",
+          "quote": "La propuesta de compra del mosaico Nuvarel fue retirada el 9 de octubre sin efectuar pago.",
+          "relation": "refutes_premise",
+          "covers": [
+            "p1"
+          ]
+        },
+        {
+          "memory_id": "cev6_074_25",
+          "quote": "La propuesta retirada de Nuvarel contemplaba una compra, pero nunca llegó a convertirse en contrato.",
+          "relation": "refutes_premise",
+          "covers": [
+            "p1"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_074_04",
+        "cev6_074_05",
+        "cev6_074_06",
+        "cev6_074_25"
+      ],
+      "relations": {
+        "supports_answer": [],
+        "refutes_premise": [
+          "cev6_074_04",
+          "cev6_074_05",
+          "cev6_074_06",
+          "cev6_074_25"
+        ],
+        "pending_or_partial": [],
+        "unrelated": [
+          "cev6_074_01",
+          "cev6_074_02",
+          "cev6_074_03",
+          "cev6_074_07",
+          "cev6_074_08",
+          "cev6_074_09",
+          "cev6_074_10",
+          "cev6_074_11",
+          "cev6_074_12",
+          "cev6_074_13",
+          "cev6_074_14",
+          "cev6_074_15",
+          "cev6_074_16",
+          "cev6_074_17",
+          "cev6_074_18",
+          "cev6_074_19",
+          "cev6_074_20",
+          "cev6_074_21",
+          "cev6_074_22",
+          "cev6_074_23",
+          "cev6_074_24",
+          "cev6_074_26",
+          "cev6_074_27",
+          "cev6_074_28"
+        ]
+      },
+      "rationale": "La entrega real fue temporal y la propiedad sigue siendo de Orvane; las notas de compra retirada y no contractual corrigen la transacción presupuesta.",
+      "ambiguity": [
+        "074_05 es la negación directa de la transferencia de propiedad; 074_04, 06 y 25 describen la entrega o propuesta concreta y no son un historial universal de posibles operaciones."
+      ]
+    },
+    {
+      "id": "cev6q_074_05",
+      "scope_id": "synthetic_conversation_evidence_074",
+      "query": "¿Qué día arrancó la prueba de adhesivo de Nuvarel y qué resultado dio?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "Qué día arrancó la prueba de adhesivo de Nuvarel"
+        },
+        {
+          "id": "p2",
+          "kind": "requested_fact",
+          "query_quote": "qué resultado dio"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_074_07",
+          "quote": "El informe de conservación de Nuvarel registra que la prueba de adhesivo empezó el 15 de octubre.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "p1"
+          ]
+        },
+        {
+          "memory_id": "cev6_074_08",
+          "quote": "El resultado de la prueba de adhesivo de Nuvarel aún no está redactado, según la anotación del 18 de octubre.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "p2"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_074_07",
+        "cev6_074_08"
+      ],
+      "relations": {
+        "supports_answer": [],
+        "refutes_premise": [],
+        "pending_or_partial": [
+          "cev6_074_07",
+          "cev6_074_08"
+        ],
+        "unrelated": [
+          "cev6_074_01",
+          "cev6_074_02",
+          "cev6_074_03",
+          "cev6_074_04",
+          "cev6_074_05",
+          "cev6_074_06",
+          "cev6_074_09",
+          "cev6_074_10",
+          "cev6_074_11",
+          "cev6_074_12",
+          "cev6_074_13",
+          "cev6_074_14",
+          "cev6_074_15",
+          "cev6_074_16",
+          "cev6_074_17",
+          "cev6_074_18",
+          "cev6_074_19",
+          "cev6_074_20",
+          "cev6_074_21",
+          "cev6_074_22",
+          "cev6_074_23",
+          "cev6_074_24",
+          "cev6_074_25",
+          "cev6_074_26",
+          "cev6_074_27",
+          "cev6_074_28"
+        ]
+      },
+      "rationale": "Se conoce el inicio, 15 de octubre, y que al 18 de octubre el resultado aún no estaba redactado. No hay resultado conocido.",
+      "ambiguity": []
+    },
+    {
+      "id": "cev6q_074_06",
+      "scope_id": "synthetic_conversation_evidence_074",
+      "query": "¿Cuántas cajas lleva Nuvarel y cuánto pesan entre todas?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "Cuántas cajas lleva Nuvarel"
+        },
+        {
+          "id": "p2",
+          "kind": "requested_fact",
+          "query_quote": "cuánto pesan entre todas"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_074_09",
+          "quote": "La hoja de embalaje de Nuvarel registra cuatro cajas numeradas del 1 al 4.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "p1"
+          ]
+        },
+        {
+          "memory_id": "cev6_074_10",
+          "quote": "La hoja de embalaje de Nuvarel deja en blanco el peso conjunto de las cuatro cajas.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "p1",
+            "p2"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_074_09",
+        "cev6_074_10"
+      ],
+      "relations": {
+        "supports_answer": [],
+        "refutes_premise": [],
+        "pending_or_partial": [
+          "cev6_074_09",
+          "cev6_074_10"
+        ],
+        "unrelated": [
+          "cev6_074_01",
+          "cev6_074_02",
+          "cev6_074_03",
+          "cev6_074_04",
+          "cev6_074_05",
+          "cev6_074_06",
+          "cev6_074_07",
+          "cev6_074_08",
+          "cev6_074_11",
+          "cev6_074_12",
+          "cev6_074_13",
+          "cev6_074_14",
+          "cev6_074_15",
+          "cev6_074_16",
+          "cev6_074_17",
+          "cev6_074_18",
+          "cev6_074_19",
+          "cev6_074_20",
+          "cev6_074_21",
+          "cev6_074_22",
+          "cev6_074_23",
+          "cev6_074_24",
+          "cev6_074_25",
+          "cev6_074_26",
+          "cev6_074_27",
+          "cev6_074_28"
+        ]
+      },
+      "rationale": "Hay cuatro cajas; la hoja deja vacío el peso conjunto. El recuerdo 10 también repite el número de cajas.",
+      "ambiguity": []
+    },
+    {
+      "id": "cev6q_074_07",
+      "scope_id": "synthetic_conversation_evidence_074",
+      "query": "¿Cuál es la clave del candado del banco donde está Nuvarel?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "Cuál es la clave del candado del banco donde está Nuvarel"
+        }
+      ],
+      "evidence": [],
+      "expected_ids": [],
+      "relations": {
+        "supports_answer": [],
+        "refutes_premise": [],
+        "pending_or_partial": [],
+        "unrelated": [
+          "cev6_074_01",
+          "cev6_074_02",
+          "cev6_074_03",
+          "cev6_074_04",
+          "cev6_074_05",
+          "cev6_074_06",
+          "cev6_074_07",
+          "cev6_074_08",
+          "cev6_074_09",
+          "cev6_074_10",
+          "cev6_074_11",
+          "cev6_074_12",
+          "cev6_074_13",
+          "cev6_074_14",
+          "cev6_074_15",
+          "cev6_074_16",
+          "cev6_074_17",
+          "cev6_074_18",
+          "cev6_074_19",
+          "cev6_074_20",
+          "cev6_074_21",
+          "cev6_074_22",
+          "cev6_074_23",
+          "cev6_074_24",
+          "cev6_074_25",
+          "cev6_074_26",
+          "cev6_074_27",
+          "cev6_074_28"
+        ]
+      },
+      "rationale": "Ninguno de los 28 recuerdos del ámbito aporta clave ni niega que exista. La ubicación en banco B no responde la combinación.",
+      "ambiguity": []
+    },
+    {
+      "id": "cev6q_074_08",
+      "scope_id": "synthetic_conversation_evidence_074",
+      "query": "Necesito el nombre del barco que trajo Nuvarel desde su lugar de origen.",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "el nombre del barco que trajo Nuvarel desde su lugar de origen"
+        }
+      ],
+      "evidence": [],
+      "expected_ids": [],
+      "relations": {
+        "supports_answer": [],
+        "refutes_premise": [],
+        "pending_or_partial": [],
+        "unrelated": [
+          "cev6_074_01",
+          "cev6_074_02",
+          "cev6_074_03",
+          "cev6_074_04",
+          "cev6_074_05",
+          "cev6_074_06",
+          "cev6_074_07",
+          "cev6_074_08",
+          "cev6_074_09",
+          "cev6_074_10",
+          "cev6_074_11",
+          "cev6_074_12",
+          "cev6_074_13",
+          "cev6_074_14",
+          "cev6_074_15",
+          "cev6_074_16",
+          "cev6_074_17",
+          "cev6_074_18",
+          "cev6_074_19",
+          "cev6_074_20",
+          "cev6_074_21",
+          "cev6_074_22",
+          "cev6_074_23",
+          "cev6_074_24",
+          "cev6_074_25",
+          "cev6_074_26",
+          "cev6_074_27",
+          "cev6_074_28"
+        ]
+      },
+      "rationale": "El ámbito no identifica barco ni transporte marítimo; embalaje y ubicación no aportan el nombre solicitado.",
+      "ambiguity": []
+    },
+    {
+      "id": "cev6q_075_01",
+      "scope_id": "synthetic_conversation_evidence_075",
+      "query": "¿En qué galería tiene Veldis su estación de muestreo en Heskora?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "En qué galería tiene Veldis su estación de muestreo en Heskora"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_075_01",
+          "quote": "El cuaderno de la expedición espeleológica ficticia Heskora sitúa la estación de muestreo de Veldis en la galería de las Agujas.",
+          "relation": "supports_answer",
+          "covers": [
+            "p1"
+          ]
+        },
+        {
+          "memory_id": "cev6_075_04",
+          "quote": "El cartel de la galería de las Agujas confirma que allí está la estación asignada a Veldis.",
+          "relation": "supports_answer",
+          "covers": [
+            "p1"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_075_01",
+        "cev6_075_04"
+      ],
+      "relations": {
+        "supports_answer": [
+          "cev6_075_01",
+          "cev6_075_04"
+        ],
+        "refutes_premise": [],
+        "pending_or_partial": [],
+        "unrelated": [
+          "cev6_075_02",
+          "cev6_075_03",
+          "cev6_075_05",
+          "cev6_075_06",
+          "cev6_075_07",
+          "cev6_075_08",
+          "cev6_075_09",
+          "cev6_075_10",
+          "cev6_075_11",
+          "cev6_075_12",
+          "cev6_075_13",
+          "cev6_075_14",
+          "cev6_075_15",
+          "cev6_075_16",
+          "cev6_075_17",
+          "cev6_075_18",
+          "cev6_075_19",
+          "cev6_075_20",
+          "cev6_075_21",
+          "cev6_075_22",
+          "cev6_075_23",
+          "cev6_075_24",
+          "cev6_075_25",
+          "cev6_075_26",
+          "cev6_075_27",
+          "cev6_075_28"
+        ]
+      },
+      "rationale": "Cuaderno y cartel ubican su estación en la galería de las Agujas.",
+      "ambiguity": []
+    },
+    {
+      "id": "cev6q_075_02",
+      "scope_id": "synthetic_conversation_evidence_075",
+      "query": "¿Con qué recipientes recoge Veldis las muestras de Heskora?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "Con qué recipientes recoge Veldis las muestras de Heskora"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_075_02",
+          "quote": "La guía de campo indica que Veldis recoge las muestras de Heskora con tubos estériles de tapa ámbar.",
+          "relation": "supports_answer",
+          "covers": [
+            "p1"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_075_02"
+      ],
+      "relations": {
+        "supports_answer": [
+          "cev6_075_02"
+        ],
+        "refutes_premise": [],
+        "pending_or_partial": [],
+        "unrelated": [
+          "cev6_075_01",
+          "cev6_075_03",
+          "cev6_075_04",
+          "cev6_075_05",
+          "cev6_075_06",
+          "cev6_075_07",
+          "cev6_075_08",
+          "cev6_075_09",
+          "cev6_075_10",
+          "cev6_075_11",
+          "cev6_075_12",
+          "cev6_075_13",
+          "cev6_075_14",
+          "cev6_075_15",
+          "cev6_075_16",
+          "cev6_075_17",
+          "cev6_075_18",
+          "cev6_075_19",
+          "cev6_075_20",
+          "cev6_075_21",
+          "cev6_075_22",
+          "cev6_075_23",
+          "cev6_075_24",
+          "cev6_075_25",
+          "cev6_075_26",
+          "cev6_075_27",
+          "cev6_075_28"
+        ]
+      },
+      "rationale": "La guía identifica tubos estériles de tapa ámbar. Las notas sobre lotes, códigos y almacén no asignan otra clase de recipiente de recogida a Veldis.",
+      "ambiguity": []
+    },
+    {
+      "id": "cev6q_075_03",
+      "scope_id": "synthetic_conversation_evidence_075",
+      "query": "¿Qué vio Heskora al llegar al fondo del pozo el 16 de octubre?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "Qué vio Heskora"
+        },
+        {
+          "id": "p2",
+          "kind": "presupposition",
+          "query_quote": "al llegar al fondo del pozo el 16 de octubre"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_075_05",
+          "quote": "El diario de Heskora del 16 de octubre dice que el equipo suspendió el descenso al pozo por una crecida.",
+          "relation": "refutes_premise",
+          "covers": [
+            "p2"
+          ]
+        },
+        {
+          "memory_id": "cev6_075_06",
+          "quote": "El parte de seguridad confirma que nadie del equipo Heskora llegó al fondo del pozo el 16 de octubre.",
+          "relation": "refutes_premise",
+          "covers": [
+            "p2"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_075_05",
+        "cev6_075_06"
+      ],
+      "relations": {
+        "supports_answer": [],
+        "refutes_premise": [
+          "cev6_075_05",
+          "cev6_075_06"
+        ],
+        "pending_or_partial": [],
+        "unrelated": [
+          "cev6_075_01",
+          "cev6_075_02",
+          "cev6_075_03",
+          "cev6_075_04",
+          "cev6_075_07",
+          "cev6_075_08",
+          "cev6_075_09",
+          "cev6_075_10",
+          "cev6_075_11",
+          "cev6_075_12",
+          "cev6_075_13",
+          "cev6_075_14",
+          "cev6_075_15",
+          "cev6_075_16",
+          "cev6_075_17",
+          "cev6_075_18",
+          "cev6_075_19",
+          "cev6_075_20",
+          "cev6_075_21",
+          "cev6_075_22",
+          "cev6_075_23",
+          "cev6_075_24",
+          "cev6_075_25",
+          "cev6_075_26",
+          "cev6_075_27",
+          "cev6_075_28"
+        ]
+      },
+      "rationale": "Se suspendió el descenso y nadie del equipo llegó al fondo ese día; no puede extraerse una observación en el fondo.",
+      "ambiguity": []
+    },
+    {
+      "id": "cev6q_075_04",
+      "scope_id": "synthetic_conversation_evidence_075",
+      "query": "¿De qué planta es el polen de la muestra HK-7?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "presupposition",
+          "query_quote": "De qué planta es el polen de la muestra HK-7"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_075_07",
+          "quote": "La ficha de la muestra HK-7 la identifica expresamente como cultivo de hongo, no como muestra de polen.",
+          "relation": "refutes_premise",
+          "covers": [
+            "p1"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_075_07"
+      ],
+      "relations": {
+        "supports_answer": [],
+        "refutes_premise": [
+          "cev6_075_07"
+        ],
+        "pending_or_partial": [],
+        "unrelated": [
+          "cev6_075_01",
+          "cev6_075_02",
+          "cev6_075_03",
+          "cev6_075_04",
+          "cev6_075_05",
+          "cev6_075_06",
+          "cev6_075_08",
+          "cev6_075_09",
+          "cev6_075_10",
+          "cev6_075_11",
+          "cev6_075_12",
+          "cev6_075_13",
+          "cev6_075_14",
+          "cev6_075_15",
+          "cev6_075_16",
+          "cev6_075_17",
+          "cev6_075_18",
+          "cev6_075_19",
+          "cev6_075_20",
+          "cev6_075_21",
+          "cev6_075_22",
+          "cev6_075_23",
+          "cev6_075_24",
+          "cev6_075_25",
+          "cev6_075_26",
+          "cev6_075_27",
+          "cev6_075_28"
+        ]
+      },
+      "rationale": "HK-7 está identificada como cultivo de hongo y explícitamente no es polen; las notas de especie pendiente no aportan planta ni corrigen por sí solas la clase de muestra.",
+      "ambiguity": []
+    },
+    {
+      "id": "cev6q_075_05",
+      "scope_id": "synthetic_conversation_evidence_075",
+      "query": "De HK-7, dime la hora de ingreso y la especie identificada.",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "la hora de ingreso"
+        },
+        {
+          "id": "p2",
+          "kind": "requested_fact",
+          "query_quote": "la especie identificada"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_075_08",
+          "quote": "La ficha de laboratorio de HK-7 registra su ingreso el 17 de octubre a las 09:10.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "p1"
+          ]
+        },
+        {
+          "memory_id": "cev6_075_09",
+          "quote": "La ficha de HK-7 todavía no tiene completada la casilla de especie.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "p2"
+          ]
+        },
+        {
+          "memory_id": "cev6_075_26",
+          "quote": "El informe de Heskora conserva como pendiente la identificación taxonómica de HK-7.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "p2"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_075_08",
+        "cev6_075_09",
+        "cev6_075_26"
+      ],
+      "relations": {
+        "supports_answer": [],
+        "refutes_premise": [],
+        "pending_or_partial": [
+          "cev6_075_08",
+          "cev6_075_09",
+          "cev6_075_26"
+        ],
+        "unrelated": [
+          "cev6_075_01",
+          "cev6_075_02",
+          "cev6_075_03",
+          "cev6_075_04",
+          "cev6_075_05",
+          "cev6_075_06",
+          "cev6_075_07",
+          "cev6_075_10",
+          "cev6_075_11",
+          "cev6_075_12",
+          "cev6_075_13",
+          "cev6_075_14",
+          "cev6_075_15",
+          "cev6_075_16",
+          "cev6_075_17",
+          "cev6_075_18",
+          "cev6_075_19",
+          "cev6_075_20",
+          "cev6_075_21",
+          "cev6_075_22",
+          "cev6_075_23",
+          "cev6_075_24",
+          "cev6_075_25",
+          "cev6_075_27",
+          "cev6_075_28"
+        ]
+      },
+      "rationale": "Consta ingreso a las 09:10 del 17 de octubre y dos registros de identificación de especie pendiente; no se identifica la especie.",
+      "ambiguity": []
+    },
+    {
+      "id": "cev6q_075_06",
+      "scope_id": "synthetic_conversation_evidence_075",
+      "query": "¿Quién era responsable de guardar los tubos usados de Heskora y cuánto costó enviarlos al laboratorio?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "Quién era responsable de guardar los tubos usados de Heskora"
+        },
+        {
+          "id": "p2",
+          "kind": "requested_fact",
+          "query_quote": "cuánto costó enviarlos al laboratorio"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_075_10",
+          "quote": "El registro de campo de Heskora identifica a Drezan como responsable de guardar los tubos usados.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "p1"
+          ]
+        },
+        {
+          "memory_id": "cev6_075_11",
+          "quote": "La nota de gastos de Heskora dice que los tubos usados se enviaron al laboratorio, pero no registra el coste de envío.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "p2"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_075_10",
+        "cev6_075_11"
+      ],
+      "relations": {
+        "supports_answer": [],
+        "refutes_premise": [],
+        "pending_or_partial": [
+          "cev6_075_10",
+          "cev6_075_11"
+        ],
+        "unrelated": [
+          "cev6_075_01",
+          "cev6_075_02",
+          "cev6_075_03",
+          "cev6_075_04",
+          "cev6_075_05",
+          "cev6_075_06",
+          "cev6_075_07",
+          "cev6_075_08",
+          "cev6_075_09",
+          "cev6_075_12",
+          "cev6_075_13",
+          "cev6_075_14",
+          "cev6_075_15",
+          "cev6_075_16",
+          "cev6_075_17",
+          "cev6_075_18",
+          "cev6_075_19",
+          "cev6_075_20",
+          "cev6_075_21",
+          "cev6_075_22",
+          "cev6_075_23",
+          "cev6_075_24",
+          "cev6_075_25",
+          "cev6_075_26",
+          "cev6_075_27",
+          "cev6_075_28"
+        ]
+      },
+      "rationale": "Drezan tenía la responsabilidad de guardar los tubos usados; consta el envío pero no el coste.",
+      "ambiguity": [
+        "075_24 prueba que Drezan separó tubos, no que tuviera la responsabilidad de custodia: no se equiparan acciones distintas."
+      ]
+    },
+    {
+      "id": "cev6q_075_07",
+      "scope_id": "synthetic_conversation_evidence_075",
+      "query": "¿Qué porcentaje de humedad había en la estación de Veldis?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "Qué porcentaje de humedad había en la estación de Veldis"
+        }
+      ],
+      "evidence": [],
+      "expected_ids": [],
+      "relations": {
+        "supports_answer": [],
+        "refutes_premise": [],
+        "pending_or_partial": [],
+        "unrelated": [
+          "cev6_075_01",
+          "cev6_075_02",
+          "cev6_075_03",
+          "cev6_075_04",
+          "cev6_075_05",
+          "cev6_075_06",
+          "cev6_075_07",
+          "cev6_075_08",
+          "cev6_075_09",
+          "cev6_075_10",
+          "cev6_075_11",
+          "cev6_075_12",
+          "cev6_075_13",
+          "cev6_075_14",
+          "cev6_075_15",
+          "cev6_075_16",
+          "cev6_075_17",
+          "cev6_075_18",
+          "cev6_075_19",
+          "cev6_075_20",
+          "cev6_075_21",
+          "cev6_075_22",
+          "cev6_075_23",
+          "cev6_075_24",
+          "cev6_075_25",
+          "cev6_075_26",
+          "cev6_075_27",
+          "cev6_075_28"
+        ]
+      },
+      "rationale": "No consta medición de humedad en ninguno de los recuerdos del ámbito; lámpara y posición no aportan porcentaje.",
+      "ambiguity": []
+    },
+    {
+      "id": "cev6q_075_08",
+      "scope_id": "synthetic_conversation_evidence_075",
+      "query": "¿Cuál es el número de matrícula del vehículo de Heskora?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "Cuál es el número de matrícula del vehículo de Heskora"
+        }
+      ],
+      "evidence": [],
+      "expected_ids": [],
+      "relations": {
+        "supports_answer": [],
+        "refutes_premise": [],
+        "pending_or_partial": [],
+        "unrelated": [
+          "cev6_075_01",
+          "cev6_075_02",
+          "cev6_075_03",
+          "cev6_075_04",
+          "cev6_075_05",
+          "cev6_075_06",
+          "cev6_075_07",
+          "cev6_075_08",
+          "cev6_075_09",
+          "cev6_075_10",
+          "cev6_075_11",
+          "cev6_075_12",
+          "cev6_075_13",
+          "cev6_075_14",
+          "cev6_075_15",
+          "cev6_075_16",
+          "cev6_075_17",
+          "cev6_075_18",
+          "cev6_075_19",
+          "cev6_075_20",
+          "cev6_075_21",
+          "cev6_075_22",
+          "cev6_075_23",
+          "cev6_075_24",
+          "cev6_075_25",
+          "cev6_075_26",
+          "cev6_075_27",
+          "cev6_075_28"
+        ]
+      },
+      "rationale": "No consta matrícula ni una corrección explícita sobre la existencia del vehículo en el ámbito completo.",
+      "ambiguity": []
+    },
+    {
+      "id": "cev6q_076_01",
+      "scope_id": "synthetic_conversation_evidence_076",
+      "query": "Con el horario de octubre, ¿cuándo sale el carrito táctil de Queldra?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "cuándo sale el carrito táctil de Queldra"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_076_01",
+          "quote": "La biblioteca ambulante ficticia Queldra presta su carrito táctil los miércoles por la mañana, según el horario de octubre.",
+          "relation": "supports_answer",
+          "covers": [
+            "p1"
+          ]
+        },
+        {
+          "memory_id": "cev6_076_02",
+          "quote": "El aviso de octubre de Queldra anuncia la salida del carrito táctil los miércoles por la mañana.",
+          "relation": "supports_answer",
+          "covers": [
+            "p1"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_076_01",
+        "cev6_076_02"
+      ],
+      "relations": {
+        "supports_answer": [
+          "cev6_076_01",
+          "cev6_076_02"
+        ],
+        "refutes_premise": [],
+        "pending_or_partial": [],
+        "unrelated": [
+          "cev6_076_03",
+          "cev6_076_04",
+          "cev6_076_05",
+          "cev6_076_06",
+          "cev6_076_07",
+          "cev6_076_08",
+          "cev6_076_09",
+          "cev6_076_10",
+          "cev6_076_11",
+          "cev6_076_12",
+          "cev6_076_13",
+          "cev6_076_14",
+          "cev6_076_15",
+          "cev6_076_16",
+          "cev6_076_17",
+          "cev6_076_18",
+          "cev6_076_19",
+          "cev6_076_20",
+          "cev6_076_21",
+          "cev6_076_22",
+          "cev6_076_23",
+          "cev6_076_24",
+          "cev6_076_25",
+          "cev6_076_26",
+          "cev6_076_27",
+          "cev6_076_28"
+        ]
+      },
+      "rationale": "El horario y el aviso vigentes de octubre coinciden en miércoles por la mañana.",
+      "ambiguity": [
+        "No consta una hora puntual. La nota de sustitución del horario y la salida de septiembre no aportan el horario de octubre."
+      ]
+    },
+    {
+      "id": "cev6q_076_02",
+      "scope_id": "synthetic_conversation_evidence_076",
+      "query": "¿Dónde devuelvo los libros en relieve de Queldra y en qué condición puedo renovarlos?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "Dónde devuelvo los libros en relieve de Queldra"
+        },
+        {
+          "id": "p2",
+          "kind": "requested_fact",
+          "query_quote": "en qué condición puedo renovarlos"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_076_03",
+          "quote": "La ficha de préstamo de Queldra indica que los libros en relieve se devuelven en el mostrador Nido.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "p1"
+          ]
+        },
+        {
+          "memory_id": "cev6_076_04",
+          "quote": "El reglamento de Queldra permite renovar los libros en relieve una vez si no tienen reservas.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "p2"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_076_03",
+        "cev6_076_04"
+      ],
+      "relations": {
+        "supports_answer": [],
+        "refutes_premise": [],
+        "pending_or_partial": [
+          "cev6_076_03",
+          "cev6_076_04"
+        ],
+        "unrelated": [
+          "cev6_076_01",
+          "cev6_076_02",
+          "cev6_076_05",
+          "cev6_076_06",
+          "cev6_076_07",
+          "cev6_076_08",
+          "cev6_076_09",
+          "cev6_076_10",
+          "cev6_076_11",
+          "cev6_076_12",
+          "cev6_076_13",
+          "cev6_076_14",
+          "cev6_076_15",
+          "cev6_076_16",
+          "cev6_076_17",
+          "cev6_076_18",
+          "cev6_076_19",
+          "cev6_076_20",
+          "cev6_076_21",
+          "cev6_076_22",
+          "cev6_076_23",
+          "cev6_076_24",
+          "cev6_076_25",
+          "cev6_076_26",
+          "cev6_076_27",
+          "cev6_076_28"
+        ]
+      },
+      "rationale": "El retorno se hace en el mostrador Nido; se permite una renovación si no hay reservas. Cada recuerdo cubre una parte concreta.",
+      "ambiguity": []
+    },
+    {
+      "id": "cev6q_076_03",
+      "scope_id": "synthetic_conversation_evidence_076",
+      "query": "¿En qué fecha terminó Queldra de instalar su rampa nueva?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "presupposition",
+          "query_quote": "En qué fecha terminó Queldra de instalar su rampa nueva"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_076_05",
+          "quote": "El acta del 12 de octubre de Queldra deja claro que la rampa nueva aún no se ha instalado.",
+          "relation": "refutes_premise",
+          "covers": [
+            "p1"
+          ]
+        },
+        {
+          "memory_id": "cev6_076_06",
+          "quote": "La solicitud de compra de la rampa de Queldra sigue esperando aprobación el 18 de octubre.",
+          "relation": "refutes_premise",
+          "covers": [
+            "p1"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_076_05",
+        "cev6_076_06"
+      ],
+      "relations": {
+        "supports_answer": [],
+        "refutes_premise": [
+          "cev6_076_05",
+          "cev6_076_06"
+        ],
+        "pending_or_partial": [],
+        "unrelated": [
+          "cev6_076_01",
+          "cev6_076_02",
+          "cev6_076_03",
+          "cev6_076_04",
+          "cev6_076_07",
+          "cev6_076_08",
+          "cev6_076_09",
+          "cev6_076_10",
+          "cev6_076_11",
+          "cev6_076_12",
+          "cev6_076_13",
+          "cev6_076_14",
+          "cev6_076_15",
+          "cev6_076_16",
+          "cev6_076_17",
+          "cev6_076_18",
+          "cev6_076_19",
+          "cev6_076_20",
+          "cev6_076_21",
+          "cev6_076_22",
+          "cev6_076_23",
+          "cev6_076_24",
+          "cev6_076_25",
+          "cev6_076_26",
+          "cev6_076_27",
+          "cev6_076_28"
+        ]
+      },
+      "rationale": "La rampa aún no estaba instalada y su compra seguía esperando aprobación al 18 de octubre; la instalación terminada no está respaldada.",
+      "ambiguity": [
+        "La aprobación pendiente de compra es una corrección del estado del proyecto, no una fecha de finalización."
+      ]
+    },
+    {
+      "id": "cev6q_076_04",
+      "scope_id": "synthetic_conversation_evidence_076",
+      "query": "¿Cuántas celdas braille tiene la edición Senderos de Sal de Queldra?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "Cuántas celdas braille tiene la edición Senderos de Sal de Queldra"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_076_07",
+          "quote": "La ficha de Queldra clasifica el volumen Senderos de Sal como edición en macrotipo, no en braille.",
+          "relation": "refutes_premise",
+          "covers": [
+            "p1"
+          ]
+        },
+        {
+          "memory_id": "cev6_076_08",
+          "quote": "El inventario de Queldra describe Senderos de Sal como libro de letras ampliadas sin celdas braille.",
+          "relation": "supports_answer",
+          "covers": [
+            "p1"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_076_07",
+        "cev6_076_08"
+      ],
+      "relations": {
+        "supports_answer": [
+          "cev6_076_08"
+        ],
+        "refutes_premise": [
+          "cev6_076_07"
+        ],
+        "pending_or_partial": [],
+        "unrelated": [
+          "cev6_076_01",
+          "cev6_076_02",
+          "cev6_076_03",
+          "cev6_076_04",
+          "cev6_076_05",
+          "cev6_076_06",
+          "cev6_076_09",
+          "cev6_076_10",
+          "cev6_076_11",
+          "cev6_076_12",
+          "cev6_076_13",
+          "cev6_076_14",
+          "cev6_076_15",
+          "cev6_076_16",
+          "cev6_076_17",
+          "cev6_076_18",
+          "cev6_076_19",
+          "cev6_076_20",
+          "cev6_076_21",
+          "cev6_076_22",
+          "cev6_076_23",
+          "cev6_076_24",
+          "cev6_076_25",
+          "cev6_076_26",
+          "cev6_076_27",
+          "cev6_076_28"
+        ]
+      },
+      "rationale": "La clasificación en macrotipo corrige la posible presuposición de edición braille; el inventario dice explícitamente que no tiene celdas, lo que responde cero.",
+      "ambiguity": [
+        "La pregunta de cantidad permite legítimamente una respuesta cero sin presuponer que exista braille. Bajo esa lectura, 076_08 es supports_answer; bajo una lectura que presupone formato braille es refutes_premise. 076_07 corrige el formato, pero el dato explícito de ausencia de celdas está en 076_08."
+      ]
+    },
+    {
+      "id": "cev6q_076_05",
+      "scope_id": "synthetic_conversation_evidence_076",
+      "query": "Del piloto de Queldra, ¿cuáles son el inicio y el final del recorrido?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "el inicio"
+        },
+        {
+          "id": "p2",
+          "kind": "requested_fact",
+          "query_quote": "el final del recorrido"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_076_09",
+          "quote": "La ruta piloto del carrito de Queldra empieza en la plaza del Tejo.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "p1"
+          ]
+        },
+        {
+          "memory_id": "cev6_076_10",
+          "quote": "La hoja de ruta piloto de Queldra no especifica el punto de llegada.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "p2"
+          ]
+        },
+        {
+          "memory_id": "cev6_076_11",
+          "quote": "La hoja de ruta piloto de Queldra confirma como primera parada la plaza del Tejo.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "p1"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_076_09",
+        "cev6_076_10",
+        "cev6_076_11"
+      ],
+      "relations": {
+        "supports_answer": [],
+        "refutes_premise": [],
+        "pending_or_partial": [
+          "cev6_076_09",
+          "cev6_076_10",
+          "cev6_076_11"
+        ],
+        "unrelated": [
+          "cev6_076_01",
+          "cev6_076_02",
+          "cev6_076_03",
+          "cev6_076_04",
+          "cev6_076_05",
+          "cev6_076_06",
+          "cev6_076_07",
+          "cev6_076_08",
+          "cev6_076_12",
+          "cev6_076_13",
+          "cev6_076_14",
+          "cev6_076_15",
+          "cev6_076_16",
+          "cev6_076_17",
+          "cev6_076_18",
+          "cev6_076_19",
+          "cev6_076_20",
+          "cev6_076_21",
+          "cev6_076_22",
+          "cev6_076_23",
+          "cev6_076_24",
+          "cev6_076_25",
+          "cev6_076_26",
+          "cev6_076_27",
+          "cev6_076_28"
+        ]
+      },
+      "rationale": "Inicio y primera parada se ubican en la plaza del Tejo; el punto de llegada no está especificado.",
+      "ambiguity": [
+        "Inicio y primera parada suelen coincidir, pero 076_11 por sí solo podría referirse a la primera parada posterior a una salida. Se conserva como contexto parcial, no como prueba de un punto de salida distinto."
+      ]
+    },
+    {
+      "id": "cev6q_076_06",
+      "scope_id": "synthetic_conversation_evidence_076",
+      "query": "¿Qué día devolvió Yosmar la caja de láminas táctiles y cuántas láminas traía?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "Qué día devolvió Yosmar la caja de láminas táctiles"
+        },
+        {
+          "id": "p2",
+          "kind": "requested_fact",
+          "query_quote": "cuántas láminas traía"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_076_12",
+          "quote": "El registro del préstamo de Yosmar anota que devolvió la caja de láminas táctiles el 13 de octubre.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "p1"
+          ]
+        },
+        {
+          "memory_id": "cev6_076_13",
+          "quote": "El recibo de devolución de Yosmar no detalla cuántas láminas había dentro de la caja.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "p2"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_076_12",
+        "cev6_076_13"
+      ],
+      "relations": {
+        "supports_answer": [],
+        "refutes_premise": [],
+        "pending_or_partial": [
+          "cev6_076_12",
+          "cev6_076_13"
+        ],
+        "unrelated": [
+          "cev6_076_01",
+          "cev6_076_02",
+          "cev6_076_03",
+          "cev6_076_04",
+          "cev6_076_05",
+          "cev6_076_06",
+          "cev6_076_07",
+          "cev6_076_08",
+          "cev6_076_09",
+          "cev6_076_10",
+          "cev6_076_11",
+          "cev6_076_14",
+          "cev6_076_15",
+          "cev6_076_16",
+          "cev6_076_17",
+          "cev6_076_18",
+          "cev6_076_19",
+          "cev6_076_20",
+          "cev6_076_21",
+          "cev6_076_22",
+          "cev6_076_23",
+          "cev6_076_24",
+          "cev6_076_25",
+          "cev6_076_26",
+          "cev6_076_27",
+          "cev6_076_28"
+        ]
+      },
+      "rationale": "La devolución fue el 13 de octubre; el recibo no detalla la cantidad.",
+      "ambiguity": [
+        "076_25 fecha la recepción del justificante, no la devolución: sin combinarlo con 076_12 no prueba el momento de la acción pedida."
+      ]
+    },
+    {
+      "id": "cev6q_076_07",
+      "scope_id": "synthetic_conversation_evidence_076",
+      "query": "¿Qué marca de impresora produjo los comprobantes de Queldra?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "Qué marca de impresora produjo los comprobantes de Queldra"
+        }
+      ],
+      "evidence": [],
+      "expected_ids": [],
+      "relations": {
+        "supports_answer": [],
+        "refutes_premise": [],
+        "pending_or_partial": [],
+        "unrelated": [
+          "cev6_076_01",
+          "cev6_076_02",
+          "cev6_076_03",
+          "cev6_076_04",
+          "cev6_076_05",
+          "cev6_076_06",
+          "cev6_076_07",
+          "cev6_076_08",
+          "cev6_076_09",
+          "cev6_076_10",
+          "cev6_076_11",
+          "cev6_076_12",
+          "cev6_076_13",
+          "cev6_076_14",
+          "cev6_076_15",
+          "cev6_076_16",
+          "cev6_076_17",
+          "cev6_076_18",
+          "cev6_076_19",
+          "cev6_076_20",
+          "cev6_076_21",
+          "cev6_076_22",
+          "cev6_076_23",
+          "cev6_076_24",
+          "cev6_076_25",
+          "cev6_076_26",
+          "cev6_076_27",
+          "cev6_076_28"
+        ]
+      },
+      "rationale": "El número de turno impreso en comprobantes no identifica marca de impresora; ningún otro recuerdo del ámbito la aporta.",
+      "ambiguity": []
+    },
+    {
+      "id": "cev6q_076_08",
+      "scope_id": "synthetic_conversation_evidence_076",
+      "query": "¿Cuál fue la puntuación de satisfacción de quienes usaron el carrito táctil de Queldra?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "Cuál fue la puntuación de satisfacción de quienes usaron el carrito táctil de Queldra"
+        }
+      ],
+      "evidence": [],
+      "expected_ids": [],
+      "relations": {
+        "supports_answer": [],
+        "refutes_premise": [],
+        "pending_or_partial": [],
+        "unrelated": [
+          "cev6_076_01",
+          "cev6_076_02",
+          "cev6_076_03",
+          "cev6_076_04",
+          "cev6_076_05",
+          "cev6_076_06",
+          "cev6_076_07",
+          "cev6_076_08",
+          "cev6_076_09",
+          "cev6_076_10",
+          "cev6_076_11",
+          "cev6_076_12",
+          "cev6_076_13",
+          "cev6_076_14",
+          "cev6_076_15",
+          "cev6_076_16",
+          "cev6_076_17",
+          "cev6_076_18",
+          "cev6_076_19",
+          "cev6_076_20",
+          "cev6_076_21",
+          "cev6_076_22",
+          "cev6_076_23",
+          "cev6_076_24",
+          "cev6_076_25",
+          "cev6_076_26",
+          "cev6_076_27",
+          "cev6_076_28"
+        ]
+      },
+      "rationale": "No hay puntuación, encuesta ni estado explícito de una medición de satisfacción en los 28 recuerdos.",
+      "ambiguity": []
+    },
+    {
+      "id": "cev6q_077_01",
+      "scope_id": "synthetic_conversation_evidence_077",
+      "query": "¿A qué hora empieza El Farol Sumergido de Jorveta el 22 de octubre?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "A qué hora empieza El Farol Sumergido de Jorveta el 22 de octubre"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_077_02",
+          "quote": "El programa de Jorveta fija el comienzo de El Farol Sumergido del 22 de octubre a las 18:45.",
+          "relation": "supports_answer",
+          "covers": [
+            "p1"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_077_02"
+      ],
+      "relations": {
+        "supports_answer": [
+          "cev6_077_02"
+        ],
+        "refutes_premise": [],
+        "pending_or_partial": [],
+        "unrelated": [
+          "cev6_077_01",
+          "cev6_077_03",
+          "cev6_077_04",
+          "cev6_077_05",
+          "cev6_077_06",
+          "cev6_077_07",
+          "cev6_077_08",
+          "cev6_077_09",
+          "cev6_077_10",
+          "cev6_077_11",
+          "cev6_077_12",
+          "cev6_077_13",
+          "cev6_077_14",
+          "cev6_077_15",
+          "cev6_077_16",
+          "cev6_077_17",
+          "cev6_077_18",
+          "cev6_077_19",
+          "cev6_077_20",
+          "cev6_077_21",
+          "cev6_077_22",
+          "cev6_077_23",
+          "cev6_077_24",
+          "cev6_077_25",
+          "cev6_077_26",
+          "cev6_077_27",
+          "cev6_077_28"
+        ]
+      },
+      "rationale": "El programa fija las 18:45. El recuerdo sobre subtítulos en esa función no aporta la hora.",
+      "ambiguity": []
+    },
+    {
+      "id": "cev6q_077_02",
+      "scope_id": "synthetic_conversation_evidence_077",
+      "query": "¿Quién se ocupa de los subtítulos de Jorveta el 22 de octubre?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "Quién se ocupa de los subtítulos de Jorveta el 22 de octubre"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_077_03",
+          "quote": "La hoja técnica de Jorveta asigna a Naevor el manejo de los subtítulos el 22 de octubre.",
+          "relation": "supports_answer",
+          "covers": [
+            "p1"
+          ]
+        },
+        {
+          "memory_id": "cev6_077_04",
+          "quote": "El aviso al público de Jorveta confirma que Naevor operará los subtítulos de El Farol Sumergido el 22 de octubre.",
+          "relation": "supports_answer",
+          "covers": [
+            "p1"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_077_03",
+        "cev6_077_04"
+      ],
+      "relations": {
+        "supports_answer": [
+          "cev6_077_03",
+          "cev6_077_04"
+        ],
+        "refutes_premise": [],
+        "pending_or_partial": [],
+        "unrelated": [
+          "cev6_077_01",
+          "cev6_077_02",
+          "cev6_077_05",
+          "cev6_077_06",
+          "cev6_077_07",
+          "cev6_077_08",
+          "cev6_077_09",
+          "cev6_077_10",
+          "cev6_077_11",
+          "cev6_077_12",
+          "cev6_077_13",
+          "cev6_077_14",
+          "cev6_077_15",
+          "cev6_077_16",
+          "cev6_077_17",
+          "cev6_077_18",
+          "cev6_077_19",
+          "cev6_077_20",
+          "cev6_077_21",
+          "cev6_077_22",
+          "cev6_077_23",
+          "cev6_077_24",
+          "cev6_077_25",
+          "cev6_077_26",
+          "cev6_077_27",
+          "cev6_077_28"
+        ]
+      },
+      "rationale": "Hoja técnica y aviso al público nombran a Naevor para esa fecha.",
+      "ambiguity": []
+    },
+    {
+      "id": "cev6q_077_03",
+      "scope_id": "synthetic_conversation_evidence_077",
+      "query": "¿En qué emisora se escuchará El Farol Sumergido de Jorveta el 22 de octubre?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "presupposition",
+          "query_quote": "En qué emisora se escuchará El Farol Sumergido de Jorveta el 22 de octubre"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_077_05",
+          "quote": "La productora aclara por escrito que El Farol Sumergido no se emitirá por radio el 22 de octubre.",
+          "relation": "refutes_premise",
+          "covers": [
+            "p1"
+          ]
+        },
+        {
+          "memory_id": "cev6_077_06",
+          "quote": "La ficha de difusión de El Farol Sumergido marca la opción radio como descartada para el 22 de octubre.",
+          "relation": "refutes_premise",
+          "covers": [
+            "p1"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_077_05",
+        "cev6_077_06"
+      ],
+      "relations": {
+        "supports_answer": [],
+        "refutes_premise": [
+          "cev6_077_05",
+          "cev6_077_06"
+        ],
+        "pending_or_partial": [],
+        "unrelated": [
+          "cev6_077_01",
+          "cev6_077_02",
+          "cev6_077_03",
+          "cev6_077_04",
+          "cev6_077_07",
+          "cev6_077_08",
+          "cev6_077_09",
+          "cev6_077_10",
+          "cev6_077_11",
+          "cev6_077_12",
+          "cev6_077_13",
+          "cev6_077_14",
+          "cev6_077_15",
+          "cev6_077_16",
+          "cev6_077_17",
+          "cev6_077_18",
+          "cev6_077_19",
+          "cev6_077_20",
+          "cev6_077_21",
+          "cev6_077_22",
+          "cev6_077_23",
+          "cev6_077_24",
+          "cev6_077_25",
+          "cev6_077_26",
+          "cev6_077_27",
+          "cev6_077_28"
+        ]
+      },
+      "rationale": "La emisión radial está explícitamente negada o descartada ese día; la emisión de otra compañía no pertenece a esta pregunta.",
+      "ambiguity": []
+    },
+    {
+      "id": "cev6q_077_04",
+      "scope_id": "synthetic_conversation_evidence_077",
+      "query": "Necesito saber qué voltaje usa el motor del títere Arenal de Jorveta.",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "presupposition",
+          "query_quote": "qué voltaje usa el motor del títere Arenal de Jorveta"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_077_07",
+          "quote": "En Jorveta, el títere Arenal se mueve con varillas; la ficha niega que lleve motor.",
+          "relation": "refutes_premise",
+          "covers": [
+            "p1"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_077_07"
+      ],
+      "relations": {
+        "supports_answer": [],
+        "refutes_premise": [
+          "cev6_077_07"
+        ],
+        "pending_or_partial": [],
+        "unrelated": [
+          "cev6_077_01",
+          "cev6_077_02",
+          "cev6_077_03",
+          "cev6_077_04",
+          "cev6_077_05",
+          "cev6_077_06",
+          "cev6_077_08",
+          "cev6_077_09",
+          "cev6_077_10",
+          "cev6_077_11",
+          "cev6_077_12",
+          "cev6_077_13",
+          "cev6_077_14",
+          "cev6_077_15",
+          "cev6_077_16",
+          "cev6_077_17",
+          "cev6_077_18",
+          "cev6_077_19",
+          "cev6_077_20",
+          "cev6_077_21",
+          "cev6_077_22",
+          "cev6_077_23",
+          "cev6_077_24",
+          "cev6_077_25",
+          "cev6_077_26",
+          "cev6_077_27",
+          "cev6_077_28"
+        ]
+      },
+      "rationale": "La ficha niega que Arenal lleve motor y dice que se mueve con varillas.",
+      "ambiguity": [
+        "El inventario de dos varillas no niega por sí solo un motor; ambos mecanismos podrían coexistir sin la negación explícita de 077_07."
+      ]
+    },
+    {
+      "id": "cev6q_077_05",
+      "scope_id": "synthetic_conversation_evidence_077",
+      "query": "Para el grupo de Ulsira, ¿cuántas plazas están reservadas y en qué filas?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "cuántas plazas están reservadas"
+        },
+        {
+          "id": "p2",
+          "kind": "requested_fact",
+          "query_quote": "en qué filas"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_077_09",
+          "quote": "La reserva de la función de Jorveta para el grupo de Ulsira tiene confirmadas doce plazas.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "p1"
+          ]
+        },
+        {
+          "memory_id": "cev6_077_10",
+          "quote": "El correo de Ulsira indica que la distribución de esas doce plazas por fila aún se decidirá.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "p1",
+            "p2"
+          ]
+        },
+        {
+          "memory_id": "cev6_077_11",
+          "quote": "La nota de sala confirma doce localidades reservadas para el grupo de Ulsira.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "p1"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_077_09",
+        "cev6_077_10",
+        "cev6_077_11"
+      ],
+      "relations": {
+        "supports_answer": [],
+        "refutes_premise": [],
+        "pending_or_partial": [
+          "cev6_077_09",
+          "cev6_077_10",
+          "cev6_077_11"
+        ],
+        "unrelated": [
+          "cev6_077_01",
+          "cev6_077_02",
+          "cev6_077_03",
+          "cev6_077_04",
+          "cev6_077_05",
+          "cev6_077_06",
+          "cev6_077_07",
+          "cev6_077_08",
+          "cev6_077_12",
+          "cev6_077_13",
+          "cev6_077_14",
+          "cev6_077_15",
+          "cev6_077_16",
+          "cev6_077_17",
+          "cev6_077_18",
+          "cev6_077_19",
+          "cev6_077_20",
+          "cev6_077_21",
+          "cev6_077_22",
+          "cev6_077_23",
+          "cev6_077_24",
+          "cev6_077_25",
+          "cev6_077_26",
+          "cev6_077_27",
+          "cev6_077_28"
+        ]
+      },
+      "rationale": "Hay doce plazas confirmadas; la distribución por fila aún se decidirá. El correo repite el número de plazas.",
+      "ambiguity": []
+    },
+    {
+      "id": "cev6q_077_06",
+      "scope_id": "synthetic_conversation_evidence_077",
+      "query": "¿Cuándo comenzó la proyección de prueba de Jorveta del 18 de octubre y cuánto duró?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "Cuándo comenzó la proyección de prueba de Jorveta del 18 de octubre"
+        },
+        {
+          "id": "p2",
+          "kind": "requested_fact",
+          "query_quote": "cuánto duró"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_077_12",
+          "quote": "La bitácora de Jorveta registra que la proyección de prueba comenzó a las 15:05 el 18 de octubre.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "p1"
+          ]
+        },
+        {
+          "memory_id": "cev6_077_13",
+          "quote": "La bitácora de Jorveta no consigna la duración de la proyección de prueba del 18 de octubre.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "p2"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_077_12",
+        "cev6_077_13"
+      ],
+      "relations": {
+        "supports_answer": [],
+        "refutes_premise": [],
+        "pending_or_partial": [
+          "cev6_077_12",
+          "cev6_077_13"
+        ],
+        "unrelated": [
+          "cev6_077_01",
+          "cev6_077_02",
+          "cev6_077_03",
+          "cev6_077_04",
+          "cev6_077_05",
+          "cev6_077_06",
+          "cev6_077_07",
+          "cev6_077_08",
+          "cev6_077_09",
+          "cev6_077_10",
+          "cev6_077_11",
+          "cev6_077_14",
+          "cev6_077_15",
+          "cev6_077_16",
+          "cev6_077_17",
+          "cev6_077_18",
+          "cev6_077_19",
+          "cev6_077_20",
+          "cev6_077_21",
+          "cev6_077_22",
+          "cev6_077_23",
+          "cev6_077_24",
+          "cev6_077_25",
+          "cev6_077_26",
+          "cev6_077_27",
+          "cev6_077_28"
+        ]
+      },
+      "rationale": "El inicio fue a las 15:05 y la duración no figura; una prueba de otra compañía no rellena el dato.",
+      "ambiguity": []
+    },
+    {
+      "id": "cev6q_077_07",
+      "scope_id": "synthetic_conversation_evidence_077",
+      "query": "¿De qué universidad se graduó Naevor?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "De qué universidad se graduó Naevor"
+        }
+      ],
+      "evidence": [],
+      "expected_ids": [],
+      "relations": {
+        "supports_answer": [],
+        "refutes_premise": [],
+        "pending_or_partial": [],
+        "unrelated": [
+          "cev6_077_01",
+          "cev6_077_02",
+          "cev6_077_03",
+          "cev6_077_04",
+          "cev6_077_05",
+          "cev6_077_06",
+          "cev6_077_07",
+          "cev6_077_08",
+          "cev6_077_09",
+          "cev6_077_10",
+          "cev6_077_11",
+          "cev6_077_12",
+          "cev6_077_13",
+          "cev6_077_14",
+          "cev6_077_15",
+          "cev6_077_16",
+          "cev6_077_17",
+          "cev6_077_18",
+          "cev6_077_19",
+          "cev6_077_20",
+          "cev6_077_21",
+          "cev6_077_22",
+          "cev6_077_23",
+          "cev6_077_24",
+          "cev6_077_25",
+          "cev6_077_26",
+          "cev6_077_27",
+          "cev6_077_28"
+        ]
+      },
+      "rationale": "Sus funciones en subtítulos no aportan universidad ni situación de graduación. El ámbito completo carece del dato.",
+      "ambiguity": []
+    },
+    {
+      "id": "cev6q_077_08",
+      "scope_id": "synthetic_conversation_evidence_077",
+      "query": "¿Qué temperatura tendrá la sala de Jorveta durante la función?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "Qué temperatura tendrá la sala de Jorveta durante la función"
+        }
+      ],
+      "evidence": [],
+      "expected_ids": [],
+      "relations": {
+        "supports_answer": [],
+        "refutes_premise": [],
+        "pending_or_partial": [],
+        "unrelated": [
+          "cev6_077_01",
+          "cev6_077_02",
+          "cev6_077_03",
+          "cev6_077_04",
+          "cev6_077_05",
+          "cev6_077_06",
+          "cev6_077_07",
+          "cev6_077_08",
+          "cev6_077_09",
+          "cev6_077_10",
+          "cev6_077_11",
+          "cev6_077_12",
+          "cev6_077_13",
+          "cev6_077_14",
+          "cev6_077_15",
+          "cev6_077_16",
+          "cev6_077_17",
+          "cev6_077_18",
+          "cev6_077_19",
+          "cev6_077_20",
+          "cev6_077_21",
+          "cev6_077_22",
+          "cev6_077_23",
+          "cev6_077_24",
+          "cev6_077_25",
+          "cev6_077_26",
+          "cev6_077_27",
+          "cev6_077_28"
+        ]
+      },
+      "rationale": "Las notas de sala no registran temperatura durante la función ni una negación explícita de la medición.",
+      "ambiguity": []
+    },
+    {
+      "id": "cev6q_078_01",
+      "scope_id": "synthetic_conversation_evidence_078",
+      "query": "En el ensayo de Odravel del 17 de octubre, ¿quién vertió el trazador y dónde?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "quién vertió el trazador"
+        },
+        {
+          "id": "p2",
+          "kind": "requested_fact",
+          "query_quote": "dónde"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_078_01",
+          "quote": "El acta del ensayo de trazador del canal ficticio Odravel del 17 de octubre fija el vertido en la compuerta Espiga.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "p2"
+          ]
+        },
+        {
+          "memory_id": "cev6_078_02",
+          "quote": "La orden de campo de Odravel autoriza a Vensar a efectuar el vertido del trazador el 17 de octubre.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "p1"
+          ]
+        },
+        {
+          "memory_id": "cev6_078_03",
+          "quote": "La bitácora del equipo de Odravel confirma que Vensar realizó el vertido del 17 de octubre en la compuerta Espiga.",
+          "relation": "supports_answer",
+          "covers": [
+            "p1",
+            "p2"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_078_01",
+        "cev6_078_02",
+        "cev6_078_03"
+      ],
+      "relations": {
+        "supports_answer": [
+          "cev6_078_03"
+        ],
+        "refutes_premise": [],
+        "pending_or_partial": [
+          "cev6_078_01",
+          "cev6_078_02"
+        ],
+        "unrelated": [
+          "cev6_078_04",
+          "cev6_078_05",
+          "cev6_078_06",
+          "cev6_078_07",
+          "cev6_078_08",
+          "cev6_078_09",
+          "cev6_078_10",
+          "cev6_078_11",
+          "cev6_078_12",
+          "cev6_078_13",
+          "cev6_078_14",
+          "cev6_078_15",
+          "cev6_078_16",
+          "cev6_078_17",
+          "cev6_078_18",
+          "cev6_078_19",
+          "cev6_078_20",
+          "cev6_078_21",
+          "cev6_078_22",
+          "cev6_078_23",
+          "cev6_078_24",
+          "cev6_078_25",
+          "cev6_078_26",
+          "cev6_078_27",
+          "cev6_078_28"
+        ]
+      },
+      "rationale": "La bitácora confirma ejecución por Vensar en la compuerta Espiga; el acta fija ese lugar y la orden autoriza a Vensar.",
+      "ambiguity": [
+        "078_01 y 078_02 aportan lugar previsto y persona autorizada, respectivamente. Una orden no demuestra por sí sola quién ejecutó la acción: la ejecución está confirmada en 078_03."
+      ]
+    },
+    {
+      "id": "cev6q_078_02",
+      "scope_id": "synthetic_conversation_evidence_078",
+      "query": "¿Qué equipo indica el protocolo para observar el trazador de Odravel?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "Qué equipo indica el protocolo para observar el trazador de Odravel"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_078_04",
+          "quote": "Para observar el trazador de Odravel, el protocolo indica usar la lámpara violeta del puesto de lectura.",
+          "relation": "supports_answer",
+          "covers": [
+            "p1"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_078_04"
+      ],
+      "relations": {
+        "supports_answer": [
+          "cev6_078_04"
+        ],
+        "refutes_premise": [],
+        "pending_or_partial": [],
+        "unrelated": [
+          "cev6_078_01",
+          "cev6_078_02",
+          "cev6_078_03",
+          "cev6_078_05",
+          "cev6_078_06",
+          "cev6_078_07",
+          "cev6_078_08",
+          "cev6_078_09",
+          "cev6_078_10",
+          "cev6_078_11",
+          "cev6_078_12",
+          "cev6_078_13",
+          "cev6_078_14",
+          "cev6_078_15",
+          "cev6_078_16",
+          "cev6_078_17",
+          "cev6_078_18",
+          "cev6_078_19",
+          "cev6_078_20",
+          "cev6_078_21",
+          "cev6_078_22",
+          "cev6_078_23",
+          "cev6_078_24",
+          "cev6_078_25",
+          "cev6_078_26",
+          "cev6_078_27",
+          "cev6_078_28"
+        ]
+      },
+      "rationale": "El protocolo pide la lámpara violeta del puesto de lectura; su almacenamiento posterior no es otra prescripción del protocolo.",
+      "ambiguity": []
+    },
+    {
+      "id": "cev6q_078_03",
+      "scope_id": "synthetic_conversation_evidence_078",
+      "query": "¿A qué hora llegó al río el agua descargada durante el ensayo de Odravel?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "presupposition",
+          "query_quote": "A qué hora llegó al río el agua descargada durante el ensayo de Odravel"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_078_06",
+          "quote": "El informe del canal Odravel dice que el agua del ensayo circuló por un circuito cerrado sin descarga al río.",
+          "relation": "refutes_premise",
+          "covers": [
+            "p1"
+          ]
+        },
+        {
+          "memory_id": "cev6_078_07",
+          "quote": "La inspección del ensayo de Odravel confirma que la salida al río permaneció cerrada durante toda la prueba.",
+          "relation": "refutes_premise",
+          "covers": [
+            "p1"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_078_06",
+        "cev6_078_07"
+      ],
+      "relations": {
+        "supports_answer": [],
+        "refutes_premise": [
+          "cev6_078_06",
+          "cev6_078_07"
+        ],
+        "pending_or_partial": [],
+        "unrelated": [
+          "cev6_078_01",
+          "cev6_078_02",
+          "cev6_078_03",
+          "cev6_078_04",
+          "cev6_078_05",
+          "cev6_078_08",
+          "cev6_078_09",
+          "cev6_078_10",
+          "cev6_078_11",
+          "cev6_078_12",
+          "cev6_078_13",
+          "cev6_078_14",
+          "cev6_078_15",
+          "cev6_078_16",
+          "cev6_078_17",
+          "cev6_078_18",
+          "cev6_078_19",
+          "cev6_078_20",
+          "cev6_078_21",
+          "cev6_078_22",
+          "cev6_078_23",
+          "cev6_078_24",
+          "cev6_078_25",
+          "cev6_078_26",
+          "cev6_078_27",
+          "cev6_078_28"
+        ]
+      },
+      "rationale": "El circuito fue cerrado sin descarga al río y la salida permaneció cerrada; no hubo llegada al río cuyo horario dar.",
+      "ambiguity": []
+    },
+    {
+      "id": "cev6q_078_04",
+      "scope_id": "synthetic_conversation_evidence_078",
+      "query": "¿Qué especie de organismo vivo se liberó como trazador en Odravel?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "presupposition",
+          "query_quote": "Qué especie de organismo vivo se liberó como trazador en Odravel"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_078_08",
+          "quote": "La ficha del trazador de Odravel identifica un colorante visible y descarta el uso de organismos vivos.",
+          "relation": "refutes_premise",
+          "covers": [
+            "p1"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_078_08"
+      ],
+      "relations": {
+        "supports_answer": [],
+        "refutes_premise": [
+          "cev6_078_08"
+        ],
+        "pending_or_partial": [],
+        "unrelated": [
+          "cev6_078_01",
+          "cev6_078_02",
+          "cev6_078_03",
+          "cev6_078_04",
+          "cev6_078_05",
+          "cev6_078_06",
+          "cev6_078_07",
+          "cev6_078_09",
+          "cev6_078_10",
+          "cev6_078_11",
+          "cev6_078_12",
+          "cev6_078_13",
+          "cev6_078_14",
+          "cev6_078_15",
+          "cev6_078_16",
+          "cev6_078_17",
+          "cev6_078_18",
+          "cev6_078_19",
+          "cev6_078_20",
+          "cev6_078_21",
+          "cev6_078_22",
+          "cev6_078_23",
+          "cev6_078_24",
+          "cev6_078_25",
+          "cev6_078_26",
+          "cev6_078_27",
+          "cev6_078_28"
+        ]
+      },
+      "rationale": "La ficha identifica un colorante visible y descarta organismos vivos.",
+      "ambiguity": []
+    },
+    {
+      "id": "cev6q_078_05",
+      "scope_id": "synthetic_conversation_evidence_078",
+      "query": "En la primera lectura de Odravel, ¿a qué hora se observó el trazador y con qué concentración?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "a qué hora se observó el trazador"
+        },
+        {
+          "id": "p2",
+          "kind": "requested_fact",
+          "query_quote": "con qué concentración"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_078_09",
+          "quote": "El registro de Odravel anota la primera lectura del trazador a las 08:32 el 17 de octubre.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "p1"
+          ]
+        },
+        {
+          "memory_id": "cev6_078_10",
+          "quote": "El registro de Odravel deja sin rellenar la concentración medida en esa primera lectura.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "p2"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_078_09",
+        "cev6_078_10"
+      ],
+      "relations": {
+        "supports_answer": [],
+        "refutes_premise": [],
+        "pending_or_partial": [
+          "cev6_078_09",
+          "cev6_078_10"
+        ],
+        "unrelated": [
+          "cev6_078_01",
+          "cev6_078_02",
+          "cev6_078_03",
+          "cev6_078_04",
+          "cev6_078_05",
+          "cev6_078_06",
+          "cev6_078_07",
+          "cev6_078_08",
+          "cev6_078_11",
+          "cev6_078_12",
+          "cev6_078_13",
+          "cev6_078_14",
+          "cev6_078_15",
+          "cev6_078_16",
+          "cev6_078_17",
+          "cev6_078_18",
+          "cev6_078_19",
+          "cev6_078_20",
+          "cev6_078_21",
+          "cev6_078_22",
+          "cev6_078_23",
+          "cev6_078_24",
+          "cev6_078_25",
+          "cev6_078_26",
+          "cev6_078_27",
+          "cev6_078_28"
+        ]
+      },
+      "rationale": "La primera lectura fue a las 08:32 y la concentración quedó en blanco. El código L1 no aporta hora ni concentración.",
+      "ambiguity": []
+    },
+    {
+      "id": "cev6q_078_06",
+      "scope_id": "synthetic_conversation_evidence_078",
+      "query": "¿Quién se encargó de limpiar el recipiente de Odravel y cuántos litros gastó?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "Quién se encargó de limpiar el recipiente de Odravel"
+        },
+        {
+          "id": "p2",
+          "kind": "requested_fact",
+          "query_quote": "cuántos litros gastó"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_078_11",
+          "quote": "La hoja de mantenimiento de Odravel identifica a Ruveta como responsable de la limpieza posterior al ensayo.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "p1"
+          ]
+        },
+        {
+          "memory_id": "cev6_078_12",
+          "quote": "El parte de limpieza de Odravel confirma que Ruveta lavó el recipiente del trazador.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "p1"
+          ]
+        },
+        {
+          "memory_id": "cev6_078_13",
+          "quote": "El parte de limpieza de Odravel no incluye el volumen de agua usado para lavar el recipiente.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "p2"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_078_11",
+        "cev6_078_12",
+        "cev6_078_13"
+      ],
+      "relations": {
+        "supports_answer": [],
+        "refutes_premise": [],
+        "pending_or_partial": [
+          "cev6_078_11",
+          "cev6_078_12",
+          "cev6_078_13"
+        ],
+        "unrelated": [
+          "cev6_078_01",
+          "cev6_078_02",
+          "cev6_078_03",
+          "cev6_078_04",
+          "cev6_078_05",
+          "cev6_078_06",
+          "cev6_078_07",
+          "cev6_078_08",
+          "cev6_078_09",
+          "cev6_078_10",
+          "cev6_078_14",
+          "cev6_078_15",
+          "cev6_078_16",
+          "cev6_078_17",
+          "cev6_078_18",
+          "cev6_078_19",
+          "cev6_078_20",
+          "cev6_078_21",
+          "cev6_078_22",
+          "cev6_078_23",
+          "cev6_078_24",
+          "cev6_078_25",
+          "cev6_078_26",
+          "cev6_078_27",
+          "cev6_078_28"
+        ]
+      },
+      "rationale": "Ruveta era responsable y el parte confirma que lavó el recipiente; no incluye el volumen de agua.",
+      "ambiguity": [
+        "078_11 identifica la limpieza posterior del ensayo sin nombrar el recipiente; 078_12 da la conexión directa. La entrega del parte por Ruveta no demuestra por sí sola quién limpió."
+      ]
+    },
+    {
+      "id": "cev6q_078_07",
+      "scope_id": "synthetic_conversation_evidence_078",
+      "query": "¿Cuál era el pH del agua del canal Odravel antes del ensayo?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "Cuál era el pH del agua del canal Odravel antes del ensayo"
+        }
+      ],
+      "evidence": [],
+      "expected_ids": [],
+      "relations": {
+        "supports_answer": [],
+        "refutes_premise": [],
+        "pending_or_partial": [],
+        "unrelated": [
+          "cev6_078_01",
+          "cev6_078_02",
+          "cev6_078_03",
+          "cev6_078_04",
+          "cev6_078_05",
+          "cev6_078_06",
+          "cev6_078_07",
+          "cev6_078_08",
+          "cev6_078_09",
+          "cev6_078_10",
+          "cev6_078_11",
+          "cev6_078_12",
+          "cev6_078_13",
+          "cev6_078_14",
+          "cev6_078_15",
+          "cev6_078_16",
+          "cev6_078_17",
+          "cev6_078_18",
+          "cev6_078_19",
+          "cev6_078_20",
+          "cev6_078_21",
+          "cev6_078_22",
+          "cev6_078_23",
+          "cev6_078_24",
+          "cev6_078_25",
+          "cev6_078_26",
+          "cev6_078_27",
+          "cev6_078_28"
+        ]
+      },
+      "rationale": "No consta valor ni medición de pH en el ámbito completo. El circuito y el colorante no determinan ese valor.",
+      "ambiguity": []
+    },
+    {
+      "id": "cev6q_078_08",
+      "scope_id": "synthetic_conversation_evidence_078",
+      "query": "¿Qué aseguradora cubría a Vensar durante la prueba de Odravel?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "Qué aseguradora cubría a Vensar durante la prueba de Odravel"
+        }
+      ],
+      "evidence": [],
+      "expected_ids": [],
+      "relations": {
+        "supports_answer": [],
+        "refutes_premise": [],
+        "pending_or_partial": [],
+        "unrelated": [
+          "cev6_078_01",
+          "cev6_078_02",
+          "cev6_078_03",
+          "cev6_078_04",
+          "cev6_078_05",
+          "cev6_078_06",
+          "cev6_078_07",
+          "cev6_078_08",
+          "cev6_078_09",
+          "cev6_078_10",
+          "cev6_078_11",
+          "cev6_078_12",
+          "cev6_078_13",
+          "cev6_078_14",
+          "cev6_078_15",
+          "cev6_078_16",
+          "cev6_078_17",
+          "cev6_078_18",
+          "cev6_078_19",
+          "cev6_078_20",
+          "cev6_078_21",
+          "cev6_078_22",
+          "cev6_078_23",
+          "cev6_078_24",
+          "cev6_078_25",
+          "cev6_078_26",
+          "cev6_078_27",
+          "cev6_078_28"
+        ]
+      },
+      "rationale": "La autorización y el equipo del puesto de Vensar no identifican aseguradora; el ámbito carece del dato.",
+      "ambiguity": []
+    },
+    {
+      "id": "cev6q_079_01",
+      "scope_id": "synthetic_conversation_evidence_079",
+      "query": "Según la orden del 18 de octubre, ¿a qué congelador va AL-4 en Eznora?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "a qué congelador va AL-4 en Eznora"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_079_01",
+          "quote": "El banco de semillas ficticio Eznora trasladará su lote de acedera AL-4 al congelador Tres, según la orden del 18 de octubre.",
+          "relation": "supports_answer",
+          "covers": [
+            "p1"
+          ]
+        },
+        {
+          "memory_id": "cev6_079_03",
+          "quote": "La etiqueta de destino de AL-4 en Eznora dice congelador Tres.",
+          "relation": "supports_answer",
+          "covers": [
+            "p1"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_079_01",
+        "cev6_079_03"
+      ],
+      "relations": {
+        "supports_answer": [
+          "cev6_079_01",
+          "cev6_079_03"
+        ],
+        "refutes_premise": [],
+        "pending_or_partial": [],
+        "unrelated": [
+          "cev6_079_02",
+          "cev6_079_04",
+          "cev6_079_05",
+          "cev6_079_06",
+          "cev6_079_07",
+          "cev6_079_08",
+          "cev6_079_09",
+          "cev6_079_10",
+          "cev6_079_11",
+          "cev6_079_12",
+          "cev6_079_13",
+          "cev6_079_14",
+          "cev6_079_15",
+          "cev6_079_16",
+          "cev6_079_17",
+          "cev6_079_18",
+          "cev6_079_19",
+          "cev6_079_20",
+          "cev6_079_21",
+          "cev6_079_22",
+          "cev6_079_23",
+          "cev6_079_24",
+          "cev6_079_25",
+          "cev6_079_26",
+          "cev6_079_27",
+          "cev6_079_28"
+        ]
+      },
+      "rationale": "Orden y etiqueta asignan congelador Tres.",
+      "ambiguity": [
+        "079_18 invalida un destino anterior, pero no identifica el nuevo. No corrige una premisa de la pregunta, que ya pide la orden vigente."
+      ]
+    },
+    {
+      "id": "cev6q_079_02",
+      "scope_id": "synthetic_conversation_evidence_079",
+      "query": "¿A qué temperatura exige la ficha conservar AL-4?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "A qué temperatura exige la ficha conservar AL-4"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_079_04",
+          "quote": "La ficha de conservación de AL-4 indica mantener el lote a menos dieciséis grados Celsius.",
+          "relation": "supports_answer",
+          "covers": [
+            "p1"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_079_04"
+      ],
+      "relations": {
+        "supports_answer": [
+          "cev6_079_04"
+        ],
+        "refutes_premise": [],
+        "pending_or_partial": [],
+        "unrelated": [
+          "cev6_079_01",
+          "cev6_079_02",
+          "cev6_079_03",
+          "cev6_079_05",
+          "cev6_079_06",
+          "cev6_079_07",
+          "cev6_079_08",
+          "cev6_079_09",
+          "cev6_079_10",
+          "cev6_079_11",
+          "cev6_079_12",
+          "cev6_079_13",
+          "cev6_079_14",
+          "cev6_079_15",
+          "cev6_079_16",
+          "cev6_079_17",
+          "cev6_079_18",
+          "cev6_079_19",
+          "cev6_079_20",
+          "cev6_079_21",
+          "cev6_079_22",
+          "cev6_079_23",
+          "cev6_079_24",
+          "cev6_079_25",
+          "cev6_079_26",
+          "cev6_079_27",
+          "cev6_079_28"
+        ]
+      },
+      "rationale": "La ficha exige menos dieciséis grados Celsius; no se infiere una temperatura efectivamente medida.",
+      "ambiguity": []
+    },
+    {
+      "id": "cev6q_079_03",
+      "scope_id": "synthetic_conversation_evidence_079",
+      "query": "¿Cuánto le pagó Eznora a quien le vendió AL-4?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "Cuánto le pagó Eznora"
+        },
+        {
+          "id": "p2",
+          "kind": "presupposition",
+          "query_quote": "a quien le vendió AL-4"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_079_05",
+          "quote": "El parte de Eznora aclara que el lote AL-4 fue recibido como donación sin pago a la entidad donante.",
+          "relation": "refutes_premise",
+          "covers": [
+            "p1",
+            "p2"
+          ]
+        },
+        {
+          "memory_id": "cev6_079_06",
+          "quote": "El recibo de ingreso de AL-4 identifica a la cooperativa ficticia Sirven como donante, sin venta del lote.",
+          "relation": "refutes_premise",
+          "covers": [
+            "p2"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_079_05",
+        "cev6_079_06"
+      ],
+      "relations": {
+        "supports_answer": [],
+        "refutes_premise": [
+          "cev6_079_05",
+          "cev6_079_06"
+        ],
+        "pending_or_partial": [],
+        "unrelated": [
+          "cev6_079_01",
+          "cev6_079_02",
+          "cev6_079_03",
+          "cev6_079_04",
+          "cev6_079_07",
+          "cev6_079_08",
+          "cev6_079_09",
+          "cev6_079_10",
+          "cev6_079_11",
+          "cev6_079_12",
+          "cev6_079_13",
+          "cev6_079_14",
+          "cev6_079_15",
+          "cev6_079_16",
+          "cev6_079_17",
+          "cev6_079_18",
+          "cev6_079_19",
+          "cev6_079_20",
+          "cev6_079_21",
+          "cev6_079_22",
+          "cev6_079_23",
+          "cev6_079_24",
+          "cev6_079_25",
+          "cev6_079_26",
+          "cev6_079_27",
+          "cev6_079_28"
+        ]
+      },
+      "rationale": "El lote fue una donación sin pago y sin venta; Sirven es donante, no vendedor.",
+      "ambiguity": []
+    },
+    {
+      "id": "cev6q_079_04",
+      "scope_id": "synthetic_conversation_evidence_079",
+      "query": "¿En qué macetas están creciendo las plántulas del lote AL-4?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "presupposition",
+          "query_quote": "En qué macetas están creciendo las plántulas del lote AL-4"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_079_07",
+          "quote": "La nota técnica de Eznora identifica AL-4 como semillas secas; no contiene plántulas germinadas.",
+          "relation": "refutes_premise",
+          "covers": [
+            "p1"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_079_07"
+      ],
+      "relations": {
+        "supports_answer": [],
+        "refutes_premise": [
+          "cev6_079_07"
+        ],
+        "pending_or_partial": [],
+        "unrelated": [
+          "cev6_079_01",
+          "cev6_079_02",
+          "cev6_079_03",
+          "cev6_079_04",
+          "cev6_079_05",
+          "cev6_079_06",
+          "cev6_079_08",
+          "cev6_079_09",
+          "cev6_079_10",
+          "cev6_079_11",
+          "cev6_079_12",
+          "cev6_079_13",
+          "cev6_079_14",
+          "cev6_079_15",
+          "cev6_079_16",
+          "cev6_079_17",
+          "cev6_079_18",
+          "cev6_079_19",
+          "cev6_079_20",
+          "cev6_079_21",
+          "cev6_079_22",
+          "cev6_079_23",
+          "cev6_079_24",
+          "cev6_079_25",
+          "cev6_079_26",
+          "cev6_079_27",
+          "cev6_079_28"
+        ]
+      },
+      "rationale": "El lote son semillas secas y no contiene plántulas germinadas; una prueba separada de germinación no cambia el contenido del lote almacenado.",
+      "ambiguity": []
+    },
+    {
+      "id": "cev6q_079_05",
+      "scope_id": "synthetic_conversation_evidence_079",
+      "query": "¿Cuántos sobres de AL-4 recibió Eznora y cuál es el peso total de sus semillas?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "Cuántos sobres de AL-4 recibió Eznora"
+        },
+        {
+          "id": "p2",
+          "kind": "requested_fact",
+          "query_quote": "cuál es el peso total de sus semillas"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_079_08",
+          "quote": "El acta de recuento de Eznora registra 320 sobres del lote AL-4.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "p1"
+          ]
+        },
+        {
+          "memory_id": "cev6_079_09",
+          "quote": "El acta de recuento de AL-4 no incluye el peso total de las semillas.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "p2"
+          ]
+        },
+        {
+          "memory_id": "cev6_079_10",
+          "quote": "El correo de recepción de Eznora confirma 320 sobres recibidos para AL-4.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "p1"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_079_08",
+        "cev6_079_09",
+        "cev6_079_10"
+      ],
+      "relations": {
+        "supports_answer": [],
+        "refutes_premise": [],
+        "pending_or_partial": [
+          "cev6_079_08",
+          "cev6_079_09",
+          "cev6_079_10"
+        ],
+        "unrelated": [
+          "cev6_079_01",
+          "cev6_079_02",
+          "cev6_079_03",
+          "cev6_079_04",
+          "cev6_079_05",
+          "cev6_079_06",
+          "cev6_079_07",
+          "cev6_079_11",
+          "cev6_079_12",
+          "cev6_079_13",
+          "cev6_079_14",
+          "cev6_079_15",
+          "cev6_079_16",
+          "cev6_079_17",
+          "cev6_079_18",
+          "cev6_079_19",
+          "cev6_079_20",
+          "cev6_079_21",
+          "cev6_079_22",
+          "cev6_079_23",
+          "cev6_079_24",
+          "cev6_079_25",
+          "cev6_079_26",
+          "cev6_079_27",
+          "cev6_079_28"
+        ]
+      },
+      "rationale": "Dos documentos confirman 320 sobres; el acta no incluye el peso total.",
+      "ambiguity": []
+    },
+    {
+      "id": "cev6q_079_06",
+      "scope_id": "synthetic_conversation_evidence_079",
+      "query": "Sobre AL-4, ¿cuándo arrancó el ensayo de germinación y qué porcentaje obtuvo?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "cuándo arrancó el ensayo de germinación"
+        },
+        {
+          "id": "p2",
+          "kind": "requested_fact",
+          "query_quote": "qué porcentaje obtuvo"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_079_11",
+          "quote": "La solicitud de ensayo de AL-4 indica que la prueba de germinación se inició el 17 de octubre.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "p1"
+          ]
+        },
+        {
+          "memory_id": "cev6_079_12",
+          "quote": "El informe de AL-4 del 18 de octubre todavía no presenta porcentaje de germinación.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "p2"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_079_11",
+        "cev6_079_12"
+      ],
+      "relations": {
+        "supports_answer": [],
+        "refutes_premise": [],
+        "pending_or_partial": [
+          "cev6_079_11",
+          "cev6_079_12"
+        ],
+        "unrelated": [
+          "cev6_079_01",
+          "cev6_079_02",
+          "cev6_079_03",
+          "cev6_079_04",
+          "cev6_079_05",
+          "cev6_079_06",
+          "cev6_079_07",
+          "cev6_079_08",
+          "cev6_079_09",
+          "cev6_079_10",
+          "cev6_079_13",
+          "cev6_079_14",
+          "cev6_079_15",
+          "cev6_079_16",
+          "cev6_079_17",
+          "cev6_079_18",
+          "cev6_079_19",
+          "cev6_079_20",
+          "cev6_079_21",
+          "cev6_079_22",
+          "cev6_079_23",
+          "cev6_079_24",
+          "cev6_079_25",
+          "cev6_079_26",
+          "cev6_079_27",
+          "cev6_079_28"
+        ]
+      },
+      "rationale": "El ensayo comenzó el 17 de octubre y el informe del 18 todavía no presenta porcentaje.",
+      "ambiguity": []
+    },
+    {
+      "id": "cev6q_079_07",
+      "scope_id": "synthetic_conversation_evidence_079",
+      "query": "¿Cuál es la combinación de apertura del congelador Tres de Eznora?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "Cuál es la combinación de apertura del congelador Tres de Eznora"
+        }
+      ],
+      "evidence": [],
+      "expected_ids": [],
+      "relations": {
+        "supports_answer": [],
+        "refutes_premise": [],
+        "pending_or_partial": [],
+        "unrelated": [
+          "cev6_079_01",
+          "cev6_079_02",
+          "cev6_079_03",
+          "cev6_079_04",
+          "cev6_079_05",
+          "cev6_079_06",
+          "cev6_079_07",
+          "cev6_079_08",
+          "cev6_079_09",
+          "cev6_079_10",
+          "cev6_079_11",
+          "cev6_079_12",
+          "cev6_079_13",
+          "cev6_079_14",
+          "cev6_079_15",
+          "cev6_079_16",
+          "cev6_079_17",
+          "cev6_079_18",
+          "cev6_079_19",
+          "cev6_079_20",
+          "cev6_079_21",
+          "cev6_079_22",
+          "cev6_079_23",
+          "cev6_079_24",
+          "cev6_079_25",
+          "cev6_079_26",
+          "cev6_079_27",
+          "cev6_079_28"
+        ]
+      },
+      "rationale": "Las letras de identificación de bandejas no son una combinación de apertura; ningún recuerdo del ámbito la aporta.",
+      "ambiguity": []
+    },
+    {
+      "id": "cev6q_079_08",
+      "scope_id": "synthetic_conversation_evidence_079",
+      "query": "¿Cuántas horas duró el viaje del lote AL-4 desde Sirven hasta Eznora?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "Cuántas horas duró el viaje del lote AL-4 desde Sirven hasta Eznora"
+        }
+      ],
+      "evidence": [],
+      "expected_ids": [],
+      "relations": {
+        "supports_answer": [],
+        "refutes_premise": [],
+        "pending_or_partial": [],
+        "unrelated": [
+          "cev6_079_01",
+          "cev6_079_02",
+          "cev6_079_03",
+          "cev6_079_04",
+          "cev6_079_05",
+          "cev6_079_06",
+          "cev6_079_07",
+          "cev6_079_08",
+          "cev6_079_09",
+          "cev6_079_10",
+          "cev6_079_11",
+          "cev6_079_12",
+          "cev6_079_13",
+          "cev6_079_14",
+          "cev6_079_15",
+          "cev6_079_16",
+          "cev6_079_17",
+          "cev6_079_18",
+          "cev6_079_19",
+          "cev6_079_20",
+          "cev6_079_21",
+          "cev6_079_22",
+          "cev6_079_23",
+          "cev6_079_24",
+          "cev6_079_25",
+          "cev6_079_26",
+          "cev6_079_27",
+          "cev6_079_28"
+        ]
+      },
+      "rationale": "El envío desde Sirven está documentado, pero no constan duración ni tiempos de salida y llegada que permitan calcularla.",
+      "ambiguity": []
+    },
+    {
+      "id": "cev6q_080_01",
+      "scope_id": "synthetic_conversation_evidence_080",
+      "query": "¿Qué vehículo recogerá Zavrion el 20 de octubre?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "Qué vehículo recogerá Zavrion el 20 de octubre"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_080_01",
+          "quote": "La orden de traslado del espejo astronómico ficticio Zavrion asigna la recogida del 20 de octubre al vehículo Caja Nueve.",
+          "relation": "supports_answer",
+          "covers": [
+            "p1"
+          ]
+        },
+        {
+          "memory_id": "cev6_080_03",
+          "quote": "La etiqueta de envío de Zavrion confirma que el vehículo de recogida es Caja Nueve.",
+          "relation": "supports_answer",
+          "covers": [
+            "p1"
+          ]
+        },
+        {
+          "memory_id": "cev6_080_18",
+          "quote": "La orden del 18 de octubre sustituyó Caja Dos por Caja Nueve para recoger Zavrion el día 20.",
+          "relation": "supports_answer",
+          "covers": [
+            "p1"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_080_01",
+        "cev6_080_03",
+        "cev6_080_18"
+      ],
+      "relations": {
+        "supports_answer": [
+          "cev6_080_01",
+          "cev6_080_03",
+          "cev6_080_18"
+        ],
+        "refutes_premise": [],
+        "pending_or_partial": [],
+        "unrelated": [
+          "cev6_080_02",
+          "cev6_080_04",
+          "cev6_080_05",
+          "cev6_080_06",
+          "cev6_080_07",
+          "cev6_080_08",
+          "cev6_080_09",
+          "cev6_080_10",
+          "cev6_080_11",
+          "cev6_080_12",
+          "cev6_080_13",
+          "cev6_080_14",
+          "cev6_080_15",
+          "cev6_080_16",
+          "cev6_080_17",
+          "cev6_080_19",
+          "cev6_080_20",
+          "cev6_080_21",
+          "cev6_080_22",
+          "cev6_080_23",
+          "cev6_080_24",
+          "cev6_080_25",
+          "cev6_080_26",
+          "cev6_080_27",
+          "cev6_080_28"
+        ]
+      },
+      "rationale": "Orden, etiqueta y sustitución explícita nombran Caja Nueve para la recogida del día 20. La propuesta de Caja Dos está superada.",
+      "ambiguity": []
+    },
+    {
+      "id": "cev6q_080_02",
+      "scope_id": "synthetic_conversation_evidence_080",
+      "query": "Antes de abrir la caja de Zavrion, ¿sobre qué hay que apoyarla?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "sobre qué hay que apoyarla"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_080_04",
+          "quote": "La instrucción de desembalaje de Zavrion pide apoyar la caja sobre los topes de corcho antes de abrirla.",
+          "relation": "supports_answer",
+          "covers": [
+            "p1"
+          ]
+        },
+        {
+          "memory_id": "cev6_080_05",
+          "quote": "La instrucción de desembalaje de Zavrion indica que solo se retirará la tapa cuando la caja esté apoyada sobre los topes de corcho.",
+          "relation": "supports_answer",
+          "covers": [
+            "p1"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_080_04",
+        "cev6_080_05"
+      ],
+      "relations": {
+        "supports_answer": [
+          "cev6_080_04",
+          "cev6_080_05"
+        ],
+        "refutes_premise": [],
+        "pending_or_partial": [],
+        "unrelated": [
+          "cev6_080_01",
+          "cev6_080_02",
+          "cev6_080_03",
+          "cev6_080_06",
+          "cev6_080_07",
+          "cev6_080_08",
+          "cev6_080_09",
+          "cev6_080_10",
+          "cev6_080_11",
+          "cev6_080_12",
+          "cev6_080_13",
+          "cev6_080_14",
+          "cev6_080_15",
+          "cev6_080_16",
+          "cev6_080_17",
+          "cev6_080_18",
+          "cev6_080_19",
+          "cev6_080_20",
+          "cev6_080_21",
+          "cev6_080_22",
+          "cev6_080_23",
+          "cev6_080_24",
+          "cev6_080_25",
+          "cev6_080_26",
+          "cev6_080_27",
+          "cev6_080_28"
+        ]
+      },
+      "rationale": "Ambas instrucciones exigen apoyar la caja sobre topes de corcho antes de retirar la tapa.",
+      "ambiguity": [
+        "El inventario de seis topes confirma existencias, pero no prescribe dónde apoyar la caja. La instrucción no enumera todos los posibles requisitos para desembalar."
+      ]
+    },
+    {
+      "id": "cev6q_080_03",
+      "scope_id": "synthetic_conversation_evidence_080",
+      "query": "¿En qué fecha se aplicó el recubrimiento reflectante del espejo Zavrion?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "presupposition",
+          "query_quote": "En qué fecha se aplicó el recubrimiento reflectante del espejo Zavrion"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_080_06",
+          "quote": "El informe del observatorio declara que Zavrion es un espejo sin recubrimiento reflectante aplicado todavía.",
+          "relation": "refutes_premise",
+          "covers": [
+            "p1"
+          ]
+        },
+        {
+          "memory_id": "cev6_080_07",
+          "quote": "La ficha de taller de Zavrion dice que su aluminizado está pendiente y aún no ha comenzado.",
+          "relation": "refutes_premise",
+          "covers": [
+            "p1"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_080_06",
+        "cev6_080_07"
+      ],
+      "relations": {
+        "supports_answer": [],
+        "refutes_premise": [
+          "cev6_080_06",
+          "cev6_080_07"
+        ],
+        "pending_or_partial": [],
+        "unrelated": [
+          "cev6_080_01",
+          "cev6_080_02",
+          "cev6_080_03",
+          "cev6_080_04",
+          "cev6_080_05",
+          "cev6_080_08",
+          "cev6_080_09",
+          "cev6_080_10",
+          "cev6_080_11",
+          "cev6_080_12",
+          "cev6_080_13",
+          "cev6_080_14",
+          "cev6_080_15",
+          "cev6_080_16",
+          "cev6_080_17",
+          "cev6_080_18",
+          "cev6_080_19",
+          "cev6_080_20",
+          "cev6_080_21",
+          "cev6_080_22",
+          "cev6_080_23",
+          "cev6_080_24",
+          "cev6_080_25",
+          "cev6_080_26",
+          "cev6_080_27",
+          "cev6_080_28"
+        ]
+      },
+      "rationale": "El espejo aún no lleva recubrimiento y el aluminizado no ha empezado; no existe fecha de aplicación consumada.",
+      "ambiguity": []
+    },
+    {
+      "id": "cev6q_080_04",
+      "scope_id": "synthetic_conversation_evidence_080",
+      "query": "¿Por qué puesto fronterizo internacional pasará el traslado de Zavrion?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "presupposition",
+          "query_quote": "Por qué puesto fronterizo internacional pasará el traslado de Zavrion"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_080_08",
+          "quote": "La hoja de aduanas de Zavrion aclara que el traslado ocurre dentro del mismo distrito ficticio y no cruza una frontera nacional.",
+          "relation": "refutes_premise",
+          "covers": [
+            "p1"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_080_08"
+      ],
+      "relations": {
+        "supports_answer": [],
+        "refutes_premise": [
+          "cev6_080_08"
+        ],
+        "pending_or_partial": [],
+        "unrelated": [
+          "cev6_080_01",
+          "cev6_080_02",
+          "cev6_080_03",
+          "cev6_080_04",
+          "cev6_080_05",
+          "cev6_080_06",
+          "cev6_080_07",
+          "cev6_080_09",
+          "cev6_080_10",
+          "cev6_080_11",
+          "cev6_080_12",
+          "cev6_080_13",
+          "cev6_080_14",
+          "cev6_080_15",
+          "cev6_080_16",
+          "cev6_080_17",
+          "cev6_080_18",
+          "cev6_080_19",
+          "cev6_080_20",
+          "cev6_080_21",
+          "cev6_080_22",
+          "cev6_080_23",
+          "cev6_080_24",
+          "cev6_080_25",
+          "cev6_080_26",
+          "cev6_080_27",
+          "cev6_080_28"
+        ]
+      },
+      "rationale": "El traslado ocurre dentro del mismo distrito y no cruza frontera nacional.",
+      "ambiguity": []
+    },
+    {
+      "id": "cev6q_080_05",
+      "scope_id": "synthetic_conversation_evidence_080",
+      "query": "Para la recogida de Zavrion, ¿quién irá de acompañante y cuál es su teléfono?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "quién irá de acompañante"
+        },
+        {
+          "id": "p2",
+          "kind": "requested_fact",
+          "query_quote": "cuál es su teléfono"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_080_09",
+          "quote": "El registro de reservas de Zavrion confirma que Orvila acompañará la recogida.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "p1"
+          ]
+        },
+        {
+          "memory_id": "cev6_080_10",
+          "quote": "La hoja de viaje de Zavrion no registra el teléfono de contacto de Orvila.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "p1",
+            "p2"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_080_09",
+        "cev6_080_10"
+      ],
+      "relations": {
+        "supports_answer": [],
+        "refutes_premise": [],
+        "pending_or_partial": [
+          "cev6_080_09",
+          "cev6_080_10"
+        ],
+        "unrelated": [
+          "cev6_080_01",
+          "cev6_080_02",
+          "cev6_080_03",
+          "cev6_080_04",
+          "cev6_080_05",
+          "cev6_080_06",
+          "cev6_080_07",
+          "cev6_080_08",
+          "cev6_080_11",
+          "cev6_080_12",
+          "cev6_080_13",
+          "cev6_080_14",
+          "cev6_080_15",
+          "cev6_080_16",
+          "cev6_080_17",
+          "cev6_080_18",
+          "cev6_080_19",
+          "cev6_080_20",
+          "cev6_080_21",
+          "cev6_080_22",
+          "cev6_080_23",
+          "cev6_080_24",
+          "cev6_080_25",
+          "cev6_080_26",
+          "cev6_080_27",
+          "cev6_080_28"
+        ]
+      },
+      "rationale": "Orvila acompañará la recogida; la hoja identifica a Orvila pero no registra su teléfono.",
+      "ambiguity": []
+    },
+    {
+      "id": "cev6q_080_06",
+      "scope_id": "synthetic_conversation_evidence_080",
+      "query": "¿En qué cara de la caja de Zavrion está la grieta y cuánto costará repararla?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "En qué cara de la caja de Zavrion está la grieta"
+        },
+        {
+          "id": "p2",
+          "kind": "requested_fact",
+          "query_quote": "cuánto costará repararla"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_080_11",
+          "quote": "El acta de inspección de la caja de Zavrion registra una grieta superficial en la cara oeste.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "p1"
+          ]
+        },
+        {
+          "memory_id": "cev6_080_12",
+          "quote": "La orden de reparación de la caja de Zavrion sigue sin presupuesto aprobado.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "p2"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_080_11",
+        "cev6_080_12"
+      ],
+      "relations": {
+        "supports_answer": [],
+        "refutes_premise": [],
+        "pending_or_partial": [
+          "cev6_080_11",
+          "cev6_080_12"
+        ],
+        "unrelated": [
+          "cev6_080_01",
+          "cev6_080_02",
+          "cev6_080_03",
+          "cev6_080_04",
+          "cev6_080_05",
+          "cev6_080_06",
+          "cev6_080_07",
+          "cev6_080_08",
+          "cev6_080_09",
+          "cev6_080_10",
+          "cev6_080_13",
+          "cev6_080_14",
+          "cev6_080_15",
+          "cev6_080_16",
+          "cev6_080_17",
+          "cev6_080_18",
+          "cev6_080_19",
+          "cev6_080_20",
+          "cev6_080_21",
+          "cev6_080_22",
+          "cev6_080_23",
+          "cev6_080_24",
+          "cev6_080_25",
+          "cev6_080_26",
+          "cev6_080_27",
+          "cev6_080_28"
+        ]
+      },
+      "rationale": "La grieta está en la cara oeste y la reparación sigue sin presupuesto aprobado. La descripción superficial de otra nota no identifica la cara ni el precio.",
+      "ambiguity": []
+    },
+    {
+      "id": "cev6q_080_07",
+      "scope_id": "synthetic_conversation_evidence_080",
+      "query": "¿Cuál es la distancia focal del espejo Zavrion?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "Cuál es la distancia focal del espejo Zavrion"
+        }
+      ],
+      "evidence": [],
+      "expected_ids": [],
+      "relations": {
+        "supports_answer": [],
+        "refutes_premise": [],
+        "pending_or_partial": [],
+        "unrelated": [
+          "cev6_080_01",
+          "cev6_080_02",
+          "cev6_080_03",
+          "cev6_080_04",
+          "cev6_080_05",
+          "cev6_080_06",
+          "cev6_080_07",
+          "cev6_080_08",
+          "cev6_080_09",
+          "cev6_080_10",
+          "cev6_080_11",
+          "cev6_080_12",
+          "cev6_080_13",
+          "cev6_080_14",
+          "cev6_080_15",
+          "cev6_080_16",
+          "cev6_080_17",
+          "cev6_080_18",
+          "cev6_080_19",
+          "cev6_080_20",
+          "cev6_080_21",
+          "cev6_080_22",
+          "cev6_080_23",
+          "cev6_080_24",
+          "cev6_080_25",
+          "cev6_080_26",
+          "cev6_080_27",
+          "cev6_080_28"
+        ]
+      },
+      "rationale": "Ninguno de los 28 recuerdos aporta distancia focal; tener un espejo astronómico no determina ese parámetro.",
+      "ambiguity": []
+    },
+    {
+      "id": "cev6q_080_08",
+      "scope_id": "synthetic_conversation_evidence_080",
+      "query": "¿En qué año se fundó el observatorio que encargó Zavrion?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "En qué año se fundó el observatorio que encargó Zavrion"
+        }
+      ],
+      "evidence": [],
+      "expected_ids": [],
+      "relations": {
+        "supports_answer": [],
+        "refutes_premise": [],
+        "pending_or_partial": [],
+        "unrelated": [
+          "cev6_080_01",
+          "cev6_080_02",
+          "cev6_080_03",
+          "cev6_080_04",
+          "cev6_080_05",
+          "cev6_080_06",
+          "cev6_080_07",
+          "cev6_080_08",
+          "cev6_080_09",
+          "cev6_080_10",
+          "cev6_080_11",
+          "cev6_080_12",
+          "cev6_080_13",
+          "cev6_080_14",
+          "cev6_080_15",
+          "cev6_080_16",
+          "cev6_080_17",
+          "cev6_080_18",
+          "cev6_080_19",
+          "cev6_080_20",
+          "cev6_080_21",
+          "cev6_080_22",
+          "cev6_080_23",
+          "cev6_080_24",
+          "cev6_080_25",
+          "cev6_080_26",
+          "cev6_080_27",
+          "cev6_080_28"
+        ]
+      },
+      "rationale": "El observatorio aparece en información de recubrimiento, pero no consta año de fundación en todo el ámbito.",
+      "ambiguity": []
+    },
+    {
+      "id": "cev6q_081_01",
+      "scope_id": "synthetic_conversation_evidence_081",
+      "query": "¿Quién tejió Rutas del Estuario para la muestra Yelvria?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "Quién tejió Rutas del Estuario para la muestra Yelvria"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_081_01",
+          "quote": "El catálogo de la muestra de mapas tejidos ficticia Yelvria atribuye la pieza Rutas del Estuario a la tejedora Dovren.",
+          "relation": "supports_answer",
+          "covers": [
+            "p1"
+          ]
+        },
+        {
+          "memory_id": "cev6_081_02",
+          "quote": "La cartela de Rutas del Estuario de Yelvria también nombra a Dovren como autora.",
+          "relation": "supports_answer",
+          "covers": [
+            "p1"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_081_01",
+        "cev6_081_02"
+      ],
+      "relations": {
+        "supports_answer": [
+          "cev6_081_01",
+          "cev6_081_02"
+        ],
+        "refutes_premise": [],
+        "pending_or_partial": [],
+        "unrelated": [
+          "cev6_081_03",
+          "cev6_081_04",
+          "cev6_081_05",
+          "cev6_081_06",
+          "cev6_081_07",
+          "cev6_081_08",
+          "cev6_081_09",
+          "cev6_081_10",
+          "cev6_081_11",
+          "cev6_081_12",
+          "cev6_081_13",
+          "cev6_081_14",
+          "cev6_081_15",
+          "cev6_081_16",
+          "cev6_081_17",
+          "cev6_081_18",
+          "cev6_081_19",
+          "cev6_081_20",
+          "cev6_081_21",
+          "cev6_081_22",
+          "cev6_081_23",
+          "cev6_081_24",
+          "cev6_081_25",
+          "cev6_081_26",
+          "cev6_081_27",
+          "cev6_081_28"
+        ]
+      },
+      "rationale": "Catálogo y cartela atribuyen la pieza a Dovren.",
+      "ambiguity": [
+        "Entregar una muestra de hilo no prueba por sí solo quién tejió la obra. La atribución de autoría como respuesta a quién tejió es la lectura ordinaria del catálogo, que la llama tejedora."
+      ]
+    },
+    {
+      "id": "cev6q_081_02",
+      "scope_id": "synthetic_conversation_evidence_081",
+      "query": "¿De qué hilo está hecha Rutas del Estuario y de qué madera es su bastidor?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "De qué hilo está hecha Rutas del Estuario"
+        },
+        {
+          "id": "p2",
+          "kind": "requested_fact",
+          "query_quote": "de qué madera es su bastidor"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_081_03",
+          "quote": "La ficha de montaje de Yelvria indica que Rutas del Estuario se cuelga con bastidor de abedul.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "p2"
+          ]
+        },
+        {
+          "memory_id": "cev6_081_04",
+          "quote": "El catálogo de Yelvria describe el material de Rutas del Estuario como hilo de lino.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "p1"
+          ]
+        },
+        {
+          "memory_id": "cev6_081_22",
+          "quote": "El bastidor de abedul de Rutas del Estuario tiene un protector de esquinas.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "p2"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_081_03",
+        "cev6_081_04",
+        "cev6_081_22"
+      ],
+      "relations": {
+        "supports_answer": [],
+        "refutes_premise": [],
+        "pending_or_partial": [
+          "cev6_081_03",
+          "cev6_081_04",
+          "cev6_081_22"
+        ],
+        "unrelated": [
+          "cev6_081_01",
+          "cev6_081_02",
+          "cev6_081_05",
+          "cev6_081_06",
+          "cev6_081_07",
+          "cev6_081_08",
+          "cev6_081_09",
+          "cev6_081_10",
+          "cev6_081_11",
+          "cev6_081_12",
+          "cev6_081_13",
+          "cev6_081_14",
+          "cev6_081_15",
+          "cev6_081_16",
+          "cev6_081_17",
+          "cev6_081_18",
+          "cev6_081_19",
+          "cev6_081_20",
+          "cev6_081_21",
+          "cev6_081_23",
+          "cev6_081_24",
+          "cev6_081_25",
+          "cev6_081_26",
+          "cev6_081_27",
+          "cev6_081_28"
+        ]
+      },
+      "rationale": "La ficha y el protector identifican el bastidor como abedul; el catálogo identifica hilo de lino.",
+      "ambiguity": [
+        "081_21 dice que Dovren entregó hilo de lino suelto, pero no afirma que sea el material empleado en esta pieza."
+      ]
+    },
+    {
+      "id": "cev6q_081_03",
+      "scope_id": "synthetic_conversation_evidence_081",
+      "query": "¿Qué tinta se usó para imprimir Rutas del Estuario de Yelvria?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "presupposition",
+          "query_quote": "Qué tinta se usó para imprimir Rutas del Estuario de Yelvria"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_081_05",
+          "quote": "El acta de ingreso de Yelvria especifica que Rutas del Estuario es una obra original única y no una reproducción impresa.",
+          "relation": "refutes_premise",
+          "covers": [
+            "p1"
+          ]
+        },
+        {
+          "memory_id": "cev6_081_06",
+          "quote": "La ficha de conservación de Yelvria aclara que Rutas del Estuario no lleva tinta de impresión.",
+          "relation": "refutes_premise",
+          "covers": [
+            "p1"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_081_05",
+        "cev6_081_06"
+      ],
+      "relations": {
+        "supports_answer": [],
+        "refutes_premise": [
+          "cev6_081_05",
+          "cev6_081_06"
+        ],
+        "pending_or_partial": [],
+        "unrelated": [
+          "cev6_081_01",
+          "cev6_081_02",
+          "cev6_081_03",
+          "cev6_081_04",
+          "cev6_081_07",
+          "cev6_081_08",
+          "cev6_081_09",
+          "cev6_081_10",
+          "cev6_081_11",
+          "cev6_081_12",
+          "cev6_081_13",
+          "cev6_081_14",
+          "cev6_081_15",
+          "cev6_081_16",
+          "cev6_081_17",
+          "cev6_081_18",
+          "cev6_081_19",
+          "cev6_081_20",
+          "cev6_081_21",
+          "cev6_081_22",
+          "cev6_081_23",
+          "cev6_081_24",
+          "cev6_081_25",
+          "cev6_081_26",
+          "cev6_081_27",
+          "cev6_081_28"
+        ]
+      },
+      "rationale": "Se identifica una obra única y no reproducción impresa; la conservación niega expresamente tinta de impresión.",
+      "ambiguity": [
+        "Ser una obra original única por sí solo no excluiría todas las técnicas de impresión artística; 081_06 es la corrección concluyente de la tinta y 081_05 aporta la distinción explícita respecto de una reproducción impresa."
+      ]
+    },
+    {
+      "id": "cev6q_081_04",
+      "scope_id": "synthetic_conversation_evidence_081",
+      "query": "¿A qué hora se hará la visita guiada de Yelvria el 24 de octubre?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "presupposition",
+          "query_quote": "A qué hora se hará la visita guiada de Yelvria el 24 de octubre"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_081_07",
+          "quote": "El comunicado de Yelvria anuncia que se canceló la visita guiada del 24 de octubre y que no se realizará ese día.",
+          "relation": "refutes_premise",
+          "covers": [
+            "p1"
+          ]
+        },
+        {
+          "memory_id": "cev6_081_08",
+          "quote": "La agenda corregida de Yelvria marca cancelada la visita guiada del 24 de octubre.",
+          "relation": "refutes_premise",
+          "covers": [
+            "p1"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_081_07",
+        "cev6_081_08"
+      ],
+      "relations": {
+        "supports_answer": [],
+        "refutes_premise": [
+          "cev6_081_07",
+          "cev6_081_08"
+        ],
+        "pending_or_partial": [],
+        "unrelated": [
+          "cev6_081_01",
+          "cev6_081_02",
+          "cev6_081_03",
+          "cev6_081_04",
+          "cev6_081_05",
+          "cev6_081_06",
+          "cev6_081_09",
+          "cev6_081_10",
+          "cev6_081_11",
+          "cev6_081_12",
+          "cev6_081_13",
+          "cev6_081_14",
+          "cev6_081_15",
+          "cev6_081_16",
+          "cev6_081_17",
+          "cev6_081_18",
+          "cev6_081_19",
+          "cev6_081_20",
+          "cev6_081_21",
+          "cev6_081_22",
+          "cev6_081_23",
+          "cev6_081_24",
+          "cev6_081_25",
+          "cev6_081_26",
+          "cev6_081_27",
+          "cev6_081_28"
+        ]
+      },
+      "rationale": "Comunicado y agenda corregida cancelan la visita de ese día; la versión preliminar no aporta una hora vigente.",
+      "ambiguity": []
+    },
+    {
+      "id": "cev6q_081_05",
+      "scope_id": "synthetic_conversation_evidence_081",
+      "query": "¿Qué luminaria ilumina Rutas del Estuario y cuántos lux le llegan?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "Qué luminaria ilumina Rutas del Estuario"
+        },
+        {
+          "id": "p2",
+          "kind": "requested_fact",
+          "query_quote": "cuántos lux le llegan"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_081_09",
+          "quote": "El plan de iluminación de Yelvria asigna a Rutas del Estuario la luminaria L-8.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "p1"
+          ]
+        },
+        {
+          "memory_id": "cev6_081_10",
+          "quote": "El plan de iluminación de Yelvria no incluye una lectura de iluminancia sobre Rutas del Estuario.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "p2"
+          ]
+        },
+        {
+          "memory_id": "cev6_081_11",
+          "quote": "La hoja de sala de Yelvria confirma la luminaria L-8 sobre Rutas del Estuario.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "p1"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_081_09",
+        "cev6_081_10",
+        "cev6_081_11"
+      ],
+      "relations": {
+        "supports_answer": [],
+        "refutes_premise": [],
+        "pending_or_partial": [
+          "cev6_081_09",
+          "cev6_081_10",
+          "cev6_081_11"
+        ],
+        "unrelated": [
+          "cev6_081_01",
+          "cev6_081_02",
+          "cev6_081_03",
+          "cev6_081_04",
+          "cev6_081_05",
+          "cev6_081_06",
+          "cev6_081_07",
+          "cev6_081_08",
+          "cev6_081_12",
+          "cev6_081_13",
+          "cev6_081_14",
+          "cev6_081_15",
+          "cev6_081_16",
+          "cev6_081_17",
+          "cev6_081_18",
+          "cev6_081_19",
+          "cev6_081_20",
+          "cev6_081_21",
+          "cev6_081_22",
+          "cev6_081_23",
+          "cev6_081_24",
+          "cev6_081_25",
+          "cev6_081_26",
+          "cev6_081_27",
+          "cev6_081_28"
+        ]
+      },
+      "rationale": "Plan y hoja de sala identifican L-8; no existe lectura de iluminancia en el plan.",
+      "ambiguity": []
+    },
+    {
+      "id": "cev6q_081_06",
+      "scope_id": "synthetic_conversation_evidence_081",
+      "query": "¿Qué día colocaron el bastidor de Rutas del Estuario y cuántas personas lo hicieron?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "Qué día colocaron el bastidor de Rutas del Estuario"
+        },
+        {
+          "id": "p2",
+          "kind": "requested_fact",
+          "query_quote": "cuántas personas lo hicieron"
+        }
+      ],
+      "evidence": [
+        {
+          "memory_id": "cev6_081_12",
+          "quote": "El registro de montaje de Yelvria anota que el bastidor de Rutas del Estuario se colocó el 16 de octubre.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "p1"
+          ]
+        },
+        {
+          "memory_id": "cev6_081_13",
+          "quote": "La hoja de mano de obra de Yelvria no consigna cuántas personas colocaron el bastidor.",
+          "relation": "pending_or_partial",
+          "covers": [
+            "p2"
+          ]
+        }
+      ],
+      "expected_ids": [
+        "cev6_081_12",
+        "cev6_081_13"
+      ],
+      "relations": {
+        "supports_answer": [],
+        "refutes_premise": [],
+        "pending_or_partial": [
+          "cev6_081_12",
+          "cev6_081_13"
+        ],
+        "unrelated": [
+          "cev6_081_01",
+          "cev6_081_02",
+          "cev6_081_03",
+          "cev6_081_04",
+          "cev6_081_05",
+          "cev6_081_06",
+          "cev6_081_07",
+          "cev6_081_08",
+          "cev6_081_09",
+          "cev6_081_10",
+          "cev6_081_11",
+          "cev6_081_14",
+          "cev6_081_15",
+          "cev6_081_16",
+          "cev6_081_17",
+          "cev6_081_18",
+          "cev6_081_19",
+          "cev6_081_20",
+          "cev6_081_21",
+          "cev6_081_22",
+          "cev6_081_23",
+          "cev6_081_24",
+          "cev6_081_25",
+          "cev6_081_26",
+          "cev6_081_27",
+          "cev6_081_28"
+        ]
+      },
+      "rationale": "El montaje fue el 16 de octubre; no consta número de personas en la hoja de mano de obra.",
+      "ambiguity": []
+    },
+    {
+      "id": "cev6q_081_07",
+      "scope_id": "synthetic_conversation_evidence_081",
+      "query": "¿Cuánto cobró Dovren por tejer Rutas del Estuario?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "Cuánto cobró Dovren por tejer Rutas del Estuario"
+        }
+      ],
+      "evidence": [],
+      "expected_ids": [],
+      "relations": {
+        "supports_answer": [],
+        "refutes_premise": [],
+        "pending_or_partial": [],
+        "unrelated": [
+          "cev6_081_01",
+          "cev6_081_02",
+          "cev6_081_03",
+          "cev6_081_04",
+          "cev6_081_05",
+          "cev6_081_06",
+          "cev6_081_07",
+          "cev6_081_08",
+          "cev6_081_09",
+          "cev6_081_10",
+          "cev6_081_11",
+          "cev6_081_12",
+          "cev6_081_13",
+          "cev6_081_14",
+          "cev6_081_15",
+          "cev6_081_16",
+          "cev6_081_17",
+          "cev6_081_18",
+          "cev6_081_19",
+          "cev6_081_20",
+          "cev6_081_21",
+          "cev6_081_22",
+          "cev6_081_23",
+          "cev6_081_24",
+          "cev6_081_25",
+          "cev6_081_26",
+          "cev6_081_27",
+          "cev6_081_28"
+        ]
+      },
+      "rationale": "La autoría y el material no aportan honorarios ni niegan que se cobrara. No hay importe en el ámbito completo.",
+      "ambiguity": []
+    },
+    {
+      "id": "cev6q_081_08",
+      "scope_id": "synthetic_conversation_evidence_081",
+      "query": "¿Cuál es el código postal de la sala de Yelvria?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "Cuál es el código postal de la sala de Yelvria"
+        }
+      ],
+      "evidence": [],
+      "expected_ids": [],
+      "relations": {
+        "supports_answer": [],
+        "refutes_premise": [],
+        "pending_or_partial": [],
+        "unrelated": [
+          "cev6_081_01",
+          "cev6_081_02",
+          "cev6_081_03",
+          "cev6_081_04",
+          "cev6_081_05",
+          "cev6_081_06",
+          "cev6_081_07",
+          "cev6_081_08",
+          "cev6_081_09",
+          "cev6_081_10",
+          "cev6_081_11",
+          "cev6_081_12",
+          "cev6_081_13",
+          "cev6_081_14",
+          "cev6_081_15",
+          "cev6_081_16",
+          "cev6_081_17",
+          "cev6_081_18",
+          "cev6_081_19",
+          "cev6_081_20",
+          "cev6_081_21",
+          "cev6_081_22",
+          "cev6_081_23",
+          "cev6_081_24",
+          "cev6_081_25",
+          "cev6_081_26",
+          "cev6_081_27",
+          "cev6_081_28"
+        ]
+      },
+      "rationale": "El plano y los datos de montaje no aportan código postal; ninguno de los recuerdos lo especifica.",
+      "ambiguity": []
+    }
+  ],
+  "limitations": [
+    "Todo el contenido evaluado es sintético; no acredita desempeño con conversaciones reales ni hechos externos.",
+    "No se leyeron author-cases.jsonl, author-note.json, modelos, prompts, código, runtime, otros bancos ni resultados; no se ejecutaron modelos.",
+    "No se ha observado búsqueda ni selección: expected_ids expresa el juicio independiente de pertinencia, no el resultado de un sistema.",
+    "Las fuentes y resúmenes son textualmente idénticos; no se evalúa fidelidad de compresión.",
+    "La etiqueta de un recuerdo puede depender de si se exige prueba de ejecución o basta asignación previa; los casos concretos están señalados en ambiguity.",
+    "La pregunta de cantidad de celdas braille admite respuesta cero; no es inequívocamente una premisa falsa.",
+    "Los estados de dato pendiente se conservan como contexto parcial; no demuestran que el dato no exista fuera de los registros suministrados.",
+    "unrelated en relations significa que ese recuerdo no aporta la respuesta, corrección o parte concreta solicitada por esa consulta; se revisaron todos los IDs del ámbito, no solo coincidencias de palabras."
+  ]
+}

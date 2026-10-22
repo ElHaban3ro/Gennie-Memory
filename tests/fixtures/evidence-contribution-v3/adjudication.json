@@ -1,0 +1,21 @@
+{
+  "version": "contribution-v3-pre-network-adjudication",
+  "provider_calls": 0,
+  "initial_pair_role_disagreements": 0,
+  "initial_ambiguities": [
+    "cv3_09_00",
+    "cv3_14_00"
+  ],
+  "resolution": {
+    "cv3_09_00": "Un ítem borrado no declara regla de toda una clase; none se conserva. Crítico aclaró límite sin etiquetas.",
+    "cv3_14_00": "Capacidad vs uso aclarado en fuente antes de red: usa ambos modos. A se conserva, sin afirmar ejecución de impresión."
+  },
+  "source_changed_before_network": [
+    "cv3_14_00"
+  ],
+  "final_role_disagreements": 0,
+  "final_ambiguities": 0,
+  "same_model_family_reviewers": true,
+  "human_review": false,
+  "fresh_validation": false
+}

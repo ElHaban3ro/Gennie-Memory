@@ -1,0 +1,66 @@
+{
+  "version": "admission_request_context_v1_red_fixtures",
+  "contract": "candidate-v2",
+  "entries": [
+    {
+      "path": "tests/fixtures/documentary-v3-admission-request-v1/closed-described.json",
+      "sha256": "6e455f6476638f60d3511f41dd4fd4b3bf758dc18511928ee845f2e7ac02e8cf",
+      "new_route_expected": true,
+      "kind": "synthetic structural control; not independent documentary fidelity"
+    },
+    {
+      "path": "tests/fixtures/documentary-v3-admission-request-v1/negative.json",
+      "sha256": "035858608e738247c848f43ea00ff80a548fbb0bbf9e7ca684b88cf0e44fc048",
+      "new_route_expected": true,
+      "kind": "synthetic structural control; not independent documentary fidelity"
+    },
+    {
+      "path": "tests/fixtures/documentary-v3-admission-request-v1/profile-absent.json",
+      "sha256": "35b5f95bf7981b2d665d348599576b42d54a52a4ce1da77f40b95de2e7b7d560",
+      "new_route_expected": false,
+      "kind": "synthetic structural control; not independent documentary fidelity"
+    },
+    {
+      "path": "tests/fixtures/documentary-v3-admission-request-v1/link-absent.json",
+      "sha256": "3eacefe6283cc9b7874a7b753cb34c369ea46a1b68626a0805c8201e83b9642c",
+      "new_route_expected": false,
+      "kind": "synthetic structural control; not independent documentary fidelity"
+    },
+    {
+      "path": "tests/fixtures/documentary-v3-admission-request-v1/premise-negative.json",
+      "sha256": "729c7f6070255f0470ff5cd68e3a46ba30e29fc1c0e515c6b1db2a2d16115dca",
+      "new_route_expected": false,
+      "kind": "synthetic structural control; not independent documentary fidelity"
+    },
+    {
+      "path": "tests/fixtures/documentary-v3-admission-request-v1/premise-description.json",
+      "sha256": "b200ec7670c7fad91343ab662a779a8584efb49ab3854682d16fd33ec04567c4",
+      "new_route_expected": false,
+      "kind": "synthetic structural control; not independent documentary fidelity"
+    },
+    {
+      "path": "tests/fixtures/documentary-v3-admission-request-v1/no-premise-edge.json",
+      "sha256": "aca78127488b2be851419fb9a445699a534321c9ef036cfcc2be87879c007c0d",
+      "new_route_expected": false,
+      "kind": "synthetic structural control; not independent documentary fidelity"
+    },
+    {
+      "path": "tests/fixtures/documentary-v3-admission-request-v1/source-positive.json",
+      "sha256": "25f9d4fd8b44e35128484b7e57bf4aaf51cc7be31d0dc6e43ce60974f08c2a75",
+      "new_route_expected": false,
+      "kind": "synthetic structural control; not independent documentary fidelity"
+    },
+    {
+      "path": "tests/fixtures/documentary-v3-admission-request-v1/descriptor-extra.json",
+      "sha256": "58d79a6c8ad8921eeecdd7e26395908688b6985e4707eacb753bb472a75ac512",
+      "new_route_expected": false,
+      "kind": "synthetic structural control; not independent documentary fidelity"
+    },
+    {
+      "path": "tests/fixtures/documentary-v3-admission-request-v1/domain-missing.json",
+      "sha256": "00a3791a90cacdd07e3c78ce6387ef079b7c05f6db144dcbe0326e4290c34610",
+      "new_route_expected": false,
+      "kind": "synthetic structural control; not independent documentary fidelity"
+    }
+  ]
+}

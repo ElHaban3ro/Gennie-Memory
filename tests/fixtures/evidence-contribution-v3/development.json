@@ -1,0 +1,856 @@
+{
+  "version": "evidence-contribution-v3-development-reviewed",
+  "synthetic": true,
+  "fresh_validation": false,
+  "author": "primary_agent",
+  "cases": [
+    {
+      "id": "cv3q_01",
+      "family": "requirement_vs_unknown",
+      "question": "¿Cuál es el teléfono de contacto del pedido O7 de Darsa?",
+      "memories": [
+        {
+          "id": "cv3_01_00",
+          "revision": 1,
+          "text": "El formulario del pedido O7 de Darsa no exige teléfono de contacto."
+        },
+        {
+          "id": "cv3_01_01",
+          "revision": 1,
+          "text": "El teléfono de contacto del pedido O7 de Darsa no consta en el registro."
+        },
+        {
+          "id": "cv3_01_02",
+          "revision": 1,
+          "text": "El teléfono del pedido O8 de Darsa es 555-0108."
+        },
+        {
+          "id": "cv3_01_03",
+          "revision": 1,
+          "text": "El pedido O7 de Darsa se recoge en la ventanilla este."
+        }
+      ],
+      "labels": [
+        {
+          "id": "cv3_01_00",
+          "role": "none",
+          "source_quote": "no exige teléfono",
+          "permitted_contribution": "Un requisito ausente no prueba ausencia del dato."
+        },
+        {
+          "id": "cv3_01_01",
+          "role": "A",
+          "source_quote": "no consta en el registro",
+          "permitted_contribution": "Estado explícito del dato solicitado, sin inventar número."
+        },
+        {
+          "id": "cv3_01_02",
+          "role": "none",
+          "source_quote": "pedido O8",
+          "permitted_contribution": "Otro pedido."
+        },
+        {
+          "id": "cv3_01_03",
+          "role": "none",
+          "source_quote": "ventanilla este",
+          "permitted_contribution": "Otro atributo."
+        }
+      ]
+    },
+    {
+      "id": "cv3q_02",
+      "family": "compatible_requirement_vs_exclusion",
+      "question": "¿Qué tutor debe acompañar a Ina para matricularse en el curso Faro?",
+      "memories": [
+        {
+          "id": "cv3_02_00",
+          "revision": 1,
+          "text": "Para matricularse en Faro, Ina debe presentar la credencial de alumna."
+        },
+        {
+          "id": "cv3_02_01",
+          "revision": 1,
+          "text": "En Faro se eliminó la obligación de tutor para Ina; basta su credencial de alumna."
+        },
+        {
+          "id": "cv3_02_02",
+          "revision": 1,
+          "text": "El curso Muelle exige tutor para matricularse."
+        },
+        {
+          "id": "cv3_02_03",
+          "revision": 1,
+          "text": "Las matrículas de Faro se entregan en la oficina de la esquina."
+        }
+      ],
+      "labels": [
+        {
+          "id": "cv3_02_00",
+          "role": "none",
+          "source_quote": "presentar la credencial",
+          "permitted_contribution": "Compatible con exigir además tutor."
+        },
+        {
+          "id": "cv3_02_01",
+          "role": "B",
+          "source_quote": "se eliminó la obligación de tutor para Ina",
+          "permitted_contribution": "Niega la necesidad de tutor."
+        },
+        {
+          "id": "cv3_02_02",
+          "role": "none",
+          "source_quote": "curso Muelle",
+          "permitted_contribution": "Otro curso."
+        },
+        {
+          "id": "cv3_02_03",
+          "role": "none",
+          "source_quote": "oficina de la esquina",
+          "permitted_contribution": "No determina el tutor."
+        }
+      ]
+    },
+    {
+      "id": "cv3q_03",
+      "family": "explicit_contrast_vs_other_subject",
+      "question": "¿Qué tiempo de exposición usa la cámara P2 de Ópalo con el perfil Eclipse?",
+      "memories": [
+        {
+          "id": "cv3_03_00",
+          "revision": 1,
+          "text": "En Ópalo, P2 usa Alba con dos segundos de exposición; P7 usa Eclipse con cuatro segundos."
+        },
+        {
+          "id": "cv3_03_01",
+          "revision": 1,
+          "text": "P7 de Ópalo usa Eclipse con cuatro segundos de exposición."
+        },
+        {
+          "id": "cv3_03_02",
+          "revision": 1,
+          "text": "La cámara P2 de Ópalo apunta al norte."
+        },
+        {
+          "id": "cv3_03_03",
+          "revision": 1,
+          "text": "El objetivo de P2 de Ópalo se guarda en una funda gris."
+        }
+      ],
+      "labels": [
+        {
+          "id": "cv3_03_00",
+          "role": "C",
+          "source_quote": "P2 usa Alba con dos segundos de exposición; P7 usa Eclipse con cuatro segundos",
+          "permitted_contribution": "Contraste de asignaciones, sin negar que P2 pueda usar otros perfiles."
+        },
+        {
+          "id": "cv3_03_01",
+          "role": "none",
+          "source_quote": "P7 de Ópalo",
+          "permitted_contribution": "Otro sujeto aislado no corrige P2."
+        },
+        {
+          "id": "cv3_03_02",
+          "role": "none",
+          "source_quote": "apunta al norte",
+          "permitted_contribution": "Otro atributo."
+        },
+        {
+          "id": "cv3_03_03",
+          "role": "none",
+          "source_quote": "funda gris",
+          "permitted_contribution": "Sin tiempo de exposición."
+        }
+      ]
+    },
+    {
+      "id": "cv3q_04",
+      "family": "bound_vs_preparation",
+      "question": "¿Cuál es la autonomía máxima del reproductor Cobre durante la ruta Nacar?",
+      "memories": [
+        {
+          "id": "cv3_04_00",
+          "revision": 1,
+          "text": "Cobre funcionó ochenta minutos en Nacar sin apagarse; no se midió su duración hasta apagarse."
+        },
+        {
+          "id": "cv3_04_01",
+          "revision": 1,
+          "text": "Se reservó una batería nueva para Cobre en Nacar."
+        },
+        {
+          "id": "cv3_04_02",
+          "revision": 1,
+          "text": "El reproductor Zinc se apagó tras cien minutos en Nacar."
+        },
+        {
+          "id": "cv3_04_03",
+          "revision": 1,
+          "text": "Cobre tiene una correa azul para la ruta Nacar."
+        }
+      ],
+      "labels": [
+        {
+          "id": "cv3_04_00",
+          "role": "A",
+          "source_quote": "ochenta minutos en Nacar sin apagarse",
+          "permitted_contribution": "Límite inferior medido y máximo desconocido."
+        },
+        {
+          "id": "cv3_04_01",
+          "role": "none",
+          "source_quote": "Se reservó una batería",
+          "permitted_contribution": "No mide autonomía."
+        },
+        {
+          "id": "cv3_04_02",
+          "role": "none",
+          "source_quote": "reproductor Zinc",
+          "permitted_contribution": "Otro aparato."
+        },
+        {
+          "id": "cv3_04_03",
+          "role": "none",
+          "source_quote": "correa azul",
+          "permitted_contribution": "Otro atributo."
+        }
+      ]
+    },
+    {
+      "id": "cv3q_05",
+      "family": "partial_source_vs_accessory",
+      "question": "¿De qué tubería de la red procede el agua de riego del huerto Nardo?",
+      "memories": [
+        {
+          "id": "cv3_05_00",
+          "revision": 1,
+          "text": "El depósito de lluvia V que alimenta Nardo tiene una tapa azul."
+        },
+        {
+          "id": "cv3_05_01",
+          "revision": 1,
+          "text": "El depósito V tiene una tapa azul."
+        },
+        {
+          "id": "cv3_05_02",
+          "revision": 1,
+          "text": "Nardo se riega a las seis de la mañana."
+        },
+        {
+          "id": "cv3_05_03",
+          "revision": 1,
+          "text": "El huerto Hinojo recibe agua de la tubería R9."
+        }
+      ],
+      "labels": [
+        {
+          "id": "cv3_05_00",
+          "role": "A",
+          "source_quote": "depósito de lluvia V que alimenta Nardo",
+          "permitted_contribution": "Identifica alimentación intermedia; no excluye mezcla ni red."
+        },
+        {
+          "id": "cv3_05_01",
+          "role": "none",
+          "source_quote": "tapa azul",
+          "permitted_contribution": "No vincula V con Nardo ni una fuente de agua."
+        },
+        {
+          "id": "cv3_05_02",
+          "role": "none",
+          "source_quote": "seis de la mañana",
+          "permitted_contribution": "Otro atributo."
+        },
+        {
+          "id": "cv3_05_03",
+          "role": "none",
+          "source_quote": "huerto Hinojo",
+          "permitted_contribution": "Otro huerto."
+        }
+      ]
+    },
+    {
+      "id": "cv3q_06",
+      "family": "exclusive_source",
+      "question": "¿De qué tubería de la red procede el agua de riego del huerto Malva?",
+      "memories": [
+        {
+          "id": "cv3_06_00",
+          "revision": 1,
+          "text": "Malva no usa agua de la red: se riega exclusivamente con lluvia del depósito W."
+        },
+        {
+          "id": "cv3_06_01",
+          "revision": 1,
+          "text": "El depósito W de Malva tiene una tapa negra."
+        },
+        {
+          "id": "cv3_06_02",
+          "revision": 1,
+          "text": "Malva recibe ocho litros cada tarde."
+        },
+        {
+          "id": "cv3_06_03",
+          "revision": 1,
+          "text": "La manguera del huerto Hinojo está en el cobertizo."
+        }
+      ],
+      "labels": [
+        {
+          "id": "cv3_06_00",
+          "role": "B",
+          "source_quote": "Malva no usa agua de la red",
+          "permitted_contribution": "Negación y exclusividad explícitas."
+        },
+        {
+          "id": "cv3_06_01",
+          "role": "none",
+          "source_quote": "tapa negra",
+          "permitted_contribution": "La tapa no informa procedencia."
+        },
+        {
+          "id": "cv3_06_02",
+          "role": "none",
+          "source_quote": "ocho litros cada tarde",
+          "permitted_contribution": "Cantidad, no fuente."
+        },
+        {
+          "id": "cv3_06_03",
+          "role": "none",
+          "source_quote": "huerto Hinojo",
+          "permitted_contribution": "Otro caso."
+        }
+      ]
+    },
+    {
+      "id": "cv3q_07",
+      "family": "mixed_source",
+      "question": "¿De qué tubería de la red procede el agua de riego del huerto Azucena?",
+      "memories": [
+        {
+          "id": "cv3_07_00",
+          "revision": 1,
+          "text": "El depósito J que alimenta Azucena mezcla lluvia con agua de la red procedente de la tubería T6."
+        },
+        {
+          "id": "cv3_07_01",
+          "revision": 1,
+          "text": "Azucena usa riego por goteo."
+        },
+        {
+          "id": "cv3_07_02",
+          "revision": 1,
+          "text": "La tapa del depósito J es roja."
+        },
+        {
+          "id": "cv3_07_03",
+          "revision": 1,
+          "text": "La red del huerto Verbena entra por la tubería T2."
+        }
+      ],
+      "labels": [
+        {
+          "id": "cv3_07_00",
+          "role": "A",
+          "source_quote": "agua de la red procedente de la tubería T6",
+          "permitted_contribution": "T6 responde la parte de red; la lluvia coexiste."
+        },
+        {
+          "id": "cv3_07_01",
+          "role": "none",
+          "source_quote": "riego por goteo",
+          "permitted_contribution": "Método no es fuente."
+        },
+        {
+          "id": "cv3_07_02",
+          "role": "none",
+          "source_quote": "tapa del depósito J",
+          "permitted_contribution": "No identifica fuente."
+        },
+        {
+          "id": "cv3_07_03",
+          "role": "none",
+          "source_quote": "huerto Verbena",
+          "permitted_contribution": "Otro huerto."
+        }
+      ]
+    },
+    {
+      "id": "cv3q_08",
+      "family": "requested_parts_vs_plan",
+      "question": "¿En qué formato se entregaron las imágenes del expediente Delta y cuántas páginas se digitalizaron?",
+      "memories": [
+        {
+          "id": "cv3_08_00",
+          "revision": 1,
+          "text": "Está previsto exportar las imágenes de Delta a PNG el próximo lunes."
+        },
+        {
+          "id": "cv3_08_01",
+          "revision": 1,
+          "text": "Del expediente Delta se digitalizaron doce páginas; faltan cuatro."
+        },
+        {
+          "id": "cv3_08_02",
+          "revision": 1,
+          "text": "No consta el formato de las imágenes ya entregadas de Delta."
+        },
+        {
+          "id": "cv3_08_03",
+          "revision": 1,
+          "text": "El expediente Delta se guarda en una caja verde."
+        }
+      ],
+      "labels": [
+        {
+          "id": "cv3_08_00",
+          "role": "none",
+          "source_quote": "Está previsto exportar",
+          "permitted_contribution": "Plan, no entrega ni cantidad realizada."
+        },
+        {
+          "id": "cv3_08_01",
+          "role": "A",
+          "source_quote": "se digitalizaron doce páginas; faltan cuatro",
+          "permitted_contribution": "Cantidad realizada y parte pendiente."
+        },
+        {
+          "id": "cv3_08_02",
+          "role": "A",
+          "source_quote": "No consta el formato",
+          "permitted_contribution": "Estado explícito del formato solicitado."
+        },
+        {
+          "id": "cv3_08_03",
+          "role": "none",
+          "source_quote": "caja verde",
+          "permitted_contribution": "Almacenamiento no informa progreso."
+        }
+      ]
+    },
+    {
+      "id": "cv3q_09",
+      "family": "single_item_vs_class_policy",
+      "question": "¿Cuál es la política de retención de toda la colección Iris?",
+      "memories": [
+        {
+          "id": "cv3_09_00",
+          "revision": 1,
+          "text": "El archivo de prueba Iris-3 fue borrado a los dieciocho días."
+        },
+        {
+          "id": "cv3_09_01",
+          "revision": 1,
+          "text": "La política de toda la colección Iris es retención indefinida."
+        },
+        {
+          "id": "cv3_09_02",
+          "revision": 1,
+          "text": "La colección Zafiro conserva registros noventa días."
+        },
+        {
+          "id": "cv3_09_03",
+          "revision": 1,
+          "text": "Iris recibe registros cada noche."
+        }
+      ],
+      "labels": [
+        {
+          "id": "cv3_09_00",
+          "role": "none",
+          "source_quote": "archivo de prueba Iris-3",
+          "permitted_contribution": "No generalizar un archivo a toda la política."
+        },
+        {
+          "id": "cv3_09_01",
+          "role": "A",
+          "source_quote": "retención indefinida",
+          "permitted_contribution": "Regla explícita de la colección."
+        },
+        {
+          "id": "cv3_09_02",
+          "role": "none",
+          "source_quote": "colección Zafiro",
+          "permitted_contribution": "Otra colección."
+        },
+        {
+          "id": "cv3_09_03",
+          "role": "none",
+          "source_quote": "cada noche",
+          "permitted_contribution": "Frecuencia no es retención."
+        }
+      ]
+    },
+    {
+      "id": "cv3q_10",
+      "family": "correctable_attribution_vs_identity",
+      "question": "¿En qué fecha inauguró Nerea el puente Vado?",
+      "memories": [
+        {
+          "id": "cv3_10_00",
+          "revision": 1,
+          "text": "La atribución de la inauguración de Vado a Nerea es errónea: lo inauguró Leo."
+        },
+        {
+          "id": "cv3_10_01",
+          "revision": 1,
+          "text": "Nerea revisó las fotografías del puente Vado."
+        },
+        {
+          "id": "cv3_10_02",
+          "revision": 1,
+          "text": "Nerea inauguró el puente Puerto el 3 de abril."
+        },
+        {
+          "id": "cv3_10_03",
+          "revision": 1,
+          "text": "Las luces de Vado se revisan los viernes."
+        }
+      ],
+      "labels": [
+        {
+          "id": "cv3_10_00",
+          "role": "B",
+          "source_quote": "atribución de la inauguración de Vado a Nerea es errónea",
+          "permitted_contribution": "Corrección explícita de autoría del evento, sin fecha inventada."
+        },
+        {
+          "id": "cv3_10_01",
+          "role": "none",
+          "source_quote": "revisó las fotografías",
+          "permitted_contribution": "Otra acción no excluye inaugurar."
+        },
+        {
+          "id": "cv3_10_02",
+          "role": "none",
+          "source_quote": "puente Puerto",
+          "permitted_contribution": "Otro puente."
+        },
+        {
+          "id": "cv3_10_03",
+          "role": "none",
+          "source_quote": "luces de Vado",
+          "permitted_contribution": "Mantenimiento no es inauguración."
+        }
+      ]
+    },
+    {
+      "id": "cv3q_11",
+      "family": "partial_count_vs_inventory",
+      "question": "¿Cuántos músicos tiene confirmados en total el conjunto Arce?",
+      "memories": [
+        {
+          "id": "cv3_11_00",
+          "revision": 1,
+          "text": "Arce tiene diez músicos de cuerda confirmados; la confirmación de viento sigue pendiente."
+        },
+        {
+          "id": "cv3_11_01",
+          "revision": 1,
+          "text": "Se prepararon veinte atriles para Arce."
+        },
+        {
+          "id": "cv3_11_02",
+          "revision": 1,
+          "text": "El conjunto Cedro tiene quince músicos confirmados."
+        },
+        {
+          "id": "cv3_11_03",
+          "revision": 1,
+          "text": "Arce ensaya en la sala baja."
+        }
+      ],
+      "labels": [
+        {
+          "id": "cv3_11_00",
+          "role": "A",
+          "source_quote": "diez músicos de cuerda confirmados; la confirmación de viento sigue pendiente",
+          "permitted_contribution": "Parte confirmada y estado pendiente; no total definitivo."
+        },
+        {
+          "id": "cv3_11_01",
+          "role": "none",
+          "source_quote": "veinte atriles",
+          "permitted_contribution": "No equivale a músicos confirmados."
+        },
+        {
+          "id": "cv3_11_02",
+          "role": "none",
+          "source_quote": "conjunto Cedro",
+          "permitted_contribution": "Otro conjunto."
+        },
+        {
+          "id": "cv3_11_03",
+          "role": "none",
+          "source_quote": "sala baja",
+          "permitted_contribution": "Ubicación no informa cantidad."
+        }
+      ]
+    },
+    {
+      "id": "cv3q_12",
+      "family": "unreadable_vs_preparation",
+      "question": "¿Cuántos gramos de sal indica la receta Brisa?",
+      "memories": [
+        {
+          "id": "cv3_12_00",
+          "revision": 1,
+          "text": "La cantidad de sal de Brisa está ilegible en la copia conservada."
+        },
+        {
+          "id": "cv3_12_01",
+          "revision": 1,
+          "text": "Se prepara una fotografía de la receta Brisa."
+        },
+        {
+          "id": "cv3_12_02",
+          "revision": 1,
+          "text": "La receta Rocío indica ocho gramos de sal."
+        },
+        {
+          "id": "cv3_12_03",
+          "revision": 1,
+          "text": "La copia de Brisa se conserva en una carpeta negra."
+        }
+      ],
+      "labels": [
+        {
+          "id": "cv3_12_00",
+          "role": "A",
+          "source_quote": "cantidad de sal de Brisa está ilegible",
+          "permitted_contribution": "Estado explícito de la medida solicitada."
+        },
+        {
+          "id": "cv3_12_01",
+          "role": "none",
+          "source_quote": "Se prepara una fotografía",
+          "permitted_contribution": "Preparación no prueba que la cantidad sea legible o recuperada."
+        },
+        {
+          "id": "cv3_12_02",
+          "role": "none",
+          "source_quote": "receta Rocío",
+          "permitted_contribution": "Otra receta."
+        },
+        {
+          "id": "cv3_12_03",
+          "role": "none",
+          "source_quote": "carpeta negra",
+          "permitted_contribution": "Ubicación no es cantidad."
+        }
+      ]
+    },
+    {
+      "id": "cv3q_13",
+      "family": "explicit_contrast_replication",
+      "question": "¿Qué resolución usa la impresora Senda con el modo Fino?",
+      "memories": [
+        {
+          "id": "cv3_13_00",
+          "revision": 1,
+          "text": "Senda usa Borrador a 150 ppp; la impresora Loma usa Fino a 600 ppp."
+        },
+        {
+          "id": "cv3_13_01",
+          "revision": 1,
+          "text": "La impresora Loma usa Fino a 600 ppp."
+        },
+        {
+          "id": "cv3_13_02",
+          "revision": 1,
+          "text": "Senda tiene una bandeja de papel grande."
+        },
+        {
+          "id": "cv3_13_03",
+          "revision": 1,
+          "text": "El modo Fino mejora el detalle de las líneas."
+        }
+      ],
+      "labels": [
+        {
+          "id": "cv3_13_00",
+          "role": "C",
+          "source_quote": "Senda usa Borrador a 150 ppp; la impresora Loma usa Fino a 600 ppp",
+          "permitted_contribution": "Contraste explícito, sin exclusividad ni resolución inventada de Senda/Fino."
+        },
+        {
+          "id": "cv3_13_01",
+          "role": "none",
+          "source_quote": "impresora Loma",
+          "permitted_contribution": "Otra impresora aislada."
+        },
+        {
+          "id": "cv3_13_02",
+          "role": "none",
+          "source_quote": "bandeja de papel grande",
+          "permitted_contribution": "Otro atributo."
+        },
+        {
+          "id": "cv3_13_03",
+          "role": "none",
+          "source_quote": "mejora el detalle",
+          "permitted_contribution": "No determina resolución de Senda."
+        }
+      ]
+    },
+    {
+      "id": "cv3q_14",
+      "family": "coexisting_configurations",
+      "question": "¿Qué resolución usa la impresora Cima con el modo Fino?",
+      "memories": [
+        {
+          "id": "cv3_14_00",
+          "revision": 1,
+          "text": "Cima usa Borrador a 150 ppp y también usa Fino a 600 ppp."
+        },
+        {
+          "id": "cv3_14_01",
+          "revision": 1,
+          "text": "Cima tiene dos bandejas."
+        },
+        {
+          "id": "cv3_14_02",
+          "revision": 1,
+          "text": "La impresora Vega usa Fino a 300 ppp."
+        },
+        {
+          "id": "cv3_14_03",
+          "revision": 1,
+          "text": "Cima se revisa cada mes."
+        }
+      ],
+      "labels": [
+        {
+          "id": "cv3_14_00",
+          "role": "A",
+          "source_quote": "también usa Fino a 600 ppp",
+          "permitted_contribution": "Configuración de Fino explícita, conservando coexistencia con Borrador; no demuestra una impresión ejecutada."
+        },
+        {
+          "id": "cv3_14_01",
+          "role": "none",
+          "source_quote": "dos bandejas",
+          "permitted_contribution": "Otro atributo."
+        },
+        {
+          "id": "cv3_14_02",
+          "role": "none",
+          "source_quote": "impresora Vega",
+          "permitted_contribution": "Otra impresora."
+        },
+        {
+          "id": "cv3_14_03",
+          "role": "none",
+          "source_quote": "cada mes",
+          "permitted_contribution": "Frecuencia no es resolución."
+        }
+      ]
+    },
+    {
+      "id": "cv3q_15",
+      "family": "exclusive_configuration",
+      "question": "¿Qué resolución usa la impresora Risco con el modo Fino?",
+      "memories": [
+        {
+          "id": "cv3_15_00",
+          "revision": 1,
+          "text": "Risco funciona únicamente en Borrador a 150 ppp; no admite el modo Fino."
+        },
+        {
+          "id": "cv3_15_01",
+          "revision": 1,
+          "text": "El cartucho de Risco es negro."
+        },
+        {
+          "id": "cv3_15_02",
+          "revision": 1,
+          "text": "La impresora Vega admite Fino a 300 ppp."
+        },
+        {
+          "id": "cv3_15_03",
+          "revision": 1,
+          "text": "Risco pesa doce kilos."
+        }
+      ],
+      "labels": [
+        {
+          "id": "cv3_15_00",
+          "role": "B",
+          "source_quote": "no admite el modo Fino",
+          "permitted_contribution": "Exclusión explícita del modo supuesto."
+        },
+        {
+          "id": "cv3_15_01",
+          "role": "none",
+          "source_quote": "cartucho de Risco",
+          "permitted_contribution": "Otro atributo."
+        },
+        {
+          "id": "cv3_15_02",
+          "role": "none",
+          "source_quote": "impresora Vega",
+          "permitted_contribution": "Otra impresora."
+        },
+        {
+          "id": "cv3_15_03",
+          "role": "none",
+          "source_quote": "doce kilos",
+          "permitted_contribution": "Otro atributo."
+        }
+      ]
+    },
+    {
+      "id": "cv3q_16",
+      "family": "explicit_contrast_other_domain",
+      "question": "¿Qué tasa de muestreo usa el grabador Nube con el programa Largo?",
+      "memories": [
+        {
+          "id": "cv3_16_00",
+          "revision": 1,
+          "text": "Nube utiliza Corto a 44 kHz; el grabador Valle utiliza Largo a 48 kHz."
+        },
+        {
+          "id": "cv3_16_01",
+          "revision": 1,
+          "text": "Valle utiliza Largo a 48 kHz."
+        },
+        {
+          "id": "cv3_16_02",
+          "revision": 1,
+          "text": "Nube tiene una funda blanca."
+        },
+        {
+          "id": "cv3_16_03",
+          "revision": 1,
+          "text": "El programa Largo permite sesiones extensas."
+        }
+      ],
+      "labels": [
+        {
+          "id": "cv3_16_00",
+          "role": "C",
+          "source_quote": "Nube utiliza Corto a 44 kHz; el grabador Valle utiliza Largo a 48 kHz",
+          "permitted_contribution": "Asignaciones contrastadas, sin probar que Nube nunca use Largo."
+        },
+        {
+          "id": "cv3_16_01",
+          "role": "none",
+          "source_quote": "Valle utiliza Largo",
+          "permitted_contribution": "Otro aparato aislado."
+        },
+        {
+          "id": "cv3_16_02",
+          "role": "none",
+          "source_quote": "funda blanca",
+          "permitted_contribution": "Otro atributo."
+        },
+        {
+          "id": "cv3_16_03",
+          "role": "none",
+          "source_quote": "sesiones extensas",
+          "permitted_contribution": "No determina tasa de Nube."
+        }
+      ]
+    }
+  ]
+}

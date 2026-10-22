@@ -1,0 +1,609 @@
+{
+  "version": "blind-evidence-review-v1",
+  "reviewer_kind": "separate_agent_same_model_family",
+  "human_review": false,
+  "blind_inputs": [
+    "/Users/fer/Documents/Projects/Fer/Dev/iROMEM/tests/fixtures/conversation-evidence-v2/source.json",
+    "/Users/fer/Documents/Projects/Fer/Dev/iROMEM/tests/fixtures/conversation-evidence-v2/blind-questions.json"
+  ],
+  "cases": [
+    {
+      "id": "cev2q_044_03",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "044_03"
+      ],
+      "rationale": "La edición serrana no otorgará premio del público; contradice que alguna película vaya a recibirlo.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_044_06",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "044_06"
+      ],
+      "rationale": "El equipo de la edición serrana recogerá su proyector el jueves; falta el precio de su alquiler. El coste de la sede costera no aporta el precio del proyector serrano.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_046_04",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "046_04"
+      ],
+      "rationale": "La revisión portuguesa será por videollamada y expresamente no presencial; contradice la premisa de un aula para revisión presencial.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_049_06",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "049_06"
+      ],
+      "rationale": "La inspección del tramo sur será el martes; falta quién autoriza su informe. Paz autoriza el del norte.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_042_04",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "042_04"
+      ],
+      "rationale": "El acceso público fue retirado y ahora se exige autorización del archivo; contradice la consulta pública abierta actual.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_046_05",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "046_05"
+      ],
+      "rationale": "La edición portuguesa tiene veintidós diagramas; falta el programa empleado. Inkscape se atribuye a los italianos.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_049_01",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "049_01"
+      ],
+      "rationale": "Maite actualiza el inventario del tramo sur.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_043_05",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "043_05"
+      ],
+      "rationale": "Se recibieron catorce sierras para la sede oeste; falta la longitud de sus hojas. Los treinta centímetros corresponden a la sede este.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_049_03",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "049_03"
+      ],
+      "rationale": "El tramo sur cerró el acceso al farallón por erosión; contradice la existencia de una entrada actualmente accesible por ese tramo.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_047_05",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "047_05"
+      ],
+      "rationale": "Hay treinta y una muestras de basaltos; falta su masa individual. Los veinte gramos corresponden al cuarzo.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_046_02",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "046_02"
+      ],
+      "rationale": "La edición portuguesa se entrega en PDF accesible.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_048_08",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "rationale": "El código conocido corresponde a la reserva de Eco, sin dato de Umbral.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_046_01",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "046_01"
+      ],
+      "rationale": "Noelia valida el glosario portugués.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_042_05",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "042_05"
+      ],
+      "rationale": "Constan diecisiete láminas de campo; falta su escala. La escala de sala no corresponde a la edición solicitada.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_047_08",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "rationale": "El código de transporte disponible es del cuarzo, sin dato del feldespato.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_044_05",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "044_05"
+      ],
+      "rationale": "La edición serrana proyectará seis cortometrajes; falta la duración de cada uno.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_043_03",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "043_03"
+      ],
+      "rationale": "La biblioteca dejó de prestar taladros a domicilio y solo los entrega presencialmente; contradice la entrega actual por mensajería.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_043_06",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "043_06"
+      ],
+      "rationale": "El taller de afilado dura noventa minutos; falta quién lo impartirá.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_049_02",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "049_02"
+      ],
+      "rationale": "El mapa del tramo sur se guarda en el puesto Arena.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_042_06",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "042_06"
+      ],
+      "rationale": "La revisión en el muelle empieza a las diez de la mañana; falta quién firmará su acta. Elsa firmó un acta de la sesión de sala, otro evento.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_045_05",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "045_05"
+      ],
+      "rationale": "La nave B tiene dieciocho sensores de humedad; falta su precisión. La precisión de la nave A no resuelve la parte ausente.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_048_04",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "048_04"
+      ],
+      "rationale": "El altavoz central de Sombra fue desconectado y la fuente dice literalmente que no está emitiendo ninguna señal; contradice una emisión actual.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_044_04",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "044_04"
+      ],
+      "rationale": "La función prevista en la plaza se trasladó al gimnasio por lluvia; contradice que se proyecte en un sector de la plaza.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_048_03",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "048_03"
+      ],
+      "rationale": "Sombra suspendió las sesiones con público y las mediciones serán a puerta cerrada; contradice la presencia de público en las mediciones actuales.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_047_03",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "047_03"
+      ],
+      "rationale": "Los basaltos fueron retirados de la vitrina pública y ahora solo se consultan en la cámara; contradice su exhibición pública actual.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_043_01",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "043_01"
+      ],
+      "rationale": "Joel registra las devoluciones de la sede oeste.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_048_07",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "rationale": "La marca conocida corresponde a los micrófonos de Eco, sin dato de Umbral.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_046_08",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "rationale": "El identificador conocido pertenece al paquete italiano, sin dato del rumano.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_047_01",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "047_01"
+      ],
+      "rationale": "Dalia cataloga la colección de basaltos.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_049_07",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "rationale": "El desnivel disponible es del tramo norte, sin dato del tramo este.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_046_06",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "046_06"
+      ],
+      "rationale": "La revisión portuguesa comienza a las quince horas; falta quién redactará su minuta. Rosa redacta la italiana.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_048_05",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "048_05"
+      ],
+      "rationale": "Sombra usa ocho micrófonos; falta su marca. Sonal es la marca de los micrófonos de Eco.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_045_03",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "045_03"
+      ],
+      "rationale": "La nave B eliminó el riego automático nocturno y lo dejó desactivado; contradice una hora de activación actual.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_046_07",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "rationale": "Lato corresponde a la edición italiana, sin dato tipográfico de la alemana.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_048_06",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "048_06"
+      ],
+      "rationale": "La calibración de Sombra comenzará a las siete; falta el técnico. Nico calibra Eco.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_043_02",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "043_02"
+      ],
+      "rationale": "Las herramientas de medición de la sede oeste van en el estante cuatro.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_048_02",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "048_02"
+      ],
+      "rationale": "Sombra exporta las grabaciones en WAV.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_044_01",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "044_01"
+      ],
+      "rationale": "Abril programa la edición serrana.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_049_04",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "049_04"
+      ],
+      "rationale": "El recorrido sur evita la playa y se realiza íntegramente por la pasarela; contradice que incluya un punto de bajada a la playa.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_045_07",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "rationale": "La precisión disponible corresponde a la nave A, sin dato de la nave C.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_047_06",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "047_06"
+      ],
+      "rationale": "La inspección de basaltos será el miércoles; falta quién firmará su informe. Eva firma el de cuarzo.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_042_01",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "042_01"
+      ],
+      "rationale": "Vera coordina explícitamente la revisión de símbolos de la edición de campo.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_042_08",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "rationale": "El código disponible pertenece al equipo norte; no hay dato del equipo sur.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_047_02",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "047_02"
+      ],
+      "rationale": "Los basaltos se guardan en la cámara Ceniza.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_042_02",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "042_02"
+      ],
+      "rationale": "Los originales de la edición de campo se guardan en el armario Bruma.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_044_07",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "rationale": "El color disponible es de los subtítulos de la edición costera, sin dato de la ribereña.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_049_08",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "rationale": "El código de permiso disponible pertenece al tramo norte, sin dato del este.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_042_07",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "rationale": "Solo consta escala para la edición de sala, sin equivalencia explícita con una edición de navegación.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_044_08",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "rationale": "La matrícula disponible pertenece al equipo litoral, sin equivalencia declarada con el equipo altiplano.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_043_07",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "rationale": "La longitud de hojas disponible es de la sede este, sin dato para la sede norte.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_042_03",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "042_03"
+      ],
+      "rationale": "La edición de campo descartó la impresión en papel y solo se distribuirá digitalmente; contradice que vaya a producirla una imprenta en papel.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_047_07",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "rationale": "La dureza siete corresponde al cuarzo, sin dato del feldespato.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_044_02",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "044_02"
+      ],
+      "rationale": "La edición serrana usa subtítulos en formato SRT.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_045_04",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "045_04"
+      ],
+      "rationale": "La transmisión inalámbrica de la nave B se sustituyó por cable; contradice el uso actual de un canal inalámbrico.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_043_04",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "043_04"
+      ],
+      "rationale": "La sede oeste permanecerá cerrada el domingo de mantenimiento; contradice que tenga una hora de apertura ese día.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_045_06",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "045_06"
+      ],
+      "rationale": "El mantenimiento de sensores de la nave B será en febrero; falta su duración. Los dos días son del mantenimiento pasado de la nave A.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_046_03",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "046_03"
+      ],
+      "rationale": "El apéndice de repuestos fue eliminado y no forma parte de la edición portuguesa; contradice que tenga una página de inicio allí.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_045_08",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "rationale": "La cuenta ensayo-verde es de pruebas; no se identifica una cuenta de producción.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_045_02",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "045_02"
+      ],
+      "rationale": "Irene custodia el archivo de mediciones de la nave B.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_047_04",
+      "relation": "refutes_premise",
+      "evidence_statement_ids": [
+        "047_04"
+      ],
+      "rationale": "Los basaltos se recibieron en donación y expresamente no se compraron; contradice la compra presupuesta sin inventar un precio cero.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_045_01",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "045_01"
+      ],
+      "rationale": "La red de la nave B registra humedad cada veinte minutos.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_049_05",
+      "relation": "pending_or_partial",
+      "evidence_statement_ids": [
+        "049_05"
+      ],
+      "rationale": "El circuito sur tiene once kilómetros; falta su desnivel. Los doscientos metros corresponden al circuito norte.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_048_01",
+      "relation": "supports_answer",
+      "evidence_statement_ids": [
+        "048_01"
+      ],
+      "rationale": "Eloy administra las grabaciones de Sombra.",
+      "ambiguities": []
+    },
+    {
+      "id": "cev2q_043_08",
+      "relation": "unrelated",
+      "evidence_statement_ids": [],
+      "rationale": "El identificador conocido corresponde al casillero del equipo rojo, sin dato del equipo verde.",
+      "ambiguities": []
+    }
+  ],
+  "revision_notes": [
+    {
+      "case_id": "cev2q_044_06",
+      "initial_ambiguities": [
+        "La pregunta inicial no identificaba edición, sede ni equipo del proyector; la recogida era genérica futura, mientras el coste disponible era costero pasado.",
+        "La falta de referente permitía considerar un precio de otro proyector como respuesta candidata."
+      ],
+      "clarification": "044_06 y la pregunta ahora identifican explícitamente el proyector de la edición serrana.",
+      "revalidated_relation": "pending_or_partial",
+      "resolution": "Se resuelve el referente: jueves está disponible y el precio serrano falta; el precio costero no completa la respuesta.",
+      "remaining_ambiguities": []
+    },
+    {
+      "case_id": "cev2q_044_03",
+      "initial_ambiguities": [
+        "La pregunta inicial decía ganó, mientras la fuente decía que no se otorgará premio, sin una cronología de ediciones históricas."
+      ],
+      "clarification": "La pregunta ahora dice recibirá, en futuro.",
+      "revalidated_relation": "refutes_premise",
+      "resolution": "La temporalidad coincide con la ausencia futura de premio declarada.",
+      "remaining_ambiguities": []
+    },
+    {
+      "case_id": "cev2q_043_04",
+      "initial_ambiguities": [
+        "El domingo de la pregunta inicial no tenía fecha ni condición explícita; se interpretó como el domingo de mantenimiento."
+      ],
+      "clarification": "La pregunta ahora precisa domingo de mantenimiento.",
+      "revalidated_relation": "refutes_premise",
+      "resolution": "La pregunta se vincula directamente al cierre del día mencionado, sin generalizar a todos los domingos.",
+      "remaining_ambiguities": []
+    },
+    {
+      "case_id": "cev2q_048_04",
+      "initial_ambiguities": [
+        "La desconexión por avería corregía el estado operativo, pero la ausencia de señal no estaba enunciada literalmente."
+      ],
+      "clarification": "048_04 ahora declara literalmente que ese altavoz no está emitiendo ninguna señal.",
+      "revalidated_relation": "refutes_premise",
+      "resolution": "La ausencia actual de emisión es explícita y no requiere completar el texto mediante conocimiento externo.",
+      "remaining_ambiguities": []
+    },
+    {
+      "scope": "all_64_cases",
+      "verification": "Se releyeron todos los enunciados y todas las preguntas actuales. Las cuatro aclaraciones no cambian relaciones ni IDs de evidencia de los otros sesenta casos. Ningún otro caso solicita una parte nueva suministrada por esas aclaraciones. Las cuatro relaciones revisadas también se mantienen respecto de la primera revisión; cambian la precisión del fundamento y las ambigüedades pendientes."
+    }
+  ],
+  "overall_limitations": [
+    "Revisión semántica por un agente separado de la misma familia de modelos; no equivale a revisión humana, independencia entre familias ni verificación factual externa.",
+    "Las únicas entradas documentales consultadas fueron source.json y blind-questions.json. No se leyeron etiquetas del autor, resultados, manifiestos, informes ni copias archivadas. Las observaciones iniciales se conservan desde el contexto de la propia revisión.",
+    "Se inspeccionaron los veintiocho enunciados de cada uno de los ocho ámbitos y las sesenta y cuatro preguntas; los registros auxiliares de embalaje no suministran partes concretas de las respuestas solicitadas.",
+    "No quedan ambigüedades sustanciales de anotación identificadas tras las cuatro aclaraciones. La ausencia de fechas absolutas limita extrapolaciones fuera del estado narrado.",
+    "La estructura repetitiva puede permitir atajos por posición, patrón de pregunta o entidad ausente. La validez de etiquetas por sí sola no demuestra variedad lingüística ni cobertura de conversaciones naturales."
+  ]
+}

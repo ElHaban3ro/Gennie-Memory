@@ -1,0 +1,4 @@
+{
+  "fact_instruction": "Does state.memories.{key} give ANY requested part, bound, partial count, or pending/unknown/unreadable measurement status for state.user_prompt's specific target/context? An isolated event cannot establish another target's policy.",
+  "correction_instruction": "Does state.memories.{key} explicitly contradict an assertion or presupposition of state.user_prompt about the SAME target? Unrecorded does not mean nonexistent."
+}

@@ -1,0 +1,1621 @@
+{
+  "vocabulary": {
+    "version": "documentary_pair_vocabulary_v3_receipt_item_v1",
+    "predicate_rows": [
+      {
+        "id": "property",
+        "roles": {
+          "subject": "ref",
+          "attribute": "attribute_id",
+          "value": "term"
+        },
+        "distributive": true
+      },
+      {
+        "id": "quantity",
+        "roles": {
+          "subject": "ref",
+          "attribute": "attribute_id",
+          "amount": "quantity"
+        },
+        "distributive": true
+      },
+      {
+        "id": "has_item",
+        "roles": {
+          "bearer": "ref",
+          "item": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "action",
+        "roles": {
+          "actor": "ref",
+          "action_kind": "action_id",
+          "object": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "entry_via",
+        "roles": {
+          "substance": "ref",
+          "destination": "ref",
+          "via": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "supplied_by",
+        "roles": {
+          "substance": "ref",
+          "destination": "ref",
+          "supplier": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "upstream_origin",
+        "roles": {
+          "substance": "ref",
+          "destination": "ref",
+          "origin": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "made_by",
+        "roles": {
+          "object": "ref",
+          "maker": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "owns",
+        "roles": {
+          "owner": "ref",
+          "object": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "located_at",
+        "roles": {
+          "object": "ref",
+          "place": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "member_of",
+        "roles": {
+          "member": "ref",
+          "group": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "part_of",
+        "roles": {
+          "component": "ref",
+          "whole": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "custodies",
+        "roles": {
+          "custodian": "ref",
+          "object": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "uses",
+        "roles": {
+          "subject": "ref",
+          "object": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "admits",
+        "roles": {
+          "subject": "ref",
+          "object": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "receives_from",
+        "roles": {
+          "destination": "ref",
+          "source": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "mixes",
+        "roles": {
+          "subject": "ref",
+          "left": "ref",
+          "right": "ref"
+        },
+        "distributive": false
+      },
+      {
+        "id": "documentary_availability",
+        "roles": {
+          "subject": "ref",
+          "attribute": "attribute_id",
+          "state": "term",
+          "document_scope": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "volume_received",
+        "roles": {
+          "subject": "ref",
+          "amount": "quantity"
+        },
+        "distributive": true
+      },
+      {
+        "id": "retention_for",
+        "roles": {
+          "policy": "ref",
+          "subject": "ref",
+          "duration": "quantity"
+        },
+        "distributive": true
+      },
+      {
+        "id": "improves",
+        "roles": {
+          "subject": "ref",
+          "attribute": "attribute_id"
+        },
+        "distributive": true
+      },
+      {
+        "id": "prepared_for",
+        "roles": {
+          "object": "ref",
+          "destination": "ref"
+        },
+        "distributive": false
+      },
+      {
+        "id": "route_entry",
+        "roles": {
+          "subject": "ref",
+          "via": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "action_actor",
+        "roles": {
+          "actor": "ref",
+          "action_kind": "action_id"
+        },
+        "distributive": true
+      },
+      {
+        "id": "action_undergoer",
+        "roles": {
+          "subject": "ref",
+          "action_kind": "action_id"
+        },
+        "distributive": false
+      },
+      {
+        "id": "requirement_attribute",
+        "roles": {
+          "subject": "ref",
+          "attribute": "attribute_id"
+        },
+        "distributive": true
+      },
+      {
+        "id": "requirement_class",
+        "roles": {
+          "subject": "ref",
+          "class": "term"
+        },
+        "distributive": true
+      },
+      {
+        "id": "information_state",
+        "roles": {
+          "subject": "ref",
+          "attribute": "attribute_id",
+          "state": "term"
+        },
+        "distributive": false
+      },
+      {
+        "id": "action_beneficiary",
+        "roles": {
+          "subject": "ref",
+          "action_kind": "action_id",
+          "beneficiary": "ref"
+        },
+        "distributive": false
+      },
+      {
+        "id": "for_purpose",
+        "roles": {
+          "object": "ref",
+          "purpose": "ref"
+        },
+        "distributive": false
+      },
+      {
+        "id": "class_suffices",
+        "roles": {
+          "subject": "ref",
+          "class": "term"
+        },
+        "distributive": true
+      },
+      {
+        "id": "operates_mode",
+        "roles": {
+          "subject": "ref",
+          "mode": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "receives_item",
+        "roles": {
+          "recipient": "ref",
+          "item": "ref"
+        },
+        "distributive": true
+      }
+    ],
+    "fixed_attribute_rows": [
+      "attachment_force",
+      "authorization_state",
+      "automatic_deletion_delay",
+      "autonomy",
+      "availability",
+      "battery_reserved",
+      "cartridge_color",
+      "case_color",
+      "closed_state",
+      "color",
+      "component_count",
+      "confirmed_musicians",
+      "contact_phone",
+      "deletion_age",
+      "delivered_image_format",
+      "delivery_location",
+      "digitized_pages",
+      "documentary_state",
+      "duration",
+      "duration_until_shutdown",
+      "enrollment_delivery_location",
+      "entry_via",
+      "export_date",
+      "export_image_format",
+      "exposure",
+      "fixing_force",
+      "frequency",
+      "generic_format",
+      "generic_location",
+      "generic_schedule",
+      "image_format",
+      "inaugurated_by",
+      "inauguration_date",
+      "ingestion_schedule",
+      "irrigation_method",
+      "lid_color",
+      "line_detail",
+      "mass",
+      "measurement",
+      "measurement_date",
+      "mode",
+      "music_stands_prepared",
+      "network_provenance",
+      "operating_duration",
+      "orientation",
+      "paper_tray_size",
+      "pending_pages",
+      "photograph_preparation",
+      "pickup_location",
+      "policy_retention",
+      "pressure",
+      "profile",
+      "program",
+      "quantity_extent",
+      "rainwater_mixed",
+      "rehearsal_location",
+      "requires",
+      "resolution",
+      "retention_policy",
+      "review_schedule",
+      "reviewed_by",
+      "rotation_state",
+      "salt_quantity",
+      "sample_rate",
+      "service_schedule",
+      "session_length_capability",
+      "storage",
+      "strap_color",
+      "temperature",
+      "terminal_condition",
+      "tray_count",
+      "tutor_identity",
+      "validity_state",
+      "volume",
+      "water_origin",
+      "water_supply",
+      "water_volume_per_period",
+      "watering_time",
+      "weight"
+    ],
+    "fixed_action_rows": [
+      "accompany",
+      "confirm",
+      "delete",
+      "deliver",
+      "digitize",
+      "enroll",
+      "enter",
+      "export",
+      "feed",
+      "inaugurate",
+      "ingest",
+      "inspect",
+      "irrigate",
+      "measure",
+      "open",
+      "operate",
+      "photograph",
+      "prepare",
+      "present",
+      "register",
+      "rehearse",
+      "reserve",
+      "retain",
+      "review",
+      "store",
+      "switch_off",
+      "transmit",
+      "transport",
+      "validate",
+      "withdraw"
+    ],
+    "semantic_type_rows": [
+      {
+        "id": "phone",
+        "class_quotes": [
+          "teléfono",
+          "teléfono de contacto"
+        ]
+      },
+      {
+        "id": "retention_policy",
+        "class_quotes": [
+          "política de retención"
+        ]
+      },
+      {
+        "id": "rainwater_reservoir",
+        "class_quotes": [
+          "depósito de lluvia"
+        ]
+      }
+    ],
+    "relevance_links": [
+      {
+        "id": "via_context_for_supply",
+        "source_predicate": "entry_via",
+        "target_predicate": "supplied_by",
+        "bindings": [
+          [
+            "source.substance",
+            "target.substance"
+          ],
+          [
+            "source.destination",
+            "target.destination"
+          ]
+        ],
+        "carry_roles": [
+          "source.via"
+        ],
+        "conclusion": "partial_intermediate_only",
+        "max_hops": 1,
+        "allow_reverse": false,
+        "allow_transitive_composition": false
+      },
+      {
+        "id": "supply_context_for_origin",
+        "source_predicate": "supplied_by",
+        "target_predicate": "upstream_origin",
+        "bindings": [
+          [
+            "source.substance",
+            "target.substance"
+          ],
+          [
+            "source.destination",
+            "target.destination"
+          ]
+        ],
+        "carry_roles": [
+          "source.supplier"
+        ],
+        "conclusion": "partial_intermediate_only",
+        "max_hops": 1,
+        "allow_reverse": false,
+        "allow_transitive_composition": false
+      },
+      {
+        "id": "documentary_availability_context_for_property",
+        "source_predicate": "documentary_availability",
+        "target_predicate": "property",
+        "bindings": [
+          [
+            "source.subject",
+            "target.subject"
+          ],
+          [
+            "source.attribute",
+            "target.attribute"
+          ]
+        ],
+        "carry_roles": [
+          "source.state",
+          "source.document_scope"
+        ],
+        "conclusion": "partial_intermediate_only",
+        "max_hops": 1,
+        "allow_reverse": false,
+        "allow_transitive_composition": false
+      },
+      {
+        "id": "documentary_availability_context_for_quantity",
+        "source_predicate": "documentary_availability",
+        "target_predicate": "quantity",
+        "bindings": [
+          [
+            "source.subject",
+            "target.subject"
+          ],
+          [
+            "source.attribute",
+            "target.attribute"
+          ]
+        ],
+        "carry_roles": [
+          "source.state",
+          "source.document_scope"
+        ],
+        "conclusion": "partial_intermediate_only",
+        "max_hops": 1,
+        "allow_reverse": false,
+        "allow_transitive_composition": false
+      },
+      {
+        "id": "information_state_context_for_property",
+        "source_predicate": "information_state",
+        "target_predicate": "property",
+        "bindings": [
+          [
+            "source.subject",
+            "target.subject"
+          ],
+          [
+            "source.attribute",
+            "target.attribute"
+          ]
+        ],
+        "carry_roles": [
+          "source.state"
+        ],
+        "conclusion": "partial_intermediate_only",
+        "max_hops": 1,
+        "allow_reverse": false,
+        "allow_transitive_composition": false
+      },
+      {
+        "id": "information_state_context_for_quantity",
+        "source_predicate": "information_state",
+        "target_predicate": "quantity",
+        "bindings": [
+          [
+            "source.subject",
+            "target.subject"
+          ],
+          [
+            "source.attribute",
+            "target.attribute"
+          ]
+        ],
+        "carry_roles": [
+          "source.state"
+        ],
+        "conclusion": "partial_intermediate_only",
+        "max_hops": 1,
+        "allow_reverse": false,
+        "allow_transitive_composition": false
+      },
+      {
+        "id": "admission_caution_for_assignment",
+        "source_predicate": "admits",
+        "target_predicate": "quantity",
+        "bindings": [
+          [
+            "source.subject",
+            "target.subject"
+          ]
+        ],
+        "carry_roles": [
+          "source.object"
+        ],
+        "conclusion": "partial_intermediate_only",
+        "max_hops": 1,
+        "allow_reverse": false,
+        "allow_transitive_composition": false
+      },
+      {
+        "id": "receiver_context_for_origin",
+        "source_predicate": "receives_from",
+        "target_predicate": "upstream_origin",
+        "bindings": [
+          [
+            "source.destination",
+            "target.destination"
+          ]
+        ],
+        "carry_roles": [
+          "source.source"
+        ],
+        "conclusion": "partial_intermediate_only",
+        "max_hops": 1,
+        "allow_reverse": false,
+        "allow_transitive_composition": false
+      },
+      {
+        "id": "supply_context_for_receiver",
+        "source_predicate": "supplied_by",
+        "target_predicate": "receives_from",
+        "bindings": [
+          [
+            "source.destination",
+            "target.destination"
+          ]
+        ],
+        "carry_roles": [
+          "source.supplier"
+        ],
+        "conclusion": "partial_intermediate_only",
+        "max_hops": 1,
+        "allow_reverse": false,
+        "allow_transitive_composition": false
+      },
+      {
+        "id": "admission_caution_for_property_assignment",
+        "source_predicate": "admits",
+        "target_predicate": "property",
+        "bindings": [
+          [
+            "source.subject",
+            "target.subject"
+          ]
+        ],
+        "carry_roles": [
+          "source.object"
+        ],
+        "conclusion": "partial_intermediate_only",
+        "max_hops": 1,
+        "allow_reverse": false,
+        "allow_transitive_composition": false
+      }
+    ],
+    "assignment_projection": {
+      "version": "uses_qualifier_assignment_v1",
+      "context_keys": [
+        "mode",
+        "profile",
+        "program"
+      ]
+    },
+    "relevance_profiles": {
+      "version": "documentary_relevance_profiles_v1",
+      "rows": [
+        {
+          "link_id": "receiver_context_for_origin",
+          "alternatives": [
+            {
+              "kind": "class_context",
+              "source_role": "source",
+              "source_classes": [
+                "depósito de lluvia"
+              ],
+              "target_role": "substance",
+              "target_classes": [
+                "agua"
+              ]
+            },
+            {
+              "kind": "corroborating_claim",
+              "predicate": "upstream_origin",
+              "bindings": [
+                [
+                  "source.source",
+                  "evidence.destination"
+                ],
+                [
+                  "target.substance",
+                  "evidence.substance"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "link_id": "supply_context_for_receiver",
+          "alternatives": [
+            {
+              "kind": "answer_filter",
+              "source_role": "supplier"
+            }
+          ]
+        }
+      ]
+    },
+    "measurement_context": {
+      "version": "negative_measurement_context_v1",
+      "rows": [
+        {
+          "id": "terminal_duration_gap",
+          "event_aspect": "duration",
+          "target_attribute": "autonomy",
+          "source_configuration": [
+            {
+              "key": "terminal_condition",
+              "value": "hasta apagarse"
+            }
+          ],
+          "target_configuration": [
+            {
+              "key": "quantity_extent",
+              "value": "máxima"
+            }
+          ],
+          "context_bindings": []
+        },
+        {
+          "id": "shutdown_duration_gap",
+          "event_aspect": "duration_until_shutdown",
+          "target_attribute": "autonomy",
+          "source_configuration": [],
+          "target_configuration": [
+            {
+              "key": "quantity_extent",
+              "value": "máxima"
+            }
+          ],
+          "context_bindings": [
+            [
+              "context",
+              "route"
+            ]
+          ]
+        }
+      ]
+    },
+    "documentary_anchor_context": {
+      "version": "anchored_documentary_context_v1",
+      "rows": [
+        {
+          "id": "delivered_format_record_context",
+          "link_id": "information_state_context_for_property",
+          "attribute_id": "delivered_image_format",
+          "target_status": "occurred",
+          "source_link_kind": "owned_by",
+          "question_link_kind": "part_of",
+          "source_configuration": [
+            {
+              "key": "delivery_state",
+              "value": "ya entregadas"
+            }
+          ]
+        }
+      ]
+    },
+    "restriction_domain_profile": {
+      "version": "explicit_answer_domains_v1"
+    },
+    "term_description_profile": {
+      "version": "local_reference_descriptions_v1"
+    },
+    "admission_request_context": {
+      "version": "admission_request_context_v1",
+      "rows": [
+        {
+          "id": "mode_resolution_assignment_context",
+          "link_id": "admission_caution_for_property_assignment",
+          "target_attribute": "resolution",
+          "request_slot": "value",
+          "setting_key": "mode",
+          "premise_predicate": "operates_mode",
+          "premise_subject_role": "subject",
+          "premise_setting_role": "mode"
+        }
+      ]
+    }
+  },
+  "source": {
+    "text": "El único modo admitido por la impresora Acacia es Básico a 150 ppp; la impresora Nardo usa Preciso a 600 ppp. Contexto de control: modo programa impresora taller Roble Cedro color rojo azul condición.",
+    "raw": {
+      "claims": [
+        {
+          "body": {
+            "answer_domain": {
+              "class_quote": {
+                "end_byte": 14,
+                "quote": "modo",
+                "start_byte": 10
+              },
+              "kind": "lexical"
+            },
+            "answer_role": "object",
+            "basis": "capability",
+            "closure": "closed",
+            "existence": "asserted",
+            "judgment": "fact",
+            "kind": "value_restriction",
+            "members": [
+              {
+                "constraints": [
+                  {
+                    "atom": {
+                      "arguments": [
+                        {
+                          "role": "subject",
+                          "value": {
+                            "id": "mode",
+                            "kind": "ref"
+                          }
+                        },
+                        {
+                          "role": "attribute",
+                          "value": {
+                            "evidence": [
+                              {
+                                "end_byte": 68,
+                                "quote": "150 ppp",
+                                "start_byte": 61
+                              }
+                            ],
+                            "id": "resolution",
+                            "kind": "symbol"
+                          }
+                        },
+                        {
+                          "role": "amount",
+                          "value": {
+                            "bound": "exact",
+                            "decimal": "150",
+                            "evidence": [
+                              {
+                                "end_byte": 68,
+                                "quote": "150 ppp",
+                                "start_byte": 61
+                              }
+                            ],
+                            "kind": "quantity",
+                            "unit": "ppp"
+                          }
+                        }
+                      ],
+                      "evidence": [
+                        {
+                          "end_byte": 68,
+                          "quote": "150 ppp",
+                          "start_byte": 61
+                        }
+                      ],
+                      "polarity": "positive",
+                      "predicate": "quantity"
+                    },
+                    "basis": "description",
+                    "judgment": "fact",
+                    "normative_scope": null,
+                    "qualifier_ids": [],
+                    "status": "state"
+                  }
+                ],
+                "evidence": [
+                  {
+                    "end_byte": 68,
+                    "quote": "150 ppp",
+                    "start_byte": 61
+                  }
+                ],
+                "id": "mode",
+                "kind": "described_ref",
+                "resolution": "known"
+              }
+            ],
+            "normative_scope": null,
+            "status": "state",
+            "target": {
+              "arguments": [
+                {
+                  "role": "subject",
+                  "value": {
+                    "id": "printer_a",
+                    "kind": "ref"
+                  }
+                },
+                {
+                  "role": "object",
+                  "value": {
+                    "id": "mode",
+                    "kind": "ref"
+                  }
+                }
+              ],
+              "evidence": [
+                {
+                  "end_byte": 68,
+                  "quote": "El único modo admitido por la impresora Acacia es Básico a 150 ppp",
+                  "start_byte": 0
+                }
+              ],
+              "polarity": "positive",
+              "predicate": "admits"
+            }
+          },
+          "evidence": [
+            {
+              "end_byte": 68,
+              "quote": "El único modo admitido por la impresora Acacia es Básico a 150 ppp",
+              "start_byte": 0
+            }
+          ],
+          "id": "exclusive",
+          "qualifier_ids": [],
+          "scope_id": "doc"
+        },
+        {
+          "body": {
+            "kind": "proposition",
+            "value": {
+              "atom": {
+                "arguments": [
+                  {
+                    "role": "subject",
+                    "value": {
+                      "id": "printer_b",
+                      "kind": "ref"
+                    }
+                  },
+                  {
+                    "role": "object",
+                    "value": {
+                      "id": "used",
+                      "kind": "ref"
+                    }
+                  }
+                ],
+                "evidence": [
+                  {
+                    "end_byte": 110,
+                    "quote": "la impresora Nardo usa Preciso a 600 ppp",
+                    "start_byte": 70
+                  }
+                ],
+                "polarity": "positive",
+                "predicate": "uses"
+              },
+              "basis": "assignment",
+              "judgment": "fact",
+              "normative_scope": null,
+              "qualifier_ids": [
+                "use_resolution"
+              ],
+              "status": "state"
+            }
+          },
+          "evidence": [
+            {
+              "end_byte": 110,
+              "quote": "la impresora Nardo usa Preciso a 600 ppp",
+              "start_byte": 70
+            }
+          ],
+          "id": "use",
+          "qualifier_ids": [],
+          "scope_id": "doc"
+        }
+      ],
+      "coverage": [
+        {
+          "issue_id": null,
+          "owner": {
+            "id": "exclusive",
+            "kind": "claim"
+          },
+          "span": {
+            "end_byte": 68,
+            "quote": "El único modo admitido por la impresora Acacia es Básico a 150 ppp",
+            "start_byte": 0
+          },
+          "state": "represented"
+        },
+        {
+          "issue_id": null,
+          "owner": {
+            "id": "use",
+            "kind": "claim"
+          },
+          "span": {
+            "end_byte": 110,
+            "quote": "la impresora Nardo usa Preciso a 600 ppp",
+            "start_byte": 70
+          },
+          "state": "represented"
+        }
+      ],
+      "dependencies": [
+        {
+          "consumer": {
+            "id": "printer_a",
+            "kind": "reference"
+          },
+          "requires": {
+            "id": "doc",
+            "kind": "scope"
+          },
+          "role": "binding"
+        },
+        {
+          "consumer": {
+            "id": "mode",
+            "kind": "reference"
+          },
+          "requires": {
+            "id": "doc",
+            "kind": "scope"
+          },
+          "role": "binding"
+        },
+        {
+          "consumer": {
+            "id": "printer_b",
+            "kind": "reference"
+          },
+          "requires": {
+            "id": "doc",
+            "kind": "scope"
+          },
+          "role": "binding"
+        },
+        {
+          "consumer": {
+            "id": "used",
+            "kind": "reference"
+          },
+          "requires": {
+            "id": "doc",
+            "kind": "scope"
+          },
+          "role": "binding"
+        },
+        {
+          "consumer": {
+            "id": "exclusive",
+            "kind": "claim"
+          },
+          "requires": {
+            "id": "doc",
+            "kind": "scope"
+          },
+          "role": "binding"
+        },
+        {
+          "consumer": {
+            "id": "exclusive",
+            "kind": "claim"
+          },
+          "requires": {
+            "id": "mode",
+            "kind": "reference"
+          },
+          "role": "identity"
+        },
+        {
+          "consumer": {
+            "id": "exclusive",
+            "kind": "claim"
+          },
+          "requires": {
+            "id": "printer_a",
+            "kind": "reference"
+          },
+          "role": "identity"
+        },
+        {
+          "consumer": {
+            "id": "use",
+            "kind": "claim"
+          },
+          "requires": {
+            "id": "doc",
+            "kind": "scope"
+          },
+          "role": "binding"
+        },
+        {
+          "consumer": {
+            "id": "use",
+            "kind": "claim"
+          },
+          "requires": {
+            "id": "printer_b",
+            "kind": "reference"
+          },
+          "role": "identity"
+        },
+        {
+          "consumer": {
+            "id": "use",
+            "kind": "claim"
+          },
+          "requires": {
+            "id": "used",
+            "kind": "reference"
+          },
+          "role": "identity"
+        },
+        {
+          "consumer": {
+            "id": "use",
+            "kind": "claim"
+          },
+          "requires": {
+            "id": "use_resolution",
+            "kind": "qualifier"
+          },
+          "role": "configuration"
+        }
+      ],
+      "domain_namespace": "documentary-v3-known-development",
+      "identity": [],
+      "kind": "source",
+      "qualifiers": [
+        {
+          "body": {
+            "key": "resolution",
+            "value": {
+              "bound": "exact",
+              "decimal": "600",
+              "evidence": [
+                {
+                  "end_byte": 110,
+                  "quote": "600 ppp",
+                  "start_byte": 103
+                }
+              ],
+              "kind": "quantity",
+              "unit": "ppp"
+            }
+          },
+          "evidence": [
+            {
+              "end_byte": 110,
+              "quote": "600 ppp",
+              "start_byte": 103
+            }
+          ],
+          "id": "use_resolution",
+          "kind": "configuration",
+          "resolution": "known",
+          "scope_id": "doc"
+        }
+      ],
+      "references": [
+        {
+          "anaphora": null,
+          "binding_scope_id": null,
+          "declared_class": {
+            "end_byte": 40,
+            "quote": "impresora",
+            "start_byte": 31
+          },
+          "denotation": "entity",
+          "id": "printer_a",
+          "links": [],
+          "mention": {
+            "end_byte": 47,
+            "quote": "la impresora Acacia",
+            "start_byte": 28
+          },
+          "name": {
+            "end_byte": 47,
+            "quote": "Acacia",
+            "start_byte": 41
+          },
+          "scope_id": "doc",
+          "semantic_type": null
+        },
+        {
+          "anaphora": null,
+          "binding_scope_id": null,
+          "declared_class": {
+            "end_byte": 14,
+            "quote": "modo",
+            "start_byte": 10
+          },
+          "denotation": "entity",
+          "id": "mode",
+          "links": [],
+          "mention": {
+            "end_byte": 58,
+            "quote": "Básico",
+            "start_byte": 51
+          },
+          "name": {
+            "end_byte": 58,
+            "quote": "Básico",
+            "start_byte": 51
+          },
+          "scope_id": "doc",
+          "semantic_type": null
+        },
+        {
+          "anaphora": null,
+          "binding_scope_id": null,
+          "declared_class": {
+            "end_byte": 40,
+            "quote": "impresora",
+            "start_byte": 31
+          },
+          "denotation": "entity",
+          "id": "printer_b",
+          "links": [],
+          "mention": {
+            "end_byte": 88,
+            "quote": "la impresora Nardo",
+            "start_byte": 70
+          },
+          "name": {
+            "end_byte": 88,
+            "quote": "Nardo",
+            "start_byte": 83
+          },
+          "scope_id": "doc",
+          "semantic_type": null
+        },
+        {
+          "anaphora": null,
+          "binding_scope_id": null,
+          "declared_class": null,
+          "denotation": "entity",
+          "id": "used",
+          "links": [],
+          "mention": {
+            "end_byte": 100,
+            "quote": "Preciso",
+            "start_byte": 93
+          },
+          "name": {
+            "end_byte": 100,
+            "quote": "Preciso",
+            "start_byte": 93
+          },
+          "scope_id": "doc",
+          "semantic_type": null
+        }
+      ],
+      "requests": [],
+      "scopes": [
+        {
+          "binding": null,
+          "branch_id": null,
+          "id": "doc",
+          "kind": "document",
+          "parent_id": null
+        }
+      ],
+      "text_sha256": "0e44a772c4a32f6e174ec761db12778706ce3ccf6294f3c386219cd1e5664e9e",
+      "version": "documentary_evidence_v3",
+      "vocabulary_sha256": "24423238fe394d11be2e8fd7d19e06965961aae66167f5bcf3657a45b3f7b7d2"
+    }
+  },
+  "question": {
+    "text": "¿Qué resolución usa la impresora Acacia con el modo Preciso? Contexto de control: modo programa impresora taller Roble Cedro color rojo azul condición. Básico",
+    "raw": {
+      "claims": [
+        {
+          "body": {
+            "kind": "proposition",
+            "value": {
+              "atom": {
+                "arguments": [
+                  {
+                    "role": "subject",
+                    "value": {
+                      "id": "printer",
+                      "kind": "ref"
+                    }
+                  },
+                  {
+                    "role": "mode",
+                    "value": {
+                      "id": "mode",
+                      "kind": "ref"
+                    }
+                  }
+                ],
+                "evidence": [
+                  {
+                    "end_byte": 62,
+                    "quote": "usa la impresora Acacia con el modo Preciso",
+                    "start_byte": 19
+                  }
+                ],
+                "polarity": "positive",
+                "predicate": "operates_mode"
+              },
+              "basis": "assignment",
+              "judgment": "fact",
+              "normative_scope": null,
+              "qualifier_ids": [],
+              "status": "state"
+            }
+          },
+          "evidence": [
+            {
+              "end_byte": 62,
+              "quote": "usa la impresora Acacia con el modo Preciso",
+              "start_byte": 19
+            }
+          ],
+          "id": "operating-premise",
+          "qualifier_ids": [],
+          "scope_id": "doc"
+        }
+      ],
+      "coverage": [
+        {
+          "issue_id": null,
+          "owner": {
+            "id": "ask",
+            "kind": "request"
+          },
+          "span": {
+            "end_byte": 63,
+            "quote": "¿Qué resolución usa la impresora Acacia con el modo Preciso?",
+            "start_byte": 0
+          },
+          "state": "represented"
+        }
+      ],
+      "dependencies": [
+        {
+          "consumer": {
+            "id": "printer",
+            "kind": "reference"
+          },
+          "requires": {
+            "id": "doc",
+            "kind": "scope"
+          },
+          "role": "binding"
+        },
+        {
+          "consumer": {
+            "id": "mode",
+            "kind": "reference"
+          },
+          "requires": {
+            "id": "doc",
+            "kind": "scope"
+          },
+          "role": "binding"
+        },
+        {
+          "consumer": {
+            "id": "operating-premise",
+            "kind": "claim"
+          },
+          "requires": {
+            "id": "doc",
+            "kind": "scope"
+          },
+          "role": "binding"
+        },
+        {
+          "consumer": {
+            "id": "operating-premise",
+            "kind": "claim"
+          },
+          "requires": {
+            "id": "mode",
+            "kind": "reference"
+          },
+          "role": "identity"
+        },
+        {
+          "consumer": {
+            "id": "operating-premise",
+            "kind": "claim"
+          },
+          "requires": {
+            "id": "printer",
+            "kind": "reference"
+          },
+          "role": "identity"
+        },
+        {
+          "consumer": {
+            "id": "ask",
+            "kind": "request"
+          },
+          "requires": {
+            "id": "doc",
+            "kind": "scope"
+          },
+          "role": "binding"
+        },
+        {
+          "consumer": {
+            "id": "ask",
+            "kind": "request"
+          },
+          "requires": {
+            "id": "printer",
+            "kind": "reference"
+          },
+          "role": "identity"
+        },
+        {
+          "consumer": {
+            "id": "ask",
+            "kind": "request"
+          },
+          "requires": {
+            "id": "mode-context",
+            "kind": "qualifier"
+          },
+          "role": "configuration"
+        },
+        {
+          "consumer": {
+            "id": "ask",
+            "kind": "request"
+          },
+          "requires": {
+            "id": "operating-premise",
+            "kind": "claim"
+          },
+          "role": "premise"
+        },
+        {
+          "consumer": {
+            "kind": "reference",
+            "id": "actual-member-alias"
+          },
+          "requires": {
+            "kind": "scope",
+            "id": "doc"
+          },
+          "role": "binding"
+        }
+      ],
+      "domain_namespace": "documentary-v3-known-development",
+      "identity": [
+        {
+          "kind": "same",
+          "left": "mode",
+          "right": "actual-member-alias",
+          "evidence": [
+            {
+              "quote": "Básico",
+              "start_byte": 156,
+              "end_byte": 163
+            }
+          ]
+        }
+      ],
+      "kind": "question",
+      "qualifiers": [
+        {
+          "body": {
+            "key": "mode",
+            "value": {
+              "id": "mode",
+              "kind": "ref"
+            }
+          },
+          "evidence": [
+            {
+              "end_byte": 62,
+              "quote": "con el modo Preciso",
+              "start_byte": 43
+            }
+          ],
+          "id": "mode-context",
+          "kind": "configuration",
+          "resolution": "known",
+          "scope_id": "doc"
+        }
+      ],
+      "references": [
+        {
+          "anaphora": null,
+          "binding_scope_id": null,
+          "declared_class": {
+            "end_byte": 35,
+            "quote": "impresora",
+            "start_byte": 26
+          },
+          "denotation": "entity",
+          "id": "printer",
+          "links": [],
+          "mention": {
+            "end_byte": 42,
+            "quote": "la impresora Acacia",
+            "start_byte": 23
+          },
+          "name": {
+            "end_byte": 42,
+            "quote": "Acacia",
+            "start_byte": 36
+          },
+          "scope_id": "doc",
+          "semantic_type": null
+        },
+        {
+          "anaphora": null,
+          "binding_scope_id": null,
+          "declared_class": {
+            "end_byte": 54,
+            "quote": "modo",
+            "start_byte": 50
+          },
+          "denotation": "entity",
+          "id": "mode",
+          "links": [],
+          "mention": {
+            "end_byte": 62,
+            "quote": "el modo Preciso",
+            "start_byte": 47
+          },
+          "name": {
+            "end_byte": 62,
+            "quote": "Preciso",
+            "start_byte": 55
+          },
+          "scope_id": "doc",
+          "semantic_type": null
+        },
+        {
+          "anaphora": null,
+          "binding_scope_id": null,
+          "declared_class": {
+            "end_byte": 54,
+            "quote": "modo",
+            "start_byte": 50
+          },
+          "denotation": "entity",
+          "id": "actual-member-alias",
+          "links": [],
+          "mention": {
+            "quote": "Básico",
+            "start_byte": 156,
+            "end_byte": 163
+          },
+          "name": {
+            "quote": "Básico",
+            "start_byte": 156,
+            "end_byte": 163
+          },
+          "scope_id": "doc",
+          "semantic_type": null
+        }
+      ],
+      "requests": [
+        {
+          "basis_requirement": {
+            "kind": "exact",
+            "value": "assignment"
+          },
+          "class_filter": null,
+          "evidence": [
+            {
+              "end_byte": 63,
+              "quote": "¿Qué resolución usa la impresora Acacia con el modo Preciso?",
+              "start_byte": 0
+            }
+          ],
+          "id": "ask",
+          "mode": "answer",
+          "normative_scope_filter": null,
+          "premise_ids": [
+            "operating-premise"
+          ],
+          "qualifier_ids": [
+            "mode-context"
+          ],
+          "required_answer_extent": "one_value",
+          "scope_id": "doc",
+          "slot": "value",
+          "target": {
+            "atom": {
+              "arguments": [
+                {
+                  "role": "subject",
+                  "value": {
+                    "id": "printer",
+                    "kind": "ref"
+                  }
+                },
+                {
+                  "role": "attribute",
+                  "value": {
+                    "evidence": [
+                      {
+                        "end_byte": 18,
+                        "quote": "resolución",
+                        "start_byte": 7
+                      }
+                    ],
+                    "id": "resolution",
+                    "kind": "symbol"
+                  }
+                }
+              ],
+              "evidence": [
+                {
+                  "end_byte": 63,
+                  "quote": "¿Qué resolución usa la impresora Acacia con el modo Preciso?",
+                  "start_byte": 0
+                }
+              ],
+              "polarity": "positive",
+              "predicate": "property"
+            },
+            "judgment": "fact",
+            "qualifier_ids": [
+              "mode-context"
+            ],
+            "status": "state"
+          },
+          "unit": null
+        }
+      ],
+      "scopes": [
+        {
+          "binding": null,
+          "branch_id": null,
+          "id": "doc",
+          "kind": "document",
+          "parent_id": null
+        }
+      ],
+      "text_sha256": "66beca6e825d37c7bcef5c56a1a96b4e4bf0337b2a7881ac4fe9204d99ff9554",
+      "version": "documentary_evidence_v3",
+      "vocabulary_sha256": "24423238fe394d11be2e8fd7d19e06965961aae66167f5bcf3657a45b3f7b7d2"
+    }
+  },
+  "pair_scope": {
+    "namespace": "documentary-v3-known-development",
+    "configuration": [],
+    "time_selector": null,
+    "closed_world": false
+  }
+}

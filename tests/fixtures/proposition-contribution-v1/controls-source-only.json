@@ -1,0 +1,32 @@
+[
+  {
+    "id": "pcv1_control_17",
+    "question": "¿Cuál es la autonomía máxima del reproductor Lino?",
+    "source": "El reproductor Lino funcionó setenta y cinco minutos sin apagarse; no se midió su duración hasta apagarse.",
+    "propositions": [
+      {
+        "id": "claim_00",
+        "text": "La autonomía del reproductor Lino es de al menos setenta y cinco minutos."
+      },
+      {
+        "id": "claim_01",
+        "text": "No se midió la duración del reproductor Lino hasta apagarse."
+      }
+    ]
+  },
+  {
+    "id": "pcv1_control_18",
+    "question": "¿Cuántas páginas del expediente Atlas están digitalizadas y cuántas quedan pendientes?",
+    "source": "Del expediente Atlas se digitalizaron doce páginas; sus cuatro páginas restantes siguen pendientes.",
+    "propositions": [
+      {
+        "id": "claim_00",
+        "text": "Del expediente Atlas están digitalizadas trece páginas."
+      },
+      {
+        "id": "claim_01",
+        "text": "Del expediente Atlas no quedan páginas pendientes."
+      }
+    ]
+  }
+]

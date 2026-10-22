@@ -1,0 +1,67 @@
+{
+  "version": "slot-evidence-v2-reported-subject-matrix-v2",
+  "synthetic": true,
+  "cases": [
+    {
+      "id": "another-person-with-same-full-name",
+      "query": "Which city does employee Ana Ruiz E-17 live in?",
+      "candidate": {
+        "memory_id": "another-person-with-same-full-name-m1",
+        "revision": 1,
+        "summary": "Employee Ana Ruiz E-17 reported that another Ana Ruiz lives in Quito."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "person",
+            "kind": "employee",
+            "subject": "Ana Ruiz",
+            "stable_id": "E-17",
+            "quote": "employee Ana Ruiz E-17"
+          }
+        ],
+        "slots": [
+          {
+            "id": "requested",
+            "dimension": "requested_slot",
+            "quote": "Which city"
+          }
+        ],
+        "premises": [],
+        "candidates": [
+          {
+            "memory_id": "another-person-with-same-full-name-m1",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "person",
+              "stable_id_quote": "E-17",
+              "subject_quote": "Ana Ruiz E-17"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "Employee Ana Ruiz E-17 reported that another Ana Ruiz lives in Quito.",
+                "subject_quote": "Ana Ruiz E-17",
+                "identity_anchor_id": "person",
+                "predicate_quote": "lives in",
+                "value": "Quito",
+                "polarity_quote": null,
+                "modality_quote": null,
+                "event_quote": null,
+                "time_quote": null,
+                "conditions_quote": null,
+                "relation": "answers",
+                "target_id": "requested"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": true,
+      "expected_selected": [],
+      "expected_demoted": 1
+    }
+  ]
+}

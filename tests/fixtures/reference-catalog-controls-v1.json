@@ -1,0 +1,911 @@
+{
+  "version": "reference-catalog-controls-v1",
+  "scope": "manufactured manual representability/conservation controls, not model extraction or fresh benchmark",
+  "cases": [
+    {
+      "id": "LA01",
+      "risk": "distributed_identity",
+      "source": {
+        "text": "El formulario es verde. Pertenece al pedido E8 de Nácar.",
+        "catalog": [
+          {
+            "id": "local",
+            "reference": {
+              "mention_quote": "El formulario",
+              "type_quote": "formulario",
+              "name": null,
+              "owners": [
+                {
+                  "mention_quote": "Nácar",
+                  "type_quote": null,
+                  "name": "Nácar"
+                },
+                {
+                  "mention_quote": "pedido E8 de Nácar",
+                  "type_quote": "pedido",
+                  "name": "E8"
+                }
+              ],
+              "scope": "single"
+            }
+          }
+        ],
+        "stage2": {
+          "status": "ok",
+          "document": {
+            "certain": [
+              {
+                "quote": "El formulario es verde. Pertenece al pedido E8 de Nácar.",
+                "subject": {
+                  "reference_id": "local"
+                },
+                "time": "state",
+                "context": [],
+                "configuration": [],
+                "statement": {
+                  "type": "property",
+                  "attribute": "color",
+                  "value": {
+                    "type": "text",
+                    "value": "verde"
+                  },
+                  "affirmed": true,
+                  "basis": "described_fact"
+                }
+              }
+            ],
+            "readings": [],
+            "readings_complete": true
+          }
+        }
+      },
+      "question": {
+        "text": "¿Qué color tiene el formulario del pedido E8 de Nácar?",
+        "catalog": [
+          {
+            "id": "local",
+            "reference": {
+              "mention_quote": "el formulario del pedido E8 de Nácar",
+              "type_quote": "formulario",
+              "name": null,
+              "owners": [
+                {
+                  "mention_quote": "Nácar",
+                  "type_quote": null,
+                  "name": "Nácar"
+                },
+                {
+                  "mention_quote": "pedido E8 de Nácar",
+                  "type_quote": "pedido",
+                  "name": "E8"
+                }
+              ],
+              "scope": "single"
+            }
+          }
+        ],
+        "stage2": {
+          "status": "ok",
+          "question": {
+            "subject": {
+              "reference_id": "local"
+            },
+            "context": [],
+            "configuration": [],
+            "assumptions": [],
+            "requested": [
+              {
+                "quote": "¿Qué color tiene el formulario del pedido E8 de Nácar?",
+                "time": "state",
+                "extent": "unspecified",
+                "slot": {
+                  "type": "property",
+                  "attribute": "color",
+                  "basis": "any",
+                  "path": "direct"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "ontology": {
+        "color": {
+          "kind": "property",
+          "additive": false,
+          "intermediate_types": []
+        }
+      },
+      "necessary_condition": {
+        "source_and_question_representable": true,
+        "selected": true
+      }
+    },
+    {
+      "id": "LA02",
+      "risk": "corrigible_nominal_premise",
+      "source": {
+        "text": "La caja K es azul.",
+        "catalog": [
+          {
+            "id": "local",
+            "reference": {
+              "mention_quote": "caja K",
+              "type_quote": "caja",
+              "name": "K",
+              "owners": [],
+              "scope": "single"
+            }
+          }
+        ],
+        "stage2": {
+          "status": "ok",
+          "document": {
+            "certain": [
+              {
+                "quote": "La caja K es azul.",
+                "subject": {
+                  "reference_id": "local"
+                },
+                "time": "state",
+                "context": [],
+                "configuration": [],
+                "statement": {
+                  "type": "property",
+                  "attribute": "color",
+                  "value": {
+                    "type": "text",
+                    "value": "azul"
+                  },
+                  "affirmed": true,
+                  "basis": "described_fact"
+                }
+              }
+            ],
+            "readings": [],
+            "readings_complete": true
+          }
+        }
+      },
+      "question": {
+        "text": "¿Qué color tiene la caja roja K?",
+        "catalog": [
+          {
+            "id": "local",
+            "reference": {
+              "mention_quote": "la caja roja K",
+              "type_quote": "caja",
+              "name": "K",
+              "owners": [],
+              "scope": "single"
+            }
+          }
+        ],
+        "stage2": {
+          "status": "ok",
+          "question": {
+            "subject": {
+              "reference_id": "local"
+            },
+            "context": [],
+            "configuration": [],
+            "assumptions": [
+              {
+                "quote": "¿Qué color tiene la caja roja K?",
+                "subject": {
+                  "reference_id": "local"
+                },
+                "time": "state",
+                "context": [],
+                "configuration": [],
+                "statement": {
+                  "type": "property",
+                  "attribute": "color",
+                  "value": {
+                    "type": "text",
+                    "value": "roja"
+                  },
+                  "affirmed": true,
+                  "basis": "described_fact"
+                }
+              }
+            ],
+            "requested": [
+              {
+                "quote": "¿Qué color tiene la caja roja K?",
+                "time": "state",
+                "extent": "unspecified",
+                "slot": {
+                  "type": "property",
+                  "attribute": "color",
+                  "basis": "any",
+                  "path": "direct"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "ontology": {
+        "color": {
+          "kind": "property",
+          "additive": false,
+          "intermediate_types": []
+        }
+      },
+      "necessary_condition": {
+        "source_and_question_representable": true,
+        "selected": true
+      }
+    },
+    {
+      "id": "LA03",
+      "risk": "reordered_surface_owners",
+      "source": {
+        "text": "El formulario del pedido E8 de Nácar es verde.",
+        "catalog": [
+          {
+            "id": "local",
+            "reference": {
+              "mention_quote": "formulario del pedido E8 de Nácar",
+              "type_quote": "formulario",
+              "name": null,
+              "owners": [
+                {
+                  "mention_quote": "Nácar",
+                  "type_quote": null,
+                  "name": "Nácar"
+                },
+                {
+                  "mention_quote": "pedido E8 de Nácar",
+                  "type_quote": "pedido",
+                  "name": "E8"
+                }
+              ],
+              "scope": "single"
+            }
+          }
+        ],
+        "stage2": {
+          "status": "ok",
+          "document": {
+            "certain": [
+              {
+                "quote": "El formulario del pedido E8 de Nácar es verde.",
+                "subject": {
+                  "reference_id": "local"
+                },
+                "time": "state",
+                "context": [],
+                "configuration": [],
+                "statement": {
+                  "type": "property",
+                  "attribute": "color",
+                  "value": {
+                    "type": "text",
+                    "value": "verde"
+                  },
+                  "affirmed": true,
+                  "basis": "described_fact"
+                }
+              }
+            ],
+            "readings": [],
+            "readings_complete": true
+          }
+        }
+      },
+      "question": {
+        "text": "¿Qué color tiene el formulario de Nácar para el pedido E8?",
+        "catalog": [
+          {
+            "id": "local",
+            "reference": {
+              "mention_quote": "formulario de Nácar para el pedido E8",
+              "type_quote": "formulario",
+              "name": null,
+              "owners": [
+                {
+                  "mention_quote": "Nácar",
+                  "type_quote": null,
+                  "name": "Nácar"
+                },
+                {
+                  "mention_quote": "pedido E8",
+                  "type_quote": "pedido",
+                  "name": "E8"
+                }
+              ],
+              "scope": "single"
+            }
+          }
+        ],
+        "stage2": {
+          "status": "ok",
+          "question": {
+            "subject": {
+              "reference_id": "local"
+            },
+            "context": [],
+            "configuration": [],
+            "assumptions": [],
+            "requested": [
+              {
+                "quote": "¿Qué color tiene el formulario de Nácar para el pedido E8?",
+                "time": "state",
+                "extent": "unspecified",
+                "slot": {
+                  "type": "property",
+                  "attribute": "color",
+                  "basis": "any",
+                  "path": "direct"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "ontology": {
+        "color": {
+          "kind": "property",
+          "additive": false,
+          "intermediate_types": []
+        }
+      },
+      "necessary_condition": {
+        "source_and_question_representable": true,
+        "selected": true
+      }
+    },
+    {
+      "id": "LA04",
+      "risk": "universal_member_singular_plural",
+      "source": {
+        "text": "Todos los sensores del equipo L son verdes.",
+        "catalog": [
+          {
+            "id": "local",
+            "reference": {
+              "mention_quote": "los sensores del equipo L",
+              "type_quote": "sensores",
+              "name": null,
+              "owners": [
+                {
+                  "mention_quote": "equipo L",
+                  "type_quote": "equipo",
+                  "name": "L"
+                }
+              ],
+              "scope": "all_members"
+            }
+          }
+        ],
+        "stage2": {
+          "status": "ok",
+          "document": {
+            "certain": [
+              {
+                "quote": "Todos los sensores del equipo L son verdes.",
+                "subject": {
+                  "reference_id": "local"
+                },
+                "time": "state",
+                "context": [],
+                "configuration": [],
+                "statement": {
+                  "type": "property",
+                  "attribute": "color",
+                  "value": {
+                    "type": "text",
+                    "value": "verdes"
+                  },
+                  "affirmed": true,
+                  "basis": "described_fact"
+                }
+              }
+            ],
+            "readings": [],
+            "readings_complete": true
+          }
+        }
+      },
+      "question": {
+        "text": "S es un sensor del equipo L. ¿Qué color tiene S?",
+        "catalog": [
+          {
+            "id": "local",
+            "reference": {
+              "mention_quote": "S",
+              "type_quote": null,
+              "name": "S",
+              "owners": [],
+              "scope": "single",
+              "member_of": {
+                "mention_quote": "sensor del equipo L",
+                "type_quote": "sensor",
+                "name": null,
+                "owners": [
+                  {
+                    "mention_quote": "equipo L",
+                    "type_quote": "equipo",
+                    "name": "L"
+                  }
+                ],
+                "scope": "class_reference"
+              }
+            }
+          }
+        ],
+        "stage2": {
+          "status": "ok",
+          "question": {
+            "subject": {
+              "reference_id": "local"
+            },
+            "context": [],
+            "configuration": [],
+            "assumptions": [],
+            "requested": [
+              {
+                "quote": "S es un sensor del equipo L. ¿Qué color tiene S?",
+                "time": "state",
+                "extent": "unspecified",
+                "slot": {
+                  "type": "property",
+                  "attribute": "color",
+                  "basis": "any",
+                  "path": "direct"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "ontology": {
+        "color": {
+          "kind": "property",
+          "additive": false,
+          "intermediate_types": []
+        }
+      },
+      "necessary_condition": {
+        "source_and_question_representable": true,
+        "selected": true
+      }
+    },
+    {
+      "id": "LA05",
+      "risk": "homonymous_named_subject_different_owner",
+      "source": {
+        "text": "El sensor S del equipo X es verde.",
+        "catalog": [
+          {
+            "id": "local",
+            "reference": {
+              "mention_quote": "sensor S del equipo X",
+              "type_quote": "sensor",
+              "name": "S",
+              "owners": [
+                {
+                  "mention_quote": "equipo X",
+                  "type_quote": "equipo",
+                  "name": "X"
+                }
+              ],
+              "scope": "single"
+            }
+          }
+        ],
+        "stage2": {
+          "status": "ok",
+          "document": {
+            "certain": [
+              {
+                "quote": "El sensor S del equipo X es verde.",
+                "subject": {
+                  "reference_id": "local"
+                },
+                "time": "state",
+                "context": [],
+                "configuration": [],
+                "statement": {
+                  "type": "property",
+                  "attribute": "color",
+                  "value": {
+                    "type": "text",
+                    "value": "verde"
+                  },
+                  "affirmed": true,
+                  "basis": "described_fact"
+                }
+              }
+            ],
+            "readings": [],
+            "readings_complete": true
+          }
+        }
+      },
+      "question": {
+        "text": "¿Qué color tiene el sensor S del equipo Y?",
+        "catalog": [
+          {
+            "id": "local",
+            "reference": {
+              "mention_quote": "sensor S del equipo Y",
+              "type_quote": "sensor",
+              "name": "S",
+              "owners": [
+                {
+                  "mention_quote": "equipo Y",
+                  "type_quote": "equipo",
+                  "name": "Y"
+                }
+              ],
+              "scope": "single"
+            }
+          }
+        ],
+        "stage2": {
+          "status": "ok",
+          "question": {
+            "subject": {
+              "reference_id": "local"
+            },
+            "context": [],
+            "configuration": [],
+            "assumptions": [],
+            "requested": [
+              {
+                "quote": "¿Qué color tiene el sensor S del equipo Y?",
+                "time": "state",
+                "extent": "unspecified",
+                "slot": {
+                  "type": "property",
+                  "attribute": "color",
+                  "basis": "any",
+                  "path": "direct"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "ontology": {
+        "color": {
+          "kind": "property",
+          "additive": false,
+          "intermediate_types": []
+        }
+      },
+      "necessary_condition": {
+        "source_and_question_representable": true,
+        "selected": false
+      }
+    },
+    {
+      "id": "LA06",
+      "risk": "additive_part_does_not_assert_whole_total",
+      "source": {
+        "text": "El módulo M del equipo X pesa 2 kg.",
+        "catalog": [
+          {
+            "id": "local",
+            "reference": {
+              "mention_quote": "módulo M del equipo X",
+              "type_quote": "módulo",
+              "name": "M",
+              "owners": [],
+              "scope": "single",
+              "part_of": {
+                "mention_quote": "equipo X",
+                "type_quote": "equipo",
+                "name": "X",
+                "owners": [],
+                "scope": "single"
+              }
+            }
+          }
+        ],
+        "stage2": {
+          "status": "ok",
+          "document": {
+            "certain": [
+              {
+                "quote": "El módulo M del equipo X pesa 2 kg.",
+                "subject": {
+                  "reference_id": "local"
+                },
+                "time": "state",
+                "context": [],
+                "configuration": [],
+                "statement": {
+                  "type": "quantity",
+                  "attribute": "mass",
+                  "amount": "2",
+                  "unit": "kg",
+                  "bound": "exact",
+                  "extent": "component",
+                  "affirmed": true,
+                  "basis": "observed_fact"
+                }
+              }
+            ],
+            "readings": [],
+            "readings_complete": true
+          }
+        }
+      },
+      "question": {
+        "text": "¿Cuánto pesa el equipo X?",
+        "catalog": [
+          {
+            "id": "local",
+            "reference": {
+              "mention_quote": "equipo X",
+              "type_quote": "equipo",
+              "name": "X",
+              "owners": [],
+              "scope": "single"
+            }
+          }
+        ],
+        "stage2": {
+          "status": "ok",
+          "question": {
+            "subject": {
+              "reference_id": "local"
+            },
+            "context": [],
+            "configuration": [],
+            "assumptions": [],
+            "requested": [
+              {
+                "quote": "¿Cuánto pesa el equipo X?",
+                "time": "state",
+                "extent": "total",
+                "slot": {
+                  "type": "quantity",
+                  "attribute": "mass",
+                  "basis": "any"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "ontology": {
+        "mass": {
+          "kind": "quantity",
+          "additive": true,
+          "intermediate_types": []
+        }
+      },
+      "necessary_condition": {
+        "source_and_question_representable": true,
+        "selected": true,
+        "qualification_required": true
+      }
+    },
+    {
+      "id": "LA07",
+      "risk": "ontology_separate_from_identity_partial_intermediate",
+      "source": {
+        "text": "El huerto Nube recibe agua del depósito R4.",
+        "catalog": [
+          {
+            "id": "local",
+            "reference": {
+              "mention_quote": "huerto Nube",
+              "type_quote": "huerto",
+              "name": "Nube",
+              "owners": [],
+              "scope": "single"
+            }
+          },
+          {
+            "id": "value",
+            "reference": {
+              "mention_quote": "depósito R4",
+              "type_quote": "depósito",
+              "name": "R4",
+              "owners": [],
+              "scope": "single"
+            }
+          }
+        ],
+        "stage2": {
+          "status": "ok",
+          "document": {
+            "certain": [
+              {
+                "quote": "El huerto Nube recibe agua del depósito R4.",
+                "subject": {
+                  "reference_id": "local"
+                },
+                "time": "state",
+                "context": [],
+                "configuration": [],
+                "statement": {
+                  "type": "flow",
+                  "attribute": "water_supply",
+                  "values": [
+                    {
+                      "type": "entity",
+                      "reference": {
+                        "reference_id": "value"
+                      },
+                      "ontology_type": {
+                        "type_id": "reservoir",
+                        "quote": "depósito R4"
+                      }
+                    }
+                  ],
+                  "exhaustive": false,
+                  "direction": "immediate",
+                  "affirmed": true,
+                  "basis": "actual_assignment"
+                }
+              }
+            ],
+            "readings": [],
+            "readings_complete": true
+          }
+        }
+      },
+      "question": {
+        "text": "¿De qué red recibe agua el huerto Nube?",
+        "catalog": [
+          {
+            "id": "local",
+            "reference": {
+              "mention_quote": "huerto Nube",
+              "type_quote": "huerto",
+              "name": "Nube",
+              "owners": [],
+              "scope": "single"
+            }
+          }
+        ],
+        "stage2": {
+          "status": "ok",
+          "question": {
+            "subject": {
+              "reference_id": "local"
+            },
+            "context": [],
+            "configuration": [],
+            "assumptions": [],
+            "requested": [
+              {
+                "quote": "¿De qué red recibe agua el huerto Nube?",
+                "time": "state",
+                "extent": "unspecified",
+                "slot": {
+                  "type": "property",
+                  "attribute": "water_supply",
+                  "basis": "any",
+                  "path": "transitive",
+                  "type_filter": {
+                    "type_id": "network",
+                    "quote": "red"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      },
+      "ontology": {
+        "water_supply": {
+          "kind": "property",
+          "additive": false,
+          "intermediate_types": [
+            "reservoir"
+          ]
+        }
+      },
+      "necessary_condition": {
+        "source_and_question_representable": true,
+        "selected": true,
+        "qualification_required": true
+      }
+    },
+    {
+      "id": "LA08",
+      "risk": "proper_name_article_must_not_be_removed",
+      "source": {
+        "text": "«La Paz» es verde.",
+        "catalog": [
+          {
+            "id": "local",
+            "reference": {
+              "mention_quote": "La Paz",
+              "type_quote": null,
+              "name": "La Paz",
+              "owners": [],
+              "scope": "single"
+            }
+          }
+        ],
+        "stage2": {
+          "status": "ok",
+          "document": {
+            "certain": [
+              {
+                "quote": "«La Paz» es verde.",
+                "subject": {
+                  "reference_id": "local"
+                },
+                "time": "state",
+                "context": [],
+                "configuration": [],
+                "statement": {
+                  "type": "property",
+                  "attribute": "color",
+                  "value": {
+                    "type": "text",
+                    "value": "verde"
+                  },
+                  "affirmed": true,
+                  "basis": "described_fact"
+                }
+              }
+            ],
+            "readings": [],
+            "readings_complete": true
+          }
+        }
+      },
+      "question": {
+        "text": "¿Qué color tiene «Paz»?",
+        "catalog": [
+          {
+            "id": "local",
+            "reference": {
+              "mention_quote": "Paz",
+              "type_quote": null,
+              "name": "Paz",
+              "owners": [],
+              "scope": "single"
+            }
+          }
+        ],
+        "stage2": {
+          "status": "ok",
+          "question": {
+            "subject": {
+              "reference_id": "local"
+            },
+            "context": [],
+            "configuration": [],
+            "assumptions": [],
+            "requested": [
+              {
+                "quote": "¿Qué color tiene «Paz»?",
+                "time": "state",
+                "extent": "unspecified",
+                "slot": {
+                  "type": "property",
+                  "attribute": "color",
+                  "basis": "any",
+                  "path": "direct"
+                }
+              }
+            ]
+          }
+        }
+      },
+      "ontology": {
+        "color": {
+          "kind": "property",
+          "additive": false,
+          "intermediate_types": []
+        }
+      },
+      "necessary_condition": {
+        "source_and_question_representable": true,
+        "selected": false
+      }
+    }
+  ]
+}

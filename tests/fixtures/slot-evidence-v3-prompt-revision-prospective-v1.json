@@ -1,0 +1,51 @@
+{
+  "version": "slot-evidence-v3-prompt-revision-prospective-v1",
+  "synthetic": true,
+  "cases": [
+    {
+      "id": "prompt-revision-01",
+      "query": "Where does analyst Rafi Mena R-32 work now?",
+      "summary": "Analyst Rafi Mena R-32 currently works from Bergen. Archivist Tova Kelm T-63 lives in Ålesund and catalogued the harbor charts."
+    },
+    {
+      "id": "prompt-revision-02",
+      "query": "Which city does employee Lina Mora L-66 live in?",
+      "summary": "Consultant Enzo P-14 lives in Merano. Employee Lina Mora L-66 lives in Trento."
+    },
+    {
+      "id": "prompt-revision-03",
+      "query": "What city does contractor Omar Ruiz O-21 live in?",
+      "summary": "Contractor Omar Ruiz O-21 told clerk Nia K-08 a joke and currently lives in Córdoba. Clerk Nia K-08 lives in Rosario."
+    },
+    {
+      "id": "prompt-revision-04",
+      "query": "What city does project manager Asha Ruiz A-12 live in?",
+      "summary": "Project manager Asha Ruiz A-12 is a colleague of analyst Bruno Vale B-8. Analyst Bruno Vale B-8 lives in Lima."
+    },
+    {
+      "id": "prompt-revision-05",
+      "query": "Where does technician Vera I-52 work now?",
+      "summary": "Technician Vera I-52 said employee Ivo M-31 works from Dakar."
+    },
+    {
+      "id": "prompt-revision-06",
+      "query": "Which city does engineer Bina Coro B-55 work from?",
+      "summary": "Engineer Bina Coro B-55 works from Siena, while curator Olin D-9 lives in Pisa."
+    },
+    {
+      "id": "prompt-revision-07",
+      "query": "Which city does consultant Rena Voss R-77 live in?",
+      "summary": "Consultant Rena Voss R-77 lives in Oslo; archivist Daro Finn D-13 lives in Bergen."
+    },
+    {
+      "id": "prompt-revision-08",
+      "query": "¿En qué ciudad vive el empleado Iván Sol P-49?",
+      "summary": "El empleado Iván Sol P-49 vive en Vigo. La archivista Eva Ríos R-63 vive en Lugo y catalogó los planos."
+    },
+    {
+      "id": "prompt-revision-09",
+      "query": "Where does physician Sol Ren S-44 work now?",
+      "summary": "Physician Sol Ren S-44 currently works from A Coruña. Surveyor Ani Q-12 lives in Cádiz."
+    }
+  ]
+}

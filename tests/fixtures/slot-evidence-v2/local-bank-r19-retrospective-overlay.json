@@ -1,0 +1,50 @@
+{
+  "version": "slot-evidence-v2-r19-retrospective-overlay-v1",
+  "source_bank": "local-bank-r19.json",
+  "source_bank_sha256": "4d3745403599924eb4a759879ed690ab78398b288dbfb80d34c06f37a5539e46",
+  "purpose": "Retrospective semantic correction; does not rewrite frozen expected_selected labels or prior results.",
+  "annotations": [
+    {
+      "case_id": "explicitly-excluded-recipient-does-not-rescue",
+      "relation": "refutes_premise",
+      "premise_dimension": "recipient",
+      "premise_quote": "What did employee Ana Ruiz E-17 tell contractor Bob Torres B-29?",
+      "reason": "The source explicitly says Ana told the team, not Bob. It corrects the recipient premise, but does not answer what Ana told Bob."
+    },
+    {
+      "case_id": "explicit-spanish-recipient-exclusion-does-not-rescue",
+      "relation": "refutes_premise",
+      "premise_dimension": "recipient",
+      "premise_quote": "¿Qué le dijo la empleada Ana Ruiz E-17 al contratista Bob Torres B-29?",
+      "reason": "The source explicitly excludes Bob as recipient. It corrects the recipient premise, but does not answer the requested speech content."
+    },
+    {
+      "case_id": "excluded-recipient-with-time-aside-does-not-rescue",
+      "relation": "refutes_premise",
+      "premise_dimension": "recipient",
+      "premise_quote": "What did employee Ana Ruiz E-17 tell contractor Bob Torres B-29?",
+      "reason": "The temporal aside does not change the explicit recipient exclusion."
+    },
+    {
+      "case_id": "other-than-recipient-does-not-rescue",
+      "relation": "refutes_premise",
+      "premise_dimension": "recipient",
+      "premise_quote": "What did employee Ana Ruiz E-17 tell contractor Bob Torres B-29?",
+      "reason": "The source explicitly excludes Bob with 'other than'; it corrects the recipient premise, not the requested speech content."
+    },
+    {
+      "case_id": "parenthetical-recipient-exclusion-does-not-rescue",
+      "relation": "refutes_premise",
+      "premise_dimension": "recipient",
+      "premise_quote": "What did employee Ana Ruiz E-17 tell contractor Bob Torres B-29?",
+      "reason": "The parenthetical explicitly excludes Bob as recipient; the aside does not change that correction."
+    },
+    {
+      "case_id": "dash-recipient-exclusion-does-not-rescue",
+      "relation": "refutes_premise",
+      "premise_dimension": "recipient",
+      "premise_quote": "What did employee Ana Ruiz E-17 tell contractor Bob Torres B-29?",
+      "reason": "The dash-delimited 'except' clause explicitly excludes Bob as recipient."
+    }
+  ]
+}

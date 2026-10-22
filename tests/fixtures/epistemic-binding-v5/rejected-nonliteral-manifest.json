@@ -1,0 +1,25 @@
+{
+  "version": "epistemic-binding-v5-reviewed",
+  "pairs": 18,
+  "provider_calls": 0,
+  "fresh_validation": false,
+  "files_sha256": {
+    "adjudication.json": "bf4b4972f1066e6645005da88d3fe51c7d47e16d77a99327b73d549f14b99cc8",
+    "author-labels.json": "fd04ffe643249357220719af8b672eb5cba1bdb25377076c652826dc663e74e0",
+    "author-manifest.json": "e3bb030b0232a269dcabcdbb134c329dd0818a171a87b8ad5a443cf4bfa839dd",
+    "blind-review-final.json": "0eff35cdb570ab9f07dcf41424c9b10793eaf309035aabdef9cfb64eb5db6a9f",
+    "blind-review-qualified.json": "6b06071e6d249d5106888356c0a8c559a2f368469f9dca9925c7e5b36b9b1fb8",
+    "blind-review.json": "c2b12c35c1f22b8ad69390a3d7d21f6c47317c79faa4c2c3034fdcb936ca7321",
+    "labels-reviewed.json": "2f836a1b3d9dfd5cd88abc9a31dadfe5680bc96664175d2c877f69a59c568edf",
+    "prequalification-adjudication.json": "9ebb991add49960e98f25b08bd65291f2ec11a3047549d3381d85ee963f9814e",
+    "prequalification-labels-reviewed.json": "ce099e744a2f12987adc9c45907c7557a3eb6a87484cac56dcd7187bfd78dfeb",
+    "prequalification-manifest.json": "9cb2dcc49a2d23939b193cc60a2432655b7fb8b3b95f896f732aecda45d76be8",
+    "source-only-draft.json": "1f9898608fc1b68eb1691b2db2dcc1e8472dcb199a0ce323a43d9f835d26db6e",
+    "source-only-reviewed.json": "10e131b4ca0c1569eb40217131af50697e2d11624833b8577a6341df8b134376"
+  },
+  "external_sha256": {
+    "docs/evaluation/evidence-contribution-v3-contract.md": "11e6f9e2b1eddfba4446410301a0a3cd1610a09ac69c1d63295c7c1cc23d70e9",
+    "docs/evaluation/evidence-contribution-v4-contract.md": "d225e4153cff9651452f2e7429c0bb519ed55002f1746a3c03e2fae829cc85ea",
+    "docs/evaluation/epistemic-binding-v5-contract.md": "011da869f6fac8ae5d67e72d661f0324e5695968161bef1b13377e6b791e0fe2"
+  }
+}

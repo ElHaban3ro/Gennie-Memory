@@ -1,0 +1,4034 @@
+[
+  {
+    "id": "cev5_066_01",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_066",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En el censo de aves Ribera de octubre, el equipo de Dalia empieza a observar a las 05:40 en el puesto Sauce.",
+    "summary": "En el censo de aves Ribera de octubre, el equipo de Dalia empieza a observar a las 05:40 en el puesto Sauce.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/066/01"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_066_02",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_066",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El equipo de Bruno empieza a las 06:15 en el puesto Junco durante el mismo censo Ribera.",
+    "summary": "El equipo de Bruno empieza a las 06:15 en el puesto Junco durante el mismo censo Ribera.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/066/02"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_066_03",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_066",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Para Dalia, el punto de reunión antes del censo Ribera es el muelle viejo.",
+    "summary": "Para Dalia, el punto de reunión antes del censo Ribera es el muelle viejo.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/066/03"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_066_04",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_066",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El formulario Ribera debe enviarse en CSV; el formulario de mareas Salitre se entrega en PDF.",
+    "summary": "El formulario Ribera debe enviarse en CSV; el formulario de mareas Salitre se entrega en PDF.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/066/04"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_066_05",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_066",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El parte de Ribera se remite a la coordinadora Inés por el buzón interno del observatorio.",
+    "summary": "El parte de Ribera se remite a la coordinadora Inés por el buzón interno del observatorio.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/066/05"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_066_06",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_066",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En Ribera no se capturan aves: las anillas solo se leen con telescopio desde la orilla.",
+    "summary": "En Ribera no se capturan aves: las anillas solo se leen con telescopio desde la orilla.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/066/06"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_066_07",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_066",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La captura con redes pertenece al programa sanitario Veta, separado del censo Ribera.",
+    "summary": "La captura con redes pertenece al programa sanitario Veta, separado del censo Ribera.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/066/07"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_066_08",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_066",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La lancha contratada para Ribera fue anulada; todo el recorrido de octubre será a pie.",
+    "summary": "La lancha contratada para Ribera fue anulada; todo el recorrido de octubre será a pie.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/066/08"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_066_09",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_066",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Para Veta sí está confirmada una lancha con dos tripulantes.",
+    "summary": "Para Veta sí está confirmada una lancha con dos tripulantes.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/066/09"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_066_10",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_066",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "De los cuatro sectores Ribera, Sauce y Junco tienen el recuento de octubre cerrado; Brezo y Limo siguen sin contar.",
+    "summary": "De los cuatro sectores Ribera, Sauce y Junco tienen el recuento de octubre cerrado; Brezo y Limo siguen sin contar.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/066/10"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_066_11",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_066",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En Sauce se registraron veinticuatro garzas durante el censo Ribera de octubre.",
+    "summary": "En Sauce se registraron veinticuatro garzas durante el censo Ribera de octubre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/066/11"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_066_12",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_066",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En Junco se registraron diecisiete garzas durante el censo Ribera de octubre.",
+    "summary": "En Junco se registraron diecisiete garzas durante el censo Ribera de octubre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/066/12"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_066_13",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_066",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El recuento Ribera de septiembre fue de ochenta y dos garzas entre los cuatro sectores.",
+    "summary": "El recuento Ribera de septiembre fue de ochenta y dos garzas entre los cuatro sectores.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/066/13"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_066_14",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_066",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La licencia del nuevo telescopio de Ribera está aprobada por dirección; falta la firma de tesorería para autorizar el pago.",
+    "summary": "La licencia del nuevo telescopio de Ribera está aprobada por dirección; falta la firma de tesorería para autorizar el pago.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/066/14"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_066_15",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_066",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Tesorería recibió el expediente del telescopio Ribera el 15 de octubre y todavía no ha decidido.",
+    "summary": "Tesorería recibió el expediente del telescopio Ribera el 15 de octubre y todavía no ha decidido.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/066/15"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_066_16",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_066",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El permiso del telescopio Veta tiene la firma de dirección y la de tesorería.",
+    "summary": "El permiso del telescopio Veta tiene la firma de dirección y la de tesorería.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/066/16"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_066_17",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_066",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La contraseña del buzón Salitre es ficticiamente SAL-82, solo para esta conversación sintética.",
+    "summary": "La contraseña del buzón Salitre es ficticiamente SAL-82, solo para esta conversación sintética.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/066/17"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_066_18",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_066",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El buzón interno de Ribera se llama partes-ribera.",
+    "summary": "El buzón interno de Ribera se llama partes-ribera.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/066/18"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_066_19",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_066",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El chaleco del equipo de Dalia lleva una banda naranja.",
+    "summary": "El chaleco del equipo de Dalia lleva una banda naranja.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/066/19"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_066_20",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_066",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El chaleco de Bruno lleva una banda azul.",
+    "summary": "El chaleco de Bruno lleva una banda azul.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/066/20"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_066_21",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_066",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El alquiler del telescopio Veta costó setenta unidades en septiembre.",
+    "summary": "El alquiler del telescopio Veta costó setenta unidades en septiembre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/066/21"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_066_22",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_066",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El telescopio Ribera tiene una funda impermeable gris.",
+    "summary": "El telescopio Ribera tiene una funda impermeable gris.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/066/22"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_066_23",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_066",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Las libretas Ribera se guardan en el armario oeste al regresar.",
+    "summary": "Las libretas Ribera se guardan en el armario oeste al regresar.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/066/23"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_066_24",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_066",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En octubre la marea se consultará en el tablón del muelle.",
+    "summary": "En octubre la marea se consultará en el tablón del muelle.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/066/24"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_066_25",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_066",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La batería de repuesto del lector de anillas va en la bolsa de Inés.",
+    "summary": "La batería de repuesto del lector de anillas va en la bolsa de Inés.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/066/25"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_066_26",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_066",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El acceso al puesto Brezo tiene una pasarela de madera.",
+    "summary": "El acceso al puesto Brezo tiene una pasarela de madera.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/066/26"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_066_27",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_066",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Las fotos Ribera se ordenan por sector y fecha.",
+    "summary": "Las fotos Ribera se ordenan por sector y fecha.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/066/27"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_066_28",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_066",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El programa Salitre mide salinidad una vez por semana.",
+    "summary": "El programa Salitre mide salinidad una vez por semana.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/066/28"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_067_01",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_067",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La hornada Aurora del 18 de octubre usó ciento veinte gramos de masa madre por cada kilo de harina.",
+    "summary": "La hornada Aurora del 18 de octubre usó ciento veinte gramos de masa madre por cada kilo de harina.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/067/01"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_067_02",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_067",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La hornada Bruma del mismo día usó noventa gramos de masa madre por kilo de harina.",
+    "summary": "La hornada Bruma del mismo día usó noventa gramos de masa madre por kilo de harina.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/067/02"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_067_03",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_067",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El horno de Aurora se precalienta a 235 grados y baja a 210 al cargar los panes.",
+    "summary": "El horno de Aurora se precalienta a 235 grados y baja a 210 al cargar los panes.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/067/03"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_067_04",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_067",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El horno de Bruma mantiene 220 grados durante toda su cocción.",
+    "summary": "El horno de Bruma mantiene 220 grados durante toda su cocción.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/067/04"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_067_05",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_067",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Los sacos de harina Aurora llevan el sello del molino Naranjo.",
+    "summary": "Los sacos de harina Aurora llevan el sello del molino Naranjo.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/067/05"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_067_06",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_067",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Corrijo la ficha de Aurora: no lleva miel; el dulzor procede exclusivamente de la malta.",
+    "summary": "Corrijo la ficha de Aurora: no lleva miel; el dulzor procede exclusivamente de la malta.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/067/06"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_067_07",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_067",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Bruma sí lleva miel de la cooperativa Lumbre.",
+    "summary": "Bruma sí lleva miel de la cooperativa Lumbre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/067/07"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_067_08",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_067",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Los panes Aurora del 18 de octubre no fueron vendidos: se repartieron gratuitamente en una degustación.",
+    "summary": "Los panes Aurora del 18 de octubre no fueron vendidos: se repartieron gratuitamente en una degustación.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/067/08"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_067_09",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_067",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La tienda vendió los panes Bruma del 18 de octubre a seis unidades por pieza.",
+    "summary": "La tienda vendió los panes Bruma del 18 de octubre a seis unidades por pieza.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/067/09"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_067_10",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_067",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La fermentación final de Aurora comenzó a las 08:10; el cuaderno no registra a qué hora terminó.",
+    "summary": "La fermentación final de Aurora comenzó a las 08:10; el cuaderno no registra a qué hora terminó.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/067/10"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_067_11",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_067",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El amasado de Aurora concluyó a las 07:35, antes de iniciar la fermentación final.",
+    "summary": "El amasado de Aurora concluyó a las 07:35, antes de iniciar la fermentación final.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/067/11"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_067_12",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_067",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El registro de Bruma sí anota fermentación final de 08:00 a 09:20.",
+    "summary": "El registro de Bruma sí anota fermentación final de 08:00 a 09:20.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/067/12"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_067_13",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_067",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La bolsa candidata para Aurora resiste humedad durante dos días; aún falta medir su resistencia al aplastamiento.",
+    "summary": "La bolsa candidata para Aurora resiste humedad durante dos días; aún falta medir su resistencia al aplastamiento.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/067/13"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_067_14",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_067",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Para la bolsa candidata Aurora la prueba de sellado dio cierre hermético.",
+    "summary": "Para la bolsa candidata Aurora la prueba de sellado dio cierre hermético.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/067/14"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_067_15",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_067",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La bolsa Bruma superó tanto la prueba de humedad como la de aplastamiento.",
+    "summary": "La bolsa Bruma superó tanto la prueba de humedad como la de aplastamiento.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/067/15"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_067_16",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_067",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El número de factura de compra del molino doméstico de Bruma es FAC-731.",
+    "summary": "El número de factura de compra del molino doméstico de Bruma es FAC-731.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/067/16"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_067_17",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_067",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El molino doméstico asignado a Aurora está sobre una mesa de acero.",
+    "summary": "El molino doméstico asignado a Aurora está sobre una mesa de acero.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/067/17"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_067_18",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_067",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El lote de semillas de lino Bruma vence en diciembre de 2027.",
+    "summary": "El lote de semillas de lino Bruma vence en diciembre de 2027.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/067/18"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_067_19",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_067",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Las semillas de lino de Aurora se guardan en un tarro ámbar.",
+    "summary": "Las semillas de lino de Aurora se guardan en un tarro ámbar.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/067/19"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_067_20",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_067",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La pala para Aurora tiene mango largo de haya.",
+    "summary": "La pala para Aurora tiene mango largo de haya.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/067/20"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_067_21",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_067",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La pala de Bruma tiene mango corto de fresno.",
+    "summary": "La pala de Bruma tiene mango corto de fresno.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/067/21"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_067_22",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_067",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El curso de noviembre enseñará trenzado de panes de centeno.",
+    "summary": "El curso de noviembre enseñará trenzado de panes de centeno.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/067/22"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_067_23",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_067",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El cartel Aurora utiliza letras verdes.",
+    "summary": "El cartel Aurora utiliza letras verdes.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/067/23"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_067_24",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_067",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Las bandejas vacías se apilan después de enfriarse.",
+    "summary": "Las bandejas vacías se apilan después de enfriarse.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/067/24"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_067_25",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_067",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La balanza pequeña se calibra cada lunes.",
+    "summary": "La balanza pequeña se calibra cada lunes.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/067/25"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_067_26",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_067",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La degustación Aurora se celebró en el patio cubierto.",
+    "summary": "La degustación Aurora se celebró en el patio cubierto.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/067/26"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_067_27",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_067",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Los asistentes recibieron tarjetas para describir la textura.",
+    "summary": "Los asistentes recibieron tarjetas para describir la textura.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/067/27"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_067_28",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_067",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Las tarjetas de Bruma se archivan en otra carpeta.",
+    "summary": "Las tarjetas de Bruma se archivan en otra carpeta.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/067/28"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_068_01",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_068",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La digitalización del libreto Luciérnaga se hará en TIFF de 600 puntos por pulgada.",
+    "summary": "La digitalización del libreto Luciérnaga se hará en TIFF de 600 puntos por pulgada.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/068/01"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_068_02",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_068",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El cartel de la obra Neblina se digitaliza en JPEG de 300 puntos por pulgada.",
+    "summary": "El cartel de la obra Neblina se digitaliza en JPEG de 300 puntos por pulgada.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/068/02"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_068_03",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_068",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Para consultar el original Luciérnaga hay que usar guantes de nitrilo sin polvo.",
+    "summary": "Para consultar el original Luciérnaga hay que usar guantes de nitrilo sin polvo.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/068/03"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_068_04",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_068",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Los visitantes que consulten Luciérnaga deben hacerlo sobre el atril acolchado.",
+    "summary": "Los visitantes que consulten Luciérnaga deben hacerlo sobre el atril acolchado.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/068/04"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_068_05",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_068",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La restauradora Amaya redacta el registro de intervención Luciérnaga.",
+    "summary": "La restauradora Amaya redacta el registro de intervención Luciérnaga.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/068/05"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_068_06",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_068",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La atribución del libreto Luciérnaga a Teo era errónea: su autora es Sara Olmedo.",
+    "summary": "La atribución del libreto Luciérnaga a Teo era errónea: su autora es Sara Olmedo.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/068/06"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_068_07",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_068",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Teo diseñó las siluetas de Neblina, no escribió ese libreto.",
+    "summary": "Teo diseñó las siluetas de Neblina, no escribió ese libreto.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/068/07"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_068_08",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_068",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La sesión de sombras Luciérnaga del viernes será cerrada al público; solo entra el equipo técnico.",
+    "summary": "La sesión de sombras Luciérnaga del viernes será cerrada al público; solo entra el equipo técnico.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/068/08"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_068_09",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_068",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La función Neblina del sábado sí admite público con entrada.",
+    "summary": "La función Neblina del sábado sí admite público con entrada.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/068/09"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_068_10",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_068",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Del libreto Luciérnaga se han digitalizado las páginas 1 a 18; las páginas 19 a 24 siguen pendientes.",
+    "summary": "Del libreto Luciérnaga se han digitalizado las páginas 1 a 18; las páginas 19 a 24 siguen pendientes.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/068/10"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_068_11",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_068",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Las páginas 1 a 18 de Luciérnaga ya pasaron el control de enfoque.",
+    "summary": "Las páginas 1 a 18 de Luciérnaga ya pasaron el control de enfoque.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/068/11"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_068_12",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_068",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La copia de consulta Luciérnaga solo se publicará cuando estén digitalizadas las veinticuatro páginas.",
+    "summary": "La copia de consulta Luciérnaga solo se publicará cuando estén digitalizadas las veinticuatro páginas.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/068/12"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_068_13",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_068",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El traslado del archivo Luciérnaga tiene confirmado el embalaje para el 27 de octubre, pero el transportista no ha fijado recogida.",
+    "summary": "El traslado del archivo Luciérnaga tiene confirmado el embalaje para el 27 de octubre, pero el transportista no ha fijado recogida.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/068/13"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_068_14",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_068",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El transportista de Luciérnaga aún debe asignar vehículo antes de fijar la hora de recogida.",
+    "summary": "El transportista de Luciérnaga aún debe asignar vehículo antes de fijar la hora de recogida.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/068/14"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_068_15",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_068",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Neblina saldrá en el vehículo Enebro a las 11:30 del 27 de octubre.",
+    "summary": "Neblina saldrá en el vehículo Enebro a las 11:30 del 27 de octubre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/068/15"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_068_16",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_068",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El valor asegurado del cartel Neblina es de doce mil unidades.",
+    "summary": "El valor asegurado del cartel Neblina es de doce mil unidades.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/068/16"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_068_17",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_068",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El libreto Luciérnaga se guarda en una caja con cierre de cinta.",
+    "summary": "El libreto Luciérnaga se guarda en una caja con cierre de cinta.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/068/17"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_068_18",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_068",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El código de acceso de la sala de Neblina es 5462, dato ficticio de este banco.",
+    "summary": "El código de acceso de la sala de Neblina es 5462, dato ficticio de este banco.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/068/18"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_068_19",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_068",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La sala donde se consulta Luciérnaga está en la planta baja.",
+    "summary": "La sala donde se consulta Luciérnaga está en la planta baja.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/068/19"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_068_20",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_068",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Las siluetas antiguas de Luciérnaga se separan con papel neutro.",
+    "summary": "Las siluetas antiguas de Luciérnaga se separan con papel neutro.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/068/20"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_068_21",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_068",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El registro de luces usa casillas para intensidad y ángulo.",
+    "summary": "El registro de luces usa casillas para intensidad y ángulo.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/068/21"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_068_22",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_068",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Amaya conserva los pinceles finos en un estuche azul.",
+    "summary": "Amaya conserva los pinceles finos en un estuche azul.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/068/22"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_068_23",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_068",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El telón de Neblina es de algodón negro.",
+    "summary": "El telón de Neblina es de algodón negro.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/068/23"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_068_24",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_068",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Los tornillos del atril se revisan al abrir la sala.",
+    "summary": "Los tornillos del atril se revisan al abrir la sala.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/068/24"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_068_25",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_068",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Las entradas del sábado se imprimen con tinta violeta.",
+    "summary": "Las entradas del sábado se imprimen con tinta violeta.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/068/25"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_068_26",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_068",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El archivo prepara una exposición de bocetos para noviembre.",
+    "summary": "El archivo prepara una exposición de bocetos para noviembre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/068/26"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_068_27",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_068",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Las sillas de visitantes son plegables.",
+    "summary": "Las sillas de visitantes son plegables.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/068/27"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_068_28",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_068",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El proyector de repuesto pertenece al taller vecino.",
+    "summary": "El proyector de repuesto pertenece al taller vecino.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/068/28"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_069_01",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_069",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Para la ruta Nadir del 24 de octubre, Celia lleva la brújula de placa y Omar lleva el botiquín.",
+    "summary": "Para la ruta Nadir del 24 de octubre, Celia lleva la brújula de placa y Omar lleva el botiquín.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/069/01"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_069_02",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_069",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En la ruta Cenit, Celia lleva el botiquín y Omar se encarga de la brújula.",
+    "summary": "En la ruta Cenit, Celia lleva el botiquín y Omar se encarga de la brújula.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/069/02"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_069_03",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_069",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El punto de salida Nadir es el portón del pinar a las 19:20.",
+    "summary": "El punto de salida Nadir es el portón del pinar a las 19:20.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/069/03"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_069_04",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_069",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La ruta Cenit comienza en la cantera a las 18:50.",
+    "summary": "La ruta Cenit comienza en la cantera a las 18:50.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/069/04"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_069_05",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_069",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La señal de retirada de Nadir consiste en tres silbidos largos.",
+    "summary": "La señal de retirada de Nadir consiste en tres silbidos largos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/069/05"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_069_06",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_069",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La ruta Nadir no atraviesa el vado del río: se modificó para cruzar por el puente de piedra.",
+    "summary": "La ruta Nadir no atraviesa el vado del río: se modificó para cruzar por el puente de piedra.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/069/06"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_069_07",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_069",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El itinerario Cenit mantiene el paso por el vado si el nivel es bajo.",
+    "summary": "El itinerario Cenit mantiene el paso por el vado si el nivel es bajo.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/069/07"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_069_08",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_069",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La prueba Nadir no es una competición cronometrada; cada pareja avanza a su ritmo sin clasificación.",
+    "summary": "La prueba Nadir no es una competición cronometrada; cada pareja avanza a su ritmo sin clasificación.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/069/08"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_069_09",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_069",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Cenit sí asigna medallas según el tiempo de llegada.",
+    "summary": "Cenit sí asigna medallas según el tiempo de llegada.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/069/09"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_069_10",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_069",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En el ensayo Nadir se verificaron los faros de seis parejas; las dos parejas restantes todavía no presentaron sus faros.",
+    "summary": "En el ensayo Nadir se verificaron los faros de seis parejas; las dos parejas restantes todavía no presentaron sus faros.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/069/10"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_069_11",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_069",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Los seis juegos de faros revisados para Nadir funcionaron durante una hora seguida.",
+    "summary": "Los seis juegos de faros revisados para Nadir funcionaron durante una hora seguida.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/069/11"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_069_12",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_069",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Las dos parejas restantes de Nadir están citadas para comprobar sus faros el martes.",
+    "summary": "Las dos parejas restantes de Nadir están citadas para comprobar sus faros el martes.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/069/12"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_069_13",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_069",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El permiso Nadir cubre el tramo del pinar; la autorización del tramo del roquedo está pendiente.",
+    "summary": "El permiso Nadir cubre el tramo del pinar; la autorización del tramo del roquedo está pendiente.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/069/13"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_069_14",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_069",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La entidad que decide el permiso del roquedo de Nadir recibió ayer el mapa corregido.",
+    "summary": "La entidad que decide el permiso del roquedo de Nadir recibió ayer el mapa corregido.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/069/14"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_069_15",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_069",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El permiso Cenit cubre todo su trazado hasta la cantera.",
+    "summary": "El permiso Cenit cubre todo su trazado hasta la cantera.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/069/15"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_069_16",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_069",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La cuota de inscripción Cenit fue de quince unidades por persona.",
+    "summary": "La cuota de inscripción Cenit fue de quince unidades por persona.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/069/16"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_069_17",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_069",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Las inscripciones de Nadir se apuntan en una hoja de papel azul.",
+    "summary": "Las inscripciones de Nadir se apuntan en una hoja de papel azul.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/069/17"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_069_18",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_069",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El teléfono de la guardesa de Cenit es 555-0182 en esta ficción.",
+    "summary": "El teléfono de la guardesa de Cenit es 555-0182 en esta ficción.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/069/18"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_069_19",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_069",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La guardesa del pinar Nadir se llama Marta.",
+    "summary": "La guardesa del pinar Nadir se llama Marta.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/069/19"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_069_20",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_069",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Los mapas Nadir se plastificaron para resistir lluvia.",
+    "summary": "Los mapas Nadir se plastificaron para resistir lluvia.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/069/20"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_069_21",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_069",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Omar revisó el cierre del botiquín.",
+    "summary": "Omar revisó el cierre del botiquín.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/069/21"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_069_22",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_069",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Celia lleva una chaqueta con bandas reflectantes.",
+    "summary": "Celia lleva una chaqueta con bandas reflectantes.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/069/22"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_069_23",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_069",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La base presta bastones de aluminio.",
+    "summary": "La base presta bastones de aluminio.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/069/23"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_069_24",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_069",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El taller de lectura de curvas será en noviembre.",
+    "summary": "El taller de lectura de curvas será en noviembre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/069/24"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_069_25",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_069",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El árbol de reunión tiene una marca amarilla.",
+    "summary": "El árbol de reunión tiene una marca amarilla.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/069/25"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_069_26",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_069",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La cafetería cierra antes de la salida Nadir.",
+    "summary": "La cafetería cierra antes de la salida Nadir.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/069/26"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_069_27",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_069",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El recorrido de prácticas diurnas usa controles verdes.",
+    "summary": "El recorrido de prácticas diurnas usa controles verdes.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/069/27"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_069_28",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_069",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Los mapas sobrantes se guardan en un tubo rígido.",
+    "summary": "Los mapas sobrantes se guardan en un tubo rígido.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/069/28"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_070_01",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_070",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El paño Índigo I4 se fija durante veinte minutos en vapor; el paño Rubia R8 se fija diez minutos en baño ácido.",
+    "summary": "El paño Índigo I4 se fija durante veinte minutos en vapor; el paño Rubia R8 se fija diez minutos en baño ácido.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/070/01"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_070_02",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_070",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Para medir el color de Índigo I4 se usa luz D65 y fondo blanco mate.",
+    "summary": "Para medir el color de Índigo I4 se usa luz D65 y fondo blanco mate.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/070/02"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_070_03",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_070",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La medición de Rubia R8 utiliza luz A y fondo gris.",
+    "summary": "La medición de Rubia R8 utiliza luz A y fondo gris.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/070/03"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_070_04",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_070",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La técnica Nuria prepara las muestras de Índigo I4.",
+    "summary": "La técnica Nuria prepara las muestras de Índigo I4.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/070/04"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_070_05",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_070",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El lote Índigo I4 tiene tres paños numerados en la esquina inferior.",
+    "summary": "El lote Índigo I4 tiene tres paños numerados en la esquina inferior.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/070/05"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_070_06",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_070",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El tono Índigo I4 no procede de añil natural: se utilizó pigmento sintético documentado.",
+    "summary": "El tono Índigo I4 no procede de añil natural: se utilizó pigmento sintético documentado.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/070/06"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_070_07",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_070",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Rubia R8 sí empleó extracto vegetal de raíz.",
+    "summary": "Rubia R8 sí empleó extracto vegetal de raíz.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/070/07"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_070_08",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_070",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "No se lavó Índigo I4 con agua caliente; se hizo un aclarado frío para conservar el acabado.",
+    "summary": "No se lavó Índigo I4 con agua caliente; se hizo un aclarado frío para conservar el acabado.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/070/08"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_070_09",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_070",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Rubia R8 tuvo un lavado a sesenta grados.",
+    "summary": "Rubia R8 tuvo un lavado a sesenta grados.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/070/09"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_070_10",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_070",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Índigo I4 obtuvo grado cuatro de solidez al frote seco; la prueba de frote húmedo aún no se ha hecho.",
+    "summary": "Índigo I4 obtuvo grado cuatro de solidez al frote seco; la prueba de frote húmedo aún no se ha hecho.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/070/10"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_070_11",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_070",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La muestra de Índigo I4 destinada a frote húmedo está preparada y sellada.",
+    "summary": "La muestra de Índigo I4 destinada a frote húmedo está preparada y sellada.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/070/11"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_070_12",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_070",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Rubia R8 obtuvo grado tres al frote húmedo.",
+    "summary": "Rubia R8 obtuvo grado tres al frote húmedo.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/070/12"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_070_13",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_070",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Para repetir Índigo I4 están reservados dos metros de lino, pero el taller aún no confirmó qué día podrá teñirlos.",
+    "summary": "Para repetir Índigo I4 están reservados dos metros de lino, pero el taller aún no confirmó qué día podrá teñirlos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/070/13"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_070_14",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_070",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El taller de Índigo I4 contestará la fecha de repetición después de reparar la caldera.",
+    "summary": "El taller de Índigo I4 contestará la fecha de repetición después de reparar la caldera.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/070/14"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_070_15",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_070",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La repetición de Rubia R8 está confirmada para el 29 de octubre.",
+    "summary": "La repetición de Rubia R8 está confirmada para el 29 de octubre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/070/15"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_070_16",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_070",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El proveedor de Rubia R8 facturó cuarenta unidades por kilo de extracto.",
+    "summary": "El proveedor de Rubia R8 facturó cuarenta unidades por kilo de extracto.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/070/16"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_070_17",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_070",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El recipiente del pigmento Índigo I4 es de vidrio oscuro.",
+    "summary": "El recipiente del pigmento Índigo I4 es de vidrio oscuro.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/070/17"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_070_18",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_070",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La densidad del baño Rubia R8 fue de 1,08 gramos por mililitro.",
+    "summary": "La densidad del baño Rubia R8 fue de 1,08 gramos por mililitro.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/070/18"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_070_19",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_070",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El baño Índigo I4 se preparó en la cuba pequeña.",
+    "summary": "El baño Índigo I4 se preparó en la cuba pequeña.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/070/19"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_070_20",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_070",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Las etiquetas de Índigo I4 son resistentes al vapor.",
+    "summary": "Las etiquetas de Índigo I4 son resistentes al vapor.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/070/20"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_070_21",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_070",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Los paños secos reposan en una rejilla de acero.",
+    "summary": "Los paños secos reposan en una rejilla de acero.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/070/21"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_070_22",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_070",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La ficha de Rubia R8 lleva la firma de Elías.",
+    "summary": "La ficha de Rubia R8 lleva la firma de Elías.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/070/22"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_070_23",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_070",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El espectrofotómetro se cubre cuando no se usa.",
+    "summary": "El espectrofotómetro se cubre cuando no se usa.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/070/23"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_070_24",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_070",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La puerta del laboratorio tiene un visor circular.",
+    "summary": "La puerta del laboratorio tiene un visor circular.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/070/24"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_070_25",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_070",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Los guantes usados van al contenedor señalado.",
+    "summary": "Los guantes usados van al contenedor señalado.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/070/25"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_070_26",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_070",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El inventario se actualiza al final del turno.",
+    "summary": "El inventario se actualiza al final del turno.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/070/26"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_070_27",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_070",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Nuria compara los bordes para detectar diferencias de tono.",
+    "summary": "Nuria compara los bordes para detectar diferencias de tono.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/070/27"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_070_28",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_070",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Las telas de demostración se separan de las muestras medidas.",
+    "summary": "Las telas de demostración se separan de las muestras medidas.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/070/28"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_071_01",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_071",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El taladro Olmo se recoge los miércoles de 16:00 a 18:00 en la caseta norte.",
+    "summary": "El taladro Olmo se recoge los miércoles de 16:00 a 18:00 en la caseta norte.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/071/01"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_071_02",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_071",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La sierra Fresno se recoge los viernes de 10:00 a 12:00 en la caseta sur.",
+    "summary": "La sierra Fresno se recoge los viernes de 10:00 a 12:00 en la caseta sur.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/071/02"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_071_03",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_071",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Para reservar Olmo se presenta el carné vecinal vigente en el mostrador.",
+    "summary": "Para reservar Olmo se presenta el carné vecinal vigente en el mostrador.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/071/03"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_071_04",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_071",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La devolución Olmo exige retirar la broca y entregar la maleta cerrada.",
+    "summary": "La devolución Olmo exige retirar la broca y entregar la maleta cerrada.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/071/04"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_071_05",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_071",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Rita registra las entregas del taladro Olmo; Simón registra las de la sierra Fresno.",
+    "summary": "Rita registra las entregas del taladro Olmo; Simón registra las de la sierra Fresno.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/071/05"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_071_06",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_071",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El taladro Olmo sigue siendo propiedad de la red: se presta, no se regala a quien lo usa.",
+    "summary": "El taladro Olmo sigue siendo propiedad de la red: se presta, no se regala a quien lo usa.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/071/06"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_071_07",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_071",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La antigua lijadora Abedul sí fue donada a la escuela.",
+    "summary": "La antigua lijadora Abedul sí fue donada a la escuela.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/071/07"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_071_08",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_071",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Para Olmo se eliminó la exigencia de avalista; basta el carné vecinal vigente.",
+    "summary": "Para Olmo se eliminó la exigencia de avalista; basta el carné vecinal vigente.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/071/08"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_071_09",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_071",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Fresno todavía requiere un avalista con carné.",
+    "summary": "Fresno todavía requiere un avalista con carné.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/071/09"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_071_10",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_071",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La revisión de Olmo confirmó el cable en buen estado; falta comprobar el aislamiento eléctrico.",
+    "summary": "La revisión de Olmo confirmó el cable en buen estado; falta comprobar el aislamiento eléctrico.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/071/10"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_071_11",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_071",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La prueba de aislamiento de Olmo está asignada a Luz para la próxima semana.",
+    "summary": "La prueba de aislamiento de Olmo está asignada a Luz para la próxima semana.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/071/11"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_071_12",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_071",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En Fresno el cable y el aislamiento ya se revisaron sin defectos.",
+    "summary": "En Fresno el cable y el aislamiento ya se revisaron sin defectos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/071/12"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_071_13",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_071",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Del juego de seis brocas de Olmo se devolvieron cuatro; se está averiguando quién tiene las otras dos.",
+    "summary": "Del juego de seis brocas de Olmo se devolvieron cuatro; se está averiguando quién tiene las otras dos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/071/13"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_071_14",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_071",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Las cuatro brocas de Olmo recibidas están identificadas como 3, 4, 5 y 6 milímetros.",
+    "summary": "Las cuatro brocas de Olmo recibidas están identificadas como 3, 4, 5 y 6 milímetros.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/071/14"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_071_15",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_071",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La persona que tiene las dos brocas pendientes de Olmo no ha sido identificada.",
+    "summary": "La persona que tiene las dos brocas pendientes de Olmo no ha sido identificada.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/071/15"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_071_16",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_071",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El depósito reembolsable de Fresno es de treinta unidades.",
+    "summary": "El depósito reembolsable de Fresno es de treinta unidades.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/071/16"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_071_17",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_071",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La maleta Olmo tiene un compartimento para el resguardo de préstamo.",
+    "summary": "La maleta Olmo tiene un compartimento para el resguardo de préstamo.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/071/17"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_071_18",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_071",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El número de serie de la lijadora Abedul es AB-77041.",
+    "summary": "El número de serie de la lijadora Abedul es AB-77041.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/071/18"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_071_19",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_071",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La placa de inventario de Olmo es naranja y está en el mango.",
+    "summary": "La placa de inventario de Olmo es naranja y está en el mango.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/071/19"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_071_20",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_071",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Las herramientas manuales cuelgan de un panel perforado.",
+    "summary": "Las herramientas manuales cuelgan de un panel perforado.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/071/20"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_071_21",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_071",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La caseta norte tiene un toldo verde.",
+    "summary": "La caseta norte tiene un toldo verde.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/071/21"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_071_22",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_071",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Los resguardos se conservan durante un año.",
+    "summary": "Los resguardos se conservan durante un año.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/071/22"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_071_23",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_071",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Rita abre el armario con una llave de latón.",
+    "summary": "Rita abre el armario con una llave de latón.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/071/23"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_071_24",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_071",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Las reservas anuladas se tachan con una sola línea.",
+    "summary": "Las reservas anuladas se tachan con una sola línea.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/071/24"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_071_25",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_071",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El taller de afilado será en noviembre.",
+    "summary": "El taller de afilado será en noviembre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/071/25"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_071_26",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_071",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La sierra Fresno usa gafas de protección durante su demostración.",
+    "summary": "La sierra Fresno usa gafas de protección durante su demostración.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/071/26"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_071_27",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_071",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La escuela mantiene Abedul en su aula de tecnología.",
+    "summary": "La escuela mantiene Abedul en su aula de tecnología.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/071/27"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_071_28",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_071",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El catálogo vecinal enumera los accesorios por separado.",
+    "summary": "El catálogo vecinal enumera los accesorios por separado.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/071/28"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_072_01",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_072",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Para el mapa Delta se usará papel japonés de nueve gramos por metro cuadrado en los desgarros.",
+    "summary": "Para el mapa Delta se usará papel japonés de nueve gramos por metro cuadrado en los desgarros.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/072/01"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_072_02",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_072",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Para el mapa Sierra se eligió papel japonés de doce gramos por metro cuadrado.",
+    "summary": "Para el mapa Sierra se eligió papel japonés de doce gramos por metro cuadrado.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/072/02"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_072_03",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_072",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La carpeta Delta se guarda horizontalmente en el cajón 4, mientras Sierra ocupa el cajón 7.",
+    "summary": "La carpeta Delta se guarda horizontalmente en el cajón 4, mientras Sierra ocupa el cajón 7.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/072/03"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_072_04",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_072",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La supervisora de Delta es Alba y el supervisor de Sierra es Ciro.",
+    "summary": "La supervisora de Delta es Alba y el supervisor de Sierra es Ciro.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/072/04"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_072_05",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_072",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El informe Delta lleva fotografías antes y después de cada intervención.",
+    "summary": "El informe Delta lleva fotografías antes y después de cada intervención.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/072/05"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_072_06",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_072",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El mapa Delta no es de 1920: el colofón legible fecha su impresión en 1936.",
+    "summary": "El mapa Delta no es de 1920: el colofón legible fecha su impresión en 1936.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/072/06"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_072_07",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_072",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La edición Sierra sí fue impresa en 1920.",
+    "summary": "La edición Sierra sí fue impresa en 1920.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/072/07"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_072_08",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_072",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Se descartó usar cinta adhesiva comercial en Delta; los refuerzos se fijarán con engrudo de almidón.",
+    "summary": "Se descartó usar cinta adhesiva comercial en Delta; los refuerzos se fijarán con engrudo de almidón.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/072/08"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_072_09",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_072",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El montaje de la copia didáctica Sierra usa cinta comercial en el reverso del soporte moderno.",
+    "summary": "El montaje de la copia didáctica Sierra usa cinta comercial en el reverso del soporte moderno.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/072/09"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_072_10",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_072",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En Delta se limpiaron las dos esquinas superiores; las dos inferiores aún no se han tratado.",
+    "summary": "En Delta se limpiaron las dos esquinas superiores; las dos inferiores aún no se han tratado.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/072/10"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_072_11",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_072",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La esquina superior izquierda de Delta quedó sin manchas visibles tras la limpieza.",
+    "summary": "La esquina superior izquierda de Delta quedó sin manchas visibles tras la limpieza.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/072/11"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_072_12",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_072",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La esquina superior derecha de Delta conserva una mancha tenue que no se pudo retirar.",
+    "summary": "La esquina superior derecha de Delta conserva una mancha tenue que no se pudo retirar.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/072/12"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_072_13",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_072",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El presupuesto Delta tiene aprobados ciento ochenta unidades para materiales; la partida de mano de obra sigue sin cuantificar.",
+    "summary": "El presupuesto Delta tiene aprobados ciento ochenta unidades para materiales; la partida de mano de obra sigue sin cuantificar.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/072/13"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_072_14",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_072",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La aprobación de mano de obra Delta depende de que Alba presente una estimación de horas, todavía pendiente.",
+    "summary": "La aprobación de mano de obra Delta depende de que Alba presente una estimación de horas, todavía pendiente.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/072/14"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_072_15",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_072",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El presupuesto completo de Sierra asciende a cuatrocientas veinte unidades.",
+    "summary": "El presupuesto completo de Sierra asciende a cuatrocientas veinte unidades.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/072/15"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_072_16",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_072",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El mapa Sierra mide noventa por sesenta centímetros.",
+    "summary": "El mapa Sierra mide noventa por sesenta centímetros.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/072/16"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_072_17",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_072",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La carpeta Delta es de cartón de conservación sin ácido.",
+    "summary": "La carpeta Delta es de cartón de conservación sin ácido.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/072/17"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_072_18",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_072",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La donante del mapa Sierra fue Elena Falcón.",
+    "summary": "La donante del mapa Sierra fue Elena Falcón.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/072/18"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_072_19",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_072",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El mapa Delta llegó al taller en una caja gris.",
+    "summary": "El mapa Delta llegó al taller en una caja gris.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/072/19"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_072_20",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_072",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Las pinzas de punta curva reposan sobre un paño limpio.",
+    "summary": "Las pinzas de punta curva reposan sobre un paño limpio.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/072/20"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_072_21",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_072",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Alba usa una lupa de sobremesa.",
+    "summary": "Alba usa una lupa de sobremesa.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/072/21"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_072_22",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_072",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Los pesos de secado están forrados de tela blanca.",
+    "summary": "Los pesos de secado están forrados de tela blanca.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/072/22"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_072_23",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_072",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La mesa de limpieza recibe luz lateral.",
+    "summary": "La mesa de limpieza recibe luz lateral.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/072/23"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_072_24",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_072",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El inventario de mapas tiene índice por continente.",
+    "summary": "El inventario de mapas tiene índice por continente.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/072/24"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_072_25",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_072",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Los informes concluidos se copian a un disco externo.",
+    "summary": "Los informes concluidos se copian a un disco externo.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/072/25"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_072_26",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_072",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La escuela prestó un atril para la exposición.",
+    "summary": "La escuela prestó un atril para la exposición.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/072/26"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_072_27",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_072",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La reproducción moderna Delta se imprimirá sin alterar los nombres originales.",
+    "summary": "La reproducción moderna Delta se imprimirá sin alterar los nombres originales.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/072/27"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_072_28",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_072",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La sala de lectura cierra los domingos.",
+    "summary": "La sala de lectura cierra los domingos.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/072/28"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_073_01",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_073",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El bancal Laurel recibe seis litros de agua a las 07:00 los martes y jueves.",
+    "summary": "El bancal Laurel recibe seis litros de agua a las 07:00 los martes y jueves.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/073/01"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_073_02",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_073",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El bancal Romero recibe cuatro litros a las 18:00 los lunes y viernes.",
+    "summary": "El bancal Romero recibe cuatro litros a las 18:00 los lunes y viernes.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/073/02"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_073_03",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_073",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La sonda de Laurel se instala a quince centímetros de profundidad junto al borde este.",
+    "summary": "La sonda de Laurel se instala a quince centímetros de profundidad junto al borde este.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/073/03"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_073_04",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_073",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La sonda de Romero está a diez centímetros junto al borde oeste.",
+    "summary": "La sonda de Romero está a diez centímetros junto al borde oeste.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/073/04"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_073_05",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_073",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Maite anota los riegos Laurel y Darío anota los de Romero.",
+    "summary": "Maite anota los riegos Laurel y Darío anota los de Romero.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/073/05"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_073_06",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_073",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El riego de Laurel no utiliza agua de la red: procede del depósito de lluvia identificado como L.",
+    "summary": "El riego de Laurel no utiliza agua de la red: procede del depósito de lluvia identificado como L.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/073/06"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_073_07",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_073",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El bancal Romero sí se abastece de la red municipal.",
+    "summary": "El bancal Romero sí se abastece de la red municipal.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/073/07"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_073_08",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_073",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "No se aplicó fertilizante nitrogenado a Laurel en octubre; solo se añadió acolchado de hojas secas.",
+    "summary": "No se aplicó fertilizante nitrogenado a Laurel en octubre; solo se añadió acolchado de hojas secas.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/073/08"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_073_09",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_073",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Romero recibió fertilizante nitrogenado el 9 de octubre.",
+    "summary": "Romero recibió fertilizante nitrogenado el 9 de octubre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/073/09"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_073_10",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_073",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "En Laurel se midió humedad del suelo a las 07:00 y dio treinta y dos por ciento; falta la lectura de las 19:00.",
+    "summary": "En Laurel se midió humedad del suelo a las 07:00 y dio treinta y dos por ciento; falta la lectura de las 19:00.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/073/10"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_073_11",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_073",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La lectura de las 19:00 de Laurel está asignada a Maite para esta tarde.",
+    "summary": "La lectura de las 19:00 de Laurel está asignada a Maite para esta tarde.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/073/11"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_073_12",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_073",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Romero dio veintiocho por ciento a las 19:00 de ayer.",
+    "summary": "Romero dio veintiocho por ciento a las 19:00 de ayer.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/073/12"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_073_13",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_073",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La sustitución de la válvula Laurel tiene confirmada una válvula de media pulgada; aún no se sabe qué día llegará el repuesto.",
+    "summary": "La sustitución de la válvula Laurel tiene confirmada una válvula de media pulgada; aún no se sabe qué día llegará el repuesto.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/073/13"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_073_14",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_073",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El proveedor de la válvula Laurel enviará fecha de entrega tras liberar su inventario.",
+    "summary": "El proveedor de la válvula Laurel enviará fecha de entrega tras liberar su inventario.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/073/14"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_073_15",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_073",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La válvula Romero de tres cuartos de pulgada ya llegó el 16 de octubre.",
+    "summary": "La válvula Romero de tres cuartos de pulgada ya llegó el 16 de octubre.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/073/15"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_073_16",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_073",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La conductividad del agua del depósito Romero fue de 820 microsiemens por centímetro.",
+    "summary": "La conductividad del agua del depósito Romero fue de 820 microsiemens por centímetro.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/073/16"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_073_17",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_073",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El depósito de lluvia L que alimenta Laurel tiene tapa verde.",
+    "summary": "El depósito de lluvia L que alimenta Laurel tiene tapa verde.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/073/17"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_073_18",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_073",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El precio del contador de Romero fue de cincuenta y cinco unidades.",
+    "summary": "El precio del contador de Romero fue de cincuenta y cinco unidades.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/073/18"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_073_19",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_073",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El contador de Laurel está fijado a la pared norte.",
+    "summary": "El contador de Laurel está fijado a la pared norte.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/073/19"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_073_20",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_073",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Las macetas de demostración se numeran con pintura blanca.",
+    "summary": "Las macetas de demostración se numeran con pintura blanca.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/073/20"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_073_21",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_073",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El cuaderno de riego se guarda bajo el alero.",
+    "summary": "El cuaderno de riego se guarda bajo el alero.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/073/21"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_073_22",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_073",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El sensor de viento va en un mástil corto.",
+    "summary": "El sensor de viento va en un mástil corto.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/073/22"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_073_23",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_073",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "La escalera de la azotea tiene pasamanos metálico.",
+    "summary": "La escalera de la azotea tiene pasamanos metálico.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/073/23"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_073_24",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_073",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Las hojas secas se guardan en sacos de yute.",
+    "summary": "Las hojas secas se guardan en sacos de yute.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/073/24"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_073_25",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_073",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Darío barre el pasillo al terminar su turno.",
+    "summary": "Darío barre el pasillo al terminar su turno.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/073/25"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_073_26",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_073",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El ensayo de noviembre comparará dos tipos de acolchado.",
+    "summary": "El ensayo de noviembre comparará dos tipos de acolchado.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/073/26"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_073_27",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_073",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "Las herramientas se limpian antes de entrar al almacén.",
+    "summary": "Las herramientas se limpian antes de entrar al almacén.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/073/27"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "cev5_073_28",
+    "scope_kind": "conversation",
+    "scope_id": "synthetic_conversation_evidence_073",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "event",
+    "original_text": "El cartel de la azotea pide cerrar la puerta al salir.",
+    "summary": "El cartel de la azotea pide cerrar la puerta al salir.",
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://conversation-evidence-v5/073/28"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  }
+]

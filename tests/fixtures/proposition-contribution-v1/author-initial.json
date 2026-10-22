@@ -1,0 +1,386 @@
+[
+  {
+    "id": "pcv1_01_01",
+    "factor": "quantification",
+    "labels": [
+      {
+        "id": "claim_00",
+        "grounded": true,
+        "role": "A",
+        "source_quote": "En Sálamo, el archivo crudo B3 de Q4 se borró automáticamente a los dieciocho días.",
+        "question_quote": "¿Cuál fue el plazo de borrado automático del archivo crudo B3 de Q4 en Sálamo?",
+        "proposition_quote": "El plazo de borrado automático del archivo crudo B3 de Q4 en Sálamo fue de dieciocho días.",
+        "origin": "author_initial_before_review"
+      },
+      {
+        "id": "claim_01",
+        "grounded": false,
+        "role": "A",
+        "source_quote": "En Sálamo, el archivo crudo B3 de Q4 se borró automáticamente a los dieciocho días.",
+        "question_quote": "¿Cuál fue el plazo de borrado automático del archivo crudo B3 de Q4 en Sálamo?",
+        "proposition_quote": "El plazo de borrado automático de todos los archivos crudos de Q4 en Sálamo fue de dieciocho días.",
+        "origin": "author_initial_before_review"
+      }
+    ]
+  },
+  {
+    "id": "pcv1_01_02",
+    "factor": "quantification",
+    "labels": [
+      {
+        "id": "claim_00",
+        "grounded": false,
+        "role": "A",
+        "source_quote": "En Sálamo, el archivo crudo B3 de Q4 se borró automáticamente a los dieciocho días.",
+        "question_quote": "¿Cuál fue el plazo de borrado automático de todos los archivos crudos de Q4 en Sálamo?",
+        "proposition_quote": "El plazo de borrado automático de todos los archivos crudos de Q4 en Sálamo fue de dieciocho días.",
+        "origin": "author_initial_before_review"
+      },
+      {
+        "id": "claim_01",
+        "grounded": true,
+        "role": "none",
+        "source_quote": "En Sálamo, el archivo crudo B3 de Q4 se borró automáticamente a los dieciocho días.",
+        "question_quote": "¿Cuál fue el plazo de borrado automático de todos los archivos crudos de Q4 en Sálamo?",
+        "proposition_quote": "El plazo de borrado automático del archivo crudo B3 de Q4 en Sálamo fue de dieciocho días.",
+        "origin": "author_initial_before_review"
+      }
+    ]
+  },
+  {
+    "id": "pcv1_02_01",
+    "factor": "attribute",
+    "labels": [
+      {
+        "id": "claim_00",
+        "grounded": false,
+        "role": "A",
+        "source_quote": "En Salvia se verificó la fijación de los faros de seis parejas; no se midió su autonomía.",
+        "question_quote": "¿Qué aspecto de los faros de seis parejas de Salvia se verificó?",
+        "proposition_quote": "Se verificó la autonomía de los faros de seis parejas de Salvia.",
+        "origin": "author_initial_before_review"
+      },
+      {
+        "id": "claim_01",
+        "grounded": true,
+        "role": "A",
+        "source_quote": "En Salvia se verificó la fijación de los faros de seis parejas; no se midió su autonomía.",
+        "question_quote": "¿Qué aspecto de los faros de seis parejas de Salvia se verificó?",
+        "proposition_quote": "Se verificó la fijación de los faros de seis parejas de Salvia.",
+        "origin": "author_initial_before_review"
+      }
+    ]
+  },
+  {
+    "id": "pcv1_02_02",
+    "factor": "attribute",
+    "labels": [
+      {
+        "id": "claim_00",
+        "grounded": true,
+        "role": "none",
+        "source_quote": "En Salvia se verificó la fijación de los faros de seis parejas; no se midió su autonomía.",
+        "question_quote": "¿Se ha medido la autonomía de los faros de seis parejas de Salvia?",
+        "proposition_quote": "Se verificó la fijación de los faros de seis parejas de Salvia.",
+        "origin": "author_initial_before_review"
+      },
+      {
+        "id": "claim_01",
+        "grounded": false,
+        "role": "A",
+        "source_quote": "En Salvia se verificó la fijación de los faros de seis parejas; no se midió su autonomía.",
+        "question_quote": "¿Se ha medido la autonomía de los faros de seis parejas de Salvia?",
+        "proposition_quote": "Se verificó la autonomía de los faros de seis parejas de Salvia.",
+        "origin": "author_initial_before_review"
+      }
+    ]
+  },
+  {
+    "id": "pcv1_03_01",
+    "factor": "event_modality",
+    "labels": [
+      {
+        "id": "claim_00",
+        "grounded": true,
+        "role": "A",
+        "source_quote": "Las parejas de Bruma tienen cita el martes para medir la autonomía de sus faros.",
+        "question_quote": "¿Para qué día está programada la medición de autonomía de los faros de Bruma?",
+        "proposition_quote": "Está programada para el martes la medición de autonomía de los faros de Bruma.",
+        "origin": "author_initial_before_review"
+      },
+      {
+        "id": "claim_01",
+        "grounded": false,
+        "role": "none",
+        "source_quote": "Las parejas de Bruma tienen cita el martes para medir la autonomía de sus faros.",
+        "question_quote": "¿Para qué día está programada la medición de autonomía de los faros de Bruma?",
+        "proposition_quote": "Se realizó el martes la medición de autonomía de los faros de Bruma.",
+        "origin": "author_initial_before_review"
+      }
+    ]
+  },
+  {
+    "id": "pcv1_03_02",
+    "factor": "event_modality",
+    "labels": [
+      {
+        "id": "claim_00",
+        "grounded": false,
+        "role": "A",
+        "source_quote": "Las parejas de Bruma tienen cita el martes para medir la autonomía de sus faros.",
+        "question_quote": "¿Se ha realizado la medición de autonomía de los faros de Bruma?",
+        "proposition_quote": "Se realizó el martes la medición de autonomía de los faros de Bruma.",
+        "origin": "author_initial_before_review"
+      },
+      {
+        "id": "claim_01",
+        "grounded": true,
+        "role": "none",
+        "source_quote": "Las parejas de Bruma tienen cita el martes para medir la autonomía de sus faros.",
+        "question_quote": "¿Se ha realizado la medición de autonomía de los faros de Bruma?",
+        "proposition_quote": "Está programada para el martes la medición de autonomía de los faros de Bruma.",
+        "origin": "author_initial_before_review"
+      }
+    ]
+  },
+  {
+    "id": "pcv1_04_01",
+    "factor": "bound_direction",
+    "labels": [
+      {
+        "id": "claim_00",
+        "grounded": false,
+        "role": "A",
+        "source_quote": "El reproductor Lino funcionó setenta y cinco minutos sin apagarse; no se midió su duración hasta apagarse.",
+        "question_quote": "¿Cuál es la autonomía máxima del reproductor Lino?",
+        "proposition_quote": "El reproductor Lino funcionó como máximo setenta y cinco minutos.",
+        "origin": "author_initial_before_review"
+      },
+      {
+        "id": "claim_01",
+        "grounded": true,
+        "role": "A",
+        "source_quote": "El reproductor Lino funcionó setenta y cinco minutos sin apagarse; no se midió su duración hasta apagarse.",
+        "question_quote": "¿Cuál es la autonomía máxima del reproductor Lino?",
+        "proposition_quote": "El reproductor Lino funcionó al menos setenta y cinco minutos.",
+        "origin": "author_initial_before_review"
+      }
+    ]
+  },
+  {
+    "id": "pcv1_04_02",
+    "factor": "bound_direction",
+    "labels": [
+      {
+        "id": "claim_00",
+        "grounded": true,
+        "role": "none",
+        "source_quote": "El reproductor Lino funcionó setenta y cinco minutos sin apagarse; no se midió su duración hasta apagarse.",
+        "question_quote": "¿Se midió la duración del reproductor Lino hasta apagarse?",
+        "proposition_quote": "El reproductor Lino funcionó al menos setenta y cinco minutos.",
+        "origin": "author_initial_before_review"
+      },
+      {
+        "id": "claim_01",
+        "grounded": false,
+        "role": "none",
+        "source_quote": "El reproductor Lino funcionó setenta y cinco minutos sin apagarse; no se midió su duración hasta apagarse.",
+        "question_quote": "¿Se midió la duración del reproductor Lino hasta apagarse?",
+        "proposition_quote": "El reproductor Lino funcionó como máximo setenta y cinco minutos.",
+        "origin": "author_initial_before_review"
+      }
+    ]
+  },
+  {
+    "id": "pcv1_05_01",
+    "factor": "referent",
+    "labels": [
+      {
+        "id": "claim_00",
+        "grounded": true,
+        "role": "A",
+        "source_quote": "Del expediente Atlas se digitalizaron doce páginas; sus cuatro páginas restantes siguen pendientes.",
+        "question_quote": "¿Cuántas páginas del expediente Atlas quedan por digitalizar?",
+        "proposition_quote": "Quedan cuatro páginas por digitalizar del expediente Atlas.",
+        "origin": "author_initial_before_review"
+      },
+      {
+        "id": "claim_01",
+        "grounded": false,
+        "role": "none",
+        "source_quote": "Del expediente Atlas se digitalizaron doce páginas; sus cuatro páginas restantes siguen pendientes.",
+        "question_quote": "¿Cuántas páginas del expediente Atlas quedan por digitalizar?",
+        "proposition_quote": "Quedan cuatro páginas por digitalizar del expediente Boreal.",
+        "origin": "author_initial_before_review"
+      }
+    ]
+  },
+  {
+    "id": "pcv1_05_02",
+    "factor": "referent",
+    "labels": [
+      {
+        "id": "claim_00",
+        "grounded": false,
+        "role": "A",
+        "source_quote": "Del expediente Atlas se digitalizaron doce páginas; sus cuatro páginas restantes siguen pendientes.",
+        "question_quote": "¿Cuántas páginas del expediente Boreal quedan por digitalizar?",
+        "proposition_quote": "Quedan cuatro páginas por digitalizar del expediente Boreal.",
+        "origin": "author_initial_before_review"
+      },
+      {
+        "id": "claim_01",
+        "grounded": true,
+        "role": "none",
+        "source_quote": "Del expediente Atlas se digitalizaron doce páginas; sus cuatro páginas restantes siguen pendientes.",
+        "question_quote": "¿Cuántas páginas del expediente Boreal quedan por digitalizar?",
+        "proposition_quote": "Quedan cuatro páginas por digitalizar del expediente Atlas.",
+        "origin": "author_initial_before_review"
+      }
+    ]
+  },
+  {
+    "id": "pcv1_06_01",
+    "factor": "referent",
+    "labels": [
+      {
+        "id": "claim_00",
+        "grounded": false,
+        "role": "none",
+        "source_quote": "Silvana no inauguró el puente Raso: lo inauguró Nilo.",
+        "question_quote": "¿En qué año inauguró Silvana el puente Raso?",
+        "proposition_quote": "Silvana no inauguró el puente Lago.",
+        "origin": "author_initial_before_review"
+      },
+      {
+        "id": "claim_01",
+        "grounded": true,
+        "role": "B",
+        "source_quote": "Silvana no inauguró el puente Raso: lo inauguró Nilo.",
+        "question_quote": "¿En qué año inauguró Silvana el puente Raso?",
+        "proposition_quote": "Silvana no inauguró el puente Raso.",
+        "origin": "author_initial_before_review"
+      }
+    ]
+  },
+  {
+    "id": "pcv1_06_02",
+    "factor": "referent",
+    "labels": [
+      {
+        "id": "claim_00",
+        "grounded": true,
+        "role": "none",
+        "source_quote": "Silvana no inauguró el puente Raso: lo inauguró Nilo.",
+        "question_quote": "¿En qué año inauguró Silvana el puente Lago?",
+        "proposition_quote": "Silvana no inauguró el puente Raso.",
+        "origin": "author_initial_before_review"
+      },
+      {
+        "id": "claim_01",
+        "grounded": false,
+        "role": "B",
+        "source_quote": "Silvana no inauguró el puente Raso: lo inauguró Nilo.",
+        "question_quote": "¿En qué año inauguró Silvana el puente Lago?",
+        "proposition_quote": "Silvana no inauguró el puente Lago.",
+        "origin": "author_initial_before_review"
+      }
+    ]
+  },
+  {
+    "id": "pcv1_07_01",
+    "factor": "exclusivity",
+    "labels": [
+      {
+        "id": "claim_00",
+        "grounded": true,
+        "role": "C",
+        "source_quote": "La impresora Duna usa Borrador a 150 ppp; la impresora Loma usa Fino a 600 ppp.",
+        "question_quote": "¿Qué resolución usa la impresora Duna con el modo Fino?",
+        "proposition_quote": "La impresora Duna usa Borrador a 150 ppp; la impresora Loma usa Fino a 600 ppp.",
+        "origin": "author_initial_before_review"
+      },
+      {
+        "id": "claim_01",
+        "grounded": false,
+        "role": "B",
+        "source_quote": "La impresora Duna usa Borrador a 150 ppp; la impresora Loma usa Fino a 600 ppp.",
+        "question_quote": "¿Qué resolución usa la impresora Duna con el modo Fino?",
+        "proposition_quote": "La impresora Duna usa únicamente Borrador a 150 ppp; la impresora Loma usa Fino a 600 ppp.",
+        "origin": "author_initial_before_review"
+      }
+    ]
+  },
+  {
+    "id": "pcv1_07_02",
+    "factor": "exclusivity",
+    "labels": [
+      {
+        "id": "claim_00",
+        "grounded": false,
+        "role": "A",
+        "source_quote": "La impresora Duna usa Borrador a 150 ppp; la impresora Loma usa Fino a 600 ppp.",
+        "question_quote": "¿Qué resolución usa la impresora Duna con el modo Borrador?",
+        "proposition_quote": "La impresora Duna usa únicamente Borrador a 150 ppp; la impresora Loma usa Fino a 600 ppp.",
+        "origin": "author_initial_before_review"
+      },
+      {
+        "id": "claim_01",
+        "grounded": true,
+        "role": "A",
+        "source_quote": "La impresora Duna usa Borrador a 150 ppp; la impresora Loma usa Fino a 600 ppp.",
+        "question_quote": "¿Qué resolución usa la impresora Duna con el modo Borrador?",
+        "proposition_quote": "La impresora Duna usa Borrador a 150 ppp; la impresora Loma usa Fino a 600 ppp.",
+        "origin": "author_initial_before_review"
+      }
+    ]
+  },
+  {
+    "id": "pcv1_08_01",
+    "factor": "exclusivity",
+    "labels": [
+      {
+        "id": "claim_00",
+        "grounded": false,
+        "role": "B",
+        "source_quote": "El depósito de lluvia K alimenta el parque Olmo; no consta si Olmo recibe además agua de la red.",
+        "question_quote": "¿De qué tubería de la red procede el agua del parque Olmo?",
+        "proposition_quote": "Olmo recibe agua exclusivamente del depósito de lluvia K.",
+        "origin": "author_initial_before_review"
+      },
+      {
+        "id": "claim_01",
+        "grounded": true,
+        "role": "A",
+        "source_quote": "El depósito de lluvia K alimenta el parque Olmo; no consta si Olmo recibe además agua de la red.",
+        "question_quote": "¿De qué tubería de la red procede el agua del parque Olmo?",
+        "proposition_quote": "Olmo recibe agua del depósito de lluvia K.",
+        "origin": "author_initial_before_review"
+      }
+    ]
+  },
+  {
+    "id": "pcv1_08_02",
+    "factor": "exclusivity",
+    "labels": [
+      {
+        "id": "claim_00",
+        "grounded": true,
+        "role": "A",
+        "source_quote": "El depósito de lluvia K alimenta el parque Olmo; no consta si Olmo recibe además agua de la red.",
+        "question_quote": "¿Qué depósito de lluvia alimenta el parque Olmo?",
+        "proposition_quote": "Olmo recibe agua del depósito de lluvia K.",
+        "origin": "author_initial_before_review"
+      },
+      {
+        "id": "claim_01",
+        "grounded": false,
+        "role": "A",
+        "source_quote": "El depósito de lluvia K alimenta el parque Olmo; no consta si Olmo recibe además agua de la red.",
+        "question_quote": "¿Qué depósito de lluvia alimenta el parque Olmo?",
+        "proposition_quote": "Olmo recibe agua exclusivamente del depósito de lluvia K.",
+        "origin": "author_initial_before_review"
+      }
+    ]
+  }
+]

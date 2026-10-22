@@ -1,0 +1,647 @@
+{
+  "version": "slot-evidence-v2-local-bank-r22",
+  "synthetic": true,
+  "cases": [
+    {
+      "id": "holdout-01",
+      "query": "What color did workshop host Mira (H-41) say the door was?",
+      "candidate": {
+        "memory_id": "holdout-memory",
+        "revision": 1,
+        "summary": "Workshop host Mira (H-41) said the workshop door was teal."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "subject",
+            "kind": "workshop host",
+            "subject": "Mira",
+            "stable_id": "H-41",
+            "quote": "workshop host Mira (H-41)"
+          }
+        ],
+        "slots": [
+          {
+            "id": "color",
+            "dimension": "requested_slot",
+            "quote": "color"
+          }
+        ],
+        "premises": [],
+        "candidates": [
+          {
+            "memory_id": "holdout-memory",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "subject",
+              "stable_id_quote": "H-41",
+              "subject_quote": "Workshop host Mira (H-41)"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "Workshop host Mira (H-41) said the workshop door was teal.",
+                "subject_quote": "Workshop host Mira (H-41)",
+                "identity_anchor_id": "subject",
+                "relation": "answers",
+                "target_id": "color"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": true,
+      "expected_selected": [
+        "holdout-memory"
+      ],
+      "expected_relation": "answers"
+    },
+    {
+      "id": "holdout-02",
+      "query": "I remember that trial participant Niko (T-52) started the trial on 14 May. Is that right?",
+      "candidate": {
+        "memory_id": "holdout-memory",
+        "revision": 1,
+        "summary": "Trial participant Niko (T-52) started the trial on 14 May."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "subject",
+            "kind": "trial participant",
+            "subject": "Niko",
+            "stable_id": "T-52",
+            "quote": "trial participant Niko (T-52)"
+          }
+        ],
+        "slots": [
+          {
+            "id": "confirmation",
+            "dimension": "requested_slot",
+            "quote": "Is that right?"
+          }
+        ],
+        "premises": [],
+        "candidates": [
+          {
+            "memory_id": "holdout-memory",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "subject",
+              "stable_id_quote": "T-52",
+              "subject_quote": "Trial participant Niko (T-52)"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "Trial participant Niko (T-52) started the trial on 14 May.",
+                "subject_quote": "Trial participant Niko (T-52)",
+                "identity_anchor_id": "subject",
+                "relation": "answers",
+                "target_id": "confirmation"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": true,
+      "expected_selected": [
+        "holdout-memory"
+      ],
+      "expected_relation": "answers"
+    },
+    {
+      "id": "holdout-03",
+      "query": "I thought the Northbay ferry service (F-63) stopped running in October. Did it?",
+      "candidate": {
+        "memory_id": "holdout-memory",
+        "revision": 1,
+        "summary": "The Northbay ferry service (F-63) continued running through November; its last service was 2 December."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "subject",
+            "kind": "ferry service",
+            "subject": "Northbay",
+            "stable_id": "F-63",
+            "quote": "Northbay ferry service (F-63)"
+          }
+        ],
+        "slots": [
+          {
+            "id": "confirmation",
+            "dimension": "requested_slot",
+            "quote": "Did it?"
+          }
+        ],
+        "premises": [
+          {
+            "id": "stop_in_october",
+            "dimension": "correction_premise",
+            "quote": "the Northbay ferry service (F-63) stopped running in October"
+          }
+        ],
+        "candidates": [
+          {
+            "memory_id": "holdout-memory",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "subject",
+              "stable_id_quote": "F-63",
+              "subject_quote": "Northbay ferry service (F-63)"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "The Northbay ferry service (F-63) continued running through November",
+                "subject_quote": "Northbay ferry service (F-63)",
+                "identity_anchor_id": "subject",
+                "relation": "refutes",
+                "target_id": "stop_in_october"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": true,
+      "expected_selected": [
+        "holdout-memory"
+      ],
+      "expected_relation": "refutes"
+    },
+    {
+      "id": "holdout-04",
+      "query": "For patient Leda (P-74)'s appointment, what were the room number and floor?",
+      "candidate": {
+        "memory_id": "holdout-memory",
+        "revision": 1,
+        "summary": "Patient Leda (P-74)'s appointment was in room 308."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "subject",
+            "kind": "patient",
+            "subject": "Leda",
+            "stable_id": "P-74",
+            "quote": "patient Leda (P-74)"
+          }
+        ],
+        "slots": [
+          {
+            "id": "room_and_floor",
+            "dimension": "requested_slot",
+            "quote": "room number and floor"
+          }
+        ],
+        "premises": [],
+        "candidates": [
+          {
+            "memory_id": "holdout-memory",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "subject",
+              "stable_id_quote": "P-74",
+              "subject_quote": "Patient Leda (P-74)"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "Patient Leda (P-74)'s appointment was in room 308.",
+                "subject_quote": "Patient Leda (P-74)",
+                "identity_anchor_id": "subject",
+                "relation": "partial",
+                "target_id": "room_and_floor"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": true,
+      "expected_selected": [
+        "holdout-memory"
+      ],
+      "expected_relation": "partial"
+    },
+    {
+      "id": "holdout-05",
+      "query": "What instrument did quartet member Alba (Q-85) play?",
+      "candidate": {
+        "memory_id": "holdout-memory",
+        "revision": 1,
+        "summary": "Quartet member Alba (Q-85)'s cousin Teo (Q-86) played cello."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "subject",
+            "kind": "quartet member",
+            "subject": "Alba",
+            "stable_id": "Q-85",
+            "quote": "quartet member Alba (Q-85)"
+          }
+        ],
+        "slots": [
+          {
+            "id": "instrument",
+            "dimension": "requested_slot",
+            "quote": "instrument"
+          }
+        ],
+        "premises": [],
+        "candidates": [
+          {
+            "memory_id": "holdout-memory",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "subject",
+              "stable_id_quote": "Q-85",
+              "subject_quote": "Quartet member Alba (Q-85)"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "Teo (Q-86) played cello",
+                "subject_quote": "",
+                "identity_anchor_id": null,
+                "relation": "context_only",
+                "target_id": ""
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": true,
+      "expected_selected": [],
+      "expected_relation": "context_only"
+    },
+    {
+      "id": "holdout-06",
+      "query": "Which studio did traveler Ivo (I-96) say he visited, Lumen or Luma?",
+      "candidate": {
+        "memory_id": "holdout-memory",
+        "revision": 1,
+        "summary": "Traveler Ivo (I-96)'s notes do not record whether he visited Lumen or Luma; Luma Studio was mentioned only as a possible destination."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "subject",
+            "kind": "traveler",
+            "subject": "Ivo",
+            "stable_id": "I-96",
+            "quote": "traveler Ivo (I-96)"
+          }
+        ],
+        "slots": [
+          {
+            "id": "visited_studio",
+            "dimension": "requested_slot",
+            "quote": "Which studio"
+          }
+        ],
+        "premises": [],
+        "candidates": [
+          {
+            "memory_id": "holdout-memory",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "subject",
+              "stable_id_quote": "I-96",
+              "subject_quote": "Traveler Ivo (I-96)"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "Traveler Ivo (I-96)'s notes do not record whether he visited Lumen or Luma",
+                "subject_quote": "Traveler Ivo (I-96)",
+                "identity_anchor_id": "subject",
+                "relation": "explicit_unmeasured",
+                "target_id": "visited_studio"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": true,
+      "expected_selected": [
+        "holdout-memory"
+      ],
+      "expected_relation": "explicit_unmeasured"
+    },
+    {
+      "id": "holdout-07",
+      "query": "What was the PIN for the blue locker assigned to locker owner Ren (R-107)?",
+      "candidate": {
+        "memory_id": "holdout-memory",
+        "revision": 1,
+        "summary": "Locker owner Ren (R-107) was assigned the blue locker; no PIN was recorded for it."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "subject",
+            "kind": "locker owner",
+            "subject": "Ren",
+            "stable_id": "R-107",
+            "quote": "locker owner Ren (R-107)"
+          }
+        ],
+        "slots": [
+          {
+            "id": "locker_pin",
+            "dimension": "requested_slot",
+            "quote": "PIN"
+          }
+        ],
+        "premises": [],
+        "candidates": [
+          {
+            "memory_id": "holdout-memory",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "subject",
+              "stable_id_quote": "R-107",
+              "subject_quote": "Locker owner Ren (R-107)"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "Locker owner Ren (R-107) was assigned the blue locker; no PIN was recorded for it",
+                "subject_quote": "Locker owner Ren (R-107)",
+                "identity_anchor_id": "subject",
+                "relation": "explicit_unmeasured",
+                "target_id": "locker_pin"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": true,
+      "expected_selected": [
+        "holdout-memory"
+      ],
+      "expected_relation": "explicit_unmeasured"
+    },
+    {
+      "id": "holdout-08",
+      "query": "Which city does author Sol (S-118)'s final observatory note say the observatory is in?",
+      "candidate": {
+        "memory_id": "holdout-memory",
+        "revision": 1,
+        "summary": "Author Sol (S-118)'s earlier draft proposed Valparaíso; the final note by author Sol (S-118) says the observatory is in La Serena."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "subject",
+            "kind": "author",
+            "subject": "Sol",
+            "stable_id": "S-118",
+            "quote": "author Sol (S-118)"
+          }
+        ],
+        "slots": [
+          {
+            "id": "observatory_city",
+            "dimension": "requested_slot",
+            "quote": "Which city"
+          }
+        ],
+        "premises": [],
+        "candidates": [
+          {
+            "memory_id": "holdout-memory",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "subject",
+              "stable_id_quote": "S-118",
+              "subject_quote": "author Sol (S-118)"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "the final note by author Sol (S-118) says the observatory is in La Serena",
+                "subject_quote": "author Sol (S-118)",
+                "identity_anchor_id": "subject",
+                "relation": "answers",
+                "target_id": "observatory_city"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": true,
+      "expected_selected": [
+        "holdout-memory"
+      ],
+      "expected_relation": "answers"
+    },
+    {
+      "id": "holdout-09",
+      "query": "¿Qué día dijo la autora Inés (A-129) que entregaría el informe?",
+      "candidate": {
+        "memory_id": "holdout-memory",
+        "revision": 1,
+        "summary": "La autora Inés (A-129) dijo que entregaría el informe el jueves."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "subject",
+            "kind": "autora",
+            "subject": "Inés",
+            "stable_id": "A-129",
+            "quote": "autora Inés (A-129)"
+          }
+        ],
+        "slots": [
+          {
+            "id": "delivery_day",
+            "dimension": "requested_slot",
+            "quote": "Qué día"
+          }
+        ],
+        "premises": [],
+        "candidates": [
+          {
+            "memory_id": "holdout-memory",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "subject",
+              "stable_id_quote": "A-129",
+              "subject_quote": "autora Inés (A-129)"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "La autora Inés (A-129) dijo que entregaría el informe el jueves.",
+                "subject_quote": "autora Inés (A-129)",
+                "identity_anchor_id": "subject",
+                "relation": "answers",
+                "target_id": "delivery_day"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": true,
+      "expected_selected": [
+        "holdout-memory"
+      ],
+      "expected_relation": "answers"
+    },
+    {
+      "id": "holdout-10",
+      "query": "¿Confirmamos que el taller del instructor Beto (B-130) fue en Cali?",
+      "candidate": {
+        "memory_id": "holdout-memory",
+        "revision": 1,
+        "summary": "El taller del instructor Beto (B-130) fue en Palmira, no en Cali."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "subject",
+            "kind": "instructor",
+            "subject": "Beto",
+            "stable_id": "B-130",
+            "quote": "instructor Beto (B-130)"
+          }
+        ],
+        "slots": [
+          {
+            "id": "confirmation",
+            "dimension": "requested_slot",
+            "quote": "¿Confirmamos"
+          }
+        ],
+        "premises": [
+          {
+            "id": "workshop_city_cali",
+            "dimension": "correction_premise",
+            "quote": "el taller del instructor Beto (B-130) fue en Cali"
+          }
+        ],
+        "candidates": [
+          {
+            "memory_id": "holdout-memory",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "subject",
+              "stable_id_quote": "B-130",
+              "subject_quote": "instructor Beto (B-130)"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "El taller del instructor Beto (B-130) fue en Palmira, no en Cali",
+                "subject_quote": "instructor Beto (B-130)",
+                "identity_anchor_id": "subject",
+                "relation": "refutes",
+                "target_id": "workshop_city_cali"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": true,
+      "expected_selected": [
+        "holdout-memory"
+      ],
+      "expected_relation": "refutes"
+    },
+    {
+      "id": "holdout-12",
+      "query": "What was the dosage of supplement Arven mentioned by supplement user Jo (J-142)?",
+      "candidate": {
+        "memory_id": "holdout-memory",
+        "revision": 1,
+        "summary": "Supplement user Jo (J-142) mentioned supplement Arven; the dosage was not recorded."
+      },
+      "trace": {
+        "version": "slot-evidence-v2",
+        "query_anchors": [
+          {
+            "id": "subject",
+            "kind": "supplement user",
+            "subject": "Jo",
+            "stable_id": "J-142",
+            "quote": "supplement user Jo (J-142)"
+          }
+        ],
+        "slots": [
+          {
+            "id": "dosage",
+            "dimension": "requested_slot",
+            "quote": "dosage"
+          }
+        ],
+        "premises": [],
+        "candidates": [
+          {
+            "memory_id": "holdout-memory",
+            "revision": 1,
+            "identity": {
+              "status": "match",
+              "anchor_id": "subject",
+              "stable_id_quote": "J-142",
+              "subject_quote": "Supplement user Jo (J-142)"
+            },
+            "propositions": [
+              {
+                "occurrence_id": "p1",
+                "quote": "Supplement user Jo (J-142) mentioned supplement Arven; the dosage was not recorded",
+                "subject_quote": "Supplement user Jo (J-142)",
+                "identity_anchor_id": "subject",
+                "relation": "explicit_unmeasured",
+                "target_id": "dosage"
+              }
+            ]
+          }
+        ]
+      },
+      "expected_valid": true,
+      "expected_selected": [
+        "holdout-memory"
+      ],
+      "expected_relation": "explicit_unmeasured"
+    }
+  ],
+  "semantic_risks": [
+    {
+      "case_id": "holdout-08",
+      "risk": "A literal, identity-bound quote from the superseded draft can pass structural validation if a classifier labels it as answering the requested city.",
+      "stale_draft_quote": "Author Sol (S-118)'s earlier draft proposed Valparaíso",
+      "gold_value": "La Serena",
+      "not_a_classifier_result": true
+    }
+  ],
+  "review": {
+    "blind_review": "favorable for ten scored cases; holdout-05 independently adjudicated context_only/no-selection",
+    "case_11": "excluded: current V2 binding cannot represent the previously drafted open-person answer case",
+    "classifier_outputs": null,
+    "performance_metrics": null
+  }
+}

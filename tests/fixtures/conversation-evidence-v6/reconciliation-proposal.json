@@ -1,0 +1,1124 @@
+{
+  "version": "v6-reconciliation-proposal-2026-10-19",
+  "stage": "post_blind_pre_execution_annotation_reconciliation",
+  "initial_reviews_immutable": true,
+  "inputs_read": [
+    "AGENTS.md",
+    "docs/evaluation/evidence-rubric-v1.md",
+    "tests/fixtures/conversation-evidence-v6-preparation/source.json",
+    "tests/fixtures/conversation-evidence-v6-preparation/memories.json",
+    "tests/fixtures/conversation-evidence-v6-preparation/blind-questions.jsonl",
+    "tests/fixtures/conversation-evidence-v6-preparation/author-cases.jsonl",
+    "outputs/iromem/evaluation/v6-preparation-2026-10-19/blind-review-initial.json"
+  ],
+  "method": "Contraste posterior a la revisión ciega exclusivamente entre anotaciones locales y fuentes sintéticas. No se leyeron resultados, políticas remotas ni otros bancos. Las propuestas no editan los iniciales ni implican aceptación del autor.",
+  "interpretation_rules": [
+    {
+      "rule": "Un campo ausente no responde un valor solicitado.",
+      "rubric_quote": "El texto aporta una parte concreta de lo solicitado, pero faltan otros datos; no niega la premisa."
+    },
+    {
+      "rule": "Un estado expresamente pendiente puede ser correctivo si contradice una premisa efectivamente presente; no basta utilidad genérica.",
+      "rubric_quote": "El texto niega explícitamente una premisa o la corrige con un estado incompatible. No basta que falte el dato."
+    },
+    {
+      "rule": "Cada frase se revisa completa: la falta de un dato no invalida otro dato concreto contenido en la misma frase.",
+      "examples": [
+        "074_10 contiene cuatro cajas aunque no peso.",
+        "077_10 contiene doce plazas aunque no filas."
+      ]
+    },
+    {
+      "rule": "Autorización, responsabilidad general y ejecución de una tarea concreta son afirmaciones diferentes.",
+      "examples": [
+        "078_02 no prueba ejecución del vertido.",
+        "078_11 no prueba limpieza ejecutada del recipiente concreto."
+      ]
+    },
+    {
+      "rule": "Una pregunta de cantidad puede admitir cero; no siempre presupone existencia positiva.",
+      "example": "076_04 permite responder cero celdas."
+    }
+  ],
+  "items": [
+    {
+      "id": "cev6q_074_01",
+      "query": "¿Quién quedó a cargo de limpiar las teselas azules de Nuvarel el 14 de octubre?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "Quién quedó a cargo de limpiar las teselas azules de Nuvarel el 14 de octubre"
+        }
+      ],
+      "author_initial_expected_ids": [
+        "cev6_074_01",
+        "cev6_074_03"
+      ],
+      "critic_initial_expected_ids": [
+        "cev6_074_01",
+        "cev6_074_02",
+        "cev6_074_03",
+        "cev6_074_21"
+      ],
+      "decisions": [
+        {
+          "memory_id": "cev6_074_02",
+          "source_quote": "Según la ficha del taller, Iverna debe usar agua desmineralizada para limpiar las teselas azules de Nuvarel.",
+          "author_initial_relation": "unrelated",
+          "critic_initial_relation": "pending_or_partial",
+          "proposed_relation": "unrelated",
+          "decision_status": "proposed_resolution",
+          "who_corrects": "critic",
+          "rationale": "La instrucción prescribe material a Iverna pero no fecha la tarea. No prueba quién recibió esa asignación el 14 de octubre."
+        },
+        {
+          "memory_id": "cev6_074_21",
+          "source_quote": "El parte de Nuvarel limita la limpieza de Iverna a la jornada del 14 de octubre.",
+          "author_initial_relation": "unrelated",
+          "critic_initial_relation": "pending_or_partial",
+          "proposed_relation": "pending_or_partial",
+          "decision_status": "proposed_resolution",
+          "who_corrects": "author",
+          "rationale": "Identifica literalmente la limpieza de Iverna de Nuvarel y la limita al 14 de octubre. No menciona el color, por lo que aporta identidad y condición temporal parciales, sin sustituir la asignación completa."
+        }
+      ],
+      "proposed_expected_ids": [
+        "cev6_074_01",
+        "cev6_074_03",
+        "cev6_074_21"
+      ],
+      "proposed_relations": {
+        "cev6_074_01": "supports_answer",
+        "cev6_074_03": "supports_answer",
+        "cev6_074_21": "pending_or_partial"
+      },
+      "status": "proposed_resolved",
+      "open_options": []
+    },
+    {
+      "id": "cev6q_074_03",
+      "query": "¿Cuánto pagó el taller cuando compró Nuvarel?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "Cuánto pagó el taller"
+        },
+        {
+          "id": "p2",
+          "kind": "presupposition",
+          "query_quote": "cuando compró Nuvarel"
+        }
+      ],
+      "author_initial_expected_ids": [
+        "cev6_074_04",
+        "cev6_074_06",
+        "cev6_074_25"
+      ],
+      "critic_initial_expected_ids": [
+        "cev6_074_04",
+        "cev6_074_05",
+        "cev6_074_06",
+        "cev6_074_25"
+      ],
+      "decisions": [
+        {
+          "memory_id": "cev6_074_05",
+          "source_quote": "El acta de custodia dice expresamente que Nuvarel sigue siendo propiedad del archivo Orvane.",
+          "author_initial_relation": "unrelated",
+          "critic_initial_relation": "refutes_premise",
+          "proposed_relation": "unrelated",
+          "decision_status": "proposed_resolution",
+          "who_corrects": "critic",
+          "rationale": "Conservar propiedad no niega por sí solo toda compraventa o pago: puede haber venta con transmisión pendiente. Se requiere la negación directa de compra o la retirada sin pago que aportan otros IDs."
+        }
+      ],
+      "proposed_expected_ids": [
+        "cev6_074_04",
+        "cev6_074_06",
+        "cev6_074_25"
+      ],
+      "proposed_relations": {
+        "cev6_074_04": "refutes_premise",
+        "cev6_074_06": "refutes_premise",
+        "cev6_074_25": "refutes_premise"
+      },
+      "status": "proposed_resolved",
+      "open_options": []
+    },
+    {
+      "id": "cev6q_074_04",
+      "query": "¿A qué comprador le transfirió el archivo la propiedad de Nuvarel?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "presupposition",
+          "query_quote": "A qué comprador le transfirió el archivo la propiedad de Nuvarel"
+        }
+      ],
+      "author_initial_expected_ids": [
+        "cev6_074_05"
+      ],
+      "critic_initial_expected_ids": [
+        "cev6_074_04",
+        "cev6_074_05",
+        "cev6_074_06",
+        "cev6_074_25"
+      ],
+      "decisions": [
+        {
+          "memory_id": "cev6_074_04",
+          "source_quote": "En el registro de entrega, el mosaico Nuvarel figura como cedido temporalmente; el taller no lo compró.",
+          "author_initial_relation": "unrelated",
+          "critic_initial_relation": "refutes_premise",
+          "proposed_relation": "unrelated",
+          "decision_status": "proposed_resolution",
+          "who_corrects": "critic",
+          "rationale": "El recuerdo niega o retira una operación concreta, no toda transferencia de propiedad del archivo a cualquier comprador. La pregunta no restringe el comprador al taller ni a esa propuesta; 074_05 es la corrección directa."
+        },
+        {
+          "memory_id": "cev6_074_06",
+          "source_quote": "La propuesta de compra del mosaico Nuvarel fue retirada el 9 de octubre sin efectuar pago.",
+          "author_initial_relation": "unrelated",
+          "critic_initial_relation": "refutes_premise",
+          "proposed_relation": "unrelated",
+          "decision_status": "proposed_resolution",
+          "who_corrects": "critic",
+          "rationale": "El recuerdo niega o retira una operación concreta, no toda transferencia de propiedad del archivo a cualquier comprador. La pregunta no restringe el comprador al taller ni a esa propuesta; 074_05 es la corrección directa."
+        },
+        {
+          "memory_id": "cev6_074_25",
+          "source_quote": "La propuesta retirada de Nuvarel contemplaba una compra, pero nunca llegó a convertirse en contrato.",
+          "author_initial_relation": "unrelated",
+          "critic_initial_relation": "refutes_premise",
+          "proposed_relation": "unrelated",
+          "decision_status": "proposed_resolution",
+          "who_corrects": "critic",
+          "rationale": "El recuerdo niega o retira una operación concreta, no toda transferencia de propiedad del archivo a cualquier comprador. La pregunta no restringe el comprador al taller ni a esa propuesta; 074_05 es la corrección directa."
+        }
+      ],
+      "proposed_expected_ids": [
+        "cev6_074_05"
+      ],
+      "proposed_relations": {
+        "cev6_074_05": "refutes_premise"
+      },
+      "status": "proposed_resolved",
+      "open_options": []
+    },
+    {
+      "id": "cev6q_074_05",
+      "query": "¿Qué día arrancó la prueba de adhesivo de Nuvarel y qué resultado dio?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "Qué día arrancó la prueba de adhesivo de Nuvarel"
+        },
+        {
+          "id": "p2",
+          "kind": "requested_fact",
+          "query_quote": "qué resultado dio"
+        }
+      ],
+      "author_initial_expected_ids": [
+        "cev6_074_07"
+      ],
+      "critic_initial_expected_ids": [
+        "cev6_074_07",
+        "cev6_074_08"
+      ],
+      "decisions": [
+        {
+          "memory_id": "cev6_074_08",
+          "source_quote": "El resultado de la prueba de adhesivo de Nuvarel aún no está redactado, según la anotación del 18 de octubre.",
+          "author_initial_relation": "unrelated",
+          "critic_initial_relation": "pending_or_partial",
+          "proposed_relation": "unrelated",
+          "decision_status": "proposed_resolution",
+          "who_corrects": "critic",
+          "rationale": "Resultado aún no redactado no aporta el resultado de la prueba ni afirma que la prueba esté inconclusa. Describe documentación, no el valor pedido."
+        }
+      ],
+      "proposed_expected_ids": [
+        "cev6_074_07"
+      ],
+      "proposed_relations": {
+        "cev6_074_07": "pending_or_partial"
+      },
+      "status": "proposed_resolved",
+      "open_options": []
+    },
+    {
+      "id": "cev6q_074_06",
+      "query": "¿Cuántas cajas lleva Nuvarel y cuánto pesan entre todas?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "Cuántas cajas lleva Nuvarel"
+        },
+        {
+          "id": "p2",
+          "kind": "requested_fact",
+          "query_quote": "cuánto pesan entre todas"
+        }
+      ],
+      "author_initial_expected_ids": [
+        "cev6_074_09"
+      ],
+      "critic_initial_expected_ids": [
+        "cev6_074_09",
+        "cev6_074_10"
+      ],
+      "decisions": [
+        {
+          "memory_id": "cev6_074_10",
+          "source_quote": "La hoja de embalaje de Nuvarel deja en blanco el peso conjunto de las cuatro cajas.",
+          "author_initial_relation": "unrelated",
+          "critic_initial_relation": "pending_or_partial",
+          "proposed_relation": "pending_or_partial",
+          "decision_status": "proposed_resolution",
+          "who_corrects": "author",
+          "rationale": "Aunque no aporta peso, dice literalmente «las cuatro cajas»: responde la cantidad pedida. Excluirlo por el campo vacío descarta una parte concreta."
+        }
+      ],
+      "proposed_expected_ids": [
+        "cev6_074_09",
+        "cev6_074_10"
+      ],
+      "proposed_relations": {
+        "cev6_074_09": "pending_or_partial",
+        "cev6_074_10": "pending_or_partial"
+      },
+      "status": "proposed_resolved",
+      "open_options": [],
+      "coverage_correction": {
+        "memory_id": "cev6_074_10",
+        "covers_only": [
+          "Cuántas cajas lleva Nuvarel"
+        ],
+        "does_not_cover": [
+          "cuánto pesan entre todas"
+        ]
+      }
+    },
+    {
+      "id": "cev6q_075_05",
+      "query": "De HK-7, dime la hora de ingreso y la especie identificada.",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "la hora de ingreso"
+        },
+        {
+          "id": "p2",
+          "kind": "requested_fact",
+          "query_quote": "la especie identificada"
+        }
+      ],
+      "author_initial_expected_ids": [
+        "cev6_075_08"
+      ],
+      "critic_initial_expected_ids": [
+        "cev6_075_08",
+        "cev6_075_09",
+        "cev6_075_26"
+      ],
+      "decisions": [
+        {
+          "memory_id": "cev6_075_09",
+          "source_quote": "La ficha de HK-7 todavía no tiene completada la casilla de especie.",
+          "author_initial_relation": "unrelated",
+          "critic_initial_relation": "pending_or_partial",
+          "proposed_relation": "unrelated",
+          "decision_status": "proposed_resolution",
+          "who_corrects": "critic",
+          "rationale": "La casilla de especie incompleta no identifica especie ni demuestra que nadie la haya identificado por otra vía."
+        },
+        {
+          "memory_id": "cev6_075_26",
+          "source_quote": "El informe de Heskora conserva como pendiente la identificación taxonómica de HK-7.",
+          "author_initial_relation": "unrelated",
+          "critic_initial_relation": "pending_or_partial",
+          "proposed_relation": null,
+          "decision_status": "open",
+          "who_corrects": "both",
+          "rationale": "No nombra la especie solicitada. A diferencia de una casilla vacía, declara pendiente la identificación taxonómica. Puede corregir la presuposición «la especie identificada» mediante un estado incompatible; si esa expresión solo solicita el valor documentado, no aporta ese valor. No forzar una sola interpretación."
+        }
+      ],
+      "proposed_expected_ids": [
+        "cev6_075_08"
+      ],
+      "proposed_relations": {
+        "cev6_075_08": "pending_or_partial"
+      },
+      "status": "open",
+      "open_options": [
+        {
+          "memory_id": "cev6_075_26",
+          "alternatives": [
+            {
+              "relation": "refutes_premise",
+              "include": true,
+              "condition": "«la especie identificada» se interpreta como premisa de identificación completada, que la fuente declara pendiente."
+            },
+            {
+              "relation": "unrelated",
+              "include": false,
+              "condition": "La petición exige nombre de especie; el estado de identificación no cubre ese valor y no se anota una premisa implícita."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cev6q_075_06",
+      "query": "¿Quién era responsable de guardar los tubos usados de Heskora y cuánto costó enviarlos al laboratorio?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "Quién era responsable de guardar los tubos usados de Heskora"
+        },
+        {
+          "id": "p2",
+          "kind": "requested_fact",
+          "query_quote": "cuánto costó enviarlos al laboratorio"
+        }
+      ],
+      "author_initial_expected_ids": [
+        "cev6_075_10"
+      ],
+      "critic_initial_expected_ids": [
+        "cev6_075_10",
+        "cev6_075_11"
+      ],
+      "decisions": [
+        {
+          "memory_id": "cev6_075_11",
+          "source_quote": "La nota de gastos de Heskora dice que los tubos usados se enviaron al laboratorio, pero no registra el coste de envío.",
+          "author_initial_relation": "unrelated",
+          "critic_initial_relation": "pending_or_partial",
+          "proposed_relation": "unrelated",
+          "decision_status": "proposed_resolution",
+          "who_corrects": "critic",
+          "rationale": "Envío efectuado y coste no registrado no aportan quién tenía responsabilidad de custodia ni el coste solicitado. El envío ya es presupuesto de la pregunta."
+        }
+      ],
+      "proposed_expected_ids": [
+        "cev6_075_10"
+      ],
+      "proposed_relations": {
+        "cev6_075_10": "pending_or_partial"
+      },
+      "status": "proposed_resolved",
+      "open_options": []
+    },
+    {
+      "id": "cev6q_076_03",
+      "query": "¿En qué fecha terminó Queldra de instalar su rampa nueva?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "presupposition",
+          "query_quote": "En qué fecha terminó Queldra de instalar su rampa nueva"
+        }
+      ],
+      "author_initial_expected_ids": [
+        "cev6_076_05"
+      ],
+      "critic_initial_expected_ids": [
+        "cev6_076_05",
+        "cev6_076_06"
+      ],
+      "decisions": [
+        {
+          "memory_id": "cev6_076_06",
+          "source_quote": "La solicitud de compra de la rampa de Queldra sigue esperando aprobación el 18 de octubre.",
+          "author_initial_relation": "unrelated",
+          "critic_initial_relation": "refutes_premise",
+          "proposed_relation": "unrelated",
+          "decision_status": "proposed_resolution",
+          "who_corrects": "critic",
+          "rationale": "Compra pendiente de aprobación no implica por sí sola instalación inexistente; podría haberse instalado por otra vía. 076_05 contiene la negación explícita."
+        }
+      ],
+      "proposed_expected_ids": [
+        "cev6_076_05"
+      ],
+      "proposed_relations": {
+        "cev6_076_05": "refutes_premise"
+      },
+      "status": "proposed_resolved",
+      "open_options": []
+    },
+    {
+      "id": "cev6q_076_04",
+      "query": "¿Cuántas celdas braille tiene la edición Senderos de Sal de Queldra?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "Cuántas celdas braille tiene la edición Senderos de Sal de Queldra"
+        }
+      ],
+      "author_initial_expected_ids": [
+        "cev6_076_07",
+        "cev6_076_08"
+      ],
+      "critic_initial_expected_ids": [
+        "cev6_076_07",
+        "cev6_076_08"
+      ],
+      "decisions": [
+        {
+          "memory_id": "cev6_076_08",
+          "source_quote": "El inventario de Queldra describe Senderos de Sal como libro de letras ampliadas sin celdas braille.",
+          "author_initial_relation": "refutes_premise",
+          "critic_initial_relation": "supports_answer",
+          "proposed_relation": "supports_answer",
+          "decision_status": "proposed_resolution",
+          "who_corrects": "author",
+          "rationale": "«Sin celdas braille» permite responder cero a la pregunta escalar «Cuántas celdas braille». También corrige una lectura que presuponía formato braille. No debe marcarse como exclusivamente refutación inequívoca."
+        }
+      ],
+      "proposed_expected_ids": [
+        "cev6_076_07",
+        "cev6_076_08"
+      ],
+      "proposed_relations": {
+        "cev6_076_07": "refutes_premise",
+        "cev6_076_08": "supports_answer"
+      },
+      "status": "open",
+      "open_options": [],
+      "ambiguity": "Conservar ambos IDs. Para 076_08 supports_answer es la relación primaria por respuesta cero, con refutes_premise como lectura alternativa. La consulta no afirma literalmente que el libro sea braille; no congelarla como refutación inequívoca. Una versión futura puede preguntar por el formato braille explícitamente o mantener la pregunta de cantidad y anotarla como respuesta directa.",
+      "case_level_relation_recommendation": "supports_answer_with_explicit_alternative_reading"
+    },
+    {
+      "id": "cev6q_076_05",
+      "query": "Del piloto de Queldra, ¿cuáles son el inicio y el final del recorrido?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "el inicio"
+        },
+        {
+          "id": "p2",
+          "kind": "requested_fact",
+          "query_quote": "el final del recorrido"
+        }
+      ],
+      "author_initial_expected_ids": [
+        "cev6_076_09",
+        "cev6_076_11"
+      ],
+      "critic_initial_expected_ids": [
+        "cev6_076_09",
+        "cev6_076_10",
+        "cev6_076_11"
+      ],
+      "decisions": [
+        {
+          "memory_id": "cev6_076_10",
+          "source_quote": "La hoja de ruta piloto de Queldra no especifica el punto de llegada.",
+          "author_initial_relation": "unrelated",
+          "critic_initial_relation": "pending_or_partial",
+          "proposed_relation": "unrelated",
+          "decision_status": "proposed_resolution",
+          "who_corrects": "critic",
+          "rationale": "No especificar llegada no proporciona inicio ni final del recorrido. Se conserva como límite de lo afirmable, no como ID de respuesta parcial."
+        }
+      ],
+      "proposed_expected_ids": [
+        "cev6_076_09",
+        "cev6_076_11"
+      ],
+      "proposed_relations": {
+        "cev6_076_09": "pending_or_partial",
+        "cev6_076_11": "pending_or_partial"
+      },
+      "status": "proposed_resolved",
+      "open_options": []
+    },
+    {
+      "id": "cev6q_076_06",
+      "query": "¿Qué día devolvió Yosmar la caja de láminas táctiles y cuántas láminas traía?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "Qué día devolvió Yosmar la caja de láminas táctiles"
+        },
+        {
+          "id": "p2",
+          "kind": "requested_fact",
+          "query_quote": "cuántas láminas traía"
+        }
+      ],
+      "author_initial_expected_ids": [
+        "cev6_076_12"
+      ],
+      "critic_initial_expected_ids": [
+        "cev6_076_12",
+        "cev6_076_13"
+      ],
+      "decisions": [
+        {
+          "memory_id": "cev6_076_13",
+          "source_quote": "El recibo de devolución de Yosmar no detalla cuántas láminas había dentro de la caja.",
+          "author_initial_relation": "unrelated",
+          "critic_initial_relation": "pending_or_partial",
+          "proposed_relation": "unrelated",
+          "decision_status": "proposed_resolution",
+          "who_corrects": "critic",
+          "rationale": "El recibo sin recuento no aporta cantidad ni fecha de devolución. Su existencia no cubre ninguna parte concreta pedida."
+        }
+      ],
+      "proposed_expected_ids": [
+        "cev6_076_12"
+      ],
+      "proposed_relations": {
+        "cev6_076_12": "pending_or_partial"
+      },
+      "status": "proposed_resolved",
+      "open_options": []
+    },
+    {
+      "id": "cev6q_077_05",
+      "query": "Para el grupo de Ulsira, ¿cuántas plazas están reservadas y en qué filas?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "cuántas plazas están reservadas"
+        },
+        {
+          "id": "p2",
+          "kind": "requested_fact",
+          "query_quote": "en qué filas"
+        }
+      ],
+      "author_initial_expected_ids": [
+        "cev6_077_09",
+        "cev6_077_11"
+      ],
+      "critic_initial_expected_ids": [
+        "cev6_077_09",
+        "cev6_077_10",
+        "cev6_077_11"
+      ],
+      "decisions": [
+        {
+          "memory_id": "cev6_077_10",
+          "source_quote": "El correo de Ulsira indica que la distribución de esas doce plazas por fila aún se decidirá.",
+          "author_initial_relation": "unrelated",
+          "critic_initial_relation": "pending_or_partial",
+          "proposed_relation": "pending_or_partial",
+          "decision_status": "proposed_resolution",
+          "who_corrects": "author",
+          "rationale": "Dice «esas doce plazas» y por tanto aporta cantidad concreta aunque la distribución por fila esté pendiente. Cubrir únicamente cantidad; no etiquetar el estado pendiente como si fuera una fila."
+        }
+      ],
+      "proposed_expected_ids": [
+        "cev6_077_09",
+        "cev6_077_10",
+        "cev6_077_11"
+      ],
+      "proposed_relations": {
+        "cev6_077_09": "pending_or_partial",
+        "cev6_077_11": "pending_or_partial",
+        "cev6_077_10": "pending_or_partial"
+      },
+      "status": "proposed_resolved",
+      "open_options": [],
+      "coverage_correction": {
+        "memory_id": "cev6_077_10",
+        "covers_only": [
+          "cuántas plazas están reservadas"
+        ],
+        "does_not_cover": [
+          "en qué filas"
+        ]
+      }
+    },
+    {
+      "id": "cev6q_077_06",
+      "query": "¿Cuándo comenzó la proyección de prueba de Jorveta del 18 de octubre y cuánto duró?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "Cuándo comenzó la proyección de prueba de Jorveta del 18 de octubre"
+        },
+        {
+          "id": "p2",
+          "kind": "requested_fact",
+          "query_quote": "cuánto duró"
+        }
+      ],
+      "author_initial_expected_ids": [
+        "cev6_077_12"
+      ],
+      "critic_initial_expected_ids": [
+        "cev6_077_12",
+        "cev6_077_13"
+      ],
+      "decisions": [
+        {
+          "memory_id": "cev6_077_13",
+          "source_quote": "La bitácora de Jorveta no consigna la duración de la proyección de prueba del 18 de octubre.",
+          "author_initial_relation": "unrelated",
+          "critic_initial_relation": "pending_or_partial",
+          "proposed_relation": "unrelated",
+          "decision_status": "proposed_resolution",
+          "who_corrects": "critic",
+          "rationale": "No consignar duración no aporta duración ni hora inicial. No refuta que la proyección tuviera una duración real."
+        }
+      ],
+      "proposed_expected_ids": [
+        "cev6_077_12"
+      ],
+      "proposed_relations": {
+        "cev6_077_12": "pending_or_partial"
+      },
+      "status": "proposed_resolved",
+      "open_options": []
+    },
+    {
+      "id": "cev6q_078_01",
+      "query": "En el ensayo de Odravel del 17 de octubre, ¿quién vertió el trazador y dónde?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "quién vertió el trazador"
+        },
+        {
+          "id": "p2",
+          "kind": "requested_fact",
+          "query_quote": "dónde"
+        }
+      ],
+      "author_initial_expected_ids": [
+        "cev6_078_01",
+        "cev6_078_03"
+      ],
+      "critic_initial_expected_ids": [
+        "cev6_078_01",
+        "cev6_078_02",
+        "cev6_078_03"
+      ],
+      "decisions": [
+        {
+          "memory_id": "cev6_078_02",
+          "source_quote": "La orden de campo de Odravel autoriza a Vensar a efectuar el vertido del trazador el 17 de octubre.",
+          "author_initial_relation": "unrelated",
+          "critic_initial_relation": "pending_or_partial",
+          "proposed_relation": "unrelated",
+          "decision_status": "proposed_resolution",
+          "who_corrects": "critic",
+          "rationale": "Autorizar a Vensar no afirma que vertiera el trazador. La persona autorizada podría no ejecutar; la bitácora 078_03 sí confirma ejecución."
+        }
+      ],
+      "proposed_expected_ids": [
+        "cev6_078_01",
+        "cev6_078_03"
+      ],
+      "proposed_relations": {
+        "cev6_078_01": "pending_or_partial",
+        "cev6_078_03": "supports_answer"
+      },
+      "status": "proposed_resolved",
+      "open_options": [],
+      "retained_distinction": "078_01 es acta del ensayo que fija ubicación: parte concreta de lugar. 078_02 es autorización personal: no demuestra quién ejecutó. 078_03 confirma ambas partes ejecutadas."
+    },
+    {
+      "id": "cev6q_078_05",
+      "query": "En la primera lectura de Odravel, ¿a qué hora se observó el trazador y con qué concentración?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "a qué hora se observó el trazador"
+        },
+        {
+          "id": "p2",
+          "kind": "requested_fact",
+          "query_quote": "con qué concentración"
+        }
+      ],
+      "author_initial_expected_ids": [
+        "cev6_078_09"
+      ],
+      "critic_initial_expected_ids": [
+        "cev6_078_09",
+        "cev6_078_10"
+      ],
+      "decisions": [
+        {
+          "memory_id": "cev6_078_10",
+          "source_quote": "El registro de Odravel deja sin rellenar la concentración medida en esa primera lectura.",
+          "author_initial_relation": "unrelated",
+          "critic_initial_relation": "pending_or_partial",
+          "proposed_relation": "unrelated",
+          "decision_status": "proposed_resolution",
+          "who_corrects": "critic",
+          "rationale": "Concentración sin rellenar no aporta valor ni hora de observación. No niega que hubiera una concentración medida."
+        }
+      ],
+      "proposed_expected_ids": [
+        "cev6_078_09"
+      ],
+      "proposed_relations": {
+        "cev6_078_09": "pending_or_partial"
+      },
+      "status": "proposed_resolved",
+      "open_options": []
+    },
+    {
+      "id": "cev6q_078_06",
+      "query": "¿Quién se encargó de limpiar el recipiente de Odravel y cuántos litros gastó?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "Quién se encargó de limpiar el recipiente de Odravel"
+        },
+        {
+          "id": "p2",
+          "kind": "requested_fact",
+          "query_quote": "cuántos litros gastó"
+        }
+      ],
+      "author_initial_expected_ids": [
+        "cev6_078_12"
+      ],
+      "critic_initial_expected_ids": [
+        "cev6_078_11",
+        "cev6_078_12",
+        "cev6_078_13"
+      ],
+      "decisions": [
+        {
+          "memory_id": "cev6_078_11",
+          "source_quote": "La hoja de mantenimiento de Odravel identifica a Ruveta como responsable de la limpieza posterior al ensayo.",
+          "author_initial_relation": "unrelated",
+          "critic_initial_relation": "pending_or_partial",
+          "proposed_relation": "unrelated",
+          "decision_status": "proposed_resolution",
+          "who_corrects": "critic",
+          "rationale": "Asigna responsabilidad de limpieza posterior general, no ejecución de limpieza del recipiente concreto. «Se encargó» puede tener matiz de responsabilidad, pero falta aun el objeto específico; 078_12 lo aporta sin inferencia."
+        },
+        {
+          "memory_id": "cev6_078_13",
+          "source_quote": "El parte de limpieza de Odravel no incluye el volumen de agua usado para lavar el recipiente.",
+          "author_initial_relation": "unrelated",
+          "critic_initial_relation": "pending_or_partial",
+          "proposed_relation": "unrelated",
+          "decision_status": "proposed_resolution",
+          "who_corrects": "critic",
+          "rationale": "El volumen omitido no proporciona litros ni identifica a la persona que ejecutó la limpieza."
+        }
+      ],
+      "proposed_expected_ids": [
+        "cev6_078_12"
+      ],
+      "proposed_relations": {
+        "cev6_078_12": "pending_or_partial"
+      },
+      "status": "proposed_resolved",
+      "open_options": []
+    },
+    {
+      "id": "cev6q_079_05",
+      "query": "¿Cuántos sobres de AL-4 recibió Eznora y cuál es el peso total de sus semillas?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "Cuántos sobres de AL-4 recibió Eznora"
+        },
+        {
+          "id": "p2",
+          "kind": "requested_fact",
+          "query_quote": "cuál es el peso total de sus semillas"
+        }
+      ],
+      "author_initial_expected_ids": [
+        "cev6_079_08",
+        "cev6_079_10"
+      ],
+      "critic_initial_expected_ids": [
+        "cev6_079_08",
+        "cev6_079_09",
+        "cev6_079_10"
+      ],
+      "decisions": [
+        {
+          "memory_id": "cev6_079_09",
+          "source_quote": "El acta de recuento de AL-4 no incluye el peso total de las semillas.",
+          "author_initial_relation": "unrelated",
+          "critic_initial_relation": "pending_or_partial",
+          "proposed_relation": "unrelated",
+          "decision_status": "proposed_resolution",
+          "who_corrects": "critic",
+          "rationale": "El acta sin peso no contiene cantidad numérica de sobres ni peso; mencionar AL-4 no aporta una parte solicitada."
+        }
+      ],
+      "proposed_expected_ids": [
+        "cev6_079_08",
+        "cev6_079_10"
+      ],
+      "proposed_relations": {
+        "cev6_079_08": "pending_or_partial",
+        "cev6_079_10": "pending_or_partial"
+      },
+      "status": "proposed_resolved",
+      "open_options": []
+    },
+    {
+      "id": "cev6q_079_06",
+      "query": "Sobre AL-4, ¿cuándo arrancó el ensayo de germinación y qué porcentaje obtuvo?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "cuándo arrancó el ensayo de germinación"
+        },
+        {
+          "id": "p2",
+          "kind": "requested_fact",
+          "query_quote": "qué porcentaje obtuvo"
+        }
+      ],
+      "author_initial_expected_ids": [
+        "cev6_079_11"
+      ],
+      "critic_initial_expected_ids": [
+        "cev6_079_11",
+        "cev6_079_12"
+      ],
+      "decisions": [
+        {
+          "memory_id": "cev6_079_12",
+          "source_quote": "El informe de AL-4 del 18 de octubre todavía no presenta porcentaje de germinación.",
+          "author_initial_relation": "unrelated",
+          "critic_initial_relation": "pending_or_partial",
+          "proposed_relation": "unrelated",
+          "decision_status": "proposed_resolution",
+          "who_corrects": "critic",
+          "rationale": "Un informe que todavía no presenta porcentaje no aporta el porcentaje obtenido ni establece que la germinación siga inconclusa. No convertir estado del informe en estado del fenómeno."
+        }
+      ],
+      "proposed_expected_ids": [
+        "cev6_079_11"
+      ],
+      "proposed_relations": {
+        "cev6_079_11": "pending_or_partial"
+      },
+      "status": "proposed_resolved",
+      "open_options": []
+    },
+    {
+      "id": "cev6q_080_05",
+      "query": "Para la recogida de Zavrion, ¿quién irá de acompañante y cuál es su teléfono?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "quién irá de acompañante"
+        },
+        {
+          "id": "p2",
+          "kind": "requested_fact",
+          "query_quote": "cuál es su teléfono"
+        }
+      ],
+      "author_initial_expected_ids": [
+        "cev6_080_09"
+      ],
+      "critic_initial_expected_ids": [
+        "cev6_080_09",
+        "cev6_080_10"
+      ],
+      "decisions": [
+        {
+          "memory_id": "cev6_080_10",
+          "source_quote": "La hoja de viaje de Zavrion no registra el teléfono de contacto de Orvila.",
+          "author_initial_relation": "unrelated",
+          "critic_initial_relation": "pending_or_partial",
+          "proposed_relation": "unrelated",
+          "decision_status": "proposed_resolution",
+          "who_corrects": "critic",
+          "rationale": "Nombrar a Orvila en una hoja de viaje sin teléfono no establece que acompañará la recogida ni aporta su número. 080_09 sí asigna el acompañamiento."
+        }
+      ],
+      "proposed_expected_ids": [
+        "cev6_080_09"
+      ],
+      "proposed_relations": {
+        "cev6_080_09": "pending_or_partial"
+      },
+      "status": "proposed_resolved",
+      "open_options": []
+    },
+    {
+      "id": "cev6q_080_06",
+      "query": "¿En qué cara de la caja de Zavrion está la grieta y cuánto costará repararla?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "En qué cara de la caja de Zavrion está la grieta"
+        },
+        {
+          "id": "p2",
+          "kind": "requested_fact",
+          "query_quote": "cuánto costará repararla"
+        }
+      ],
+      "author_initial_expected_ids": [
+        "cev6_080_11"
+      ],
+      "critic_initial_expected_ids": [
+        "cev6_080_11",
+        "cev6_080_12"
+      ],
+      "decisions": [
+        {
+          "memory_id": "cev6_080_12",
+          "source_quote": "La orden de reparación de la caja de Zavrion sigue sin presupuesto aprobado.",
+          "author_initial_relation": "unrelated",
+          "critic_initial_relation": "pending_or_partial",
+          "proposed_relation": "unrelated",
+          "decision_status": "proposed_resolution",
+          "who_corrects": "critic",
+          "rationale": "Sin presupuesto aprobado no significa que no exista presupuesto calculado; no aporta coste ni cara de la grieta."
+        }
+      ],
+      "proposed_expected_ids": [
+        "cev6_080_11"
+      ],
+      "proposed_relations": {
+        "cev6_080_11": "pending_or_partial"
+      },
+      "status": "proposed_resolved",
+      "open_options": []
+    },
+    {
+      "id": "cev6q_081_05",
+      "query": "¿Qué luminaria ilumina Rutas del Estuario y cuántos lux le llegan?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "Qué luminaria ilumina Rutas del Estuario"
+        },
+        {
+          "id": "p2",
+          "kind": "requested_fact",
+          "query_quote": "cuántos lux le llegan"
+        }
+      ],
+      "author_initial_expected_ids": [
+        "cev6_081_09",
+        "cev6_081_11"
+      ],
+      "critic_initial_expected_ids": [
+        "cev6_081_09",
+        "cev6_081_10",
+        "cev6_081_11"
+      ],
+      "decisions": [
+        {
+          "memory_id": "cev6_081_10",
+          "source_quote": "El plan de iluminación de Yelvria no incluye una lectura de iluminancia sobre Rutas del Estuario.",
+          "author_initial_relation": "unrelated",
+          "critic_initial_relation": "pending_or_partial",
+          "proposed_relation": "unrelated",
+          "decision_status": "proposed_resolution",
+          "who_corrects": "critic",
+          "rationale": "La ausencia de lectura no identifica luminaria ni valor de lux; es límite documental, no respuesta a una parte."
+        }
+      ],
+      "proposed_expected_ids": [
+        "cev6_081_09",
+        "cev6_081_11"
+      ],
+      "proposed_relations": {
+        "cev6_081_09": "pending_or_partial",
+        "cev6_081_11": "pending_or_partial"
+      },
+      "status": "proposed_resolved",
+      "open_options": []
+    },
+    {
+      "id": "cev6q_081_06",
+      "query": "¿Qué día colocaron el bastidor de Rutas del Estuario y cuántas personas lo hicieron?",
+      "requested_parts": [
+        {
+          "id": "p1",
+          "kind": "requested_fact",
+          "query_quote": "Qué día colocaron el bastidor de Rutas del Estuario"
+        },
+        {
+          "id": "p2",
+          "kind": "requested_fact",
+          "query_quote": "cuántas personas lo hicieron"
+        }
+      ],
+      "author_initial_expected_ids": [
+        "cev6_081_12"
+      ],
+      "critic_initial_expected_ids": [
+        "cev6_081_12",
+        "cev6_081_13"
+      ],
+      "decisions": [
+        {
+          "memory_id": "cev6_081_13",
+          "source_quote": "La hoja de mano de obra de Yelvria no consigna cuántas personas colocaron el bastidor.",
+          "author_initial_relation": "unrelated",
+          "critic_initial_relation": "pending_or_partial",
+          "proposed_relation": "unrelated",
+          "decision_status": "proposed_resolution",
+          "who_corrects": "critic",
+          "rationale": "No consignar personas no aporta número ni fecha de colocación."
+        }
+      ],
+      "proposed_expected_ids": [
+        "cev6_081_12"
+      ],
+      "proposed_relations": {
+        "cev6_081_12": "pending_or_partial"
+      },
+      "status": "proposed_resolved",
+      "open_options": []
+    }
+  ],
+  "summary": {
+    "disagreement_cases": 22,
+    "proposed_resolved_cases": 20,
+    "open_cases": [
+      "cev6q_075_05",
+      "cev6q_076_04"
+    ],
+    "author_changes_proposed": [
+      "cev6q_074_01: añadir 074_21 como parcial",
+      "cev6q_074_06: añadir 074_10 por cantidad, no por peso",
+      "cev6q_077_05: añadir 077_10 por cantidad, no por filas",
+      "cev6q_076_04: admitir respuesta cero y lectura alternativa de refutación"
+    ],
+    "critic_changes": "Se retiran los demás IDs detallados como ausencia de campo, inferencia de otra operación o confusión de autorización/responsabilidad con ejecución. 075_26 queda abierto por estado explícito de identificación pendiente."
+  },
+  "limitations": [
+    "No hay adjudicación humana ni nueva pregunta versionada: las dos ambigüedades señaladas no deben presentarse como consenso final.",
+    "No se ejecutaron modelos ni se usaron resultados para corregir etiquetas.",
+    "No se modificaron entradas ni revisiones iniciales."
+  ]
+}

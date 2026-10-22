@@ -1,0 +1,1801 @@
+{
+  "vocabulary": {
+    "version": "documentary_pair_vocabulary_v3_receipt_item_v1",
+    "predicate_rows": [
+      {
+        "id": "property",
+        "roles": {
+          "subject": "ref",
+          "attribute": "attribute_id",
+          "value": "term"
+        },
+        "distributive": true
+      },
+      {
+        "id": "quantity",
+        "roles": {
+          "subject": "ref",
+          "attribute": "attribute_id",
+          "amount": "quantity"
+        },
+        "distributive": true
+      },
+      {
+        "id": "has_item",
+        "roles": {
+          "bearer": "ref",
+          "item": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "action",
+        "roles": {
+          "actor": "ref",
+          "action_kind": "action_id",
+          "object": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "entry_via",
+        "roles": {
+          "substance": "ref",
+          "destination": "ref",
+          "via": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "supplied_by",
+        "roles": {
+          "substance": "ref",
+          "destination": "ref",
+          "supplier": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "upstream_origin",
+        "roles": {
+          "substance": "ref",
+          "destination": "ref",
+          "origin": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "made_by",
+        "roles": {
+          "object": "ref",
+          "maker": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "owns",
+        "roles": {
+          "owner": "ref",
+          "object": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "located_at",
+        "roles": {
+          "object": "ref",
+          "place": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "member_of",
+        "roles": {
+          "member": "ref",
+          "group": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "part_of",
+        "roles": {
+          "component": "ref",
+          "whole": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "custodies",
+        "roles": {
+          "custodian": "ref",
+          "object": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "uses",
+        "roles": {
+          "subject": "ref",
+          "object": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "admits",
+        "roles": {
+          "subject": "ref",
+          "object": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "receives_from",
+        "roles": {
+          "destination": "ref",
+          "source": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "mixes",
+        "roles": {
+          "subject": "ref",
+          "left": "ref",
+          "right": "ref"
+        },
+        "distributive": false
+      },
+      {
+        "id": "documentary_availability",
+        "roles": {
+          "subject": "ref",
+          "attribute": "attribute_id",
+          "state": "term",
+          "document_scope": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "volume_received",
+        "roles": {
+          "subject": "ref",
+          "amount": "quantity"
+        },
+        "distributive": true
+      },
+      {
+        "id": "retention_for",
+        "roles": {
+          "policy": "ref",
+          "subject": "ref",
+          "duration": "quantity"
+        },
+        "distributive": true
+      },
+      {
+        "id": "improves",
+        "roles": {
+          "subject": "ref",
+          "attribute": "attribute_id"
+        },
+        "distributive": true
+      },
+      {
+        "id": "prepared_for",
+        "roles": {
+          "object": "ref",
+          "destination": "ref"
+        },
+        "distributive": false
+      },
+      {
+        "id": "route_entry",
+        "roles": {
+          "subject": "ref",
+          "via": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "action_actor",
+        "roles": {
+          "actor": "ref",
+          "action_kind": "action_id"
+        },
+        "distributive": true
+      },
+      {
+        "id": "action_undergoer",
+        "roles": {
+          "subject": "ref",
+          "action_kind": "action_id"
+        },
+        "distributive": false
+      },
+      {
+        "id": "requirement_attribute",
+        "roles": {
+          "subject": "ref",
+          "attribute": "attribute_id"
+        },
+        "distributive": true
+      },
+      {
+        "id": "requirement_class",
+        "roles": {
+          "subject": "ref",
+          "class": "term"
+        },
+        "distributive": true
+      },
+      {
+        "id": "information_state",
+        "roles": {
+          "subject": "ref",
+          "attribute": "attribute_id",
+          "state": "term"
+        },
+        "distributive": false
+      },
+      {
+        "id": "action_beneficiary",
+        "roles": {
+          "subject": "ref",
+          "action_kind": "action_id",
+          "beneficiary": "ref"
+        },
+        "distributive": false
+      },
+      {
+        "id": "for_purpose",
+        "roles": {
+          "object": "ref",
+          "purpose": "ref"
+        },
+        "distributive": false
+      },
+      {
+        "id": "class_suffices",
+        "roles": {
+          "subject": "ref",
+          "class": "term"
+        },
+        "distributive": true
+      },
+      {
+        "id": "operates_mode",
+        "roles": {
+          "subject": "ref",
+          "mode": "ref"
+        },
+        "distributive": true
+      },
+      {
+        "id": "receives_item",
+        "roles": {
+          "recipient": "ref",
+          "item": "ref"
+        },
+        "distributive": true
+      }
+    ],
+    "fixed_attribute_rows": [
+      "attachment_force",
+      "authorization_state",
+      "automatic_deletion_delay",
+      "autonomy",
+      "availability",
+      "battery_reserved",
+      "cartridge_color",
+      "case_color",
+      "closed_state",
+      "color",
+      "component_count",
+      "confirmed_musicians",
+      "contact_phone",
+      "deletion_age",
+      "delivered_image_format",
+      "delivery_location",
+      "digitized_pages",
+      "documentary_state",
+      "duration",
+      "duration_until_shutdown",
+      "enrollment_delivery_location",
+      "entry_via",
+      "export_date",
+      "export_image_format",
+      "exposure",
+      "fixing_force",
+      "frequency",
+      "generic_format",
+      "generic_location",
+      "generic_schedule",
+      "image_format",
+      "inaugurated_by",
+      "inauguration_date",
+      "ingestion_schedule",
+      "irrigation_method",
+      "lid_color",
+      "line_detail",
+      "mass",
+      "measurement",
+      "measurement_date",
+      "mode",
+      "music_stands_prepared",
+      "network_provenance",
+      "operating_duration",
+      "orientation",
+      "paper_tray_size",
+      "pending_pages",
+      "photograph_preparation",
+      "pickup_location",
+      "policy_retention",
+      "pressure",
+      "profile",
+      "program",
+      "quantity_extent",
+      "rainwater_mixed",
+      "rehearsal_location",
+      "requires",
+      "resolution",
+      "retention_policy",
+      "review_schedule",
+      "reviewed_by",
+      "rotation_state",
+      "salt_quantity",
+      "sample_rate",
+      "service_schedule",
+      "session_length_capability",
+      "storage",
+      "strap_color",
+      "temperature",
+      "terminal_condition",
+      "tray_count",
+      "tutor_identity",
+      "validity_state",
+      "volume",
+      "water_origin",
+      "water_supply",
+      "water_volume_per_period",
+      "watering_time",
+      "weight"
+    ],
+    "fixed_action_rows": [
+      "accompany",
+      "confirm",
+      "delete",
+      "deliver",
+      "digitize",
+      "enroll",
+      "enter",
+      "export",
+      "feed",
+      "inaugurate",
+      "ingest",
+      "inspect",
+      "irrigate",
+      "measure",
+      "open",
+      "operate",
+      "photograph",
+      "prepare",
+      "present",
+      "register",
+      "rehearse",
+      "reserve",
+      "retain",
+      "review",
+      "store",
+      "switch_off",
+      "transmit",
+      "transport",
+      "validate",
+      "withdraw"
+    ],
+    "semantic_type_rows": [
+      {
+        "id": "phone",
+        "class_quotes": [
+          "teléfono",
+          "teléfono de contacto"
+        ]
+      },
+      {
+        "id": "retention_policy",
+        "class_quotes": [
+          "política de retención"
+        ]
+      },
+      {
+        "id": "rainwater_reservoir",
+        "class_quotes": [
+          "depósito de lluvia"
+        ]
+      }
+    ],
+    "relevance_links": [
+      {
+        "id": "via_context_for_supply",
+        "source_predicate": "entry_via",
+        "target_predicate": "supplied_by",
+        "bindings": [
+          [
+            "source.substance",
+            "target.substance"
+          ],
+          [
+            "source.destination",
+            "target.destination"
+          ]
+        ],
+        "carry_roles": [
+          "source.via"
+        ],
+        "conclusion": "partial_intermediate_only",
+        "max_hops": 1,
+        "allow_reverse": false,
+        "allow_transitive_composition": false
+      },
+      {
+        "id": "supply_context_for_origin",
+        "source_predicate": "supplied_by",
+        "target_predicate": "upstream_origin",
+        "bindings": [
+          [
+            "source.substance",
+            "target.substance"
+          ],
+          [
+            "source.destination",
+            "target.destination"
+          ]
+        ],
+        "carry_roles": [
+          "source.supplier"
+        ],
+        "conclusion": "partial_intermediate_only",
+        "max_hops": 1,
+        "allow_reverse": false,
+        "allow_transitive_composition": false
+      },
+      {
+        "id": "documentary_availability_context_for_property",
+        "source_predicate": "documentary_availability",
+        "target_predicate": "property",
+        "bindings": [
+          [
+            "source.subject",
+            "target.subject"
+          ],
+          [
+            "source.attribute",
+            "target.attribute"
+          ]
+        ],
+        "carry_roles": [
+          "source.state",
+          "source.document_scope"
+        ],
+        "conclusion": "partial_intermediate_only",
+        "max_hops": 1,
+        "allow_reverse": false,
+        "allow_transitive_composition": false
+      },
+      {
+        "id": "documentary_availability_context_for_quantity",
+        "source_predicate": "documentary_availability",
+        "target_predicate": "quantity",
+        "bindings": [
+          [
+            "source.subject",
+            "target.subject"
+          ],
+          [
+            "source.attribute",
+            "target.attribute"
+          ]
+        ],
+        "carry_roles": [
+          "source.state",
+          "source.document_scope"
+        ],
+        "conclusion": "partial_intermediate_only",
+        "max_hops": 1,
+        "allow_reverse": false,
+        "allow_transitive_composition": false
+      },
+      {
+        "id": "information_state_context_for_property",
+        "source_predicate": "information_state",
+        "target_predicate": "property",
+        "bindings": [
+          [
+            "source.subject",
+            "target.subject"
+          ],
+          [
+            "source.attribute",
+            "target.attribute"
+          ]
+        ],
+        "carry_roles": [
+          "source.state"
+        ],
+        "conclusion": "partial_intermediate_only",
+        "max_hops": 1,
+        "allow_reverse": false,
+        "allow_transitive_composition": false
+      },
+      {
+        "id": "information_state_context_for_quantity",
+        "source_predicate": "information_state",
+        "target_predicate": "quantity",
+        "bindings": [
+          [
+            "source.subject",
+            "target.subject"
+          ],
+          [
+            "source.attribute",
+            "target.attribute"
+          ]
+        ],
+        "carry_roles": [
+          "source.state"
+        ],
+        "conclusion": "partial_intermediate_only",
+        "max_hops": 1,
+        "allow_reverse": false,
+        "allow_transitive_composition": false
+      },
+      {
+        "id": "admission_caution_for_assignment",
+        "source_predicate": "admits",
+        "target_predicate": "quantity",
+        "bindings": [
+          [
+            "source.subject",
+            "target.subject"
+          ]
+        ],
+        "carry_roles": [
+          "source.object"
+        ],
+        "conclusion": "partial_intermediate_only",
+        "max_hops": 1,
+        "allow_reverse": false,
+        "allow_transitive_composition": false
+      },
+      {
+        "id": "receiver_context_for_origin",
+        "source_predicate": "receives_from",
+        "target_predicate": "upstream_origin",
+        "bindings": [
+          [
+            "source.destination",
+            "target.destination"
+          ]
+        ],
+        "carry_roles": [
+          "source.source"
+        ],
+        "conclusion": "partial_intermediate_only",
+        "max_hops": 1,
+        "allow_reverse": false,
+        "allow_transitive_composition": false
+      },
+      {
+        "id": "supply_context_for_receiver",
+        "source_predicate": "supplied_by",
+        "target_predicate": "receives_from",
+        "bindings": [
+          [
+            "source.destination",
+            "target.destination"
+          ]
+        ],
+        "carry_roles": [
+          "source.supplier"
+        ],
+        "conclusion": "partial_intermediate_only",
+        "max_hops": 1,
+        "allow_reverse": false,
+        "allow_transitive_composition": false
+      }
+    ],
+    "assignment_projection": {
+      "version": "uses_qualifier_assignment_v1",
+      "context_keys": [
+        "mode",
+        "profile",
+        "program"
+      ]
+    },
+    "relevance_profiles": {
+      "version": "documentary_relevance_profiles_v1",
+      "rows": [
+        {
+          "link_id": "receiver_context_for_origin",
+          "alternatives": [
+            {
+              "kind": "class_context",
+              "source_role": "source",
+              "source_classes": [
+                "depósito de lluvia"
+              ],
+              "target_role": "substance",
+              "target_classes": [
+                "agua"
+              ]
+            },
+            {
+              "kind": "corroborating_claim",
+              "predicate": "upstream_origin",
+              "bindings": [
+                [
+                  "source.source",
+                  "evidence.destination"
+                ],
+                [
+                  "target.substance",
+                  "evidence.substance"
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "link_id": "supply_context_for_receiver",
+          "alternatives": [
+            {
+              "kind": "answer_filter",
+              "source_role": "supplier"
+            }
+          ]
+        }
+      ]
+    },
+    "measurement_context": {
+      "version": "negative_measurement_context_v1",
+      "rows": [
+        {
+          "id": "terminal_duration_gap",
+          "event_aspect": "duration",
+          "target_attribute": "autonomy",
+          "source_configuration": [
+            {
+              "key": "terminal_condition",
+              "value": "hasta apagarse"
+            }
+          ],
+          "target_configuration": [
+            {
+              "key": "quantity_extent",
+              "value": "máxima"
+            }
+          ],
+          "context_bindings": []
+        },
+        {
+          "id": "shutdown_duration_gap",
+          "event_aspect": "duration_until_shutdown",
+          "target_attribute": "autonomy",
+          "source_configuration": [],
+          "target_configuration": [
+            {
+              "key": "quantity_extent",
+              "value": "máxima"
+            }
+          ],
+          "context_bindings": [
+            [
+              "context",
+              "route"
+            ]
+          ]
+        }
+      ]
+    },
+    "documentary_anchor_context": {
+      "version": "anchored_documentary_context_v1",
+      "rows": [
+        {
+          "id": "delivered_format_record_context",
+          "link_id": "information_state_context_for_property",
+          "attribute_id": "delivered_image_format",
+          "target_status": "occurred",
+          "source_link_kind": "owned_by",
+          "question_link_kind": "part_of",
+          "source_configuration": [
+            {
+              "key": "delivery_state",
+              "value": "ya entregadas"
+            }
+          ]
+        }
+      ]
+    },
+    "restriction_domain_profile": {
+      "version": "explicit_answer_domains_v1"
+    },
+    "term_description_profile": {
+      "version": "local_reference_descriptions_v1"
+    }
+  },
+  "source": {
+    "text": "El depósito J que alimenta Azucena mezcla lluvia con agua de la red procedente de la tubería T6.",
+    "raw": {
+      "claims": [
+        {
+          "body": {
+            "kind": "proposition",
+            "value": {
+              "atom": {
+                "arguments": [
+                  {
+                    "role": "destination",
+                    "value": {
+                      "id": "destination",
+                      "kind": "ref"
+                    }
+                  },
+                  {
+                    "role": "source",
+                    "value": {
+                      "id": "reservoir",
+                      "kind": "ref"
+                    }
+                  }
+                ],
+                "evidence": [
+                  {
+                    "end_byte": 35,
+                    "quote": "El depósito J que alimenta Azucena",
+                    "start_byte": 0
+                  }
+                ],
+                "polarity": "positive",
+                "predicate": "receives_from"
+              },
+              "basis": "assignment",
+              "judgment": "fact",
+              "normative_scope": null,
+              "qualifier_ids": [],
+              "status": "state"
+            }
+          },
+          "evidence": [
+            {
+              "end_byte": 35,
+              "quote": "El depósito J que alimenta Azucena",
+              "start_byte": 0
+            }
+          ],
+          "id": "feed",
+          "qualifier_ids": [],
+          "scope_id": "doc"
+        },
+        {
+          "body": {
+            "kind": "proposition",
+            "value": {
+              "atom": {
+                "arguments": [
+                  {
+                    "role": "subject",
+                    "value": {
+                      "id": "reservoir",
+                      "kind": "ref"
+                    }
+                  },
+                  {
+                    "role": "left",
+                    "value": {
+                      "id": "rain",
+                      "kind": "ref"
+                    }
+                  },
+                  {
+                    "role": "right",
+                    "value": {
+                      "id": "water",
+                      "kind": "ref"
+                    }
+                  }
+                ],
+                "evidence": [
+                  {
+                    "end_byte": 98,
+                    "quote": "El depósito J que alimenta Azucena mezcla lluvia con agua de la red procedente de la tubería T6.",
+                    "start_byte": 0
+                  }
+                ],
+                "polarity": "positive",
+                "predicate": "mixes"
+              },
+              "basis": "assignment",
+              "judgment": "fact",
+              "normative_scope": null,
+              "qualifier_ids": [],
+              "status": "state"
+            }
+          },
+          "evidence": [
+            {
+              "end_byte": 98,
+              "quote": "El depósito J que alimenta Azucena mezcla lluvia con agua de la red procedente de la tubería T6.",
+              "start_byte": 0
+            }
+          ],
+          "id": "mixture",
+          "qualifier_ids": [],
+          "scope_id": "doc"
+        },
+        {
+          "body": {
+            "kind": "proposition",
+            "value": {
+              "atom": {
+                "arguments": [
+                  {
+                    "role": "subject",
+                    "value": {
+                      "id": "water",
+                      "kind": "ref"
+                    }
+                  },
+                  {
+                    "role": "attribute",
+                    "value": {
+                      "evidence": [
+                        {
+                          "end_byte": 68,
+                          "quote": "agua de la red",
+                          "start_byte": 54
+                        }
+                      ],
+                      "id": "network_provenance",
+                      "kind": "symbol"
+                    }
+                  },
+                  {
+                    "role": "value",
+                    "value": {
+                      "id": "network",
+                      "kind": "ref"
+                    }
+                  }
+                ],
+                "evidence": [
+                  {
+                    "end_byte": 68,
+                    "quote": "agua de la red",
+                    "start_byte": 54
+                  }
+                ],
+                "polarity": "positive",
+                "predicate": "property"
+              },
+              "basis": "description",
+              "judgment": "fact",
+              "normative_scope": null,
+              "qualifier_ids": [],
+              "status": "state"
+            }
+          },
+          "evidence": [
+            {
+              "end_byte": 68,
+              "quote": "agua de la red",
+              "start_byte": 54
+            }
+          ],
+          "id": "network-source",
+          "qualifier_ids": [],
+          "scope_id": "doc"
+        },
+        {
+          "body": {
+            "kind": "proposition",
+            "value": {
+              "atom": {
+                "arguments": [
+                  {
+                    "role": "substance",
+                    "value": {
+                      "id": "water",
+                      "kind": "ref"
+                    }
+                  },
+                  {
+                    "role": "destination",
+                    "value": {
+                      "id": "reservoir",
+                      "kind": "ref"
+                    }
+                  },
+                  {
+                    "role": "origin",
+                    "value": {
+                      "id": "pipe",
+                      "kind": "ref"
+                    }
+                  }
+                ],
+                "evidence": [
+                  {
+                    "end_byte": 98,
+                    "quote": "El depósito J que alimenta Azucena mezcla lluvia con agua de la red procedente de la tubería T6.",
+                    "start_byte": 0
+                  }
+                ],
+                "polarity": "positive",
+                "predicate": "upstream_origin"
+              },
+              "basis": "description",
+              "judgment": "fact",
+              "normative_scope": null,
+              "qualifier_ids": [],
+              "status": "state"
+            }
+          },
+          "evidence": [
+            {
+              "end_byte": 98,
+              "quote": "El depósito J que alimenta Azucena mezcla lluvia con agua de la red procedente de la tubería T6.",
+              "start_byte": 0
+            }
+          ],
+          "id": "origin",
+          "qualifier_ids": [],
+          "scope_id": "doc"
+        }
+      ],
+      "coverage": [
+        {
+          "issue_id": null,
+          "owner": {
+            "id": "feed",
+            "kind": "claim"
+          },
+          "span": {
+            "end_byte": 35,
+            "quote": "El depósito J que alimenta Azucena",
+            "start_byte": 0
+          },
+          "state": "represented"
+        },
+        {
+          "issue_id": null,
+          "owner": {
+            "id": "mixture",
+            "kind": "claim"
+          },
+          "span": {
+            "end_byte": 98,
+            "quote": "El depósito J que alimenta Azucena mezcla lluvia con agua de la red procedente de la tubería T6.",
+            "start_byte": 0
+          },
+          "state": "represented"
+        },
+        {
+          "issue_id": null,
+          "owner": {
+            "id": "network-source",
+            "kind": "claim"
+          },
+          "span": {
+            "end_byte": 68,
+            "quote": "agua de la red",
+            "start_byte": 54
+          },
+          "state": "represented"
+        },
+        {
+          "issue_id": null,
+          "owner": {
+            "id": "origin",
+            "kind": "claim"
+          },
+          "span": {
+            "end_byte": 98,
+            "quote": "El depósito J que alimenta Azucena mezcla lluvia con agua de la red procedente de la tubería T6.",
+            "start_byte": 0
+          },
+          "state": "represented"
+        },
+        {
+          "issue_id": null,
+          "owner": {
+            "id": "reservoir",
+            "kind": "reference"
+          },
+          "span": {
+            "end_byte": 14,
+            "quote": "El depósito J",
+            "start_byte": 0
+          },
+          "state": "represented"
+        },
+        {
+          "issue_id": null,
+          "owner": {
+            "id": "destination",
+            "kind": "reference"
+          },
+          "span": {
+            "end_byte": 35,
+            "quote": "Azucena",
+            "start_byte": 28
+          },
+          "state": "represented"
+        },
+        {
+          "issue_id": null,
+          "owner": {
+            "id": "rain",
+            "kind": "reference"
+          },
+          "span": {
+            "end_byte": 49,
+            "quote": "lluvia",
+            "start_byte": 43
+          },
+          "state": "represented"
+        },
+        {
+          "issue_id": null,
+          "owner": {
+            "id": "water",
+            "kind": "reference"
+          },
+          "span": {
+            "end_byte": 97,
+            "quote": "agua de la red procedente de la tubería T6",
+            "start_byte": 54
+          },
+          "state": "represented"
+        },
+        {
+          "issue_id": null,
+          "owner": {
+            "id": "network",
+            "kind": "reference"
+          },
+          "span": {
+            "end_byte": 68,
+            "quote": "la red",
+            "start_byte": 62
+          },
+          "state": "represented"
+        },
+        {
+          "issue_id": null,
+          "owner": {
+            "id": "pipe",
+            "kind": "reference"
+          },
+          "span": {
+            "end_byte": 97,
+            "quote": "la tubería T6",
+            "start_byte": 83
+          },
+          "state": "represented"
+        }
+      ],
+      "dependencies": [
+        {
+          "consumer": {
+            "id": "reservoir",
+            "kind": "reference"
+          },
+          "requires": {
+            "id": "doc",
+            "kind": "scope"
+          },
+          "role": "binding"
+        },
+        {
+          "consumer": {
+            "id": "destination",
+            "kind": "reference"
+          },
+          "requires": {
+            "id": "doc",
+            "kind": "scope"
+          },
+          "role": "binding"
+        },
+        {
+          "consumer": {
+            "id": "rain",
+            "kind": "reference"
+          },
+          "requires": {
+            "id": "doc",
+            "kind": "scope"
+          },
+          "role": "binding"
+        },
+        {
+          "consumer": {
+            "id": "water",
+            "kind": "reference"
+          },
+          "requires": {
+            "id": "doc",
+            "kind": "scope"
+          },
+          "role": "binding"
+        },
+        {
+          "consumer": {
+            "id": "network",
+            "kind": "reference"
+          },
+          "requires": {
+            "id": "doc",
+            "kind": "scope"
+          },
+          "role": "binding"
+        },
+        {
+          "consumer": {
+            "id": "pipe",
+            "kind": "reference"
+          },
+          "requires": {
+            "id": "doc",
+            "kind": "scope"
+          },
+          "role": "binding"
+        },
+        {
+          "consumer": {
+            "id": "feed",
+            "kind": "claim"
+          },
+          "requires": {
+            "id": "doc",
+            "kind": "scope"
+          },
+          "role": "binding"
+        },
+        {
+          "consumer": {
+            "id": "feed",
+            "kind": "claim"
+          },
+          "requires": {
+            "id": "destination",
+            "kind": "reference"
+          },
+          "role": "identity"
+        },
+        {
+          "consumer": {
+            "id": "feed",
+            "kind": "claim"
+          },
+          "requires": {
+            "id": "reservoir",
+            "kind": "reference"
+          },
+          "role": "identity"
+        },
+        {
+          "consumer": {
+            "id": "mixture",
+            "kind": "claim"
+          },
+          "requires": {
+            "id": "doc",
+            "kind": "scope"
+          },
+          "role": "binding"
+        },
+        {
+          "consumer": {
+            "id": "mixture",
+            "kind": "claim"
+          },
+          "requires": {
+            "id": "rain",
+            "kind": "reference"
+          },
+          "role": "identity"
+        },
+        {
+          "consumer": {
+            "id": "mixture",
+            "kind": "claim"
+          },
+          "requires": {
+            "id": "reservoir",
+            "kind": "reference"
+          },
+          "role": "identity"
+        },
+        {
+          "consumer": {
+            "id": "mixture",
+            "kind": "claim"
+          },
+          "requires": {
+            "id": "water",
+            "kind": "reference"
+          },
+          "role": "identity"
+        },
+        {
+          "consumer": {
+            "id": "network-source",
+            "kind": "claim"
+          },
+          "requires": {
+            "id": "doc",
+            "kind": "scope"
+          },
+          "role": "binding"
+        },
+        {
+          "consumer": {
+            "id": "network-source",
+            "kind": "claim"
+          },
+          "requires": {
+            "id": "network",
+            "kind": "reference"
+          },
+          "role": "identity"
+        },
+        {
+          "consumer": {
+            "id": "network-source",
+            "kind": "claim"
+          },
+          "requires": {
+            "id": "water",
+            "kind": "reference"
+          },
+          "role": "identity"
+        },
+        {
+          "consumer": {
+            "id": "origin",
+            "kind": "claim"
+          },
+          "requires": {
+            "id": "doc",
+            "kind": "scope"
+          },
+          "role": "binding"
+        },
+        {
+          "consumer": {
+            "id": "origin",
+            "kind": "claim"
+          },
+          "requires": {
+            "id": "pipe",
+            "kind": "reference"
+          },
+          "role": "identity"
+        },
+        {
+          "consumer": {
+            "id": "origin",
+            "kind": "claim"
+          },
+          "requires": {
+            "id": "reservoir",
+            "kind": "reference"
+          },
+          "role": "identity"
+        },
+        {
+          "consumer": {
+            "id": "origin",
+            "kind": "claim"
+          },
+          "requires": {
+            "id": "water",
+            "kind": "reference"
+          },
+          "role": "identity"
+        }
+      ],
+      "domain_namespace": "documentary-v3-known-development",
+      "identity": [],
+      "kind": "source",
+      "qualifiers": [],
+      "references": [
+        {
+          "anaphora": null,
+          "binding_scope_id": null,
+          "declared_class": {
+            "end_byte": 12,
+            "quote": "depósito",
+            "start_byte": 3
+          },
+          "denotation": "entity",
+          "id": "reservoir",
+          "links": [],
+          "mention": {
+            "end_byte": 14,
+            "quote": "El depósito J",
+            "start_byte": 0
+          },
+          "name": {
+            "end_byte": 14,
+            "quote": "J",
+            "start_byte": 13
+          },
+          "scope_id": "doc",
+          "semantic_type": null
+        },
+        {
+          "anaphora": null,
+          "binding_scope_id": null,
+          "declared_class": null,
+          "denotation": "entity",
+          "id": "destination",
+          "links": [],
+          "mention": {
+            "end_byte": 35,
+            "quote": "Azucena",
+            "start_byte": 28
+          },
+          "name": {
+            "end_byte": 35,
+            "quote": "Azucena",
+            "start_byte": 28
+          },
+          "scope_id": "doc",
+          "semantic_type": null
+        },
+        {
+          "anaphora": null,
+          "binding_scope_id": null,
+          "declared_class": {
+            "end_byte": 49,
+            "quote": "lluvia",
+            "start_byte": 43
+          },
+          "denotation": "entity",
+          "id": "rain",
+          "links": [],
+          "mention": {
+            "end_byte": 49,
+            "quote": "lluvia",
+            "start_byte": 43
+          },
+          "name": null,
+          "scope_id": "doc",
+          "semantic_type": null
+        },
+        {
+          "anaphora": null,
+          "binding_scope_id": null,
+          "declared_class": {
+            "end_byte": 58,
+            "quote": "agua",
+            "start_byte": 54
+          },
+          "denotation": "entity",
+          "id": "water",
+          "links": [],
+          "mention": {
+            "end_byte": 97,
+            "quote": "agua de la red procedente de la tubería T6",
+            "start_byte": 54
+          },
+          "name": null,
+          "scope_id": "doc",
+          "semantic_type": null
+        },
+        {
+          "anaphora": null,
+          "binding_scope_id": null,
+          "declared_class": {
+            "end_byte": 68,
+            "quote": "red",
+            "start_byte": 65
+          },
+          "denotation": "entity",
+          "id": "network",
+          "links": [],
+          "mention": {
+            "end_byte": 68,
+            "quote": "la red",
+            "start_byte": 62
+          },
+          "name": null,
+          "scope_id": "doc",
+          "semantic_type": null
+        },
+        {
+          "anaphora": null,
+          "binding_scope_id": null,
+          "declared_class": {
+            "end_byte": 94,
+            "quote": "tubería",
+            "start_byte": 86
+          },
+          "denotation": "entity",
+          "id": "pipe",
+          "links": [],
+          "mention": {
+            "end_byte": 97,
+            "quote": "la tubería T6",
+            "start_byte": 83
+          },
+          "name": {
+            "end_byte": 97,
+            "quote": "T6",
+            "start_byte": 95
+          },
+          "scope_id": "doc",
+          "semantic_type": null
+        }
+      ],
+      "requests": [],
+      "scopes": [
+        {
+          "binding": null,
+          "branch_id": null,
+          "id": "doc",
+          "kind": "document",
+          "parent_id": null
+        }
+      ],
+      "text_sha256": "6a28573879540f6385efc51a461d5bbf3ed873c5e1f01fa51a93f839349cf268",
+      "version": "documentary_evidence_v3",
+      "vocabulary_sha256": "4336b424027fe21c327847fd67229941d6f843be53dfea63fb9abb03e3b154e4"
+    }
+  },
+  "question": {
+    "text": "¿De qué tubería de la red procede el agua de riego del huerto Azucena?",
+    "raw": {
+      "claims": [],
+      "coverage": [
+        {
+          "issue_id": null,
+          "owner": {
+            "id": "request-1",
+            "kind": "request"
+          },
+          "span": {
+            "end_byte": 73,
+            "quote": "¿De qué tubería de la red procede el agua de riego del huerto Azucena?",
+            "start_byte": 0
+          },
+          "state": "represented"
+        }
+      ],
+      "dependencies": [
+        {
+          "consumer": {
+            "id": "water",
+            "kind": "reference"
+          },
+          "requires": {
+            "id": "doc",
+            "kind": "scope"
+          },
+          "role": "binding"
+        },
+        {
+          "consumer": {
+            "id": "garden",
+            "kind": "reference"
+          },
+          "requires": {
+            "id": "doc",
+            "kind": "scope"
+          },
+          "role": "binding"
+        },
+        {
+          "consumer": {
+            "id": "network",
+            "kind": "reference"
+          },
+          "requires": {
+            "id": "doc",
+            "kind": "scope"
+          },
+          "role": "binding"
+        },
+        {
+          "consumer": {
+            "id": "pipe-pattern",
+            "kind": "reference"
+          },
+          "requires": {
+            "id": "doc",
+            "kind": "scope"
+          },
+          "role": "binding"
+        },
+        {
+          "consumer": {
+            "id": "pipe-pattern",
+            "kind": "reference"
+          },
+          "requires": {
+            "id": "network",
+            "kind": "reference"
+          },
+          "role": "identity"
+        },
+        {
+          "consumer": {
+            "id": "request-1",
+            "kind": "request"
+          },
+          "requires": {
+            "id": "doc",
+            "kind": "scope"
+          },
+          "role": "binding"
+        },
+        {
+          "consumer": {
+            "id": "request-1",
+            "kind": "request"
+          },
+          "requires": {
+            "id": "garden",
+            "kind": "reference"
+          },
+          "role": "identity"
+        },
+        {
+          "consumer": {
+            "id": "request-1",
+            "kind": "request"
+          },
+          "requires": {
+            "id": "pipe-pattern",
+            "kind": "reference"
+          },
+          "role": "identity"
+        },
+        {
+          "consumer": {
+            "id": "request-1",
+            "kind": "request"
+          },
+          "requires": {
+            "id": "water",
+            "kind": "reference"
+          },
+          "role": "identity"
+        },
+        {
+          "consumer": {
+            "id": "request-1",
+            "kind": "request"
+          },
+          "requires": {
+            "id": "purpose",
+            "kind": "qualifier"
+          },
+          "role": "configuration"
+        }
+      ],
+      "domain_namespace": "documentary-v3-known-development",
+      "identity": [],
+      "kind": "question",
+      "qualifiers": [
+        {
+          "body": {
+            "key": "purpose",
+            "value": {
+              "evidence": [
+                {
+                  "end_byte": 53,
+                  "quote": "riego",
+                  "start_byte": 48
+                }
+              ],
+              "kind": "text",
+              "value": "riego"
+            }
+          },
+          "evidence": [
+            {
+              "end_byte": 53,
+              "quote": "de riego",
+              "start_byte": 45
+            }
+          ],
+          "id": "purpose",
+          "kind": "configuration",
+          "resolution": "known",
+          "scope_id": "doc"
+        }
+      ],
+      "references": [
+        {
+          "anaphora": null,
+          "binding_scope_id": null,
+          "declared_class": {
+            "end_byte": 44,
+            "quote": "agua",
+            "start_byte": 40
+          },
+          "denotation": "entity",
+          "id": "water",
+          "links": [],
+          "mention": {
+            "end_byte": 53,
+            "quote": "agua de riego",
+            "start_byte": 40
+          },
+          "name": null,
+          "scope_id": "doc",
+          "semantic_type": null
+        },
+        {
+          "anaphora": null,
+          "binding_scope_id": null,
+          "declared_class": {
+            "end_byte": 64,
+            "quote": "huerto",
+            "start_byte": 58
+          },
+          "denotation": "entity",
+          "id": "garden",
+          "links": [],
+          "mention": {
+            "end_byte": 72,
+            "quote": "huerto Azucena",
+            "start_byte": 58
+          },
+          "name": {
+            "end_byte": 72,
+            "quote": "Azucena",
+            "start_byte": 65
+          },
+          "scope_id": "doc",
+          "semantic_type": null
+        },
+        {
+          "anaphora": null,
+          "binding_scope_id": null,
+          "declared_class": {
+            "end_byte": 28,
+            "quote": "red",
+            "start_byte": 25
+          },
+          "denotation": "entity",
+          "id": "network",
+          "links": [],
+          "mention": {
+            "end_byte": 28,
+            "quote": "la red",
+            "start_byte": 22
+          },
+          "name": null,
+          "scope_id": "doc",
+          "semantic_type": null
+        },
+        {
+          "anaphora": null,
+          "binding_scope_id": null,
+          "declared_class": {
+            "end_byte": 18,
+            "quote": "tubería",
+            "start_byte": 10
+          },
+          "denotation": "entity",
+          "id": "pipe-pattern",
+          "links": [
+            {
+              "evidence": [
+                {
+                  "end_byte": 28,
+                  "quote": "tubería de la red",
+                  "start_byte": 10
+                }
+              ],
+              "kind": "associated_with",
+              "target": "network"
+            }
+          ],
+          "mention": {
+            "end_byte": 28,
+            "quote": "tubería de la red",
+            "start_byte": 10
+          },
+          "name": null,
+          "scope_id": "doc",
+          "semantic_type": null
+        }
+      ],
+      "requests": [
+        {
+          "basis_requirement": {
+            "kind": "any"
+          },
+          "class_filter": {
+            "kind": "reference_pattern",
+            "reference_id": "pipe-pattern"
+          },
+          "evidence": [
+            {
+              "end_byte": 73,
+              "quote": "¿De qué tubería de la red procede el agua de riego del huerto Azucena?",
+              "start_byte": 0
+            }
+          ],
+          "id": "request-1",
+          "mode": "answer",
+          "normative_scope_filter": null,
+          "premise_ids": [],
+          "qualifier_ids": [
+            "purpose"
+          ],
+          "required_answer_extent": "one_value",
+          "scope_id": "doc",
+          "slot": "origin",
+          "target": {
+            "atom": {
+              "arguments": [
+                {
+                  "role": "substance",
+                  "value": {
+                    "id": "water",
+                    "kind": "ref"
+                  }
+                },
+                {
+                  "role": "destination",
+                  "value": {
+                    "id": "garden",
+                    "kind": "ref"
+                  }
+                }
+              ],
+              "evidence": [
+                {
+                  "end_byte": 72,
+                  "quote": "procede el agua de riego del huerto Azucena",
+                  "start_byte": 29
+                }
+              ],
+              "polarity": "positive",
+              "predicate": "upstream_origin"
+            },
+            "judgment": "fact",
+            "qualifier_ids": [
+              "purpose"
+            ],
+            "status": "state"
+          },
+          "unit": null
+        }
+      ],
+      "scopes": [
+        {
+          "binding": null,
+          "branch_id": null,
+          "id": "doc",
+          "kind": "document",
+          "parent_id": null
+        }
+      ],
+      "text_sha256": "25a164e8b4dd3a29518033c7b425bdd25a2cfcd99e4ea58fae7bca8c8771fd41",
+      "version": "documentary_evidence_v3",
+      "vocabulary_sha256": "4336b424027fe21c327847fd67229941d6f843be53dfea63fb9abb03e3b154e4"
+    }
+  },
+  "pair_scope": {
+    "namespace": "documentary-v3-known-development",
+    "configuration": [],
+    "time_selector": null,
+    "closed_world": false
+  }
+}

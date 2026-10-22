@@ -1,0 +1,11 @@
+{
+  "source_inputs": "outputs/iromem/evaluation/direct-role-perplexity-v1-2026-10-20/inputs.jsonl",
+  "source_inputs_sha256": "fe2f589924cfeafd338679966e72773b60494f1835615f9dc0bfe980d5208e6f",
+  "source_review_directory": "outputs/iromem/evaluation/contribution-v3-known18-source-review-2026-10-20",
+  "original_sources_queries_order_ids_changed": false,
+  "old_gold_modified": false,
+  "semantic_judgments_not_deterministic_truth": true,
+  "new_role_labels_written_before_next_provider_calls": true,
+  "reviewers_share_model_family": true,
+  "provider_calls_with_this_bank": 0
+}

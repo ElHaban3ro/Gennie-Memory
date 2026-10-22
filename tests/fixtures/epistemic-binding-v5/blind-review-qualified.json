@@ -1,0 +1,352 @@
+{
+  "review_type": "qualified_final_blind_source_and_contract_review",
+  "reviewer": "same-family model; no human adjudication",
+  "inputs_read": [
+    "docs/evaluation/epistemic-binding-v5-contract.md",
+    "docs/evaluation/evidence-contribution-v4-contract.md",
+    "docs/evaluation/evidence-contribution-v3-contract.md",
+    "tests/fixtures/epistemic-binding-v5/source-only-reviewed.json"
+  ],
+  "blindness": "No author labels, manifest, results, implementation or API inspected. Earlier draft and independent critique known. Review is prospective and development-only.",
+  "ready_for_manual_boundary_execution": true,
+  "readiness_scope": "Estos 18 pares sirven para ejecutar el límite manual de clasificación sobre frames revisados. Los casos unresolved permanecen en denominador y bloquean autonomía. No certifica extractor, producto, grounding automático, generalización ni puertas históricas.",
+  "field_semantics": {
+    "assertable_facts": "Conteo entero de hechos pertinentes invariantes afirmables según esta fuente; incluye disponibilidad acotada, no hechos ajenos. No cuenta metainformación nueva como si fuera un número.",
+    "world_roles": "Conjunto deduplicado de roles V4 de las lecturas representadas, añadiendo ciertos a cada una. No mundos físicos completos.",
+    "selected": "Conservar evidencia por vía resuelta. false con unresolved significa que la selección automática no se ha resuelto, no rechazo seguro.",
+    "epistemic_contribution": "Nueva metainformación V5 de no invariancia del conjunto proposicional completo pedido, o vínculo posible documental explícito con cobertura abierta. No incluye por sí solo unknown de disponibilidad V3/V4."
+  },
+  "resolved_objections": [
+    "El texto de los controles cerrados declara exhaustividad documental; ya no se confunde con exhaustividad física.",
+    "El valor north de a013 ya tiene soporte literal.",
+    "a014 ya no inventa IDs ausentes: la notación literal admite lecturas analíticas abiertas y se trata como control de revisión sin nueva vía A.",
+    "La invariancia sobre afirmación completa resuelve a005: dato concreto sí, nueva contribución epistémica no. a004 sí presenta un conjunto variable además del dato cierto.",
+    "El tratamiento de a007 ya está definido: A de vínculo posible, cero hechos concretos, cobertura incompleta y revisión."
+  ],
+  "remaining_objections": [
+    {
+      "severity": "limitation",
+      "blocking_for_this_boundary_bank": false,
+      "finding": "La cláusula anterior Un valor puede coincidir y diferir su fundamento o alcance debe leerse bajo la precisión posterior: cambiar solo identidad de subcláusula no cuenta como no invariancia si los hechos con calificadores de la afirmación completa son iguales. Evitar que una futura implementación trate a005 como incierto."
+    },
+    {
+      "severity": "limitation",
+      "blocking_for_this_boundary_bank": false,
+      "finding": "a014 no dice explícitamente teléfono; la atribución de tipo phone y la semántica de la barra son hipótesis pragmáticas. Es adecuado como control unresolved, pero sus lecturas no son verdad fuente ni evidencia documental explícita. No usarlo para medir extracción acertada."
+    },
+    {
+      "severity": "limitation",
+      "blocking_for_this_boundary_bank": false,
+      "finding": "a010 codifica las asignaciones de modo mediante configuration. C depende de conservar esas asignaciones explícitas en el texto y de no inferir exclusividad ni B desde una configuración alternativa."
+    },
+    {
+      "severity": "limitation",
+      "blocking_for_this_boundary_bank": false,
+      "finding": "Un pase de selección con numerosos A y cero datos concretos sigue siendo compatible con ninguna respuesta telefónica completa. Publicar separados selección, datos concretos, incertidumbre y revisión."
+    },
+    {
+      "severity": "coverage",
+      "blocking_for_this_boundary_bank": false,
+      "finding": "El banco no demuestra fronteras semánticas amplias: faltan aquí incertidumbre de condición/alcance con rama A, componentes/universales, cantidades parciales y mezcla B/A. La mención contractual de pruebas unitarias no se verificó en esta revisión ciega."
+    },
+    {
+      "severity": "independence",
+      "blocking_for_this_boundary_bank": false,
+      "finding": "La revisión procede de la misma familia de modelo y ya conoce el borrador. No equivale a crítico humano independiente ni holdout."
+    }
+  ],
+  "pairs": [
+    {
+      "id": "ebv5_01",
+      "relation": "A",
+      "selected": true,
+      "basis": "record_uncertainty",
+      "assertable_facts": 0,
+      "epistemic_contribution": true,
+      "world_roles": [
+        "A",
+        "none"
+      ],
+      "review_required": false,
+      "rationale": "Identidad documental explícita y cerrada: la etiqueta aporta phone de K6 solo en una lectura. Ningún número de K6 es invariante.",
+      "coverage_incomplete": false,
+      "qualification_required": true
+    },
+    {
+      "id": "ebv5_02",
+      "relation": "A",
+      "selected": true,
+      "basis": "record_uncertainty",
+      "assertable_facts": 0,
+      "epistemic_contribution": true,
+      "world_roles": [
+        "A",
+        "none"
+      ],
+      "review_required": false,
+      "rationale": "Mismo control para K7: no depende de escoger la primera alternativa ni del nombre consultado.",
+      "coverage_incomplete": false,
+      "qualification_required": true
+    },
+    {
+      "id": "ebv5_03",
+      "relation": "none",
+      "selected": false,
+      "basis": "unrelated",
+      "assertable_facts": 0,
+      "epistemic_contribution": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "rationale": "K8 queda fuera de la lista cerrada de esta fuente; no se deriva ausencia global de su teléfono.",
+      "coverage_incomplete": false,
+      "qualification_required": false
+    },
+    {
+      "id": "ebv5_04",
+      "relation": "none",
+      "selected": false,
+      "basis": "unrelated",
+      "assertable_facts": 0,
+      "epistemic_contribution": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "rationale": "La etiqueta aporta phone, no pickup_location; no se convierte incertidumbre de otro atributo en aporte.",
+      "coverage_incomplete": false,
+      "qualification_required": false
+    },
+    {
+      "id": "ebv5_05",
+      "relation": "none",
+      "selected": false,
+      "basis": "unrelated",
+      "assertable_facts": 0,
+      "epistemic_contribution": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "rationale": "La cuenta Alerce no satisface Fresno aunque coincida K6.",
+      "coverage_incomplete": false,
+      "qualification_required": false
+    },
+    {
+      "id": "ebv5_06",
+      "relation": "A",
+      "selected": true,
+      "basis": "assertable",
+      "assertable_facts": 1,
+      "epistemic_contribution": false,
+      "world_roles": [
+        "A"
+      ],
+      "review_required": false,
+      "rationale": "Un hecho directo e invariante: el registro afirma phone(K6/Alerce)=555-0166.",
+      "coverage_incomplete": false,
+      "qualification_required": false
+    },
+    {
+      "id": "ebv5_07",
+      "relation": "A",
+      "selected": true,
+      "basis": "assertable",
+      "assertable_facts": 1,
+      "epistemic_contribution": false,
+      "world_roles": [
+        "A"
+      ],
+      "review_required": false,
+      "rationale": "La conjunción afirma el teléfono de ambos pedidos; el hecho pedido de K6 es invariante. El hecho de K7 no se cuenta como dato solicitado.",
+      "coverage_incomplete": false,
+      "qualification_required": false
+    },
+    {
+      "id": "ebv5_08",
+      "relation": "A",
+      "selected": true,
+      "basis": "assertable_and_record_uncertainty",
+      "assertable_facts": 1,
+      "epistemic_contribution": true,
+      "world_roles": [
+        "A"
+      ],
+      "review_required": false,
+      "rationale": "La agenda afirma 555-0177 para K6 en ambas lecturas. La afirmación completa añade condicionalmente 555-0166 para K6; su conjunto de hechos pedidos sí varía. No se certifica unicidad ni vigencia de ninguno.",
+      "coverage_incomplete": false,
+      "qualification_required": true
+    },
+    {
+      "id": "ebv5_09",
+      "relation": "A",
+      "selected": true,
+      "basis": "assertable",
+      "assertable_facts": 1,
+      "epistemic_contribution": false,
+      "world_roles": [
+        "A"
+      ],
+      "review_required": false,
+      "rationale": "La agenda afirma 555-0166 para K6 en ambas lecturas. Duplicar ese mismo hecho en una lectura no cambia la contribución proposicional completa. La identidad incierta de la segunda etiqueta no es incertidumbre del campo pedido de esta afirmación.",
+      "coverage_incomplete": false,
+      "qualification_required": false
+    },
+    {
+      "id": "ebv5_10",
+      "relation": "A",
+      "selected": true,
+      "basis": "record_uncertainty",
+      "assertable_facts": 0,
+      "epistemic_contribution": true,
+      "world_roles": [
+        "A"
+      ],
+      "review_required": false,
+      "rationale": "Las dos lecturas aportan A, pero ningún teléfono concreto es invariante. La cifra borrosa habilita incertidumbre documental explícita; no desconocimiento global.",
+      "coverage_incomplete": false,
+      "qualification_required": true
+    },
+    {
+      "id": "ebv5_11",
+      "relation": "A",
+      "selected": true,
+      "basis": "record_uncertainty",
+      "assertable_facts": 0,
+      "epistemic_contribution": true,
+      "world_roles": [
+        "A"
+      ],
+      "review_required": true,
+      "rationale": "Hay vínculo K6 nombrado y cita documental. Se conserva metainformación de vínculo posible; lista abierta obliga a revisión y no demuestra variación exhaustiva. Solo se representa un rol A, sin inventar lectura residual.",
+      "coverage_incomplete": true,
+      "qualification_required": true
+    },
+    {
+      "id": "ebv5_12",
+      "relation": "unresolved",
+      "selected": false,
+      "basis": "requires_review",
+      "assertable_facts": 0,
+      "epistemic_contribution": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": true,
+      "rationale": "Lista abierta con K7 nombrado, sin vínculo explícito a K6: no seleccionar como A ni rechazar como ajeno seguro; revisión por cobertura.",
+      "coverage_incomplete": true,
+      "qualification_required": false
+    },
+    {
+      "id": "ebv5_13",
+      "relation": "unresolved",
+      "selected": false,
+      "basis": "requires_review",
+      "assertable_facts": 0,
+      "epistemic_contribution": false,
+      "world_roles": [
+        "B",
+        "none"
+      ],
+      "review_required": true,
+      "rationale": "Solo una lectura refuta la premisa Vera/Linde; ninguna aporta fecha. Mantener B/none y revisión, sin B cierta ni nueva A.",
+      "coverage_incomplete": false,
+      "qualification_required": false
+    },
+    {
+      "id": "ebv5_14",
+      "relation": "unresolved",
+      "selected": false,
+      "basis": "requires_review",
+      "assertable_facts": 0,
+      "epistemic_contribution": false,
+      "world_roles": [
+        "C",
+        "none"
+      ],
+      "review_required": true,
+      "rationale": "Solo la lectura Nava permite contraste Nava/Borrador/150 frente a Yema/Fino/600. No hay resolución Nava/Fino ni exclusividad de modos; mantener C/none y revisión.",
+      "coverage_incomplete": false,
+      "qualification_required": false
+    },
+    {
+      "id": "ebv5_15",
+      "relation": "none",
+      "selected": false,
+      "basis": "unrelated",
+      "assertable_facts": 0,
+      "epistemic_contribution": false,
+      "world_roles": [
+        "none"
+      ],
+      "review_required": false,
+      "rationale": "No exigir teléfono es un hecho de requires, no de phone ni una refutación de la pregunta.",
+      "coverage_incomplete": false,
+      "qualification_required": false
+    },
+    {
+      "id": "ebv5_16",
+      "relation": "A",
+      "selected": true,
+      "basis": "assertable",
+      "assertable_facts": 1,
+      "epistemic_contribution": false,
+      "world_roles": [
+        "A"
+      ],
+      "review_required": false,
+      "rationale": "Hecho explícito de disponibilidad acotada: no consta phone de K6 en el registro de mantenimiento. Se cuenta ese estado de fuente, no un número ni desconocimiento global.",
+      "coverage_incomplete": false,
+      "qualification_required": true
+    },
+    {
+      "id": "ebv5_17",
+      "relation": "A",
+      "selected": true,
+      "basis": "assertable",
+      "assertable_facts": 1,
+      "epistemic_contribution": false,
+      "world_roles": [
+        "A"
+      ],
+      "review_required": false,
+      "rationale": "Phone de K6 es cierto en la afirmación completa y no cambia entre alternativas de otra etiqueta. north ahora tiene soporte literal; no lo contar como teléfono pedido.",
+      "coverage_incomplete": false,
+      "qualification_required": false
+    },
+    {
+      "id": "ebv5_18",
+      "relation": "unresolved",
+      "selected": false,
+      "basis": "requires_review",
+      "assertable_facts": 0,
+      "epistemic_contribution": false,
+      "world_roles": [
+        "A",
+        "none"
+      ],
+      "review_required": true,
+      "rationale": "K6/K7 aparece literalmente, pero su disyunción/conjunción es analítica y la lista abierta carece de cita de incertidumbre documental. Mantener V4 A/none y revisión; no habilitar la nueva vía epistémica ni forzar none.",
+      "coverage_incomplete": true,
+      "qualification_required": false
+    }
+  ],
+  "qualification_rule_review": {
+    "verdict": "Semánticamente válida con precisión: status V4 incluye disponibilidad documental acotada, además de estado de medición. ebv5_16 necesita calificación aunque no use la nueva contribución epistémica.",
+    "rule": "selected AND (epistemic_contribution OR review_required OR multiple_distinct_useful_world_roles OR selected_v4_status_requiring_scope_limit)",
+    "mandatory_pairs": [
+      "ebv5_01",
+      "ebv5_02",
+      "ebv5_08",
+      "ebv5_10",
+      "ebv5_11",
+      "ebv5_16"
+    ],
+    "availability_limit": "ebv5_16 solo acredita ausencia del teléfono en el registro de mantenimiento, no desconocimiento global ni inexistencia del teléfono.",
+    "nonselected": "qualification_required=false para pares no seleccionados; su review_required permanece independiente y no se resuelve por este campo.",
+    "ordinary_assertable": "Los demás datos concretos seleccionados conservan fuente y calificadores ordinarios; qualification_required=false no permite eliminar contexto o afirmar verdad externa.",
+    "multiple_roles": "Las lecturas A/A no son dos relaciones distintas. V4 con roles útiles distintos requiere calificación si se selecciona; B/none y C/none actuales no se seleccionan.",
+    "blindness": "Solo se reutilizó la revisión final ciega y los contratos/fuentes leídos antes; no se consultaron etiquetas ni código. El archivo original se conserva."
+  }
+}

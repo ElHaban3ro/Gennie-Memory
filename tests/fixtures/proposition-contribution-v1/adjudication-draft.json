@@ -1,0 +1,17 @@
+{
+  "provider_calls": 0,
+  "initial_review_role_disagreements": 1,
+  "initial_review_ambiguities": 5,
+  "changes": [
+    "Make policy normative in source/propositions/questions and require a common class policy, not an enumerated list.",
+    "Use measured force versus measured autonomy to remove verify/measure ambiguity.",
+    "State autonomy bounds explicitly, preserving source trial and incomplete maximum.",
+    "Make exclusivity apply explicitly to admitted modes."
+  ],
+  "unchanged_issue": {
+    "case": "pcv1_08_01",
+    "resolution": "Apply existing v3 intermediate-feeding A clause without claiming exclusivity or a known upstream pipe. This is a normative rubric, not a proof that every relevance rubric agrees."
+  },
+  "labels_changed": false,
+  "historical_banks_changed": false
+}

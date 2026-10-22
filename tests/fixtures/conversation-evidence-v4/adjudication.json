@@ -1,0 +1,156 @@
+{
+  "version": "evidence-v4-adjudication-v1",
+  "blind_review_sha256": "d148bf2b5f7a2545d57720c7744d050a63ed28ef15c9c8d3a5690c45f378f888",
+  "source_sha256": "5bbfd68bebe38124d1dadff70a708c867dc7e61467f0351f382cc7ba6a5c5f7c",
+  "questions_sha256": "84f652a45a6d9b55792924c876ae6ec95cb9e4f4b86d518f28912e7c47a8aadb",
+  "final_labels_sha256": "02a91873bb1a082861cc5c468eb2ed16a8a36683d4a5e545142a1081ea718dfd",
+  "unresolved_case_ids": [],
+  "human_review": false,
+  "independent_review": false,
+  "separate_agent_blind_review": true,
+  "changes_before_provider": [
+    {
+      "id": "cev4q_061_01",
+      "initial_relation": "unrelated",
+      "initial_expected_ids": [],
+      "final_relation": "refutes_premise",
+      "final_expected_ids": [
+        "cev4_061_06"
+      ],
+      "reason": "La asignación explícita es M4 con Umbral a dos segundos y M8 con Silente a cuatro; la pregunta cruza cámara y perfil."
+    },
+    {
+      "id": "cev4q_059_02",
+      "initial_relation": "pending_or_partial",
+      "initial_expected_ids": [
+        "cev4_059_18"
+      ],
+      "final_relation": "pending_or_partial",
+      "final_expected_ids": [
+        "cev4_059_18",
+        "cev4_059_03"
+      ],
+      "reason": "El inicio está confirmado, mientras que la pausa por gesto sigue sin probar en ese teléfono."
+    },
+    {
+      "id": "cev4q_059_05",
+      "initial_relation": "supports_answer",
+      "initial_expected_ids": [
+        "cev4_059_03"
+      ],
+      "final_relation": "supports_answer",
+      "final_expected_ids": [
+        "cev4_059_03",
+        "cev4_059_18"
+      ],
+      "reason": "La instrucción completa es pulsar dos veces el botón relieve de la pantalla inicial."
+    },
+    {
+      "id": "cev4q_060_02",
+      "initial_relation": "pending_or_partial",
+      "initial_expected_ids": [
+        "cev4_060_14"
+      ],
+      "final_relation": "pending_or_partial",
+      "final_expected_ids": [
+        "cev4_060_14",
+        "cev4_060_12"
+      ],
+      "reason": "La causa del olor sigue sin identificar; sí consta que se apartó una bandeja para análisis."
+    },
+    {
+      "id": "cev4q_059_07",
+      "initial_relation": "refutes_premise",
+      "initial_expected_ids": [
+        "cev4_059_07"
+      ],
+      "final_relation": "refutes_premise",
+      "final_expected_ids": [
+        "cev4_059_07",
+        "cev4_059_14"
+      ],
+      "reason": "La voz de Veta es la voz propia de Ilse, no una clonación de la madre de Mara."
+    }
+  ],
+  "ambiguity_resolution": [
+    {
+      "id": "cev4q_059_05",
+      "notes": [
+        "059_03 responde la instrucción completa; 059_18 también es útil individualmente porque especifica el botón de inicio, aunque omite las dos pulsaciones."
+      ],
+      "resolution": "Mantener interpretación explícita de la revisión: estado pendiente no es resultado completo; aceptar parte concreta solicitada y limitar corrección a hechos documentados. No inferir valores o imposibilidades ausentes."
+    },
+    {
+      "id": "cev4q_061_01",
+      "notes": [
+        "El texto asigna perfiles a cámaras y no declara una imposibilidad técnica de configurar Silente en M4. La refutación se limita a la asignación documentada."
+      ],
+      "resolution": "Mantener interpretación explícita de la revisión: estado pendiente no es resultado completo; aceptar parte concreta solicitada y limitar corrección a hechos documentados. No inferir valores o imposibilidades ausentes."
+    },
+    {
+      "id": "cev4q_060_08",
+      "notes": [
+        "Apartar una bandeja para análisis no confirma envío a un laboratorio externo ni aporta una parte concreta de la identidad solicitada."
+      ],
+      "resolution": "Mantener interpretación explícita de la revisión: estado pendiente no es resultado completo; aceptar parte concreta solicitada y limitar corrección a hechos documentados. No inferir valores o imposibilidades ausentes."
+    },
+    {
+      "id": "cev4q_059_07",
+      "notes": [
+        "059_14 constituye una corrección parcial sobre una grabación materna concreta; la negación completa de la clonación está en 059_07. 059_19 solo ubica el saludo en otra carpeta, lo que no prueba exclusión de uso, y no se incluye."
+      ],
+      "resolution": "Mantener interpretación explícita de la revisión: estado pendiente no es resultado completo; aceptar parte concreta solicitada y limitar corrección a hechos documentados. No inferir valores o imposibilidades ausentes."
+    },
+    {
+      "id": "cev4q_060_02",
+      "notes": [
+        "La pregunta abierta permite una respuesta completa de lo actualmente conocido, pero el estado de causa no identificada se clasifica pending_or_partial conforme a la definición de estado pendiente útil.",
+        "Se interpreta manejo en sentido amplio, incluyendo la identificación física de la bandeja apartada. Si se limita manejo a aislamiento o tratamiento, 060_12 sería contexto y debería excluirse."
+      ],
+      "resolution": "Mantener interpretación explícita de la revisión: estado pendiente no es resultado completo; aceptar parte concreta solicitada y limitar corrección a hechos documentados. No inferir valores o imposibilidades ausentes."
+    },
+    {
+      "id": "cev4q_065_06",
+      "notes": [
+        "Aunque la pregunta binaria admite no, la evidencia documenta una verificación incompleta; se usa pending_or_partial."
+      ],
+      "resolution": "Mantener interpretación explícita de la revisión: estado pendiente no es resultado completo; aceptar parte concreta solicitada y limitar corrección a hechos documentados. No inferir valores o imposibilidades ausentes."
+    },
+    {
+      "id": "cev4q_060_06",
+      "notes": [
+        "Que no se exija registrar domicilio no prueba que el domicilio sea inexistente o que nunca se registrara; por eso no se clasifica refutes_premise."
+      ],
+      "resolution": "Mantener interpretación explícita de la revisión: estado pendiente no es resultado completo; aceptar parte concreta solicitada y limitar corrección a hechos documentados. No inferir valores o imposibilidades ausentes."
+    },
+    {
+      "id": "cev4q_059_02",
+      "notes": [
+        "La pregunta binaria se puede contestar no con el estado pendiente; se conserva pending_or_partial porque el dato central es verificación incompleta, no una afirmación de controles ya verificados.",
+        "059_03 aporta el inicio como parte concreta solicitada, pero describe una instrucción y no afirma que todos los controles hayan sido probados."
+      ],
+      "resolution": "Mantener interpretación explícita de la revisión: estado pendiente no es resultado completo; aceptar parte concreta solicitada y limitar corrección a hechos documentados. No inferir valores o imposibilidades ausentes."
+    },
+    {
+      "id": "cev4q_058_03",
+      "notes": [
+        "La distribución de inspecciones es explícita, pero no equivale a la distribución completa de estados de conservación de los doce moldes."
+      ],
+      "resolution": "Mantener interpretación explícita de la revisión: estado pendiente no es resultado completo; aceptar parte concreta solicitada y limitar corrección a hechos documentados. No inferir valores o imposibilidades ausentes."
+    },
+    {
+      "id": "cev4q_064_04",
+      "notes": [
+        "El enunciado podría leerse como premisa de verificación completa. Predomina la solicitud de respaldo de pruebas, cuyo estado es explícitamente parcial."
+      ],
+      "resolution": "Mantener interpretación explícita de la revisión: estado pendiente no es resultado completo; aceptar parte concreta solicitada y limitar corrección a hechos documentados. No inferir valores o imposibilidades ausentes."
+    }
+  ],
+  "category_counts": {
+    "unrelated": 15,
+    "pending_or_partial": 16,
+    "supports_answer": 16,
+    "refutes_premise": 17
+  },
+  "quota_policy": "No force original category quotas after semantic review; keep all64 cases and report actual denominators."
+}

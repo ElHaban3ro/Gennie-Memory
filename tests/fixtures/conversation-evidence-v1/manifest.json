@@ -1,0 +1,25 @@
+{
+  "version": "conversation-evidence-v1",
+  "scope_count": 8,
+  "memories": 64,
+  "cases": 64,
+  "by_relation": {
+    "supports_answer": 16,
+    "refutes_premise": 16,
+    "pending_or_partial": 16,
+    "unrelated": 16
+  },
+  "human_review": false,
+  "independent_review": false,
+  "split": "development",
+  "label_source": "agent_synthetic_unreviewed",
+  "rubric_path": "docs/evaluation/evidence-rubric-v1.md",
+  "rubric_sha256": "56a104869155294906053724d174bc17dc4d6808f6c97e959e012b7b0835b08d",
+  "files_sha256": {
+    "README.md": "99ce2e3b73a031e354d7c36592cc13b87bc17340d4ff0237ccd783fbe02364e0",
+    "agent-review.md": "d83f24d6953db323cc1c2c5f3253dab4d69559a1e8cb825a341f131e46d7f4e3",
+    "development.jsonl": "00f686188303554275451a92977eb5e42087d422dd00db429fa8ca83477b02aa",
+    "memories.json": "ab8d245e790998fc278565ea2274a5ff9f94e7423080fb48c7110a9bf4edf3cd",
+    "source.json": "fc14b2081221dbc9be6e078455ea414119505ce95bfa719f762333fe36a5daf7"
+  }
+}
