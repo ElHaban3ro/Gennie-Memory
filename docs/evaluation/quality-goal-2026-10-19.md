@@ -1,8 +1,8 @@
 # Objetivo cerrado: mejorar calidad conservando evidencia útil
 
-Estado vigente (2026-10-23): el objetivo cerró **5/5 etapas**. Single-pass V1 superó desarrollo V11 (15/16→16/16) y confirmación ciega V14 (14/16→16/16), sin pérdidas ni IDs ajenos y dentro del límite congelado de recursos. Queda habilitada como opción explícita; `baseline` sigue predeterminado por el alcance sintético limitado. V9 cascade se retiró por coste/p95; V10 empató en techo; V12 y V13 se descartaron antes de inferencia por errores de gold/revisión. [Resultados V14](epistemic-partial-single-pass-v1-v14-results-2026-10-23.md) · [Protocolo V14](epistemic-partial-single-pass-v1-v14-protocol-2026-10-23.md) · [Adjudicación ciega V14](assets/quality-goal-confirm-v14/blind-adjudication.md) · [Resultados V11](epistemic-partial-single-pass-v1-v11-results-2026-10-23.md) · [Historial V10](epistemic-partial-single-pass-v1-results-2026-10-23.md) · [Decisión 0042](../decisions/0042-opt-in-epistemic-partial-single-pass.md).
+Estado vigente (2026-10-23): el objetivo cerró **5/5 etapas**. Single-pass V1 superó desarrollo V11 (15/16→16/16) y confirmación ciega V14 (14/16→16/16), sin pérdidas ni IDs ajenos y dentro del límite congelado de recursos. Tras la solicitud de promoción, queda como política predeterminada de selección; `baseline` continúa explícita y Decisions sigue como proveedor predeterminado. La evidencia es sintética y limitada. V9 cascade se retiró por coste/p95; V10 empató en techo; V12 y V13 se descartaron antes de inferencia por errores de gold/revisión. [Resultados V14](epistemic-partial-single-pass-v1-v14-results-2026-10-23.md) · [Protocolo V14](epistemic-partial-single-pass-v1-v14-protocol-2026-10-23.md) · [Adjudicación ciega V14](assets/quality-goal-confirm-v14/blind-adjudication.md) · [Resultados V11](epistemic-partial-single-pass-v1-v11-results-2026-10-23.md) · [Historial V10](epistemic-partial-single-pass-v1-results-2026-10-23.md) · [Decisiones 0042 y 0043](../decisions/0043-epistemic-single-pass-default.md).
 
-Avance por etapas cerradas: **5/5**. Se cierra la evaluación con adopción optativa; no se declara que la mejora sea universal ni se cambia el predeterminado.
+Avance por etapas cerradas: **5/5**. Se cierra la evaluación y se adopta la política predeterminada con el alcance sintético documentado; no se declara mejora universal.
 
 | Paso | Estado verificable |
 | --- | --- |
@@ -10,7 +10,7 @@ Avance por etapas cerradas: **5/5**. Se cierra la evaluación con adopción opta
 | 2. Banco y controles | Cerrado |
 | 3. Mecanismo con mejora sin daños nuevos | Cerrado. Single-pass V1 rescató evidencia parcial en V11 y V14; cero pérdidas/ajenos y costes/p95 dentro de 1,5× |
 | 4. Casos nuevos y revisión ciega | Cerrado. V11 y V14 fueron nuevas, revisadas antes de inferencia y comparadas de forma emparejada; V14 confirmó 16/16 frente a 14/16 |
-| 5. Informe final de calidad, recursos y adopción | Cerrado. Reporte y decisión 0042 publicados; opción explícita adoptada, baseline conserva el predeterminado |
+| 5. Informe final de calidad, recursos y adopción | Cerrado. Reporte y decisiones 0042/0043 publicados; single-pass predeterminado, baseline explícita para control |
 
 Estado histórico del paso 3: referencia a contexto fuente implementada y verificada;849pruebas/0fallos/24ignoradas,32/32controles CLI y425replays idénticos. Banco manual **115/116**, sin acierto nuevo: transporte posesivo aceptado por ambos críticos, pero sigue dudosa la interpretación de «obligación de tutor» como requisito de clase para Ina. Representación aumentada no aceptada integralmente; originales intactos. Original autónomo99/116 y utilidad31/39 sin cambios. Cinco pasos íntegros activos, sin permisos pendientes, adopción o V6;USD0 API nuevo, Codex no cuantificado. [Informe](documentary-v3-source-context-reference-results-2026-10-22.md).
 
