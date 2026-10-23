@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1000" viewBox="0 0 1200 1000" role="img" aria-labelledby="title desc">
+<title id="title">Single-pass frente al baseline y los motores de búsqueda</title>
+<desc id="desc">En la cohorte sintética compartida, Decisions con baseline acertó 441 de 460 preguntas positivas y single-pass 401. Los negativos vacíos fueron 80 de 80 en ambos. La política no cambia la recuperación de candidatos: iROMEM tuvo 457 recuerdos esperados en top 20, Engram 456, Lodis 389 y Basic Memory 280.</desc>
+<rect width="1200" height="1000" fill="#fffefa"/>
+<text x="58" y="64" fill="#25313b" font-family="Georgia,serif" font-size="35">La selección cayó; la búsqueda no cambió</text>
+<text x="58" y="99" fill="#617078" font-family="Arial,sans-serif" font-size="17">2.800 recuerdos · 540 preguntas sintéticas · 460 positivas y 80 negativas · Decisions en ambos perfiles</text>
+<rect x="58" y="130" width="1084" height="342" rx="18" fill="#f2f5f3"/>
+<text x="88" y="174" fill="#25313b" font-family="Georgia,serif" font-size="25">Selección de semilla · acierto exacto entre positivas</text>
+<text x="88" y="201" fill="#617078" font-family="Arial,sans-serif" font-size="15">Misma consulta, candidatos y modelo solicitado; solo cambia la política. Escala desde cero.</text>
+<text x="88" y="260" fill="#25313b" font-family="Arial,sans-serif" font-size="17">Baseline explícito</text>
+<rect x="305" y="233" width="560" height="42" rx="8" fill="#e3e8e5"/>
+<rect x="305" y="233" width="536" height="42" rx="8" fill="#d8b858"/>
+<text x="885" y="261" fill="#25313b" font-family="Arial,sans-serif" font-size="19" font-weight="700">441 / 460 · 95,87 %</text>
+<text x="88" y="326" fill="#25313b" font-family="Arial,sans-serif" font-size="17">Single-pass</text>
+<rect x="305" y="299" width="560" height="42" rx="8" fill="#e3e8e5"/>
+<rect x="305" y="299" width="487" height="42" rx="8" fill="#287c78"/>
+<text x="885" y="327" fill="#25313b" font-family="Arial,sans-serif" font-size="19" font-weight="700">401 / 460 · 87,17 %</text>
+<line x1="305" y1="366" x2="865" y2="366" stroke="#b9c4c0" stroke-width="1"/>
+<text x="305" y="390" fill="#617078" font-family="Arial,sans-serif" font-size="13">0</text>
+<text x="845" y="390" fill="#617078" font-family="Arial,sans-serif" font-size="13">460</text>
+<rect x="88" y="410" width="300" height="40" rx="10" fill="#fffefa"/>
+<text x="106" y="436" fill="#25313b" font-family="Arial,sans-serif" font-size="15"><tspan font-weight="700">42</tspan> aciertos solo con baseline</text>
+<rect x="402" y="410" width="270" height="40" rx="10" fill="#fffefa"/>
+<text x="420" y="436" fill="#25313b" font-family="Arial,sans-serif" font-size="15"><tspan font-weight="700">2</tspan> aciertos solo con single-pass</text>
+<rect x="686" y="410" width="420" height="40" rx="10" fill="#fffefa"/>
+<text x="704" y="436" fill="#25313b" font-family="Arial,sans-serif" font-size="15"><tspan font-weight="700">80/80</tspan> negativas vacías en ambos perfiles</text>
+<rect x="58" y="496" width="1084" height="220" rx="18" fill="#f2f5f3"/>
+<text x="88" y="540" fill="#25313b" font-family="Georgia,serif" font-size="25">Recuperación de candidatos · competidores</text>
+<text x="88" y="567" fill="#617078" font-family="Arial,sans-serif" font-size="15">El cambio de política ocurre después de esta etapa; no modifica estas cifras históricas del mismo banco.</text>
+<text x="88" y="615" fill="#25313b" font-family="Arial,sans-serif" font-size="16">iROMEM FTS5</text>
+<rect x="260" y="594" width="505" height="28" rx="6" fill="#e3e8e5"/><rect x="260" y="594" width="502" height="28" rx="6" fill="#287c78"/>
+<text x="790" y="615" fill="#25313b" font-family="Arial,sans-serif" font-size="16" font-weight="700">457 / 460 · 99,35 %</text>
+<text x="88" y="658" fill="#25313b" font-family="Arial,sans-serif" font-size="16">Engram 3.4</text>
+<rect x="260" y="637" width="505" height="28" rx="6" fill="#e3e8e5"/><rect x="260" y="637" width="501" height="28" rx="6" fill="#5d7891"/>
+<text x="790" y="658" fill="#25313b" font-family="Arial,sans-serif" font-size="16">456 / 460 · 99,13 %</text>
+<text x="88" y="701" fill="#25313b" font-family="Arial,sans-serif" font-size="16">Lodis 0.6 · 389/460 (84,57 %) · Basic Memory · 280/460 (60,87 %)</text>
+<rect x="58" y="740" width="1084" height="176" rx="18" fill="#25313b"/>
+<text x="88" y="786" fill="#fffefa" font-family="Georgia,serif" font-size="24">Coste y latencia de selección</text>
+<text x="88" y="827" fill="#d8b858" font-family="Arial,sans-serif" font-size="15" font-weight="700">MÉTRICA</text>
+<text x="448" y="827" fill="#d8b858" font-family="Arial,sans-serif" font-size="15" font-weight="700">BASELINE</text>
+<text x="690" y="827" fill="#d8b858" font-family="Arial,sans-serif" font-size="15" font-weight="700">SINGLE-PASS</text>
+<text x="936" y="827" fill="#d8b858" font-family="Arial,sans-serif" font-size="15" font-weight="700">CAMBIO</text>
+<text x="88" y="864" fill="#fffefa" font-family="Arial,sans-serif" font-size="16">Coste comunicado</text><text x="448" y="864" fill="#fffefa" font-family="Arial,sans-serif" font-size="16">US$0,029742</text><text x="690" y="864" fill="#fffefa" font-family="Arial,sans-serif" font-size="16">US$0,035898</text><text x="936" y="864" fill="#fffefa" font-family="Arial,sans-serif" font-size="16">+20,7 %</text>
+<text x="88" y="894" fill="#fffefa" font-family="Arial,sans-serif" font-size="16">p95 total</text><text x="448" y="894" fill="#fffefa" font-family="Arial,sans-serif" font-size="16">863 ms</text><text x="690" y="894" fill="#fffefa" font-family="Arial,sans-serif" font-size="16">950 ms</text><text x="936" y="894" fill="#fffefa" font-family="Arial,sans-serif" font-size="16">+10,1 %</text>
+<text x="58" y="955" fill="#617078" font-family="Arial,sans-serif" font-size="14">Misma cohorte; control baseline enviado explícitamente. Los otros motores no tienen clasificación de semilla equivalente en este banco.</text>
+</svg>
