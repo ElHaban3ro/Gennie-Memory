@@ -209,6 +209,19 @@ fn case_policy<'a>(case: &'a Value, policy: &'a str) -> Result<&'a str, String> 
     }
     Ok(policy)
 }
+
+fn recall_message(case: &Value, provider: &str, policy: &str) -> Result<Value, String> {
+    let request = case.get("request").ok_or("falta request")?;
+    let search = request.get("search").unwrap_or(request);
+    Ok(json!({
+        "op":"recall",
+        "request":{
+            "search":search,
+            "provider":case_provider(case, provider)?,
+            "selection_policy":case_policy(case, policy)?,
+        }
+    }))
+}
 fn case_provider<'a>(case: &'a Value, provider: &'a str) -> Result<&'a str, String> {
     if provider != "per_case"
         && case
@@ -300,15 +313,12 @@ pub fn run(
         case_policy(case, selection_policy)?;
         case_provider(case, provider)?;
     }
-    let mut manifest = json!({
+    let manifest = json!({
         "kind": "manifest", "format": 1, "cases_sha256": digest(cases_path)?,
         "binary_sha256": digest(binary)?, "database_sha256": digest(database)?,
-        "case_count": cases.len(), "provider": provider, "split": split,
+        "case_count": cases.len(), "provider": provider, "selection_policy":selection_policy, "split": split,
         "label_source": field(&cases[0], "label_source")?,
     });
-    if selection_policy != "baseline" {
-        manifest["selection_policy"] = json!(selection_policy);
-    }
     let finished = if journal.exists() {
         read_journal(journal, &manifest, &cases)?
     } else {
@@ -344,14 +354,7 @@ pub fn run(
             if attempted == max_calls {
                 break;
             }
-            let request = case.get("request").ok_or("falta request")?;
-            let search = request.get("search").unwrap_or(request);
-            let mut request = json!({"search":search,"provider":case_provider(case, provider)?});
-            let policy = case_policy(case, selection_policy)?;
-            if policy != "baseline" {
-                request["selection_policy"] = json!(policy);
-            }
-            let message = json!({"op":"recall", "request":request});
+            let message = recall_message(case, provider, selection_policy)?;
             append(&mut journal_file, &json!({"kind":"started","id":id}))?;
             let started = Instant::now();
             serde_json::to_writer(&mut input, &message).map_err(|error| error.to_string())?;
@@ -628,6 +631,27 @@ mod tests {
             )
             .unwrap(),
             "baseline"
+        );
+    }
+
+    #[test]
+    fn recall_message_always_pins_baseline_and_requested_policy() {
+        let case = json!({"request":{"search":{"query":"q","scope_kind":"conversation",
+            "scope_id":"s","as_of":"2026-10-23T00:00:00.000Z"}}});
+        let baseline = recall_message(&case, "decisions", "baseline").unwrap();
+        assert_eq!(
+            baseline.pointer("/request/selection_policy"),
+            Some(&json!("baseline"))
+        );
+        let single_pass =
+            recall_message(&case, "decisions", "epistemic_partial_single_pass_v1").unwrap();
+        assert_eq!(
+            single_pass.pointer("/request/selection_policy"),
+            Some(&json!("epistemic_partial_single_pass_v1"))
+        );
+        assert_eq!(
+            single_pass.pointer("/request/provider"),
+            Some(&json!("decisions"))
         );
     }
     #[test]
