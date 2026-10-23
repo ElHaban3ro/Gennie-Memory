@@ -86,4 +86,6 @@ Cada decisión nueva debe indicar contexto, alternativas, motivo, estado y condi
 
 [0042 — Habilitar single-pass parcial como política optativa](0042-opt-in-epistemic-partial-single-pass.md) registra la mejora confirmada en V11/V14, coste/latencia dentro del gate y la decisión de conservar `baseline` como predeterminado.
 
-[0043 — Adoptar single-pass epistémico como predeterminado](0043-epistemic-single-pass-default.md) promueve la política tras V11/V14, conserva `baseline` como opción explícita y separa la comparación de selección de las métricas históricas de búsqueda de competidores.
+[0043 — Adoptar single-pass epistémico como predeterminado](0043-epistemic-single-pass-default.md) registra la promoción inicial tras V11/V14, posteriormente sustituida por la decisión 0044.
+
+[0044 — Restaurar baseline como predeterminado](0044-restore-baseline-default.md) revierte la promoción tras el contraste completo de 540 preguntas y conserva single-pass como opción experimental explícita.

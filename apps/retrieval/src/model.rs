@@ -95,7 +95,7 @@ impl ClassifierProvider {
 
 #[cfg(test)]
 mod classifier_provider_tests {
-    use super::{ClassifierProvider, SelectionPolicy};
+    use super::{ClassifierProvider, RecallRequest, SelectionPolicy};
 
     #[test]
     fn gemma_is_explicit_and_does_not_change_the_decisions_default() {
@@ -111,47 +111,39 @@ mod classifier_provider_tests {
     }
 
     #[test]
-    fn epistemic_partial_single_pass_is_the_default_and_baseline_stays_explicit() {
-        assert_eq!(
-            SelectionPolicy::default(),
-            SelectionPolicy::EpistemicPartialSinglePassV1
-        );
-        assert_eq!(
-            serde_json::from_str::<SelectionPolicy>("\"baseline\"").unwrap(),
-            SelectionPolicy::Baseline
-        );
-        assert_eq!(
-            serde_json::from_str::<SelectionPolicy>("\"slot_evidence_v2\"").unwrap(),
-            SelectionPolicy::SlotEvidenceV2
-        );
-        assert_eq!(
-            serde_json::from_str::<SelectionPolicy>("\"slot_evidence_v3\"").unwrap(),
-            SelectionPolicy::SlotEvidenceV3
-        );
-        assert_eq!(
-            serde_json::from_str::<SelectionPolicy>("\"epistemic_partial_single_pass_v1\"")
-                .unwrap(),
-            SelectionPolicy::EpistemicPartialSinglePassV1
-        );
-        assert_eq!(
-            serde_json::from_str::<SelectionPolicy>("\"slot_evidence_v2\"").unwrap(),
-            SelectionPolicy::SlotEvidenceV2
-        );
-        assert_eq!(
-            serde_json::from_str::<SelectionPolicy>("\"slot_evidence_v3\"").unwrap(),
-            SelectionPolicy::SlotEvidenceV3
-        );
-        assert_eq!(
-            serde_json::from_str::<SelectionPolicy>("\"epistemic_partial_single_pass_v1\"")
-                .unwrap(),
-            SelectionPolicy::EpistemicPartialSinglePassV1
-        );
+    fn baseline_is_the_default_and_single_pass_stays_explicit() {
+        assert_eq!(SelectionPolicy::default(), SelectionPolicy::Baseline);
+        let mut request = serde_json::json!({
+            "search": {
+                "query": "preferred format",
+                "scope_kind": "project",
+                "scope_id": "demo_alpha",
+                "as_of": "2026-10-23T12:00:00.000Z"
+            }
+        });
+        let implicit: RecallRequest = serde_json::from_value(request.clone()).unwrap();
+        assert_eq!(implicit.selection_policy, SelectionPolicy::Baseline);
+        assert_eq!(implicit.provider, ClassifierProvider::Decisions);
+        for (name, expected) in [
+            ("baseline", SelectionPolicy::Baseline),
+            ("slot_evidence_v2", SelectionPolicy::SlotEvidenceV2),
+            ("slot_evidence_v3", SelectionPolicy::SlotEvidenceV3),
+            (
+                "epistemic_partial_single_pass_v1",
+                SelectionPolicy::EpistemicPartialSinglePassV1,
+            ),
+        ] {
+            request["selection_policy"] = serde_json::json!(name);
+            let explicit: RecallRequest = serde_json::from_value(request.clone()).unwrap();
+            assert_eq!(explicit.selection_policy, expected);
+        }
     }
 }
 
 #[derive(Debug, Clone, Copy, Default, Deserialize, PartialEq, Eq)]
 #[serde(rename_all = "snake_case")]
 pub enum SelectionPolicy {
+    #[default]
     Baseline,
     EvidenceV1,
     SupportGateV1,
@@ -161,7 +153,6 @@ pub enum SelectionPolicy {
     SlotEvidenceV1,
     SlotEvidenceV2,
     SlotEvidenceV3,
-    #[default]
     EpistemicPartialSinglePassV1,
     RolesV1,
     RolesFallbackV1,
