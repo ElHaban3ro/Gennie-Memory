@@ -85,3 +85,5 @@ Cada decisión nueva debe indicar contexto, alternativas, motivo, estado y condi
 [0041 — Cascada optativa de rescate de estado parcial](0041-epistemic-partial-rescue-experiment.md) registra la mejora de calidad V1, su fallo de coste/latencia y su retirada del runtime.
 
 [0042 — Habilitar single-pass parcial como política optativa](0042-opt-in-epistemic-partial-single-pass.md) registra la mejora confirmada en V11/V14, coste/latencia dentro del gate y la decisión de conservar `baseline` como predeterminado.
+
+[0043 — Adoptar single-pass epistémico como predeterminado](0043-epistemic-single-pass-default.md) promueve la política tras V11/V14, conserva `baseline` como opción explícita y separa la comparación de selección de las métricas históricas de búsqueda de competidores.
