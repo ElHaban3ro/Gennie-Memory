@@ -1,0 +1,79 @@
+# Adjudicación prospectiva del contrato coherente116
+
+Fecha: 2026-10-22. Dictamen conceptual y lectura estática. Este documento no modifica guía operativa, código, raws, gold, veredictos, métricas o puertas. No se repitieron juicios para obtener aprobación; no se consultaron V6, preguntas del corpus o APIs y no se ejecutaron Cargo/fmt. Los ejemplos siguientes son genéricos y ajenos al corpus.
+
+## Dictamen
+
+**`associated_with` más evidencia literal de «N de nombre» no basta para garantizar conservación composicional en un grafo de consumo autónomo.** Conserva una relación débil, dirigida y restrictiva; la cita permite auditar de dónde procede, pero el contrato del kind no obliga al consumidor a distinguir complemento nominal de asociación incidental. Un origen rígido conserva la ocurrencia de esa cita, no añade al grafo el operador omitido. No cabe declarar la construcción completa bajo la exigencia composicional usando solo esa combinación ni dejar que rutas legacy consuman el núcleo como si esa exigencia no existiera.
+
+**Un posesivo tipado con κ(U,c0) rígido sí puede conservar una expresión contextual sin publicar el antecedente.** Esto exige conservar el operador, su incidencia, el contexto original ligado y el corte de consumidores que pretendan resolverlo o eliminarlo. La garantía es conservación y lectura de una referencia contextual; no resolución autónoma del referente ni equivalencia entre todos los contenidos relacionales del texto y un grafo resuelto. Que c0 determine un valor no obliga a publicarlo para transportar la referencia a c0. Tampoco autoriza a declarar que la fuente carece de antecedente.
+
+No son excepciones incompatibles: el genitivo reducido a asociación pierde un operador que el posesivo tipado conserva. En ambos casos el consumidor debe recibir la misma restricción que se afirma conservar, o quedar pendiente. Evidencia y procedencia acompañan esa restricción; no sustituyen su semántica.
+
+## Contrato uniforme de conservación y consumo
+
+Se deben distinguir tres capacidades sin convertirlas en nuevas banderas de aprobación del extractor:
+
+1. **Conservación documental ligada a origen.** Se entrega una expresión tipada en su ocurrencia fuente, con sus dependencias originales. Puede mantener parámetros opacos rígidos. El lector solo puede publicar esa referencia contextual íntegra; no una proposición desprendida ni una respuesta que elija sus parámetros.
+2. **Conservación composicional en grafo.** El grafo publica el operador, sus operandos, dirección, correlación, scope y restricciones. Puede conservar un operador contextual sin resolverlo. Esta capacidad se juzga por lo representado y por todos sus consumidores efectivos, no por poseer una cita, un hash o un campo `represented`.
+3. **Resolución o inferencia autónoma.** Una conclusión que necesite identidad, antecedente, valor o descarga de guard exige prueba específica y soporte del consumidor. Una expresión contextual íntegra no suministra automáticamente esa prueba.
+
+Son capacidades, no porcentajes intercambiables. Transportar el documento íntegro puede conservar material para lectura contextual sin ofrecer un grafo que permita recuperarlo composicionalmente. En sentido inverso, un operador posesivo completo puede conservar su argumento contextual sin permitir responder quién es. La completitud debe nombrar su alcance; «complete» sin esa distinción permitiría aprobar pérdidas o exigir resoluciones ajenas al contrato.
+
+La regla común es conservar el cierre de operadores y operandos, aliases, scopes, qualifiers, guards y dependencias explícitas e implícitas antes de identidad, relevancia, respuestas, exclusión, proyección o publicación. El consumidor que desconoce una restricción queda pendiente con causa concreta. Un hecho independiente conserva su ruta. No se permite reparar el desconocimiento eliminando el link ni usando solo el core.
+
+## Contraejemplo del genitivo y mínimo necesario
+
+Considérense «Se archivó el expediente de Selene» y «Se archivó el expediente; estaba asociado incidentalmente con Selene». Si ambos se reducen a expediente→`associated_with`→Selene, una operación que compare solo kind, operandos y contexto tipado obtiene la misma restricción. Los textos y offsets difieren, pero no hay en esa restricción un bit semántico que imponga la construcción nominal del primero. Reconstruirlo desde la cita requeriría un nuevo análisis lingüístico autorizado, con su propio contrato y controles; no es una capacidad implícita del matcher.
+
+Por tanto, ese grafo puede conservar asociación sin propiedad, pero no distingue las dos construcciones exigidas. El contraejemplo no demuestra que propiedad, origen o ubicación sean el significado del primer genitivo: introducir `owned_by`, `material_origin` o `part_of` sin evidencia añadiría contenido. Tampoco demuestra que toda mención nominal literal deba descomponerse para cualquier tarea. La exigencia surge cuando se promete conservación de esa estructura y se permite consumo que depende de ella.
+
+El feature6 actual no ofrece una reparación admisible para el target propio. Su validador exige target `entity`, `name:null`, clase explícita, sin anáfora/binder/links; `descriptor_key` mantiene ese uso léxico bajo un único owner. El núcleo owner puede proceder de `name` y no hay prohibición general de owner group. No convertir Selene en clase anónima, duplicarla como descriptor léxico ni borrar identidad compartida para entrar en el subset. Tampoco usar `described_ref` como si crease un predicado genérico de genitivo: solo reutiliza restricciones ya declaradas.
+
+Cuando el significado fuente sea más específico y ya exista carrier, debe usarse ese recurso: por ejemplo procedencia explícita, material, localización o una descripción local correlacionada. Eso evita ampliar el lenguaje para relaciones ya expresables, pero no resuelve el genitivo nominal con target propio arbitrario del contraejemplo.
+
+**La ampliación mínima para ese requisito es extender el carrier nominal existente, no inventar un operador adicional.** `Reference.links {kind,target,evidence}` ya permite señalar el referente local. Hay que distinguir normativamente el modo descriptor léxico del modo complemento referencial y negociar esa ampliación para que un lector anterior la rechace. El discriminador puede aprovechar tipos ya existentes únicamente si resulta inequívoco en todas las formas admitidas; si no, requiere una variante tipada explícita. No se fija aquí un wire nuevo sin esa comprobación.
+
+El modo referencial preservaría el target nombrado como referente, sus aliases, restricciones y usos compartidos acreditados; no heredaría la exclusividad de incidencia del descriptor léxico. No añadiría existencia, propiedad o identidad global por la sola construcción. Un target group necesitaría conservar también su semántica de grupo; no obtiene permiso automático por admitir un nombre. Determinantes, contracciones, anidación y otros scopes son ampliaciones separables: no es necesario abrirlos todos para resolver el contraejemplo.
+
+El coste es real aunque el DTO Link se reutilice: admisión y evidencias, discriminación de modos, cierre de aliases y dependencias, firma/canonicalización, matching de ambos lados y corte de rutas no compatibles, publicación íntegra y presupuesto acumulado. `descriptor_key` no puede reutilizarse como identidad de un target propio. La ruta cuantificada actual mantiene una whitelist que no incluye nominal_de; no se debe ampliarla incidentalmente. Las rutas ordinarias de `pair.rs` ya diferencian guard nominal y guard de asociaciones: no basta cambiar validación o añadir una palabra a un enum. Esta lectura estática no acredita ejecución del mecanismo ampliado.
+
+Hasta entonces, la guía puede ordenar conservar asociación respaldada como contenido débil y declarar la brecha composicional. Eso corrige una instrucción imposible sin afirmar que la asociación satisface el requisito más fuerte. Retirar ese requisito para contar un acierto sería cambiar calidad; debe registrarse como otra especificación y no reaplicarse silenciosamente a dictámenes anteriores.
+
+## Posesivo: referencia rígida frente a resolución publicada
+
+En el ejemplo «La técnica presentó su informe», el carrier posesivo representa `PossNom(informe,κ(U,c0))`, con U como esa incidencia del determinante y c0 como el contexto original fijo. No equivale a `OwnedBy`, a una entidad anónima creada, a `∃x PossNom(informe,x)` ni a una condición que pueda satisfacer cualquier persona elegida por el consumidor. Un contexto original puede fijar el referente aunque la entrega no publique su identidad.
+
+Comparar interpretaciones originales distintas sirve para comprobar que el esquema no impone un nombre universal. **No** permite variar c0 o κ durante una entrega concreta para satisfacer una pregunta, ni declarar equivalentes dos orígenes porque tengan el mismo texto. Conservar una referencia opaca es preservar la dependencia de esa ocurrencia, no elegir una interpretación favorable.
+
+El contrato de origen vigente aporta el soporte correcto para esta capacidad acotada: manifiesto externo de ocurrencias, `origin_id` distinto del hash de contenido, entrega registrada, fuente y testigo íntegros y lector que vuelve a validar la referencia completa. Su semántica establece que `source_indeterminate` significa resolución no publicada; no ausencia de antecedente determinado en c0. La garantía termina en ese lector y en el wrapper conservado. La preparación SourceInput sola no crea ese manifiesto; habilitar el feature posesivo tampoco liga por sí mismo el origen. El lector actual admite un tipo de testigo posesivo concreto, no cualquier composición con un argumento posesivo anidado.
+
+Esto permite aclarar la guía sin exigir un resolvedor nuevo: para entrega contextual ligada y consumida por ese lector, no es obligatorio publicar antecedente solo porque el contexto original lo determine. Sí es obligatorio conservar el operador, todo el Claim y su contexto, sin afirmaciones de resolución. Un JSON suelto, una cita íntegra o un `origin_id` añadido por el autor no ofrecen la misma garantía.
+
+Hay un límite distinto. Considérese «La técnica presentó su informe; el texto declara expresamente que ese “su” remite a Nora». Un grafo que promete representar **también esa relación explícita de resolución** no puede reemplazarla únicamente por el argumento abierto. Conservar toda la fuente ligada mantiene el contenido disponible como documento, pero no publica esa relación en el grafo. Si se necesita tal relación para recuperar, responder o inferir autónomamente, hace falta una resolución tipada acreditada que preserve U y añada su prueba; no cambiar U por Nora ni unir informe y Nora mediante Same. Este contraejemplo demuestra la capacidad adicional, no la necesidad de imponerla a todo transporte contextual.
+
+El carrier posesivo actual prohíbe que U participe en anáfora, Same, roles o binders. Añadir resolución al operador requiere ampliar su contrato y validación, no rellenar campos existentes por tolerancia. El coste incluye relación entre incidencia y referente, evidencia de la ligadura, scope, aliases, firma y todos los consumidores que puedan usarla. La `anaphora` del objeto poseído no sustituye esa relación: identificaría el informe con la persona. Si no se requiere resolución publicada, ese coste no está justificado por el mero hecho de que exista un referente en c0.
+
+## Corrección documental propuesta y frontera de calidad
+
+La guía debe distinguir explícitamente:
+
+- Para genitivos, el carrier nominal se exige cuando se promete conservar la construcción; su subset actual es descriptor léxico. Una forma fuera del subset conserva su evidencia y contenido débil legítimo, con brecha composicional visible. Origen y cita no cierran esa brecha ni habilitan consumo autónomo.
+- Para posesivos, «fuente no fija referente» debe sustituirse por «resolución no publicada» en la ruta contextual ligada a origen. Si se afirma representar una ligadura explícita o producir una conclusión que la necesita, un carrier abierto no basta. No confundir esta deuda de resolución con pérdida del operador ya conservado.
+- Ningún operador source-bound permite c0 variable, resolución por saliencia, beneficiario igualado a poseedor, lectura de destino que especialice la fuente o bypass por nombre. La selección contextual requiere sus anclas y dependencias acreditadas; no se garantiza pertinencia por conservar un documento.
+- Los contratos propietarios específicos deben recibir la misma precisión antes de usar una guía revisada. Una guía no puede ampliar por comentario feature6 ni contradecir la semántica de origen. En particular, las afirmaciones antiguas de que `source_indeterminate` prueba ausencia de antecedente y las instrucciones de probar «dos valores del mismo slot» requieren lectura explícita como control entre interpretaciones originales, no como variación de una ocurrencia fijada.
+
+La corrección de contradicciones y la delimitación de una capacidad contextual ya contratada son trabajo de contrato. No prueban fidelidad de ningún raw, no adjudican por sí mismas cuál referente fija un texto y no autorizan cambiar un fallo por acierto. Exigir construcción nominal donde antes se aceptaba asociación o exigir resolución donde se prometía referencia contextual también cambia la especificación aplicable: debe declararse prospectivamente, sin revotar el pasado hasta obtener aprobación.
+
+La vía mínima es: precisar primero esos límites en guía y contratos; reutilizar el transporte contextual existente solo en su subset y con su origen real; conservar la deuda del genitivo propio hasta extender nominal_de si se mantiene el requisito composicional; y ampliar resolución posesiva únicamente cuando se requiera publicar esa relación. No hay prueba de que haga falta un operador13 independiente. Ningún resultado manual sobre116 textos demuestra extracción autónoma, utilidad, rendimiento o adopción. Todos los dictámenes, puertas y denominadores permanecen intactos.
+
+## Evidencia inspeccionada y verificación
+
+- `documentary-v3-coherent116-contract-diagnosis-2026-10-22.md`: diagnóstico previo, usado como planteamiento, no como nuevos juicios de fuente.
+- `coherent-known116-preparation-v1/author-materials/guide.md` y `prospective-vocabulary.json`, bajo `outputs/iromem/evaluation/documentary-v3-readings-campaign-2026-10-21/`: guía efectiva, doce features y vocabulario único. No se abrieron sus archivos de textos del corpus.
+- Contrato local: secciones Asociación contextual restrictiva y complemento nominal; diseños nominal-de y posesivo; contrato de referencia a contexto fuente y su crítica; evidencia/countercrítica posesiva; secciones de consumo y contramodelos de medición negada. El contrato de origen es posterior y aclara la interpretación contextual que los textos posesivos previos formulaban de manera más fuerte.
+- `tools/evaluation/src/documentary_v3/validation/nominal_de.rs`, `nominal_de.rs` y `validation/nominal_possessive.rs`: shape, evidencia, tipos y restricciones de uso actuales.
+- `pair.rs`, funciones `association_context_matches`, `identity_depth`, `answer_reference_pattern` y guards nominales; `quantified_match.rs`, `associated_targets` y whitelist de vínculos: evidencia estática de que el kind y sus guards participan en consumo y de que ampliar el target no se reduce a adjuntar una cita.
+- `docs/memory/index.md`, `docs/decisions/README.md` y `docs/rules/testing.md`: preservación histórica y límite entre control local y extracción autónoma.
+
+Verificación de este cambio: revisión documental y diff del único archivo propio. No se ejecutaron pruebas, campañas, servicios o APIs. Las capacidades descritas como existentes se contrastaron con los contratos y código leídos; las ampliaciones son propuestas pendientes de especificación y verificación.

@@ -1,0 +1,25 @@
+{
+  "selected_ids": [],
+  "status": "degraded",
+  "classification_status": "failed",
+  "requested_model": "google/gemma-3-4b-it",
+  "served_model": "google/gemma-3-4b-it",
+  "input_tokens": 645,
+  "output_tokens": 234,
+  "reported_cost_usd": 3.75e-05,
+  "error_code": "slot_evidence_v2_anchor_component_order_invalid",
+  "provider_http_status": null,
+  "timings": {
+    "search_ms": 0.547959,
+    "classifier_ms": 2173.931833,
+    "composition_ms": 0.654458,
+    "total_ms": 2175.162
+  },
+  "retrieval": {
+    "status": "complete",
+    "method": "fts5_keywords",
+    "candidate_ids": [
+      "r37_nina_room_m1"
+    ]
+  }
+}

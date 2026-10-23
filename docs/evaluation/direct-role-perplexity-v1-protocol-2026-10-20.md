@@ -1,0 +1,13 @@
+# Clasificación directa RoleV5 con Perplexity Decider V1.2
+
+Antes de red. La sustitución de Microsoft por Decisions en el filtro archivado falla: acepta carné/avalista y pierde M4/Umbral. No ampliar ese mecanismo. El antecedente de Perplexity con tres/cuatro vías conserva parciales/refutaciones pero acepta, respectivamente, carné por corrección ordinaria y formato previsto por dato; no se ocultan esos fallos ni se considera aprobado. Su tarea RoleV5 con siete recuerdos completos no se había contrastado.
+
+Hipótesis nueva: clasificar todos los siete recuerdos con Perplexity/RoleV5en una sola petición, eliminando la dependencia secuencial de propuesta y críticos. Mantener exactamente state, reglas, instrucciones, criterios A/B/none, testigo literal, IDs/revisiones y composición de RoleV5; cambiar solo model respecto al payload Mercury archivado. Modelo solicitado perplexity/pplx-decider-v1.2, revisión exigida perplexity/pplx-decider-v1.2-20261016, observada en el diagnóstico completo anterior. No añadir proveedor/política productiva.
+
+Evaluar TODAS las18preguntas conocidas y126recuerdos del prefijo, no solo propuestas positivas de otro modelo. Comparar18pares alternados frente a Decisions/baseline contemporáneo, hasta20candidatos reales; candidata siete. Usar buildHTTP/2optativa para ambos y registrar negociación. Máximo36HTTP, estimaciónUSD0,003 y uno o dos minutos. Congelar entradas, fuentes y código antes de red; guardar cada respuesta y recibo, detener al primer fallo técnico, sin reintentos. Contar primera conexión y todas las operaciones lentas, sin seleccionar repeticiones.
+
+Composición: aceptar A/Bsolo con presencia literal cuando el testigo eligió nombre fiable, igual a RoleV5. No solicitar críticos ni fabricar sus juicios. Estas categorías son juicios, no prueba de verdad. El auditor independiente reconstruye payload/modelo, todas las respuestas obligatorias y composición.
+
+Puertas originales: ceroIDno permitido, cero pérdida útil frente a baseline actual e histórico, cinco regresiones resueltas y al menos una ganancia útil o eliminación de error; recibos completos y coste/p50/p95≤1,5×base. Además comprobar los onceBarchivados del filtro anterior contra las nuevas respuestas de todos los recuerdos: conservar cinco permitidos y rechazar seis no permitidos. No seleccionar la muestra por los positivos nuevos. Informar toda omisión goldaunque la preservación pase.
+
+Un pase permite plantear política runtime explícita y campañas completasV5/V4/V2con preservación y controles de formato previsto/carné/premisas corregibles/alias, más estabilidad yV6posterior. Este piloto de clasificación congelada no mide recall integrado ni demuestra generalización. Default, etiquetas, READMEyV6sin cambios.

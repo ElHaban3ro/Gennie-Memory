@@ -1,0 +1,47 @@
+{
+  "by_segment": {
+    "slot_evidence_v2/single-positive": {
+      "cases": 1,
+      "correct": 0
+    }
+  },
+  "candidate_recall": 1,
+  "cases": 1,
+  "classifier_p50_ms": 8386.876041000001,
+  "classifier_p95_ms": 8386.876041000001,
+  "correct": 0,
+  "cost_reported_cases": 1,
+  "degraded": 1,
+  "elapsed_p50_ms": 8390.207209,
+  "elapsed_p95_ms": 8390.207209,
+  "forbidden_leak_count": 0,
+  "input_tokens_p50": 684.0,
+  "input_tokens_reported_cases": 1,
+  "manifest": {
+    "binary_sha256": "16f4b8ea0cf41e4b1f6aadacb5d02ea72b3b6087d67b705c14b71e7741f30aca",
+    "case_count": 1,
+    "cases_sha256": "ecf8fb0d906ceb163708b61cf8a1ca89ad98220752d36e1e8f3d00e5c4e135a8",
+    "database_sha256": "5b914cbad6d1b0b2a226c1e1ba72564e9c3ba9a53369809321e1138d060a09ab",
+    "format": 1,
+    "kind": "manifest",
+    "label_source": "agent_synthetic_unreviewed",
+    "provider": "gemma3_4b",
+    "selection_policy": "slot_evidence_v2",
+    "split": "smoke"
+  },
+  "negative": 0,
+  "negative_candidate_empty": 0,
+  "negative_empty": 0,
+  "output_tokens_p50": 265.0,
+  "output_tokens_reported_cases": 1,
+  "positive": 1,
+  "positive_correct": 0,
+  "provider": "gemma3_4b",
+  "reported_cost_usd": 0.00004061,
+  "search_p50_ms": 0.429459,
+  "search_p95_ms": 0.429459,
+  "service_total_p50_ms": 8388.812375000001,
+  "service_total_p95_ms": 8388.812375000001,
+  "split": "smoke",
+  "status": "complete"
+}

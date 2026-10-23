@@ -1,0 +1,9 @@
+# Críticos dirigidos V4: contraste de transporte HTTP/2
+
+Antes de red. V3pasa calidad conocida, pero falla p95 2,143×base; no se recalifica. La resolución conectada de un proyecto temporal ahora encuentrah2=0.4.20; el bloqueo histórico de disponibilidad era temporal. La build experimental añade una feature optativa `iromem/http2-transport`, sin activarla por defecto, y fija h2. Las versiones existentes del lockfile no cambian.
+
+Conservar exactamente selecciónV3, modelos/revisiones, plantillas, roster18, contexto siete, preguntas soloB, composición y críticos paralelos. Habilitar únicamente soporte HTTP/2de reqwest para todo el cliente de esta ejecución; baseline también usa esa build, no se compara con latencia históricaHTTP/1.1. Registrar versión negociada y duración HTTP medida en cada respuesta además de la duración total real de cadena. No asumir multiplexación ni mejora por compilar la feature; para calificar este contraste exigir todas las respuestas HTTP/2.0.
+
+18pares alternados contemporáneos, máximo72HTTP, estimaciónUSD0,003 y uno o dos minutos. Puertas originales: cero extra/pérdida útil actual/histórica/degradación, cinco regresiones resueltas y ganancia; coste/p50/p95≤1,5×base, recibos completos y protocoloHTTP2observado. Incluir primera conexión y operaciones lentas. Detener pares nuevos al error y conservar ambos críticos en vuelo; sin reintentos ni selección de repeticiones favorables. Verificar payloads contra el constructorV3, cambiando solo transporte/metadatos de observación.
+
+El pase del piloto solo habilita implementar política runtime explícita y campañas completasV5/V4/V2, alias y estabilidad; V6permanece reservada hasta esas puertas. No medir semilla/FTS/SQLite/recall integrado con este runner. No cambiar default, gold ni resultados anteriores.

@@ -1,0 +1,7 @@
+# Contribución generativa V3: ablación de analogías congeladas
+
+Antes de la nueva red. V2 completa16respuestas válidas y falla mínimo:14roles,10extras,3omisiones,USD0,000874500. Se conserva su código ejecutado, recibos y resultados, sin ampliación. La hipótesis concreta es que omitir las analogías que los deciders recibían perjudicó la interpretación de categorías.
+
+V3 añade únicamente al mensaje system las ocho tripletas de ejemplos ya congeladas en LocalV5. No incluye etiquetas, textos o respuestas nuevas del banco. Builder V2 permanece literal, y una prueba comprueba que V3 solo cambia ese mensaje y usa exactamente las ocho tripletas originales. Modelo, proveedor estándar, temperatura, razonamiento,128tokensmáximos, API, reglas, procedimiento, fuentes, orden, esquema, parser, banco y puertas son los de [V2](generative-contribution-v2-protocol-2026-10-20.md). La variación no prueba una causa interna del modelo y no se elige una salida favorable por juicio.
+
+Primero16HTTP/64juicios conocidos, estimaciónUSD0,003 y menos de un minuto, sin reintentos. Fallo técnico detiene con recibos; desacuerdos semánticos completan todos los casos. Solo64/64,17útiles,0extras/pérdidas, coste<USD0,001451520yrecibos completos permiten18pares/36HTTP. Misma puerta difícil y coste/p50/p95≤1,5×base; preparar solo tras reconstrucción cruda del mínimo. Si falla no ampliar ni abrirV6. No cambia producto, SQL, secretos, dashboard o servicios. Un eventual pase no basta para adopción: runtime, campañas completas, estabilidad y revisión ciega siguen pendientes.

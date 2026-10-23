@@ -1,0 +1,20 @@
+{
+  "source_fixture": "tests/fixtures/slot-evidence-v3-sentence-scope-prospective-v1.json",
+  "included_case_ids": [
+    "sentence-01",
+    "sentence-02",
+    "sentence-03",
+    "sentence-04",
+    "sentence-05",
+    "sentence-06",
+    "sentence-07",
+    "sentence-09",
+    "sentence-10"
+  ],
+  "excluded_case_ids": [
+    "sentence-08"
+  ],
+  "exclusion_reason": "Blind readers classify the queried current-location slot as unanswered, but the memory contains temporally relevant past context; the campaign harness cannot distinguish partial evidence from irrelevant candidates.",
+  "label_source": "blind_synthetic_adjudication",
+  "provider_payload_contains_labels": false
+}

@@ -1,0 +1,50 @@
+{
+  "status": "preflight_frozen_before_remote_smoke",
+  "experiment": "slot_evidence_v3_smoke_11_revision_11",
+  "scope": "synthetic_only",
+  "blind_review_excluded_from_provider_request": true,
+  "blind_review": "independent adjudication separate; no labels or expected answer sent to provider",
+  "provider": "gemma3_4b",
+  "requested_model": "google/gemma-3-4b-it",
+  "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+  "provider_preferences": {
+    "require_parameters": true,
+    "order": ["deepinfra"],
+    "allow_fallbacks": false
+  },
+  "timeout_ms": 30000,
+  "temperature": 0,
+  "max_output_tokens": 2500,
+  "candidate_count": 1,
+  "expected_local_search_candidate": {
+    "memory_id": "smoke_v3_rina_001",
+    "revision": 1
+  },
+  "repetitions": 3,
+  "call_rule": "Three identical requests; halt at first structural failure, incomplete receipt, or missing positive selection; no retries.",
+  "cost_estimate_usd": 0.0002,
+  "cost_estimate_basis": "one request only unless the first produces a valid positive selection; conservative estimate covers prior observed per-call cost up to USD 0.00016316; max output 2500 tokens",
+  "prior_known_cost_usd": 0.00069993,
+  "input_sha256": {
+    "corpus.json": "9af237caa4a378f3b642565a3742335bc0dceb1f96ae13a46e0f556b244edc2f",
+    "recall.json": "c9cbb5a8e5eac058952a3e43788245177544f244a15efe0e3a70d187c72edc4a",
+    "search.json": "eeb9eff0d536c02802eacb37bfc53fb6a49b61683396cc6983d1ff744410d7b6"
+  },
+  "local_search_sha256": "fe4abf050ea72032a44d416305c5db16de69d8be144c09cca3f4ca5456d931b4",
+  "source_files_sha256": {
+    "apps/retrieval/src/model.rs": "e3ca5f8672593f10559f8a0a3a92844ce15bbbe6276d0b20eb518c2d42aad215",
+    "apps/retrieval/src/service.rs": "3f71844bbba13f3c3c91527d6a48a6d4d24064f0907117ec576143dc9833d455",
+    "apps/retrieval/src/slot_evidence.rs": "bd8eb99f5e7ff6ad066f97d3b7d4b465ce382320d9fe495d65c9e3804152c428",
+    "bootstrap/src/openrouter.rs": "d8c7c0bd1e1132f24876079a74fe9292931ddb619b13179e6dd4a44c5ea44c59",
+    "bootstrap/src/openrouter/slot_evidence.rs": "5993079e40b843533049d90fe99678d2587a8b922841a2a2b0e2696045662b74",
+    "bootstrap/src/main.rs": "671df0b9df5bc7eb42a468e96d11f477fd28973c567854178b5eadfb9f9a8fad",
+    "kernel/src/config.rs": "24919f7f27cbd84d266260c447229dbbc2c58b05d70ae197754c276dcb08753d",
+    "Cargo.lock": "67d8750570958feae5ccaabbe1e38792adea208f7ab35d91764360e58e312293"
+  },
+  "binary_sha256": "fce996088aa1179eb3e9f02264b1281d5214edf99a91653b1c4339dc0b253653",
+  "database_path": ".local/slot-evidence-v3-smoke-11.db",
+  "database_sha256": "f95baa4356d0e6c1ad7b6d6a0daf7ce2f0d0cbfac05e30a7cd27c6534b164770",
+  "prompt_change": "No prompt change; isolate provider routing only for V3 to test with consistent model hosting.",
+  "diagnostic_change": "V3 provider pinned to DeepInfra; no fallback. Baseline and legacy route retain prior provider preferences.",
+  "preflight_note": "Prompt, schema, inputs, candidate roster, binary, source and isolated database frozen before calls. Blind review file omitted from payload."
+}

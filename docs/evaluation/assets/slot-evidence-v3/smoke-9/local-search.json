@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "method": "fts5_keywords",
+  "candidates": [
+    {
+      "memory_id": "smoke_v3_mona_001",
+      "revision": 1,
+      "summary": "Architect Mona Lee Q-27 is currently based in Dijon. Photographer Arin Sol P-14 works in Lyon and catalogued the exhibition.",
+      "conditions": null,
+      "source": null,
+      "state": "active",
+      "bm25": -0.000010405405405405406
+    }
+  ],
+  "semantic_coverage": "disabled"
+}

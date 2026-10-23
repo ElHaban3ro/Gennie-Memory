@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "method": "fts5_keywords",
+  "candidates": [
+    {
+      "memory_id": "slot_v3_name_span_20261023_002",
+      "revision": 1,
+      "summary": "Marine biologist Inez Vale M-63 currently works from Seagrass Research Pier in Port Arlen. Archivist Tomas Rell T-28 works from North Quay in Bellford.",
+      "conditions": null,
+      "source": null,
+      "state": "active",
+      "bm25": -9.206625980819529e-6
+    }
+  ],
+  "semantic_coverage": "disabled"
+}

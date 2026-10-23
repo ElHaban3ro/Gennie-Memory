@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "method": "fts5_keywords",
+  "candidates": [
+    {
+      "memory_id": "r35_ivo_facility_m1",
+      "revision": 1,
+      "summary": "Botanist Ivo Chen R-58 is assigned to the Fern Valley Annex.",
+      "conditions": null,
+      "source": null,
+      "state": "active",
+      "bm25": -8.918918918918919e-6
+    }
+  ],
+  "semantic_coverage": "disabled"
+}

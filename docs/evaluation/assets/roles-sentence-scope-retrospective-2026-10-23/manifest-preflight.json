@@ -1,0 +1,16 @@
+{
+  "experiment": "Decisions baseline vs roles_v1 on previously reviewed subject-scope cohort",
+  "status": "retrospective_diagnostic_not_confirmation",
+  "cases": 9,
+  "operations": 18,
+  "provider": "decisions",
+  "candidate_policy": "roles_v1",
+  "alternating_order": true,
+  "limitation": "Same fixtures previously evaluated with Gemma; this checks transfer to current Decisions, not a fresh cohort or adoption evidence.",
+  "input_sha256": {
+    "docs/evaluation/assets/slot-evidence-v3/prospective-sentence-scope-v1/cases.jsonl": "98282b282661c496b2674cb9c00b156abd8db0d2887662d7f01853467d6b273f",
+    "docs/evaluation/assets/slot-evidence-v3/prospective-sentence-scope-v1/corpus.json": "5bc12f6e2e12d364aaf1a1cb9b78b0cf5265bb92692416b6f0263ddd694605aa",
+    "docs/evaluation/assets/slot-evidence-v3/prospective-sentence-scope-v1/manifest-preflight.json": "ea54a8d3295b0c1c76db1b022b6159966e341d7aa7fcd676075090d06ecdda90"
+  },
+  "cases_sha256": "12f073bad241089fb7f34104b1e63d76b80c1e0f22870a320a6cf2649d9b0730"
+}

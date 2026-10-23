@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "method": "fts5_keywords",
+  "candidates": [
+    {
+      "memory_id": "smoke_v3_nora_001",
+      "revision": 1,
+      "summary": "Archivist Nora Kim N-41 is based in Delft. Engineer Omar Vale O-28 lives in Breda and filed the archive.",
+      "conditions": null,
+      "source": null,
+      "state": "active",
+      "bm25": -7.432432432432432e-6
+    }
+  ],
+  "semantic_coverage": "disabled"
+}

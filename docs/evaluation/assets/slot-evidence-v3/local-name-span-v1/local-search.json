@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "method": "fts5_keywords",
+  "candidates": [
+    {
+      "memory_id": "slot_v3_name_span_20261023_001",
+      "revision": 1,
+      "summary": "Botanist Edda Lind B-72 currently works at Uppsala Botanical Garden. Geologist Nils Rohe N-14 is based in Lund and studies glacial soils.",
+      "conditions": null,
+      "source": null,
+      "state": "active",
+      "bm25": -6.233653007846556e-6
+    }
+  ],
+  "semantic_coverage": "disabled"
+}

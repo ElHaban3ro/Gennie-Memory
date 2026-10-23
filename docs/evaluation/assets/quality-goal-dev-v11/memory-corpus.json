@@ -1,0 +1,306 @@
+[
+  {
+    "id": "v11_field_01",
+    "scope_kind": "conversation",
+    "scope_id": "hydrology",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Hydrology technician Mara L. measured a depth of 26 m at borehole G-58 on 2026-09-06.",
+    "summary": "Hydrology technician Mara L. measured a depth of 26 m at borehole G-58 on 2026-09-06.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v11/hydrology/v11_field_01",
+      "locator": "v11_field_01"
+    }
+  },
+  {
+    "id": "v11_field_02",
+    "scope_kind": "conversation",
+    "scope_id": "hydrology",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Clarification from the crew: Oren P. did not seal valve V-16; he only tagged it for later work.",
+    "summary": "Clarification from the crew: Oren P. did not seal valve V-16; he only tagged it for later work.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v11/hydrology/v11_field_02",
+      "locator": "v11_field_02"
+    }
+  },
+  {
+    "id": "v11_field_03",
+    "scope_kind": "conversation",
+    "scope_id": "hydrology",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The crew planning sheet currently uses 1.3 m as the wave-height figure for marker M-22; gauge deployment is still pending.",
+    "summary": "The crew planning sheet currently uses 1.3 m as the wave-height figure for marker M-22; gauge deployment is still pending.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v11/hydrology/v11_field_03",
+      "locator": "v11_field_03"
+    }
+  },
+  {
+    "id": "v11_field_04",
+    "scope_kind": "conversation",
+    "scope_id": "hydrology",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "At marker M-22, the replacement sensor battery is rated for 4,200 mAh.",
+    "summary": "At marker M-22, the replacement sensor battery is rated for 4,200 mAh.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v11/hydrology/v11_field_04",
+      "locator": "v11_field_04"
+    }
+  },
+  {
+    "id": "v11_supply_01",
+    "scope_kind": "conversation",
+    "scope_id": "dispatch",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The packing list for crate K-73 contains 18 ceramic filters.",
+    "summary": "The packing list for crate K-73 contains 18 ceramic filters.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v11/dispatch/v11_supply_01",
+      "locator": "v11_supply_01"
+    }
+  },
+  {
+    "id": "v11_supply_02",
+    "scope_kind": "conversation",
+    "scope_id": "dispatch",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Inspection note: crate K-74 was not approved for dispatch and remains on hold.",
+    "summary": "Inspection note: crate K-74 was not approved for dispatch and remains on hold.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v11/dispatch/v11_supply_02",
+      "locator": "v11_supply_02"
+    }
+  },
+  {
+    "id": "v11_supply_03",
+    "scope_kind": "conversation",
+    "scope_id": "dispatch",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The shipper’s current estimate puts crate K-75 arrival on 2026-11-04; customs release is still pending.",
+    "summary": "The shipper’s current estimate puts crate K-75 arrival on 2026-11-04; customs release is still pending.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v11/dispatch/v11_supply_03",
+      "locator": "v11_supply_03"
+    }
+  },
+  {
+    "id": "v11_supply_04",
+    "scope_kind": "conversation",
+    "scope_id": "dispatch",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Crate K-75 was packed with reinforced corner guards.",
+    "summary": "Crate K-75 was packed with reinforced corner guards.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v11/dispatch/v11_supply_04",
+      "locator": "v11_supply_04"
+    }
+  },
+  {
+    "id": "v11_events_01",
+    "scope_kind": "conversation",
+    "scope_id": "schedule",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "At Pine Studio session S-19, Jun H.’s talk began at 15:40 on 2026-09-17.",
+    "summary": "At Pine Studio session S-19, Jun H.’s talk began at 15:40 on 2026-09-17.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v11/schedule/v11_events_01",
+      "locator": "v11_events_01"
+    }
+  },
+  {
+    "id": "v11_events_02",
+    "scope_kind": "conversation",
+    "scope_id": "schedule",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Correction: Niko R. did not chair roundtable R-22; he took notes.",
+    "summary": "Correction: Niko R. did not chair roundtable R-22; he took notes.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v11/schedule/v11_events_02",
+      "locator": "v11_events_02"
+    }
+  },
+  {
+    "id": "v11_events_03",
+    "scope_kind": "conversation",
+    "scope_id": "schedule",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The draft timetable places the Orchard seminar S-24 end at 17:10, subject to speaker confirmation.",
+    "summary": "The draft timetable places the Orchard seminar S-24 end at 17:10, subject to speaker confirmation.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v11/schedule/v11_events_03",
+      "locator": "v11_events_03"
+    }
+  },
+  {
+    "id": "v11_events_04",
+    "scope_kind": "conversation",
+    "scope_id": "schedule",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The Orchard seminar S-24 used blue name badges.",
+    "summary": "The Orchard seminar S-24 used blue name badges.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v11/schedule/v11_events_04",
+      "locator": "v11_events_04"
+    }
+  },
+  {
+    "id": "v11_repairs_01",
+    "scope_kind": "conversation",
+    "scope_id": "workshop",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Lena V. replaced connector C-7 on terminal T-31 during the 2026-09-20 repair.",
+    "summary": "Lena V. replaced connector C-7 on terminal T-31 during the 2026-09-20 repair.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v11/workshop/v11_repairs_01",
+      "locator": "v11_repairs_01"
+    }
+  },
+  {
+    "id": "v11_repairs_02",
+    "scope_kind": "conversation",
+    "scope_id": "workshop",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Work order correction: Miko D. did not replace fuse F-12 on terminal T-32; he inspected it.",
+    "summary": "Work order correction: Miko D. did not replace fuse F-12 on terminal T-32; he inspected it.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v11/workshop/v11_repairs_02",
+      "locator": "v11_repairs_02"
+    }
+  },
+  {
+    "id": "v11_repairs_03",
+    "scope_kind": "conversation",
+    "scope_id": "workshop",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The workshop estimate for terminal T-33 lists a likely worn drive belt; no repair is recorded in this estimate.",
+    "summary": "The workshop estimate for terminal T-33 lists a likely worn drive belt; no repair is recorded in this estimate.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v11/workshop/v11_repairs_03",
+      "locator": "v11_repairs_03"
+    }
+  },
+  {
+    "id": "v11_repairs_04",
+    "scope_kind": "conversation",
+    "scope_id": "workshop",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Terminal T-33 was rebooted at 09:15 after a network timeout.",
+    "summary": "Terminal T-33 was rebooted at 09:15 after a network timeout.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v11/workshop/v11_repairs_04",
+      "locator": "v11_repairs_04"
+    }
+  }
+]

@@ -1,0 +1,13 @@
+# Verificación selectiva v2: parciales y contraste explícito
+
+Protocolo previo a llamadas. V1 se conserva como fallo: V5 pasa base/recursos pero pierde06607frente a scopedV1; V4 se lanzó prematuramente antes de leer ese resultado y añade dos IDs ajenos y tres pérdidas. No se ejecutaron V2niV6. Esta revisión no reinterpreta aquellos resultados como aprobados.
+
+Variante explícita `per_memory_correction_verified_v2`: conserva Jev1.13, prefijo7/keywords20, dos juicios por recuerdo, OR y comprobación Decisions exclusivamente para corrección=true/dato=false. Cambian dos textos generales, sin nombres/IDs del benchmark: la propuesta explicita componentes, límites medidos y estados desconocidos incluso al pedir un total, y exige separar contextos nombrados y eventos individuales de políticas generales; el verificador admite contraste explícito entre el contexto preguntado y otro como corrección de una confusión, sin exigir negación literal. Hechos sobre otro contexto sin ese enlace y pronombres sin referente siguen siendo insuficientes. No se atribuirá una ganancia a un único texto: cambian ambos.
+
+Datos/semilla/trazas/recibos y fallo atómico iguales aV1. El servicio exige etiquetaV2y traza completa; el auditor JSON distingue versiones. No son pruebas de correferencia o verdad semántica. No cambia default, SQL, secretos, dependencias ni puertos. Se añade una puerta unificada: pase global contra base Y preservación de todos los IDs útiles anteriores, para evitar tomar el primer pase como calificación final.
+
+Piloto13V5: los12casos anteriores más06603, la pérdida observada. Sin repeticiones, máximo104HTTP, USD0,002estimados y1minuto; CLI con DB temporal propia. Congelar hashes antes de llamar; auditoría ordinaria y reporte independiente requieren0IDajeno,0pérdidas de base/scopedV1,0degradación, ganancia y coste diagnóstico completo<=1,5×. Registrar omisiones totales/dentro de prefijo; el pase no equivale a completitud semántica.
+
+Además, diagnóstico fijo de los cinco fallosV4:06504,06201,06106,06305y05908, una ejecución por consulta, mismas etiquetas/sources. Máximo40HTTPyUSD0,001estimados, menos de1minuto. Exigir los cinco conjuntos completos de ID(s) permitidos, sin extras, recibos completos y trazas válidas. No basta arreglar el contrasteV5si persisten los fallos de propuestaV4. Si cualquiera falla, detener expansión.
+
+Solo si ambos pasan: repetir comparación completaV5 y controlesV4/V2 con política congelada, puertas globales+preservación y recursos<=1,5×; repetición fija de consistencia antes deV6. No elegir mejor repetición ni cambiar gold para pasar. V6sigue sin abrir para ajustes o llamadas. Las autorizaciones generales del usuario cubren estas pruebas sintéticas; coste real de cada etapa registrado.

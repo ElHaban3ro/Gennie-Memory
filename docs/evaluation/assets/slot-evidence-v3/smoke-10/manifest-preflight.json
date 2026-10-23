@@ -1,0 +1,51 @@
+{
+  "status": "preflight_frozen_before_remote_smoke",
+  "experiment": "slot_evidence_v3_smoke_10_revision_10",
+  "scope": "synthetic_only",
+  "blind_review_excluded_from_provider_request": true,
+  "blind_review": "independent adjudication separate; no labels or expected answer sent to provider",
+  "provider": "gemma3_4b",
+  "requested_model": "google/gemma-3-4b-it",
+  "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+  "provider_preferences": {
+    "require_parameters": true,
+    "allow_fallbacks": true
+  },
+  "timeout_ms": 30000,
+  "temperature": 0,
+  "max_output_tokens": 2500,
+  "candidate_count": 1,
+  "expected_local_search_candidate": {
+    "memory_id": "smoke_v3_liv_001",
+    "revision": 1
+  },
+  "repetitions": 3,
+  "call_rule": "Three identical requests; halt at first structural failure, incomplete receipt, or missing positive selection; no retries.",
+  "cost_estimate_usd": 0.0002844,
+  "cost_cap_usd": 0.00036,
+  "cost_basis": "three calls at smoke-9 observed USD 0.00009480 each; stop on first failure",
+  "prior_known_cost_usd": 0.00064301,
+  "input_sha256": {
+    "corpus.json": "90ceab4930e9915c30bccc6477121d5bf5ca5b9792c1a2511f3203e681ebf95f",
+    "recall.json": "07cfeeed358a98efb355bcf778eebefb5e48bab542bd47b79d2fd980f05a9607",
+    "search.json": "a307dde1cc9e41954f5e7e52dadea16f8b6ac46f69a7b1812357ece5aebfa24f"
+  },
+  "local_search_sha256": "5a09dd77e2b7291e13d83c06eaa1259e5cffd3f717aedaf2425b22aeba38b857",
+  "source_files_sha256": {
+    "apps/retrieval/src/model.rs": "e3ca5f8672593f10559f8a0a3a92844ce15bbbe6276d0b20eb518c2d42aad215",
+    "apps/retrieval/src/service.rs": "3f71844bbba13f3c3c91527d6a48a6d4d24064f0907117ec576143dc9833d455",
+    "apps/retrieval/src/slot_evidence.rs": "bd8eb99f5e7ff6ad066f97d3b7d4b465ce382320d9fe495d65c9e3804152c428",
+    "bootstrap/src/openrouter.rs": "d8c7c0bd1e1132f24876079a74fe9292931ddb619b13179e6dd4a44c5ea44c59",
+    "bootstrap/src/openrouter/slot_evidence.rs": "664e62e3fa33d90034361563781ffd26d935a0c10a45c6124f720382cdf4d33d",
+    "bootstrap/src/main.rs": "671df0b9df5bc7eb42a468e96d11f477fd28973c567854178b5eadfb9f9a8fad",
+    "kernel/src/config.rs": "24919f7f27cbd84d266260c447229dbbc2c58b05d70ae197754c276dcb08753d",
+    "Cargo.lock": "67d8750570958feae5ccaabbe1e38792adea208f7ab35d91764360e58e312293"
+  },
+  "binary_sha256": "952cf3c87249ccd046a15c5285113d52a9bc891ecb099ee12638b4a18056be89",
+  "database_path": ".local/slot-evidence-v3-smoke-10.db",
+  "database_sha256": "1db0ec33144472da35a20fd5c1a57f9d2cd6bce91b10a6a6c2e6e7488fd3dec4",
+  "prompt_change": "Adds an exact case-preserving kind_quote example: architect must be copied as architect, not normalized or paraphrased.",
+  "diagnostic_change": "Keeps split query-anchor and subject-identifier errors; capture records finish_reason and content byte length without response text.",
+  "preflight_note": "Prompt, schema, inputs, candidate roster, binary, and isolated database frozen before calls.",
+  "source_bundle_sha256": "e59afffcfb5edabd1972cef0930ef24239dfc373bd8851133b50b37c52a4c683"
+}

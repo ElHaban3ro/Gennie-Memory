@@ -1,0 +1,306 @@
+[
+  {
+    "id": "v10_lab_01",
+    "scope_kind": "conversation",
+    "scope_id": "lab-notes",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Amina’s sample N-41 had a measured salinity of 12.4 PSU on 2026-09-02.",
+    "summary": "Amina’s sample N-41 had a measured salinity of 12.4 PSU on 2026-09-02.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v10/lab-notes/v10_lab_01",
+      "locator": "v10_lab_01"
+    }
+  },
+  {
+    "id": "v10_lab_02",
+    "scope_kind": "conversation",
+    "scope_id": "lab-notes",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Correction: Bruno did not approve batch N-42; he only checked the label.",
+    "summary": "Correction: Bruno did not approve batch N-42; he only checked the label.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v10/lab-notes/v10_lab_02",
+      "locator": "v10_lab_02"
+    }
+  },
+  {
+    "id": "v10_lab_03",
+    "scope_kind": "conversation",
+    "scope_id": "lab-notes",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Preliminary estimate for sample N-43 is 8.1 PSU; no lab measurement has been recorded.",
+    "summary": "Preliminary estimate for sample N-43 is 8.1 PSU; no lab measurement has been recorded.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v10/lab-notes/v10_lab_03",
+      "locator": "v10_lab_03"
+    }
+  },
+  {
+    "id": "v10_lab_04",
+    "scope_kind": "conversation",
+    "scope_id": "lab-notes",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The storage record for sample N-44 lists a temperature of 4°C.",
+    "summary": "The storage record for sample N-44 lists a temperature of 4°C.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v10/lab-notes/v10_lab_04",
+      "locator": "v10_lab_04"
+    }
+  },
+  {
+    "id": "v10_finance_01",
+    "scope_kind": "conversation",
+    "scope_id": "vendor-desk",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Invoice Q-73 from Harbor Pine lists a total of USD 418.50.",
+    "summary": "Invoice Q-73 from Harbor Pine lists a total of USD 418.50.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v10/vendor-desk/v10_finance_01",
+      "locator": "v10_finance_01"
+    }
+  },
+  {
+    "id": "v10_finance_02",
+    "scope_kind": "conversation",
+    "scope_id": "vendor-desk",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Correction: order Q-74 was not paid; it remains awaiting approval.",
+    "summary": "Correction: order Q-74 was not paid; it remains awaiting approval.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v10/vendor-desk/v10_finance_02",
+      "locator": "v10_finance_02"
+    }
+  },
+  {
+    "id": "v10_finance_03",
+    "scope_kind": "conversation",
+    "scope_id": "vendor-desk",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The expected total for order Q-75 is approximately USD 900; the invoice has not arrived.",
+    "summary": "The expected total for order Q-75 is approximately USD 900; the invoice has not arrived.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v10/vendor-desk/v10_finance_03",
+      "locator": "v10_finance_03"
+    }
+  },
+  {
+    "id": "v10_finance_04",
+    "scope_kind": "conversation",
+    "scope_id": "vendor-desk",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Order Q-76 shipped by courier on 2026-09-21.",
+    "summary": "Order Q-76 shipped by courier on 2026-09-21.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v10/vendor-desk/v10_finance_04",
+      "locator": "v10_finance_04"
+    }
+  },
+  {
+    "id": "v10_events_01",
+    "scope_kind": "conversation",
+    "scope_id": "event-log",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "At the Cedar Hall session, Priya’s talk began at 10:20 on 2026-09-18.",
+    "summary": "At the Cedar Hall session, Priya’s talk began at 10:20 on 2026-09-18.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v10/event-log/v10_events_01",
+      "locator": "v10_events_01"
+    }
+  },
+  {
+    "id": "v10_events_02",
+    "scope_kind": "conversation",
+    "scope_id": "event-log",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Correction: Mateo did not reserve Room B for the workshop; he reserved Room D.",
+    "summary": "Correction: Mateo did not reserve Room B for the workshop; he reserved Room D.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v10/event-log/v10_events_02",
+      "locator": "v10_events_02"
+    }
+  },
+  {
+    "id": "v10_events_03",
+    "scope_kind": "conversation",
+    "scope_id": "event-log",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The projected attendance for the Harbor session is 35; the final count has not been checked in.",
+    "summary": "The projected attendance for the Harbor session is 35; the final count has not been checked in.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v10/event-log/v10_events_03",
+      "locator": "v10_events_03"
+    }
+  },
+  {
+    "id": "v10_events_04",
+    "scope_kind": "conversation",
+    "scope_id": "event-log",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "At the Summit session, the projector image was tested before doors opened.",
+    "summary": "At the Summit session, the projector image was tested before doors opened.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v10/event-log/v10_events_04",
+      "locator": "v10_events_04"
+    }
+  },
+  {
+    "id": "v10_repairs_01",
+    "scope_kind": "conversation",
+    "scope_id": "service-chat",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Technician Elio replaced fuse F-8 in printer P-12 on 2026-09-20.",
+    "summary": "Technician Elio replaced fuse F-8 in printer P-12 on 2026-09-20.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v10/service-chat/v10_repairs_01",
+      "locator": "v10_repairs_01"
+    }
+  },
+  {
+    "id": "v10_repairs_02",
+    "scope_kind": "conversation",
+    "scope_id": "service-chat",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Correction: Nara did not replace the fan in printer P-13; she cleaned its filter.",
+    "summary": "Correction: Nara did not replace the fan in printer P-13; she cleaned its filter.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v10/service-chat/v10_repairs_02",
+      "locator": "v10_repairs_02"
+    }
+  },
+  {
+    "id": "v10_repairs_03",
+    "scope_kind": "conversation",
+    "scope_id": "service-chat",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "A provisional diagnosis for printer P-14 is a worn belt; no repair has been confirmed.",
+    "summary": "A provisional diagnosis for printer P-14 is a worn belt; no repair has been confirmed.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v10/service-chat/v10_repairs_03",
+      "locator": "v10_repairs_03"
+    }
+  },
+  {
+    "id": "v10_repairs_04",
+    "scope_kind": "conversation",
+    "scope_id": "service-chat",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Printer P-15 was moved to shelf C on 2026-09-22.",
+    "summary": "Printer P-15 was moved to shelf C on 2026-09-22.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v10/service-chat/v10_repairs_04",
+      "locator": "v10_repairs_04"
+    }
+  }
+]

@@ -1,0 +1,306 @@
+[
+  {
+    "id": "v9_field_01",
+    "scope_kind": "conversation",
+    "scope_id": "fieldwork",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Field log: Surveyor Ana M. R-18 measured an altitude of 2,140 m at Alta station on 2026-09-11.",
+    "summary": "Field log: Surveyor Ana M. R-18 measured an altitude of 2,140 m at Alta station on 2026-09-11.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v9/fieldwork/v9_field_01",
+      "locator": "v9_field_01"
+    }
+  },
+  {
+    "id": "v9_field_02",
+    "scope_kind": "conversation",
+    "scope_id": "fieldwork",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Correction from the crew lead: Diego V. D-7 did not calibrate the sensor; he only inspected its casing.",
+    "summary": "Correction from the crew lead: Diego V. D-7 did not calibrate the sensor; he only inspected its casing.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v9/fieldwork/v9_field_02",
+      "locator": "v9_field_02"
+    }
+  },
+  {
+    "id": "v9_field_03",
+    "scope_kind": "conversation",
+    "scope_id": "fieldwork",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The preliminary forecast estimates 30 cm of snow at North Pass; the actual gauge reading is still pending.",
+    "summary": "The preliminary forecast estimates 30 cm of snow at North Pass; the actual gauge reading is still pending.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v9/fieldwork/v9_field_03",
+      "locator": "v9_field_03"
+    }
+  },
+  {
+    "id": "v9_field_04",
+    "scope_kind": "conversation",
+    "scope_id": "fieldwork",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Ana M. R-18 chose lentil soup for lunch after the survey.",
+    "summary": "Ana M. R-18 chose lentil soup for lunch after the survey.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v9/fieldwork/v9_field_04",
+      "locator": "v9_field_04"
+    }
+  },
+  {
+    "id": "v9_proc_01",
+    "scope_kind": "conversation",
+    "scope_id": "procurement",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The signed purchase order PO-48R names Cedarline Works as supplier of 48 field radios.",
+    "summary": "The signed purchase order PO-48R names Cedarline Works as supplier of 48 field radios.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v9/procurement/v9_proc_01",
+      "locator": "v9_proc_01"
+    }
+  },
+  {
+    "id": "v9_proc_02",
+    "scope_kind": "conversation",
+    "scope_id": "procurement",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Correction: no purchase contract PO-NS-12 was signed with Northstar Supply; the team only reviewed its draft quote.",
+    "summary": "Correction: no purchase contract PO-NS-12 was signed with Northstar Supply; the team only reviewed its draft quote.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v9/procurement/v9_proc_02",
+      "locator": "v9_proc_02"
+    }
+  },
+  {
+    "id": "v9_proc_03",
+    "scope_kind": "conversation",
+    "scope_id": "procurement",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "A planning note estimates delivery on 18 November, but the supplier has not confirmed a date.",
+    "summary": "A planning note estimates delivery on 18 November, but the supplier has not confirmed a date.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v9/procurement/v9_proc_03",
+      "locator": "v9_proc_03"
+    }
+  },
+  {
+    "id": "v9_proc_04",
+    "scope_kind": "conversation",
+    "scope_id": "procurement",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Buyer Luis P. L-51 prefers invoices grouped by month.",
+    "summary": "Buyer Luis P. L-51 prefers invoices grouped by month.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v9/procurement/v9_proc_04",
+      "locator": "v9_proc_04"
+    }
+  },
+  {
+    "id": "v9_transit_01",
+    "scope_kind": "conversation",
+    "scope_id": "transit",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Dispatch record: route 6B and the Alder Street stop were assigned to driver Nia Vale.",
+    "summary": "Dispatch record: route 6B and the Alder Street stop were assigned to driver Nia Vale.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v9/transit/v9_transit_01",
+      "locator": "v9_transit_01"
+    }
+  },
+  {
+    "id": "v9_transit_02",
+    "scope_kind": "conversation",
+    "scope_id": "transit",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The dispatcher confirmed that no taxi was booked for Nia Vale; she was assigned to the shared shuttle instead.",
+    "summary": "The dispatcher confirmed that no taxi was booked for Nia Vale; she was assigned to the shared shuttle instead.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v9/transit/v9_transit_02",
+      "locator": "v9_transit_02"
+    }
+  },
+  {
+    "id": "v9_transit_03",
+    "scope_kind": "conversation",
+    "scope_id": "transit",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The draft itinerary predicts arrival at 08:40, subject to a road closure check; no actual arrival time is recorded.",
+    "summary": "The draft itinerary predicts arrival at 08:40, subject to a road closure check; no actual arrival time is recorded.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v9/transit/v9_transit_03",
+      "locator": "v9_transit_03"
+    }
+  },
+  {
+    "id": "v9_transit_04",
+    "scope_kind": "conversation",
+    "scope_id": "transit",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Nia Vale requested a window seat for the return trip.",
+    "summary": "Nia Vale requested a window seat for the return trip.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v9/transit/v9_transit_04",
+      "locator": "v9_transit_04"
+    }
+  },
+  {
+    "id": "v9_incident_01",
+    "scope_kind": "conversation",
+    "scope_id": "incident",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The final incident report states that Mara Quill restored power to panel K-2 at 14:10.",
+    "summary": "The final incident report states that Mara Quill restored power to panel K-2 at 14:10.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v9/incident/v9_incident_01",
+      "locator": "v9_incident_01"
+    }
+  },
+  {
+    "id": "v9_incident_02",
+    "scope_kind": "conversation",
+    "scope_id": "incident",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Correction: Mara Quill did not reset breaker B-4; technician Omar Vale reset it after isolation.",
+    "summary": "Correction: Mara Quill did not reset breaker B-4; technician Omar Vale reset it after isolation.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v9/incident/v9_incident_02",
+      "locator": "v9_incident_02"
+    }
+  },
+  {
+    "id": "v9_incident_03",
+    "scope_kind": "conversation",
+    "scope_id": "incident",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "A preliminary inspection suggests a loose terminal may have caused the outage; the electrician has not confirmed the cause.",
+    "summary": "A preliminary inspection suggests a loose terminal may have caused the outage; the electrician has not confirmed the cause.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v9/incident/v9_incident_03",
+      "locator": "v9_incident_03"
+    }
+  },
+  {
+    "id": "v9_incident_04",
+    "scope_kind": "conversation",
+    "scope_id": "incident",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Mara Quill said that Omar Vale noticed a vibration before the outage.",
+    "summary": "Mara Quill said that Omar Vale noticed a vibration before the outage.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v9/incident/v9_incident_04",
+      "locator": "v9_incident_04"
+    }
+  }
+]

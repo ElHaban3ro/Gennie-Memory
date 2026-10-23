@@ -1,0 +1,60 @@
+{
+  "status": "failed_closed_no_retry",
+  "preflight_inputs_sources_binary_database_unchanged": true,
+  "integrity_checks": {
+    "input/corpus.json": true,
+    "input/recall.json": true,
+    "input/search.json": true,
+    "local-search.json": true,
+    "apps/retrieval/src/model.rs": true,
+    "apps/retrieval/src/service.rs": true,
+    "apps/retrieval/src/slot_evidence.rs": true,
+    "bootstrap/src/openrouter.rs": true,
+    "bootstrap/src/openrouter/slot_evidence.rs": true,
+    "bootstrap/src/main.rs": true,
+    "kernel/src/config.rs": true,
+    "Cargo.lock": true,
+    "binary": true,
+    "database": true
+  },
+  "capture": {
+    "elapsed_ms": 2901.264458,
+    "exchange_error": null,
+    "http_status": 200,
+    "http_version": "HTTP/1.1",
+    "input_tokens": 843,
+    "output_tokens": 214,
+    "prompt_sha256": "ff4098740ff372ab90d47a04e79f77db2fd691208aa7ef67ff9fb96b36fadc6f",
+    "reported_cost_usd": 6.355e-05,
+    "request_payload_sha256": "3f95c8f282da2810e752ec9b02cd3a1df841782adb6454670044162bba86892d",
+    "requested_model": "google/gemma-3-4b-it",
+    "response_body_complete": true,
+    "response_sha256": "f0b83695cfd1d6bebb4633a5bb3a8a7ca351ff219902f7a78f56f48241fb8d9b",
+    "schema_sha256": "d111651b04b937c29f182125fde1c7223f2445cc3ca5fe6baee7ce7784c84130",
+    "scope_id": "slot_evidence_v3_smoke_20261023_r5",
+    "served_model": "google/gemma-3-4b-it",
+    "served_provider": "DeepInfra"
+  },
+  "classifier_result": {
+    "http_status": 200,
+    "response_body_complete": true,
+    "served_model": "google/gemma-3-4b-it",
+    "served_provider": "DeepInfra",
+    "input_tokens": 843,
+    "output_tokens": 214,
+    "reported_cost_usd": 6.355e-05,
+    "classifier_ms": 2913.3662080000004,
+    "total_ms": 2915.816,
+    "selected_id": null,
+    "error_code": "slot_evidence_v2_query_target_quote_not_literal",
+    "semantic_scoring": "not scored; structural validation failed"
+  },
+  "attempts": {
+    "planned": 3,
+    "executed": 1,
+    "remaining_not_executed": 2
+  },
+  "raw_response_saved": false,
+  "diagnostic_limit": "slot_evidence_v2_query_target_quote_not_literal no distingue entre slots y premisas ni identifica el texto propuesto; el cuerpo raw no se conserva.",
+  "stop_reason": "La primera respuesta completa falló validación estructural; la revisión se cierra sin reintentos."
+}

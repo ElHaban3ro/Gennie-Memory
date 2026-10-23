@@ -1,0 +1,46 @@
+{
+  "version": "slot-evidence-v2-revision-33-smoke-v1",
+  "synthetic": true,
+  "not_retry_of_revision_31_or_32": true,
+  "configuration": "Gemma baseline and slot_evidence_v2 with identifier-boundary prompt; provider fallback enabled, strict parameter support. Decisions default unchanged.",
+  "three_consecutive_calls_required": true,
+  "same_request_and_corpus_for_all_calls": true,
+  "max_http_calls": 3,
+  "classifier_calls_made": 1,
+  "estimated_max_cost_usd": 0.004,
+  "provider_fallback_attempts_worst_case_per_call": 2,
+  "input_sha256": {
+    "case.jsonl": "a764a644ef881238bb58e5dd4999938fbf6e97e0926e68a6516835728e40fe7a",
+    "corpus.json": "8b408fab4048d9a876d2328012cc9f597b61f56c462da514de9a39ad0db94f00",
+    "request.json": "0029ef10872c4c9cf1cc9e50e3cb50ee1cd1e42f43ae19325bb994eaf2ada631",
+    "search-cases.jsonl": "42451f4a6eb2d5f7a84e3df83b660c25e9f7d0dd36a1092b281cd32ee2140824",
+    "search-request.json": "a5257609219799e850efdfcae072ab182aa10975ecd4fe732275e4263e051fe7"
+  },
+  "source_sha256": {
+    "openrouter.rs": "10ee72752541f6dc021798b76aa1bb0b0e87b6270283100bf8158a995170e654",
+    "slot_evidence.rs": "96343bc5c400da3cbbeab1630fa2dfa2119085ad1e61793e58129c38760d35b7"
+  },
+  "local_retrieval_precondition": "1/1 expected candidate recovered at top-1",
+  "local_search_sha256": "985a74f690f2301fcb63ea3257b433df322a6942f3bab3a63c40d835c6d1131d",
+  "binary_sha256": "5258b72b47efda499db2a5415e72b033396d30727252cfb1bb2f7077576d91ec",
+  "smoke_outcome": {
+    "calls": [
+      {
+        "smoke": 1,
+        "cli_exit_code": 0,
+        "classification_status": "failed",
+        "selected_id": null,
+        "error_code": "slot_evidence_v2_subject_span_not_identifier",
+        "served_model": "google/gemma-3-4b-it",
+        "served_provider": "Parasail",
+        "input_tokens": 1744,
+        "output_tokens": 241,
+        "reported_cost_usd": 8.181e-05,
+        "capture_present": true,
+        "valid_gate": false
+      }
+    ],
+    "stopped_after_first_invalid_or_incomplete_output": true,
+    "three_valid_consecutive_calls": false
+  }
+}

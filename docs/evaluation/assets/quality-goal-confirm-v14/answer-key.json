@@ -1,0 +1,106 @@
+{
+  "v14_marine_q01": {
+    "segment": "supports_answer",
+    "expected_ids": [
+      "v14_marine_01"
+    ],
+    "expected_fact": "2.16 m at 05:48."
+  },
+  "v14_marine_q02": {
+    "segment": "refutes_premise",
+    "expected_ids": [
+      "v14_marine_02"
+    ],
+    "expected_fact": "No; Sora only inspected the anchor."
+  },
+  "v14_marine_q03": {
+    "segment": "pending_or_partial",
+    "expected_ids": [
+      "v14_marine_03"
+    ],
+    "expected_fact": "0.9–1.1 m is a working interval; sensor sync is pending."
+  },
+  "v14_marine_q04": {
+    "segment": "unrelated",
+    "expected_ids": [],
+    "expected_fact": "Battery endurance does not state ownership."
+  },
+  "v14_shipping_q01": {
+    "segment": "supports_answer",
+    "expected_ids": [
+      "v14_shipping_01"
+    ],
+    "expected_fact": "17:40 on 2026-09-27."
+  },
+  "v14_shipping_q02": {
+    "segment": "refutes_premise",
+    "expected_ids": [
+      "v14_shipping_02"
+    ],
+    "expected_fact": "No; it is held for inspection."
+  },
+  "v14_shipping_q03": {
+    "segment": "pending_or_partial",
+    "expected_ids": [
+      "v14_shipping_03"
+    ],
+    "expected_fact": "2026-11-02 is the carrier’s current plan, not a locked departure."
+  },
+  "v14_shipping_q04": {
+    "segment": "unrelated",
+    "expected_ids": [],
+    "expected_fact": "The planned departure does not name the carrier."
+  },
+  "v14_appointments_q01": {
+    "segment": "supports_answer",
+    "expected_ids": [
+      "v14_appointments_01"
+    ],
+    "expected_fact": "10:15 on 2026-10-07."
+  },
+  "v14_appointments_q02": {
+    "segment": "refutes_premise",
+    "expected_ids": [
+      "v14_appointments_02"
+    ],
+    "expected_fact": "No; it remained Wednesday."
+  },
+  "v14_appointments_q03": {
+    "segment": "pending_or_partial",
+    "expected_ids": [
+      "v14_appointments_03"
+    ],
+    "expected_fact": "Monday afternoon is tentative and awaiting confirmation."
+  },
+  "v14_appointments_q04": {
+    "segment": "unrelated",
+    "expected_ids": [],
+    "expected_fact": "The tentative slot does not provide the patient’s name."
+  },
+  "v14_software_q01": {
+    "segment": "supports_answer",
+    "expected_ids": [
+      "v14_software_01"
+    ],
+    "expected_fact": "96 tests."
+  },
+  "v14_software_q02": {
+    "segment": "refutes_premise",
+    "expected_ids": [
+      "v14_software_02"
+    ],
+    "expected_fact": "No; review requested changes."
+  },
+  "v14_software_q03": {
+    "segment": "pending_or_partial",
+    "expected_ids": [
+      "v14_software_03"
+    ],
+    "expected_fact": "About 620 requests/min is an early estimate; final load test is incomplete."
+  },
+  "v14_software_q04": {
+    "segment": "unrelated",
+    "expected_ids": [],
+    "expected_fact": "The retry setting does not identify the CI runner."
+  }
+}

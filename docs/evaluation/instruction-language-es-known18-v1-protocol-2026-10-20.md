@@ -1,0 +1,13 @@
+# Instrucciones ES: contraste difícil contemporáneo V1
+
+Antes de red. El mínimo español completo pasa64/64roles,17útiles y0extras/pérdidas,USD0,000692820; es no regresión conocida y no prueba mejora. Conservar el glosario bilingüe, críticas y protocolo mínimo sin alterarlos. No repetir ese filtro para elegir una corrida favorable.
+
+18casos/126roles conciliados, tres variantes: control=Decisions/baseline real conhasta20candidatos; reference=Perplexity con nueve alternativas e instrucciones inglesas; candidate=mismo Perplexity/misma taxonomía con instrucciones españolas revisadas. No usar LocalV5 de cuatro alternativas como referencia. Solo difieren los15tipos de campo traducidos; fuentes incrustadas se codifican literalmente igual, pregunta/8analogías/IDs/claves/orden/modelo/parámetros quedan intactos. La igualdad se comprueba restaurando únicamente esos campos, nunca sustituyendo globalmente texto de usuario.
+
+Las6permutaciones de orden se repiten3veces entre18casos, secuenciales, cliente reutilizado, sin warmups excluidos. Máximo54HTTP, estimaciónUSD0,004 y1–2minutos, una pasada sin reintentos. Fallo técnico detiene conservando recibos; desacuerdo de calidad completa todos los casos. Preparar exige mínimo reconstruido y revisión bilingüe vinculada por hash antes de escribir; el preparador de2brazos rechazaesta variante. Archivar fuentes/ejecutablehash/solicitudes antes de red.
+
+Puerta de calidad:54válidas,17útiles candidatos,0extras/pérdidas/errores de rol/IDsno revisados y ganancia sobrebaseline. No cambiar gold ni compensar pérdidas con ganancias. Coste/p50/p95candidate≤1,5×baseline contemporáneo, todas las latencias incluidas; p95nearest-rank18es máximo. Gasto experimental suma3brazos, coste del mecanismo candidato solo su propia operación. Referencia incompleta o recibo desconocido bloquean pase. Sus resultados se informan por separado, con mismos modelos/revisiones y decoder de9alternativas.
+
+Señal preliminar de idioma solo si candidata reduce errores canónicos frente a referencia actual sin peor retención/extras. Si los rechazos no cambian, informarlo; no atribuir un rol favorable aislado a una palabra concreta. Comparación única no prueba estabilidad ni superioridad poblacional. Los motivos negativos carecen de gold específico y no se presentan como explicaciones verdaderas. Los desacuerdos de gold histórico y las ambigüedades actuales permanecen visibles.
+
+Si falla no encadenar traducciones diferentes sin hallazgo nuevo. Si pasa aún faltan estabilidad predeclarada, runtime/CLI, campañas completas y casos nuevos ciegos. No abrirV6ni adoptarpor este piloto. Solo evaluación/cfg(test) bajoHTTP2; sin producto,SQL,dependencias,secretos,servicios o procesos del usuario modificados.

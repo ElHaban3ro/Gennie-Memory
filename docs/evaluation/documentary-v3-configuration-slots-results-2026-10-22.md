@@ -1,0 +1,19 @@
+# Consulta explícita de parámetros del mismo hecho
+
+Se implementó `configuration_slot` en la evaluación Rust para consultar un parámetro de configuración adjunto al mismo hecho. El caso que antes no podía expresarse —«Melsa operó durante 17 minutos» / «¿Durante cuánto tiempo operó Melsa?»— devuelve ahora exactamente `17 minutos`, con su cita y proposición fuente. El control original PF01 sin pregunta construida se conserva intacto.
+
+El vocabulario debe habilitar `configuration_request_profile` con versión `documentary_configuration_slots_v1` y entre 1 y 128 claves únicas. La solicitud lleva átomo completo, estado explícito y extensión `one_value`. No se convierte duración de operación en fecha ni en propiedad intrínseca. El getter compara actor, acción, fundamento, ámbito y condiciones; solo retira de la comparación la clave pedida directamente adjunta al hecho. Los guards internos permanecen íntegros.
+
+Valores ausentes, desconocidos, inexactos, incompatibles o negados en el mismo contexto impiden publicar una respuesta. La unicidad se comprueba antes de filtros favorables de unidad/clase. Un fundamento exacto distinto queda fuera de la consulta; con fundamento abierto se conservan los conflictos. Las deudas de perfiles ya pendientes bloquean la publicación del valor. La ruta es exclusiva del nuevo modo y optativa: no cambia el comportamiento previo.
+
+Pasan diez pruebas enfocadas y 715 del workspace; 24 pruebas permanecen omitidas. Formato y compilación pasan. Los 226 informes históricos y los 100 informes automáticos de contexto actuales permanecen idénticos por bytes. Ocho controles CLI manuales pasan sus expectativas fijadas previamente: un positivo, actor/acción distintos, ausencia, valores contradictorios, valor desconocido, negación y configuración de otra operación. El desconocido es un DTO negativo deliberadamente parcial, no una extracción fiel nueva.
+
+Se conservó el primer fallo de preparación: seis pruebas tenían dependencias con consumidores de tipo no permitido. Se corrigieron los fixtures, sin relajar el validador. La crítica separada detectó dos riesgos estáticos antes de la verificación final: ignorar una negación compatible y bloquear por un fundamento excluido. Se añadieron defensas y pruebas. Una revisión estática no se cuenta como contraejemplo ejecutado del binario anterior. La revisión crítica posterior ejecutó cinco controles adicionales (diez documentos completos): positivo, negación compatible, fundamento exacto, fundamento abierto y conflicto entre unidades previo al filtro. Pasaron los cinco, sin nuevos errores de fixture.
+
+Esta capacidad no añade aciertos medidos al banco automático. Su resultado sigue siendo 23/39 útiles (59,0%), frente a 16/39 anteriores, con cero selecciones ajenas de 60, cero respuestas completas y 16 omisiones. Los ocho controles manuales no son revisión ciega de extracción ni baseline de producto. El preflight canónico previo conserva sus limitaciones PF06 y PF09; ninguna expectativa antigua se reescribe para mejorar cifras.
+
+No hubo llamadas nuevas a OpenRouter ni coste externo nuevo (USD 0 en ese ledger). El coste y los tokens de Codex no están cuantificados. No se midió latencia de producción, no se abrió V6 y no hay adopción. El objetivo global sigue activo en el paso 3; restan la normalización automática, calidad conocida completa, baseline contemporáneo, recursos/estabilidad y validación nueva ciega.
+
+Se preservó además un defecto de autorreferencia del manifiesto preparatorio de controles; su manifiesto suplementario fija el SHA real. El manifiesto de ejecución verifica correctamente sus entradas y salidas.
+
+Evidencia: `outputs/iromem/evaluation/documentary-v3-readings-campaign-2026-10-21/configuration-slots-v1/`. Binario verificado: `3ef55fb0da656d123aa8d9fa50dbe67a986e9e3cf4159f918d2da09044dc5557`.

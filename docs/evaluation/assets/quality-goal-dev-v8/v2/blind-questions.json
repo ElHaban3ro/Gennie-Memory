@@ -1,0 +1,98 @@
+[
+  {
+    "id": "v8_festival_q01",
+    "query": "¿Qué empresa quedó finalmente contratada para el montaje principal?",
+    "scope_id": "festival",
+    "scope_kind": "conversation"
+  },
+  {
+    "id": "v8_festival_q02",
+    "query": "¿Brisa Norte ganó el contrato del montaje principal?",
+    "scope_id": "festival",
+    "scope_kind": "conversation"
+  },
+  {
+    "id": "v8_festival_q03",
+    "query": "¿Cuál fue el importe definitivo de la iluminación?",
+    "scope_id": "festival",
+    "scope_kind": "conversation"
+  },
+  {
+    "id": "v8_festival_q04",
+    "query": "¿Qué sabor de helado fue el más vendido en el festival?",
+    "scope_id": "festival",
+    "scope_kind": "conversation"
+  },
+  {
+    "id": "v8_clinica_q01",
+    "query": "¿Qué dosis de Neral quedó prescrita a Vera Sol CL-28 al alta?",
+    "scope_id": "clinica",
+    "scope_kind": "conversation"
+  },
+  {
+    "id": "v8_clinica_q02",
+    "query": "¿Vera Sol CL-28 había comenzado el antibiótico antes de la muestra?",
+    "scope_id": "clinica",
+    "scope_kind": "conversation"
+  },
+  {
+    "id": "v8_clinica_q03",
+    "query": "¿Qué microorganismo confirmó el cultivo?",
+    "scope_id": "clinica",
+    "scope_kind": "conversation"
+  },
+  {
+    "id": "v8_clinica_q04",
+    "query": "¿Qué línea de autobús tomaba Vera Sol CL-28 para llegar a la Clínica Linde?",
+    "scope_id": "clinica",
+    "scope_kind": "conversation"
+  },
+  {
+    "id": "v8_solar_q01",
+    "query": "¿A qué empresa se adjudicó la instalación de paneles del techo B?",
+    "scope_id": "solar",
+    "scope_kind": "conversation"
+  },
+  {
+    "id": "v8_solar_q02",
+    "query": "¿Quedó aprobado el inversor LUX-4 para el techo B?",
+    "scope_id": "solar",
+    "scope_kind": "conversation"
+  },
+  {
+    "id": "v8_solar_q03",
+    "query": "¿Cuánta energía produjo realmente el techo B?",
+    "scope_id": "solar",
+    "scope_kind": "conversation"
+  },
+  {
+    "id": "v8_solar_q04",
+    "query": "¿Qué ruta de autobús llevó al equipo a la planta solar?",
+    "scope_id": "solar",
+    "scope_kind": "conversation"
+  },
+  {
+    "id": "v8_escuela_q01",
+    "query": "¿Qué proveedor quedó seleccionado para los cuadernos de primaria?",
+    "scope_id": "escuela",
+    "scope_kind": "conversation"
+  },
+  {
+    "id": "v8_escuela_q02",
+    "query": "¿La escuela aprobó comprar tabletas a TecnoSur?",
+    "scope_id": "escuela",
+    "scope_kind": "conversation"
+  },
+  {
+    "id": "v8_escuela_q03",
+    "query": "¿Cuántos estudiantes asistieron en total durante el mes?",
+    "scope_id": "escuela",
+    "scope_kind": "conversation"
+  },
+  {
+    "id": "v8_escuela_q04",
+    "query": "¿Qué obra representó el grupo 5B en su última función?",
+    "scope_id": "escuela",
+    "scope_kind": "conversation"
+  }
+]

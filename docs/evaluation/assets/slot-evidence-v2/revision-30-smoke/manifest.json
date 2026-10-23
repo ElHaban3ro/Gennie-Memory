@@ -1,0 +1,16 @@
+{
+  "version": "slot-evidence-v2-revision-30-smoke-input-v1",
+  "synthetic": true,
+  "new_request_not_retry_of_r29": true,
+  "consecutive_calls_required": 3,
+  "same_request_and_corpus_for_all_calls": true,
+  "classifier_calls_made": 0,
+  "local_retrieval_precondition": "1/1 candidate recovered",
+  "input_sha256": {
+    "input/case.jsonl": "c29a25d85bf26594a173a362d777774342297d79f41957b08c8a82d9824cbddc",
+    "input/corpus.json": "73d27acd793c59eb9af8902023866f95c845798782865f27914e90e9d42c50c4",
+    "input/request.json": "e1d271e66976f13cf6ea28340f52c94641e57924143cf9de42194307f67feee9",
+    "input/search-cases.jsonl": "2f89b65797627672821204639723ec15f9140538052efc14446da444d20b2878"
+  },
+  "local_search_sha256": "3309edb5f1e0ce94cd1765baaa1ff9310fb3b06f32c17de6921054bd4f4efaf2"
+}

@@ -1,0 +1,7 @@
+# Contraste de versión Jev, diagnóstico conocido
+
+Método fijado antes de las llamadas. Diez preguntasV5 conocidas,20operaciones alternando1.13/1.14 por par, política `per_memory_scored_v1`, keywords/20, clasificación de los mismos8candidatos, payload igual salvo campo model. IDs en cases.jsonl congelado. El control horario, dos negativos difíciles, evidencia complementaria, tres preguntas con contexto discutido y tres ausencias comprueban si cambiar versión justifica una campaña completa. Una pasada pequeña no aprueba desarrollo ni promoción.
+
+No cambiar gold ni aplicar conciliación retrospectiva al calcular diferencias. Reportar por separado discordancias del gold y casos de contexto discutido, sin retirar pérdidas para aprobar. Regla de continuación: ningún ID fuera del gold, ninguna evidencia seleccionada por1.13 perdida ni degradación nueva, y al menos una mejora permitida; recursos diagnósticos completos y≤1,5× coste/p50/p95 de1.13. Si falla, detener sin abrir V6 ni probar variantes sobre ella. Si pasa, aún faltan campaña completa emparejada contra Decisions/baseline y validación nueva. No reintentar peticiones inciertas. No modificar prompt, presupuesto o modelo durante el contraste.
+
+CLI sin puerto, DB temporal propia, máximo20peticiones, hasta un minuto previsto; recibos reales prevalecen sobre estimaciónUSD0,002. El precio publicado no prueba menor coste o mayor calidad. Modelo1.14 verificado en [OpenRouter](https://openrouter.ai/typesafe/jev-1.14) el2026-10-19. Codex programación/revisión excluido del coste del clasificador.

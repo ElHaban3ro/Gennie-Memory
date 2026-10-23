@@ -1,0 +1,16 @@
+{
+  "experiment": "Decisions baseline vs roles_v1 on pre-reviewed finality/correction matrix",
+  "status": "exploratory_diagnostic_not_confirmation",
+  "cases": 8,
+  "operations": 16,
+  "provider": "decisions",
+  "candidate_policy": "roles_v1",
+  "alternating_order": true,
+  "limitation": "This cohort was prepared for a retired Slot Evidence V2 candidate. The current run compares baseline with roles_v1 only; no V2 requests are sent.",
+  "input_sha256": {
+    "docs/evaluation/assets/slot-evidence-v2/revision-matrix-v1-preflight/annotations.jsonl": "b9adb88dbe7098e769b6a456aa1fa3004fbbbd2a4891a4f60c75bfd273faf81c",
+    "docs/evaluation/assets/slot-evidence-v2/revision-matrix-v1-preflight/corpus.json": "5135955d4d72a4ddca1f4df8a398d7917c92a6a177e8c86dc7b996f59246ae5a",
+    "docs/evaluation/assets/slot-evidence-v2/revision-matrix-v1-preflight/manifest.json": "70e0d54c7dc430101235d6ed2007d55536f6209519d6c821c46d77d6c67938ac"
+  },
+  "cases_sha256": "f61da119b048f53ff9783a0900631a2ff7e18d0dd3174aff8887d25d2f01ba80"
+}

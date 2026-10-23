@@ -1,0 +1,13 @@
+{
+  "search": {
+    "query": "Which city for engineer Ana Ruiz E-17?",
+    "scope_kind": "project",
+    "scope_id": "synthetic_smoke_r20",
+    "entity_id": null,
+    "as_of": "2026-10-23T12:00:00.000Z",
+    "limit": 20,
+    "query_mode": "keywords"
+  },
+  "provider": "gemma3_4b",
+  "selection_policy": "slot_evidence_v2"
+}

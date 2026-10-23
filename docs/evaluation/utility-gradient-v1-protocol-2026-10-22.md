@@ -1,0 +1,25 @@
+# Diagnóstico de gradientes V1: checkpoint fijo, cero actualizaciones
+
+Fecha: 2026-10-22. V5 falló calidad: ambos brazos 59/64 conocidos, 13/17 útiles y un ajeno. No se demostró ventaja consistente de agrupar por consulta. [Informe](utility-learning-v5-results-2026-10-22.md). Este diagnóstico retrospectivo investiga sensibilidad y conflicto local antes de otra receta; no es entrenamiento, validación fresca o rescate de calidad.
+
+## Objeto y población fijados
+
+Checkpoint final V5 matched SHA-256 `7522394b350d8843d300420f622695a638ce20bb2e6c90fe723a3cf1990c6a74`, fallido y sin promover. Misma base FP16, 32 tensores LoRA FP32, tokenización, instrucción y runtime de V5. Leer únicamente sus 176 ejemplos de entrenamiento (48 originales y 128 extensión), en orden original. No cargar ejemplos ni etiquetas de desarrollo, conocidos, closed o V6. No optimizador, actualizaciones, nuevas semillas, cambios de coeficiente/margen/umbral, búsqueda de casos o épocas.
+
+Un forward/backward de margen `logit_yes-logit_no` por ejemplo: 176. Persistir el Jacobiano FP32 de esos 176 márgenes respecto a los mismos 327680 parámetros LoRA, orden técnico de nombres/forma/flatten-C explícito. Comprobar finitud y conservar ceros, todos los ejemplos y pools sin útiles. Guardar logits FP32 y scores para comprobar replay de las decisiones de entrenamiento del checkpoint, delta ≤0,02 y mismas decisiones. Ninguna etiqueta, rol, razón o metadato se agrega al modelo.
+
+## Regla de la cadena y controles numéricos
+
+Derivadas escalares ideales: CE `sigmoid(m)-y`; penalización positiva V2 `-2*y*max(0,2-m)`; suma fija. Reconstruir vectores ideales multiplicando el Jacobiano del margen por esos escalares; no llamarlos automáticamente gradientes ejecutados exactos en FP16/FP32.
+
+Cuatro controles adicionales de objetivo completo V2 con autograd, uno por primer ID en orden original de cada estrato train `original/useful`, `original/irrelevant`, `extension/useful`, `extension/irrelevant`. Selección solo por población/origen/target, nunca por score o errores. Un forward/backward adicional por control: cuatro, total máximo **180 forward/backward**, cero updates. Comparar gradiente de autograd con suma reconstruida: normas, error absoluto máximo, relativo L2 y coseno. Para ambas normas >1e-12, registrar compatibilidad si relativo L2 ≤0,05 y coseno ≥0,99; para normas pequeñas exigir error absoluto ≤1e-6 y marcar régimen casi nulo. Estas tolerancias clasifican evidencia numérica, no calidad de recuperación. Un desacuerdo se conserva y limita interpretación, sin repetir, cambiar tolerancias o alterar pesos. Cuatro controles no prueban exactitud universal.
+
+Reportar normas de Jacobiano separadas de derivadas y de pérdidas, por útil/ajeno y correcto/incorrecto. Para cada comparación útil/ajeno dentro de la misma query entrenada, medir producto/coseno de direcciones firmadas `-dL/dm * grad(m)`; positivos indican alineamiento local, negativos oposición. Conservar casos de norma cero aparte. Estas direcciones son aproximaciones locales y no el paso de AdamW; sus estados finales no están persistidos. No inferir cancelación global, falta de capacidad o trayectoria causal solo desde normas/cosenos. Reportar resultados completos y pares, sin seleccionar subconjuntos favorables, ranking/top-1 o nuevo umbral.
+
+## Integridad, recursos y límites
+
+Congelar protocolo/runner/plan, hashes de checkpoint/base/entradas/tokenids/runtime antes de cargar modelo. Verificar matrices y nombres del checkpoint, hash inicial de LoRA según parent; cargar solo las 32 arrays del checkpoint sobre base original. Reconstituir tokenids completos y comprobar igualdad de parent. Ningún truncamiento, max32768. GPU MLX explícita y sin fallback. Verificar base y adaptadores iguales antes/después, ningún optimizador creado/actualizado. Registrar UTC RFC3339 milisegundos, ordinal y contadores por inicio/respuesta. Guardar matriz, orden de columnas, scores, derivadas y cuatro gradientes reales de control para reauditar resultados sin ejecutar modelo.
+
+Estimación 2–4 minutos, watchdog600s, máximo180 forward/backward. Una matriz176×327680 FP32 ocupa unos231 MB; los cuatro controles unos5,2MB adicionales, más metadata. Reutilizar assets/runtime existentes; sin descarga, dependencia, API, HTTP/puerto/servicio, Rust/Cargo, DB, secretos, env, procesos ajenos, rama, commit o push. API USD0; coste económico local y Codex desconocido. Proceso CLI propio temporal, identificación y terminación verificadas. Fallo técnico conserva intento, sin reintentar en directorio existente o cambiar backend.
+
+Artefactos en `outputs/iromem/evaluation/utility-gradient-v1-2026-10-22/`. Auditoría independiente de fórmulas, normas, gram/cosenos, hashes, controles y contadores tras finalizar. Pase de integridad no demuestra utilidad o calidad. Mantener el objetivo original activo y todos los gates: mecanismo sin pérdidas/ajenos, después casos nuevos ciegos y ruta vigente, recursos/recibos/estabilidad y V6 final. No adopción, reserva o nueva métrica productiva por este diagnóstico.

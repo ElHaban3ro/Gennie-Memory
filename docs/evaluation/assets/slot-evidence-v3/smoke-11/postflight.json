@@ -1,0 +1,39 @@
+{
+  "status": "completed_after_single_failed_call",
+  "preflight_inputs_sources_binary_and_database_unchanged": true,
+  "postflight_sha256": {
+    "input/corpus.json": "9af237caa4a378f3b642565a3742335bc0dceb1f96ae13a46e0f556b244edc2f",
+    "input/search.json": "eeb9eff0d536c02802eacb37fcb53fb6a49b61683396cc6983d1ff744410d7b6",
+    "input/recall.json": "c9cbb5a8e5eac058952a3e43788245177544f244a15efe0e3a70d187c72edc4a",
+    "local-search.json": "fe4abf050ea72032a44d416305c5db16de69d8be144c09cca3f4ca5456d931b4",
+    "database": "f95baa4356d0e6c1ad7b6d6a0daf7ce2f0d0cbfac05e30a7cd27c6534b164770",
+    "binary": "fce996088aa1179eb3e9f02264b1281d5214edf99a91653b1c4339dc0b253653",
+    "apps/retrieval/src/model.rs": "e3ca5f8672593f10559f8a0a3a92844ce15bbbe6276d0b20eb518c2d42aad215",
+    "apps/retrieval/src/service.rs": "3f71844bbba13f3c3c91527d6a48a6d4d24064f0907117ec576143dc9833d455",
+    "apps/retrieval/src/slot_evidence.rs": "bd8eb99f5e7ff6ad066f97d3b7d4b465ce382320d9fe495d65c9e3804152c428",
+    "bootstrap/src/openrouter.rs": "d8c7c0bd1e1132f24876079a74fe9292931ddb619b13179e6dd4a44c5ea44c59",
+    "bootstrap/src/openrouter/slot_evidence.rs": "5993079e40b843533049d90fe99678d2587a8b922841a2a2b0e2696045662b74",
+    "bootstrap/src/main.rs": "671df0b9df5bc7eb42a468e96d11f477fd28973c567854178b5eadfb9f9a8fad",
+    "kernel/src/config.rs": "24919f7f27cbd84d266260c447229dbbc2c58b05d70ae197754c276dcb08753d",
+    "Cargo.lock": "67d8750570958feae5ccaabbe1e38792adea208f7ab35d91764360e58e312293",
+    "recall-output-1.json": "dce6ce4a3f5f03024ad777d6db8ab26e563b83411b7e965679b5dd0e72c5fd98",
+    "stderr-1.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "evaluation-capture-1.jsonl": "c66cf2f56dfd14e0ec3f011325daf46d74d24d4250bf4bdbceb8b825021d0f2b",
+    "blind-review.md": "bb54ee4bac08448c65411ce2e2f7371c9166313efdc8ddd5b23b833cc6b18082"
+  },
+  "remote_receipt": {
+    "http_status": 200,
+    "response_body_complete": true,
+    "finish_reason": "stop",
+    "served_provider": "DeepInfra",
+    "input_tokens": 1008,
+    "output_tokens": 599,
+    "reported_cost_usd": 0.0001103,
+    "classifier_latency_ms": 4869.5945,
+    "total_latency_ms": 4871.445458,
+    "error_code": "slot_evidence_v3_slot_quote_not_literal",
+    "selected_id": null
+  },
+  "retry_count": 0,
+  "raw_response_saved": false
+}

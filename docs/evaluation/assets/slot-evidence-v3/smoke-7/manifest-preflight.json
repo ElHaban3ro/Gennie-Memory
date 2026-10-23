@@ -1,0 +1,50 @@
+{
+  "status": "preflight_frozen_before_remote_smoke",
+  "experiment": "slot_evidence_v3_smoke_7_revision_7",
+  "scope": "synthetic_only",
+  "blind_review_excluded_from_provider_request": true,
+  "blind_review": "independent adjudicator judged direct answer; review stored separately",
+  "provider": "gemma3_4b",
+  "requested_model": "google/gemma-3-4b-it",
+  "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+  "provider_preferences": {
+    "require_parameters": true,
+    "allow_fallbacks": true
+  },
+  "timeout_ms": 30000,
+  "temperature": 0,
+  "max_output_tokens": 2500,
+  "candidate_count": 1,
+  "expected_local_search_candidate": {
+    "memory_id": "smoke_v3_yara_001",
+    "revision": 1
+  },
+  "repetitions": 3,
+  "call_rule": "Three identical requests; halt at first structural failure, incomplete receipt, or missing positive selection; no retries.",
+  "cost_estimate_usd": 0.00015,
+  "cost_cap_usd": 0.0002,
+  "cost_basis": "three requests estimated at USD 0.00005 each from prior smoke receipts",
+  "input_sha256": {
+    "corpus.json": "e6da52bdfe4ab183df561fd1c2f4133a2ee35fee5caa52dba922326c7364a3fc",
+    "recall.json": "ddef261088f1edd240a08c907a69dcea90e6f85392b95bacec01a6fb1da8e160",
+    "search.json": "2731df14e6693feaa507f6239cc08f73dd58f1031a43c202ff35000379cdc4ee"
+  },
+  "local_search_sha256": "fa648faa07e7f541b851e7acd1da0b2d2e89277572a5b0bfe667ef9c1c00a424",
+  "source_files_sha256": {
+    "apps/retrieval/src/model.rs": "e3ca5f8672593f10559f8a0a3a92844ce15bbbe6276d0b20eb518c2d42aad215",
+    "apps/retrieval/src/service.rs": "3f71844bbba13f3c3c91527d6a48a6d4d24064f0907117ec576143dc9833d455",
+    "apps/retrieval/src/slot_evidence.rs": "bd8eb99f5e7ff6ad066f97d3b7d4b465ce382320d9fe495d65c9e3804152c428",
+    "bootstrap/src/openrouter.rs": "97b5a71ccc4717615ee7d260b8e3bfff2e9ce31ddae2028d89ffc79d364c6af8",
+    "bootstrap/src/openrouter/slot_evidence.rs": "bdb95296c5ac9e78a76c4ba19727a1b35c78183c3f8211176556633b8c839061",
+    "bootstrap/src/main.rs": "671df0b9df5bc7eb42a468e96d11f477fd28973c567854178b5eadfb9f9a8fad",
+    "kernel/src/config.rs": "24919f7f27cbd84d266260c447229dbbc2c58b05d70ae197754c276dcb08753d",
+    "Cargo.lock": "67d8750570958feae5ccaabbe1e38792adea208f7ab35d91764360e58e312293"
+  },
+  "binary_sha256": "135bc779efd6b8c59b4088b4747f3c32aa0827d4fca76faeee70e6bb15aa4254",
+  "database_path": ".local/slot-evidence-v3-smoke-7.db",
+  "database_sha256": "96f4da602836676264ee2608a27617065187ce304ee691b3cec7368f5336dbfa",
+  "prompt_change": "Adds explicit candidate identity example binding exact name, identifier, and sentence fragment.",
+  "diagnostic_change": "Separates missing matching query anchor from multiple matching anchors; acceptance remains strict.",
+  "preflight_note": "Prompt, schema, inputs, roster, binary, and database frozen for all repetitions; compare request hashes in captures.",
+  "source_bundle_sha256": "799c6cdf9948de3b4a023b7fc4264b6fcc3950e7addb5afc7d1aee014d1ebdc2"
+}

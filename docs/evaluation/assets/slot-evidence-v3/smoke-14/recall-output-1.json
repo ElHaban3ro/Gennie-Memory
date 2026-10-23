@@ -1,0 +1,47 @@
+{
+  "selected_ids": [],
+  "per_memory": null,
+  "consensus": null,
+  "applicability": null,
+  "slot_evidence": null,
+  "status": "degraded",
+  "retrieval": {
+    "status": "complete",
+    "method": "fts5_keywords",
+    "candidates": [
+      {
+        "memory_id": "smoke_v3_marta_001",
+        "revision": 1,
+        "summary": "Engineer Marta Solis M-58 currently works from Valencia. Archivist Teo Rivas T-26 lives in Girona and catalogued the flood maps.",
+        "conditions": null,
+        "source": null,
+        "state": "active",
+        "bm25": -5.9459459459459454e-6
+      }
+    ],
+    "semantic_coverage": "disabled"
+  },
+  "classification_status": "failed",
+  "requested_model": "google/gemma-3-4b-it",
+  "served_model": "google/gemma-3-4b-it",
+  "selected_id": null,
+  "seed": {
+    "status": "degraded",
+    "method": "fts5_external_classifier",
+    "classifier": "google/gemma-3-4b-it",
+    "semantic_coverage": "disabled",
+    "memories": [],
+    "seed_text": null
+  },
+  "input_tokens": 1067,
+  "output_tokens": 207,
+  "reported_cost_usd": 0.00007405,
+  "error_code": "slot_evidence_proposition_citation_invalid",
+  "provider_http_status": null,
+  "timings": {
+    "search_ms": 2.548959,
+    "classifier_ms": 2782.6110000000003,
+    "composition_ms": 0.5815,
+    "total_ms": 2786.036792
+  }
+}

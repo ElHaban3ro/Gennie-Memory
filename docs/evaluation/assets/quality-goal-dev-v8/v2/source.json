@@ -1,0 +1,152 @@
+{
+  "version": "quality-goal-dev-v8",
+  "synthetic": true,
+  "human_review": false,
+  "independent_review": false,
+  "conversations": [
+    {
+      "scope_id": "festival",
+      "title": "Festival ficticio Bruma",
+      "messages": [
+        {
+          "id": "v8_festival_01",
+          "speaker": "participant",
+          "text": "Acta final: Orilla Producciones recibió el contrato del montaje principal por decisión firmada del comité."
+        },
+        {
+          "id": "v8_festival_02",
+          "speaker": "participant",
+          "text": "Corrección del comité: Brisa Norte no ganó el montaje principal; solo presentó una cotización para la tarima secundaria."
+        },
+        {
+          "id": "v8_festival_03",
+          "speaker": "participant",
+          "text": "La hoja preliminar estimó 18.000 euros para la iluminación; la factura definitiva aún no se ha recibido."
+        },
+        {
+          "id": "v8_festival_04",
+          "speaker": "participant",
+          "text": "Para el acceso al recinto se contrató a Control Delta; el acta no identifica a una jefatura de seguridad general."
+        },
+        {
+          "id": "v8_festival_05",
+          "speaker": "participant",
+          "text": "La cafetería del festival abrió a las 10:30 y vendió café de origen local."
+        },
+        {
+          "id": "v8_festival_06",
+          "speaker": "participant",
+          "text": "El equipo de cafetería encargó cuarenta jarras reutilizables para los puestos de bebida."
+        }
+      ]
+    },
+    {
+      "scope_id": "clinica",
+      "title": "Seguimiento ficticio Clínica Linde",
+      "messages": [
+        {
+          "id": "v8_clinica_01",
+          "speaker": "participant",
+          "text": "En la nota de alta firmada, la doctora prescribió a Vera Sol (CL-28) 5 mg de medicamento Neral por la noche durante siete días."
+        },
+        {
+          "id": "v8_clinica_02",
+          "speaker": "participant",
+          "text": "Aclaración de enfermería: Vera Sol (CL-28) no empezó el antibiótico antes de la toma de muestra; la primera dosis quedó pendiente de la prueba."
+        },
+        {
+          "id": "v8_clinica_03",
+          "speaker": "participant",
+          "text": "El cultivo preliminar mostró una señal compatible con flora tipo K, pero el laboratorio aún no confirmó el microorganismo."
+        },
+        {
+          "id": "v8_clinica_04",
+          "speaker": "participant",
+          "text": "La clínica trasladó la cita de control al consultorio 6; la ficha no registra el peso de Vera al alta."
+        },
+        {
+          "id": "v8_clinica_05",
+          "speaker": "participant",
+          "text": "El formulario de ingreso indica que Vera prefirió recibir avisos por mensaje de texto."
+        },
+        {
+          "id": "v8_clinica_06",
+          "speaker": "participant",
+          "text": "La Clínica Linde amplió la recepción de muestras al sábado durante el invierno."
+        }
+      ]
+    },
+    {
+      "scope_id": "solar",
+      "title": "Proyecto solar ficticio Arrayán",
+      "messages": [
+        {
+          "id": "v8_solar_01",
+          "speaker": "participant",
+          "text": "La orden de compra cerrada asigna la instalación de los paneles del techo B a Solaria Andina; el contrato está firmado."
+        },
+        {
+          "id": "v8_solar_02",
+          "speaker": "participant",
+          "text": "Nota de cierre: el inversor LUX-4 no quedó aprobado para el techo B; solo se autorizó una prueba en el banco de carga."
+        },
+        {
+          "id": "v8_solar_03",
+          "speaker": "participant",
+          "text": "El cálculo preliminar proyecta 3,2 kW para el techo B, sujeto a la inspección de sombra; no hay una medición real todavía."
+        },
+        {
+          "id": "v8_solar_04",
+          "speaker": "participant",
+          "text": "El equipo registró una revisión del permiso municipal para el techo C, sin decisión sobre la fecha de conexión del techo B."
+        },
+        {
+          "id": "v8_solar_05",
+          "speaker": "participant",
+          "text": "La instalación usó una grúa alquilada a Elevaciones Níspero para subir los marcos al techo."
+        },
+        {
+          "id": "v8_solar_06",
+          "speaker": "participant",
+          "text": "El equipo del proyecto pidió el almuerzo a Café Nogal el día de la inspección."
+        }
+      ]
+    },
+    {
+      "scope_id": "escuela",
+      "title": "Conversación ficticia Escuela Río Claro",
+      "messages": [
+        {
+          "id": "v8_escuela_01",
+          "speaker": "participant",
+          "text": "La resolución firmada seleccionó a Papelera Horizonte para suministrar cuadernos a los cursos de primaria."
+        },
+        {
+          "id": "v8_escuela_02",
+          "speaker": "participant",
+          "text": "Rectificación: la escuela no aprobó la compra de tabletas a TecnoSur; autorizó únicamente una demostración sin compromiso."
+        },
+        {
+          "id": "v8_escuela_03",
+          "speaker": "participant",
+          "text": "El recuento del viernes fue provisional: asistieron 86 estudiantes, pero secretaría aún no cerró la cifra mensual."
+        },
+        {
+          "id": "v8_escuela_04",
+          "speaker": "participant",
+          "text": "El acta menciona una propuesta de ciencias presentada por el grupo 5B, sin indicar quién la redactó."
+        },
+        {
+          "id": "v8_escuela_05",
+          "speaker": "participant",
+          "text": "El transporte escolar cambió la parada de la calle Olmo a la plaza del Mercado."
+        },
+        {
+          "id": "v8_escuela_06",
+          "speaker": "participant",
+          "text": "La escuela encargó cajas nuevas de lápices para el aula 5B."
+        }
+      ]
+    }
+  ]
+}

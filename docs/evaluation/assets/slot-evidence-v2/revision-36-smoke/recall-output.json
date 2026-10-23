@@ -1,0 +1,25 @@
+{
+  "selected_ids": [],
+  "status": "degraded",
+  "classification_status": "failed",
+  "requested_model": "google/gemma-3-4b-it",
+  "served_model": "google/gemma-3-4b-it",
+  "input_tokens": 645,
+  "output_tokens": 202,
+  "reported_cost_usd": 3.59e-05,
+  "error_code": "slot_evidence_v2_anchor_phrase_not_exact",
+  "provider_http_status": null,
+  "timings": {
+    "search_ms": 0.484,
+    "classifier_ms": 2693.110208,
+    "composition_ms": 0.629292,
+    "total_ms": 2694.2445
+  },
+  "retrieval": {
+    "status": "complete",
+    "method": "fts5_keywords",
+    "candidate_ids": [
+      "r36_leo_office_m1"
+    ]
+  }
+}

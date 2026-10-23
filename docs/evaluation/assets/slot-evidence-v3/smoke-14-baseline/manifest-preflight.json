@@ -1,0 +1,43 @@
+{
+  "status": "preflight_frozen_before_paired_baseline_call",
+  "experiment": "slot_evidence_v3_smoke_14_baseline_comparison",
+  "scope": "same_synthetic_question_corpus_candidate_and_local_search_as_smoke_14",
+  "blind_review_excluded_from_provider_request": true,
+  "blind_review_reference": "../smoke-14/blind-review.md",
+  "provider": "gemma3_4b",
+  "requested_model": "google/gemma-3-4b-it",
+  "selection_policy": "baseline",
+  "provider_preferences": {
+    "require_parameters": true,
+    "allow_fallbacks": true
+  },
+  "candidate_count": 1,
+  "expected_local_search_candidate": {
+    "memory_id": "smoke_v3_marta_001",
+    "revision": 1
+  },
+  "planned_calls": 1,
+  "call_rule": "One baseline comparison call; no retries.",
+  "cost_estimate_usd": 0.0002,
+  "prior_known_cost_usd": 0.00104173,
+  "input_sha256": {
+    "corpus.json": "5870392f8728d9b44bb96ca8560c8c60e4dcce9a5d2a7bfa4244a25bb38dd475",
+    "recall.json": "a7ed17abc96e656f75a40bb424375f03a4fbb6f6b912a5be480b938b3d92727f",
+    "search.json": "804ea5266d93ec8bbfdc12f89269c57bf9cae4d3e7b158d2b4f64a4ec2edafba"
+  },
+  "local_search_sha256": "100c89a9c8252538a998e476388b21eb27e2534b31d3126ad66db1134df1e023",
+  "source_files_sha256": {
+    "apps/retrieval/src/model.rs": "e3ca5f8672593f10559f8a0a3a92844ce15bbbe6276d0b20eb518c2d42aad215",
+    "apps/retrieval/src/service.rs": "3f71844bbba13f3c3c91527d6a48a6d4d24064f0907117ec576143dc9833d455",
+    "apps/retrieval/src/slot_evidence.rs": "bd8eb99f5e7ff6ad066f97d3b7d4b465ce382320d9fe495d65c9e3804152c428",
+    "bootstrap/src/openrouter.rs": "d8c7c0bd1e1132f24876079a74fe9292931ddb619b13179e6dd4a44c5ea44c59",
+    "bootstrap/src/openrouter/slot_evidence.rs": "101209f11083e6b7afa94ef3c0448464b404a3ceecf2a9af832ea55874c2fba1",
+    "bootstrap/src/main.rs": "671df0b9df5bc7eb42a468e96d11f477fd28973c567854178b5eadfb9f9a8fad",
+    "kernel/src/config.rs": "24919f7f27cbd84d266260c447229dbbc2c58b05d70ae197754c276dcb08753d",
+    "Cargo.lock": "67d8750570958feae5ccaabbe1e38792adea208f7ab35d91764360e58e312293"
+  },
+  "binary_sha256": "534d41f554c7ebf63b4790215e551bf865faa9a8842dc21df67eb2451a296b8e",
+  "database_path": ".local/slot-evidence-v3-smoke-14.db",
+  "database_sha256": "65bb03415c15bd92a8625d8a371eed0c1043be19707dc3f8bb1933377e75671d",
+  "preflight_note": "Only policy differs from V3 input. This single call is a baseline comparator, not a V3 retry. Request capture records actual model/provider, prompt/schema/payload hashes, response metadata, and receipt."
+}

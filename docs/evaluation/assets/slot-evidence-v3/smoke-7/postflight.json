@@ -1,0 +1,51 @@
+{
+  "status": "postflight_verified",
+  "experiment": "slot_evidence_v3_smoke_7_revision_7",
+  "checks": {
+    "input:corpus.json": true,
+    "input:recall.json": true,
+    "input:search.json": true,
+    "local_search": true,
+    "source:apps/retrieval/src/model.rs": true,
+    "source:apps/retrieval/src/service.rs": true,
+    "source:apps/retrieval/src/slot_evidence.rs": true,
+    "source:bootstrap/src/openrouter.rs": true,
+    "source:bootstrap/src/openrouter/slot_evidence.rs": true,
+    "source:bootstrap/src/main.rs": true,
+    "source:kernel/src/config.rs": true,
+    "source:Cargo.lock": true,
+    "binary": true,
+    "database": true
+  },
+  "all_unchanged": true,
+  "capture": {
+    "http_status": 200,
+    "response_body_complete": true,
+    "request_payload_sha256": "8c8393a11fefb2261e5bb96e5f2b4b4e21781ac48bf189e6e75d703700335b1a",
+    "prompt_sha256": "cb5bd8dfba43fb6a482dc6f5dc0960881efb49ac391755af58a0ee582672b317",
+    "schema_sha256": "d111651b04b937c29f182125fde1c7223f2445cc3ca5fe6baee7ce7784c84130",
+    "served_model": "google/gemma-3-4b-it",
+    "served_provider": "Parasail",
+    "input_tokens": 954,
+    "output_tokens": 2500,
+    "reported_cost_usd": 0.00016316,
+    "elapsed_ms": 18712.189791,
+    "exchange_error": null
+  },
+  "recall": {
+    "status": "degraded",
+    "classification_status": "failed",
+    "selected_id": null,
+    "error_code": "slot_evidence_invalid_response",
+    "input_tokens": 954,
+    "output_tokens": 2500,
+    "reported_cost_usd": 0.00016316,
+    "timings": {
+      "search_ms": 0.841125,
+      "classifier_ms": 20257.8,
+      "composition_ms": 6.5590839999999995,
+      "total_ms": 20267.050874999997
+    }
+  },
+  "decision": "halt_after_first_failed_structural_response; no retries"
+}

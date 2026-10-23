@@ -1,0 +1,306 @@
+[
+  {
+    "id": "v14_marine_01",
+    "scope_kind": "conversation",
+    "scope_id": "harbor-log",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Buoy M-84 logged a peak tide of 2.16 m at Breakwater Point at 05:48 on 2026-09-29.",
+    "summary": "Buoy M-84 logged a peak tide of 2.16 m at Breakwater Point at 05:48 on 2026-09-29.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-confirm-v14/harbor-log/v14_marine_01",
+      "locator": "v14_marine_01"
+    }
+  },
+  {
+    "id": "v14_marine_02",
+    "scope_kind": "conversation",
+    "scope_id": "harbor-log",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Correction: Rhea P. did not deploy buoy M-85; she inspected its anchor only.",
+    "summary": "Correction: Rhea P. did not deploy buoy M-85; she inspected its anchor only.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-confirm-v14/harbor-log/v14_marine_02",
+      "locator": "v14_marine_02"
+    }
+  },
+  {
+    "id": "v14_marine_03",
+    "scope_kind": "conversation",
+    "scope_id": "harbor-log",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The tide desk’s working interval for buoy M-86 is 0.9–1.1 m, pending sensor synchronization.",
+    "summary": "The tide desk’s working interval for buoy M-86 is 0.9–1.1 m, pending sensor synchronization.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-confirm-v14/harbor-log/v14_marine_03",
+      "locator": "v14_marine_03"
+    }
+  },
+  {
+    "id": "v14_marine_04",
+    "scope_kind": "conversation",
+    "scope_id": "harbor-log",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The M-86 enclosure uses a solar battery rated for 96 hours.",
+    "summary": "The M-86 enclosure uses a solar battery rated for 96 hours.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-confirm-v14/harbor-log/v14_marine_04",
+      "locator": "v14_marine_04"
+    }
+  },
+  {
+    "id": "v14_shipping_01",
+    "scope_kind": "conversation",
+    "scope_id": "freight-chat",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Manifest N-515 records that crate Y-31 left dock 3 at 17:40 on 2026-09-27.",
+    "summary": "Manifest N-515 records that crate Y-31 left dock 3 at 17:40 on 2026-09-27.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-confirm-v14/freight-chat/v14_shipping_01",
+      "locator": "v14_shipping_01"
+    }
+  },
+  {
+    "id": "v14_shipping_02",
+    "scope_kind": "conversation",
+    "scope_id": "freight-chat",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Dispatch correction: crate Y-32 was not cleared by customs; it remains held for inspection.",
+    "summary": "Dispatch correction: crate Y-32 was not cleared by customs; it remains held for inspection.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-confirm-v14/freight-chat/v14_shipping_02",
+      "locator": "v14_shipping_02"
+    }
+  },
+  {
+    "id": "v14_shipping_03",
+    "scope_kind": "conversation",
+    "scope_id": "freight-chat",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The carrier’s current plan puts crate Y-33 departure on 2026-11-02, but the final manifest is not locked.",
+    "summary": "The carrier’s current plan puts crate Y-33 departure on 2026-11-02, but the final manifest is not locked.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-confirm-v14/freight-chat/v14_shipping_03",
+      "locator": "v14_shipping_03"
+    }
+  },
+  {
+    "id": "v14_shipping_04",
+    "scope_kind": "conversation",
+    "scope_id": "freight-chat",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Crate Y-33 contains 18 foam panels.",
+    "summary": "Crate Y-33 contains 18 foam panels.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-confirm-v14/freight-chat/v14_shipping_04",
+      "locator": "v14_shipping_04"
+    }
+  },
+  {
+    "id": "v14_appointments_01",
+    "scope_kind": "conversation",
+    "scope_id": "clinic-notes",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Dr. Moreau’s appointment at Clinic North, slot B-71, was confirmed for 10:15 on 2026-10-07.",
+    "summary": "Dr. Moreau’s appointment at Clinic North, slot B-71, was confirmed for 10:15 on 2026-10-07.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-confirm-v14/clinic-notes/v14_appointments_01",
+      "locator": "v14_appointments_01"
+    }
+  },
+  {
+    "id": "v14_appointments_02",
+    "scope_kind": "conversation",
+    "scope_id": "clinic-notes",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Correction: slot B-72 was not moved to Tuesday; the clinic kept it on Wednesday.",
+    "summary": "Correction: slot B-72 was not moved to Tuesday; the clinic kept it on Wednesday.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-confirm-v14/clinic-notes/v14_appointments_02",
+      "locator": "v14_appointments_02"
+    }
+  },
+  {
+    "id": "v14_appointments_03",
+    "scope_kind": "conversation",
+    "scope_id": "clinic-notes",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "A tentative schedule holds slot B-73 for Monday afternoon, awaiting the patient’s confirmation.",
+    "summary": "A tentative schedule holds slot B-73 for Monday afternoon, awaiting the patient’s confirmation.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-confirm-v14/clinic-notes/v14_appointments_03",
+      "locator": "v14_appointments_03"
+    }
+  },
+  {
+    "id": "v14_appointments_04",
+    "scope_kind": "conversation",
+    "scope_id": "clinic-notes",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The B-73 visit is assigned to consultation room 4.",
+    "summary": "The B-73 visit is assigned to consultation room 4.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-confirm-v14/clinic-notes/v14_appointments_04",
+      "locator": "v14_appointments_04"
+    }
+  },
+  {
+    "id": "v14_software_01",
+    "scope_kind": "conversation",
+    "scope_id": "build-room",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Build S-441 passed the integration suite with 96 tests on 2026-10-09.",
+    "summary": "Build S-441 passed the integration suite with 96 tests on 2026-10-09.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-confirm-v14/build-room/v14_software_01",
+      "locator": "v14_software_01"
+    }
+  },
+  {
+    "id": "v14_software_02",
+    "scope_kind": "conversation",
+    "scope_id": "build-room",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Release note: patch S-442 was not merged; review requested changes first.",
+    "summary": "Release note: patch S-442 was not merged; review requested changes first.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-confirm-v14/build-room/v14_software_02",
+      "locator": "v14_software_02"
+    }
+  },
+  {
+    "id": "v14_software_03",
+    "scope_kind": "conversation",
+    "scope_id": "build-room",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "An early benchmark for S-443 suggests about 620 requests/min; the final load run has not completed.",
+    "summary": "An early benchmark for S-443 suggests about 620 requests/min; the final load run has not completed.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-confirm-v14/build-room/v14_software_03",
+      "locator": "v14_software_03"
+    }
+  },
+  {
+    "id": "v14_software_04",
+    "scope_kind": "conversation",
+    "scope_id": "build-room",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Patch S-443 changes the retry backoff from 250 ms to 400 ms.",
+    "summary": "Patch S-443 changes the retry backoff from 250 ms to 400 ms.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-confirm-v14/build-room/v14_software_04",
+      "locator": "v14_software_04"
+    }
+  }
+]

@@ -1,0 +1,15 @@
+# Protocolo previo: consenso paralelo con cuatro candidatos
+
+Fecha: 2026-10-19. Cambio único frente a `roles_consensus_v1`: ambas elecciones clasifican los primeros4 de hasta20 candidatos recuperados, en lugar de16. Instrucciones, modelo Jev explícito, dos peticiones paralelas y aceptación por acuerdo exacto se conservan. `roles_consensus_compact_v1` es optativa; `baseline` y búsqueda20 no cambian.
+
+## Motivo y puertas
+
+El diagnóstico sitúa los picos dentro del intervalo HTTP, no fuera de las peticiones. Se intenta reducir volumen y distractores; no se promete que tamaño explique las colas de red/proveedor. Un cribado local de límites4,6,8,10,12,14,16 en los diarios conocidos conserva al menos un ID útil y la mejor relación de evidencia por pregunta en48/48 útiles v2 y49/49 v4 incluso con4. No implica conservar todas las alternativas ni garantizar cobertura futura; el límite se eligió usando desarrollo observado y no se llama validación nueva.
+
+Primero comparar v4 conocida completa y después v2 conocida solo si pasa. Cada cohorte:128 operaciones emparejadas,64 base Decisions y64 candidata Jev, máximo192peticiones. Orden alternado por posición sin gold, candidatos recuperados idénticos20; declarar que la candidata solo clasifica4. Duración estimada1–2min/cohorte. Conservar fuentes, binarios por huella, protocolo, banco y etiquetas sin editar. Sin reintentos inciertos; parar ante puerta fallida. No usar las preguntas de v5 para ajustar el límite o instrucciones.
+
+Puertas intactas: cero ID ajeno, ninguna pérdida por caso de utilidad/completitud frente a base, ninguna degradación nueva y al menos una ganancia. Recibos completos y coste/p50/p95≤1,5×base. Acuerdo no demuestra verdad; los votos pueden coincidir en error. Informar votos individuales y desacuerdos. Un fallo técnico sigue degradando y conservando consumo conocido; tiempos opcionales no intervienen en aceptación. Se prueba deserialización, propagación, rechazo de IDs fuera del cuarto puesto y aceptación del cuarto, sin cambiar límites anteriores.
+
+Solo si pasan ambos bancos conocidos, ejecutar v5 nueva ya revisada a ciegas y conciliada antes de llamadas, con idéntica política y puertas:otras128operaciones y máximo192peticiones. Antes revisar cobertura del límite4; si pierde utilidad o mejor nivel de evidencia, conservar el fallo y no abrir llamadas. No cambiar preguntas, etiquetas o límite para rescatarla. Revisión de agentes separados de misma familia, no humana o independencia de familia. La calidad mide IDs útiles y evidencia literal, no respuestas finales de Codex.
+
+Si falla cualquier puerta, no promover ni continuar a nueva cohorte, conservar resultados y diagnosticar la causa. Si pasa, todavía requiere el reporte de todas las cohortes y decisión explícita, sin prometer rendimiento poblacional. El coste se registra desde recibos; no incluye programación/revisores de Codex. No hay servidores, nuevas dependencias o cambios SQLite. La funcionalidad por defecto no cambia dentro de esta comparación.

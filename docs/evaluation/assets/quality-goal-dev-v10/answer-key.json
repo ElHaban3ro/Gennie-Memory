@@ -1,0 +1,106 @@
+{
+  "v10_lab_q01": {
+    "segment": "supports_answer",
+    "expected_ids": [
+      "v10_lab_01"
+    ],
+    "expected_fact": "12.4 PSU; direct measured value."
+  },
+  "v10_lab_q02": {
+    "segment": "refutes_premise",
+    "expected_ids": [
+      "v10_lab_02"
+    ],
+    "expected_fact": "No; the record says label check only."
+  },
+  "v10_lab_q03": {
+    "segment": "pending_or_partial",
+    "expected_ids": [
+      "v10_lab_03"
+    ],
+    "expected_fact": "Only an 8.1 PSU preliminary estimate; no measurement."
+  },
+  "v10_lab_q04": {
+    "segment": "unrelated",
+    "expected_ids": [],
+    "expected_fact": "No salinity result is recorded; storage temperature is unrelated."
+  },
+  "v10_finance_q01": {
+    "segment": "supports_answer",
+    "expected_ids": [
+      "v10_finance_01"
+    ],
+    "expected_fact": "USD 418.50; listed invoice total."
+  },
+  "v10_finance_q02": {
+    "segment": "refutes_premise",
+    "expected_ids": [
+      "v10_finance_02"
+    ],
+    "expected_fact": "No; Q-74 awaits approval."
+  },
+  "v10_finance_q03": {
+    "segment": "pending_or_partial",
+    "expected_ids": [
+      "v10_finance_03"
+    ],
+    "expected_fact": "Approximately USD 900 is an estimate; no invoice has arrived."
+  },
+  "v10_finance_q04": {
+    "segment": "unrelated",
+    "expected_ids": [],
+    "expected_fact": "No payment status is given; shipping method does not answer it."
+  },
+  "v10_events_q01": {
+    "segment": "supports_answer",
+    "expected_ids": [
+      "v10_events_01"
+    ],
+    "expected_fact": "10:20; recorded start time."
+  },
+  "v10_events_q02": {
+    "segment": "refutes_premise",
+    "expected_ids": [
+      "v10_events_02"
+    ],
+    "expected_fact": "No; Room D was reserved."
+  },
+  "v10_events_q03": {
+    "segment": "pending_or_partial",
+    "expected_ids": [
+      "v10_events_03"
+    ],
+    "expected_fact": "35 projected, but the final checked-in count is not recorded."
+  },
+  "v10_events_q04": {
+    "segment": "unrelated",
+    "expected_ids": [],
+    "expected_fact": "No start time is recorded; equipment test is unrelated."
+  },
+  "v10_repairs_q01": {
+    "segment": "supports_answer",
+    "expected_ids": [
+      "v10_repairs_01"
+    ],
+    "expected_fact": "Fuse F-8."
+  },
+  "v10_repairs_q02": {
+    "segment": "refutes_premise",
+    "expected_ids": [
+      "v10_repairs_02"
+    ],
+    "expected_fact": "No; she cleaned the filter."
+  },
+  "v10_repairs_q03": {
+    "segment": "pending_or_partial",
+    "expected_ids": [
+      "v10_repairs_03"
+    ],
+    "expected_fact": "Only a provisional worn-belt diagnosis; no repair confirmed."
+  },
+  "v10_repairs_q04": {
+    "segment": "unrelated",
+    "expected_ids": [],
+    "expected_fact": "Repair status is not stated; shelf location is unrelated."
+  }
+}

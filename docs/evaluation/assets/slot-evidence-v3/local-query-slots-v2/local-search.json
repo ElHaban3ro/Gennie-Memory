@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "method": "fts5_keywords",
+  "candidates": [
+    {
+      "memory_id": "slot_v3_local_query_slots_20261023_002",
+      "revision": 1,
+      "summary": "Marine archaeologist Luisa Carden M-88 currently works from Tidelight Archive in the city of Mariner's Reach. Botanist Fenn Arlo F-21 currently works from Pinefield Station in the city of Northvale.",
+      "conditions": null,
+      "source": null,
+      "state": "active",
+      "bm25": -0.000013042720139494333
+    }
+  ],
+  "semantic_coverage": "disabled"
+}

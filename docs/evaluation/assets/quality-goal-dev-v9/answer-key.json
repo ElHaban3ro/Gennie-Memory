@@ -1,0 +1,122 @@
+[
+  {
+    "id": "v9_field_q01",
+    "relation": "supports_answer",
+    "expected_ids": [
+      "v9_field_01"
+    ],
+    "rationale": "2,140 m; the query does not repeat the stable ID."
+  },
+  {
+    "id": "v9_field_q02",
+    "relation": "refutes_premise",
+    "expected_ids": [
+      "v9_field_02"
+    ],
+    "rationale": "No; the correction says he only inspected the casing."
+  },
+  {
+    "id": "v9_field_q03",
+    "relation": "pending_or_partial",
+    "expected_ids": [
+      "v9_field_03"
+    ],
+    "rationale": "Only a preliminary 30 cm forecast; no gauge reading yet."
+  },
+  {
+    "id": "v9_field_q04",
+    "relation": "unrelated",
+    "expected_ids": [],
+    "rationale": "The memory is about lunch, and the only altitude record is for a different station."
+  },
+  {
+    "id": "v9_proc_q01",
+    "relation": "supports_answer",
+    "expected_ids": [
+      "v9_proc_01"
+    ],
+    "rationale": "The query identifies PO-48R; v9_proc_01 directly names Cedarline Works. PO-NS-12 is a separate purchase and is not evidence for this slot."
+  },
+  {
+    "id": "v9_proc_q02",
+    "relation": "refutes_premise",
+    "expected_ids": [
+      "v9_proc_02"
+    ],
+    "rationale": "The query identifies PO-NS-12; v9_proc_02 directly says that contract was not signed."
+  },
+  {
+    "id": "v9_proc_q03",
+    "relation": "pending_or_partial",
+    "expected_ids": [
+      "v9_proc_03"
+    ],
+    "rationale": "No confirmed date; 18 November is only an estimate."
+  },
+  {
+    "id": "v9_proc_q04",
+    "relation": "unrelated",
+    "expected_ids": [],
+    "rationale": "The memory does not name an invoice currency."
+  },
+  {
+    "id": "v9_transit_q01",
+    "relation": "supports_answer",
+    "expected_ids": [
+      "v9_transit_01"
+    ],
+    "rationale": "Both requested slots are present: route 6B and Alder Street."
+  },
+  {
+    "id": "v9_transit_q02",
+    "relation": "refutes_premise",
+    "expected_ids": [
+      "v9_transit_02"
+    ],
+    "rationale": "No; the record says she was assigned to a shared shuttle."
+  },
+  {
+    "id": "v9_transit_q03",
+    "relation": "pending_or_partial",
+    "expected_ids": [
+      "v9_transit_03"
+    ],
+    "rationale": "08:40 is predicted, not an actual arrival record."
+  },
+  {
+    "id": "v9_transit_q04",
+    "relation": "unrelated",
+    "expected_ids": [],
+    "rationale": "No candidate says which playlist Nia chose; a seat preference does not answer music choice."
+  },
+  {
+    "id": "v9_incident_q01",
+    "relation": "supports_answer",
+    "expected_ids": [
+      "v9_incident_01"
+    ],
+    "rationale": "Mara Quill restored it at 14:10; both requested slots are present."
+  },
+  {
+    "id": "v9_incident_q02",
+    "relation": "refutes_premise",
+    "expected_ids": [
+      "v9_incident_02"
+    ],
+    "rationale": "No; Omar Vale did."
+  },
+  {
+    "id": "v9_incident_q03",
+    "relation": "pending_or_partial",
+    "expected_ids": [
+      "v9_incident_03"
+    ],
+    "rationale": "A loose terminal is only a preliminary possibility; it is unconfirmed."
+  },
+  {
+    "id": "v9_incident_q04",
+    "relation": "unrelated",
+    "expected_ids": [],
+    "rationale": "No warning-light color is recorded in the candidate summaries."
+  }
+]

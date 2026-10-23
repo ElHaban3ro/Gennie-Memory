@@ -1,0 +1,53 @@
+{
+  "status": "completed_after_single_failed_call",
+  "preflight_inputs_review_binary_database_unchanged": true,
+  "source_changes_after_call": [
+    "bootstrap/src/openrouter/slot_evidence.rs"
+  ],
+  "source_change_note": "Only bootstrap/src/openrouter/slot_evidence.rs changed after the HTTP call to split the generic source-citation diagnostic; the executed binary and captured request remain tied to preflight hashes.",
+  "postflight_sha256": {
+    "input/corpus.json": "5870392f8728d9b44bb96ca8560c8c60e4dcce9a5d2a7bfa4244a25bb38dd475",
+    "input/search.json": "804ea5266d93ec8bbfdc12f89269c57bf9cae4d3e7b158d2b4f64a4ec2edafba",
+    "input/recall.json": "cbf45db46a63462a2f45f05027a9a24f4c260fdcd4902b656ca38c20384938a2",
+    "local-search.json": "100c89a9c8252538a998e476388b21eb27e2534b31d3126ad66db1134df1e023",
+    "blind-review.md": "595a82e662ebc5569c3fbe206b32a5c47d19baa709480044ad68ade4c6622532",
+    "database": "65bb03415c15bd92a8625d8a371eed0c1043be19707dc3f8bb1933377e75671d",
+    "binary": "b4c2f3c7c9ba9d25be8ffb3f8d81c768aafa7a5b99bff197edcce5a01687a54f",
+    "apps/retrieval/src/model.rs": "e3ca5f8672593f10559f8a0a3a92844ce15bbbe6276d0b20eb518c2d42aad215",
+    "apps/retrieval/src/service.rs": "3f71844bbba13f3c3c91527d6a48a6d4d24064f0907117ec576143dc9833d455",
+    "apps/retrieval/src/slot_evidence.rs": "bd8eb99f5e7ff6ad066f97d3b7d4b465ce382320d9fe495d65c9e3804152c428",
+    "bootstrap/src/openrouter.rs": "d8c7c0bd1e1132f24876079a74fe9292931ddb619b13179e6dd4a44c5ea44c59",
+    "bootstrap/src/openrouter/slot_evidence.rs": "101209f11083e6b7afa94ef3c0448464b404a3ceecf2a9af832ea55874c2fba1",
+    "bootstrap/src/main.rs": "671df0b9df5bc7eb42a468e96d11f477fd28973c567854178b5eadfb9f9a8fad",
+    "kernel/src/config.rs": "24919f7f27cbd84d266260c447229dbbc2c58b05d70ae197754c276dcb08753d",
+    "Cargo.lock": "67d8750570958feae5ccaabbe1e38792adea208f7ab35d91764360e58e312293",
+    "recall-output-1.json": "a34436a76a30e213c6db8034c179d5cb1b7761cdce2644466f42f4097b1a66f7",
+    "evaluation-capture-1.jsonl": "76d5c4f67e4f5bfe460608979cd18e40b826294f1a30cee0971947c182fbd246",
+    "stderr-1.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "remote_receipt": {
+    "http_status": 200,
+    "response_body_complete": true,
+    "finish_reason": "stop",
+    "served_provider": "DeepInfra",
+    "served_model": "google/gemma-3-4b-it",
+    "input_tokens": 1067,
+    "output_tokens": 207,
+    "reported_cost_usd": 7.405e-05,
+    "classifier_latency_ms": 2782.6110000000003,
+    "total_latency_ms": 2786.036792,
+    "request_payload_sha256": "798fef0ee57d4c8c0bf44036db39b1debc59f2316c74960a709b598636b2f07c",
+    "prompt_sha256": "d056daf32e23316a8076dd312cf4695e29f1aff33d721bf2c193093f16dcc889",
+    "schema_sha256": "7cbeb0a626831e7ca082130494f1be430d67acf9642cc5b0c0b9ff0988c3c46f",
+    "response_sha256": "0cea7be603cdf5ab9f04a42d0eb71e2bb41d10943d1358929c054cdf566c864f",
+    "response_content_bytes": 612,
+    "error_code": "slot_evidence_proposition_citation_invalid",
+    "selected_id": null
+  },
+  "validation_stage": "query-anchor schema and identity checks passed; failure occurred later during proposition source-quote validation. Historical generic public error is retained in the receipt; current code now reports slot_evidence_proposition_source_quote_invalid for this validation reason.",
+  "retry_count": 0,
+  "raw_response_saved": false,
+  "blind_review_summary": "Two independent reviewers agreed on Valencia for Marta Solis (M-58); Girona/maps were attributed to Teo Rivas (T-26).",
+  "selection_passed": false,
+  "cumulative_known_cost_usd": 0.00104173
+}

@@ -1,0 +1,13 @@
+# Lecturas explícitas y recepción sin origen declarado
+
+Se implementó un adaptador optativo de evaluación para conservar varias interpretaciones plausibles sin convertirlas en una disyunción afirmada por el texto. Cada lectura mantiene su documento V3 y sus fundamentos. Una respuesta solo se publica como común si todos los cruces completos de lecturas la respaldan; las respuestas dependientes de una interpretación quedan condicionales. El inventario abierto o incompleto conserva la incertidumbre y no se promueve.
+
+El vocabulario añade `receives_item(recipient,item)` para representar recepción sin inventar origen, posesión o una instancia fechada. El localizador de citas exige una ocurrencia única o un contexto local único: una cita repetida sin contexto se rechaza; el autor sigue siendo responsable de atribuirla al referente correcto.
+
+La CLI ejecutada conserva una restricción genérica común en dos lecturas y se abstiene ante una pregunta de capacidad específica respaldada solo por una. Ambas entradas y todas sus hojas validan completas. El localizador ejecutado sitúa la clase de la segunda impresora en bytes 72–81 y rechaza la selección automática entre ocurrencias repetidas. Son controles construidos, no mejora de extracción automática.
+
+Pasan 682 pruebas del workspace, con 24 omitidas; 34 corresponden al adaptador documental. Los 226 informes históricos se reproducen idénticos y `cargo fmt --all --check` pasa. Se conservaron los intentos fallidos: perfiles omitidos en fixtures, una unidad con forma incorrecta y un DAG demasiado pequeño para agotar el presupuesto. Se corrigió la preparación sin relajar expectativas. La crítica de expansión detectó un riesgo real de DAG compartido: ahora hay presupuesto de 4096 visitas y profundidad 64; el contador adicional de bytes es estimado y no acredita un techo exacto de memoria.
+
+Precisión respecto al informe anterior: las dos objeciones a Delta eran distintas. A cuestionó `part_of` para el genitivo de las imágenes; B cuestionó el referente elidido de la segunda pregunta sobre páginas. No fueron dos votos sobre el mismo problema. Los dictámenes y el snapshot 098 permanecen intactos.
+
+Artefactos: `outputs/iromem/evaluation/documentary-v3-reading-integration-2026-10-21/`, contratos en `documentary-v3-readings-campaign-2026-10-21/`, controles de recepción en `documentary-v3-receipt-contract-2026-10-21/`, críticas en `documentary-v3-local-fixes-review-2026-10-21/`. La nueva extracción y revisión completa se registran aparte. No hubo llamadas externas nuevas: USD 0 en ese ledger; coste Codex desconocido. No cambia el producto ni acredita todavía utilidad automática, cohorte nueva o cumplimiento del objetivo.

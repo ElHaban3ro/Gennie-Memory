@@ -1,0 +1,110 @@
+[
+  {
+    "id": "memory_prompt_revision_01",
+    "scope_kind": "project",
+    "scope_id": "scope_prompt_revision_01",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Analyst Rafi Mena R-32 currently works from Bergen. Archivist Tova Kelm T-63 lives in Ålesund and catalogued the harbor charts.",
+    "summary": "Analyst Rafi Mena R-32 currently works from Bergen. Archivist Tova Kelm T-63 lives in Ålesund and catalogued the harbor charts.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "memory_prompt_revision_02",
+    "scope_kind": "project",
+    "scope_id": "scope_prompt_revision_02",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Consultant Enzo P-14 lives in Merano. Employee Lina Mora L-66 lives in Trento.",
+    "summary": "Consultant Enzo P-14 lives in Merano. Employee Lina Mora L-66 lives in Trento.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "memory_prompt_revision_03",
+    "scope_kind": "project",
+    "scope_id": "scope_prompt_revision_03",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Contractor Omar Ruiz O-21 told clerk Nia K-08 a joke and currently lives in Córdoba. Clerk Nia K-08 lives in Rosario.",
+    "summary": "Contractor Omar Ruiz O-21 told clerk Nia K-08 a joke and currently lives in Córdoba. Clerk Nia K-08 lives in Rosario.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "memory_prompt_revision_04",
+    "scope_kind": "project",
+    "scope_id": "scope_prompt_revision_04",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Project manager Asha Ruiz A-12 is a colleague of analyst Bruno Vale B-8. Analyst Bruno Vale B-8 lives in Lima.",
+    "summary": "Project manager Asha Ruiz A-12 is a colleague of analyst Bruno Vale B-8. Analyst Bruno Vale B-8 lives in Lima.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "memory_prompt_revision_05",
+    "scope_kind": "project",
+    "scope_id": "scope_prompt_revision_05",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Technician Vera I-52 said employee Ivo M-31 works from Dakar.",
+    "summary": "Technician Vera I-52 said employee Ivo M-31 works from Dakar.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "memory_prompt_revision_06",
+    "scope_kind": "project",
+    "scope_id": "scope_prompt_revision_06",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Engineer Bina Coro B-55 works from Siena, while curator Olin D-9 lives in Pisa.",
+    "summary": "Engineer Bina Coro B-55 works from Siena, while curator Olin D-9 lives in Pisa.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "memory_prompt_revision_07",
+    "scope_kind": "project",
+    "scope_id": "scope_prompt_revision_07",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Consultant Rena Voss R-77 lives in Oslo; archivist Daro Finn D-13 lives in Bergen.",
+    "summary": "Consultant Rena Voss R-77 lives in Oslo; archivist Daro Finn D-13 lives in Bergen.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "memory_prompt_revision_08",
+    "scope_kind": "project",
+    "scope_id": "scope_prompt_revision_08",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El empleado Iván Sol P-49 vive en Vigo. La archivista Eva Ríos R-63 vive en Lugo y catalogó los planos.",
+    "summary": "El empleado Iván Sol P-49 vive en Vigo. La archivista Eva Ríos R-63 vive en Lugo y catalogó los planos.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "memory_prompt_revision_09",
+    "scope_kind": "project",
+    "scope_id": "scope_prompt_revision_09",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Physician Sol Ren S-44 currently works from A Coruña. Surveyor Ani Q-12 lives in Cádiz.",
+    "summary": "Physician Sol Ren S-44 currently works from A Coruña. Surveyor Ani Q-12 lives in Cádiz.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "fixture": "local-query-slots-v1",
+  "frozen_at_utc": "2026-10-23T20:24:27.000Z",
+  "reviewers": 2,
+  "blind_agreement": "2/2: Mariner's Reach; Northvale belongs to Fenn Arlo",
+  "files": {
+    "docs/evaluation/assets/slot-evidence-v3/local-query-slots-v1/input/recall.json": "10605330e077f8bc52d8eae1b3a4960d14251e221468aeab0362a45a3d6ad83e",
+    "docs/evaluation/assets/slot-evidence-v3/local-query-slots-v1/input/corpus.json": "fd40147ebb54009577678000c4602fb0ca02ad2593285d33d97cb4a723fc79ee",
+    "docs/evaluation/assets/slot-evidence-v3/local-query-slots-v1/input/search.json": "15e305ee9ea01746d77e97d5236b2443b10680eb809743239e315a5e6ff350ac",
+    "docs/evaluation/assets/slot-evidence-v3/local-query-slots-v1/blind-review.md": "24a6eb9edd40cb9488c2bd4a924493f3b863d585027fa5fa6fe05120cc0fdff6",
+    "docs/evaluation/assets/slot-evidence-v3/local-query-slots-v1/local-search.json": "52b232edc2e7fe5d4b2425775f3a50a3bba6f0fcdbe9064dffe31c50cc549d33",
+    "target/debug/iromem": "42da335e1d334721b9565c905d9ad1c8f4f0d8570598125c2b9a665d04975cb3",
+    ".local/slot-evidence-v3-local-query-slots-v1.db": "ef3fd3f6f918498d96d90e58ed98a5db134899741737ecc51cac853fcfdaba87"
+  }
+}

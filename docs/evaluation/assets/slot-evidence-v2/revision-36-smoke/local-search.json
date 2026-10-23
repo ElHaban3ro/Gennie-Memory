@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "method": "fts5_keywords",
+  "candidates": [
+    {
+      "memory_id": "r36_leo_office_m1",
+      "revision": 1,
+      "summary": "Archivist Leo Kim L-33 is assigned to the Maple Court Records Room.",
+      "conditions": null,
+      "source": null,
+      "state": "active",
+      "bm25": -8.918918918918919e-6
+    }
+  ],
+  "semantic_coverage": "disabled"
+}

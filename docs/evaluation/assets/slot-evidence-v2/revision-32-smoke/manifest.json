@@ -1,0 +1,48 @@
+{
+  "version": "slot-evidence-v2-revision-32-smoke-v1",
+  "synthetic": true,
+  "not_retry_of_revision_31": true,
+  "configuration": "Gemma baseline and slot_evidence_v2 allow provider fallbacks while requiring parameter support; Decisions default unchanged.",
+  "three_consecutive_calls_required": true,
+  "same_request_and_corpus_for_all_calls": true,
+  "max_http_calls": 3,
+  "classifier_calls_made": 1,
+  "estimated_max_cost_usd": 0.004,
+  "provider_fallback_attempts_worst_case_per_call": 2,
+  "input_sha256": {
+    "case.jsonl": "1c45f856a236ce72402cd22f0d8dbbe28ac3b3f54edd054e85acea8a22c81f32",
+    "corpus.json": "50a846786660b7ff9689cdc08f0898b8165c1a1efb515189dd92e34f90b192ad",
+    "request.json": "5ad29f863479894b62d2c3e0cee323064a779805d6f1eb2e42cb47210575ffc3",
+    "search-cases.jsonl": "ae3cdec464b663f54cf9dbc0d3d246764994248502207a9829f28babd533ed50",
+    "search-request.json": "17642e346883000806b9289313173d2e5c953203f2a6dcf2fda543ed21c6f9ea"
+  },
+  "source_sha256": {
+    "openrouter.rs": "10ee72752541f6dc021798b76aa1bb0b0e87b6270283100bf8158a995170e654",
+    "slot_evidence.rs": "3c13e0068d5afd7c742a6c19d7c6eb14c7ee28a1067417f023608575b0a03aa3"
+  },
+  "local_retrieval_precondition": "1/1 expected candidate recovered at top-1",
+  "local_search_sha256": "85bd0479aac3ba8d212f5c5e69942d49e3d30ed2c4feed6a5fce38f7429de46f",
+  "binary_sha256": "e9dd7346ca22913934b47a793d8a60a2d0fc525ff60374b93ca3077946c52123",
+  "smoke_outcome": {
+    "calls": [
+      {
+        "smoke": 1,
+        "cli_exit_code": 0,
+        "classification_status": "failed",
+        "selected_id": null,
+        "error_code": "slot_evidence_v2_subject_quote_not_in_query",
+        "served_model": "google/gemma-3-4b-it",
+        "served_provider": "DeepInfra",
+        "input_tokens": 1629,
+        "output_tokens": 262,
+        "reported_cost_usd": 0.00010765,
+        "capture_present": true,
+        "valid_gate": false
+      }
+    ],
+    "stopped_after_first_invalid_or_incomplete_output": true
+  },
+  "source_sha256_describe_frozen_r32_run": true,
+  "source_sha256_match_current_after_r32": false,
+  "r32_result_preserved_before_prompt_revision": true
+}

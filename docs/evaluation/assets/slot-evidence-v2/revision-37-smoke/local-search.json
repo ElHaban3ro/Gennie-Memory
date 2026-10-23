@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "method": "fts5_keywords",
+  "candidates": [
+    {
+      "memory_id": "r37_nina_room_m1",
+      "revision": 1,
+      "summary": "Cataloguer Nina Sol P-28 is assigned to the East Wing Reference Room.",
+      "conditions": null,
+      "source": null,
+      "state": "active",
+      "bm25": -0.000010405405405405406
+    }
+  ],
+  "semantic_coverage": "disabled"
+}

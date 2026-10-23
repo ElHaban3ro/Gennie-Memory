@@ -1,0 +1,48 @@
+{
+  "status": "preflight_frozen_before_remote_smoke",
+  "experiment": "slot_evidence_v3_smoke_14_revision_14",
+  "scope": "synthetic_only",
+  "blind_review_excluded_from_provider_request": true,
+  "blind_review": "two independent Codex reviews; each saw only question and synthetic memory; judgments stored separately",
+  "provider": "gemma3_4b",
+  "requested_model": "google/gemma-3-4b-it",
+  "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+  "provider_preferences": {
+    "require_parameters": true,
+    "order": [
+      "deepinfra"
+    ],
+    "allow_fallbacks": false
+  },
+  "candidate_count": 1,
+  "expected_local_search_candidate": {
+    "memory_id": "smoke_v3_marta_001",
+    "revision": 1
+  },
+  "planned_calls": 1,
+  "call_rule": "One request only. Stop on any structural failure, incomplete receipt, or missing positive selection; no retries.",
+  "cost_estimate_usd": 0.0002,
+  "prior_known_cost_usd": 0.00096768,
+  "input_sha256": {
+    "corpus.json": "5870392f8728d9b44bb96ca8560c8c60e4dcce9a5d2a7bfa4244a25bb38dd475",
+    "recall.json": "cbf45db46a63462a2f45f05027a9a24f4c260fdcd4902b656ca38c20384938a2",
+    "search.json": "804ea5266d93ec8bbfdc12f89269c57bf9cae4d3e7b158d2b4f64a4ec2edafba"
+  },
+  "local_search_sha256": "100c89a9c8252538a998e476388b21eb27e2534b31d3126ad66db1134df1e023",
+  "blind_review_sha256": "595a82e662ebc5569c3fbe206b32a5c47d19baa709480044ad68ade4c6622532",
+  "source_files_sha256": {
+    "apps/retrieval/src/model.rs": "e3ca5f8672593f10559f8a0a3a92844ce15bbbe6276d0b20eb518c2d42aad215",
+    "apps/retrieval/src/service.rs": "3f71844bbba13f3c3c91527d6a48a6d4d24064f0907117ec576143dc9833d455",
+    "apps/retrieval/src/slot_evidence.rs": "bd8eb99f5e7ff6ad066f97d3b7d4b465ce382320d9fe495d65c9e3804152c428",
+    "bootstrap/src/openrouter.rs": "d8c7c0bd1e1132f24876079a74fe9292931ddb619b13179e6dd4a44c5ea44c59",
+    "bootstrap/src/openrouter/slot_evidence.rs": "4ceb9f0f4f8581d60f03baebc99b5179f8143f111045cd5108a71079dd785250",
+    "bootstrap/src/main.rs": "671df0b9df5bc7eb42a468e96d11f477fd28973c567854178b5eadfb9f9a8fad",
+    "kernel/src/config.rs": "24919f7f27cbd84d266260c447229dbbc2c58b05d70ae197754c276dcb08753d",
+    "Cargo.lock": "67d8750570958feae5ccaabbe1e38792adea208f7ab35d91764360e58e312293"
+  },
+  "binary_sha256": "b4c2f3c7c9ba9d25be8ffb3f8d81c768aafa7a5b99bff197edcce5a01687a54f",
+  "database_path": ".local/slot-evidence-v3-smoke-14.db",
+  "database_sha256": "65bb03415c15bd92a8625d8a371eed0c1043be19707dc3f8bb1933377e75671d",
+  "prompt_change": "Renames only query_anchors subject quote to subject_name_quote; source-memory subject_quote and strict validation stay distinct.",
+  "preflight_note": "Inputs, blind review, source, binary, isolated DB, and expected local search are frozen. Capture records prompt/schema/payload hashes and receipt after the single request."
+}

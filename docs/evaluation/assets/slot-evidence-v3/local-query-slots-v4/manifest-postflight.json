@@ -1,0 +1,55 @@
+{
+  "fixture": "local-query-slots-v4",
+  "outcome": "degraded_no_selection",
+  "model": "google/gemma-3-4b-it",
+  "provider": "DeepInfra",
+  "http_status": 200,
+  "input_tokens": 1207,
+  "output_tokens": 162,
+  "reported_cost_usd": 7.655e-05,
+  "classifier_ms": 3006.589375,
+  "error_code": "slot_evidence_proposition_non_actionable_target_invalid",
+  "selected_ids": [],
+  "capture": "evaluation-capture-1.jsonl",
+  "response_content": "response-content-1.jsonl",
+  "result": "recall-output-1.json",
+  "paired_baseline": {
+    "outcome": "complete_selected_candidate",
+    "provider": "Parasail",
+    "model": "google/gemma-3-4b-it",
+    "input_tokens": 174,
+    "output_tokens": 6,
+    "reported_cost_usd": 7.26e-06,
+    "classifier_ms": 675.489083,
+    "selected_ids": [
+      "slot_v4_local_query_slots_20261023_004"
+    ],
+    "request": "baseline-recall.json",
+    "capture": "baseline-capture.jsonl",
+    "result": "baseline-output.json"
+  },
+  "limits": [
+    "one synthetic query only",
+    "V3 requested/served model Gemma 3 4B through DeepInfra; current default requested/served model GPT-6 Luna Decisions through OpenAI",
+    "the comparison tests complete configurations and does not isolate model versus policy",
+    "baseline selected the memory record, not a generated city answer",
+    "two blind reviewers agreed on expected entity and city before calls"
+  ],
+  "current_baseline_decisions": {
+    "outcome": "complete_selected_candidate",
+    "provider": "OpenAI",
+    "model": "openai/gpt-6-luna-decisions-20261006",
+    "input_tokens": 245,
+    "output_tokens": 0,
+    "reported_cost_usd": 2.45e-05,
+    "classifier_ms": 1093.818375,
+    "selected_ids": [
+      "slot_v4_local_query_slots_20261023_004"
+    ],
+    "request": "current-baseline-decisions.json",
+    "capture": "current-baseline-capture.jsonl",
+    "result": "current-baseline-output.json"
+  },
+  "turn_remote_cost_usd": 0.00028626,
+  "subject_slot_smokes_plus_current_baseline_total_usd": 0.00042401
+}

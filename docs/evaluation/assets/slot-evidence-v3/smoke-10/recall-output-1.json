@@ -1,0 +1,47 @@
+{
+  "selected_ids": [],
+  "per_memory": null,
+  "consensus": null,
+  "applicability": null,
+  "slot_evidence": null,
+  "status": "degraded",
+  "retrieval": {
+    "status": "complete",
+    "method": "fts5_keywords",
+    "candidates": [
+      {
+        "memory_id": "smoke_v3_liv_001",
+        "revision": 1,
+        "summary": "Cartographer Liv Chen C-44 is currently based in Kyoto. Translator Felix Noor F-18 lives in Osaka and reviewed the atlas.",
+        "conditions": null,
+        "source": null,
+        "state": "active",
+        "bm25": -0.000010405405405405406
+      }
+    ],
+    "semantic_coverage": "disabled"
+  },
+  "classification_status": "failed",
+  "requested_model": "google/gemma-3-4b-it",
+  "served_model": "google/gemma-3-4b-it",
+  "selected_id": null,
+  "seed": {
+    "status": "degraded",
+    "method": "fts5_external_classifier",
+    "classifier": "google/gemma-3-4b-it",
+    "semantic_coverage": "disabled",
+    "memories": [],
+    "seed_text": null
+  },
+  "input_tokens": 1008,
+  "output_tokens": 332,
+  "reported_cost_usd": 0.00005692,
+  "error_code": "slot_evidence_v2_anchor_phrase_not_exact",
+  "provider_http_status": null,
+  "timings": {
+    "search_ms": 0.6221249999999999,
+    "classifier_ms": 8722.709417,
+    "composition_ms": 1.895334,
+    "total_ms": 8725.280042
+  }
+}

@@ -1,0 +1,98 @@
+[
+  {
+    "id": "rmv1_revision_01",
+    "scope_kind": "project",
+    "scope_id": "synthetic_revision_matrix_revision_01",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "For project Atlas (ID AT-17), an earlier draft lists the launch date as 12 May. For project Atlas (ID AT-17), the final version lists the launch date as 19 May.",
+    "summary": "For project Atlas (ID AT-17), an earlier draft lists the launch date as 12 May. For project Atlas (ID AT-17), the final version lists the launch date as 19 May.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "rmv1_revision_02",
+    "scope_kind": "project",
+    "scope_id": "synthetic_revision_matrix_revision_02",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "For project Beacon (ID BE-24), an earlier draft lists the launch date as 12 May. For project Beacon (ID BE-24), the final version lists the launch date as 19 May.",
+    "summary": "For project Beacon (ID BE-24), an earlier draft lists the launch date as 12 May. For project Beacon (ID BE-24), the final version lists the launch date as 19 May.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "rmv1_revision_03",
+    "scope_kind": "project",
+    "scope_id": "synthetic_revision_matrix_revision_03",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "For project Cedar (ID CE-31), an earlier draft lists the launch date as 12 May. For project Cedar (ID CE-31), the final version lists the launch date as 19 May.",
+    "summary": "For project Cedar (ID CE-31), an earlier draft lists the launch date as 12 May. For project Cedar (ID CE-31), the final version lists the launch date as 19 May.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "rmv1_revision_04",
+    "scope_kind": "project",
+    "scope_id": "synthetic_revision_matrix_revision_04",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "For project Delta (ID DE-42), an earlier draft lists the launch date as 12 May. For project Delta (ID DE-42), no final or current launch date is recorded.",
+    "summary": "For project Delta (ID DE-42), an earlier draft lists the launch date as 12 May. For project Delta (ID DE-42), no final or current launch date is recorded.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "rmv1_revision_05",
+    "scope_kind": "project",
+    "scope_id": "synthetic_revision_matrix_revision_05",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "For project Elm (ID EL-56), an earlier draft lists the launch date as 12 May. For project Elm (ID EL-56), the final version also lists the launch date as 12 May.",
+    "summary": "For project Elm (ID EL-56), an earlier draft lists the launch date as 12 May. For project Elm (ID EL-56), the final version also lists the launch date as 12 May.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "rmv1_revision_06",
+    "scope_kind": "project",
+    "scope_id": "synthetic_revision_matrix_revision_06",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "For project Fjord (ID FJ-63), one final version lists the launch date as 12 May and the other lists it as 19 May; neither is identified as current.",
+    "summary": "For project Fjord (ID FJ-63), one final version lists the launch date as 12 May and the other lists it as 19 May; neither is identified as current.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "rmv1_revision_07",
+    "scope_kind": "project",
+    "scope_id": "synthetic_revision_matrix_revision_07",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Para el proyecto Girasol (ID GI-78), un borrador anterior indica que la fecha de lanzamiento es el 12 de mayo. Para el proyecto Girasol (ID GI-78), la versión final indica que la fecha de lanzamiento es el 19 de mayo.",
+    "summary": "Para el proyecto Girasol (ID GI-78), un borrador anterior indica que la fecha de lanzamiento es el 12 de mayo. Para el proyecto Girasol (ID GI-78), la versión final indica que la fecha de lanzamiento es el 19 de mayo.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "rmv1_revision_08",
+    "scope_kind": "project",
+    "scope_id": "synthetic_revision_matrix_revision_08",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "For project Harbor (ID HA-85), an earlier draft lists the launch date as 12 May. For project Harbor (ID HA-85), a correction explicitly says: “12 May was incorrect.” The final version lists the launch date as 19 May.",
+    "summary": "For project Harbor (ID HA-85), an earlier draft lists the launch date as 12 May. For project Harbor (ID HA-85), a correction explicitly says: “12 May was incorrect.” The final version lists the launch date as 19 May.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  }
+]

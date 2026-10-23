@@ -1,0 +1,72 @@
+{
+  "dataset": "conversation-evidence-v7",
+  "created_at": "2026-10-23",
+  "retrieval": "Rust iromem FTS5 natural mode; scope_kind/scope_id from query; entity_id omitted; limit=20; as_of=2026-10-23T00:00:00.000Z",
+  "database": "isolated temporary SQLite database loaded from 128-record synthetic memory corpus",
+  "provider_calls": 0,
+  "provider_cost_usd": 0,
+  "classifier_executed": false,
+  "question_count": 64,
+  "memory_count": 128,
+  "blind_review": {
+    "independent_reviewers": 2,
+    "cases_each": 64,
+    "relation_and_source_id_agreement": 64,
+    "answer_key_relation_and_source_id_match": 64,
+    "review_files": {
+      "blind-reviewer-a": "19000777f6ac90add546dc79c68e48fc32fd8a253440fc061740fa9600efe916",
+      "blind-reviewer-b": "54c0c66aed4fcf6685d2734c2c4fc78b9e5f37b37cb0555dc398d9362591b989"
+    }
+  },
+  "answer_key_relation_counts": {
+    "supports_answer": 16,
+    "refutes_premise": 16,
+    "pending_or_partial": 16,
+    "explicit_unmeasured": 8,
+    "unrelated": 8
+  },
+  "retrieval_metrics": {
+    "evidence_bearing_queries": 56,
+    "evidence_retrieved_at_20": 56,
+    "top1_evidence": 48,
+    "negative_queries": 8,
+    "negative_queries_with_raw_candidates": 8,
+    "candidates_returned_for_negative_queries": 112,
+    "candidate_count_total": 962,
+    "latency_ms_median": 0.40518750000000003,
+    "latency_ms_p95_nearest_rank": 0.598041,
+    "by_relation": {
+      "supports_answer": {
+        "cases": 16,
+        "evidence_retrieved": 16,
+        "top1_evidence": 16
+      },
+      "refutes_premise": {
+        "cases": 16,
+        "evidence_retrieved": 16,
+        "top1_evidence": 16
+      },
+      "pending_or_partial": {
+        "cases": 16,
+        "evidence_retrieved": 16,
+        "top1_evidence": 8
+      },
+      "explicit_unmeasured": {
+        "cases": 8,
+        "evidence_retrieved": 8,
+        "top1_evidence": 8
+      },
+      "unrelated": {
+        "cases": 8,
+        "evidence_retrieved": 0,
+        "top1_evidence": 0
+      }
+    }
+  },
+  "limitations": [
+    "All 64 questions reuse the same eight semantic templates across eight scopes.",
+    "Synthetic labels and synthetic sources only.",
+    "FTS candidate retrieval does not measure classifier selection or final answer quality.",
+    "The unrelated controls share the same entity and conversation scope; 14 raw candidates per negative query are candidate pollution, not measured false selections."
+  ]
+}

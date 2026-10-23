@@ -1,0 +1,278 @@
+[
+  {
+    "id": "v8_festival_q01",
+    "relation": "supports_answer",
+    "evidence": [
+      {
+        "memory_id": "v8_festival_01",
+        "relation": "supports_answer",
+        "source_citation": {
+          "source_id": "v8_festival_01",
+          "quote": "Acta final: Orilla Producciones recibió el contrato del montaje principal por decisión firmada del comité."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v8_festival_01"
+    ],
+    "concise_rationale": "La fuente del ámbito sostiene la relación indicada y cita literalmente el mensaje.",
+    "answer_boundary": "Orilla Producciones",
+    "expected_answer": "Orilla Producciones"
+  },
+  {
+    "id": "v8_festival_q02",
+    "relation": "refutes_premise",
+    "evidence": [
+      {
+        "memory_id": "v8_festival_02",
+        "relation": "refutes_premise",
+        "source_citation": {
+          "source_id": "v8_festival_02",
+          "quote": "Corrección del comité: Brisa Norte no ganó el montaje principal; solo presentó una cotización para la tarima secundaria."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v8_festival_02"
+    ],
+    "concise_rationale": "La fuente del ámbito sostiene la relación indicada y cita literalmente el mensaje.",
+    "answer_boundary": "Brisa Norte no ganó el contrato; solo cotizó la tarima secundaria.",
+    "expected_answer": "Brisa Norte no ganó el contrato; solo cotizó la tarima secundaria."
+  },
+  {
+    "id": "v8_festival_q03",
+    "relation": "pending_or_partial",
+    "evidence": [
+      {
+        "memory_id": "v8_festival_03",
+        "relation": "pending_or_partial",
+        "source_citation": {
+          "source_id": "v8_festival_03",
+          "quote": "La hoja preliminar estimó 18.000 euros para la iluminación; la factura definitiva aún no se ha recibido."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v8_festival_03"
+    ],
+    "concise_rationale": "La fuente del ámbito sostiene la relación indicada y cita literalmente el mensaje.",
+    "answer_boundary": "Solo hay una estimación preliminar de 18.000 euros; la factura final no consta.",
+    "expected_answer": "Solo hay una estimación preliminar de 18.000 euros; la factura final no consta."
+  },
+  {
+    "id": "v8_festival_q04",
+    "relation": "unrelated",
+    "evidence": [],
+    "expected_memory_ids": [],
+    "concise_rationale": "Las fuentes de este ámbito no establecen la respuesta solicitada.",
+    "answer_boundary": "No afirmar un dato que no aparece en las fuentes disponibles.",
+    "expected_answer": null
+  },
+  {
+    "id": "v8_clinica_q01",
+    "relation": "supports_answer",
+    "evidence": [
+      {
+        "memory_id": "v8_clinica_01",
+        "relation": "supports_answer",
+        "source_citation": {
+          "source_id": "v8_clinica_01",
+          "quote": "En la nota de alta firmada, la doctora prescribió a Vera Sol (CL-28) 5 mg de medicamento Neral por la noche durante siete días."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v8_clinica_01"
+    ],
+    "concise_rationale": "La fuente del ámbito sostiene la relación indicada y cita literalmente el mensaje.",
+    "answer_boundary": "5 mg por la noche durante siete días.",
+    "expected_answer": "5 mg por la noche durante siete días."
+  },
+  {
+    "id": "v8_clinica_q02",
+    "relation": "refutes_premise",
+    "evidence": [
+      {
+        "memory_id": "v8_clinica_02",
+        "relation": "refutes_premise",
+        "source_citation": {
+          "source_id": "v8_clinica_02",
+          "quote": "Aclaración de enfermería: Vera Sol (CL-28) no empezó el antibiótico antes de la toma de muestra; la primera dosis quedó pendiente de la prueba."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v8_clinica_02"
+    ],
+    "concise_rationale": "La fuente del ámbito sostiene la relación indicada y cita literalmente el mensaje.",
+    "answer_boundary": "No; la primera dosis quedó pendiente de la prueba.",
+    "expected_answer": "No; la primera dosis quedó pendiente de la prueba."
+  },
+  {
+    "id": "v8_clinica_q03",
+    "relation": "pending_or_partial",
+    "evidence": [
+      {
+        "memory_id": "v8_clinica_03",
+        "relation": "pending_or_partial",
+        "source_citation": {
+          "source_id": "v8_clinica_03",
+          "quote": "El cultivo preliminar mostró una señal compatible con flora tipo K, pero el laboratorio aún no confirmó el microorganismo."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v8_clinica_03"
+    ],
+    "concise_rationale": "La fuente del ámbito sostiene la relación indicada y cita literalmente el mensaje.",
+    "answer_boundary": "Solo hubo una señal preliminar compatible con flora tipo K; no existe confirmación.",
+    "expected_answer": "Solo hubo una señal preliminar compatible con flora tipo K; no existe confirmación."
+  },
+  {
+    "id": "v8_clinica_q04",
+    "relation": "unrelated",
+    "evidence": [],
+    "expected_memory_ids": [],
+    "concise_rationale": "Las fuentes de este ámbito no establecen la respuesta solicitada.",
+    "answer_boundary": "No afirmar un dato que no aparece en las fuentes disponibles.",
+    "expected_answer": null
+  },
+  {
+    "id": "v8_solar_q01",
+    "relation": "supports_answer",
+    "evidence": [
+      {
+        "memory_id": "v8_solar_01",
+        "relation": "supports_answer",
+        "source_citation": {
+          "source_id": "v8_solar_01",
+          "quote": "La orden de compra cerrada asigna la instalación de los paneles del techo B a Solaria Andina; el contrato está firmado."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v8_solar_01"
+    ],
+    "concise_rationale": "La fuente del ámbito sostiene la relación indicada y cita literalmente el mensaje.",
+    "answer_boundary": "Solaria Andina.",
+    "expected_answer": "Solaria Andina."
+  },
+  {
+    "id": "v8_solar_q02",
+    "relation": "refutes_premise",
+    "evidence": [
+      {
+        "memory_id": "v8_solar_02",
+        "relation": "refutes_premise",
+        "source_citation": {
+          "source_id": "v8_solar_02",
+          "quote": "Nota de cierre: el inversor LUX-4 no quedó aprobado para el techo B; solo se autorizó una prueba en el banco de carga."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v8_solar_02"
+    ],
+    "concise_rationale": "La fuente del ámbito sostiene la relación indicada y cita literalmente el mensaje.",
+    "answer_boundary": "No; solo se autorizó probarlo en el banco de carga.",
+    "expected_answer": "No; solo se autorizó probarlo en el banco de carga."
+  },
+  {
+    "id": "v8_solar_q03",
+    "relation": "pending_or_partial",
+    "evidence": [
+      {
+        "memory_id": "v8_solar_03",
+        "relation": "pending_or_partial",
+        "source_citation": {
+          "source_id": "v8_solar_03",
+          "quote": "El cálculo preliminar proyecta 3,2 kW para el techo B, sujeto a la inspección de sombra; no hay una medición real todavía."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v8_solar_03"
+    ],
+    "concise_rationale": "La fuente del ámbito sostiene la relación indicada y cita literalmente el mensaje.",
+    "answer_boundary": "Hay una proyección preliminar de 3,2 kW, no una medición real.",
+    "expected_answer": "Hay una proyección preliminar de 3,2 kW, no una medición real."
+  },
+  {
+    "id": "v8_solar_q04",
+    "relation": "unrelated",
+    "evidence": [],
+    "expected_memory_ids": [],
+    "concise_rationale": "Las fuentes de este ámbito no establecen la respuesta solicitada.",
+    "answer_boundary": "No afirmar un dato que no aparece en las fuentes disponibles.",
+    "expected_answer": null
+  },
+  {
+    "id": "v8_escuela_q01",
+    "relation": "supports_answer",
+    "evidence": [
+      {
+        "memory_id": "v8_escuela_01",
+        "relation": "supports_answer",
+        "source_citation": {
+          "source_id": "v8_escuela_01",
+          "quote": "La resolución firmada seleccionó a Papelera Horizonte para suministrar cuadernos a los cursos de primaria."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v8_escuela_01"
+    ],
+    "concise_rationale": "La fuente del ámbito sostiene la relación indicada y cita literalmente el mensaje.",
+    "answer_boundary": "Papelera Horizonte.",
+    "expected_answer": "Papelera Horizonte."
+  },
+  {
+    "id": "v8_escuela_q02",
+    "relation": "refutes_premise",
+    "evidence": [
+      {
+        "memory_id": "v8_escuela_02",
+        "relation": "refutes_premise",
+        "source_citation": {
+          "source_id": "v8_escuela_02",
+          "quote": "Rectificación: la escuela no aprobó la compra de tabletas a TecnoSur; autorizó únicamente una demostración sin compromiso."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v8_escuela_02"
+    ],
+    "concise_rationale": "La fuente del ámbito sostiene la relación indicada y cita literalmente el mensaje.",
+    "answer_boundary": "No; solo autorizó una demostración sin compromiso.",
+    "expected_answer": "No; solo autorizó una demostración sin compromiso."
+  },
+  {
+    "id": "v8_escuela_q03",
+    "relation": "pending_or_partial",
+    "evidence": [
+      {
+        "memory_id": "v8_escuela_03",
+        "relation": "pending_or_partial",
+        "source_citation": {
+          "source_id": "v8_escuela_03",
+          "quote": "El recuento del viernes fue provisional: asistieron 86 estudiantes, pero secretaría aún no cerró la cifra mensual."
+        }
+      }
+    ],
+    "expected_memory_ids": [
+      "v8_escuela_03"
+    ],
+    "concise_rationale": "La fuente del ámbito sostiene la relación indicada y cita literalmente el mensaje.",
+    "answer_boundary": "El viernes hubo 86 asistentes en un recuento provisional; el total mensual no está cerrado.",
+    "expected_answer": "El viernes hubo 86 asistentes en un recuento provisional; el total mensual no está cerrado."
+  },
+  {
+    "id": "v8_escuela_q04",
+    "relation": "unrelated",
+    "evidence": [],
+    "expected_memory_ids": [],
+    "concise_rationale": "Las fuentes de este ámbito no establecen la respuesta solicitada.",
+    "answer_boundary": "No afirmar un dato que no aparece en las fuentes disponibles.",
+    "expected_answer": null
+  }
+]

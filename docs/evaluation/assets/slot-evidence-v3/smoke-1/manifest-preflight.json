@@ -1,0 +1,44 @@
+{
+  "status": "preflight_frozen_before_remote_smoke",
+  "experiment": "slot_evidence_v3_smoke_1",
+  "scope": "synthetic_only",
+  "blind_review": "independent reviewer selected the sole candidate as a direct answer; review saw only query and summary",
+  "gold_and_blind_review_excluded_from_request": true,
+  "provider": "gemma3_4b",
+  "requested_model": "google/gemma-3-4b-it",
+  "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+  "provider_preferences": {
+    "require_parameters": true,
+    "allow_fallbacks": true
+  },
+  "timeout_ms": 30000,
+  "temperature": 0,
+  "max_output_tokens": 2500,
+  "candidate_count": 1,
+  "expected_local_search_candidate": {
+    "memory_id": "smoke_v3_nora_001",
+    "revision": 1
+  },
+  "request_inputs_sha256": {
+    "docs/evaluation/assets/slot-evidence-v3/smoke-1/input/corpus.json": "f466b3aa14baac1195967bb71c60f266793f9606837be05dbe3742b68c450dc3",
+    "docs/evaluation/assets/slot-evidence-v3/smoke-1/input/recall.json": "e359fa13889f3cbfc47da4059458051e35e680350cc4d8de9284d4ca46c7f22c",
+    "docs/evaluation/assets/slot-evidence-v3/smoke-1/input/search.json": "ad50d93e7ac9a7546bb8e2b4d1a0f072b6bc7c9cccff277ff7536502e44ced59",
+    "local-search.json": "35e07ef7ce551666f6cf2cba88a9bd0e643a8af55442a77e3c2e1c7a6fbc9f29"
+  },
+  "prompt_sha256": "085043a31b90f7ccff0b61623ab4c046676bbe88b7c8d349ef78b5ffae9d1f8b",
+  "schema_builder_source_sha256": "e7613b78d8248694b302719a96e8024d8b8603016f075d68cb9c239d8f72a09a",
+  "source_files_sha256": {
+    "apps/retrieval/src/model.rs": "e3ca5f8672593f10559f8a0a3a92844ce15bbbe6276d0b20eb518c2d42aad215",
+    "apps/retrieval/src/service.rs": "3f71844bbba13f3c3c91527d6a48a6d4d24064f0907117ec576143dc9833d455",
+    "apps/retrieval/src/slot_evidence.rs": "bd8eb99f5e7ff6ad066f97d3b7d4b465ce382320d9fe495d65c9e3804152c428",
+    "bootstrap/src/openrouter.rs": "2fbb5557ed82de141d1860fbd7787b5a011e2cd0fcb6723d4afc96a0d4c0be1d",
+    "bootstrap/src/openrouter/slot_evidence.rs": "e70373550c0ea1dcc23131a871f0ffd8d5a9f545f1d89429572aa394031e7856",
+    "bootstrap/src/main.rs": "671df0b9df5bc7eb42a468e96d11f477fd28973c567854178b5eadfb9f9a8fad",
+    "kernel/src/config.rs": "24919f7f27cbd84d266260c447229dbbc2c58b05d70ae197754c276dcb08753d",
+    "Cargo.lock": "67d8750570958feae5ccaabbe1e38792adea208f7ab35d91764360e58e312293"
+  },
+  "source_bundle_sha256": "9e15e368e6a9a97a28928d4a8fc1b03b94fb727543ac16b563a4f5f21895f781",
+  "binary_sha256": "0fca4a68fab1537fa1665bf0e88b491317c14b082eb097f0621f80ba070a4cf1",
+  "database_sha256": "988f2e62baec1fb0ca4a05adfe0542b648b9ce0e82e2c677b9adc2b99078b809",
+  "expected_cost_usd": "unknown until complete provider receipt; no retry on failure"
+}

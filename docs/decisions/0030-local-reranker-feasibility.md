@@ -1,0 +1,17 @@
+# 0030 — Viabilidad de clasificador local sin generación
+
+Estado: experimento aislado, no política de producto. Revisión tras sus resultados obligatoria antes de otro paso.
+
+La ruta Qwen9B generativa no demuestra mejora y su último intento falla por saturación explícita del proveedor. Se evalúa si puntuar pares con un reranker0.6B local evita esa dependencia y permite conservar pertinencia sin generar JSON o razonamiento. No se presupone que relevancia entrenada equivalga a apoyo/refutación/parcial ni a abstención segura. Se conserva baseline y todas las puertas originales.
+
+Alternativas ya descartadas para nueva inversión inmediata: insistir con proveedores saturados sin diferencia causal, añadir otra gramática documental y fragmentar textos cuyos fallos siguen unicláusula. Un reranker local tiene una diferencia real de ejecución y entrenamiento, pero puede fallar los mismos errores semánticos. No se integra ni se escribe un adaptador Rust hasta un diagnóstico favorable.
+
+El ensayo usa assets públicos compartidos en caché y runtime uv aislado bajo `/Users/fer/.cache/iromem/research/local-reranker-v1-runtime`. No modifica Python global, Cargo, apps, SQLite o servicios. Modelo/revisión, instrucción, umbral, loader, scripts y fuentes se congelan antes de scores. Solo safetensors, sin código remoto, inferencia posterior totalmente offline, texto completo sin truncar. [Protocolo](../evaluation/local-reranker-v1-protocol-2026-10-22.md).
+
+Se verificaron versiones publicadas, metadatos y compatibilidad documental en fuentes oficiales: torch2.14.1, transformers5.20.2, safetensors0.8.0, Python3.13.13arm64. MPS disponible comprobado. El resolver dejó34paquetes fijados y se archivó el freeze. OSV no devolvió avisos para esas34versiones al consultar; también se revisaron avisos oficiales anteriores y límites. Esa consulta no certifica ausencia de vulnerabilidades ni una auditoría de compromiso o cadena de suministro. Metadatos/respuestas están en `outputs/iromem/evaluation/local-reranker-metadata-2026-10-22/`.
+
+Costes: ≈1,21GBassets más runtime; pesos cargados float32 necesitan más memoria que su archivoBF16. API de inferencia no se usa, pero electricidad/amortización y desarrollo permanecen sin cuantificar: no se anuncian gratis. Carga fría, primera operación, tokenización y batchcaliente se registran separadamente. El límite1,5×requiere comparación contemporánea completa antes de adopción; una referencia histórica no la sustituye. Si falla pertinencia no se ajusta umbral o instrucción tras observar scores para rescatar V1.
+
+Fuentes: [revisión del modelo](https://huggingface.co/Qwen/Qwen3-Reranker-0.6B/commit/e61197ed45024b0ed8a2d74b80b4d909f1255473), [PyTorch](https://pypi.org/project/torch/2.14.1/), [Transformers](https://pypi.org/project/transformers/5.20.2/), [Safetensors](https://pypi.org/project/safetensors/0.8.0/), [implementación Qwen3 versionada](https://github.com/huggingface/transformers/blob/v5.20.2/src/transformers/models/qwen3/modeling_qwen3.py), [OSV](https://osv.dev/).
+
+Resultado posterior:V1falla53/64con1pérdida/10ajenos. El contraste contemporáneo de precisión conserva todas las decisiones y reduce tiempoFP16,pero batch20neutraldualresidentefallael filtro temprano. No invertir entrenamiento amplio en esta ejecución; no extrapolar a standaloneoMLX. [Resultado y límites](../evaluation/local-reranker-dtype-pair-results-2026-10-22.md).

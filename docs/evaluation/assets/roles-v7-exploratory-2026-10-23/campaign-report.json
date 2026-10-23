@@ -1,0 +1,63 @@
+{
+  "by_segment": {
+    "explicit_unmeasured": {
+      "cases": 16,
+      "correct": 16
+    },
+    "pending_or_partial": {
+      "cases": 32,
+      "correct": 32
+    },
+    "refutes_premise": {
+      "cases": 32,
+      "correct": 32
+    },
+    "supports_answer": {
+      "cases": 32,
+      "correct": 32
+    },
+    "unrelated": {
+      "cases": 16,
+      "correct": 16
+    }
+  },
+  "candidate_recall": 112,
+  "cases": 128,
+  "classifier_p50_ms": 452.9096875,
+  "classifier_p95_ms": 939.3294873999998,
+  "correct": 128,
+  "cost_reported_cases": 128,
+  "degraded": 0,
+  "elapsed_p50_ms": 456.7382495,
+  "elapsed_p95_ms": 942.8646419999998,
+  "forbidden_leak_count": 128,
+  "input_tokens_p50": 723.0,
+  "input_tokens_reported_cases": 128,
+  "manifest": {
+    "binary_sha256": "cef62706ed71f92c79ab37b1c0f977a760b5774a36d08c7328913855fd22b843",
+    "case_count": 128,
+    "cases_sha256": "00936dc0016afe6ffb4c75435a058848048bb42feffed23e18844253c84bab6a",
+    "database_sha256": "38713c047e5438b4cde90270df0fa40d4fbba62f28befb90a5d2ff40a3dea425",
+    "format": 1,
+    "kind": "manifest",
+    "label_source": "blind_synthetic_adjudication",
+    "provider": "per_case",
+    "selection_policy": "per_case",
+    "split": "exploratory"
+  },
+  "negative": 16,
+  "negative_candidate_empty": 0,
+  "negative_empty": 16,
+  "output_tokens_p50": 0.0,
+  "output_tokens_reported_cases": 128,
+  "positive": 112,
+  "positive_correct": 112,
+  "provider": "per_case",
+  "reported_cost_usd": 0.009175599999999999,
+  "search_p50_ms": 1.078646,
+  "search_p95_ms": 1.99996635,
+  "service_total_p50_ms": 455.39637500000003,
+  "service_total_p95_ms": 941.7297567999998,
+  "split": "exploratory",
+  "status": "complete"
+}

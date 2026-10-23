@@ -1,0 +1,51 @@
+{
+  "status": "preflight_frozen_before_remote_smoke",
+  "experiment": "slot_evidence_v3_smoke_9_revision_9",
+  "scope": "synthetic_only",
+  "blind_review_excluded_from_provider_request": true,
+  "blind_review": "independent adjudication stored separately; no labels or expected answer sent to provider",
+  "provider": "gemma3_4b",
+  "requested_model": "google/gemma-3-4b-it",
+  "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+  "provider_preferences": {
+    "require_parameters": true,
+    "allow_fallbacks": true
+  },
+  "timeout_ms": 30000,
+  "temperature": 0,
+  "max_output_tokens": 2500,
+  "candidate_count": 1,
+  "expected_local_search_candidate": {
+    "memory_id": "smoke_v3_mona_001",
+    "revision": 1
+  },
+  "repetitions": 3,
+  "call_rule": "Three identical requests; halt at first structural failure, incomplete receipt, or missing positive selection; no retries.",
+  "cost_estimate_usd": 0.0001983,
+  "cost_cap_usd": 0.00025,
+  "cost_basis": "three calls at smoke-8 observed USD 0.00006610 each; halt at first failed trace",
+  "prior_known_cost_usd": 0.00054821,
+  "input_sha256": {
+    "corpus.json": "b79112b4bd7b9da96284b6429a2c58e723fde344d90f98970e6dc6a1085e6611",
+    "recall.json": "cc0a174c15f773dcea448de16de272f76b9cdf7a4f1219e9eecc110fe1be71c0",
+    "search.json": "e266fd2e8729172004e672c7c3843cea21fb0b1c8e81a70174a13fd3956c8e71"
+  },
+  "local_search_sha256": "f34ce2a79e40a52e09a518aab4508ecb98086b995be934c6e7a5217b535e5259",
+  "source_files_sha256": {
+    "apps/retrieval/src/model.rs": "e3ca5f8672593f10559f8a0a3a92844ce15bbbe6276d0b20eb518c2d42aad215",
+    "apps/retrieval/src/service.rs": "3f71844bbba13f3c3c91527d6a48a6d4d24064f0907117ec576143dc9833d455",
+    "apps/retrieval/src/slot_evidence.rs": "bd8eb99f5e7ff6ad066f97d3b7d4b465ce382320d9fe495d65c9e3804152c428",
+    "bootstrap/src/openrouter.rs": "d8c7c0bd1e1132f24876079a74fe9292931ddb619b13179e6dd4a44c5ea44c59",
+    "bootstrap/src/openrouter/slot_evidence.rs": "313342fbf73a24caedfb8efb1a8527cc171077116fcf80387fb65d7293b07d24",
+    "bootstrap/src/main.rs": "671df0b9df5bc7eb42a468e96d11f477fd28973c567854178b5eadfb9f9a8fad",
+    "kernel/src/config.rs": "24919f7f27cbd84d266260c447229dbbc2c58b05d70ae197754c276dcb08753d",
+    "Cargo.lock": "67d8750570958feae5ccaabbe1e38792adea208f7ab35d91764360e58e312293"
+  },
+  "binary_sha256": "b05302abf814c16e956172b51cc86ff437ae75b3e0f4176edf1c1bda77aaa4ce",
+  "database_path": ".local/slot-evidence-v3-smoke-9.db",
+  "database_sha256": "f92a139ccb6a8c84536f9517d8ffbb8643f85cf71d863699225f704c87f2e343",
+  "prompt_change": "No prompt changes from smoke 8.",
+  "diagnostic_change": "Separates no query identity anchors from subject citation omitting all query identifiers; capture stores finish reason and response content byte length, not content.",
+  "preflight_note": "Prompt, schema, inputs, candidate roster, binary, and isolated DB frozen before the call batch.",
+  "source_bundle_sha256": "b38c92d4c9171877a6560ab1b53c44c7c2dffa460565d9302145dae921c4c1e2"
+}

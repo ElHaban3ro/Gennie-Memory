@@ -1,0 +1,38 @@
+{
+  "cases": 16,
+  "relation_counts": {
+    "pending_or_partial": 4,
+    "refutes_premise": 4,
+    "supports_answer": 4,
+    "unrelated": 4
+  },
+  "useful_memory_recall": {
+    "supports_answer": {
+      "queries": 4,
+      "expected_ids": 4,
+      "top1_ids": 4,
+      "top5_ids": 4
+    },
+    "refutes_premise": {
+      "queries": 4,
+      "expected_ids": 4,
+      "top1_ids": 4,
+      "top5_ids": 4
+    },
+    "pending_or_partial": {
+      "queries": 4,
+      "expected_ids": 4,
+      "top1_ids": 4,
+      "top5_ids": 4
+    }
+  },
+  "unrelated": {
+    "queries": 4,
+    "with_candidates": 4
+  },
+  "search_p50_ms": 0.2557285,
+  "search_max_ms": 0.549875,
+  "misses_top5": [],
+  "api_calls": 0,
+  "scope": "local FTS candidate retrieval only; no selector or model quality measured"
+}

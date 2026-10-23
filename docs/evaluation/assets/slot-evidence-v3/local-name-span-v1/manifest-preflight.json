@@ -1,0 +1,63 @@
+{
+  "status": "preflight_frozen_before_remote_smoke",
+  "experiment": "slot_evidence_v3_local_name_span_v1",
+  "created_at_utc": "2026-10-23T19:39:22.625Z",
+  "scope": "synthetic_only",
+  "blind_review_excluded_from_provider_request": true,
+  "provider": "gemma3_4b",
+  "requested_model": "google/gemma-3-4b-it",
+  "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+  "provider_preferences": {
+    "require_parameters": true,
+    "order": [
+      "deepinfra"
+    ],
+    "allow_fallbacks": false
+  },
+  "blind_review": "Two independent Codex reviewers saw only the synthetic query and memory.",
+  "blind_review_concordance": "2/2: answerable; Edda Lind B-72 works at Uppsala Botanical Garden; Lund belongs to Nils Rohe N-14.",
+  "candidate_count": 1,
+  "expected_local_search_candidate": {
+    "memory_id": "slot_v3_name_span_20261023_001",
+    "revision": 1
+  },
+  "planned_calls": 3,
+  "call_rule": "Three consecutive invocations with byte-identical query, candidate roster, prompt, schema, binary, provider, and configuration. Stop after first failure; no retry.",
+  "cost_estimate_usd": 0.0006,
+  "prior_diagnostic_cost_usd": 0.00038058,
+  "input_sha256": {
+    "input/corpus.json": "0c79c849d4264f997f6212b9ac664e7abc86e5aaf0e34850c0dc5d8980305582",
+    "input/recall.json": "22c81dd3cf1f611294e0e8cbcf12c69d3f47e2b7eee82e4f641a1f1108e26baa",
+    "input/search.json": "277a03cbcee9cf856f6277e0bf3184016cabc7f205df0e6238e428dc4fcea7fc"
+  },
+  "blind_review_sha256": "5911ed4580e19eaaf410277da55bd4d3926eaa0fe33cda3d0839a8be9aff9523",
+  "local_search_sha256": "5ece57cc0d9472982d81d74194e441e0baaf093571f049d47fc269f901da7b40",
+  "source_files_sha256": {
+    "apps/retrieval/src/model.rs": "e3ca5f8672593f10559f8a0a3a92844ce15bbbe6276d0b20eb518c2d42aad215",
+    "apps/retrieval/src/service.rs": "3f71844bbba13f3c3c91527d6a48a6d4d24064f0907117ec576143dc9833d455",
+    "apps/retrieval/src/slot_evidence.rs": "429a565b7313d1db03bab98180d109b655a7f78629f9c002a2c2daf11d3ea4b3",
+    "bootstrap/src/openrouter.rs": "c8ae9cb7f9aab9a628c1198f01a69442fa583bf79fa04a7aad8fcbea41917c45",
+    "bootstrap/src/openrouter/slot_evidence.rs": "8c35554016fe6a2fd48758b6915d55796fde97318721f8e5ee0bad96076817a0",
+    "bootstrap/src/main.rs": "9855a9cf210fcc6fecba3722dc5543ae7e97de81d0ba38f4a1664caf3d1e774d",
+    "kernel/src/config.rs": "33e056eb99c3fa2c513663bdd3e547db3d322fa805721a06fed395b4e6cc5903",
+    "Cargo.lock": "67d8750570958feae5ccaabbe1e38792adea208f7ab35d91764360e58e312293"
+  },
+  "binary_sha256": "1ea174403634ef488490f15e5c8bac01874f7a21483dfd1398cff5cbba41e2aa",
+  "database_path": ".local/slot-evidence-v3-name-span-v1.db",
+  "database_sha256": "d0e3db357718ffb79fe2a6fb8d63a966ba6f0566104585e2e3e64898eb5ced9b",
+  "planned_captures": [
+    {
+      "metadata": "evaluation-capture-1.jsonl",
+      "response_content": "response-content-1.jsonl"
+    },
+    {
+      "metadata": "evaluation-capture-2.jsonl",
+      "response_content": "response-content-2.jsonl"
+    },
+    {
+      "metadata": "evaluation-capture-3.jsonl",
+      "response_content": "response-content-3.jsonl"
+    }
+  ],
+  "note": "Source, binary, isolated database, query, roster, and local search frozen. Prompt/schema/payload hashes are checked across captured requests after the three invocations."
+}

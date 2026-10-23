@@ -1,0 +1,48 @@
+{
+  "status": "preflight_frozen_before_remote_smoke",
+  "experiment": "slot_evidence_v3_smoke_4_revision_4",
+  "scope": "synthetic_only",
+  "blind_review_excluded_from_provider_request": true,
+  "blind_review": "independent reviewer judged direct answer; artifact stored separately",
+  "provider": "gemma3_4b",
+  "requested_model": "google/gemma-3-4b-it",
+  "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+  "provider_preferences": {
+    "require_parameters": true,
+    "allow_fallbacks": true
+  },
+  "timeout_ms": 30000,
+  "temperature": 0,
+  "max_output_tokens": 2500,
+  "candidate_count": 1,
+  "expected_local_search_candidate": {
+    "memory_id": "smoke_v3_elina_001",
+    "revision": 1
+  },
+  "repetitions": 3,
+  "call_rule": "Three identical requests to assess stability; halt on first structural failure, incomplete receipt, or missing expected positive selection; no retries.",
+  "cost_estimate_usd": 0.00015,
+  "cost_cap_usd": 0.0002,
+  "cost_basis": "three requests estimated at USD 0.00005 each using prior V3 smoke receipts; stop after first failed attempt",
+  "input_sha256": {
+    "input/corpus.json": "4d2253268be1725bc322d85342c875e749ad967ed807f375fa10bfb7b0019aa0",
+    "input/recall.json": "80fde6a7575e27cd6376ee0d47722aa26eb34c8c773b68783b6239b751c9ca50",
+    "input/search.json": "e50092ffc5e7deb8d99251a25c4231b02d4f9fb93344fc7a6013207b0b7dee8a"
+  },
+  "local_search_sha256": "45fd22d467aa0b41c8fa67b08023b3c16ca1a60517fa7da7a84621112f302093",
+  "source_files_sha256": {
+    "apps/retrieval/src/model.rs": "e3ca5f8672593f10559f8a0a3a92844ce15bbbe6276d0b20eb518c2d42aad215",
+    "apps/retrieval/src/service.rs": "3f71844bbba13f3c3c91527d6a48a6d4d24064f0907117ec576143dc9833d455",
+    "apps/retrieval/src/slot_evidence.rs": "bd8eb99f5e7ff6ad066f97d3b7d4b465ce382320d9fe495d65c9e3804152c428",
+    "bootstrap/src/openrouter.rs": "97b5a71ccc4717615ee7d260b8e3bfff2e9ce31ddae2028d89ffc79d364c6af8",
+    "bootstrap/src/openrouter/slot_evidence.rs": "a80b94df1a594f410e89ac0d1ffe97e7a41aa89d174e4d14014301267e4758e7",
+    "bootstrap/src/main.rs": "671df0b9df5bc7eb42a468e96d11f477fd28973c567854178b5eadfb9f9a8fad",
+    "kernel/src/config.rs": "24919f7f27cbd84d266260c447229dbbc2c58b05d70ae197754c276dcb08753d",
+    "Cargo.lock": "67d8750570958feae5ccaabbe1e38792adea208f7ab35d91764360e58e312293"
+  },
+  "source_bundle_sha256": "ab429abc8ad614efd2be8320fecb1f81bb59770186e64c64124ecc761170f15e",
+  "binary_sha256": "020a6c5960ca0a5f7bf62b022c04dfcbcbc11212175874daee91f0cb36990728",
+  "database_path": ".local/slot-evidence-v3-smoke-4.db",
+  "database_sha256": "f40989f619b2b8163864eba3395c1d1f44c6558a266f466c5cfb9088e044bde2",
+  "preflight_note": "Prompt/schema/request hashes will be compared against the execution capture; no source changes after freeze."
+}

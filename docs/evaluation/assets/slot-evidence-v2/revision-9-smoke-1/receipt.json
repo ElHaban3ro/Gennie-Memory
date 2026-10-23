@@ -1,0 +1,47 @@
+{
+  "selected_ids": [],
+  "per_memory": null,
+  "consensus": null,
+  "applicability": null,
+  "slot_evidence": null,
+  "status": "degraded",
+  "retrieval": {
+    "status": "complete",
+    "method": "fts5_keywords",
+    "candidates": [
+      {
+        "memory_id": "synthetic_ana_e17",
+        "revision": 1,
+        "summary": "Employee Ana Ruiz E-17 lives in Quito.",
+        "conditions": null,
+        "source": null,
+        "state": "active",
+        "bm25": -5.9459459459459454e-6
+      }
+    ],
+    "semantic_coverage": "disabled"
+  },
+  "classification_status": "failed",
+  "requested_model": "google/gemma-3-4b-it",
+  "served_model": "google/gemma-3-4b-it",
+  "selected_id": null,
+  "seed": {
+    "status": "degraded",
+    "method": "fts5_external_classifier",
+    "classifier": "google/gemma-3-4b-it",
+    "semantic_coverage": "disabled",
+    "memories": [],
+    "seed_text": null
+  },
+  "input_tokens": 599,
+  "output_tokens": 557,
+  "reported_cost_usd": 0.00005181,
+  "error_code": "slot_evidence_roster_extra",
+  "provider_http_status": null,
+  "timings": {
+    "search_ms": 0.8108329999999999,
+    "classifier_ms": 3458.176,
+    "composition_ms": 1.4039169999999999,
+    "total_ms": 3460.4257500000003
+  }
+}

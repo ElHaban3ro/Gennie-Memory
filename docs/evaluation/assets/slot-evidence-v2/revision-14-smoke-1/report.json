@@ -1,0 +1,49 @@
+{
+  "status": "complete",
+  "split": "smoke",
+  "provider": "gemma3_4b",
+  "cases": 1,
+  "correct": 0,
+  "positive": 1,
+  "positive_correct": 0,
+  "negative": 0,
+  "negative_empty": 0,
+  "negative_candidate_empty": 0,
+  "candidate_recall": 1,
+  "degraded": 1,
+  "forbidden_leak_count": 0,
+  "input_tokens_reported_cases": 0,
+  "output_tokens_reported_cases": 0,
+  "cost_reported_cases": 0,
+  "reported_cost_usd": null,
+  "input_tokens_p50": null,
+  "output_tokens_p50": null,
+  "search_p50_ms": 1.5529160000000002,
+  "search_p95_ms": 1.5529160000000002,
+  "classifier_p50_ms": 721.8375,
+  "classifier_p95_ms": 721.8375,
+  "service_total_p50_ms": 725.2141250000001,
+  "service_total_p95_ms": 725.2141250000001,
+  "elapsed_p50_ms": 725.2141250000001,
+  "elapsed_p95_ms": 725.2141250000001,
+  "by_segment": {
+    "slot_evidence_v2/single-positive": {
+      "cases": 1,
+      "correct": 0
+    }
+  },
+  "manifest": {
+    "format": 1,
+    "kind": "manifest",
+    "label_source": "agent_synthetic_unreviewed",
+    "split": "smoke",
+    "case_count": 1,
+    "provider": "gemma3_4b",
+    "selection_policy": "slot_evidence_v2",
+    "binary_sha256": "cfa7b88f8790b6d393bda6e5430a463fdbc8f057beff383884e2d6327f96a63a",
+    "cases_sha256": "ef02011cbd21801c701556f832bf8e593f46c9b01e946531dc6e8d9cb88c513c",
+    "database_sha256": "a3c1718132cdba5ee968dc00a0d45021e617a329766df56d42e0284ecb764a54"
+  },
+  "failure_code": "slot_evidence_http_error",
+  "provider_http_status": 429
+}

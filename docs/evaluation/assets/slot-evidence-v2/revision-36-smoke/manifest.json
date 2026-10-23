@@ -1,0 +1,46 @@
+{
+  "version": "slot-evidence-v2-revision-36-smoke-v1",
+  "synthetic": true,
+  "not_retry_of_revision_31_through_35": true,
+  "configuration": "Gemma 3 4B; strict slot_evidence_v2; joint anchor_quote + separate subject_quote; no offsets; provider fallback enabled; default unchanged.",
+  "preconditions": {
+    "local_retrieval": "1/1 at top 1",
+    "blind_review": "direct answer",
+    "local_suite": "workspace passed: 1,017 passed, 24 ignored"
+  },
+  "classifier_calls_made": 1,
+  "max_http_calls": 2,
+  "provider_fallback_attempts_worst_case_per_call": 2,
+  "stop": "One smoke only; stop after first invalid/incomplete output; no retry; no cohort or adoption from a smoke.",
+  "input_sha256": {
+    "case.jsonl": "4381bb8c5afa6339e2c174b0edcf930d2011257f40361f525a40296db628c7c0",
+    "corpus.json": "8076a4c3af3a09dff0cd173e5f53eeca6dd200889709d56f75643839f962dc6b",
+    "request.json": "4756b58bda48f2c3d184473ebe0abac159e6d6ebfe42f9d0f0562bbf254aadbf",
+    "search-request.json": "da0edbe82c9b26d8c9c7a32cccfbbab386111a7445e405651b8557af8f404b4d",
+    "search-cases.jsonl": "77dd95305edcb599bd235dd53bee22b1b87e10854b520c78cb53c8fb34b843f1"
+  },
+  "source_sha256": {
+    "slot_evidence.rs": "29a00916627e8720451af924a383e20d9b27b214e0a4186f9ba3e78cb1b4efee",
+    "openrouter.rs": "10ee72752541f6dc021798b76aa1bb0b0e87b6270283100bf8158a995170e654"
+  },
+  "binary_sha256": "af5f702c4c2a3320dacc12a0ad517270cfab21e1a4e40542d3dfbc1a69f87cc4",
+  "result": {
+    "classification_status": "failed",
+    "selected_id": null,
+    "error_code": "slot_evidence_v2_anchor_phrase_not_exact",
+    "served_model": "google/gemma-3-4b-it",
+    "input_tokens": 645,
+    "output_tokens": 202,
+    "reported_cost_usd": 3.59e-05,
+    "classifier_ms": 2693.110208,
+    "total_ms": 2694.2445,
+    "http_status": 200,
+    "served_provider": "Parasail"
+  },
+  "capture_sha256": "e9a1362d2eb9463804e5a7b5a5d0c9036a2fb0bb6a7006cac7418d1d4fbcd73a",
+  "artifacts_sha256": {
+    "local-search.json": "04a4dc372fe93be69a263cdbfa1d4f8749f818b1cf710093e92611839dd108fd",
+    "recall-output.json": "0c01f7ac3847a113337f8551cfd809b49d079b6c1151427aac9fdaab42518d39",
+    "blind-review.md": "9bfba8ab9a4abda147bc62c7f8710d317bfab02fc7ecbd830c501d44066c5a0c"
+  }
+}

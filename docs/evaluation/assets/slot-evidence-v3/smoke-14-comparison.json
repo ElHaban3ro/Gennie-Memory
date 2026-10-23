@@ -1,0 +1,29 @@
+{
+  "status": "paired_single_case_diagnostic_only",
+  "case_scope_id": "slot_evidence_v3_smoke_20261023_r14",
+  "same_query_corpus_candidate_and_fts_result": true,
+  "blind_reviewed_positive_candidate": "smoke_v3_marta_001@1",
+  "v3": {
+    "selected": false,
+    "status": "failed",
+    "error": "slot_evidence_proposition_citation_invalid",
+    "cost_usd": 7.405e-05,
+    "classifier_latency_ms": 2782.611,
+    "total_latency_ms": 2786.036792
+  },
+  "baseline": {
+    "selected": true,
+    "status": "complete",
+    "error": null,
+    "cost_usd": 8.35e-06,
+    "classifier_latency_ms": 942.941375,
+    "total_latency_ms": 945.328666
+  },
+  "interpretation": "Baseline retained the blind-reviewed useful candidate; V3 failed closed before selection. This is a single synthetic case and does not establish population quality or adoption eligibility.",
+  "calls": {
+    "v3": 1,
+    "baseline": 1,
+    "retries": 0
+  },
+  "combined_cost_usd": 8.24e-05
+}

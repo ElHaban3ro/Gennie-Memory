@@ -1,0 +1,33 @@
+{
+  "version": "slot-evidence-v2-revision-31-smoke-v1",
+  "synthetic": true,
+  "not_retry_of_revision_30": true,
+  "configuration": "Gemma baseline and slot_evidence_v2 allow provider fallbacks while requiring parameter support; Decisions default unchanged.",
+  "three_consecutive_calls_required": true,
+  "same_request_and_corpus_for_all_calls": true,
+  "max_http_calls": 3,
+  "classifier_calls_made": 1,
+  "estimated_max_cost_usd": 0.004,
+  "provider_fallback_attempts_worst_case_per_call": 2,
+  "input_sha256": {
+    "case.jsonl": "f5e24d8f1cb9cc76743f98851730d734185b8d2e72a49ecc9f1edc42fff9ac9f",
+    "corpus.json": "467aeca71ad5b65ce6fcdbfe37bd73d02a0c918450cefd3fea85f87bfe77902f",
+    "request.json": "d8ef52fb3c84a41fc0dd3cd0657ea038ce31aaeb0d77b489d547704fce152037",
+    "search-cases.jsonl": "0bb4c1a9ae333c50a6e72d423a3f6d903c1cda3f3caca43736b6d8c9e3d88505"
+  },
+  "source_sha256": {
+    "openrouter.rs": "10ee72752541f6dc021798b76aa1bb0b0e87b6270283100bf8158a995170e654",
+    "slot_evidence.rs": "fcbc37048859ea1c70da2a18b201349cf79648a0c5184f6025e7035b5f53fb60"
+  },
+  "local_retrieval_precondition": "1/1 expected candidate recovered at top-1",
+  "local_search_sha256": "382950660f3d9f2b41162cb5b599244f15a52a2a6ea23617616e118fd7df0d64",
+  "binary_sha256": "05d93055932bb6ca7294ab8d6898aaaeaf7aa477b868bae2ef95257ff041166b",
+  "smoke_outcome": {
+    "smoke_1": "HTTP 200; output rejected locally with slot_evidence_v2_subject_not_literal; no selection; served_model=google/gemma-3-4b-it; served_provider=Parasail; input_tokens=1629; output_tokens=250; reported_cost_usd=0.00007766",
+    "smoke_2_and_3": "not executed after first failed output",
+    "retry_of_smoke_1": "false",
+    "raw_model_response": "not retained; only response hash captured"
+  },
+  "r31_result_preserved_before_local_diagnostic_change": true,
+  "source_hashes_describe_frozen_smoke_binary": true
+}

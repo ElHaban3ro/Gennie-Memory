@@ -1,0 +1,13 @@
+# Motivos negativos V1: contraste difícil de tres brazos
+
+Antes de red. El mínimo16/64de motivos explícitos pasa roles canónicos completos,17útiles y0extras/pérdidas,USD0,000586260. Es no regresión conocida, no mejora. Conservar ese resultado y el protocolo mínimo; no repetirlo para escoger.
+
+18casos/126roles conciliados, mismas fuentes/IDs/revisiones/gold, tres variantes por caso: control=Decisions/baseline real conhasta20candidatos; reference=Perplexity/LocalV5original con7; candidate=mismoPerplexity/LocalV5con9alternativas, modificando solo criteria de rechazo. Las6permutaciones de orden se ejecutan3veces cada una en la lista fija de18casos, sin paralelismo ni warmups no contabilizados. Cliente reutilizado; medir cada operación íntegra, incluyendo primeras aperturas.54HTTPmáximos, estimaciónUSD0,004 y1–2minutos, una pasada, sin reintentos. Detener tras fallo técnico preservando recibo; no detener por desacuerdo de calidad.
+
+Preparador específico exige reconstrucción cruda del mínimo aprobado, mismo perfil/modelo y coste<USD0,001451520antes de escribir. El preparador histórico de2brazos rechaza esta variante. El auditor reconstruye54payloads y los recibos/casos de cada brazo; no suma reference al coste de la candidata runtime, pero sí al gasto experimental total. No calificar un pase con reference incompleta. Conteos primarios históricos control/candidate siguen separados y reference lleva su propio desglose.
+
+Puerta de calidad de candidate:17útiles,0extras,0pérdidas contemporáneas,0errores de rol,0IDsno revisados, ganancia sobrebaseline;54respuestas válidas y recibos completos. Los4extras anteriores deben desaparecer sin otro error; Laurel debe serA. Se conserva la discrepancia histórica y la ambigüedad residual, sin reanotar. Coste/p50/p95candidate≤1,5×control contemporáneo; p95nearest-rank18es máximo, no eliminar lentas. Cuantificar reference para distinguir efecto de interfaz de variación: señal preliminar solo si candidate reduce errores canónicos sin empeorar retención/extras frente a reference actual. La ausencia de señal no se maquilla como causa probada aunque superebaseline.
+
+Los6motivos negativos canonicalizan none y carecen de goldpropio; frecuencias son diagnósticas, no razones verdaderas verificadas. Si cambia LaurelB→A, no atribuirlo a un motivo negativo concreto. Un pase sigue preliminar: estabilidad debe fijarse antes de repetir, después runtime/CLI, campañas completas y casos nuevos ciegos. No incorporar ni abrirV6por esta tanda. Fallos completos se conservan y cambian siguiente acción.
+
+Runner manual cfg(test)/HTTP2; código/binaryhash/solicitudes se congelan antes de red. No cambios de producto, SQL, dependencias, secretos, servicios ni procesos del usuario.

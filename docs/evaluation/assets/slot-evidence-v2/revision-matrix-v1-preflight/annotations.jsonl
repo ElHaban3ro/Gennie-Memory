@@ -1,0 +1,8 @@
+{"id": "revision-01", "relation": "answers", "expected_selected": ["rmv1_revision_01"], "answer_boundary": "19 May"}
+{"id": "revision-02", "relation": "answers", "expected_selected": ["rmv1_revision_02"], "answer_boundary": "12 May"}
+{"id": "revision-03", "relation": "partial", "expected_selected": ["rmv1_revision_03"], "answer_boundary": "final version says 19 May, but current date is not established"}
+{"id": "revision-04", "relation": "explicit_unmeasured", "expected_selected": ["rmv1_revision_04"], "answer_boundary": "no final or current date is recorded"}
+{"id": "revision-05", "relation": "answers", "expected_selected": ["rmv1_revision_05"], "answer_boundary": "12 May"}
+{"id": "revision-06", "relation": "partial", "expected_selected": ["rmv1_revision_06"], "answer_boundary": "unresolved conflict: 12 May vs 19 May; neither is current"}
+{"id": "revision-07", "relation": "answers", "expected_selected": ["rmv1_revision_07"], "answer_boundary": "19 de mayo"}
+{"id": "revision-08", "relation": "refutes", "expected_selected": ["rmv1_revision_08"], "answer_boundary": "refutes 12 May; final version says 19 May"}

@@ -1,0 +1,47 @@
+{
+  "selected_ids": [],
+  "status": "degraded",
+  "retrieval": {
+    "status": "complete",
+    "method": "fts5_keywords",
+    "candidates": [
+      {
+        "memory_id": "r30_mara_city_m1",
+        "revision": 1,
+        "summary": "Engineer Mara Solis E-93 lives in Quito.",
+        "conditions": null,
+        "source": null,
+        "state": "active",
+        "bm25": -0.0000059459459459459454
+      }
+    ],
+    "semantic_coverage": "disabled"
+  },
+  "classification_status": "failed",
+  "requested_model": "google/gemma-3-4b-it",
+  "served_model": null,
+  "selected_id": null,
+  "seed": {
+    "status": "degraded",
+    "method": "fts5_external_classifier",
+    "classifier": "google/gemma-3-4b-it",
+    "semantic_coverage": "disabled",
+    "memories": [],
+    "seed_text": null
+  },
+  "input_tokens": null,
+  "output_tokens": null,
+  "reported_cost_usd": null,
+  "error_code": "slot_evidence_http_error",
+  "provider_http_status": 429,
+  "timings": {
+    "search_ms": 0.988833,
+    "classifier_ms": 1175.947042,
+    "composition_ms": 0.478667,
+    "total_ms": 1177.4450000000002
+  },
+  "evaluation_capture": {
+    "path": "evaluation-capture.jsonl",
+    "sha256": "4bd7784045bad9769f6da6737fc38f155122546ac044e43f581a6bcc5919a6a5"
+  }
+}

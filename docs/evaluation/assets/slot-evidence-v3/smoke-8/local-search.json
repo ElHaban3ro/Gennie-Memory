@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "method": "fts5_keywords",
+  "candidates": [
+    {
+      "memory_id": "smoke_v3_ada_001",
+      "revision": 1,
+      "summary": "Researcher Ada Moreno A-61 moved her office from Coimbra to Porto and now works in Porto. Editor Soren Vale S-12 is based in Braga and reviewed the relocation.",
+      "conditions": null,
+      "source": null,
+      "state": "active",
+      "bm25": -8.918918918918919e-6
+    }
+  ],
+  "semantic_coverage": "disabled"
+}

@@ -1,0 +1,13 @@
+# Precisiones de implementación de la proyección existencial
+
+Estas precisiones hacen explícita la implementación del diseño cerrado; no cambian fuente, pregunta, expectativa, identidad ni la puerta de calidad. El diseño inicial congelado y su hash permanecen en el protocolo.
+
+Los reportes ordinarios con feature válido son V2. Los errores técnicos globales de agotamiento anteriores o posteriores a la proyección mantienen el sobre existente `documentary_request_context_limit_v1`: no son reportes ordinarios de conclusiones, nunca publican una respuesta completa, conservan entrada fuente/pregunta y no seleccionan un subconjunto favorable. No se contabilizan como negativos semánticos ni controles de calidad acertados. Esta separación evita crear un resultado V2 aparentemente completo después de agotar el presupuesto.
+
+V2 añade `text` y `original_raw` en `source` y `question`, con cargo previo de copia. Así conserva dentro del reporte los textos y raws originales íntegros incluso cuando una validación tiene `document:null`. Matriz, validaciones y mapas de origen permanecen vinculados a la misma entrada; no se depende de archivos externos mutables para reconstruir prueba o residual. V1 sin feature conserva sus bytes.
+
+Los DTOs V3 `AtomPattern` omiten un solo rol solicitado. Una prueba que añadió simultáneamente un rol extra sin valor y el slot de respuesta resultó inválida; no se relajó el validador. La correlación de incidencias se comprueba como unidad del normalizador con los documentos originales válidos, sin presentarla como una consulta integrada con múltiples slots. El input y el fallo focal permanecen en el registro de la tanda. La normalización debe conservar todas las incidencias admitidas; esta precisión no elimina ese requisito.
+
+Los fixtures de las pruebas Rust nuevas viven en `tests/fixtures/documentary-existential-projection-v1/`. Son copias de controles manuales conocidos con fuente/pregunta intactas y permiso experimental, sin gold ni reserva V6. Los tests no dependen de `outputs/` ignorados, para que sean portables a un checkout con los archivos nuevos. Los outputs de desarrollo siguen siendo evidencia de ejecución separada.
+
+El subset inicial conserva diagnóstico `not_supported` para qualifiers no vacíos, context_bindings, premisas/segundo claim efectivo, scopes no documentales, selectores de pair_scope no vacíos y términos sin regla tipada competente. Esas exclusiones conservan la matriz y no cuentan como éxitos de calidad. No se amplía soporte por fallback ni se retiran los seis pendientes de fidelidad. El contexto completo se transporta en el cuerpo; no se convierte una configuración ausente en comodín.

@@ -1,0 +1,7 @@
+# Revisión ciega de la primera autoría v8
+
+Dos revisores Codex recibieron únicamente `source.json` y `blind-questions.json`, sin clave ni resultados de clasificador. Coincidieron en las 12 preguntas de respuesta, refutación y parcialidad. Ninguno consideró irrelevantes los cuatro casos etiquetados `unrelated` por la autoría: tres mencionaban explícitamente que el dato no estaba registrado/decidido y eran `pending_or_partial`; en el caso del festival hubo desacuerdo entre refutación y parcialidad, pero ambos señalaron que el acta no identificaba al jefe. La autoría confundía estado documental explícito con ausencia de evidencia.
+
+Además, señalaron dos problemas de formulación que se conservan en v1: la pregunta solar mezclaba energía y kW (potencia), y la de festival presuponía que había nombramiento. Un revisor informó 15/16 acuerdos de relación y el otro tampoco encontró preguntas mal formadas; el único desacuerdo fue festival q04. Los dictámenes se hicieron antes de cualquier inferencia y se preservan; no se puntúa esta versión ni se corrige en sitio.
+
+Decisión: v1 queda archivada como iteración fallida de preparación, no como resultado de recuperación. v2 cambia solo las cuatro consultas con etiquetas incompatibles con su evidencia y conserva los demás textos y relaciones. Se exigirá una segunda revisión ciega de v2 antes de clasificar. Coste API: USD 0; coste/token Codex no disponible.

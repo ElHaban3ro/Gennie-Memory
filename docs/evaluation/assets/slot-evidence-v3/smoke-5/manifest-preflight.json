@@ -1,0 +1,50 @@
+{
+  "status": "preflight_frozen_before_remote_smoke",
+  "experiment": "slot_evidence_v3_smoke_5_revision_5",
+  "scope": "synthetic_only",
+  "blind_review_excluded_from_provider_request": true,
+  "blind_review": "independent reviewer judged direct answer; artifact stored separately",
+  "provider": "gemma3_4b",
+  "requested_model": "google/gemma-3-4b-it",
+  "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+  "provider_preferences": {
+    "require_parameters": true,
+    "allow_fallbacks": true
+  },
+  "timeout_ms": 30000,
+  "temperature": 0,
+  "max_output_tokens": 2500,
+  "candidate_count": 1,
+  "expected_local_search_candidate": {
+    "memory_id": "smoke_v3_nora_001",
+    "revision": 1
+  },
+  "repetitions": 3,
+  "call_rule": "Three identical requests; halt at first structural failure, incomplete receipt, or missing positive selection; no retries.",
+  "cost_estimate_usd": 0.00015,
+  "cost_cap_usd": 0.0002,
+  "cost_basis": "three requests estimated at USD 0.00005 each; based on prior V3 smoke receipts",
+  "input_sha256": {
+    "corpus.json": "f3038050a5ee617b583b8b1b9888299ec60c1f625b19e5f70522c61e01477301",
+    "recall.json": "64f01974c1f83fac296deb750f7d6100cc1f54647b67d3bdc047628e1df28884",
+    "search.json": "5718817eaad2342931df081df231abcc81697317dba1f895c449f5a7df8dbf89"
+  },
+  "local_search_sha256": "d751305a6c722fe7201442412692408d7d2d1aedb209df7dab9b4a79da6866be",
+  "source_files_sha256": {
+    "apps/retrieval/src/model.rs": "e3ca5f8672593f10559f8a0a3a92844ce15bbbe6276d0b20eb518c2d42aad215",
+    "apps/retrieval/src/service.rs": "3f71844bbba13f3c3c91527d6a48a6d4d24064f0907117ec576143dc9833d455",
+    "apps/retrieval/src/slot_evidence.rs": "bd8eb99f5e7ff6ad066f97d3b7d4b465ce382320d9fe495d65c9e3804152c428",
+    "bootstrap/src/openrouter.rs": "97b5a71ccc4717615ee7d260b8e3bfff2e9ce31ddae2028d89ffc79d364c6af8",
+    "bootstrap/src/openrouter/slot_evidence.rs": "9424449a4b06d1b38905069959941206ac8f8365701854c71487749617fe40f7",
+    "bootstrap/src/main.rs": "671df0b9df5bc7eb42a468e96d11f477fd28973c567854178b5eadfb9f9a8fad",
+    "kernel/src/config.rs": "24919f7f27cbd84d266260c447229dbbc2c58b05d70ae197754c276dcb08753d",
+    "Cargo.lock": "67d8750570958feae5ccaabbe1e38792adea208f7ab35d91764360e58e312293"
+  },
+  "source_bundle_sha256": "b0a46de0a86b2e7b0e33fa0c7ab5ad33e7d11bac8651bb8cbaee244aae13f5f5",
+  "binary_sha256": "e1ef3ceb893d40f7009615c4f36ff607571988b7e5b9c93323af992c94f1ee60",
+  "database_path": ".local/slot-evidence-v3-smoke-5.db",
+  "database_sha256": "0f573d06351f728108dd4415a1388d54a42bd71ed8c4755aeb1b20f56ba0b91a",
+  "prompt_change": "Explicitly constrain anchor subject_quote to the name alone, with exact query capitalization, excluding kind, stable ID, and adjacent punctuation. Acceptance remains unchanged.",
+  "diagnostic_change": "Split query subject quote literalness/ambiguity from candidate identity subject binding errors; no acceptance change.",
+  "preflight_note": "Same input, prompt, schema, binary, and database are frozen for each repetition; capture hashes verify the served payload."
+}

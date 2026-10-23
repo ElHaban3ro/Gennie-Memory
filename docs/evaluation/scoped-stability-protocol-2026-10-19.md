@@ -1,0 +1,11 @@
+# Diagnóstico A/A de estabilidad de ScopedV1
+
+Fijado antes de llamadas. Las optimizaciones de coste ScopedV2/V3 fallaron en datos conocidos; V3además tuvo un HTTP504de la base. No se relanzan esos eventos ni se cambia gold. Antes de seguir optimizando formato, medir repetibilidad de la misma variante que pasó calidadV5completa, ScopedV1/Jev1.13. Este diagnóstico no aprueba adopción ni rescata una campaña.
+
+Ocho consultasV5conocidas:06601,06607,06706,06803,06905,07005,07104,07303. Tres rondas fijas con las ocho en ese orden,24operaciones. Se mantienen todos los resultados y recibos, no mejor-de-tres ni voto. La única diferencia de cada repetición es el ID externo del caso, no enviado al clasificador. Mismos parámetros de consulta, candidatos y constructor determinista de payload. El informe acredita esa igualdad por construcción/fuentes; no afirma captura de los bytes de red. Todas son consultas conocidas;24repeticiones no son24casos nuevos o independientes.
+
+Congelar casos, fuente/gold/corpus/manifest/protocolo/binarios antes de llamar. DB temporal propia compartida scoped, CLI sin puerto, hasta60s previstos, máximo24HTTP y coste estimadoUSD0,0025. No reintentar llamadas inciertas, cambiar textos/orden o ampliar el número tras ver un resultado.
+
+Comprobar igualdad de candidatos entre repeticiones, modelos servidos, cada selección y toda la traza; informar ID no permitido, degradaciones y variación de conjuntos por consulta. Alternativas permitidas pueden variar sin constituir error: no confundir variación con pérdida de verdad. Tres repeticiones sin variación no prueban determinismo ni fiabilidad poblacional; una variación no identifica por sí sola causa interna del modelo/proveedor. Ningún resultado reemplaza métricas anteriores ni reduce las puertas globales. Si hay selección incorrecta en estas repeticiones, no asumir que el cambio de formato es la única explicación de las regresiones. V6permanece sin llamadas.
+
+El transporte actual ya lee cuerpos HTTPde error completos y acotados para conservar recibos válidos si existen. El504previo no puede recuperarse retroactivamente y su coste sigue desconocido. Pruebas locales no demuestran que aquel proveedor incluyera recibo. No se usa un error con recibo como éxito de clasificación ni se supone coste cero si falta.

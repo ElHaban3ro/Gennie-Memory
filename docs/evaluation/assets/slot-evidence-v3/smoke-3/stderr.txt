@@ -1,0 +1,25 @@
+warning: associated function `new` is never used
+  --> bootstrap/src/openrouter.rs:41:12
+   |
+40 | impl OpenRouterClassifier {
+   | ------------------------- associated function in this implementation
+41 |     pub fn new(api_key: Option<String>) -> Result<Self, String> {
+   |            ^^^
+   |
+   = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: function `query_excerpt_from_codepoints` is never used
+   --> bootstrap/src/openrouter/slot_evidence.rs:107:4
+    |
+107 | fn query_excerpt_from_codepoints(
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: function `find_identity_quote` is never used
+   --> bootstrap/src/openrouter/slot_evidence.rs:483:4
+    |
+483 | fn find_identity_quote(
+    |    ^^^^^^^^^^^^^^^^^^^
+
+warning: `iromem` (bin "iromem") generated 3 warnings
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.07s
+     Running `target/debug/iromem recall docs/evaluation/assets/slot-evidence-v3/smoke-3/input/recall.json`

@@ -1,0 +1,15 @@
+# Vía alternativa tras rechazo: diagnóstico previo
+
+Diagnóstico solo de evaluación, sin variante de producto ni promoción. El contraste aislado anterior reveló refutaciones propuestas como datos y verificadas únicamente por esa vía. Se ensaya OR de tareas conservando todos los positivos y sus primeras verificaciones congeladas.
+
+Elegibilidad fijada **sin consultar el gold**: los 25 rechazos de Decisions entre los 43 positivos históricos V2 del contraste anterior. Se elige Decisions prospectivamente por no haber aceptado IDs ajenos en ese contraste; no se selecciona proveedor por recuerdo ni se combinan los mejores juicios. Se incluyen todos sus rechazos útiles e inútiles, sin excepciones. Los positivos iniciales no se vuelven a preguntar.
+
+Para cada rechazo, preguntar la tarea complementaria al mismo modelo, con consulta y recuerdo idénticos y texto completo ya congelado: dato V1 si antes se preguntó corrección V4, o corrección V4 con sus dos vías si antes se preguntó dato. No modificar instrucciones, criterios, fuentes, propuesta o gold. Resultado final: primer juicio OR juicio complementario; un fallo técnico no es rescate ni abstención fiable y bloquea el pase del caso.
+
+La prueba manual ignorada `live_role_opposite_task_probe` congela solicitudes, elegibilidad, fuentes y huella del ejecutable antes de red; conserva started/respuesta/fallo y recibo. Directorio de un solo uso. Invocación explícita autorizada: `cargo test --offline -p iromem live_role_opposite_task_probe -- --ignored --test-threads=1`. El secreto existente se lee desde la raíz y no se imprime. Son **25 HTTP**, estimación USD 0,0015 y menos de un minuto, CLI breve sin puerto. No reintentar operaciones inciertas ni elegir mejores repeticiones.
+
+El informe Rust independiente debe recalcular el contraste anterior desde sus fuentes, reconstruir TODOS los elegibles, exigir el template complementario exacto, vincular IDs/revisiones/textos y respuestas, componer OR y conservar rechazos y nuevos errores. La comparación de calidad utiliza los mismos trece casos V5 y cinco V4: sin ID ajeno o evidencia de base/scopedV1 perdida, sin degradación, alguna ganancia V5 y cinco sets exactos V4. Mostrar omisiones permitidas; no confundir preservación con completitud.
+
+Contar por separado gasto nuevo de 25 comprobaciones y estimación del mecanismo que además reutiliza las primeras verificaciones y propuestas históricas. Cada recibo histórico se reutiliza una vez para estimación, sin volver a sumarlo como gasto. Mantener coste estimado por grupo ≤1,5× como condición de implementación/ampliación. No es coste ni latencia end-to-end medidos del flujo actual. Un pase de calidad con coste excesivo no habilita promover ni abrir V6.
+
+Si falla, preservar el resultado y revisar la causa. Si pasa todo, solo habilita implementar una ruta optativa con comprobaciones y costes explícitos, seguida de pilotos reales completos, campañas conocidas, consistencia y finalmente V6 reservada/revisada por separado. No se usa V6 para ajustar ni se relabela para pasar.

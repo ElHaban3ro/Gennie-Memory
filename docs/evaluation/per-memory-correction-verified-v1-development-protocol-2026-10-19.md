@@ -1,0 +1,13 @@
+# Comparación completa de verificación selectiva
+
+Preparación posterior al piloto, previa a llamadas completas. El piloto12/13HTTP pasó la puerta conservadora de no regresión y coste: tres IDs útiles más que Decisions/base histórica y ninguno perdido respecto de scopedV1. No prueba completitud:12/16IDs permitidos,8/12sets exactos, tres omisiones dentro del prefijo y una fuera. No prueba rechazo de correcciones erróneas: solo se comprobó una propuesta válida, sin rechazos. No se cambian gold ni rúbrica para ocultarlo.
+
+Candidata/modelo/payload congelados: `per_memory_correction_verified_v1`/Jev1.13, Decisions para comprobaciones de corrección sin dato, primeros7de20keywords. Contraste Decisions/baseline para las mismas64preguntasV5 conocidas,128operaciones adyacentes con orden alternado. Preparación reproducible Rust en `outputs/iromem/evaluation/per-memory-correction-verified-v1-development-2026-10-19/paired-v5/`. No son casos nuevos ni revisión ciega adicional.
+
+Alcance de envío que requiere aprobación:64preguntas y sus candidatos ficticios V5 a Jev1.13/Decisions por OpenRouter. Máximo576HTTP (64base+64propuestas+448verificaciones), sin reintentar consultas con resultado incierto. Estimación USD0,009 y2–3minutos; coste real y recibos ausentes se conservan. CLI sin puerto y DB temporal propia. No activa dashboard ni cambia producto.
+
+Antes de llamar, registrar huellas de binarios, protocolo, corpus, casos y políticas. El clasificador debe coincidir con el piloto; cambios posteriores del evaluador solo pueden auditar, sin modificar resultados. Auditoría ordinaria de diario/semilla y verificación independiente de etapas. `report-utility-comparison` aplica calidad/coste/p50/p95; `report-scoped-preservation` verifica además todos los IDs útiles de scopedV1 sobre fuentes y campañas vinculadas.
+
+Puertas intactas: cero ID ajeno, pérdida de evidencia útil anterior y degradación nueva; alguna ganancia; recibos completos; coste/p50/p95<=1,5× base. Registrar también clasificación por ID, sets exactos y omitidos dentro/fuera de prefijo. Estas métricas de completitud no se sustituyen por el pase conservador. V5 no tiene anotación prospectiva por parte; no afirmar completitud semántica ni verdad final a partir de IDs.
+
+Si falla, detener expansión y diagnosticar sin escoger una repetición favorable, compensar pérdidas con ganancias o relabelarV5. Si pasa, aún faltan controles conocidosV4/V2 y repetición fija, además de la cohorteV6 con cobertura por parte revisada separadamente; todo ello requiere alcance/autorización correspondientes. V6permanece sin abrir para llamadas o ajustes. La comparación completa tampoco promueve automáticamente la candidata.

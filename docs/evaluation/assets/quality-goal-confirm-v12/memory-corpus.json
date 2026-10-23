@@ -1,0 +1,306 @@
+[
+  {
+    "id": "v12_marine_01",
+    "scope_kind": "conversation",
+    "scope_id": "tide-desk",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Buoy H-61 logged a peak tide of 1.84 m at Breakwater Point at 06:12 on 2026-09-23.",
+    "summary": "Buoy H-61 logged a peak tide of 1.84 m at Breakwater Point at 06:12 on 2026-09-23.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-confirm-v12/tide-desk/v12_marine_01",
+      "locator": "v12_marine_01"
+    }
+  },
+  {
+    "id": "v12_marine_02",
+    "scope_kind": "conversation",
+    "scope_id": "tide-desk",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Correction: Sora K. did not deploy buoy H-62; she inspected its anchor only.",
+    "summary": "Correction: Sora K. did not deploy buoy H-62; she inspected its anchor only.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-confirm-v12/tide-desk/v12_marine_02",
+      "locator": "v12_marine_02"
+    }
+  },
+  {
+    "id": "v12_marine_03",
+    "scope_kind": "conversation",
+    "scope_id": "tide-desk",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The tide desk’s working interval for buoy H-63 is 0.9–1.1 m, pending sensor synchronization.",
+    "summary": "The tide desk’s working interval for buoy H-63 is 0.9–1.1 m, pending sensor synchronization.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-confirm-v12/tide-desk/v12_marine_03",
+      "locator": "v12_marine_03"
+    }
+  },
+  {
+    "id": "v12_marine_04",
+    "scope_kind": "conversation",
+    "scope_id": "tide-desk",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The H-63 enclosure uses a lithium battery rated for 72 hours.",
+    "summary": "The H-63 enclosure uses a lithium battery rated for 72 hours.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-confirm-v12/tide-desk/v12_marine_04",
+      "locator": "v12_marine_04"
+    }
+  },
+  {
+    "id": "v12_shipping_01",
+    "scope_kind": "conversation",
+    "scope_id": "dock-chat",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Manifest M-208 records that crate Z-14 left dock 3 at 18:25 on 2026-09-21.",
+    "summary": "Manifest M-208 records that crate Z-14 left dock 3 at 18:25 on 2026-09-21.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-confirm-v12/dock-chat/v12_shipping_01",
+      "locator": "v12_shipping_01"
+    }
+  },
+  {
+    "id": "v12_shipping_02",
+    "scope_kind": "conversation",
+    "scope_id": "dock-chat",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Dispatch correction: crate Z-15 was not cleared by customs; it remains held for inspection.",
+    "summary": "Dispatch correction: crate Z-15 was not cleared by customs; it remains held for inspection.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-confirm-v12/dock-chat/v12_shipping_02",
+      "locator": "v12_shipping_02"
+    }
+  },
+  {
+    "id": "v12_shipping_03",
+    "scope_kind": "conversation",
+    "scope_id": "dock-chat",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The carrier’s current plan puts crate Z-16 departure on 2026-10-30, but the final manifest is not locked.",
+    "summary": "The carrier’s current plan puts crate Z-16 departure on 2026-10-30, but the final manifest is not locked.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-confirm-v12/dock-chat/v12_shipping_03",
+      "locator": "v12_shipping_03"
+    }
+  },
+  {
+    "id": "v12_shipping_04",
+    "scope_kind": "conversation",
+    "scope_id": "dock-chat",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Crate Z-16 contains 24 insulated panels.",
+    "summary": "Crate Z-16 contains 24 insulated panels.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-confirm-v12/dock-chat/v12_shipping_04",
+      "locator": "v12_shipping_04"
+    }
+  },
+  {
+    "id": "v12_appointments_01",
+    "scope_kind": "conversation",
+    "scope_id": "calendar-notes",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Dr. Lin’s appointment at Clinic West, slot A-44, was confirmed for 09:30 on 2026-10-02.",
+    "summary": "Dr. Lin’s appointment at Clinic West, slot A-44, was confirmed for 09:30 on 2026-10-02.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-confirm-v12/calendar-notes/v12_appointments_01",
+      "locator": "v12_appointments_01"
+    }
+  },
+  {
+    "id": "v12_appointments_02",
+    "scope_kind": "conversation",
+    "scope_id": "calendar-notes",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Correction: slot A-45 was not moved to Tuesday; the clinic kept it on Thursday.",
+    "summary": "Correction: slot A-45 was not moved to Tuesday; the clinic kept it on Thursday.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-confirm-v12/calendar-notes/v12_appointments_02",
+      "locator": "v12_appointments_02"
+    }
+  },
+  {
+    "id": "v12_appointments_03",
+    "scope_kind": "conversation",
+    "scope_id": "calendar-notes",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "A tentative schedule holds slot A-46 for Monday afternoon, awaiting the patient’s confirmation.",
+    "summary": "A tentative schedule holds slot A-46 for Monday afternoon, awaiting the patient’s confirmation.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-confirm-v12/calendar-notes/v12_appointments_03",
+      "locator": "v12_appointments_03"
+    }
+  },
+  {
+    "id": "v12_appointments_04",
+    "scope_kind": "conversation",
+    "scope_id": "calendar-notes",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "The A-46 visit is assigned to consultation room 2.",
+    "summary": "The A-46 visit is assigned to consultation room 2.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-confirm-v12/calendar-notes/v12_appointments_04",
+      "locator": "v12_appointments_04"
+    }
+  },
+  {
+    "id": "v12_software_01",
+    "scope_kind": "conversation",
+    "scope_id": "release-room",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Build R-301 passed the integration suite with 128 tests on 2026-10-05.",
+    "summary": "Build R-301 passed the integration suite with 128 tests on 2026-10-05.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-confirm-v12/release-room/v12_software_01",
+      "locator": "v12_software_01"
+    }
+  },
+  {
+    "id": "v12_software_02",
+    "scope_kind": "conversation",
+    "scope_id": "release-room",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Release note: patch R-302 was not merged; review requested changes first.",
+    "summary": "Release note: patch R-302 was not merged; review requested changes first.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-confirm-v12/release-room/v12_software_02",
+      "locator": "v12_software_02"
+    }
+  },
+  {
+    "id": "v12_software_03",
+    "scope_kind": "conversation",
+    "scope_id": "release-room",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "An early benchmark for R-303 suggests about 740 requests/min; the final load run has not completed.",
+    "summary": "An early benchmark for R-303 suggests about 740 requests/min; the final load run has not completed.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-confirm-v12/release-room/v12_software_03",
+      "locator": "v12_software_03"
+    }
+  },
+  {
+    "id": "v12_software_04",
+    "scope_kind": "conversation",
+    "scope_id": "release-room",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Patch R-303 changes the retry backoff from 200 ms to 350 ms.",
+    "summary": "Patch R-303 changes the retry backoff from 200 ms to 350 ms.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-confirm-v12/release-room/v12_software_04",
+      "locator": "v12_software_04"
+    }
+  }
+]

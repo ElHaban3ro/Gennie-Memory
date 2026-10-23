@@ -1,0 +1,13 @@
+{
+  "search": {
+    "query": "For project Atlas (ID AT-17), what is the final launch date?",
+    "scope_kind": "project",
+    "scope_id": "synthetic_revision_matrix_revision_01",
+    "entity_id": null,
+    "as_of": "2026-10-23T12:00:00.000Z",
+    "limit": 20,
+    "query_mode": "keywords"
+  },
+  "provider": "decisions",
+  "selection_policy": "baseline"
+}

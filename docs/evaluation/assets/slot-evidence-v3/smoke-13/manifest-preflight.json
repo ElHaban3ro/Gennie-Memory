@@ -1,0 +1,49 @@
+{
+  "status": "preflight_frozen_before_remote_smoke",
+  "experiment": "slot_evidence_v3_smoke_13_revision_13",
+  "scope": "synthetic_only",
+  "blind_review_excluded_from_provider_request": true,
+  "blind_review": "independent adjudication separate; no labels or expected answer sent to provider",
+  "provider": "gemma3_4b",
+  "requested_model": "google/gemma-3-4b-it",
+  "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+  "provider_preferences": {
+    "require_parameters": true,
+    "order": ["deepinfra"],
+    "allow_fallbacks": false
+  },
+  "timeout_ms": 30000,
+  "temperature": 0,
+  "max_output_tokens": 2500,
+  "candidate_count": 1,
+  "expected_local_search_candidate": {
+    "memory_id": "smoke_v3_sol_001",
+    "revision": 1
+  },
+  "repetitions": 3,
+  "call_rule": "Three identical requests; halt at first structural failure, incomplete receipt, or missing positive selection; no retries after a failure.",
+  "cost_estimate_usd": 0.0006,
+  "cost_estimate_basis": "three calls at conservative USD 0.0002 each; stop after the first failure",
+  "prior_known_cost_usd": 0.00089208,
+  "input_sha256": {
+    "corpus.json": "25545bb513b9feae744bc39736278f6d1c1bc84b90a95f147fb2a3e82f08765f",
+    "recall.json": "e90d97d9572cbd504fb38ea93410acd58e568038da10dc43c6ec2352618f04bb",
+    "search.json": "9afddd40c3f65010c3a932c6a0583a1d6d962c099ecf5a8e90c3717703f2514c"
+  },
+  "local_search_sha256": "61d571399eaa09fe4b866b687effa0caccae209ef1990b0c0937c11ff6e5aa0b",
+  "source_files_sha256": {
+    "apps/retrieval/src/model.rs": "e3ca5f8672593f10559f8a0a3a92844ce15bbbe6276d0b20eb518c2d42aad215",
+    "apps/retrieval/src/service.rs": "3f71844bbba13f3c3c91527d6a48a6d4d24064f0907117ec576143dc9833d455",
+    "apps/retrieval/src/slot_evidence.rs": "bd8eb99f5e7ff6ad066f97d3b7d4b465ce382320d9fe495d65c9e3804152c428",
+    "bootstrap/src/openrouter.rs": "d8c7c0bd1e1132f24876079a74fe9292931ddb619b13179e6dd4a44c5ea44c59",
+    "bootstrap/src/openrouter/slot_evidence.rs": "b798852283ae6473802f7560148a92737ccb15907c223d440b62302db4b069b6",
+    "bootstrap/src/main.rs": "671df0b9df5bc7eb42a468e96d11f477fd28973c567854178b5eadfb9f9a8fad",
+    "kernel/src/config.rs": "24919f7f27cbd84d266260c447229dbbc2c58b05d70ae197754c276dcb08753d",
+    "Cargo.lock": "67d8750570958feae5ccaabbe1e38792adea208f7ab35d91764360e58e312293"
+  },
+  "binary_sha256": "48a347bb0588f74eec8b1ab041c872960b69e95131f24bd0dee95ff27e2003f9",
+  "database_path": ".local/slot-evidence-v3-smoke-13.db",
+  "database_sha256": "fc1cbd781abaa3f4362ee956263f5a1050b7db325871097a5a140c072c1d2985",
+  "prompt_change": "Adds exact independent examples for the literal location slot Where does and correction-premise work now, kept as separate targets.",
+  "preflight_note": "Prompt, schema, inputs, candidate roster, binary, source, and isolated database frozen. If the first request fails, stop; if valid, complete three identical requests. Blind review excluded from payload."
+}

@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "method": "fts5_keywords",
+  "candidates": [
+    {
+      "memory_id": "smoke_v3_mateo_001",
+      "revision": 1,
+      "summary": "Curator Mateo Solis C-77 is based in Porto. Designer Ivy Chen I-12 lives in Lyon and cataloged the file.",
+      "conditions": null,
+      "source": null,
+      "state": "active",
+      "bm25": -7.432432432432432e-6
+    }
+  ],
+  "semantic_coverage": "disabled"
+}

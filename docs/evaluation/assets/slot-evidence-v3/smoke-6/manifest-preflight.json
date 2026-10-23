@@ -1,0 +1,50 @@
+{
+  "status": "preflight_frozen_before_remote_smoke",
+  "experiment": "slot_evidence_v3_smoke_6_revision_6",
+  "scope": "synthetic_only",
+  "blind_review_excluded_from_provider_request": true,
+  "blind_review": "independent adjudicator judged direct answer; review stored separately",
+  "provider": "gemma3_4b",
+  "requested_model": "google/gemma-3-4b-it",
+  "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+  "provider_preferences": {
+    "require_parameters": true,
+    "allow_fallbacks": true
+  },
+  "timeout_ms": 30000,
+  "temperature": 0,
+  "max_output_tokens": 2500,
+  "candidate_count": 1,
+  "expected_local_search_candidate": {
+    "memory_id": "smoke_v3_priya_001",
+    "revision": 1
+  },
+  "repetitions": 3,
+  "call_rule": "Three identical requests; halt at the first structural failure, incomplete receipt, or missing positive selection; no retries.",
+  "cost_estimate_usd": 0.00015,
+  "cost_cap_usd": 0.0002,
+  "cost_basis": "three requests estimated at USD 0.00005 each from prior smoke receipts",
+  "input_sha256": {
+    "corpus.json": "0e7efca345076d3f24cb4de4839d1d821c6c1933184e953c20fbb0bd75335d99",
+    "recall.json": "66a8e2540bcdfb1fc08b8e3b1f8512590731c45b51fe5569427f012cf7eff4ba",
+    "search.json": "647c0332258b140117bb45c24f19b29df2d585e47f4eedaf5e308f202715941e"
+  },
+  "local_search_sha256": "090343763284ecd3930ffb033995d53f881fd4caabad88a0c3c511bb31998887",
+  "source_files_sha256": {
+    "apps/retrieval/src/model.rs": "e3ca5f8672593f10559f8a0a3a92844ce15bbbe6276d0b20eb518c2d42aad215",
+    "apps/retrieval/src/service.rs": "3f71844bbba13f3c3c91527d6a48a6d4d24064f0907117ec576143dc9833d455",
+    "apps/retrieval/src/slot_evidence.rs": "bd8eb99f5e7ff6ad066f97d3b7d4b465ce382320d9fe495d65c9e3804152c428",
+    "bootstrap/src/openrouter.rs": "97b5a71ccc4717615ee7d260b8e3bfff2e9ce31ddae2028d89ffc79d364c6af8",
+    "bootstrap/src/openrouter/slot_evidence.rs": "43fe10c1009785ab315b0f4d9aa10c11096c95c7f020b948141df75e9e916710",
+    "bootstrap/src/main.rs": "671df0b9df5bc7eb42a468e96d11f477fd28973c567854178b5eadfb9f9a8fad",
+    "kernel/src/config.rs": "24919f7f27cbd84d266260c447229dbbc2c58b05d70ae197754c276dcb08753d",
+    "Cargo.lock": "67d8750570958feae5ccaabbe1e38792adea208f7ab35d91764360e58e312293"
+  },
+  "source_bundle_sha256": "53831710431021eb21cbbec5db692457bfd34d513806a08255712c94f128ca96",
+  "binary_sha256": "4a05a5c024b54f0c1aa452c3586d530eb77319079a2ea70e278916acb50c5be1",
+  "database_path": ".local/slot-evidence-v3-smoke-6.db",
+  "database_sha256": "0d7767ec85649f8de8cede3a19867801e64232dac0c9da6915485645f00441ca",
+  "prompt_change": "Adds exact slot-quote example: for a city request, copy `Which city` only, with original capitalization and no adjacent words.",
+  "diagnostic_change": "Distinguishes nonliteral/ambiguous slot quote from premise quote without changing acceptance.",
+  "preflight_note": "Prompt, schema, input, roster, binary, and database frozen for all repetitions; request hashes will be checked against captures."
+}

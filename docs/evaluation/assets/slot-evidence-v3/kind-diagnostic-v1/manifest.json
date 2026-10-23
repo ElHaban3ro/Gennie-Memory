@@ -1,0 +1,22 @@
+{
+  "version": "slot-evidence-v3-raw-response-diagnostic-v1",
+  "provider": "gemma3_4b",
+  "case_count": 1,
+  "blind_reviewers": 2,
+  "blind_agreement": "2/2 answerable",
+  "query_sha256": "4ac5d939ab82f643eafaf0a14581f95b218077027ffce93773c7c1d64330dc84",
+  "corpus_sha256": "7f99ab8691f3469cefa9aa84f2757b7f8dc093f93038e6bf81a09afb4e169560",
+  "response_content_sha256": "8996247cd15c5edf0a72bc743ac922338ba9ee9ebb1ff47241b5fdfad4bc01de",
+  "recall_response_sha256": "9e7ba4b92080c43fec03ed984c2a42920f2127021b291ce2dde15d9325b0babe",
+  "local_search_preflight": "one expected candidate",
+  "classification_status": "failed",
+  "error_code": "slot_evidence_v3_query_subject_name_quote_contains_stable_id",
+  "input_tokens": 1112,
+  "output_tokens": 255,
+  "reported_cost_usd": 0.0000811,
+  "classifier_ms": 3065.087917,
+  "total_ms": 3067.645417,
+  "response_file_mode_unix": "0600",
+  "synthetic_only": true,
+  "adopted": false
+}

@@ -1,0 +1,47 @@
+{
+  "selected_ids": [],
+  "per_memory": null,
+  "consensus": null,
+  "applicability": null,
+  "slot_evidence": null,
+  "status": "degraded",
+  "retrieval": {
+    "status": "complete",
+    "method": "fts5_keywords",
+    "candidates": [
+      {
+        "memory_id": "r21_synthetic_carla_city_m1",
+        "revision": 1,
+        "summary": "Employee Carla Diaz C-54 lives in Cali.",
+        "conditions": null,
+        "source": null,
+        "state": "active",
+        "bm25": -5.9459459459459454e-6
+      }
+    ],
+    "semantic_coverage": "disabled"
+  },
+  "classification_status": "failed",
+  "requested_model": "google/gemma-3-4b-it",
+  "served_model": "google/gemma-3-4b-it",
+  "selected_id": null,
+  "seed": {
+    "status": "degraded",
+    "method": "fts5_external_classifier",
+    "classifier": "google/gemma-3-4b-it",
+    "semantic_coverage": "disabled",
+    "memories": [],
+    "seed_text": null
+  },
+  "input_tokens": 1421,
+  "output_tokens": 287,
+  "reported_cost_usd": 0.00007119,
+  "error_code": "slot_evidence_v2_kind_absent_from_query",
+  "provider_http_status": null,
+  "timings": {
+    "search_ms": 0.522708,
+    "classifier_ms": 4238.359875,
+    "composition_ms": 0.429875,
+    "total_ms": 4239.344958000001
+  }
+}

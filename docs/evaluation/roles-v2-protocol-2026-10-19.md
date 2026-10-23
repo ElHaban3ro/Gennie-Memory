@@ -1,0 +1,11 @@
+# Protocolo previo: roles v2 en una sola elección
+
+Fecha: 2026-10-19. La variante condicional mejoró seis casos nuevos v4 y conservó toda evidencia útil, pero mantuvo dos ID ajenos seleccionados por la base y elevó p95 de 446,14 a 783,77 ms, por encima del límite 1,5×. No se promueve y no se rebajan criterios. V4 pasa a desarrollo conocido; su gold no cambia.
+
+La revisión `roles_v2` vuelve a una sola elección para comprobar referente y utilidad en todos los casos. La instrucción abre con «al menos una parte solicitada es suficiente», exige asociación explícita del hecho con sujeto/contexto, preserva correcciones, estados y negación y prefiere evidencia más completa. No contiene nombres, IDs o respuestas de los fixtures. Reutiliza `none` de utilidad y el mismo modelo/HTTP/búsqueda/composición. No incorpora garantías deterministas. Se congelará antes de probarla.
+
+Primero contrastar por pares las cohortes conocidas v4 y v2. Hasta dos campañas de 128 operaciones cada una, 256 peticiones totales, 2–4 minutos por campaña. Una prueba fallida sigue siendo desarrollo; no relabelar ni repetir para rescatar cifras. Corregir solo con versión nueva explícita y conservar todos los resultados. Coste conocido de cada intento y acumulado, con ausencias de recibo separadas.
+
+Si supera ambas, abrir v5 nueva, redactada por otro autor sin prompts/resultados y revisada por otro crítico con solo fuente y preguntas. Ocho conversaciones 066–073, 224 recuerdos/64 preguntas, sin imponer cuotas después de conciliación. Puede haber alternativas parciales con relación por ID. Congelar datos/revisión/código/binarios/protocolo antes de una campaña emparejada nueva, 128 operaciones y peticiones. Una SQLite temporal por cohorte, sin servicios ni datos reales. No reintentar peticiones inciertas.
+
+Las puertas se conservan: cero ID ajeno, cero pérdida de evidencia útil o completitud seleccionada por la base del mismo par, cero degradación nueva y al menos una ganancia; recibos completos, coste y p50/p95 ≤1,5× base. Informar calidad y recursos por separado. Auditoría de hashes/eventos, igualdad de candidatos y fidelidad de semillas antes de interpretar resultados. Ningún resultado de desarrollo ni selección sintética demuestra verdad de respuestas de Codex, fuentes externas o autonomía general. Mantener base mientras no se demuestre mejora.

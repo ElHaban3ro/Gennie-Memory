@@ -1,0 +1,25 @@
+# Replay no lineal V1 de una corrección fija
+
+Fecha: 2026-10-22. [Diagnóstico anterior](utility-gradient-v1-results-2026-10-22.md): todos los Jacobianos medidos son no nulos; la solución de igualdades lineales tiene residuo pequeño, pero tres controles pequeños CE difieren del autograd ideal y un bloque recibe un cambio relativo grande. No se ha aplicado delta ni probado mejora. Este replay verifica una única intervención finita, sin buscar otra escala.
+
+## Intervención congelada
+
+Padre: V5 matched, SHA `7522394b350d8843d300420f622695a638ce20bb2e6c90fe723a3cf1990c6a74`. Delta FP64 exploratoria anterior, SHA `fa47fbcb589d04497baba12208df7498a4924a3a3292f38ea2296d8c197e46df`. Coeficiente **1,0**, una sola aplicación en copia temporal de los 32 tensores LoRA FP32, orden de columnas lexicográfico/flatten-C del diagnóstico. Por bloque: convertir delta a FP32 y sumar una vez al tensor padre FP32; guardar el candidato separado. No modificar archivo padre, matriz, delta, umbral, labels o entrada. No optimizador, backward, nueva semilla, line search ni búsqueda de escalas.
+
+Antes de modelo/scores: congelar protocolo, código, checkpoint padre/candidato, delta original y delta realmente aplicada (diferencia FP64 entre arrays FP32), plan, hashes de runtime y las 176 entradas/tokens. Calcular predicción con **delta realmente aplicada**, `J @ applied_delta`, para separar redondeo de parámetros del error no lineal. Conservar también predicción teórica FP64 anterior para cuantificar esa diferencia. No escoger datos o tolerancias a partir de salidas nuevas.
+
+## Población y mediciones
+
+Exactamente 176 forward sin gradiente, todos los TRAIN originales/extensión del diagnóstico, en su orden. Misma base, tokenización, instrucción y runtime; no leer ejemplos de desarrollo, conocidos, closed o V6. La referencia medida son los márgenes/logits/scores del checkpoint padre durante el diagnóstico anterior, con hashes y pesos verificados. No hay nueva corrida completa contemporánea del padre: declarar este límite, sin presentar una campaña emparejada de producto.
+
+Registrar logits FP32, margen real, score/corte0,5, cambio real frente a referencia y error respecto a `J@applied_delta` para cada fila. Separar los 27 casos con déficit de margen firmado2 y los149 márgenes fuertes cuyo cambio lineal objetivo era0. Medir distribución completa de errores, útiles preservados, ajenos, ganancias y pérdidas de entrenamiento. Es **ajuste dentro de muestra**, no recuperación validada, generalización fresca o comparativa contra FTS5/Decisions.
+
+Tolerancias numéricas prospectivas para compatibilidad de la aproximación: por fila, `abs(actual_change-predicted_change) <= max(0.1,0.1*abs(predicted_change))`; agregado, error L2 relativo ≤0,1 (denominador norma de predicción, guardia1e-12). Informar ambas y número de incumplimientos, sin mover umbrales o repetir. Para los149 protegidos, reportar cambio firmado mínimo/máximo y desviaciones absolutas >0,1. Reportar para los27 déficits cuántos alcanzan margen firmado≥1,9 y≥2,0. Estas tolerancias evalúan el surrogate, no reemplazan puertas de calidad. Un desajuste no equivale automáticamente a empeoramiento de utilidad: conservar ambas mediciones por separado.
+
+## Integridad y límites
+
+Verificar pesos padre y candidato (32 nombres/forma/dtype), base y runtime congelados antes de carga. Reconstruir tokenids completos ≤32768 sin truncar. GPU MLX sin fallback, modelo eval y sin captura de pesos compilada. Verificar hash de adaptadores en memoria contra candidato y base antes/después; no peso cambia durante forward. Hash padre antes/después igual. Registrar eventos UTC RFC3339 milisegundos y ordinal, guardar checkpoint candidato antes del primer forward y comprobar contadores176/0backward/0updates. Una instancia de modelo, sin modelo padre simultáneo.
+
+CLI temporal sin puerto/HTTP/API/servicio, sin instalación, dependencia/pesos base nuevos, DB, secretos, env persistente, procesos ajenos, Rust/Cargo, rama, commit o push. Estimación1–2minutos; watchdog600s, techo176forward. APIUSD0; coste económico local/Codex desconocido. Código de salida observado o desconocido explícito si se pierde handle; inspeccionar proceso por script exacto, no asumir terminación por timeout de observación. Fallo técnico conserva intento sin rescate en directorio existente.
+
+Artefactos en `outputs/iromem/evaluation/utility-gradient-replay-v1-2026-10-22/`. Auditor independiente reconstruirá candidato/delta/predicciones, scores/métricas/errores/márgenes/eventos/hashes sin modelo; no repetirá forward. Los controles previos FP16 no prueban exactitud universal ni capacidad global; un replay positivo solo acredita esta intervención en train. El criterio de no pérdida útil/ajenos de desarrollo/conocidos y todas las puertas originales siguen intactos. Ningún resultado abre reservas o adopta el candidato aquí. Si hay mejora útil real, una evaluación posterior debe congelarse por separado antes de otros conjuntos. La autorización general ya cubre estas pruebas; no hay permiso pendiente.

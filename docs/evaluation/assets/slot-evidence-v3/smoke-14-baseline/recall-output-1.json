@@ -1,0 +1,60 @@
+{
+  "selected_ids": [
+    "smoke_v3_marta_001"
+  ],
+  "per_memory": null,
+  "consensus": null,
+  "applicability": null,
+  "slot_evidence": null,
+  "status": "complete",
+  "retrieval": {
+    "status": "complete",
+    "method": "fts5_keywords",
+    "candidates": [
+      {
+        "memory_id": "smoke_v3_marta_001",
+        "revision": 1,
+        "summary": "Engineer Marta Solis M-58 currently works from Valencia. Archivist Teo Rivas T-26 lives in Girona and catalogued the flood maps.",
+        "conditions": null,
+        "source": null,
+        "state": "active",
+        "bm25": -5.9459459459459454e-6
+      }
+    ],
+    "semantic_coverage": "disabled"
+  },
+  "classification_status": "complete",
+  "requested_model": "google/gemma-3-4b-it",
+  "served_model": "google/gemma-3-4b-it",
+  "selected_id": "smoke_v3_marta_001",
+  "seed": {
+    "status": "complete",
+    "method": "fts5_external_classifier",
+    "classifier": "google/gemma-3-4b-it",
+    "semantic_coverage": "disabled",
+    "memories": [
+      {
+        "memory_id": "smoke_v3_marta_001",
+        "revision": 1,
+        "scope_kind": "project",
+        "scope_id": "slot_evidence_v3_smoke_20261023_r14",
+        "summary": "Engineer Marta Solis M-58 currently works from Valencia. Archivist Teo Rivas T-26 lives in Girona and catalogued the flood maps.",
+        "conditions": null,
+        "source": null,
+        "state": "active"
+      }
+    ],
+    "seed_text": "[smoke_v3_marta_001@1] Engineer Marta Solis M-58 currently works from Valencia. Archivist Teo Rivas T-26 lives in Girona and catalogued the flood maps."
+  },
+  "input_tokens": 155,
+  "output_tokens": 6,
+  "reported_cost_usd": 8.35e-6,
+  "error_code": null,
+  "provider_http_status": null,
+  "timings": {
+    "search_ms": 1.417541,
+    "classifier_ms": 942.941375,
+    "composition_ms": 0.8744999999999999,
+    "total_ms": 945.328666
+  }
+}

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-label="Entrada del clasificador: tokens y coste reportados">
+<rect width="100%" height="100%" fill="#fffefa"/>
+<text x="58" y="75" fill="#25313b" text-anchor="start" font-family="Georgia,serif" font-size="34">Entrada del clasificador: tokens y coste reportados</text>
+<text x="58" y="110" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="17">Mismas preguntas y candidatos · una llamada por política y pregunta · no son tokens de Codex</text>
+<text x="58" y="144" fill="#25313b" text-anchor="start" font-family="Georgia,serif" font-size="22">Tokens de entrada</text>
+<text x="58" y="174" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="16">Total por política en este banco</text>
+<text x="110" y="199" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="14">tokens</text>
+<line x1="110" y1="497" x2="503" y2="497" stroke="#d8dfdf" stroke-width="1"/>
+<text x="100" y="502" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">0</text>
+<line x1="110" y1="356" x2="503" y2="356" stroke="#d8dfdf" stroke-width="1"/>
+<text x="100" y="361" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">29123</text>
+<line x1="110" y1="215" x2="503" y2="215" stroke="#d8dfdf" stroke-width="1"/>
+<text x="100" y="220" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">58246</text>
+<line x1="110" y1="215" x2="110" y2="497" stroke="#25313b" stroke-width="1"/>
+<rect x="175" y="304" width="96" height="193" fill="#b77a27"/>
+<text x="223" y="291" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="18">39877</text>
+<text x="223" y="527" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="17">Base</text>
+<rect x="350" y="271" width="96" height="226" fill="#18817e"/>
+<text x="398" y="258" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="18">46597</text>
+<text x="398" y="527" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="17">utility_v1</text>
+<text x="610" y="144" fill="#25313b" text-anchor="start" font-family="Georgia,serif" font-size="22">Coste informado</text>
+<text x="610" y="174" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="16">Total por política en este banco</text>
+<text x="662" y="199" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="14">USD</text>
+<line x1="662" y1="497" x2="1055" y2="497" stroke="#d8dfdf" stroke-width="1"/>
+<text x="652" y="502" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">0.000000</text>
+<line x1="662" y1="356" x2="1055" y2="356" stroke="#d8dfdf" stroke-width="1"/>
+<text x="652" y="361" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">0.002912</text>
+<line x1="662" y1="215" x2="1055" y2="215" stroke="#d8dfdf" stroke-width="1"/>
+<text x="652" y="220" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">0.005825</text>
+<line x1="662" y1="215" x2="662" y2="497" stroke="#25313b" stroke-width="1"/>
+<rect x="727" y="304" width="96" height="193" fill="#b77a27"/>
+<text x="775" y="291" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="18">0.003988</text>
+<text x="775" y="527" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="17">Base</text>
+<rect x="902" y="271" width="96" height="226" fill="#18817e"/>
+<text x="950" y="258" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="18">0.004660</text>
+<text x="950" y="527" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="17">utility_v1</text>
+<text x="58" y="575" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="16">La variante modifica instrucción y opción none. El consumo pertenece a Decisions.</text>
+<text x="58" y="605" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="16">El contexto y el coste de una respuesta de Codex no se midieron en esta comparación.</text>
+</svg>

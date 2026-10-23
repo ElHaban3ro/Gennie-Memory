@@ -1,0 +1,44 @@
+{
+  "status": "failed_closed_no_retry",
+  "preflight_manifest_sha256": "18e6e20cc4c8e4a80df152ea680424b12f94d0e5d3bd3853ba33609aaaa2226e",
+  "observed_capture": {
+    "elapsed_ms": 8940.251625,
+    "exchange_error": null,
+    "http_status": 200,
+    "http_version": "HTTP/1.1",
+    "input_tokens": null,
+    "output_tokens": null,
+    "prompt_sha256": "994307ceac2ac63d71b756517180467cad8b5a3d02df3079ba6c8659684c50bc",
+    "reported_cost_usd": 3.994e-05,
+    "request_payload_sha256": "5f2c25301eb990f805c7a176904496105dfda0bf1d7546f5205de3991b8d47b4",
+    "requested_model": "google/gemma-3-4b-it",
+    "response_body_complete": true,
+    "response_sha256": "bcfd1fb2c0a9a683229e34cd36a4529026ab4ee5da04bbe01d73d13e59f2a976",
+    "schema_sha256": "12f2b5bb6911b966ed6134c5d02d41d0b5220088d66b9e7a15bcdd3f180c0399",
+    "scope_id": "slot_evidence_v3_smoke_20261023",
+    "served_model": "google/gemma-3-4b-it",
+    "served_provider": "Parasail"
+  },
+  "expected_hashes_match_capture": {
+    "request_payload": true,
+    "prompt_messages": true,
+    "schema": true
+  },
+  "classifier_result": {
+    "http_status": 200,
+    "response_body_complete": true,
+    "served_model": "google/gemma-3-4b-it",
+    "served_provider": "Parasail",
+    "input_tokens": 751,
+    "output_tokens": 198,
+    "reported_cost_usd": 3.994e-05,
+    "classifier_ms": 8940.251625,
+    "total_ms": 8951.9695,
+    "selected_id": null,
+    "error_code": "slot_evidence_v2_anchor_phrase_not_literal",
+    "semantic_scoring": "not_scored; no validated trace or selection"
+  },
+  "raw_response_saved": false,
+  "diagnostic_limit": "The error proves the proposed query anchor was not accepted as an exact unique quote; the response body hash is retained but raw output is not. The specific text/cause cannot be recovered.",
+  "next_action": "Stop this smoke sequence. Revise prompt/fixture only with an explicit hypothesis; freeze a new revision before another single smoke."
+}

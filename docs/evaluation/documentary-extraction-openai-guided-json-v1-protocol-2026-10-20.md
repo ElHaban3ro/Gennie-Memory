@@ -1,0 +1,13 @@
+# Extracción documental: contraste de entrega JSON de la guía V5
+
+UTC 2026-10-20. Piloto conocido de ocho posiciones, distinto de la cohorte reservada V6. [V5 nativo](documentary-extraction-openai-guided-v5-protocol-2026-10-20.md) produjo cinco DTO completos de ocho, pero contiene inversión de negación y defectos de pregunta; no pasa calidad. Ambos críticos, sus diferencias y las ocho salidas se conservan sin reparar.
+
+Hipótesis acotada: el esquema nativo podría contribuir a elecciones semánticas incorrectas; observar campos permitidos pero falsos no prueba esa causa. Se contrasta el mismo GPT-4.1 Mini/OpenAI exclusivo, textos, orden, ontología, guía, esquema completo, temperatura y máximo de salida. Solo cambia entrega: `response_format=json_object`, mismo schema como `output_schema` en el user JSON y la misma frase adicional de formato usada en la variante JSON previa. No se añaden casos, etiquetas, frames ni datos nuevos.
+
+El servidor garantiza JSON y el validador local sigue aplicando íntegramente el esquema V5 con uniones, mínimos y parser de dominio. No se relaja ni se repara ninguna salida. Prueba de igualdad literal de los mensajes salvo esa frase/ubicación del schema y del resto del payload; un hecho con campos de medición inaplicables sigue rechazado en JSON.
+
+Preparación, código, diario y recibos nuevos, máximo ocho HTTP y cuatro concurrentes, sin reintentos. Catálogo/precios y estimación del payload anunciados antes de llamar. Un fallo fatal conserva el batch y detiene posteriores. Los intentos nativos no se sobrescriben ni se reintentan.
+
+Mismas puertas: ocho DTO completos y ocho extracciones fieles mediante dos críticas separadas sin gold, manuales ni resultados de roles. Revisar todas las partes y valores, especialmente negaciones, premisas, propiedad solicitada, ámbito e identidades; uncertain/defective/unavailable no pasan. Diferente nombre interno sin pérdida de referente no es defecto. El piloto es desarrollo observado: sus revisores pueden conocer versiones anteriores del mismo piloto, lo que debe declararse; no es revisión humana ni cohorte nueva. No se atribuye una mejora de exactitud poblacional o causalidad a ocho repeticiones sin réplica.
+
+Las ablaciones mantienen 100 pares y degradan los no cubiertos. Cualquier pase solo permite preparar el banco completo y su revisión, no adoptar. Recursos contra baseline, estabilidad, 126 difíciles y V6 siguen pendientes. Coste por recibo una vez, ausencia desconocida; tiempos de petición separados de latencia de recall. Sin cambios de producto, banco/gold, secretos, SQL, dependencias o servicios.

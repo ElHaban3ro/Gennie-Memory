@@ -1,0 +1,110 @@
+[
+  {
+    "id": "scope_sentence_01",
+    "scope_kind": "project",
+    "scope_id": "sentence_scope_sentence_01",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Engineer Marta Solis M-58 currently works from Valencia. Archivist Teo Rivas T-26 lives in Girona and catalogued the flood maps.",
+    "summary": "Engineer Marta Solis M-58 currently works from Valencia. Archivist Teo Rivas T-26 lives in Girona and catalogued the flood maps.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "scope_sentence_02",
+    "scope_kind": "project",
+    "scope_id": "sentence_scope_sentence_02",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Consultant Lee Park L-81 lives in Lisbon. Employee Dana Ruiz D-44 lives in Bogotá.",
+    "summary": "Consultant Lee Park L-81 lives in Lisbon. Employee Dana Ruiz D-44 lives in Bogotá.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "scope_sentence_03",
+    "scope_kind": "project",
+    "scope_id": "sentence_scope_sentence_03",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Contractor Bob Torres B-29 told employee Carlos C-3 a joke and lives in Quito. Employee Dana Ruiz D-44 lives in Lima.",
+    "summary": "Contractor Bob Torres B-29 told employee Carlos C-3 a joke and lives in Quito. Employee Dana Ruiz D-44 lives in Lima.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "scope_sentence_04",
+    "scope_kind": "project",
+    "scope_id": "sentence_scope_sentence_04",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Project manager Ana Ruiz A-12 is a colleague of analyst Bruno Vale B-8. Analyst Bruno Vale B-8 lives in Lima.",
+    "summary": "Project manager Ana Ruiz A-12 is a colleague of analyst Bruno Vale B-8. Analyst Bruno Vale B-8 lives in Lima.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "scope_sentence_05",
+    "scope_kind": "project",
+    "scope_id": "sentence_scope_sentence_05",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Contractor Bob Torres B-29 said employee Carlos Ruiz C-3 lives in Lima.",
+    "summary": "Contractor Bob Torres B-29 said employee Carlos Ruiz C-3 lives in Lima.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "scope_sentence_06",
+    "scope_kind": "project",
+    "scope_id": "sentence_scope_sentence_06",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Engineer Marta Solis M-58 works from Valencia, while archivist Teo Rivas T-26 lives in Girona.",
+    "summary": "Engineer Marta Solis M-58 works from Valencia, while archivist Teo Rivas T-26 lives in Girona.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "scope_sentence_07",
+    "scope_kind": "project",
+    "scope_id": "sentence_scope_sentence_07",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Engineer Marta Solis M-58 works from Valencia; archivist Teo Rivas T-26 lives in Girona.",
+    "summary": "Engineer Marta Solis M-58 works from Valencia; archivist Teo Rivas T-26 lives in Girona.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "scope_sentence_09",
+    "scope_kind": "project",
+    "scope_id": "sentence_scope_sentence_09",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La ingeniera Marta Solis M-58 trabaja actualmente desde Valencia. El archivista Teo Rivas T-26 vive en Girona.",
+    "summary": "La ingeniera Marta Solis M-58 trabaja actualmente desde Valencia. El archivista Teo Rivas T-26 vive en Girona.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "scope_sentence_10",
+    "scope_kind": "project",
+    "scope_id": "sentence_scope_sentence_10",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Contractor Yara Bell Y-74, who joined the team in 2020, lives in Galway. Researcher Keon Shaw K-13 lives in Limerick.",
+    "summary": "Contractor Yara Bell Y-74, who joined the team in 2020, lives in Galway. Researcher Keon Shaw K-13 lives in Limerick.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  }
+]

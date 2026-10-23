@@ -1,0 +1,382 @@
+[
+  {
+    "id": "v8_festival_01",
+    "scope_kind": "conversation",
+    "scope_id": "festival",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Acta final: Orilla Producciones recibió el contrato del montaje principal por decisión firmada del comité.",
+    "summary": "Acta final: Orilla Producciones recibió el contrato del montaje principal por decisión firmada del comité.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v8/festival/v8_festival_01",
+      "locator": "v8_festival_01"
+    }
+  },
+  {
+    "id": "v8_festival_02",
+    "scope_kind": "conversation",
+    "scope_id": "festival",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Corrección del comité: Brisa Norte no ganó el montaje principal; solo presentó una cotización para la tarima secundaria.",
+    "summary": "Corrección del comité: Brisa Norte no ganó el montaje principal; solo presentó una cotización para la tarima secundaria.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v8/festival/v8_festival_02",
+      "locator": "v8_festival_02"
+    }
+  },
+  {
+    "id": "v8_festival_03",
+    "scope_kind": "conversation",
+    "scope_id": "festival",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La hoja preliminar estimó 18.000 euros para la iluminación; la factura definitiva aún no se ha recibido.",
+    "summary": "La hoja preliminar estimó 18.000 euros para la iluminación; la factura definitiva aún no se ha recibido.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v8/festival/v8_festival_03",
+      "locator": "v8_festival_03"
+    }
+  },
+  {
+    "id": "v8_festival_04",
+    "scope_kind": "conversation",
+    "scope_id": "festival",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Para el acceso al recinto se contrató a Control Delta; el acta no identifica a una jefatura de seguridad general.",
+    "summary": "Para el acceso al recinto se contrató a Control Delta; el acta no identifica a una jefatura de seguridad general.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v8/festival/v8_festival_04",
+      "locator": "v8_festival_04"
+    }
+  },
+  {
+    "id": "v8_festival_05",
+    "scope_kind": "conversation",
+    "scope_id": "festival",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La cafetería del festival abrió a las 10:30 y vendió café de origen local.",
+    "summary": "La cafetería del festival abrió a las 10:30 y vendió café de origen local.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v8/festival/v8_festival_05",
+      "locator": "v8_festival_05"
+    }
+  },
+  {
+    "id": "v8_clinica_01",
+    "scope_kind": "conversation",
+    "scope_id": "clinica",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "En la nota de alta firmada, la doctora prescribió a Vera Sol (CL-28) 5 mg de medicamento Neral por la noche durante siete días.",
+    "summary": "En la nota de alta firmada, la doctora prescribió a Vera Sol (CL-28) 5 mg de medicamento Neral por la noche durante siete días.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v8/clinica/v8_clinica_01",
+      "locator": "v8_clinica_01"
+    }
+  },
+  {
+    "id": "v8_clinica_02",
+    "scope_kind": "conversation",
+    "scope_id": "clinica",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Aclaración de enfermería: Vera Sol (CL-28) no empezó el antibiótico antes de la toma de muestra; la primera dosis quedó pendiente de la prueba.",
+    "summary": "Aclaración de enfermería: Vera Sol (CL-28) no empezó el antibiótico antes de la toma de muestra; la primera dosis quedó pendiente de la prueba.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v8/clinica/v8_clinica_02",
+      "locator": "v8_clinica_02"
+    }
+  },
+  {
+    "id": "v8_clinica_03",
+    "scope_kind": "conversation",
+    "scope_id": "clinica",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El cultivo preliminar mostró una señal compatible con flora tipo K, pero el laboratorio aún no confirmó el microorganismo.",
+    "summary": "El cultivo preliminar mostró una señal compatible con flora tipo K, pero el laboratorio aún no confirmó el microorganismo.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v8/clinica/v8_clinica_03",
+      "locator": "v8_clinica_03"
+    }
+  },
+  {
+    "id": "v8_clinica_04",
+    "scope_kind": "conversation",
+    "scope_id": "clinica",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La clínica trasladó la cita de control al consultorio 6; la ficha no registra el peso de Vera al alta.",
+    "summary": "La clínica trasladó la cita de control al consultorio 6; la ficha no registra el peso de Vera al alta.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v8/clinica/v8_clinica_04",
+      "locator": "v8_clinica_04"
+    }
+  },
+  {
+    "id": "v8_clinica_05",
+    "scope_kind": "conversation",
+    "scope_id": "clinica",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El formulario de ingreso indica que Vera prefirió recibir avisos por mensaje de texto.",
+    "summary": "El formulario de ingreso indica que Vera prefirió recibir avisos por mensaje de texto.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v8/clinica/v8_clinica_05",
+      "locator": "v8_clinica_05"
+    }
+  },
+  {
+    "id": "v8_solar_01",
+    "scope_kind": "conversation",
+    "scope_id": "solar",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La orden de compra cerrada asigna la instalación de los paneles del techo B a Solaria Andina; el contrato está firmado.",
+    "summary": "La orden de compra cerrada asigna la instalación de los paneles del techo B a Solaria Andina; el contrato está firmado.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v8/solar/v8_solar_01",
+      "locator": "v8_solar_01"
+    }
+  },
+  {
+    "id": "v8_solar_02",
+    "scope_kind": "conversation",
+    "scope_id": "solar",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Nota de cierre: el inversor LUX-4 no quedó aprobado para el techo B; solo se autorizó una prueba en el banco de carga.",
+    "summary": "Nota de cierre: el inversor LUX-4 no quedó aprobado para el techo B; solo se autorizó una prueba en el banco de carga.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v8/solar/v8_solar_02",
+      "locator": "v8_solar_02"
+    }
+  },
+  {
+    "id": "v8_solar_03",
+    "scope_kind": "conversation",
+    "scope_id": "solar",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El cálculo preliminar proyecta 3,2 kW para el techo B, sujeto a la inspección de sombra; no hay una medición real todavía.",
+    "summary": "El cálculo preliminar proyecta 3,2 kW para el techo B, sujeto a la inspección de sombra; no hay una medición real todavía.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v8/solar/v8_solar_03",
+      "locator": "v8_solar_03"
+    }
+  },
+  {
+    "id": "v8_solar_04",
+    "scope_kind": "conversation",
+    "scope_id": "solar",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El equipo registró una revisión del permiso municipal para el techo C, sin decisión sobre la fecha de conexión del techo B.",
+    "summary": "El equipo registró una revisión del permiso municipal para el techo C, sin decisión sobre la fecha de conexión del techo B.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v8/solar/v8_solar_04",
+      "locator": "v8_solar_04"
+    }
+  },
+  {
+    "id": "v8_solar_05",
+    "scope_kind": "conversation",
+    "scope_id": "solar",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La instalación usó una grúa alquilada a Elevaciones Níspero para subir los marcos al techo.",
+    "summary": "La instalación usó una grúa alquilada a Elevaciones Níspero para subir los marcos al techo.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v8/solar/v8_solar_05",
+      "locator": "v8_solar_05"
+    }
+  },
+  {
+    "id": "v8_escuela_01",
+    "scope_kind": "conversation",
+    "scope_id": "escuela",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La resolución firmada seleccionó a Papelera Horizonte para suministrar cuadernos a los cursos de primaria.",
+    "summary": "La resolución firmada seleccionó a Papelera Horizonte para suministrar cuadernos a los cursos de primaria.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v8/escuela/v8_escuela_01",
+      "locator": "v8_escuela_01"
+    }
+  },
+  {
+    "id": "v8_escuela_02",
+    "scope_kind": "conversation",
+    "scope_id": "escuela",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Rectificación: la escuela no aprobó la compra de tabletas a TecnoSur; autorizó únicamente una demostración sin compromiso.",
+    "summary": "Rectificación: la escuela no aprobó la compra de tabletas a TecnoSur; autorizó únicamente una demostración sin compromiso.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v8/escuela/v8_escuela_02",
+      "locator": "v8_escuela_02"
+    }
+  },
+  {
+    "id": "v8_escuela_03",
+    "scope_kind": "conversation",
+    "scope_id": "escuela",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El recuento del viernes fue provisional: asistieron 86 estudiantes, pero secretaría aún no cerró la cifra mensual.",
+    "summary": "El recuento del viernes fue provisional: asistieron 86 estudiantes, pero secretaría aún no cerró la cifra mensual.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v8/escuela/v8_escuela_03",
+      "locator": "v8_escuela_03"
+    }
+  },
+  {
+    "id": "v8_escuela_04",
+    "scope_kind": "conversation",
+    "scope_id": "escuela",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El acta menciona una propuesta de ciencias presentada por el grupo 5B, sin indicar quién la redactó.",
+    "summary": "El acta menciona una propuesta de ciencias presentada por el grupo 5B, sin indicar quién la redactó.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v8/escuela/v8_escuela_04",
+      "locator": "v8_escuela_04"
+    }
+  },
+  {
+    "id": "v8_escuela_05",
+    "scope_kind": "conversation",
+    "scope_id": "escuela",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El transporte escolar cambió la parada de la calle Olmo a la plaza del Mercado.",
+    "summary": "El transporte escolar cambió la parada de la calle Olmo a la plaza del Mercado.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "conditions": null,
+    "source": {
+      "kind": "user",
+      "ref": "synthetic://quality-goal-dev-v8/escuela/v8_escuela_05",
+      "locator": "v8_escuela_05"
+    }
+  }
+]

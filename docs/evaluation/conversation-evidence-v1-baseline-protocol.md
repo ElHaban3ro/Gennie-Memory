@@ -1,0 +1,11 @@
+# Línea base prospectiva de pertinencia v1
+
+Fecha: 2026-10-17. Fijado después de validar la cobertura local y antes de llamar al proveedor. La [rúbrica](evidence-rubric-v1.md) y el [banco](../../tests/fixtures/conversation-evidence-v1/manifest.json) ya están congelados; no se cambian etiquetas ni preguntas con el resultado remoto.
+
+Se autoriza como continuación de la investigación sintética una campaña de 64 operaciones en desarrollo: `keywords`, límite 20, Decisions, `baseline`, una sola ejecución por caso en el orden del archivo. Ninguna etiqueta o justificación se pasa al modelo. La búsqueda local cubrió 48/48 evidencias; cada lista contiene ocho candidatos, incluidas las 16 preguntas sin evidencia. No hay truncamiento ni listas vacías que eviten esas llamadas. Previsión: alrededor de un minuto; registrar tokens, coste informado, modelo servido y fallos. No se reintentan llamadas inciertas.
+
+Se reportará por las cuatro relaciones: ID permitido seleccionado, abstención con evidencia cubierta, selección no permitida y degradación. Ausencia requiere semilla vacía; respuesta, refutación y contexto parcial requieren conservar la evidencia anotada. No se mezclan las cuatro categorías en un porcentaje de aprobación. Ante selección discordante se inspecciona el texto y se registra como desacuerdo con la rúbrica; no se llama automáticamente falsedad. No se exige completar los datos que el corpus no contiene.
+
+La auditoría posterior debe validar hashes, eventos, fuente declarada, texto y ámbito de candidatos y semillas antes de interpretar selección. Los casos de refutación y contexto parcial tienen `expected_ids` no vacíos por diseño, pero no se presentan como respuestas completas. El evaluador genérico puede llamarlos positivos técnicos; el informe usa las relaciones explícitas. No se evaluará una respuesta final generada.
+
+La ejecución solo establece una línea base descriptiva para este desarrollo. No promueve configuración, proveedor o integración, no abre reserva, no sustituye revisión independiente y no prueba que el rendimiento haya mejorado frente a otro banco. Cualquier hipótesis surgida se contrasta después con otros datos; no se vuelve a ejecutar para rescatar un resultado.

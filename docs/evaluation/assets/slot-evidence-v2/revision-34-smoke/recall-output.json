@@ -1,0 +1,26 @@
+{
+  "selected_ids": [],
+  "status": "degraded",
+  "selected_id": null,
+  "classification_status": "failed",
+  "requested_model": "google/gemma-3-4b-it",
+  "served_model": "google/gemma-3-4b-it",
+  "input_tokens": 1079,
+  "output_tokens": 250,
+  "reported_cost_usd": 5.566e-05,
+  "error_code": "slot_evidence_v2_kind_range_splits_identifier",
+  "provider_http_status": null,
+  "timings": {
+    "search_ms": 1.544458,
+    "classifier_ms": 2536.71925,
+    "composition_ms": 1.579208,
+    "total_ms": 2539.884333
+  },
+  "retrieval": {
+    "status": "complete",
+    "method": "fts5_keywords",
+    "candidate_ids": [
+      "r34_elena_zone_m1"
+    ]
+  }
+}

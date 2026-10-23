@@ -1,0 +1,45 @@
+{
+  "status": "preflight_frozen_before_remote_smoke",
+  "experiment": "slot_evidence_v3_smoke_2_revision_2",
+  "prior_attempt": "smoke-1 failed; preserved unchanged",
+  "scope": "synthetic_only",
+  "blind_review_excluded_from_provider_request": true,
+  "blind_review": "independent reviewer and separate critic both judged direct answer; outputs stored separately",
+  "provider": "gemma3_4b",
+  "requested_model": "google/gemma-3-4b-it",
+  "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+  "provider_preferences": {
+    "require_parameters": true,
+    "allow_fallbacks": true
+  },
+  "timeout_ms": 30000,
+  "temperature": 0,
+  "max_output_tokens": 2500,
+  "candidate_count": 1,
+  "expected_local_search_candidate": {
+    "memory_id": "smoke_v3_luisa_001",
+    "revision": 1
+  },
+  "input_sha256": {
+    "docs/evaluation/assets/slot-evidence-v3/smoke-2/input/corpus.json": "3785e03e8f6e7454535a50b1b4b73717624d5b9fdea89aa3c3b674bb58edfc4d",
+    "docs/evaluation/assets/slot-evidence-v3/smoke-2/input/recall.json": "53012779a7fb717f1522deb517c92bb5b66375717dea281184d2d55cb905389e",
+    "docs/evaluation/assets/slot-evidence-v3/smoke-2/input/search.json": "7a78267bee2a2db7775b641f6965c4885f645349f9f77f9941694515bacf1680",
+    "local-search.json": "cf1bbcb0c6b55866a84d36dd33e2f4bf78f38d3e67e0a25e8d183372adfccc8a"
+  },
+  "system_instruction_sha256": "82c8f957f092224226c320c4634a33ce4e4a86219d8af09fd90fb6f505d3372e",
+  "schema_builder_source_sha256": "e7613b78d8248694b302719a96e8024d8b8603016f075d68cb9c239d8f72a09a",
+  "source_files_sha256": {
+    "apps/retrieval/src/model.rs": "e3ca5f8672593f10559f8a0a3a92844ce15bbbe6276d0b20eb518c2d42aad215",
+    "apps/retrieval/src/service.rs": "3f71844bbba13f3c3c91527d6a48a6d4d24064f0907117ec576143dc9833d455",
+    "apps/retrieval/src/slot_evidence.rs": "bd8eb99f5e7ff6ad066f97d3b7d4b465ce382320d9fe495d65c9e3804152c428",
+    "bootstrap/src/openrouter.rs": "97b5a71ccc4717615ee7d260b8e3bfff2e9ce31ddae2028d89ffc79d364c6af8",
+    "bootstrap/src/openrouter/slot_evidence.rs": "8690427c09b3a09cabcedb23d284f93e19caf990fe6c183fd308d42b0511709f",
+    "bootstrap/src/main.rs": "671df0b9df5bc7eb42a468e96d11f477fd28973c567854178b5eadfb9f9a8fad",
+    "kernel/src/config.rs": "24919f7f27cbd84d266260c447229dbbc2c58b05d70ae197754c276dcb08753d",
+    "Cargo.lock": "67d8750570958feae5ccaabbe1e38792adea208f7ab35d91764360e58e312293"
+  },
+  "source_bundle_sha256": "02d239904f668fc5e180daf5afd7aa2c7cdeda0dad459597d9992affd4342c8a",
+  "binary_sha256": "4b7fe95b0e019ddc326a7b4e86a30d39ab4bf0829a2fc867e42836709b4a3cf3",
+  "database_sha256": "cc5137287f5dd28d608c36ad7e9f34560fe260148024e89381d84ad33ce86e9f",
+  "call_rule": "one call; if incomplete receipt, invalid structure, failed blind adjudication, or no expected positive selection, stop without retry"
+}

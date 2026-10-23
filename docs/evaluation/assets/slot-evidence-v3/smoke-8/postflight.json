@@ -1,0 +1,53 @@
+{
+  "status": "postflight_verified",
+  "experiment": "slot_evidence_v3_smoke_8_revision_8",
+  "checks": {
+    "input:corpus.json": true,
+    "input:recall.json": true,
+    "input:search.json": true,
+    "local_search": true,
+    "source:apps/retrieval/src/model.rs": true,
+    "source:apps/retrieval/src/service.rs": true,
+    "source:apps/retrieval/src/slot_evidence.rs": true,
+    "source:bootstrap/src/openrouter.rs": true,
+    "source:bootstrap/src/openrouter/slot_evidence.rs": true,
+    "source:bootstrap/src/main.rs": true,
+    "source:kernel/src/config.rs": true,
+    "source:Cargo.lock": true,
+    "binary": true,
+    "database": true
+  },
+  "all_unchanged": true,
+  "capture": {
+    "http_status": 200,
+    "response_body_complete": true,
+    "request_payload_sha256": "a141162e31a6eaa54c396649ef6c7987435689baca5517f6c96810d08c5defd9",
+    "prompt_sha256": "f0d9ebd092dc2b9875d0639268022a6b3cef4b5924fece76bac830b5cb5da001",
+    "schema_sha256": "d111651b04b937c29f182125fde1c7223f2445cc3ca5fe6baee7ce7784c84130",
+    "served_model": "google/gemma-3-4b-it",
+    "served_provider": "DeepInfra",
+    "input_tokens": 964,
+    "output_tokens": 179,
+    "reported_cost_usd": 6.61e-05,
+    "elapsed_ms": 2685.056583,
+    "finish_reason": "stop",
+    "response_content_bytes": 593,
+    "exchange_error": null
+  },
+  "recall": {
+    "status": "degraded",
+    "classification_status": "failed",
+    "selected_id": null,
+    "error_code": "slot_evidence_v3_identity_subject_has_no_matching_anchor",
+    "input_tokens": 964,
+    "output_tokens": 179,
+    "reported_cost_usd": 6.61e-05,
+    "timings": {
+      "search_ms": 0.5180830000000001,
+      "classifier_ms": 2694.475083,
+      "composition_ms": 1.314875,
+      "total_ms": 2696.330833
+    }
+  },
+  "decision": "halt_after_first_failed_structural_response; no retry"
+}

@@ -1,0 +1,44 @@
+{
+  "status": "failed_closed_no_retry",
+  "preflight_manifest_sha256": "af3b4fc67b4d0de342faf2ede706b5d08a00c7f136bd661998ee8919e235fa8c",
+  "capture": {
+    "elapsed_ms": 5354.199541,
+    "exchange_error": null,
+    "http_status": 200,
+    "http_version": "HTTP/1.1",
+    "input_tokens": 801,
+    "output_tokens": 251,
+    "prompt_sha256": "c7c2d77bfe7fdea8cdae15461245a8962322288a5b69e89d381771a7f62baa5e",
+    "reported_cost_usd": 4.459e-05,
+    "request_payload_sha256": "7f73d8ba1220ad2d6c5b7cfbce8a5d075275d001a29b046a78d33f9d12473b9e",
+    "requested_model": "google/gemma-3-4b-it",
+    "response_body_complete": true,
+    "response_sha256": "a72eb553111db513cec5d9f314d6ef97bc02ff62c5b4b1b9e90aaefe1759ca56",
+    "schema_sha256": "12f2b5bb6911b966ed6134c5d02d41d0b5220088d66b9e7a15bcdd3f180c0399",
+    "scope_id": "slot_evidence_v3_smoke_20261023_r2",
+    "served_model": "google/gemma-3-4b-it",
+    "served_provider": "Parasail"
+  },
+  "hashes_match": {
+    "payload": true,
+    "prompt_messages": true,
+    "schema": true
+  },
+  "classifier_result": {
+    "http_status": 200,
+    "response_body_complete": true,
+    "served_model": "google/gemma-3-4b-it",
+    "served_provider": "Parasail",
+    "input_tokens": 801,
+    "output_tokens": 251,
+    "reported_cost_usd": 4.459e-05,
+    "classifier_ms": 5354.199541,
+    "total_ms": 5371.548167,
+    "selected_id": null,
+    "error_code": "slot_evidence_v2_anchor_component_order_invalid",
+    "semantic_scoring": "not scored; no validated trace or selection"
+  },
+  "raw_response_saved": false,
+  "diagnostic_limit": "The exact quote passed literal lookup, but its subject/ID component ordering did not satisfy local invariants. The response hash is preserved; its exact proposed quote is unknown.",
+  "next_action": "Stop this prompt revision; revise only against the structural error and start a new frozen revision before another one-call smoke."
+}

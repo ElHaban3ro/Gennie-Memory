@@ -1,0 +1,21 @@
+{
+  "experiment": "roles_v1 exploratory diagnostic on conversation-evidence-v7",
+  "not_confirmatory": true,
+  "reason": "V7 was prepared before the prior classifier gate; labels are independently blind-reviewed but this run is for development only.",
+  "cases": 64,
+  "operations": 128,
+  "paired_order": "alternating baseline/roles_v1",
+  "provider": "decisions",
+  "candidate_policy": "roles_v1",
+  "split": "exploratory",
+  "request_invariant": "Both policies receive identical query, scope, time, limit and retrieval mode; labels stay outside runtime requests.",
+  "input_sha256": {
+    "tests/fixtures/conversation-evidence-v7/author/source.json": "7132dfc1f33809a86abc586d2cfdb72c686eda1ced8f692b15a21c3b0222a006",
+    "tests/fixtures/conversation-evidence-v7/author/memory-corpus.json": "b7564bb398d23c5ce07e728b95aa670e56ba360c01eef92ad52310cc1235ab32",
+    "tests/fixtures/conversation-evidence-v7/author/blind-questions.json": "09c777e71cb6a03f773da0cbf826722dcaaa26b5f08b11f2db3a3fbd36f68ffb",
+    "tests/fixtures/conversation-evidence-v7/author/answer-key.json": "e202745c880a11a2b9147bf6232866cd2bddd8600b7ed9fc7dbb57c69bef1bfc",
+    "tests/fixtures/conversation-evidence-v7/blind-reviewer-a/review.json": "19000777f6ac90add546dc79c68e48fc32fd8a253440fc061740fa9600efe916",
+    "tests/fixtures/conversation-evidence-v7/blind-reviewer-b/review.json": "54c0c66aed4fcf6685d2734c2c4fc78b9e5f37b37cb0555dc398d9362591b989"
+  },
+  "cases_sha256": "00936dc0016afe6ffb4c75435a058848048bb42feffed23e18844253c84bab6a"
+}

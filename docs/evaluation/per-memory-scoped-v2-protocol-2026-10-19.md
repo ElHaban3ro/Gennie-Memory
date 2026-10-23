@@ -1,0 +1,13 @@
+# Criterios compactos para vías con contexto v2
+
+Protocolo fijado antes de llamadasV2. ScopedV1 pasó calidadV5completa, pero coste1,5539× incumplió1,5×. Se detuvo antes de otras cohortes. Objetivo de esta revisión: reducir coste manteniendo toda esa calidad. No se afloja la puerta global ni se llama mejora de calidad a acortar texto.
+
+`per_memory_scoped_v2` deriva exactamente deV1. Solo cambia la descripción repetida de opciones de cada choice: A="Yes", none="No/unsure". Misma pregunta completa de dato/corrección para el MISMO referente/contexto, mismas reglas, resúmenes,16preguntas/top8, modeloJev1.13 y recibo único. Una prueba restaura esas descripciones y exige igualdad del payload completo. Menos bytes no prueba menos tokens/coste ni garantiza las mismas decisiones: se miden ambos. `scoped_checks` conserva dos booleanos, sin contexto ficticio ni veto global. Parser/servicio/JSONauditor compartidos; fallo atómico y recibo conocido intactos. Defaults, fuentes, gold y cohortesreservadas conservados.
+
+Piloto de coste: mismas diez consultas conocidas y20operaciones alternadas, ahora controlScopedV1 y candidataScopedV2, ambasJev1.13. Antes de llamar congelar casos, fuentes, corpus, manifiesto, protocolo y binarios. Primer par2para formato; si completo,18restantes en mismo diario sin repetir. DB temporal propia, sin puertos,60s previstos, hasta20HTTP, coste estimadoUSD0,002. No reintentar peticiones inciertas ni editar etiquetas.
+
+Puerta de este piloto: cero pérdida de evidencia útil deV1, ID no permitido o degradación; recibos completos, costeV2 estrictamente menor queV1 y coste/p50/p95<=1,5×. No exige un nuevo ID útil porque el objetivo de este paso es reducir coste preservando calidad. El informe declara ese objetivo. Esta puerta no sustituye la global contra Decisions/baseline.
+
+Si pasa: sin cambios, campañaV5completa128operaciones contra Decisions/baseline con las puertas globales intactas: cero ID no permitido, pérdida útil/completitud/parte disponible de la base o degradación nueva; al menos una ganancia, recibos completos y coste/p50/p95<=1,5×. Además, cotejar por IDs con la candidataScopedV1del reporte completo ya congelado: no perder ninguna evidencia útil anotada queV1conservó en esos64casos. Esta preservación adicional no es comparación temporal de latencia/coste ni una mejora retrospectiva deV1. Vincular ambos reportes/fuentes con hashes.
+
+Solo si pasa todo, continuar V4/V2conocidas y después V6congelada con revisión separada. No usar V6para ajustar. Si fallaV2, conservar resultados y detener expansión de esa versión. Incorporar solo tras desarrollo y contraste nuevo aprobados. Codex programación/revisión excluido de los costes del clasificador.

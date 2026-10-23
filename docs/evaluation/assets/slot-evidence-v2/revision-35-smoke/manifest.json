@@ -1,0 +1,37 @@
+{
+  "version": "slot-evidence-v2-revision-35-smoke-v1",
+  "synthetic": true,
+  "not_retry_of_revision_31_through_34": true,
+  "configuration": "Gemma 3 4B, literal quotes for query targets and subject, standalone kind quote; one classifier invocation, fallback enabled, defaults unchanged.",
+  "classifier_calls_made": 1,
+  "max_http_calls": 2,
+  "provider_fallback_attempts_worst_case_per_call": 2,
+  "stopped_after_first_invalid_or_incomplete_output": true,
+  "result": {
+    "classification_status": "failed",
+    "selected_id": null,
+    "error_code": "slot_evidence_v2_kind_not_literal",
+    "served_model": "google/gemma-3-4b-it",
+    "input_tokens": 626,
+    "output_tokens": 183,
+    "reported_cost_usd": 4.96e-05,
+    "classifier_ms": 2796.004958,
+    "total_ms": 2798.132
+  },
+  "blind_review": "Direct answer; see blind-review.md.",
+  "input_sha256": {
+    "case.jsonl": "a3f4dcb9323e2f3acdb207958e37c4e60b0797cca7cd30542f7bce23f75178a4",
+    "corpus.json": "0195d46519f6361367247584df83ffec661f026134e5729d1bc87dd95ae7e887",
+    "request.json": "887eb30113cba7c9918ecd682664e1c46c88f8756c1c56cebac273863a7d3bb6",
+    "search-request.json": "abacbb07509b046d7669ec0e9e171b0f344252fbc586e243f7a22dce1c5f8b85",
+    "search-cases.jsonl": "45cab1c1471be4817638b3fd5bb4b1b979cc861d6208c5b0893ae54edc51d7d3"
+  },
+  "request_capture_sha256": "3637e457779944b775ba872e8e7b48040948e40fa01d3607025e43dbe393958d",
+  "binary_sha256": "8619798a5fd3847d826336f6abc1f3ec54d95931bd3826bed8c0b89c7f48e201",
+  "source_sha256": "not captured before the post-smoke code revision; evaluation capture preserves prompt/schema/payload hashes",
+  "artifact_sha256": {
+    "local-search.json": "abad32d53bfe081cdd790166caa228442b43094e6c1db147404c0bba79152ef7",
+    "recall-output.json": "91ee02d331fe08f4d6698f7a6e1b80c8a37e63d3eb6332abd7c942f8070ae337",
+    "blind-review.md": "cba44dd4a6488d796a298dd7ed53ecbd4f69a3837a2fcfac5f58a85c359c56a6"
+  }
+}

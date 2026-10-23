@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "method": "fts5_keywords",
+  "candidates": [
+    {
+      "memory_id": "smoke_v3_sol_001",
+      "revision": 1,
+      "summary": "Engineer Sol Vega S-64 currently works from Bergen. Librarian Theo Noll T-20 lives in Tromsø and indexed the fjord maps.",
+      "conditions": null,
+      "source": null,
+      "state": "active",
+      "bm25": -5.9459459459459454e-6
+    }
+  ],
+  "semantic_coverage": "disabled"
+}

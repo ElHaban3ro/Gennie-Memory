@@ -1,0 +1,17 @@
+# Utilidad binaria por recuerdo: diagnóstico factorial previo
+
+Fecha:2026-10-19. El goal sigue activo; baseline permanece predeterminada. La tanda anterior fue progreso: composición múltiple real, banco nuevo congelado y evidencia negativa que descarta V2/V3/V4. Esta prueba no redefine el objetivo ni baja las puertas.
+
+Hipótesis previas: (1) clasificar cuatro relaciones puede introducir confusiones que una decisión útil/irrelevante evite; (2) recuerdos/preguntas acompañantes pueden cambiar un juicio supuestamente individual; (3) la atribución sujeto/objeto/atributo puede seguir fallando incluso con recuerdo aislado y tarea binaria. El contraste de dos proveedores conserva texto y tratamiento entre ellos. Una observación por celda no permite identificar causas internas ni estimar varianza.
+
+## Contrato binario
+
+`per_memory_binary_v1` es optativa, con prefijo máximo8, una pregunta por recuerdo y un recibo global por petición. Usa el mismo state, reglas y texto de instructions que V2; solo reemplaza tres categorías útiles por una categoría de utilidad y none. Relación serializada `useful_evidence` significa útil sin clasificar cuál de las tres relaciones semánticas tiene. No se presenta como `supports_answer`. La validación del servicio rechaza trazas que mezclen tareas; positivas y semilla deben coincidir exactamente. Se conservan IDs, revisiones, texto, fuente y condiciones del compositor existente. No hay SQL, dependencias, secretos, variables ni servicios nuevos.
+
+## Matriz congelada antes de llamadas
+
+Ocho pares conocidos: cuatro errores de atribución y cuatro positivos (dos parciales complementarios, un apoyo y una refutación). Ocho pares reutilizan seis preguntas; no son muestras independientes. Cada par se prueba con Jev/Decisions, cuatro relaciones/binario y aislado1/acompañado8:64operaciones. El contexto acompañado clona los ocho candidatos del diario V2; el aislado conserva solo el objetivo. IDs/ámbitos cambian para aislar exposición; consulta, resumen, original, fuente declarada y revisión no cambian. El tratamiento de contexto también cambia posición/otras preguntas, por lo que no separa estos factores. La matriz conserva procedencia y hashes de las etiquetas originales, sin cambiarlas ni consultar V6 para ajustar política.
+
+CLI sin puerto y DB temporal propia. Duración prevista1–2min; presupuesto técnico64operaciones, coste reportado conservado, sin reintentos inciertos. Primero hasta2operaciones para comprobar rutas; luego las restantes si el manifiesto y la traza son correctos. Todos los IDs seleccionados se auditan, además del objetivo individual. `audit-m5` precede a `report-per-memory-matrix <directorio> <informe-nuevo>`, ambos offline; el informe Rust exige celda completa, tareas/modelos/candidatos correctos y semilla íntegra. Cada HTTP global se cuenta una vez.
+
+La matriz es diagnóstico conocido, no pase de calidad ni comparación representativa de coste/latencia. Si el binario no distingue los pares ni conserva los positivos, no se amplía esa variante. Si ofrece una hipótesis sostenida, todavía debe superar las mismas puertas en campañas pareadas conocidas: ningún recuerdo ajeno, ninguna evidencia permitida de base perdida, ninguna degradación nueva, mejora útil/evidencia adicional y recursos completos coste/p50/p95<=1,5veces base. Solo después se abre banco nuevo con revisión separada y política congelada. V6 sigue sin llamadas; no usar resultados para modificar sus etiquetas.

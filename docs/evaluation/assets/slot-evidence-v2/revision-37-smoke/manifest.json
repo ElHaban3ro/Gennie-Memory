@@ -1,0 +1,46 @@
+{
+  "version": "slot-evidence-v2-revision-37-smoke-v1",
+  "synthetic": true,
+  "not_retry_of_revision_31_through_36": true,
+  "configuration": "Gemma 3 4B; strict slot_evidence_v2; anchor_quote + subject_quote; exact quotes for slots/premises; no offsets; defaults unchanged.",
+  "preconditions": {
+    "local_retrieval": "1/1 top-1",
+    "blind_review": "direct answer",
+    "workspace_tests": "1,017 passed; 24 ignored"
+  },
+  "classifier_calls_made": 1,
+  "max_http_calls": 2,
+  "fallback_attempts_worst_case": 2,
+  "stop_rule": "One smoke only. Stop after the first invalid/incomplete output; never retry the same request; no cohort/adoption from smoke.",
+  "input_sha256": {
+    "case.jsonl": "54a466c3d229f0d16a65f444f848e429d114ce45817c0d86229fdf634427ae0a",
+    "corpus.json": "d88a0923d68c2885dd7e6ff7fdcbc1566ad3387cc00ebf5db2c15909af3743ff",
+    "request.json": "e2d6b9df46a7a8c6721bbd91b91e61436831afdc2ca496cb1e52111651bfbbc5",
+    "search-request.json": "6582b01b55e94773c11fe2897fcd041d7f452df4e01ace0597c25896f4f24c79",
+    "search-cases.jsonl": "5fdc82a9596e027d51823e267955a3cb603baaf87a119a0966239811c5d6174e"
+  },
+  "source_sha256": {
+    "slot_evidence.rs": "440ad8766e30b48337c540581657d086f459c71d9025532330c3ed123ba03f42",
+    "openrouter.rs": "10ee72752541f6dc021798b76aa1bb0b0e87b6270283100bf8158a995170e654"
+  },
+  "binary_sha256": "f93f36fc814f4b08cd88c286027618faa11e807e9455381cd3fa3d7e6f311c4a",
+  "result": {
+    "classification_status": "failed",
+    "selected_id": null,
+    "error_code": "slot_evidence_v2_anchor_component_order_invalid",
+    "served_model": "google/gemma-3-4b-it",
+    "input_tokens": 645,
+    "output_tokens": 234,
+    "reported_cost_usd": 3.75e-05,
+    "classifier_ms": 2173.931833,
+    "total_ms": 2175.162,
+    "http_status": 200,
+    "served_provider": "Parasail"
+  },
+  "capture_sha256": "1f4de24ba7abae9beecaa8f2c78c254c33c0e991fe3491e6a0db07d98d304450",
+  "artifact_sha256": {
+    "local-search.json": "d742ac06c43eef2d6fb08e72704aef580ff4cb1ae58f25e36c3e3bca8a86ce3a",
+    "recall-output.json": "188bd43f981be153527df896764c2cf981a72c3b10ac385a5cb5acb01d0feb3c",
+    "blind-review.md": "7f9fd961e26b585cea91ea9d0e50db38761e9ae87852f6c760e38e0165580610"
+  }
+}

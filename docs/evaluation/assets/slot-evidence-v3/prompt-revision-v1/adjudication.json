@@ -1,0 +1,19 @@
+{
+  "readers": "two independent blind Codex reviewers",
+  "case_count": 9,
+  "agreement": "9/9 answerability and subject judgments",
+  "answerable_case_ids": [
+    "prompt-revision-01",
+    "prompt-revision-02",
+    "prompt-revision-03",
+    "prompt-revision-06",
+    "prompt-revision-07",
+    "prompt-revision-08",
+    "prompt-revision-09"
+  ],
+  "unanswerable_case_ids": [
+    "prompt-revision-04",
+    "prompt-revision-05"
+  ],
+  "provider_payload_contains_labels": false
+}

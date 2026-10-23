@@ -1,0 +1,11 @@
+# Control único de capacidad FP16 standalone
+
+Fecha2026-10-22. El contraste de dtypes anterior fue progreso: compatibilidad64/64con las decisionesV1y mejora de ejecuciónFP16, pero batch20dualresidente7,06/8,11sfalla filtro. No demuestra rendimiento de un solo modelo. Este control resuelve solo esa incertidumbre instrumental, sin cambiar el fallo semánticoV1o sus puertas.
+
+Un solo Qwen3-Reranker0.6BFP16 residente, mismos safetensors/revisión/runtime Torch2.14.1/SDPA/MPS/2threads/noCPUfallback/tokenizer/prompt/umbral. Usar exactamente los20textos neutrales y tokens ya congelados; no generar ejemplos nuevos o abrirV6. Sin descargas, instalación, APIs, entrenamiento o cambio de pesos. Guardar preparación/código/protocolo antes de inferir, directorio nuevo sin sobrescribir.
+
+Ejecutar1primer medido y8operaciones medidas con los20documentos:9forwards/180scoresmáximo. Publicar el primer y todas las latencias, sin seleccionar repeticiones rápidas. SincronizarGPU; incluir tokenización, transferencias, forwardyes/no, scores y composición de textos originales. No generartexto/CoT. Exigir valores finitos, entradas sin truncamiento≤32768tokens y scores/elecciones neutrales compatibles conFP16previo (Δmáx≤0,02yceroeleccionesdiferentes) para interpretar continuidad del scorer; no confundir esto con pertinencia de esos textos sin gold.
+
+La mediana/p95por rango próximo de las8operaciones después del primer son el filtro preliminar warm≤830,07/1380ms. Son límites orientativos históricos, no comparación actual contra baseline ni recursos del producto. Informar también resumen de las9conprimer; cargar/importar se mide aparte. Si falla, esta ejecuciónstandalonetampoco justifica inversión de entrenamiento amplia bajo el filtro previsto. Si pasa, todavía conserva los11errores conocidos y no califica calidad. Un dato histórico dual y otro standalone no aíslan causalmente la magnitud del efecto de residencia; sirven para comprobar capacidadsinglemedida. No extrapolar a todos los backends o modelos.
+
+Watchdogduro15minutos durante inferencias, detener ante fallo/cuerpo incompleto/score no finito/OOM/backendincompatible, sin reintento. CeroAPIUSDnuevo; energía/amortización/Codex no cuantificados. No cambiar producto/DB/secreto/ramas, no servicios, commit o push. El objetivo de cinco pasos permanece activo.

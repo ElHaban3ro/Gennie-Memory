@@ -1,0 +1,12 @@
+{
+  "search": {
+    "query": "Which lab employs employee Beatriz Mora A-52?",
+    "scope_kind": "project",
+    "scope_id": "synthetic_smoke_r11",
+    "as_of": "2026-10-23T12:00:00.000Z",
+    "limit": 20,
+    "query_mode": "keywords"
+  },
+  "provider": "gemma3_4b",
+  "selection_policy": "slot_evidence_v2"
+}

@@ -1,0 +1,47 @@
+{
+  "selected_ids": [],
+  "per_memory": null,
+  "consensus": null,
+  "applicability": null,
+  "slot_evidence": null,
+  "status": "degraded",
+  "retrieval": {
+    "status": "complete",
+    "method": "fts5_keywords",
+    "candidates": [
+      {
+        "memory_id": "r32_alba_base_m1",
+        "revision": 1,
+        "summary": "Engineer Alba Reyes A-71 is based in Westhaven.",
+        "conditions": null,
+        "source": null,
+        "state": "active",
+        "bm25": -7.432432432432432e-06
+      }
+    ],
+    "semantic_coverage": "disabled"
+  },
+  "classification_status": "failed",
+  "requested_model": "google/gemma-3-4b-it",
+  "served_model": "google/gemma-3-4b-it",
+  "selected_id": null,
+  "seed": {
+    "status": "degraded",
+    "method": "fts5_external_classifier",
+    "classifier": "google/gemma-3-4b-it",
+    "semantic_coverage": "disabled",
+    "memories": [],
+    "seed_text": null
+  },
+  "input_tokens": 1629,
+  "output_tokens": 262,
+  "reported_cost_usd": 0.00010765,
+  "error_code": "slot_evidence_v2_subject_quote_not_in_query",
+  "provider_http_status": null,
+  "timings": {
+    "search_ms": 0.889791,
+    "classifier_ms": 5643.935541,
+    "composition_ms": 1.083917,
+    "total_ms": 5645.9337080000005
+  }
+}

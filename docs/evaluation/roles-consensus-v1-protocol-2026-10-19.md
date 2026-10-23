@@ -1,0 +1,15 @@
+# Protocolo previo: acuerdo paralelo entre dos instrucciones
+
+Fecha: 2026-10-19. Ambas variantes Jev fallaron por un ID ajeno cada una en casos distintos de v4; no se promueven. Su coincidencia reconstruida sería una hipótesis de desarrollo, no una campaña medida. No se cambia gold ni se declara seguridad por correlación.
+
+La política `roles_consensus_v1` ejecuta en paralelo las instrucciones congeladas `roles_v1` y `roles_v2` con el proveedor solicitado. El perfil de evaluación `jev_roles_consensus_v1` pide Jev; la base sigue Decisions/baseline. De hasta20 recuerdos recuperados presenta a ambas elecciones los primeros16. Es parte del mecanismo para contener consumo, no el predeterminado de búsqueda ni un filtrado por gold. Comprobar antes cobertura útil y completitud de ese recorte sin cambiar preguntas ni excluir casos. Si pierde cobertura, no abrir validación nueva como si hubiera pasado.
+
+Aceptar solo si ambos votos señalan el mismo ID; cualquier desacuerdo o dos abstenciones produce semilla vacía. La traza opcional `consensus` conserva ambos votos y número presentado; el servicio revalida acuerdo, resultado y pertenencia a los primeros16 antes de componer. El acuerdo no demuestra verdad: dos instrucciones del mismo modelo pueden equivocarse juntas. Distintas alternativas útiles pueden provocar abstención y perder calidad; ese caso bloquea si la base sí tenía evidencia. No hay voto de desempate ni excepción por ID.
+
+Un fallo de cualquier llamada degrada con `roles_consensus_failed` y conserva consumo conocido de la otra si terminó. Se suman recibos de ambos votos al completar; ausencias de recibo siguen desconocidas. Se unen ambos threads antes de responder y no quedan tareas de fondo. Sin dependencias, servicios, conexiones SQLite o modelos nuevos.
+
+Primero desarrollo v4 y, solo si pasa, v2; 128 operaciones por cohorte, 64 de base y64 de consenso (192 peticiones por cohorte si todos tienen candidatos). Previsión2–4min por cohorte. Si falla detener y conservar resultado. Si ambas pasan, v5 nueva ya redactada sin prompts/resultados y revisada a ciegas con conciliación previa, otras128 operaciones y192peticiones como máximo. Guardar hashes de código, binarios, preguntas, corpus, gold, revisión y protocolo antes de llamadas. Datos sintéticos y DB temporal, sin reintentos inciertos.
+
+Mantener puertas de calidad: cero ID ajeno, cero pérdida de utilidad/completitud frente a base y cero degradación nueva; al menos una ganancia. Coste y p50/p95 ≤1,5× base y recibos completos. Informar también abstenciones por desacuerdo y votos correctos/ajenos por separado. Comparar búsqueda idéntica de20 y declarar que la candidata clasifica16; no afirmar igualdad de lista enviada al modelo. La latencia incluye la operación paralela completa del runner, no suma de percentiles ni integración Codex.
+
+Ningún pase sintético implica autonomía general o verdad de respuestas finales. No cambiar base o README con un fallo ni alterar retrospectivamente criterios para aprobarlo. El objetivo sigue abierto hasta cumplir las cinco puertas con evidencia suficiente.

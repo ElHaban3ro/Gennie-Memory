@@ -1,0 +1,41 @@
+{
+  "status": "preflight_frozen_before_remote_campaign",
+  "experiment": "slot_evidence_v3_prospective_sentence_scope_v1",
+  "scope": "synthetic_only",
+  "blind_review_excluded_from_provider_request": true,
+  "included_cases": 9,
+  "answerable": 7,
+  "unanswerable_foreign_subject": 2,
+  "partial_case_excluded": "sentence-08",
+  "provider": "gemma3_4b",
+  "requested_model": "google/gemma-3-4b-it",
+  "v3_provider_route": "deepinfra, no fallback (policy code)",
+  "planned_calls_max": 18,
+  "gate": "first 3 V3 responses must each be complete exact expected selection; stop V3 after any failure; no retry",
+  "cost_estimate_usd": 0.002,
+  "cost_control": "inspect each finished receipt; stop before next call if cumulative reported cost reaches estimate; missing receipt cost remains unknown",
+  "duration_estimate_minutes": [
+    2,
+    4
+  ],
+  "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+  "case_sha256": "98282b282661c496b2674cb9c00b156abd8db0d2887662d7f01853467d6b273f",
+  "corpus_sha256": "5bc12f6e2e12d364aaf1a1cb9b78b0cf5265bb92692416b6f0263ddd694605aa",
+  "search_results_sha256": "e820186ade5b0c3332b6ac8c7abd1db9a71f891c8454e45ecf16da0e8f28379e",
+  "database_sha256": "8ba8a0a0569d490a377094db45754de3724e9338da5e728a4ee241f9bc835b35",
+  "binary_sha256": "a4bdbe7b7c8a6b299d2c294fdfee5912ea799c1c587496e261ec12baa54ea9e6",
+  "evaluation_binary_sha256": "93d60e2d6e01c2e38311404f589178b1cb851b5ff385c2a97b8db5a11f48da96",
+  "source_files_sha256": {
+    "apps/retrieval/src/model.rs": "e3ca5f8672593f10559f8a0a3a92844ce15bbbe6276d0b20eb518c2d42aad215",
+    "apps/retrieval/src/service.rs": "3f71844bbba13f3c3c91527d6a48a6d4d24064f0907117ec576143dc9833d455",
+    "apps/retrieval/src/slot_evidence.rs": "429a565b7313d1db03bab98180d109b655a7f78629f9c002a2c2daf11d3ea4b3",
+    "bootstrap/src/openrouter.rs": "d8c7c0bd1e1132f24876079a74fe9292931ddb619b13179e6dd4a44c5ea44c59",
+    "bootstrap/src/openrouter/slot_evidence.rs": "101209f11083e6b7afa94ef3c0448464b404a3ceecf2a9af832ea55874c2fba1",
+    "bootstrap/src/main.rs": "671df0b9df5bc7eb42a468e96d11f477fd28973c567854178b5eadfb9f9a8fad",
+    "kernel/src/config.rs": "24919f7f27cbd84d266260c447229dbbc2c58b05d70ae197754c276dcb08753d",
+    "tools/evaluation/src/campaign.rs": "42bef58b0ac086ad7831bb0bcd04755575627311ec63698ece9b02e7cb60cbba"
+  },
+  "preflight_search": "9/9 complete; each expected candidate present; exactly one candidate per isolated scope",
+  "blind_label_source": "blind_synthetic_adjudication",
+  "provider_request_fields": "search and provider only; gold labels, segments, rationale, and reader judgments excluded"
+}

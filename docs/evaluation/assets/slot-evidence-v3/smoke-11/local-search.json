@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "method": "fts5_keywords",
+  "candidates": [
+    {
+      "memory_id": "smoke_v3_rina_001",
+      "revision": 1,
+      "summary": "Engineer Rina Das R-82 currently works from Tallinn. Archivist Pavel Ivo P-16 lives in Tartu and catalogued the bridge plans.",
+      "conditions": null,
+      "source": null,
+      "state": "active",
+      "bm25": -5.9459459459459454e-6
+    }
+  ],
+  "semantic_coverage": "disabled"
+}

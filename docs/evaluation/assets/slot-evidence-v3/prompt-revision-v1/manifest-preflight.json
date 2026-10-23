@@ -1,0 +1,38 @@
+{
+  "status": "preflight_frozen_before_remote_campaign",
+  "experiment": "slot_evidence_v3_prompt_revision_v1",
+  "scope": "synthetic_only",
+  "blind_review_excluded_from_provider_request": true,
+  "case_count": 9,
+  "answerable": 7,
+  "unanswerable_wrong_subject": 2,
+  "provider": "gemma3_4b",
+  "requested_model": "google/gemma-3-4b-it",
+  "v3_route": "deepinfra; allow_fallbacks=false",
+  "planned_calls_max": 18,
+  "first_gate": "first 3 V3 cases must each complete with exact expected IDs; stop the V3 arm on first failure; no retry",
+  "cost_estimate_usd": 0.002,
+  "duration_estimate_minutes": [
+    2,
+    4
+  ],
+  "cost_control": "inspect each finished receipt and stop before another call if cumulative reported cost reaches estimate; unknown cost remains unknown",
+  "input_sha256": {
+    "fixture": "55edb9b3dab994d85d79f065179fc6b72bd010393a20dbda5f02b4207f279eb0",
+    "cases": "cb7cf3ef281557777b60a57fff212d200eda142edca287cfc6c36684faf0b380",
+    "corpus": "a91c66a4fa7e437410144a02915151551f50e03bacab10f8bbb6d1067037a8e6",
+    "adjudication": "ffddbfc7bfc5e05776c55f30ac4ee2fff10985950cfa58f7755d9f891adf181e",
+    "search_results": "c6d727211a4d45ad13e61a1aba83cf791b658d9420c6b18eb51ebf86f08a9c22"
+  },
+  "database_sha256": "d3d54d405c4240cdca98555ce9b25a5319455fdd562d6ae5ac4564af5bd68e06",
+  "binary_sha256": "78d2e8093925029bdbe44cb7f122fe996fa280bc15e283e5dd28f8232537b74b",
+  "evaluation_binary_sha256": "93d60e2d6e01c2e38311404f589178b1cb851b5ff385c2a97b8db5a11f48da96",
+  "source_sha256": {
+    "bootstrap/src/openrouter/slot_evidence.rs": "be10aeb876ddcb8e00bacd46bca8aeff01f069fc3ad44129e413764334f4381e",
+    "apps/retrieval/src/slot_evidence.rs": "429a565b7313d1db03bab98180d109b655a7f78629f9c002a2c2daf11d3ea4b3",
+    "tools/evaluation/src/campaign.rs": "42bef58b0ac086ad7831bb0bcd04755575627311ec63698ece9b02e7cb60cbba"
+  },
+  "candidate_preflight": "9/9 complete, exactly one candidate in each isolated scope; all positive IDs present",
+  "label_source": "blind_synthetic_adjudication",
+  "provider_request_fields": "search and provider only; adjudication fields excluded"
+}

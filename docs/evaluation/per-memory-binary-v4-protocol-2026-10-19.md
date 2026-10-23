@@ -1,0 +1,11 @@
+# Utilidad binaria v4: incompatibilidad explícita para refutar
+
+2026-10-19. Nueva variante experimental `per_memory_binary_v4` (distinta de la histórica per_memory_v4). V3 recuperó ocho pérdidas semánticas evaluables pero reintrodujo un requisito asociado como refutación; una consulta tuvo timeout20s sin recibo, no repetida en esa campaña. Se preserva como fallo y no se amplía V3.
+
+Objetivo: conservar hechos solicitados y parciales, y rechazar supuestas refutaciones compatibles con la premisa. V4 hereda exactamente V3 y añade únicamente a state.rules este procedimiento general: para refutar, premisa y cláusula explícita de memoria deben ser incompatibles en el mismo caso; si ambas pueden ser verdaderas no hay refutación. Después comprobar por separado si hay valor/estado solicitado explícito; si tampoco lo hay elegir none. No se exige contradicción para aceptar apoyo o partes solicitadas. No incluye ejemplos, palabras del banco, etiquetas, nombres de corpus ni extrae índices fuera del prefijo8. La regla es probabilística; su texto no prueba corrección.
+
+Datos, FTS5, modelos, solicitudes, orden, criterios, composición de varios positivos, parser binario y recibo global quedan iguales. Un HTTP Jev por consulta, sin nuevos recursos, secretos o dependencias. State común añade tokens; medirlos y no suponer que el coste baja.
+
+Piloto preregistrado34consultas v5 conocidas:18de V3 más las16unrelated, sin solapamientos. Clones exactos de fuente/gold con huellas obligatorias. Primero una para formato; luego33. CLI sin puerto, misma DB temporal propia, duración prevista30s, máximo34HTTP sin reintentos inciertos. Cero ID ajeno, cero pérdida de ID útil de base, cero degradación y coste histórico diagnóstico<=1,5×. Si falla, conservar y detener ampliación. El nuevo payload difiere del intento anterior: no sustituye el timeout ni rellena su coste desconocido.
+
+Solo tras piloto favorable: comparación pareada64preguntas/128operaciones v5, después v4/v2 conocidas si pasa. Puertas intactas: cero ID ajeno, pérdidas útiles/partes disponibles o degradaciones nuevas, al menos una mejora útil/adicional; recibos completos y coste,p50,p95<=1,5×base. Política congelada antes de nueva validación V6 revisada a ciegas. V6 no se usa para ajustar y baseline no cambia antes de superar todas las puertas. Conservar versiones fallidas y costes desconocidos.

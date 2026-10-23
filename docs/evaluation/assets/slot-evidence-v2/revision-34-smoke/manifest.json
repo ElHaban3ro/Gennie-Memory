@@ -1,0 +1,40 @@
+{
+  "version": "slot-evidence-v2-revision-34-smoke-v1",
+  "synthetic": true,
+  "not_retry_of_revision_31_32_or_33": true,
+  "configuration": "Gemma 3 4B with quote-based subject but legacy kind index; one-call smoke, fallback enabled, no default change.",
+  "max_http_calls": 2,
+  "classifier_calls_made": 1,
+  "stopped_after_first_invalid_or_incomplete_output": true,
+  "result": {
+    "classification_status": "failed",
+    "selected_id": null,
+    "error_code": "slot_evidence_v2_kind_range_splits_identifier",
+    "served_model": "google/gemma-3-4b-it",
+    "input_tokens": 1079,
+    "output_tokens": 250,
+    "reported_cost_usd": 5.566e-05,
+    "classifier_ms": 2536.71925,
+    "total_ms": 2539.884333
+  },
+  "review": "Blind reviewer: direct answer; exact quote is in blind-review.md.",
+  "input_sha256": {
+    "case.jsonl": "25c24bc2b6a3e3178ee43738f30c06c46ebcd9b905e4c6aea38858cda3a66b61",
+    "corpus.json": "a6628506108c1f6ded6aeabc125e0350533c49a64388353c3d30c298594706c9",
+    "request.json": "9d89983e7637f6a146cb2dd9126c03f1a230d767a01b38fe5054d71e4bd00d3c",
+    "search-request.json": "a5979924f24bf1c1e8c3cdfab594525ce790025e8d16e22cf697d36f8ec6c822",
+    "search-cases.jsonl": "389f00407dc50020ac51f67db67f386c33d7db4a8cf56b1ec0d67483adc7ffdd"
+  },
+  "source_sha256": {
+    "slot_evidence.rs": "69cb087eb0b99ff9020c41da3cc8339a152169fc6674e29b4129f01e2cd61875",
+    "openrouter.rs": "10ee72752541f6dc021798b76aa1bb0b0e87b6270283100bf8158a995170e654",
+    "binary": "04f0f242acf65f14e8a4835f36ea521c5fb9422fd45cd44f166f9cee2703e7bd"
+  },
+  "artifacts_sha256": {
+    "local-search.json": "ff8a651d52ed67a437bb38c8f5d16d1d37cfd79d37a096037d0a626d4f5925dd",
+    "evaluation-capture.jsonl": "0e715cbf179b3e8f606c214821426f4a514dad87a82490c1f83444c5376109e4",
+    "recall-output.json": "5f1280dd9e880d6e7eaed05dbe459c277e06917ca8a71a216ae3f314cffe4c7b",
+    "blind-review.md": "6a46accf95cb3b7b55e48bf28f007d073ce92347397d1dced402acecdb93642e"
+  },
+  "provider_fallback_attempts_worst_case_per_call": 2
+}

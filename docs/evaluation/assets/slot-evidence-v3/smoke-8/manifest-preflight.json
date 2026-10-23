@@ -1,0 +1,50 @@
+{
+  "status": "preflight_frozen_before_remote_smoke",
+  "experiment": "slot_evidence_v3_smoke_8_revision_8",
+  "scope": "synthetic_only",
+  "blind_review_excluded_from_provider_request": true,
+  "blind_review": "separate independent adjudication; no labels or expected answer sent to provider",
+  "provider": "gemma3_4b",
+  "requested_model": "google/gemma-3-4b-it",
+  "endpoint": "https://openrouter.ai/api/v1/chat/completions",
+  "provider_preferences": {
+    "require_parameters": true,
+    "allow_fallbacks": true
+  },
+  "timeout_ms": 30000,
+  "temperature": 0,
+  "max_output_tokens": 2500,
+  "candidate_count": 1,
+  "expected_local_search_candidate": {
+    "memory_id": "smoke_v3_ada_001",
+    "revision": 1
+  },
+  "repetitions": 3,
+  "call_rule": "Three identical requests; halt at first structural failure, incomplete receipt, or missing positive selection; no retries.",
+  "cost_estimate_usd": 0.00049,
+  "cost_cap_usd": 0.0006,
+  "cost_basis": "three requests at the smoke-7 observed USD 0.00016316 each; hard stop on first failure",
+  "input_sha256": {
+    "corpus.json": "b8fa9166ce011742c472b2cc1e93bbb8ee15b29d28a3b466b5e762ff4525d2ee",
+    "recall.json": "7d4c2d16395a2b1a1024a52ceea7bbce89f2e9088346f31ac615ea418235eb10",
+    "search.json": "7a8159a014b35f18eaf6db00cbff54517a5445ee87aecbc7659d6a1ff371c143"
+  },
+  "local_search_sha256": "b68ddc9d34c688791bddee69aed8ee320fc7bf999ad1b5186bb9786d74ce5a7b",
+  "source_files_sha256": {
+    "apps/retrieval/src/model.rs": "e3ca5f8672593f10559f8a0a3a92844ce15bbbe6276d0b20eb518c2d42aad215",
+    "apps/retrieval/src/service.rs": "3f71844bbba13f3c3c91527d6a48a6d4d24064f0907117ec576143dc9833d455",
+    "apps/retrieval/src/slot_evidence.rs": "bd8eb99f5e7ff6ad066f97d3b7d4b465ce382320d9fe495d65c9e3804152c428",
+    "bootstrap/src/openrouter.rs": "d8c7c0bd1e1132f24876079a74fe9292931ddb619b13179e6dd4a44c5ea44c59",
+    "bootstrap/src/openrouter/slot_evidence.rs": "4a801785bafa4a4a7bc18a53cdc409343748f4a07da6049181a3572fb08222ec",
+    "bootstrap/src/main.rs": "671df0b9df5bc7eb42a468e96d11f477fd28973c567854178b5eadfb9f9a8fad",
+    "kernel/src/config.rs": "24919f7f27cbd84d266260c447229dbbc2c58b05d70ae197754c276dcb08753d",
+    "Cargo.lock": "67d8750570958feae5ccaabbe1e38792adea208f7ab35d91764360e58e312293"
+  },
+  "binary_sha256": "8632f8df0e8af5e3cff57f63966a10e3ccdcee65be814eb422c5a899a3681024",
+  "database_path": ".local/slot-evidence-v3-smoke-8.db",
+  "database_sha256": "a640042b835e78e9d20c86feb69971062a461b978ce33b9358e71b438401a3fa",
+  "prompt_change": "No prompt changes from smoke 7.",
+  "diagnostic_change": "Records finish_reason and content byte length without content; categorizes incomplete JSON, syntax, and shape errors without relaxing strict decoding.",
+  "preflight_note": "Prompt, schema, inputs, roster, binary, and DB frozen before the diagnostic batch. Capture files are separate per attempt and contain only hashes/metadata.",
+  "source_bundle_sha256": "a17f4a9d120f0012790ed51569f61525e224efeb782f58748050826b57d25081"
+}

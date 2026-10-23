@@ -1,0 +1,9 @@
+# Extracción documental JSON V2: corrección del transporte de esquema
+
+UTC 2026-10-20. El intento V1 terminó tras cuatro HTTP400completos: Google AI Studio rechazó la restricción de JSON Schema por exceso de estados. No hubo extracción ni resultado semántico. Los cuatro recibos carecen de coste: conservarlos como cuatro importes desconocidos, nunca inferir gratuidad. Los112payloads no enviados no son errores semánticos.
+
+V2 conserva modelo, ruta, reglas, textos, orden, ontología, temperatura, máximo de tokens y tareas separadas de [V1](documentary-extraction-v1-protocol-2026-10-20.md). Cambia únicamente la entrega del esquema: `response_format=json_object`; el mismo JSON Schema completo pasa como `output_schema` en el objeto de entrada junto con `text` y `ontology`, y una frase de formato exige seguirlo. El servidor solo garantiza JSON; el validador local aplica exactamente el esquema original y los controles de dominio/citas. No se relaja el significado ni se sustituye un rechazo por un frame manual.
+
+La prueba de reversión verifica igualdad del resto del payload, incluida la igualdad literal del esquema. Directorio, preparación, preflight y diario nuevos;116HTTPmáximo,4concurrentes,sinreintentos. No es reintento de un resultado incierto: V1 dio errores completos y esta es una variante de wire explícita. No hay fallback automático en runtime. Antes de llamar se vuelve a anunciar coste y duración desde el nuevo payload. Conserva todos los criterios semánticos, cuatro brazos y puertas de V1, sin promover ni abrirV6.
+
+[Documentación oficial de salidas estructuradas](https://openrouter.ai/docs/guides/features/structured-outputs) distingue JSON Schema y restricciones del proveedor. La causa concreta aquí consta en los cuerpos HTTP400 archivados, no en una conjetura sobre la calidad del modelo.

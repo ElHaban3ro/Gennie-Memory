@@ -1,0 +1,16 @@
+{
+  "fixture": "local-query-slots-v4",
+  "frozen_at_utc": "2026-10-23T20:33:05.000Z",
+  "reviewers": 2,
+  "blind_agreement": "2/2: Northvale for Fenn Arlo; Mariner’s Reach for Luisa Carden",
+  "files": {
+    "docs/evaluation/assets/slot-evidence-v3/local-query-slots-v4/input/recall.json": "8ac7b309492f459b7f3acee2e6af12e18b8f11aa44002c1301e791f7546cf96f",
+    "docs/evaluation/assets/slot-evidence-v3/local-query-slots-v4/input/corpus.json": "93d3f60f4b32cf80d3d93ed016a43f36a29b4feff51a8f90fe87e33d5977b970",
+    "docs/evaluation/assets/slot-evidence-v3/local-query-slots-v4/input/search.json": "b53ab487f012196df456ac0065fb5be5103b1c51091e71c37575f5e6a0961e60",
+    "docs/evaluation/assets/slot-evidence-v3/local-query-slots-v4/blind-review.md": "f2fdcc814f82d40e61b2bf9b6d3beacbb83711ebf7094e8d78f33ff05e343611",
+    "docs/evaluation/assets/slot-evidence-v3/local-query-slots-v4/local-search.json": "1c51fb996b2ab4caf70bac81a5cae7080b603a3af61a2dd4be17aae3a86d97d2",
+    "target/debug/iromem": "b583275fd3ea21e624706b2a9a0a3e02d37551b5005146084b5fad4f837ca495",
+    ".local/iromem-slot-evidence-v3-v4.db": "7403de3e630e1895363fb82b0b282dd91e5f93071ef32386081053675bbeded1",
+    "bootstrap/src/openrouter/slot_evidence.rs": "c323b31d8c80a9662c5467e4425772a7de300efd57634fb95a9e03e4b5b30581"
+  }
+}

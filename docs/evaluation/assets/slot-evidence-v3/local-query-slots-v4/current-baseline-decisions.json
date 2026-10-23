@@ -1,0 +1,12 @@
+{
+  "search": {
+    "query": "Which city is botanist Fenn Arlo F-21 based in?",
+    "scope_kind": "project",
+    "scope_id": "slot_evidence_v3_local_query_slots_20261023_v4",
+    "as_of": "2026-10-23T12:00:00.000Z",
+    "limit": 20,
+    "query_mode": "keywords"
+  },
+  "provider": "decisions",
+  "selection_policy": "baseline"
+}

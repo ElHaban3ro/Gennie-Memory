@@ -1,0 +1,47 @@
+{
+  "selected_ids": [],
+  "per_memory": null,
+  "consensus": null,
+  "applicability": null,
+  "slot_evidence": null,
+  "status": "degraded",
+  "retrieval": {
+    "status": "complete",
+    "method": "fts5_keywords",
+    "candidates": [
+      {
+        "memory_id": "smoke_v3_luisa_001",
+        "revision": 1,
+        "summary": "Archivist Luisa Vega L-52 works from Malmö. Engineer Nils Ahn R-53, whose office is in Oslo, checked the archive inventory.",
+        "conditions": null,
+        "source": null,
+        "state": "active",
+        "bm25": -7.432432432432432e-6
+      }
+    ],
+    "semantic_coverage": "disabled"
+  },
+  "classification_status": "failed",
+  "requested_model": "google/gemma-3-4b-it",
+  "served_model": "google/gemma-3-4b-it",
+  "selected_id": null,
+  "seed": {
+    "status": "degraded",
+    "method": "fts5_external_classifier",
+    "classifier": "google/gemma-3-4b-it",
+    "semantic_coverage": "disabled",
+    "memories": [],
+    "seed_text": null
+  },
+  "input_tokens": 801,
+  "output_tokens": 251,
+  "reported_cost_usd": 0.00004459,
+  "error_code": "slot_evidence_v2_anchor_component_order_invalid",
+  "provider_http_status": null,
+  "timings": {
+    "search_ms": 2.104084,
+    "classifier_ms": 5367.627916,
+    "composition_ms": 1.779208,
+    "total_ms": 5371.548167
+  }
+}

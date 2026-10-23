@@ -1,0 +1,21 @@
+# Sonda controlada de realización de atribuciones corregidas
+
+Fecha:2026-10-22. Diagnóstico del paso3 tras la puerta local fallida; no es la evaluación nueva del paso4 ni autoriza reservas o adopción. La evidencia anterior tiene correcciones de atribución aceptadas en TRAIN pero perdidas en observados. Hipótesis prospectiva acotada: la selección puede depender de realización textual/dominio además de la relación semántica. No se atribuyen a esta hipótesis los otros errores.
+
+## Cruce fijo
+
+Ocho casos: dominio atlas/puente × realización pasiva con corrección/nominal con corrección × objeto de la pregunta/otro objeto. Mismos nombres Helena/Bruno y Cauce/Rama en todas las celdas. La pregunta solicita mes y contiene la atribución corregible a Helena; el documento no informa mes. Los cuatro del mismo objeto refutan esa premisa y son útiles(B); los cuatro de objeto diferente no aportan evidencia sobre Cauce. La forma incluye cambios léxicos y sintácticos: no aislar sintaxis pura ni llamar causal al efecto de dominio abstracto. No identificar objetos con nombres diferentes.
+
+Revisión antes de congelar: el primer revisor detectó una cláusula de registro en catálogo solo en la pasiva. Se retiró ese detalle accesorio de las cuatro pasivas sin modificar etiquetas, antes de modelos; originales y revisión conservados en pre-review-v1. La equivalencia revisada corresponde a las versiones finales.
+
+Revisor nativo recibe solo preguntas/documentos y rúbrica, sin etiquetas del autor ni predicciones. Registrar concordancia/ambigüedad antes de congelar inputs y ejecutar. Si hay desacuerdo, detener preparación, conservar originales y aclarar antes de puntuación; no arbitrar por resultados. No usar autor como único revisor ni presentar independencia humana/familiar. El banco es una sonda sintética deliberada, no muestra poblacional.
+
+## Ejecución única y criterios
+
+Tres estados exactos del mismo modelo base Qwen3-Reranker-0.6B(revisión e61197ed45024b0ed8a2d74b80b4d909f1255473): sin adaptar, padre V5matched SHA7522394b350d8843d300420f622695a638ce20bb2e6c90fe723a3cf1990c6a74, candidato fijo SHA32d62088e13b4e6b4b5f63aec22839e01e8db5e633fadaaf6b02f01dc4356ad7. FP16base,LoRAFP32,q/vúltimas8,r8,scale8,dropout0; instrucción/tokenización/corte0,5 exactos anteriores. Orden sin adaptar→padre→candidato,8celdas en orden congelado por estado. Sin backward/optimizador ni ajustes. Usar instancia única, caché de atención nueva cada forward y modelo eval. Base sin adaptar se evalúa antes de insertar LoRA; fingerprints de su estructura antes/después y del componente base envuelto en estados posteriores se verifican por separado.
+
+Antes de inferir fijar plan, código, fuentes/checkpoints, protocolo, ocho inputs/gold, tokens, assets/runtime y revisión ciega. Revisión técnica independiente debe finalizar antes de arrancar esta sonda; conservar cualquier fallo. Un único intento24forward,0backward,0updates,600s watchdog,estimado1–2min,sin puertos/API/instalaciones. Registrar handle/PID y código terminal real. No reintentar por pérdida de observación, no detener procesos ajenos.
+
+Guardar score, margen yes/no, decisión y todos los logits y tiempos por caso/estado. Para cada estado, informar aciertos/8,útiles/4,ajenos/4 y cada cambio de decisión entre formas emparejadas del mismo dominio/identidad. Para cada pareja informar margen nominal−pasiva y diferencia de score; sensibilidad de decisión se verifica si dos realizaciones juzgadas equivalentes difieren en seleccionado. Registrar cambios entre estados sobre cada celda y contrastes de dominio dentro de forma/identidad. Si no cambia decisión, no presentar cambios numéricos como fallo de selección; tampoco un pase8/8 prueba invariancia general. Sin p-values, selección de celdas, umbral alternativo, entrenamiento o afirmación de mejora de recuperación.
+
+La sonda discrimina sensibilidad en ocho textos concretos; incluso si todos pasan no resuelve los88errores conocidos ni los cinco pasos. La puerta original24/24+64/64,cero pérdidas/ajenos/degradaciones y≥1ganancia permanece intacta, reservas24/V6cerradas. Recursos por forward no prueban coste/p50/p95 completos≤1,5×. Nueva APIUSD0; coste económico local/Codex no cuantificado. Resultados negativos íntegros y revisión offline independiente antes de decidir otra intervención.

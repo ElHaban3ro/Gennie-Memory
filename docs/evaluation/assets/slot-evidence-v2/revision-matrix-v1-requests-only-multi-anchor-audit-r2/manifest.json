@@ -1,0 +1,164 @@
+{
+  "version": "slot-evidence-v2-revision-matrix-v1-requests-only",
+  "synthetic": true,
+  "contains_annotations": false,
+  "contains_corpus": false,
+  "provider_calls_made": false,
+  "requests": [
+    {
+      "path": "requests/revision-01-D0.json",
+      "sha256": "242de62dddb0b59af7d754be3a366b603dce5333e2b11665770a53ff6b8aa0ae",
+      "provider": "decisions",
+      "selection_policy": "baseline"
+    },
+    {
+      "path": "requests/revision-01-G0.json",
+      "sha256": "aa49599877c31629b125e0e1a8f020f23753eba3666eb2477433f2f8b1266ecb",
+      "provider": "gemma3_4b",
+      "selection_policy": "baseline"
+    },
+    {
+      "path": "requests/revision-01-G2.json",
+      "sha256": "92923b47815b40f9fc7bc49194123339220a6de9d540b239d5ca079d21fc022d",
+      "provider": "gemma3_4b",
+      "selection_policy": "slot_evidence_v2"
+    },
+    {
+      "path": "requests/revision-02-D0.json",
+      "sha256": "757ef56f89c751f2134e008cbab805f6143d00eedce646579f657399317bdbaf",
+      "provider": "decisions",
+      "selection_policy": "baseline"
+    },
+    {
+      "path": "requests/revision-02-G0.json",
+      "sha256": "bc82a8d651b18f4834e5dbdfac73fa27b700a91081815e4dcefce6930ae4337c",
+      "provider": "gemma3_4b",
+      "selection_policy": "baseline"
+    },
+    {
+      "path": "requests/revision-02-G2.json",
+      "sha256": "d776fcca3548b548ca8b60c3eb8cab01739f43775a3061c9fb27db9a7a990bf5",
+      "provider": "gemma3_4b",
+      "selection_policy": "slot_evidence_v2"
+    },
+    {
+      "path": "requests/revision-03-D0.json",
+      "sha256": "e861c90a40e6a128efc06faee512f4978bd49f7ca5bc2d151fbc74541f2eb4f6",
+      "provider": "decisions",
+      "selection_policy": "baseline"
+    },
+    {
+      "path": "requests/revision-03-G0.json",
+      "sha256": "541e3c2c923cfeb0d3c6a28ac446dbeeaa598f9e57a83cf743cb1b78308bb02f",
+      "provider": "gemma3_4b",
+      "selection_policy": "baseline"
+    },
+    {
+      "path": "requests/revision-03-G2.json",
+      "sha256": "7e41cf5c970f89c56091c064835c338a7bf34ba3306e30c8b35ed4f2da9afe0a",
+      "provider": "gemma3_4b",
+      "selection_policy": "slot_evidence_v2"
+    },
+    {
+      "path": "requests/revision-04-D0.json",
+      "sha256": "02abacc713c656579e0b9ec019ccfb6cad916e79b775004e800fefe4c4008933",
+      "provider": "decisions",
+      "selection_policy": "baseline"
+    },
+    {
+      "path": "requests/revision-04-G0.json",
+      "sha256": "7e2ea1a12b0897eb42eb9349a5f8d3a6d4d4018704314d56c9acb7476ec983a7",
+      "provider": "gemma3_4b",
+      "selection_policy": "baseline"
+    },
+    {
+      "path": "requests/revision-04-G2.json",
+      "sha256": "068c2bf765c46027ba170f2eb1a8725f73f0e8211b2e6550e9ebd103ac92dd79",
+      "provider": "gemma3_4b",
+      "selection_policy": "slot_evidence_v2"
+    },
+    {
+      "path": "requests/revision-05-D0.json",
+      "sha256": "a207c1b732513a17fb13a194883cd359459af456c97eebaad6dfba569d125987",
+      "provider": "decisions",
+      "selection_policy": "baseline"
+    },
+    {
+      "path": "requests/revision-05-G0.json",
+      "sha256": "447c2d9af1e2e1c5968109778458f6bbb0cd3732c306ebedadff0fe400035643",
+      "provider": "gemma3_4b",
+      "selection_policy": "baseline"
+    },
+    {
+      "path": "requests/revision-05-G2.json",
+      "sha256": "e61787734f8567e7a7548278eedb928032778d76a93d937d79a96ffc4fe03174",
+      "provider": "gemma3_4b",
+      "selection_policy": "slot_evidence_v2"
+    },
+    {
+      "path": "requests/revision-06-D0.json",
+      "sha256": "035ccbe524721c4b032cffc1c9ff5793017d9718e604b5a7e11a8fc6174b87f0",
+      "provider": "decisions",
+      "selection_policy": "baseline"
+    },
+    {
+      "path": "requests/revision-06-G0.json",
+      "sha256": "ce8d71e395a3f7b76a9ff5ccf5dc5aa694cbd745b1b41d4bf2833e02a286df4e",
+      "provider": "gemma3_4b",
+      "selection_policy": "baseline"
+    },
+    {
+      "path": "requests/revision-06-G2.json",
+      "sha256": "6f6d722c53d67450df2218b9874588bf18c9d75b07122d5be66277bd006d9b49",
+      "provider": "gemma3_4b",
+      "selection_policy": "slot_evidence_v2"
+    },
+    {
+      "path": "requests/revision-07-D0.json",
+      "sha256": "21c0ab0d8b243a1aaf47120e2143ee03390e07d61bc8d6c7952575dc058c5918",
+      "provider": "decisions",
+      "selection_policy": "baseline"
+    },
+    {
+      "path": "requests/revision-07-G0.json",
+      "sha256": "5c3d16cc9f25f45348c30dafc0c0ba14791804c3ebea0fe0e73641a63b0ecda6",
+      "provider": "gemma3_4b",
+      "selection_policy": "baseline"
+    },
+    {
+      "path": "requests/revision-07-G2.json",
+      "sha256": "cc182678daa9f849b7b05765892b60d82636380ae75d2afb0213cd76ae8127eb",
+      "provider": "gemma3_4b",
+      "selection_policy": "slot_evidence_v2"
+    },
+    {
+      "path": "requests/revision-08-D0.json",
+      "sha256": "b437a7198c5b313ff91e6ef34bcf6d8aa213d9a62eb7dd2d77ed1398f8ff82ff",
+      "provider": "decisions",
+      "selection_policy": "baseline"
+    },
+    {
+      "path": "requests/revision-08-G0.json",
+      "sha256": "1a14215740b7632b1a9e36224bff4261ff60f12ee42fd7212611e2ac9f2eebae",
+      "provider": "gemma3_4b",
+      "selection_policy": "baseline"
+    },
+    {
+      "path": "requests/revision-08-G2.json",
+      "sha256": "4ee1cf5fbafb9e15bdfec505c034087a0d5a9cb9f1a69ed015b3a0d282e3e85c",
+      "provider": "gemma3_4b",
+      "selection_policy": "slot_evidence_v2"
+    }
+  ],
+  "source_sha256": {
+    "bootstrap/src/openrouter.rs": "657c82be5dde53a4af9ed398086582da3062253320b067021aa55885e870370c",
+    "bootstrap/src/openrouter/slot_evidence.rs": "7103f53d27cb971095a3e15ac9d8f629e3f35daaad636b57cdd1ff63ed2dd0cd",
+    "apps/retrieval/src/slot_evidence.rs": "edc524eaf4bdb78032b004cbc5372cddf1d1f87c12d5f9461119c55e83a1b338",
+    "apps/retrieval/src/service.rs": "50d32a3486f86966761756eceb7353e3a2768b7425b7dacf056b4ab2fd3d6f35",
+    "Cargo.lock": "67d8750570958feae5ccaabbe1e38792adea208f7ab35d91764360e58e312293"
+  },
+  "contains_answer_labels": false,
+  "snapshot_revision": 8,
+  "supersedes_manifest_sha256": "32108a92c9c379aa13cfc7886ab6227cd95b4a6a256a170d777cabdb86bdeb50",
+  "source_update_reason": "Freeze a paired local regression: fail closed when the slot quote names multiple query anchors, while preserving selection when the slot excerpt isolates the requested entity. Blind provider requests remain byte-identical."
+}

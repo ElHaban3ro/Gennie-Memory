@@ -1,0 +1,9 @@
+{
+  "query": "Which city for employee Carla Diaz C-54?",
+  "scope_kind": "project",
+  "scope_id": "synthetic_smoke_r21",
+  "entity_id": null,
+  "as_of": "2026-10-23T12:00:00.000Z",
+  "limit": 20,
+  "query_mode": "keywords"
+}

@@ -1,0 +1,5 @@
+# Aclaración de ejecución del piloto selectivo
+
+Antes de red: «20 candidatos» del protocolo significa el límite de recuperación de baseline. Algunos resultados originales contienen menos de20. Usar todos los candidatos realmente recuperados, en su orden original, sin completar, duplicar ni sintetizar hasta veinte. La candidata conserva el prefijo de siete disponible. Una comprobación inicial que exigía exactamente20 detuvo la preparación local, sin llamadas ni cargos; se corrige para respetar la ruta real.
+
+El test manual solo realiza clasificación sobre entradas congeladas: no mide búsqueda, SQLite, composición de semilla ni recall integrado. Las etapas están sincronizadas en disco antes y después de cada HTTP; registrar la duración real de cada operación completa, incluido el trabajo local. La comparación usa el constructor de payload de baseline compartido con choose_measured, conservando instrucciones y opciones; el auditor independiente reconstruye también ese payload. Las categorías de los críticos no se pasan al siguiente modelo.

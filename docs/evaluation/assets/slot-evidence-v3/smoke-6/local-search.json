@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "method": "fts5_keywords",
+  "candidates": [
+    {
+      "memory_id": "smoke_v3_priya_001",
+      "revision": 1,
+      "summary": "Curator Priya Nand P-52 works from Ghent. Designer Luca Miro L-19 lives in Bruges and indexed the catalog.",
+      "conditions": null,
+      "source": null,
+      "state": "active",
+      "bm25": -7.432432432432432e-6
+    }
+  ],
+  "semantic_coverage": "disabled"
+}

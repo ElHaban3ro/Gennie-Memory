@@ -1,0 +1,60 @@
+{
+  "status": "failed_closed_no_retry",
+  "preflight_inputs_sources_binary_database_unchanged": true,
+  "integrity_checks": {
+    "input/corpus.json": true,
+    "input/recall.json": true,
+    "input/search.json": true,
+    "local-search.json": true,
+    "apps/retrieval/src/model.rs": true,
+    "apps/retrieval/src/service.rs": true,
+    "apps/retrieval/src/slot_evidence.rs": true,
+    "bootstrap/src/openrouter.rs": true,
+    "bootstrap/src/openrouter/slot_evidence.rs": true,
+    "bootstrap/src/main.rs": true,
+    "kernel/src/config.rs": true,
+    "Cargo.lock": true,
+    "binary": true,
+    "database": true
+  },
+  "capture": {
+    "elapsed_ms": 2660.1594999999998,
+    "exchange_error": null,
+    "http_status": 200,
+    "http_version": "HTTP/1.1",
+    "input_tokens": 816,
+    "output_tokens": 193,
+    "prompt_sha256": "1bdd9b0fa2c7006dfcffed35067772da80d7e494a79845a95df3354839ed4a49",
+    "reported_cost_usd": 6.01e-05,
+    "request_payload_sha256": "147880c5386eee4bc5559f55c1f0ca9a968aeeb95f7dc6e218abbbded8318961",
+    "requested_model": "google/gemma-3-4b-it",
+    "response_body_complete": true,
+    "response_sha256": "d11f8a058181f267302a87c420f43d453a37fcf045afd6e1c63ceb091afe6203",
+    "schema_sha256": "d111651b04b937c29f182125fde1c7223f2445cc3ca5fe6baee7ce7784c84130",
+    "scope_id": "slot_evidence_v3_smoke_20261023_r4",
+    "served_model": "google/gemma-3-4b-it",
+    "served_provider": "DeepInfra"
+  },
+  "classifier_result": {
+    "http_status": 200,
+    "response_body_complete": true,
+    "served_model": "google/gemma-3-4b-it",
+    "served_provider": "DeepInfra",
+    "input_tokens": 816,
+    "output_tokens": 193,
+    "reported_cost_usd": 6.01e-05,
+    "classifier_ms": 2671.718167,
+    "total_ms": 2673.126791,
+    "selected_id": null,
+    "error_code": "slot_evidence_v2_subject_span_not_identifier",
+    "semantic_scoring": "not scored; structural validation failed"
+  },
+  "attempts": {
+    "planned": 3,
+    "executed": 1,
+    "remaining_not_executed": 2
+  },
+  "raw_response_saved": false,
+  "diagnostic_limit": "El decoder devolvió slot_evidence_v2_subject_span_not_identifier; el cuerpo raw no se conserva y el código combina varios puntos de validación, por lo que no se afirma qué cita concreta falló.",
+  "stop_reason": "La primera respuesta completa falló validación estructural; el protocolo cierra la revisión sin reintentos."
+}
