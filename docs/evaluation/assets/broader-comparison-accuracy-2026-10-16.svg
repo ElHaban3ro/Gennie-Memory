@@ -14,7 +14,7 @@
 <line x1="110" y1="215" x2="110" y2="497" stroke="#25313b" stroke-width="1"/>
 <rect x="146" y="217" width="64" height="280" fill="#18817e"/>
 <text x="178" y="205" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="16">457</text>
-<text x="178" y="526" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="15">iROMEM</text>
+<text x="178" y="526" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="15">Gennie Memory</text>
 <rect x="251" y="217" width="64" height="280" fill="#b77a27"/>
 <text x="283" y="205" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="16">456</text>
 <text x="283" y="526" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="15">Engram</text>
@@ -37,7 +37,7 @@
 <line x1="662" y1="215" x2="662" y2="497" stroke="#25313b" stroke-width="1"/>
 <rect x="698" y="240" width="64" height="257" fill="#18817e"/>
 <text x="730" y="228" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="16">420</text>
-<text x="730" y="526" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="15">iROMEM</text>
+<text x="730" y="526" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="15">Gennie Memory</text>
 <rect x="803" y="235" width="64" height="262" fill="#b77a27"/>
 <text x="835" y="223" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="16">427</text>
 <text x="835" y="526" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="15">Engram</text>
@@ -49,5 +49,5 @@
 <text x="1045" y="526" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="15">Basic</text>
 <text x="1045" y="544" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="15">Memory</text>
 <text x="58" y="578" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="16">Búsqueda de candidatos; una lista de resultados no equivale a una semilla seleccionada.</text>
-<text x="58" y="608" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="16">iROMEM + Decisions obtuvo 441/460 semillas correctas y dejó 80/80 negativos sin semilla.</text>
+<text x="58" y="608" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="16">Gennie Memory + Decisions obtuvo 441/460 semillas correctas y dejó 80/80 negativos sin semilla.</text>
 </svg>
