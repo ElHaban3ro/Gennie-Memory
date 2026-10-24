@@ -141,3 +141,7 @@ El ciclo de vida explícito vive en `retrieval::lifecycle`: `mem-lifecycle`, `me
 ## Escritura reconciliada local (2026-10-24)
 
 `reconciliation` posee create/revise/confirm, propuestas, resolución e inspección/auditoría; `write::write_in_transaction` reutiliza la frontera SQL sin commit propio. Bootstrap adapta los mismos comandos por CLI/JSONL. Mantener `source_policy:report` por compatibilidad y `require_verified` explícita; aceptar una propuesta exige evidencia literal. Las relaciones remotas son optativas, conservan roster/citas/recibo y nunca autorizan fusión o sobrescritura. No mantener transacción durante transporte; revalidar revisiones/tema al volver. Fuente sin verificar o comparación incierta conserva propuesta fuera de FTS. [Contrato](../architecture/write-reconciliation.md).
+
+## Extensión de recall (2026-10-24)
+
+Retrieval/product/calibration posee validación/aplicación de calibración empírica informativa; Classifier expone huella exacta del adaptador para fallar cerrado. Per_memory_factors_v1 exige traza de factores completa en recall-v1 y conserva separación aplicabilidad/utilidad. Bootstrap/source_import posee adquisición HTTPS explícita fuera de transacción; source_verification mantiene registro local. No introducir red automática en recall ni copiar credenciales al conector. [Contrato](../architecture/recall-completion-v1.md).

@@ -15,15 +15,17 @@ Gennie prepara recuerdos relevantes para que un agente de IA responda con contex
 - [Escritura, propuestas, resolución y auditoría local](docs/architecture/write-reconciliation.md)
 - [Verificación literal de fuentes locales](docs/evaluation/recall-source-verification/README.md)
 - [Presupuestos de tokens de recall-v1: pruebas y coste local](docs/evaluation/recall-token-budgets/README.md)
+- [Factores por candidato, calibración e importación HTTPS](docs/architecture/recall-completion-v1.md)
+- [M4: revisión de etiquetas, ablaciones y concurrencia](docs/evaluation/m4-completion-v1/README.md)
 - [Funcionamiento técnico y diseño de la memoria](docs/architecture/memory-design.md)
 - [Roadmap resumido](ROADMAP-SUMMARY.md)
 - [Roadmap detallado e historial](ROADMAP.md)
 
 ## Rendimiento
 
-Las mediciones históricas siguientes no incorporan el nuevo contador de tokens de `recall-v1`. Su [prueba local de admisión](docs/evaluation/recall-token-budgets/04-cli.md) mide por separado primera carga y reutilización, sin inferencia remota.
+Las mediciones históricas siguientes corresponden a sus binarios congelados; no incorporan los cambios posteriores de `recall-v1`. Su [prueba local de admisión](docs/evaluation/recall-token-budgets/04-cli.md) mide por separado primera carga y reutilización del contador de tokens, sin inferencia remota. La evaluación del perfil optativo por factores y la concurrencia local se presentan por separado en [M4](docs/evaluation/m4-completion-v1/README.md), sin sustituir estas comparaciones.
 
-La última corrida medida usa [LoCoMo](docs/evaluation/locomo-results-2026-10-24.md): **272 recuerdos**, **1.982 preguntas evaluables** (1.978 positivas y 4 sin evidencia) y cuatro referencias de evidencia sin resolver excluidas. Las gráficas conservan los mismos indicadores y la presentación de la comparación anterior. Cada herramienta mantiene su color; las dos configuraciones de Gennie comparten el suyo.
+La última comparación de motores usa [LoCoMo](docs/evaluation/locomo-results-2026-10-24.md): **272 recuerdos**, **1.982 preguntas evaluables** (1.978 positivas y 4 sin evidencia) y cuatro referencias de evidencia sin resolver excluidas. Las gráficas conservan los mismos indicadores y la presentación de la comparación anterior. Cada herramienta mantiene su color; las dos configuraciones de Gennie comparten el suyo.
 
 | Indicador | Gennie + Decisions |
 | --- | ---: |
@@ -71,11 +73,13 @@ La validación de respuestas con Codex quedó pendiente: se congelaron 50 casos 
 ## Cómo funciona
 
 1. **Busca** recuerdos relacionados con la consulta dentro del ámbito indicado: usuario, agente, proyecto o conversación.
-2. **Selecciona** los candidatos que sirven para responder, reutilizando una revisión compatible o consultando al clasificador.
+2. **Selecciona** candidatos mediante el clasificador y revalida sus identidades y revisiones antes de componer la semilla.
 3. **Prepara** una semilla breve con el contenido seleccionado y sus referencias, para que el agente la use como contexto.
 
 El núcleo está escrito en Rust y los recuerdos se almacenan en SQLite. La interfaz actual es CLI/JSONL. La búsqueda predeterminada es por palabras clave; la búsqueda semántica sigue siendo experimental. La integración automática con agentes todavía está pendiente.
 
-La CLI incluye `mem-write` para crear una memoria y `mem-write-batch` para escribir lotes de hasta 2.500 mediante la misma operación idempotente. Esta primera ruta es local y no ofrece todavía autenticación multiusuario, ACL ni resolución de duplicados. [Contrato de escritura](docs/architecture/memory-design.md#21-contrato-de-escritura).
+La CLI incluye `mem-write` para crear, revisar o confirmar, propuestas inspeccionables y `mem-resolve` para reconciliación explícita; `mem-write-batch` admite hasta 2.500 creaciones idempotentes. Es una ruta personal local, sin autenticación multiusuario ni ACL de host. [Contrato de escritura](docs/architecture/write-reconciliation.md).
+
+`recall-v1` ofrece explícitamente `per_memory_factors_v1` para separar aplicabilidad y relevancia por candidato, con puntuaciones y calibradores empíricos ligados al perfil y modelo servido. `source-import-https` registra texto adquirido de una URL explícita después de comprobar su hash esperado. Son mecanismos con [alcance y límites propios](docs/architecture/recall-completion-v1.md); no cambian Decisions + baseline ni certifican verdad externa.
 
 Para contratos, almacenamiento, índices y ciclo de vida de los recuerdos, consulta el [funcionamiento técnico de la memoria](docs/architecture/memory-design.md). Las operaciones locales de retirada, restauración, revisión, borrado y cola E5 explícita están descritas en el [contrato de ciclo de vida](docs/architecture/memory-lifecycle.md). Para la distribución del código, consulta la [arquitectura vigente](docs/architecture/overview.md) y el [mapa de módulos](docs/architecture/modules.md).

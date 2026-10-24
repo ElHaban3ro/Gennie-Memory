@@ -27,3 +27,7 @@ Retrieval posee source_verification.rs y migración 10; no es una app nueva. Reg
 `retrieval::lifecycle` posee calendario por revisión, retirada/restauración/borrado y cola durable por ámbito/perfil (migración 12). La publicación E5 completa comparte transacción con finalización del trabajo; bootstrap solo adapta CLI/JSONL. No se añade app, dependencia ni proceso de fondo. [Contrato](../architecture/memory-lifecycle.md).
 
 `retrieval::reconciliation` posee los contratos locales de escritura, propuestas, relaciones y auditoría; `write` expone internamente su transacción reutilizable. Bootstrap adapta JSON y un clasificador de relaciones optativo en `openrouter/write_relations.rs`, sin dependencia nueva. La migración 11 pertenece a retrieval y se registra antes de lifecycle12. [Contrato](../architecture/write-reconciliation.md).
+
+## Extensión de recall (2026-10-24)
+
+El calibrador empírico puro pertenece a retrieval/product/calibration.rs; usa tipos y digest existentes. Bootstrap/source_import.rs adquiere fuentes y llama al registro retrieval existente, sin dependencias, tabla, proceso o conexión propios. [Contrato](../architecture/recall-completion-v1.md).

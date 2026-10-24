@@ -437,3 +437,7 @@ Para ciclo de vida: pruebas `lifecycle::tests`, `local_embeddings::queue_tests` 
 ## Escritura y reconciliación local (2026-10-24)
 
 `cargo test --offline -p gennie-memory-retrieval --lib reconciliation` cubre idempotencia, deduplicación/evidencia, fuente estricta fuera de FTS, resolución completa, conflicto, rollback, confirmación/agenda y juicios inválidos. La carrera usa dos conexiones solo en la prueba para simular procesos concurrentes durante transporte: ninguna conexión adicional existe en el producto. `cargo test --offline -p gennie-memory --test write_reconciliation_cli` verifica propuestas, resolución, confirmación, auditoría y recibos CLI/JSONL con sandbox propio, credencial vacía y sin red. El adaptador remoto se verifica con payload/recibo sintéticos, sin certificar calidad semántica. Cambio de migración/contrato requiere workspace offline con/sin embeddings y formato. [Informe](../evaluation/write-reconciliation/README.md).
+
+## Extensión de recall (2026-10-24)
+
+Factores de producto requieren probar independencia de contexto/utilidad, scores finitos/normalizados, pertenencia/revisión, rechazo de calibrador incompatible antes de red y semilla intacta tras aplicar scores. Calibración empírica se liga a corpus/etiquetas/perfil/modelo con particiones disjuntas, sin confundir mocks con calidad remota. Conector comprueba URL, hash, UTF8, tamaño y fallo sin escritura; una prueba real HTTPS se declara separadamente. [Contrato](../architecture/recall-completion-v1.md).

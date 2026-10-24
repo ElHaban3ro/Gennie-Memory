@@ -79,3 +79,7 @@ La ruta `embedding-session <settings.json>` requiere compilación con `local-emb
 ## Fuentes locales por operación (2026-10-24)
 
 Source_policy en recall-v1: report por defecto, require_verified explícita; limita publicación de semilla, no autorización de red. Registro/comprobación usan actor_id local por defecto y scope exacto. Registro aporta texto UTF-8 hasta 256 KiB y versión inmutable; ref no se interpreta como ruta o URL. Locator utf8:start:end usa bytes/final exclusivo. Sin nueva variable, secreto, dependencia o configuración de conector. [Contrato](../architecture/product-contract-v1.md).
+
+## Extensión de recall (2026-10-24)
+
+Recall-v1 acepta artefacto calibration inline optativo, ligado a proveedor/política/modelo/huella exacta; no añade entorno o secreto. Source-import-https acepta URL y SHA256 esperado explícitos, no usa proxies de entorno ni credencial OpenRouter. HTTPS normal valida certificados; no deshabilitar TLS ni seguir redirects. [Contrato](../architecture/recall-completion-v1.md).

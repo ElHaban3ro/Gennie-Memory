@@ -41,6 +41,31 @@ La revisión local posterior a smoke 14 separa el nombre de la entidad citado de
 
 La revisión experimental siguiente retira `subject_name_quote` del wire V3 y deriva el tramo de sujeto localmente entre tipo e ID literales, únicos y ordenados. El parser aplica además una heurística léxica conservadora (tokens alfabéticos con mayúscula inicial, partículas conocidas y conectores internos); rechaza spans relacionales, coordinados, ambiguos o con forma no admitida. Esta heurística puede abstenerse ante nombres válidos atípicos y no prueba identidad semántica. Sus regresiones unitarias son una puerta estructural únicamente: no se mezclan con métricas V3 previas ni permiten adopción sin tres smokes consecutivos y una cohorte ciega nueva emparejada. Véase [decisión 0038](../decisions/0038-derive-compact-subject-locally.md).
 
+## Superficies locales vigentes (2026-10-24)
+
+Las rutas históricas `recall`/campañas anteriores conservan su protocolo. `recall-v1` y session `recall_v1` exponen contrato versionado, consulta/contexto, presupuestos acumulados sobre JSON exacto, procedencia literal, degradación y factores optativos. [Contrato de producto](../architecture/product-contract-v1.md), [factores/calibrador/adquisición](../architecture/recall-completion-v1.md).
+
+| CLI | JSONL session | Alcance |
+| --- | --- | --- |
+| `recall-v1 <request.json>` | `recall_v1` | Recall textual; política predeterminada baseline. `per_memory_factors_v1` presenta top 8 con condiciones y tres juicios separados; calibración optativa no altera elecciones. |
+| `source-register <request.json>` | `source_register` | Snapshot UTF8 inmutable aportado explícitamente por el operador; no descarga refs. |
+| `source-verify <request.json>` | `source_verify` | Procedencia literal de una revisión vigente, sin certificar verdad/autoría. |
+| `source-import-https <request.json>` | `source_import_https` | `registration` con texto vacío, URL explícita idéntica a source.ref y `expected_sha256`; HTTPS puerto 443 sin credenciales/query/fragmento/redirect/proxy, texto plano/markdown <=256 KiB, 10 s. Adquiere/verifica antes de registrar; no se activa dentro de recall. |
+| `mem-write <request.json>` | `mem_write` | Escritura reconciliada create/revise/confirm; clasificación de relaciones optativa. |
+| `mem-write-batch <requests.jsonl>` | — | Hasta 2500 creaciones idempotentes; commit por fila. |
+| `mem-resolve <request.json>` | `mem_resolve` | Decisión explícita sobre una propuesta y revisiones esperadas. |
+| `mem-proposal-get`, `mem-audit`, `mem-operation-get` | `mem_proposal_get`, `mem_audit`, `mem_operation_get` | Inspección/auditoría local de solicitudes/revisiones autorizadas por el operador. |
+| `entity-resolve <request.json>` | `entity_resolve` | Entidades/alias locales; homónimo no fusiona identidad. |
+| `mem-lifecycle <request.json>` | `mem_lifecycle` | Retirada/restauración/borrado/revisión con evidencia. |
+| `mem-review-list <request.json>` | `mem_review_list` | Vigencia y conflictos con paginación, sin textos de recuerdos. |
+| `embedding-job <request.json>` | `embedding_job` | Cola E5 explícita enqueue/get/cancel/retry; no carga modelo ni inicia daemon. |
+| `segment-text <archivo-UTF8>` | `segment_text` | Segmentación literal local conservando UTF8 y offsets; sin DB/proveedor. |
+| `provider-capabilities` | `provider_capabilities` | Contrato de adaptadores, no disponibilidad/precios verificados. |
+
+`session` reutiliza una conexión SQLite y el cliente HTTPS por stdin/stdout, sin puerto. Cada operación JSONL usa `{"op":"nombre","request":{...}}`; capacidades no exige request. El sobre `status:complete` confirma producción de respuesta: hay que leer `execution_status` dentro del resultado de recall-v1. No es autenticación de host o superficie multiusuario. Los contratos de [escritura](../architecture/write-reconciliation.md) y [ciclo de vida](../architecture/memory-lifecycle.md) poseen validaciones/ejemplos detallados.
+
+La calibración distingue `requested_model` (alias exacto del proveedor) y `served_model` (identidad observada, snapshot exacto). Un artefacto se aplica solo a su proveedor/política/fuente del adaptador y al mismo servido; los scores crudos y las frecuencias suavizadas por factor se publican separados. No se adopta umbral ni se promueve baseline por implementar el mecanismo o calcular un reporte.
+
 ## Evaluación Rust
 
 `gennie-memory-eval` es un binario separado del producto. Sus comandos actuales son:
@@ -49,6 +74,9 @@ Para auditar solicitudes del runner sin incluir el banco etiquetado en el payloa
 
 | Comando | Entrada y resultado |
 | --- | --- |
+| `m4-factor-calibrate <banco> <calibration.jsonl> <factors.rs> <provider> <nuevo.json>` | Valida hashes/partición de calibración y ajusta tasas base Laplace por factor a un único modelo servido observado; sin inferencia. |
+| `m4-factor-report <banco> <records.jsonl> <calibrador.json> <training.jsonl> <factors.rs> <provider> <split> <nuevo.json>` | Audita ligadura de casos/recibos/modelos y aplicación exacta del calibrador; Brier/ECE/aciertos por factor/selección sin confianza factual. |
+| `m4-rank-replay <ranks-congelados.jsonl> <nuevo-informe.json>` | Ablación de ranks históricos congelados, sin modelo ni reejecución de encoder; declara su condición retrospectiva. |
 | `validate-evidence-benchmark <banco>` | Verifica hashes de la rúbrica y del banco de cuatro relaciones, citas fuente, ámbitos, IDs, procedencia y equilibrio. No prueba corrección semántica independiente. |
 | `report-evidence-retrieval <banco> <search.jsonl> <salida-nueva.json>` | Verifica manifiesto y candidatos congelados contra corpus; informa cobertura por relación y rango por caso sin confundir ausencia de evidencia con necesidad de búsqueda vacía. |
 | `retrieval <resultados.jsonl> <consultas.jsonl> [informe.json]` | Verifica etiquetas y calcula recall@5/@20, top-1, negativos vacíos, IDs prohibidos, estados y percentiles de búsqueda, con desglose por segmento y ámbito. |
@@ -131,7 +159,7 @@ Los perfiles `jev_roles_consensus_v1` y `jev_roles_consensus_batch_v1` se prepar
 
 ## Piloto optativo de ejemplos contrastivos
 
-`gennie-memory-eval report-policy-probe <directorio> <informe-nuevo.json>` audita el piloto fijoV5 de10preguntas/20operaciones definido en [el protocolo](per-memory-examples-v1-protocol-2026-10-19.md). Requiere `preflight.json`, `cases.jsonl`, `journal.jsonl` y auditoría ordinaria `audit.json`; valida fuentes/gold/orden, hashes de binario/base y pares de candidatos antes de reportar ganancias/pérdidas/IDs no permitidos, coste conocido/desconocido y percentiles. No llama a proveedores, no reetiqueta ni promueve. `per_memory_examples_v1` usa un único juicio binario por cada top8, con seis demostraciones en el mismo payload y modeloJev1.13; las políticas existentes y el predeterminado se conservan.
+`gennie-memory-eval report-policy-probe <directorio> <informe-nuevo.json>` audita el piloto fijoV5 de10preguntas/20operaciones definido en [el protocolo](per-memory-examples-v1-protocol-2026-10-19.md). Requiere `preflight.json`, `cases.jsonl`, `journal.jsonl` y auditoría ordinaria `audit.json`; valida fuentes/gold/orden, hashes de binario/base y pares de candidatos antes de reportar ganancias/pérdidas/IDs no permitidos, coste conocido/desconocido y percentiles. No llama a proveedores, no reetiqueta ni promueve. `per_memory_examples_v1` usa un único juicio binario por cada top 8, con seis demostraciones en el mismo payload y modeloJev1.13; las políticas existentes y el predeterminado se conservan.
 
 ## Piloto de factores independientes
 
