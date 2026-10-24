@@ -1,6 +1,6 @@
-# Gennie Memory
+# Genny
 
-Gennie Memory prepara recuerdos relevantes para que un agente de IA responda con contexto breve, sin tener que recorrer todo el historial en cada consulta. Corre localmente mediante CLI y sesiones JSONL.
+Genny prepara recuerdos relevantes para que un agente de IA responda con contexto breve, sin tener que recorrer todo el historial en cada consulta. Corre localmente mediante CLI y sesiones JSONL.
 
 ## Índice
 
@@ -15,54 +15,43 @@ Gennie Memory prepara recuerdos relevantes para que un agente de IA responda con
 
 ## Rendimiento
 
-Configuración principal: **Decisions + baseline**. La corrección de evidencia explícita pasó [30 recuperaciones de desarrollo, incluida Aliso](docs/evaluation/baseline-evidence-30-results-2026-10-23.md).
+La corrida vigente usa [LoCoMo](docs/evaluation/locomo-results-2026-10-24.md): **272 recuerdos**, **1.982 preguntas evaluables** (1.978 positivas y 4 sin evidencia) y cuatro referencias de evidencia sin resolver excluidas. Las figuras comparan una corrida local por motor; p95 describe esa corrida y no una distribución entre repeticiones.
 
-La tabla y las gráficas siguientes conservan mediciones **anteriores a esa corrección**, con **2.800 recuerdos y 540 consultas sintéticas**; no miden el payload vigente.
+| Recuperación local | Palabras clave | Consulta natural |
+| --- | ---: | ---: |
+| Recuerdo esperado entre 20 | **99,04 %** | 98,84 % |
+| Recuerdo esperado entre 5 | **92,92 %** | 90,95 % |
+| Recuerdo esperado primero | **70,17 %** | 68,86 % |
+| Conjunto completo de evidencia en top 20 | **95,60 %** | 94,89 % |
+| Latencia p50 / p95 | **3,66 / 4,98 ms** | 3,88 / 5,79 ms |
 
-| Indicador | Gennie Memory |
-| --- | ---: |
-| Recuerdo esperado entre los 20 candidatos | **457/460 · 99,35 %** |
-| Selección correcta de la semilla | **441/460 · 95,87 %** |
-| Semilla vacía cuando no corresponde seleccionar | **80/80 · 100 %** |
-| Tiempo hasta la semilla: mediana / p95 | **409 / 863 ms** |
-| Coste informado por Decisions para las 540 consultas | **USD 0,029742** |
+![Precisión de recuperación en LoCoMo](docs/evaluation/assets/locomo-2026-10-24/locomo-retrieval-accuracy.svg)
 
-La semilla es el contexto seleccionado para el agente; su acierto no equivale a la exactitud de la respuesta final. [Datos y alcance](docs/evaluation/epistemic-single-pass-competitor-comparison-2026-10-23.md).
+![Latencia de búsqueda de cada motor](docs/evaluation/assets/locomo-2026-10-24/locomo-search-latency.svg)
+
+![Cobertura de todos los recuerdos anotados](docs/evaluation/assets/locomo-2026-10-24/locomo-all-evidence.svg)
 
 ## Comparación con otros motores
 
-Recuperación de candidatos sobre los mismos 2.800 recuerdos y 540 consultas. Estos tiempos incluyen la búsqueda; la selección de la semilla de Gennie Memory se muestra arriba.
+Se cargaron las mismas 272 memorias y se consultaron las mismas 1.982 preguntas. Las implementaciones y rutas no son idénticas: Engram usa MCP local con palabras clave; Lodis 0.6.0 usa híbrido con embeddings FastEmbed locales; Basic Memory usa FTS local y filtro de ámbito; Genny se midió con palabras clave y consulta natural.
 
-| Búsqueda de candidatos | Gennie Memory | Engram 3.4.0 | Lodis 0.6.0 | Basic Memory |
-| --- | ---: | ---: | ---: | ---: |
-| Recuerdo esperado entre 20 | **99,35 %** | 99,13 % | 84,57 % | 60,87 % |
-| Recuerdo esperado en primera posición | 91,30 % | **92,83 %** | 10,22 % | 60,00 % |
-| Latencia mediana | **6,93 ms** | 7,22 ms | 19,67 ms | 24,12 ms |
-| Latencia p95 | **7,77 ms** | 10,71 ms | 40,94 ms | 127,72 ms |
+| Motor | Recall@20 | Recall@5 | Top 1 | Evidencia completa@20 | p50 / p95 |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| **Genny · palabras clave** | **99,04 %** | **92,92 %** | **70,17 %** | **95,60 %** | **3,66 / 4,98 ms** |
+| Genny · natural | 98,84 % | 90,95 % | 68,86 % | 94,89 % | 3,88 / 5,79 ms |
+| Engram 3.4.0 | 98,99 % | 91,56 % | 69,16 % | 95,25 % | **2,60 / 3,68 ms** |
+| Lodis 0.6.0 | 77,15 % | 27,40 % | 6,57 % | 70,58 % | 39,12 / 118,91 ms |
+| Basic Memory | 70,83 % | 36,45 % | 22,24 % | 63,04 % | 21,32 / 72,92 ms |
 
-Gráficas de referencia del **16 de octubre de 2026**. Las rutas de acceso de cada motor son distintas; los detalles están en la [comparación completa](docs/evaluation/broader-comparison-2026-10-16.md).
+Las cuatro preguntas sin evidencia no bastan para comparar abstención: Basic Memory devolvió una lista vacía en 1/4; los otros motores, en 0/4. La cobertura completa cuenta si aparecen todos los IDs de evidencia anotados; Recall@20 cuenta si aparece al menos uno. Los resultados y las revisiones de código de terceros están en el [informe LoCoMo](docs/evaluation/locomo-results-2026-10-24.md).
 
-![Recuerdos esperados entre los candidatos de cada motor](docs/evaluation/assets/broader-comparison-accuracy-2026-10-16.svg)
+## Selección de semilla y respuesta del agente
 
-![Latencia de búsqueda de los cuatro motores](docs/evaluation/assets/broader-comparison-latency-2026-10-16.svg)
+Decisions evaluó las 1.982 consultas. Recuperó un recuerdo anotado en **1.959/1.978** positivas; la semilla final incluyó evidencia útil en **993/1.978** y toda la evidencia anotada en **793/1.978**. De las cuatro preguntas sin evidencia, la semilla quedó vacía en **2/4**. El coste informado fue **US$1,0763**; el tiempo total de servicio tuvo p50 **420,55 ms** y p95 **903,96 ms**. Seleccionar evidencia no mide por sí solo si la respuesta final es correcta.
 
-![Variación de la latencia p95 de los cuatro motores](docs/evaluation/assets/broader-comparison-p95-2026-10-16.svg)
+![Resultados de Decisions y la semilla](docs/evaluation/assets/locomo-2026-10-24/locomo-decisions-seed.svg)
 
-## Contexto y respuesta del agente
-
-Con la semilla de Gennie Memory ya preparada, el turno de Codex tuvo una mediana de **4,99 s**, frente a **10,65 s** con Engram, **12,66 s** con Lodis y **15,29 s** con Basic Memory. La referencia es pequeña: seis turnos sintéticos por ruta, con instrucciones y contextos distintos.
-
-La preparación de la semilla se mide aparte. La gráfica siguiente conserva la referencia del **16 de octubre de 2026**: **370 ms** de mediana y **567 ms** en p95; la tabla superior conserva una referencia posterior, también anterior a la corrección del payload.
-
-![Tiempo de preparación de la semilla: referencia del 16 de octubre de 2026](docs/evaluation/assets/full-comparison-seed-preparation-2026-10-16.svg)
-
-Sumar preparación y respuesta por consulta dio medianas de **5,20–5,80 s** para Gennie Memory. Es un tiempo calculado: la entrega automática al agente sigue pendiente.
-
-![Preparación más respuesta: tiempo calculado frente a los turnos con otros motores](docs/evaluation/assets/broader-comparison-calculated-flow-2026-10-16.svg)
-
-La siguiente gráfica muestra el tiempo del turno y los tokens de entrada del agente, con la semilla de Gennie Memory ya lista. Incluye instrucciones y caché.
-
-![Tiempo del turno de Codex y tokens de entrada con cada motor](docs/evaluation/assets/broader-comparison-codex-2026-10-16.svg)
+La validación de respuestas con Codex quedó pendiente: se congelaron 50 casos para GPT‑6 Luna, pero el Codex CLI de esta cuenta rechazó el modelo antes de generar una respuesta. No se sustituyó el modelo. La [evaluación anterior del 16 de octubre](docs/evaluation/broader-comparison-2026-10-16.md) sigue disponible como referencia histórica separada; sus seis turnos por ruta, gráficos de preparación, suma calculada y tokens no se presentan como resultados de LoCoMo ni como medidas vigentes.
 
 ## Cómo funciona
 
