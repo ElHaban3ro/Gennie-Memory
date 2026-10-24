@@ -41,6 +41,9 @@ impl BudgetedDecision {
 }
 
 pub trait Classifier {
+    fn factor_profile_sha256(&self) -> Option<String> {
+        None
+    }
     /// Write judgments never authorize overwriting. The default stays uncertain.
     fn classify_relations(
         &self,

@@ -2,7 +2,27 @@
 use serde::Serialize;
 
 #[derive(Debug, Clone, Serialize)]
+pub struct MemoryFactorScores {
+    pub same_context: f64,
+    pub requested_fact: f64,
+    pub premise_correction: f64,
+}
+impl MemoryFactorScores {
+    pub fn valid(&self) -> bool {
+        [
+            self.same_context,
+            self.requested_fact,
+            self.premise_correction,
+        ]
+        .iter()
+        .all(|v| v.is_finite() && (0.0..=1.0).contains(v))
+    }
+}
+
+#[derive(Debug, Clone, Serialize)]
 pub struct MemoryFactorChecks {
+    #[serde(skip_serializing_if = "Option::is_none")]
+    pub scores: Option<MemoryFactorScores>,
     pub memory_id: String,
     pub revision: i64,
     pub same_context: bool,
@@ -43,6 +63,7 @@ mod tests {
             for fact in [false, true] {
                 for correction in [false, true] {
                     let c = MemoryFactorChecks {
+                        scores: None,
                         memory_id: "m".into(),
                         revision: 1,
                         same_context: context,

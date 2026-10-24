@@ -40,7 +40,8 @@ Obligatorios: versión, consulta original no vacía, ámbito y fecha UTC RFC 333
 | `search.limit` | 20; rango heredado 1–20 |
 | `search.query_mode` | `keywords`; modos admitidos por SearchRequest |
 | `provider` | `decisions`; también `jev`, `jev114` |
-| `selection_policy` | `baseline`; también `per_memory_v1`, `per_memory_v2` |
+| `selection_policy` | `baseline`; también `per_memory_v1`, `per_memory_v2`, `per_memory_factors_v1` |
+| `calibration` | Artefacto empírico optativo ligado al perfil exacto; ausencia no calibra |
 | `request_id` | Generado si falta; mismo formato ASCII de ID; correlación, sin idempotencia |
 | `context` | Lista de `{id,source,text}`, hasta 16, IDs únicos, fuente no vacía ≤256 bytes |
 | `unresolved_references` | Hasta 16 rangos `{start_byte,end_byte,required_field}` sobre la consulta UTF-8; campo `entity`, `time` o `condition` |
@@ -81,7 +82,7 @@ Se devuelven consulta efectiva validada, candidatos, evaluaciones, semilla opcio
 
 Cada evaluación conserva ID/revisión, selección, inclusión real en semilla, relación, origen y validación estructural. Las políticas por recuerdo aportan `supports_answer`, `refutes_premise`, `partial_context`, `unrelated`. Son juicios del proveedor; pertenencia y revisión comprobadas no demuestran verdad semántica. Baseline conserva `unassessed` y `reason:null`: elegir un recuerdo no proporciona una justificación textual. No se equiparan probabilidades ni se exponen como confianza factual.
 
-`coverage` separa entrada, búsqueda acotada, candidatos presentados, clasificación, revisión de equivalencia y semilla. Un prefijo evaluado no cuenta como todos los candidatos. Cobertura de pregunta permanece `unknown`; índice semántico `not_applicable` en esta ruta FTS. Evaluaciones y recuerdos de semilla exponen `provenance_status`: `verified_literal` para original literal comprobado contra un snapshot local, `rejected` para comprobación negativa, `declared_unverified` cuando la fuente sigue sin resolver y `not_provided` cuando falta. No hay conector que autentique fuentes externas. `possible_duplicate` es una hipótesis del proveedor, no una puntuación de similitud ni una acción de fusión.
+`coverage` separa entrada, búsqueda acotada, candidatos presentados, clasificación, revisión de equivalencia y semilla. Un prefijo evaluado no cuenta como todos los candidatos. Cobertura de pregunta permanece `unknown`; índice semántico `not_applicable` en esta ruta FTS. Evaluaciones y recuerdos de semilla exponen `provenance_status`: `verified_literal` para original literal comprobado contra un snapshot local, `rejected` para comprobación negativa, `declared_unverified` cuando la fuente sigue sin resolver y `not_provided` cuando falta. El conector explícito HTTPS vincula origen de transporte y bytes esperados; no autentica autoría ni verdad. `possible_duplicate` es una hipótesis del proveedor, no una puntuación de similitud ni una acción de fusión.
 
 Tiempos intercambiados UTC con milisegundos y duraciones monotónicas. `input_sha256` identifica el JSON recibido (en session, su serialización tipada); puede faltar en entrada excedida. `implementation_sha256` identifica exclusivamente la concatenación de product.rs, diagnostics.rs, segmentation.rs y service.rs, no el binario completo ni el adaptador. Para campañas registrar además revisión Git/binario, configuración y corpus. La respuesta incluye texto original: no es un log público anonimizado.
 
@@ -119,4 +120,8 @@ Actualización 2026-10-24: `retrieval.coverage` publica elegibles, proyectados, 
 
 La semilla añade aviso de procedencia local antes de sus límites de bytes/tokens. `verified_literal` comprueba el original contra texto registrado; no certifica resumen, condiciones añadidas, verdad factual, autenticidad externa o vigencia fuera del registro. `semantic_support:not_assessed` conserva ese límite. La comprobación representa la instantánea local en que se ejecutó, no una garantía contra cambios externos futuros.
 
-[Plan](recall-source-verification-plan.md), [páginas de pruebas](../evaluation/recall-source-verification/README.md), [decisión 0053](../decisions/0053-local-source-verification.md). Verificación externa, aplicabilidad y relevancia/calibración independientes siguen pendientes; recall heredado conserva el protocolo de reproducción.
+[Plan](recall-source-verification-plan.md), [páginas de pruebas](../evaluation/recall-source-verification/README.md), [decisión 0053](../decisions/0053-local-source-verification.md). La extensión de [factores, calibrador empírico y adquisición HTTPS explícita](recall-completion-v1.md) implementa rutas optativas y define su evidencia/limitaciones; recall heredado conserva el protocolo de reproducción.
+
+## Factores y adquisición explícita (2026-10-24)
+
+El [contrato de extensión](recall-completion-v1.md) posee campos de aplicabilidad/relevancia independientes, scores, artefacto de calibración por intervalos y conector HTTPS con hash esperado. Son optativos, mantienen baseline y no certifican verdad. La [verificación](../evaluation/recall-completion-v1/README.md) distingue unitarias de evaluación semántica.

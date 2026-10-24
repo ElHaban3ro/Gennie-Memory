@@ -111,3 +111,5 @@ Cada decisión nueva debe indicar contexto, alternativas, motivo, estado y condi
 [0055 — Ciclo de vida local](0055-local-memory-lifecycle.md) registra retirada/restauración, borrado activo, calendario y cola persistente de índices E5 con publicación y cancelación transaccionales.
 
 [0054 — Escritura y reconciliación local](0054-local-write-reconciliation.md) incorpora propuestas, resolución, confirmación y auditoría atómicas, clasificación optativa sin sobrescritura y compatibilidad de escritura local declarada.
+
+[0056 — Factores, calibración empírica y adquisición explícita](0056-opt-in-recall-factors-and-source-import.md) incorpora rutas optativas de producto, puntuaciones separadas y conector HTTPS acotado, conservando baseline y los límites de evidencia.

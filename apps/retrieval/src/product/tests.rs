@@ -8,6 +8,7 @@ enum Reply {
     Invalid,
     Fail(&'static str, Option<u16>),
     Relations,
+    Factors,
     SuggestEquivalent,
     Late,
 }
@@ -39,6 +40,9 @@ fn bounded_fake(
     }
 }
 impl Classifier for Fake {
+    fn factor_profile_sha256(&self) -> Option<String> {
+        Some("a".repeat(64))
+    }
     fn classify_budgeted_until(
         &self,
         query: &str,
@@ -114,14 +118,18 @@ impl Classifier for Fake {
                 Reply::Invalid => Some("foreign-memory".into()),
                 _ => Some(candidates[0].memory_id.clone()),
             },
-            served_model: Some("test-model".into()),
+            served_model: Some(if matches!(self.reply, Reply::Factors) {
+                ClassifierProvider::Decisions.model_id().into()
+            } else {
+                "test-model".into()
+            }),
             input_tokens: Some(12),
             output_tokens: Some(2),
             reported_cost_usd: Some(0.001),
             consensus: None,
             applicability: None,
             slot_evidence: None,
-            per_memory: if matches!(self.reply, Reply::Relations) {
+            per_memory: if matches!(self.reply, Reply::Relations | Reply::Factors) {
                 Some(crate::per_memory::PerMemoryTrace {
                     items: candidates
                         .iter()
@@ -130,13 +138,34 @@ impl Classifier for Fake {
                             memory_id: c.memory_id.clone(),
                             revision: c.revision,
                             relation: if i == 0 {
-                                crate::per_memory::EvidenceRelation::RefutesPremise
+                                if matches!(self.reply, Reply::Factors) {
+                                    crate::per_memory::EvidenceRelation::UsefulEvidence
+                                } else {
+                                    crate::per_memory::EvidenceRelation::RefutesPremise
+                                }
                             } else {
                                 crate::per_memory::EvidenceRelation::Unrelated
                             },
                         })
                         .collect(),
-                    factor_checks: None,
+                    factor_checks: matches!(self.reply, Reply::Factors).then(|| {
+                        candidates
+                            .iter()
+                            .enumerate()
+                            .map(|(i, c)| crate::per_memory::factors::MemoryFactorChecks {
+                                memory_id: c.memory_id.clone(),
+                                revision: c.revision,
+                                same_context: i == 0,
+                                requested_fact: true,
+                                premise_correction: false,
+                                scores: Some(crate::per_memory::factors::MemoryFactorScores {
+                                    same_context: if i == 0 { 0.9 } else { 0.1 },
+                                    requested_fact: 0.8,
+                                    premise_correction: 0.2,
+                                }),
+                            })
+                            .collect()
+                    }),
                     scoped_checks: None,
                     choice_scores: None,
                     request_sha256: None,
@@ -660,4 +689,179 @@ fn source_updated_during_classification_is_revalidated_before_seed() {
             .iter()
             .any(|c| c.snapshot_version.as_deref() == Some("v2") && c.status == "rejected")
     );
+}
+
+#[test]
+fn factors_keep_applicability_separate_from_usefulness_and_apply_only_bound_calibration() {
+    let (conn, mut r) = setup();
+    r["selection_policy"] = "per_memory_factors_v1".into();
+    let (out, _) = run(&conn, &r, Reply::Factors);
+    assert_eq!(out["execution_status"], "completed");
+    assert_eq!(out["assessments"][0]["applicability"], true);
+    assert_eq!(out["assessments"][1]["applicability"], false);
+    assert_eq!(out["assessments"][1]["relevance"], true);
+    assert_eq!(out["assessments"][1]["selected"], false);
+    assert_eq!(
+        out["assessments"][0]["calibration_status"],
+        "not_calibrated"
+    );
+    let bin = serde_json::json!([{"upper":1.0,"positives":6,"n":8}]);
+    r["calibration"] = serde_json::json!({"schema_version":1,"profile":"factor_empirical_bins_v1","profile_sha256":"a".repeat(64),"provider":"decisions","selection_policy":"per_memory_factors_v1","requested_model":ClassifierProvider::Decisions.model_id(),"served_model":ClassifierProvider::Decisions.model_id(),"training_sha256":"b".repeat(64),"factors":{"same_context":bin,"requested_fact":bin,"premise_correction":bin}});
+    let (calibrated, _) = run(&conn, &r, Reply::Factors);
+    assert_eq!(calibrated["execution_status"], "completed");
+    assert_eq!(
+        calibrated["assessments"][0]["calibrated_factor_scores"]["same_context"],
+        0.7
+    );
+    assert_eq!(
+        calibrated["assessments"][0]["calibration_status"],
+        "empirical_profile_bound"
+    );
+    assert_eq!(calibrated["seed"]["memories"], out["seed"]["memories"]);
+    r["calibration"]["profile_sha256"] = "c".repeat(64).into();
+    let (rejected, calls) = run(&conn, &r, Reply::Factors);
+    assert_eq!(
+        rejected["issues"][0]["code"],
+        "calibration_profile_mismatch"
+    );
+    assert!(calls.is_empty());
+}
+#[test]
+fn factor_policy_rejects_a_trace_without_independent_factors() {
+    let (conn, mut r) = setup();
+    r["selection_policy"] = "per_memory_factors_v1".into();
+    let (out, _) = run(&conn, &r, Reply::Relations);
+    assert_eq!(out["issues"][0]["code"], "invalid_selection");
+    assert!(out["seed"].is_null());
+}
+
+#[test]
+fn calibration_never_silently_accepts_missing_scores_or_another_served_model() {
+    struct Missing {
+        model_mismatch: bool,
+    }
+    impl Classifier for Missing {
+        fn factor_profile_sha256(&self) -> Option<String> {
+            Some("a".repeat(64))
+        }
+        fn classify(
+            &self,
+            _: &str,
+            _: &str,
+            _: &[Candidate],
+            _: ClassifierProvider,
+            _: SelectionPolicy,
+        ) -> Result<DecisionResult, DecisionError> {
+            unreachable!()
+        }
+        fn classify_budgeted_until(
+            &self,
+            query: &str,
+            scope: &str,
+            candidates: &[Candidate],
+            provider: ClassifierProvider,
+            policy: SelectionPolicy,
+            deadline: Instant,
+            remaining: usize,
+        ) -> crate::classifier::BudgetedDecision {
+            let fake = Fake {
+                reply: Reply::Factors,
+                queries: RefCell::new(vec![]),
+                equivalence_calls: RefCell::new(0),
+            };
+            let mut result = fake.classify_budgeted_until(
+                query, scope, candidates, provider, policy, deadline, remaining,
+            );
+            let decision = result.result.as_mut().unwrap();
+            if self.model_mismatch {
+                decision.served_model = Some("other-model".into());
+            } else {
+                decision
+                    .per_memory
+                    .as_mut()
+                    .unwrap()
+                    .factor_checks
+                    .as_mut()
+                    .unwrap()[0]
+                    .scores = None;
+            }
+            result
+        }
+    }
+    let (conn, mut r) = setup();
+    r["selection_policy"] = "per_memory_factors_v1".into();
+    let bin = serde_json::json!([{"upper":1.0,"positives":6,"n":8}]);
+    r["calibration"] = serde_json::json!({"schema_version":1,"profile":"factor_empirical_bins_v1","profile_sha256":"a".repeat(64),"provider":"decisions","selection_policy":"per_memory_factors_v1","requested_model":ClassifierProvider::Decisions.model_id(),"served_model":ClassifierProvider::Decisions.model_id(),"training_sha256":"b".repeat(64),"factors":{"same_context":bin,"requested_fact":bin,"premise_correction":bin}});
+    for (model_mismatch, code) in [
+        (true, "calibration_model_mismatch"),
+        (false, "calibration_scores_unavailable"),
+    ] {
+        let out = serde_json::to_value(execute_json(
+            &conn,
+            &r.to_string(),
+            &Missing { model_mismatch },
+        ))
+        .unwrap();
+        assert_eq!(out["issues"][0]["code"], code);
+        assert!(out["seed"].is_null());
+        assert_eq!(out["usage"]["reported_cost_usd"], 0.001);
+    }
+}
+
+#[test]
+fn calibration_binds_the_observed_snapshot_and_never_substitutes_its_alias() {
+    struct Snapshot;
+    impl Classifier for Snapshot {
+        fn factor_profile_sha256(&self) -> Option<String> {
+            Some("a".repeat(64))
+        }
+        fn classify(
+            &self,
+            _: &str,
+            _: &str,
+            _: &[Candidate],
+            _: ClassifierProvider,
+            _: SelectionPolicy,
+        ) -> Result<DecisionResult, DecisionError> {
+            unreachable!()
+        }
+        fn classify_budgeted_until(
+            &self,
+            query: &str,
+            scope: &str,
+            candidates: &[Candidate],
+            provider: ClassifierProvider,
+            policy: SelectionPolicy,
+            deadline: Instant,
+            remaining: usize,
+        ) -> crate::classifier::BudgetedDecision {
+            let fake = Fake {
+                reply: Reply::Factors,
+                queries: RefCell::new(vec![]),
+                equivalence_calls: RefCell::new(0),
+            };
+            let mut result = fake.classify_budgeted_until(
+                query, scope, candidates, provider, policy, deadline, remaining,
+            );
+            result.result.as_mut().unwrap().served_model =
+                Some("openai/gpt-6-luna-decisions-20261006".into());
+            result
+        }
+    }
+    let (conn, mut r) = setup();
+    r["selection_policy"] = "per_memory_factors_v1".into();
+    let bin = serde_json::json!([{"upper":1.0,"positives":6,"n":8}]);
+    r["calibration"] = serde_json::json!({"schema_version":1,"profile":"factor_empirical_bins_v1","profile_sha256":"a".repeat(64),"provider":"decisions","selection_policy":"per_memory_factors_v1","requested_model":ClassifierProvider::Decisions.model_id(),"served_model":"openai/gpt-6-luna-decisions-20261006","training_sha256":"b".repeat(64),"factors":{"same_context":bin,"requested_fact":bin,"premise_correction":bin}});
+    let out = serde_json::to_value(execute_json(&conn, &r.to_string(), &Snapshot)).unwrap();
+    assert_eq!(out["execution_status"], "completed");
+    assert_eq!(
+        out["assessments"][0]["calibration_status"],
+        "empirical_profile_bound"
+    );
+    let (wrong, _) = run(&conn, &r, Reply::Factors);
+    assert_eq!(wrong["issues"][0]["code"], "calibration_model_mismatch");
+    r["calibration"]["served_model"] = "other-provider/model".into();
+    let (wrong, calls) = run(&conn, &r, Reply::Factors);
+    assert_eq!(wrong["issues"][0]["code"], "calibration_profile_mismatch");
+    assert!(calls.is_empty());
 }

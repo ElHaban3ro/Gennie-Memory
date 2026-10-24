@@ -1443,6 +1443,7 @@ mod tests {
                             .items
                             .iter()
                             .map(|i| crate::per_memory::factors::MemoryFactorChecks {
+                                scores: None,
                                 memory_id: i.memory_id.clone(),
                                 revision: i.revision,
                                 same_context: true,

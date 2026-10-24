@@ -93,6 +93,7 @@ mod tests {
                 SelectionPolicy::Baseline,
                 SelectionPolicy::PerMemoryV1,
                 SelectionPolicy::PerMemoryV2,
+                SelectionPolicy::PerMemoryFactorsV1,
             ] {
                 let result = classifier.classify_with_tokens(
                     "¿Enviar?",

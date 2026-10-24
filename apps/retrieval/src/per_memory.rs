@@ -73,7 +73,10 @@ impl PerMemoryTrace {
                             }
                 })
         }) && self.factor_checks.as_ref().is_none_or(|checks| {
-            checks.len() == count
+            checks
+                .iter()
+                .all(|c| c.scores.as_ref().is_none_or(|s| s.valid()))
+                && checks.len() == count
                 && checks.iter().zip(&self.items).all(|(check, item)| {
                     check.memory_id == item.memory_id
                         && check.revision == item.revision

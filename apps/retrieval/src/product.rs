@@ -1,4 +1,5 @@
 //! Versioned product boundary. Legacy experimental contracts remain unchanged.
+pub mod calibration;
 mod diagnostics;
 #[cfg(test)]
 mod tests;
@@ -19,15 +20,15 @@ pub fn capabilities() -> serde_json::Value {
         "live_availability":"unverified", "prices":"unverified", "http_timeout_ms":20000,
         "max_operation_ms":25000, "automatic_retries":false, "automatic_fallback":false, "routing_scope":"gennie_memory_adapter_only",
         "token_budget":{"profile":crate::token_budget::PROFILE,"input_basis":"serialized_request_json","provider_tokenizer":"unverified","input_default":crate::token_budget::DEFAULT_INPUT,"seed_default":crate::token_budget::DEFAULT_SEED,"maximum":65536,"input_scope":"classification_plus_equivalence_review"},
-        "source_verification":{"profile":crate::source_verification::PROFILE,"basis":"operator_registered_snapshot","policies":["report","require_verified"],"default":"report","locator":"utf8:start:end","semantic_support":"not_assessed","external_connectors":false},
+        "source_verification":{"profile":crate::source_verification::PROFILE,"basis":"operator_registered_snapshot","policies":["report","require_verified"],"default":"report","locator":"utf8:start:end","semantic_support":"not_assessed","external_connectors":["explicit_https_import_sha256_v1"]},
         "text_segmentation":"local_no_model", "context_resolution":"caller_supplied",
         "providers":([ClassifierProvider::Decisions, ClassifierProvider::Jev, ClassifierProvider::Jev114].iter().map(|p|
             serde_json::json!({"provider":p, "requested_model":p.model_id(), "wire":"typed_decisions",
                 "policies":[{"id":"baseline","candidate_limit":20,"relations":"unassessed","max_selected":1},
                     {"id":"per_memory_v1","candidate_limit":16,"relations":"provider_judgments","max_selected":16,"experimental":true},
-                    {"id":"per_memory_v2","candidate_limit":8,"relations":"provider_judgments","max_selected":8,"experimental":true}],
+                    {"id":"per_memory_v2","candidate_limit":8,"relations":"provider_judgments","max_selected":8,"experimental":true}, {"id":"per_memory_factors_v1","candidate_limit":8,"relations":"independent_context_fact_correction_judgments","max_selected":8,"experimental":true,"calibration":"not_calibrated"}],
                 "equivalence_review":{"baseline":"second_request_when_selected_and_multiple_candidates","max_suggestions":1,"automatic_merge":false},
-                "reason":"not_provided", "scores":"not_exposed_by_product_v1", "receipt":"optional_reported",
+                "reason":"not_provided", "scores":"optional_factor_probabilities_and_profile_bound_empirical_rates", "receipt":"optional_reported",
                 "provider_context_limit":"unverified", "refusal":"reported_as_failure_if_not_valid_choice"})).collect::<Vec<_>>()),
         "legacy_only":[{"provider":"gemma3_4b","wire":"structured_chat_completions","product_v1":"unsupported"}]
     })
@@ -51,6 +52,7 @@ pub struct ProductRequest {
     pub budgets: Budgets,
     #[serde(default)]
     pub source_policy: crate::source_verification::SourcePolicy,
+    pub calibration: Option<calibration::Calibration>,
 }
 
 #[derive(Debug, Deserialize, Serialize)]
@@ -157,6 +159,13 @@ pub struct Assessment {
     pub validation: &'static str,
     pub provenance_status: &'static str,
     pub reason: Option<String>,
+    pub applicability: Option<bool>,
+    pub requested_fact: Option<bool>,
+    pub premise_correction: Option<bool>,
+    pub relevance: Option<bool>,
+    pub calibrated_factor_scores: Option<crate::per_memory::factors::MemoryFactorScores>,
+    pub factor_scores: Option<crate::per_memory::factors::MemoryFactorScores>,
+    pub calibration_status: &'static str,
 }
 
 #[derive(Debug, Serialize)]
@@ -263,6 +272,7 @@ pub fn execute_json(
                     concat!(
                         include_str!("product.rs"),
                         include_str!("product/diagnostics.rs"),
+                        include_str!("product/calibration.rs"),
                         include_str!("segmentation.rs"),
                         include_str!("service.rs"),
                         include_str!("token_budget.rs"),
@@ -436,13 +446,16 @@ fn validate(r: &ProductRequest) -> Result<(), Issue> {
     if r.provider == ClassifierProvider::Gemma3_4B
         || !matches!(
             r.selection_policy,
-            SelectionPolicy::Baseline | SelectionPolicy::PerMemoryV1 | SelectionPolicy::PerMemoryV2
+            SelectionPolicy::Baseline
+                | SelectionPolicy::PerMemoryV1
+                | SelectionPolicy::PerMemoryV2
+                | SelectionPolicy::PerMemoryFactorsV1
         )
     {
         return Err(Issue::local(
             "unsupported_capability",
             "validation",
-            "El contrato v1 admite Decisions/Jev con baseline, per_memory_v1 o per_memory_v2; esta combinación no está habilitada.",
+            "El contrato v1 admite Decisions/Jev con baseline, per_memory_v1, per_memory_v2 o per_memory_factors_v1; esta combinación no está habilitada.",
             "choose_supported_policy",
         ));
     }
@@ -460,6 +473,19 @@ fn execute(
         out.stage("validation", "failed", started, Some(issue.code));
         out.fail(issue, false);
         return;
+    }
+    if let Some(cal) = &r.calibration {
+        let fingerprint = classifier.factor_profile_sha256();
+        if !cal.compatible(r.provider, r.selection_policy, fingerprint.as_deref()) {
+            out.stage(
+                "validation",
+                "failed",
+                started,
+                Some("calibration_profile_mismatch"),
+            );
+            out.fail(Issue::local("calibration_profile_mismatch", "validation", "El calibrador no corresponde al perfil exacto del adaptador, modelo, política o factores; no se llama al proveedor.", "provide_matching_calibration"), false);
+            return;
+        }
     }
     out.source_verification.policy = r.source_policy;
     out.token_accounting.input_limit = r.budgets.input_tokens;
@@ -642,6 +668,19 @@ fn execute(
         false,
         true,
     );
+    if r.calibration
+        .as_ref()
+        .is_some_and(|cal| decision.served_model.as_deref() != Some(cal.served_model.as_str()))
+    {
+        out.stage(
+            "classification",
+            "failed",
+            phase,
+            Some("calibration_model_mismatch"),
+        );
+        out.fail(Issue::local("calibration_model_mismatch", "classification", "El modelo servido no coincide con el calibrador o no fue informado; se conserva el recibo y no se aplica una calibración ajena.", "inspect_served_model"), true);
+        return;
+    }
     let candidates = out.retrieval.as_ref().unwrap().candidates.clone();
     let valid = decision.consensus.is_none()
         && decision.applicability.is_none()
@@ -657,8 +696,13 @@ fn execute(
                 trace.valid(
                     &candidates[..candidates.len().min(limit)],
                     decision.selected_id.as_deref(),
-                ) && trace.relations_match_task(false)
-                    && trace.factor_checks.is_none()
+                ) && trace
+                    .relations_match_task(r.selection_policy == SelectionPolicy::PerMemoryFactorsV1)
+                    && (if r.selection_policy == SelectionPolicy::PerMemoryFactorsV1 {
+                        trace.factor_checks.is_some()
+                    } else {
+                        trace.factor_checks.is_none()
+                    })
                     && trace.scoped_checks.is_none()
                     && trace.verification.is_none()
                     && trace.choice_scores.is_none()
@@ -669,6 +713,22 @@ fn execute(
         out.stage("classification", "failed", phase, Some("invalid_selection"));
         out.coverage.classification = "failed";
         out.fail(Issue::local("invalid_selection", "classification", "La respuesta no identifica candidatos y revisiones válidos con el esquema solicitado.", "inspect_provider_response"), true);
+        return;
+    }
+    if r.calibration.is_some()
+        && !decision
+            .per_memory
+            .as_ref()
+            .and_then(|trace| trace.factor_checks.as_ref())
+            .is_some_and(|checks| checks.iter().all(|check| check.scores.is_some()))
+    {
+        out.stage(
+            "classification",
+            "failed",
+            phase,
+            Some("calibration_scores_unavailable"),
+        );
+        out.fail(Issue::local("calibration_scores_unavailable", "classification", "El proveedor no devolvió todos los scores requeridos por el calibrador; no se fabrican puntuaciones ni se publica semilla.", "inspect_provider_scores"), true);
         return;
     }
     if r.selection_policy == SelectionPolicy::Baseline {
@@ -806,6 +866,15 @@ fn execute(
                     .iter()
                     .find(|a| a.memory_id == c.memory_id && a.revision == c.revision)
             });
+            let factors = decision
+                .per_memory
+                .as_ref()
+                .and_then(|t| t.factor_checks.as_ref())
+                .and_then(|checks| {
+                    checks.iter().find(|check| {
+                        check.memory_id == c.memory_id && check.revision == c.revision
+                    })
+                });
             Assessment {
                 memory_id: c.memory_id.clone(),
                 revision: c.revision,
@@ -836,6 +905,21 @@ fn execute(
                     "provider"
                 } else {
                     "not_assessed"
+                },
+                applicability: factors.map(|f| f.same_context),
+                requested_fact: factors.map(|f| f.requested_fact),
+                premise_correction: factors.map(|f| f.premise_correction),
+                relevance: factors.map(|f| f.requested_fact || f.premise_correction),
+                calibrated_factor_scores: factors
+                    .and_then(|f| f.scores.as_ref())
+                    .and_then(|scores| r.calibration.as_ref().and_then(|cal| cal.apply(scores))),
+                factor_scores: factors.and_then(|f| f.scores.clone()),
+                calibration_status: if r.calibration.is_some()
+                    && factors.is_some_and(|f| f.scores.is_some())
+                {
+                    "empirical_profile_bound"
+                } else {
+                    "not_calibrated"
                 },
                 validation: "structural_only",
                 provenance_status: source_status(out, &c.memory_id, c.revision),

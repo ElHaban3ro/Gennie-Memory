@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-24",
+  "scope": "real public HTTPS acquisition of repository synthetic fixture in isolated DB; no provider calls",
+  "origin_check": {
+    "url": "https://raw.githubusercontent.com/ElHaban3ro/Gennie-Memory/70332d73e40241a96d3b4079f214f9cb5db99a19/tests/fixtures/small-corpus.json",
+    "status": 200,
+    "content_type": "text/plain; charset=utf-8",
+    "expected_sha256": "d9b94573a7b5637e27b4dd8c4955e4184271da7b7cd41e6ad4eb3c0b27730e11",
+    "observed_sha256": "d9b94573a7b5637e27b4dd8c4955e4184271da7b7cd41e6ad4eb3c0b27730e11",
+    "matches": true
+  },
+  "binary_sha256": "aa3f3f895a4e61882131fbd5d68be002387030cfc124f8f4c11c2b56edec57dc",
+  "source_import_source_sha256": "b9ef05aad51ecd3af92cb58032ca43d143342e7f3aeb229d55b9b24548311447",
+  "hash_mismatch": {
+    "rejected": true,
+    "snapshots_after": 0
+  },
+  "cli_import": {
+    "acquisition": {
+      "author_identity": "not_assessed",
+      "factual_truth": "not_assessed",
+      "profile": "explicit_https_import_sha256_v1",
+      "redirects": false,
+      "sha256": "d9b94573a7b5637e27b4dd8c4955e4184271da7b7cd41e6ad4eb3c0b27730e11",
+      "transport": "https_certificate_validated",
+      "url": "https://raw.githubusercontent.com/ElHaban3ro/Gennie-Memory/70332d73e40241a96d3b4079f214f9cb5db99a19/tests/fixtures/small-corpus.json"
+    },
+    "snapshot": {
+      "registered_at": "2026-10-24T19:41:00.412Z",
+      "replayed": false,
+      "snapshot_id": "5d18e014cdba0ea3bc6f90ff855ffaf4484ffce292f728c06e3b4845f698328f",
+      "text_sha256": "d9b94573a7b5637e27b4dd8c4955e4184271da7b7cd41e6ad4eb3c0b27730e11",
+      "trust_basis": "operator_registered_snapshot",
+      "version": "commit70332d73"
+    }
+  },
+  "session_replay": {
+    "acquisition": {
+      "author_identity": "not_assessed",
+      "factual_truth": "not_assessed",
+      "profile": "explicit_https_import_sha256_v1",
+      "redirects": false,
+      "sha256": "d9b94573a7b5637e27b4dd8c4955e4184271da7b7cd41e6ad4eb3c0b27730e11",
+      "transport": "https_certificate_validated",
+      "url": "https://raw.githubusercontent.com/ElHaban3ro/Gennie-Memory/70332d73e40241a96d3b4079f214f9cb5db99a19/tests/fixtures/small-corpus.json"
+    },
+    "snapshot": {
+      "registered_at": "2026-10-24T19:41:00.412Z",
+      "replayed": true,
+      "snapshot_id": "5d18e014cdba0ea3bc6f90ff855ffaf4484ffce292f728c06e3b4845f698328f",
+      "text_sha256": "d9b94573a7b5637e27b4dd8c4955e4184271da7b7cd41e6ad4eb3c0b27730e11",
+      "trust_basis": "operator_registered_snapshot",
+      "version": "commit70332d73"
+    }
+  },
+  "final_snapshots": 1,
+  "tests_passed": 3,
+  "database": "temporary removed after verification",
+  "ports_opened": 0
+}

@@ -19,6 +19,7 @@ mod projection_tokens;
 mod registry;
 mod retired_migrations;
 mod session;
+mod source_import;
 mod witness;
 
 use serde::{Deserialize, Serialize};
@@ -103,7 +104,7 @@ fn run() -> Result<(), String> {
     let mut args = std::env::args().skip(1);
     let command = args
         .next()
-        .ok_or("uso: gennie-memory <init-db|mem-lifecycle|mem-review-list|embedding-job|source-register|source-verify|entity-resolve|mem-resolve|mem-proposal-get|mem-audit|mem-operation-get|mem-write|mem-write-batch|load-fixtures|load-embeddings|search|recall|recall-v1|segment-text|provider-capabilities|hybrid-search|search-batch|hybrid-search-batch|compose-seed|compose-seed-batch|session> [archivo]")?;
+        .ok_or("uso: gennie-memory <init-db|mem-lifecycle|mem-review-list|embedding-job|source-import-https|source-register|source-verify|entity-resolve|mem-resolve|mem-proposal-get|mem-audit|mem-operation-get|mem-write|mem-write-batch|load-fixtures|load-embeddings|search|recall|recall-v1|segment-text|provider-capabilities|hybrid-search|search-batch|hybrid-search-batch|compose-seed|compose-seed-batch|session> [archivo]")?;
     if command == "segment-text" {
         let path = args
             .next()
@@ -231,6 +232,22 @@ fn run() -> Result<(), String> {
             println!(
                 "{}",
                 serde_json::to_string_pretty(&response).map_err(|e| e.to_string())?
+            );
+        }
+        "source-import-https" => {
+            let path = args
+                .next()
+                .ok_or("indica solicitud JSON del conector HTTPS")?;
+            if args.next().is_some() {
+                return Err("se admite un archivo JSON".into());
+            }
+            let data = read_bounded(&path, 65_536)?;
+            let request = serde_json::from_str(&data)
+                .map_err(|_| "solicitud source-import-https inválida")?;
+            println!(
+                "{}",
+                serde_json::to_string_pretty(&source_import::import(&conn, request)?)
+                    .map_err(|_| "no se pudo serializar fuente")?
             );
         }
         "init-db" => println!("SQLite listo: {}", config.database_path.display()),

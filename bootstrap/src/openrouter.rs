@@ -768,6 +768,11 @@ fn parse_choice(body: &Value, labels: &[String]) -> Result<DecisionResult, Decis
 }
 
 impl Classifier for OpenRouterClassifier {
+    fn factor_profile_sha256(&self) -> Option<String> {
+        Some(gennie_memory_kernel::digest::sha256_hex(
+            include_str!("openrouter/per_memory/factors.rs").as_bytes(),
+        ))
+    }
     fn classify_relations(
         &self,
         memory: &gennie_memory_retrieval::write::MemoryInput,
@@ -962,7 +967,11 @@ impl Classifier for OpenRouterClassifier {
             } else if selection_policy == SelectionPolicy::PerMemoryScopedV1 {
                 per_memory::scoped::payload(query, scope_id, candidates, provider)
             } else if selection_policy == SelectionPolicy::PerMemoryFactorsV1 {
-                per_memory::factors::payload(query, scope_id, candidates, provider)
+                if self.token_budget.is_some() {
+                    per_memory::factors::product_payload(query, scope_id, candidates, provider)
+                } else {
+                    per_memory::factors::payload(query, scope_id, candidates, provider)
+                }
             } else if selection_policy == SelectionPolicy::PerMemoryExamplesV1 {
                 per_memory::examples_binary_payload(query, scope_id, candidates, provider)
             } else if matches!(

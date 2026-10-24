@@ -18,6 +18,7 @@ enum SessionRequest {
     MemLifecycle(gennie_memory_retrieval::lifecycle::LifecycleRequest),
     MemReviewList(gennie_memory_retrieval::lifecycle::ReviewListRequest),
     EmbeddingJob(gennie_memory_retrieval::lifecycle::JobRequest),
+    SourceImportHttps(crate::source_import::ImportRequest),
     SourceRegister(gennie_memory_retrieval::source_verification::RegisterRequest),
     SourceVerify(gennie_memory_retrieval::source_verification::VerifyRequest),
     RecallV1(gennie_memory_retrieval::product::ProductRequest),
@@ -69,6 +70,9 @@ fn handle(conn: &mut Connection, classifier: &impl Classifier, line: &str) -> Se
             }
             SessionRequest::EmbeddingJob(request) => {
                 gennie_memory_retrieval::lifecycle::job(conn, &request)
+            }
+            SessionRequest::SourceImportHttps(request) => {
+                crate::source_import::import(conn, request)
             }
             SessionRequest::SourceRegister(request) => serde_json::to_value(
                 gennie_memory_retrieval::source_verification::register(conn, &request)?,
