@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-label="Tiempo hasta respuesta: recorrido calculado">
 <rect width="100%" height="100%" fill="#fffefa"/>
 <text x="58" y="75" fill="#25313b" text-anchor="start" font-family="Georgia,serif" font-size="34">Tiempo hasta respuesta: recorrido calculado</text>
-<text x="58" y="110" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="17">Dos rondas de seis preguntas · iROMEM incluye preparación de semilla con Decisions</text>
+<text x="58" y="110" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="17">Dos rondas de seis preguntas · Gennie Memory incluye preparación de semilla con Decisions</text>
 <text x="58" y="144" fill="#25313b" text-anchor="start" font-family="Georgia,serif" font-size="22">Ronda 1</text>
 <text x="58" y="174" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="16">Mediana de seis casos emparejados</text>
 <text x="110" y="199" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="14">segundos</text>
@@ -14,7 +14,7 @@
 <line x1="110" y1="215" x2="110" y2="497" stroke="#25313b" stroke-width="1"/>
 <rect x="175" y="384" width="96" height="113" fill="#18817e"/>
 <text x="223" y="371" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="18">5.20</text>
-<text x="223" y="527" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="17">iROMEM*</text>
+<text x="223" y="527" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="17">Gennie Memory*</text>
 <rect x="350" y="281" width="96" height="216" fill="#b77a27"/>
 <text x="398" y="268" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="18">9.97</text>
 <text x="398" y="527" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="17">Engram</text>
@@ -30,10 +30,10 @@
 <line x1="662" y1="215" x2="662" y2="497" stroke="#25313b" stroke-width="1"/>
 <rect x="727" y="371" width="96" height="126" fill="#18817e"/>
 <text x="775" y="358" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="18">5.80</text>
-<text x="775" y="527" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="17">iROMEM*</text>
+<text x="775" y="527" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="17">Gennie Memory*</text>
 <rect x="902" y="251" width="96" height="246" fill="#b77a27"/>
 <text x="950" y="238" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="18">11.34</text>
 <text x="950" y="527" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="17">Engram</text>
-<text x="58" y="575" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="16">*iROMEM: suma por caso de recall + Codex, medidos en ejecuciones separadas.</text>
+<text x="58" y="575" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="16">*Gennie Memory: suma por caso de recall + Codex, medidos en ejecuciones separadas.</text>
 <text x="58" y="605" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="16">Engram: turno Codex con MCP medido. Falta medir el hook y su entrega real a Codex.</text>
 </svg>

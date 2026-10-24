@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc" viewBox="0 0 980 540">
 <title id="title">P95 de búsqueda de candidatos en cuatro corridas</title>
-<desc id="desc">Cuatro comparaciones de 540 preguntas: iROMEM 7.75, 7.49, 7.79 y 10.73 ms; Engram 15.55, 8.27, 9.64 y 11.78 ms.</desc>
+<desc id="desc">Cuatro comparaciones de 540 preguntas: Gennie Memory 7.75, 7.49, 7.79 y 10.73 ms; Engram 15.55, 8.27, 9.64 y 11.78 ms.</desc>
 <rect width="980" height="540" fill="#fbfaf7"/>
 <text x="72" y="55" font-family="Georgia,serif" font-size="32" fill="#24313b">Búsqueda de candidatos: p95 por corrida</text>
 <text x="72" y="85" font-family="Arial,sans-serif" font-size="16" fill="#526471">540 preguntas sintéticas idénticas por corrida · orden alternado · milisegundos</text>
@@ -34,7 +34,7 @@
 <rect x="812" y="227.0" width="48" height="193.0" fill="#b77b2a"/>
 <text x="836" y="218.0" text-anchor="middle" font-family="Arial,sans-serif" font-size="15" fill="#24313b">11.78</text>
 <text x="805" y="450" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" fill="#24313b">Corrida 4</text>
-<rect x="305" y="475" width="18" height="18" fill="#178583"/><text x="331" y="489" font-family="Arial,sans-serif" font-size="15" fill="#24313b">iROMEM</text>
+<rect x="305" y="475" width="18" height="18" fill="#178583"/><text x="331" y="489" font-family="Arial,sans-serif" font-size="15" fill="#24313b">Gennie Memory</text>
 <rect x="470" y="475" width="18" height="18" fill="#b77b2a"/><text x="496" y="489" font-family="Arial,sans-serif" font-size="15" fill="#24313b">Engram</text>
 <text x="72" y="520" font-family="Arial,sans-serif" font-size="13" fill="#526471">Cohorte 014–017 · cada barra corresponde a una corrida completa, no a una consulta individual.</text>
 </svg>
