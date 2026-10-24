@@ -1,4 +1,4 @@
-use iromem_kernel::core::{AppModule, Migration};
+use gennie_memory_kernel::core::{AppModule, Migration};
 
 pub struct RetrievalModule;
 

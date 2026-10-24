@@ -63,7 +63,7 @@ pub(super) fn run_for_models(
         }
         journal.sync_all().unwrap();
         let done = std::thread::scope(|s| {
-            let jobs=batch.iter().map(|r|s.spawn(move||{let start=Instant::now();let result=(||->Result<(u16,Value),&str>{let resp=client.post("https://openrouter.ai/api/v1/chat/completions").bearer_auth(key).header("X-Title","iROMEM independent projection diagnostic").json(&r["payload"]).send().map_err(|_|"transport_error")?;let status=resp.status().as_u16();let mut bytes=Vec::new();resp.take(1_048_577).read_to_end(&mut bytes).map_err(|_|"read_error")?;if bytes.len()>1_048_576{return Err("response_too_large");}Ok((status,serde_json::from_slice(&bytes).map_err(|_|"invalid_http_json")?))})();match result{Ok((status,body))=>json!({"kind":"response","id":r["id"],"http_status":status,"elapsed_ms":start.elapsed().as_secs_f64()*1000.,"body":body}),Err(code)=>json!({"kind":"failed","id":r["id"],"code":code,"elapsed_ms":start.elapsed().as_secs_f64()*1000.})}})).collect::<Vec<_>>();
+            let jobs=batch.iter().map(|r|s.spawn(move||{let start=Instant::now();let result=(||->Result<(u16,Value),&str>{let resp=client.post("https://openrouter.ai/api/v1/chat/completions").bearer_auth(key).header("X-Title","Gennie Memory independent projection diagnostic").json(&r["payload"]).send().map_err(|_|"transport_error")?;let status=resp.status().as_u16();let mut bytes=Vec::new();resp.take(1_048_577).read_to_end(&mut bytes).map_err(|_|"read_error")?;if bytes.len()>1_048_576{return Err("response_too_large");}Ok((status,serde_json::from_slice(&bytes).map_err(|_|"invalid_http_json")?))})();match result{Ok((status,body))=>json!({"kind":"response","id":r["id"],"http_status":status,"elapsed_ms":start.elapsed().as_secs_f64()*1000.,"body":body}),Err(code)=>json!({"kind":"failed","id":r["id"],"code":code,"elapsed_ms":start.elapsed().as_secs_f64()*1000.})}})).collect::<Vec<_>>();
             jobs.into_iter()
                 .map(|j| j.join().expect("uncertain worker: no retry"))
                 .collect::<Vec<_>>()
@@ -129,16 +129,16 @@ fn live_independent_projection_probe() {
     ] {
         hashes.insert(
             p.to_str().unwrap().into(),
-            json!(iromem_kernel::digest::sha256_hex(
+            json!(gennie_memory_kernel::digest::sha256_hex(
                 &std::fs::read(p).unwrap()
             )),
         );
     }
     json_file(
         &dir.join("preflight.json"),
-        &json!({"version":"independent-projection-diagnostic-v1","projection_operations_planned":125,"query_projections":20,"memory_projections":105,"matching_pairs":128,"max_http_requests":253,"max_concurrent":4,"plan_sha256":iromem_kernel::digest::sha256_hex(&std::fs::read(dir.join("plan.json")).unwrap()),"projection_requests_sha256":iromem_kernel::digest::sha256_hex(serialized.as_bytes()),"inputs_sha256":hashes,"test_binary_sha256":iromem_kernel::digest::sha256_hex(&std::fs::read(std::env::current_exe().unwrap()).unwrap()),"fresh_validation":false,"promoted":false}),
+        &json!({"version":"independent-projection-diagnostic-v1","projection_operations_planned":125,"query_projections":20,"memory_projections":105,"matching_pairs":128,"max_http_requests":253,"max_concurrent":4,"plan_sha256":gennie_memory_kernel::digest::sha256_hex(&std::fs::read(dir.join("plan.json")).unwrap()),"projection_requests_sha256":gennie_memory_kernel::digest::sha256_hex(serialized.as_bytes()),"inputs_sha256":hashes,"test_binary_sha256":gennie_memory_kernel::digest::sha256_hex(&std::fs::read(std::env::current_exe().unwrap()).unwrap()),"fresh_validation":false,"promoted":false}),
     );
-    let key = iromem_kernel::config::load_secrets()
+    let key = gennie_memory_kernel::config::load_secrets()
         .unwrap()
         .openrouter_api_key
         .expect("authorized key required");
@@ -177,7 +177,7 @@ fn live_independent_projection_probe() {
     json_file(&dir.join("matching.skipped.json"), &json!(skipped));
     json_file(
         &dir.join("matching.preflight.json"),
-        &json!({"version":"independent-matching-v1","matching_operations_planned":matches.len(),"skipped_pairs":skipped.len(),"matching_requests_sha256":iromem_kernel::digest::sha256_hex(serialized.as_bytes()),"projection_journal_sha256":iromem_kernel::digest::sha256_hex(&std::fs::read(dir.join("projection.journal.jsonl")).unwrap()),"phase1_preflight_sha256":iromem_kernel::digest::sha256_hex(&std::fs::read(dir.join("preflight.json")).unwrap()),"skipped_sha256":iromem_kernel::digest::sha256_hex(&std::fs::read(dir.join("matching.skipped.json")).unwrap())}),
+        &json!({"version":"independent-matching-v1","matching_operations_planned":matches.len(),"skipped_pairs":skipped.len(),"matching_requests_sha256":gennie_memory_kernel::digest::sha256_hex(serialized.as_bytes()),"projection_journal_sha256":gennie_memory_kernel::digest::sha256_hex(&std::fs::read(dir.join("projection.journal.jsonl")).unwrap()),"phase1_preflight_sha256":gennie_memory_kernel::digest::sha256_hex(&std::fs::read(dir.join("preflight.json")).unwrap()),"skipped_sha256":gennie_memory_kernel::digest::sha256_hex(&std::fs::read(dir.join("matching.skipped.json")).unwrap())}),
     );
     let (matched, fatal) = run(&client, &key, &matches, &dir.join("matching.journal.jsonl"));
     json_file(

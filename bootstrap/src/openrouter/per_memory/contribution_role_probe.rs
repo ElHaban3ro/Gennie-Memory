@@ -145,7 +145,7 @@ pub(super) fn request_generative(
     payload: &serde_json::Value,
 ) -> Result<
     (serde_json::Value, crate::openrouter::HttpMeasurement),
-    iromem_retrieval::classifier::DecisionError,
+    gennie_memory_retrieval::classifier::DecisionError,
 > {
     request_generative_observed(client, key, payload, None)
 }
@@ -157,7 +157,7 @@ pub(super) fn request_generative_observed(
     error_path: Option<&std::path::Path>,
 ) -> Result<
     (serde_json::Value, crate::openrouter::HttpMeasurement),
-    iromem_retrieval::classifier::DecisionError,
+    gennie_memory_retrieval::classifier::DecisionError,
 > {
     use crate::openrouter::{HttpMeasurement, RESPONSE_LIMIT, failure, http_failure_with_body};
     use std::{io::Read, time::Instant};
@@ -169,7 +169,7 @@ pub(super) fn request_generative_observed(
         .bearer_auth(key)
         .header(
             "X-Title",
-            "iROMEM synthetic generative contribution research",
+            "Gennie Memory synthetic generative contribution research",
         )
         .json(payload)
         .send()
@@ -221,7 +221,7 @@ fn run(directory: &str, profile: contract::Profile) {
     let root = Path::new(env!("CARGO_MANIFEST_DIR")).parent().unwrap();
     std::env::set_current_dir(root).unwrap();
     let d = Path::new(directory);
-    let sha = |p: &Path| iromem_kernel::digest::sha256_hex(&fs::read(p).unwrap());
+    let sha = |p: &Path| gennie_memory_kernel::digest::sha256_hex(&fs::read(p).unwrap());
     let prep: Value =
         serde_json::from_slice(&fs::read(d.join("preparation.json")).unwrap()).unwrap();
     assert_eq!(contract::Profile::from_preparation(&prep).unwrap(), profile);
@@ -267,7 +267,7 @@ fn run(directory: &str, profile: contract::Profile) {
         .unwrap();
     pf.write_all(serde_json::to_string_pretty(&json!({"preparation_sha256":sha(&d.join("preparation.json")),"sources_sha256":sources,"test_binary_sha256":sha(&std::env::current_exe().unwrap()),"max_http_requests":16,"http2_feature_enabled":true,"cfg_test_only":true})).unwrap().as_bytes()).unwrap();
     pf.sync_all().unwrap();
-    let key = iromem_kernel::config::load_secrets()
+    let key = gennie_memory_kernel::config::load_secrets()
         .unwrap()
         .openrouter_api_key
         .unwrap();
@@ -442,9 +442,9 @@ fn run_neutral_transport(request_file: &str, output_file: &str, max_tokens: u64)
         .unwrap();
     super::sparse_critic_probe::log(
         &mut out,
-        json!({"kind":"started","purpose":"single neutral transport observation, not benchmark retry","request_sha256":iromem_kernel::digest::sha256_hex(&fs::read(d.join(request_file)).unwrap()),"max_http_requests":1,"estimated_max_cost_usd":if max_tokens==1 {0.0001} else {0.001}}),
+        json!({"kind":"started","purpose":"single neutral transport observation, not benchmark retry","request_sha256":gennie_memory_kernel::digest::sha256_hex(&fs::read(d.join(request_file)).unwrap()),"max_http_requests":1,"estimated_max_cost_usd":if max_tokens==1 {0.0001} else {0.001}}),
     );
-    let key = iromem_kernel::config::load_secrets()
+    let key = gennie_memory_kernel::config::load_secrets()
         .unwrap()
         .openrouter_api_key
         .unwrap();
@@ -455,7 +455,10 @@ fn run_neutral_transport(request_file: &str, output_file: &str, max_tokens: u64)
         .post("https://openrouter.ai/api/v1/chat/completions")
         .timeout(crate::openrouter::REQUEST_TIMEOUT)
         .bearer_auth(&key)
-        .header("X-Title", "iROMEM one classifier transport diagnostic")
+        .header(
+            "X-Title",
+            "Gennie Memory one classifier transport diagnostic",
+        )
         .json(&payload)
         .send();
     let event = match result {
@@ -500,7 +503,7 @@ fn persist_http_error_snapshot(
 #[test]
 fn failed_observation_write_does_not_replace_existing_evidence_or_panic() {
     let d = std::env::temp_dir().join(format!(
-        "iromem-error-observation-{}-{}",
+        "gennie-memory-error-observation-{}-{}",
         std::process::id(),
         std::time::SystemTime::now()
             .duration_since(std::time::UNIX_EPOCH)

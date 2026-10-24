@@ -2,7 +2,7 @@
 
 Estado: evaluación sintética en esta Mac, 2026-10-15. El [paquete por caso](../../outputs/iromem/evaluation/keyword-prefix-v1/) conserva consultas, diarios, manifiestos y resúmenes de Rust. Esta corrida mejora la ruta FTS5 vigente; no activa la búsqueda híbrida ni integra Codex. Los fallos de los sujetos 002–005 ya eran conocidos de campañas anteriores y ayudaron a plantear la expansión. La cohorte 010–013 se preparó después para una comprobación adicional sin ajustar más el cambio.
 
-Las figuras históricas de esta cohorte muestran [aciertos](assets/current-accuracy.svg) y [búsqueda de candidatos](assets/current-latency.svg). Se regeneran con `iromem-eval render-current-charts` desde los resúmenes de iROMEM, Decisions y Engram para las preguntas 010–013. La [comparación anterior de respuestas con Codex](assets/current-codex-comparison.svg) proviene del [piloto de seis turnos](codex-current-v1.md) sobre la misma ruta. Las [figuras de ajuste de aciertos](assets/keyword-accuracy-v1.svg) y [latencias](assets/keyword-latency-v1.svg) se conservan como evidencia histórica y se regeneran con `iromem-eval render-keyword-charts` desde los seis resúmenes anteriores. La [comparación vigente](full-comparison-2026-10-16.md) usa sujetos 014–017.
+Las figuras históricas de esta cohorte muestran [aciertos](assets/current-accuracy.svg) y [búsqueda de candidatos](assets/current-latency.svg). Se regeneran con `gennie-memory-eval render-current-charts` desde los resúmenes de Gennie Memory, Decisions y Engram para las preguntas 010–013. La [comparación anterior de respuestas con Codex](assets/current-codex-comparison.svg) proviene del [piloto de seis turnos](codex-current-v1.md) sobre la misma ruta. Las [figuras de ajuste de aciertos](assets/keyword-accuracy-v1.svg) y [latencias](assets/keyword-latency-v1.svg) se conservan como evidencia histórica y se regeneran con `gennie-memory-eval render-keyword-charts` desde los seis resúmenes anteriores. La [comparación vigente](full-comparison-2026-10-16.md) usa sujetos 014–017.
 
 ## Cambio congelado antes de la cohorte nueva
 
@@ -35,7 +35,7 @@ La tasa positiva observada superó el objetivo del 95 % **en este banco sintéti
 
 ## Cohorte nueva 010–013: 460 positivos y 80 negativos
 
-`iromem-eval select-cohort` derivó y congeló [540 consultas](../../outputs/iromem/evaluation/keyword-prefix-v1/holdout-010-013-queries.jsonl) de 16 ámbitos sintéticos previamente reservados (sujetos 010–013 en `user`, `project`, `conversation` y `agent`); SHA-256 `bffea972319ca1b61b91c869c7c0d80bac78509e80ed2d23c0299edd0461b3a0`. El código de búsqueda y la instrucción ya estaban fijados. No se volvió a ajustar tras observar esta cohorte.
+`gennie-memory-eval select-cohort` derivó y congeló [540 consultas](../../outputs/iromem/evaluation/keyword-prefix-v1/holdout-010-013-queries.jsonl) de 16 ámbitos sintéticos previamente reservados (sujetos 010–013 en `user`, `project`, `conversation` y `agent`); SHA-256 `bffea972319ca1b61b91c869c7c0d80bac78509e80ed2d23c0299edd0461b3a0`. El código de búsqueda y la instrucción ya estaban fijados. No se volvió a ajustar tras observar esta cohorte.
 
 | Medición de la cohorte nueva | Resultado |
 | --- | ---: |
@@ -54,18 +54,18 @@ También aquí se alcanzó el **95 % observado**, aunque 21 positivos no produje
 
 El evaluador Rust importó los mismos 2.800 recuerdos sintéticos a un almacén aislado de Engram 3.4.0. `mem_search` recibió las mismas 540 preguntas de sujetos 010–013, el ámbito equivalente, `match_mode=any` y un máximo de 20 resultados. Se calentó una consulta fuera de la medición; ambas herramientas se midieron en corridas locales seriales distintas. El [diario Engram por caso](../../outputs/iromem/evaluation/keyword-prefix-v1/holdout-010-013-engram.jsonl), el [resumen](../../outputs/iromem/evaluation/keyword-prefix-v1/holdout-010-013-engram-summary.json) y el manifiesto conservan sus entradas y resultados.
 
-| Búsqueda | iROMEM vigente | Engram MCP |
+| Búsqueda | Gennie Memory vigente | Engram MCP |
 | --- | ---: | ---: |
 | Recuerdo correcto entre 20 candidatos | 456/460 | 456/460 |
 | Recuerdo correcto en primer lugar | 420/460 | 425/460 |
 | Latencia p50 | 7,11 ms | 10,80 ms |
 | Latencia p95 | 26,54 ms | 14,96 ms |
 
-iROMEM fue 3,69 ms más rápido en la mediana de esta ejecución; Engram tuvo una cola p95 11,58 ms más corta. Una sola corrida por método, en orden fijo, no permite declarar superioridad estable. Engram recibió el resumen como título y el texto original como cuerpo, sin las condiciones ni fuentes declaradas de iROMEM. Esta comparación mide recuperación de candidatos, no una semilla clasificada de Engram ni respuestas de Codex. La campaña de Decisions se ejecutó por separado y no se atribuye a Engram.
+Gennie Memory fue 3,69 ms más rápido en la mediana de esta ejecución; Engram tuvo una cola p95 11,58 ms más corta. Una sola corrida por método, en orden fijo, no permite declarar superioridad estable. Engram recibió el resumen como título y el texto original como cuerpo, sin las condiciones ni fuentes declaradas de Gennie Memory. Esta comparación mide recuperación de candidatos, no una semilla clasificada de Engram ni respuestas de Codex. La campaña de Decisions se ejecutó por separado y no se atribuye a Engram.
 
 ## Método y límites
 
-`iromem-eval search-benchmark` ejecutó 135 búsquedas de desarrollo, 540 repetidas de 002–005 y 540 de 010–013 sobre la misma base SQLite sintética de 2.800 recuerdos, con sesión Rust persistente. `iromem-eval retrieval` verificó etiquetas, candidatos, ámbitos y latencias. `iromem-eval campaign` realizó 135 llamadas para cada variante de desarrollo y una campaña de 540 llamadas para cada una de las dos cohortes posteriores con Decisions; `campaign-report` calculó semillas, negativos, uso y tiempos. Los diarios guardan SHA-256 de consultas, base y binario. El informe anterior y sus registros siguen en [rust-migration-v1.md](rust-migration-v1.md).
+`gennie-memory-eval search-benchmark` ejecutó 135 búsquedas de desarrollo, 540 repetidas de 002–005 y 540 de 010–013 sobre la misma base SQLite sintética de 2.800 recuerdos, con sesión Rust persistente. `gennie-memory-eval retrieval` verificó etiquetas, candidatos, ámbitos y latencias. `gennie-memory-eval campaign` realizó 135 llamadas para cada variante de desarrollo y una campaña de 540 llamadas para cada una de las dos cohortes posteriores con Decisions; `campaign-report` calculó semillas, negativos, uso y tiempos. Los diarios guardan SHA-256 de consultas, base y binario. El informe anterior y sus registros siguen en [rust-migration-v1.md](rust-migration-v1.md).
 
 El primer intento de desarrollo dentro del entorno de red restringido terminó en `transport_error` para todas las llamadas y **no se incluyó**. Una comprobación de una llamada sintética confirmó el transporte con acceso de red; los diarios completos nuevos no tuvieron respuestas degradadas. Las pruebas usan sujetos sintéticos y plantillas repetidas entre particiones; alcanzar 96,1 % aquí no prueba esa tasa en recuerdos reales ni garantiza el límite inferior estadístico del 95 %. El piloto Codex anterior usó la ruta anterior; no se recalculó su tiempo con esta implementación.
 

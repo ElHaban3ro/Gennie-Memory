@@ -2,8 +2,10 @@
 mod deadline_tests;
 mod per_memory;
 mod slot_evidence;
-use iromem_retrieval::classifier::{Classifier, DecisionError, PartialDecisionUsage};
-use iromem_retrieval::model::{Candidate, ClassifierProvider, DecisionResult, SelectionPolicy};
+use gennie_memory_retrieval::classifier::{Classifier, DecisionError, PartialDecisionUsage};
+use gennie_memory_retrieval::model::{
+    Candidate, ClassifierProvider, DecisionResult, SelectionPolicy,
+};
 use reqwest::blocking::Client;
 use serde_json::{Value, json};
 use std::fs::{File, OpenOptions};
@@ -138,10 +140,10 @@ impl OpenRouterClassifier {
             });
         let record = json!({
             "scope_id":scope_id,
-            "request_payload_sha256":iromem_kernel::digest::sha256_hex(request_bytes),
-            "prompt_sha256":iromem_kernel::digest::sha256_hex(&serde_json::to_vec(&prompt).map_err(|_| "prompt hash serialization failed")?),
-            "schema_sha256":iromem_kernel::digest::sha256_hex(&serde_json::to_vec(&schema).map_err(|_| "schema hash serialization failed")?),
-            "response_sha256":if response_complete {Some(iromem_kernel::digest::sha256_hex(response_bytes))} else {None},
+            "request_payload_sha256":gennie_memory_kernel::digest::sha256_hex(request_bytes),
+            "prompt_sha256":gennie_memory_kernel::digest::sha256_hex(&serde_json::to_vec(&prompt).map_err(|_| "prompt hash serialization failed")?),
+            "schema_sha256":gennie_memory_kernel::digest::sha256_hex(&serde_json::to_vec(&schema).map_err(|_| "schema hash serialization failed")?),
+            "response_sha256":if response_complete {Some(gennie_memory_kernel::digest::sha256_hex(response_bytes))} else {None},
             "response_body_complete":response_complete,
             "requested_model":payload["model"],
             "served_model":response["model"],
@@ -172,7 +174,7 @@ impl OpenRouterClassifier {
                 .and_then(Value::as_str)
                 .filter(|content| content.len() <= slot_evidence::MAX_TRACE_BYTES);
             let content_record = json!({
-                "request_payload_sha256":iromem_kernel::digest::sha256_hex(request_bytes),
+                "request_payload_sha256":gennie_memory_kernel::digest::sha256_hex(request_bytes),
                 "response_body_complete":response_complete,
                 "response_content":content
             });
@@ -245,7 +247,7 @@ impl OpenRouterClassifier {
             // The blocking-client timeout is per read; this also arms the total body deadline.
             .timeout(timeout)
             .bearer_auth(key)
-            .header("X-Title", "iROMEM local retrieval")
+            .header("X-Title", "Gennie Memory local retrieval")
             .header("Content-Type", "application/json")
             .body(request_bytes.clone())
             .send();
@@ -435,7 +437,7 @@ fn parse_consensus_batch_with_order(
     };
     let mut first = parsed("roles_a", ids)?;
     let second = parsed("roles_b", &second_ids)?;
-    let trace = iromem_retrieval::model::ConsensusTrace {
+    let trace = gennie_memory_retrieval::model::ConsensusTrace {
         transport: None,
         classified_candidate_count: ids.len(),
         votes: [first.selected_id.clone(), second.selected_id.clone()],
@@ -785,7 +787,7 @@ impl Classifier for OpenRouterClassifier {
             } else if selection_policy == SelectionPolicy::PerMemoryFactorsV1 {
                 per_memory::factors::parse(body, candidates)
             } else if selection_policy == SelectionPolicy::PerMemoryScoredV1 {
-                let request_sha256 = iromem_kernel::digest::sha256_hex(
+                let request_sha256 = gennie_memory_kernel::digest::sha256_hex(
                     &serde_json::to_vec(&payload)
                         .map_err(|_| failure("payload_serialization_failed"))?,
                 );
@@ -857,10 +859,12 @@ impl Classifier for OpenRouterClassifier {
                     .join()
                     .unwrap_or_else(|_| Err(failure("roles_consensus_thread_failed")));
                 let transport = match (&left, &right) {
-                    (Ok((_, a)), Ok((_, b))) => Some(iromem_retrieval::model::ConsensusTransport {
-                        http_elapsed_ms: [a.elapsed_ms, b.elapsed_ms],
-                        http_versions: [a.version.clone(), b.version.clone()],
-                    }),
+                    (Ok((_, a)), Ok((_, b))) => {
+                        Some(gennie_memory_retrieval::model::ConsensusTransport {
+                            http_elapsed_ms: [a.elapsed_ms, b.elapsed_ms],
+                            http_versions: [a.version.clone(), b.version.clone()],
+                        })
+                    }
                     _ => None,
                 };
                 let mut result = roles_consensus(
@@ -997,7 +1001,7 @@ fn roles_consensus(
 ) -> Result<DecisionResult, DecisionError> {
     match (left, right) {
         (Ok(first), Ok(mut second)) => {
-            let trace = iromem_retrieval::model::ConsensusTrace {
+            let trace = gennie_memory_retrieval::model::ConsensusTrace {
                 transport: None,
                 classified_candidate_count,
                 votes: [first.selected_id.clone(), second.selected_id.clone()],

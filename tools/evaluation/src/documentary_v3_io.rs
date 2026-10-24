@@ -87,7 +87,7 @@ mod tests {
     #[test]
     fn file_adapter_never_overwrites_existing_report() {
         let dir = std::env::temp_dir().join(format!(
-            "iromem-v3-existing-{}-{}",
+            "gennie-memory-v3-existing-{}-{}",
             std::process::id(),
             std::time::SystemTime::now()
                 .duration_since(std::time::UNIX_EPOCH)
@@ -107,7 +107,7 @@ mod tests {
     #[test]
     fn file_adapter_rejects_extra_fields_without_creating_output() {
         let dir = std::env::temp_dir().join(format!(
-            "iromem-v3-input-{}-{}",
+            "gennie-memory-v3-input-{}-{}",
             std::process::id(),
             std::time::SystemTime::now()
                 .duration_since(std::time::UNIX_EPOCH)

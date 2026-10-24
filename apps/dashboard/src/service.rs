@@ -1,7 +1,7 @@
 use crate::model::{
     ReviewCandidate, ReviewOutcome, ReviewRequest, ReviewView, SavedReview, Verdict, ViewMode,
 };
-use iromem_retrieval::model::{
+use gennie_memory_retrieval::model::{
     Candidate, QueryMode, RecallRequest, RecallResponse, RecallTimings, SearchRequest, SeedRequest,
     SelectedCandidate,
 };
@@ -44,10 +44,10 @@ fn candidates(
     view_mode: ViewMode,
 ) -> Result<Vec<Candidate>, String> {
     // Search validates all common fields before either view uses the same scope filters.
-    let searched = iromem_retrieval::service::search(conn, search)?;
+    let searched = gennie_memory_retrieval::service::search(conn, search)?;
     match view_mode {
         ViewMode::Search => Ok(searched.candidates),
-        ViewMode::Scope => iromem_retrieval::repo::list_scope(conn, search),
+        ViewMode::Scope => gennie_memory_retrieval::repo::list_scope(conn, search),
     }
 }
 
@@ -83,10 +83,10 @@ pub fn view(
     search: &SearchRequest,
     view_mode: ViewMode,
 ) -> Result<ReviewView, String> {
-    let searched = iromem_retrieval::service::search(conn, search)?.candidates;
+    let searched = gennie_memory_retrieval::service::search(conn, search)?.candidates;
     let current = match view_mode {
         ViewMode::Search => searched.clone(),
-        ViewMode::Scope => iromem_retrieval::repo::list_scope(conn, search)?,
+        ViewMode::Scope => gennie_memory_retrieval::repo::list_scope(conn, search)?,
     };
     let previous = crate::repo::latest(conn, &key(search, view_mode))?;
     let matching = previous.filter(|row| signature(&row.candidates) == signature(&current));
@@ -177,7 +177,7 @@ pub fn reviewed_recall(
     if search_review.is_none() && scope_review.is_none() {
         return Ok(None);
     }
-    let retrieval = iromem_retrieval::service::search(conn, &search)?;
+    let retrieval = gennie_memory_retrieval::service::search(conn, &search)?;
     let search_ms = started.elapsed().as_secs_f64() * 1000.0;
     let search_review = search_review.filter(|row| {
         signature(&row.candidates) == signature(&retrieval.candidates)
@@ -189,7 +189,7 @@ pub fn reviewed_recall(
         let Some(review) = scope_review else {
             return Ok(None);
         };
-        let scope_now = iromem_retrieval::repo::list_scope(conn, &search)?;
+        let scope_now = gennie_memory_retrieval::repo::list_scope(conn, &search)?;
         if signature(&review.candidates) != signature(&scope_now)
             || !eligible(&review.saved, &retrieval.candidates)
         {
@@ -218,7 +218,7 @@ pub fn reviewed_recall(
         })
         .collect();
     let composition_started = Instant::now();
-    let seed = iromem_retrieval::service::compose_seed(
+    let seed = gennie_memory_retrieval::service::compose_seed(
         conn,
         &SeedRequest {
             search: Some(search),
@@ -269,19 +269,19 @@ mod tests {
         model::{CandidateDecision, ReviewRequest},
         module::DashboardModule,
     };
-    use iromem_kernel::core::AppModule;
-    use iromem_retrieval::{model::FixtureMemory, module::RetrievalModule};
+    use gennie_memory_kernel::core::AppModule;
+    use gennie_memory_retrieval::{model::FixtureMemory, module::RetrievalModule};
 
     fn setup() -> (Connection, SearchRequest, Vec<FixtureMemory>) {
         let mut conn = Connection::open_in_memory().unwrap();
-        iromem_kernel::db::configure(&conn).unwrap();
+        gennie_memory_kernel::db::configure(&conn).unwrap();
         let modules: Vec<Box<dyn AppModule>> =
             vec![Box::new(RetrievalModule), Box::new(DashboardModule)];
-        iromem_kernel::db::migrate(&mut conn, &modules).unwrap();
+        gennie_memory_kernel::db::migrate(&mut conn, &modules).unwrap();
         let fixtures: Vec<FixtureMemory> =
             serde_json::from_str(include_str!("../../../tests/fixtures/small-corpus.json"))
                 .unwrap();
-        iromem_retrieval::repo::load_fixtures(&mut conn, &fixtures).unwrap();
+        gennie_memory_retrieval::repo::load_fixtures(&mut conn, &fixtures).unwrap();
         let recall: serde_json::Value =
             serde_json::from_str(include_str!("../../../tests/fixtures/small-recall.json"))
                 .unwrap();
@@ -327,7 +327,7 @@ mod tests {
         newer.revision = 2;
         newer.summary = "Marina ahora prefiere informes detallados los lunes.".into();
         newer.original_text = newer.summary.clone();
-        iromem_retrieval::repo::load_fixtures(&mut conn, &[newer]).unwrap();
+        gennie_memory_retrieval::repo::load_fixtures(&mut conn, &[newer]).unwrap();
         assert!(reviewed_recall(&conn, &recall).unwrap().is_none());
         assert!(
             save(

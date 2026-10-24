@@ -1,7 +1,7 @@
 //! Manual synthetic classifier-chain probe. No policy or service activation.
 mod replacement;
 use crate::openrouter::{self, OpenRouterClassifier};
-use iromem_retrieval::{
+use gennie_memory_retrieval::{
     model::{Candidate, ClassifierProvider},
     per_memory::anchor::present,
 };
@@ -96,7 +96,7 @@ fn request(
 ) -> Result<Value, String> {
     log(
         logfile,
-        json!({"kind":"started","id":id,"stage":stage,"payload":payload,"payload_sha256":iromem_kernel::digest::sha256_hex(serde_json::to_string(payload).unwrap().as_bytes()),"candidates":candidates}),
+        json!({"kind":"started","id":id,"stage":stage,"payload":payload,"payload_sha256":gennie_memory_kernel::digest::sha256_hex(serde_json::to_string(payload).unwrap().as_bytes()),"candidates":candidates}),
     );
     let start = Instant::now();
     match client.request_measured(key, payload) {
@@ -198,7 +198,7 @@ fn parallel_candidate(
         {
             log(
                 f,
-                json!({"kind":"started","id":id,"stage":stage,"payload":p,"payload_sha256":iromem_kernel::digest::sha256_hex(serde_json::to_string(p).unwrap().as_bytes()),"candidates":original}),
+                json!({"kind":"started","id":id,"stage":stage,"payload":p,"payload_sha256":gennie_memory_kernel::digest::sha256_hex(serde_json::to_string(p).unwrap().as_bytes()),"candidates":original}),
             );
         }
         let results = std::thread::scope(|scope| {
@@ -307,7 +307,7 @@ fn run(version: u8) {
     } else {
         DIR
     });
-    let sha = |p: &Path| iromem_kernel::digest::sha256_hex(&fs::read(p).unwrap());
+    let sha = |p: &Path| gennie_memory_kernel::digest::sha256_hex(&fs::read(p).unwrap());
     let prep: Value =
         serde_json::from_slice(&fs::read(d.join("preparation.json")).unwrap()).unwrap();
     assert_eq!(prep["inputs_sha256"], sha(&d.join("inputs.jsonl")));
@@ -340,7 +340,7 @@ fn run(version: u8) {
     pf.write_all(serde_json::to_string_pretty(&pre).unwrap().as_bytes())
         .unwrap();
     pf.sync_all().unwrap();
-    let key = iromem_kernel::config::load_secrets()
+    let key = gennie_memory_kernel::config::load_secrets()
         .unwrap()
         .openrouter_api_key
         .unwrap();

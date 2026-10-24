@@ -24,9 +24,9 @@ fn live_independent_role_matcher() {
     assert_eq!(pre["prepared_matching_operations"], requests.len());
     assert_eq!(
         pre["requests_sha256"],
-        iromem_kernel::digest::sha256_hex(&bytes)
+        gennie_memory_kernel::digest::sha256_hex(&bytes)
     );
-    let execution = json!({"preflight_sha256":iromem_kernel::digest::sha256_hex(&std::fs::read(dir.join("preflight.json")).unwrap()),"requests_sha256":pre["requests_sha256"],"test_binary_sha256":iromem_kernel::digest::sha256_hex(&std::fs::read(std::env::current_exe().unwrap()).unwrap())});
+    let execution = json!({"preflight_sha256":gennie_memory_kernel::digest::sha256_hex(&std::fs::read(dir.join("preflight.json")).unwrap()),"requests_sha256":pre["requests_sha256"],"test_binary_sha256":gennie_memory_kernel::digest::sha256_hex(&std::fs::read(std::env::current_exe().unwrap()).unwrap())});
     let mut f = OpenOptions::new()
         .create_new(true)
         .write(true)
@@ -35,7 +35,7 @@ fn live_independent_role_matcher() {
     f.write_all(serde_json::to_string_pretty(&execution).unwrap().as_bytes())
         .unwrap();
     f.sync_all().unwrap();
-    let key = iromem_kernel::config::load_secrets()
+    let key = gennie_memory_kernel::config::load_secrets()
         .unwrap()
         .openrouter_api_key
         .expect("authorized key required");

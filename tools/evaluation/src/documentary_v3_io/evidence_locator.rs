@@ -115,7 +115,7 @@ mod tests {
     #[test]
     fn file_adapter_enforces_closed_input_and_never_overwrites() {
         let dir = std::env::temp_dir().join(format!(
-            "iromem-evidence-locator-{}-{}",
+            "gennie-memory-evidence-locator-{}-{}",
             std::process::id(),
             std::time::SystemTime::now()
                 .duration_since(std::time::UNIX_EPOCH)

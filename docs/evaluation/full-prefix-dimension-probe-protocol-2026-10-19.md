@@ -14,7 +14,7 @@ Composición: **(dato AND dimensión solicitada) OR (corrección ordinaria AND i
 
 ## Ejecución y auditoría
 
-Preparar las 128 solicitudes y todas las huellas de datos/templates/protocolo antes de red. Test manual ignorado `live_full_prefix_dimension_probe`, una sola ejecución con clave existente de OpenRouter, bajo autorización general sintética. Comando: `cargo test --offline -p iromem live_full_prefix_dimension_probe -- --ignored --test-threads=1`. Directorio de un solo uso; started/respuesta/fallo, recibos, tiempos y ejecutable conservados. No reintentar una operación incierta. Error HTTP, esquema inválido o revisión distinta detiene las llamadas restantes y deja el diagnóstico incompleto; un error de calidad no detiene la población fijada.
+Preparar las 128 solicitudes y todas las huellas de datos/templates/protocolo antes de red. Test manual ignorado `live_full_prefix_dimension_probe`, una sola ejecución con clave existente de OpenRouter, bajo autorización general sintética. Comando: `cargo test --offline -p gennie-memory live_full_prefix_dimension_probe -- --ignored --test-threads=1`. Directorio de un solo uso; started/respuesta/fallo, recibos, tiempos y ejecutable conservados. No reintentar una operación incierta. Error HTTP, esquema inválido o revisión distinta detiene las llamadas restantes y deja el diagnóstico incompleto; un error de calidad no detiene la población fijada.
 
 Máximo **128 HTTP**, estimación **USD 0,003 y uno a dos minutos**, CLI sin puerto. Todos los cargos ejecutados cuentan; solicitudes preparadas sin ejecutar no son operaciones facturadas. No hay datos reales, tablas, conexiones, dependencias o proveedor de producto nuevos.
 

@@ -79,7 +79,7 @@ use std::path::Path;
 
 fn main() {
     if let Err(error) = run() {
-        eprintln!("iromem-eval: {error}");
+        eprintln!("gennie-memory-eval: {error}");
         std::process::exit(1);
     }
 }
@@ -88,7 +88,7 @@ fn run() -> Result<(), String> {
     let mut args = std::env::args().skip(1);
     let command = args
         .next()
-        .ok_or("uso: iromem-eval <comando> ...; consulte docs/evaluation/contract-v1.md")?;
+        .ok_or("uso: gennie-memory-eval <comando> ...; consulte docs/evaluation/contract-v1.md")?;
     match command.as_str() {
         "source-context-reference-v1" | "source-context-reference-v2" => {
             let mode = args.next().ok_or("falta operación bind o consume")?;
@@ -1314,7 +1314,7 @@ fn run() -> Result<(), String> {
         }
         "screen-search-configs" => {
             let suite = args.next().ok_or("falta suite JSON de configuraciones")?;
-            let binary = args.next().ok_or("falta binario iromem")?;
+            let binary = args.next().ok_or("falta binario gennie-memory")?;
             let output = args.next().ok_or("falta directorio nuevo de resultados")?;
             if args.next().is_some() {
                 return Err("demasiados argumentos para screen-search-configs".into());
@@ -1406,7 +1406,7 @@ fn run() -> Result<(), String> {
         }
         "search-benchmark" => {
             let cases = args.next().ok_or("falta archivo JSONL de casos")?;
-            let binary = args.next().ok_or("falta binario iromem")?;
+            let binary = args.next().ok_or("falta binario gennie-memory")?;
             let database = args.next().ok_or("falta base SQLite")?;
             let output = args
                 .next()
@@ -1427,7 +1427,7 @@ fn run() -> Result<(), String> {
         }
         "campaign" => {
             let cases = args.next().ok_or("falta archivo JSONL de casos")?;
-            let binary = args.next().ok_or("falta binario iromem")?;
+            let binary = args.next().ok_or("falta binario gennie-memory")?;
             let database = args.next().ok_or("falta base SQLite")?;
             let journal = args.next().ok_or("falta diario JSONL")?;
             let provider = args.next().ok_or("falta proveedor decisions o jev")?;
@@ -1561,7 +1561,7 @@ fn run() -> Result<(), String> {
             )
         }
         "render-codex-current" => {
-            let seed = args.next().ok_or("falta resumen Codex con iROMEM")?;
+            let seed = args.next().ok_or("falta resumen Codex con Gennie Memory")?;
             let engram = args.next().ok_or("falta resumen Codex con Engram")?;
             let paired = args.next().ok_or("falta informe emparejado")?;
             let output = args.next().ok_or("falta directorio de imágenes")?;

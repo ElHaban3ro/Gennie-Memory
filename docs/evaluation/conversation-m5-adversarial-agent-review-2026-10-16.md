@@ -1,6 +1,6 @@
 # M5: revisión adversarial entre agentes de cinco etiquetas de conversación
 
-Estado: revisión **entre agentes**, 2026-10-16. No es etiquetado humano independiente ni una nueva medición de iROMEM. No modifica las etiquetas originales, la ruta de producto ni los resultados históricos del [informe de desarrollo](conversation-m5-development-2026-10-16.md).
+Estado: revisión **entre agentes**, 2026-10-16. No es etiquetado humano independiente ni una nueva medición de Gennie Memory. No modifica las etiquetas originales, la ruta de producto ni los resultados históricos del [informe de desarrollo](conversation-m5-development-2026-10-16.md).
 
 ## Procedimiento y hallazgo
 
@@ -26,7 +26,7 @@ La coincidencia de agentes es evidencia útil para **priorizar una auditoría**,
 
 Prueba prospectiva mínima, para preparar **antes** de nuevas llamadas remotas:
 
-1. Obtener una revisión humana de las cinco preguntas originales, eligiendo todos los IDs razonables sin mostrar el resultado de iROMEM. Registrar desacuerdos y resolver por adelantado si se evalúa una respuesta única, varias alternativas o una solicitud de aclaración. Un usuario informado del diagnóstico puede revisar, pero una segunda persona sin esa información aporta mayor independencia.
+1. Obtener una revisión humana de las cinco preguntas originales, eligiendo todos los IDs razonables sin mostrar el resultado de Gennie Memory. Registrar desacuerdos y resolver por adelantado si se evalúa una respuesta única, varias alternativas o una solicitud de aclaración. Un usuario informado del diagnóstico puede revisar, pero una segunda persona sin esa información aporta mayor independencia.
 2. Crear al menos cinco conversaciones **nuevas de desarrollo**, separadas por sujeto, con preguntas originales y específicas, controles negativos difíciles y otras categorías centinela. Fijar preguntas, memorias, etiquetas admisibles, hashes, modelo, métricas y criterio de descarte antes de ejecutar. No abrir calibración ni reserva para elegir la variante.
 3. Medir primero con el mismo conjunto de candidatos y resúmenes congelados si la redacción o el orden cambian la selección; incluir un orden placebo que ponga un distractor plausible primero. Después comparar la ruta vigente contra **una sola** política realizable sin conocer el ID esperado, con corpus intacto y hasta veinte candidatos. Medir por conversación cobertura, semilla correcta, abstenciones, falsos recuerdos, cruces de ámbito, revisiones caducadas, latencia y coste.
 4. Descartar la variante si la ventaja depende del orden impuesto por oráculo, desaparece en la ruta completa, no mejora los aciertos netos por conversación o introduce un falso recuerdo nuevo. Cinco conversaciones pueden revelar fallos, no acreditar una tasa poblacional del 95 %.

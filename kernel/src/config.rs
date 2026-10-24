@@ -20,10 +20,10 @@ fn load_env_file() -> Result<(), String> {
 
 pub fn load() -> Result<Config, String> {
     load_env_file()?;
-    let value = std::env::var("IROMEM_DATABASE_PATH")
-        .map_err(|_| "falta IROMEM_DATABASE_PATH".to_string())?;
+    let value = std::env::var("GENNIE_MEMORY_DATABASE_PATH")
+        .map_err(|_| "falta GENNIE_MEMORY_DATABASE_PATH".to_string())?;
     if value.trim().is_empty() {
-        return Err("IROMEM_DATABASE_PATH está vacío".to_string());
+        return Err("GENNIE_MEMORY_DATABASE_PATH está vacío".to_string());
     }
     Ok(Config {
         database_path: PathBuf::from(value),
@@ -37,14 +37,14 @@ pub fn load() -> Result<Config, String> {
 fn read_evaluation_response_content_path(
     get: impl Fn(&str) -> Result<String, std::env::VarError>,
 ) -> Result<Option<PathBuf>, String> {
-    match get("IROMEM_EVALUATION_RESPONSE_CONTENT_PATH") {
+    match get("GENNIE_MEMORY_EVALUATION_RESPONSE_CONTENT_PATH") {
         Ok(value) if value.trim().is_empty() => {
-            Err("IROMEM_EVALUATION_RESPONSE_CONTENT_PATH está vacío".into())
+            Err("GENNIE_MEMORY_EVALUATION_RESPONSE_CONTENT_PATH está vacío".into())
         }
         Ok(value) => Ok(Some(PathBuf::from(value))),
         Err(std::env::VarError::NotPresent) => Ok(None),
         Err(std::env::VarError::NotUnicode(_)) => {
-            Err("IROMEM_EVALUATION_RESPONSE_CONTENT_PATH no es una ruta válida".into())
+            Err("GENNIE_MEMORY_EVALUATION_RESPONSE_CONTENT_PATH no es una ruta válida".into())
         }
     }
 }
@@ -52,14 +52,14 @@ fn read_evaluation_response_content_path(
 fn read_evaluation_capture_path(
     get: impl Fn(&str) -> Result<String, std::env::VarError>,
 ) -> Result<Option<PathBuf>, String> {
-    match get("IROMEM_EVALUATION_CAPTURE_PATH") {
+    match get("GENNIE_MEMORY_EVALUATION_CAPTURE_PATH") {
         Ok(value) if value.trim().is_empty() => {
-            Err("IROMEM_EVALUATION_CAPTURE_PATH está vacío".into())
+            Err("GENNIE_MEMORY_EVALUATION_CAPTURE_PATH está vacío".into())
         }
         Ok(value) => Ok(Some(PathBuf::from(value))),
         Err(std::env::VarError::NotPresent) => Ok(None),
         Err(std::env::VarError::NotUnicode(_)) => {
-            Err("IROMEM_EVALUATION_CAPTURE_PATH no es una ruta válida".into())
+            Err("GENNIE_MEMORY_EVALUATION_CAPTURE_PATH no es una ruta válida".into())
         }
     }
 }
@@ -72,7 +72,7 @@ pub fn load_secrets() -> Result<Secrets, String> {
 }
 
 fn read_openrouter_key(get: impl Fn(&str) -> Option<String>) -> Option<String> {
-    get("IROMEM_OPENROUTER_API_KEY").filter(|value| !value.trim().is_empty())
+    get("GENNIE_MEMORY_OPENROUTER_API_KEY").filter(|value| !value.trim().is_empty())
 }
 
 #[cfg(test)]
@@ -80,9 +80,9 @@ mod tests {
     use super::*;
 
     #[test]
-    fn reads_the_iromem_openrouter_variable_name() {
+    fn reads_the_gennie_memory_openrouter_variable_name() {
         let key = read_openrouter_key(|name| {
-            if name == "IROMEM_OPENROUTER_API_KEY" {
+            if name == "GENNIE_MEMORY_OPENROUTER_API_KEY" {
                 Some("synthetic-test-token".into())
             } else {
                 None
@@ -99,8 +99,9 @@ mod tests {
             None
         );
         assert_eq!(
-            read_evaluation_capture_path(|_| Ok("/tmp/iromem-capture.jsonl".into())).unwrap(),
-            Some(PathBuf::from("/tmp/iromem-capture.jsonl"))
+            read_evaluation_capture_path(|_| Ok("/tmp/gennie-memory-capture.jsonl".into()))
+                .unwrap(),
+            Some(PathBuf::from("/tmp/gennie-memory-capture.jsonl"))
         );
         assert!(read_evaluation_capture_path(|_| Ok("  ".into())).is_err());
     }
@@ -112,9 +113,11 @@ mod tests {
             None
         );
         assert_eq!(
-            read_evaluation_response_content_path(|_| Ok("/tmp/iromem-response.jsonl".into()))
-                .unwrap(),
-            Some(PathBuf::from("/tmp/iromem-response.jsonl"))
+            read_evaluation_response_content_path(|_| Ok(
+                "/tmp/gennie-memory-response.jsonl".into()
+            ))
+            .unwrap(),
+            Some(PathBuf::from("/tmp/gennie-memory-response.jsonl"))
         );
         assert!(read_evaluation_response_content_path(|_| Ok(" ".into())).is_err());
     }

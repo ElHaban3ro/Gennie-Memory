@@ -1,6 +1,6 @@
 //! Actual evidence-kind choices; no fabricated context judgment.
 use super::*;
-use iromem_retrieval::per_memory::contextual::{
+use gennie_memory_retrieval::per_memory::contextual::{
     ContextualEvidenceKind as Kind, EvidenceKindProposal,
 };
 

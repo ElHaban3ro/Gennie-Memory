@@ -43,9 +43,9 @@ mod semantic_link_probe;
 #[cfg(test)]
 mod sparse_critic_probe;
 use super::{failure, known_receipt};
-use iromem_retrieval::classifier::DecisionError;
-use iromem_retrieval::model::{Candidate, ClassifierProvider, DecisionResult};
-use iromem_retrieval::per_memory::{
+use gennie_memory_retrieval::classifier::DecisionError;
+use gennie_memory_retrieval::model::{Candidate, ClassifierProvider, DecisionResult};
+use gennie_memory_retrieval::per_memory::{
     CANDIDATE_LIMIT, EvidenceRelation, MemoryAssessment, PerMemoryTrace,
 };
 use serde_json::{Value, json};
@@ -261,7 +261,7 @@ pub(super) fn parse_scored_binary_response(
         .enumerate()
         .map(|(i, c)| {
             let p = &body["answers"][format!("memory_{i:02}")]["probabilities"];
-            Ok(iromem_retrieval::per_memory::MemoryChoiceScore {
+            Ok(gennie_memory_retrieval::per_memory::MemoryChoiceScore {
                 memory_id: c.memory_id.clone(),
                 revision: c.revision,
                 a: p["A"].as_f64().ok_or_else(invalid)?,
@@ -404,7 +404,7 @@ mod tests {
             .remove("examples");
         examples["state"]["rules"] = original["state"]["rules"].clone();
         assert_eq!(examples, original);
-        let policy: iromem_retrieval::model::SelectionPolicy =
+        let policy: gennie_memory_retrieval::model::SelectionPolicy =
             serde_json::from_str("\"per_memory_examples_v1\"").unwrap();
         assert_eq!(policy.per_memory_candidate_limit(), Some(8));
     }

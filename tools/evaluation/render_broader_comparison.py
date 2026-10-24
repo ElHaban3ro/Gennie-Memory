@@ -35,7 +35,7 @@ def external(name):
 original = json.loads(ORIGINAL.read_text())
 search = original["search"]
 engines = [
-    ("iROMEM", {"top1": 420, "top20": 457,
+    ("Gennie Memory", {"top1": 420, "top20": 457,
                 "p50": search["iromem"]["median_run_p50_ms"],
                 "p95": search["iromem"]["median_run_p95_ms"],
                 "p95_runs": [run["p95_ms"] for run in search["iromem"]["runs"]]}),
@@ -112,14 +112,14 @@ svg = Svg("Recuerdos recuperados en las mismas preguntas",
 panel(svg, 58, "Entre 20 candidatos", "Recuerdo esperado presente", "aciertos / 460", 460, entries("top20"), 0)
 panel(svg, 610, "Primer candidato", "Recuerdo esperado en posición 1", "aciertos / 460", 460, entries("top1"), 0)
 svg.text(58, 578, "Búsqueda de candidatos; una lista de resultados no equivale a una semilla seleccionada.", 16, MUTED)
-svg.text(58, 608, "iROMEM + Decisions obtuvo 441/460 semillas correctas y dejó 80/80 negativos sin semilla.", 16, MUTED)
+svg.text(58, 608, "Gennie Memory + Decisions obtuvo 441/460 semillas correctas y dejó 80/80 negativos sin semilla.", 16, MUTED)
 svg.save("broader-comparison-accuracy-2026-10-16.svg")
 
 svg = Svg("Tiempo de búsqueda de candidatos",
           "Cohorte 014–017 · 540 preguntas idénticas · mediana de cuatro corridas por motor")
 panel(svg, 58, "Búsqueda: mediana", "Mediana de cuatro p50", "milisegundos", 30, entries("p50"))
 panel(svg, 610, "Búsqueda: p95", "Mediana de cuatro p95", "milisegundos", 140, entries("p95"))
-svg.text(58, 578, "iROMEM, Engram y Lodis: procesos persistentes; Basic Memory: API local en proceso.", 16, MUTED)
+svg.text(58, 578, "Gennie Memory, Engram y Lodis: procesos persistentes; Basic Memory: API local en proceso.", 16, MUTED)
 svg.text(58, 608, "Las escalas de ambos paneles empiezan en cero; la diferencia de transporte limita la comparación.", 16, MUTED)
 svg.save("broader-comparison-latency-2026-10-16.svg")
 
@@ -130,7 +130,7 @@ for index, (name, values) in enumerate(engines):
     col, row = index % 2, index // 2
     x, top = 58 + col * 552, 150 + row * 260
     base, left, right = top + 175, x + 55, x + 492
-    maximum = max(15, 20 if name in ("iROMEM", "Engram") else
+    maximum = max(15, 20 if name in ("Gennie Memory", "Engram") else
                   (200 if name == "Lodis" else 500))
     svg.text(x, top - 8, name, 22, INK, "Georgia,serif")
     svg.text(x + 490, top - 8, f"escala 0–{maximum} ms", 14, MUTED, anchor="end")
@@ -176,7 +176,7 @@ engram_tokens = original_median("engram", "median_input_tokens")
 lodis_input_tokens = statistics.median(lodis_tokens)
 basic_input_tokens = statistics.median(basic_tokens)
 colors = COLORS
-names = ["iROMEM", "Engram", "Lodis", "Basic Memory"]
+names = ["Gennie Memory", "Engram", "Lodis", "Basic Memory"]
 
 def codex_values(numbers):
     return [(name, number, color) for name, number, color in zip(names, numbers, colors)]
@@ -188,12 +188,12 @@ panel(svg, 58, "Tiempo del turno Codex", "Semilla en prompt o búsqueda MCP", "s
       codex_values([seed_codex, engram_codex, lodis_codex, basic_codex]))
 panel(svg, 610, "Tokens de entrada informados", "Incluyen contexto e instrucciones", "tokens", 64000,
       codex_values([seed_tokens, engram_tokens, lodis_input_tokens, basic_input_tokens]), 0)
-svg.text(58, 578, "iROMEM empieza con la semilla lista; su preparación se muestra en otra figura.", 16, MUTED)
+svg.text(58, 578, "Gennie Memory empieza con la semilla lista; su preparación se muestra en otra figura.", 16, MUTED)
 svg.text(58, 608, "Los tokens incluyen instrucciones y caché; no equivalen al coste marginal de la recuperación.", 16, MUTED)
 svg.save("broader-comparison-codex-2026-10-16.svg")
 
 svg = Svg("Tiempo hasta respuesta: recorrido calculado",
-          "Dos rondas de seis preguntas · iROMEM incluye preparación de semilla con Decisions")
+          "Dos rondas de seis preguntas · Gennie Memory incluye preparación de semilla con Decisions")
 for index in (1, 2):
     x = 58 if index == 1 else 610
     values = [codex[str(index)]["calculated_seed_plus_recall_median_ms"] / 1000,
@@ -201,6 +201,6 @@ for index in (1, 2):
               lodis_rounds[index - 1], basic_rounds[index - 1]]
     panel(svg, x, f"Ronda {index}", "Mediana de seis casos emparejados", "segundos", 20,
           codex_values(values))
-svg.text(58, 578, "iROMEM: suma por caso de recall + Codex medidos en ejecuciones separadas.", 16, MUTED)
-svg.text(58, 608, "Otros motores: turno Codex con MCP. Falta medir el hook y la entrega real de iROMEM.", 16, MUTED)
+svg.text(58, 578, "Gennie Memory: suma por caso de recall + Codex medidos en ejecuciones separadas.", 16, MUTED)
+svg.text(58, 608, "Otros motores: turno Codex con MCP. Falta medir el hook y la entrega real de Gennie Memory.", 16, MUTED)
 svg.save("broader-comparison-calculated-flow-2026-10-16.svg")

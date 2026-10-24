@@ -60,7 +60,7 @@ Artefactos: [comparación derivada](../../outputs/iromem/evaluation/context-crit
 
 ## Contraste posterior HTTP/2 V4
 
-La feature `iromem/http2-transport`, optativa y desactivada por defecto, añadió únicamente soporte de transporte y dependencias fijadas. Las versiones existentes de Cargo.lock se conservan. El [protocoloV4](context-critics-http2-v4-protocol-2026-10-20.md) precede las llamadas y exige negociación realmente observada; no se fuerza ni supone por el nombre de la build.
+La feature `gennie-memory/http2-transport`, optativa y desactivada por defecto, añadió únicamente soporte de transporte y dependencias fijadas. Las versiones existentes de Cargo.lock se conservan. El [protocoloV4](context-critics-http2-v4-protocol-2026-10-20.md) precede las llamadas y exige negociación realmente observada; no se fuerza ni supone por el nombre de la build.
 
 Las46respuestas negociaron **HTTP/2.0**. Se conserva la selecciónV3, contexto completo, preguntas dirigidas, críticos paralelos y mismo roster.18pares/36operaciones válidas, cero errores/incertidumbres/costes ausentes. Calidad:18/19IDs,17/18sets,18/18preguntas con alguna evidencia permitida o abstención correcta, cero extras, cero pérdidas contemporáneas/históricas y seis IDs útiles adicionales. Coste candidataUSD0,000924544 frente aUSD0,001119900base, razón0,826. p50candidata561,95/base391,09ms, razón1,437; p95candidata1776,19/base853,16ms, razón2,082: **falla recursos**. No se adopta ni recalificaV3por una reducción de unos112ms en otro momento.
 

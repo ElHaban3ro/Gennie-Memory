@@ -598,13 +598,13 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "791930b43c0d5973160d90a8f3894509f2b273430f5c5c73b668636d0287c5c0"
 
 [[package]]
-name = "iromem"
+name = "gennie-memory"
 version = "0.1.0"
 dependencies = [
  "h2",
- "iromem-dashboard",
- "iromem-kernel",
- "iromem-retrieval",
+ "gennie-memory-dashboard",
+ "gennie-memory-kernel",
+ "gennie-memory-retrieval",
  "reqwest",
  "rusqlite",
  "serde",
@@ -613,12 +613,12 @@ dependencies = [
 ]
 
 [[package]]
-name = "iromem-dashboard"
+name = "gennie-memory-dashboard"
 version = "0.1.0"
 dependencies = [
  "axum",
- "iromem-kernel",
- "iromem-retrieval",
+ "gennie-memory-kernel",
+ "gennie-memory-retrieval",
  "rusqlite",
  "serde",
  "serde_json",
@@ -627,7 +627,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "iromem-eval"
+name = "gennie-memory-eval"
 version = "0.1.0"
 dependencies = [
  "serde",
@@ -636,7 +636,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "iromem-kernel"
+name = "gennie-memory-kernel"
 version = "0.1.0"
 dependencies = [
  "dotenvy",
@@ -645,10 +645,10 @@ dependencies = [
 ]
 
 [[package]]
-name = "iromem-retrieval"
+name = "gennie-memory-retrieval"
 version = "0.1.0"
 dependencies = [
- "iromem-kernel",
+ "gennie-memory-kernel",
  "rusqlite",
  "serde",
  "serde_json",

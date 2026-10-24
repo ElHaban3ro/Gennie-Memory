@@ -176,7 +176,11 @@ fn render_speed(
     let engram_search = f(engram, "/overall/latency_ms/p50")?;
     let seeded_s = codex_p50(seed_codex)? / 1000.0;
     let engram_s = codex_p50(engram_codex)? / 1000.0;
-    let mut svg = Svg::new(1200, 645, "iROMEM frente a Engram: búsqueda y respuesta");
+    let mut svg = Svg::new(
+        1200,
+        645,
+        "Gennie Memory frente a Engram: búsqueda y respuesta",
+    );
     svg.text(
         58,
         109,
@@ -194,7 +198,10 @@ fn render_speed(
             subtitle: "540 preguntas · 2.800 recuerdos",
             unit: "milisegundos",
             maximum: (fast.max(engram_search) * 1.25).ceil().max(1.0),
-            bars: [("iROMEM", fast, TEAL), ("Engram", engram_search, GOLD)],
+            bars: [
+                ("Gennie Memory", fast, TEAL),
+                ("Engram", engram_search, GOLD),
+            ],
             decimals: 2,
         },
     );
@@ -206,12 +213,15 @@ fn render_speed(
             subtitle: "6 turnos aislados · prompt vs MCP",
             unit: "segundos",
             maximum: (seeded_s.max(engram_s) * 1.25).ceil().max(1.0),
-            bars: [("iROMEM", seeded_s, TEAL), ("Engram", engram_s, GOLD)],
+            bars: [
+                ("Gennie Memory", seeded_s, TEAL),
+                ("Engram", engram_s, GOLD),
+            ],
             decimals: 2,
         },
     );
-    svg.text(58,586,"En el panel 2, Codex recibió la semilla de iROMEM en el prompt; Engram se consultó por MCP.",16,MUTED,"start","Arial,sans-serif");
-    svg.text(58,612,"Escalas y muestras distintas (540 y 6); la integración automática de iROMEM sigue pendiente.",16,MUTED,"start","Arial,sans-serif");
+    svg.text(58,586,"En el panel 2, Codex recibió la semilla de Gennie Memory en el prompt; Engram se consultó por MCP.",16,MUTED,"start","Arial,sans-serif");
+    svg.text(58,612,"Escalas y muestras distintas (540 y 6); la integración automática de Gennie Memory sigue pendiente.",16,MUTED,"start","Arial,sans-serif");
     svg.save(path)
 }
 
@@ -252,7 +262,7 @@ fn render_accuracy(
             unit: "aciertos / 460",
             maximum: positives as f64,
             bars: [
-                ("iROMEM", local_hits as f64, TEAL),
+                ("Gennie Memory", local_hits as f64, TEAL),
                 ("Engram", engram_hits as f64, GOLD),
             ],
             decimals: 0,
@@ -263,7 +273,7 @@ fn render_accuracy(
         &Panel {
             x: 803,
             title: "2. La semilla final es correcta",
-            subtitle: "Decisión completa de iROMEM",
+            subtitle: "Decisión completa de Gennie Memory",
             unit: "aciertos / 460",
             maximum: positives as f64,
             bars: [
@@ -273,7 +283,7 @@ fn render_accuracy(
             decimals: 0,
         },
     );
-    svg.text(58,586,"Engram no produce una semilla con el contrato de iROMEM; por eso solo aparece en el panel de candidatos.",16,MUTED,"start","Arial,sans-serif");
+    svg.text(58,586,"Engram no produce una semilla con el contrato de Gennie Memory; por eso solo aparece en el panel de candidatos.",16,MUTED,"start","Arial,sans-serif");
     svg.text(58,612,&format!("Controles negativos: Decisions {}/{} vacíos; Jev {}/{} vacíos. Ejes completos desde cero.",
         n(decisions,"/negative_empty")?,n(decisions,"/negative")?,n(jev,"/negative_empty")?,n(jev,"/negative")?),16,MUTED,"start","Arial,sans-serif");
     svg.save(path)
@@ -587,7 +597,10 @@ pub fn render_current_performance(
             subtitle: "Recuerdo esperado presente",
             unit: "aciertos / 460",
             maximum: positives as f64,
-            bars: [("iROMEM", top_20[0], TEAL), ("Engram", top_20[1], GOLD)],
+            bars: [
+                ("Gennie Memory", top_20[0], TEAL),
+                ("Engram", top_20[1], GOLD),
+            ],
             decimals: 0,
         },
         Panel {
@@ -596,7 +609,10 @@ pub fn render_current_performance(
             subtitle: "Recuerdo esperado en posición 1",
             unit: "aciertos / 460",
             maximum: positives as f64,
-            bars: [("iROMEM", top_1[0], TEAL), ("Engram", top_1[1], GOLD)],
+            bars: [
+                ("Gennie Memory", top_1[0], TEAL),
+                ("Engram", top_1[1], GOLD),
+            ],
             decimals: 0,
         },
     ] {
@@ -606,7 +622,7 @@ pub fn render_current_performance(
         58,
         570,
         &format!(
-            "iROMEM + Decisions produjo {}/{} semillas correctas y dejó {}/{} negativos sin semilla.",
+            "Gennie Memory + Decisions produjo {}/{} semillas correctas y dejó {}/{} negativos sin semilla.",
             n(&campaign, "/positive_correct")?,
             positives,
             n(&campaign, "/negative_empty")?,
@@ -636,7 +652,7 @@ pub fn render_current_performance(
     latency.text(
         58,
         110,
-        "540 preguntas idénticas para iROMEM y Engram · milisegundos",
+        "540 preguntas idénticas para Gennie Memory y Engram · milisegundos",
         17,
         MUTED,
         "start",
@@ -649,7 +665,10 @@ pub fn render_current_performance(
             subtitle: "Candidatos · proceso local",
             unit: "milisegundos",
             maximum: (search_p50.max(engram_p50) * 1.1).ceil(),
-            bars: [("iROMEM", search_p50, TEAL), ("Engram", engram_p50, GOLD)],
+            bars: [
+                ("Gennie Memory", search_p50, TEAL),
+                ("Engram", engram_p50, GOLD),
+            ],
             decimals: 2,
         },
         Panel {
@@ -658,7 +677,10 @@ pub fn render_current_performance(
             subtitle: "Cola observada",
             unit: "milisegundos",
             maximum: (search_p95.max(engram_p95) * 1.1).ceil(),
-            bars: [("iROMEM", search_p95, TEAL), ("Engram", engram_p95, GOLD)],
+            bars: [
+                ("Gennie Memory", search_p95, TEAL),
+                ("Engram", engram_p95, GOLD),
+            ],
             decimals: 2,
         },
     ] {
@@ -690,7 +712,7 @@ pub fn render_current_codex(
     let seed_ids = seed
         .get("case_ids")
         .and_then(Value::as_array)
-        .ok_or("faltan casos Codex con iROMEM")?;
+        .ok_or("faltan casos Codex con Gennie Memory")?;
     let engram_ids = engram
         .get("case_ids")
         .and_then(Value::as_array)
@@ -726,7 +748,7 @@ pub fn render_current_codex(
     let engram_tokens = input_p50(&engram)?;
 
     fs::create_dir_all(output_dir).map_err(|error| error.to_string())?;
-    let mut svg = Svg::new(1200, 650, "Codex: iROMEM frente a Engram");
+    let mut svg = Svg::new(1200, 650, "Codex: Gennie Memory frente a Engram");
     svg.text(
         58,
         110,
@@ -747,7 +769,7 @@ pub fn render_current_codex(
             unit: "segundos",
             maximum: ((seed_ms.max(engram_ms) / 1000.0) * 1.2).ceil(),
             bars: [
-                ("iROMEM", seed_ms / 1000.0, TEAL),
+                ("Gennie Memory", seed_ms / 1000.0, TEAL),
                 ("Engram", engram_ms / 1000.0, GOLD),
             ],
             decimals: 2,
@@ -759,7 +781,7 @@ pub fn render_current_codex(
             unit: "tokens",
             maximum: ((seed_tokens.max(engram_tokens) * 1.2) / 1000.0).ceil() * 1000.0,
             bars: [
-                ("iROMEM", seed_tokens.round(), TEAL),
+                ("Gennie Memory", seed_tokens.round(), TEAL),
                 ("Engram", engram_tokens.round(), GOLD),
             ],
             decimals: 0,
@@ -770,7 +792,7 @@ pub fn render_current_codex(
     svg.text(
         58,
         575,
-        "iROMEM entregó la semilla en el prompt; Engram se consultó por MCP.",
+        "Gennie Memory entregó la semilla en el prompt; Engram se consultó por MCP.",
         16,
         MUTED,
         "start",
@@ -800,9 +822,9 @@ pub fn render_current_codex(
 /// Rebuild the current README figures from one frozen campaign aggregate.
 pub fn render_full_comparison(aggregate_path: &Path, output_dir: &Path) -> Result<(), String> {
     let data = load(aggregate_path)?;
-    let iromem = data
+    let gennie_memory = data
         .pointer("/search/iromem")
-        .ok_or("falta búsqueda iROMEM")?;
+        .ok_or("falta búsqueda Gennie Memory")?;
     let engram = data
         .pointer("/search/engram")
         .ok_or("falta búsqueda Engram")?;
@@ -813,11 +835,11 @@ pub fn render_full_comparison(aggregate_path: &Path, output_dir: &Path) -> Resul
     let negatives = n(decisions, "/negative")?;
     if positives != 460
         || negatives != 80
-        || n(decisions, "/candidate_recall")? != n(iromem, "/runs/0/top_20_correct")?
+        || n(decisions, "/candidate_recall")? != n(gennie_memory, "/runs/0/top_20_correct")?
     {
         return Err("el agregado no coincide con la cohorte 014–017".into());
     }
-    for system in [iromem, engram] {
+    for system in [gennie_memory, engram] {
         let runs = system
             .get("runs")
             .and_then(Value::as_array)
@@ -851,7 +873,11 @@ pub fn render_full_comparison(aggregate_path: &Path, output_dir: &Path) -> Resul
             unit: "aciertos / 460",
             maximum: positives as f64,
             bars: [
-                ("iROMEM", n(iromem, "/runs/0/top_20_correct")? as f64, TEAL),
+                (
+                    "Gennie Memory",
+                    n(gennie_memory, "/runs/0/top_20_correct")? as f64,
+                    TEAL,
+                ),
                 ("Engram", n(engram, "/runs/0/top_20_correct")? as f64, GOLD),
             ],
             decimals: 0,
@@ -863,7 +889,11 @@ pub fn render_full_comparison(aggregate_path: &Path, output_dir: &Path) -> Resul
             unit: "aciertos / 460",
             maximum: positives as f64,
             bars: [
-                ("iROMEM", n(iromem, "/runs/0/top_1_correct")? as f64, TEAL),
+                (
+                    "Gennie Memory",
+                    n(gennie_memory, "/runs/0/top_1_correct")? as f64,
+                    TEAL,
+                ),
                 ("Engram", n(engram, "/runs/0/top_1_correct")? as f64, GOLD),
             ],
             decimals: 0,
@@ -871,7 +901,7 @@ pub fn render_full_comparison(aggregate_path: &Path, output_dir: &Path) -> Resul
     ] {
         panel(&mut quality, &data);
     }
-    quality.text(58, 570, &format!("iROMEM + Decisions produjo {}/{} semillas correctas y dejó {}/{} negativos sin semilla.",
+    quality.text(58, 570, &format!("Gennie Memory + Decisions produjo {}/{} semillas correctas y dejó {}/{} negativos sin semilla.",
         n(decisions, "/positive_correct")?, positives, n(decisions, "/negative_empty")?, negatives), 16, MUTED, "start", "Arial,sans-serif");
     quality.text(
         58,
@@ -902,7 +932,11 @@ pub fn render_full_comparison(aggregate_path: &Path, output_dir: &Path) -> Resul
             unit: "milisegundos",
             maximum: 9.0,
             bars: [
-                ("iROMEM", f(iromem, "/median_run_p50_ms")?, TEAL),
+                (
+                    "Gennie Memory",
+                    f(gennie_memory, "/median_run_p50_ms")?,
+                    TEAL,
+                ),
                 ("Engram", f(engram, "/median_run_p50_ms")?, GOLD),
             ],
             decimals: 2,
@@ -914,7 +948,11 @@ pub fn render_full_comparison(aggregate_path: &Path, output_dir: &Path) -> Resul
             unit: "milisegundos",
             maximum: 13.0,
             bars: [
-                ("iROMEM", f(iromem, "/median_run_p95_ms")?, TEAL),
+                (
+                    "Gennie Memory",
+                    f(gennie_memory, "/median_run_p95_ms")?,
+                    TEAL,
+                ),
                 ("Engram", f(engram, "/median_run_p95_ms")?, GOLD),
             ],
             decimals: 2,
@@ -933,7 +971,7 @@ pub fn render_full_comparison(aggregate_path: &Path, output_dir: &Path) -> Resul
     );
     latency.save(&output_dir.join("full-comparison-latency-2026-10-16.svg"))?;
 
-    let mut preparation = Svg::new(1200, 650, "iROMEM: tiempo para preparar la semilla");
+    let mut preparation = Svg::new(1200, 650, "Gennie Memory: tiempo para preparar la semilla");
     preparation.text(
         58,
         110,
@@ -1029,7 +1067,7 @@ pub fn render_full_comparison(aggregate_path: &Path, output_dir: &Path) -> Resul
             subtitle: "Semilla en prompt o búsqueda MCP",
             unit: "segundos",
             maximum: 13.0,
-            bars: [("iROMEM", seed_s, TEAL), ("Engram", engram_s, GOLD)],
+            bars: [("Gennie Memory", seed_s, TEAL), ("Engram", engram_s, GOLD)],
             decimals: 2,
         },
         Panel {
@@ -1039,7 +1077,7 @@ pub fn render_full_comparison(aggregate_path: &Path, output_dir: &Path) -> Resul
             unit: "tokens",
             maximum: 64000.0,
             bars: [
-                ("iROMEM", seed_tokens, TEAL),
+                ("Gennie Memory", seed_tokens, TEAL),
                 ("Engram", engram_tokens, GOLD),
             ],
             decimals: 0,
@@ -1050,7 +1088,7 @@ pub fn render_full_comparison(aggregate_path: &Path, output_dir: &Path) -> Resul
     codex.text(
         58,
         575,
-        "iROMEM entregó la semilla en el prompt; Engram se consultó por MCP.",
+        "Gennie Memory entregó la semilla en el prompt; Engram se consultó por MCP.",
         16,
         MUTED,
         "start",
@@ -1068,7 +1106,7 @@ pub fn render_full_comparison(aggregate_path: &Path, output_dir: &Path) -> Resul
     codex.text(
         58,
         625,
-        "La barra iROMEM empieza con la semilla lista; su preparación se muestra en otra figura.",
+        "La barra Gennie Memory empieza con la semilla lista; su preparación se muestra en otra figura.",
         16,
         MUTED,
         "start",
@@ -1080,7 +1118,7 @@ pub fn render_full_comparison(aggregate_path: &Path, output_dir: &Path) -> Resul
     full.text(
         58,
         110,
-        "Dos rondas de seis preguntas · iROMEM incluye preparación de semilla con Decisions",
+        "Dos rondas de seis preguntas · Gennie Memory incluye preparación de semilla con Decisions",
         17,
         MUTED,
         "start",
@@ -1097,7 +1135,7 @@ pub fn render_full_comparison(aggregate_path: &Path, output_dir: &Path) -> Resul
                 maximum: 13.0,
                 bars: [
                     (
-                        "iROMEM*",
+                        "Gennie Memory*",
                         f(
                             &data,
                             &format!("/codex/{number}/calculated_seed_plus_recall_median_ms"),
@@ -1117,7 +1155,7 @@ pub fn render_full_comparison(aggregate_path: &Path, output_dir: &Path) -> Resul
     full.text(
         58,
         575,
-        "*iROMEM: suma por caso de recall + Codex, medidos en ejecuciones separadas.",
+        "*Gennie Memory: suma por caso de recall + Codex, medidos en ejecuciones separadas.",
         16,
         MUTED,
         "start",

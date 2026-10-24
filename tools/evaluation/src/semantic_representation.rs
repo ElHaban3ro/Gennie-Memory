@@ -1036,7 +1036,10 @@ mod report_tests {
     use super::*;
     #[test]
     fn report_keeps_charged_http_errors_unknown_inflight_and_unsent_in_denominator() {
-        let d = std::env::temp_dir().join(format!("iromem-semantic-report-{}", std::process::id()));
+        let d = std::env::temp_dir().join(format!(
+            "gennie-memory-semantic-report-{}",
+            std::process::id()
+        ));
         assert!(!d.exists());
         fs::create_dir(&d).unwrap();
         let input = json!({"kind":"source","text":"verde","raw":{},"normalized":{},"normalization_error":null,"ontology":{},"registry":{}});

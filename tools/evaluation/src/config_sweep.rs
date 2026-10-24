@@ -161,7 +161,7 @@ impl Drop for Temporary {
 fn cli(binary: &Path, database: &Path, args: &[&str]) -> Result<(), String> {
     let result = Command::new(binary)
         .args(args)
-        .env("IROMEM_DATABASE_PATH", database)
+        .env("GENNIE_MEMORY_DATABASE_PATH", database)
         .output()
         .map_err(|e| e.to_string())?;
     if !result.status.success() {
@@ -193,7 +193,7 @@ pub fn run(suite: &Path, binary: &Path, output: &Path) -> Result<(), String> {
     }
     let datasets = config["datasets"].as_array().ok_or("faltan bancos")?;
     let temporary = Temporary(std::env::temp_dir().join(
-        format!("iromem-config-screen-{}-{}",std::process::id(),
+        format!("gennie-memory-config-screen-{}-{}",std::process::id(),
         SystemTime::now().duration_since(UNIX_EPOCH).map_err(|e|e.to_string())?.as_nanos()),
     ));
     fs::create_dir(&temporary.0).map_err(|e| e.to_string())?;

@@ -8,7 +8,7 @@ Un crítico nuevo recibió únicamente125fuentes/frames decodificados —20pregu
 
 Resultado de esa revisión:69frames fieles,48defectuosos y8inciertos. Dimensiones marcadas defectuosas: sujeto12, atributo18, alcance/condiciones20, polaridad1 y estado6; pueden coincidir varias en un frame. No se equipara un array de palabras no contiguas a una cita ni se exige copiar todos los conectores.
 
-Se añadió `audit-source-frame-review` a `iromem-eval`, fuera del producto. Revalida el informe padre desde sus fuentes, el roster completo, hashes, mapa,125fuentes/frames exactos, enums, coherencia de dimensiones, explicaciones y citas literales de fuente. Después recompone los128pares originales. La validación estructural no certifica los juicios de fidelidad. No transforma un frame incierto en uno fiel.
+Se añadió `audit-source-frame-review` a `gennie-memory-eval`, fuera del producto. Revalida el informe padre desde sus fuentes, el roster completo, hashes, mapa,125fuentes/frames exactos, enums, coherencia de dimensiones, explicaciones y citas literales de fuente. Después recompone los128pares originales. La validación estructural no certifica los juicios de fidelidad. No transforma un frame incierto en uno fiel.
 
 ## Cruce completo con resultados históricos
 

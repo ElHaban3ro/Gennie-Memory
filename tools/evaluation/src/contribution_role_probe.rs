@@ -153,7 +153,7 @@ mod tests {
             .unwrap()
             .as_nanos();
         let temp = std::env::temp_dir().join(format!(
-            "iromem-contribution-bank-{}-{unique}",
+            "gennie-memory-contribution-bank-{}-{unique}",
             std::process::id()
         ));
         fs::create_dir(&temp).unwrap();

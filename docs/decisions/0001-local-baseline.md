@@ -4,7 +4,7 @@ Fecha: 2026-10-15. Estado: provisional para el MVP local. Origen: propuesta del 
 
 ## Contexto y decisión
 
-Se necesita una primera línea de referencia ejecutable para consultas sintéticas sin hook, MCP ni datos reales. Se eligió workspace Cargo con `kernel`, `apps/retrieval` y `bootstrap`; SQLite/FTS5 y una CLI local. Se omiten crates vacíos, frontend y servidor. La migración experimental contiene solo tablas necesarias para revisiones y texto; el SQL adjunto al README continúa como propuesta del producto completo. La ruta SQLite es explícita mediante `IROMEM_DATABASE_PATH`.
+Se necesita una primera línea de referencia ejecutable para consultas sintéticas sin hook, MCP ni datos reales. Se eligió workspace Cargo con `kernel`, `apps/retrieval` y `bootstrap`; SQLite/FTS5 y una CLI local. Se omiten crates vacíos, frontend y servidor. La migración experimental contiene solo tablas necesarias para revisiones y texto; el SQL adjunto al README continúa como propuesta del producto completo. La ruta SQLite es explícita mediante `GENNIE_MEMORY_DATABASE_PATH`.
 
 Alternativas: implementar todo el esquema y ciclo de vida antes de medir recuperación, o generar solo documentos sin recorrido ejecutable. La primera ampliaría trabajo ajeno a la validación inicial; la segunda no permitiría probar consultas. Esta base hace explícita la cobertura semántica deshabilitada y conserva la evolución en `ROADMAP.md`.
 

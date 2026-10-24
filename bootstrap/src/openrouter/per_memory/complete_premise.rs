@@ -2,13 +2,13 @@
 use super::verified::{partial, receipt, receipt_for_model};
 use super::{correction_verified, role_proposal, role_verified};
 use crate::openrouter::{OpenRouterClassifier, failure, known_receipt, merge_known_receipts};
-use iromem_retrieval::classifier::DecisionError;
-use iromem_retrieval::model::{Candidate, ClassifierProvider, DecisionResult};
-use iromem_retrieval::per_memory::verification::{
+use gennie_memory_retrieval::classifier::DecisionError;
+use gennie_memory_retrieval::model::{Candidate, ClassifierProvider, DecisionResult};
+use gennie_memory_retrieval::per_memory::verification::{
     CheckedMemory, CompleteEvidencePaths, PREMISE_VERIFIER_MODEL, PREMISE_VERIFIER_REVISION,
     VerificationTrace,
 };
-use iromem_retrieval::per_memory::{EvidenceRelation, PerMemoryTrace};
+use gennie_memory_retrieval::per_memory::{EvidenceRelation, PerMemoryTrace};
 use serde_json::{Value, json};
 
 pub(super) fn atomic_question() -> Value {
@@ -235,7 +235,7 @@ mod tests {
     }
     #[test]
     fn pipeline_checks_every_positive_with_all_paths_and_merges_atomic_failure_cost() {
-        use iromem_retrieval::model::SelectionPolicy;
+        use gennie_memory_retrieval::model::SelectionPolicy;
         use std::sync::atomic::{AtomicUsize, Ordering};
         let candidates = ["a", "b"].map(|id| Candidate {
             memory_id: id.into(),

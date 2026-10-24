@@ -1,7 +1,7 @@
 //! Local JSONL transport for measuring a complete retrieval/classification/seed run.
 
-use iromem_retrieval::classifier::Classifier;
-use iromem_retrieval::model::{HybridRequest, RecallRequest, SearchRequest, SeedRequest};
+use gennie_memory_retrieval::classifier::Classifier;
+use gennie_memory_retrieval::model::{HybridRequest, RecallRequest, SearchRequest, SeedRequest};
 use rusqlite::Connection;
 use serde::{Deserialize, Serialize};
 use std::io::{BufRead, BufWriter, Write};
@@ -33,25 +33,25 @@ fn handle(conn: &Connection, classifier: &impl Classifier, line: &str) -> Sessio
         let request: SessionRequest = serde_json::from_str(line).map_err(|e| e.to_string())?;
         match request {
             SessionRequest::Search(request) => {
-                let response = iromem_retrieval::service::search(conn, &request)?;
+                let response = gennie_memory_retrieval::service::search(conn, &request)?;
                 serde_json::to_value(response).map_err(|e| e.to_string())
             }
             SessionRequest::Recall(request) => {
                 let response = if let Some(reviewed) =
-                    iromem_dashboard::service::reviewed_recall(conn, &request)?
+                    gennie_memory_dashboard::service::reviewed_recall(conn, &request)?
                 {
                     reviewed
                 } else {
-                    iromem_retrieval::service::recall(conn, &request, classifier)?
+                    gennie_memory_retrieval::service::recall(conn, &request, classifier)?
                 };
                 serde_json::to_value(response).map_err(|e| e.to_string())
             }
             SessionRequest::HybridSearch(request) => {
-                let response = iromem_retrieval::embedding::search_hybrid(conn, &request)?;
+                let response = gennie_memory_retrieval::embedding::search_hybrid(conn, &request)?;
                 serde_json::to_value(response).map_err(|e| e.to_string())
             }
             SessionRequest::ComposeSeed(request) => {
-                let response = iromem_retrieval::service::compose_seed(conn, &request)?;
+                let response = gennie_memory_retrieval::service::compose_seed(conn, &request)?;
                 serde_json::to_value(response).map_err(|e| e.to_string())
             }
         }
@@ -96,12 +96,12 @@ mod tests {
     fn session_reuses_search_and_revalidates_the_seed() {
         let classifier = crate::openrouter::OpenRouterClassifier::new(None).unwrap();
         let mut conn = Connection::open_in_memory().unwrap();
-        iromem_kernel::db::configure(&conn).unwrap();
-        iromem_kernel::db::migrate(&mut conn, &crate::registry::modules().unwrap()).unwrap();
-        let fixtures: Vec<iromem_retrieval::model::FixtureMemory> =
+        gennie_memory_kernel::db::configure(&conn).unwrap();
+        gennie_memory_kernel::db::migrate(&mut conn, &crate::registry::modules().unwrap()).unwrap();
+        let fixtures: Vec<gennie_memory_retrieval::model::FixtureMemory> =
             serde_json::from_str(include_str!("../../tests/fixtures/conditional-corpus.json"))
                 .unwrap();
-        iromem_retrieval::repo::load_fixtures(&mut conn, &fixtures).unwrap();
+        gennie_memory_retrieval::repo::load_fixtures(&mut conn, &fixtures).unwrap();
 
         let search = serde_json::json!({
             "query": "agenda reuniones remotas Proyecto Sintético",
@@ -164,13 +164,13 @@ mod tests {
         assert_eq!(recall.response.unwrap()["error_code"], "missing_api_key");
 
         let review_search: SearchRequest = serde_json::from_value(search.clone()).unwrap();
-        let review_view = iromem_dashboard::service::view(
+        let review_view = gennie_memory_dashboard::service::view(
             &conn,
             &review_search,
-            iromem_dashboard::model::ViewMode::Search,
+            gennie_memory_dashboard::model::ViewMode::Search,
         )
         .unwrap();
-        let review_request: iromem_dashboard::model::ReviewRequest = serde_json::from_value(
+        let review_request: gennie_memory_dashboard::model::ReviewRequest = serde_json::from_value(
             serde_json::json!({
                 "case_id": null, "search": search, "view_mode": "search",
                 "candidates": review_view.candidates.iter().map(|item| serde_json::json!({"memory_id": item.memory_id, "revision": item.revision})).collect::<Vec<_>>(),
@@ -178,7 +178,7 @@ mod tests {
                 "outcome": "matches", "note": null
             }),
         ).unwrap();
-        iromem_dashboard::service::save(&mut conn, review_request).unwrap();
+        gennie_memory_dashboard::service::save(&mut conn, review_request).unwrap();
         let reviewed = handle(
             &conn,
             &classifier,

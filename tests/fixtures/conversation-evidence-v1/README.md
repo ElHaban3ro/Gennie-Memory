@@ -6,4 +6,4 @@ Ocho conversaciones 034–041, 64 recuerdos y 64 preguntas: 16 de respuesta, 16 
 
 La [rúbrica](../../../docs/evaluation/evidence-rubric-v1.md) define las cuatro relaciones, lo afirmable y las limitaciones. `expected_ids` incluye evidencia correctiva o parcial, no solo respuestas completas. Las citas y fuentes son sintéticas. `agent-review.md` documenta la revisión del propio autor sin atribuir independencia.
 
-Validar: `cargo run --offline -p iromem-eval -- validate-evidence-benchmark tests/fixtures/conversation-evidence-v1`. Para obtener cobertura por relación de una búsqueda congelada: `report-evidence-retrieval <banco> <search.jsonl> <salida-nueva.json>`; exige el manifiesto producido por `search-benchmark`. No ejecuta proveedor ni modifica el producto.
+Validar: `cargo run --offline -p gennie-memory-eval -- validate-evidence-benchmark tests/fixtures/conversation-evidence-v1`. Para obtener cobertura por relación de una búsqueda congelada: `report-evidence-retrieval <banco> <search.jsonl> <salida-nueva.json>`; exige el manifiesto producido por `search-benchmark`. No ejecuta proveedor ni modifica el producto.

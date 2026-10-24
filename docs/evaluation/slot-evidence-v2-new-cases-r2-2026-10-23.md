@@ -18,7 +18,7 @@ En el caso del observatorio, ambas revisiones eligieron La Serena y reconocieron
 
 ## Resultado local
 
-`v2_new_holdout_bank_binds_useful_and_non_actionable_evidence` reproduce las once trazas contra el validador y el selector locales: **11/11 trazas válidas; 10/10 candidatos esperados seleccionados; 1/1 candidato `context_only` rechazado**. La prueba negativa `v2_literal_binding_known_false_acceptance_for_superseded_draft` construye una traza con la cita literal del borrador de Valparaíso: pasa la validación y el selector la selecciona. La suite completa `cargo test --offline -p iromem-retrieval` terminó después con **74 correctas, 0 fallidas, 0 ignoradas**; el harness reportó 0,07 s para las pruebas.
+`v2_new_holdout_bank_binds_useful_and_non_actionable_evidence` reproduce las once trazas contra el validador y el selector locales: **11/11 trazas válidas; 10/10 candidatos esperados seleccionados; 1/1 candidato `context_only` rechazado**. La prueba negativa `v2_literal_binding_known_false_acceptance_for_superseded_draft` construye una traza con la cita literal del borrador de Valparaíso: pasa la validación y el selector la selecciona. La suite completa `cargo test --offline -p gennie-memory-retrieval` terminó después con **74 correctas, 0 fallidas, 0 ignoradas**; el harness reportó 0,07 s para las pruebas.
 
 Estas cifras son una comprobación de contratos y selección con trazas escritas a mano. El falso positivo esperado en la prueba negativa confirma un límite actual; no es una aprobación de calidad. Los conteos no miden la extracción de un modelo y no deben presentarse como accuracy, recall ni mejora frente al baseline.
 

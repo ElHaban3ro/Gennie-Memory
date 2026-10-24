@@ -1,8 +1,8 @@
 //! Evaluation-only complete-prefix semantic diagnostic, including negative proposals.
 use super::complete_premise;
 use crate::openrouter::OpenRouterClassifier;
-use iromem_retrieval::model::Candidate;
-use iromem_retrieval::per_memory::verification::{
+use gennie_memory_retrieval::model::Candidate;
+use gennie_memory_retrieval::per_memory::verification::{
     PREMISE_VERIFIER_MODEL, PREMISE_VERIFIER_REVISION,
 };
 use serde_json::{Value, json};
@@ -114,7 +114,7 @@ fn live_full_prefix_dimension_probe() {
         ] {
             hashes.insert(
                 p.to_str().unwrap().into(),
-                json!(iromem_kernel::digest::sha256_hex(
+                json!(gennie_memory_kernel::digest::sha256_hex(
                     &std::fs::read(p).unwrap()
                 )),
             );
@@ -176,13 +176,13 @@ fn live_full_prefix_dimension_probe() {
     ] {
         hashes.insert(
             p.into(),
-            json!(iromem_kernel::digest::sha256_hex(
+            json!(gennie_memory_kernel::digest::sha256_hex(
                 &std::fs::read(p).unwrap()
             )),
         );
     }
-    std::fs::write(dir.join("preflight.json"),serde_json::to_vec_pretty(&json!({"version":"full-prefix-dimension-probe-v1","prepared_operations":128,"max_http_requests":128,"candidate_judgments":126,"development_controls":2,"model_id":PREMISE_VERIFIER_MODEL,"expected_served_model":PREMISE_VERIFIER_REVISION,"requests_sha256":iromem_kernel::digest::sha256_hex(serialized.as_bytes()),"inputs_sha256":hashes,"test_binary_sha256":iromem_kernel::digest::sha256_hex(&std::fs::read(std::env::current_exe().unwrap()).unwrap()),"fresh_validation":false,"promoted":false})).unwrap()).unwrap();
-    let key = iromem_kernel::config::load_secrets()
+    std::fs::write(dir.join("preflight.json"),serde_json::to_vec_pretty(&json!({"version":"full-prefix-dimension-probe-v1","prepared_operations":128,"max_http_requests":128,"candidate_judgments":126,"development_controls":2,"model_id":PREMISE_VERIFIER_MODEL,"expected_served_model":PREMISE_VERIFIER_REVISION,"requests_sha256":gennie_memory_kernel::digest::sha256_hex(serialized.as_bytes()),"inputs_sha256":hashes,"test_binary_sha256":gennie_memory_kernel::digest::sha256_hex(&std::fs::read(std::env::current_exe().unwrap()).unwrap()),"fresh_validation":false,"promoted":false})).unwrap()).unwrap();
+    let key = gennie_memory_kernel::config::load_secrets()
         .unwrap()
         .openrouter_api_key
         .expect("authorized key required");

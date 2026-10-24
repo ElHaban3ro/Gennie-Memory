@@ -15,7 +15,7 @@ fn live_scoped_family_probe() {
     let root = Path::new(env!("CARGO_MANIFEST_DIR")).parent().unwrap();
     std::env::set_current_dir(root).unwrap();
     let d = Path::new(DIR);
-    let sha = |p: &Path| iromem_kernel::digest::sha256_hex(&fs::read(p).unwrap());
+    let sha = |p: &Path| gennie_memory_kernel::digest::sha256_hex(&fs::read(p).unwrap());
     let prep: Value =
         serde_json::from_slice(&fs::read(d.join("preparation.json")).unwrap()).unwrap();
     assert_eq!(prep["requests_sha256"], sha(&d.join("requests.jsonl")));
@@ -51,7 +51,7 @@ fn live_scoped_family_probe() {
     f.write_all(serde_json::to_string_pretty(&pre).unwrap().as_bytes())
         .unwrap();
     f.sync_all().unwrap();
-    let key = iromem_kernel::config::load_secrets()
+    let key = gennie_memory_kernel::config::load_secrets()
         .unwrap()
         .openrouter_api_key
         .expect("authorized key required");

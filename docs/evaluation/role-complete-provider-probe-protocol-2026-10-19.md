@@ -18,7 +18,7 @@ Cada modelo completa estos doce casos aunque cometa un error de calidad, para co
 
 ## Verificación, costes y puertas
 
-La prueba manual ignorada `live_complete_provider_probe` usa la autorización general de pruebas sintéticas por OpenRouter y el secreto existente, sin imprimirlo. Registra started/respuesta/fallo, tiempos y recibos. Directorio de un solo uso. Invocación explícita: `cargo test --offline -p iromem live_complete_provider_probe -- --ignored --test-threads=1`. No cambia enums, modelos predeterminados, SQL, puertos ni proveedores admitidos en producto.
+La prueba manual ignorada `live_complete_provider_probe` usa la autorización general de pruebas sintéticas por OpenRouter y el secreto existente, sin imprimirlo. Registra started/respuesta/fallo, tiempos y recibos. Directorio de un solo uso. Invocación explícita: `cargo test --offline -p gennie-memory live_complete_provider_probe -- --ignored --test-threads=1`. No cambia enums, modelos predeterminados, SQL, puertos ni proveedores admitidos en producto.
 
 Inicialmente son 36 HTTP; máximo 129 si los tres pasan. Estimación USD 0,003 y uno a dos minutos, CLI sin puerto. Los precios publicados solo orientan la estimación: usar recibos reales, conservar importes desconocidos y no asumir gratuidad ante error. El gasto nuevo incluye cada llamada ejecutada, también las de modelos descartados.
 

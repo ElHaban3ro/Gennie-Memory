@@ -6,7 +6,7 @@ Estado: medido el 2026-10-17; **solo desarrollo**. Este informe no modifica el c
 
 ## Banco y búsqueda local
 
-Se crearon cinco conversaciones ficticias nuevas (`026`–`030`), cada una con treinta recuerdos, quince preguntas positivas y cinco negativas: **150 recuerdos y 100 preguntas**. Las etiquetas son `agent_synthetic_unreviewed`: un agente redactó los casos y otro intentó refutarlos sin ver salidas de iROMEM. Se corrigió una pregunta semánticamente inválida y se reforzaron diez negativos antes de buscar. Cinco preguntas ambiguas quedaron fuera de puntuación. El validador comprueba referencias, estructura y SHA-256. Las preguntas positivas siguen siendo relativamente literales y el banco no contiene revisiones sucesivas, condiciones, vigencia ni permisos.
+Se crearon cinco conversaciones ficticias nuevas (`026`–`030`), cada una con treinta recuerdos, quince preguntas positivas y cinco negativas: **150 recuerdos y 100 preguntas**. Las etiquetas son `agent_synthetic_unreviewed`: un agente redactó los casos y otro intentó refutarlos sin ver salidas de Gennie Memory. Se corrigió una pregunta semánticamente inválida y se reforzaron diez negativos antes de buscar. Cinco preguntas ambiguas quedaron fuera de puntuación. El validador comprueba referencias, estructura y SHA-256. Las preguntas positivas siguen siendo relativamente literales y el banco no contiene revisiones sucesivas, condiciones, vigencia ni permisos.
 
 | Ruta local | ID esperado top 1 | Top 5 | Top 20 | Negativos sin candidatos | Búsqueda p50 / p95 |
 | --- | ---: | ---: | ---: | ---: | ---: |

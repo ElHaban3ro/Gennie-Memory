@@ -14,7 +14,7 @@ fn live_local_isolation_probe() {
     };
     std::env::set_current_dir(Path::new(env!("CARGO_MANIFEST_DIR")).parent().unwrap()).unwrap();
     let d = Path::new("outputs/iromem/evaluation/local-isolation-diagnostic-v1-2026-10-20");
-    let sha = |p: &Path| iromem_kernel::digest::sha256_hex(&fs::read(p).unwrap());
+    let sha = |p: &Path| gennie_memory_kernel::digest::sha256_hex(&fs::read(p).unwrap());
     let read = |p: &Path| serde_json::from_slice::<Value>(&fs::read(p).unwrap()).unwrap();
     let lines = |p: &Path| {
         fs::read_to_string(p)
@@ -59,7 +59,7 @@ fn live_local_isolation_probe() {
         .unwrap();
     pf.write_all(serde_json::to_string_pretty(&json!({"preparation_sha256":sha(&d.join("preparation.json")),"sources_sha256":hashes,"test_binary_sha256":sha(&std::env::current_exe().unwrap()),"max_http_requests":13,"http2_feature_enabled":true,"adoption_gate":false})).unwrap().as_bytes()).unwrap();
     pf.sync_all().unwrap();
-    let key = iromem_kernel::config::load_secrets()
+    let key = gennie_memory_kernel::config::load_secrets()
         .unwrap()
         .openrouter_api_key
         .unwrap();

@@ -23,7 +23,7 @@ Los detalles/revisiones y capturas están en [`assets/slot-evidence-v3/local-que
 
 ## Verificación local y decisión
 
-La prueba focal de esquema/parsing pasa: 24 casos compactos. `cargo fmt --all --check` y `cargo test --offline --workspace` pasan; recuento final: bootstrap `iromem` 234 aprobadas/24 ignoradas, otro target 4 aprobadas, evaluación 700 aprobadas, kernel 6 aprobadas y retrieval 95 aprobadas/1 ignorada; **1.039 aprobadas, 25 ignoradas, cero fallidas**.
+La prueba focal de esquema/parsing pasa: 24 casos compactos. `cargo fmt --all --check` y `cargo test --offline --workspace` pasan; recuento final: bootstrap `gennie-memory` 234 aprobadas/24 ignoradas, otro target 4 aprobadas, evaluación 700 aprobadas, kernel 6 aprobadas y retrieval 95 aprobadas/1 ignorada; **1.039 aprobadas, 25 ignoradas, cero fallidas**.
 
 El mecanismo local es estructural y acotado. Reconoce IDs estables con forma ASCII mayúscula-guion-dígito y premisas relacionales en patrones ingleses `What did ...` y españoles `Qué/Que ...` con verbos de comunicación. IDs con otros formatos, premisas fuera de esos patrones y preguntas complejas pueden quedar omitidos o rechazados. Un parseo válido tampoco demuestra que el predicado responda ni que el modelo haya interpretado la consulta correctamente.
 

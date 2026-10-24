@@ -165,7 +165,7 @@ fn publish_with(
         .map_err(|e| e.to_string())?
         .as_nanos();
     let temp = parent.join(format!(
-        ".iromem-delivery-{}-{}-{stamp}.partial",
+        ".gennie-memory-delivery-{}-{}-{stamp}.partial",
         std::process::id(),
         NEXT.fetch_add(1, Ordering::Relaxed)
     ));
@@ -351,7 +351,7 @@ mod tests {
     #[test]
     fn atomic_publication_never_replaces_or_exposes_incomplete_output() {
         let dir = std::env::temp_dir().join(format!(
-            "iromem-assembly-test-{}-{}",
+            "gennie-memory-assembly-test-{}-{}",
             std::process::id(),
             std::time::SystemTime::now()
                 .duration_since(std::time::UNIX_EPOCH)

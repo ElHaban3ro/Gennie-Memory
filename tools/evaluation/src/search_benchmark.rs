@@ -99,7 +99,7 @@ pub fn run(
     let mut writer = BufWriter::new(file);
     let mut child = Command::new(binary)
         .arg("session")
-        .env("IROMEM_DATABASE_PATH", database)
+        .env("GENNIE_MEMORY_DATABASE_PATH", database)
         .stdin(Stdio::piped())
         .stdout(Stdio::piped())
         .stderr(Stdio::inherit())

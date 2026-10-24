@@ -24,7 +24,7 @@ fn run_pair(directory: &str) {
         );
     }
     let read = |p: &Path| serde_json::from_slice::<Value>(&fs::read(p).unwrap()).unwrap();
-    let sha = |p: &Path| iromem_kernel::digest::sha256_hex(&fs::read(p).unwrap());
+    let sha = |p: &Path| gennie_memory_kernel::digest::sha256_hex(&fs::read(p).unwrap());
     let lines = |p: &Path| {
         fs::read_to_string(p)
             .unwrap()
@@ -73,7 +73,7 @@ fn run_pair(directory: &str) {
         .unwrap();
     serde_json::to_writer_pretty(&pre,&json!({"preparation_sha256":sha(&d.join("preparation.json")),"source_hashes":hashes,"test_binary_sha256":sha(&std::env::current_exe().unwrap()),"estimated_cost_usd":estimated,"max_known_cost_usd":contract::reasoning::MAX_COST,"max_http_requests":32,"network_window_seconds":300,"reserved_timeout_seconds":20,"cfg_test_only":true})).unwrap();
     pre.sync_all().unwrap();
-    let key = iromem_kernel::config::load_secrets()
+    let key = gennie_memory_kernel::config::load_secrets()
         .unwrap()
         .openrouter_api_key
         .unwrap();

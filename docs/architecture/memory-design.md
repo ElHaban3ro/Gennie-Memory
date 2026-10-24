@@ -4,7 +4,7 @@
 
 ## Estado implementado
 
-La ruta predeterminada de iROMEM usa SQLite y FTS5 por palabras clave para recuperar candidatos. `recall` reutiliza una revisión local compatible cuando existe o solicita una selección a Decisions mediante OpenRouter y compone una semilla conservando el texto seleccionado y su revisión. La política predeterminada es `baseline`; las otras políticas siguen siendo opciones explícitas experimentales. El dashboard HTTP local permite revisar candidatos y guardar feedback.
+La ruta predeterminada de Gennie Memory usa SQLite y FTS5 por palabras clave para recuperar candidatos. `recall` reutiliza una revisión local compatible cuando existe o solicita una selección a Decisions mediante OpenRouter y compone una semilla conservando el texto seleccionado y su revisión. La política predeterminada es `baseline`; las otras políticas siguen siendo opciones explícitas experimentales. El dashboard HTTP local permite revisar candidatos y guardar feedback.
 
 La búsqueda híbrida es experimental y usa vectores previamente calculados; no hay un codificador Laya activo. La verificación de fuentes, el perfil definitivo de embeddings, el hook y el servidor MCP siguen pendientes. Los contratos de producto actuales están en el [contrato CLI](../evaluation/contract-v1.md), y la distribución del código en el [mapa de módulos](modules.md).
 
@@ -26,13 +26,13 @@ El resto de este documento conserva el diseño propuesto v0.1 que antes estaba e
 
 El MVP inicial valida la recuperación local con pruebas sintéticas. El hook, MCP y otras partes del diseño v0.1 descrito a continuación pertenecen a etapas posteriores. Los contratos y valores propuestos no implican que estén implementados ni demuestran mejoras de rendimiento.
 
-iROMEM es un proyecto para trabajar con memorias de agentes de IA en proyectos grandes. Combina memorias «semilla» con clasificadores rápidos, locales o en línea, para identificar el contexto útil en cada consulta.
+Gennie Memory es un proyecto para trabajar con memorias de agentes de IA en proyectos grandes. Combina memorias «semilla» con clasificadores rápidos, locales o en línea, para identificar el contexto útil en cada consulta.
 
 Su objetivo es reducir el tiempo de respuesta y el consumo de tokens sin perder de vista la información que el agente necesita. Aquí te explicamos cómo funciona.
 
 Este documento define el **diseño propuesto v0.1**. Los contratos, métodos y valores iniciales descritos deberán implementarse y evaluarse; su presencia aquí no implica que ya exista una implementación ni demuestra mejoras de rendimiento.
 
-iROMEM almacenará las memorias en SQLite. Un mismo núcleo Rust atenderá las herramientas MCP y los comandos de línea. Ambos usarán los mismos contratos JSON, validaciones, permisos y transacciones. Los clientes no escribirán directamente en las tablas ni enviarán índices calculados por su cuenta.
+Gennie Memory almacenará las memorias en SQLite. Un mismo núcleo Rust atenderá las herramientas MCP y los comandos de línea. Ambos usarán los mismos contratos JSON, validaciones, permisos y transacciones. Los clientes no escribirán directamente en las tablas ni enviarán índices calculados por su cuenta.
 
 ## 1. Recibir un mensaje
 
@@ -63,7 +63,7 @@ El hook tendrá un plazo total y un presupuesto de contexto. Si vence el plazo, 
 Se incorpora en la primera consulta y después de cada compactación:
 
 ```text
-Tienes acceso a iROMEM mediante sus herramientas MCP. Usa la memoria semilla y el contexto disponible como punto de partida.
+Tienes acceso a Gennie Memory mediante sus herramientas MCP. Usa la memoria semilla y el contexto disponible como punto de partida.
 
 Consulta mem_search cuando falte información relevante y mem_get cuando necesites verificar una fuente o ampliar un resultado. Ten en cuenta el ámbito, las condiciones, la fecha y el estado de cada recuerdo. Una recuperación incompleta no significa que no existan memorias.
 
@@ -92,7 +92,7 @@ La herramienta será **`mem_write`**. Cada llamada opera sobre una memoria o una
 | `operation_id` | UUID en texto | Obligatorio en el núcleo. Lo genera el adaptador una sola vez y lo reutiliza en reintentos. |
 | `action` | Enumeración | Obligatorio: `create`, `revise`, `confirm`, `withdraw`, `restore` o `delete`. |
 | `scope` | Objeto | Obligatorio en `create`: `{kind, id}`. En otras acciones se obtiene de la memoria y no se admite cambiarlo. |
-| `memory_id` | Identificador | Obligatorio excepto en `create`; lo devuelve iROMEM al guardar. |
+| `memory_id` | Identificador | Obligatorio excepto en `create`; lo devuelve Gennie Memory al guardar. |
 | `expected_revision` | Entero positivo | Obligatorio excepto en `create`; evita modificar una versión distinta de la leída. |
 | `memory` | Objeto | Obligatorio en `create` y `revise`; contiene una representación completa, no un parche parcial. |
 | `topic_key` | Texto o `null` | Opcional y exclusivo de `create`. Identidad estable para un tema que admite un único valor en ese ámbito. |
@@ -200,7 +200,7 @@ El agente envía contenido y metadatos. El núcleo deriva los índices usando ú
 
 ### 3.1. Modelo persistente
 
-La base propuesta es `iromem.db`, en un directorio de datos configurable. `iromem.toml` contendrá ese directorio, el perfil del clasificador, los límites y `active_embedding_space`; las rutas de modelos podrán apuntar a `models/` dentro del directorio de datos. El espacio activo debe existir en `embedding_spaces` y ser compatible con los archivos cargados. Un modelo todavía no preparado no se activa silenciosamente. El esquema SQL completo que acompaña este documento está en [schema-v1.sql](../../outputs/iromem/schema-v1.sql).
+La base propuesta es `gennie-memory.db`, en un directorio de datos configurable. `gennie-memory.toml` contendrá ese directorio, el perfil del clasificador, los límites y `active_embedding_space`; las rutas de modelos podrán apuntar a `models/` dentro del directorio de datos. El espacio activo debe existir en `embedding_spaces` y ser compatible con los archivos cargados. Un modelo todavía no preparado no se activa silenciosamente. El esquema SQL completo que acompaña este documento está en [schema-v1.sql](../../outputs/iromem/schema-v1.sql).
 
 | Tabla | Contenido y relación |
 | --- | --- |
@@ -511,7 +511,7 @@ Los pesos del modelo no forman parte del contenido de las memorias. `embedding_s
 
 El coste se mide sobre todo el recorrido: búsquedas, clasificación, composición de semillas, consultas MCP y respuesta principal. Se contabilizan tokens de entrada y salida, tiempo hasta la respuesta, coste de llamadas y recursos locales. Guardado, embeddings e indexación tienen su propio coste de mantenimiento y se incluyen al comparar el uso continuado.
 
-La comparación utilizará el mismo agente, datos y tareas con recuperación textual, híbrida sin clasificador e iROMEM completo. Se medirán recuerdos útiles recuperados, contexto irrelevante, respuestas correctas, duplicados, contradicciones no resueltas y latencia. Reducir los tokens del agente principal no basta si aumenta el coste total o empeora la respuesta.
+La comparación utilizará el mismo agente, datos y tareas con recuperación textual, híbrida sin clasificador e Gennie Memory completo. Se medirán recuerdos útiles recuperados, contexto irrelevante, respuestas correctas, duplicados, contradicciones no resueltas y latencia. Reducir los tokens del agente principal no basta si aumenta el coste total o empeora la respuesta.
 
 Antes de considerar implementado este contrato deberán comprobarse estos casos:
 
@@ -534,4 +534,4 @@ El esquema adjunto fija tablas, relaciones, índices y triggers. Las validacione
 
 ### Comprobación de esta especificación
 
-La [validación histórica del diseño](../../outputs/iromem/validation.json) comprobó ejemplos JSON y fragmentos SQL antes de existir el recorrido actual. Las pruebas vigentes del núcleo, la CLI y los bancos sintéticos se ejecutan con `cargo test` y `iromem-eval`; ese resultado antiguo no demuestra el comportamiento del producto presente.
+La [validación histórica del diseño](../../outputs/iromem/validation.json) comprobó ejemplos JSON y fragmentos SQL antes de existir el recorrido actual. Las pruebas vigentes del núcleo, la CLI y los bancos sintéticos se ejecutan con `cargo test` y `gennie-memory-eval`; ese resultado antiguo no demuestra el comportamiento del producto presente.

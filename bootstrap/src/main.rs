@@ -29,13 +29,13 @@ struct BatchCase {
     id: String,
     split: String,
     segment: String,
-    request: iromem_retrieval::model::SearchRequest,
+    request: gennie_memory_retrieval::model::SearchRequest,
     expected_ids: Vec<String>,
     expected_fact: Option<String>,
     #[serde(default)]
     expected_condition: Option<String>,
     #[serde(default)]
-    expected_source: Option<iromem_retrieval::model::SourceRef>,
+    expected_source: Option<gennie_memory_retrieval::model::SourceRef>,
     forbidden_ids: Vec<String>,
     label_source: String,
 }
@@ -46,13 +46,13 @@ struct HybridBatchCase {
     id: String,
     split: String,
     segment: String,
-    request: iromem_retrieval::model::HybridRequest,
+    request: gennie_memory_retrieval::model::HybridRequest,
     expected_ids: Vec<String>,
     expected_fact: Option<String>,
     #[serde(default)]
     expected_condition: Option<String>,
     #[serde(default)]
-    expected_source: Option<iromem_retrieval::model::SourceRef>,
+    expected_source: Option<gennie_memory_retrieval::model::SourceRef>,
     forbidden_ids: Vec<String>,
     label_source: String,
 }
@@ -63,13 +63,13 @@ struct SeedBatchCase {
     id: String,
     split: String,
     segment: String,
-    request: iromem_retrieval::model::SeedRequest,
+    request: gennie_memory_retrieval::model::SeedRequest,
     expected_ids: Vec<String>,
     expected_fact: Option<String>,
     #[serde(default)]
     expected_condition: Option<String>,
     #[serde(default)]
-    expected_source: Option<iromem_retrieval::model::SourceRef>,
+    expected_source: Option<gennie_memory_retrieval::model::SourceRef>,
     forbidden_ids: Vec<String>,
     label_source: String,
 }
@@ -82,7 +82,7 @@ struct BatchResult<'a, R: Serialize> {
     expected_ids: &'a [String],
     expected_fact: &'a Option<String>,
     expected_condition: &'a Option<String>,
-    expected_source: &'a Option<iromem_retrieval::model::SourceRef>,
+    expected_source: &'a Option<gennie_memory_retrieval::model::SourceRef>,
     forbidden_ids: &'a [String],
     label_source: &'a str,
     elapsed_ms: f64,
@@ -91,7 +91,7 @@ struct BatchResult<'a, R: Serialize> {
 
 fn main() {
     if let Err(error) = run() {
-        eprintln!("iromem: {error}");
+        eprintln!("gennie-memory: {error}");
         std::process::exit(1);
     }
 }
@@ -100,11 +100,11 @@ fn run() -> Result<(), String> {
     let mut args = std::env::args().skip(1);
     let command = args
         .next()
-        .ok_or("uso: iromem <init-db|load-fixtures|load-embeddings|search|recall|hybrid-search|search-batch|hybrid-search-batch|compose-seed|compose-seed-batch|session|dashboard> [archivo]")?;
-    let config = iromem_kernel::config::load()?;
-    let mut conn = iromem_kernel::db::connect(&config.database_path)?;
+        .ok_or("uso: gennie-memory <init-db|load-fixtures|load-embeddings|search|recall|hybrid-search|search-batch|hybrid-search-batch|compose-seed|compose-seed-batch|session|dashboard> [archivo]")?;
+    let config = gennie_memory_kernel::config::load()?;
+    let mut conn = gennie_memory_kernel::db::connect(&config.database_path)?;
     let modules = registry::modules()?;
-    iromem_kernel::db::migrate(&mut conn, &modules)?;
+    gennie_memory_kernel::db::migrate(&mut conn, &modules)?;
     match command.as_str() {
         "dashboard" => {
             let port: u16 = args
@@ -119,11 +119,13 @@ fn run() -> Result<(), String> {
                 .parse()
                 .map_err(|_| "IP del dashboard inválida")?;
             if args.next().is_some() {
-                return Err("uso: iromem dashboard [puerto] [casos.jsonl] [IP-local]".into());
+                return Err(
+                    "uso: gennie-memory dashboard [puerto] [casos.jsonl] [IP-local]".into(),
+                );
             }
             let dist = std::path::PathBuf::from(env!("CARGO_MANIFEST_DIR"))
                 .join("../apps/dashboard/web/dist");
-            iromem_dashboard::web::run(
+            gennie_memory_dashboard::web::run(
                 conn,
                 port,
                 case_path.as_deref().map(std::path::Path::new),
@@ -132,7 +134,7 @@ fn run() -> Result<(), String> {
             )?;
         }
         "session" => {
-            let secrets = iromem_kernel::config::load_secrets()?;
+            let secrets = gennie_memory_kernel::config::load_secrets()?;
             let classifier = if let Some(response_content_path) =
                 config.evaluation_response_content_path.as_deref()
             {
@@ -153,25 +155,25 @@ fn run() -> Result<(), String> {
         "load-fixtures" => {
             let path = args.next().ok_or("falta archivo JSON de fixtures")?;
             let data = fs::read_to_string(path).map_err(|e| e.to_string())?;
-            let fixtures: Vec<iromem_retrieval::model::FixtureMemory> =
+            let fixtures: Vec<gennie_memory_retrieval::model::FixtureMemory> =
                 serde_json::from_str(&data).map_err(|e| e.to_string())?;
-            iromem_retrieval::repo::load_fixtures(&mut conn, &fixtures)?;
+            gennie_memory_retrieval::repo::load_fixtures(&mut conn, &fixtures)?;
             println!("{} revisiones cargadas", fixtures.len());
         }
         "load-embeddings" => {
             let path = args.next().ok_or("falta archivo JSON de embeddings")?;
             let data = fs::read_to_string(path).map_err(|e| e.to_string())?;
-            let batch: iromem_retrieval::model::EmbeddingBatch =
+            let batch: gennie_memory_retrieval::model::EmbeddingBatch =
                 serde_json::from_str(&data).map_err(|e| e.to_string())?;
-            let loaded = iromem_retrieval::embedding::load_batch(&mut conn, &batch)?;
+            let loaded = gennie_memory_retrieval::embedding::load_batch(&mut conn, &batch)?;
             println!("{loaded} vectores cargados en {}", batch.space_id);
         }
         "search" => {
             let path = args.next().ok_or("falta archivo JSON de consulta")?;
             let data = fs::read_to_string(path).map_err(|e| e.to_string())?;
-            let request: iromem_retrieval::model::SearchRequest =
+            let request: gennie_memory_retrieval::model::SearchRequest =
                 serde_json::from_str(&data).map_err(|e| e.to_string())?;
-            let response = iromem_retrieval::service::search(&conn, &request)?;
+            let response = gennie_memory_retrieval::service::search(&conn, &request)?;
             println!(
                 "{}",
                 serde_json::to_string_pretty(&response).map_err(|e| e.to_string())?
@@ -185,14 +187,14 @@ fn run() -> Result<(), String> {
             if data.len() > 1_000_000 {
                 return Err("la solicitud supera 1 MB".into());
             }
-            let request: iromem_retrieval::model::RecallRequest =
+            let request: gennie_memory_retrieval::model::RecallRequest =
                 serde_json::from_str(&data).map_err(|e| e.to_string())?;
             let response = if let Some(reviewed) =
-                iromem_dashboard::service::reviewed_recall(&conn, &request)?
+                gennie_memory_dashboard::service::reviewed_recall(&conn, &request)?
             {
                 reviewed
             } else {
-                let secrets = iromem_kernel::config::load_secrets()?;
+                let secrets = gennie_memory_kernel::config::load_secrets()?;
                 let classifier = if let Some(response_content_path) =
                     config.evaluation_response_content_path.as_deref()
                 {
@@ -207,7 +209,7 @@ fn run() -> Result<(), String> {
                         config.evaluation_capture_path.as_deref(),
                     )?
                 };
-                iromem_retrieval::service::recall(&conn, &request, &classifier)?
+                gennie_memory_retrieval::service::recall(&conn, &request, &classifier)?
             };
             println!(
                 "{}",
@@ -219,9 +221,9 @@ fn run() -> Result<(), String> {
                 .next()
                 .ok_or("falta archivo JSON de consulta híbrida")?;
             let data = fs::read_to_string(path).map_err(|e| e.to_string())?;
-            let request: iromem_retrieval::model::HybridRequest =
+            let request: gennie_memory_retrieval::model::HybridRequest =
                 serde_json::from_str(&data).map_err(|e| e.to_string())?;
-            let response = iromem_retrieval::embedding::search_hybrid(&conn, &request)?;
+            let response = gennie_memory_retrieval::embedding::search_hybrid(&conn, &request)?;
             println!(
                 "{}",
                 serde_json::to_string_pretty(&response).map_err(|e| e.to_string())?
@@ -239,7 +241,7 @@ fn run() -> Result<(), String> {
                 let case: BatchCase = serde_json::from_str(&line)
                     .map_err(|e| format!("línea {}: {e}", line_number + 1))?;
                 let started = Instant::now();
-                let response = iromem_retrieval::service::search(&conn, &case.request)
+                let response = gennie_memory_retrieval::service::search(&conn, &case.request)
                     .map_err(|e| format!("caso {}: {e}", case.id))?;
                 let result = BatchResult {
                     id: &case.id,
@@ -273,8 +275,9 @@ fn run() -> Result<(), String> {
                 let case: HybridBatchCase = serde_json::from_str(&line)
                     .map_err(|e| format!("línea {}: {e}", line_number + 1))?;
                 let started = Instant::now();
-                let response = iromem_retrieval::embedding::search_hybrid(&conn, &case.request)
-                    .map_err(|e| format!("caso {}: {e}", case.id))?;
+                let response =
+                    gennie_memory_retrieval::embedding::search_hybrid(&conn, &case.request)
+                        .map_err(|e| format!("caso {}: {e}", case.id))?;
                 let result = BatchResult {
                     id: &case.id,
                     split: &case.split,
@@ -296,9 +299,9 @@ fn run() -> Result<(), String> {
         "compose-seed" => {
             let path = args.next().ok_or("falta archivo JSON de selección")?;
             let data = fs::read_to_string(path).map_err(|e| e.to_string())?;
-            let request: iromem_retrieval::model::SeedRequest =
+            let request: gennie_memory_retrieval::model::SeedRequest =
                 serde_json::from_str(&data).map_err(|e| e.to_string())?;
-            let response = iromem_retrieval::service::compose_seed(&conn, &request)?;
+            let response = gennie_memory_retrieval::service::compose_seed(&conn, &request)?;
             println!(
                 "{}",
                 serde_json::to_string_pretty(&response).map_err(|e| e.to_string())?
@@ -316,7 +319,7 @@ fn run() -> Result<(), String> {
                 let case: SeedBatchCase = serde_json::from_str(&line)
                     .map_err(|e| format!("línea {}: {e}", line_number + 1))?;
                 let started = Instant::now();
-                let response = iromem_retrieval::service::compose_seed(&conn, &case.request)
+                let response = gennie_memory_retrieval::service::compose_seed(&conn, &case.request)
                     .map_err(|e| format!("caso {}: {e}", case.id))?;
                 let result = BatchResult {
                     id: &case.id,

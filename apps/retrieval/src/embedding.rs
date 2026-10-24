@@ -357,7 +357,7 @@ mod tests {
     #[test]
     fn semantic_search_respects_scope_and_reports_partial_coverage() {
         let mut conn = Connection::open_in_memory().unwrap();
-        iromem_kernel::db::configure(&conn).unwrap();
+        gennie_memory_kernel::db::configure(&conn).unwrap();
         conn.execute_batch(include_str!("../migrations/0001_initial.sql"))
             .unwrap();
         conn.execute_batch(include_str!("../migrations/0002_embeddings.sql"))
@@ -460,7 +460,7 @@ mod tests {
     #[test]
     fn rrf_tie_prefers_text_rank_over_identifier_order() {
         let mut conn = Connection::open_in_memory().unwrap();
-        iromem_kernel::db::configure(&conn).unwrap();
+        gennie_memory_kernel::db::configure(&conn).unwrap();
         conn.execute_batch(include_str!("../migrations/0001_initial.sql"))
             .unwrap();
         conn.execute_batch(include_str!("../migrations/0002_embeddings.sql"))
@@ -518,7 +518,7 @@ mod tests {
     #[test]
     fn entity_filter_precedes_text_and_semantic_ranking() {
         let mut conn = Connection::open_in_memory().unwrap();
-        iromem_kernel::db::configure(&conn).unwrap();
+        gennie_memory_kernel::db::configure(&conn).unwrap();
         conn.execute_batch(include_str!("../migrations/0001_initial.sql"))
             .unwrap();
         conn.execute_batch(include_str!("../migrations/0002_embeddings.sql"))

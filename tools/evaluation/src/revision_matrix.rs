@@ -1198,7 +1198,7 @@ mod tests {
             .duration_since(UNIX_EPOCH)
             .unwrap()
             .as_nanos();
-        std::env::temp_dir().join(format!("iromem-revision-matrix-test-{nonce}"))
+        std::env::temp_dir().join(format!("gennie-memory-revision-matrix-test-{nonce}"))
     }
 
     #[test]

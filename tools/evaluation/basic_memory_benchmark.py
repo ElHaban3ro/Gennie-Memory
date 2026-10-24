@@ -1,4 +1,4 @@
-"""Run the frozen iROMEM holdout against an isolated Basic Memory local index.
+"""Run the frozen Gennie Memory holdout against an isolated Basic Memory local index.
 
 Use the Python interpreter from a pinned Basic Memory checkout. This adapter uses
 Basic Memory's local ASGI search API, so its latency includes API serialization

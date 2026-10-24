@@ -2,13 +2,13 @@
 use super::verified::{partial, receipt};
 use super::{correction_verified, role_proposal, role_verified};
 use crate::openrouter::{OpenRouterClassifier, failure, known_receipt, merge_known_receipts};
-use iromem_retrieval::classifier::DecisionError;
-use iromem_retrieval::model::{Candidate, ClassifierProvider, DecisionResult};
-use iromem_retrieval::per_memory::contextual::ContextualEvidenceKind as Kind;
-use iromem_retrieval::per_memory::verification::{
+use gennie_memory_retrieval::classifier::DecisionError;
+use gennie_memory_retrieval::model::{Candidate, ClassifierProvider, DecisionResult};
+use gennie_memory_retrieval::per_memory::contextual::ContextualEvidenceKind as Kind;
+use gennie_memory_retrieval::per_memory::verification::{
     BatchVerdict, BatchVerification, VerificationTrace,
 };
-use iromem_retrieval::per_memory::{EvidenceRelation, PerMemoryTrace};
+use gennie_memory_retrieval::per_memory::{EvidenceRelation, PerMemoryTrace};
 use serde_json::{Value, json};
 
 pub(in crate::openrouter) fn classify(
@@ -352,12 +352,12 @@ mod tests {
         req.sync_all().unwrap();
         let executable = std::env::current_exe().unwrap();
         std::fs::write(dir.join("preflight.json"),serde_json::to_vec_pretty(&json!({
-            "requests_sha256":iromem_kernel::digest::sha256_hex(serialized.as_bytes()),
-            "test_binary_sha256":iromem_kernel::digest::sha256_hex(&std::fs::read(executable).unwrap()),
+            "requests_sha256":gennie_memory_kernel::digest::sha256_hex(serialized.as_bytes()),
+            "test_binary_sha256":gennie_memory_kernel::digest::sha256_hex(&std::fs::read(executable).unwrap()),
             "operations":12,"max_http_requests":12,"fresh_validation":false,
             "purpose":"Known synthetic contrast of single versus question-local batch and changed distraction; no quality promotion"
         })).unwrap()).unwrap();
-        let secrets = iromem_kernel::config::load_secrets().unwrap();
+        let secrets = gennie_memory_kernel::config::load_secrets().unwrap();
         let key = secrets
             .openrouter_api_key
             .expect("authorized OpenRouter key required");
@@ -385,7 +385,7 @@ mod tests {
     }
     #[test]
     fn pipeline_uses_one_batch_receipt_and_preserves_atomic_failure_cost() {
-        use iromem_retrieval::model::SelectionPolicy;
+        use gennie_memory_retrieval::model::SelectionPolicy;
         use std::cell::Cell;
         let candidates = [c("a", "alpha"), c("b", "beta")];
         for mode in ["accept", "none", "invalid"] {

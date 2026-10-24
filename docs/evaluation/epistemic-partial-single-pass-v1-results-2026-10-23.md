@@ -33,7 +33,7 @@ Coste API combinado: **USD 0,000989** por 32 peticiones, sin reintentos; bajo el
 
 V10 se congeló en `docs/evaluation/assets/quality-goal-dev-v10/`; sus hashes y la revisión ciega están junto a los fixtures. El preflight de búsqueda encontró los 12/12 IDs útiles y mantuvo listas no vacías para los cuatro negativos. Cada brazo ejecutó 16 casos con Decisions, el mismo roster, DB, candidatos y orden, sin etiquetas en los mensajes. DB SHA-256 `690289772670a06c148f2e1dcd23ad555cf9f1069edaf256407b1b1cd0c1c275`; casos SHA-256 `56831267ccff77d63aa8b25dfd4db4950bf9f7553354cbc7e802ab4abfd32be9`; binario SHA-256 `e99793096b1c2bc5260b062607a14082b2d7a17c0109c8933967d5a8bc89d7a2`.
 
-`cargo fmt --all --check` y `cargo test --offline -p iromem-retrieval -p iromem-eval -p iromem --quiet` pasan: 1.029 pruebas aprobadas, 25 ignoradas, cero fallidas. Diarios y reportes por brazo: [`outputs/iromem/evaluation/quality-goal-dev-v10-2026-10-23/`](../../outputs/iromem/evaluation/quality-goal-dev-v10-2026-10-23/).
+`cargo fmt --all --check` y `cargo test --offline -p gennie-memory-retrieval -p gennie-memory-eval -p gennie-memory --quiet` pasan: 1.029 pruebas aprobadas, 25 ignoradas, cero fallidas. Diarios y reportes por brazo: [`outputs/iromem/evaluation/quality-goal-dev-v10-2026-10-23/`](../../outputs/iromem/evaluation/quality-goal-dev-v10-2026-10-23/).
 
 ## Estado del objetivo
 

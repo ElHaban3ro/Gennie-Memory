@@ -10,7 +10,7 @@ Se cambia `SelectionPolicy::default()` a `EpistemicPartialSinglePassV1`. El valo
 
 ## Comparación con otros motores
 
-La política modifica únicamente la clasificación de candidatos dentro de iROMEM. No cambia FTS5, el ranking ni las rutas de búsqueda de Engram, Lodis o Basic Memory. Se conservan sus resultados históricos de recuperación como comparativo de búsqueda, etiquetados por separado de selección de semilla. El banco no ofrece clasificación de semilla equivalente para esos tres motores, por lo que no se afirmará una comparación homogénea de esa etapa. Las nuevas métricas de Decisions se publicarán en un informe aditivo, sin reescribir ni mezclar los históricos de otras cohortes.
+La política modifica únicamente la clasificación de candidatos dentro de Gennie Memory. No cambia FTS5, el ranking ni las rutas de búsqueda de Engram, Lodis o Basic Memory. Se conservan sus resultados históricos de recuperación como comparativo de búsqueda, etiquetados por separado de selección de semilla. El banco no ofrece clasificación de semilla equivalente para esos tres motores, por lo que no se afirmará una comparación homogénea de esa etapa. Las nuevas métricas de Decisions se publicarán en un informe aditivo, sin reescribir ni mezclar los históricos de otras cohortes.
 
 ## Revisión
 

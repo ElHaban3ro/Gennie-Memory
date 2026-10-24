@@ -4,7 +4,7 @@ Fecha: 2026-10-15. Estado: decisión histórica; sustituida por [0010](0010-keyw
 
 ## Contexto y alternativas
 
-El usuario pidió probar la idea de búsqueda rápida de Engram, comparar iROMEM anterior y nuevo, y separar el tiempo local de la recuperación mediada por Codex. Se consideraron: conservar solo el híbrido natural; sustituirlo por FTS5 de palabras clave; usar palabras clave como primera fase con respaldo semántico cuando la lista estuviese vacía; usar palabras clave dentro del RRF híbrido.
+El usuario pidió probar la idea de búsqueda rápida de Engram, comparar Gennie Memory anterior y nuevo, y separar el tiempo local de la recuperación mediada por Codex. Se consideraron: conservar solo el híbrido natural; sustituirlo por FTS5 de palabras clave; usar palabras clave como primera fase con respaldo semántico cuando la lista estuviese vacía; usar palabras clave dentro del RRF híbrido.
 
 ## Decisión y motivo
 
@@ -12,4 +12,4 @@ Se añadió `query_mode: "keywords"` como opción de `SearchRequest` para experi
 
 ## Condición de revisión
 
-Mantener el híbrido natural como ruta de referencia hasta fijar una política de confianza en desarrollo y validarla en sujetos nuevos con semilla final, negativos y latencia completa. No inferir equivalencia de Codex + iROMEM a partir del reemplazo aritmético de unos milisegundos de herramienta.
+Mantener el híbrido natural como ruta de referencia hasta fijar una política de confianza en desarrollo y validarla en sujetos nuevos con semilla final, negativos y latencia completa. No inferir equivalencia de Codex + Gennie Memory a partir del reemplazo aritmético de unos milisegundos de herramienta.

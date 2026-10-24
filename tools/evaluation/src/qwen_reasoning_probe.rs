@@ -292,7 +292,7 @@ mod tests {
     #[test]
     fn snapshots_added_by_transport_are_verified_as_well_as_prepared_sources() {
         let d = std::env::temp_dir().join(format!(
-            "iromem-reasoning-source-audit-{}-{}",
+            "gennie-memory-reasoning-source-audit-{}-{}",
             std::process::id(),
             std::time::SystemTime::now()
                 .duration_since(std::time::UNIX_EPOCH)

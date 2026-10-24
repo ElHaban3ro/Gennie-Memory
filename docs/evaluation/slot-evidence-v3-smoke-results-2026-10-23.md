@@ -29,7 +29,7 @@ Una revisión crítica recomendó separar en el protocolo transporte/recibo, est
 
 La inspección del parser confirmó que el segundo código de fallo cubría varias condiciones de orden/contención y, sin el cuerpo raw, no permite identificar cuál ocurrió. Se modificó el wire V3 para pedir `kind_quote` explícita junto a `subject_quote` y `stable_id`. El parser localiza cada cita exactamente una vez, exige que las tres estén dentro de `anchor_quote`, contiguas salvo espacios en blanco y sin solaparse; admite cualquier orden. No normaliza, repara ni busca componentes por proximidad. El contrato de offsets permanece prohibido.
 
-La prueba focal cubre los seis órdenes de componentes y rechaza separadores de coma o conjunción. `cargo fmt --all --check` y `cargo test --offline -p iromem --quiet` pasan (223 aprobadas, 24 ignoradas); luego pasó la suite workspace (1.021 aprobadas, 25 ignoradas).
+La prueba focal cubre los seis órdenes de componentes y rechaza separadores de coma o conjunción. `cargo fmt --all --check` y `cargo test --offline -p gennie-memory --quiet` pasan (223 aprobadas, 24 ignoradas); luego pasó la suite workspace (1.021 aprobadas, 25 ignoradas).
 
 ## Smoke 3, revisión de wire explícito
 

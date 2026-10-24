@@ -183,7 +183,7 @@ fn run(interface: Interface) -> Result<(), String> {
     ];
     fn sha(path: &Path) -> Result<String, String> {
         fs::read(path)
-            .map(|b| iromem_kernel::digest::sha256_hex(&b))
+            .map(|b| gennie_memory_kernel::digest::sha256_hex(&b))
             .map_err(|e| e.to_string())
     }
     fn read(path: &Path) -> Result<Value, String> {
@@ -390,7 +390,7 @@ fn run(interface: Interface) -> Result<(), String> {
         .open(d.join("journal.jsonl"))
         .map_err(|e| e.to_string())?;
     let mut seq = 0;
-    let key = iromem_kernel::config::load_secrets()
+    let key = gennie_memory_kernel::config::load_secrets()
         .map_err(|_| "secret configuration unavailable")?
         .openrouter_api_key
         .ok_or("credential unavailable")?;
@@ -420,7 +420,7 @@ fn run(interface: Interface) -> Result<(), String> {
         event(
             &mut journal,
             &mut seq,
-            json!({"kind":"started","index":i,"id":row.id,"spent_known_usd":spent,"next_cost_upper_bound_usd":bound,"payload_sha256":iromem_kernel::digest::sha256_hex(&serde_json::to_vec(&request["payload"]).unwrap())}),
+            json!({"kind":"started","index":i,"id":row.id,"spent_known_usd":spent,"next_cost_upper_bound_usd":bound,"payload_sha256":gennie_memory_kernel::digest::sha256_hex(&serde_json::to_vec(&request["payload"]).unwrap())}),
         )?;
         attempted += 1;
         let error_path = d

@@ -1,4 +1,4 @@
-use iromem_retrieval::model::{Candidate, SearchRequest};
+use gennie_memory_retrieval::model::{Candidate, SearchRequest};
 use serde::{Deserialize, Serialize};
 
 #[derive(Debug, Clone, Copy, Deserialize, Serialize, PartialEq, Eq)]

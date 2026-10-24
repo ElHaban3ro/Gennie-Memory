@@ -1,6 +1,6 @@
-use iromem_dashboard::module::DashboardModule;
-use iromem_kernel::core::AppModule;
-use iromem_retrieval::module::RetrievalModule;
+use gennie_memory_dashboard::module::DashboardModule;
+use gennie_memory_kernel::core::AppModule;
+use gennie_memory_retrieval::module::RetrievalModule;
 use std::collections::{HashMap, HashSet};
 
 pub fn modules() -> Result<Vec<Box<dyn AppModule>>, String> {

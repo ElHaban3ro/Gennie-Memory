@@ -41,7 +41,7 @@ El conjunto finito de candidatos es `{M01, M02, M03, M04, M05, M06, M07, M08a, M
 
 ## Checks de preflight
 
-El CLI `iromem-eval validate-slot-contract <matriz.json> <informe.json>` ejecuta el checker estático sobre el fixture congelado en `tests/fixtures/slot-alignment-v1/development.json`. La primera ejecución pasó 12/12 casos, cinco pruebas unitarias focalizadas y formato. Eso prueba solo las propiedades enumeradas abajo tal como se codificaron; el recibo declara explícitamente que verdad semántica, extracción, runtime y calidad de recuperación no fueron medidas.
+El CLI `gennie-memory-eval validate-slot-contract <matriz.json> <informe.json>` ejecuta el checker estático sobre el fixture congelado en `tests/fixtures/slot-alignment-v1/development.json`. La primera ejecución pasó 12/12 casos, cinco pruebas unitarias focalizadas y formato. Eso prueba solo las propiedades enumeradas abajo tal como se codificaron; el recibo declara explícitamente que verdad semántica, extracción, runtime y calidad de recuperación no fueron medidas.
 
 Un checker local debe congelar y comprobar las doce salidas esperadas y verificar:
 

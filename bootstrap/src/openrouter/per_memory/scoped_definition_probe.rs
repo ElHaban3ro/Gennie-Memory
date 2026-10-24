@@ -350,7 +350,7 @@ fn run(version: u8) {
     assert_eq!(input.len(), 18);
     let prep: Value =
         serde_json::from_slice(&fs::read(dir.join("preparation.json")).unwrap()).unwrap();
-    let sha = |p: &Path| iromem_kernel::digest::sha256_hex(&fs::read(p).unwrap());
+    let sha = |p: &Path| gennie_memory_kernel::digest::sha256_hex(&fs::read(p).unwrap());
     assert_eq!(prep["inputs_sha256"], sha(&dir.join("inputs.jsonl")));
     assert_eq!(prep["spec_sha256"], sha(Path::new(spec_path)));
     assert_eq!(prep["protocol_sha256"], sha(Path::new(protocol_path)));
@@ -409,7 +409,7 @@ fn run(version: u8) {
     f.write_all(serde_json::to_string_pretty(&pre).unwrap().as_bytes())
         .unwrap();
     f.sync_all().unwrap();
-    let key = iromem_kernel::config::load_secrets()
+    let key = gennie_memory_kernel::config::load_secrets()
         .unwrap()
         .openrouter_api_key
         .expect("authorized key required");

@@ -1,11 +1,11 @@
 use super::verified::{partial, receipt};
 use super::{correction_verified, role_proposal};
 use crate::openrouter::{OpenRouterClassifier, failure, merge_known_receipts};
-use iromem_retrieval::classifier::DecisionError;
-use iromem_retrieval::model::{Candidate, ClassifierProvider, DecisionResult};
-use iromem_retrieval::per_memory::contextual::ContextualEvidenceKind as Kind;
-use iromem_retrieval::per_memory::verification::{CheckedMemory, VerificationTrace};
-use iromem_retrieval::per_memory::{EvidenceRelation, PerMemoryTrace};
+use gennie_memory_retrieval::classifier::DecisionError;
+use gennie_memory_retrieval::model::{Candidate, ClassifierProvider, DecisionResult};
+use gennie_memory_retrieval::per_memory::contextual::ContextualEvidenceKind as Kind;
+use gennie_memory_retrieval::per_memory::verification::{CheckedMemory, VerificationTrace};
+use gennie_memory_retrieval::per_memory::{EvidenceRelation, PerMemoryTrace};
 use serde_json::Value;
 use serde_json::json;
 
@@ -185,7 +185,7 @@ pub(super) fn fact_payload(query: &str, candidate: &Candidate, version: u8) -> V
 #[cfg(test)]
 mod tests {
     use super::*;
-    use iromem_retrieval::{classifier::PartialDecisionUsage, model::SelectionPolicy};
+    use gennie_memory_retrieval::{classifier::PartialDecisionUsage, model::SelectionPolicy};
     use std::sync::atomic::{AtomicUsize, Ordering};
     fn run(mode: &str, version: u8) -> (Result<DecisionResult, DecisionError>, usize) {
         let c = (0..4)

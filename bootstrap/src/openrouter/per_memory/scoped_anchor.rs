@@ -1,6 +1,6 @@
 //! One request: original ScopedV1 paths plus a shared, literal query-case witness.
 use super::*;
-use iromem_retrieval::per_memory::anchor::{LiteralAnchor, present, query_names};
+use gennie_memory_retrieval::per_memory::anchor::{LiteralAnchor, present, query_names};
 pub(in crate::openrouter) fn payload(
     query: &str,
     scope: &str,

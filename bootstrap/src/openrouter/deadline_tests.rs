@@ -146,8 +146,10 @@ fn evaluation_capture_records_only_hashes_and_transport_metadata() {
         .duration_since(UNIX_EPOCH)
         .unwrap()
         .as_nanos();
-    let capture_path = std::env::temp_dir().join(format!("iromem-eval-capture-{nonce}.jsonl"));
-    let response_path = std::env::temp_dir().join(format!("iromem-eval-response-{nonce}.jsonl"));
+    let capture_path =
+        std::env::temp_dir().join(format!("gennie-memory-eval-capture-{nonce}.jsonl"));
+    let response_path =
+        std::env::temp_dir().join(format!("gennie-memory-eval-response-{nonce}.jsonl"));
     let classifier = OpenRouterClassifier::new_with_evaluation_capture_and_content(
         None,
         Some(&capture_path),
@@ -178,7 +180,7 @@ fn evaluation_capture_records_only_hashes_and_transport_metadata() {
             .unwrap();
     assert_eq!(
         record["request_payload_sha256"],
-        iromem_kernel::digest::sha256_hex(&recorded_request)
+        gennie_memory_kernel::digest::sha256_hex(&recorded_request)
     );
     assert_eq!(record["scope_id"], "smoke-01");
     assert_eq!(record["http_status"], 200);
@@ -188,11 +190,13 @@ fn evaluation_capture_records_only_hashes_and_transport_metadata() {
     assert_eq!(record["reported_cost_usd"], 0.001);
     assert_eq!(
         record["prompt_sha256"],
-        iromem_kernel::digest::sha256_hex(&serde_json::to_vec(&payload["messages"]).unwrap())
+        gennie_memory_kernel::digest::sha256_hex(
+            &serde_json::to_vec(&payload["messages"]).unwrap()
+        )
     );
     assert_eq!(
         record["schema_sha256"],
-        iromem_kernel::digest::sha256_hex(
+        gennie_memory_kernel::digest::sha256_hex(
             &serde_json::to_vec(&payload["response_format"]["json_schema"]["schema"]).unwrap()
         )
     );
@@ -200,7 +204,7 @@ fn evaluation_capture_records_only_hashes_and_transport_metadata() {
         br#"{"model":"test/model","usage":{"prompt_tokens":11,"completion_tokens":2,"cost":0.001},"choices":[{"message":{"content":"{\"choice\":\"none\"}"}}]}"#;
     assert_eq!(
         record["response_sha256"],
-        iromem_kernel::digest::sha256_hex(response_body)
+        gennie_memory_kernel::digest::sha256_hex(response_body)
     );
     assert!(record["response_body_complete"].as_bool().unwrap());
     assert_eq!(

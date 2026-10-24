@@ -982,7 +982,7 @@ mod tests {
         }
 
         let mut conn = Connection::open_in_memory().unwrap();
-        iromem_kernel::db::configure(&conn).unwrap();
+        gennie_memory_kernel::db::configure(&conn).unwrap();
         conn.execute_batch(include_str!("../migrations/0001_initial.sql"))
             .unwrap();
         conn.execute_batch(include_str!("../migrations/0003_entity_filter.sql"))
@@ -1175,7 +1175,7 @@ mod tests {
         }
 
         let mut conn = Connection::open_in_memory().unwrap();
-        iromem_kernel::db::configure(&conn).unwrap();
+        gennie_memory_kernel::db::configure(&conn).unwrap();
         conn.execute_batch(include_str!("../migrations/0001_initial.sql"))
             .unwrap();
         conn.execute_batch(include_str!("../migrations/0003_entity_filter.sql"))
@@ -1475,7 +1475,7 @@ mod tests {
             }
         }
         let mut conn = Connection::open_in_memory().unwrap();
-        iromem_kernel::db::configure(&conn).unwrap();
+        gennie_memory_kernel::db::configure(&conn).unwrap();
         for sql in [
             include_str!("../migrations/0001_initial.sql"),
             include_str!("../migrations/0003_entity_filter.sql"),
@@ -1622,7 +1622,7 @@ mod tests {
     #[test]
     fn recall_chooses_a_scoped_memory_and_degrades_on_provider_failure() {
         let mut conn = Connection::open_in_memory().unwrap();
-        iromem_kernel::db::configure(&conn).unwrap();
+        gennie_memory_kernel::db::configure(&conn).unwrap();
         conn.execute_batch(include_str!("../migrations/0001_initial.sql"))
             .unwrap();
         conn.execute_batch(include_str!("../migrations/0003_entity_filter.sql"))
@@ -1907,7 +1907,7 @@ mod tests {
     #[test]
     fn keyword_search_removes_question_words_but_keeps_scoped_memory() {
         let mut conn = Connection::open_in_memory().unwrap();
-        iromem_kernel::db::configure(&conn).unwrap();
+        gennie_memory_kernel::db::configure(&conn).unwrap();
         conn.execute_batch(include_str!("../migrations/0001_initial.sql"))
             .unwrap();
         conn.execute_batch(include_str!("../migrations/0003_entity_filter.sql"))
@@ -1985,7 +1985,7 @@ mod tests {
     #[test]
     fn search_filters_scope_and_old_revision() {
         let mut conn = Connection::open_in_memory().unwrap();
-        iromem_kernel::db::configure(&conn).unwrap();
+        gennie_memory_kernel::db::configure(&conn).unwrap();
         conn.execute_batch(include_str!("../migrations/0001_initial.sql"))
             .unwrap();
         conn.execute_batch(include_str!("../migrations/0003_entity_filter.sql"))
@@ -2072,7 +2072,7 @@ mod tests {
     #[test]
     fn seed_rechecks_selection_against_authorized_candidates() {
         let mut conn = Connection::open_in_memory().unwrap();
-        iromem_kernel::db::configure(&conn).unwrap();
+        gennie_memory_kernel::db::configure(&conn).unwrap();
         conn.execute_batch(include_str!("../migrations/0001_initial.sql"))
             .unwrap();
         conn.execute_batch(include_str!("../migrations/0003_entity_filter.sql"))
@@ -2170,7 +2170,7 @@ mod tests {
     fn seed_preserves_conditions_and_declared_source() {
         use crate::model::{FixtureMemory, SelectedCandidate, SourceRef};
         let mut conn = Connection::open_in_memory().unwrap();
-        iromem_kernel::db::configure(&conn).unwrap();
+        gennie_memory_kernel::db::configure(&conn).unwrap();
         conn.execute_batch(include_str!("../migrations/0001_initial.sql"))
             .unwrap();
         conn.execute_batch(include_str!("../migrations/0003_entity_filter.sql"))

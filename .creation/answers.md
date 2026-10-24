@@ -1,5 +1,7 @@
 # Respuestas y requisitos de inicialización
 
+> Registro histórico: los nombres y el remoto vigentes se definen en la decisión [0048 — Gennie Memory](../docs/decisions/0048-gennie-memory-rename.md).
+
 Estado: recopilación inicial. Última actualización: 2026-10-15 (America/Bogota).
 
 ## Datos expresados por el usuario

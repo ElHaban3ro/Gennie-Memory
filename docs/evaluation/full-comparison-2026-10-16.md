@@ -1,33 +1,33 @@
-# Comparación completa nueva: iROMEM y Engram
+# Comparación completa nueva: Gennie Memory y Engram
 
 Estado: campaña sintética ejecutada el 2026-10-16 en esta Mac. El [paquete reproducible](../../outputs/iromem/evaluation/full-comparison-2026-10-16/) conserva consultas, orden de cada corrida, resultados por caso, manifiestos, diarios, respuestas de Codex y [agregado](../../outputs/iromem/evaluation/full-comparison-2026-10-16/aggregate.json). La [comparación ampliada](broader-comparison-2026-10-16.md) incorpora Lodis y Basic Memory a la búsqueda y al piloto Codex. Este informe conserva la campaña original completa; las cifras de [la cohorte 010–013](keyword-prefix-v1.md) siguen como historia.
 
 ## Banco y método
 
-Se fijó antes de medir la cohorte 014–017 del fixture `general-memory-v1`: **2.800 recuerdos**, **540 preguntas** en 16 ámbitos, **460 positivas** y **80 negativas**. No se modificaron búsqueda, prompts ni umbrales al ver los resultados. iROMEM usó FTS5 por palabras clave con prefijos, Decisions por defecto o Jev explícito; Engram 3.4.0 usó `mem_search`, `match_mode=any`, consulta de palabras clave normalizada y `response_format=compact`. Ambos limitaron a veinte candidatos y buscaron en el mismo contenido sintético, importado a almacenes independientes. La consulta y el ámbito eran equivalentes, pero los contratos no lo son: Engram recibió título y cuerpo, sin condiciones ni fuente declarada por revisión. Los **80 negativos también devolvieron veinte candidatos** en ambos motores; una lista de candidatos no constituye abstención.
+Se fijó antes de medir la cohorte 014–017 del fixture `general-memory-v1`: **2.800 recuerdos**, **540 preguntas** en 16 ámbitos, **460 positivas** y **80 negativas**. No se modificaron búsqueda, prompts ni umbrales al ver los resultados. Gennie Memory usó FTS5 por palabras clave con prefijos, Decisions por defecto o Jev explícito; Engram 3.4.0 usó `mem_search`, `match_mode=any`, consulta de palabras clave normalizada y `response_format=compact`. Ambos limitaron a veinte candidatos y buscaron en el mismo contenido sintético, importado a almacenes independientes. La consulta y el ámbito eran equivalentes, pero los contratos no lo son: Engram recibió título y cuerpo, sin condiciones ni fuente declarada por revisión. Los **80 negativos también devolvieron veinte candidatos** en ambos motores; una lista de candidatos no constituye abstención.
 
-Para medir la cola local se fijaron cuatro permutaciones de las mismas 540 preguntas con semillas `20261016`–`20261019`. Dentro de cada pareja se usó el mismo orden de preguntas; el orden de motores fue Engram→iROMEM, iROMEM→Engram, iROMEM→Engram y Engram→iROMEM. Cada proceso persistente recibió una consulta de calentamiento excluida. Los tiempos por pregunta incluyen ida y vuelta por stdio, ejecución, serialización y análisis de la respuesta; Engram incluye además el mapeo de IDs en el evaluador. No son tiempos puros de SQLite. Cada cifra p95 procede de una corrida completa; la mediana entre corridas resume cuatro p95, no un percentil calculado sobre consultas independientes.
+Para medir la cola local se fijaron cuatro permutaciones de las mismas 540 preguntas con semillas `20261016`–`20261019`. Dentro de cada pareja se usó el mismo orden de preguntas; el orden de motores fue Engram→Gennie Memory, Gennie Memory→Engram, Gennie Memory→Engram y Engram→Gennie Memory. Cada proceso persistente recibió una consulta de calentamiento excluida. Los tiempos por pregunta incluyen ida y vuelta por stdio, ejecución, serialización y análisis de la respuesta; Engram incluye además el mapeo de IDs en el evaluador. No son tiempos puros de SQLite. Cada cifra p95 procede de una corrida completa; la mediana entre corridas resume cuatro p95, no un percentil calculado sobre consultas independientes.
 
-Las campañas de `recall` con Decisions y Jev ejecutaron una vez cada una las mismas 540 preguntas y registraron coste y tiempos informados. Un primer intento de Decisions en la red restringida terminó en `transport_error` y está [separado](../../outputs/iromem/evaluation/full-comparison-2026-10-16/recall-decisions-restricted-network.jsonl); no entra en las cifras. La campaña válida usó un diario nuevo y no tuvo degradaciones. Para Codex se fijaron antes de las respuestas cinco positivos y un negativo de los cuatro tipos de ámbito, mediante [selection.json](../../outputs/iromem/evaluation/full-comparison-2026-10-16/selection.json). Cada camino se ejecutó dos veces; el orden fue semilla→Engram→control y control→semilla→Engram. Se usó Codex CLI `0.162.0-alpha.17.2`, modelo `gpt-6.1-sol`, procesos efímeros y sandbox de solo lectura. El runner entregó la semilla en el prompt; iROMEM aún no tiene hook automático.
+Las campañas de `recall` con Decisions y Jev ejecutaron una vez cada una las mismas 540 preguntas y registraron coste y tiempos informados. Un primer intento de Decisions en la red restringida terminó en `transport_error` y está [separado](../../outputs/iromem/evaluation/full-comparison-2026-10-16/recall-decisions-restricted-network.jsonl); no entra en las cifras. La campaña válida usó un diario nuevo y no tuvo degradaciones. Para Codex se fijaron antes de las respuestas cinco positivos y un negativo de los cuatro tipos de ámbito, mediante [selection.json](../../outputs/iromem/evaluation/full-comparison-2026-10-16/selection.json). Cada camino se ejecutó dos veces; el orden fue semilla→Engram→control y control→semilla→Engram. Se usó Codex CLI `0.162.0-alpha.17.2`, modelo `gpt-6.1-sol`, procesos efímeros y sandbox de solo lectura. El runner entregó la semilla en el prompt; Gennie Memory aún no tiene hook automático.
 
 ## Recuperación de candidatos
 
-| Aciertos entre 460 positivos | iROMEM | Engram |
+| Aciertos entre 460 positivos | Gennie Memory | Engram |
 | --- | ---: | ---: |
 | Top 1 | 420 (91,30 %) | **427 (92,83 %)** |
 | Top 5 | **450** | 445 |
 | Top 10 | **454** | 452 |
 | Top 20 | **457 (99,35 %)** | 456 (99,13 %) |
 
-En top 20 ambos acertaron 453 casos, solo iROMEM acertó cuatro y solo Engram tres. En top 1, ambos acertaron 412, solo iROMEM ocho y solo Engram quince. La calidad de candidatos fue idéntica entre las cuatro repeticiones de cada motor; esas repeticiones miden variación temporal, no aportan cuatro bancos independientes de exactitud.
+En top 20 ambos acertaron 453 casos, solo Gennie Memory acertó cuatro y solo Engram tres. En top 1, ambos acertaron 412, solo Gennie Memory ocho y solo Engram quince. La calidad de candidatos fue idéntica entre las cuatro repeticiones de cada motor; esas repeticiones miden variación temporal, no aportan cuatro bancos independientes de exactitud.
 
 ![Aciertos de candidatos en la cohorte 014–017](assets/full-comparison-accuracy-2026-10-16.svg)
 
-| Corrida y primer motor | iROMEM p50 / p95 | Engram p50 / p95 |
+| Corrida y primer motor | Gennie Memory p50 / p95 | Engram p50 / p95 |
 | --- | ---: | ---: |
 | 1 · Engram | 7,06 / **7,75 ms** | 7,35 / 15,55 ms |
-| 2 · iROMEM | 6,69 / **7,49 ms** | 6,78 / 8,27 ms |
-| 3 · iROMEM | 6,79 / **7,79 ms** | 7,08 / 9,64 ms |
+| 2 · Gennie Memory | 6,69 / **7,49 ms** | 6,78 / 8,27 ms |
+| 3 · Gennie Memory | 6,79 / **7,79 ms** | 7,08 / 9,64 ms |
 | 4 · Engram | 7,68 / **10,73 ms** | 9,15 / 11,78 ms |
 | Mediana de las cuatro corridas | **6,93 / 7,77 ms** | 7,22 / 10,71 ms |
 
@@ -35,9 +35,9 @@ En top 20 ambos acertaron 453 casos, solo iROMEM acertó cuatro y solo Engram tr
 
 ![P95 de búsqueda en cuatro corridas](assets/full-comparison-p95-2026-10-16.svg)
 
-Como comprobación adicional, se tomó la mediana de las cuatro mediciones de **cada pregunta** y después el p95 de esas 540 medianas: **7,63 ms iROMEM y 9,41 ms Engram**. Este cálculo reduce la influencia de picos de una sola corrida, pero no sustituye el p95 observado en cada ejecución. El p95 de **26,54 ms** de iROMEM en 010–013 no reapareció; la corrida 4 muestra que los tiempos de ambos motores aún pueden variar. No se registró telemetría de CPU, memoria o E/S para atribuir los picos a una causa del sistema.
+Como comprobación adicional, se tomó la mediana de las cuatro mediciones de **cada pregunta** y después el p95 de esas 540 medianas: **7,63 ms Gennie Memory y 9,41 ms Engram**. Este cálculo reduce la influencia de picos de una sola corrida, pero no sustituye el p95 observado en cada ejecución. El p95 de **26,54 ms** de Gennie Memory en 010–013 no reapareció; la corrida 4 muestra que los tiempos de ambos motores aún pueden variar. No se registró telemetría de CPU, memoria o E/S para atribuir los picos a una causa del sistema.
 
-## Semilla y abstención de iROMEM
+## Semilla y abstención de Gennie Memory
 
 | Medición de 540 consultas | Decisions | Jev |
 | --- | ---: | ---: |
@@ -70,12 +70,12 @@ Los cinco hechos positivos y la negativa fueron respondidos correctamente por **
 
 ![Tiempo del turno Codex con semilla ya lista y tokens informados](assets/full-comparison-codex-2026-10-16.svg)
 
-La figura del turno Codex resume cada camino mediante la mediana de las dos medianas de ronda; **no incluye la preparación de la semilla**. La figura del recorrido calculado sí incorpora esa preparación en iROMEM, usando la suma de cada caso antes de obtener la mediana de la ronda. Engram mide el turno Codex con su búsqueda MCP. Son vías de entrega diferentes y todavía no equivalen a comparar dos integraciones instaladas de extremo a extremo.
+La figura del turno Codex resume cada camino mediante la mediana de las dos medianas de ronda; **no incluye la preparación de la semilla**. La figura del recorrido calculado sí incorpora esa preparación en Gennie Memory, usando la suma de cada caso antes de obtener la mediana de la ronda. Engram mide el turno Codex con su búsqueda MCP. Son vías de entrega diferentes y todavía no equivalen a comparar dos integraciones instaladas de extremo a extremo.
 
-La preparación previa de la semilla por `recall` tuvo 0,37 s de mediana en esos seis casos. La **suma calculada por caso** de preparación y respuesta con semilla dio medianas de **5,20 y 5,80 s** en las rondas 1 y 2; combina ejecuciones separadas y **no mide** una integración automática de iROMEM con Codex. Falta medir desde que el usuario envía el mensaje, incluido el hook, la entrega de la semilla y la respuesta final. El prompt con semilla añadió 48 tokens de entrada de mediana frente al control emparejado. Los totales de Codex incluyen instrucciones y caché, y los prompts de ambos caminos con memoria son distintos porque uno recibe contexto y el otro debe buscarlo. Codex no informó coste monetario para estos turnos.
+La preparación previa de la semilla por `recall` tuvo 0,37 s de mediana en esos seis casos. La **suma calculada por caso** de preparación y respuesta con semilla dio medianas de **5,20 y 5,80 s** en las rondas 1 y 2; combina ejecuciones separadas y **no mide** una integración automática de Gennie Memory con Codex. Falta medir desde que el usuario envía el mensaje, incluido el hook, la entrega de la semilla y la respuesta final. El prompt con semilla añadió 48 tokens de entrada de mediana frente al control emparejado. Los totales de Codex incluyen instrucciones y caché, y los prompts de ambos caminos con memoria son distintos porque uno recibe contexto y el otro debe buscarlo. Codex no informó coste monetario para estos turnos.
 
 ## Lectura del resultado y límites
 
-La ruta vigente **iROMEM + Decisions** es el postulante mejor sustentado para preparar una semilla en este banco: cubrió un caso más en top 20, acertó 441/460 positivos y se abstuvo en 80/80 negativos. Engram ordenó siete positivos más en primer lugar. En las cuatro corridas locales iROMEM tuvo menor p95 de búsqueda. En las dos rondas Codex, tanto el turno con semilla ya lista como la suma calculada de preparación y respuesta fueron menores que el turno con Engram MCP. Son observaciones de esta configuración, no una declaración de superioridad general ni una comparación de dos integraciones instaladas con el mismo punto de inicio y fin.
+La ruta vigente **Gennie Memory + Decisions** es el postulante mejor sustentado para preparar una semilla en este banco: cubrió un caso más en top 20, acertó 441/460 positivos y se abstuvo en 80/80 negativos. Engram ordenó siete positivos más en primer lugar. En las cuatro corridas locales Gennie Memory tuvo menor p95 de búsqueda. En las dos rondas Codex, tanto el turno con semilla ya lista como la suma calculada de preparación y respuesta fueron menores que el turno con Engram MCP. Son observaciones de esta configuración, no una declaración de superioridad general ni una comparación de dos integraciones instaladas con el mismo punto de inicio y fin.
 
 Los sujetos 014–017 eran nuevos, pero comparten plantillas y el mismo corpus sintético con las cohortes anteriores. Se conocía el ámbito; no se midieron resolución de ámbito, recuerdos reales, escritura/indexación, verificación externa de fuente, hook instalado, consumo completo de recursos ni coste monetario de Codex. Seis preguntas fáciles repetidas no estiman la tasa general de acierto de Codex. Los percentiles locales se midieron en una Mac y los tiempos remotos dependen también del servicio. La siguiente prueba de producto debe medir la entrega automática real y usar preguntas humanas con ámbitos y respuestas menos previsibles.

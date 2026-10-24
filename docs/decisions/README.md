@@ -89,3 +89,5 @@ Cada decisión nueva debe indicar contexto, alternativas, motivo, estado y condi
 [0043 — Adoptar single-pass epistémico como predeterminado](0043-epistemic-single-pass-default.md) registra la promoción inicial tras V11/V14, posteriormente sustituida por la decisión 0044.
 
 [0044 — Restaurar baseline como predeterminado](0044-restore-baseline-default.md) revierte la promoción tras el contraste completo de 540 preguntas y conserva single-pass como opción experimental explícita.
+
+[0048 — Nombre Gennie Memory y remoto nuevo](0048-gennie-memory-rename.md) fija paquetes, ejecutables y variables vigentes, y documenta las excepciones históricas autorizadas.

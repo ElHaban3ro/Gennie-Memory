@@ -336,12 +336,12 @@ pub fn run(
         .map_err(|error| error.to_string())?;
     let mut child = Command::new(binary)
         .arg("session")
-        .env("IROMEM_DATABASE_PATH", database)
+        .env("GENNIE_MEMORY_DATABASE_PATH", database)
         .stdin(Stdio::piped())
         .stdout(Stdio::piped())
         .stderr(Stdio::inherit())
         .spawn()
-        .map_err(|error| format!("no se pudo iniciar iromem: {error}"))?;
+        .map_err(|error| format!("no se pudo iniciar gennie-memory: {error}"))?;
     let mut input = child.stdin.take().ok_or("falta entrada de sesión")?;
     let mut output = BufReader::new(child.stdout.take().ok_or("falta salida de sesión")?);
     let result = (|| {
@@ -657,7 +657,7 @@ mod tests {
     #[test]
     fn campaign_preserves_one_declared_label_source() {
         let file = std::env::temp_dir().join(format!(
-            "iromem-campaign-label-source-{}",
+            "gennie-memory-campaign-label-source-{}",
             std::process::id()
         ));
         let case = |id: &str, source: &str| {
@@ -693,8 +693,10 @@ mod tests {
 
     #[test]
     fn journal_rejects_uncertain_call_before_any_retry() {
-        let file =
-            std::env::temp_dir().join(format!("iromem-campaign-test-{}", std::process::id()));
+        let file = std::env::temp_dir().join(format!(
+            "gennie-memory-campaign-test-{}",
+            std::process::id()
+        ));
         let manifest = json!({"kind":"manifest","case_count":1});
         fs::write(
             &file,

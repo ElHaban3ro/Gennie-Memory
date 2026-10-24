@@ -1,6 +1,6 @@
 # Comparación ampliada de memorias persistentes
 
-Estado: búsqueda local ejecutada el 2026-10-16 sobre la cohorte sintética congelada 014–017. El [paquete de datos](../../outputs/iromem/evaluation/broader-comparison-2026-10-16/) conserva consultas, manifiestos, resultados por caso y resúmenes. Las cifras de iROMEM y Engram proceden de la [campaña original](full-comparison-2026-10-16.md), sin volver a ajustar sus rutas.
+Estado: búsqueda local ejecutada el 2026-10-16 sobre la cohorte sintética congelada 014–017. El [paquete de datos](../../outputs/iromem/evaluation/broader-comparison-2026-10-16/) conserva consultas, manifiestos, resultados por caso y resúmenes. Las cifras de Gennie Memory y Engram proceden de la [campaña original](full-comparison-2026-10-16.md), sin volver a ajustar sus rutas.
 
 ## Rendimiento observado
 
@@ -8,7 +8,7 @@ Se cargaron los mismos 2.800 recuerdos y se consultaron las mismas 540 preguntas
 
 | Motor y ruta | Top 1 / 460 | Top 20 / 460 | Negativas vacías / 80 | p50 | p95 |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| iROMEM FTS5 | 420 (91,30 %) | **457 (99,35 %)** | 0 | **6,93 ms** | **7,77 ms** |
+| Gennie Memory FTS5 | 420 (91,30 %) | **457 (99,35 %)** | 0 | **6,93 ms** | **7,77 ms** |
 | Engram 3.4.0 MCP | **427 (92,83 %)** | 456 (99,13 %) | 0 | 7,22 ms | 10,71 ms |
 | Lodis 0.6.0 híbrido MCP | 47 (10,22 %) | 389 (84,57 %) | 0 | 19,67 ms | 40,94 ms |
 | Basic Memory, búsqueda local | 276 (60,00 %) | 280 (60,87 %) | **80** | 24,12 ms | 127,72 ms |
@@ -19,16 +19,16 @@ Se cargaron los mismos 2.800 recuerdos y se consultaron las mismas 540 preguntas
 
 | P95 por corrida | 1 | 2 | 3 | 4 |
 | --- | ---: | ---: | ---: | ---: |
-| iROMEM | 7,75 | 7,49 | 7,79 | 10,73 ms |
+| Gennie Memory | 7,75 | 7,49 | 7,79 | 10,73 ms |
 | Engram | 15,55 | 8,27 | 9,64 | 11,78 ms |
 | Lodis | 21,04 | 176,35 | 54,57 | 27,30 ms |
 | Basic Memory | 436,76 | 107,09 | 148,36 | 23,81 ms |
 
 ![P95 de cada corrida](assets/broader-comparison-p95-2026-10-16.svg)
 
-**Comparabilidad:** iROMEM, Engram y Lodis incluyen ida y vuelta por un proceso persistente y serialización; Basic Memory se llamó por su API ASGI dentro del proceso porque su CLI `search-notes` falló en este entorno. Su latencia incluye API y serialización, pero no el mismo transporte ni arranque MCP. La consulta de Basic Memory usa palabras clave normalizadas y filtros exactos de ámbito. Lodis usa dominio exacto y búsqueda híbrida con 2.800 embeddings persistidos; su salida ordenada contiene 20 candidatos. Por ello los números comparan estas configuraciones y este banco, no la velocidad intrínseca de los productos. Las cuatro repeticiones de cada motor usan los mismos casos: no son cuatro muestras de exactitud independientes.
+**Comparabilidad:** Gennie Memory, Engram y Lodis incluyen ida y vuelta por un proceso persistente y serialización; Basic Memory se llamó por su API ASGI dentro del proceso porque su CLI `search-notes` falló en este entorno. Su latencia incluye API y serialización, pero no el mismo transporte ni arranque MCP. La consulta de Basic Memory usa palabras clave normalizadas y filtros exactos de ámbito. Lodis usa dominio exacto y búsqueda híbrida con 2.800 embeddings persistidos; su salida ordenada contiene 20 candidatos. Por ello los números comparan estas configuraciones y este banco, no la velocidad intrínseca de los productos. Las cuatro repeticiones de cada motor usan los mismos casos: no son cuatro muestras de exactitud independientes.
 
-Basic Memory devuelve lista vacía para todas las preguntas negativas, mientras los demás motores devuelven candidatos aunque no haya respuesta válida. Eso **no equivale** a la abstención de la semilla de iROMEM: iROMEM + Decisions acertó 441/460 positivos y dejó vacías 80/80 negativas en su [campaña separada](full-comparison-2026-10-16.md). No hay clasificadores de semilla equivalentes para Basic Memory ni Lodis en este ensayo.
+Basic Memory devuelve lista vacía para todas las preguntas negativas, mientras los demás motores devuelven candidatos aunque no haya respuesta válida. Eso **no equivale** a la abstención de la semilla de Gennie Memory: Gennie Memory + Decisions acertó 441/460 positivos y dejó vacías 80/80 negativas en su [campaña separada](full-comparison-2026-10-16.md). No hay clasificadores de semilla equivalentes para Basic Memory ni Lodis en este ensayo.
 
 ## Preparación y trazabilidad
 
@@ -58,15 +58,15 @@ Basic Memory se omitió inicialmente porque su CLI de búsqueda local falló y e
 
 | Turno Codex de seis casos | Ronda 1 | Ronda 2 | Entrada p50 informada |
 | --- | ---: | ---: | ---: |
-| iROMEM, semilla ya entregada | **4,79 s** | **5,18 s** | 17.005,5 / 17.005,5 tokens |
+| Gennie Memory, semilla ya entregada | **4,79 s** | **5,18 s** | 17.005,5 / 17.005,5 tokens |
 | Engram MCP | 9,97 s | 11,34 s | 52.859 / 52.885,5 tokens |
 | Lodis MCP | 12,20 s | 13,11 s | 52.717,5 / 52.715 tokens |
 | Basic Memory MCP | 15,36 s | 15,23 s | 37.677,5 / 37.673,5 tokens |
 
 ![Tiempo del turno Codex y tokens de entrada de cuatro rutas](assets/broader-comparison-codex-2026-10-16.svg)
 
-La preparación de semilla iROMEM + Decisions tomó 0,37 s de mediana en esos seis casos; la **suma calculada por caso** de preparación y turno fue 5,20 y 5,80 s por ronda. Los turnos de Engram, Lodis y Basic Memory incluyen arranque MCP, búsqueda y respuesta. Basic Memory usó una instrucción explícita de llamar `search_notes` incluso en el negativo, y su búsqueda MCP recibió las mismas palabras clave normalizadas y filtros de ámbito que su medición local. Son vías de entrega y prompts distintos; la suma de iROMEM combina ejecuciones separadas. Ninguna cifra mide desde el mensaje del usuario hasta respuesta con un hook iROMEM instalado. El arranque MCP y la variación del modelo impiden atribuir los 15 s de Basic Memory a su búsqueda local de 24 ms.
+La preparación de semilla Gennie Memory + Decisions tomó 0,37 s de mediana en esos seis casos; la **suma calculada por caso** de preparación y turno fue 5,20 y 5,80 s por ronda. Los turnos de Engram, Lodis y Basic Memory incluyen arranque MCP, búsqueda y respuesta. Basic Memory usó una instrucción explícita de llamar `search_notes` incluso en el negativo, y su búsqueda MCP recibió las mismas palabras clave normalizadas y filtros de ámbito que su medición local. Son vías de entrega y prompts distintos; la suma de Gennie Memory combina ejecuciones separadas. Ninguna cifra mide desde el mensaje del usuario hasta respuesta con un hook Gennie Memory instalado. El arranque MCP y la variación del modelo impiden atribuir los 15 s de Basic Memory a su búsqueda local de 24 ms.
 
-![Suma calculada de iROMEM y turnos MCP de Engram, Lodis y Basic Memory](assets/broader-comparison-calculated-flow-2026-10-16.svg)
+![Suma calculada de Gennie Memory y turnos MCP de Engram, Lodis y Basic Memory](assets/broader-comparison-calculated-flow-2026-10-16.svg)
 
-La [figura de preparación de semilla](assets/full-comparison-seed-preparation-2026-10-16.svg) sigue representando únicamente iROMEM + Decisions y Jev. No hay clasificador de semilla equivalente para los motores nuevos, ni coste monetario informado por Codex. El banco usa preguntas sintéticas con ámbito conocido y plantillas emparentadas con cohortes previas. No mide escritura continua, conflictos, fuentes verificadas, tamaño de índice mayor, variación entre máquinas ni respuestas humanas. Los resultados dependen de adaptadores documentados; no se deben extrapolar como clasificación general de producto.
+La [figura de preparación de semilla](assets/full-comparison-seed-preparation-2026-10-16.svg) sigue representando únicamente Gennie Memory + Decisions y Jev. No hay clasificador de semilla equivalente para los motores nuevos, ni coste monetario informado por Codex. El banco usa preguntas sintéticas con ámbito conocido y plantillas emparentadas con cohortes previas. No mide escritura continua, conflictos, fuentes verificadas, tamaño de índice mayor, variación entre máquinas ni respuestas humanas. Los resultados dependen de adaptadores documentados; no se deben extrapolar como clasificación general de producto.

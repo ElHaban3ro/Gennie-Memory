@@ -8,4 +8,4 @@ Antes de incorporar dependencias verifica versión exacta en docs.rs/registro of
 
 Para añadir una app: identifica responsabilidad y recursos, crea crate y `AppModule`, declara dependencias, regístrala en bootstrap, resuelve orden de migración, añade pruebas que detecten colisiones/ciclos, documenta contratos y actualiza `docs/architecture/modules.md`. Revisa consumidores de contratos y ejecuta `cargo test --offline --workspace`. Antes de cambiar Cargo.toml lee también `docs/rules/testing.md`.
 
-`iromem/http2-transport` es una feature optativa de bootstrap, defaultvacío, que propaga `reqwest/http2` y h2=0.4.20fijado. Las cinco dependencias añadidas y sus comprobaciones están en[0022](../decisions/0022-opt-in-http2-evaluation.md); no modifica dependencias entre apps ni activa servicios.
+`gennie-memory/http2-transport` es una feature optativa de bootstrap, defaultvacío, que propaga `reqwest/http2` y h2=0.4.20fijado. Las cinco dependencias añadidas y sus comprobaciones están en[0022](../decisions/0022-opt-in-http2-evaluation.md); no modifica dependencias entre apps ni activa servicios.

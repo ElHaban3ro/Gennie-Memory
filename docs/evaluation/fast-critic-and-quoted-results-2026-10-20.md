@@ -33,7 +33,7 @@ Antes de más red: preparar pares mínimos nuevos con fuentes que hagan explíci
 
 ## Reproducción y límites
 
-Los tres auditores reconstruyeron exactamente los informes desde los diarios, payloads y código ejecutado archivados. `cargo test --offline --workspace` y la misma suite con `--features iromem/http2-transport`: **220 pruebas pasan en cada configuración**, sin red. Formato y compilación de ambos binarios pasan. El contrato de citas compartido prueba rechazo de citas inventadas/prestadas, cobertura, duplicados y campos; una cita literal válida seguiría sin demostrar pertinencia. Los runners nuevos son manuales ignorados bajo `cfg(test)`, sin política de producto, SQL, secretos nuevos o servicios. No se midió `recall` completo ni integración Codex.
+Los tres auditores reconstruyeron exactamente los informes desde los diarios, payloads y código ejecutado archivados. `cargo test --offline --workspace` y la misma suite con `--features gennie-memory/http2-transport`: **220 pruebas pasan en cada configuración**, sin red. Formato y compilación de ambos binarios pasan. El contrato de citas compartido prueba rechazo de citas inventadas/prestadas, cobertura, duplicados y campos; una cita literal válida seguiría sin demostrar pertinencia. Los runners nuevos son manuales ignorados bajo `cfg(test)`, sin política de producto, SQL, secretos nuevos o servicios. No se midió `recall` completo ni integración Codex.
 
 Artefactos desde la raíz del repositorio:
 

@@ -1,7 +1,7 @@
 //! Structured extraction adapter. Binding agreement is checked in retrieval, not here.
-use iromem_retrieval::applicability::{ApplicabilityTrace, Witness, WitnessUsage, check};
-use iromem_retrieval::classifier::{DecisionError, PartialDecisionUsage};
-use iromem_retrieval::model::{Candidate, DecisionResult};
+use gennie_memory_retrieval::applicability::{ApplicabilityTrace, Witness, WitnessUsage, check};
+use gennie_memory_retrieval::classifier::{DecisionError, PartialDecisionUsage};
+use gennie_memory_retrieval::model::{Candidate, DecisionResult};
 use reqwest::blocking::Client;
 use serde_json::{Value, json};
 use std::io::Read;
@@ -58,7 +58,7 @@ pub fn verify(
         .post("https://openrouter.ai/api/v1/chat/completions")
         .timeout(crate::openrouter::REQUEST_TIMEOUT)
         .bearer_auth(key)
-        .header("X-Title", "iROMEM applicability experiment")
+        .header("X-Title", "Gennie Memory applicability experiment")
         .json(&payload)
         .send()
         .map_err(|_| error("witness_transport_error", &initial, None))?;

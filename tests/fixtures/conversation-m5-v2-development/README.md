@@ -4,7 +4,7 @@ Este paquete contiene cinco conversaciones **ficticias** nuevas (`026`–`030`) 
 
 Un agente escribió los hechos y las etiquetas antes de ejecutar búsquedas. `label_source: agent_synthetic_unreviewed` indica que las etiquetas todavía no tienen revisión humana independiente. No debe cambiarse una etiqueta por la salida de FTS5 o de un clasificador. Cada recuerdo declara `scope_kind: conversation`, un ámbito ficticio exclusivo, `revision: 1`, `conditions: null` y `source.ref: synthetic://conversation-m5-v2/...`; la fuente es una declaración del fixture, no una fuente externa verificada. La fecha de consulta es UTC y todos los recuerdos están activos sin intervalo temporal, así que este banco no comprueba revisiones sucesivas, condiciones, vigencia ni permisos.
 
-- `memories.json` es la entrada de `iromem load-fixtures`.
+- `memories.json` es la entrada de `gennie-memory load-fixtures`.
 - `development.jsonl` contiene las consultas para `search-benchmark` y `retrieval`, con el hecho, ID y fuente esperados en positivos. Las negativas tienen `expected_ids: []` y `expected_fact: null`.
 - `label-audit.md` registra formulaciones deliberadamente excluidas de la puntuación y límites de las etiquetas.
 - `manifest.json` registra cantidades, procedencia y SHA-256 de esos tres archivos.

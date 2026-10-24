@@ -544,8 +544,10 @@ mod tests {
     }
     #[test]
     fn file_audit_keeps_missing_operations_rejects_roster_mismatch_and_never_overwrites() {
-        let temp =
-            std::env::temp_dir().join(format!("iromem-reference-audit-{}", std::process::id()));
+        let temp = std::env::temp_dir().join(format!(
+            "gennie-memory-reference-audit-{}",
+            std::process::id()
+        ));
         fs::create_dir(&temp).unwrap();
         let req = json!({"id":"op0","kind":"source","text":"Atlas"}).to_string() + "\n";
         fs::write(temp.join("requests.jsonl"), &req).unwrap();

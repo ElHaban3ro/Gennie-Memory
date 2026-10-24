@@ -17,7 +17,7 @@ La CLI añade `validate-documentary-v3` y `classify-documentary-v3`: archivos de
 | Comprobación | Resultado y alcance |
 | --- | --- |
 | `cargo test --offline --workspace` | 562 pasan, 24 omitidas, cero fallos; incluye los 42 controles V3 |
-| Compilación del ejecutable y formato | `cargo build --offline -p iromem-eval` y `cargo fmt --all --check` pasan |
+| Compilación del ejecutable y formato | `cargo build --offline -p gennie-memory-eval` y `cargo fmt --all --check` pasan |
 | Control CLI con frames manuales | Fuente/pregunta completas; selecciona claim `c` y referencia `b` (Rango), con cita fuente |
 | Validador CLI del mismo control | Completo |
 | Vocabularios completos domain1/domain2 | Ambos inválidos por filas `class_quotes` vacías; entradas y reportes preservados |

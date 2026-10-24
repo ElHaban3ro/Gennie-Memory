@@ -16,7 +16,7 @@ La política actúa después de recuperar candidatos y no modifica FTS5, ranking
 
 | Motor y ruta de búsqueda | Esperado en top 20 | Esperado en top 1 | p50 / p95 |
 | --- | ---: | ---: | ---: |
-| iROMEM FTS5 | **457/460 (99,35 %)** | 420/460 (91,30 %) | **6,93 / 7,77 ms** |
+| Gennie Memory FTS5 | **457/460 (99,35 %)** | 420/460 (91,30 %) | **6,93 / 7,77 ms** |
 | Engram 3.4.0 MCP | 456/460 (99,13 %) | **427/460 (92,83 %)** | 7,22 / 10,71 ms |
 | Lodis 0.6.0 híbrido MCP | 389/460 (84,57 %) | 47/460 (10,22 %) | 19,67 / 40,94 ms |
 | Basic Memory local | 280/460 (60,87 %) | 276/460 (60,00 %) | 24,12 / 127,72 ms |

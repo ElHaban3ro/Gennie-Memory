@@ -8,7 +8,7 @@ fn live_replacement_critic_screen() {
     let root = Path::new(env!("CARGO_MANIFEST_DIR")).parent().unwrap();
     std::env::set_current_dir(root).unwrap();
     let d = Path::new("outputs/iromem/evaluation/fast-critic-replacement-screen-v1-2026-10-20");
-    let sha = |p: &Path| iromem_kernel::digest::sha256_hex(&fs::read(p).unwrap());
+    let sha = |p: &Path| gennie_memory_kernel::digest::sha256_hex(&fs::read(p).unwrap());
     let prep: Value =
         serde_json::from_slice(&fs::read(d.join("preparation.json")).unwrap()).unwrap();
     for (p, h) in prep["source_hashes"].as_object().unwrap() {
@@ -49,7 +49,7 @@ fn live_replacement_critic_screen() {
     pf.write_all(serde_json::to_string_pretty(&pre).unwrap().as_bytes())
         .unwrap();
     pf.sync_all().unwrap();
-    let key = iromem_kernel::config::load_secrets()
+    let key = gennie_memory_kernel::config::load_secrets()
         .unwrap()
         .openrouter_api_key
         .unwrap();

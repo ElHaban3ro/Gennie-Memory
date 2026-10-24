@@ -105,7 +105,7 @@ fn run(directory: &str, profile: contract::Profile) {
     std::env::set_current_dir(root).unwrap();
     let d = Path::new(directory);
     let read = |p: &Path| serde_json::from_slice::<Value>(&fs::read(p).unwrap()).unwrap();
-    let sha = |p: &Path| iromem_kernel::digest::sha256_hex(&fs::read(p).unwrap());
+    let sha = |p: &Path| gennie_memory_kernel::digest::sha256_hex(&fs::read(p).unwrap());
     let save = |p: &Path, v: &Value| {
         let mut f = OpenOptions::new()
             .create_new(true)
@@ -240,7 +240,7 @@ fn run(directory: &str, profile: contract::Profile) {
         assert!(!target.exists());
         fs::copy(p, target).unwrap();
     }
-    let key = iromem_kernel::config::load_secrets()
+    let key = gennie_memory_kernel::config::load_secrets()
         .unwrap()
         .openrouter_api_key
         .expect("authorized existing key required");
@@ -275,7 +275,7 @@ fn run(directory: &str, profile: contract::Profile) {
         journal.sync_all().unwrap();
         let events = std::thread::scope(|s| {
             let jobs=batch.iter().map(|r|{let client=&client;let key=&key;s.spawn(move||{
-                let t=Instant::now();let received=(||->Result<(u16,String,Value),&str>{let resp=client.post("https://openrouter.ai/api/v1/chat/completions").bearer_auth(key).header("X-Title","iROMEM synthetic documentary extraction V1").json(&r["payload"]).send().map_err(|_|"transport_error")?;let status=resp.status().as_u16();let version=format!("{:?}",resp.version());let mut bytes=Vec::new();resp.take(1_048_577).read_to_end(&mut bytes).map_err(|_|"read_error")?;if bytes.len()>1_048_576{return Err("response_too_large");}let body=serde_json::from_slice(&bytes).map_err(|_|"invalid_http_json")?;Ok((status,version,body))})();
+                let t=Instant::now();let received=(||->Result<(u16,String,Value),&str>{let resp=client.post("https://openrouter.ai/api/v1/chat/completions").bearer_auth(key).header("X-Title","Gennie Memory synthetic documentary extraction V1").json(&r["payload"]).send().map_err(|_|"transport_error")?;let status=resp.status().as_u16();let version=format!("{:?}",resp.version());let mut bytes=Vec::new();resp.take(1_048_577).read_to_end(&mut bytes).map_err(|_|"read_error")?;if bytes.len()>1_048_576{return Err("response_too_large");}let body=serde_json::from_slice(&bytes).map_err(|_|"invalid_http_json")?;Ok((status,version,body))})();
                 match received{Ok((status,version,body))=>json!({"kind":"response","id":r["id"],"http_status":status,"http_version":version,"elapsed_ms":t.elapsed().as_secs_f64()*1000.,"body":body}),Err(error)=>json!({"kind":"failed","id":r["id"],"elapsed_ms":t.elapsed().as_secs_f64()*1000.,"error":error})}
             })}).collect::<Vec<_>>();
             jobs.into_iter()

@@ -1,6 +1,6 @@
 //! Independent typed questions, one HTTP/global receipt, deterministic composition.
 use super::*;
-use iromem_retrieval::per_memory::factors::MemoryFactorChecks;
+use gennie_memory_retrieval::per_memory::factors::MemoryFactorChecks;
 
 pub(in crate::openrouter) fn payload(
     query: &str,

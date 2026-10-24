@@ -1,9 +1,11 @@
 use super::{binary_payload, parse_binary_response};
 use crate::openrouter::{OpenRouterClassifier, failure, merge_known_receipts};
-use iromem_retrieval::classifier::{DecisionError, PartialDecisionUsage};
-use iromem_retrieval::model::{Candidate, ClassifierProvider, DecisionResult};
-use iromem_retrieval::per_memory::verification::{CheckedMemory, StageUsage, VerificationTrace};
-use iromem_retrieval::per_memory::{EvidenceRelation, PerMemoryTrace};
+use gennie_memory_retrieval::classifier::{DecisionError, PartialDecisionUsage};
+use gennie_memory_retrieval::model::{Candidate, ClassifierProvider, DecisionResult};
+use gennie_memory_retrieval::per_memory::verification::{
+    CheckedMemory, StageUsage, VerificationTrace,
+};
+use gennie_memory_retrieval::per_memory::{EvidenceRelation, PerMemoryTrace};
 use serde_json::Value;
 
 pub(in crate::openrouter) fn classify(

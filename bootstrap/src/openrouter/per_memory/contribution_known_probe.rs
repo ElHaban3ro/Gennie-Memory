@@ -67,7 +67,7 @@ fn run(directory: &str, local: bool) {
     use super::contribution_role_probe::contract;
     use super::sparse_critic_probe::log;
     use crate::openrouter;
-    use iromem_retrieval::model::{Candidate, ClassifierProvider};
+    use gennie_memory_retrieval::model::{Candidate, ClassifierProvider};
     use serde_json::{Value, json};
     use std::{
         fs::{self, OpenOptions},
@@ -77,7 +77,7 @@ fn run(directory: &str, local: bool) {
     };
     std::env::set_current_dir(Path::new(env!("CARGO_MANIFEST_DIR")).parent().unwrap()).unwrap();
     let d = Path::new(directory);
-    let sha = |p: &Path| iromem_kernel::digest::sha256_hex(&fs::read(p).unwrap());
+    let sha = |p: &Path| gennie_memory_kernel::digest::sha256_hex(&fs::read(p).unwrap());
     let read = |p: &Path| serde_json::from_slice::<Value>(&fs::read(p).unwrap()).unwrap();
     let prep = read(&d.join("preparation.json"));
     assert_eq!(prep["source_local_profile"] == true, local);
@@ -131,7 +131,7 @@ fn run(directory: &str, local: bool) {
         .unwrap();
     pf.write_all(serde_json::to_string_pretty(&json!({"sources_sha256":hashes,"preparation_sha256":sha(&d.join("preparation.json")),"test_binary_sha256":sha(&std::env::current_exe().unwrap()),"max_http_requests":planned,"http2_feature_enabled":true,"cfg_test_only":true})).unwrap().as_bytes()).unwrap();
     pf.sync_all().unwrap();
-    let key = iromem_kernel::config::load_secrets()
+    let key = gennie_memory_kernel::config::load_secrets()
         .unwrap()
         .openrouter_api_key
         .unwrap();

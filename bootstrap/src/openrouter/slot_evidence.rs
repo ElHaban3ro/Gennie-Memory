@@ -2,9 +2,9 @@ use super::{
     INSTRUCTIONS as BASELINE_INSTRUCTIONS, OpenRouterClassifier, failure, known_receipt,
     usage_token_count,
 };
-use iromem_retrieval::classifier::{DecisionError, PartialDecisionUsage};
-use iromem_retrieval::model::{Candidate, ClassifierProvider, DecisionResult};
-use iromem_retrieval::slot_evidence::{
+use gennie_memory_retrieval::classifier::{DecisionError, PartialDecisionUsage};
+use gennie_memory_retrieval::model::{Candidate, ClassifierProvider, DecisionResult};
+use gennie_memory_retrieval::slot_evidence::{
     CandidateEvidence, EvidenceRelation, IdentityAssessment, IdentityStatus, Proposition,
     QueryAnchor, QueryTarget, SlotEvidenceTrace, query_anchor_id_for_subject_quote,
 };
@@ -1203,7 +1203,7 @@ fn classify_format_at(
         .post(endpoint)
         .timeout(timeout)
         .bearer_auth(key)
-        .header("X-Title", "iROMEM slot evidence experiment")
+        .header("X-Title", "Gennie Memory slot evidence experiment")
         .header("Content-Type", "application/json")
         .body(request_bytes.clone())
         .send()
@@ -1607,8 +1607,8 @@ mod tests {
         identifier_ranges_ascii_case_insensitive, query_excerpt_from_codepoint_span,
         query_excerpt_from_codepoints, schema_v3,
     };
-    use iromem_retrieval::model::{Candidate, ClassifierProvider, SourceRef};
-    use iromem_retrieval::slot_evidence::{EvidenceRelation, IdentityStatus, QueryAnchor};
+    use gennie_memory_retrieval::model::{Candidate, ClassifierProvider, SourceRef};
+    use gennie_memory_retrieval::slot_evidence::{EvidenceRelation, IdentityStatus, QueryAnchor};
     use std::fs;
     use std::io::{Read, Write};
     use std::net::TcpListener;
@@ -1669,7 +1669,8 @@ mod tests {
             .duration_since(UNIX_EPOCH)
             .unwrap()
             .as_nanos();
-        let capture_path = std::env::temp_dir().join(format!("iromem-slot-capture-{nonce}.jsonl"));
+        let capture_path =
+            std::env::temp_dir().join(format!("gennie-memory-slot-capture-{nonce}.jsonl"));
         let classifier = crate::openrouter::OpenRouterClassifier::new_with_evaluation_capture(
             None,
             Some(&capture_path),
@@ -1713,7 +1714,7 @@ mod tests {
                 .unwrap();
         assert_eq!(
             record["request_payload_sha256"],
-            iromem_kernel::digest::sha256_hex(&wire)
+            gennie_memory_kernel::digest::sha256_hex(&wire)
         );
         assert_eq!(record["scope_id"], "synthetic-scope-01");
         assert_eq!(record["served_provider"], "DeepInfra");
@@ -1721,7 +1722,7 @@ mod tests {
         assert_eq!(record["response_content_bytes"], "incomplete".len());
         assert_eq!(
             record["schema_sha256"],
-            iromem_kernel::digest::sha256_hex(
+            gennie_memory_kernel::digest::sha256_hex(
                 &serde_json::to_vec(
                     &serde_json::from_slice::<serde_json::Value>(&wire).unwrap()["response_format"]
                         ["json_schema"]["schema"]
@@ -2654,7 +2655,7 @@ mod tests {
 
         assert_eq!(
             trace.candidates[1].propositions[0].relation,
-            iromem_retrieval::slot_evidence::EvidenceRelation::UnresolvedAttribution
+            gennie_memory_retrieval::slot_evidence::EvidenceRelation::UnresolvedAttribution
         );
         assert_eq!(trace.candidates[1].propositions[0].target_id, "");
         assert_eq!(trace.selected_ids(&candidates, query), ["nora_city"]);

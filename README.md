@@ -1,6 +1,6 @@
-# iROMEM
+# Gennie Memory
 
-iROMEM prepara recuerdos relevantes para que un agente de IA responda con contexto breve, sin tener que recorrer todo el historial en cada consulta. Corre localmente y cuenta con un dashboard para revisar y corregir la selección de recuerdos.
+Gennie Memory prepara recuerdos relevantes para que un agente de IA responda con contexto breve, sin tener que recorrer todo el historial en cada consulta. Corre localmente y cuenta con un dashboard para revisar y corregir la selección de recuerdos.
 
 ## Índice
 
@@ -16,7 +16,7 @@ iROMEM prepara recuerdos relevantes para que un agente de IA responda con contex
 
 Configuración principal: **Decisions + baseline**. Referencia más reciente: **2.800 recuerdos y 540 consultas sintéticas**.
 
-| Indicador | iROMEM |
+| Indicador | Gennie Memory |
 | --- | ---: |
 | Recuerdo esperado entre los 20 candidatos | **457/460 · 99,35 %** |
 | Selección correcta de la semilla | **441/460 · 95,87 %** |
@@ -28,9 +28,9 @@ La semilla es el contexto seleccionado para el agente; su acierto no equivale a 
 
 ## Comparación con otros motores
 
-Recuperación de candidatos sobre los mismos 2.800 recuerdos y 540 consultas. Estos tiempos incluyen la búsqueda; la selección de la semilla de iROMEM se muestra arriba.
+Recuperación de candidatos sobre los mismos 2.800 recuerdos y 540 consultas. Estos tiempos incluyen la búsqueda; la selección de la semilla de Gennie Memory se muestra arriba.
 
-| Búsqueda de candidatos | iROMEM | Engram 3.4.0 | Lodis 0.6.0 | Basic Memory |
+| Búsqueda de candidatos | Gennie Memory | Engram 3.4.0 | Lodis 0.6.0 | Basic Memory |
 | --- | ---: | ---: | ---: | ---: |
 | Recuerdo esperado entre 20 | **99,35 %** | 99,13 % | 84,57 % | 60,87 % |
 | Recuerdo esperado en primera posición | 91,30 % | **92,83 %** | 10,22 % | 60,00 % |
@@ -47,17 +47,17 @@ Gráficas de referencia del **16 de octubre de 2026**. Las rutas de acceso de ca
 
 ## Contexto y respuesta del agente
 
-Con la semilla de iROMEM ya preparada, el turno de Codex tuvo una mediana de **4,99 s**, frente a **10,65 s** con Engram, **12,66 s** con Lodis y **15,29 s** con Basic Memory. La referencia es pequeña: seis turnos sintéticos por ruta, con instrucciones y contextos distintos.
+Con la semilla de Gennie Memory ya preparada, el turno de Codex tuvo una mediana de **4,99 s**, frente a **10,65 s** con Engram, **12,66 s** con Lodis y **15,29 s** con Basic Memory. La referencia es pequeña: seis turnos sintéticos por ruta, con instrucciones y contextos distintos.
 
 La preparación de la semilla se mide aparte. La gráfica siguiente conserva la referencia del **16 de octubre de 2026**: **370 ms** de mediana y **567 ms** en p95; la tabla superior contiene los tiempos más recientes.
 
 ![Tiempo de preparación de la semilla: referencia del 16 de octubre de 2026](docs/evaluation/assets/full-comparison-seed-preparation-2026-10-16.svg)
 
-Sumar preparación y respuesta por consulta dio medianas de **5,20–5,80 s** para iROMEM. Es un tiempo calculado: la entrega automática al agente sigue pendiente.
+Sumar preparación y respuesta por consulta dio medianas de **5,20–5,80 s** para Gennie Memory. Es un tiempo calculado: la entrega automática al agente sigue pendiente.
 
 ![Preparación más respuesta: tiempo calculado frente a los turnos con otros motores](docs/evaluation/assets/broader-comparison-calculated-flow-2026-10-16.svg)
 
-La siguiente gráfica muestra el tiempo del turno y los tokens de entrada del agente, con la semilla de iROMEM ya lista. Incluye instrucciones y caché.
+La siguiente gráfica muestra el tiempo del turno y los tokens de entrada del agente, con la semilla de Gennie Memory ya lista. Incluye instrucciones y caché.
 
 ![Tiempo del turno de Codex y tokens de entrada con cada motor](docs/evaluation/assets/broader-comparison-codex-2026-10-16.svg)
 

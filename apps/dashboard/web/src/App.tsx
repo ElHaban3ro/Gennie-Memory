@@ -105,13 +105,13 @@ export default function App() {
   function download() {
     const selected = (exportRows || []).filter(row => chosenExports.includes(row.id))
     if (!selected.length) return
-    const blob = new Blob([JSON.stringify({ schema: 'iromem-dashboard-review-v1', reviews: selected }, null, 2)], { type: 'application/json' })
-    const url = URL.createObjectURL(blob); const link = document.createElement('a'); link.href = url; link.download = 'iromem-revisiones-seleccionadas.json'; link.click(); setTimeout(() => URL.revokeObjectURL(url), 1000)
+    const blob = new Blob([JSON.stringify({ schema: 'gennie-memory-dashboard-review-v1', reviews: selected }, null, 2)], { type: 'application/json' })
+    const url = URL.createObjectURL(blob); const link = document.createElement('a'); link.href = url; link.download = 'gennie-memory-revisiones-seleccionadas.json'; link.click(); setTimeout(() => URL.revokeObjectURL(url), 1000)
     setExportRows(null); setMessage(`${selected.length} revisiones exportadas. El archivo permanece bajo tu control.`)
   }
 
   return <div className="app-shell">
-    <header className="topbar"><div className="brand"><span className="brand-mark">i<span>R</span></span><span>iROMEM <small>/ Dashboard</small></span></div><div className="top-actions"><span className="local-pill"><span className="live-dot" /> Local · esta Mac</span><button className="ghost" onClick={() => void openExport()}>Compartir / exportar <span aria-hidden="true">↗</span></button></div></header>
+    <header className="topbar"><div className="brand"><span className="brand-mark">i<span>R</span></span><span>Gennie Memory <small>/ Dashboard</small></span></div><div className="top-actions"><span className="local-pill"><span className="live-dot" /> Local · esta Mac</span><button className="ghost" onClick={() => void openExport()}>Compartir / exportar <span aria-hidden="true">↗</span></button></div></header>
     <div className="workspace">
       <aside className="sidebar" aria-label="Preguntas para revisar">
         <div className="sidebar-heading"><div><p className="eyebrow">Espacio de trabajo</p><h2>Revisión de memoria</h2></div><button className="square-button" onClick={newReview} title="Nueva pregunta" aria-label="Nueva pregunta">＋</button></div>

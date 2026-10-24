@@ -20,7 +20,7 @@ fn live_proposition_isolation() {
     let root = Path::new(env!("CARGO_MANIFEST_DIR")).parent().unwrap();
     std::env::set_current_dir(root).unwrap();
     let d = Path::new("outputs/iromem/evaluation/proposition-isolation-v2-2026-10-20");
-    let sha = |p: &Path| iromem_kernel::digest::sha256_hex(&fs::read(p).unwrap());
+    let sha = |p: &Path| gennie_memory_kernel::digest::sha256_hex(&fs::read(p).unwrap());
     let read = |p: &Path| serde_json::from_slice::<Value>(&fs::read(p).unwrap()).unwrap();
     let lines = |p: &Path| {
         fs::read_to_string(p)
@@ -100,7 +100,7 @@ fn live_proposition_isolation() {
         "preflight.json",
         json!({"preparation_sha256":sha(&d.join("preparation.json")),"sources_sha256":sources,"test_binary_sha256":sha(&std::env::current_exe().unwrap()),"max_http_requests":54,"cfg_test_only":true,"http2_feature_enabled":true}),
     );
-    let key = iromem_kernel::config::load_secrets()
+    let key = gennie_memory_kernel::config::load_secrets()
         .unwrap()
         .openrouter_api_key
         .unwrap();

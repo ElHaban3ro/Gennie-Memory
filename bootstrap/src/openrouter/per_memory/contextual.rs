@@ -1,6 +1,8 @@
 //! Context + actual three-way evidence role, with one global proposal receipt.
 use super::*;
-use iromem_retrieval::per_memory::contextual::{ContextualEvidenceKind, ContextualRoleProposal};
+use gennie_memory_retrieval::per_memory::contextual::{
+    ContextualEvidenceKind, ContextualRoleProposal,
+};
 
 pub(super) fn payload(
     query: &str,

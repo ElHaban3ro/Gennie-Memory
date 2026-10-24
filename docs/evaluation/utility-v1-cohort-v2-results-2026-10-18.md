@@ -37,7 +37,7 @@ La variante no perdió evidencias útiles seleccionadas por la base, pero sus tr
 | `cev2q_043_08` | Casillero del equipo **verde** | Identificador CR-17 del equipo **rojo**. |
 | `cev2q_045_08` | Cuenta de transmisión de **producción** | Cuenta ensayo-verde del entorno de **pruebas**. |
 
-La base se abstuvo en esos tres casos. Ambos anotadores ya habían determinado que el corpus no aporta el dato del referente solicitado; la etiqueta no se cambió tras ejecutar. Las semillas conservan literalmente los calificadores del recuerdo. Por eso el hallazgo es **selección no pertinente por referente**, no evidencia de que iROMEM haya inventado o reescrito hechos ni prueba de que Codex haya respondido con ellos. La respuesta posterior no se ejecutó.
+La base se abstuvo en esos tres casos. Ambos anotadores ya habían determinado que el corpus no aporta el dato del referente solicitado; la etiqueta no se cambió tras ejecutar. Las semillas conservan literalmente los calificadores del recuerdo. Por eso el hallazgo es **selección no pertinente por referente**, no evidencia de que Gennie Memory haya inventado o reescrito hechos ni prueba de que Codex haya respondido con ellos. La respuesta posterior no se ejecutó.
 
 La base obtuvo más refutaciones en v2 que en v1, pero son preguntas, fuentes y distractores diferentes. No se atribuye ese cambio entre cohortes a una mejora del producto ni se presenta v2 como uniformemente más difícil en todas las categorías. La comparación interpretada aquí es base frente a variante dentro de la misma cohorte.
 

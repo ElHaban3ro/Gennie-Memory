@@ -1,7 +1,7 @@
 //! Evaluation-only, fixed known-proposal provider comparison; no product policy.
 use super::{correction_verified, role_verified};
 use crate::openrouter::OpenRouterClassifier;
-use iromem_retrieval::model::{Candidate, ClassifierProvider};
+use gennie_memory_retrieval::model::{Candidate, ClassifierProvider};
 use serde_json::{Value, json};
 use std::path::Path;
 
@@ -97,13 +97,13 @@ fn live_role_opposite_task_probe() {
     ] {
         hashes.insert(
             p.to_str().unwrap().into(),
-            json!(iromem_kernel::digest::sha256_hex(
+            json!(gennie_memory_kernel::digest::sha256_hex(
                 &std::fs::read(p).unwrap()
             )),
         );
     }
-    std::fs::write(dir.join("preflight.json"),serde_json::to_vec_pretty(&json!({"version":"role-opposite-task-probe-v1","operations":25,"max_http_requests":25,"requests_sha256":iromem_kernel::digest::sha256_hex(serialized.as_bytes()),"test_binary_sha256":iromem_kernel::digest::sha256_hex(&std::fs::read(std::env::current_exe().unwrap()).unwrap()),"inputs_sha256":hashes,"eligibility":"All Decisions rejections in the frozen43positive proposal replay; no gold filter","fresh_validation":false,"promoted":false})).unwrap()).unwrap();
-    let key = iromem_kernel::config::load_secrets()
+    std::fs::write(dir.join("preflight.json"),serde_json::to_vec_pretty(&json!({"version":"role-opposite-task-probe-v1","operations":25,"max_http_requests":25,"requests_sha256":gennie_memory_kernel::digest::sha256_hex(serialized.as_bytes()),"test_binary_sha256":gennie_memory_kernel::digest::sha256_hex(&std::fs::read(std::env::current_exe().unwrap()).unwrap()),"inputs_sha256":hashes,"eligibility":"All Decisions rejections in the frozen43positive proposal replay; no gold filter","fresh_validation":false,"promoted":false})).unwrap()).unwrap();
+    let key = gennie_memory_kernel::config::load_secrets()
         .unwrap()
         .openrouter_api_key
         .expect("authorized key required");
@@ -191,7 +191,7 @@ fn live_role_provider_probe() {
         ] {
             hashes.insert(
                 file.to_str().unwrap().into(),
-                json!(iromem_kernel::digest::sha256_hex(
+                json!(gennie_memory_kernel::digest::sha256_hex(
                     &std::fs::read(file).unwrap()
                 )),
             );
@@ -260,8 +260,8 @@ fn live_role_provider_probe() {
     req.write_all(serialized.as_bytes()).unwrap();
     req.sync_all().unwrap();
     let executable = std::env::current_exe().unwrap();
-    std::fs::write(dir.join("preflight.json"),serde_json::to_vec_pretty(&json!({"version":"role-isolated-provider-probe-v1","requests_sha256":iromem_kernel::digest::sha256_hex(serialized.as_bytes()),"test_binary_sha256":iromem_kernel::digest::sha256_hex(&std::fs::read(executable).unwrap()),"operations":86,"max_http_requests":86,"frozen_positive_pairs":43,"historical_inputs_sha256":hashes,"fresh_validation":false,"promoted":false})).unwrap()).unwrap();
-    let key = iromem_kernel::config::load_secrets()
+    std::fs::write(dir.join("preflight.json"),serde_json::to_vec_pretty(&json!({"version":"role-isolated-provider-probe-v1","requests_sha256":gennie_memory_kernel::digest::sha256_hex(serialized.as_bytes()),"test_binary_sha256":gennie_memory_kernel::digest::sha256_hex(&std::fs::read(executable).unwrap()),"operations":86,"max_http_requests":86,"frozen_positive_pairs":43,"historical_inputs_sha256":hashes,"fresh_validation":false,"promoted":false})).unwrap()).unwrap();
+    let key = gennie_memory_kernel::config::load_secrets()
         .unwrap()
         .openrouter_api_key
         .expect("authorized key required");

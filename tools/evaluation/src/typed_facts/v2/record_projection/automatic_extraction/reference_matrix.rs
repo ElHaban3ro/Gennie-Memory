@@ -299,7 +299,7 @@ mod tests {
         let input = root.join("tests/fixtures/distributed-reference-controls-v1.json");
         let registry = root.join("tests/fixtures/reference-classes-v1.json");
         let output = std::env::temp_dir().join(format!(
-            "iromem-distributed-matrix-{}.json",
+            "gennie-memory-distributed-matrix-{}.json",
             std::process::id()
         ));
         audit_distributed(&input, &registry, &output).unwrap();

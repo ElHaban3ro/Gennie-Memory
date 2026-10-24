@@ -1,5 +1,5 @@
 use crate::model::{CandidateDecision, ReviewOutcome, SavedReview};
-use iromem_retrieval::model::Candidate;
+use gennie_memory_retrieval::model::Candidate;
 use rusqlite::{Connection, OptionalExtension, params};
 
 pub struct StoredReview {
@@ -61,7 +61,7 @@ pub fn insert(
     conn: &mut Connection,
     case_id: Option<&str>,
     query_key: &str,
-    search: &iromem_retrieval::model::SearchRequest,
+    search: &gennie_memory_retrieval::model::SearchRequest,
     view_mode: &str,
     candidates: &[Candidate],
     decisions: &[CandidateDecision],

@@ -1,6 +1,6 @@
-# Codex con la ruta vigente de iROMEM
+# Codex con la ruta vigente de Gennie Memory
 
-Estado: piloto sintético ejecutado el 2026-10-16 en esta Mac. Se ejecutaron turnos reales del CLI de Codex con la semilla de la ruta actual **FTS5 por palabras clave con expansión de prefijos + Decisions**, tomada del [diario Rust congelado](../../outputs/iromem/evaluation/keyword-prefix-v1/holdout-010-013-decisions-network.jsonl). La entrega al prompt la hizo el runner de evaluación: iROMEM todavía no tiene una integración automática con Codex.
+Estado: piloto sintético ejecutado el 2026-10-16 en esta Mac. Se ejecutaron turnos reales del CLI de Codex con la semilla de la ruta actual **FTS5 por palabras clave con expansión de prefijos + Decisions**, tomada del [diario Rust congelado](../../outputs/iromem/evaluation/keyword-prefix-v1/holdout-010-013-decisions-network.jsonl). La entrega al prompt la hizo el runner de evaluación: Gennie Memory todavía no tiene una integración automática con Codex.
 
 ## Muestra y método
 
@@ -12,12 +12,12 @@ Cada pregunta se ejecutó en un proceso efímero de Codex CLI `0.162.0-alpha.17.
 
 | Camino de Codex | Aciertos | Tiempo a respuesta, mediana | Tokens de entrada informados, mediana | Llamadas MCP |
 | --- | ---: | ---: | ---: | ---: |
-| iROMEM: semilla en prompt | 5/5 positivas + 1/1 negativa | **4,38 s** | 16.989 | 0 |
+| Gennie Memory: semilla en prompt | 5/5 positivas + 1/1 negativa | **4,38 s** | 16.989 | 0 |
 | Engram: búsqueda MCP | 5/5 positivas + 1/1 negativa | 9,97 s | 52.792 | 7 en seis turnos |
 
 Las cinco respuestas positivas se contrastaron con los hechos esperados del fixture y ambas respuestas a la negativa indicaron que no había dato pertinente. Los [resultados por turno](../../outputs/iromem/evaluation/codex-current-v1/) conservan texto, tiempo, uso informado y eventos.
 
-| Caso | iROMEM + Codex | Engram + Codex |
+| Caso | Gennie Memory + Codex | Engram + Codex |
 | --- | ---: | ---: |
 | Nombre de usuario | 5,49 s | 10,27 s |
 | Responsable del proyecto | 5,09 s | 8,74 s |
@@ -28,4 +28,4 @@ Las cinco respuestas positivas se contrastaron con los hechos esperados del fixt
 
 La preparación de la semilla registrada en otra corrida Rust tuvo **0,39 s de mediana** en estos seis casos. La suma emparejada por caso de preparación más turno con semilla da **4,76 s de mediana**, calculada a partir de dos ejecuciones separadas; no es una medición de la integración instalada. El control sin semilla indica **48,5 tokens de entrada adicionales de mediana** para el prompt con semilla. Los totales de 16.989 y 52.792 incluyen instrucciones y caché, y **no** aíslan el coste marginal ni son directamente equivalentes a tokens facturados. Codex no informó un coste monetario para estos turnos; el piloto no hizo nuevas llamadas a OpenRouter.
 
-La [figura de este piloto histórico](assets/current-codex-comparison.svg) se regenera desde los tres resúmenes Rust con `iromem-eval render-codex-current`. Seis casos fáciles y sintéticos, una sola corrida por camino, orden fijo, distinta vía de entrega y posible variación de servicio no permiten afirmar una ventaja estadística general. La [comparación vigente](full-comparison-2026-10-16.md) repitió el piloto en otra cohorte; la [figura anterior](assets/speed-comparison-rust.svg) y su [informe](rust-migration-v1.md) se conservan como historia de la ruta previa.
+La [figura de este piloto histórico](assets/current-codex-comparison.svg) se regenera desde los tres resúmenes Rust con `gennie-memory-eval render-codex-current`. Seis casos fáciles y sintéticos, una sola corrida por camino, orden fijo, distinta vía de entrega y posible variación de servicio no permiten afirmar una ventaja estadística general. La [comparación vigente](full-comparison-2026-10-16.md) repitió el piloto en otra cohorte; la [figura anterior](assets/speed-comparison-rust.svg) y su [informe](rust-migration-v1.md) se conservan como historia de la ruta previa.

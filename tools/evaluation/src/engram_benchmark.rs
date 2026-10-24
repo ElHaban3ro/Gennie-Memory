@@ -127,7 +127,7 @@ fn import_fixture(
         .map(|owner| {
             json!({
                 "id":format!("import-{owner}"), "project":owner, "ownership_mode":"project_owned",
-                "directory":"/synthetic/iromem", "started_at":"2026-10-15 12:00:00.000000000"
+                "directory":"/synthetic/gennie-memory", "started_at":"2026-10-15 12:00:00.000000000"
             })
         })
         .collect();
@@ -283,7 +283,7 @@ pub fn run(
         mcp.call(
             "initialize",
             json!({"protocolVersion":"2025-06-18","capabilities":{},
-            "clientInfo":{"name":"iromem-eval","version":"0.1"}}),
+            "clientInfo":{"name":"gennie-memory-eval","version":"0.1"}}),
         )?;
         let first = &cases[0]["request"]["search"];
         mcp.search(

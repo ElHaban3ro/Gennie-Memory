@@ -1,12 +1,12 @@
 use super::verified::{partial, receipt};
 use super::{contextual, scoped};
 use crate::openrouter::{OpenRouterClassifier, failure, merge_known_receipts};
-use iromem_retrieval::classifier::DecisionError;
-use iromem_retrieval::model::{Candidate, ClassifierProvider, DecisionResult};
-use iromem_retrieval::per_memory::verification::{
+use gennie_memory_retrieval::classifier::DecisionError;
+use gennie_memory_retrieval::model::{Candidate, ClassifierProvider, DecisionResult};
+use gennie_memory_retrieval::per_memory::verification::{
     CheckedMemory, CorrectionEvidencePaths, VerificationTrace,
 };
-use iromem_retrieval::per_memory::{EvidenceRelation, PerMemoryTrace};
+use gennie_memory_retrieval::per_memory::{EvidenceRelation, PerMemoryTrace};
 use serde_json::Value;
 use serde_json::json;
 
@@ -247,7 +247,7 @@ fn proposal_payload(
 #[cfg(test)]
 mod tests {
     use super::*;
-    use iromem_retrieval::classifier::PartialDecisionUsage;
+    use gennie_memory_retrieval::classifier::PartialDecisionUsage;
     use std::sync::atomic::{AtomicUsize, Ordering};
     fn run(mode: &str, version: u8) -> (Result<DecisionResult, DecisionError>, usize) {
         let candidates = (0..4)

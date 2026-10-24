@@ -1,6 +1,6 @@
 # Críticos dirigidos V4: contraste de transporte HTTP/2
 
-Antes de red. V3pasa calidad conocida, pero falla p95 2,143×base; no se recalifica. La resolución conectada de un proyecto temporal ahora encuentrah2=0.4.20; el bloqueo histórico de disponibilidad era temporal. La build experimental añade una feature optativa `iromem/http2-transport`, sin activarla por defecto, y fija h2. Las versiones existentes del lockfile no cambian.
+Antes de red. V3pasa calidad conocida, pero falla p95 2,143×base; no se recalifica. La resolución conectada de un proyecto temporal ahora encuentrah2=0.4.20; el bloqueo histórico de disponibilidad era temporal. La build experimental añade una feature optativa `gennie-memory/http2-transport`, sin activarla por defecto, y fija h2. Las versiones existentes del lockfile no cambian.
 
 Conservar exactamente selecciónV3, modelos/revisiones, plantillas, roster18, contexto siete, preguntas soloB, composición y críticos paralelos. Habilitar únicamente soporte HTTP/2de reqwest para todo el cliente de esta ejecución; baseline también usa esa build, no se compara con latencia históricaHTTP/1.1. Registrar versión negociada y duración HTTP medida en cada respuesta además de la duración total real de cadena. No asumir multiplexación ni mejora por compilar la feature; para calificar este contraste exigir todas las respuestas HTTP/2.0.
 

@@ -1,6 +1,6 @@
 //! Two context-qualified evidence paths, no separate context veto or invented flag.
 use super::*;
-use iromem_retrieval::per_memory::factors::ScopedEvidenceChecks;
+use gennie_memory_retrieval::per_memory::factors::ScopedEvidenceChecks;
 
 pub(in crate::openrouter) fn payload(
     query: &str,

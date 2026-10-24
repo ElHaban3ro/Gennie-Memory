@@ -32,7 +32,7 @@ class Mcp:
         self.next_id = 0
         self.call("initialize", {
             "protocolVersion": "2025-06-18", "capabilities": {},
-            "clientInfo": {"name": "iromem-eval", "version": "0.1"},
+            "clientInfo": {"name": "gennie-memory-eval", "version": "0.1"},
         })
 
     def call(self, method: str, params: dict) -> dict:
@@ -80,8 +80,8 @@ def import_memories(binary: Path, memories: Path, mapping_path: Path) -> None:
                 "structuredData": {"source_id": item["id"]},
             } for item in batch]
             result = mcp.tool("memory_bulk_upload", {
-                "entries": entries, "sourceAgentId": "iromem-eval",
-                "sourceAgentName": "iromem-eval", "skipDedup": True,
+                "entries": entries, "sourceAgentId": "gennie-memory-eval",
+                "sourceAgentName": "gennie-memory-eval", "skipDedup": True,
             })
             if result["written"] != len(batch) or result["failed"] or result["skipped"]:
                 raise ValueError(f"incomplete import at {offset}: {result}")

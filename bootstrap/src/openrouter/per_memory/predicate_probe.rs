@@ -85,12 +85,12 @@ fn live_predicate_relation_probe() {
     ] {
         hashes.insert(
             p.to_str().unwrap().into(),
-            json!(iromem_kernel::digest::sha256_hex(
+            json!(gennie_memory_kernel::digest::sha256_hex(
                 &std::fs::read(&p).unwrap()
             )),
         );
     }
-    let pre = json!({"version":"predicate-relation-probe-v1","prepared_operations":384,"max_http_requests":384,"models":models,"requests_sha256":iromem_kernel::digest::sha256_hex(serialized.as_bytes()),"inputs_sha256":hashes,"test_binary_sha256":iromem_kernel::digest::sha256_hex(&std::fs::read(std::env::current_exe().unwrap()).unwrap()),"fresh_validation":false,"promoted":false});
+    let pre = json!({"version":"predicate-relation-probe-v1","prepared_operations":384,"max_http_requests":384,"models":models,"requests_sha256":gennie_memory_kernel::digest::sha256_hex(serialized.as_bytes()),"inputs_sha256":hashes,"test_binary_sha256":gennie_memory_kernel::digest::sha256_hex(&std::fs::read(std::env::current_exe().unwrap()).unwrap()),"fresh_validation":false,"promoted":false});
     let mut f = OpenOptions::new()
         .create_new(true)
         .write(true)
@@ -99,7 +99,7 @@ fn live_predicate_relation_probe() {
     f.write_all(serde_json::to_string_pretty(&pre).unwrap().as_bytes())
         .unwrap();
     f.sync_all().unwrap();
-    let key = iromem_kernel::config::load_secrets()
+    let key = gennie_memory_kernel::config::load_secrets()
         .unwrap()
         .openrouter_api_key
         .expect("authorized key required");

@@ -6,7 +6,7 @@ use axum::{
     response::{IntoResponse, Response},
     routing::{get, post},
 };
-use iromem_retrieval::model::{QueryMode, SearchRequest};
+use gennie_memory_retrieval::model::{QueryMode, SearchRequest};
 use rusqlite::Connection;
 use serde::{Deserialize, Serialize};
 use std::{
@@ -213,7 +213,7 @@ async fn export(
         .map_err(|_| error("SQLite no disponible"))?;
     let reviews = crate::repo::export_rows(&conn).map_err(error)?;
     Ok(Json(
-        serde_json::json!({"schema": "iromem-dashboard-review-v1", "reviews": reviews}),
+        serde_json::json!({"schema": "gennie-memory-dashboard-review-v1", "reviews": reviews}),
     ))
 }
 

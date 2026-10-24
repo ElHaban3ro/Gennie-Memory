@@ -12,4 +12,4 @@ Máximo6HTTP, estimaciónUSD0,003 y menos de un minuto; sin reintentos del clien
 
 Pase: seis respuestas válidas, recibos completos, selección igual al gold de los seis casos (cinco IDs útiles en42juicios), ningún no permitido, preservación de los onceBarchivados (cinco útiles y seis incorrectos). Registrar todos los roles y citas. Un pase permite diseñar18pares contra baseline para medir recursos; este filtro no mide mejora de latencia ni coste relativo. Mantener coste/p50/p95≤1,5×base y todas las puertas restantes antes de ampliar. V6ydefaultsin cambios.
 
-Fuentes: https://openrouter.ai/google/gemini-2.5-flash-lite , https://openrouter.ai/docs/guides/features/structured-outputs , https://openrouter.ai/docs/guides/routing/provider-selection . La documentación no es evidencia de calidad o velocidad en iROMEM.
+Fuentes: https://openrouter.ai/google/gemini-2.5-flash-lite , https://openrouter.ai/docs/guides/features/structured-outputs , https://openrouter.ai/docs/guides/routing/provider-selection . La documentación no es evidencia de calidad o velocidad en Gennie Memory.

@@ -77,7 +77,7 @@ fn run(version: u8) {
         "outputs/iromem/evaluation/semantic-representation-check-v1-2026-10-21"
     });
     let read = |p: &Path| serde_json::from_slice::<Value>(&fs::read(p).unwrap()).unwrap();
-    let sha = |p: &Path| iromem_kernel::digest::sha256_hex(&fs::read(p).unwrap());
+    let sha = |p: &Path| gennie_memory_kernel::digest::sha256_hex(&fs::read(p).unwrap());
     let save = |p: &Path, v: &Value| {
         let mut f = OpenOptions::new()
             .create_new(true)
@@ -119,14 +119,14 @@ fn run(version: u8) {
         prep["blind_packet_sha256"],
         sha(&d.join("blind-packet.json"))
     );
-    let evaluator = root.join("target/debug/iromem-eval");
+    let evaluator = root.join("target/debug/gennie-memory-eval");
     assert_eq!(prep["eval_binary_sha256"], sha(&evaluator));
     assert_eq!(
         prep["custodian_map_sha256"],
         sha(&d.join("custodian-map.json"))
     );
     let temp = std::env::temp_dir().join(format!(
-        "iromem-semantic-preflight-{}-{}",
+        "gennie-memory-semantic-preflight-{}-{}",
         std::process::id(),
         std::time::SystemTime::now()
             .duration_since(std::time::UNIX_EPOCH)
@@ -319,7 +319,7 @@ fn run(version: u8) {
         &d.join("preflight.json"),
         &json!({"version":if version >= 2{if version == 6 { "semantic-basis-scope-v1-preflight" } else if version == 5 { "semantic-capacity-v5-preflight" } else if version == 4 { "semantic-schema-v4-preflight" } else if version == 3 { "semantic-coordinates-v3-preflight" } else { "semantic-presentation-v2-preflight" }}else{"semantic-representation-check-v1-preflight"},"inputs_sha256":bindings,"source_hashes":prep["source_hashes"],"test_binary_sha256":sha(&std::env::current_exe().unwrap()),"max_http_requests":46,"all_sides_isolated":true,"labels_not_in_payload":true,"retry_count":0}),
     );
-    let key = iromem_kernel::config::load_secrets()
+    let key = gennie_memory_kernel::config::load_secrets()
         .unwrap()
         .openrouter_api_key
         .expect("authorized existing key required");

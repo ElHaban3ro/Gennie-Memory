@@ -1,4 +1,4 @@
-# Roadmap resumido de iROMEM
+# Roadmap resumido de Gennie Memory
 
 Estado revisado: **2026-10-23**. Una casilla marcada indica que se completó el alcance descrito; una casilla abierta puede incluir avances parciales. El [roadmap detallado](ROADMAP.md) conserva los hitos, informes e historial experimental. Actualizar este resumen cuando cambie el estado de un punto, manteniendo su evidencia en el documento detallado.
 

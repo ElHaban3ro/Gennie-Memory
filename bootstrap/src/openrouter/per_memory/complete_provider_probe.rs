@@ -1,7 +1,7 @@
 //! Test-only prospective model comparison with all evidence tasks per memory.
 use super::{correction_verified, role_verified};
 use crate::openrouter::OpenRouterClassifier;
-use iromem_retrieval::model::Candidate;
+use gennie_memory_retrieval::model::Candidate;
 use serde_json::{Value, json};
 use std::path::Path;
 
@@ -241,7 +241,7 @@ fn run(premise_gate: bool) {
     ] {
         hashes.insert(
             p.to_str().unwrap().into(),
-            json!(iromem_kernel::digest::sha256_hex(
+            json!(gennie_memory_kernel::digest::sha256_hex(
                 &std::fs::read(p).unwrap()
             )),
         );
@@ -250,13 +250,13 @@ fn run(premise_gate: bool) {
         let p = "tests/fixtures/premise-incompatibility-v1.json";
         hashes.insert(
             p.into(),
-            json!(iromem_kernel::digest::sha256_hex(
+            json!(gennie_memory_kernel::digest::sha256_hex(
                 &std::fs::read(p).unwrap()
             )),
         );
     }
-    std::fs::write(dir.join("preflight.json"),serde_json::to_vec_pretty(&json!({"version":if premise_gate{"role-complete-premise-probe-v1"}else{"role-complete-provider-probe-v1"},"prepared_operations":model_count*43,"max_http_requests":model_count*43,"initial_screen_requests":model_count*12,"requests_sha256":iromem_kernel::digest::sha256_hex(serialized.as_bytes()),"inputs_sha256":hashes,"test_binary_sha256":iromem_kernel::digest::sha256_hex(&std::fs::read(std::env::current_exe().unwrap()).unwrap()),"fresh_validation":false,"promoted":false})).unwrap()).unwrap();
-    let key = iromem_kernel::config::load_secrets()
+    std::fs::write(dir.join("preflight.json"),serde_json::to_vec_pretty(&json!({"version":if premise_gate{"role-complete-premise-probe-v1"}else{"role-complete-provider-probe-v1"},"prepared_operations":model_count*43,"max_http_requests":model_count*43,"initial_screen_requests":model_count*12,"requests_sha256":gennie_memory_kernel::digest::sha256_hex(serialized.as_bytes()),"inputs_sha256":hashes,"test_binary_sha256":gennie_memory_kernel::digest::sha256_hex(&std::fs::read(std::env::current_exe().unwrap()).unwrap()),"fresh_validation":false,"promoted":false})).unwrap()).unwrap();
+    let key = gennie_memory_kernel::config::load_secrets()
         .unwrap()
         .openrouter_api_key
         .expect("authorized key required");

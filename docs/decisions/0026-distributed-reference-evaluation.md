@@ -2,7 +2,7 @@
 
 Estado: prototipo local no adoptado. UTC 2026-10-21.
 
-El catálogo anterior conservó referencias, pero rechazó un propietario citado en otra oración y no equiparó sensor/sensores. Se añade un adaptador versionado en iromem-eval que separa mención y evidencia del vínculo, conserva aplicabilidad/contexto, y admite una vinculación explícita a clases de un registro fijo. El traductor antiguo mantiene su callback original y sus resultados se reproducen.
+El catálogo anterior conservó referencias, pero rechazó un propietario citado en otra oración y no equiparó sensor/sensores. Se añade un adaptador versionado en gennie-memory-eval que separa mención y evidencia del vínculo, conserva aplicabilidad/contexto, y admite una vinculación explícita a clases de un registro fijo. El traductor antiguo mantiene su callback original y sus resultados se reproducen.
 
 Se descartaron recorte de cabezas, aliases derivados de gold y ampliación artificial de la frase nominal. Un registro de definiciones no demuestra equivalencia semántica: la matriz conserva dos falsos positivos que bloquean adopción. No hay extractor, cambios de producto, dependencias o recursos runtime nuevos. Coste de proveedor de este prototipo: cero; recursos del mecanismo automático aún sin medir.
 

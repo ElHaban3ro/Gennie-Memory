@@ -1,5 +1,7 @@
 # Decisiones de inicialización
 
+> Registro histórico: los nombres y el remoto vigentes se definen en la decisión [0048 — Gennie Memory](../docs/decisions/0048-gennie-memory-rename.md).
+
 Estado: nombre, destino, Git local y foco del MVP aceptados; detalles de implementación pendientes. Última actualización: 2026-10-15 (America/Bogota).
 
 | ID | Fecha | Tema | Decisión | Motivo | Origen | Estado | Condición de revisión |
