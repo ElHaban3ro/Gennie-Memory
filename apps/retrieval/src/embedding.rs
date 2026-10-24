@@ -87,7 +87,7 @@ pub fn load_batch(conn: &mut Connection, batch: &EmbeddingBatch) -> Result<usize
             .query_row(
                 "SELECT m.current_revision, r.state FROM memories m
                  JOIN memory_revisions r ON r.memory_id = m.id AND r.revision = ?2
-                 WHERE m.id = ?1",
+                 WHERE m.id = ?1 AND m.lifecycle_state='active'",
                 params![item.memory_id, item.revision],
                 |row| Ok((row.get(0)?, row.get(1)?)),
             )
@@ -129,6 +129,22 @@ struct SemanticMatch {
 }
 
 pub fn search_hybrid(conn: &Connection, request: &HybridRequest) -> Result<HybridResponse, String> {
+    let snapshot = if conn.is_autocommit() {
+        Some(conn.unchecked_transaction().map_err(|e| e.to_string())?)
+    } else {
+        None
+    };
+    let result = search_hybrid_snapshot(conn, request)?;
+    if let Some(snapshot) = snapshot {
+        snapshot.commit().map_err(|e| e.to_string())?;
+    }
+    Ok(result)
+}
+
+fn search_hybrid_snapshot(
+    conn: &Connection,
+    request: &HybridRequest,
+) -> Result<HybridResponse, String> {
     // Reuse the same input validation as the textual service, but collect a wider
     // candidate pool before RRF and final output limiting.
     let text_request = crate::model::SearchRequest {
@@ -136,8 +152,11 @@ pub fn search_hybrid(conn: &Connection, request: &HybridRequest) -> Result<Hybri
         scope_kind: request.search.scope_kind.clone(),
         scope_id: request.search.scope_id.clone(),
         entity_id: request.search.entity_id.clone(),
+        actor_id: request.search.actor_id.clone(),
         as_of: request.search.as_of.clone(),
         limit: Some(RANK_LIMIT as u32),
+        memory_types: request.search.memory_types.clone(),
+        bm25_weights: request.search.bm25_weights,
         query_mode: Some(
             request
                 .search
@@ -161,15 +180,17 @@ pub fn search_hybrid(conn: &Connection, request: &HybridRequest) -> Result<Hybri
     let query_norm = norm(&request.query_vector, dimensions as usize)?;
     let mut stmt = conn
         .prepare(
-            "SELECT m.id, r.revision, r.summary, r.state, r.conditions,
+            "SELECT m.id, r.revision, r.summary, CASE WHEN EXISTS(SELECT 1 FROM memory_proposal_targets pt WHERE pt.memory_id=m.id) OR EXISTS(SELECT 1 FROM memory_review_schedule ms WHERE ms.memory_id=m.id AND ms.revision=m.current_revision AND ms.next_review_at IS NOT NULL AND ms.next_review_at<=?4) THEN 'uncertain' ELSE r.state END, r.conditions,
                     r.source_kind, r.source_ref, r.source_locator, e.vector_json, e.norm
              FROM memories m
              JOIN memory_revisions r ON r.memory_id = m.id AND r.revision = m.current_revision
              LEFT JOIN memory_embeddings e ON e.memory_id = m.id AND e.revision = r.revision AND e.space_id = ?1
-             WHERE m.scope_kind = ?2 AND m.scope_id = ?3 AND r.state = 'active'
+             WHERE m.scope_kind = ?2 AND m.scope_id = ?3 AND m.lifecycle_state = 'active' AND r.state = 'active'
                AND (r.valid_from IS NULL OR r.valid_from <= ?4)
                AND (r.valid_until IS NULL OR r.valid_until > ?4)
-               AND (?5 IS NULL OR m.entity_id = ?5)",
+               AND (?5 IS NULL OR m.entity_id = ?5)
+               AND m.actor_id = ?6
+               AND (json_array_length(?7) = 0 OR r.memory_type IN (SELECT value FROM json_each(?7)))",
         )
         .map_err(|e| e.to_string())?;
     let rows = stmt
@@ -179,7 +200,9 @@ pub fn search_hybrid(conn: &Connection, request: &HybridRequest) -> Result<Hybri
                 request.search.scope_kind,
                 request.search.scope_id,
                 request.search.as_of,
-                request.search.entity_id
+                request.search.entity_id,
+                request.search.actor_id.as_deref().unwrap_or("local"),
+                serde_json::to_string(&request.search.memory_types).map_err(|e| e.to_string())?
             ],
             |row| {
                 let source_kind: Option<String> = row.get(5)?;
@@ -297,6 +320,9 @@ pub fn search_hybrid(conn: &Connection, request: &HybridRequest) -> Result<Hybri
             })
             .then_with(|| left.memory_id.cmp(&right.memory_id))
     });
+    let candidate_pool_truncated = text.coverage.truncated
+        || semantic.len() > RANK_LIMIT
+        || candidates.len() > request.search.limit.unwrap_or(8) as usize;
     candidates.truncate(request.search.limit.unwrap_or(8) as usize);
     let coverage = if indexed == eligible {
         "complete"
@@ -306,7 +332,7 @@ pub fn search_hybrid(conn: &Connection, request: &HybridRequest) -> Result<Hybri
         "partial"
     };
     Ok(HybridResponse {
-        status: if coverage == "complete" {
+        status: if coverage == "complete" && text.status == "complete" {
             "complete"
         } else {
             "degraded"
@@ -315,6 +341,9 @@ pub fn search_hybrid(conn: &Connection, request: &HybridRequest) -> Result<Hybri
         semantic_coverage: coverage,
         eligible_memories: eligible,
         indexed_memories: indexed,
+        text_coverage: text.coverage,
+        rank_limit: RANK_LIMIT,
+        candidate_pool_truncated,
         candidates,
     })
 }
@@ -330,6 +359,7 @@ mod tests {
             scope_kind: "project".into(),
             scope_id: scope.into(),
             entity_id: None,
+            actor_id: None,
             revision: 1,
             memory_type: "fact".into(),
             original_text: summary.into(),
@@ -358,13 +388,7 @@ mod tests {
     fn semantic_search_respects_scope_and_reports_partial_coverage() {
         let mut conn = Connection::open_in_memory().unwrap();
         gennie_memory_kernel::db::configure(&conn).unwrap();
-        conn.execute_batch(include_str!("../migrations/0001_initial.sql"))
-            .unwrap();
-        conn.execute_batch(include_str!("../migrations/0002_embeddings.sql"))
-            .unwrap();
-        conn.execute_batch(include_str!("../migrations/0003_entity_filter.sql"))
-            .unwrap();
-        conn.execute_batch(include_str!("../migrations/0004_seed_provenance.sql"))
+        gennie_memory_kernel::db::migrate(&mut conn, &[Box::new(crate::module::RetrievalModule)])
             .unwrap();
         let mut wanted = memory("wanted", "a", "Recuerdo del faro");
         wanted.conditions = Some("Solo al navegar de noche".into());
@@ -397,8 +421,11 @@ mod tests {
                 scope_kind: "project".into(),
                 scope_id: "a".into(),
                 entity_id: None,
+                actor_id: None,
                 as_of: "2026-10-15T12:00:00.000Z".into(),
                 limit: Some(8),
+                memory_types: Vec::new(),
+                bm25_weights: None,
                 query_mode: None,
             },
             space_id: "synthetic-space-v1".into(),
@@ -461,13 +488,7 @@ mod tests {
     fn rrf_tie_prefers_text_rank_over_identifier_order() {
         let mut conn = Connection::open_in_memory().unwrap();
         gennie_memory_kernel::db::configure(&conn).unwrap();
-        conn.execute_batch(include_str!("../migrations/0001_initial.sql"))
-            .unwrap();
-        conn.execute_batch(include_str!("../migrations/0002_embeddings.sql"))
-            .unwrap();
-        conn.execute_batch(include_str!("../migrations/0003_entity_filter.sql"))
-            .unwrap();
-        conn.execute_batch(include_str!("../migrations/0004_seed_provenance.sql"))
+        gennie_memory_kernel::db::migrate(&mut conn, &[Box::new(crate::module::RetrievalModule)])
             .unwrap();
         crate::repo::load_fixtures(
             &mut conn,
@@ -501,8 +522,11 @@ mod tests {
                     scope_kind: "project".into(),
                     scope_id: "a".into(),
                     entity_id: None,
+                    actor_id: None,
                     as_of: "2026-10-15T12:00:00.000Z".into(),
                     limit: Some(2),
+                    memory_types: Vec::new(),
+                    bm25_weights: None,
                     query_mode: Some(crate::model::QueryMode::Natural),
                 },
                 space_id: "synthetic-space-v1".into(),
@@ -519,13 +543,7 @@ mod tests {
     fn entity_filter_precedes_text_and_semantic_ranking() {
         let mut conn = Connection::open_in_memory().unwrap();
         gennie_memory_kernel::db::configure(&conn).unwrap();
-        conn.execute_batch(include_str!("../migrations/0001_initial.sql"))
-            .unwrap();
-        conn.execute_batch(include_str!("../migrations/0002_embeddings.sql"))
-            .unwrap();
-        conn.execute_batch(include_str!("../migrations/0003_entity_filter.sql"))
-            .unwrap();
-        conn.execute_batch(include_str!("../migrations/0004_seed_provenance.sql"))
+        gennie_memory_kernel::db::migrate(&mut conn, &[Box::new(crate::module::RetrievalModule)])
             .unwrap();
         let mut wanted = memory("wanted", "shared", "alpha instruction");
         wanted.entity_id = Some("project_one".into());
@@ -553,8 +571,11 @@ mod tests {
             scope_kind: "project".into(),
             scope_id: "shared".into(),
             entity_id: Some("project_one".into()),
+            actor_id: None,
             as_of: "2026-10-15T12:00:00.000Z".into(),
             limit: Some(8),
+            memory_types: Vec::new(),
+            bm25_weights: None,
             query_mode: Some(crate::model::QueryMode::Natural),
         };
         let textual = crate::service::search(&conn, &search).unwrap();

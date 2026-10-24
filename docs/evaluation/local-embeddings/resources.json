@@ -1,0 +1,16 @@
+{
+  "hardware": "Apple arm64, 24 GiB RAM",
+  "runtime": "CPU f32",
+  "rayon_threads": 4,
+  "tokenizers_parallelism": false,
+  "peak_rss_bytes": 1358004224,
+  "peak_rss_mib": 1295.09375,
+  "process_wall_ms": 891.3199589878786,
+  "model_load_ms": 670.562875,
+  "first_query_ms": 16.303625,
+  "subsequent_queries_ms": [
+    14.477625,
+    14.315375
+  ],
+  "scope": "One fresh process imports frozen vectors, then runs three queries. /usr/bin/time -l peak RSS includes loader and all stages. Not a steady state or concurrent load study."
+}

@@ -11,3 +11,5 @@ Para probar sin descargar otro modelo se reutilizó el encoder del snapshot Laya
 
 Una prueba CLI con 20 entidades, 40 vectores activos y el caso `q_0001_19` recuperó `synthetic_0001@2` como primer candidato semántico, ausente en FTS5. Dos memorias eran elegibles en ese ámbito y ambas estaban indexadas. La prueba Rust comprueba ámbito, cobertura parcial y que un vector de revisión antigua deja de aparecer tras una corrección. Ver [piloto](../evaluation/pilot-2026-10-15.md).
 En 270 consultas de desarrollo del mismo corpus pequeño, el híbrido alcanzó 246/250 positivos top-1 frente a 240/250 de FTS5, y 250/250 en recall@20 frente a 240/250; ambos dejaron vacíos 10/20 negativos. La latencia Rust de búsqueda excluye el embedding de consulta, por lo que la decisión sobre rendimiento total sigue abierta.
+
+Actualización 2026-10-24: el perfil independiente local v1 y sus fragmentos se implementaron en una ruta separada por la [decisión 0051](0051-independent-local-embeddings.md). Las tablas, vectores y métricas Laya anteriores se conservan como historial; no se convierten a E5 ni acreditan su calidad.

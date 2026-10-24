@@ -1,0 +1,80 @@
+{
+  "date": "2026-10-24",
+  "scope": "focused local contract regression; synthetic fixtures and classifier doubles; concurrent product development in other chats",
+  "results": [
+    {
+      "command": "cargo test --offline -p gennie-memory-retrieval --test product_coverage",
+      "passed": 10,
+      "failed": 0,
+      "ignored": 0,
+      "test_runtime_seconds": 6.46,
+      "exit_code": 0
+    },
+    {
+      "command": "cargo test --offline -p gennie-memory --test product_coverage_cli",
+      "passed": 3,
+      "failed": 0,
+      "ignored": 0,
+      "test_runtime_seconds": 0.55,
+      "exit_code": 0
+    }
+  ],
+  "checks": {
+    "formatted_individual_test_files": true,
+    "diff_whitespace": "passed at final local inspection",
+    "workspace": "both joint suites verified from existing write-reconciliation logs; includes all 13 coverage tests"
+  },
+  "counts": {
+    "matrix_queries": 20,
+    "query_modes": 2,
+    "matrix_assertions": 40,
+    "new_revisions": 64,
+    "failed_revision_batches": 8,
+    "concurrent_process_sessions": 4,
+    "reads_per_session": 24,
+    "concurrent_read_responses": 96
+  },
+  "warnings": [
+    "bootstrap OpenRouterClassifier::new dead_code",
+    "bootstrap query_excerpt_from_codepoints dead_code",
+    "bootstrap find_identity_quote dead_code"
+  ],
+  "sha256_test_sources_and_fixtures": {
+    "apps/retrieval/tests/product_coverage.rs": "20f7987539524c18950ef2db9d6ed7980ccd646f6bf1e741b5eae3c357de68d3",
+    "bootstrap/tests/product_coverage_cli.rs": "bf4dc02981a1d0ba681abdd6f444c764ba541ff1033f39700f2a593b603c8ead",
+    "tests/fixtures/product-coverage-v1/corpus.json": "2405ac819317ff178a3d003b17b1a98bb70ecb993e420edb0efd8c6b58b6049f",
+    "tests/fixtures/product-coverage-v1/cases.json": "a7a539fba2140221d7bb67c42a7601427fe5757c52f9e3f920fcf5e9d66d5236",
+    "tests/fixtures/product-coverage-v1/manifest.json": "c673f71a5550e6f433b669bfb9ab09f93bb3071efba567e30b01c902f93115d3"
+  },
+  "production_source_hashes": "not asserted: other chats are actively editing production; focused results apply to binaries compiled in the observed runs",
+  "limits": [
+    "no real provider classification or billing",
+    "no independent or human semantic review",
+    "no latency or resource benchmark",
+    "no sustained concurrent writers or contention instrumentation",
+    "no deployment",
+    "no commit or push"
+  ],
+  "joint_workspace_runs": [
+    {
+      "command": "cargo test --offline --workspace",
+      "executor": "write-reconciliation chat",
+      "verification": "read and aggregated existing logs; no rerun",
+      "passed": 1153,
+      "failed": 0,
+      "ignored": 25,
+      "log_sha256": "073e3a63cd88f0b6d331deecf2ceb9866d8a2ef0a015a41fa5a9b8a909281512",
+      "source_log": "/tmp/gennie-write-workspace.log"
+    },
+    {
+      "command": "cargo test --offline --workspace --features gennie-memory/local-embeddings",
+      "executor": "write-reconciliation chat",
+      "verification": "read and aggregated existing logs; no rerun",
+      "passed": 1169,
+      "failed": 0,
+      "ignored": 25,
+      "log_sha256": "b6b11ad1eb2f92a757611f0d49bce7fb9b553854c29197e7370ce207dbb73bb6",
+      "source_log": "/tmp/gennie-write-feature.log"
+    }
+  ]
+}

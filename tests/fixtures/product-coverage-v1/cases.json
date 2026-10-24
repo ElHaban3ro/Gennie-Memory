@@ -1,0 +1,359 @@
+[
+  {
+    "id": "spanish-diacritics",
+    "search": {
+      "query": "brujula",
+      "scope_kind": "project",
+      "scope_id": "coverage",
+      "actor_id": "local",
+      "entity_id": "person-a",
+      "memory_types": [
+        "fact"
+      ],
+      "as_of": "2026-10-24T12:00:00.000Z",
+      "limit": 20
+    },
+    "expected_ids": [
+      "es"
+    ]
+  },
+  {
+    "id": "english-literal",
+    "search": {
+      "query": "lighthouse",
+      "scope_kind": "project",
+      "scope_id": "coverage",
+      "actor_id": "local",
+      "entity_id": "person-a",
+      "memory_types": [
+        "fact"
+      ],
+      "as_of": "2026-10-24T12:00:00.000Z",
+      "limit": 20
+    },
+    "expected_ids": [
+      "en"
+    ]
+  },
+  {
+    "id": "portuguese-diacritics",
+    "search": {
+      "query": "estacao",
+      "scope_kind": "project",
+      "scope_id": "coverage",
+      "actor_id": "local",
+      "entity_id": "person-a",
+      "memory_types": [
+        "fact"
+      ],
+      "as_of": "2026-10-24T12:00:00.000Z",
+      "limit": 20
+    },
+    "expected_ids": [
+      "pt"
+    ]
+  },
+  {
+    "id": "arabic-literal",
+    "search": {
+      "query": "المكتبة",
+      "scope_kind": "project",
+      "scope_id": "coverage",
+      "actor_id": "local",
+      "entity_id": "person-a",
+      "memory_types": [
+        "fact"
+      ],
+      "as_of": "2026-10-24T12:00:00.000Z",
+      "limit": 20
+    },
+    "expected_ids": [
+      "ar"
+    ]
+  },
+  {
+    "id": "japanese-literal",
+    "search": {
+      "query": "図書館は午前九時に開きます",
+      "scope_kind": "project",
+      "scope_id": "coverage",
+      "actor_id": "local",
+      "entity_id": "person-a",
+      "memory_types": [
+        "fact"
+      ],
+      "as_of": "2026-10-24T12:00:00.000Z",
+      "limit": 20
+    },
+    "expected_ids": [
+      "ja"
+    ]
+  },
+  {
+    "id": "unicode-combining",
+    "search": {
+      "query": "cafe",
+      "scope_kind": "project",
+      "scope_id": "coverage",
+      "actor_id": "local",
+      "entity_id": "person-a",
+      "memory_types": [
+        "fact"
+      ],
+      "as_of": "2026-10-24T12:00:00.000Z",
+      "limit": 20
+    },
+    "expected_ids": [
+      "unicode"
+    ]
+  },
+  {
+    "id": "long-original-tail",
+    "search": {
+      "query": "zafirofinal",
+      "scope_kind": "project",
+      "scope_id": "coverage",
+      "actor_id": "local",
+      "entity_id": "person-a",
+      "memory_types": [
+        "fact"
+      ],
+      "as_of": "2026-10-24T12:00:00.000Z",
+      "limit": 20,
+      "bm25_weights": [
+        1.0,
+        0.0
+      ]
+    },
+    "expected_ids": [
+      "long"
+    ]
+  },
+  {
+    "id": "homonym-a",
+    "search": {
+      "query": "Alex",
+      "scope_kind": "project",
+      "scope_id": "coverage",
+      "actor_id": "local",
+      "entity_id": "person-a",
+      "memory_types": [
+        "fact"
+      ],
+      "as_of": "2026-10-24T12:00:00.000Z",
+      "limit": 20
+    },
+    "expected_ids": [
+      "homonym-a"
+    ]
+  },
+  {
+    "id": "homonym-b",
+    "search": {
+      "query": "Alex",
+      "scope_kind": "project",
+      "scope_id": "coverage",
+      "actor_id": "local",
+      "entity_id": "person-b",
+      "memory_types": [
+        "fact"
+      ],
+      "as_of": "2026-10-24T12:00:00.000Z",
+      "limit": 20
+    },
+    "expected_ids": [
+      "homonym-b"
+    ]
+  },
+  {
+    "id": "homonym-unresolved",
+    "search": {
+      "query": "Alex",
+      "scope_kind": "project",
+      "scope_id": "coverage",
+      "actor_id": "local",
+      "entity_id": null,
+      "memory_types": [
+        "fact"
+      ],
+      "as_of": "2026-10-24T12:00:00.000Z",
+      "limit": 20
+    },
+    "expected_ids": [
+      "homonym-a",
+      "homonym-b"
+    ]
+  },
+  {
+    "id": "contradiction-kept",
+    "search": {
+      "query": "granate",
+      "scope_kind": "project",
+      "scope_id": "coverage",
+      "actor_id": "local",
+      "entity_id": "person-a",
+      "memory_types": [
+        "fact"
+      ],
+      "as_of": "2026-10-24T12:00:00.000Z",
+      "limit": 20
+    },
+    "expected_ids": [
+      "contradiction-no",
+      "contradiction-yes"
+    ]
+  },
+  {
+    "id": "distinct-duplicate-identities",
+    "search": {
+      "query": "obsidiana",
+      "scope_kind": "project",
+      "scope_id": "coverage",
+      "actor_id": "local",
+      "entity_id": "person-a",
+      "memory_types": [
+        "fact"
+      ],
+      "as_of": "2026-10-24T12:00:00.000Z",
+      "limit": 20
+    },
+    "expected_ids": [
+      "duplicate-a",
+      "duplicate-b"
+    ]
+  },
+  {
+    "id": "private-intersection",
+    "search": {
+      "query": "ambar",
+      "scope_kind": "project",
+      "scope_id": "coverage",
+      "actor_id": "local",
+      "entity_id": "person-a",
+      "memory_types": [
+        "fact"
+      ],
+      "as_of": "2026-10-24T12:00:00.000Z",
+      "limit": 20
+    },
+    "expected_ids": [
+      "private-allowed"
+    ]
+  },
+  {
+    "id": "current-revision",
+    "search": {
+      "query": "cobrenuevo",
+      "scope_kind": "project",
+      "scope_id": "coverage",
+      "actor_id": "local",
+      "entity_id": "person-a",
+      "memory_types": [
+        "fact"
+      ],
+      "as_of": "2026-10-24T12:00:00.000Z",
+      "limit": 20
+    },
+    "expected_ids": [
+      "revised"
+    ]
+  },
+  {
+    "id": "obsolete-revision",
+    "search": {
+      "query": "cobreviejo",
+      "scope_kind": "project",
+      "scope_id": "coverage",
+      "actor_id": "local",
+      "entity_id": "person-a",
+      "memory_types": [
+        "fact"
+      ],
+      "as_of": "2026-10-24T12:00:00.000Z",
+      "limit": 20
+    },
+    "expected_ids": []
+  },
+  {
+    "id": "validity-boundary",
+    "search": {
+      "query": "topacio",
+      "scope_kind": "project",
+      "scope_id": "coverage",
+      "actor_id": "local",
+      "entity_id": "person-a",
+      "memory_types": [
+        "fact"
+      ],
+      "as_of": "2026-10-24T12:00:00.000Z",
+      "limit": 20
+    },
+    "expected_ids": [
+      "current"
+    ]
+  },
+  {
+    "id": "unrelated-literal",
+    "search": {
+      "query": "xylophoneunknown",
+      "scope_kind": "project",
+      "scope_id": "coverage",
+      "actor_id": "local",
+      "entity_id": "person-a",
+      "memory_types": [
+        "fact"
+      ],
+      "as_of": "2026-10-24T12:00:00.000Z",
+      "limit": 20
+    },
+    "expected_ids": []
+  },
+  {
+    "id": "translation-is-not-automatic",
+    "search": {
+      "query": "bibliotheque",
+      "scope_kind": "project",
+      "scope_id": "coverage",
+      "actor_id": "local",
+      "entity_id": "person-a",
+      "memory_types": [
+        "fact"
+      ],
+      "as_of": "2026-10-24T12:00:00.000Z",
+      "limit": 20
+    },
+    "expected_ids": []
+  },
+  {
+    "id": "unknown-actor",
+    "search": {
+      "query": "ambar",
+      "scope_kind": "project",
+      "scope_id": "coverage",
+      "actor_id": "unknown",
+      "entity_id": "person-a",
+      "memory_types": [
+        "fact"
+      ],
+      "as_of": "2026-10-24T12:00:00.000Z",
+      "limit": 20
+    },
+    "expected_ids": []
+  },
+  {
+    "id": "empty-scope",
+    "search": {
+      "query": "brujula",
+      "scope_kind": "project",
+      "scope_id": "empty",
+      "actor_id": "local",
+      "entity_id": "person-a",
+      "memory_types": [
+        "fact"
+      ],
+      "as_of": "2026-10-24T12:00:00.000Z",
+      "limit": 20
+    },
+    "expected_ids": []
+  }
+]

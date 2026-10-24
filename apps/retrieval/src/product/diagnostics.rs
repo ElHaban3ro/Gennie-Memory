@@ -33,6 +33,18 @@ impl Issue {
         }
     }
     pub fn provider(e: &DecisionError) -> Self {
+        if crate::token_budget::is_local_error(e.code) {
+            return Self::local(
+                e.code,
+                "classification",
+                "El presupuesto local de tokens impide enviar la petición o el adaptador no puede medirla; consulte el código y la traza.",
+                if e.code == "input_token_limit" {
+                    "reduce_input_or_increase_token_budget"
+                } else {
+                    "choose_supported_token_adapter"
+                },
+            );
+        }
         let (code, message, retryable, action) = match (e.code, e.http_status) {
             ("provider_input_limit", _) => (
                 "provider_input_limit",

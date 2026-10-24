@@ -1,0 +1,98 @@
+{
+  "date": "2026-10-24",
+  "command": "target/debug/gennie-memory recall-v1 <temporary request>; session with 11 recall_v1 lines",
+  "build": "debug, default features",
+  "scope": "synthetic fixture; local admission rejection before HTTP; not successful recall or isolated tokenizer benchmark",
+  "request": {
+    "contract_version": 1,
+    "search": {
+      "query": "agenda reuniones remotas Proyecto Sintético",
+      "scope_kind": "project",
+      "scope_id": "synthetic_meetings",
+      "as_of": "2026-10-15T12:00:00.000Z"
+    },
+    "budgets": {
+      "input_tokens": 1
+    }
+  },
+  "cold_processes": [
+    {
+      "wall_ms": 531.7549589963164,
+      "operation_ms": 524.643458,
+      "token_accounting": {
+        "profile": "o200k_base:tiktoken-rs-0.12.0:ordinary:utf8-json-v1",
+        "input_basis": "serialized_request_json",
+        "provider_tokenizer": "unverified",
+        "input_limit": 1,
+        "seed_limit": 2048,
+        "accepted_input_tokens": 0,
+        "requests": [
+          {
+            "stage": "classification",
+            "request_sha256": "762f2baa8f12443c16938e83552228bf39bb78bd1e6e92d457dd97f556efbdb0",
+            "json_tokens": 191,
+            "accepted": false
+          }
+        ],
+        "seed_tokens": null,
+        "seed_status": "not_evaluated"
+      },
+      "usage": {
+        "classifier_invocations": 0,
+        "receipt_status": "not_called",
+        "served_model": null,
+        "input_tokens": null,
+        "output_tokens": null,
+        "reported_cost_usd": null,
+        "cost_status": "not_called"
+      }
+    },
+    {
+      "wall_ms": 684.215832996415,
+      "operation_ms": 675.861667,
+      "token_accounting": {
+        "profile": "o200k_base:tiktoken-rs-0.12.0:ordinary:utf8-json-v1",
+        "input_basis": "serialized_request_json",
+        "provider_tokenizer": "unverified",
+        "input_limit": 1,
+        "seed_limit": 2048,
+        "accepted_input_tokens": 0,
+        "requests": [
+          {
+            "stage": "classification",
+            "request_sha256": "762f2baa8f12443c16938e83552228bf39bb78bd1e6e92d457dd97f556efbdb0",
+            "json_tokens": 191,
+            "accepted": false
+          }
+        ],
+        "seed_tokens": null,
+        "seed_status": "not_evaluated"
+      },
+      "usage": {
+        "classifier_invocations": 0,
+        "receipt_status": "not_called",
+        "served_model": null,
+        "input_tokens": null,
+        "output_tokens": null,
+        "reported_cost_usd": null,
+        "cost_status": "not_called"
+      }
+    }
+  ],
+  "session_operations_ms": [
+    649.777375,
+    1.873666,
+    1.481458,
+    1.260417,
+    1.5248329999999999,
+    1.30375,
+    1.206083,
+    1.653667,
+    1.540583,
+    1.304459,
+    1.390041
+  ],
+  "session_wall_ms": 677.7120000042487,
+  "provider_calls": 0,
+  "paid_cost": "not_called"
+}

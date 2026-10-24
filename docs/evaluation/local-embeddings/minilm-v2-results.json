@@ -1,0 +1,144 @@
+{
+  "index": {
+    "chunks": 64,
+    "index_id": "idx-a03e4a57b7ca11f591acb188381d98dc796f0746253f4ce13116da22afd38c81",
+    "memories": 25,
+    "replayed": false,
+    "space_id": "local-v1-74e735186dc2398e91f4f1f419e7bfc544a6897ad61bacb2eda78b03c25ce4b6",
+    "status": "published_complete"
+  },
+  "limits": "Synthetic same-author controls; candidate retrieval only, no semantic classification or calibrated abstention. Load excluded from warm query latency. FTS default unchanged.",
+  "metrics": {
+    "fts5": {
+      "empty_positive_queries": 3,
+      "empty_queries": 5,
+      "groups": {
+        "cross": {
+          "cases": 8,
+          "top1": 5,
+          "top5": 7
+        },
+        "en": {
+          "cases": 7,
+          "top1": 3,
+          "top5": 6
+        },
+        "es": {
+          "cases": 9,
+          "top1": 4,
+          "top5": 4
+        },
+        "long_tail": {
+          "cases": 1,
+          "top1": 1,
+          "top5": 1
+        }
+      },
+      "misses_top5": [
+        "q-keys",
+        "q-backup",
+        "q-rust",
+        "q-meeting",
+        "q-invoice",
+        "q-contract",
+        "q-paint"
+      ],
+      "p50_ms": 2.056916,
+      "p95_ms": 2.946958,
+      "positives": 25,
+      "samples": 87,
+      "top1": 13,
+      "top20": 18,
+      "top5": 18
+    },
+    "hybrid": {
+      "empty_positive_queries": 0,
+      "empty_queries": 0,
+      "groups": {
+        "cross": {
+          "cases": 8,
+          "top1": 7,
+          "top5": 7
+        },
+        "en": {
+          "cases": 7,
+          "top1": 6,
+          "top5": 7
+        },
+        "es": {
+          "cases": 9,
+          "top1": 6,
+          "top5": 9
+        },
+        "long_tail": {
+          "cases": 1,
+          "top1": 1,
+          "top5": 1
+        }
+      },
+      "misses_top5": [
+        "q-rust"
+      ],
+      "p50_ms": 24.8025,
+      "p95_ms": 29.436,
+      "positives": 25,
+      "samples": 87,
+      "top1": 20,
+      "top20": 25,
+      "top5": 24
+    },
+    "semantic": {
+      "empty_positive_queries": 0,
+      "empty_queries": 0,
+      "groups": {
+        "cross": {
+          "cases": 8,
+          "top1": 7,
+          "top5": 8
+        },
+        "en": {
+          "cases": 7,
+          "top1": 7,
+          "top5": 7
+        },
+        "es": {
+          "cases": 9,
+          "top1": 9,
+          "top5": 9
+        },
+        "long_tail": {
+          "cases": 1,
+          "top1": 1,
+          "top5": 1
+        }
+      },
+      "misses_top5": [],
+      "p50_ms": 23.006834,
+      "p95_ms": 27.212666,
+      "positives": 25,
+      "samples": 87,
+      "top1": 24,
+      "top20": 25,
+      "top5": 25
+    }
+  },
+  "model_load_ms": 1056.650375,
+  "preparation_ms": 2684.06,
+  "profile": {
+    "config_sha256": "6300193cb75e01cf80c96decef7187dfb33094d97cc1490b7ead6ff134476e4e",
+    "dimensions": 384,
+    "document_prefix": "",
+    "license": "apache-2.0",
+    "max_tokens": 128,
+    "model_id": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "model_revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+    "model_sha256": "eaa086f0ffee582aeb45b36e34cdd1fe2d6de2bef61f8a559a1bbc9bd955917b",
+    "query_prefix": "",
+    "runtime": "candle-0.11.0-cpu-f32-tokenizers-0.23.2-mean-l2-v1",
+    "schema_version": 1,
+    "tokenizer_sha256": "2c3387be76557bd40970cec13153b3bbf80407865484b209e655e5e4729076b8"
+  },
+  "publication_ms": 13.784709,
+  "schema_version": 1,
+  "suite_sha256": "72ef7e2fa8f30877e6184c853070ae0b079e532d7e112ef1a5c28749cbbeb4e0"
+}

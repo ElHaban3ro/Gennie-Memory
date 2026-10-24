@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "profile": "product-coverage-v1",
+  "purpose": "deterministic regression controls, not provider quality or held-out evaluation",
+  "label_origin": "same_author_literal_contract",
+  "review": "not_independently_reviewed",
+  "cases": 20,
+  "fixture_rows": 23,
+  "current_memories": 22,
+  "sha256": {
+    "corpus.json": "2405ac819317ff178a3d003b17b1a98bb70ecb993e420edb0efd8c6b58b6049f",
+    "cases.json": "a7a539fba2140221d7bb67c42a7601427fe5757c52f9e3f920fcf5e9d66d5236"
+  },
+  "date": "2026-10-24"
+}

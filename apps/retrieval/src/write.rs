@@ -16,6 +16,8 @@ pub struct WriteRequest {
     pub memory_id: Option<String>,
     #[serde(default)]
     pub expected_revision: Option<i64>,
+    #[serde(default, skip_serializing_if = "Option::is_none")]
+    pub entity_id: Option<String>,
     pub scope: Scope,
     pub memory: MemoryInput,
 }
@@ -62,7 +64,43 @@ pub fn write_memory(
     conn: &mut Connection,
     request: &WriteRequest,
 ) -> Result<WriteResponse, String> {
+    let tx = conn
+        .transaction()
+        .map_err(|_| "no se pudo iniciar la transacción de escritura")?;
+    let collision: bool = tx
+        .query_row(
+            "SELECT EXISTS(SELECT 1 FROM reconciliation_operations WHERE operation_id=?1)",
+            [request.operation_id.to_ascii_lowercase()],
+            |r| r.get(0),
+        )
+        .map_err(|e| e.to_string())?;
+    if collision {
+        return Err("idempotency_conflict: UUID ya usado en reconciliación".into());
+    }
+    let result = write_in_transaction(&tx, request)?;
+    tx.commit()
+        .map_err(|_| "no se pudo confirmar la escritura")?;
+    Ok(result)
+}
+
+/// Shares the caller's atomic write boundary; never commits independently.
+pub(crate) fn write_in_transaction(
+    tx: &rusqlite::Transaction<'_>,
+    request: &WriteRequest,
+) -> Result<WriteResponse, String> {
     validate(request)?;
+    let erased: bool = tx
+        .query_row(
+            "SELECT EXISTS(SELECT 1 FROM memory_erased_write_operations WHERE operation_id=?1)",
+            [request.operation_id.to_ascii_lowercase()],
+            |r| r.get(0),
+        )
+        .map_err(|e| e.to_string())?;
+    if erased {
+        return Err(
+            "content_deleted: esta operación fue eliminada y no puede recrear contenido".into(),
+        );
+    }
     let mut canonical_request = request.clone();
     canonical_request.operation_id = request.operation_id.to_ascii_lowercase();
     let normalized =
@@ -70,9 +108,6 @@ pub fn write_memory(
     let request_sha256 = sha256_hex(&normalized);
     let operation_id = request.operation_id.to_ascii_lowercase();
 
-    let tx = conn
-        .transaction()
-        .map_err(|_| "no se pudo iniciar la transacción de escritura")?;
     let replay: Option<(String, String, i64, String, bool)> = tx
         .query_row(
             "SELECT request_sha256, memory_id, revision, outcome, evidence_added FROM memory_write_operations WHERE operation_id = ?1",
@@ -87,8 +122,6 @@ pub fn write_memory(
                 "idempotency_conflict: operation_id ya corresponde a otro contenido".into(),
             );
         }
-        tx.commit()
-            .map_err(|_| "no se pudo cerrar la transacción de escritura")?;
         return Ok(response(
             &operation_id,
             memory_id,
@@ -99,6 +132,38 @@ pub fn write_memory(
         ));
     }
 
+    let collision: bool = tx
+        .query_row(
+            "SELECT EXISTS(SELECT 1 FROM entity_operations WHERE operation_id=?1)",
+            [&operation_id],
+            |r| r.get(0),
+        )
+        .map_err(|e| e.to_string())?;
+    if collision {
+        return Err("idempotency_conflict: operación ya usada para entidad".into());
+    }
+    let mut effective = request.clone();
+    if request.action == "revise" {
+        let identity: Option<(String,Option<String>)> = tx.query_row("SELECT actor_id,entity_id FROM memories WHERE id=?1 AND scope_kind=?2 AND scope_id=?3",params![request.memory_id,request.scope.kind,request.scope.id],|r|Ok((r.get(0)?,r.get(1)?))).optional().map_err(|e|e.to_string())?;
+        let Some((actor, entity)) = identity else {
+            return Err("memory_not_found: recuerdo no disponible en el ámbito".into());
+        };
+        if actor != "local" {
+            return Err("memory_not_available: recuerdo de otro actor".into());
+        }
+        if request.entity_id.is_some() && request.entity_id != entity {
+            return Err("entity_mismatch: no se puede cambiar la entidad al revisar".into());
+        }
+        effective.entity_id = entity;
+    }
+    if let Some(id) = &effective.entity_id {
+        if !crate::entity::exists(&tx, "local", &request.scope, id)? {
+            return Err(
+                "entity_not_available: resuelve la entidad en este ámbito antes de escribir".into(),
+            );
+        }
+    }
+    let request = &effective;
     let committed_at = tx
         .query_row("SELECT strftime('%Y-%m-%dT%H:%M:%fZ', 'now')", [], |row| {
             row.get::<_, String>(0)
@@ -122,12 +187,25 @@ pub fn write_memory(
         |row| Ok((row.get(0)?, row.get(1)?)),
     ).optional().map_err(|_| "no se pudo comprobar la huella de contenido")?;
     let (memory_id, revision, outcome) = if let Some((memory_id, revision)) = existing {
+        let active: bool = tx
+            .query_row(
+                "SELECT lifecycle_state='active' FROM memories WHERE id=?1",
+                [&memory_id],
+                |r| r.get(0),
+            )
+            .map_err(|e| e.to_string())?;
+        if !active {
+            return Err(
+                "memory_withdrawn: restaura explícitamente el recuerdo antes de reutilizarlo"
+                    .into(),
+            );
+        }
         (memory_id, revision, "deduplicated")
     } else {
         let memory_id = format!("mem-{}", &request_sha256[..32]);
         tx.execute(
-            "INSERT INTO memories(id, scope_kind, scope_id, current_revision, entity_id) VALUES (?1, ?2, ?3, 1, NULL)",
-            params![memory_id, request.scope.kind, request.scope.id],
+            "INSERT INTO memories(id, scope_kind, scope_id, current_revision, entity_id) VALUES (?1, ?2, ?3, 1, ?4)",
+            params![memory_id, request.scope.kind, request.scope.id, request.entity_id],
         )
         .map_err(|_| "no se pudo crear la identidad del recuerdo".to_owned())?;
         tx.execute(
@@ -143,7 +221,7 @@ pub fn write_memory(
             params![memory_id, request.memory.original_text, request.memory.summary],
         ).map_err(|_| "no se pudo indexar el recuerdo para búsqueda textual")?;
         tx.execute(
-            "INSERT INTO memory_content_keys(scope_kind, scope_id, content_sha256, memory_id, revision) VALUES (?1, ?2, ?3, ?4, 1)",
+            "INSERT INTO memory_content_keys(scope_kind, scope_id, content_sha256, memory_id, revision, identity_version) VALUES (?1, ?2, ?3, ?4, 1, 1)",
             params![request.scope.kind, request.scope.id, fingerprint, memory_id],
         ).map_err(|_| "no se pudo registrar la huella exacta del recuerdo")?;
         (memory_id, 1, "created")
@@ -154,8 +232,6 @@ pub fn write_memory(
         params![operation_id, request_sha256, memory_id, revision, committed_at, outcome, evidence_added as i64],
     )
     .map_err(|_| "no se pudo registrar la operación de escritura")?;
-    tx.commit()
-        .map_err(|_| "no se pudo confirmar el guardado del recuerdo")?;
     Ok(response(
         &operation_id,
         memory_id,
@@ -217,6 +293,10 @@ struct ContentFingerprint<'a> {
     scope_kind: &'a str,
     scope_id: &'a str,
     memory_type: &'a str,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    entity_id: Option<&'a str>,
+    #[serde(skip_serializing_if = "Option::is_none")]
+    actor_id: Option<&'a str>,
     original_text: String,
     summary: String,
     conditions: Option<String>,
@@ -228,11 +308,13 @@ fn normalized_text(value: &str) -> String {
     value.split_whitespace().collect::<Vec<_>>().join(" ")
 }
 
-fn content_fingerprint(request: &WriteRequest) -> String {
+pub(crate) fn content_fingerprint(request: &WriteRequest) -> String {
     let content = ContentFingerprint {
         scope_kind: &request.scope.kind,
         scope_id: &request.scope.id,
         memory_type: &request.memory.memory_type,
+        entity_id: request.entity_id.as_deref(),
+        actor_id: None,
         original_text: normalized_text(&request.memory.original_text),
         summary: normalized_text(&request.memory.summary),
         conditions: request.memory.conditions.as_deref().map(normalized_text),
@@ -243,6 +325,8 @@ fn content_fingerprint(request: &WriteRequest) -> String {
 }
 
 fn fingerprint_from_row(
+    actor_id: &str,
+    entity_id: Option<&str>,
     scope_kind: &str,
     scope_id: &str,
     memory_type: &str,
@@ -256,6 +340,8 @@ fn fingerprint_from_row(
         scope_kind,
         scope_id,
         memory_type,
+        entity_id,
+        actor_id: (actor_id != "local").then_some(actor_id),
         original_text: normalized_text(original_text),
         summary: normalized_text(summary),
         conditions: conditions.map(normalized_text),
@@ -265,25 +351,27 @@ fn fingerprint_from_row(
     sha256_hex(&serde_json::to_vec(&content).expect("fingerprint struct is serializable"))
 }
 
-fn backfill_scope_keys(
+pub(crate) fn backfill_scope_keys(
     tx: &rusqlite::Transaction<'_>,
     scope_kind: &str,
     scope_id: &str,
 ) -> Result<(), String> {
-    let indexed: bool = tx
-        .query_row(
-            "SELECT EXISTS(SELECT 1 FROM memory_content_keys WHERE scope_kind=?1 AND scope_id=?2)",
-            params![scope_kind, scope_id],
-            |row| row.get(0),
-        )
-        .map_err(|_| "no se pudo comprobar el índice de huellas del ámbito")?;
-    if indexed {
-        return Ok(());
-    }
+    // Refresh derived keys after upgrades/imports without rehashing every known
+    // memory on each write. Identity is immutable within a memory.
+    tx.execute(
+        "DELETE FROM memory_content_keys WHERE scope_kind=?1 AND scope_id=?2
+         AND (identity_version=0 OR NOT EXISTS (
+             SELECT 1 FROM memories m JOIN memory_revisions r ON r.memory_id=m.id AND r.revision=m.current_revision
+             WHERE m.id=memory_content_keys.memory_id AND m.current_revision=memory_content_keys.revision AND r.state='active'))",
+        params![scope_kind, scope_id],
+    )
+    .map_err(|e| e.to_string())?;
     let mut stmt = tx.prepare(
-        "SELECT m.id, m.current_revision, r.memory_type, r.original_text, r.summary, r.conditions, r.valid_from, r.valid_until
+        "SELECT m.id, m.current_revision, r.memory_type, r.original_text, r.summary, r.conditions, r.valid_from, r.valid_until, m.actor_id, m.entity_id
          FROM memories m JOIN memory_revisions r ON r.memory_id=m.id AND r.revision=m.current_revision
-         WHERE m.scope_kind=?1 AND m.scope_id=?2 ORDER BY m.id",
+         WHERE m.scope_kind=?1 AND m.scope_id=?2 AND r.state='active'
+           AND NOT EXISTS (SELECT 1 FROM memory_content_keys k WHERE k.memory_id=m.id AND k.revision=m.current_revision AND k.identity_version=1)
+         ORDER BY m.id",
     ).map_err(|_| "no se pudieron leer recuerdos del ámbito para deduplicar")?;
     let rows = stmt
         .query_map(params![scope_kind, scope_id], |row| {
@@ -296,13 +384,17 @@ fn backfill_scope_keys(
                 row.get::<_, Option<String>>(5)?,
                 row.get::<_, Option<String>>(6)?,
                 row.get::<_, Option<String>>(7)?,
+                row.get::<_, String>(8)?,
+                row.get::<_, Option<String>>(9)?,
             ))
         })
         .map_err(|_| "no se pudieron recorrer recuerdos del ámbito")?;
     for row in rows {
-        let (memory_id, revision, kind, original, summary, conditions, from, until) =
+        let (memory_id, revision, kind, original, summary, conditions, from, until, actor, entity) =
             row.map_err(|_| "no se pudo leer una memoria existente")?;
         let fingerprint = fingerprint_from_row(
+            &actor,
+            entity.as_deref(),
             scope_kind,
             scope_id,
             &kind,
@@ -313,14 +405,14 @@ fn backfill_scope_keys(
             until.as_deref(),
         );
         tx.execute(
-            "INSERT OR IGNORE INTO memory_content_keys(scope_kind,scope_id,content_sha256,memory_id,revision) VALUES (?1,?2,?3,?4,?5)",
+            "INSERT OR IGNORE INTO memory_content_keys(scope_kind,scope_id,content_sha256,memory_id,revision,identity_version) VALUES (?1,?2,?3,?4,?5,1)",
             params![scope_kind, scope_id, fingerprint, memory_id, revision],
         ).map_err(|_| "no se pudo indexar una huella existente")?;
     }
     Ok(())
 }
 
-fn add_source_evidence(
+pub(crate) fn add_source_evidence(
     tx: &rusqlite::Transaction<'_>,
     request: &WriteRequest,
     memory_id: &str,
@@ -344,7 +436,7 @@ fn add_source_evidence(
 }
 
 fn revise_memory(
-    tx: rusqlite::Transaction<'_>,
+    tx: &rusqlite::Transaction<'_>,
     request: &WriteRequest,
     operation_id: &str,
     request_sha256: &str,
@@ -389,6 +481,8 @@ fn revise_memory(
         )
         .map_err(|_| "no se pudo leer la vigencia de la revisión actual")?;
     let old_fingerprint = fingerprint_from_row(
+        "local",
+        request.entity_id.as_deref(),
         &scope_kind,
         &scope_id,
         &old_type,
@@ -428,7 +522,7 @@ fn revise_memory(
         params![scope_kind,scope_id,old_fingerprint,memory_id],
     ).map_err(|_| "no se pudo retirar la huella anterior")?;
     tx.execute(
-        "INSERT INTO memory_content_keys(scope_kind,scope_id,content_sha256,memory_id,revision) VALUES (?1,?2,?3,?4,?5)",
+        "INSERT INTO memory_content_keys(scope_kind,scope_id,content_sha256,memory_id,revision,identity_version) VALUES (?1,?2,?3,?4,?5,1)",
         params![scope_kind,scope_id,fingerprint,memory_id,next_revision],
     ).map_err(|_| "no se pudo indexar el contenido revisado")?;
     let evidence_added = add_source_evidence(&tx, request, memory_id, next_revision, committed_at)?;
@@ -436,8 +530,6 @@ fn revise_memory(
         "INSERT INTO memory_write_operations(operation_id,request_sha256,memory_id,revision,committed_at,outcome,evidence_added) VALUES (?1,?2,?3,?4,?5,'revised',?6)",
         params![operation_id,request_sha256,memory_id,next_revision,committed_at,evidence_added as i64],
     ).map_err(|_| "no se pudo registrar la operación de revisión")?;
-    tx.commit()
-        .map_err(|_| "no se pudo confirmar la nueva revisión")?;
     Ok(response(
         operation_id,
         memory_id.to_owned(),
@@ -448,7 +540,7 @@ fn revise_memory(
     ))
 }
 
-fn validate(request: &WriteRequest) -> Result<(), String> {
+pub(crate) fn validate(request: &WriteRequest) -> Result<(), String> {
     if request.schema_version != 1 {
         return Err("schema_version debe ser 1".into());
     }
@@ -471,16 +563,7 @@ fn validate(request: &WriteRequest) -> Result<(), String> {
     {
         return Err("revise requiere memory_id y expected_revision positivos".into());
     }
-    let id = request.operation_id.as_bytes();
-    if id.len() != 36
-        || ![8, 13, 18, 23].iter().all(|&i| id.get(i) == Some(&b'-'))
-        || id
-            .iter()
-            .enumerate()
-            .any(|(i, b)| ![8, 13, 18, 23].contains(&i) && !b.is_ascii_hexdigit())
-        || !matches!(id[14].to_ascii_lowercase(), b'1'..=b'8')
-        || !matches!(id[19].to_ascii_lowercase(), b'8' | b'9' | b'a' | b'b')
-    {
+    if !valid_operation_id(&request.operation_id) {
         return Err("operation_id debe ser UUID con variante RFC 4122".into());
     }
     if !matches!(
@@ -490,6 +573,13 @@ fn validate(request: &WriteRequest) -> Result<(), String> {
         || request.scope.id.chars().count() > 128
     {
         return Err("scope debe tener kind admitido e id de 1 a 128 caracteres".into());
+    }
+    if request
+        .entity_id
+        .as_deref()
+        .is_some_and(|id| !crate::service::valid_identifier(id))
+    {
+        return Err("entity_id inválido".into());
     }
     let memory = &request.memory;
     if memory.original_text.trim().is_empty() || memory.original_text.chars().count() > 16000 {
@@ -504,19 +594,7 @@ fn validate(request: &WriteRequest) -> Result<(), String> {
     ) {
         return Err("memory.type debe ser preference, fact, decision, event o procedure".into());
     }
-    let source = &memory.source;
-    if !matches!(
-        source.kind.as_str(),
-        "user" | "document" | "tool" | "agent_discovery"
-    ) || source.reference.trim().is_empty()
-        || source.reference.chars().count() > 512
-        || source.reference.chars().any(char::is_control)
-        || source.locator.as_ref().is_some_and(|s| {
-            s.trim().is_empty() || s.chars().count() > 256 || s.chars().any(char::is_control)
-        })
-    {
-        return Err("memory.source debe tener kind, ref y locator válidos".into());
-    }
+    validate_source(&memory.source)?;
     if memory
         .conditions
         .as_ref()
@@ -543,6 +621,33 @@ fn validate(request: &WriteRequest) -> Result<(), String> {
     Ok(())
 }
 
+pub(crate) fn valid_operation_id(value: &str) -> bool {
+    let id = value.as_bytes();
+    id.len() == 36
+        && [8, 13, 18, 23].iter().all(|&i| id[i] == b'-')
+        && id
+            .iter()
+            .enumerate()
+            .all(|(i, b)| [8, 13, 18, 23].contains(&i) || b.is_ascii_hexdigit())
+        && matches!(id[14].to_ascii_lowercase(), b'1'..=b'8')
+        && matches!(id[19].to_ascii_lowercase(), b'8' | b'9' | b'a' | b'b')
+}
+pub(crate) fn validate_source(source: &SourceRef) -> Result<(), String> {
+    if !matches!(
+        source.kind.as_str(),
+        "user" | "document" | "tool" | "agent_discovery"
+    ) || source.reference.trim().is_empty()
+        || source.reference.chars().count() > 512
+        || source.reference.chars().any(char::is_control)
+        || source.locator.as_ref().is_some_and(|s| {
+            s.trim().is_empty() || s.chars().count() > 256 || s.chars().any(char::is_control)
+        })
+    {
+        return Err("memory.source debe tener kind, ref y locator válidos".into());
+    }
+    Ok(())
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -561,6 +666,7 @@ mod tests {
             action: "create".into(),
             memory_id: None,
             expected_revision: None,
+            entity_id: None,
             scope: Scope {
                 kind: "user".into(),
                 id: "person-a".into(),

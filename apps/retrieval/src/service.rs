@@ -9,7 +9,21 @@ use std::time::Instant;
 
 pub fn search(conn: &Connection, request: &SearchRequest) -> Result<SearchResponse, String> {
     validate_search_request(request)?;
-    search_validated(conn, request)
+    // Counts and candidates must describe the same committed snapshot.
+    let snapshot = if conn.is_autocommit() {
+        Some(conn.unchecked_transaction().map_err(|e| e.to_string())?)
+    } else {
+        None
+    };
+    let result = search_validated(conn, request)?;
+    if let Some(snapshot) = snapshot {
+        snapshot.commit().map_err(|e| e.to_string())?;
+    }
+    Ok(result)
+}
+
+pub(crate) fn valid_identifier(value: &str) -> bool {
+    !value.trim().is_empty() && value.len() <= 128 && !value.chars().any(char::is_control)
 }
 
 pub(crate) fn validate_search_request(request: &SearchRequest) -> Result<(), String> {
@@ -26,6 +40,31 @@ pub(crate) fn validate_search_request(request: &SearchRequest) -> Result<(), Str
     {
         return Err("entity_id debe tener entre 1 y 128 bytes".into());
     }
+    if request
+        .actor_id
+        .as_deref()
+        .is_some_and(|id| !valid_identifier(id))
+    {
+        return Err("actor_id debe tener entre 1 y 128 bytes sin controles".into());
+    }
+    if request.memory_types.len() > 32
+        || request
+            .memory_types
+            .iter()
+            .any(|kind| !valid_identifier(kind))
+    {
+        return Err("memory_types admite hasta 32 tipos de 1 a 128 bytes".into());
+    }
+    if request.bm25_weights.is_some_and(|weights| {
+        weights
+            .iter()
+            .any(|w| !w.is_finite() || *w < 0.0 || *w > 100.0)
+            || weights == [0.0, 0.0]
+    }) {
+        return Err(
+            "bm25_weights requiere dos pesos finitos entre 0 y 100, alguno positivo".into(),
+        );
+    }
     if !valid_utc(&request.as_of) {
         return Err("as_of debe usar UTC RFC 3339 con milisegundos".into());
     }
@@ -40,20 +79,22 @@ fn search_validated(conn: &Connection, request: &SearchRequest) -> Result<Search
         QueryMode::Natural => (fts_expression(&request.query), "fts5"),
         QueryMode::Keywords => (keyword_expression(&request.query), "fts5_keywords"),
     };
-    if expression.is_empty() {
-        return Ok(SearchResponse {
-            status: "complete",
-            method,
-            candidates: vec![],
-            semantic_coverage: "disabled",
-        });
-    }
-    let candidates = crate::repo::search(conn, request, &expression)?;
+    let candidates = if expression.is_empty() {
+        Vec::new()
+    } else {
+        crate::repo::search(conn, request, &expression)?
+    };
+    let coverage = crate::repo::search_coverage(conn, request, &expression, candidates.len())?;
     Ok(SearchResponse {
-        status: "complete",
+        status: if coverage.indexed_memories < coverage.eligible_memories {
+            "degraded"
+        } else {
+            "complete"
+        },
         method,
         candidates,
         semantic_coverage: "disabled",
+        coverage,
     })
 }
 
@@ -612,6 +653,9 @@ pub(crate) fn compose_seed_with_limit(
                 .map(|item| {
                     let mut text =
                         format!("[{}@{}] {}", item.memory_id, item.revision, item.summary);
+                    if item.state == "uncertain" {
+                        text.push_str("\n  Incertidumbre: revisión de vigencia vencida o propuesta pendiente; consulta mem-review-list y mem-proposal-get antes de tratar este recuerdo como confirmado.");
+                    }
                     if let Some(conditions) = &item.conditions {
                         text.push_str(&format!("\n  Condiciones: {conditions}"));
                     }
@@ -678,14 +722,46 @@ pub(crate) fn valid_utc(value: &str) -> bool {
         && number(17, 19) < 60
 }
 
+// Quotes delimit literal phrases; every emitted term is quoted, so raw operators
+// and column selectors cannot become FTS syntax. An unmatched quote closes at EOF.
+fn query_units(query: &str) -> Vec<(String, bool)> {
+    let mut units = Vec::new();
+    let mut quoted = false;
+    let mut buffer = String::new();
+    for c in query.chars().chain(std::iter::once('"')) {
+        if c == '"' {
+            if quoted {
+                let words: Vec<_> = buffer
+                    .split(|c: char| !c.is_alphanumeric())
+                    .filter(|s| !s.is_empty())
+                    .collect();
+                if !words.is_empty() {
+                    units.push((words.join(" "), true));
+                }
+            } else {
+                units.extend(
+                    buffer
+                        .split_whitespace()
+                        .map(|w| w.trim_matches(|c: char| !c.is_alphanumeric()))
+                        .filter(|w| !w.is_empty())
+                        .map(|w| (w.to_owned(), false)),
+                );
+            }
+            buffer.clear();
+            quoted = !quoted;
+        } else {
+            buffer.push(c);
+        }
+    }
+    units
+}
+
 fn fts_expression(query: &str) -> String {
-    let terms: Vec<String> = query
-        .split_whitespace()
-        .map(|word| word.trim_matches(|c: char| !c.is_alphanumeric()))
-        .filter(|word| !word.is_empty())
-        .map(|word| format!("\"{}\"", word.replace('"', "\"\"")))
-        .collect();
-    terms.join(" OR ")
+    query_units(query)
+        .into_iter()
+        .map(|(unit, _)| format!("\"{}\"", unit.replace('"', "\"\"")))
+        .collect::<Vec<_>>()
+        .join(" OR ")
 }
 
 fn keyword_expression(query: &str) -> String {
@@ -699,13 +775,25 @@ fn keyword_expression(query: &str) -> String {
         "una", "unas", "unos", "y", "ya",
     ];
     let mut seen = HashSet::new();
-    query
-        .split(|c: char| !c.is_alphanumeric())
-        .filter(|word| word.chars().count() >= 3)
-        .map(str::to_lowercase)
-        .filter(|word| !STOPWORDS.contains(&word.as_str()) && seen.insert(word.clone()))
-        .map(|word| {
-            if word.chars().count() >= 7 {
+    query_units(query)
+        .into_iter()
+        .flat_map(|(word, phrase)| {
+            if phrase {
+                vec![(word, true)]
+            } else {
+                word.split(|c: char| !c.is_alphanumeric())
+                    .filter(|w| !w.is_empty())
+                    .map(|w| (w.to_owned(), false))
+                    .collect()
+            }
+        })
+        .map(|(word, phrase)| (word.to_lowercase(), phrase))
+        .filter(|(word, phrase)| {
+            (*phrase || (word.chars().count() >= 3 && !STOPWORDS.contains(&word.as_str())))
+                && seen.insert((word.clone(), *phrase))
+        })
+        .map(|(word, phrase)| {
+            if !phrase && word.chars().count() >= 7 {
                 let prefix = word
                     .chars()
                     .take(word.chars().count() - 2)
@@ -1011,11 +1099,7 @@ mod tests {
 
         let mut conn = Connection::open_in_memory().unwrap();
         gennie_memory_kernel::db::configure(&conn).unwrap();
-        conn.execute_batch(include_str!("../migrations/0001_initial.sql"))
-            .unwrap();
-        conn.execute_batch(include_str!("../migrations/0003_entity_filter.sql"))
-            .unwrap();
-        conn.execute_batch(include_str!("../migrations/0004_seed_provenance.sql"))
+        gennie_memory_kernel::db::migrate(&mut conn, &[Box::new(crate::module::RetrievalModule)])
             .unwrap();
         let cases = [
             (
@@ -1068,6 +1152,7 @@ mod tests {
                     scope_kind: "conversation".into(),
                     scope_id: (*scope).into(),
                     entity_id: None,
+                    actor_id: None,
                     revision: 1,
                     memory_type: "conversation".into(),
                     original_text: (*summary).into(),
@@ -1087,8 +1172,11 @@ mod tests {
                 scope_kind: "conversation".into(),
                 scope_id: "c1".into(),
                 entity_id: None,
+                actor_id: None,
                 as_of: "2026-10-23T12:00:00.000Z".into(),
                 limit: None,
+                memory_types: Vec::new(),
+                bm25_weights: None,
                 query_mode: Some(QueryMode::Natural),
             },
             provider: ClassifierProvider::Decisions,
@@ -1204,11 +1292,7 @@ mod tests {
 
         let mut conn = Connection::open_in_memory().unwrap();
         gennie_memory_kernel::db::configure(&conn).unwrap();
-        conn.execute_batch(include_str!("../migrations/0001_initial.sql"))
-            .unwrap();
-        conn.execute_batch(include_str!("../migrations/0003_entity_filter.sql"))
-            .unwrap();
-        conn.execute_batch(include_str!("../migrations/0004_seed_provenance.sql"))
+        gennie_memory_kernel::db::migrate(&mut conn, &[Box::new(crate::module::RetrievalModule)])
             .unwrap();
         crate::repo::load_fixtures(
             &mut conn,
@@ -1217,6 +1301,7 @@ mod tests {
                 scope_kind: "conversation".into(),
                 scope_id: "premise-correction".into(),
                 entity_id: None,
+                actor_id: None,
                 revision: 1,
                 memory_type: "conversation".into(),
                 original_text: "Employee Ana Ruiz E-17 did not approve item PR-77.".into(),
@@ -1235,8 +1320,11 @@ mod tests {
                 scope_kind: "conversation".into(),
                 scope_id: "premise-correction".into(),
                 entity_id: None,
+                actor_id: None,
                 as_of: "2026-10-23T12:00:00.000Z".into(),
                 limit: None,
+                memory_types: Vec::new(),
+                bm25_weights: None,
                 query_mode: Some(QueryMode::Natural),
             },
             provider: ClassifierProvider::Decisions,
@@ -1504,18 +1592,14 @@ mod tests {
         }
         let mut conn = Connection::open_in_memory().unwrap();
         gennie_memory_kernel::db::configure(&conn).unwrap();
-        for sql in [
-            include_str!("../migrations/0001_initial.sql"),
-            include_str!("../migrations/0003_entity_filter.sql"),
-            include_str!("../migrations/0004_seed_provenance.sql"),
-        ] {
-            conn.execute_batch(sql).unwrap();
-        }
+        gennie_memory_kernel::db::migrate(&mut conn, &[Box::new(crate::module::RetrievalModule)])
+            .unwrap();
         let make = |id: &str, text: &str| FixtureMemory {
             id: id.into(),
             scope_kind: "conversation".into(),
             scope_id: "parts".into(),
             entity_id: None,
+            actor_id: None,
             revision: 1,
             memory_type: "fact".into(),
             original_text: text.into(),
@@ -1651,17 +1735,14 @@ mod tests {
     fn recall_chooses_a_scoped_memory_and_degrades_on_provider_failure() {
         let mut conn = Connection::open_in_memory().unwrap();
         gennie_memory_kernel::db::configure(&conn).unwrap();
-        conn.execute_batch(include_str!("../migrations/0001_initial.sql"))
-            .unwrap();
-        conn.execute_batch(include_str!("../migrations/0003_entity_filter.sql"))
-            .unwrap();
-        conn.execute_batch(include_str!("../migrations/0004_seed_provenance.sql"))
+        gennie_memory_kernel::db::migrate(&mut conn, &[Box::new(crate::module::RetrievalModule)])
             .unwrap();
         let memory = |id: &str, scope: &str| FixtureMemory {
             id: id.into(),
             scope_kind: "user".into(),
             scope_id: scope.into(),
             entity_id: None,
+            actor_id: None,
             revision: 1,
             memory_type: "preference".into(),
             original_text: "Prefiere formato breve".into(),
@@ -1680,8 +1761,11 @@ mod tests {
                 scope_kind: "user".into(),
                 scope_id: "u1".into(),
                 entity_id: None,
+                actor_id: None,
                 as_of: "2026-10-15T12:00:00.000Z".into(),
                 limit: None,
+                memory_types: Vec::new(),
+                bm25_weights: None,
                 query_mode: None,
             },
             provider: ClassifierProvider::Decisions,
@@ -1936,17 +2020,14 @@ mod tests {
     fn keyword_search_removes_question_words_but_keeps_scoped_memory() {
         let mut conn = Connection::open_in_memory().unwrap();
         gennie_memory_kernel::db::configure(&conn).unwrap();
-        conn.execute_batch(include_str!("../migrations/0001_initial.sql"))
-            .unwrap();
-        conn.execute_batch(include_str!("../migrations/0003_entity_filter.sql"))
-            .unwrap();
-        conn.execute_batch(include_str!("../migrations/0004_seed_provenance.sql"))
+        gennie_memory_kernel::db::migrate(&mut conn, &[Box::new(crate::module::RetrievalModule)])
             .unwrap();
         let fixture = |id: &str, scope: &str| FixtureMemory {
             id: id.into(),
             scope_kind: "user".into(),
             scope_id: scope.into(),
             entity_id: None,
+            actor_id: None,
             revision: 1,
             memory_type: "fact".into(),
             original_text: "El nombre completo es Clara Luz".into(),
@@ -1970,8 +2051,11 @@ mod tests {
             scope_kind: "user".into(),
             scope_id: "u1".into(),
             entity_id: None,
+            actor_id: None,
             as_of: "2026-10-15T12:00:00.000Z".into(),
             limit: Some(20),
+            memory_types: Vec::new(),
+            bm25_weights: None,
             query_mode: Some(QueryMode::Keywords),
         };
         let response = search(&conn, &request).unwrap();
@@ -2014,11 +2098,7 @@ mod tests {
     fn search_filters_scope_and_old_revision() {
         let mut conn = Connection::open_in_memory().unwrap();
         gennie_memory_kernel::db::configure(&conn).unwrap();
-        conn.execute_batch(include_str!("../migrations/0001_initial.sql"))
-            .unwrap();
-        conn.execute_batch(include_str!("../migrations/0003_entity_filter.sql"))
-            .unwrap();
-        conn.execute_batch(include_str!("../migrations/0004_seed_provenance.sql"))
+        gennie_memory_kernel::db::migrate(&mut conn, &[Box::new(crate::module::RetrievalModule)])
             .unwrap();
         let fixtures = vec![
             FixtureMemory {
@@ -2026,6 +2106,7 @@ mod tests {
                 scope_kind: "user".into(),
                 scope_id: "u1".into(),
                 entity_id: None,
+                actor_id: None,
                 revision: 1,
                 memory_type: "preference".into(),
                 original_text: "Prefiero Fer".into(),
@@ -2041,6 +2122,7 @@ mod tests {
                 scope_kind: "user".into(),
                 scope_id: "u1".into(),
                 entity_id: None,
+                actor_id: None,
                 revision: 2,
                 memory_type: "preference".into(),
                 original_text: "Prefiero Fernando".into(),
@@ -2056,6 +2138,7 @@ mod tests {
                 scope_kind: "user".into(),
                 scope_id: "u2".into(),
                 entity_id: None,
+                actor_id: None,
                 revision: 1,
                 memory_type: "preference".into(),
                 original_text: "Prefiero Fernando".into(),
@@ -2075,8 +2158,11 @@ mod tests {
                 scope_kind: "user".into(),
                 scope_id: "u1".into(),
                 entity_id: None,
+                actor_id: None,
                 as_of: "2026-10-15T12:00:00.000Z".into(),
                 limit: None,
+                memory_types: Vec::new(),
+                bm25_weights: None,
                 query_mode: Some(QueryMode::Natural),
             },
         )
@@ -2101,11 +2187,7 @@ mod tests {
     fn seed_rechecks_selection_against_authorized_candidates() {
         let mut conn = Connection::open_in_memory().unwrap();
         gennie_memory_kernel::db::configure(&conn).unwrap();
-        conn.execute_batch(include_str!("../migrations/0001_initial.sql"))
-            .unwrap();
-        conn.execute_batch(include_str!("../migrations/0003_entity_filter.sql"))
-            .unwrap();
-        conn.execute_batch(include_str!("../migrations/0004_seed_provenance.sql"))
+        gennie_memory_kernel::db::migrate(&mut conn, &[Box::new(crate::module::RetrievalModule)])
             .unwrap();
         crate::repo::load_fixtures(
             &mut conn,
@@ -2115,6 +2197,7 @@ mod tests {
                     scope_kind: "project".into(),
                     scope_id: "a".into(),
                     entity_id: None,
+                    actor_id: None,
                     revision: 1,
                     memory_type: "fact".into(),
                     original_text: "Formato breve".into(),
@@ -2130,6 +2213,7 @@ mod tests {
                     scope_kind: "project".into(),
                     scope_id: "b".into(),
                     entity_id: None,
+                    actor_id: None,
                     revision: 1,
                     memory_type: "fact".into(),
                     original_text: "Formato extenso".into(),
@@ -2149,8 +2233,11 @@ mod tests {
                 scope_kind: "project".into(),
                 scope_id: "a".into(),
                 entity_id: None,
+                actor_id: None,
                 as_of: "2026-10-15T12:00:00.000Z".into(),
                 limit: Some(8),
+                memory_types: Vec::new(),
+                bm25_weights: None,
                 query_mode: Some(QueryMode::Natural),
             }),
             hybrid: None,
@@ -2199,11 +2286,7 @@ mod tests {
         use crate::model::{FixtureMemory, SelectedCandidate, SourceRef};
         let mut conn = Connection::open_in_memory().unwrap();
         gennie_memory_kernel::db::configure(&conn).unwrap();
-        conn.execute_batch(include_str!("../migrations/0001_initial.sql"))
-            .unwrap();
-        conn.execute_batch(include_str!("../migrations/0003_entity_filter.sql"))
-            .unwrap();
-        conn.execute_batch(include_str!("../migrations/0004_seed_provenance.sql"))
+        gennie_memory_kernel::db::migrate(&mut conn, &[Box::new(crate::module::RetrievalModule)])
             .unwrap();
         let source = SourceRef {
             kind: "document".into(),
@@ -2215,6 +2298,7 @@ mod tests {
             scope_kind: "project".into(),
             scope_id: "synthetic".into(),
             entity_id: None,
+            actor_id: None,
             revision: 1,
             memory_type: "procedure".into(),
             original_text: "Si el cliente pide urgencia, usar canal rojo.".into(),
@@ -2231,8 +2315,11 @@ mod tests {
             scope_kind: "project".into(),
             scope_id: "synthetic".into(),
             entity_id: None,
+            actor_id: None,
             as_of: "2026-10-15T12:00:00.000Z".into(),
             limit: Some(8),
+            memory_types: Vec::new(),
+            bm25_weights: None,
             query_mode: Some(QueryMode::Natural),
         };
         let candidates = search(&conn, &search_request).unwrap().candidates;

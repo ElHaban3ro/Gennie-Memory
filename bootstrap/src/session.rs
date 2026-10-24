@@ -10,10 +10,21 @@ use std::time::Instant;
 #[derive(Deserialize)]
 #[serde(tag = "op", content = "request", rename_all = "snake_case")]
 enum SessionRequest {
+    MemWrite(gennie_memory_retrieval::reconciliation::WriteCommand),
+    MemResolve(gennie_memory_retrieval::reconciliation::ResolveCommand),
+    MemProposalGet(gennie_memory_retrieval::reconciliation::InspectRequest),
+    MemAudit(gennie_memory_retrieval::reconciliation::InspectRequest),
+    MemOperationGet(gennie_memory_retrieval::reconciliation::InspectRequest),
+    MemLifecycle(gennie_memory_retrieval::lifecycle::LifecycleRequest),
+    MemReviewList(gennie_memory_retrieval::lifecycle::ReviewListRequest),
+    EmbeddingJob(gennie_memory_retrieval::lifecycle::JobRequest),
+    SourceRegister(gennie_memory_retrieval::source_verification::RegisterRequest),
+    SourceVerify(gennie_memory_retrieval::source_verification::VerifyRequest),
     RecallV1(gennie_memory_retrieval::product::ProductRequest),
     SegmentText(gennie_memory_retrieval::segmentation::SegmentRequest),
     ProviderCapabilities,
     Search(SearchRequest),
+    EntityResolve(gennie_memory_retrieval::entity::EntityRequest),
     Recall(RecallRequest),
     HybridSearch(HybridRequest),
     ComposeSeed(SeedRequest),
@@ -27,7 +38,7 @@ struct SessionResult {
     error: Option<String>,
 }
 
-fn handle(conn: &Connection, classifier: &impl Classifier, line: &str) -> SessionResult {
+fn handle(conn: &mut Connection, classifier: &impl Classifier, line: &str) -> SessionResult {
     let started = Instant::now();
     let result = (|| {
         if line.len() > 1_000_000 {
@@ -35,6 +46,38 @@ fn handle(conn: &Connection, classifier: &impl Classifier, line: &str) -> Sessio
         }
         let request: SessionRequest = serde_json::from_str(line).map_err(|e| e.to_string())?;
         match request {
+            SessionRequest::MemWrite(request) => {
+                gennie_memory_retrieval::reconciliation::write(conn, &request, classifier)
+            }
+            SessionRequest::MemResolve(request) => {
+                gennie_memory_retrieval::reconciliation::resolve(conn, &request)
+            }
+            SessionRequest::MemProposalGet(request) => {
+                gennie_memory_retrieval::reconciliation::proposal_get(conn, &request)
+            }
+            SessionRequest::MemAudit(request) => {
+                gennie_memory_retrieval::reconciliation::audit(conn, &request)
+            }
+            SessionRequest::MemOperationGet(request) => {
+                gennie_memory_retrieval::reconciliation::operation_get(conn, &request)
+            }
+            SessionRequest::MemLifecycle(request) => {
+                gennie_memory_retrieval::lifecycle::apply(conn, &request)
+            }
+            SessionRequest::MemReviewList(request) => {
+                gennie_memory_retrieval::lifecycle::review_list(conn, &request)
+            }
+            SessionRequest::EmbeddingJob(request) => {
+                gennie_memory_retrieval::lifecycle::job(conn, &request)
+            }
+            SessionRequest::SourceRegister(request) => serde_json::to_value(
+                gennie_memory_retrieval::source_verification::register(conn, &request)?,
+            )
+            .map_err(|e| e.to_string()),
+            SessionRequest::SourceVerify(request) => serde_json::to_value(
+                gennie_memory_retrieval::source_verification::verify(conn, &request)?,
+            )
+            .map_err(|e| e.to_string()),
             SessionRequest::RecallV1(request) => {
                 let serialized = serde_json::to_string(&request).map_err(|e| e.to_string())?;
                 let response =
@@ -53,6 +96,10 @@ fn handle(conn: &Connection, classifier: &impl Classifier, line: &str) -> Sessio
             }
             SessionRequest::ProviderCapabilities => {
                 Ok(gennie_memory_retrieval::product::capabilities())
+            }
+            SessionRequest::EntityResolve(request) => {
+                serde_json::to_value(gennie_memory_retrieval::entity::resolve(conn, &request)?)
+                    .map_err(|e| e.to_string())
             }
             SessionRequest::Search(request) => {
                 let response = gennie_memory_retrieval::service::search(conn, &request)?;
@@ -89,7 +136,7 @@ fn handle(conn: &Connection, classifier: &impl Classifier, line: &str) -> Sessio
     }
 }
 
-pub fn run(conn: &Connection, classifier: &impl Classifier) -> Result<(), String> {
+pub fn run(conn: &mut Connection, classifier: &impl Classifier) -> Result<(), String> {
     let input = std::io::stdin().lock();
     let mut output = BufWriter::new(std::io::stdout().lock());
     for line in input.lines() {
@@ -129,7 +176,7 @@ mod tests {
             "limit": 20
         });
         let found = handle(
-            &conn,
+            &mut conn,
             &classifier,
             &serde_json::json!({"op":"search","request":search}).to_string(),
         );
@@ -151,7 +198,7 @@ mod tests {
             "classifier": "test_choice", "classification_status": "complete"
         });
         let composed = handle(
-            &conn,
+            &mut conn,
             &classifier,
             &serde_json::json!({"op":"compose_seed","request":request}).to_string(),
         );
@@ -173,14 +220,14 @@ mod tests {
         );
 
         let recall = handle(
-            &conn,
+            &mut conn,
             &classifier,
             &serde_json::json!({"op":"recall","request":{"search":search}}).to_string(),
         );
         assert_eq!(recall.status, "complete");
         assert_eq!(recall.response.unwrap()["error_code"], "missing_api_key");
 
-        let invalid = handle(&conn, &classifier, "not json");
+        let invalid = handle(&mut conn, &classifier, "not json");
         assert_eq!(invalid.status, "failed");
     }
 }
@@ -194,11 +241,11 @@ mod product_session_tests {
         crate::registry::migrate(&mut conn).unwrap();
         let classifier = crate::openrouter::OpenRouterClassifier::new(None).unwrap();
         let request = serde_json::json!({"op":"recall_v1","request":{"contract_version":1,"search":{"query":"sin recuerdos","scope_kind":"project","scope_id":"test","as_of":"2026-10-23T12:00:00.000Z"}}});
-        let result = handle(&conn, &classifier, &request.to_string());
+        let result = handle(&mut conn, &classifier, &request.to_string());
         assert_eq!(result.status, "complete");
         assert_eq!(result.response.unwrap()["outcome"], "no_candidates");
         let result = handle(
-            &conn,
+            &mut conn,
             &classifier,
             r#"{"op":"segment_text","request":{"text":"No enviar. Si llueve."}}"#,
         );
@@ -214,6 +261,6 @@ mod product_session_tests {
             "\"contract_version\":1",
             "\"contract_version\":1,\"contract_version\":2",
         );
-        assert_eq!(handle(&conn, &classifier, &duplicated).status, "failed");
+        assert_eq!(handle(&mut conn, &classifier, &duplicated).status, "failed");
     }
 }

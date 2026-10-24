@@ -1,0 +1,71 @@
+{
+  "date": "2026-10-24",
+  "checks": [
+    {
+      "case": "publish_frozen_vectors",
+      "passed": true,
+      "error": null
+    },
+    {
+      "case": "long_tail_semantic_search",
+      "passed": true,
+      "error": null
+    },
+    {
+      "case": "cross_profile_import_rejected",
+      "passed": true,
+      "error": "embedding_space_mismatch"
+    },
+    {
+      "case": "query_never_truncated",
+      "passed": true,
+      "error": "embedding_input_too_long: no se permite truncamiento"
+    },
+    {
+      "case": "work_budget",
+      "passed": true,
+      "error": "embedding_work_budget_exceeded"
+    },
+    {
+      "case": "cooperative_deadline",
+      "passed": true,
+      "error": "embedding_deadline_exceeded: operación descartada sin resultado parcial"
+    },
+    {
+      "case": "actor_isolation",
+      "passed": true,
+      "error": "embedding_index_not_available"
+    },
+    {
+      "case": "malformed_json",
+      "passed": true,
+      "error": "expected ident at line 1 column 2"
+    },
+    {
+      "case": "session_recovers_after_failures",
+      "passed": true,
+      "error": null
+    },
+    {
+      "case": "revision_update",
+      "passed": true,
+      "error": null
+    },
+    {
+      "case": "old_index_rejected",
+      "passed": true,
+      "error": "embedding_index_stale: reconstruye el índice para las revisiones actuales"
+    },
+    {
+      "case": "model_unavailable_no_fallback",
+      "passed": true
+    },
+    {
+      "case": "tokenizer_hash_tampering",
+      "passed": true
+    }
+  ],
+  "database": "temporary",
+  "remote_inference": false,
+  "processes_closed": true
+}

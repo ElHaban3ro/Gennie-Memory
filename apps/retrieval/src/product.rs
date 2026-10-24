@@ -18,6 +18,8 @@ pub fn capabilities() -> serde_json::Value {
         "contract_version":1, "transport":"openrouter", "evidence":"implemented_adapter_contract",
         "live_availability":"unverified", "prices":"unverified", "http_timeout_ms":20000,
         "max_operation_ms":25000, "automatic_retries":false, "automatic_fallback":false, "routing_scope":"gennie_memory_adapter_only",
+        "token_budget":{"profile":crate::token_budget::PROFILE,"input_basis":"serialized_request_json","provider_tokenizer":"unverified","input_default":crate::token_budget::DEFAULT_INPUT,"seed_default":crate::token_budget::DEFAULT_SEED,"maximum":65536,"input_scope":"classification_plus_equivalence_review"},
+        "source_verification":{"profile":crate::source_verification::PROFILE,"basis":"operator_registered_snapshot","policies":["report","require_verified"],"default":"report","locator":"utf8:start:end","semantic_support":"not_assessed","external_connectors":false},
         "text_segmentation":"local_no_model", "context_resolution":"caller_supplied",
         "providers":([ClassifierProvider::Decisions, ClassifierProvider::Jev, ClassifierProvider::Jev114].iter().map(|p|
             serde_json::json!({"provider":p, "requested_model":p.model_id(), "wire":"typed_decisions",
@@ -47,6 +49,8 @@ pub struct ProductRequest {
     pub unresolved_references: Vec<UnresolvedReference>,
     #[serde(default)]
     pub budgets: Budgets,
+    #[serde(default)]
+    pub source_policy: crate::source_verification::SourcePolicy,
 }
 
 #[derive(Debug, Deserialize, Serialize)]
@@ -78,6 +82,8 @@ pub enum ClarificationField {
 pub struct Budgets {
     pub input_bytes: usize,
     pub seed_bytes: usize,
+    pub input_tokens: usize,
+    pub seed_tokens: usize,
     pub deadline_ms: u64,
 }
 impl Default for Budgets {
@@ -85,6 +91,8 @@ impl Default for Budgets {
         Self {
             input_bytes: 32_768,
             seed_bytes: 16_384,
+            input_tokens: crate::token_budget::DEFAULT_INPUT,
+            seed_tokens: crate::token_budget::DEFAULT_SEED,
             deadline_ms: 25_000,
         }
     }
@@ -194,6 +202,8 @@ pub struct ProductResponse {
     pub stages: Vec<Stage>,
     pub issues: Vec<Issue>,
     pub usage: Usage,
+    pub token_accounting: crate::token_budget::Accounting,
+    pub source_verification: crate::source_verification::SourceReport,
     pub requested_model: Option<&'static str>,
     pub local_review: &'static str,
 }
@@ -254,7 +264,9 @@ pub fn execute_json(
                         include_str!("product.rs"),
                         include_str!("product/diagnostics.rs"),
                         include_str!("segmentation.rs"),
-                        include_str!("service.rs")
+                        include_str!("service.rs"),
+                        include_str!("token_budget.rs"),
+                        include_str!("source_verification.rs")
                     )
                     .as_bytes(),
                 )
@@ -295,6 +307,8 @@ pub fn execute_json(
             cost_status: "not_called",
             ..Usage::default()
         },
+        token_accounting: crate::token_budget::Accounting::default(),
+        source_verification: crate::source_verification::SourceReport::default(),
         requested_model: None,
         local_review: "not_available_dashboard_removed",
     };
@@ -382,10 +396,12 @@ fn validate(r: &ProductRequest) -> Result<(), Issue> {
     }
     if !(1..=32_768).contains(&r.budgets.input_bytes)
         || !(1..=65_536).contains(&r.budgets.seed_bytes)
+        || !(1..=65_536).contains(&r.budgets.input_tokens)
+        || !(1..=65_536).contains(&r.budgets.seed_tokens)
         || !(1..=25_000).contains(&r.budgets.deadline_ms)
     {
         return Err(invalid(
-            "Presupuestos fuera de rango: entrada 1–32768 bytes, semilla 1–65536 bytes, plazo 1–25000 ms.",
+            "Presupuestos fuera de rango: entrada 1–32768 bytes, semilla 1–65536 bytes, tokens de entrada y semilla 1–65536, plazo 1–25000 ms.",
         ));
     }
     let total = r.search.query.len()
@@ -445,6 +461,9 @@ fn execute(
         out.fail(issue, false);
         return;
     }
+    out.source_verification.policy = r.source_policy;
+    out.token_accounting.input_limit = r.budgets.input_tokens;
+    out.token_accounting.seed_limit = r.budgets.seed_tokens;
     out.stage("validation", "completed", started, None);
     let deadline = started + Duration::from_millis(r.budgets.deadline_ms);
     let phase = Instant::now();
@@ -517,7 +536,31 @@ fn execute(
             return;
         }
     }
-    out.coverage.retrieval = "bounded";
+    out.coverage.retrieval = out.retrieval.as_ref().unwrap().coverage.retrieval;
+    if out.retrieval.as_ref().unwrap().status == "degraded" {
+        out.stage("search", "degraded", phase, Some("fts_index_incomplete"));
+        out.fail(
+            Issue::local(
+                "fts_index_incomplete",
+                "search",
+                "Faltan documentos de revisiones elegibles en la proyección textual.",
+                "rebuild_text_projection",
+            ),
+            true,
+        );
+        return;
+    }
+    if out.retrieval.as_ref().unwrap().coverage.query == "empty_after_normalization" {
+        out.stage("search", "completed", phase, None);
+        out.outcome = Outcome::NotEvaluated;
+        out.issues.push(Issue::local(
+            "query_empty_after_normalization",
+            "search",
+            "La consulta no conserva términos buscables; reformula o usa query_mode natural.",
+            "rephrase_query",
+        ));
+        return;
+    }
     out.stage("search", "completed", phase, None);
     if expired(out, deadline, "classification") {
         return;
@@ -526,12 +569,21 @@ fn execute(
     if candidates.is_empty() {
         out.outcome = Outcome::NoCandidates;
         out.coverage.seed = "not_applicable";
+        out.token_accounting.seed_status = "not_applicable";
         return;
     }
     if expired(out, deadline, "classification") {
         return;
     }
+    let source_phase = Instant::now();
     let candidates = out.retrieval.as_ref().unwrap().candidates.clone();
+    if !refresh_sources(conn, r, &candidates, out, source_phase) {
+        return;
+    }
+    if expired(out, deadline, "source_verification") {
+        return;
+    }
+    out.stage("source_verification", "completed", source_phase, None);
     let limit = r
         .selection_policy
         .per_memory_candidate_limit()
@@ -545,15 +597,17 @@ fn execute(
     };
     let phase = Instant::now();
     out.usage.classifier_invocations = 1;
-    let result = classifier.classify_until(
+    let bounded = classifier.classify_budgeted_until(
         &classifier_query,
         &r.search.scope_id,
         &candidates,
         r.provider,
         r.selection_policy,
         deadline,
+        out.token_accounting.remaining(),
     );
-    let decision = match result {
+    out.token_accounting.extend(bounded.requests);
+    let decision = match bounded.result {
         Ok(decision) => decision,
         Err(error) => {
             out.usage = usage(
@@ -565,6 +619,10 @@ fn execute(
                         | "provider_input_limit"
                         | "deadline_not_supported"
                         | "operation_deadline"
+                        | "input_token_limit"
+                        | "token_budget_not_supported"
+                        | "token_counter_unavailable"
+                        | "token_counter_invalid_utf8"
                 ),
             );
             let issue = Issue::provider(&error);
@@ -622,13 +680,16 @@ fn execute(
             if candidates.len() > 1 {
                 let phase = Instant::now();
                 out.usage.classifier_invocations = 2;
-                match classifier.suggest_equivalent_until(
+                let bounded = classifier.suggest_equivalent_budgeted_until(
                     &r.search.scope_id,
                     anchor,
                     &candidates,
                     r.provider,
                     deadline,
-                ) {
+                    out.token_accounting.remaining(),
+                );
+                out.token_accounting.extend(bounded.requests);
+                match bounded.result {
                     Ok(suggestion)
                         if suggestion.per_memory.is_none()
                             && suggestion.consensus.is_none()
@@ -695,6 +756,15 @@ fn execute(
                             Some("invalid_equivalence_suggestion"),
                         );
                     }
+                    Err(error) if crate::token_budget::is_local_error(error.code) => {
+                        out.usage.classifier_invocations = 1;
+                        out.coverage.equivalence_review = "omitted_budget";
+                        out.execution_status = ExecutionStatus::Degraded;
+                        let mut issue = Issue::provider(&error);
+                        issue.stage = "equivalence_review";
+                        out.issues.push(issue);
+                        out.stage("equivalence_review", "skipped", phase, Some(error.code));
+                    }
                     Err(error) => {
                         let primary = PartialDecisionUsage {
                             served_model: decision.served_model.clone(),
@@ -740,10 +810,7 @@ fn execute(
                 memory_id: c.memory_id.clone(),
                 revision: c.revision,
                 selected: selected_ids.contains(&c.memory_id.as_str()),
-                included_in_seed: out
-                    .potential_equivalents
-                    .iter()
-                    .any(|pair| pair.candidate.memory_id == c.memory_id),
+                included_in_seed: false,
                 relation: if out
                     .potential_equivalents
                     .iter()
@@ -771,11 +838,7 @@ fn execute(
                     "not_assessed"
                 },
                 validation: "structural_only",
-                provenance_status: if c.source.is_some() {
-                    "declared_unverified"
-                } else {
-                    "not_provided"
-                },
+                provenance_status: source_status(out, &c.memory_id, c.revision),
                 reason: out
                     .potential_equivalents
                     .iter()
@@ -791,7 +854,7 @@ fn execute(
         return;
     }
     let phase = Instant::now();
-    let candidates = &out.retrieval.as_ref().unwrap().candidates;
+    let candidates = out.retrieval.as_ref().unwrap().candidates.clone();
     let presented = candidates
         .iter()
         .map(|c| SelectedCandidate {
@@ -802,7 +865,13 @@ fn execute(
     let selected = out
         .assessments
         .iter()
-        .filter(|a| a.selected || a.included_in_seed)
+        .filter(|a| {
+            a.selected
+                || out
+                    .potential_equivalents
+                    .iter()
+                    .any(|pair| pair.candidate.memory_id == a.memory_id)
+        })
         .map(|a| SelectedCandidate {
             memory_id: a.memory_id.clone(),
             revision: a.revision,
@@ -839,14 +908,92 @@ fn execute(
                     text.push_str("\n[Revisión requerida: los recuerdos anteriores pueden ser equivalentes; se mantienen separados. El agente debe decidir si los combina o si son distintos.]");
                 }
             }
-            if seed.seed_text.as_ref().map_or(0, String::len) <= r.budgets.seed_bytes {
-                out.seed = Some(seed);
-            } else {
+            // Re-read the current source version after the classifier and composition.
+            let included: Vec<_> = candidates
+                .iter()
+                .filter(|c| {
+                    seed.memories
+                        .iter()
+                        .any(|m| m.memory_id == c.memory_id && m.revision == c.revision)
+                })
+                .cloned()
+                .collect();
+            if !refresh_sources(conn, r, &included, out, phase) {
+                return;
+            }
+            for assessment in &mut out.assessments {
+                if let Some(check) = out.source_verification.checks.iter().find(|c| {
+                    c.memory_id == assessment.memory_id && c.revision == assessment.revision
+                }) {
+                    assessment.provenance_status = provenance(&check.status);
+                }
+            }
+            let blocked = included.iter().any(|c| {
+                let status = source_status(out, &c.memory_id, c.revision);
+                status == "rejected"
+                    || (r.source_policy
+                        == crate::source_verification::SourcePolicy::RequireVerified
+                        && status != "verified_literal")
+            });
+            if blocked {
+                out.coverage.seed = "omitted_source_verification";
+                out.token_accounting.seed_status = "omitted_source_verification";
+                out.stage(
+                    "source_verification",
+                    "failed",
+                    phase,
+                    Some("source_verification_blocked"),
+                );
+                out.fail(Issue::local("source_verification_blocked", "source_verification", "La procedencia de un recuerdo incluido está rechazada o no cumple la verificación exigida; se conserva la selección sin publicar semilla.", "register_or_correct_source_and_verify"), true);
+                return;
+            }
+            for memory in &mut seed.memories {
+                memory.provenance_status = source_status(out, &memory.memory_id, memory.revision);
+            }
+            if let Some(text) = seed.seed_text.as_mut() {
+                text.push_str("\n[Procedencia local: ");
+                text.push_str(
+                    &seed
+                        .memories
+                        .iter()
+                        .map(|m| format!("{}@{}={}", m.memory_id, m.revision, m.provenance_status))
+                        .collect::<Vec<_>>()
+                        .join("; "),
+                );
+                text.push_str(". Solo se comprueba el texto original contra snapshots aportados por el operador; veracidad, resumen y condiciones añadidas sin evaluar.]");
+            }
+            let seed_text = seed.seed_text.as_deref().unwrap_or("");
+            let tokens = match crate::token_budget::count(seed_text) {
+                Ok(tokens) => tokens,
+                Err(_) => {
+                    out.token_accounting.seed_status = "counter_unavailable";
+                    out.stage(
+                        "composition",
+                        "failed",
+                        phase,
+                        Some("token_counter_unavailable"),
+                    );
+                    out.fail(Issue::local("token_counter_unavailable", "composition", "No se pudo medir la semilla; se conserva la selección sin publicar texto.", "inspect_token_counter"), true);
+                    return;
+                }
+            };
+            out.token_accounting.seed_tokens = Some(tokens);
+            if seed_text.len() > r.budgets.seed_bytes {
+                out.token_accounting.seed_status = "omitted_byte_budget";
                 out.stage("composition", "failed", phase, Some("seed_byte_limit"));
                 out.coverage.seed = "omitted_budget";
                 out.fail(Issue::local("seed_byte_limit", "composition", "La semilla completa supera el presupuesto; se conserva la selección sin publicar texto truncado.", "increase_seed_budget"), true);
                 return;
             }
+            if tokens > r.budgets.seed_tokens {
+                out.token_accounting.seed_status = "omitted_token_budget";
+                out.stage("composition", "failed", phase, Some("seed_token_limit"));
+                out.coverage.seed = "omitted_budget";
+                out.fail(Issue::local("seed_token_limit", "composition", "La semilla completa supera el presupuesto de tokens; se conserva la selección sin publicar texto truncado.", "increase_seed_token_budget"), true);
+                return;
+            }
+            out.token_accounting.seed_status = "complete";
+            out.seed = Some(seed);
         }
         Err(_) => {
             out.stage("composition", "failed", phase, Some("composition_failed"));
@@ -864,10 +1011,15 @@ fn execute(
     }
     if expired(out, deadline, "composition") {
         out.seed = None;
+        out.token_accounting.seed_status = "omitted_deadline";
         return;
     }
     for a in &mut out.assessments {
-        a.included_in_seed = a.selected;
+        a.included_in_seed = a.selected
+            || out
+                .potential_equivalents
+                .iter()
+                .any(|pair| pair.candidate.memory_id == a.memory_id);
     }
     out.coverage.seed = "complete";
     out.stage("composition", "completed", phase, None);
@@ -908,7 +1060,7 @@ fn usage(receipt: Option<&PartialDecisionUsage>, failed: bool, attempted: bool) 
         u.input_tokens.is_some() && u.output_tokens.is_some() && u.reported_cost_usd.is_some()
     });
     Usage {
-        classifier_invocations: 1,
+        classifier_invocations: usize::from(attempted),
         receipt_status: if !attempted {
             "not_called"
         } else if complete {
@@ -997,5 +1149,61 @@ fn combined_usage(
         } else {
             "unknown"
         },
+    }
+}
+
+fn provenance(status: &str) -> &'static str {
+    match status {
+        "verified_literal" => "verified_literal",
+        "rejected" => "rejected",
+        "not_provided" => "not_provided",
+        _ => "declared_unverified",
+    }
+}
+fn source_status(out: &ProductResponse, id: &str, revision: i64) -> &'static str {
+    out.source_verification
+        .checks
+        .iter()
+        .find(|c| c.memory_id == id && c.revision == revision)
+        .map_or("declared_unverified", |c| provenance(&c.status))
+}
+fn refresh_sources(
+    conn: &Connection,
+    request: &ProductRequest,
+    candidates: &[Candidate],
+    out: &mut ProductResponse,
+    started: Instant,
+) -> bool {
+    let scope = crate::write::Scope {
+        kind: request.search.scope_kind.clone(),
+        id: request.search.scope_id.clone(),
+    };
+    match crate::source_verification::check_candidates(
+        conn,
+        request.search.actor_id.as_deref().unwrap_or("local"),
+        &scope,
+        candidates,
+    ) {
+        Ok(checks) => {
+            for check in checks {
+                out.source_verification.checks.retain(|old| {
+                    old.memory_id != check.memory_id || old.revision != check.revision
+                });
+                out.source_verification.checks.push(check);
+            }
+            true
+        }
+        Err(_) => {
+            out.coverage.seed = "omitted_source_verification";
+            out.token_accounting.seed_status = "omitted_source_verification";
+            out.stage(
+                "source_verification",
+                "failed",
+                started,
+                Some("source_check_failed"),
+            );
+            out.fail(Issue::local("source_check_failed", "source_verification", "No se pudo revalidar la memoria y su procedencia local; no se publica una semilla incierta.", "inspect_source_registry_and_revision"), true);
+            false
+        }
     }
 }

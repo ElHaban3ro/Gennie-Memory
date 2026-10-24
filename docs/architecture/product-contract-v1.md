@@ -34,6 +34,9 @@ Obligatorios: versión, consulta original no vacía, ámbito y fecha UTC RFC 333
 | Campo opcional | Valor efectivo y límite |
 | --- | --- |
 | `search.entity_id` | Filtro de identidad conocida; ausencia conserva búsqueda por ámbito |
+| `search.actor_id` | Actor simulado; omitido/null usa `local`, sin autenticación |
+| `search.memory_types` | Hasta 32 tipos; omitido/vacío no filtra tipos |
+| `search.bm25_weights` | Pesos original/resumen; default `[1.0,1.5]`; ver [aislamiento](retrieval-isolation.md) |
 | `search.limit` | 20; rango heredado 1–20 |
 | `search.query_mode` | `keywords`; modos admitidos por SearchRequest |
 | `provider` | `decisions`; también `jev`, `jev114` |
@@ -41,9 +44,10 @@ Obligatorios: versión, consulta original no vacía, ámbito y fecha UTC RFC 333
 | `request_id` | Generado si falta; mismo formato ASCII de ID; correlación, sin idempotencia |
 | `context` | Lista de `{id,source,text}`, hasta 16, IDs únicos, fuente no vacía ≤256 bytes |
 | `unresolved_references` | Hasta 16 rangos `{start_byte,end_byte,required_field}` sobre la consulta UTF-8; campo `entity`, `time` o `condition` |
-| `budgets` | `input_bytes:32768`, `seed_bytes:16384`, `deadline_ms:25000` |
+| `source_policy` | `report`; `require_verified` exige procedencia literal de toda semilla |
+| `budgets` | `input_bytes:32768`, `seed_bytes:16384`, `input_tokens:16384`, `seed_tokens:2048`, `deadline_ms:25000` |
 
-Consulta ≤8000 caracteres. Entrada textual suma consulta y textos/IDs/fuentes del contexto; presupuesto entre 1 y 32768 bytes. Semilla entre 1 y 65536 bytes, plazo entre 1 y 25000 ms. Sobre JSON de entrada hay un límite adicional de 128 KiB; también sobre el payload completo al proveedor. No son presupuestos de tokens ni de dinero. Campos desconocidos del contrato nuevo se rechazan.
+Consulta ≤8000 caracteres. Entrada textual suma consulta y textos/IDs/fuentes del contexto; presupuesto entre 1 y 32768 bytes. Semilla entre 1 y 65536 bytes, plazo entre 1 y 25000 ms. Sobre JSON de entrada hay un límite adicional de 128 KiB; también sobre el payload completo al proveedor. Las cotas de bytes y plazo siguen siendo independientes. Los tokens de entrada y semilla admiten 1–65536; no son un presupuesto monetario. Campos desconocidos del contrato nuevo se rechazan.
 
 Quien llama debe aportar los turnos necesarios para identificar «ese proyecto», la entidad conocida, fecha y condiciones relevantes. El contexto se mantiene separado en una representación JSON para el clasificador; no modifica la consulta FTS ni crea autoridad. Si declara una referencia sin resolver, recibe `clarification_required` con rango y dato requerido, sin búsqueda ni inferencia. Sin esa declaración, `ambiguity:not_assessed`: no hay detector semántico de ambigüedad ni resolución automática de pronombres.
 
@@ -57,6 +61,18 @@ Límite independiente: 256 KiB y 512 segmentos. Umbral blando 512 bytes: una fra
 
 No se resumen textos, reducen tokens, reindexan recuerdos ni hacen llamadas por segmento. La búsqueda conserva el original. Seleccionar fragmentos para ahorrar tokens requerirá una evaluación posterior de cobertura.
 
+## Presupuestos de tokens (2026-10-24)
+
+`recall-v1` y session `recall_v1` usan `o200k_base:tiktoken-rs-0.12.0:ordinary:utf8-json-v1` como unidad local de referencia. El adaptador cuenta el JSON UTF-8 exacto que entrega al cuerpo HTTP, con modelo, instrucciones, esquemas, contexto y candidatos. El conteo es acumulado entre clasificación y revisión de equivalencias, y se comprueba antes de cada envío. No se recortan candidatos, condiciones o fuentes para ajustarlo. La entrada textual y el payload conservan también sus cotas de bytes.
+
+El tokenizer nativo y la plantilla de Decisions/Jev no están verificados: estos números **no** acreditan el contexto ni el coste real del proveedor. `usage.input_tokens` y los recibos siguen siendo valores comunicados por el proveedor. `token_accounting` contiene perfil, base, límites, tokens aceptados y cada petición con etapa, SHA-256, conteo y `accepted`; no contiene credenciales ni repite el cuerpo. Aceptado significa admitido por el control local, no enviado, facturado o completado. Una petición puede fallar después por plazo, transporte o proveedor.
+
+Si la primera petición supera el límite, no se envía, se conserva la recuperación y se devuelve `input_token_limit` local. Un adaptador sin soporte devuelve `token_budget_not_supported`, sin llamar a su ruta sin límite. Si la revisión de equivalencias no cabe, se conserva el resultado principal, su recibo y la composición; `equivalence_review:omitted_budget` y ejecución degradada explican la revisión omitida. No se inventa un segundo coste. Los fallos del contador también impiden enviar.
+
+La semilla se cuenta después de añadir IDs, fuentes, condiciones y el aviso de equivalencias. `seed_tokens` mide el texto final incluso si se rechaza. Un exceso omite toda la semilla (`seed_token_limit`, `seed_status:omitted_token_budget`) y conserva la selección; no publica texto truncado. El límite de bytes conserva prioridad diagnóstica si se exceden ambos. `included_in_seed` solo se activa tras publicar; incluye también los equivalentes presentados para revisión. La composición tardía omite la semilla y marca `omitted_deadline`.
+
+La ruta heredada `recall` conserva el protocolo experimental sin estos límites para reproducir campañas. FTS5 sigue predeterminado; E5 continúa como investigación. No hay nueva UI, servidor, variable de entorno, tabla o descarga runtime. [Plan](recall-token-budgets-plan.md), [verificación](../evaluation/recall-token-budgets/README.md).
+
 ## Resultado y trazas
 
 `execution_status` distingue `completed`, `degraded`, `failed`. `outcome` distingue `evidence_selected`, `no_candidates`, `abstained`, `clarification_required`, `not_evaluated`. Un fallo técnico nunca se publica como abstención fiable.
@@ -65,7 +81,7 @@ Se devuelven consulta efectiva validada, candidatos, evaluaciones, semilla opcio
 
 Cada evaluación conserva ID/revisión, selección, inclusión real en semilla, relación, origen y validación estructural. Las políticas por recuerdo aportan `supports_answer`, `refutes_premise`, `partial_context`, `unrelated`. Son juicios del proveedor; pertenencia y revisión comprobadas no demuestran verdad semántica. Baseline conserva `unassessed` y `reason:null`: elegir un recuerdo no proporciona una justificación textual. No se equiparan probabilidades ni se exponen como confianza factual.
 
-`coverage` separa entrada, búsqueda acotada, candidatos presentados, clasificación, revisión de equivalencia y semilla. Un prefijo evaluado no cuenta como todos los candidatos. Cobertura de pregunta permanece `unknown`; índice semántico `not_applicable` en esta ruta FTS. Evaluaciones y recuerdos de semilla exponen `provenance_status`: `declared_unverified` cuando el llamante aportó una fuente y `not_provided` en otro caso. Ningún conector verifica todavía fuentes externas. `possible_duplicate` es una hipótesis del proveedor, no una puntuación de similitud ni una acción de fusión.
+`coverage` separa entrada, búsqueda acotada, candidatos presentados, clasificación, revisión de equivalencia y semilla. Un prefijo evaluado no cuenta como todos los candidatos. Cobertura de pregunta permanece `unknown`; índice semántico `not_applicable` en esta ruta FTS. Evaluaciones y recuerdos de semilla exponen `provenance_status`: `verified_literal` para original literal comprobado contra un snapshot local, `rejected` para comprobación negativa, `declared_unverified` cuando la fuente sigue sin resolver y `not_provided` cuando falta. No hay conector que autentique fuentes externas. `possible_duplicate` es una hipótesis del proveedor, no una puntuación de similitud ni una acción de fusión.
 
 Tiempos intercambiados UTC con milisegundos y duraciones monotónicas. `input_sha256` identifica el JSON recibido (en session, su serialización tipada); puede faltar en entrada excedida. `implementation_sha256` identifica exclusivamente la concatenación de product.rs, diagnostics.rs, segmentation.rs y service.rs, no el binario completo ni el adaptador. Para campañas registrar además revisión Git/binario, configuración y corpus. La respuesta incluye texto original: no es un log público anonimizado.
 
@@ -90,3 +106,17 @@ Pruebas locales de reconstrucción UTF-8, límites, ámbitos, aclaración sin ll
 [Registro de verificación local](../evaluation/product-contract-v1-verification.md).
 
 [Preparación del banco y revisión sintética](../evaluation/product-contract-v1-bank-verification.md): 18 casos nuevos, corpus ligado y dos revisiones separadas; con [campaña posterior completada](../evaluation/product-contract-v1-results-2026-10-23.md) para el perfil congelado.
+
+Actualización 2026-10-24: `retrieval.coverage` publica elegibles, proyectados, coincidencias y cotas. Proyección incompleta detiene clasificación con degradación; consulta sin términos buscables devuelve `not_evaluated`. `coverage.retrieval` distingue `complete`, `limited`, `incomplete_index` y `not_evaluated`, sin afirmar cobertura semántica de respuesta. [Contrato y ejemplos](retrieval-isolation.md).
+
+## Procedencia local (2026-10-24)
+
+`source-register` y session `source_register` registran explícitamente snapshots UTF-8 inmutables con actor, ámbito, tipo/ref y versión; la última versión nueva registrada es vigente, sin que un replay anterior la reactive. `source-verify`/`source_verify` comprueban una revisión vigente del mismo actor/ámbito. No se descargan ni leen referencias como rutas. El registro solo acredita contenido aportado por el operador local.
+
+`recall-v1` comprueba candidatos antes de clasificar y vuelve a comprobar los incluidos tras composición; `source_verification.checks` conserva perfil, resultado/motivo, hashes, versión/rango y momento del recibo. Original_text debe coincidir literalmente con el rango UTF-8 indicado (`utf8:start:end`, final exclusivo); sin locator se exige ocurrencia única. Un locator opaco permanece sin resolver. Se validan integridad del snapshot y recibo; los flags históricos de evidencia no sustituyen el verificador. La migración aditiva 10 posee snapshots y recibos; no se añade dependencia o conexión.
+
+`report` permite fuentes no resueltas, conservando su estado visible. Una comprobación rechazada para cualquier recuerdo incluido siempre bloquea la semilla. `require_verified` también bloquea si queda un incluido no comprobado, incluidos equivalentes para revisión. El clasificador puede haber recibido candidatos no verificados antes del bloqueo: estas políticas limitan publicación de semilla, no autorización de red. No hay fallback o reelección. Selection, assessments y recibos del proveedor se conservan; seed es null, included_in_seed=false y ejecución degradada. Los recibos locales son idempotentes por evidencia observada y se confirman antes de devolverlos; el momento original de un resultado idéntico se conserva, pero la evidencia se vuelve a comparar en cada comprobación.
+
+La semilla añade aviso de procedencia local antes de sus límites de bytes/tokens. `verified_literal` comprueba el original contra texto registrado; no certifica resumen, condiciones añadidas, verdad factual, autenticidad externa o vigencia fuera del registro. `semantic_support:not_assessed` conserva ese límite. La comprobación representa la instantánea local en que se ejecutó, no una garantía contra cambios externos futuros.
+
+[Plan](recall-source-verification-plan.md), [páginas de pruebas](../evaluation/recall-source-verification/README.md), [decisión 0053](../decisions/0053-local-source-verification.md). Verificación externa, aplicabilidad y relevancia/calibración independientes siguen pendientes; recall heredado conserva el protocolo de reproducción.

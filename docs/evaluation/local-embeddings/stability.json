@@ -1,0 +1,15 @@
+{
+  "repeat_comparisons": 348,
+  "candidate_order_drifts": [],
+  "runs": {
+    "e5": {
+      "rows": 261,
+      "distinct_queries_modes": 87
+    },
+    "minilm": {
+      "rows": 261,
+      "distinct_queries_modes": 87
+    }
+  },
+  "scope": "IDs/revisions/order across three known-bank rounds; not provider classification or new data."
+}

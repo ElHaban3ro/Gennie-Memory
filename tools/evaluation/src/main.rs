@@ -31,6 +31,7 @@ mod independent_projection_roles;
 mod independent_role_audit;
 mod isolated_provider_probe;
 mod literal_identity_probe;
+mod local_embeddings;
 mod local_isolation_probe;
 mod opposite_task_probe;
 mod per_memory_matrix;
@@ -91,6 +92,32 @@ fn run() -> Result<(), String> {
         .next()
         .ok_or("uso: gennie-memory-eval <comando> ...; consulte docs/evaluation/contract-v1.md")?;
     match command.as_str() {
+        "benchmark-local-cosine" => {
+            let paths: Vec<_> = args.collect();
+            if paths.len() != 3 {
+                return Err(
+                    "uso: benchmark-local-cosine <binario> <settings.json> <directorio-nuevo>"
+                        .into(),
+                );
+            }
+            local_embeddings::scale(
+                Path::new(&paths[0]),
+                Path::new(&paths[1]),
+                Path::new(&paths[2]),
+            )
+        }
+        "benchmark-local-embeddings" => {
+            let paths: Vec<_> = args.collect();
+            if paths.len() != 4 {
+                return Err("uso: benchmark-local-embeddings <binario> <settings.json> <suite.json> <directorio-nuevo>".into());
+            }
+            local_embeddings::run(
+                Path::new(&paths[0]),
+                Path::new(&paths[1]),
+                Path::new(&paths[2]),
+                Path::new(&paths[3]),
+            )
+        }
         "run-baseline-regression" => {
             let paths: Vec<_> = args.collect();
             if paths.len() != 3 {

@@ -8,14 +8,22 @@ Gennie prepara recuerdos relevantes para que un agente de IA responda con contex
 - [Comparación con otros motores](#comparación-con-otros-motores)
 - [Contexto y respuesta del agente](#contexto-y-respuesta-del-agente)
 - [Cómo funciona](#cómo-funciona)
+- [Embeddings locales v1: perfil, uso y pruebas](docs/architecture/local-embeddings.md)
+- [Recuperación, entidades y aislamiento local](docs/architecture/retrieval-isolation.md)
+- [Pruebas por etapa](docs/evaluation/retrieval-isolation/README.md)
 - [Contrato de producto v1 y comandos nuevos](docs/architecture/product-contract-v1.md)
+- [Escritura, propuestas, resolución y auditoría local](docs/architecture/write-reconciliation.md)
+- [Verificación literal de fuentes locales](docs/evaluation/recall-source-verification/README.md)
+- [Presupuestos de tokens de recall-v1: pruebas y coste local](docs/evaluation/recall-token-budgets/README.md)
 - [Funcionamiento técnico y diseño de la memoria](docs/architecture/memory-design.md)
 - [Roadmap resumido](ROADMAP-SUMMARY.md)
 - [Roadmap detallado e historial](ROADMAP.md)
 
 ## Rendimiento
 
-La corrida vigente usa [LoCoMo](docs/evaluation/locomo-results-2026-10-24.md): **272 recuerdos**, **1.982 preguntas evaluables** (1.978 positivas y 4 sin evidencia) y cuatro referencias de evidencia sin resolver excluidas. Las gráficas conservan los mismos indicadores y la presentación de la comparación anterior. Cada herramienta mantiene su color; las dos configuraciones de Gennie comparten el suyo.
+Las mediciones históricas siguientes no incorporan el nuevo contador de tokens de `recall-v1`. Su [prueba local de admisión](docs/evaluation/recall-token-budgets/04-cli.md) mide por separado primera carga y reutilización, sin inferencia remota.
+
+La última corrida medida usa [LoCoMo](docs/evaluation/locomo-results-2026-10-24.md): **272 recuerdos**, **1.982 preguntas evaluables** (1.978 positivas y 4 sin evidencia) y cuatro referencias de evidencia sin resolver excluidas. Las gráficas conservan los mismos indicadores y la presentación de la comparación anterior. Cada herramienta mantiene su color; las dos configuraciones de Gennie comparten el suyo.
 
 | Indicador | Gennie + Decisions |
 | --- | ---: |
@@ -24,6 +32,8 @@ La corrida vigente usa [LoCoMo](docs/evaluation/locomo-results-2026-10-24.md): *
 | Semilla vacía en preguntas sin evidencia | **2/4 · 50,00 %** |
 | Tiempo hasta la semilla: mediana / p95 | **420,55 / 903,96 ms** |
 | Coste informado por Decisions para 1.982 consultas | **US$1,076261** |
+
+Estos tiempos corresponden al binario de esa campaña, anterior a la ampliación de filtros y conteos de cobertura. No se ha vuelto a medir el rendimiento del binario modificado.
 
 La selección se compara con la evidencia anotada; no mide por sí sola la exactitud de la respuesta final. El banco y las limitaciones están descritos en el [informe LoCoMo](docs/evaluation/locomo-results-2026-10-24.md).
 
@@ -68,4 +78,4 @@ El núcleo está escrito en Rust y los recuerdos se almacenan en SQLite. La inte
 
 La CLI incluye `mem-write` para crear una memoria y `mem-write-batch` para escribir lotes de hasta 2.500 mediante la misma operación idempotente. Esta primera ruta es local y no ofrece todavía autenticación multiusuario, ACL ni resolución de duplicados. [Contrato de escritura](docs/architecture/memory-design.md#21-contrato-de-escritura).
 
-Para contratos, almacenamiento, índices y ciclo de vida de los recuerdos, consulta el [funcionamiento técnico de la memoria](docs/architecture/memory-design.md). Para la distribución del código, consulta la [arquitectura vigente](docs/architecture/overview.md) y el [mapa de módulos](docs/architecture/modules.md).
+Para contratos, almacenamiento, índices y ciclo de vida de los recuerdos, consulta el [funcionamiento técnico de la memoria](docs/architecture/memory-design.md). Las operaciones locales de retirada, restauración, revisión, borrado y cola E5 explícita están descritas en el [contrato de ciclo de vida](docs/architecture/memory-lifecycle.md). Para la distribución del código, consulta la [arquitectura vigente](docs/architecture/overview.md) y el [mapa de módulos](docs/architecture/modules.md).

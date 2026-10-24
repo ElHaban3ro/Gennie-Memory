@@ -1,0 +1,79 @@
+cargo test --offline --workspace
+Exit code: 101
+Contexto: snapshot compartido con filtros lifecycle nuevos y fixtures antiguos de service/embedding sin columna lifecycle_state. Las pruebas propias de fuentes y CLI pasaron.
+
+failures:
+
+---- embedding::tests::semantic_search_respects_scope_and_reports_partial_coverage stdout ----
+
+thread 'embedding::tests::semantic_search_respects_scope_and_reports_partial_coverage' (2495704) panicked at apps/retrieval/src/embedding.rs:432:10:
+called `Result::unwrap()` on an `Err` value: "no such column: m.lifecycle_state in SELECT m.current_revision, r.state FROM memories m\n                 JOIN memory_revisions r ON r.memory_id = m.id AND r.revision = ?2\n                 WHERE m.id = ?1 AND m.lifecycle_state='active' at offset 171"
+
+---- embedding::tests::rrf_tie_prefers_text_rank_over_identifier_order stdout ----
+
+thread 'embedding::tests::rrf_tie_prefers_text_rank_over_identifier_order' (2495703) panicked at apps/retrieval/src/embedding.rs:546:10:
+called `Result::unwrap()` on an `Err` value: "no such column: m.lifecycle_state in SELECT m.current_revision, r.state FROM memories m\n                 JOIN memory_revisions r ON r.memory_id = m.id AND r.revision = ?2\n                 WHERE m.id = ?1 AND m.lifecycle_state='active' at offset 171"
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+---- embedding::tests::entity_filter_precedes_text_and_semantic_ranking stdout ----
+
+thread 'embedding::tests::entity_filter_precedes_text_and_semantic_ranking' (2495702) panicked at apps/retrieval/src/embedding.rs:613:10:
+called `Result::unwrap()` on an `Err` value: "no such column: m.lifecycle_state in SELECT m.current_revision, r.state FROM memories m\n                 JOIN memory_revisions r ON r.memory_id = m.id AND r.revision = ?2\n                 WHERE m.id = ?1 AND m.lifecycle_state='active' at offset 171"
+
+---- service::tests::keyword_search_removes_question_words_but_keeps_scoped_memory stdout ----
+
+thread 'service::tests::keyword_search_removes_question_words_but_keeps_scoped_memory' (2495764) panicked at apps/retrieval/src/service.rs:2119:48:
+called `Result::unwrap()` on an `Err` value: "no such column: m.lifecycle_state in SELECT m.id, r.revision, r.summary, r.state, r.conditions,\n                    r.source_kind, r.source_ref, r.source_locator,\n                    bm25(memory_fts, ?9, ?10) AS rank\n         FROM memory_fts\n         JOIN search_documents d ON d.doc_id = memory_fts.rowid\n         JOIN memories m ON m.id = d.memory_id\n         JOIN memory_revisions r ON r.memory_id = d.memory_id AND r.revision = d.revision\n         WHERE memory_fts MATCH ?1 AND m.scope_kind = ?2 AND m.scope_id = ?3\n           AND d.revision = m.current_revision AND m.lifecycle_state = 'active' AND r.state = 'active'\n           AND (r.valid_from IS NULL OR r.valid_from <= ?4)\n           AND (r.valid_until IS NULL OR r.valid_until > ?4)\n           AND (?5 IS NULL OR m.entity_id = ?5)\n           AND m.actor_id = ?7\n           AND (json_array_length(?8) = 0 OR r.memory_type IN (SELECT value FROM json_each(?8)))\n         ORDER BY rank ASC, m.id ASC LIMIT ?6 at offset 534"
+
+---- service::tests::recall_chooses_a_scoped_memory_and_degrades_on_provider_failure stdout ----
+
+thread 'service::tests::recall_chooses_a_scoped_memory_and_degrades_on_provider_failure' (2495766) panicked at apps/retrieval/src/service.rs:1826:55:
+called `Result::unwrap()` on an `Err` value: "no such column: m.lifecycle_state in SELECT m.id, r.revision, r.summary, r.state, r.conditions,\n                    r.source_kind, r.source_ref, r.source_locator,\n                    bm25(memory_fts, ?9, ?10) AS rank\n         FROM memory_fts\n         JOIN search_documents d ON d.doc_id = memory_fts.rowid\n         JOIN memories m ON m.id = d.memory_id\n         JOIN memory_revisions r ON r.memory_id = d.memory_id AND r.revision = d.revision\n         WHERE memory_fts MATCH ?1 AND m.scope_kind = ?2 AND m.scope_id = ?3\n           AND d.revision = m.current_revision AND m.lifecycle_state = 'active' AND r.state = 'active'\n           AND (r.valid_from IS NULL OR r.valid_from <= ?4)\n           AND (r.valid_until IS NULL OR r.valid_until > ?4)\n           AND (?5 IS NULL OR m.entity_id = ?5)\n           AND m.actor_id = ?7\n           AND (json_array_length(?8) = 0 OR r.memory_type IN (SELECT value FROM json_each(?8)))\n         ORDER BY rank ASC, m.id ASC LIMIT ?6 at offset 534"
+
+---- service::tests::per_memory_recall_composes_all_parts_and_rejects_incomplete_trace stdout ----
+
+thread 'service::tests::per_memory_recall_composes_all_parts_and_rejects_incomplete_trace' (2495765) panicked at apps/retrieval/src/service.rs:1657:75:
+called `Result::unwrap()` on an `Err` value: "no such column: m.lifecycle_state in SELECT m.id, r.revision, r.summary, r.state, r.conditions,\n                    r.source_kind, r.source_ref, r.source_locator,\n                    bm25(memory_fts, ?9, ?10) AS rank\n         FROM memory_fts\n         JOIN search_documents d ON d.doc_id = memory_fts.rowid\n         JOIN memories m ON m.id = d.memory_id\n         JOIN memory_revisions r ON r.memory_id = d.memory_id AND r.revision = d.revision\n         WHERE memory_fts MATCH ?1 AND m.scope_kind = ?2 AND m.scope_id = ?3\n           AND d.revision = m.current_revision AND m.lifecycle_state = 'active' AND r.state = 'active'\n           AND (r.valid_from IS NULL OR r.valid_from <= ?4)\n           AND (r.valid_until IS NULL OR r.valid_until > ?4)\n           AND (?5 IS NULL OR m.entity_id = ?5)\n           AND m.actor_id = ?7\n           AND (json_array_length(?8) = 0 OR r.memory_type IN (SELECT value FROM json_each(?8)))\n         ORDER BY rank ASC, m.id ASC LIMIT ?6 at offset 534"
+
+---- service::tests::recall_preserves_explicit_premise_refutation_separately_from_requested_slots stdout ----
+
+thread 'service::tests::recall_preserves_explicit_premise_refutation_separately_from_requested_slots' (2495768) panicked at apps/retrieval/src/service.rs:1357:67:
+called `Result::unwrap()` on an `Err` value: "no such column: m.lifecycle_state in SELECT m.id, r.revision, r.summary, r.state, r.conditions,\n                    r.source_kind, r.source_ref, r.source_locator,\n                    bm25(memory_fts, ?9, ?10) AS rank\n         FROM memory_fts\n         JOIN search_documents d ON d.doc_id = memory_fts.rowid\n         JOIN memories m ON m.id = d.memory_id\n         JOIN memory_revisions r ON r.memory_id = d.memory_id AND r.revision = d.revision\n         WHERE memory_fts MATCH ?1 AND m.scope_kind = ?2 AND m.scope_id = ?3\n           AND d.revision = m.current_revision AND m.lifecycle_state = 'active' AND r.state = 'active'\n           AND (r.valid_from IS NULL OR r.valid_from <= ?4)\n           AND (r.valid_until IS NULL OR r.valid_until > ?4)\n           AND (?5 IS NULL OR m.entity_id = ?5)\n           AND m.actor_id = ?7\n           AND (json_array_length(?8) = 0 OR r.memory_type IN (SELECT value FROM json_each(?8)))\n         ORDER BY rank ASC, m.id ASC LIMIT ?6 at offset 534"
+
+---- service::tests::recall_normalizes_foreign_subjects_and_temporal_claims_before_seed stdout ----
+
+thread 'service::tests::recall_normalizes_foreign_subjects_and_temporal_claims_before_seed' (2495767) panicked at apps/retrieval/src/service.rs:1207:67:
+called `Result::unwrap()` on an `Err` value: "no such column: m.lifecycle_state in SELECT m.id, r.revision, r.summary, r.state, r.conditions,\n                    r.source_kind, r.source_ref, r.source_locator,\n                    bm25(memory_fts, ?9, ?10) AS rank\n         FROM memory_fts\n         JOIN search_documents d ON d.doc_id = memory_fts.rowid\n         JOIN memories m ON m.id = d.memory_id\n         JOIN memory_revisions r ON r.memory_id = d.memory_id AND r.revision = d.revision\n         WHERE memory_fts MATCH ?1 AND m.scope_kind = ?2 AND m.scope_id = ?3\n           AND d.revision = m.current_revision AND m.lifecycle_state = 'active' AND r.state = 'active'\n           AND (r.valid_from IS NULL OR r.valid_from <= ?4)\n           AND (r.valid_until IS NULL OR r.valid_until > ?4)\n           AND (?5 IS NULL OR m.entity_id = ?5)\n           AND m.actor_id = ?7\n           AND (json_array_length(?8) = 0 OR r.memory_type IN (SELECT value FROM json_each(?8)))\n         ORDER BY rank ASC, m.id ASC LIMIT ?6 at offset 534"
+
+---- service::tests::seed_preserves_conditions_and_declared_source stdout ----
+
+thread 'service::tests::seed_preserves_conditions_and_declared_source' (2495771) panicked at apps/retrieval/src/service.rs:2422:57:
+called `Result::unwrap()` on an `Err` value: "no such column: m.lifecycle_state in SELECT m.id, r.revision, r.summary, r.state, r.conditions,\n                    r.source_kind, r.source_ref, r.source_locator,\n                    bm25(memory_fts, ?9, ?10) AS rank\n         FROM memory_fts\n         JOIN search_documents d ON d.doc_id = memory_fts.rowid\n         JOIN memories m ON m.id = d.memory_id\n         JOIN memory_revisions r ON r.memory_id = d.memory_id AND r.revision = d.revision\n         WHERE memory_fts MATCH ?1 AND m.scope_kind = ?2 AND m.scope_id = ?3\n           AND d.revision = m.current_revision AND m.lifecycle_state = 'active' AND r.state = 'active'\n           AND (r.valid_from IS NULL OR r.valid_from <= ?4)\n           AND (r.valid_until IS NULL OR r.valid_until > ?4)\n           AND (?5 IS NULL OR m.entity_id = ?5)\n           AND m.actor_id = ?7\n           AND (json_array_length(?8) = 0 OR r.memory_type IN (SELECT value FROM json_each(?8)))\n         ORDER BY rank ASC, m.id ASC LIMIT ?6 at offset 534"
+
+---- service::tests::search_filters_scope_and_old_revision stdout ----
+
+thread 'service::tests::search_filters_scope_and_old_revision' (2495770) panicked at apps/retrieval/src/service.rs:2240:10:
+called `Result::unwrap()` on an `Err` value: "no such column: m.lifecycle_state in SELECT m.id, r.revision, r.summary, r.state, r.conditions,\n                    r.source_kind, r.source_ref, r.source_locator,\n                    bm25(memory_fts, ?9, ?10) AS rank\n         FROM memory_fts\n         JOIN search_documents d ON d.doc_id = memory_fts.rowid\n         JOIN memories m ON m.id = d.memory_id\n         JOIN memory_revisions r ON r.memory_id = d.memory_id AND r.revision = d.revision\n         WHERE memory_fts MATCH ?1 AND m.scope_kind = ?2 AND m.scope_id = ?3\n           AND d.revision = m.current_revision AND m.lifecycle_state = 'active' AND r.state = 'active'\n           AND (r.valid_from IS NULL OR r.valid_from <= ?4)\n           AND (r.valid_until IS NULL OR r.valid_until > ?4)\n           AND (?5 IS NULL OR m.entity_id = ?5)\n           AND m.actor_id = ?7\n           AND (json_array_length(?8) = 0 OR r.memory_type IN (SELECT value FROM json_each(?8)))\n         ORDER BY rank ASC, m.id ASC LIMIT ?6 at offset 534"
+
+---- service::tests::seed_rechecks_selection_against_authorized_candidates stdout ----
+
+thread 'service::tests::seed_rechecks_selection_against_authorized_candidates' (2495772) panicked at apps/retrieval/src/service.rs:2339:9:
+assertion failed: compose_seed(&conn, &request).unwrap_err().contains("autorizados")
+
+
+failures:
+    embedding::tests::entity_filter_precedes_text_and_semantic_ranking
+    embedding::tests::rrf_tie_prefers_text_rank_over_identifier_order
+    embedding::tests::semantic_search_respects_scope_and_reports_partial_coverage
+    service::tests::keyword_search_removes_question_words_but_keeps_scoped_memory
+    service::tests::per_memory_recall_composes_all_parts_and_rejects_incomplete_trace
+    service::tests::recall_chooses_a_scoped_memory_and_degrades_on_provider_failure
+    service::tests::recall_normalizes_foreign_subjects_and_temporal_claims_before_seed
+    service::tests::recall_preserves_explicit_premise_refutation_separately_from_requested_slots
+    service::tests::search_filters_scope_and_old_revision
+    service::tests::seed_preserves_conditions_and_declared_source
+    service::tests::seed_rechecks_selection_against_authorized_candidates
+
+test result: FAILED. 145 passed; 11 failed; 1 ignored; 0 measured; 0 filtered out; finished in 2.79s
+
+error: test failed, to rerun pass `-p gennie-memory-retrieval --lib`

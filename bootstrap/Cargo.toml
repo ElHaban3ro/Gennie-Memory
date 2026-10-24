@@ -6,6 +6,7 @@ rust-version.workspace = true
 
 [features]
 default = []
+local-embeddings = ["gennie-memory-retrieval/local-embeddings"]
 http2-transport = ["reqwest/http2", "dep:h2"]
 
 [dependencies]

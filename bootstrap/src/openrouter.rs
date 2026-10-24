@@ -3,6 +3,8 @@ mod baseline;
 mod deadline_tests;
 mod per_memory;
 mod slot_evidence;
+mod token_budget;
+mod write_relations;
 use gennie_memory_retrieval::classifier::{Classifier, DecisionError, PartialDecisionUsage};
 use gennie_memory_retrieval::model::{
     Candidate, ClassifierProvider, DecisionResult, SelectionPolicy,
@@ -42,6 +44,7 @@ pub struct OpenRouterClassifier {
     evaluation_capture: Option<Arc<Mutex<File>>>,
     evaluation_response_content: Option<Arc<Mutex<File>>>,
     operation_deadline: Option<Instant>,
+    token_budget: Option<token_budget::ActiveBudget>,
 }
 
 impl OpenRouterClassifier {
@@ -98,6 +101,7 @@ impl OpenRouterClassifier {
             evaluation_capture,
             evaluation_response_content,
             operation_deadline: None,
+            token_budget: None,
         })
     }
 
@@ -259,6 +263,19 @@ impl OpenRouterClassifier {
         if self.operation_deadline.is_some() && request_bytes.len() > 131_072 {
             return Err(failure("provider_input_limit"));
         }
+        if let Some(guard) = &self.token_budget {
+            guard.inspect(&request_bytes)?;
+        }
+        // Tokenization is part of the operation deadline too, including cold initialization.
+        let timeout = if let Some(deadline) = self.operation_deadline {
+            deadline
+                .checked_duration_since(Instant::now())
+                .filter(|remaining| !remaining.is_zero())
+                .ok_or_else(|| failure("operation_deadline"))?
+                .min(timeout)
+        } else {
+            timeout
+        };
         let response = self
             .client
             .post(endpoint)
@@ -751,6 +768,39 @@ fn parse_choice(body: &Value, labels: &[String]) -> Result<DecisionResult, Decis
 }
 
 impl Classifier for OpenRouterClassifier {
+    fn classify_relations(
+        &self,
+        memory: &gennie_memory_retrieval::write::MemoryInput,
+        candidates: &[gennie_memory_retrieval::reconciliation::RelationCandidate],
+        provider: ClassifierProvider,
+    ) -> Result<gennie_memory_retrieval::reconciliation::RelationReport, DecisionError> {
+        write_relations::classify(self, memory, candidates, provider)
+    }
+
+    fn classify_budgeted_until(
+        &self,
+        query: &str,
+        scope: &str,
+        candidates: &[Candidate],
+        provider: ClassifierProvider,
+        policy: SelectionPolicy,
+        until: Instant,
+        remaining: usize,
+    ) -> gennie_memory_retrieval::classifier::BudgetedDecision {
+        self.classify_with_tokens(query, scope, candidates, provider, policy, until, remaining)
+    }
+    fn suggest_equivalent_budgeted_until(
+        &self,
+        scope: &str,
+        anchor: &Candidate,
+        candidates: &[Candidate],
+        provider: ClassifierProvider,
+        until: Instant,
+        remaining: usize,
+    ) -> gennie_memory_retrieval::classifier::BudgetedDecision {
+        self.equivalent_with_tokens(scope, anchor, candidates, provider, until, remaining)
+    }
+
     fn classify_until(
         &self,
         query: &str,

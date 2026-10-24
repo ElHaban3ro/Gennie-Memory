@@ -99,3 +99,15 @@ Cada decisión nueva debe indicar contexto, alternativas, motivo, estado y condi
 [0048 — Nombre Gennie Memory y remoto nuevo](0048-gennie-memory-rename.md) fija paquetes, ejecutables y variables vigentes, y documenta las excepciones históricas autorizadas.
 
 [0049 — Presentar evidencia explícita al baseline](0049-baseline-explicit-evidence.md) registra la corrección autorizada del payload y sus 30 recuperaciones de desarrollo.
+
+[0050 — Recuperación y aislamiento local](0050-local-retrieval-isolation.md) registra filtros previos al límite, entidades/alias persistentes sin fusión por nombre, frases FTS5, cobertura y límites del actor simulado.
+
+[0051 — Embeddings locales independientes](0051-independent-local-embeddings.md) fija E5 small v1, artefactos/runtime, fragmentación sin truncamiento, índices completos y límites medidos del coseno exacto; conserva FTS5 predeterminado.
+
+[0052 — Presupuestos de tokens de recall-v1](0052-recall-token-budgets.md) registra el conteo local de referencia sobre JSON exacto, acumulación, semilla completa y separación del recibo del proveedor.
+
+[0053 — Verificación de procedencia local](0053-local-source-verification.md) incorpora snapshots y recibos de coincidencia literal, políticas de publicación y límites frente a autenticidad/verdad.
+
+[0055 — Ciclo de vida local](0055-local-memory-lifecycle.md) registra retirada/restauración, borrado activo, calendario y cola persistente de índices E5 con publicación y cancelación transaccionales.
+
+[0054 — Escritura y reconciliación local](0054-local-write-reconciliation.md) incorpora propuestas, resolución, confirmación y auditoría atómicas, clasificación optativa sin sobrescritura y compatibilidad de escritura local declarada.

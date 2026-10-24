@@ -1,6 +1,8 @@
 #[cfg(test)]
 #[path = "../../tools/evaluation/src/independent_projection.rs"]
 mod independent_projection;
+#[cfg(feature = "local-embeddings")]
+mod local_embeddings;
 mod openrouter;
 #[cfg(test)]
 #[path = "../../tools/evaluation/src/projection_contract.rs"]
@@ -101,7 +103,7 @@ fn run() -> Result<(), String> {
     let mut args = std::env::args().skip(1);
     let command = args
         .next()
-        .ok_or("uso: gennie-memory <init-db|mem-write|mem-write-batch|load-fixtures|load-embeddings|search|recall|recall-v1|segment-text|provider-capabilities|hybrid-search|search-batch|hybrid-search-batch|compose-seed|compose-seed-batch|session> [archivo]")?;
+        .ok_or("uso: gennie-memory <init-db|mem-lifecycle|mem-review-list|embedding-job|source-register|source-verify|entity-resolve|mem-resolve|mem-proposal-get|mem-audit|mem-operation-get|mem-write|mem-write-batch|load-fixtures|load-embeddings|search|recall|recall-v1|segment-text|provider-capabilities|hybrid-search|search-batch|hybrid-search-batch|compose-seed|compose-seed-batch|session> [archivo]")?;
     if command == "segment-text" {
         let path = args
             .next()
@@ -138,6 +140,33 @@ fn run() -> Result<(), String> {
     let mut conn = gennie_memory_kernel::db::connect(&config.database_path)?;
     registry::migrate(&mut conn)?;
     match command.as_str() {
+        #[cfg(feature = "local-embeddings")]
+        "embedding-session" => {
+            let path = args
+                .next()
+                .ok_or("uso: gennie-memory embedding-session <settings.json>")?;
+            if args.next().is_some() {
+                return Err("embedding-session admite un archivo de configuración".into());
+            }
+            let settings =
+                serde_json::from_str(&read_bounded(&path, 32_768)?).map_err(|e| e.to_string())?;
+            local_embeddings::run(&mut conn, &settings)?;
+        }
+        "entity-resolve" => {
+            let path = args
+                .next()
+                .ok_or("uso: gennie-memory entity-resolve <solicitud.json>")?;
+            if args.next().is_some() {
+                return Err("entity-resolve admite un archivo JSON".into());
+            }
+            let input = read_bounded(&path, 32_768)?;
+            let request = serde_json::from_str(&input).map_err(|e| e.to_string())?;
+            let result = gennie_memory_retrieval::entity::resolve(&mut conn, &request)?;
+            println!(
+                "{}",
+                serde_json::to_string_pretty(&result).map_err(|e| e.to_string())?
+            );
+        }
         "recall-v1" => {
             let path = args
                 .next()
@@ -177,9 +206,93 @@ fn run() -> Result<(), String> {
                     config.evaluation_capture_path.as_deref(),
                 )?
             };
-            session::run(&conn, &classifier)?;
+            session::run(&mut conn, &classifier)?;
+        }
+        "mem-lifecycle" | "mem-review-list" | "embedding-job" => {
+            let path = args.next().ok_or("indica un archivo JSON")?;
+            if args.next().is_some() {
+                return Err("el comando admite un archivo JSON".into());
+            }
+            let data = read_bounded(&path, 65_536)?;
+            let response = match command.as_str() {
+                "mem-lifecycle" => gennie_memory_retrieval::lifecycle::apply(
+                    &mut conn,
+                    &serde_json::from_str(&data).map_err(|e| format!("solicitud inválida: {e}"))?,
+                )?,
+                "mem-review-list" => gennie_memory_retrieval::lifecycle::review_list(
+                    &conn,
+                    &serde_json::from_str(&data).map_err(|e| format!("solicitud inválida: {e}"))?,
+                )?,
+                _ => gennie_memory_retrieval::lifecycle::job(
+                    &mut conn,
+                    &serde_json::from_str(&data).map_err(|e| format!("solicitud inválida: {e}"))?,
+                )?,
+            };
+            println!(
+                "{}",
+                serde_json::to_string_pretty(&response).map_err(|e| e.to_string())?
+            );
         }
         "init-db" => println!("SQLite listo: {}", config.database_path.display()),
+        "source-register" | "source-verify" => {
+            let path = args.next().ok_or("indica un archivo JSON de fuente")?;
+            if args.next().is_some() {
+                return Err("el comando de fuente admite un archivo JSON".into());
+            }
+            let data = read_bounded(
+                &path,
+                if command == "source-register" {
+                    2_097_152
+                } else {
+                    65_536
+                },
+            )?;
+            let response = if command == "source-register" {
+                let request = serde_json::from_str(&data)
+                    .map_err(|_| "solicitud source-register inválida")?;
+                serde_json::to_value(gennie_memory_retrieval::source_verification::register(
+                    &conn, &request,
+                )?)
+            } else {
+                let request =
+                    serde_json::from_str(&data).map_err(|_| "solicitud source-verify inválida")?;
+                serde_json::to_value(gennie_memory_retrieval::source_verification::verify(
+                    &conn, &request,
+                )?)
+            }
+            .map_err(|_| "no se pudo serializar la comprobación de fuente")?;
+            println!(
+                "{}",
+                serde_json::to_string_pretty(&response)
+                    .map_err(|_| "no se pudo serializar la fuente")?
+            );
+        }
+        "mem-resolve" | "mem-proposal-get" | "mem-audit" | "mem-operation-get" => {
+            let path = args.next().ok_or("falta solicitud JSON")?;
+            if args.next().is_some() {
+                return Err("se admite un archivo JSON".into());
+            }
+            let data = read_bounded(&path, 131_072)?;
+            let response = if command == "mem-resolve" {
+                let request =
+                    serde_json::from_str(&data).map_err(|e| format!("solicitud inválida: {e}"))?;
+                gennie_memory_retrieval::reconciliation::resolve(&mut conn, &request)?
+            } else {
+                let request =
+                    serde_json::from_str(&data).map_err(|e| format!("solicitud inválida: {e}"))?;
+                match command.as_str() {
+                    "mem-proposal-get" => {
+                        gennie_memory_retrieval::reconciliation::proposal_get(&conn, &request)?
+                    }
+                    "mem-audit" => gennie_memory_retrieval::reconciliation::audit(&conn, &request)?,
+                    _ => gennie_memory_retrieval::reconciliation::operation_get(&conn, &request)?,
+                }
+            };
+            println!(
+                "{}",
+                serde_json::to_string_pretty(&response).map_err(|e| e.to_string())?
+            );
+        }
         "mem-write" => {
             let path = args
                 .next()
@@ -188,9 +301,13 @@ fn run() -> Result<(), String> {
                 return Err("mem-write admite un archivo JSON".into());
             }
             let data = read_bounded(&path, 65_536)?;
-            let request: gennie_memory_retrieval::write::WriteRequest = serde_json::from_str(&data)
-                .map_err(|e| format!("solicitud mem-write inválida: {e}"))?;
-            let response = gennie_memory_retrieval::write::write_memory(&mut conn, &request)?;
+            let request: gennie_memory_retrieval::reconciliation::WriteCommand =
+                serde_json::from_str(&data)
+                    .map_err(|e| format!("solicitud mem-write inválida: {e}"))?;
+            let secrets = gennie_memory_kernel::config::load_secrets()?;
+            let classifier = openrouter::OpenRouterClassifier::new(secrets.openrouter_api_key)?;
+            let response =
+                gennie_memory_retrieval::reconciliation::write(&mut conn, &request, &classifier)?;
             println!(
                 "{}",
                 serde_json::to_string_pretty(&response)
@@ -209,11 +326,19 @@ fn run() -> Result<(), String> {
                 .lines()
                 .filter(|line| !line.trim().is_empty())
                 .map(|line| {
-                    serde_json::from_str::<gennie_memory_retrieval::write::WriteRequest>(line)
-                        .map_err(|e| format!("solicitud JSONL inválida: {e}"))
+                    serde_json::from_str::<gennie_memory_retrieval::reconciliation::WriteCommand>(
+                        line,
+                    )
+                    .map_err(|e| format!("solicitud JSONL inválida: {e}"))
                 })
                 .collect::<Result<Vec<_>, _>>()?;
-            let results = gennie_memory_retrieval::write::write_batch(&mut conn, &requests)?;
+            let secrets = gennie_memory_kernel::config::load_secrets()?;
+            let classifier = openrouter::OpenRouterClassifier::new(secrets.openrouter_api_key)?;
+            let results = gennie_memory_retrieval::reconciliation::write_batch(
+                &mut conn,
+                &requests,
+                &classifier,
+            )?;
             for result in results {
                 println!(
                     "{}",
@@ -397,7 +522,7 @@ fn run() -> Result<(), String> {
         }
         _ => {
             return Err(
-                "comando desconocido: use init-db, mem-write, mem-write-batch, load-fixtures, load-embeddings, search, recall, recall-v1, segment-text, provider-capabilities, hybrid-search, search-batch, hybrid-search-batch, compose-seed, compose-seed-batch o session".into(),
+                "comando desconocido: use init-db, source-register, source-verify, entity-resolve, mem-lifecycle, mem-review-list, embedding-job, mem-resolve, mem-proposal-get, mem-audit, mem-operation-get, mem-write, mem-write-batch, load-fixtures, load-embeddings, search, recall, recall-v1, segment-text, provider-capabilities, hybrid-search, search-batch, hybrid-search-batch, compose-seed, compose-seed-batch o session".into(),
             );
         }
     }

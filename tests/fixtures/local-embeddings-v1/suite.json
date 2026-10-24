@@ -1,0 +1,557 @@
+{
+  "schema_version": 1,
+  "corpus": [
+    {
+      "id": "medical",
+      "scope_kind": "project",
+      "scope_id": "embedding-study",
+      "actor_id": "local",
+      "revision": 1,
+      "memory_type": "fact",
+      "original_text": "Marta es alérgica a los cacahuetes y evita cualquier alimento que los contenga.",
+      "summary": "Marta es alérgica a los cacahuetes y evita cualquier alimento que los contenga.",
+      "state": "active",
+      "valid_from": null,
+      "valid_until": null
+    },
+    {
+      "id": "keys",
+      "scope_kind": "project",
+      "scope_id": "embedding-study",
+      "actor_id": "local",
+      "revision": 1,
+      "memory_type": "fact",
+      "original_text": "Las llaves de repuesto del apartamento están en el cajón superior del escritorio.",
+      "summary": "Las llaves de repuesto del apartamento están en el cajón superior del escritorio.",
+      "state": "active",
+      "valid_from": null,
+      "valid_until": null
+    },
+    {
+      "id": "budget",
+      "scope_kind": "project",
+      "scope_id": "embedding-study",
+      "actor_id": "local",
+      "revision": 1,
+      "memory_type": "fact",
+      "original_text": "El presupuesto máximo del proyecto Aurora es de doce mil euros.",
+      "summary": "El presupuesto máximo del proyecto Aurora es de doce mil euros.",
+      "state": "active",
+      "valid_from": null,
+      "valid_until": null
+    },
+    {
+      "id": "dentist",
+      "scope_kind": "project",
+      "scope_id": "embedding-study",
+      "actor_id": "local",
+      "revision": 1,
+      "memory_type": "fact",
+      "original_text": "La cita odontológica de Bruno está programada para el martes por la mañana.",
+      "summary": "La cita odontológica de Bruno está programada para el martes por la mañana.",
+      "state": "active",
+      "valid_from": null,
+      "valid_until": null
+    },
+    {
+      "id": "cat",
+      "scope_kind": "project",
+      "scope_id": "embedding-study",
+      "actor_id": "local",
+      "revision": 1,
+      "memory_type": "fact",
+      "original_text": "El gato de Lucía se llama Nube y tiene el pelo blanco.",
+      "summary": "El gato de Lucía se llama Nube y tiene el pelo blanco.",
+      "state": "active",
+      "valid_from": null,
+      "valid_until": null
+    },
+    {
+      "id": "travel",
+      "scope_kind": "project",
+      "scope_id": "embedding-study",
+      "actor_id": "local",
+      "revision": 1,
+      "memory_type": "fact",
+      "original_text": "Elena viajará a la capital de Francia para visitar el museo del Louvre.",
+      "summary": "Elena viajará a la capital de Francia para visitar el museo del Louvre.",
+      "state": "active",
+      "valid_from": null,
+      "valid_until": null
+    },
+    {
+      "id": "backup",
+      "scope_kind": "project",
+      "scope_id": "embedding-study",
+      "actor_id": "local",
+      "revision": 1,
+      "memory_type": "fact",
+      "original_text": "Cada domingo se hace una copia de seguridad de PostgreSQL en un disco externo.",
+      "summary": "Cada domingo se hace una copia de seguridad de PostgreSQL en un disco externo.",
+      "state": "active",
+      "valid_from": null,
+      "valid_until": null
+    },
+    {
+      "id": "rust",
+      "scope_kind": "project",
+      "scope_id": "embedding-study",
+      "actor_id": "local",
+      "revision": 1,
+      "memory_type": "fact",
+      "original_text": "El servicio de facturación usa Rust con edición 2024 y SQLite compartido.",
+      "summary": "El servicio de facturación usa Rust con edición 2024 y SQLite compartido.",
+      "state": "active",
+      "valid_from": null,
+      "valid_until": null
+    },
+    {
+      "id": "meeting",
+      "scope_kind": "project",
+      "scope_id": "embedding-study",
+      "actor_id": "local",
+      "revision": 1,
+      "memory_type": "fact",
+      "original_text": "Las reuniones del equipo remoto se celebran por videollamada los viernes.",
+      "summary": "Las reuniones del equipo remoto se celebran por videollamada los viernes.",
+      "state": "active",
+      "valid_from": null,
+      "valid_until": null
+    },
+    {
+      "id": "keyboard",
+      "scope_kind": "project",
+      "scope_id": "embedding-study",
+      "actor_id": "local",
+      "revision": 1,
+      "memory_type": "fact",
+      "original_text": "Diego utiliza una distribución de teclado Dvorak para escribir más cómodamente.",
+      "summary": "Diego utiliza una distribución de teclado Dvorak para escribir más cómodamente.",
+      "state": "active",
+      "valid_from": null,
+      "valid_until": null
+    },
+    {
+      "id": "drink",
+      "scope_kind": "project",
+      "scope_id": "embedding-study",
+      "actor_id": "local",
+      "revision": 1,
+      "memory_type": "fact",
+      "original_text": "Sofía prefiere el té verde y no toma café después del mediodía.",
+      "summary": "Sofía prefiere el té verde y no toma café después del mediodía.",
+      "state": "active",
+      "valid_from": null,
+      "valid_until": null
+    },
+    {
+      "id": "bike",
+      "scope_kind": "project",
+      "scope_id": "embedding-study",
+      "actor_id": "local",
+      "revision": 1,
+      "memory_type": "fact",
+      "original_text": "Samuel se desplaza al trabajo en bicicleta para evitar el tráfico.",
+      "summary": "Samuel se desplaza al trabajo en bicicleta para evitar el tráfico.",
+      "state": "active",
+      "valid_from": null,
+      "valid_until": null
+    },
+    {
+      "id": "garden",
+      "scope_kind": "project",
+      "scope_id": "embedding-study",
+      "actor_id": "local",
+      "revision": 1,
+      "memory_type": "fact",
+      "original_text": "Las orquídeas del balcón necesitan riego moderado y luz indirecta.",
+      "summary": "Las orquídeas del balcón necesitan riego moderado y luz indirecta.",
+      "state": "active",
+      "valid_from": null,
+      "valid_until": null
+    },
+    {
+      "id": "invoice",
+      "scope_kind": "project",
+      "scope_id": "embedding-study",
+      "actor_id": "local",
+      "revision": 1,
+      "memory_type": "fact",
+      "original_text": "La factura número 84 vence el treinta de noviembre.",
+      "summary": "La factura número 84 vence el treinta de noviembre.",
+      "state": "active",
+      "valid_from": null,
+      "valid_until": null
+    },
+    {
+      "id": "dog",
+      "scope_kind": "project",
+      "scope_id": "embedding-study",
+      "actor_id": "local",
+      "revision": 1,
+      "memory_type": "fact",
+      "original_text": "The dog named Pepper needs a walk every evening before dinner.",
+      "summary": "The dog named Pepper needs a walk every evening before dinner.",
+      "state": "active",
+      "valid_from": null,
+      "valid_until": null
+    },
+    {
+      "id": "recipe",
+      "scope_kind": "project",
+      "scope_id": "embedding-study",
+      "actor_id": "local",
+      "revision": 1,
+      "memory_type": "fact",
+      "original_text": "For the tomato soup, roast the vegetables first and add basil at the end.",
+      "summary": "For the tomato soup, roast the vegetables first and add basil at the end.",
+      "state": "active",
+      "valid_from": null,
+      "valid_until": null
+    },
+    {
+      "id": "train",
+      "scope_kind": "project",
+      "scope_id": "embedding-study",
+      "actor_id": "local",
+      "revision": 1,
+      "memory_type": "fact",
+      "original_text": "The last train to Brighton leaves Victoria station at 23:15.",
+      "summary": "The last train to Brighton leaves Victoria station at 23:15.",
+      "state": "active",
+      "valid_from": null,
+      "valid_until": null
+    },
+    {
+      "id": "printer",
+      "scope_kind": "project",
+      "scope_id": "embedding-study",
+      "actor_id": "local",
+      "revision": 1,
+      "memory_type": "fact",
+      "original_text": "The office printer jams when the paper tray is filled above its red line.",
+      "summary": "The office printer jams when the paper tray is filled above its red line.",
+      "state": "active",
+      "valid_from": null,
+      "valid_until": null
+    },
+    {
+      "id": "library",
+      "scope_kind": "project",
+      "scope_id": "embedding-study",
+      "actor_id": "local",
+      "revision": 1,
+      "memory_type": "fact",
+      "original_text": "Return the borrowed novels to the public library before Saturday.",
+      "summary": "Return the borrowed novels to the public library before Saturday.",
+      "state": "active",
+      "valid_from": null,
+      "valid_until": null
+    },
+    {
+      "id": "battery",
+      "scope_kind": "project",
+      "scope_id": "embedding-study",
+      "actor_id": "local",
+      "revision": 1,
+      "memory_type": "fact",
+      "original_text": "Charge the camera battery fully the night before the wedding shoot.",
+      "summary": "Charge the camera battery fully the night before the wedding shoot.",
+      "state": "active",
+      "valid_from": null,
+      "valid_until": null
+    },
+    {
+      "id": "contract",
+      "scope_kind": "project",
+      "scope_id": "embedding-study",
+      "actor_id": "local",
+      "revision": 1,
+      "memory_type": "fact",
+      "original_text": "The rental agreement requires sixty days of written notice before moving out.",
+      "summary": "The rental agreement requires sixty days of written notice before moving out.",
+      "state": "active",
+      "valid_from": null,
+      "valid_until": null
+    },
+    {
+      "id": "flight",
+      "scope_kind": "project",
+      "scope_id": "embedding-study",
+      "actor_id": "local",
+      "revision": 1,
+      "memory_type": "fact",
+      "original_text": "Nora’s flight to Oslo departs from terminal two at seven in the morning.",
+      "summary": "Nora’s flight to Oslo departs from terminal two at seven in the morning.",
+      "state": "active",
+      "valid_from": null,
+      "valid_until": null
+    },
+    {
+      "id": "music",
+      "scope_kind": "project",
+      "scope_id": "embedding-study",
+      "actor_id": "local",
+      "revision": 1,
+      "memory_type": "fact",
+      "original_text": "Carlos practica el violonchelo durante media hora cada tarde.",
+      "summary": "Carlos practica el violonchelo durante media hora cada tarde.",
+      "state": "active",
+      "valid_from": null,
+      "valid_until": null
+    },
+    {
+      "id": "paint",
+      "scope_kind": "project",
+      "scope_id": "embedding-study",
+      "actor_id": "local",
+      "revision": 1,
+      "memory_type": "fact",
+      "original_text": "La pared de la cocina se pintará de color amarillo claro.",
+      "summary": "La pared de la cocina se pintará de color amarillo claro.",
+      "state": "active",
+      "valid_from": null,
+      "valid_until": null
+    },
+    {
+      "id": "long-tail",
+      "scope_kind": "project",
+      "scope_id": "embedding-study",
+      "revision": 1,
+      "memory_type": "fact",
+      "original_text": "El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El archivo contiene información general sobre el inventario. El laboratorio marítimo utiliza el color turquesa para identificar sus muestras de agua.",
+      "summary": "Registro extenso del laboratorio marítimo.",
+      "state": "active",
+      "valid_from": null,
+      "valid_until": null
+    }
+  ],
+  "cases": [
+    {
+      "id": "q-medical",
+      "query": "What food causes Marta an allergic reaction?",
+      "expected_ids": [
+        "medical"
+      ],
+      "group": "cross"
+    },
+    {
+      "id": "q-keys",
+      "query": "¿Dónde se guarda el duplicado para abrir la vivienda?",
+      "expected_ids": [
+        "keys"
+      ],
+      "group": "es"
+    },
+    {
+      "id": "q-budget",
+      "query": "What is the spending cap for the Aurora initiative?",
+      "expected_ids": [
+        "budget"
+      ],
+      "group": "cross"
+    },
+    {
+      "id": "q-dentist",
+      "query": "¿Cuándo le revisarán los dientes a Bruno?",
+      "expected_ids": [
+        "dentist"
+      ],
+      "group": "es"
+    },
+    {
+      "id": "q-cat",
+      "query": "What is the name of Lucia’s feline companion?",
+      "expected_ids": [
+        "cat"
+      ],
+      "group": "cross"
+    },
+    {
+      "id": "q-travel",
+      "query": "¿A qué ciudad irá Elena en sus vacaciones?",
+      "expected_ids": [
+        "travel"
+      ],
+      "group": "es"
+    },
+    {
+      "id": "q-backup",
+      "query": "¿Cómo se protege semanalmente la información de la base de datos?",
+      "expected_ids": [
+        "backup"
+      ],
+      "group": "es"
+    },
+    {
+      "id": "q-rust",
+      "query": "Which programming language powers the billing backend?",
+      "expected_ids": [
+        "rust"
+      ],
+      "group": "cross"
+    },
+    {
+      "id": "q-meeting",
+      "query": "¿Qué día se conecta por vídeo el grupo que trabaja a distancia?",
+      "expected_ids": [
+        "meeting"
+      ],
+      "group": "es"
+    },
+    {
+      "id": "q-keyboard",
+      "query": "Which key layout does Diego prefer for typing?",
+      "expected_ids": [
+        "keyboard"
+      ],
+      "group": "cross"
+    },
+    {
+      "id": "q-drink",
+      "query": "¿Qué bebida suele elegir Sofía?",
+      "expected_ids": [
+        "drink"
+      ],
+      "group": "es"
+    },
+    {
+      "id": "q-bike",
+      "query": "How does Samuel commute to the office?",
+      "expected_ids": [
+        "bike"
+      ],
+      "group": "cross"
+    },
+    {
+      "id": "q-garden",
+      "query": "¿Cómo deben cuidarse las flores del balcón?",
+      "expected_ids": [
+        "garden"
+      ],
+      "group": "es"
+    },
+    {
+      "id": "q-invoice",
+      "query": "¿Hasta qué fecha se puede pagar el recibo 84?",
+      "expected_ids": [
+        "invoice"
+      ],
+      "group": "es"
+    },
+    {
+      "id": "q-dog",
+      "query": "¿Cuándo hay que pasear al perro Pepper?",
+      "expected_ids": [
+        "dog"
+      ],
+      "group": "cross"
+    },
+    {
+      "id": "q-recipe",
+      "query": "How should I prepare the vegetables before making the soup?",
+      "expected_ids": [
+        "recipe"
+      ],
+      "group": "en"
+    },
+    {
+      "id": "q-train",
+      "query": "When is the final rail departure to Brighton?",
+      "expected_ids": [
+        "train"
+      ],
+      "group": "en"
+    },
+    {
+      "id": "q-printer",
+      "query": "What causes sheets to get stuck in the printing machine?",
+      "expected_ids": [
+        "printer"
+      ],
+      "group": "en"
+    },
+    {
+      "id": "q-library",
+      "query": "What is the deadline for taking the books back?",
+      "expected_ids": [
+        "library"
+      ],
+      "group": "en"
+    },
+    {
+      "id": "q-battery",
+      "query": "When should the photographic equipment be recharged?",
+      "expected_ids": [
+        "battery"
+      ],
+      "group": "en"
+    },
+    {
+      "id": "q-contract",
+      "query": "How much advance warning must a departing tenant provide?",
+      "expected_ids": [
+        "contract"
+      ],
+      "group": "en"
+    },
+    {
+      "id": "q-flight",
+      "query": "Which terminal should Nora go to for her Norway trip?",
+      "expected_ids": [
+        "flight"
+      ],
+      "group": "en"
+    },
+    {
+      "id": "q-music",
+      "query": "Which instrument does Carlos rehearse?",
+      "expected_ids": [
+        "music"
+      ],
+      "group": "cross"
+    },
+    {
+      "id": "q-paint",
+      "query": "¿De qué tono será el muro de la zona donde se preparan alimentos?",
+      "expected_ids": [
+        "paint"
+      ],
+      "group": "es"
+    },
+    {
+      "id": "q-long-tail",
+      "query": "¿Qué color identifica las muestras acuáticas del laboratorio marítimo?",
+      "expected_ids": [
+        "long-tail"
+      ],
+      "group": "long_tail"
+    },
+    {
+      "id": "negative-0",
+      "query": "What is the launch code of an orbital telescope?",
+      "expected_ids": [],
+      "group": "unrelated"
+    },
+    {
+      "id": "negative-1",
+      "query": "¿Cuál es la masa de un agujero negro?",
+      "expected_ids": [],
+      "group": "unrelated"
+    },
+    {
+      "id": "negative-2",
+      "query": "Who won the lunar chess championship?",
+      "expected_ids": [],
+      "group": "unrelated"
+    },
+    {
+      "id": "negative-3",
+      "query": "¿A qué temperatura funde este metal desconocido?",
+      "expected_ids": [],
+      "group": "unrelated"
+    }
+  ],
+  "rounds": 3,
+  "notes": "Synthetic author-labelled development controls. No human or independent review. Negatives do not define a cosine abstention threshold."
+}

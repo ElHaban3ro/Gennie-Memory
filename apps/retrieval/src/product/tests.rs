@@ -16,7 +16,62 @@ struct Fake {
     queries: RefCell<Vec<String>>,
     equivalence_calls: RefCell<usize>,
 }
+fn bounded_fake(
+    remaining: usize,
+    stage: &'static str,
+    payload: serde_json::Value,
+    call: impl FnOnce() -> Result<DecisionResult, DecisionError>,
+) -> crate::classifier::BudgetedDecision {
+    let mut budget = crate::token_budget::InputBudget::new(remaining);
+    let checked = budget.inspect(stage, payload.to_string().as_bytes());
+    let result = match checked {
+        Ok(()) => call(),
+        Err(code) => Err(DecisionError {
+            diagnostic: None,
+            code,
+            http_status: None,
+            partial_usage: None,
+        }),
+    };
+    crate::classifier::BudgetedDecision {
+        result,
+        requests: budget.requests,
+    }
+}
 impl Classifier for Fake {
+    fn classify_budgeted_until(
+        &self,
+        query: &str,
+        scope: &str,
+        candidates: &[Candidate],
+        provider: ClassifierProvider,
+        policy: SelectionPolicy,
+        deadline: Instant,
+        remaining: usize,
+    ) -> crate::classifier::BudgetedDecision {
+        bounded_fake(
+            remaining,
+            "classification",
+            serde_json::json!({"test_adapter_only":true,"query":query,"scope":scope,"candidates":candidates}),
+            || self.classify_until(query, scope, candidates, provider, policy, deadline),
+        )
+    }
+    fn suggest_equivalent_budgeted_until(
+        &self,
+        scope: &str,
+        anchor: &Candidate,
+        candidates: &[Candidate],
+        provider: ClassifierProvider,
+        deadline: Instant,
+        remaining: usize,
+    ) -> crate::classifier::BudgetedDecision {
+        bounded_fake(
+            remaining,
+            "equivalence_review",
+            serde_json::json!({"test_adapter_only":true,"scope":scope,"anchor":anchor,"candidates":candidates}),
+            || self.suggest_equivalent_until(scope, anchor, candidates, provider, deadline),
+        )
+    }
     fn classify(
         &self,
         _: &str,
@@ -149,6 +204,43 @@ fn run(conn: &Connection, r: &serde_json::Value, reply: Reply) -> (serde_json::V
         serde_json::to_value(out).unwrap(),
         fake.queries.into_inner(),
     )
+}
+
+#[test]
+fn isolation_filters_reach_product_and_empty_normalization_is_not_no_candidates() {
+    let (conn, mut request) = setup();
+    request["search"]["actor_id"] = serde_json::json!("another-actor");
+    let (out, calls) = run(&conn, &request, Reply::Select);
+    assert_eq!(out["outcome"], "no_candidates");
+    assert!(calls.is_empty());
+    request["search"]
+        .as_object_mut()
+        .unwrap()
+        .remove("actor_id");
+    request["search"]["memory_types"] = serde_json::json!(["unknown-type"]);
+    let (out, calls) = run(&conn, &request, Reply::Select);
+    assert_eq!(out["outcome"], "no_candidates");
+    assert!(calls.is_empty());
+    request["search"]
+        .as_object_mut()
+        .unwrap()
+        .remove("memory_types");
+    request["search"]["query"] = serde_json::json!("no y si");
+    let (out, calls) = run(&conn, &request, Reply::Select);
+    assert_eq!(out["outcome"], "not_evaluated");
+    assert_eq!(out["coverage"]["retrieval"], "not_evaluated");
+    assert!(calls.is_empty());
+}
+
+#[test]
+fn missing_text_projection_degrades_product_before_classification() {
+    let (conn, request) = setup();
+    conn.execute("DELETE FROM search_documents", []).unwrap();
+    let (out, calls) = run(&conn, &request, Reply::Select);
+    assert_eq!(out["execution_status"], "degraded");
+    assert_eq!(out["outcome"], "not_evaluated");
+    assert_eq!(out["issues"][0]["code"], "fts_index_incomplete");
+    assert!(calls.is_empty());
 }
 
 #[test]
@@ -288,4 +380,284 @@ fn typed_roles_are_preserved_and_unsupported_policies_fail_before_call() {
     let (out, calls) = run(&conn, &r, Reply::Select);
     assert_eq!(out["issues"][0]["code"], "unsupported_capability");
     assert!(calls.is_empty());
+}
+
+#[test]
+fn token_input_boundary_blocks_before_adapter_and_preserves_candidates() {
+    let (conn, mut r) = setup();
+    let (baseline, _) = run(&conn, &r, Reply::Select);
+    let n = baseline["token_accounting"]["requests"][0]["json_tokens"]
+        .as_u64()
+        .unwrap();
+    r["budgets"] = serde_json::json!({"input_tokens":n-1});
+    let (blocked, calls) = run(&conn, &r, Reply::Select);
+    assert!(calls.is_empty());
+    assert!(blocked["retrieval"]["candidates"].as_array().unwrap().len() > 1);
+    assert_eq!(blocked["issues"][0]["code"], "input_token_limit");
+    assert_eq!(blocked["issues"][0]["component"], "gennie-memory");
+    assert_eq!(blocked["usage"]["receipt_status"], "not_called");
+    assert_eq!(blocked["token_accounting"]["accepted_input_tokens"], 0);
+    r["budgets"]["input_tokens"] = n.into();
+    let (partial, calls) = run(&conn, &r, Reply::SuggestEquivalent);
+    assert_eq!(calls.len(), 1);
+    assert!(partial["seed"].is_object());
+    assert_eq!(partial["coverage"]["equivalence_review"], "omitted_budget");
+    assert_eq!(partial["usage"]["classifier_invocations"], 1);
+    assert_eq!(partial["usage"]["reported_cost_usd"], 0.001);
+    assert_eq!(
+        partial["token_accounting"]["requests"][1]["accepted"],
+        false
+    );
+}
+#[test]
+fn cumulative_input_and_final_seed_have_exact_inclusive_limits() {
+    let (conn, mut r) = setup();
+    let (baseline, _) = run(&conn, &r, Reply::SuggestEquivalent);
+    let input = baseline["token_accounting"]["accepted_input_tokens"]
+        .as_u64()
+        .unwrap();
+    let seed = baseline["token_accounting"]["seed_tokens"]
+        .as_u64()
+        .unwrap();
+    let text = baseline["seed"]["seed_text"].as_str().unwrap();
+    assert!(text.contains("Revisión requerida"));
+    assert_eq!(crate::token_budget::count(text).unwrap() as u64, seed);
+    r["budgets"] = serde_json::json!({"input_tokens":input,"seed_tokens":seed});
+    let (exact, _) = run(&conn, &r, Reply::SuggestEquivalent);
+    assert_eq!(exact["seed"], baseline["seed"]);
+    assert_eq!(exact["token_accounting"]["seed_status"], "complete");
+    r["budgets"]["seed_tokens"] = (seed - 1).into();
+    let (blocked, _) = run(&conn, &r, Reply::SuggestEquivalent);
+    assert!(blocked["seed"].is_null());
+    assert_eq!(blocked["issues"][0]["code"], "seed_token_limit");
+    assert!(
+        blocked["assessments"]
+            .as_array()
+            .unwrap()
+            .iter()
+            .any(|a| a["selected"] == true)
+    );
+    assert!(
+        blocked["assessments"]
+            .as_array()
+            .unwrap()
+            .iter()
+            .all(|a| a["included_in_seed"] == false)
+    );
+    assert_eq!(blocked["token_accounting"]["seed_tokens"], seed);
+}
+#[test]
+fn invalid_token_budgets_fail_before_classification() {
+    let (conn, mut r) = setup();
+    for field in ["input_tokens", "seed_tokens"] {
+        for value in [0, 65537] {
+            r["budgets"] = serde_json::json!({field:value});
+            let (out, calls) = run(&conn, &r, Reply::Select);
+            assert!(calls.is_empty());
+            assert_eq!(out["execution_status"], "failed");
+        }
+    }
+}
+
+#[test]
+fn adapters_without_budget_support_fail_closed() {
+    struct Unsupported;
+    impl Classifier for Unsupported {
+        fn classify(
+            &self,
+            _: &str,
+            _: &str,
+            _: &[Candidate],
+            _: ClassifierProvider,
+            _: SelectionPolicy,
+        ) -> Result<DecisionResult, DecisionError> {
+            panic!("unbounded adapter must never be called")
+        }
+    }
+    let (conn, r) = setup();
+    let out = execute_json(&conn, &r.to_string(), &Unsupported);
+    assert_eq!(out.issues[0].code, "token_budget_not_supported");
+    assert_eq!(out.issues[0].component, "gennie-memory");
+    assert!(out.seed.is_none());
+    assert_eq!(out.usage.classifier_invocations, 0);
+}
+
+fn registered_product_sources(
+    conn: &Connection,
+    r: &serde_json::Value,
+) -> crate::source_verification::RegisterRequest {
+    conn.execute("UPDATE memory_revisions SET source_kind='document',source_ref='synthetic-product-source',source_locator=NULL",[]).unwrap();
+    let mut stmt=conn.prepare("SELECT original_text FROM memory_revisions r JOIN memories m ON m.id=r.memory_id AND m.current_revision=r.revision WHERE m.scope_id=?1 ORDER BY m.id").unwrap();
+    let text = stmt
+        .query_map([r["search"]["scope_id"].as_str().unwrap()], |row| {
+            row.get::<_, String>(0)
+        })
+        .unwrap()
+        .collect::<Result<Vec<_>, _>>()
+        .unwrap()
+        .join("\n---\n");
+    let registration=serde_json::from_value(serde_json::json!({"schema_version":1,"scope":{"kind":"project","id":r["search"]["scope_id"]},"source":{"kind":"document","ref":"synthetic-product-source"},"version":"v1","text":text})).unwrap();
+    crate::source_verification::register(conn, &registration).unwrap();
+    registration
+}
+#[test]
+fn source_policy_reports_unknowns_and_strict_mode_blocks_only_the_seed() {
+    let (conn, mut r) = setup();
+    let (reported, _) = run(&conn, &r, Reply::Select);
+    assert!(reported["seed"].is_object());
+    assert!(
+        reported["source_verification"]["checks"]
+            .as_array()
+            .unwrap()
+            .iter()
+            .all(|c| c["status"] != "verified_literal")
+    );
+    r["source_policy"] = "require_verified".into();
+    let (strict, calls) = run(&conn, &r, Reply::Select);
+    assert!(!calls.is_empty());
+    assert!(strict["seed"].is_null());
+    assert_eq!(strict["issues"][0]["code"], "source_verification_blocked");
+    assert!(
+        strict["assessments"]
+            .as_array()
+            .unwrap()
+            .iter()
+            .any(|a| a["selected"] == true)
+    );
+    assert_eq!(strict["usage"]["receipt_status"], "complete");
+    assert!(
+        strict["assessments"]
+            .as_array()
+            .unwrap()
+            .iter()
+            .all(|a| a["included_in_seed"] == false)
+    );
+}
+#[test]
+fn verified_sources_and_equivalent_hints_are_rechecked_and_counted_in_final_seed() {
+    let (conn, mut r) = setup();
+    registered_product_sources(&conn, &r);
+    r["source_policy"] = "require_verified".into();
+    let (out, _) = run(&conn, &r, Reply::SuggestEquivalent);
+    assert_eq!(out["execution_status"], "completed");
+    assert!(out["seed"]["memories"].as_array().unwrap().len() > 1);
+    assert!(
+        out["seed"]["memories"]
+            .as_array()
+            .unwrap()
+            .iter()
+            .all(|m| m["provenance_status"] == "verified_literal")
+    );
+    let text = out["seed"]["seed_text"].as_str().unwrap();
+    assert!(text.contains("Procedencia local"));
+    assert!(text.contains("veracidad, resumen y condiciones añadidas sin evaluar"));
+    assert_eq!(
+        out["token_accounting"]["seed_tokens"],
+        crate::token_budget::count(text).unwrap()
+    );
+    let before: i64 = conn
+        .query_row(
+            "SELECT count(*) FROM source_verification_checks",
+            [],
+            |row| row.get(0),
+        )
+        .unwrap();
+    let (again, _) = run(&conn, &r, Reply::SuggestEquivalent);
+    assert_eq!(again["source_verification"], out["source_verification"]);
+    assert_eq!(
+        conn.query_row(
+            "SELECT count(*) FROM source_verification_checks",
+            [],
+            |row| row.get::<_, i64>(0)
+        )
+        .unwrap(),
+        before
+    );
+}
+#[test]
+fn rejected_registered_sources_never_reach_a_published_seed_in_report_mode() {
+    let (conn, r) = setup();
+    let mut registration = registered_product_sources(&conn, &r);
+    registration.version = "v2".into();
+    registration.text = "Documento sintético retirado; no contiene la cita.".into();
+    crate::source_verification::register(&conn, &registration).unwrap();
+    let (out, _) = run(&conn, &r, Reply::Select);
+    assert!(out["seed"].is_null());
+    assert_eq!(out["issues"][0]["code"], "source_verification_blocked");
+    assert!(
+        out["source_verification"]["checks"]
+            .as_array()
+            .unwrap()
+            .iter()
+            .all(|c| c["status"] == "rejected")
+    );
+    assert_eq!(out["usage"]["cost_status"], "reported");
+}
+#[test]
+fn source_updated_during_classification_is_revalidated_before_seed() {
+    struct Updating<'a> {
+        conn: &'a Connection,
+        registration: crate::source_verification::RegisterRequest,
+        inner: Fake,
+    }
+    impl Classifier for Updating<'_> {
+        fn classify(
+            &self,
+            _: &str,
+            _: &str,
+            _: &[Candidate],
+            _: ClassifierProvider,
+            _: SelectionPolicy,
+        ) -> Result<DecisionResult, DecisionError> {
+            panic!("must use bounded entry")
+        }
+        fn classify_budgeted_until(
+            &self,
+            q: &str,
+            s: &str,
+            c: &[Candidate],
+            p: ClassifierProvider,
+            policy: SelectionPolicy,
+            d: Instant,
+            n: usize,
+        ) -> crate::classifier::BudgetedDecision {
+            let result = self.inner.classify_budgeted_until(q, s, c, p, policy, d, n);
+            crate::source_verification::register(self.conn, &self.registration).unwrap();
+            result
+        }
+        fn suggest_equivalent_budgeted_until(
+            &self,
+            s: &str,
+            a: &Candidate,
+            c: &[Candidate],
+            p: ClassifierProvider,
+            d: Instant,
+            n: usize,
+        ) -> crate::classifier::BudgetedDecision {
+            self.inner
+                .suggest_equivalent_budgeted_until(s, a, c, p, d, n)
+        }
+    }
+    let (conn, r) = setup();
+    let mut registration = registered_product_sources(&conn, &r);
+    registration.version = "v2".into();
+    registration.text = "La cita ya no está en esta versión sintética.".into();
+    let updating = Updating {
+        conn: &conn,
+        registration,
+        inner: Fake {
+            reply: Reply::Select,
+            queries: RefCell::new(vec![]),
+            equivalence_calls: RefCell::new(0),
+        },
+    };
+    let out = execute_json(&conn, &r.to_string(), &updating);
+    assert!(out.seed.is_none());
+    assert_eq!(out.issues[0].code, "source_verification_blocked");
+    assert!(
+        out.source_verification
+            .checks
+            .iter()
+            .any(|c| c.snapshot_version.as_deref() == Some("v2") && c.status == "rejected")
+    );
 }

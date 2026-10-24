@@ -1,0 +1,114 @@
+{
+  "date": "2026-10-24",
+  "scope": "shared offline workspace on the local checkout; no provider inference or deployment",
+  "test_runs": [
+    {
+      "command": "cargo test --offline --workspace",
+      "exit_code": 0,
+      "passed": 1153,
+      "failed": 0,
+      "ignored": 25,
+      "suite_results": [
+        "test result: ok. 244 passed; 0 failed; 24 ignored; 0 measured; 0 filtered out; finished in 0.72s",
+        "test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.52s",
+        "test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.17s",
+        "test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.15s",
+        "test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.62s",
+        "test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s",
+        "test result: ok. 711 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 14.75s",
+        "test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+        "test result: ok. 172 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 2.42s",
+        "test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.94s",
+        "test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+        "test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s"
+      ],
+      "warnings": [
+        "warning: `gennie-memory-eval` (bin \"gennie-memory-eval\" test) generated 2 warnings",
+        "warning: `gennie-memory` (bin \"gennie-memory\" test) generated 1 warning (run `cargo fix --bin \"gennie-memory\" -p gennie-memory --tests` to apply 1 suggestion)",
+        "warning: `gennie-memory` (bin \"gennie-memory\") generated 2 warnings",
+        "warning: field `parent_selected` is never read",
+        "warning: function `decode_body` is never used",
+        "warning: function `find_identity_quote` is never used",
+        "warning: function `query_excerpt_from_codepoints` is never used",
+        "warning: unused import: `generative::reasoning`"
+      ],
+      "log_sha256": "073e3a63cd88f0b6d331deecf2ceb9866d8a2ef0a015a41fa5a9b8a909281512"
+    },
+    {
+      "command": "cargo test --offline --workspace --features gennie-memory/local-embeddings",
+      "exit_code": 0,
+      "passed": 1169,
+      "failed": 0,
+      "ignored": 25,
+      "suite_results": [
+        "test result: ok. 244 passed; 0 failed; 24 ignored; 0 measured; 0 filtered out; finished in 0.71s",
+        "test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.71s",
+        "test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.23s",
+        "test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.09s",
+        "test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.56s",
+        "test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s",
+        "test result: ok. 711 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 14.58s",
+        "test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s",
+        "test result: ok. 188 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 2.37s",
+        "test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.84s",
+        "test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+        "test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s"
+      ],
+      "warnings": [
+        "warning: `gennie-memory-eval` (bin \"gennie-memory-eval\" test) generated 2 warnings",
+        "warning: `gennie-memory` (bin \"gennie-memory\" test) generated 1 warning (run `cargo fix --bin \"gennie-memory\" -p gennie-memory --tests` to apply 1 suggestion)",
+        "warning: `gennie-memory` (bin \"gennie-memory\") generated 2 warnings",
+        "warning: field `parent_selected` is never read",
+        "warning: function `decode_body` is never used",
+        "warning: function `find_identity_quote` is never used",
+        "warning: function `query_excerpt_from_codepoints` is never used",
+        "warning: unused import: `generative::reasoning`"
+      ],
+      "log_sha256": "b6b11ad1eb2f92a757611f0d49bce7fb9b553854c29197e7370ce207dbb73bb6"
+    }
+  ],
+  "focused": {
+    "reconciliation": {
+      "passed": 13,
+      "failed": 0
+    },
+    "native_relation_adapter": {
+      "passed": 1,
+      "failed": 0
+    },
+    "cli_reconciliation": {
+      "passed": 2,
+      "failed": 0
+    }
+  },
+  "format": {
+    "command": "cargo fmt --all --check",
+    "exit_code": 0
+  },
+  "sha256": {
+    "Cargo.lock": "053138f051a097d34859b443bcab38df6a08a522521543cf7bfbe61ed8259773",
+    "apps/retrieval/migrations/0011_write_reconciliation.sql": "90e081b7e045d8269fe1e317f127ad89b76d87a15c98e2fffcce5d56ce0f655a",
+    "apps/retrieval/migrations/0012_memory_lifecycle.sql": "ccecf64a710016925915145c7cfb91558565beed913b1facfeed7e0e3dae894e",
+    "apps/retrieval/src/classifier.rs": "e70d0da589778363dbf56731f4c3eb90db12288add690a5275c65cc9fb7a0c9b",
+    "apps/retrieval/src/embedding.rs": "1ca4b879da118c706ba378de1cd29662ad4e04adcff715a253fac0192ab4f05c",
+    "apps/retrieval/src/entity.rs": "85ab87583a1b1e1c379cf30ad2dbf5aa887ef226aa6baabd03548c42c0328eda",
+    "apps/retrieval/src/lib.rs": "3b57161b4a98cd5b5d2cb85f1ded85f0e9ad2394f3a480c0c666c224f98211d1",
+    "apps/retrieval/src/lifecycle.rs": "7a8b3b92841218236aec19f68db12e28befc3c200838914e7dfb0ed0b2ccaba4",
+    "apps/retrieval/src/local_embeddings/index.rs": "34950265a7fee20c21e3de0cc0c69f15b2315441cacc0b9af07c05577f93712c",
+    "apps/retrieval/src/module.rs": "96b86aad392cb64ac803eb95d3f526f4138a7394feab66a4ecaf5fa3669d3d5f",
+    "apps/retrieval/src/reconciliation.rs": "3f426853e309f3122cad96a1279b62696451280319ace2ee0443d3cd97e493e5",
+    "apps/retrieval/src/reconciliation/commands.rs": "1725cc608086fb42c74080c424bb6cec1d29846949c85eaecb984af3d1a18de3",
+    "apps/retrieval/src/reconciliation/model.rs": "6a044c2786151d7b501bf59fa06fcfc975758e7fcb977843a93faa43186b118b",
+    "apps/retrieval/src/reconciliation/storage.rs": "3a43209e59fa08815d087645246001bdf783cee1285600c0087ae6ebf3208d4a",
+    "apps/retrieval/src/reconciliation/tests.rs": "8ccdb6c99f4a9297b0117dc7e22783c89d0763aac60b180cadcf73b798af3cd3",
+    "apps/retrieval/src/repo.rs": "652713c9086a22b467e90fe49870846f2758842b8a6c8525592c92cfb36e8673",
+    "apps/retrieval/src/service.rs": "c07825e43b226b8649b2a715b0979d3bc5dd64ebd16645eccf263261c9f62b75",
+    "apps/retrieval/src/source_verification.rs": "e274e4af9530e546e8c3c42bb8111ff60a5599d470c910b34b78a983b7b4dc12",
+    "apps/retrieval/src/write.rs": "f4e49732a4f40e33ab296e497bd4f0fce47ed885b68c3d3b9d5f571e34b7417d",
+    "bootstrap/src/main.rs": "c84c7e5d09b1fe4aa96e0852494597514409a6d77582a096c681ff874c564cc4",
+    "bootstrap/src/openrouter.rs": "71adb778a1c5fd28201f48401f5ea9febea426bbc1c4c62364d789cb63415b35",
+    "bootstrap/src/openrouter/write_relations.rs": "e73efe554ab16ac24d6c530bc6d1b362bd7356ad1a12db9c2951e323c50a291d",
+    "bootstrap/src/session.rs": "2a2dea302aaa764f78aefe0e914f89b0446de851e1fca7449fdd348287a64d9a",
+    "bootstrap/tests/write_reconciliation_cli.rs": "067d55e9203ba427e562a8c7d0fbb468c5765a453ddc3e9d4e13380028a3d096"
+  }
+}

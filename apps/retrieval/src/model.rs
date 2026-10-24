@@ -8,6 +8,8 @@ pub struct FixtureMemory {
     pub scope_id: String,
     #[serde(default)]
     pub entity_id: Option<String>,
+    #[serde(default)]
+    pub actor_id: Option<String>,
     pub revision: i64,
     pub memory_type: String,
     pub original_text: String,
@@ -39,10 +41,16 @@ pub struct SearchRequest {
     pub scope_id: String,
     #[serde(default)]
     pub entity_id: Option<String>,
+    #[serde(default)]
+    pub actor_id: Option<String>,
     pub as_of: String,
     pub limit: Option<u32>,
     #[serde(default)]
     pub query_mode: Option<QueryMode>,
+    #[serde(default)]
+    pub memory_types: Vec<String>,
+    #[serde(default)]
+    pub bm25_weights: Option<[f64; 2]>,
 }
 
 #[derive(Debug, Clone, Copy, Serialize, Deserialize, PartialEq, Eq)]
@@ -69,6 +77,19 @@ pub struct SearchResponse {
     pub method: &'static str,
     pub candidates: Vec<Candidate>,
     pub semantic_coverage: &'static str,
+    pub coverage: SearchCoverage,
+}
+
+#[derive(Debug, Serialize)]
+pub struct SearchCoverage {
+    pub eligible_memories: usize,
+    pub indexed_memories: usize,
+    pub matched_memories: usize,
+    pub returned_memories: usize,
+    pub truncated: bool,
+    pub fts_index: &'static str,
+    pub query: &'static str,
+    pub retrieval: &'static str,
 }
 
 #[derive(Debug, Clone, Copy, Default, Serialize, Deserialize, PartialEq, Eq)]
@@ -452,5 +473,8 @@ pub struct HybridResponse {
     pub semantic_coverage: &'static str,
     pub eligible_memories: usize,
     pub indexed_memories: usize,
+    pub text_coverage: SearchCoverage,
+    pub rank_limit: usize,
+    pub candidate_pool_truncated: bool,
     pub candidates: Vec<HybridCandidate>,
 }

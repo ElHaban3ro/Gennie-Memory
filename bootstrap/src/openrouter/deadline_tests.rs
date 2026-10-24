@@ -66,6 +66,7 @@ fn check_deadline(header_delay: Duration, timeout: Duration) {
         evaluation_capture: None,
         evaluation_response_content: None,
         operation_deadline: None,
+        token_budget: None,
     };
     let start = Instant::now();
     let result = classifier.request_measured_at("synthetic", &json!({}), &url, timeout);
@@ -167,7 +168,7 @@ fn evaluation_capture_records_only_hashes_and_transport_metadata() {
         std::env::temp_dir().join(format!("gennie-memory-eval-capture-{nonce}.jsonl"));
     let response_path =
         std::env::temp_dir().join(format!("gennie-memory-eval-response-{nonce}.jsonl"));
-    let classifier = OpenRouterClassifier::new_with_evaluation_capture_and_content(
+    let mut classifier = OpenRouterClassifier::new_with_evaluation_capture_and_content(
         None,
         Some(&capture_path),
         Some(&response_path),
@@ -181,6 +182,8 @@ fn evaluation_capture_records_only_hashes_and_transport_metadata() {
         ],
         "response_format":{"type":"json_schema","json_schema":{"schema":{"type":"object","properties":{"choice":{"type":"string"}}}}}
     });
+    let guard = token_budget::ActiveBudget::new("classification", 65_536);
+    classifier.token_budget = Some(guard.clone());
     classifier
         .request_measured_at(
             "synthetic-token-must-not-be-stored",
@@ -192,6 +195,20 @@ fn evaluation_capture_records_only_hashes_and_transport_metadata() {
     worker.join().unwrap();
 
     let recorded_request = request_body.lock().unwrap().clone();
+    let ledger = guard.finish(Err(failure("test_only")));
+    assert_eq!(ledger.requests.len(), 1);
+    assert!(ledger.requests[0].accepted);
+    assert_eq!(
+        ledger.requests[0].request_sha256,
+        gennie_memory_kernel::digest::sha256_hex(&recorded_request)
+    );
+    assert_eq!(
+        ledger.requests[0].json_tokens,
+        gennie_memory_retrieval::token_budget::count(
+            std::str::from_utf8(&recorded_request).unwrap()
+        )
+        .unwrap()
+    );
     let record: Value =
         serde_json::from_slice(fs::read_to_string(&capture_path).unwrap().trim().as_bytes())
             .unwrap();
@@ -326,6 +343,7 @@ fn product_http2_deadline_covers_trickling_body() {
         evaluation_capture: None,
         evaluation_response_content: None,
         operation_deadline: None,
+        token_budget: None,
     };
     let start = Instant::now();
     let result = classifier.request_measured_at(
@@ -361,4 +379,31 @@ fn unused_http1_mock_stops_without_a_connection() {
     let (_url, stop, worker) = trickle(Duration::ZERO);
     stop.store(true, Ordering::SeqCst);
     worker.join().unwrap();
+}
+
+#[test]
+fn rejected_token_budget_opens_no_connection_and_can_be_reused_at_exact_limit() {
+    let listener = TcpListener::bind("127.0.0.1:0").unwrap();
+    listener.set_nonblocking(true).unwrap();
+    let endpoint = format!("http://{}/", listener.local_addr().unwrap());
+    let payload = json!({"model":"synthetic","messages":[{"role":"user","content":"No enviar si llueve: Bogotá 日本語 😀"}],"schema":{"enum":["choice","none"]}});
+    let n = gennie_memory_retrieval::token_budget::count(&payload.to_string()).unwrap();
+    let mut classifier = OpenRouterClassifier::new(None).unwrap();
+    let guard = token_budget::ActiveBudget::new("classification", n - 1);
+    classifier.token_budget = Some(guard.clone());
+    let error = classifier
+        .request_measured_at("synthetic", &payload, &endpoint, Duration::from_secs(1))
+        .err()
+        .expect("budget must reject");
+    assert_eq!(error.code, "input_token_limit");
+    assert_eq!(
+        listener.accept().unwrap_err().kind(),
+        std::io::ErrorKind::WouldBlock
+    );
+    let trace = guard.finish(Err(failure("test_only")));
+    assert_eq!(trace.requests[0].json_tokens, n);
+    assert!(!trace.requests[0].accepted);
+    let exact = token_budget::ActiveBudget::new("classification", n);
+    exact.inspect(payload.to_string().as_bytes()).unwrap();
+    assert!(exact.finish(Err(failure("test_only"))).requests[0].accepted);
 }

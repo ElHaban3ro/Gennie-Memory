@@ -1,0 +1,80 @@
+{
+  "date": "2026-10-24",
+  "scope": "local offline source verification; no deployment or external inference",
+  "test_runs": [
+    {
+      "command": "cargo test --offline --workspace",
+      "exit_code": 0,
+      "passed": 1100,
+      "failed": 0,
+      "ignored": 25,
+      "suite_results": [
+        "test result: ok. 243 passed; 0 failed; 24 ignored; 0 measured; 0 filtered out; finished in 0.91s",
+        "test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.75s",
+        "test result: ok. 711 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 17.26s",
+        "test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+        "test result: ok. 138 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 2.22s",
+        "test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+        "test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s"
+      ],
+      "warnings": [
+        "warning: `gennie-memory-eval` (bin \"gennie-memory-eval\" test) generated 2 warnings",
+        "warning: `gennie-memory` (bin \"gennie-memory\" test) generated 1 warning (run `cargo fix --bin \"gennie-memory\" -p gennie-memory --tests` to apply 1 suggestion)",
+        "warning: `gennie-memory` (bin \"gennie-memory\") generated 3 warnings",
+        "warning: associated function `new` is never used",
+        "warning: field `parent_selected` is never read",
+        "warning: function `decode_body` is never used",
+        "warning: function `find_identity_quote` is never used",
+        "warning: function `query_excerpt_from_codepoints` is never used",
+        "warning: unused import: `generative::reasoning`"
+      ]
+    },
+    {
+      "command": "cargo test --offline --workspace --features local-embeddings",
+      "exit_code": 0,
+      "passed": 1112,
+      "failed": 0,
+      "ignored": 25,
+      "suite_results": [
+        "test result: ok. 243 passed; 0 failed; 24 ignored; 0 measured; 0 filtered out; finished in 0.81s",
+        "test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.05s",
+        "test result: ok. 711 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 17.37s",
+        "test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+        "test result: ok. 150 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 1.49s",
+        "test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+        "test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s"
+      ],
+      "warnings": [
+        "warning: `gennie-memory-eval` (bin \"gennie-memory-eval\" test) generated 2 warnings",
+        "warning: `gennie-memory` (bin \"gennie-memory\" test) generated 1 warning (run `cargo fix --bin \"gennie-memory\" -p gennie-memory --tests` to apply 1 suggestion)",
+        "warning: `gennie-memory` (bin \"gennie-memory\") generated 3 warnings",
+        "warning: associated function `new` is never used",
+        "warning: field `parent_selected` is never read",
+        "warning: function `decode_body` is never used",
+        "warning: function `find_identity_quote` is never used",
+        "warning: function `query_excerpt_from_codepoints` is never used",
+        "warning: unused import: `generative::reasoning`"
+      ]
+    }
+  ],
+  "format": {
+    "command": "cargo fmt --all --check",
+    "exit_code": 0
+  },
+  "diff_whitespace": {
+    "command": "git diff --check",
+    "exit_code": 0
+  },
+  "sha256": {
+    "Cargo.lock": "053138f051a097d34859b443bcab38df6a08a522521543cf7bfbe61ed8259773",
+    "apps/retrieval/src/token_budget.rs": "2043dd05aed40f6f96afc73e2d46af50388bf127af7ddc9ba94de9e4d2e09213",
+    "apps/retrieval/src/product.rs": "803ed4f004607f43e8b8a4b34092a4b8388ba45101caa69fa9bc3825b7b91ed2",
+    "apps/retrieval/src/product/diagnostics.rs": "7491fcac4907f72e75b3815f5f6b3bf9b3be0b3ed0a64106e154521a85aaa6cd",
+    "apps/retrieval/src/classifier.rs": "eac3faf4c5aea587230328711ce1ea879a3f24b2b3a968883a15cab5ebfd5378",
+    "bootstrap/src/openrouter.rs": "4c500dab3dc0f04c63a5ad8bce0a13d96ed9b09bb2dffa38c6b2d7c9cc54064a",
+    "bootstrap/src/openrouter/token_budget.rs": "6df0f290d83577f6c5e2cf3effe092d6489428bab791f4cc5d44fb1ec00e45c4",
+    "bootstrap/src/openrouter/deadline_tests.rs": "fe42a6403249ae126f2068f097291303c47f28a5eb4301815c6039254cee6134",
+    "apps/retrieval/src/product/tests.rs": "bffd8549c8d97ad2df00fff82ec570b0593a90f8babb9fb994c81273c532e44f",
+    "bootstrap/tests/retrieval_isolation_cli.rs": "f33ee60f184c01c5142fd9f943a8af8f0841d87c6e2b51ebd003af883da58d32"
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "date": "2026-10-24",
+  "scope": "literal provenance against operator-registered local snapshots; no external authenticity or semantic truth",
+  "own_checks": {
+    "core": 12,
+    "product": 4,
+    "cli_jsonl": 2,
+    "passed": 18
+  },
+  "focused_runs": [
+    {
+      "command": "cargo test --offline -p gennie-memory-retrieval --lib",
+      "exit_code": 0,
+      "executor": "authorized_parallel_write_chat_same_workspace",
+      "passed": 170,
+      "failed": 0,
+      "ignored": 1,
+      "suite_results": [
+        "test result: ok. 170 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 2.59s"
+      ],
+      "log_sha256": "188eb50c620183992a32a40bc87b1f4f4b9243da79ad06d8ba4d6e715057b4b5"
+    },
+    {
+      "command": "cargo test --offline -p gennie-memory --test source_verification_cli --test memory_lifecycle_cli --test write_reconciliation_cli",
+      "exit_code": 0,
+      "executor": "authorized_parallel_write_chat_same_workspace",
+      "passed": 5,
+      "failed": 0,
+      "ignored": 0,
+      "suite_results": [
+        "test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.60s",
+        "test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.75s",
+        "test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.08s"
+      ],
+      "log_sha256": "40a27463d4733440718fc29d784e4f90660a49132bc448c80ff7415667e0cbbc"
+    }
+  ],
+  "workspace_status": "passed_default_and_local_embeddings",
+  "initial_workspace_failure": {
+    "command": "cargo test --offline --workspace",
+    "exit_code": 101,
+    "legacy_fixture_failures": 11,
+    "evidence": "workspace-initial-failure.txt",
+    "source_checks": "passed"
+  },
+  "source_sha256": {
+    "apps/retrieval/migrations/0010_source_verification.sql": "c19e84b4b1b07edced87730dd2f6a374447b09355da97acf34af47690e9eb902",
+    "apps/retrieval/src/source_verification.rs": "e274e4af9530e546e8c3c42bb8111ff60a5599d470c910b34b78a983b7b4dc12",
+    "apps/retrieval/src/source_verification/tests.rs": "a85e0d7883f7c7b171299ff1693e3e2d347196b8b947e8f571236ee2f7b2adc6",
+    "apps/retrieval/src/product.rs": "976dc0fc29faf4b1cc0e1e17dee2d93ef85732fcf98b9065a90d94e00014946a",
+    "apps/retrieval/src/product/tests.rs": "76137b0d0e81cd4edacf9fee46fbf8821700bf5ccf148cf3e07e6a2e9b580df8",
+    "bootstrap/tests/source_verification_cli.rs": "7cc504935491366ff45013bba2ae00f19a191aeb5e92d73033fc2b9cc4f23704",
+    "bootstrap/src/main.rs": "c84c7e5d09b1fe4aa96e0852494597514409a6d77582a096c681ff874c564cc4",
+    "bootstrap/src/session.rs": "2a2dea302aaa764f78aefe0e914f89b0446de851e1fca7449fdd348287a64d9a",
+    "apps/retrieval/src/module.rs": "96b86aad392cb64ac803eb95d3f526f4138a7394feab66a4ecaf5fa3669d3d5f",
+    "apps/retrieval/src/write.rs": "f4e49732a4f40e33ab296e497bd4f0fce47ed885b68c3d3b9d5f571e34b7417d"
+  },
+  "final_workspace_runs": [
+    {
+      "command": "cargo test --offline --workspace",
+      "exit_code": 0,
+      "executor": "authorized_parallel_write_chat_same_workspace",
+      "passed": 1153,
+      "failed": 0,
+      "ignored": 25,
+      "suite_results": [
+        "test result: ok. 244 passed; 0 failed; 24 ignored; 0 measured; 0 filtered out; finished in 0.72s",
+        "test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.52s",
+        "test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.17s",
+        "test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.15s",
+        "test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.62s",
+        "test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s",
+        "test result: ok. 711 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 14.75s",
+        "test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+        "test result: ok. 172 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 2.42s",
+        "test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.94s",
+        "test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+        "test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s"
+      ],
+      "warnings": [
+        "warning: `gennie-memory-eval` (bin \"gennie-memory-eval\" test) generated 2 warnings",
+        "warning: `gennie-memory` (bin \"gennie-memory\" test) generated 1 warning (run `cargo fix --bin \"gennie-memory\" -p gennie-memory --tests` to apply 1 suggestion)",
+        "warning: `gennie-memory` (bin \"gennie-memory\") generated 2 warnings",
+        "warning: field `parent_selected` is never read",
+        "warning: function `decode_body` is never used",
+        "warning: function `find_identity_quote` is never used",
+        "warning: function `query_excerpt_from_codepoints` is never used",
+        "warning: unused import: `generative::reasoning`"
+      ],
+      "own_core_tests": [
+        "invalid_or_oversized_registration_leaves_no_snapshot",
+        "actor_scope_and_revision_are_checked_before_loading_source",
+        "overlapping_quotes_require_an_explicit_range",
+        "checking_a_changed_candidate_rolls_back_all_new_receipts",
+        "derived_candidate_uncertainty_does_not_change_literal_provenance",
+        "literal_provenance_is_versioned_idempotent_and_does_not_certify_summary",
+        "missing_sources_and_unsupported_or_ambiguous_locators_remain_unverified",
+        "newer_memory_revisions_require_fresh_literal_evidence",
+        "proposed_evidence_can_be_checked_inside_a_caller_transaction_without_receipts",
+        "snapshot_and_receipt_tampering_cannot_reuse_a_verified_flag",
+        "versions_are_immutable_and_replaying_old_versions_does_not_reactivate_them",
+        "unicode_byte_ranges_are_exact_and_never_normalized"
+      ],
+      "log_sha256": "073e3a63cd88f0b6d331deecf2ceb9866d8a2ef0a015a41fa5a9b8a909281512"
+    },
+    {
+      "command": "cargo test --offline --workspace --features gennie-memory/local-embeddings",
+      "exit_code": 0,
+      "executor": "authorized_parallel_write_chat_same_workspace",
+      "passed": 1169,
+      "failed": 0,
+      "ignored": 25,
+      "suite_results": [
+        "test result: ok. 244 passed; 0 failed; 24 ignored; 0 measured; 0 filtered out; finished in 0.71s",
+        "test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.71s",
+        "test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.23s",
+        "test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.09s",
+        "test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.56s",
+        "test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.07s",
+        "test result: ok. 711 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 14.58s",
+        "test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s",
+        "test result: ok. 188 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 2.37s",
+        "test result: ok. 10 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.84s",
+        "test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s",
+        "test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s"
+      ],
+      "warnings": [
+        "warning: `gennie-memory-eval` (bin \"gennie-memory-eval\" test) generated 2 warnings",
+        "warning: `gennie-memory` (bin \"gennie-memory\" test) generated 1 warning (run `cargo fix --bin \"gennie-memory\" -p gennie-memory --tests` to apply 1 suggestion)",
+        "warning: `gennie-memory` (bin \"gennie-memory\") generated 2 warnings",
+        "warning: field `parent_selected` is never read",
+        "warning: function `decode_body` is never used",
+        "warning: function `find_identity_quote` is never used",
+        "warning: function `query_excerpt_from_codepoints` is never used",
+        "warning: unused import: `generative::reasoning`"
+      ],
+      "own_core_tests": [
+        "actor_scope_and_revision_are_checked_before_loading_source",
+        "overlapping_quotes_require_an_explicit_range",
+        "checking_a_changed_candidate_rolls_back_all_new_receipts",
+        "derived_candidate_uncertainty_does_not_change_literal_provenance",
+        "invalid_or_oversized_registration_leaves_no_snapshot",
+        "literal_provenance_is_versioned_idempotent_and_does_not_certify_summary",
+        "missing_sources_and_unsupported_or_ambiguous_locators_remain_unverified",
+        "newer_memory_revisions_require_fresh_literal_evidence",
+        "snapshot_and_receipt_tampering_cannot_reuse_a_verified_flag",
+        "versions_are_immutable_and_replaying_old_versions_does_not_reactivate_them",
+        "unicode_byte_ranges_are_exact_and_never_normalized",
+        "proposed_evidence_can_be_checked_inside_a_caller_transaction_without_receipts"
+      ],
+      "log_sha256": "b6b11ad1eb2f92a757611f0d49bce7fb9b553854c29197e7370ce207dbb73bb6"
+    }
+  ],
+  "format": {
+    "command": "cargo fmt --all --check",
+    "exit_code": 0
+  },
+  "diff_whitespace": {
+    "command": "git diff --check",
+    "exit_code": 0
+  }
+}

@@ -37,6 +37,26 @@ impl AppModule for RetrievalModule {
                 version: 7,
                 sql: include_str!("../migrations/0007_revision_write_outcomes.sql"),
             },
+            Migration {
+                version: 8,
+                sql: include_str!("../migrations/0008_retrieval_isolation.sql"),
+            },
+            Migration {
+                version: 9,
+                sql: include_str!("../migrations/0009_local_embedding_indexes.sql"),
+            },
+            Migration {
+                version: 10,
+                sql: include_str!("../migrations/0010_source_verification.sql"),
+            },
+            Migration {
+                version: 11,
+                sql: include_str!("../migrations/0011_write_reconciliation.sql"),
+            },
+            Migration {
+                version: 12,
+                sql: include_str!("../migrations/0012_memory_lifecycle.sql"),
+            },
         ]
     }
 }

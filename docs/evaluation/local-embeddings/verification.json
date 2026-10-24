@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-24",
+  "tests": {
+    "feature": {
+      "passed": 1103,
+      "failed": 0,
+      "ignored": 25
+    },
+    "default": {
+      "passed": 1091,
+      "failed": 0,
+      "ignored": 25
+    }
+  },
+  "new_encoder_index_unit_tests": 12,
+  "real_cli_checks": 13,
+  "format_check": "passed",
+  "diff_check": "passed",
+  "personal_database_used": false,
+  "remote_inference": false,
+  "sources": {
+    "Cargo.toml": "2845d828be73cc4a32f1ac90510adafecc1b7ee1fb9e569324610b7f830baf54",
+    "Cargo.lock": "2f8a7d94b507f9eb0b8b0e5e56152b0fcd437839e3ca62e3e02f7ce0a1b6f906",
+    "apps/retrieval/Cargo.toml": "5cf1093ab66bd7a11a0d8c88ae6d12f81b9f411cf234422e75cdf3e1afbc0abb",
+    "bootstrap/Cargo.toml": "c3f88737cffabeb08a558685a615c02192ec4ddae3a4f3590b59b6e664752cb1",
+    "apps/retrieval/src/module.rs": "a49df4ffcfbb761b26a265ee6a2a458916440c8e0deac37336337fdec6aae4bd",
+    "apps/retrieval/migrations/0009_local_embedding_indexes.sql": "76085051adc2fbbe961213c9d643f83304c07e89b76e7c5ecc0d44ae9e2ad16f",
+    "apps/retrieval/src/local_embeddings.rs": "a385068593efbeb3b1cd860686b5f4f7921ba0c20f1e722e8a104679d2c7d857",
+    "apps/retrieval/src/local_embeddings/index.rs": "73358d63572f382d6cf0a2ba531c89052f547f2f02a9d04a42f2bbeecefc2737",
+    "apps/retrieval/src/local_embeddings/tests.rs": "d36d4bdb172c44b0dfd1ff72c24c45895f6a31d066c89a34520aa1c74be123a3",
+    "bootstrap/src/local_embeddings.rs": "36900f35ee8359ef36f55f7d55391f621b9ee6f87f9f7e31f8ef659310771e35",
+    "tools/evaluation/src/local_embeddings.rs": "54a73676a766e1563b80267eb30a914ce2336dd137f3b5f291a7fd16efc933c7",
+    "config/embedding-profiles/minilm.json": "e960424b9f028171366bc51cef72334041cfdfdf3b619ed630c0a7a1469da75d",
+    "config/embedding-profiles/e5-small.json": "36ffddc6b9a0bca0575e33196558e2627e118b7c4ec3367ad1b0b453a3ec6621"
+  },
+  "release_binaries": {
+    "target/release/gennie-memory": "6f8ddb225596ed84d907dc1a781d9d3991a1e7f8698320933cf4825f7e1a54dc",
+    "target/release/gennie-memory-eval": "3791e8093bec2526b342d44f87e1191230e9c2e922a8710763b94b78dc5528ad"
+  },
+  "reports": {
+    "docs/evaluation/local-embeddings/e5-results.json": "994dd06a1e40361d1d50cb9825ad0c0db92691c6c190488e3a6bced430a5d25d",
+    "docs/evaluation/local-embeddings/e5-small-artifacts.json": "0250a3c4645ea936b4f9a48b1d7909abe5fcedc308aeac15f8e37b82a72ec410",
+    "docs/evaluation/local-embeddings/e5-v2-results.json": "27ad9c090beba80c0a65d9b2fec12f6cdba2479f5c7e02c03676cceafe0bf78d",
+    "docs/evaluation/local-embeddings/minilm-artifacts.json": "c8ae8e50de2f20c902648b7bdbb62de31cf428bfd94bef3a11805753c949dda7",
+    "docs/evaluation/local-embeddings/minilm-results.json": "624767226a3b313a582dba0ea0c6a93a7cb9a6782a117440272eb2b5427e1455",
+    "docs/evaluation/local-embeddings/minilm-v2-results.json": "d0bb2201cc05b352ced0beac4a96a4f1c5953882566191d42b4342deca6fc33b",
+    "docs/evaluation/local-embeddings/resources.json": "f6f0d594c5e746855b5b3f151fe7d70d831539d0fc2038951af6c35f018cf7b9",
+    "docs/evaluation/local-embeddings/runtime-validation.json": "608083eb8f9441aafcc9ffa8a1f9f0a4f0cb816cee93b4ac5cfa00b55c244ab6",
+    "docs/evaluation/local-embeddings/scale-results.json": "b1b35d0aef2ee68639263ed917453b558b0f6ddad4641d44bba88b553ad0d062",
+    "docs/evaluation/local-embeddings/scale-v2-results.json": "ccaa0e5e8af15b4fa268058dbd855573a7604218251f763143fda2bac5f17b4d",
+    "docs/evaluation/local-embeddings/stability.json": "82a9227cf9bd402a7352cfb971a99fd25e6cfbf777a1b92af2db044ab9f5887c"
+  },
+  "frozen_fixture_manifest": "b6edd4a4bc45b765a7deee8f7ccd453038ed243f19c94ce5d66f1a7e06e5b4d2"
+}

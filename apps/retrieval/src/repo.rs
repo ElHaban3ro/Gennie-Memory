@@ -22,6 +22,13 @@ pub fn load_fixtures(conn: &mut Connection, fixtures: &[FixtureMemory]) -> Resul
         {
             return Err("fixture: identidad, ámbito o revisión inválida".into());
         }
+        if fixture
+            .actor_id
+            .as_deref()
+            .is_some_and(|id| !crate::service::valid_identifier(id))
+        {
+            return Err("fixture: actor_id inválido".into());
+        }
         if fixture.original_text.trim().is_empty()
             || fixture.original_text.chars().count() > 16000
             || fixture.summary.trim().is_empty()
@@ -75,15 +82,24 @@ pub fn load_fixtures(conn: &mut Connection, fixtures: &[FixtureMemory]) -> Resul
             }
         }
         let affected = tx.execute(
-            "INSERT INTO memories(id, scope_kind, scope_id, current_revision, entity_id) VALUES (?1, ?2, ?3, ?4, ?5)
+            "INSERT INTO memories(id, scope_kind, scope_id, current_revision, entity_id, actor_id) VALUES (?1, ?2, ?3, ?4, ?5, ?6)
              ON CONFLICT(id) DO UPDATE SET current_revision = max(current_revision, excluded.current_revision)
              WHERE scope_kind = excluded.scope_kind AND scope_id = excluded.scope_id
-               AND entity_id IS excluded.entity_id",
-            params![fixture.id, fixture.scope_kind, fixture.scope_id, fixture.revision, fixture.entity_id],
+               AND entity_id IS excluded.entity_id AND actor_id = excluded.actor_id",
+            params![fixture.id, fixture.scope_kind, fixture.scope_id, fixture.revision, fixture.entity_id, fixture.actor_id.as_deref().unwrap_or("local")],
         )
         .map_err(|e| e.to_string())?;
         if affected != 1 {
             return Err(format!("fixture {} cambia de ámbito o entidad", fixture.id));
+        }
+        if let Some(id) = &fixture.entity_id {
+            crate::entity::register_legacy(
+                &tx,
+                fixture.actor_id.as_deref().unwrap_or("local"),
+                &fixture.scope_kind,
+                &fixture.scope_id,
+                id,
+            )?;
         }
         tx.execute(
             "INSERT INTO memory_revisions(memory_id, revision, memory_type, original_text, summary, state, valid_from, valid_until, conditions, source_kind, source_ref, source_locator)
@@ -110,18 +126,20 @@ pub fn search(
 ) -> Result<Vec<Candidate>, String> {
     let mut stmt = conn
         .prepare(
-            "SELECT m.id, r.revision, r.summary, r.state, r.conditions,
+            "SELECT m.id, r.revision, r.summary, CASE WHEN EXISTS(SELECT 1 FROM memory_proposal_targets pt WHERE pt.memory_id=m.id) OR EXISTS(SELECT 1 FROM memory_review_schedule ms WHERE ms.memory_id=m.id AND ms.revision=m.current_revision AND ms.next_review_at IS NOT NULL AND ms.next_review_at<=?4) THEN 'uncertain' ELSE r.state END, r.conditions,
                     r.source_kind, r.source_ref, r.source_locator,
-                    bm25(memory_fts, 1.0, 1.5) AS rank
+                    bm25(memory_fts, ?9, ?10) AS rank
          FROM memory_fts
          JOIN search_documents d ON d.doc_id = memory_fts.rowid
          JOIN memories m ON m.id = d.memory_id
          JOIN memory_revisions r ON r.memory_id = d.memory_id AND r.revision = d.revision
          WHERE memory_fts MATCH ?1 AND m.scope_kind = ?2 AND m.scope_id = ?3
-           AND d.revision = m.current_revision AND r.state = 'active'
+           AND d.revision = m.current_revision AND m.lifecycle_state = 'active' AND r.state = 'active'
            AND (r.valid_from IS NULL OR r.valid_from <= ?4)
            AND (r.valid_until IS NULL OR r.valid_until > ?4)
            AND (?5 IS NULL OR m.entity_id = ?5)
+           AND m.actor_id = ?7
+           AND (json_array_length(?8) = 0 OR r.memory_type IN (SELECT value FROM json_each(?8)))
          ORDER BY rank ASC, m.id ASC LIMIT ?6",
         )
         .map_err(|e| e.to_string())?;
@@ -133,7 +151,11 @@ pub fn search(
                 request.scope_id,
                 request.as_of,
                 request.entity_id,
-                request.limit.unwrap_or(8)
+                request.limit.unwrap_or(8),
+                request.actor_id.as_deref().unwrap_or("local"),
+                serde_json::to_string(&request.memory_types).map_err(|e| e.to_string())?,
+                request.bm25_weights.unwrap_or([1.0, 1.5])[0],
+                request.bm25_weights.unwrap_or([1.0, 1.5])[1]
             ],
             |row| {
                 let source_kind: Option<String> = row.get(5)?;
@@ -167,14 +189,16 @@ pub fn search(
 pub fn list_scope(conn: &Connection, request: &SearchRequest) -> Result<Vec<Candidate>, String> {
     let mut stmt = conn
         .prepare(
-            "SELECT m.id, r.revision, r.summary, r.state, r.conditions,
+            "SELECT m.id, r.revision, r.summary, CASE WHEN EXISTS(SELECT 1 FROM memory_proposal_targets pt WHERE pt.memory_id=m.id) OR EXISTS(SELECT 1 FROM memory_review_schedule ms WHERE ms.memory_id=m.id AND ms.revision=m.current_revision AND ms.next_review_at IS NOT NULL AND ms.next_review_at<=?3) THEN 'uncertain' ELSE r.state END, r.conditions,
                 r.source_kind, r.source_ref, r.source_locator
          FROM memories m JOIN memory_revisions r
            ON r.memory_id = m.id AND r.revision = m.current_revision
-         WHERE m.scope_kind = ?1 AND m.scope_id = ?2 AND r.state = 'active'
+         WHERE m.scope_kind = ?1 AND m.scope_id = ?2 AND m.lifecycle_state = 'active' AND r.state = 'active'
            AND (r.valid_from IS NULL OR r.valid_from <= ?3)
            AND (r.valid_until IS NULL OR r.valid_until > ?3)
            AND (?4 IS NULL OR m.entity_id = ?4)
+           AND m.actor_id = ?5
+           AND (json_array_length(?6) = 0 OR r.memory_type IN (SELECT value FROM json_each(?6)))
          ORDER BY m.id LIMIT 101",
         )
         .map_err(|e| e.to_string())?;
@@ -184,7 +208,9 @@ pub fn list_scope(conn: &Connection, request: &SearchRequest) -> Result<Vec<Cand
                 request.scope_kind,
                 request.scope_id,
                 request.as_of,
-                request.entity_id
+                request.entity_id,
+                request.actor_id.as_deref().unwrap_or("local"),
+                serde_json::to_string(&request.memory_types).map_err(|e| e.to_string())?
             ],
             |row| {
                 let source_kind: Option<String> = row.get(5)?;
@@ -213,4 +239,68 @@ pub fn list_scope(conn: &Connection, request: &SearchRequest) -> Result<Vec<Cand
         return Err("el ámbito supera 100 recuerdos; acota por entidad".into());
     }
     Ok(result)
+}
+
+pub(crate) fn search_coverage(
+    conn: &Connection,
+    request: &SearchRequest,
+    expression: &str,
+    returned: usize,
+) -> Result<crate::model::SearchCoverage, String> {
+    let types = serde_json::to_string(&request.memory_types).map_err(|e| e.to_string())?;
+    let (eligible, indexed): (usize, usize) = conn.query_row(
+        "SELECT count(*), count(d.doc_id) FROM memories m
+         JOIN memory_revisions r ON r.memory_id=m.id AND r.revision=m.current_revision
+         LEFT JOIN search_documents d ON d.memory_id=m.id AND d.revision=r.revision
+         WHERE m.scope_kind=?1 AND m.scope_id=?2 AND m.lifecycle_state='active' AND r.state='active'
+           AND (r.valid_from IS NULL OR r.valid_from<=?3) AND (r.valid_until IS NULL OR r.valid_until>?3)
+           AND (?4 IS NULL OR m.entity_id=?4) AND m.actor_id=?5
+           AND (json_array_length(?6)=0 OR r.memory_type IN (SELECT value FROM json_each(?6)))",
+        params![request.scope_kind,request.scope_id,request.as_of,request.entity_id,request.actor_id.as_deref().unwrap_or("local"),types],
+        |r|Ok((r.get::<_,i64>(0)? as usize,r.get::<_,i64>(1)? as usize)),
+    ).map_err(|e|e.to_string())?;
+    let matched = if expression.is_empty() {
+        0
+    } else {
+        conn.query_row(
+            "SELECT count(*) FROM memory_fts
+             JOIN search_documents d ON d.doc_id=memory_fts.rowid
+             JOIN memories m ON m.id=d.memory_id
+             JOIN memory_revisions r ON r.memory_id=m.id AND r.revision=d.revision
+             WHERE memory_fts MATCH ?1 AND m.scope_kind=?2 AND m.scope_id=?3
+               AND d.revision=m.current_revision AND m.lifecycle_state='active' AND r.state='active'
+               AND (r.valid_from IS NULL OR r.valid_from<=?4) AND (r.valid_until IS NULL OR r.valid_until>?4)
+               AND (?5 IS NULL OR m.entity_id=?5) AND m.actor_id=?6
+               AND (json_array_length(?7)=0 OR r.memory_type IN (SELECT value FROM json_each(?7)))",
+            params![expression,request.scope_kind,request.scope_id,request.as_of,request.entity_id,request.actor_id.as_deref().unwrap_or("local"),types],|r|Ok(r.get::<_,i64>(0)? as usize),
+        ).map_err(|e|e.to_string())?
+    };
+    Ok(crate::model::SearchCoverage {
+        eligible_memories: eligible,
+        indexed_memories: indexed,
+        matched_memories: matched,
+        returned_memories: returned,
+        truncated: matched > returned,
+        fts_index: if indexed == eligible {
+            "complete"
+        } else if indexed == 0 {
+            "missing"
+        } else {
+            "partial"
+        },
+        query: if expression.is_empty() {
+            "empty_after_normalization"
+        } else {
+            "executed"
+        },
+        retrieval: if expression.is_empty() {
+            "not_evaluated"
+        } else if indexed < eligible {
+            "incomplete_index"
+        } else if matched > returned {
+            "limited"
+        } else {
+            "complete"
+        },
+    })
 }
