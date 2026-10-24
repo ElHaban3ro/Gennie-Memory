@@ -38,6 +38,7 @@ pub(in crate::openrouter) fn parse(
     candidates: &[Candidate],
 ) -> Result<DecisionResult, DecisionError> {
     let invalid = || DecisionError {
+        diagnostic: None,
         code: "per_memory_invalid_factors",
         http_status: None,
         partial_usage: known_receipt(&body),

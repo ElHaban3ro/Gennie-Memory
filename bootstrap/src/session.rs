@@ -10,6 +10,9 @@ use std::time::Instant;
 #[derive(Deserialize)]
 #[serde(tag = "op", content = "request", rename_all = "snake_case")]
 enum SessionRequest {
+    RecallV1(gennie_memory_retrieval::product::ProductRequest),
+    SegmentText(gennie_memory_retrieval::segmentation::SegmentRequest),
+    ProviderCapabilities,
     Search(SearchRequest),
     Recall(RecallRequest),
     HybridSearch(HybridRequest),
@@ -32,18 +35,32 @@ fn handle(conn: &Connection, classifier: &impl Classifier, line: &str) -> Sessio
         }
         let request: SessionRequest = serde_json::from_str(line).map_err(|e| e.to_string())?;
         match request {
+            SessionRequest::RecallV1(request) => {
+                let serialized = serde_json::to_string(&request).map_err(|e| e.to_string())?;
+                let response =
+                    gennie_memory_retrieval::product::execute_json(conn, &serialized, classifier);
+                serde_json::to_value(response).map_err(|e| e.to_string())
+            }
+            SessionRequest::SegmentText(request) => {
+                match gennie_memory_retrieval::segmentation::segment(&request.text) {
+                    Ok(result) => Ok(
+                        serde_json::json!({"status":"completed", "segmentation":result,"issue":null}),
+                    ),
+                    Err(code) => Ok(
+                        serde_json::json!({"status":"failed", "segmentation":null,"issue":{"code":code}}),
+                    ),
+                }
+            }
+            SessionRequest::ProviderCapabilities => {
+                Ok(gennie_memory_retrieval::product::capabilities())
+            }
             SessionRequest::Search(request) => {
                 let response = gennie_memory_retrieval::service::search(conn, &request)?;
                 serde_json::to_value(response).map_err(|e| e.to_string())
             }
             SessionRequest::Recall(request) => {
-                let response = if let Some(reviewed) =
-                    gennie_memory_dashboard::service::reviewed_recall(conn, &request)?
-                {
-                    reviewed
-                } else {
-                    gennie_memory_retrieval::service::recall(conn, &request, classifier)?
-                };
+                let response =
+                    gennie_memory_retrieval::service::recall(conn, &request, classifier)?;
                 serde_json::to_value(response).map_err(|e| e.to_string())
             }
             SessionRequest::HybridSearch(request) => {
@@ -97,7 +114,7 @@ mod tests {
         let classifier = crate::openrouter::OpenRouterClassifier::new(None).unwrap();
         let mut conn = Connection::open_in_memory().unwrap();
         gennie_memory_kernel::db::configure(&conn).unwrap();
-        gennie_memory_kernel::db::migrate(&mut conn, &crate::registry::modules().unwrap()).unwrap();
+        crate::registry::migrate(&mut conn).unwrap();
         let fixtures: Vec<gennie_memory_retrieval::model::FixtureMemory> =
             serde_json::from_str(include_str!("../../tests/fixtures/conditional-corpus.json"))
                 .unwrap();
@@ -163,34 +180,40 @@ mod tests {
         assert_eq!(recall.status, "complete");
         assert_eq!(recall.response.unwrap()["error_code"], "missing_api_key");
 
-        let review_search: SearchRequest = serde_json::from_value(search.clone()).unwrap();
-        let review_view = gennie_memory_dashboard::service::view(
-            &conn,
-            &review_search,
-            gennie_memory_dashboard::model::ViewMode::Search,
-        )
-        .unwrap();
-        let review_request: gennie_memory_dashboard::model::ReviewRequest = serde_json::from_value(
-            serde_json::json!({
-                "case_id": null, "search": search, "view_mode": "search",
-                "candidates": review_view.candidates.iter().map(|item| serde_json::json!({"memory_id": item.memory_id, "revision": item.revision})).collect::<Vec<_>>(),
-                "decisions": [{"memory_id": "synthetic_meeting_remote", "revision": 1, "verdict": "match"}],
-                "outcome": "matches", "note": null
-            }),
-        ).unwrap();
-        gennie_memory_dashboard::service::save(&mut conn, review_request).unwrap();
-        let reviewed = handle(
-            &conn,
-            &classifier,
-            &serde_json::json!({"op":"recall","request":{"search":review_search}}).to_string(),
-        );
-        assert_eq!(reviewed.status, "complete");
-        assert_eq!(
-            reviewed.response.unwrap()["classification_status"],
-            "review_reused"
-        );
-
         let invalid = handle(&conn, &classifier, "not json");
         assert_eq!(invalid.status, "failed");
+    }
+}
+
+#[cfg(test)]
+mod product_session_tests {
+    use super::*;
+    #[test]
+    fn versioned_operations_preserve_transport_and_validate_duplicate_fields() {
+        let mut conn = Connection::open_in_memory().unwrap();
+        crate::registry::migrate(&mut conn).unwrap();
+        let classifier = crate::openrouter::OpenRouterClassifier::new(None).unwrap();
+        let request = serde_json::json!({"op":"recall_v1","request":{"contract_version":1,"search":{"query":"sin recuerdos","scope_kind":"project","scope_id":"test","as_of":"2026-10-23T12:00:00.000Z"}}});
+        let result = handle(&conn, &classifier, &request.to_string());
+        assert_eq!(result.status, "complete");
+        assert_eq!(result.response.unwrap()["outcome"], "no_candidates");
+        let result = handle(
+            &conn,
+            &classifier,
+            r#"{"op":"segment_text","request":{"text":"No enviar. Si llueve."}}"#,
+        );
+        let result = result.response.unwrap();
+        let reconstructed = result["segmentation"]["segments"]
+            .as_array()
+            .unwrap()
+            .iter()
+            .map(|s| s["text"].as_str().unwrap())
+            .collect::<String>();
+        assert_eq!(reconstructed, "No enviar. Si llueve.");
+        let duplicated = request.to_string().replace(
+            "\"contract_version\":1",
+            "\"contract_version\":1,\"contract_version\":2",
+        );
+        assert_eq!(handle(&conn, &classifier, &duplicated).status, "failed");
     }
 }

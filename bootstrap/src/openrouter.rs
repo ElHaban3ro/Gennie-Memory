@@ -1,3 +1,4 @@
+mod baseline;
 #[cfg(test)]
 mod deadline_tests;
 mod per_memory;
@@ -13,7 +14,7 @@ use std::io::{Read, Write};
 #[cfg(unix)]
 use std::os::unix::fs::OpenOptionsExt;
 use std::path::Path;
-use std::sync::Mutex;
+use std::sync::{Arc, Mutex};
 use std::time::{Duration, Instant};
 
 const ENDPOINT: &str = "https://openrouter.ai/api/alpha/decisions";
@@ -34,11 +35,13 @@ struct HttpMeasurement {
     version: String,
 }
 
+#[derive(Clone)]
 pub struct OpenRouterClassifier {
     client: Client,
     api_key: Option<String>,
-    evaluation_capture: Option<Mutex<File>>,
-    evaluation_response_content: Option<Mutex<File>>,
+    evaluation_capture: Option<Arc<Mutex<File>>>,
+    evaluation_response_content: Option<Arc<Mutex<File>>>,
+    operation_deadline: Option<Instant>,
 }
 
 impl OpenRouterClassifier {
@@ -71,7 +74,7 @@ impl OpenRouterClassifier {
                 options.mode(0o600);
                 options
                     .open(path)
-                    .map(Mutex::new)
+                    .map(|file| Arc::new(Mutex::new(file)))
                     .map_err(|_| "no se pudo crear el archivo de captura de evaluación".to_string())
             })
             .transpose()?;
@@ -81,9 +84,12 @@ impl OpenRouterClassifier {
                 options.write(true).create_new(true);
                 #[cfg(unix)]
                 options.mode(0o600);
-                options.open(path).map(Mutex::new).map_err(|_| {
-                    "no se pudo crear el archivo de respuestas de evaluación".to_string()
-                })
+                options
+                    .open(path)
+                    .map(|file| Arc::new(Mutex::new(file)))
+                    .map_err(|_| {
+                        "no se pudo crear el archivo de respuestas de evaluación".to_string()
+                    })
             })
             .transpose()?;
         Ok(Self {
@@ -91,6 +97,7 @@ impl OpenRouterClassifier {
             api_key,
             evaluation_capture,
             evaluation_response_content,
+            operation_deadline: None,
         })
     }
 
@@ -239,8 +246,19 @@ impl OpenRouterClassifier {
         timeout: Duration,
     ) -> Result<(Value, HttpMeasurement), DecisionError> {
         let started = Instant::now();
+        let timeout = match self.operation_deadline {
+            Some(deadline) => deadline
+                .checked_duration_since(started)
+                .filter(|remaining| !remaining.is_zero())
+                .ok_or_else(|| failure("operation_deadline"))?
+                .min(timeout),
+            None => timeout,
+        };
         let request_bytes =
             serde_json::to_vec(payload).map_err(|_| failure("payload_serialization_failed"))?;
+        if self.operation_deadline.is_some() && request_bytes.len() > 131_072 {
+            return Err(failure("provider_input_limit"));
+        }
         let response = self
             .client
             .post(endpoint)
@@ -253,7 +271,12 @@ impl OpenRouterClassifier {
             .send();
         let response = match response {
             Ok(response) => response,
-            Err(_) => {
+            Err(error) => {
+                let code = if self.operation_deadline.is_some() && error.is_timeout() {
+                    "request_timeout"
+                } else {
+                    "transport_error"
+                };
                 if self
                     .capture_exchange(
                         payload,
@@ -263,22 +286,36 @@ impl OpenRouterClassifier {
                         started.elapsed().as_secs_f64() * 1000.0,
                         &[],
                         false,
-                        Some("transport_error"),
+                        Some(code),
                     )
                     .is_err()
                 {
                     return Err(failure("evaluation_capture_write_failed"));
                 }
-                return Err(failure("transport_error"));
+                return Err(failure(code));
             }
         };
         let status = response.status();
+        let retry_after_ms = response
+            .headers()
+            .get("retry-after")
+            .and_then(|v| v.to_str().ok())
+            .and_then(|v| v.parse::<u64>().ok())
+            .filter(|seconds| *seconds <= 86_400)
+            .and_then(|seconds| seconds.checked_mul(1000));
         let version = format!("{:?}", response.version());
         let mut bytes = Vec::new();
         let read_result = response.take(RESPONSE_LIMIT + 1).read_to_end(&mut bytes);
+        let read_error_code = if self.operation_deadline.is_some()
+            && read_result.as_ref().err().is_some_and(is_timeout_io)
+        {
+            "request_timeout"
+        } else {
+            "transport_error"
+        };
         let response_complete = read_result.is_ok() && bytes.len() as u64 <= RESPONSE_LIMIT;
         let exchange_error = if read_result.is_err() {
-            Some("transport_error")
+            Some(read_error_code)
         } else if !status.is_success() {
             Some("http_error")
         } else if !response_complete {
@@ -300,6 +337,7 @@ impl OpenRouterClassifier {
             .is_err()
         {
             return Err(DecisionError {
+                diagnostic: None,
                 code: "evaluation_capture_write_failed",
                 http_status: Some(status.as_u16()),
                 partial_usage: response_complete
@@ -309,16 +347,24 @@ impl OpenRouterClassifier {
             });
         }
         if !status.is_success() {
-            return Err(http_failure_with_body(
+            let mut error = http_failure_with_body(
                 status.as_u16(),
-                read_result.is_ok().then_some(bytes.as_slice()),
-            ));
+                response_complete.then_some(bytes.as_slice()),
+            );
+            if let Some(diagnostic) = error.diagnostic.as_mut() {
+                diagnostic.retry_after_ms = retry_after_ms;
+            }
+            return Err(error);
         }
-        read_result.map_err(|_| failure("transport_error"))?;
+        read_result.map_err(|_| failure(read_error_code))?;
         if bytes.len() as u64 > RESPONSE_LIMIT {
             return Err(failure("response_too_large"));
         }
-        let body = serde_json::from_slice(&bytes).map_err(|_| failure("invalid_response"))?;
+        let body: Value =
+            serde_json::from_slice(&bytes).map_err(|_| failure("invalid_response"))?;
+        if body.get("error").is_some_and(|error| !error.is_null()) {
+            return Err(http_failure_with_body(status.as_u16(), Some(&bytes)));
+        }
         Ok((
             body,
             HttpMeasurement {
@@ -332,19 +378,79 @@ impl OpenRouterClassifier {
 // Preserve only validated receipt fields from a complete, bounded error body.
 // HTTP failures remain failures even when answers or a cost are present.
 fn http_failure_with_body(status: u16, body: Option<&[u8]>) -> DecisionError {
-    let receipt = body
+    let body = body
         .filter(|bytes| bytes.len() as u64 <= RESPONSE_LIMIT)
-        .and_then(|bytes| serde_json::from_slice::<Value>(bytes).ok())
-        .and_then(|body| known_receipt(&body));
+        .and_then(|bytes| serde_json::from_slice::<Value>(bytes).ok());
+    let receipt = body.as_ref().and_then(known_receipt);
+    let metadata = body.as_ref().and_then(|b| b.pointer("/error/metadata"));
+    let error_type = metadata
+        .and_then(|m| m.get("error_type"))
+        .and_then(Value::as_str);
+    let limit_source = metadata
+        .and_then(|m| m.get("limit_source"))
+        .and_then(Value::as_str);
+    let effective_status = if status == 200 {
+        body.as_ref()
+            .and_then(|b| b.pointer("/error/code"))
+            .and_then(Value::as_u64)
+            .and_then(|v| u16::try_from(v).ok())
+            .unwrap_or(status)
+    } else {
+        status
+    };
+    let diagnostic_code = match (limit_source, error_type, effective_status) {
+        (Some("openrouter_in_flight_budget"), _, _) => "provider_in_flight_budget",
+        (
+            Some(
+                "openrouter_guardrail_budget"
+                | "openrouter_workspace_budget"
+                | "openrouter_key_limit",
+            ),
+            _,
+            _,
+        ) => "provider_budget_exceeded",
+        (_, Some("context_length_exceeded"), _) => "provider_context_limit",
+        (_, Some("rate_limit_exceeded"), _) => "provider_rate_limited",
+        (_, Some("content_filter"), _) => "provider_content_rejected",
+        (_, _, 402) => "provider_payment_required",
+        (_, _, 429) => "provider_rate_limited",
+        (_, _, 408 | 504) => "provider_timeout",
+        (_, _, 401) => "provider_authentication_rejected",
+        (_, _, 403) => "provider_access_rejected",
+        (_, _, 500..=599) => "provider_unavailable",
+        _ => "provider_failure_unclassified",
+    };
     DecisionError {
+        diagnostic: Some(gennie_memory_retrieval::classifier::ProviderDiagnostic {
+            code: diagnostic_code,
+            retry_after_ms: None,
+        }),
         code: "http_error",
         http_status: Some(status),
         partial_usage: receipt,
     }
 }
 
+fn is_timeout_io(error: &std::io::Error) -> bool {
+    if error.kind() == std::io::ErrorKind::TimedOut {
+        return true;
+    }
+    let mut source: Option<&(dyn std::error::Error + 'static)> = Some(error);
+    while let Some(error) = source {
+        if error
+            .downcast_ref::<reqwest::Error>()
+            .is_some_and(|e| e.is_timeout())
+        {
+            return true;
+        }
+        source = error.source();
+    }
+    false
+}
+
 fn failure(code: &'static str) -> DecisionError {
     DecisionError {
+        diagnostic: None,
         code,
         http_status: None,
         partial_usage: None,
@@ -430,6 +536,7 @@ fn parse_consensus_batch_with_order(
         let mut one = body.clone();
         one["answers"] = json!({"relevance":body["answers"][name]});
         parse(one, labels).map_err(|_| DecisionError {
+            diagnostic: None,
             code: "roles_consensus_batch_invalid_response",
             http_status: None,
             partial_usage: Some(known()),
@@ -644,6 +751,66 @@ fn parse_choice(body: &Value, labels: &[String]) -> Result<DecisionResult, Decis
 }
 
 impl Classifier for OpenRouterClassifier {
+    fn classify_until(
+        &self,
+        query: &str,
+        scope_id: &str,
+        candidates: &[Candidate],
+        provider: ClassifierProvider,
+        policy: SelectionPolicy,
+        deadline: Instant,
+    ) -> Result<DecisionResult, DecisionError> {
+        let mut scoped = self.clone();
+        scoped.operation_deadline = Some(deadline);
+        scoped.classify(query, scope_id, candidates, provider, policy)
+    }
+    fn suggest_equivalent_until(
+        &self,
+        scope_id: &str,
+        anchor: &Candidate,
+        candidates: &[Candidate],
+        provider: ClassifierProvider,
+        deadline: Instant,
+    ) -> Result<DecisionResult, DecisionError> {
+        let mut scoped = self.clone();
+        scoped.operation_deadline = Some(deadline);
+        let key = scoped
+            .api_key
+            .as_ref()
+            .filter(|value| !value.trim().is_empty() && !value.chars().any(char::is_whitespace))
+            .ok_or_else(|| failure("missing_api_key"))?;
+        let alternatives: Vec<Candidate> = candidates
+            .iter()
+            .filter(|candidate| candidate.memory_id != anchor.memory_id)
+            .take(19)
+            .cloned()
+            .collect();
+        if alternatives.is_empty() {
+            return Err(failure("equivalence_review_no_candidates"));
+        }
+        let (mut options, ids) = criteria(&alternatives);
+        options.insert(
+            "none".into(),
+            Value::String("No alternative is clearly the same underlying memory.".into()),
+        );
+        for (index, candidate) in alternatives.iter().enumerate() {
+            let label = char::from(b'A' + index as u8).to_string();
+            let text = candidate.conditions.as_ref().map_or_else(
+                || candidate.summary.clone(),
+                |conditions| format!("{}\nConditions: {}", candidate.summary, conditions),
+            );
+            options.insert(label, Value::String(text));
+        }
+        scoped.choose(
+            key,
+            &json!({"task":"possible_equivalent_memory","anchor":{"id":anchor.memory_id,"revision":anchor.revision,"summary":anchor.summary,"conditions":anchor.conditions},"instruction":"Compare the anchor with each alternative. Choose an alternative only if it expresses the same underlying personal fact or preference with compatible subject, polarity, time, conditions, and status. Similar topic or wording is insufficient. If they may be complementary, contradictory, or distinct, choose none."}).to_string(),
+            scope_id,
+            options,
+            &ids,
+            "Choose the one alternative that is most likely the same underlying memory as the anchor. This is a review suggestion, not permission to merge or discard either memory. Choose none unless equivalence is clear.",
+            provider,
+        )
+    }
     fn classify(
         &self,
         query: &str,
@@ -769,7 +936,9 @@ impl Classifier for OpenRouterClassifier {
                 per_memory::payload(query, scope_id, candidates, provider)
             };
             let body = self.request(key, &payload).map_err(|mut error| {
-                error.code = "per_memory_request_failed";
+                if self.operation_deadline.is_none() {
+                    error.code = "per_memory_request_failed";
+                }
                 error
             })?;
             return if selection_policy == SelectionPolicy::PerMemoryScopedAnchorV1 {
@@ -942,7 +1111,12 @@ impl Classifier for OpenRouterClassifier {
                 unreachable!("handled before one-call policies")
             }
         };
-        let initial = self.choose(key, query, scope_id, options, &ids, instructions, provider)?;
+        let initial = if selection_policy == SelectionPolicy::Baseline {
+            let body = self.request(key, &baseline::payload(query, scope_id, options, provider))?;
+            parse(body, &ids)?
+        } else {
+            self.choose(key, query, scope_id, options, &ids, instructions, provider)?
+        };
         if selection_policy == SelectionPolicy::RolesFallbackV1 {
             return roles_fallback(initial, || {
                 let (mut options, ids) = criteria(candidates);
@@ -1141,6 +1315,7 @@ mod tests {
     #[test]
     fn failed_votes_aggregate_known_receipts_without_inventing_unknowns() {
         let err = |cost: Option<f64>| DecisionError {
+            diagnostic: None,
             code: "invalid_choice",
             http_status: None,
             partial_usage: cost.map(|reported_cost_usd| PartialDecisionUsage {
@@ -1532,6 +1707,7 @@ mod tests {
         assert_eq!(known.reported_cost_usd, Some(0.001));
 
         let http_error = DecisionError {
+            diagnostic: None,
             code: "http_error",
             http_status: Some(503),
             partial_usage: None,
@@ -1539,5 +1715,45 @@ mod tests {
         let error = support_gate_failure(http_error, &initial);
         assert_eq!(error.code, "support_gate_http_error");
         assert_eq!(error.http_status, Some(503));
+    }
+}
+
+#[cfg(test)]
+mod product_diagnostic_tests {
+    use super::*;
+    #[test]
+    fn structured_metadata_distinguishes_budget_from_access_without_echoing_raw_text() {
+        for (status, metadata, expected) in [
+            (
+                403,
+                json!({"limit_source":"openrouter_key_limit"}),
+                "provider_budget_exceeded",
+            ),
+            (
+                402,
+                json!({"limit_source":"openrouter_in_flight_budget"}),
+                "provider_in_flight_budget",
+            ),
+            (
+                400,
+                json!({"error_type":"context_length_exceeded"}),
+                "provider_context_limit",
+            ),
+            (429, json!({}), "provider_rate_limited"),
+        ] {
+            let body = json!({"error":{"code":status,"message":"sensitive input must not escape","metadata":metadata},"usage":{"input_tokens":12,"cost":0.001}});
+            let error = http_failure_with_body(status, Some(body.to_string().as_bytes()));
+            let issue = gennie_memory_retrieval::product::Issue::provider(&error);
+            let serialized = serde_json::to_string(&issue).unwrap();
+            assert_eq!(issue.code, expected);
+            assert!(!serialized.contains("sensitive input"));
+            assert_eq!(error.partial_usage.unwrap().reported_cost_usd, Some(0.001));
+        }
+        let error = http_failure_with_body(200, Some(br#"{"error":{"code":429}}"#));
+        assert_eq!(error.http_status, Some(200));
+        assert_eq!(
+            gennie_memory_retrieval::product::Issue::provider(&error).code,
+            "provider_rate_limited"
+        );
     }
 }

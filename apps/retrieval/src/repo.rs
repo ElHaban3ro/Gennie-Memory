@@ -1,6 +1,13 @@
 use crate::model::{Candidate, FixtureMemory, SearchRequest, SourceRef};
 use rusqlite::{Connection, params};
 
+pub(crate) fn utc_now(conn: &Connection) -> Result<String, String> {
+    conn.query_row("SELECT strftime('%Y-%m-%dT%H:%M:%fZ', 'now')", [], |row| {
+        row.get(0)
+    })
+    .map_err(|_| "no se pudo obtener la hora UTC".into())
+}
+
 pub fn load_fixtures(conn: &mut Connection, fixtures: &[FixtureMemory]) -> Result<(), String> {
     let tx = conn.transaction().map_err(|e| e.to_string())?;
     for fixture in fixtures {

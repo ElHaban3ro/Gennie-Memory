@@ -36,6 +36,7 @@ mod opposite_task_probe;
 mod per_memory_matrix;
 mod policy_probe;
 mod predicate_probe;
+mod product_suite;
 mod projection_contract;
 mod projection_ids;
 mod projection_sets;
@@ -90,6 +91,86 @@ fn run() -> Result<(), String> {
         .next()
         .ok_or("uso: gennie-memory-eval <comando> ...; consulte docs/evaluation/contract-v1.md")?;
     match command.as_str() {
+        "run-baseline-regression" => {
+            let paths: Vec<_> = args.collect();
+            if paths.len() != 3 {
+                return Err(
+                    "uso: run-baseline-regression <manifest.json> <binario> <directorio-nuevo>"
+                        .into(),
+                );
+            }
+            let report = product_suite::run_baseline_regression(
+                Path::new(&paths[0]),
+                Path::new(&paths[1]),
+                Path::new(&paths[2]),
+            )?;
+            println!(
+                "{}",
+                serde_json::to_string_pretty(&report).map_err(|e| e.to_string())?
+            );
+            Ok(())
+        }
+        "audit-product-campaign" => {
+            let paths: Vec<_> = args.collect();
+            if paths.len() != 3 {
+                return Err(
+                    "uso: audit-product-campaign <suite> <binario> <directorio-campaña>".into(),
+                );
+            }
+            let report = product_suite::audit_campaign(
+                Path::new(&paths[0]),
+                Path::new(&paths[1]),
+                Path::new(&paths[2]),
+            )?;
+            println!(
+                "{}",
+                serde_json::to_string_pretty(&report).map_err(|e| e.to_string())?
+            );
+            Ok(())
+        }
+        "run-product-suite" => {
+            let paths: Vec<_> = args.collect();
+            if paths.len() != 3 {
+                return Err(
+                    "uso: run-product-suite <suite.json> <binario-gennie-memory> <directorio-nuevo>"
+                        .into(),
+                );
+            }
+            let report = product_suite::run_campaign(
+                Path::new(&paths[0]),
+                Path::new(&paths[1]),
+                Path::new(&paths[2]),
+            )?;
+            println!(
+                "{}",
+                serde_json::to_string_pretty(&report).map_err(|e| e.to_string())?
+            );
+            Ok(())
+        }
+        "audit-product-reviews" => {
+            let paths: Vec<_> = args.collect();
+            let paths: Vec<_> = paths.iter().map(Path::new).collect();
+            let report = product_suite::audit_reviews(&paths)?;
+            println!(
+                "{}",
+                serde_json::to_string_pretty(&report).map_err(|e| e.to_string())?
+            );
+            Ok(())
+        }
+        "validate-product-suite" => {
+            let input = args
+                .next()
+                .ok_or("falta manifiesto de particiones del producto")?;
+            if args.next().is_some() {
+                return Err("demasiados argumentos".into());
+            }
+            let report = product_suite::validate(Path::new(&input))?;
+            println!(
+                "{}",
+                serde_json::to_string_pretty(&report).map_err(|e| e.to_string())?
+            );
+            Ok(())
+        }
         "source-context-reference-v1" | "source-context-reference-v2" => {
             let mode = args.next().ok_or("falta operación bind o consume")?;
             let input = args.next().ok_or("falta entrada de referencia")?;

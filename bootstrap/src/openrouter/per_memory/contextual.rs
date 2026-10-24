@@ -27,6 +27,7 @@ pub(super) fn parse(
 ) -> Result<(DecisionResult, Vec<ContextualRoleProposal>), DecisionError> {
     let candidates = &candidates[..candidates.len().min(7)];
     let invalid = || DecisionError {
+        diagnostic: None,
         code: "contextual_proposal_invalid",
         http_status: None,
         partial_usage: known_receipt(&body),

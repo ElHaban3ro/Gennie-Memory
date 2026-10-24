@@ -39,6 +39,7 @@ fn error(
     second: Option<&WitnessUsage>,
 ) -> DecisionError {
     DecisionError {
+        diagnostic: None,
         code,
         http_status: None,
         partial_usage: Some(known(initial, second)),

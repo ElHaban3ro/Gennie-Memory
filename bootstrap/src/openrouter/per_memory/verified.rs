@@ -111,6 +111,7 @@ fn with_requests(
             usage.served_model = None;
         }
         return Err(DecisionError {
+            diagnostic: None,
             code: "verified_check_failed",
             http_status: status,
             partial_usage: known,
@@ -205,6 +206,7 @@ mod tests {
                     assert!(!(text.contains("fact-0") && text.contains("fact-1")));
                     if mode == "error" && second {
                         return Err(DecisionError {
+                            diagnostic: None,
                             code: "test",
                             http_status: Some(503),
                             partial_usage: Some(PartialDecisionUsage {

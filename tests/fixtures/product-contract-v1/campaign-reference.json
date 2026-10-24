@@ -1,0 +1,18 @@
+{
+  "contract_version": 1,
+  "suite_sha256": "79eb28fa772da3ef4d2b3b549062b5455111154cdd86b134990d05cc29931404",
+  "campaign_directory": "outputs/iromem/evaluation/product-contract-v1-20261024T034011Z",
+  "summary_sha256": "0b89e5721673643a003117a752512275b0ff5922c3c839c8e90dbd68e8c45de3",
+  "audit_sha256": "81942a8f8ee78800907f3920038b339332b3d5e834d07ed238c34d6a07b4beb6",
+  "journal_sha256": "567aa9724fd1aa562b6ec5acb59c02042c2b422627046a661c618e5f68fb05d9",
+  "scope": "decisions_per_memory_v1_synthetic_18_cases",
+  "all_three_gates_passed": true,
+  "final_reserve_consumed": true,
+  "product_default_changed": false,
+  "baseline_context_omission": "observed_in_separate_development_smokes",
+  "test_count_evaluation": 709,
+  "test_failures": 0,
+  "api_calls_total_including_compatibility": 20,
+  "api_cost_usd_total_including_compatibility": 0.000866636,
+  "archived_product_binary": "outputs/iromem/evaluation/product-contract-v1-20261024T034011Z/bin/iromem"
+}

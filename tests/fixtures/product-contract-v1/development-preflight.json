@@ -1,0 +1,132 @@
+{
+  "checked_at": "2026-10-24T03:32:09.843Z",
+  "suite_sha256": "79eb28fa772da3ef4d2b3b549062b5455111154cdd86b134990d05cc29931404",
+  "corpus_sha256": "4c854a440af0af63cb31e1a109008c04a58f4bfa31bb0db14621821fe95432ea",
+  "binary_sha256": "b640d3465403fc2c25fd69b5fcfbb88fc80933fc71815f3281af0814fa29698d",
+  "split": "development",
+  "schema_validation": "passed_for_six_development_requests",
+  "corpus_load": "passed_36_records",
+  "structural_validation": {
+    "calls_executed": 0,
+    "contract_version": 1,
+    "corpus_binding": "passed",
+    "final_executed": false,
+    "label_source": "blind_synthetic_adjudication",
+    "limits": {
+      "max_calls": 12,
+      "max_cost_usd": 0.1,
+      "max_seconds": 300,
+      "unlimited_cost_authorized": false
+    },
+    "partitions": {
+      "calibration": 6,
+      "development": 6,
+      "final": 6
+    },
+    "policy_binding": "passed",
+    "policy_sha256": "ca928f3e5840e87127fa7606ddb5840392269ed0a9a47a2c8f22a2c3df2fdd5a",
+    "runtime_schema_validation": "deferred_to_product",
+    "semantic_quality": "not_evaluated",
+    "structural_validation": "passed",
+    "suite_sha256": "79eb28fa772da3ef4d2b3b549062b5455111154cdd86b134990d05cc29931404",
+    "thresholds": {
+      "max_degradations": 0,
+      "max_p95_ms": 1500.0,
+      "max_unrelated_selections": 0,
+      "min_useful_recall": 1.0
+    }
+  },
+  "checks": [
+    {
+      "case_id": "pcv1-b1388148ce9c",
+      "outcome": "not_evaluated",
+      "execution_status": "degraded",
+      "candidate_ids": [
+        "pcv1-aliso-1",
+        "pcv1-aliso-2"
+      ],
+      "expected_evidence_retrieved": true,
+      "issues": [
+        "credential_missing"
+      ],
+      "provider_receipt_status": "not_called",
+      "implementation_sha256": "01cc440e648fa49b5c0a82616913e980766f6d8c5c6ec2778d7941dd69734ccd",
+      "total_ms": 2.7334579999999997
+    },
+    {
+      "case_id": "pcv1-b3b5dc4f951d",
+      "outcome": "not_evaluated",
+      "execution_status": "degraded",
+      "candidate_ids": [
+        "pcv1-brezo-1",
+        "pcv1-brezo-2"
+      ],
+      "expected_evidence_retrieved": true,
+      "issues": [
+        "credential_missing"
+      ],
+      "provider_receipt_status": "not_called",
+      "implementation_sha256": "01cc440e648fa49b5c0a82616913e980766f6d8c5c6ec2778d7941dd69734ccd",
+      "total_ms": 0.34891700000000003
+    },
+    {
+      "case_id": "pcv1-2969ad5bc023",
+      "outcome": "not_evaluated",
+      "execution_status": "degraded",
+      "candidate_ids": [
+        "pcv1-canelo-1",
+        "pcv1-canelo-2"
+      ],
+      "expected_evidence_retrieved": true,
+      "issues": [
+        "credential_missing"
+      ],
+      "provider_receipt_status": "not_called",
+      "implementation_sha256": "01cc440e648fa49b5c0a82616913e980766f6d8c5c6ec2778d7941dd69734ccd",
+      "total_ms": 0.3285
+    },
+    {
+      "case_id": "pcv1-af7f13cbfa90",
+      "outcome": "not_evaluated",
+      "execution_status": "degraded",
+      "candidate_ids": [
+        "pcv1-dalia-1",
+        "pcv1-dalia-2"
+      ],
+      "expected_evidence_retrieved": true,
+      "issues": [
+        "credential_missing"
+      ],
+      "provider_receipt_status": "not_called",
+      "implementation_sha256": "01cc440e648fa49b5c0a82616913e980766f6d8c5c6ec2778d7941dd69734ccd",
+      "total_ms": 0.310917
+    },
+    {
+      "case_id": "pcv1-ec8ab9c9382b",
+      "outcome": "clarification_required",
+      "execution_status": "completed",
+      "candidate_ids": [],
+      "expected_evidence_retrieved": true,
+      "issues": [],
+      "provider_receipt_status": "not_called",
+      "implementation_sha256": "01cc440e648fa49b5c0a82616913e980766f6d8c5c6ec2778d7941dd69734ccd",
+      "total_ms": 0.041291
+    },
+    {
+      "case_id": "pcv1-ecd300fe2116",
+      "outcome": "no_candidates",
+      "execution_status": "completed",
+      "candidate_ids": [],
+      "expected_evidence_retrieved": true,
+      "issues": [],
+      "provider_receipt_status": "not_called",
+      "implementation_sha256": "01cc440e648fa49b5c0a82616913e980766f6d8c5c6ec2778d7941dd69734ccd",
+      "total_ms": 0.23925
+    }
+  ],
+  "remote_calls": 0,
+  "api_cost_usd": 0,
+  "selection_quality": "not_evaluated",
+  "calibration_executed": false,
+  "final_executed": false
+}

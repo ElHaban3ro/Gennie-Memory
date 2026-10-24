@@ -65,6 +65,7 @@ fn check_deadline(header_delay: Duration, timeout: Duration) {
         api_key: None,
         evaluation_capture: None,
         evaluation_response_content: None,
+        operation_deadline: None,
     };
     let start = Instant::now();
     let result = classifier.request_measured_at("synthetic", &json!({}), &url, timeout);
@@ -89,6 +90,22 @@ fn product_request_deadline_covers_trickling_body() {
 #[test]
 fn product_deadline_includes_headers_and_body_in_one_budget() {
     check_deadline(Duration::from_millis(120), Duration::from_millis(200));
+}
+
+#[test]
+fn versioned_deadline_is_shorter_than_http_timeout_and_classifies_timeout() {
+    let (url, stop, worker) = trickle(Duration::ZERO);
+    let mut classifier = OpenRouterClassifier::new(None).unwrap();
+    classifier.operation_deadline = Some(Instant::now() + Duration::from_millis(100));
+    let started = Instant::now();
+    let result =
+        classifier.request_measured_at("synthetic", &json!({}), &url, Duration::from_secs(2));
+    let elapsed = started.elapsed();
+    stop.store(true, Ordering::SeqCst);
+    drop(classifier);
+    worker.join().unwrap();
+    assert_eq!(result.err().unwrap().code, "request_timeout");
+    assert!(elapsed < Duration::from_millis(500));
 }
 
 #[test]
@@ -308,6 +325,7 @@ fn product_http2_deadline_covers_trickling_body() {
         api_key: None,
         evaluation_capture: None,
         evaluation_response_content: None,
+        operation_deadline: None,
     };
     let start = Instant::now();
     let result = classifier.request_measured_at(

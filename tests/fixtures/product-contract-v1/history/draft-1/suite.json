@@ -1,0 +1,40 @@
+{
+  "contract_version": 1,
+  "corpus": {
+    "path": "corpus.json",
+    "sha256": "a3077f3faf98d47ed500e20ab9cb0b1e229058308c0756750f55e8afb9905c3e"
+  },
+  "policy_path": "policy.json",
+  "policy_sha256": "ca928f3e5840e87127fa7606ddb5840392269ed0a9a47a2c8f22a2c3df2fdd5a",
+  "protocol": {
+    "max_calls": 12,
+    "max_seconds": 300,
+    "max_cost_usd": 0.1,
+    "unlimited_cost_authorized": false,
+    "min_useful_recall": 1.0,
+    "max_unrelated_selections": 0,
+    "max_degradations": 0,
+    "max_p95_ms": 1500,
+    "label_source": "agent_synthetic_unreviewed"
+  },
+  "partitions": [
+    {
+      "split": "development",
+      "path": "development.jsonl",
+      "sha256": "fdf2573374b0c8acb46c82617a27ebd8ccdb573a388e4a901dca514c8330845c",
+      "count": 6
+    },
+    {
+      "split": "calibration",
+      "path": "calibration.jsonl",
+      "sha256": "8695d4ddb0ce0933c5558694949554e4a8ba03dc3b0735b5ed6a3f7778cb73ab",
+      "count": 6
+    },
+    {
+      "split": "final",
+      "path": "final.jsonl",
+      "sha256": "26c2d8c84ee447217eec9b524f9baed85f09022152d3c2daa5ab09bd81c1c331",
+      "count": 6
+    }
+  ]
+}

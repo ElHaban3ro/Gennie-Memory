@@ -1,0 +1,39 @@
+{
+  "checked_at": "2026-10-24T03:39:30.417Z",
+  "checked_on_local": "2026-10-23",
+  "campaign_model": "decisions",
+  "input_usd_per_million": 0.1,
+  "output_usd_per_million": 0,
+  "key_check": "accepted",
+  "budget_at_least_campaign_limit": true,
+  "per_request_reserve_usd": 0.02,
+  "reserve_basis": "accounting_guard_for_128KiB_text_payload_zero_output_price_not_billing_guarantee",
+  "inference_availability": "unverified_before_campaign",
+  "sources": [
+    {
+      "model": "decisions",
+      "requested_model": "openai/gpt-6-luna-decisions",
+      "input_usd_per_million": 0.1,
+      "output_usd_per_million": 0,
+      "context_tokens": 1050000,
+      "max_questions_documented": 200,
+      "url": "https://openrouter.ai/openai/gpt-6-luna-decisions/providers"
+    },
+    {
+      "model": "jev",
+      "requested_model": "typesafe/jev-1.13",
+      "input_usd_per_million": 0.042,
+      "output_usd_per_million": 0,
+      "published_context": "262K",
+      "url": "https://openrouter.ai/typesafe/jev-1.13/providers"
+    },
+    {
+      "model": "jev114",
+      "requested_model": "typesafe/jev-1.14",
+      "input_usd_per_million": 0.042,
+      "output_usd_per_million": 0,
+      "published_context": "262K",
+      "url": "https://openrouter.ai/typesafe/jev-1.14/providers"
+    }
+  ]
+}

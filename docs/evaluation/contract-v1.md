@@ -1,5 +1,7 @@
 # Contrato de evaluación v1
 
+La frontera optativa de producto v1 tiene su [protocolo prospectivo](product-contract-v1-protocol.md), con `validate-product-suite` y `audit-product-reviews`; no cambia las campañas históricas descritas abajo.
+
 Estado vigente: el producto y el evaluador principal son Rust. Los bancos y resultados de pilotos anteriores siguen versionados como evidencia histórica; sus scripts Python antiguos fueron retirados. La medición nueva de la ruta Gennie Memory está en [la cohorte sintética 018–020](mvp-final-synthetic-2026-10-16.md). La comparación de búsqueda entre cuatro motores y el piloto Codex aún corresponden a [014–017](broader-comparison-2026-10-16.md); la [primera medición Rust](rust-migration-v1.md) es histórica.
 
 ## Bancos y etiquetas

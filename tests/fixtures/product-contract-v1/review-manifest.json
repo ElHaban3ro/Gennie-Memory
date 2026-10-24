@@ -1,0 +1,26 @@
+{
+  "status": "two_blind_synthetic_reviews_completed",
+  "packet_sha256": "28d0ffe30a918b6004d4a98e5d86c86b90bfa3c142aa415a111fe98c6eedd255",
+  "rubric_sha256": "30da817cc47cdf89aafb5c06f13d38856f2a296ae1230fd829296241f778044c",
+  "suite_sha256": "79eb28fa772da3ef4d2b3b549062b5455111154cdd86b134990d05cc29931404",
+  "cases": 18,
+  "authoring": "agent_synthetic",
+  "labels_hidden": true,
+  "human_review": false,
+  "model_family_independence": "not_established",
+  "review_cost_usd": null,
+  "reviewers": [
+    {
+      "id": "reviewer_a",
+      "path": "review-a-v2.json",
+      "sha256": "9cbe83df04bbc3f4abaf1aee7731d56dd77a51da833d1bdf12e1a59a98557495"
+    },
+    {
+      "id": "reviewer_b",
+      "path": "review-b-v2.json",
+      "sha256": "5bd280b39880bef75c2d255f84338e8cc0636502ec975ee21b7a46f4a3d6cdfa"
+    }
+  ],
+  "prior_version": "history/draft-1",
+  "remote_evaluation": "not_started"
+}

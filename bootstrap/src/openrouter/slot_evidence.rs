@@ -1258,6 +1258,7 @@ fn classify_format_at(
             .flatten()
             .and_then(|body| known_receipt(&body));
         return Err(DecisionError {
+            diagnostic: None,
             code: "evaluation_capture_write_failed",
             http_status: Some(status.as_u16()),
             partial_usage,
@@ -1265,6 +1266,7 @@ fn classify_format_at(
     }
     if read_result.is_err() {
         return Err(DecisionError {
+            diagnostic: None,
             code: "slot_evidence_transport",
             http_status: Some(status.as_u16()),
             partial_usage: None,
@@ -1277,6 +1279,7 @@ fn classify_format_at(
     if !status.is_success() {
         let receipt = known_receipt(&body);
         return Err(DecisionError {
+            diagnostic: None,
             code: "slot_evidence_http_error",
             http_status: Some(status.as_u16()),
             partial_usage: receipt,
@@ -1424,6 +1427,7 @@ fn receipt(body: &Value) -> PartialDecisionUsage {
 
 fn with_receipt(code: &'static str, receipt: PartialDecisionUsage) -> DecisionError {
     DecisionError {
+        diagnostic: None,
         code,
         http_status: None,
         partial_usage: Some(receipt),

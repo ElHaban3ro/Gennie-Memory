@@ -34,6 +34,7 @@ pub(in crate::openrouter) fn parse(
     candidates: &[Candidate],
 ) -> Result<DecisionResult, DecisionError> {
     let invalid = || DecisionError {
+        diagnostic: None,
         code: "per_memory_invalid_scoped_checks",
         http_status: None,
         partial_usage: known_receipt(&body),
@@ -150,6 +151,7 @@ pub(in crate::openrouter) fn parse_flat(
     candidates: &[Candidate],
 ) -> Result<DecisionResult, DecisionError> {
     let invalid = || DecisionError {
+        diagnostic: None,
         code: "per_memory_invalid_flat_keys",
         http_status: None,
         partial_usage: known_receipt(&body),

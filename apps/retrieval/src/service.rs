@@ -8,6 +8,11 @@ use std::collections::HashSet;
 use std::time::Instant;
 
 pub fn search(conn: &Connection, request: &SearchRequest) -> Result<SearchResponse, String> {
+    validate_search_request(request)?;
+    search_validated(conn, request)
+}
+
+pub(crate) fn validate_search_request(request: &SearchRequest) -> Result<(), String> {
     if request.query.trim().is_empty() || request.query.chars().count() > 8000 {
         return Err("query debe tener entre 1 y 8000 caracteres".into());
     }
@@ -27,6 +32,10 @@ pub fn search(conn: &Connection, request: &SearchRequest) -> Result<SearchRespon
     if !(1..=20).contains(&request.limit.unwrap_or(8)) {
         return Err("limit debe estar entre 1 y 20".into());
     }
+    Ok(())
+}
+
+fn search_validated(conn: &Connection, request: &SearchRequest) -> Result<SearchResponse, String> {
     let (expression, method) = match request.query_mode.unwrap_or(QueryMode::Keywords) {
         QueryMode::Natural => (fts_expression(&request.query), "fts5"),
         QueryMode::Keywords => (keyword_expression(&request.query), "fts5_keywords"),
@@ -441,7 +450,7 @@ pub fn compose_seed(conn: &Connection, request: &SeedRequest) -> Result<SeedResp
     compose_seed_with_limit(conn, request, 8)
 }
 
-fn compose_seed_with_limit(
+pub(crate) fn compose_seed_with_limit(
     conn: &Connection,
     request: &SeedRequest,
     selected_limit: usize,
@@ -463,15 +472,23 @@ fn compose_seed_with_limit(
             let candidates = result
                 .candidates
                 .into_iter()
-                .map(|candidate| SeedMemory {
-                    memory_id: candidate.memory_id,
-                    revision: candidate.revision,
-                    scope_kind: text_request.scope_kind.clone(),
-                    scope_id: text_request.scope_id.clone(),
-                    summary: candidate.summary,
-                    conditions: candidate.conditions,
-                    source: candidate.source,
-                    state: candidate.state,
+                .map(|candidate| {
+                    let provenance_status = if candidate.source.is_some() {
+                        "declared_unverified"
+                    } else {
+                        "not_provided"
+                    };
+                    SeedMemory {
+                        memory_id: candidate.memory_id,
+                        revision: candidate.revision,
+                        scope_kind: text_request.scope_kind.clone(),
+                        scope_id: text_request.scope_id.clone(),
+                        summary: candidate.summary,
+                        conditions: candidate.conditions,
+                        source: candidate.source,
+                        provenance_status,
+                        state: candidate.state,
+                    }
                 })
                 .collect();
             (
@@ -486,15 +503,23 @@ fn compose_seed_with_limit(
             let candidates = result
                 .candidates
                 .into_iter()
-                .map(|candidate| SeedMemory {
-                    memory_id: candidate.memory_id,
-                    revision: candidate.revision,
-                    scope_kind: hybrid_request.search.scope_kind.clone(),
-                    scope_id: hybrid_request.search.scope_id.clone(),
-                    summary: candidate.summary,
-                    conditions: candidate.conditions,
-                    source: candidate.source,
-                    state: candidate.state,
+                .map(|candidate| {
+                    let provenance_status = if candidate.source.is_some() {
+                        "declared_unverified"
+                    } else {
+                        "not_provided"
+                    };
+                    SeedMemory {
+                        memory_id: candidate.memory_id,
+                        revision: candidate.revision,
+                        scope_kind: hybrid_request.search.scope_kind.clone(),
+                        scope_id: hybrid_request.search.scope_id.clone(),
+                        summary: candidate.summary,
+                        conditions: candidate.conditions,
+                        source: candidate.source,
+                        provenance_status,
+                        state: candidate.state,
+                    }
                 })
                 .collect();
             (
@@ -540,6 +565,7 @@ fn compose_seed_with_limit(
             classifier: request.classifier.clone(),
             semantic_coverage,
             memories: vec![],
+            potential_equivalents: vec![],
             seed_text: None,
         });
     }
@@ -610,6 +636,7 @@ fn compose_seed_with_limit(
         classifier: request.classifier.clone(),
         semantic_coverage,
         memories,
+        potential_equivalents: vec![],
         seed_text,
     })
 }
@@ -720,6 +747,7 @@ mod tests {
             self.observed_policy.set(selection_policy);
             if self.fail {
                 return Err(DecisionError {
+                    diagnostic: None,
                     code: if self.partial_usage.is_some() {
                         "support_gate_transport_error"
                     } else {

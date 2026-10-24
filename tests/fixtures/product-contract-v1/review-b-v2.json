@@ -1,0 +1,393 @@
+{
+  "reviewer": "reviewer_b",
+  "packet_sha256": "28d0ffe30a918b6004d4a98e5d86c86b90bfa3c142aa415a111fe98c6eedd255",
+  "rubric_sha256": "30da817cc47cdf89aafb5c06f13d38856f2a296ae1230fd829296241f778044c",
+  "cases": [
+    {
+      "case_id": "pcv1-909b584e988c",
+      "outcome": "no_candidates",
+      "assessments": [
+        {
+          "memory_id": "pcv1-salvia-1",
+          "revision": 1,
+          "relation": "unrelated"
+        },
+        {
+          "memory_id": "pcv1-salvia-2",
+          "revision": 1,
+          "relation": "unrelated"
+        }
+      ],
+      "selected_ids": [],
+      "rationale": "«inventario de sillas y mesas» y «sala de lectura por las tardes» no aportan coste ni relación semántica específica con la pieza VZX643.",
+      "concerns": [
+        "Hipótesis de búsqueda pendiente de runtime; existen recuerdos físicos en el paquete y no se ha observado una búsqueda vacía."
+      ]
+    },
+    {
+      "case_id": "pcv1-749b67347db8",
+      "outcome": "evidence_selected",
+      "assessments": [
+        {
+          "memory_id": "pcv1-magnolia-1",
+          "revision": 1,
+          "relation": "supports_answer"
+        },
+        {
+          "memory_id": "pcv1-magnolia-2",
+          "revision": 1,
+          "relation": "unrelated"
+        }
+      ],
+      "selected_ids": [
+        "pcv1-magnolia-1"
+      ],
+      "rationale": "«permite entrada de 14:00 a 16:00 los jueves» responde al horario; «requiere anotar el nombre» no aporta horario.",
+      "concerns": []
+    },
+    {
+      "case_id": "pcv1-b3b5dc4f951d",
+      "outcome": "evidence_selected",
+      "assessments": [
+        {
+          "memory_id": "pcv1-brezo-1",
+          "revision": 1,
+          "relation": "refutes_premise"
+        },
+        {
+          "memory_id": "pcv1-brezo-2",
+          "revision": 1,
+          "relation": "unrelated"
+        }
+      ],
+      "selected_ids": [
+        "pcv1-brezo-1"
+      ],
+      "rationale": "«fue cancelada antes de empezar» y «No se restauró ningún archivo» niegan la restauración completada. Una revisión del respaldo «el martes» no establece finalización.",
+      "concerns": []
+    },
+    {
+      "case_id": "pcv1-ecd300fe2116",
+      "outcome": "no_candidates",
+      "assessments": [
+        {
+          "memory_id": "pcv1-fresno-1",
+          "revision": 1,
+          "relation": "unrelated"
+        },
+        {
+          "memory_id": "pcv1-fresno-2",
+          "revision": 1,
+          "relation": "unrelated"
+        }
+      ],
+      "selected_ids": [],
+      "rationale": "«lista de turnos de limpieza» y «abre los sábados de nueve a doce» no describen el certificado de calibración ZQX781 ni su ubicación.",
+      "concerns": [
+        "no_candidates es hipótesis por ausencia de afinidad pertinente, no resultado de recuperación ejecutada."
+      ]
+    },
+    {
+      "case_id": "pcv1-af7f13cbfa90",
+      "outcome": "abstained",
+      "assessments": [
+        {
+          "memory_id": "pcv1-dalia-1",
+          "revision": 1,
+          "relation": "unrelated"
+        },
+        {
+          "memory_id": "pcv1-dalia-2",
+          "revision": 1,
+          "relation": "unrelated"
+        }
+      ],
+      "selected_ids": [],
+      "rationale": "«El almacén Dalia fue pintado de blanco» y «tiene dos puertas de acceso» identifican la entidad, pero no aportan temperatura ni niegan mediciones.",
+      "concerns": [
+        "Distractores potencialmente recuperables por vocabulario; ausencia del dato solicitado no demuestra búsqueda vacía."
+      ]
+    },
+    {
+      "case_id": "pcv1-d0b0e9c814da",
+      "outcome": "evidence_selected",
+      "assessments": [
+        {
+          "memory_id": "pcv1-iris-1",
+          "revision": 1,
+          "relation": "partial_context"
+        },
+        {
+          "memory_id": "pcv1-iris-2",
+          "revision": 1,
+          "relation": "unrelated"
+        }
+      ],
+      "selected_ids": [
+        "pcv1-iris-1"
+      ],
+      "rationale": "«ocho mil unidades de financiación solo si presenta la garantía» y «La garantía sigue pendiente» aportan un importe condicionado. Aplico la precedencia explícita de partial_context. «debe entregar el presupuesto desglosado» no vincula expresamente ese trámite con la financiación.",
+      "concerns": [
+        "Se acepta la convención para financiación condicionada; no hay bloqueo de etiqueta. No inferir moneda ni que el presupuesto sea requisito de esa financiación."
+      ]
+    },
+    {
+      "case_id": "pcv1-ec8ab9c9382b",
+      "outcome": "clarification_required",
+      "assessments": [
+        {
+          "memory_id": "pcv1-eneldo-1",
+          "revision": 1,
+          "relation": "unrelated"
+        },
+        {
+          "memory_id": "pcv1-eneldo-2",
+          "revision": 1,
+          "relation": "unrelated"
+        }
+      ],
+      "selected_ids": [],
+      "rationale": "La referencia declarada sin resolver «ese cambio» exige aclaración. «asigna compras a Lucía y mantenimiento a Tomás» y «exige una aprobación» no resuelven cuál cambio se consulta.",
+      "concerns": [
+        "unrelated indica suspensión de selección según la rúbrica, no juicio semántico del proveedor. La asignación de áreas tampoco establece autoridad de aprobación."
+      ]
+    },
+    {
+      "case_id": "pcv1-611af9d182d0",
+      "outcome": "evidence_selected",
+      "assessments": [
+        {
+          "memory_id": "pcv1-nardo-1",
+          "revision": 1,
+          "relation": "refutes_premise"
+        },
+        {
+          "memory_id": "pcv1-nardo-2",
+          "revision": 1,
+          "relation": "unrelated"
+        }
+      ],
+      "selected_ids": [
+        "pcv1-nardo-1"
+      ],
+      "rationale": "«No llegó a publicarse en ningún canal» niega la premisa de publicación. «redactado por el equipo de archivo» aporta autoría del borrador, no canal.",
+      "concerns": []
+    },
+    {
+      "case_id": "pcv1-34482f62cfd1",
+      "outcome": "abstained",
+      "assessments": [
+        {
+          "memory_id": "pcv1-jazmin-1",
+          "revision": 1,
+          "relation": "unrelated"
+        },
+        {
+          "memory_id": "pcv1-jazmin-2",
+          "revision": 1,
+          "relation": "unrelated"
+        }
+      ],
+      "selected_ids": [],
+      "rationale": "«es azul y tiene una carcasa de plástico» y «se guarda en el cajón derecho» no aportan número de serie ni niegan que exista.",
+      "concerns": [
+        "La coincidencia con «sensor Jazmín» permite distractores recuperables; abstención semántica no acredita no_candidates."
+      ]
+    },
+    {
+      "case_id": "pcv1-3d55edc23ce0",
+      "outcome": "clarification_required",
+      "assessments": [
+        {
+          "memory_id": "pcv1-kalanchoe-1",
+          "revision": 1,
+          "relation": "unrelated"
+        },
+        {
+          "memory_id": "pcv1-kalanchoe-2",
+          "revision": 1,
+          "relation": "unrelated"
+        }
+      ],
+      "selected_ids": [],
+      "rationale": "La referencia declarada sin resolver «ese periodo» impide elegir entre «doce entradas en septiembre y nueve en octubre». Contabilizar al cierre de mes no fija el periodo consultado.",
+      "concerns": [
+        "unrelated significa selección suspendida, no juicio semántico del proveedor. No sumar meses ni resolver el periodo mediante as_of."
+      ]
+    },
+    {
+      "case_id": "pcv1-a6f2881fbc3c",
+      "outcome": "abstained",
+      "assessments": [
+        {
+          "memory_id": "pcv1-peonia-1",
+          "revision": 1,
+          "relation": "unrelated"
+        },
+        {
+          "memory_id": "pcv1-peonia-2",
+          "revision": 1,
+          "relation": "unrelated"
+        }
+      ],
+      "selected_ids": [],
+      "rationale": "«fechado el 8 de octubre» y «portada verde», así como «seis páginas», no identifican a quien escribió el documento.",
+      "concerns": [
+        "Hay coincidencia de entidad, pero no autoría; tampoco una negación explícita de autor. La búsqueda real queda sin observar."
+      ]
+    },
+    {
+      "case_id": "pcv1-f52100f76f06",
+      "outcome": "clarification_required",
+      "assessments": [
+        {
+          "memory_id": "pcv1-romero-1",
+          "revision": 1,
+          "relation": "unrelated"
+        },
+        {
+          "memory_id": "pcv1-romero-2",
+          "revision": 1,
+          "relation": "unrelated"
+        }
+      ],
+      "selected_ids": [],
+      "rationale": "La petición declara sin resolver «esa condición». «con supervisor presente» y «Sin supervisor, exige permiso escrito» no identifican cuál condición aplica; el registro de activaciones tampoco.",
+      "concerns": [
+        "unrelated se asigna por suspensión de selección, no como juicio semántico del proveedor."
+      ]
+    },
+    {
+      "case_id": "pcv1-2969ad5bc023",
+      "outcome": "evidence_selected",
+      "assessments": [
+        {
+          "memory_id": "pcv1-canelo-1",
+          "revision": 1,
+          "relation": "partial_context"
+        },
+        {
+          "memory_id": "pcv1-canelo-2",
+          "revision": 1,
+          "relation": "unrelated"
+        }
+      ],
+      "selected_ids": [
+        "pcv1-canelo-1"
+      ],
+      "rationale": "«se estima una inspección el 28 de octubre» y «La fecha sigue provisional, pendiente de confirmación» aportan fecha provisional. La rúbrica da precedencia a partial_context aunque se solicite confirmada. Registrar al inspector no aporta fecha.",
+      "concerns": [
+        "Se acepta la convención y queda resuelto el solapamiento de etiqueta. No convertir la estimación en confirmación ni añadir un año no explícito; esto no bloquea la selección parcial."
+      ]
+    },
+    {
+      "case_id": "pcv1-728d5f2924a6",
+      "outcome": "evidence_selected",
+      "assessments": [
+        {
+          "memory_id": "pcv1-olmo-1",
+          "revision": 1,
+          "relation": "partial_context"
+        },
+        {
+          "memory_id": "pcv1-olmo-2",
+          "revision": 1,
+          "relation": "unrelated"
+        }
+      ],
+      "selected_ids": [
+        "pcv1-olmo-1"
+      ],
+      "rationale": "«capacidad estimada de cuarenta plazas» y «sigue provisional hasta completar la medición» aportan una estimación útil. Aplico la precedencia de partial_context frente a la petición definitiva. La zona de materiales no cuantifica capacidad.",
+      "concerns": [
+        "Se acepta la convención para estimaciones y no queda bloqueo de etiqueta. Conservar la provisionalidad y no deducir un descuento de plazas por la zona reservada."
+      ]
+    },
+    {
+      "case_id": "pcv1-b1388148ce9c",
+      "outcome": "evidence_selected",
+      "assessments": [
+        {
+          "memory_id": "pcv1-aliso-1",
+          "revision": 1,
+          "relation": "supports_answer"
+        },
+        {
+          "memory_id": "pcv1-aliso-2",
+          "revision": 1,
+          "relation": "unrelated"
+        }
+      ],
+      "selected_ids": [
+        "pcv1-aliso-1"
+      ],
+      "rationale": "«una tabla de tres columnas: tarea, responsable y fecha» proporciona formato registrado respetando el contexto de no inventar. Conservar informes «durante seis meses» no aporta formato.",
+      "concerns": []
+    },
+    {
+      "case_id": "pcv1-e76d28d03476",
+      "outcome": "evidence_selected",
+      "assessments": [
+        {
+          "memory_id": "pcv1-hinojo-1",
+          "revision": 1,
+          "relation": "refutes_premise"
+        },
+        {
+          "memory_id": "pcv1-hinojo-2",
+          "revision": 1,
+          "relation": "unrelated"
+        }
+      ],
+      "selected_ids": [
+        "pcv1-hinojo-1"
+      ],
+      "rationale": "«La solicitud HIN-24 de licencia de Hinojo fue rechazada» y «No existe una licencia aprobada para HIN-24» refutan exactamente la licencia aprobada que presupone la consulta sobre HIN-24. La entrega «el 2 de octubre» no proporciona número de licencia.",
+      "concerns": [
+        "La identificación HIN-24 en pregunta y recuerdos resuelve el alcance; no queda bloqueo semántico. La negación se limita a HIN-24."
+      ]
+    },
+    {
+      "case_id": "pcv1-a60e5da7b678",
+      "outcome": "evidence_selected",
+      "assessments": [
+        {
+          "memory_id": "pcv1-genciana-1",
+          "revision": 1,
+          "relation": "supports_answer"
+        },
+        {
+          "memory_id": "pcv1-genciana-2",
+          "revision": 1,
+          "relation": "unrelated"
+        }
+      ],
+      "selected_ids": [
+        "pcv1-genciana-1"
+      ],
+      "rationale": "«a la sede Sur, ventanilla cuatro» responde al destino del paquete. «pesa dos kilogramos» no identifica sede.",
+      "concerns": []
+    },
+    {
+      "case_id": "pcv1-6c344a075abf",
+      "outcome": "no_candidates",
+      "assessments": [
+        {
+          "memory_id": "pcv1-lirio-1",
+          "revision": 1,
+          "relation": "unrelated"
+        },
+        {
+          "memory_id": "pcv1-lirio-2",
+          "revision": 1,
+          "relation": "unrelated"
+        }
+      ],
+      "selected_ids": [],
+      "rationale": "«instala cortinas en el salón principal» y «eligió tela gris para el salón» no aportan custodia ni relación pertinente con la llave QXZ952.",
+      "concerns": [
+        "no_candidates es hipótesis que requiere búsqueda runtime; no se afirma ausencia física de recuerdos."
+      ]
+    }
+  ]
+}

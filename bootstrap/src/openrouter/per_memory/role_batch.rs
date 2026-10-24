@@ -55,6 +55,7 @@ fn with_requests(
             }),
             Err(e) => {
                 return Err(DecisionError {
+                    diagnostic: None,
                     code: "role_batch_failed",
                     http_status: e.http_status,
                     partial_usage: merge_known_receipts(Some(partial(&proposal)), e.partial_usage)
@@ -162,6 +163,7 @@ fn parse(
     positive: &[(&Candidate, Kind)],
 ) -> Result<(Vec<BatchVerdict>, DecisionResult), DecisionError> {
     let invalid = || DecisionError {
+        diagnostic: None,
         code: "role_batch_invalid",
         http_status: None,
         partial_usage: known_receipt(&body),

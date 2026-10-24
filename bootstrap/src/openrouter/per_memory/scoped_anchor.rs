@@ -27,6 +27,7 @@ pub(in crate::openrouter) fn parse(
 ) -> Result<DecisionResult, DecisionError> {
     let candidates = &candidates[..candidates.len().min(7)];
     let invalid = || DecisionError {
+        diagnostic: None,
         code: "scoped_anchor_invalid",
         http_status: None,
         partial_usage: known_receipt(&body),

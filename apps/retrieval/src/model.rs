@@ -71,7 +71,7 @@ pub struct SearchResponse {
     pub semantic_coverage: &'static str,
 }
 
-#[derive(Debug, Clone, Copy, Default, Deserialize, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, Default, Serialize, Deserialize, PartialEq, Eq)]
 #[serde(rename_all = "snake_case")]
 pub enum ClassifierProvider {
     #[default]
@@ -140,7 +140,7 @@ mod classifier_provider_tests {
     }
 }
 
-#[derive(Debug, Clone, Copy, Default, Deserialize, PartialEq, Eq)]
+#[derive(Debug, Clone, Copy, Default, Serialize, Deserialize, PartialEq, Eq)]
 #[serde(rename_all = "snake_case")]
 pub enum SelectionPolicy {
     #[default]
@@ -361,7 +361,7 @@ pub struct SeedRequest {
     pub classification_status: String,
 }
 
-#[derive(Debug, Deserialize)]
+#[derive(Debug, Deserialize, Serialize)]
 #[serde(deny_unknown_fields)]
 pub struct SelectedCandidate {
     pub memory_id: String,
@@ -377,6 +377,7 @@ pub struct SeedMemory {
     pub summary: String,
     pub conditions: Option<String>,
     pub source: Option<SourceRef>,
+    pub provenance_status: &'static str,
     pub state: String,
 }
 
@@ -387,7 +388,19 @@ pub struct SeedResponse {
     pub classifier: String,
     pub semantic_coverage: &'static str,
     pub memories: Vec<SeedMemory>,
+    #[serde(default)]
+    pub potential_equivalents: Vec<SeedEquivalenceSuggestion>,
     pub seed_text: Option<String>,
+}
+
+#[derive(Debug, Clone, Serialize)]
+pub struct SeedEquivalenceSuggestion {
+    pub anchor_memory_id: String,
+    pub anchor_revision: i64,
+    pub candidate_memory_id: String,
+    pub candidate_revision: i64,
+    pub relation: &'static str,
+    pub decision: &'static str,
 }
 
 #[derive(Debug, Deserialize)]

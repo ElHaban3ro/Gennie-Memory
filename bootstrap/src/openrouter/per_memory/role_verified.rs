@@ -101,6 +101,7 @@ fn with_requests(
             usage.served_model = None;
         }
         return Err(DecisionError {
+            diagnostic: None,
             code: "role_check_failed",
             http_status: status,
             partial_usage: known,
@@ -162,6 +163,7 @@ pub(super) fn parse_fact(body: Value) -> Result<DecisionResult, DecisionError> {
         .is_some_and(|a| a.len() == 1 && a.contains_key("relevance"))
     {
         return Err(DecisionError {
+            diagnostic: None,
             code: "role_fact_invalid",
             http_status: None,
             partial_usage: crate::openrouter::known_receipt(&body),
@@ -220,6 +222,7 @@ mod tests {
             assert!(matches!(memory, "fact0" | "fact1" | "fact3"));
             if mode == "error" && memory == "fact3" {
                 return Err(DecisionError {
+                    diagnostic: None,
                     code: "test",
                     http_status: Some(503),
                     partial_usage: Some(PartialDecisionUsage {

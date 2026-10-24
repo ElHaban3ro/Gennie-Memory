@@ -23,6 +23,7 @@ fn parse_verification(
     body: Value,
 ) -> Result<(DecisionResult, CompleteEvidencePaths), DecisionError> {
     let invalid = || DecisionError {
+        diagnostic: None,
         code: "complete_premise_invalid",
         http_status: None,
         partial_usage: known_receipt(&body),
@@ -56,6 +57,7 @@ fn parse_verification(
     let mut d = global.ok_or_else(invalid)?;
     if d.served_model.as_deref() != Some(PREMISE_VERIFIER_REVISION) {
         return Err(DecisionError {
+            diagnostic: None,
             code: "complete_premise_revision_invalid",
             http_status: None,
             partial_usage: known_receipt(&body),
@@ -137,6 +139,7 @@ fn with_requests(
             u.served_model = None;
         }
         return Err(DecisionError {
+            diagnostic: None,
             code: "complete_premise_check_failed",
             http_status: status,
             partial_usage: usage,

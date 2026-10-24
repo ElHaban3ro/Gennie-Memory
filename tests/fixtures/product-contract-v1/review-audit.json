@@ -1,0 +1,228 @@
+{
+  "api_calls": 0,
+  "cases": 18,
+  "concerns": [
+    {
+      "case_id": "pcv1-909b584e988c",
+      "concerns": [
+        "La búsqueda vacía es una hipótesis pendiente del runtime; no se ha comprobado recuperación."
+      ],
+      "reviewer": "reviewer_a"
+    },
+    {
+      "case_id": "pcv1-ecd300fe2116",
+      "concerns": [
+        "Hipótesis de búsqueda vacía, no ejecución del buscador ni prueba de ausencia física de recuerdos."
+      ],
+      "reviewer": "reviewer_a"
+    },
+    {
+      "case_id": "pcv1-af7f13cbfa90",
+      "concerns": [
+        "La coincidencia de entidad permite distractores recuperables; la falta de temperatura no es refutación ni prueba de búsqueda vacía."
+      ],
+      "reviewer": "reviewer_a"
+    },
+    {
+      "case_id": "pcv1-d0b0e9c814da",
+      "concerns": [
+        "La entrega del presupuesto no se vincula explícitamente con la concesión; no agregar esa condición. La convención resuelve la etiqueta sin afirmar exclusión semántica entre relaciones."
+      ],
+      "reviewer": "reviewer_a"
+    },
+    {
+      "case_id": "pcv1-ec8ab9c9382b",
+      "concerns": [
+        "Debe precisarse el cambio; la asignación de tareas tampoco declara quién tiene autoridad de aprobación."
+      ],
+      "reviewer": "reviewer_a"
+    },
+    {
+      "case_id": "pcv1-34482f62cfd1",
+      "concerns": [
+        "Hay distractores por sensor y entidad; no inferir inexistencia de número de serie ni búsqueda vacía."
+      ],
+      "reviewer": "reviewer_a"
+    },
+    {
+      "case_id": "pcv1-3d55edc23ce0",
+      "concerns": [
+        "Debe aclararse el periodo; no elegir un mes a partir de as_of ni inventar el año."
+      ],
+      "reviewer": "reviewer_a"
+    },
+    {
+      "case_id": "pcv1-a6f2881fbc3c",
+      "concerns": [
+        "Los recuerdos de la misma entidad pueden recuperarse; ausencia de autor mencionado no equivale a documento anónimo."
+      ],
+      "reviewer": "reviewer_a"
+    },
+    {
+      "case_id": "pcv1-f52100f76f06",
+      "concerns": [
+        "Debe precisarse la condición aplicable antes de decidir si se permite activar."
+      ],
+      "reviewer": "reviewer_a"
+    },
+    {
+      "case_id": "pcv1-2969ad5bc023",
+      "concerns": [
+        "El año no está explícito; conservar el día y mes y no presentar la estimación como confirmada. No queda bloqueo de etiqueta con la precedencia declarada."
+      ],
+      "reviewer": "reviewer_a"
+    },
+    {
+      "case_id": "pcv1-728d5f2924a6",
+      "concerns": [
+        "Conservar provisionalidad y medición pendiente. La convención de etiqueta única resuelve el solapamiento sin convertir cuarenta plazas en capacidad definitiva."
+      ],
+      "reviewer": "reviewer_a"
+    },
+    {
+      "case_id": "pcv1-6c344a075abf",
+      "concerns": [
+        "no_candidates requiere comprobación del runtime; es hipótesis sobre búsqueda, no prueba empírica de recuperación vacía."
+      ],
+      "reviewer": "reviewer_a"
+    },
+    {
+      "case_id": "pcv1-909b584e988c",
+      "concerns": [
+        "Hipótesis de búsqueda pendiente de runtime; existen recuerdos físicos en el paquete y no se ha observado una búsqueda vacía."
+      ],
+      "reviewer": "reviewer_b"
+    },
+    {
+      "case_id": "pcv1-ecd300fe2116",
+      "concerns": [
+        "no_candidates es hipótesis por ausencia de afinidad pertinente, no resultado de recuperación ejecutada."
+      ],
+      "reviewer": "reviewer_b"
+    },
+    {
+      "case_id": "pcv1-af7f13cbfa90",
+      "concerns": [
+        "Distractores potencialmente recuperables por vocabulario; ausencia del dato solicitado no demuestra búsqueda vacía."
+      ],
+      "reviewer": "reviewer_b"
+    },
+    {
+      "case_id": "pcv1-d0b0e9c814da",
+      "concerns": [
+        "Se acepta la convención para financiación condicionada; no hay bloqueo de etiqueta. No inferir moneda ni que el presupuesto sea requisito de esa financiación."
+      ],
+      "reviewer": "reviewer_b"
+    },
+    {
+      "case_id": "pcv1-ec8ab9c9382b",
+      "concerns": [
+        "unrelated indica suspensión de selección según la rúbrica, no juicio semántico del proveedor. La asignación de áreas tampoco establece autoridad de aprobación."
+      ],
+      "reviewer": "reviewer_b"
+    },
+    {
+      "case_id": "pcv1-34482f62cfd1",
+      "concerns": [
+        "La coincidencia con «sensor Jazmín» permite distractores recuperables; abstención semántica no acredita no_candidates."
+      ],
+      "reviewer": "reviewer_b"
+    },
+    {
+      "case_id": "pcv1-3d55edc23ce0",
+      "concerns": [
+        "unrelated significa selección suspendida, no juicio semántico del proveedor. No sumar meses ni resolver el periodo mediante as_of."
+      ],
+      "reviewer": "reviewer_b"
+    },
+    {
+      "case_id": "pcv1-a6f2881fbc3c",
+      "concerns": [
+        "Hay coincidencia de entidad, pero no autoría; tampoco una negación explícita de autor. La búsqueda real queda sin observar."
+      ],
+      "reviewer": "reviewer_b"
+    },
+    {
+      "case_id": "pcv1-f52100f76f06",
+      "concerns": [
+        "unrelated se asigna por suspensión de selección, no como juicio semántico del proveedor."
+      ],
+      "reviewer": "reviewer_b"
+    },
+    {
+      "case_id": "pcv1-2969ad5bc023",
+      "concerns": [
+        "Se acepta la convención y queda resuelto el solapamiento de etiqueta. No convertir la estimación en confirmación ni añadir un año no explícito; esto no bloquea la selección parcial."
+      ],
+      "reviewer": "reviewer_b"
+    },
+    {
+      "case_id": "pcv1-728d5f2924a6",
+      "concerns": [
+        "Se acepta la convención para estimaciones y no queda bloqueo de etiqueta. Conservar la provisionalidad y no deducir un descuento de plazas por la zona reservada."
+      ],
+      "reviewer": "reviewer_b"
+    },
+    {
+      "case_id": "pcv1-e76d28d03476",
+      "concerns": [
+        "La identificación HIN-24 en pregunta y recuerdos resuelve el alcance; no queda bloqueo semántico. La negación se limita a HIN-24."
+      ],
+      "reviewer": "reviewer_b"
+    },
+    {
+      "case_id": "pcv1-6c344a075abf",
+      "concerns": [
+        "no_candidates es hipótesis que requiere búsqueda runtime; no se afirma ausencia física de recuerdos."
+      ],
+      "reviewer": "reviewer_b"
+    }
+  ],
+  "disagreements": [],
+  "final_executed": false,
+  "human_review": false,
+  "label_agreement": true,
+  "model_family_independence": "not_established",
+  "packet_sha256": "28d0ffe30a918b6004d4a98e5d86c86b90bfa3c142aa415a111fe98c6eedd255",
+  "review_cost_usd": null,
+  "review_sha256": [
+    "9cbe83df04bbc3f4abaf1aee7731d56dd77a51da833d1bdf12e1a59a98557495",
+    "5bd280b39880bef75c2d255f84338e8cc0636502ec975ee21b7a46f4a3d6cdfa"
+  ],
+  "reviewers": [
+    "reviewer_a",
+    "reviewer_b"
+  ],
+  "rubric_sha256": "30da817cc47cdf89aafb5c06f13d38856f2a296ae1230fd829296241f778044c",
+  "semantic_adoption": "not_evaluated",
+  "structural_validation": {
+    "calls_executed": 0,
+    "contract_version": 1,
+    "corpus_binding": "passed",
+    "final_executed": false,
+    "label_source": "blind_synthetic_adjudication",
+    "limits": {
+      "max_calls": 12,
+      "max_cost_usd": 0.1,
+      "max_seconds": 300,
+      "unlimited_cost_authorized": false
+    },
+    "partitions": {
+      "calibration": 6,
+      "development": 6,
+      "final": 6
+    },
+    "policy_binding": "passed",
+    "policy_sha256": "ca928f3e5840e87127fa7606ddb5840392269ed0a9a47a2c8f22a2c3df2fdd5a",
+    "runtime_schema_validation": "deferred_to_product",
+    "semantic_quality": "not_evaluated",
+    "structural_validation": "passed",
+    "suite_sha256": "79eb28fa772da3ef4d2b3b549062b5455111154cdd86b134990d05cc29931404",
+    "thresholds": {
+      "max_degradations": 0,
+      "max_p95_ms": 1500.0,
+      "max_unrelated_selections": 0,
+      "min_useful_recall": 1.0
+    }
+  }
+}

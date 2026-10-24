@@ -109,6 +109,7 @@ fn with_requests(
             usage.served_model = None;
         }
         return Err(DecisionError {
+            diagnostic: None,
             code: "correction_check_failed",
             http_status: status,
             partial_usage: known,
@@ -172,6 +173,7 @@ pub(super) fn parse_verification(
         return crate::openrouter::parse(body, &["yes".into()]).map(|d| (d, None));
     }
     let invalid = || DecisionError {
+        diagnostic: None,
         code: "correction_paths_invalid",
         http_status: None,
         partial_usage: crate::openrouter::known_receipt(&body),
@@ -282,6 +284,7 @@ mod tests {
                     assert_eq!(payload["state"]["query"], "q");
                     if mode == "error" {
                         return Err(DecisionError {
+                            diagnostic: None,
                             code: "test_failure",
                             http_status: Some(503),
                             partial_usage: Some(PartialDecisionUsage {

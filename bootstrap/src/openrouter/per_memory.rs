@@ -252,6 +252,7 @@ pub(super) fn parse_scored_binary_response(
     let candidates = &candidates[..candidates.len().min(8)];
     let mut result = parse_task_response(body.clone(), candidates, true)?;
     let invalid = || DecisionError {
+        diagnostic: None,
         code: "per_memory_invalid_scores",
         http_status: None,
         partial_usage: known_receipt(&body),
@@ -290,6 +291,7 @@ fn parse_task_response(
     binary: bool,
 ) -> Result<DecisionResult, DecisionError> {
     let invalid = || DecisionError {
+        diagnostic: None,
         code: "per_memory_invalid_response",
         http_status: None,
         partial_usage: known_receipt(&body),

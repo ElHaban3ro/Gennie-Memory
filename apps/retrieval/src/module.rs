@@ -25,6 +25,18 @@ impl AppModule for RetrievalModule {
                 version: 4,
                 sql: include_str!("../migrations/0004_seed_provenance.sql"),
             },
+            Migration {
+                version: 5,
+                sql: include_str!("../migrations/0005_write_operations.sql"),
+            },
+            Migration {
+                version: 6,
+                sql: include_str!("../migrations/0006_exact_dedup_and_evidence.sql"),
+            },
+            Migration {
+                version: 7,
+                sql: include_str!("../migrations/0007_revision_write_outcomes.sql"),
+            },
         ]
     }
 }
