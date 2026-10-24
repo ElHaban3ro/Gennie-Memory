@@ -1,0 +1,1161 @@
+[
+  {
+    "id": "pcv1-aliso-1",
+    "scope_kind": "project",
+    "scope_id": "pcv1-aliso",
+    "entity_id": "entity-aliso",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El informe semanal de Aliso debe usar una tabla de tres columnas: tarea, responsable y fecha.",
+    "summary": "El informe semanal de Aliso debe usar una tabla de tres columnas: tarea, responsable y fecha.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://product-v1/aliso",
+      "locator": "p1"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "pcv1-aliso-2",
+    "scope_kind": "project",
+    "scope_id": "pcv1-aliso",
+    "entity_id": "entity-aliso",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Aliso conserva sus informes semanales durante seis meses.",
+    "summary": "Aliso conserva sus informes semanales durante seis meses.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://product-v1/aliso",
+      "locator": "p2"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-bromelia-1",
+    "scope_kind": "project",
+    "scope_id": "be30-bromelia",
+    "entity_id": "entity-bromelia",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El respaldo de Bromelia se conserva treinta días.",
+    "summary": "El respaldo de Bromelia se conserva treinta días.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/bromelia",
+      "locator": "p1"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-bromelia-2",
+    "scope_kind": "project",
+    "scope_id": "be30-bromelia",
+    "entity_id": "entity-bromelia",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Bromelia comprime sus archivos al cerrar la jornada.",
+    "summary": "Bromelia comprime sus archivos al cerrar la jornada.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/bromelia",
+      "locator": "p2"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-cedron-1",
+    "scope_kind": "project",
+    "scope_id": "be30-cedron",
+    "entity_id": "entity-cedron",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El boletín de Cedrón se entrega los viernes.",
+    "summary": "El boletín de Cedrón se entrega los viernes.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/cedron",
+      "locator": "p1"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-cedron-2",
+    "scope_kind": "project",
+    "scope_id": "be30-cedron",
+    "entity_id": "entity-cedron",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Cedrón imprime el boletín a dos caras.",
+    "summary": "Cedrón imprime el boletín a dos caras.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/cedron",
+      "locator": "p2"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-duna-1",
+    "scope_kind": "project",
+    "scope_id": "be30-duna",
+    "entity_id": "entity-duna",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La API de Duna usa el puerto 443.",
+    "summary": "La API de Duna usa el puerto 443.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/duna",
+      "locator": "p1"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-duna-2",
+    "scope_kind": "project",
+    "scope_id": "be30-duna",
+    "entity_id": "entity-duna",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Duna registra eventos de auditoría en archivos diarios.",
+    "summary": "Duna registra eventos de auditoría en archivos diarios.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/duna",
+      "locator": "p2"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-enea-1",
+    "scope_kind": "project",
+    "scope_id": "be30-enea",
+    "entity_id": "entity-enea",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El servicio Enea usa UTC como zona horaria.",
+    "summary": "El servicio Enea usa UTC como zona horaria.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/enea",
+      "locator": "p1"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-enea-2",
+    "scope_kind": "project",
+    "scope_id": "be30-enea",
+    "entity_id": "entity-enea",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Enea procesa lotes de cien registros.",
+    "summary": "Enea procesa lotes de cien registros.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/enea",
+      "locator": "p2"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-flora-1",
+    "scope_kind": "project",
+    "scope_id": "be30-flora",
+    "entity_id": "entity-flora",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El comité Flora se reúne en la sala B12.",
+    "summary": "El comité Flora se reúne en la sala B12.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/flora",
+      "locator": "p1"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-flora-2",
+    "scope_kind": "project",
+    "scope_id": "be30-flora",
+    "entity_id": "entity-flora",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Flora conserva un acta por cada reunión.",
+    "summary": "Flora conserva un acta por cada reunión.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/flora",
+      "locator": "p2"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-greda-1",
+    "scope_kind": "project",
+    "scope_id": "be30-greda",
+    "entity_id": "entity-greda",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La importación de Greda acepta archivos CSV.",
+    "summary": "La importación de Greda acepta archivos CSV.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/greda",
+      "locator": "p1"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-greda-2",
+    "scope_kind": "project",
+    "scope_id": "be30-greda",
+    "entity_id": "entity-greda",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Greda muestra un resumen al terminar la importación.",
+    "summary": "Greda muestra un resumen al terminar la importación.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/greda",
+      "locator": "p2"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-haya-1",
+    "scope_kind": "project",
+    "scope_id": "be30-haya",
+    "entity_id": "entity-haya",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El cargamento Haya llega al muelle dos.",
+    "summary": "El cargamento Haya llega al muelle dos.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/haya",
+      "locator": "p1"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-haya-2",
+    "scope_kind": "project",
+    "scope_id": "be30-haya",
+    "entity_id": "entity-haya",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Haya recibe paquetes en cajas selladas.",
+    "summary": "Haya recibe paquetes en cajas selladas.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/haya",
+      "locator": "p2"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-indira-1",
+    "scope_kind": "project",
+    "scope_id": "be30-indira",
+    "entity_id": "entity-indira",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La caché de Indira tiene un TTL de quince minutos.",
+    "summary": "La caché de Indira tiene un TTL de quince minutos.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/indira",
+      "locator": "p1"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-indira-2",
+    "scope_kind": "project",
+    "scope_id": "be30-indira",
+    "entity_id": "entity-indira",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Indira limpia los registros cada domingo.",
+    "summary": "Indira limpia los registros cada domingo.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/indira",
+      "locator": "p2"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-juncal-1",
+    "scope_kind": "project",
+    "scope_id": "be30-juncal",
+    "entity_id": "entity-juncal",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Juncal usa bicicleta para las entregas urbanas.",
+    "summary": "Juncal usa bicicleta para las entregas urbanas.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/juncal",
+      "locator": "p1"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-juncal-2",
+    "scope_kind": "project",
+    "scope_id": "be30-juncal",
+    "entity_id": "entity-juncal",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Juncal almacena las entregas pendientes en una estantería.",
+    "summary": "Juncal almacena las entregas pendientes en una estantería.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/juncal",
+      "locator": "p2"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-karst-1",
+    "scope_kind": "project",
+    "scope_id": "be30-karst",
+    "entity_id": "entity-karst",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Paula revisa los informes de Karst.",
+    "summary": "Paula revisa los informes de Karst.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/karst",
+      "locator": "p1"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-karst-2",
+    "scope_kind": "project",
+    "scope_id": "be30-karst",
+    "entity_id": "entity-karst",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Karst publica una versión PDF de cada informe.",
+    "summary": "Karst publica una versión PDF de cada informe.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/karst",
+      "locator": "p2"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-laurel-1",
+    "scope_kind": "project",
+    "scope_id": "be30-laurel",
+    "entity_id": "entity-laurel",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La reunión de Laurel se celebra los martes.",
+    "summary": "La reunión de Laurel se celebra los martes.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/laurel",
+      "locator": "p1"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-laurel-2",
+    "scope_kind": "project",
+    "scope_id": "be30-laurel",
+    "entity_id": "entity-laurel",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Laurel conserva las actas en una carpeta compartida.",
+    "summary": "Laurel conserva las actas en una carpeta compartida.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/laurel",
+      "locator": "p2"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-mirra-1",
+    "scope_kind": "project",
+    "scope_id": "be30-mirra",
+    "entity_id": "entity-mirra",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Mirra se revisa cada noventa días cuando el almacén está cerrado.",
+    "summary": "Mirra se revisa cada noventa días cuando el almacén está cerrado.",
+    "conditions": "Cuando el almacén está cerrado",
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/mirra",
+      "locator": "p1"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-mirra-2",
+    "scope_kind": "project",
+    "scope_id": "be30-mirra",
+    "entity_id": "entity-mirra",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Mirra registra cada revisión en una hoja de servicio.",
+    "summary": "Mirra registra cada revisión en una hoja de servicio.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/mirra",
+      "locator": "p2"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-nimbo-1",
+    "scope_kind": "project",
+    "scope_id": "be30-nimbo",
+    "entity_id": "entity-nimbo",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La herramienta Nimbo solo puede ejecutarse en el entorno de pruebas. Está prohibido ejecutarla en producción.",
+    "summary": "La herramienta Nimbo solo puede ejecutarse en el entorno de pruebas. Está prohibido ejecutarla en producción.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/nimbo",
+      "locator": "p1"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-nimbo-2",
+    "scope_kind": "project",
+    "scope_id": "be30-nimbo",
+    "entity_id": "entity-nimbo",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Nimbo genera un archivo al terminar.",
+    "summary": "Nimbo genera un archivo al terminar.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/nimbo",
+      "locator": "p2"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-ocre-1",
+    "scope_kind": "project",
+    "scope_id": "be30-ocre",
+    "entity_id": "entity-ocre",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "En Ocre se midieron ocho gigabytes libres el 22 de octubre de 2026.",
+    "summary": "En Ocre se midieron ocho gigabytes libres el 22 de octubre de 2026.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/ocre",
+      "locator": "p1"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-ocre-2",
+    "scope_kind": "project",
+    "scope_id": "be30-ocre",
+    "entity_id": "entity-ocre",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Ocre utiliza discos de estado sólido.",
+    "summary": "Ocre utiliza discos de estado sólido.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/ocre",
+      "locator": "p2"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-prana-1",
+    "scope_kind": "project",
+    "scope_id": "be30-prana",
+    "entity_id": "entity-prana",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El presupuesto Prana está pendiente de aprobación. Todavía no está aprobado.",
+    "summary": "El presupuesto Prana está pendiente de aprobación. Todavía no está aprobado.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/prana",
+      "locator": "p1"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-prana-2",
+    "scope_kind": "project",
+    "scope_id": "be30-prana",
+    "entity_id": "entity-prana",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El presupuesto Prana contiene seis partidas.",
+    "summary": "El presupuesto Prana contiene seis partidas.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/prana",
+      "locator": "p2"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-quena-1",
+    "scope_kind": "project",
+    "scope_id": "be30-quena",
+    "entity_id": "entity-quena",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El despliegue Quena se canceló antes de empezar. No se ejecutó.",
+    "summary": "El despliegue Quena se canceló antes de empezar. No se ejecutó.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/quena",
+      "locator": "p1"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-quena-2",
+    "scope_kind": "project",
+    "scope_id": "be30-quena",
+    "entity_id": "entity-quena",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Quena tiene un paquete preparado para pruebas.",
+    "summary": "Quena tiene un paquete preparado para pruebas.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/quena",
+      "locator": "p2"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-risco-1",
+    "scope_kind": "project",
+    "scope_id": "be30-risco",
+    "entity_id": "entity-risco",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El plazo de Risco es de veinte días.",
+    "summary": "El plazo de Risco es de veinte días.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/risco",
+      "locator": "p1"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-risco-1",
+    "scope_kind": "project",
+    "scope_id": "be30-risco",
+    "entity_id": "entity-risco",
+    "revision": 2,
+    "memory_type": "fact",
+    "original_text": "El plazo vigente de Risco es de doce días. Esta revisión reemplaza el plazo anterior.",
+    "summary": "El plazo vigente de Risco es de doce días. Esta revisión reemplaza el plazo anterior.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/risco",
+      "locator": "p1"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-risco-2",
+    "scope_kind": "project",
+    "scope_id": "be30-risco",
+    "entity_id": "entity-risco",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Risco entrega un comprobante al recibir la solicitud.",
+    "summary": "Risco entrega un comprobante al recibir la solicitud.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/risco",
+      "locator": "p2"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-silene-1",
+    "scope_kind": "project",
+    "scope_id": "be30-silene",
+    "entity_id": "SIL-11",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Elena con identificador SIL-11 tiene especialidad en redes en Silene.",
+    "summary": "Elena con identificador SIL-11 tiene especialidad en redes en Silene.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/silene",
+      "locator": "p1"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-silene-2",
+    "scope_kind": "project",
+    "scope_id": "be30-silene",
+    "entity_id": "SIL-12",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Elena con identificador SIL-12 tiene especialidad en bases de datos en Silene.",
+    "summary": "Elena con identificador SIL-12 tiene especialidad en bases de datos en Silene.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/silene",
+      "locator": "p2"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-tilo-1",
+    "scope_kind": "project",
+    "scope_id": "be30-tilo",
+    "entity_id": "entity-tilo",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Tilo atiende de nueve a once durante esta vigencia.",
+    "summary": "Tilo atiende de nueve a once durante esta vigencia.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/tilo",
+      "locator": "p1"
+    },
+    "state": "active",
+    "valid_from": "2026-10-20T00:00:00.000Z",
+    "valid_until": "2026-10-30T00:00:00.000Z"
+  },
+  {
+    "id": "be30-tilo-2",
+    "scope_kind": "project",
+    "scope_id": "be30-tilo",
+    "entity_id": "entity-tilo",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Tilo atendía de catorce a dieciséis en la vigencia anterior.",
+    "summary": "Tilo atendía de catorce a dieciséis en la vigencia anterior.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/tilo",
+      "locator": "p2"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": "2026-10-22T00:00:00.000Z"
+  },
+  {
+    "id": "be30-umbra-1",
+    "scope_kind": "project",
+    "scope_id": "be30-umbra",
+    "entity_id": "entity-umbra",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El almacén Umbra está pintado de blanco.",
+    "summary": "El almacén Umbra está pintado de blanco.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/umbra",
+      "locator": "p1"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-umbra-2",
+    "scope_kind": "project",
+    "scope_id": "be30-umbra",
+    "entity_id": "entity-umbra",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Umbra tiene dos puertas de acceso.",
+    "summary": "Umbra tiene dos puertas de acceso.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/umbra",
+      "locator": "p2"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-valva-1",
+    "scope_kind": "project",
+    "scope_id": "be30-valva",
+    "entity_id": "entity-valva",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El documento Valva tiene una portada verde y seis páginas.",
+    "summary": "El documento Valva tiene una portada verde y seis páginas.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/valva",
+      "locator": "p1"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-valva-2",
+    "scope_kind": "project",
+    "scope_id": "be30-valva",
+    "entity_id": "entity-valva",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El documento Valva está guardado como PDF.",
+    "summary": "El documento Valva está guardado como PDF.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/valva",
+      "locator": "p2"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-wadi-1",
+    "scope_kind": "project",
+    "scope_id": "be30-wadi",
+    "entity_id": "entity-wadi",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El almacén Wadi está en la calle del Río.",
+    "summary": "El almacén Wadi está en la calle del Río.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/wadi",
+      "locator": "p1"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-wadi-2",
+    "scope_kind": "project",
+    "scope_id": "be30-wadi",
+    "entity_id": "entity-wadi",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Wadi abre las puertas a las ocho.",
+    "summary": "Wadi abre las puertas a las ocho.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/wadi",
+      "locator": "p2"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-xenia-1",
+    "scope_kind": "project",
+    "scope_id": "be30-xenia",
+    "entity_id": "XEN-14",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "La persona XEN-14 trabaja como contadora en Xenia.",
+    "summary": "La persona XEN-14 trabaja como contadora en Xenia.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/xenia",
+      "locator": "p1"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-xenia-2",
+    "scope_kind": "project",
+    "scope_id": "be30-xenia",
+    "entity_id": "XEN-14",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Xenia organiza sus archivos por año.",
+    "summary": "Xenia organiza sus archivos por año.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/xenia",
+      "locator": "p2"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-yedra-1",
+    "scope_kind": "project",
+    "scope_id": "be30-yedra",
+    "entity_id": "entity-yedra",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El pedido YED-16 de Yedra se envió a la sede Norte.",
+    "summary": "El pedido YED-16 de Yedra se envió a la sede Norte.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/yedra",
+      "locator": "p1"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-yedra-2",
+    "scope_kind": "project",
+    "scope_id": "be30-yedra",
+    "entity_id": "entity-yedra",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Yedra conserva comprobantes de sus pedidos.",
+    "summary": "Yedra conserva comprobantes de sus pedidos.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/yedra",
+      "locator": "p2"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-zafiro-1",
+    "scope_kind": "project",
+    "scope_id": "be30-zafiro",
+    "entity_id": "entity-zafiro",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El proyecto Zafiro comenzó el 4 de octubre de 2026.",
+    "summary": "El proyecto Zafiro comenzó el 4 de octubre de 2026.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/zafiro",
+      "locator": "p1"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-zafiro-2",
+    "scope_kind": "project",
+    "scope_id": "be30-zafiro",
+    "entity_id": "entity-zafiro",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Zafiro tiene un calendario de reuniones.",
+    "summary": "Zafiro tiene un calendario de reuniones.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/zafiro",
+      "locator": "p2"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-acacia-1",
+    "scope_kind": "project",
+    "scope_id": "be30-acacia",
+    "entity_id": "entity-acacia",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El informe de Acacia fue enviado a revisión.",
+    "summary": "El informe de Acacia fue enviado a revisión.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/acacia",
+      "locator": "p1"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-acacia-2",
+    "scope_kind": "project",
+    "scope_id": "be30-acacia",
+    "entity_id": "entity-acacia",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Acacia genera informes de cinco páginas.",
+    "summary": "Acacia genera informes de cinco páginas.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/acacia",
+      "locator": "p2"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-boldo-1",
+    "scope_kind": "project",
+    "scope_id": "be30-boldo",
+    "entity_id": "entity-boldo",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El sensor Boldo tiene una carcasa azul y mide doce centímetros.",
+    "summary": "El sensor Boldo tiene una carcasa azul y mide doce centímetros.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/boldo",
+      "locator": "p1"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-boldo-2",
+    "scope_kind": "project",
+    "scope_id": "be30-boldo",
+    "entity_id": "entity-boldo",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Boldo usa una batería recargable.",
+    "summary": "Boldo usa una batería recargable.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/boldo",
+      "locator": "p2"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-cerezo-1",
+    "scope_kind": "project",
+    "scope_id": "be30-cerezo",
+    "entity_id": "entity-cerezo",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El teléfono de contacto de Cerezo es 5550109.",
+    "summary": "El teléfono de contacto de Cerezo es 5550109.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/cerezo",
+      "locator": "p1"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-cerezo-2",
+    "scope_kind": "project",
+    "scope_id": "be30-cerezo",
+    "entity_id": "entity-cerezo",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Cerezo prefiere recibir llamadas por la mañana.",
+    "summary": "Cerezo prefiere recibir llamadas por la mañana.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/cerezo",
+      "locator": "p2"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-linde-1",
+    "scope_kind": "project",
+    "scope_id": "be30-linde",
+    "entity_id": "entity-linde",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Linde guarda una lista de turnos de limpieza.",
+    "summary": "Linde guarda una lista de turnos de limpieza.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/linde",
+      "locator": "p1"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  },
+  {
+    "id": "be30-linde-2",
+    "scope_kind": "project",
+    "scope_id": "be30-linde",
+    "entity_id": "entity-linde",
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Linde recibe suministros los lunes.",
+    "summary": "Linde recibe suministros los lunes.",
+    "conditions": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic://baseline-evidence-30/linde",
+      "locator": "p2"
+    },
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null
+  }
+]

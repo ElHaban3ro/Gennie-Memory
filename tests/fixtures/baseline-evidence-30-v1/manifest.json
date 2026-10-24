@@ -1,0 +1,26 @@
+{
+  "contract_version": 1,
+  "corpus": {
+    "path": "corpus.json",
+    "sha256": "e848cf9e077b2ba3247c1ded6adf7fe6854f327c1889d8fb31a9896239391834"
+  },
+  "policy_path": "policy.json",
+  "policy_sha256": "95d777f981ef9a336f499c3eb448a44ecfc1c33b2d1065134dcd5c137205cc56",
+  "cases": {
+    "path": "cases.jsonl",
+    "sha256": "c97e95b78e4473b99d74bd2c1bbbe6d994b65b625c64c0daeba9321181396fe3",
+    "count": 30
+  },
+  "protocol": {
+    "max_calls": 30,
+    "max_seconds": 180,
+    "max_cost_usd": 0.02,
+    "unlimited_cost_authorized": false,
+    "min_useful_recall": 1.0,
+    "max_unrelated_selections": 0,
+    "max_degradations": 0,
+    "max_p95_ms": 2000,
+    "label_source": "agent_synthetic_unreviewed"
+  },
+  "per_request_reserve_usd": 0.002
+}

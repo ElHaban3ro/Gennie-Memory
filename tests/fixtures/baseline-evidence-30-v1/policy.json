@@ -1,0 +1,13 @@
+{
+  "provider": "decisions",
+  "selection_policy": "baseline",
+  "search": {
+    "limit": 20,
+    "query_mode": "keywords"
+  },
+  "budgets": {
+    "input_bytes": 32768,
+    "seed_bytes": 16384,
+    "deadline_ms": 25000
+  }
+}
