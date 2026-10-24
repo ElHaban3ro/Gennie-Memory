@@ -72,11 +72,21 @@ fn load_cases(path: &Path, split: &str) -> Result<Vec<Value>, String> {
                 "deterministic_fixture_rule",
                 "agent_synthetic_unreviewed",
                 "blind_synthetic_adjudication",
+                "external_benchmark_annotation",
             ]
             .contains(&source)
             || label_source.is_some_and(|previous| previous != source)
         {
             return Err(format!("etiqueta de banco incompatible: {id}"));
+        }
+        if case
+            .get("selection_semantics")
+            .and_then(Value::as_str)
+            .is_some_and(|value| {
+                !["exact_ordered_selection", "any_evidence_memory"].contains(&value)
+            })
+        {
+            return Err(format!("semántica de selección inválida: {id}"));
         }
         label_source = Some(source);
         ids(case, "expected_ids")?;
@@ -124,6 +134,12 @@ fn read_journal(
                 if event.get("segment") != case.get("segment")
                     || event.get("expected_ids") != case.get("expected_ids")
                     || event.get("forbidden_ids") != case.get("forbidden_ids")
+                    || event.get("selection_semantics").and_then(Value::as_str)
+                        != Some(
+                            case.get("selection_semantics")
+                                .and_then(Value::as_str)
+                                .unwrap_or("exact_ordered_selection"),
+                        )
                     || event.get("response").is_none()
                 {
                     return Err(format!("etiquetas o respuesta distintas en {id}"));
@@ -318,6 +334,7 @@ pub fn run(
         "binary_sha256": digest(binary)?, "database_sha256": digest(database)?,
         "case_count": cases.len(), "provider": provider, "selection_policy":selection_policy, "split": split,
         "label_source": field(&cases[0], "label_source")?,
+        "selection_semantics": cases[0].get("selection_semantics").cloned().unwrap_or(json!("exact_ordered_selection")),
     });
     let finished = if journal.exists() {
         read_journal(journal, &manifest, &cases)?
@@ -385,6 +402,7 @@ pub fn run(
                     "kind":"finished", "id":id, "segment":field(case,"segment")?,
                     "expected_ids":ids(case,"expected_ids")?,
                     "forbidden_ids":ids(case,"forbidden_ids")?,
+                    "selection_semantics":case.get("selection_semantics").cloned().unwrap_or(json!("exact_ordered_selection")),
                     "elapsed_ms":started.elapsed().as_secs_f64()*1000.0,
                     "response":response,
                 }),
@@ -441,6 +459,7 @@ pub fn report(journal: &Path, output: Option<&Path>) -> Result<(), String> {
     let mut correct = 0;
     let mut positive = 0;
     let mut positive_correct = 0;
+    let mut positive_all_evidence = 0;
     let mut negative = 0;
     let mut negative_empty = 0;
     let mut degraded = 0;
@@ -475,8 +494,14 @@ pub fn report(journal: &Path, output: Option<&Path>) -> Result<(), String> {
             .iter()
             .map(|item| field(item, "memory_id").map(str::to_owned))
             .collect::<Result<_, _>>()?;
-        let is_correct = response.get("status").and_then(Value::as_str) == Some("complete")
-            && selected == expected;
+        let all_evidence_selected = expected.iter().all(|id| selected.contains(id));
+        let selection_semantics = row
+            .get("selection_semantics")
+            .and_then(Value::as_str)
+            .unwrap_or("exact_ordered_selection");
+        let selection_matches = selection_matches(&expected, &selected, selection_semantics);
+        let is_correct =
+            response.get("status").and_then(Value::as_str) == Some("complete") && selection_matches;
         correct += usize::from(is_correct);
         if expected.is_empty() {
             negative += 1;
@@ -485,6 +510,7 @@ pub fn report(journal: &Path, output: Option<&Path>) -> Result<(), String> {
         } else {
             positive += 1;
             positive_correct += usize::from(is_correct);
+            positive_all_evidence += usize::from(all_evidence_selected);
             candidate_recall += usize::from(expected.iter().any(|id| candidate_ids.contains(id)));
         }
         degraded += usize::from(response.get("status").and_then(Value::as_str) == Some("degraded"));
@@ -547,6 +573,7 @@ pub fn report(journal: &Path, output: Option<&Path>) -> Result<(), String> {
     let report = json!({
         "status":"complete", "provider":manifest["provider"], "split":manifest["split"],
         "cases":count, "correct":correct, "positive":positive, "positive_correct":positive_correct,
+        "positive_all_evidence_selected":positive_all_evidence,
         "negative":negative, "negative_empty":negative_empty, "degraded":degraded,
         "candidate_recall":candidate_recall, "negative_candidate_empty":negative_candidate_empty,
         "forbidden_leak_count":forbidden, "by_segment":by_segment,
@@ -568,6 +595,16 @@ pub fn report(journal: &Path, output: Option<&Path>) -> Result<(), String> {
     } else {
         print!("{encoded}");
         Ok(())
+    }
+}
+
+fn selection_matches(expected: &[String], selected: &[String], semantics: &str) -> bool {
+    match semantics {
+        "any_evidence_memory" => {
+            (expected.is_empty() && selected.is_empty())
+                || expected.iter().any(|id| selected.contains(id))
+        }
+        _ => selected == expected,
     }
 }
 
@@ -674,6 +711,12 @@ mod tests {
         assert_eq!(load_cases(&file, "development").unwrap().len(), 1);
         fs::write(
             &file,
+            format!("{}\n", case("case-1", "external_benchmark_annotation")),
+        )
+        .unwrap();
+        assert_eq!(load_cases(&file, "development").unwrap().len(), 1);
+        fs::write(
+            &file,
             format!("{}\n", case("case-1", "blind_synthetic_adjudication")),
         )
         .unwrap();
@@ -689,6 +732,28 @@ mod tests {
         .unwrap();
         assert!(load_cases(&file, "development").is_err());
         fs::remove_file(file).unwrap();
+    }
+
+    #[test]
+    fn any_evidence_selection_accepts_one_annotated_session_and_keeps_abstention_exact() {
+        let expected = vec!["session-a".to_owned(), "session-b".to_owned()];
+        assert!(selection_matches(
+            &expected,
+            &["session-b".to_owned()],
+            "any_evidence_memory"
+        ));
+        assert!(!selection_matches(&expected, &[], "any_evidence_memory"));
+        assert!(selection_matches(&[], &[], "any_evidence_memory"));
+        assert!(!selection_matches(
+            &[],
+            &["session-a".to_owned()],
+            "any_evidence_memory"
+        ));
+        assert!(!selection_matches(
+            &expected,
+            &["session-b".to_owned()],
+            "exact_ordered_selection"
+        ));
     }
 
     #[test]

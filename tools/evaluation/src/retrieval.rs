@@ -85,9 +85,28 @@ fn summarize(rows: &[Row]) -> Value {
             })
         })
         .count();
+    let complete_recall_at_5 = positive
+        .iter()
+        .filter(|row| {
+            row.expected.iter().all(|id| {
+                row.candidates
+                    .iter()
+                    .take(5)
+                    .any(|candidate| candidate == id)
+            })
+        })
+        .count();
+    let complete_recall_at_20 = positive
+        .iter()
+        .filter(|row| row.expected.iter().all(|id| row.candidates.contains(id)))
+        .count();
     let top1 = positive
         .iter()
-        .filter(|row| row.candidates.first() == row.expected.first())
+        .filter(|row| {
+            row.candidates
+                .first()
+                .is_some_and(|candidate| row.expected.contains(candidate))
+        })
         .count();
     let empty = negative
         .iter()
@@ -102,6 +121,8 @@ fn summarize(rows: &[Row]) -> Value {
         "cases": rows.len(), "positive": positive.len(), "negative": negative.len(),
         "recall_at_5": ratio(recall_at_5, positive.len()),
         "recall_at_20": ratio(recall, positive.len()),
+        "all_evidence_recall_at_5": ratio(complete_recall_at_5, positive.len()),
+        "all_evidence_recall_at_20": ratio(complete_recall_at_20, positive.len()),
         "top_1_accuracy": ratio(top1, positive.len()),
         "negative_empty_rate": ratio(empty, negative.len()),
         "forbidden_leak_count": forbidden,

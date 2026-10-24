@@ -1548,6 +1548,7 @@ fn run() -> Result<(), String> {
             let codex = args.next().ok_or("falta binario Codex")?;
             let output = args.next().ok_or("falta directorio de salida nuevo")?;
             let mode = args.next().ok_or("falta modo seed o control")?;
+            let model = args.next().unwrap_or_else(|| "gpt-6.1-sol".into());
             if args.next().is_some() {
                 return Err("demasiados argumentos para codex-prompt".into());
             }
@@ -1558,6 +1559,7 @@ fn run() -> Result<(), String> {
                 Path::new(&codex),
                 Path::new(&output),
                 &mode,
+                &model,
             )
         }
         "engram-benchmark" => {

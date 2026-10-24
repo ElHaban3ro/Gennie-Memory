@@ -38,6 +38,7 @@ fn run_one(
     codex: &Path,
     prompt: &str,
     workdir: &Path,
+    model: &str,
     engram: Option<(&Path, &Path)>,
 ) -> Result<(f64, String, Value, Vec<Value>, usize), String> {
     let mut command = Command::new(codex);
@@ -52,7 +53,7 @@ fn run_one(
             "-s",
             "read-only",
             "-m",
-            "gpt-6.1-sol",
+            model,
             "-C",
         ])
         .arg(workdir);
@@ -168,6 +169,7 @@ pub fn run(
     codex: &Path,
     output_dir: &Path,
     mode: &str,
+    model: &str,
 ) -> Result<(), String> {
     if !["seed", "control"].contains(&mode) {
         return Err("modo debe ser seed o control".into());
@@ -205,8 +207,8 @@ pub fn run(
         .get("case_ids")
         .and_then(Value::as_array)
         .ok_or("faltan case_ids")?;
-    if ids.is_empty() || ids.len() > 20 {
-        return Err("case_ids debe contener 1 a 20 elementos".into());
+    if ids.is_empty() || ids.len() > 50 {
+        return Err("case_ids debe contener 1 a 50 elementos".into());
     }
     let mut seen = HashSet::new();
     for id in ids {
@@ -246,7 +248,7 @@ pub fn run(
             }
         );
         let (answer_ms, answer, usage, events, tool_calls) =
-            run_one(codex, &prompt, &workdir, None)?;
+            run_one(codex, &prompt, &workdir, model, None)?;
         let event_path = output_dir.join(format!("{id}-events.jsonl"));
         let mut event_file = File::create(&event_path).map_err(|error| error.to_string())?;
         for event in events {
@@ -266,7 +268,7 @@ pub fn run(
     }
     fs::remove_dir(&workdir).map_err(|error| error.to_string())?;
     let summary = json!({"kind":"rust_codex_initial_seed_prompt_simulation",
-        "seed_injected":mode=="seed","codex_model":"gpt-6.1-sol",
+        "seed_injected":mode=="seed","codex_model":model,
         "case_ids":ids,"source":journal,"rows":summary_rows});
     fs::write(
         output_dir.join("summary.json"),
@@ -334,8 +336,13 @@ pub fn run_engram(
             text(search, "query")?,
             owner
         );
-        let (answer_ms, answer, usage, events, tool_calls) =
-            run_one(codex, &prompt, &workdir, Some((&engram, &data_dir)))?;
+        let (answer_ms, answer, usage, events, tool_calls) = run_one(
+            codex,
+            &prompt,
+            &workdir,
+            "gpt-6.1-sol",
+            Some((&engram, &data_dir)),
+        )?;
         let event_path = output_dir.join(format!("{id}-events.jsonl"));
         let mut event_file = File::create(event_path).map_err(|error| error.to_string())?;
         for event in events {

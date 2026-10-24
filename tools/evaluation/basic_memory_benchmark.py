@@ -38,7 +38,7 @@ def import_notes(memories: Path, notes: Path) -> None:
     ids = set()
     for memory in data:
         memory_id = memory["id"]
-        if memory_id in ids or not re.fullmatch(r"[a-zA-Z0-9_]+", memory_id):
+        if memory_id in ids or not re.fullmatch(r"mem-[0-9a-f]{32}", memory_id):
             raise ValueError("duplicate or unsafe memory ID")
         ids.add(memory_id)
         title = json.dumps(memory["summary"], ensure_ascii=False)
@@ -47,7 +47,7 @@ def import_notes(memories: Path, notes: Path) -> None:
             f"scope_kind: {memory['scope_kind']}\nscope_id: {memory['scope_id']}\n"
             f"---\n\n{memory['original_text']}\n"
         )
-        (notes / f"{memory_id}.md").write_text(body, encoding="utf-8")
+        (notes / f"gmv1_{memory_id}.md").write_text(body, encoding="utf-8")
     print(f"wrote {len(ids)} notes to {notes}")
 
 
@@ -80,9 +80,11 @@ async def run(queries: Path, output: Path, split: str) -> None:
             ids = []
             for item in response.json()["results"]:
                 filename = Path(item["file_path"]).name
-                if not re.fullmatch(r"gmv1_[0-9a-f]+\.md", filename):
+                if not re.fullmatch(r"gmv1_mem-[0-9a-f]{32}\.md", filename):
                     raise ValueError(f"unmapped result: {filename}")
-                ids.append(filename[:-3])
+                memory_id = filename[len("gmv1_") : -3]
+                if memory_id not in ids:
+                    ids.append(memory_id)
             if len(ids) > 20 or len(set(ids)) != len(ids):
                 raise ValueError("invalid candidate list")
             return ids
