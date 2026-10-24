@@ -571,7 +571,7 @@ mod tests {
                 memory_type: "event".into(),
                 source: SourceRef {
                     kind: "document".into(),
-                    reference: "happydb.csv".into(),
+                    reference: "locomo.json".into(),
                     locator: Some("hmid=1".into()),
                 },
                 conditions: None,
