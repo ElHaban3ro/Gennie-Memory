@@ -1,5 +1,15 @@
 # Roadmap de iROMEM
 
+## Índice del roadmap
+
+- [Roadmap resumido: completado y pendiente](ROADMAP-SUMMARY.md)
+- [Meta y alcance del MVP](#meta-y-alcance-del-mvp)
+- [Secuencia de trabajo e hitos](#secuencia-de-trabajo)
+- [Después del MVP](#después-del-mvp)
+- [Riesgos y decisiones abiertas](#riesgos-y-decisiones-abiertas)
+
+## Estado y seguimiento
+
 Estado vigente del objetivo de calidad (2026-10-23): las cinco etapas del goal original siguen cerradas, pero una evaluación completa posterior matiza la adopción. En 540 preguntas emparejadas, Decisions single-pass obtuvo **401/460** positivas frente a **441/460** con baseline explícito; hubo 42 casos correctos solo con baseline y dos solo con single-pass. Ambos vaciaron 80/80 negativas, con cero degradaciones e IDs prohibidos. Costes: USD 0,035898 y 0,029742; p95 total: 950 y 863 ms. Por decisión del usuario se restauró `baseline` como predeterminado; single-pass queda como opción experimental sin mejora general demostrada. La búsqueda de candidatos fue igual en ambos perfiles. V9 cascade quedó retirada por exceder coste/p95; V10 empató en techo. V12/V13 se descartaron antes de inferencia por defectos en revisión/gold y se preservan. [Comparación completa y gráfico](docs/evaluation/epistemic-single-pass-competitor-comparison-2026-10-23.md) · [Reporte V14](docs/evaluation/epistemic-partial-single-pass-v1-v14-results-2026-10-23.md) · [Reporte V11](docs/evaluation/epistemic-partial-single-pass-v1-v11-results-2026-10-23.md) · [Decisión 0043](docs/decisions/0043-epistemic-single-pass-default.md) · [Cierre de las cinco etapas](docs/evaluation/quality-goal-2026-10-19.md). El resultado de entrenamiento balanceado anterior se conserva como antecedente experimental, no como estado de este objetivo.
 
 Antecedente de entrenamiento balanceado (2026-10-22): el fit mejoró 53/58 útiles en TRAIN, pero rescató 0/29 y añadió 35 ajenos; agregado 339/432 frente a 374/432 del control, con 171 útiles conservados. Candidata rechazada; tres fits/708 updates, 2,84 s y API USD 0. [Informe](docs/evaluation/token-relation-balanced-v1-results-2026-10-22.md).

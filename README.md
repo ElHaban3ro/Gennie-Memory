@@ -9,7 +9,8 @@ iROMEM prepara recuerdos relevantes para que un agente de IA responda con contex
 - [Contexto y respuesta del agente](#contexto-y-respuesta-del-agente)
 - [Cómo funciona](#cómo-funciona)
 - [Funcionamiento técnico y diseño de la memoria](docs/architecture/memory-design.md)
-- [Roadmap](ROADMAP.md)
+- [Roadmap resumido](ROADMAP-SUMMARY.md)
+- [Roadmap detallado e historial](ROADMAP.md)
 
 ## Rendimiento
 
