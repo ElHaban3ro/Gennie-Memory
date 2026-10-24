@@ -81,7 +81,10 @@ pub fn apply(conn: &mut Connection, request: &LifecycleRequest) -> Result<Value,
     let mut canonical = request.clone();
     canonical.operation_id.make_ascii_lowercase();
     let hash = sha256_hex(&serde_json::to_vec(&canonical).map_err(|e| e.to_string())?);
-    let tx = conn.transaction().map_err(|e| e.to_string())?;
+    // Reserve before replay/current-revision reads to avoid a non-waiting deferred upgrade.
+    let tx = conn
+        .transaction_with_behavior(rusqlite::TransactionBehavior::Immediate)
+        .map_err(|e| e.to_string())?;
     let previous:Option<(String,String)>=tx.query_row("SELECT request_sha256,response_json FROM memory_lifecycle_operations WHERE operation_id=?1",[&canonical.operation_id],|r|Ok((r.get(0)?,r.get(1)?))).optional().map_err(|e|e.to_string())?;
     if let Some((saved, response)) = previous {
         if saved != hash {

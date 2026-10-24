@@ -53,3 +53,7 @@ Los errores conservan un código acotado, no mensajes con contenido ni secretos.
 Las pruebas locales usan SQLite sintética aislada y un codificador falso para comprobar mecanismos de cola, transacciones y publicación; no acreditan calidad semántica ni rendimiento E5 real. La evidencia ejecutada se registra en el informe de entrega y no se extrapola a despliegue o integración Codex. La continuidad de contexto del agente tras compactación permanece pendiente, separada de la recuperación de trabajos persistentes.
 
 Los UUID de escrituras heredadas borradas se conservan como marcas mínimas sin contenido ni FK a la memoria. Repetir una escritura borrada no vuelve a crear su texto; los recibos de reconciliación afectados se sustituyen por un recibo `content_deleted`. Una nueva escritura explícita con UUID nuevo sigue siendo posible.
+
+## Contención de escritores (2026-10-24)
+
+La escritura reconciliada y las transiciones de ciclo de vida reservan el escritor con `BEGIN IMMEDIATE` antes de sus lecturas transaccionales. Así el busy_timeout puede esperar un escritor ya reservado en lugar de fallar de inmediato al promover una transacción deferred. La llamada remota sigue fuera de transacción; replay/revalidación y commit conservan sus reglas. Las lecturas/colas no recibieron un cambio global de transacción. [Repro rojo, probe y verificación](../evaluation/recall-completion-v1/sqlite-contention-diagnosis.md).

@@ -176,7 +176,10 @@ pub fn write(
     } else {
         judgments(&c, &cs, classifier)
     };
-    let tx = conn.transaction().map_err(|e| e.to_string())?;
+    // Reserve the writer slot before reads; a deferred read-to-write upgrade cannot wait safely.
+    let tx = conn
+        .transaction_with_behavior(rusqlite::TransactionBehavior::Immediate)
+        .map_err(|e| e.to_string())?;
     if let Some(r) = replay(&tx, &c.operation_id, &request_hash)? {
         return Ok(r);
     }

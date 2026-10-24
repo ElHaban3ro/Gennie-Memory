@@ -48,3 +48,7 @@ Revisión, FTS, huella, relaciones, evidencia, propuesta y resultado se confirma
 ## Verificación
 
 Las pruebas sintéticas enfocadas y CLI usan bases en memoria/temporales, proveedor falso o sin credencial y no llaman a red. Las suites del workspace verifican compatibilidad con fuentes, aislamiento y ciclo de vida. Los resultados finales se registran en el [informe de escritura](../evaluation/write-reconciliation/README.md). No se atribuye a estos controles calidad semántica de modelos, fuente externa verificada o despliegue.
+
+## Contención de escritores (2026-10-24)
+
+La escritura reconciliada y las transiciones de ciclo de vida reservan el escritor con `BEGIN IMMEDIATE` antes de sus lecturas transaccionales. Así el busy_timeout puede esperar un escritor ya reservado en lugar de fallar de inmediato al promover una transacción deferred. La llamada remota sigue fuera de transacción; replay/revalidación y commit conservan sus reglas. Las lecturas/colas no recibieron un cambio global de transacción. [Repro rojo, probe y verificación](../evaluation/recall-completion-v1/sqlite-contention-diagnosis.md).
