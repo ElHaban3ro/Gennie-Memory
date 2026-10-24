@@ -48,13 +48,13 @@ La estimación anterior del coste asumía aproximadamente US$0,11 para esta corr
 
 ## Contrato estable de las gráficas
 
-`tools/evaluation/render_locomo_comparison.py` genera, a partir de los cinco informes de recuperación y el informe de Decisions, exactamente cuatro SVG vigentes: `locomo-retrieval-accuracy.svg`, `locomo-search-latency.svg`, `locomo-search-p95-runs.svg` y `locomo-seed-preparation.svg`. Rechaza informes con una cohorte distinta de 1.982 casos (1.978 positivos, cuatro negativos), conserva orden fijo de motores, escalas desde cero, etiquetas de datos y diseño de paneles. No añade fechas de ejecución ni valores aleatorios; mismos informes y versión del generador producen bytes idénticos.
+`tools/evaluation/render_locomo_comparison.py` genera, a partir de los cinco informes de recuperación y el informe de Decisions, exactamente cuatro SVG vigentes: `locomo-retrieval-accuracy.svg`, `locomo-search-latency.svg`, `locomo-search-p95-runs.svg` y `locomo-seed-preparation.svg`. Rechaza informes con una cohorte distinta de 1.982 casos (1.978 positivos, cuatro negativos), conserva orden fijo de motores, escalas desde cero, etiquetas de datos y diseño de paneles. La gráfica de p95 compara los cinco motores en un solo panel vertical con eje común fijo de 0 a 140 ms. No añade fechas de ejecución ni valores aleatorios; mismos informes y versión del generador producen bytes idénticos.
 
 | Archivo | Dato de entrada | Salida estable |
 | --- | --- | --- |
 | `locomo-retrieval-accuracy.svg` | `recall_at_20` y `top_1_accuracy` de cada `overall`, convertidos a aciertos de 1.978 | Dos paneles verticales: recuerdo entre veinte candidatos y primer candidato. |
 | `locomo-search-latency.svg` | `overall.latency_ms.p50` y `.p95` | Dos paneles verticales; mediana y p95 de la corrida completa por motor. |
-| `locomo-search-p95-runs.svg` | `overall.latency_ms.p95` | Un panel por motor, eje propio desde cero y una barra para la única corrida disponible. No expresa dispersión. |
+| `locomo-search-p95-runs.svg` | `overall.latency_ms.p95` | Un panel vertical, eje común fijo de 0 a 140 ms y una barra por motor en orden estable. No expresa dispersión. |
 | `locomo-seed-preparation.svg` | `classifier_p50/p95_ms`, `service_total_p50/p95_ms` y `search_p50/p95_ms` del informe Decisions | Mediana y p95 del paso Decisions frente al tiempo total para preparar la semilla; muestra búsqueda en la nota inferior, sin sumar percentiles. |
 
 El orden de motores es Gennie palabras clave, Gennie consulta natural, Engram 3.4.0, Lodis 0.6.0 y Basic Memory. Las gráficas de recorrido y Codex/tokens no se generan desde LoCoMo: conservan las SVG históricas congeladas, ya que no hubo respuestas Codex comparables.

@@ -42,7 +42,7 @@ Se cargaron las mismas 272 memorias y se consultaron las mismas 1.982 preguntas.
 
 ![Latencia mediana y p95 de búsqueda](docs/evaluation/assets/locomo-2026-10-24/locomo-search-latency.svg)
 
-![p95 de búsqueda por motor](docs/evaluation/assets/locomo-2026-10-24/locomo-search-p95-runs.svg)
+![Comparación del p95 de búsqueda entre motores, con eje común](docs/evaluation/assets/locomo-2026-10-24/locomo-search-p95-runs.svg)
 
 Las cuatro preguntas sin evidencia no bastan para comparar abstención: Basic Memory devolvió una lista vacía en 1/4; los otros motores, en 0/4. Las corridas de LoCoMo fueron una por motor; el gráfico de p95 no representa variación entre repeticiones.
 
