@@ -1,49 +1,58 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-label="Recuperación de evidencia en LoCoMo">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="730" viewBox="0 0 1200 730" role="img" aria-label="Recuperación de evidencia en LoCoMo">
 <rect width="100%" height="100%" fill="#fffefa"/>
 <text x="58" y="72" fill="#25313b" text-anchor="start" font-family="Georgia,serif" font-size="34">Recuperación de evidencia en LoCoMo</text>
 <text x="58" y="108" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="17">1.978 preguntas con evidencia · top 1 y top 20 · una corrida por motor</text>
-<line x1="265" y1="175" x2="265" y2="540" stroke="#d8dfdf"/>
-<text x="265" y="570" fill="#617078" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">0.0%</text>
-<line x1="478" y1="175" x2="478" y2="540" stroke="#d8dfdf"/>
-<text x="478" y="570" fill="#617078" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">25.0%</text>
-<line x1="690" y1="175" x2="690" y2="540" stroke="#d8dfdf"/>
-<text x="690" y="570" fill="#617078" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">50.0%</text>
-<line x1="902" y1="175" x2="902" y2="540" stroke="#d8dfdf"/>
-<text x="902" y="570" fill="#617078" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">75.0%</text>
-<line x1="1115" y1="175" x2="1115" y2="540" stroke="#d8dfdf"/>
-<text x="1115" y="570" fill="#617078" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">100.0%</text>
-<text x="251" y="205" fill="#25313b" text-anchor="end" font-family="Arial,sans-serif" font-size="16">Genny · palabras clave</text>
-<rect x="265" y="188" width="596" height="22" fill="#18817e"/>
-<text x="870" y="205" fill="#25313b" text-anchor="start" font-family="Arial,sans-serif" font-size="15">70.2%</text>
-<text x="251" y="241" fill="#25313b" text-anchor="end" font-family="Arial,sans-serif" font-size="16">Genny · palabras clave</text>
-<rect x="265" y="224" width="842" height="22" fill="#617db1"/>
-<text x="1112" y="241" fill="#25313b" text-anchor="start" font-family="Arial,sans-serif" font-size="15">99.0%</text>
-<text x="251" y="277" fill="#25313b" text-anchor="end" font-family="Arial,sans-serif" font-size="16">Genny · natural</text>
-<rect x="265" y="260" width="585" height="22" fill="#18817e"/>
-<text x="859" y="277" fill="#25313b" text-anchor="start" font-family="Arial,sans-serif" font-size="15">68.9%</text>
-<text x="251" y="313" fill="#25313b" text-anchor="end" font-family="Arial,sans-serif" font-size="16">Genny · natural</text>
-<rect x="265" y="296" width="840" height="22" fill="#617db1"/>
-<text x="1112" y="313" fill="#25313b" text-anchor="start" font-family="Arial,sans-serif" font-size="15">98.8%</text>
-<text x="251" y="349" fill="#25313b" text-anchor="end" font-family="Arial,sans-serif" font-size="16">Engram 3.4.0</text>
-<rect x="265" y="332" width="588" height="22" fill="#18817e"/>
-<text x="862" y="349" fill="#25313b" text-anchor="start" font-family="Arial,sans-serif" font-size="15">69.2%</text>
-<text x="251" y="385" fill="#25313b" text-anchor="end" font-family="Arial,sans-serif" font-size="16">Engram 3.4.0</text>
-<rect x="265" y="368" width="841" height="22" fill="#617db1"/>
-<text x="1112" y="385" fill="#25313b" text-anchor="start" font-family="Arial,sans-serif" font-size="15">99.0%</text>
-<text x="251" y="421" fill="#25313b" text-anchor="end" font-family="Arial,sans-serif" font-size="16">Lodis 0.6.0</text>
-<rect x="265" y="404" width="56" height="22" fill="#18817e"/>
-<text x="330" y="421" fill="#25313b" text-anchor="start" font-family="Arial,sans-serif" font-size="15">6.6%</text>
-<text x="251" y="457" fill="#25313b" text-anchor="end" font-family="Arial,sans-serif" font-size="16">Lodis 0.6.0</text>
-<rect x="265" y="440" width="656" height="22" fill="#617db1"/>
-<text x="930" y="457" fill="#25313b" text-anchor="start" font-family="Arial,sans-serif" font-size="15">77.1%</text>
-<text x="251" y="493" fill="#25313b" text-anchor="end" font-family="Arial,sans-serif" font-size="16">Basic Memory</text>
-<rect x="265" y="476" width="189" height="22" fill="#18817e"/>
-<text x="463" y="493" fill="#25313b" text-anchor="start" font-family="Arial,sans-serif" font-size="15">22.2%</text>
-<text x="251" y="529" fill="#25313b" text-anchor="end" font-family="Arial,sans-serif" font-size="16">Basic Memory</text>
-<rect x="265" y="512" width="602" height="22" fill="#617db1"/>
-<text x="876" y="529" fill="#25313b" text-anchor="start" font-family="Arial,sans-serif" font-size="15">70.8%</text>
-<rect x="58" y="602" width="14" height="14" fill="#18817e"/>
-<text x="79" y="616" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="14">top 1</text>
-<rect x="198" y="602" width="14" height="14" fill="#617db1"/>
-<text x="219" y="616" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="14">top 20</text>
+<line x1="100" y1="500" x2="1140" y2="500" stroke="#d8dfdf"/>
+<text x="86" y="505" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">0.0%</text>
+<line x1="100" y1="416" x2="1140" y2="416" stroke="#d8dfdf"/>
+<text x="86" y="421" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">25.0%</text>
+<line x1="100" y1="332" x2="1140" y2="332" stroke="#d8dfdf"/>
+<text x="86" y="337" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">50.0%</text>
+<line x1="100" y1="249" x2="1140" y2="249" stroke="#d8dfdf"/>
+<text x="86" y="254" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">75.0%</text>
+<line x1="100" y1="165" x2="1140" y2="165" stroke="#d8dfdf"/>
+<text x="86" y="170" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">100.0%</text>
+<rect x="151.0" y="264.9" width="48.0" height="235.1" fill="#18817e" fill-opacity="1"/>
+<text x="175" y="256" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="13">70.2%</text>
+<rect x="209.0" y="168.2" width="48.0" height="331.8" fill="#18817e" fill-opacity="0.52"/>
+<text x="233" y="159" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="13">99.0%</text>
+<text x="204" y="529" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">Genny</text>
+<text x="204" y="548" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">palabras clave</text>
+<rect x="359.0" y="269.3" width="48.0" height="230.7" fill="#5277b8" fill-opacity="1"/>
+<text x="383" y="260" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="13">68.9%</text>
+<rect x="417.0" y="168.9" width="48.0" height="331.1" fill="#5277b8" fill-opacity="0.52"/>
+<text x="441" y="160" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="13">98.8%</text>
+<text x="412" y="529" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">Genny</text>
+<text x="412" y="548" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">natural</text>
+<rect x="567.0" y="268.3" width="48.0" height="231.7" fill="#b77a27" fill-opacity="1"/>
+<text x="591" y="259" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="13">69.2%</text>
+<rect x="625.0" y="168.4" width="48.0" height="331.6" fill="#b77a27" fill-opacity="0.52"/>
+<text x="649" y="159" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="13">99.0%</text>
+<text x="620" y="529" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">Engram 3.4.0</text>
+<rect x="775.0" y="478.0" width="48.0" height="22.0" fill="#8a6f9b" fill-opacity="1"/>
+<text x="799" y="469" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="13">6.6%</text>
+<rect x="833.0" y="241.6" width="48.0" height="258.4" fill="#8a6f9b" fill-opacity="0.52"/>
+<text x="857" y="233" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="13">77.1%</text>
+<text x="828" y="529" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">Lodis 0.6.0</text>
+<rect x="983.0" y="425.5" width="48.0" height="74.5" fill="#b75948" fill-opacity="1"/>
+<text x="1007" y="416" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="13">22.2%</text>
+<rect x="1041.0" y="262.7" width="48.0" height="237.3" fill="#b75948" fill-opacity="0.52"/>
+<text x="1065" y="254" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="13">70.8%</text>
+<text x="1036" y="529" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">Basic Memory</text>
+<text x="100" y="608" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="14">Tono de barra:</text>
+<rect x="208" y="594" width="14" height="14" fill="#25313b" fill-opacity="1"/>
+<text x="229" y="608" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="14">top 1</text>
+<rect x="328" y="594" width="14" height="14" fill="#25313b" fill-opacity="0.52"/>
+<text x="349" y="608" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="14">top 20</text>
+<text x="100" y="660" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="14">Herramienta:</text>
+<rect x="205" y="646" width="14" height="14" fill="#18817e"/>
+<text x="226" y="660" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="14">Genny · palabras clave</text>
+<rect x="429" y="646" width="14" height="14" fill="#5277b8"/>
+<text x="450" y="660" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="14">Genny · natural</text>
+<rect x="597" y="646" width="14" height="14" fill="#b77a27"/>
+<text x="618" y="660" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="14">Engram 3.4.0</text>
+<rect x="741" y="646" width="14" height="14" fill="#8a6f9b"/>
+<text x="762" y="660" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="14">Lodis 0.6.0</text>
+<rect x="881" y="646" width="14" height="14" fill="#b75948"/>
+<text x="902" y="660" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="14">Basic Memory</text>
 </svg>

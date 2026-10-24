@@ -12,11 +12,17 @@ PAPER = "#fffefa"
 INK = "#25313b"
 MUTED = "#617078"
 GRID = "#d8dfdf"
-TEAL = "#18817e"
-GOLD = "#b77a27"
-BLUE = "#617db1"
-PURPLE = "#8a6f9b"
-RED = "#b75948"
+TOOL_COLORS = {
+    "Genny · palabras clave": "#18817e",
+    "Genny · natural": "#5277b8",
+    "Engram 3.4.0": "#b77a27",
+    "Lodis 0.6.0": "#8a6f9b",
+    "Basic Memory": "#b75948",
+    "Genny": "#18817e",
+    "Decisions": "#496b53",
+}
+
+
 def load(path: Path) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
 
@@ -49,35 +55,73 @@ def percent(value: float) -> str:
     return f"{value * 100:.2f}%"
 
 
-def grouped_bar_chart(path: Path, title: str, subtitle: str,
-                      metrics: list[tuple[str, str, str]], max_value: float,
-                      decimals: int = 0, suffix: str = "%",
-                      show_legend: bool = True) -> None:
-    lines = start(title, subtitle)
-    left, right, top, bottom = 265, 1115, 175, 540
-    for tick in range(0, 5):
+def vertical_grouped_bar_chart(path: Path, title: str, subtitle: str,
+                               metrics: list[tuple[str, str, str, str]], max_value: float,
+                               decimals: int = 0, suffix: str = "%") -> None:
+    """Render vertical bars, with stable tool colors and lighter secondary series."""
+    lines = start(title, subtitle, height=730)
+    left, right, top, bottom = 100, 1140, 165, 500
+    groups: dict[str, list[tuple[str, float, str]]] = {}
+    for category, series, raw, tool in metrics:
+        if tool not in TOOL_COLORS:
+            raise ValueError(f"falta color identificativo para {tool}")
+        groups.setdefault(category, []).append((series, float(raw), tool))
+
+    for tick in range(5):
         value = max_value * tick / 4
-        x = round(left + (right - left) * tick / 4)
-        lines.append(f'<line x1="{x}" y1="{top}" x2="{x}" y2="{bottom}" stroke="{GRID}"/>')
-        lines.append(text(x, bottom + 30, f"{value:.{decimals}f}{suffix}", 14, MUTED, "middle"))
-    row_height = min(68, max(36, (bottom - top) // max(1, len(metrics))))
-    for index, (label, series, raw) in enumerate(metrics):
-        y = top + index * row_height + 13
-        value = float(raw)
-        width = max(1, round((right - left) * value / max_value))
-        lines.append(text(left - 14, y + 17, label, 16, INK, "end"))
-        color = BLUE if "p95" in series or "20" in series else TEAL
-        lines.append(f'<rect x="{left}" y="{y}" width="{width}" height="22" fill="{color}"/>')
-        lines.append(text(min(left + width + 9, right - 3), y + 17, f"{value:.{decimals}f}{suffix}", 15, INK))
-    legend_y = bottom + 76
-    series_names = list(dict.fromkeys(series for _, series, _ in metrics))
-    if show_legend and len(series_names) > 1:
-        x = 58
-        for series in series_names:
-            color = BLUE if "p95" in series or "20" in series else TEAL
-            lines.append(f'<rect x="{x}" y="{legend_y - 14}" width="14" height="14" fill="{color}"/>')
+        y = round(bottom - (bottom - top) * tick / 4)
+        lines.append(f'<line x1="{left}" y1="{y}" x2="{right}" y2="{y}" stroke="{GRID}"/>')
+        lines.append(text(left - 14, y + 5, f"{value:.{decimals}f}{suffix}", 14, MUTED, "end"))
+
+    group_width = (right - left) / max(1, len(groups))
+    for group_index, (category, entries) in enumerate(groups.items()):
+        center = left + group_width * (group_index + 0.5)
+        series_count = len(entries)
+        bar_width = min(48, group_width * 0.26)
+        gap = min(10, group_width * 0.06)
+        total_width = series_count * bar_width + (series_count - 1) * gap
+        first_x = center - total_width / 2
+        for bar_index, (series, value, tool) in enumerate(entries):
+            bar_height = (bottom - top) * value / max_value
+            x = first_x + bar_index * (bar_width + gap)
+            y = bottom - bar_height
+            opacity = 0.52 if series_count > 1 and bar_index == 1 else 1
+            lines.append(
+                f'<rect x="{x:.1f}" y="{y:.1f}" width="{bar_width:.1f}" '
+                f'height="{bar_height:.1f}" fill="{TOOL_COLORS[tool]}" '
+                f'fill-opacity="{opacity}"/>'
+            )
+            label_y = max(top - 8, y - 9)
+            lines.append(text(round(x + bar_width / 2), round(label_y),
+                              f"{value:.{decimals}f}{suffix}", 13, INK, "middle"))
+
+        label_lines = category.split("\n")
+        for line_index, label in enumerate(label_lines):
+            lines.append(text(round(center), bottom + 29 + line_index * 19,
+                              label, 14, INK, "middle"))
+
+    series_names = list(dict.fromkeys(series for _, series, _, _ in metrics))
+    tools = list(dict.fromkeys(tool for _, _, _, tool in metrics))
+    legend_y = 608
+    x = 100
+    if len(series_names) > 1:
+        lines.append(text(x, legend_y, "Tono de barra:", 14, MUTED))
+        x += 108
+        for index, series in enumerate(series_names):
+            opacity = 0.52 if index == 1 else 1
+            lines.append(f'<rect x="{x}" y="{legend_y - 14}" width="14" height="14" '
+                         f'fill="{INK}" fill-opacity="{opacity}"/>')
             lines.append(text(x + 21, legend_y, series, 14, MUTED))
-            x += max(140, len(series) * 9 + 42)
+            x += max(120, len(series) * 8 + 42)
+
+    tool_legend_y = 660
+    lines.append(text(100, tool_legend_y, "Herramienta:", 14, MUTED))
+    x = 205
+    for tool in tools:
+        lines.append(f'<rect x="{x}" y="{tool_legend_y - 14}" width="14" height="14" '
+                     f'fill="{TOOL_COLORS[tool]}"/>')
+        lines.append(text(x + 21, tool_legend_y, tool, 14, MUTED))
+        x += max(140, len(tool) * 8 + 48)
     save(lines, path)
 
 
@@ -96,10 +140,10 @@ def render(args: argparse.Namespace) -> None:
     for label, report in reports.items():
         overall = report["overall"]
         accuracy.extend([
-            (label, "top 1", str(overall["top_1_accuracy"] * 100)),
-            (label, "top 20", str(overall["recall_at_20"] * 100)),
+            (label.replace(" · ", "\n"), "top 1", str(overall["top_1_accuracy"] * 100), label),
+            (label.replace(" · ", "\n"), "top 20", str(overall["recall_at_20"] * 100), label),
         ])
-    grouped_bar_chart(
+    vertical_grouped_bar_chart(
         args.output / "locomo-retrieval-accuracy.svg",
         "Recuperación de evidencia en LoCoMo",
         "1.978 preguntas con evidencia · top 1 y top 20 · una corrida por motor",
@@ -110,10 +154,10 @@ def render(args: argparse.Namespace) -> None:
     for label, report in reports.items():
         timings = report["overall"]["latency_ms"]
         latency.extend([
-            (label, "p50", str(timings["p50"])),
-            (label, "p95", str(timings["p95"])),
+            (label.replace(" · ", "\n"), "p50", str(timings["p50"]), label),
+            (label.replace(" · ", "\n"), "p95", str(timings["p95"]), label),
         ])
-    grouped_bar_chart(
+    vertical_grouped_bar_chart(
         args.output / "locomo-search-latency.svg",
         "Latencia local de búsqueda",
         "Misma cohorte de 1.982 consultas · milisegundos · una corrida por motor",
@@ -124,10 +168,10 @@ def render(args: argparse.Namespace) -> None:
     for label, report in reports.items():
         overall = report["overall"]
         all_evidence.extend([
-            (label, "toda la evidencia @5", str(overall["all_evidence_recall_at_5"] * 100)),
-            (label, "toda la evidencia @20", str(overall["all_evidence_recall_at_20"] * 100)),
+            (label.replace(" · ", "\n"), "@5", str(overall["all_evidence_recall_at_5"] * 100), label),
+            (label.replace(" · ", "\n"), "@20", str(overall["all_evidence_recall_at_20"] * 100), label),
         ])
-    grouped_bar_chart(
+    vertical_grouped_bar_chart(
         args.output / "locomo-all-evidence.svg",
         "Cobertura de todos los recuerdos anotados",
         "Porcentaje de preguntas positivas cuyo conjunto completo aparece en top 5 y top 20",
@@ -137,16 +181,16 @@ def render(args: argparse.Namespace) -> None:
     positives = decisions["positive"]
     negatives = decisions["negative"]
     route = [
-        ("Candidato esperado en top 20", "Genny", str(decisions["candidate_recall"] / positives * 100)),
-        ("Semilla con evidencia útil", "Decisions", str(decisions["positive_correct"] / positives * 100)),
-        ("Toda la evidencia en la semilla", "Decisions", str(decisions["positive_all_evidence_selected"] / positives * 100)),
-        ("Semilla vacía en negativos", "Decisions", str(decisions["negative_empty"] / negatives * 100)),
+        ("Candidato esperado\nen top 20", "resultado", str(decisions["candidate_recall"] / positives * 100), "Genny"),
+        ("Semilla con\nevidencia útil", "resultado", str(decisions["positive_correct"] / positives * 100), "Decisions"),
+        ("Toda la evidencia\nen la semilla", "resultado", str(decisions["positive_all_evidence_selected"] / positives * 100), "Decisions"),
+        ("Semilla vacía\nen negativos", "resultado", str(decisions["negative_empty"] / negatives * 100), "Decisions"),
     ]
-    grouped_bar_chart(
+    vertical_grouped_bar_chart(
         args.output / "locomo-decisions-seed.svg",
         "Qué llega hasta la semilla",
         f"Decisions · {positives} positivas, {negatives} negativas · US${decisions['reported_cost_usd']:.4f} informados",
-        route, 100, 1, show_legend=False,
+        route, 100, 1,
     )
 
 
