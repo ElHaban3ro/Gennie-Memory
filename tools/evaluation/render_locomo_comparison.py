@@ -6,7 +6,6 @@ from __future__ import annotations
 import argparse
 import html
 import json
-import math
 from pathlib import Path
 from typing import Any
 
@@ -188,22 +187,18 @@ def render_latency(path: Path, reports: dict[str, dict[str, Any]]) -> None:
 
 def render_p95_runs(path: Path, reports: dict[str, dict[str, Any]]) -> None:
     lines = start(
-        "Búsqueda de candidatos: p95 por corrida",
+        "Búsqueda de candidatos: comparación de p95",
         "LoCoMo · 1.982 preguntas por motor · milisegundos",
-        height=730,
     )
-    panels = []
+    bars = []
     for label, report in reports.items():
-        panels.append((label, report["overall"]["latency_ms"]["p95"], tool_for(label)))
-    positions = [(58, 142), (442, 142), (826, 142), (250, 408), (634, 408)]
-    for (label, value, tool), (x, y) in zip(panels, positions):
-        maximum = max(10, math.ceil(value / 10) * 10)
-        axis_panel(lines, x=x, y=y, width=350, height=220,
-                   heading=label.replace(" · ", " / "), subtitle="p95 de corrida 1",
-                   bars=[("1", value, tool)], maximum=maximum,
-                   ticks=[0, maximum / 2, maximum], value_label=f"escala 0–{maximum:g} ms",
-                   decimals=1, suffix=" ms", run_labels=True)
-    lines.append(text(58, 698, "Cada panel usa su propia escala. Solo se midió una corrida; esto no muestra variación entre corridas.", 15, MUTED))
+        bars.append((label, report["overall"]["latency_ms"]["p95"], tool_for(label)))
+    axis_panel(lines, x=58, y=144, width=1080, height=390,
+               heading="p95 por herramienta", subtitle="Una corrida por motor · misma escala desde cero",
+               bars=bars, maximum=140, ticks=[0, 70, 140],
+               value_label="milisegundos", decimals=1, suffix=" ms")
+    lines.append(text(58, 574, "Una corrida por motor; el gráfico compara magnitudes y no muestra variación entre repeticiones.", 16, MUTED))
+    lines.append(text(58, 606, "Gennie conserva el mismo color en ambas configuraciones; las etiquetas las distinguen.", 16, MUTED))
     save(lines, path)
 
 
