@@ -1,0 +1,299 @@
+{
+  "contract_version": 1,
+  "implementation_sha256": "b84503823e881d12571e94bae587d2e65f6f8006699c92e0a96f1680370d3b2c",
+  "request_id": "m4-final-07-jev",
+  "execution_status": "completed",
+  "outcome": "evidence_selected",
+  "effective_request": {
+    "contract_version": 1,
+    "search": {
+      "query": "¿A qué hora cierra Wanda el taller?",
+      "scope_kind": "project",
+      "scope_id": "m4-final-07",
+      "entity_id": null,
+      "actor_id": "local",
+      "as_of": "2026-10-24T12:00:00.000Z",
+      "limit": 8,
+      "query_mode": "keywords",
+      "memory_types": [],
+      "bm25_weights": null
+    },
+    "provider": "jev",
+    "selection_policy": "per_memory_factors_v1",
+    "request_id": "m4-final-07-jev",
+    "context": [],
+    "unresolved_references": [],
+    "budgets": {
+      "input_bytes": 32768,
+      "seed_bytes": 16384,
+      "input_tokens": 16384,
+      "seed_tokens": 2048,
+      "deadline_ms": 25000
+    },
+    "source_policy": "report",
+    "calibration": {
+      "schema_version": 1,
+      "profile": "factor_empirical_bins_v1",
+      "profile_sha256": "2a4e1a95035032f66b4b272c1ac91c1b5537cd84aa1c922eb8bc861ca34cff77",
+      "provider": "jev",
+      "selection_policy": "per_memory_factors_v1",
+      "requested_model": "typesafe/jev-1.13",
+      "served_model": "typesafe/jev-1.13-20260917",
+      "training_sha256": "d33efe63c346f28eada540cecffa261bd81e6267da2337d27bff1b1da7762bb6",
+      "factors": {
+        "same_context": [
+          {
+            "upper": 0.5,
+            "positives": 2,
+            "n": 4
+          },
+          {
+            "upper": 1.0,
+            "positives": 4,
+            "n": 4
+          }
+        ],
+        "requested_fact": [
+          {
+            "upper": 0.5,
+            "positives": 0,
+            "n": 3
+          },
+          {
+            "upper": 1.0,
+            "positives": 4,
+            "n": 5
+          }
+        ],
+        "premise_correction": [
+          {
+            "upper": 0.5,
+            "positives": 0,
+            "n": 7
+          },
+          {
+            "upper": 1.0,
+            "positives": 1,
+            "n": 1
+          }
+        ]
+      }
+    }
+  },
+  "input_sha256": "cf06e0967bd796fd77c9340b71e851b97bc93ac269bfc8412eea13cd1c69cb26",
+  "started_at": "2026-10-24T19:48:50.744Z",
+  "finished_at": "2026-10-24T19:48:51.864Z",
+  "total_ms": 1122.3780000000002,
+  "segmentation": {
+    "version": "literal_segments_v1",
+    "original_sha256": "9492429c90a07c6e3bc514a81d2bbee64f055ed113e380d9649e62c020eda055",
+    "original_bytes": 37,
+    "coverage": "complete",
+    "semantic_independence": "not_assessed",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start_byte": 0,
+        "end_byte": 37,
+        "text": "¿A qué hora cierra Wanda el taller?",
+        "boundary": "end_of_input",
+        "exceeds_soft_limit": false
+      }
+    ],
+    "warnings": []
+  },
+  "context_segmentations": [],
+  "ambiguity": "not_assessed",
+  "clarifications": [],
+  "retrieval": {
+    "status": "complete",
+    "method": "fts5_keywords",
+    "candidates": [
+      {
+        "memory_id": "m4-final-07",
+        "revision": 1,
+        "summary": "Wanda closes the workshop at eighteen hundred hours.",
+        "conditions": null,
+        "source": {
+          "kind": "document",
+          "ref": "synthetic:m4-factor-v1/final-07",
+          "locator": null
+        },
+        "state": "active",
+        "bm25": -4.190618329730425
+      }
+    ],
+    "semantic_coverage": "disabled",
+    "coverage": {
+      "eligible_memories": 1,
+      "indexed_memories": 1,
+      "matched_memories": 1,
+      "returned_memories": 1,
+      "truncated": false,
+      "fts_index": "complete",
+      "query": "executed",
+      "retrieval": "complete"
+    }
+  },
+  "assessments": [
+    {
+      "memory_id": "m4-final-07",
+      "revision": 1,
+      "selected": true,
+      "included_in_seed": true,
+      "relation": "unassessed",
+      "origin": "provider",
+      "validation": "structural_only",
+      "provenance_status": "declared_unverified",
+      "reason": null,
+      "applicability": true,
+      "requested_fact": true,
+      "premise_correction": false,
+      "relevance": true,
+      "calibrated_factor_scores": {
+        "same_context": 0.8333333333333334,
+        "requested_fact": 0.7142857142857143,
+        "premise_correction": 0.1111111111111111
+      },
+      "factor_scores": {
+        "same_context": 0.98,
+        "requested_fact": 0.99,
+        "premise_correction": 0.01
+      },
+      "calibration_status": "empirical_profile_bound"
+    }
+  ],
+  "potential_equivalents": [],
+  "seed": {
+    "status": "complete",
+    "method": "fts5_external_classifier",
+    "classifier": "typesafe/jev-1.13",
+    "semantic_coverage": "disabled",
+    "memories": [
+      {
+        "memory_id": "m4-final-07",
+        "revision": 1,
+        "scope_kind": "project",
+        "scope_id": "m4-final-07",
+        "summary": "Wanda closes the workshop at eighteen hundred hours.",
+        "conditions": null,
+        "source": {
+          "kind": "document",
+          "ref": "synthetic:m4-factor-v1/final-07",
+          "locator": null
+        },
+        "provenance_status": "declared_unverified",
+        "state": "active"
+      }
+    ],
+    "potential_equivalents": [],
+    "seed_text": "[m4-final-07@1] Wanda closes the workshop at eighteen hundred hours.\n  Fuente declarada: document / synthetic:m4-factor-v1/final-07\n[Procedencia local: m4-final-07@1=declared_unverified. Solo se comprueba el texto original contra snapshots aportados por el operador; veracidad, resumen y condiciones añadidas sin evaluar.]"
+  },
+  "coverage": {
+    "input": "complete",
+    "semantic_index": "not_applicable",
+    "retrieval": "complete",
+    "candidate_limit": 8,
+    "returned_candidates": 1,
+    "candidates_presented": 1,
+    "classification": "complete",
+    "equivalence_review": "not_applicable",
+    "question": "unknown",
+    "seed": "complete"
+  },
+  "stages": [
+    {
+      "name": "validation",
+      "status": "completed",
+      "elapsed_ms": 2.7399999999999998,
+      "reason_code": null
+    },
+    {
+      "name": "segmentation",
+      "status": "completed",
+      "elapsed_ms": 0.016208,
+      "reason_code": null
+    },
+    {
+      "name": "search",
+      "status": "completed",
+      "elapsed_ms": 0.9006249999999999,
+      "reason_code": null
+    },
+    {
+      "name": "source_verification",
+      "status": "completed",
+      "elapsed_ms": 0.16487500000000002,
+      "reason_code": null
+    },
+    {
+      "name": "classification",
+      "status": "completed",
+      "elapsed_ms": 1116.2874590000001,
+      "reason_code": null
+    },
+    {
+      "name": "composition",
+      "status": "completed",
+      "elapsed_ms": 2.237041,
+      "reason_code": null
+    }
+  ],
+  "issues": [],
+  "usage": {
+    "classifier_invocations": 1,
+    "receipt_status": "complete",
+    "served_model": "typesafe/jev-1.13-20260917",
+    "input_tokens": 765,
+    "output_tokens": 101,
+    "reported_cost_usd": 3.213e-05,
+    "cost_status": "reported"
+  },
+  "token_accounting": {
+    "profile": "o200k_base:tiktoken-rs-0.12.0:ordinary:utf8-json-v1",
+    "input_basis": "serialized_request_json",
+    "provider_tokenizer": "unverified",
+    "input_limit": 16384,
+    "seed_limit": 2048,
+    "accepted_input_tokens": 408,
+    "requests": [
+      {
+        "stage": "classification",
+        "request_sha256": "a5f2f01a55d61ccbfc1eb0bdd10957c8ac8bc1e38087c1fab7c3bbba2b194b80",
+        "json_tokens": 408,
+        "accepted": true
+      }
+    ],
+    "seed_tokens": 79,
+    "seed_status": "complete"
+  },
+  "source_verification": {
+    "policy": "report",
+    "checks": [
+      {
+        "check_id": "86625cb83118d4322521903fe6887c957d318151bbcea1779fca656a419ec445",
+        "memory_id": "m4-final-07",
+        "revision": 1,
+        "source": {
+          "kind": "document",
+          "ref": "synthetic:m4-factor-v1/final-07",
+          "locator": null
+        },
+        "snapshot_id": null,
+        "snapshot_version": null,
+        "snapshot_sha256": null,
+        "observed_snapshot_sha256": null,
+        "original_sha256": "7ec408b66507df7d4519e381c82b244e00a536207db106905a06fb2f7748684a",
+        "start_byte": null,
+        "end_byte": null,
+        "status": "declared_unverified",
+        "reason_code": "source_not_registered",
+        "checked_at": "2026-10-24T19:48:49.432Z",
+        "profile": "local_snapshot_literal_v1",
+        "semantic_support": "not_assessed"
+      }
+    ]
+  },
+  "requested_model": "typesafe/jev-1.13",
+  "local_review": "not_available_dashboard_removed"
+}

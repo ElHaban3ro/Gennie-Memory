@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "maximum_calls": 48,
+  "maximum_cost_usd": 0.03,
+  "maximum_wall_seconds": 180,
+  "reservation_per_call_usd": 0.001,
+  "providers": [
+    "decisions",
+    "jev"
+  ],
+  "policy": "per_memory_factors_v1",
+  "splits_in_order": [
+    "development",
+    "calibration",
+    "final"
+  ],
+  "calibration": "fixed_two_bins_0.5_laplace_from_calibration_only",
+  "automatic_retries": false,
+  "frozen_sha256": {
+    "target/debug/gennie-memory": "aa3f3f895a4e61882131fbd5d68be002387030cfc124f8f4c11c2b56edec57dc",
+    "target/debug/gennie-memory-eval": "b235ff98da775f658cc69d7a8776312bd83c3ba48f9332995df0033572aff9eb",
+    "bootstrap/src/openrouter/per_memory/factors.rs": "2a4e1a95035032f66b4b272c1ac91c1b5537cd84aa1c922eb8bc861ca34cff77",
+    "docs/evaluation/m4-completion-v1/human-review.json": "83bc4bdeaa86d480c730ead4d4440511503f177f6d931a6f152bd32c421859a4",
+    "tests/fixtures/m4-factor-v1/corpus.json": "c1e0a16c81a863679722a63a9fb9a2889bcceabd59d394663a096a9e7ec6f6b1",
+    "tests/fixtures/m4-factor-v1/cases.json": "89fc6a5033efff58848329ed4e76b4786bb5e7704506c647f7dc8e25fbb0f496",
+    "tests/fixtures/m4-factor-v1/labels.json": "35dff234ef9cb8e489bffbcf131a691240d59d01f1c43e9a3f2c7ba68e4203b0",
+    "tests/fixtures/m4-factor-v1/manifest.json": "39521d4130c6001bb18ffff4ceae7049e9f9aeda57ac76da746994b55553db40"
+  }
+}

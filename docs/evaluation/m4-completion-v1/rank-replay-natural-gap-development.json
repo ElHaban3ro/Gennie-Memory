@@ -1,0 +1,4877 @@
+{
+  "arms": {
+    "cosine_floor_0_7": {
+      "cases": 200,
+      "changed_cases": [
+        {
+          "frozen_rrf": "m_4e2cfee0ddff2e839861",
+          "id": "natgap_development_project_0001_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_50a6fe6b9913d7ed145f",
+          "id": "natgap_development_project_0045_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_50a6fe6b9913d7ed145f",
+          "id": "natgap_development_project_0045_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_fcc027f29163fe99ffe3",
+          "id": "natgap_development_project_0127_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_fcc027f29163fe99ffe3",
+          "id": "natgap_development_project_0127_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_fabdbc22d205ed1cfa01",
+          "id": "natgap_development_project_0132_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_f67eac68a7fe625a8452",
+          "id": "natgap_development_project_0278_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_a85f55a55a4584faf5cf",
+          "id": "natgap_development_project_0342_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_5cee478682dd11ae4a51",
+          "id": "natgap_development_project_0375_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_5cee478682dd11ae4a51",
+          "id": "natgap_development_project_0375_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_c8ddcb97e6f04c06068d",
+          "id": "natgap_development_project_0385_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        }
+      ],
+      "forbidden_id_selections": 0,
+      "legacy_id_correct": 54,
+      "negative_abstained": 5,
+      "negative_cases": 100,
+      "positive_cases": 100,
+      "positive_id_correct": 49,
+      "segments": {
+        "natural_gap_explicit_no_recall": {
+          "cases": 50,
+          "legacy_id_correct": 5
+        },
+        "natural_gap_mode_unspecified": {
+          "cases": 50,
+          "legacy_id_correct": 0
+        },
+        "natural_gap_onsite": {
+          "cases": 50,
+          "legacy_id_correct": 40
+        },
+        "natural_gap_remote": {
+          "cases": 50,
+          "legacy_id_correct": 9
+        }
+      }
+    },
+    "cosine_floor_0_8": {
+      "cases": 200,
+      "changed_cases": [
+        {
+          "frozen_rrf": "m_4e2cfee0ddff2e839861",
+          "id": "natgap_development_project_0001_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_4e2cfee0ddff2e839861",
+          "id": "natgap_development_project_0001_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_4e2cfee0ddff2e839861",
+          "id": "natgap_development_project_0001_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_4e2cfee0ddff2e839861",
+          "id": "natgap_development_project_0001_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_6e26305f0a5111c89bb2",
+          "id": "natgap_development_project_0015_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_72f7fc0f6d3df2aad513",
+          "id": "natgap_development_project_0022_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_72f7fc0f6d3df2aad513",
+          "id": "natgap_development_project_0022_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_72f7fc0f6d3df2aad513",
+          "id": "natgap_development_project_0022_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_72f7fc0f6d3df2aad513",
+          "id": "natgap_development_project_0022_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_95f63af2a1f37a839e93",
+          "id": "natgap_development_project_0041_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1a0b5350a9eb2e3ff504",
+          "id": "natgap_development_project_0041_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1a0b5350a9eb2e3ff504",
+          "id": "natgap_development_project_0041_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1a0b5350a9eb2e3ff504",
+          "id": "natgap_development_project_0041_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_50a6fe6b9913d7ed145f",
+          "id": "natgap_development_project_0045_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_50a6fe6b9913d7ed145f",
+          "id": "natgap_development_project_0045_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_50a6fe6b9913d7ed145f",
+          "id": "natgap_development_project_0045_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_50a6fe6b9913d7ed145f",
+          "id": "natgap_development_project_0045_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_7b7496a6fc62628da566",
+          "id": "natgap_development_project_0074_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_7b7496a6fc62628da566",
+          "id": "natgap_development_project_0074_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_7b7496a6fc62628da566",
+          "id": "natgap_development_project_0074_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_ee08f64956588ccbb6ac",
+          "id": "natgap_development_project_0088_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_97f3b52a77a890081888",
+          "id": "natgap_development_project_0088_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_97f3b52a77a890081888",
+          "id": "natgap_development_project_0088_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_97f3b52a77a890081888",
+          "id": "natgap_development_project_0088_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_db1063ddfbd2ba80f711",
+          "id": "natgap_development_project_0091_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_db1063ddfbd2ba80f711",
+          "id": "natgap_development_project_0091_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_db1063ddfbd2ba80f711",
+          "id": "natgap_development_project_0091_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_db1063ddfbd2ba80f711",
+          "id": "natgap_development_project_0091_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_27ffa166d3de0222d0be",
+          "id": "natgap_development_project_0098_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_27ffa166d3de0222d0be",
+          "id": "natgap_development_project_0098_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_5971d716af8071d35823",
+          "id": "natgap_development_project_0103_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_5971d716af8071d35823",
+          "id": "natgap_development_project_0103_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_9bae9a48c09808365438",
+          "id": "natgap_development_project_0106_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_697c9187b43239eb2b06",
+          "id": "natgap_development_project_0109_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_697c9187b43239eb2b06",
+          "id": "natgap_development_project_0109_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_697c9187b43239eb2b06",
+          "id": "natgap_development_project_0109_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_755b53d6be184cce007a",
+          "id": "natgap_development_project_0113_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_755b53d6be184cce007a",
+          "id": "natgap_development_project_0113_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_755b53d6be184cce007a",
+          "id": "natgap_development_project_0113_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_b4d5bc505089d99ee829",
+          "id": "natgap_development_project_0117_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_b4d5bc505089d99ee829",
+          "id": "natgap_development_project_0117_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_b4d5bc505089d99ee829",
+          "id": "natgap_development_project_0117_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_0ac16bb9f1a28fdc6dd3",
+          "id": "natgap_development_project_0117_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_10694528fa5709f52014",
+          "id": "natgap_development_project_0127_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_10694528fa5709f52014",
+          "id": "natgap_development_project_0127_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_fcc027f29163fe99ffe3",
+          "id": "natgap_development_project_0127_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_fcc027f29163fe99ffe3",
+          "id": "natgap_development_project_0127_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_2ba8a90b5368c85471f9",
+          "id": "natgap_development_project_0128_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_26396790393bbc3c20f1",
+          "id": "natgap_development_project_0128_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_2ba8a90b5368c85471f9",
+          "id": "natgap_development_project_0128_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_2ba8a90b5368c85471f9",
+          "id": "natgap_development_project_0128_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_35e9a4cf07b119201f9d",
+          "id": "natgap_development_project_0130_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_8422081698bbccd04ccd",
+          "id": "natgap_development_project_0130_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_35e9a4cf07b119201f9d",
+          "id": "natgap_development_project_0130_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_35e9a4cf07b119201f9d",
+          "id": "natgap_development_project_0130_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_fabdbc22d205ed1cfa01",
+          "id": "natgap_development_project_0132_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_fabdbc22d205ed1cfa01",
+          "id": "natgap_development_project_0132_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_9adceab029baee3508fb",
+          "id": "natgap_development_project_0132_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_9adceab029baee3508fb",
+          "id": "natgap_development_project_0132_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_33d7d200d05cda900218",
+          "id": "natgap_development_project_0139_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_33d7d200d05cda900218",
+          "id": "natgap_development_project_0139_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_33d7d200d05cda900218",
+          "id": "natgap_development_project_0139_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_33d7d200d05cda900218",
+          "id": "natgap_development_project_0139_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_58b4da96a5edaed44fe4",
+          "id": "natgap_development_project_0149_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_e64af7e47f718441601e",
+          "id": "natgap_development_project_0149_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_58b4da96a5edaed44fe4",
+          "id": "natgap_development_project_0149_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_58b4da96a5edaed44fe4",
+          "id": "natgap_development_project_0149_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_6ec9f47541ac749d4804",
+          "id": "natgap_development_project_0153_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_6ec9f47541ac749d4804",
+          "id": "natgap_development_project_0153_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_6ec9f47541ac749d4804",
+          "id": "natgap_development_project_0153_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_6ec9f47541ac749d4804",
+          "id": "natgap_development_project_0153_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_abee1bd9ab0a993f3afb",
+          "id": "natgap_development_project_0179_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_8119e18d0c9af7c63f66",
+          "id": "natgap_development_project_0179_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_abee1bd9ab0a993f3afb",
+          "id": "natgap_development_project_0179_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_8119e18d0c9af7c63f66",
+          "id": "natgap_development_project_0179_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_71f517ddbc3f9d630e32",
+          "id": "natgap_development_project_0200_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_10193d82a26fd3391d57",
+          "id": "natgap_development_project_0212_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_a1f42e49ec2126963b62",
+          "id": "natgap_development_project_0212_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_a1f42e49ec2126963b62",
+          "id": "natgap_development_project_0212_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_eda1e1974b4acfb474ac",
+          "id": "natgap_development_project_0220_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_eda1e1974b4acfb474ac",
+          "id": "natgap_development_project_0220_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_eda1e1974b4acfb474ac",
+          "id": "natgap_development_project_0220_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_eda1e1974b4acfb474ac",
+          "id": "natgap_development_project_0220_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_90b514e3814150ccd185",
+          "id": "natgap_development_project_0258_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_90b514e3814150ccd185",
+          "id": "natgap_development_project_0258_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_90b514e3814150ccd185",
+          "id": "natgap_development_project_0258_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_a20069f8f37184ef3b9e",
+          "id": "natgap_development_project_0259_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_205d4a6423473c20a688",
+          "id": "natgap_development_project_0259_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_205d4a6423473c20a688",
+          "id": "natgap_development_project_0259_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_205d4a6423473c20a688",
+          "id": "natgap_development_project_0259_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_f67eac68a7fe625a8452",
+          "id": "natgap_development_project_0278_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_f67eac68a7fe625a8452",
+          "id": "natgap_development_project_0278_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_90afca108843080a71c5",
+          "id": "natgap_development_project_0278_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_90afca108843080a71c5",
+          "id": "natgap_development_project_0278_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_2274be6159012937a5ef",
+          "id": "natgap_development_project_0281_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_79139a8c065a249ec118",
+          "id": "natgap_development_project_0281_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_2274be6159012937a5ef",
+          "id": "natgap_development_project_0281_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_2274be6159012937a5ef",
+          "id": "natgap_development_project_0281_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_da425e7ee40ca6ff8ccb",
+          "id": "natgap_development_project_0290_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_da425e7ee40ca6ff8ccb",
+          "id": "natgap_development_project_0290_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_d10439ca55f76c320d5e",
+          "id": "natgap_development_project_0298_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_ecb5c6541987d52016be",
+          "id": "natgap_development_project_0300_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_d417a4f8ed8265fea436",
+          "id": "natgap_development_project_0300_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_ecb5c6541987d52016be",
+          "id": "natgap_development_project_0300_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_ecb5c6541987d52016be",
+          "id": "natgap_development_project_0300_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_03b68523c57000804e0f",
+          "id": "natgap_development_project_0306_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_03b68523c57000804e0f",
+          "id": "natgap_development_project_0306_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_03b68523c57000804e0f",
+          "id": "natgap_development_project_0306_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_e6d5ec897e5c279f0940",
+          "id": "natgap_development_project_0323_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_e6d5ec897e5c279f0940",
+          "id": "natgap_development_project_0323_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_e6d5ec897e5c279f0940",
+          "id": "natgap_development_project_0323_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_e6d5ec897e5c279f0940",
+          "id": "natgap_development_project_0323_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_014ae3383412a4fda1f0",
+          "id": "natgap_development_project_0328_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_014ae3383412a4fda1f0",
+          "id": "natgap_development_project_0328_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_014ae3383412a4fda1f0",
+          "id": "natgap_development_project_0328_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_014ae3383412a4fda1f0",
+          "id": "natgap_development_project_0328_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_a85f55a55a4584faf5cf",
+          "id": "natgap_development_project_0342_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_a85f55a55a4584faf5cf",
+          "id": "natgap_development_project_0342_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_bb4f342ec6525d37a3de",
+          "id": "natgap_development_project_0342_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_a85f55a55a4584faf5cf",
+          "id": "natgap_development_project_0342_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_c829f8e00f1acbd3f2a5",
+          "id": "natgap_development_project_0346_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_c829f8e00f1acbd3f2a5",
+          "id": "natgap_development_project_0346_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1c07d6d7fd1b02330395",
+          "id": "natgap_development_project_0351_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1c07d6d7fd1b02330395",
+          "id": "natgap_development_project_0351_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1c07d6d7fd1b02330395",
+          "id": "natgap_development_project_0351_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1c07d6d7fd1b02330395",
+          "id": "natgap_development_project_0351_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_81d0d2bc78264be67242",
+          "id": "natgap_development_project_0354_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_81d0d2bc78264be67242",
+          "id": "natgap_development_project_0354_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_a1a1352b56855f7be769",
+          "id": "natgap_development_project_0355_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_a1a1352b56855f7be769",
+          "id": "natgap_development_project_0355_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_ceaca1b975dfb54d057b",
+          "id": "natgap_development_project_0357_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_ceaca1b975dfb54d057b",
+          "id": "natgap_development_project_0357_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_daabb096cb00e2802f10",
+          "id": "natgap_development_project_0357_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_daabb096cb00e2802f10",
+          "id": "natgap_development_project_0357_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_7479572f9612f9f3db1d",
+          "id": "natgap_development_project_0359_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_7479572f9612f9f3db1d",
+          "id": "natgap_development_project_0359_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_7479572f9612f9f3db1d",
+          "id": "natgap_development_project_0359_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_7479572f9612f9f3db1d",
+          "id": "natgap_development_project_0359_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_68ef4232a918c4f21fee",
+          "id": "natgap_development_project_0370_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_68ef4232a918c4f21fee",
+          "id": "natgap_development_project_0370_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_5cee478682dd11ae4a51",
+          "id": "natgap_development_project_0375_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_5cee478682dd11ae4a51",
+          "id": "natgap_development_project_0375_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_5cee478682dd11ae4a51",
+          "id": "natgap_development_project_0375_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_5cee478682dd11ae4a51",
+          "id": "natgap_development_project_0375_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_8daa31b63c5f8dc730e2",
+          "id": "natgap_development_project_0376_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_8daa31b63c5f8dc730e2",
+          "id": "natgap_development_project_0376_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_8daa31b63c5f8dc730e2",
+          "id": "natgap_development_project_0376_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_c8ddcb97e6f04c06068d",
+          "id": "natgap_development_project_0385_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_c8ddcb97e6f04c06068d",
+          "id": "natgap_development_project_0385_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_c8ddcb97e6f04c06068d",
+          "id": "natgap_development_project_0385_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_c8ddcb97e6f04c06068d",
+          "id": "natgap_development_project_0385_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_b4000d23172660af0f61",
+          "id": "natgap_development_project_0387_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_b4000d23172660af0f61",
+          "id": "natgap_development_project_0387_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_b4000d23172660af0f61",
+          "id": "natgap_development_project_0387_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_b4000d23172660af0f61",
+          "id": "natgap_development_project_0387_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1ae7a5566f4d5b927ca1",
+          "id": "natgap_development_project_0395_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1ae7a5566f4d5b927ca1",
+          "id": "natgap_development_project_0395_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1ae7a5566f4d5b927ca1",
+          "id": "natgap_development_project_0395_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1ae7a5566f4d5b927ca1",
+          "id": "natgap_development_project_0395_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_48169e0829e0580699d1",
+          "id": "natgap_development_project_0400_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_48169e0829e0580699d1",
+          "id": "natgap_development_project_0400_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_48169e0829e0580699d1",
+          "id": "natgap_development_project_0400_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        }
+      ],
+      "forbidden_id_selections": 0,
+      "legacy_id_correct": 95,
+      "negative_abstained": 84,
+      "negative_cases": 100,
+      "positive_cases": 100,
+      "positive_id_correct": 11,
+      "segments": {
+        "natural_gap_explicit_no_recall": {
+          "cases": 50,
+          "legacy_id_correct": 46
+        },
+        "natural_gap_mode_unspecified": {
+          "cases": 50,
+          "legacy_id_correct": 38
+        },
+        "natural_gap_onsite": {
+          "cases": 50,
+          "legacy_id_correct": 10
+        },
+        "natural_gap_remote": {
+          "cases": 50,
+          "legacy_id_correct": 1
+        }
+      }
+    },
+    "cosine_floor_0_9": {
+      "cases": 200,
+      "changed_cases": [
+        {
+          "frozen_rrf": "m_4e2cfee0ddff2e839861",
+          "id": "natgap_development_project_0001_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_4e2cfee0ddff2e839861",
+          "id": "natgap_development_project_0001_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_4e2cfee0ddff2e839861",
+          "id": "natgap_development_project_0001_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_4e2cfee0ddff2e839861",
+          "id": "natgap_development_project_0001_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_6e26305f0a5111c89bb2",
+          "id": "natgap_development_project_0015_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_6e26305f0a5111c89bb2",
+          "id": "natgap_development_project_0015_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_7fbd22f11f8ff37ed3ed",
+          "id": "natgap_development_project_0015_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_6e26305f0a5111c89bb2",
+          "id": "natgap_development_project_0015_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_72f7fc0f6d3df2aad513",
+          "id": "natgap_development_project_0022_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_72f7fc0f6d3df2aad513",
+          "id": "natgap_development_project_0022_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_72f7fc0f6d3df2aad513",
+          "id": "natgap_development_project_0022_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_72f7fc0f6d3df2aad513",
+          "id": "natgap_development_project_0022_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_95f63af2a1f37a839e93",
+          "id": "natgap_development_project_0041_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1a0b5350a9eb2e3ff504",
+          "id": "natgap_development_project_0041_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1a0b5350a9eb2e3ff504",
+          "id": "natgap_development_project_0041_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1a0b5350a9eb2e3ff504",
+          "id": "natgap_development_project_0041_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_50a6fe6b9913d7ed145f",
+          "id": "natgap_development_project_0045_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_50a6fe6b9913d7ed145f",
+          "id": "natgap_development_project_0045_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_50a6fe6b9913d7ed145f",
+          "id": "natgap_development_project_0045_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_50a6fe6b9913d7ed145f",
+          "id": "natgap_development_project_0045_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_7b7496a6fc62628da566",
+          "id": "natgap_development_project_0074_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_7b7496a6fc62628da566",
+          "id": "natgap_development_project_0074_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_7b7496a6fc62628da566",
+          "id": "natgap_development_project_0074_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_7b7496a6fc62628da566",
+          "id": "natgap_development_project_0074_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_ee08f64956588ccbb6ac",
+          "id": "natgap_development_project_0088_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_97f3b52a77a890081888",
+          "id": "natgap_development_project_0088_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_97f3b52a77a890081888",
+          "id": "natgap_development_project_0088_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_97f3b52a77a890081888",
+          "id": "natgap_development_project_0088_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_db1063ddfbd2ba80f711",
+          "id": "natgap_development_project_0091_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_db1063ddfbd2ba80f711",
+          "id": "natgap_development_project_0091_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_db1063ddfbd2ba80f711",
+          "id": "natgap_development_project_0091_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_db1063ddfbd2ba80f711",
+          "id": "natgap_development_project_0091_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_27ffa166d3de0222d0be",
+          "id": "natgap_development_project_0098_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1e6592843b6f8eb1f1e7",
+          "id": "natgap_development_project_0098_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_27ffa166d3de0222d0be",
+          "id": "natgap_development_project_0098_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_27ffa166d3de0222d0be",
+          "id": "natgap_development_project_0098_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_5971d716af8071d35823",
+          "id": "natgap_development_project_0103_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_5971d716af8071d35823",
+          "id": "natgap_development_project_0103_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_5971d716af8071d35823",
+          "id": "natgap_development_project_0103_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_5971d716af8071d35823",
+          "id": "natgap_development_project_0103_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_9bae9a48c09808365438",
+          "id": "natgap_development_project_0106_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_9bae9a48c09808365438",
+          "id": "natgap_development_project_0106_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_413b2a65bc1bd07ec974",
+          "id": "natgap_development_project_0106_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_413b2a65bc1bd07ec974",
+          "id": "natgap_development_project_0106_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_697c9187b43239eb2b06",
+          "id": "natgap_development_project_0109_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_697c9187b43239eb2b06",
+          "id": "natgap_development_project_0109_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_697c9187b43239eb2b06",
+          "id": "natgap_development_project_0109_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_697c9187b43239eb2b06",
+          "id": "natgap_development_project_0109_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_755b53d6be184cce007a",
+          "id": "natgap_development_project_0113_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_755b53d6be184cce007a",
+          "id": "natgap_development_project_0113_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_755b53d6be184cce007a",
+          "id": "natgap_development_project_0113_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_755b53d6be184cce007a",
+          "id": "natgap_development_project_0113_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_b4d5bc505089d99ee829",
+          "id": "natgap_development_project_0117_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_b4d5bc505089d99ee829",
+          "id": "natgap_development_project_0117_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_b4d5bc505089d99ee829",
+          "id": "natgap_development_project_0117_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_0ac16bb9f1a28fdc6dd3",
+          "id": "natgap_development_project_0117_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_10694528fa5709f52014",
+          "id": "natgap_development_project_0127_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_10694528fa5709f52014",
+          "id": "natgap_development_project_0127_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_fcc027f29163fe99ffe3",
+          "id": "natgap_development_project_0127_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_fcc027f29163fe99ffe3",
+          "id": "natgap_development_project_0127_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_2ba8a90b5368c85471f9",
+          "id": "natgap_development_project_0128_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_26396790393bbc3c20f1",
+          "id": "natgap_development_project_0128_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_2ba8a90b5368c85471f9",
+          "id": "natgap_development_project_0128_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_2ba8a90b5368c85471f9",
+          "id": "natgap_development_project_0128_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_35e9a4cf07b119201f9d",
+          "id": "natgap_development_project_0130_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_8422081698bbccd04ccd",
+          "id": "natgap_development_project_0130_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_35e9a4cf07b119201f9d",
+          "id": "natgap_development_project_0130_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_35e9a4cf07b119201f9d",
+          "id": "natgap_development_project_0130_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_fabdbc22d205ed1cfa01",
+          "id": "natgap_development_project_0132_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_fabdbc22d205ed1cfa01",
+          "id": "natgap_development_project_0132_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_9adceab029baee3508fb",
+          "id": "natgap_development_project_0132_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_9adceab029baee3508fb",
+          "id": "natgap_development_project_0132_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_33d7d200d05cda900218",
+          "id": "natgap_development_project_0139_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_33d7d200d05cda900218",
+          "id": "natgap_development_project_0139_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_33d7d200d05cda900218",
+          "id": "natgap_development_project_0139_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_33d7d200d05cda900218",
+          "id": "natgap_development_project_0139_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_58b4da96a5edaed44fe4",
+          "id": "natgap_development_project_0149_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_e64af7e47f718441601e",
+          "id": "natgap_development_project_0149_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_58b4da96a5edaed44fe4",
+          "id": "natgap_development_project_0149_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_58b4da96a5edaed44fe4",
+          "id": "natgap_development_project_0149_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_6ec9f47541ac749d4804",
+          "id": "natgap_development_project_0153_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_6ec9f47541ac749d4804",
+          "id": "natgap_development_project_0153_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_6ec9f47541ac749d4804",
+          "id": "natgap_development_project_0153_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_6ec9f47541ac749d4804",
+          "id": "natgap_development_project_0153_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_abee1bd9ab0a993f3afb",
+          "id": "natgap_development_project_0179_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_8119e18d0c9af7c63f66",
+          "id": "natgap_development_project_0179_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_abee1bd9ab0a993f3afb",
+          "id": "natgap_development_project_0179_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_8119e18d0c9af7c63f66",
+          "id": "natgap_development_project_0179_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_71f517ddbc3f9d630e32",
+          "id": "natgap_development_project_0200_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_71f517ddbc3f9d630e32",
+          "id": "natgap_development_project_0200_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_71f517ddbc3f9d630e32",
+          "id": "natgap_development_project_0200_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_71f517ddbc3f9d630e32",
+          "id": "natgap_development_project_0200_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_10193d82a26fd3391d57",
+          "id": "natgap_development_project_0212_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_a1f42e49ec2126963b62",
+          "id": "natgap_development_project_0212_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_a1f42e49ec2126963b62",
+          "id": "natgap_development_project_0212_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_a1f42e49ec2126963b62",
+          "id": "natgap_development_project_0212_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_eda1e1974b4acfb474ac",
+          "id": "natgap_development_project_0220_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_eda1e1974b4acfb474ac",
+          "id": "natgap_development_project_0220_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_eda1e1974b4acfb474ac",
+          "id": "natgap_development_project_0220_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_eda1e1974b4acfb474ac",
+          "id": "natgap_development_project_0220_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_90b514e3814150ccd185",
+          "id": "natgap_development_project_0258_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_90b514e3814150ccd185",
+          "id": "natgap_development_project_0258_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_90b514e3814150ccd185",
+          "id": "natgap_development_project_0258_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_90b514e3814150ccd185",
+          "id": "natgap_development_project_0258_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_a20069f8f37184ef3b9e",
+          "id": "natgap_development_project_0259_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_205d4a6423473c20a688",
+          "id": "natgap_development_project_0259_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_205d4a6423473c20a688",
+          "id": "natgap_development_project_0259_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_205d4a6423473c20a688",
+          "id": "natgap_development_project_0259_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_f67eac68a7fe625a8452",
+          "id": "natgap_development_project_0278_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_f67eac68a7fe625a8452",
+          "id": "natgap_development_project_0278_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_90afca108843080a71c5",
+          "id": "natgap_development_project_0278_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_90afca108843080a71c5",
+          "id": "natgap_development_project_0278_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_2274be6159012937a5ef",
+          "id": "natgap_development_project_0281_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_79139a8c065a249ec118",
+          "id": "natgap_development_project_0281_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_2274be6159012937a5ef",
+          "id": "natgap_development_project_0281_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_2274be6159012937a5ef",
+          "id": "natgap_development_project_0281_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_da425e7ee40ca6ff8ccb",
+          "id": "natgap_development_project_0290_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_da425e7ee40ca6ff8ccb",
+          "id": "natgap_development_project_0290_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_da425e7ee40ca6ff8ccb",
+          "id": "natgap_development_project_0290_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_da425e7ee40ca6ff8ccb",
+          "id": "natgap_development_project_0290_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_d10439ca55f76c320d5e",
+          "id": "natgap_development_project_0298_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_d10439ca55f76c320d5e",
+          "id": "natgap_development_project_0298_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_d10439ca55f76c320d5e",
+          "id": "natgap_development_project_0298_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_d10439ca55f76c320d5e",
+          "id": "natgap_development_project_0298_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_ecb5c6541987d52016be",
+          "id": "natgap_development_project_0300_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_d417a4f8ed8265fea436",
+          "id": "natgap_development_project_0300_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_ecb5c6541987d52016be",
+          "id": "natgap_development_project_0300_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_ecb5c6541987d52016be",
+          "id": "natgap_development_project_0300_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_03b68523c57000804e0f",
+          "id": "natgap_development_project_0306_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_03b68523c57000804e0f",
+          "id": "natgap_development_project_0306_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_03b68523c57000804e0f",
+          "id": "natgap_development_project_0306_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_03b68523c57000804e0f",
+          "id": "natgap_development_project_0306_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_e6d5ec897e5c279f0940",
+          "id": "natgap_development_project_0323_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_e6d5ec897e5c279f0940",
+          "id": "natgap_development_project_0323_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_e6d5ec897e5c279f0940",
+          "id": "natgap_development_project_0323_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_e6d5ec897e5c279f0940",
+          "id": "natgap_development_project_0323_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_014ae3383412a4fda1f0",
+          "id": "natgap_development_project_0328_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_014ae3383412a4fda1f0",
+          "id": "natgap_development_project_0328_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_014ae3383412a4fda1f0",
+          "id": "natgap_development_project_0328_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_014ae3383412a4fda1f0",
+          "id": "natgap_development_project_0328_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_a85f55a55a4584faf5cf",
+          "id": "natgap_development_project_0342_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_a85f55a55a4584faf5cf",
+          "id": "natgap_development_project_0342_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_bb4f342ec6525d37a3de",
+          "id": "natgap_development_project_0342_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_a85f55a55a4584faf5cf",
+          "id": "natgap_development_project_0342_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_c829f8e00f1acbd3f2a5",
+          "id": "natgap_development_project_0346_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_c829f8e00f1acbd3f2a5",
+          "id": "natgap_development_project_0346_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_c829f8e00f1acbd3f2a5",
+          "id": "natgap_development_project_0346_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_c829f8e00f1acbd3f2a5",
+          "id": "natgap_development_project_0346_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1c07d6d7fd1b02330395",
+          "id": "natgap_development_project_0351_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1c07d6d7fd1b02330395",
+          "id": "natgap_development_project_0351_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1c07d6d7fd1b02330395",
+          "id": "natgap_development_project_0351_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1c07d6d7fd1b02330395",
+          "id": "natgap_development_project_0351_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_81d0d2bc78264be67242",
+          "id": "natgap_development_project_0354_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_81d0d2bc78264be67242",
+          "id": "natgap_development_project_0354_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_81d0d2bc78264be67242",
+          "id": "natgap_development_project_0354_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_81d0d2bc78264be67242",
+          "id": "natgap_development_project_0354_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_a1a1352b56855f7be769",
+          "id": "natgap_development_project_0355_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_a1a1352b56855f7be769",
+          "id": "natgap_development_project_0355_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_a1a1352b56855f7be769",
+          "id": "natgap_development_project_0355_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_a1a1352b56855f7be769",
+          "id": "natgap_development_project_0355_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_ceaca1b975dfb54d057b",
+          "id": "natgap_development_project_0357_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_ceaca1b975dfb54d057b",
+          "id": "natgap_development_project_0357_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_daabb096cb00e2802f10",
+          "id": "natgap_development_project_0357_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_daabb096cb00e2802f10",
+          "id": "natgap_development_project_0357_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_7479572f9612f9f3db1d",
+          "id": "natgap_development_project_0359_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_7479572f9612f9f3db1d",
+          "id": "natgap_development_project_0359_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_7479572f9612f9f3db1d",
+          "id": "natgap_development_project_0359_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_7479572f9612f9f3db1d",
+          "id": "natgap_development_project_0359_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1dba7690f4bac642cc4a",
+          "id": "natgap_development_project_0362_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1dba7690f4bac642cc4a",
+          "id": "natgap_development_project_0362_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1dba7690f4bac642cc4a",
+          "id": "natgap_development_project_0362_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1dba7690f4bac642cc4a",
+          "id": "natgap_development_project_0362_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_68ef4232a918c4f21fee",
+          "id": "natgap_development_project_0370_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_68ef4232a918c4f21fee",
+          "id": "natgap_development_project_0370_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_68ef4232a918c4f21fee",
+          "id": "natgap_development_project_0370_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_68ef4232a918c4f21fee",
+          "id": "natgap_development_project_0370_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_5cee478682dd11ae4a51",
+          "id": "natgap_development_project_0375_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_5cee478682dd11ae4a51",
+          "id": "natgap_development_project_0375_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_5cee478682dd11ae4a51",
+          "id": "natgap_development_project_0375_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_5cee478682dd11ae4a51",
+          "id": "natgap_development_project_0375_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_8daa31b63c5f8dc730e2",
+          "id": "natgap_development_project_0376_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_8daa31b63c5f8dc730e2",
+          "id": "natgap_development_project_0376_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_8daa31b63c5f8dc730e2",
+          "id": "natgap_development_project_0376_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_8daa31b63c5f8dc730e2",
+          "id": "natgap_development_project_0376_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_c8ddcb97e6f04c06068d",
+          "id": "natgap_development_project_0385_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_c8ddcb97e6f04c06068d",
+          "id": "natgap_development_project_0385_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_c8ddcb97e6f04c06068d",
+          "id": "natgap_development_project_0385_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_c8ddcb97e6f04c06068d",
+          "id": "natgap_development_project_0385_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_b4000d23172660af0f61",
+          "id": "natgap_development_project_0387_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_b4000d23172660af0f61",
+          "id": "natgap_development_project_0387_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_b4000d23172660af0f61",
+          "id": "natgap_development_project_0387_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_b4000d23172660af0f61",
+          "id": "natgap_development_project_0387_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1ae7a5566f4d5b927ca1",
+          "id": "natgap_development_project_0395_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1ae7a5566f4d5b927ca1",
+          "id": "natgap_development_project_0395_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1ae7a5566f4d5b927ca1",
+          "id": "natgap_development_project_0395_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1ae7a5566f4d5b927ca1",
+          "id": "natgap_development_project_0395_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_48169e0829e0580699d1",
+          "id": "natgap_development_project_0400_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_48169e0829e0580699d1",
+          "id": "natgap_development_project_0400_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_48169e0829e0580699d1",
+          "id": "natgap_development_project_0400_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_48169e0829e0580699d1",
+          "id": "natgap_development_project_0400_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        }
+      ],
+      "forbidden_id_selections": 0,
+      "legacy_id_correct": 100,
+      "negative_abstained": 100,
+      "negative_cases": 100,
+      "positive_cases": 100,
+      "positive_id_correct": 0,
+      "segments": {
+        "natural_gap_explicit_no_recall": {
+          "cases": 50,
+          "legacy_id_correct": 50
+        },
+        "natural_gap_mode_unspecified": {
+          "cases": 50,
+          "legacy_id_correct": 50
+        },
+        "natural_gap_onsite": {
+          "cases": 50,
+          "legacy_id_correct": 0
+        },
+        "natural_gap_remote": {
+          "cases": 50,
+          "legacy_id_correct": 0
+        }
+      }
+    },
+    "frozen_rrf": {
+      "cases": 200,
+      "changed_cases": [],
+      "forbidden_id_selections": 0,
+      "legacy_id_correct": 52,
+      "negative_abstained": 0,
+      "negative_cases": 100,
+      "positive_cases": 100,
+      "positive_id_correct": 52,
+      "segments": {
+        "natural_gap_explicit_no_recall": {
+          "cases": 50,
+          "legacy_id_correct": 0
+        },
+        "natural_gap_mode_unspecified": {
+          "cases": 50,
+          "legacy_id_correct": 0
+        },
+        "natural_gap_onsite": {
+          "cases": 50,
+          "legacy_id_correct": 41
+        },
+        "natural_gap_remote": {
+          "cases": 50,
+          "legacy_id_correct": 11
+        }
+      }
+    },
+    "no_retrieval": {
+      "cases": 200,
+      "changed_cases": [
+        {
+          "frozen_rrf": "m_4e2cfee0ddff2e839861",
+          "id": "natgap_development_project_0001_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_4e2cfee0ddff2e839861",
+          "id": "natgap_development_project_0001_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_4e2cfee0ddff2e839861",
+          "id": "natgap_development_project_0001_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_4e2cfee0ddff2e839861",
+          "id": "natgap_development_project_0001_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_6e26305f0a5111c89bb2",
+          "id": "natgap_development_project_0015_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_6e26305f0a5111c89bb2",
+          "id": "natgap_development_project_0015_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_7fbd22f11f8ff37ed3ed",
+          "id": "natgap_development_project_0015_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_6e26305f0a5111c89bb2",
+          "id": "natgap_development_project_0015_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_72f7fc0f6d3df2aad513",
+          "id": "natgap_development_project_0022_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_72f7fc0f6d3df2aad513",
+          "id": "natgap_development_project_0022_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_72f7fc0f6d3df2aad513",
+          "id": "natgap_development_project_0022_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_72f7fc0f6d3df2aad513",
+          "id": "natgap_development_project_0022_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_95f63af2a1f37a839e93",
+          "id": "natgap_development_project_0041_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1a0b5350a9eb2e3ff504",
+          "id": "natgap_development_project_0041_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1a0b5350a9eb2e3ff504",
+          "id": "natgap_development_project_0041_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1a0b5350a9eb2e3ff504",
+          "id": "natgap_development_project_0041_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_50a6fe6b9913d7ed145f",
+          "id": "natgap_development_project_0045_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_50a6fe6b9913d7ed145f",
+          "id": "natgap_development_project_0045_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_50a6fe6b9913d7ed145f",
+          "id": "natgap_development_project_0045_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_50a6fe6b9913d7ed145f",
+          "id": "natgap_development_project_0045_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_7b7496a6fc62628da566",
+          "id": "natgap_development_project_0074_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_7b7496a6fc62628da566",
+          "id": "natgap_development_project_0074_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_7b7496a6fc62628da566",
+          "id": "natgap_development_project_0074_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_7b7496a6fc62628da566",
+          "id": "natgap_development_project_0074_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_ee08f64956588ccbb6ac",
+          "id": "natgap_development_project_0088_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_97f3b52a77a890081888",
+          "id": "natgap_development_project_0088_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_97f3b52a77a890081888",
+          "id": "natgap_development_project_0088_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_97f3b52a77a890081888",
+          "id": "natgap_development_project_0088_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_db1063ddfbd2ba80f711",
+          "id": "natgap_development_project_0091_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_db1063ddfbd2ba80f711",
+          "id": "natgap_development_project_0091_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_db1063ddfbd2ba80f711",
+          "id": "natgap_development_project_0091_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_db1063ddfbd2ba80f711",
+          "id": "natgap_development_project_0091_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_27ffa166d3de0222d0be",
+          "id": "natgap_development_project_0098_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1e6592843b6f8eb1f1e7",
+          "id": "natgap_development_project_0098_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_27ffa166d3de0222d0be",
+          "id": "natgap_development_project_0098_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_27ffa166d3de0222d0be",
+          "id": "natgap_development_project_0098_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_5971d716af8071d35823",
+          "id": "natgap_development_project_0103_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_5971d716af8071d35823",
+          "id": "natgap_development_project_0103_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_5971d716af8071d35823",
+          "id": "natgap_development_project_0103_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_5971d716af8071d35823",
+          "id": "natgap_development_project_0103_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_9bae9a48c09808365438",
+          "id": "natgap_development_project_0106_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_9bae9a48c09808365438",
+          "id": "natgap_development_project_0106_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_413b2a65bc1bd07ec974",
+          "id": "natgap_development_project_0106_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_413b2a65bc1bd07ec974",
+          "id": "natgap_development_project_0106_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_697c9187b43239eb2b06",
+          "id": "natgap_development_project_0109_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_697c9187b43239eb2b06",
+          "id": "natgap_development_project_0109_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_697c9187b43239eb2b06",
+          "id": "natgap_development_project_0109_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_697c9187b43239eb2b06",
+          "id": "natgap_development_project_0109_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_755b53d6be184cce007a",
+          "id": "natgap_development_project_0113_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_755b53d6be184cce007a",
+          "id": "natgap_development_project_0113_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_755b53d6be184cce007a",
+          "id": "natgap_development_project_0113_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_755b53d6be184cce007a",
+          "id": "natgap_development_project_0113_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_b4d5bc505089d99ee829",
+          "id": "natgap_development_project_0117_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_b4d5bc505089d99ee829",
+          "id": "natgap_development_project_0117_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_b4d5bc505089d99ee829",
+          "id": "natgap_development_project_0117_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_0ac16bb9f1a28fdc6dd3",
+          "id": "natgap_development_project_0117_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_10694528fa5709f52014",
+          "id": "natgap_development_project_0127_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_10694528fa5709f52014",
+          "id": "natgap_development_project_0127_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_fcc027f29163fe99ffe3",
+          "id": "natgap_development_project_0127_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_fcc027f29163fe99ffe3",
+          "id": "natgap_development_project_0127_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_2ba8a90b5368c85471f9",
+          "id": "natgap_development_project_0128_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_26396790393bbc3c20f1",
+          "id": "natgap_development_project_0128_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_2ba8a90b5368c85471f9",
+          "id": "natgap_development_project_0128_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_2ba8a90b5368c85471f9",
+          "id": "natgap_development_project_0128_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_35e9a4cf07b119201f9d",
+          "id": "natgap_development_project_0130_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_8422081698bbccd04ccd",
+          "id": "natgap_development_project_0130_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_35e9a4cf07b119201f9d",
+          "id": "natgap_development_project_0130_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_35e9a4cf07b119201f9d",
+          "id": "natgap_development_project_0130_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_fabdbc22d205ed1cfa01",
+          "id": "natgap_development_project_0132_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_fabdbc22d205ed1cfa01",
+          "id": "natgap_development_project_0132_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_9adceab029baee3508fb",
+          "id": "natgap_development_project_0132_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_9adceab029baee3508fb",
+          "id": "natgap_development_project_0132_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_33d7d200d05cda900218",
+          "id": "natgap_development_project_0139_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_33d7d200d05cda900218",
+          "id": "natgap_development_project_0139_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_33d7d200d05cda900218",
+          "id": "natgap_development_project_0139_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_33d7d200d05cda900218",
+          "id": "natgap_development_project_0139_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_58b4da96a5edaed44fe4",
+          "id": "natgap_development_project_0149_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_e64af7e47f718441601e",
+          "id": "natgap_development_project_0149_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_58b4da96a5edaed44fe4",
+          "id": "natgap_development_project_0149_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_58b4da96a5edaed44fe4",
+          "id": "natgap_development_project_0149_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_6ec9f47541ac749d4804",
+          "id": "natgap_development_project_0153_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_6ec9f47541ac749d4804",
+          "id": "natgap_development_project_0153_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_6ec9f47541ac749d4804",
+          "id": "natgap_development_project_0153_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_6ec9f47541ac749d4804",
+          "id": "natgap_development_project_0153_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_abee1bd9ab0a993f3afb",
+          "id": "natgap_development_project_0179_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_8119e18d0c9af7c63f66",
+          "id": "natgap_development_project_0179_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_abee1bd9ab0a993f3afb",
+          "id": "natgap_development_project_0179_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_8119e18d0c9af7c63f66",
+          "id": "natgap_development_project_0179_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_71f517ddbc3f9d630e32",
+          "id": "natgap_development_project_0200_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_71f517ddbc3f9d630e32",
+          "id": "natgap_development_project_0200_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_71f517ddbc3f9d630e32",
+          "id": "natgap_development_project_0200_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_71f517ddbc3f9d630e32",
+          "id": "natgap_development_project_0200_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_10193d82a26fd3391d57",
+          "id": "natgap_development_project_0212_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_a1f42e49ec2126963b62",
+          "id": "natgap_development_project_0212_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_a1f42e49ec2126963b62",
+          "id": "natgap_development_project_0212_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_a1f42e49ec2126963b62",
+          "id": "natgap_development_project_0212_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_eda1e1974b4acfb474ac",
+          "id": "natgap_development_project_0220_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_eda1e1974b4acfb474ac",
+          "id": "natgap_development_project_0220_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_eda1e1974b4acfb474ac",
+          "id": "natgap_development_project_0220_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_eda1e1974b4acfb474ac",
+          "id": "natgap_development_project_0220_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_90b514e3814150ccd185",
+          "id": "natgap_development_project_0258_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_90b514e3814150ccd185",
+          "id": "natgap_development_project_0258_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_90b514e3814150ccd185",
+          "id": "natgap_development_project_0258_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_90b514e3814150ccd185",
+          "id": "natgap_development_project_0258_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_a20069f8f37184ef3b9e",
+          "id": "natgap_development_project_0259_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_205d4a6423473c20a688",
+          "id": "natgap_development_project_0259_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_205d4a6423473c20a688",
+          "id": "natgap_development_project_0259_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_205d4a6423473c20a688",
+          "id": "natgap_development_project_0259_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_f67eac68a7fe625a8452",
+          "id": "natgap_development_project_0278_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_f67eac68a7fe625a8452",
+          "id": "natgap_development_project_0278_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_90afca108843080a71c5",
+          "id": "natgap_development_project_0278_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_90afca108843080a71c5",
+          "id": "natgap_development_project_0278_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_2274be6159012937a5ef",
+          "id": "natgap_development_project_0281_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_79139a8c065a249ec118",
+          "id": "natgap_development_project_0281_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_2274be6159012937a5ef",
+          "id": "natgap_development_project_0281_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_2274be6159012937a5ef",
+          "id": "natgap_development_project_0281_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_da425e7ee40ca6ff8ccb",
+          "id": "natgap_development_project_0290_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_da425e7ee40ca6ff8ccb",
+          "id": "natgap_development_project_0290_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_da425e7ee40ca6ff8ccb",
+          "id": "natgap_development_project_0290_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_da425e7ee40ca6ff8ccb",
+          "id": "natgap_development_project_0290_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_d10439ca55f76c320d5e",
+          "id": "natgap_development_project_0298_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_d10439ca55f76c320d5e",
+          "id": "natgap_development_project_0298_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_d10439ca55f76c320d5e",
+          "id": "natgap_development_project_0298_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_d10439ca55f76c320d5e",
+          "id": "natgap_development_project_0298_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_ecb5c6541987d52016be",
+          "id": "natgap_development_project_0300_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_d417a4f8ed8265fea436",
+          "id": "natgap_development_project_0300_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_ecb5c6541987d52016be",
+          "id": "natgap_development_project_0300_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_ecb5c6541987d52016be",
+          "id": "natgap_development_project_0300_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_03b68523c57000804e0f",
+          "id": "natgap_development_project_0306_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_03b68523c57000804e0f",
+          "id": "natgap_development_project_0306_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_03b68523c57000804e0f",
+          "id": "natgap_development_project_0306_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_03b68523c57000804e0f",
+          "id": "natgap_development_project_0306_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_e6d5ec897e5c279f0940",
+          "id": "natgap_development_project_0323_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_e6d5ec897e5c279f0940",
+          "id": "natgap_development_project_0323_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_e6d5ec897e5c279f0940",
+          "id": "natgap_development_project_0323_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_e6d5ec897e5c279f0940",
+          "id": "natgap_development_project_0323_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_014ae3383412a4fda1f0",
+          "id": "natgap_development_project_0328_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_014ae3383412a4fda1f0",
+          "id": "natgap_development_project_0328_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_014ae3383412a4fda1f0",
+          "id": "natgap_development_project_0328_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_014ae3383412a4fda1f0",
+          "id": "natgap_development_project_0328_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_a85f55a55a4584faf5cf",
+          "id": "natgap_development_project_0342_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_a85f55a55a4584faf5cf",
+          "id": "natgap_development_project_0342_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_bb4f342ec6525d37a3de",
+          "id": "natgap_development_project_0342_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_a85f55a55a4584faf5cf",
+          "id": "natgap_development_project_0342_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_c829f8e00f1acbd3f2a5",
+          "id": "natgap_development_project_0346_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_c829f8e00f1acbd3f2a5",
+          "id": "natgap_development_project_0346_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_c829f8e00f1acbd3f2a5",
+          "id": "natgap_development_project_0346_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_c829f8e00f1acbd3f2a5",
+          "id": "natgap_development_project_0346_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1c07d6d7fd1b02330395",
+          "id": "natgap_development_project_0351_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1c07d6d7fd1b02330395",
+          "id": "natgap_development_project_0351_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1c07d6d7fd1b02330395",
+          "id": "natgap_development_project_0351_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1c07d6d7fd1b02330395",
+          "id": "natgap_development_project_0351_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_81d0d2bc78264be67242",
+          "id": "natgap_development_project_0354_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_81d0d2bc78264be67242",
+          "id": "natgap_development_project_0354_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_81d0d2bc78264be67242",
+          "id": "natgap_development_project_0354_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_81d0d2bc78264be67242",
+          "id": "natgap_development_project_0354_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_a1a1352b56855f7be769",
+          "id": "natgap_development_project_0355_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_a1a1352b56855f7be769",
+          "id": "natgap_development_project_0355_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_a1a1352b56855f7be769",
+          "id": "natgap_development_project_0355_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_a1a1352b56855f7be769",
+          "id": "natgap_development_project_0355_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_ceaca1b975dfb54d057b",
+          "id": "natgap_development_project_0357_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_ceaca1b975dfb54d057b",
+          "id": "natgap_development_project_0357_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_daabb096cb00e2802f10",
+          "id": "natgap_development_project_0357_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_daabb096cb00e2802f10",
+          "id": "natgap_development_project_0357_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_7479572f9612f9f3db1d",
+          "id": "natgap_development_project_0359_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_7479572f9612f9f3db1d",
+          "id": "natgap_development_project_0359_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_7479572f9612f9f3db1d",
+          "id": "natgap_development_project_0359_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_7479572f9612f9f3db1d",
+          "id": "natgap_development_project_0359_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1dba7690f4bac642cc4a",
+          "id": "natgap_development_project_0362_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1dba7690f4bac642cc4a",
+          "id": "natgap_development_project_0362_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1dba7690f4bac642cc4a",
+          "id": "natgap_development_project_0362_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1dba7690f4bac642cc4a",
+          "id": "natgap_development_project_0362_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_68ef4232a918c4f21fee",
+          "id": "natgap_development_project_0370_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_68ef4232a918c4f21fee",
+          "id": "natgap_development_project_0370_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_68ef4232a918c4f21fee",
+          "id": "natgap_development_project_0370_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_68ef4232a918c4f21fee",
+          "id": "natgap_development_project_0370_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_5cee478682dd11ae4a51",
+          "id": "natgap_development_project_0375_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_5cee478682dd11ae4a51",
+          "id": "natgap_development_project_0375_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_5cee478682dd11ae4a51",
+          "id": "natgap_development_project_0375_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_5cee478682dd11ae4a51",
+          "id": "natgap_development_project_0375_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_8daa31b63c5f8dc730e2",
+          "id": "natgap_development_project_0376_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_8daa31b63c5f8dc730e2",
+          "id": "natgap_development_project_0376_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_8daa31b63c5f8dc730e2",
+          "id": "natgap_development_project_0376_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_8daa31b63c5f8dc730e2",
+          "id": "natgap_development_project_0376_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_c8ddcb97e6f04c06068d",
+          "id": "natgap_development_project_0385_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_c8ddcb97e6f04c06068d",
+          "id": "natgap_development_project_0385_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_c8ddcb97e6f04c06068d",
+          "id": "natgap_development_project_0385_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_c8ddcb97e6f04c06068d",
+          "id": "natgap_development_project_0385_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_b4000d23172660af0f61",
+          "id": "natgap_development_project_0387_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_b4000d23172660af0f61",
+          "id": "natgap_development_project_0387_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_b4000d23172660af0f61",
+          "id": "natgap_development_project_0387_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_b4000d23172660af0f61",
+          "id": "natgap_development_project_0387_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1ae7a5566f4d5b927ca1",
+          "id": "natgap_development_project_0395_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1ae7a5566f4d5b927ca1",
+          "id": "natgap_development_project_0395_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1ae7a5566f4d5b927ca1",
+          "id": "natgap_development_project_0395_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1ae7a5566f4d5b927ca1",
+          "id": "natgap_development_project_0395_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_48169e0829e0580699d1",
+          "id": "natgap_development_project_0400_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_48169e0829e0580699d1",
+          "id": "natgap_development_project_0400_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_48169e0829e0580699d1",
+          "id": "natgap_development_project_0400_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_48169e0829e0580699d1",
+          "id": "natgap_development_project_0400_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        }
+      ],
+      "forbidden_id_selections": 0,
+      "legacy_id_correct": 100,
+      "negative_abstained": 100,
+      "negative_cases": 100,
+      "positive_cases": 100,
+      "positive_id_correct": 0,
+      "segments": {
+        "natural_gap_explicit_no_recall": {
+          "cases": 50,
+          "legacy_id_correct": 50
+        },
+        "natural_gap_mode_unspecified": {
+          "cases": 50,
+          "legacy_id_correct": 50
+        },
+        "natural_gap_onsite": {
+          "cases": 50,
+          "legacy_id_correct": 0
+        },
+        "natural_gap_remote": {
+          "cases": 50,
+          "legacy_id_correct": 0
+        }
+      }
+    },
+    "semantic_only": {
+      "cases": 200,
+      "changed_cases": [],
+      "forbidden_id_selections": 0,
+      "legacy_id_correct": 52,
+      "negative_abstained": 0,
+      "negative_cases": 100,
+      "positive_cases": 100,
+      "positive_id_correct": 52,
+      "segments": {
+        "natural_gap_explicit_no_recall": {
+          "cases": 50,
+          "legacy_id_correct": 0
+        },
+        "natural_gap_mode_unspecified": {
+          "cases": 50,
+          "legacy_id_correct": 0
+        },
+        "natural_gap_onsite": {
+          "cases": 50,
+          "legacy_id_correct": 41
+        },
+        "natural_gap_remote": {
+          "cases": 50,
+          "legacy_id_correct": 11
+        }
+      }
+    },
+    "without_embeddings": {
+      "cases": 200,
+      "changed_cases": [
+        {
+          "frozen_rrf": "m_4e2cfee0ddff2e839861",
+          "id": "natgap_development_project_0001_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_4e2cfee0ddff2e839861",
+          "id": "natgap_development_project_0001_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_4e2cfee0ddff2e839861",
+          "id": "natgap_development_project_0001_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_4e2cfee0ddff2e839861",
+          "id": "natgap_development_project_0001_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_6e26305f0a5111c89bb2",
+          "id": "natgap_development_project_0015_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_6e26305f0a5111c89bb2",
+          "id": "natgap_development_project_0015_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_7fbd22f11f8ff37ed3ed",
+          "id": "natgap_development_project_0015_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_6e26305f0a5111c89bb2",
+          "id": "natgap_development_project_0015_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_72f7fc0f6d3df2aad513",
+          "id": "natgap_development_project_0022_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_72f7fc0f6d3df2aad513",
+          "id": "natgap_development_project_0022_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_72f7fc0f6d3df2aad513",
+          "id": "natgap_development_project_0022_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_72f7fc0f6d3df2aad513",
+          "id": "natgap_development_project_0022_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_95f63af2a1f37a839e93",
+          "id": "natgap_development_project_0041_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1a0b5350a9eb2e3ff504",
+          "id": "natgap_development_project_0041_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1a0b5350a9eb2e3ff504",
+          "id": "natgap_development_project_0041_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1a0b5350a9eb2e3ff504",
+          "id": "natgap_development_project_0041_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_50a6fe6b9913d7ed145f",
+          "id": "natgap_development_project_0045_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_50a6fe6b9913d7ed145f",
+          "id": "natgap_development_project_0045_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_50a6fe6b9913d7ed145f",
+          "id": "natgap_development_project_0045_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_50a6fe6b9913d7ed145f",
+          "id": "natgap_development_project_0045_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_7b7496a6fc62628da566",
+          "id": "natgap_development_project_0074_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_7b7496a6fc62628da566",
+          "id": "natgap_development_project_0074_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_7b7496a6fc62628da566",
+          "id": "natgap_development_project_0074_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_7b7496a6fc62628da566",
+          "id": "natgap_development_project_0074_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_ee08f64956588ccbb6ac",
+          "id": "natgap_development_project_0088_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_97f3b52a77a890081888",
+          "id": "natgap_development_project_0088_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_97f3b52a77a890081888",
+          "id": "natgap_development_project_0088_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_97f3b52a77a890081888",
+          "id": "natgap_development_project_0088_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_db1063ddfbd2ba80f711",
+          "id": "natgap_development_project_0091_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_db1063ddfbd2ba80f711",
+          "id": "natgap_development_project_0091_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_db1063ddfbd2ba80f711",
+          "id": "natgap_development_project_0091_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_db1063ddfbd2ba80f711",
+          "id": "natgap_development_project_0091_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_27ffa166d3de0222d0be",
+          "id": "natgap_development_project_0098_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1e6592843b6f8eb1f1e7",
+          "id": "natgap_development_project_0098_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_27ffa166d3de0222d0be",
+          "id": "natgap_development_project_0098_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_27ffa166d3de0222d0be",
+          "id": "natgap_development_project_0098_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_5971d716af8071d35823",
+          "id": "natgap_development_project_0103_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_5971d716af8071d35823",
+          "id": "natgap_development_project_0103_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_5971d716af8071d35823",
+          "id": "natgap_development_project_0103_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_5971d716af8071d35823",
+          "id": "natgap_development_project_0103_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_9bae9a48c09808365438",
+          "id": "natgap_development_project_0106_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_9bae9a48c09808365438",
+          "id": "natgap_development_project_0106_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_413b2a65bc1bd07ec974",
+          "id": "natgap_development_project_0106_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_413b2a65bc1bd07ec974",
+          "id": "natgap_development_project_0106_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_697c9187b43239eb2b06",
+          "id": "natgap_development_project_0109_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_697c9187b43239eb2b06",
+          "id": "natgap_development_project_0109_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_697c9187b43239eb2b06",
+          "id": "natgap_development_project_0109_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_697c9187b43239eb2b06",
+          "id": "natgap_development_project_0109_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_755b53d6be184cce007a",
+          "id": "natgap_development_project_0113_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_755b53d6be184cce007a",
+          "id": "natgap_development_project_0113_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_755b53d6be184cce007a",
+          "id": "natgap_development_project_0113_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_755b53d6be184cce007a",
+          "id": "natgap_development_project_0113_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_b4d5bc505089d99ee829",
+          "id": "natgap_development_project_0117_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_b4d5bc505089d99ee829",
+          "id": "natgap_development_project_0117_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_b4d5bc505089d99ee829",
+          "id": "natgap_development_project_0117_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_0ac16bb9f1a28fdc6dd3",
+          "id": "natgap_development_project_0117_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_10694528fa5709f52014",
+          "id": "natgap_development_project_0127_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_10694528fa5709f52014",
+          "id": "natgap_development_project_0127_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_fcc027f29163fe99ffe3",
+          "id": "natgap_development_project_0127_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_fcc027f29163fe99ffe3",
+          "id": "natgap_development_project_0127_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_2ba8a90b5368c85471f9",
+          "id": "natgap_development_project_0128_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_26396790393bbc3c20f1",
+          "id": "natgap_development_project_0128_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_2ba8a90b5368c85471f9",
+          "id": "natgap_development_project_0128_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_2ba8a90b5368c85471f9",
+          "id": "natgap_development_project_0128_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_35e9a4cf07b119201f9d",
+          "id": "natgap_development_project_0130_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_8422081698bbccd04ccd",
+          "id": "natgap_development_project_0130_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_35e9a4cf07b119201f9d",
+          "id": "natgap_development_project_0130_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_35e9a4cf07b119201f9d",
+          "id": "natgap_development_project_0130_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_fabdbc22d205ed1cfa01",
+          "id": "natgap_development_project_0132_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_fabdbc22d205ed1cfa01",
+          "id": "natgap_development_project_0132_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_9adceab029baee3508fb",
+          "id": "natgap_development_project_0132_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_9adceab029baee3508fb",
+          "id": "natgap_development_project_0132_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_33d7d200d05cda900218",
+          "id": "natgap_development_project_0139_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_33d7d200d05cda900218",
+          "id": "natgap_development_project_0139_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_33d7d200d05cda900218",
+          "id": "natgap_development_project_0139_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_33d7d200d05cda900218",
+          "id": "natgap_development_project_0139_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_58b4da96a5edaed44fe4",
+          "id": "natgap_development_project_0149_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_e64af7e47f718441601e",
+          "id": "natgap_development_project_0149_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_58b4da96a5edaed44fe4",
+          "id": "natgap_development_project_0149_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_58b4da96a5edaed44fe4",
+          "id": "natgap_development_project_0149_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_6ec9f47541ac749d4804",
+          "id": "natgap_development_project_0153_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_6ec9f47541ac749d4804",
+          "id": "natgap_development_project_0153_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_6ec9f47541ac749d4804",
+          "id": "natgap_development_project_0153_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_6ec9f47541ac749d4804",
+          "id": "natgap_development_project_0153_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_abee1bd9ab0a993f3afb",
+          "id": "natgap_development_project_0179_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_8119e18d0c9af7c63f66",
+          "id": "natgap_development_project_0179_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_abee1bd9ab0a993f3afb",
+          "id": "natgap_development_project_0179_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_8119e18d0c9af7c63f66",
+          "id": "natgap_development_project_0179_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_71f517ddbc3f9d630e32",
+          "id": "natgap_development_project_0200_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_71f517ddbc3f9d630e32",
+          "id": "natgap_development_project_0200_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_71f517ddbc3f9d630e32",
+          "id": "natgap_development_project_0200_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_71f517ddbc3f9d630e32",
+          "id": "natgap_development_project_0200_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_10193d82a26fd3391d57",
+          "id": "natgap_development_project_0212_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_a1f42e49ec2126963b62",
+          "id": "natgap_development_project_0212_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_a1f42e49ec2126963b62",
+          "id": "natgap_development_project_0212_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_a1f42e49ec2126963b62",
+          "id": "natgap_development_project_0212_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_eda1e1974b4acfb474ac",
+          "id": "natgap_development_project_0220_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_eda1e1974b4acfb474ac",
+          "id": "natgap_development_project_0220_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_eda1e1974b4acfb474ac",
+          "id": "natgap_development_project_0220_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_eda1e1974b4acfb474ac",
+          "id": "natgap_development_project_0220_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_90b514e3814150ccd185",
+          "id": "natgap_development_project_0258_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_90b514e3814150ccd185",
+          "id": "natgap_development_project_0258_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_90b514e3814150ccd185",
+          "id": "natgap_development_project_0258_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_90b514e3814150ccd185",
+          "id": "natgap_development_project_0258_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_a20069f8f37184ef3b9e",
+          "id": "natgap_development_project_0259_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_205d4a6423473c20a688",
+          "id": "natgap_development_project_0259_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_205d4a6423473c20a688",
+          "id": "natgap_development_project_0259_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_205d4a6423473c20a688",
+          "id": "natgap_development_project_0259_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_f67eac68a7fe625a8452",
+          "id": "natgap_development_project_0278_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_f67eac68a7fe625a8452",
+          "id": "natgap_development_project_0278_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_90afca108843080a71c5",
+          "id": "natgap_development_project_0278_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_90afca108843080a71c5",
+          "id": "natgap_development_project_0278_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_2274be6159012937a5ef",
+          "id": "natgap_development_project_0281_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_79139a8c065a249ec118",
+          "id": "natgap_development_project_0281_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_2274be6159012937a5ef",
+          "id": "natgap_development_project_0281_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_2274be6159012937a5ef",
+          "id": "natgap_development_project_0281_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_da425e7ee40ca6ff8ccb",
+          "id": "natgap_development_project_0290_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_da425e7ee40ca6ff8ccb",
+          "id": "natgap_development_project_0290_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_da425e7ee40ca6ff8ccb",
+          "id": "natgap_development_project_0290_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_da425e7ee40ca6ff8ccb",
+          "id": "natgap_development_project_0290_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_d10439ca55f76c320d5e",
+          "id": "natgap_development_project_0298_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_d10439ca55f76c320d5e",
+          "id": "natgap_development_project_0298_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_d10439ca55f76c320d5e",
+          "id": "natgap_development_project_0298_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_d10439ca55f76c320d5e",
+          "id": "natgap_development_project_0298_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_ecb5c6541987d52016be",
+          "id": "natgap_development_project_0300_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_d417a4f8ed8265fea436",
+          "id": "natgap_development_project_0300_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_ecb5c6541987d52016be",
+          "id": "natgap_development_project_0300_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_ecb5c6541987d52016be",
+          "id": "natgap_development_project_0300_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_03b68523c57000804e0f",
+          "id": "natgap_development_project_0306_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_03b68523c57000804e0f",
+          "id": "natgap_development_project_0306_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_03b68523c57000804e0f",
+          "id": "natgap_development_project_0306_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_03b68523c57000804e0f",
+          "id": "natgap_development_project_0306_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_e6d5ec897e5c279f0940",
+          "id": "natgap_development_project_0323_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_e6d5ec897e5c279f0940",
+          "id": "natgap_development_project_0323_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_e6d5ec897e5c279f0940",
+          "id": "natgap_development_project_0323_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_e6d5ec897e5c279f0940",
+          "id": "natgap_development_project_0323_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_014ae3383412a4fda1f0",
+          "id": "natgap_development_project_0328_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_014ae3383412a4fda1f0",
+          "id": "natgap_development_project_0328_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_014ae3383412a4fda1f0",
+          "id": "natgap_development_project_0328_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_014ae3383412a4fda1f0",
+          "id": "natgap_development_project_0328_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_a85f55a55a4584faf5cf",
+          "id": "natgap_development_project_0342_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_a85f55a55a4584faf5cf",
+          "id": "natgap_development_project_0342_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_bb4f342ec6525d37a3de",
+          "id": "natgap_development_project_0342_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_a85f55a55a4584faf5cf",
+          "id": "natgap_development_project_0342_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_c829f8e00f1acbd3f2a5",
+          "id": "natgap_development_project_0346_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_c829f8e00f1acbd3f2a5",
+          "id": "natgap_development_project_0346_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_c829f8e00f1acbd3f2a5",
+          "id": "natgap_development_project_0346_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_c829f8e00f1acbd3f2a5",
+          "id": "natgap_development_project_0346_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1c07d6d7fd1b02330395",
+          "id": "natgap_development_project_0351_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1c07d6d7fd1b02330395",
+          "id": "natgap_development_project_0351_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1c07d6d7fd1b02330395",
+          "id": "natgap_development_project_0351_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1c07d6d7fd1b02330395",
+          "id": "natgap_development_project_0351_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_81d0d2bc78264be67242",
+          "id": "natgap_development_project_0354_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_81d0d2bc78264be67242",
+          "id": "natgap_development_project_0354_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_81d0d2bc78264be67242",
+          "id": "natgap_development_project_0354_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_81d0d2bc78264be67242",
+          "id": "natgap_development_project_0354_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_a1a1352b56855f7be769",
+          "id": "natgap_development_project_0355_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_a1a1352b56855f7be769",
+          "id": "natgap_development_project_0355_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_a1a1352b56855f7be769",
+          "id": "natgap_development_project_0355_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_a1a1352b56855f7be769",
+          "id": "natgap_development_project_0355_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_ceaca1b975dfb54d057b",
+          "id": "natgap_development_project_0357_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_ceaca1b975dfb54d057b",
+          "id": "natgap_development_project_0357_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_daabb096cb00e2802f10",
+          "id": "natgap_development_project_0357_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_daabb096cb00e2802f10",
+          "id": "natgap_development_project_0357_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_7479572f9612f9f3db1d",
+          "id": "natgap_development_project_0359_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_7479572f9612f9f3db1d",
+          "id": "natgap_development_project_0359_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_7479572f9612f9f3db1d",
+          "id": "natgap_development_project_0359_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_7479572f9612f9f3db1d",
+          "id": "natgap_development_project_0359_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1dba7690f4bac642cc4a",
+          "id": "natgap_development_project_0362_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1dba7690f4bac642cc4a",
+          "id": "natgap_development_project_0362_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1dba7690f4bac642cc4a",
+          "id": "natgap_development_project_0362_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1dba7690f4bac642cc4a",
+          "id": "natgap_development_project_0362_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_68ef4232a918c4f21fee",
+          "id": "natgap_development_project_0370_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_68ef4232a918c4f21fee",
+          "id": "natgap_development_project_0370_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_68ef4232a918c4f21fee",
+          "id": "natgap_development_project_0370_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_68ef4232a918c4f21fee",
+          "id": "natgap_development_project_0370_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_5cee478682dd11ae4a51",
+          "id": "natgap_development_project_0375_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_5cee478682dd11ae4a51",
+          "id": "natgap_development_project_0375_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_5cee478682dd11ae4a51",
+          "id": "natgap_development_project_0375_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_5cee478682dd11ae4a51",
+          "id": "natgap_development_project_0375_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_8daa31b63c5f8dc730e2",
+          "id": "natgap_development_project_0376_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_8daa31b63c5f8dc730e2",
+          "id": "natgap_development_project_0376_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_8daa31b63c5f8dc730e2",
+          "id": "natgap_development_project_0376_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_8daa31b63c5f8dc730e2",
+          "id": "natgap_development_project_0376_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_c8ddcb97e6f04c06068d",
+          "id": "natgap_development_project_0385_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_c8ddcb97e6f04c06068d",
+          "id": "natgap_development_project_0385_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_c8ddcb97e6f04c06068d",
+          "id": "natgap_development_project_0385_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_c8ddcb97e6f04c06068d",
+          "id": "natgap_development_project_0385_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_b4000d23172660af0f61",
+          "id": "natgap_development_project_0387_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_b4000d23172660af0f61",
+          "id": "natgap_development_project_0387_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_b4000d23172660af0f61",
+          "id": "natgap_development_project_0387_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_b4000d23172660af0f61",
+          "id": "natgap_development_project_0387_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1ae7a5566f4d5b927ca1",
+          "id": "natgap_development_project_0395_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1ae7a5566f4d5b927ca1",
+          "id": "natgap_development_project_0395_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1ae7a5566f4d5b927ca1",
+          "id": "natgap_development_project_0395_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_1ae7a5566f4d5b927ca1",
+          "id": "natgap_development_project_0395_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_48169e0829e0580699d1",
+          "id": "natgap_development_project_0400_explicit_no_recall",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_48169e0829e0580699d1",
+          "id": "natgap_development_project_0400_mode_unspecified",
+          "legacy_id_correct": true,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_48169e0829e0580699d1",
+          "id": "natgap_development_project_0400_onsite",
+          "legacy_id_correct": false,
+          "selected": null
+        },
+        {
+          "frozen_rrf": "m_48169e0829e0580699d1",
+          "id": "natgap_development_project_0400_remote",
+          "legacy_id_correct": false,
+          "selected": null
+        }
+      ],
+      "forbidden_id_selections": 0,
+      "legacy_id_correct": 100,
+      "negative_abstained": 100,
+      "negative_cases": 100,
+      "positive_cases": 100,
+      "positive_id_correct": 0,
+      "segments": {
+        "natural_gap_explicit_no_recall": {
+          "cases": 50,
+          "legacy_id_correct": 50
+        },
+        "natural_gap_mode_unspecified": {
+          "cases": 50,
+          "legacy_id_correct": 50
+        },
+        "natural_gap_onsite": {
+          "cases": 50,
+          "legacy_id_correct": 0
+        },
+        "natural_gap_remote": {
+          "cases": 50,
+          "legacy_id_correct": 0
+        }
+      }
+    },
+    "without_rrf_best_rank": {
+      "cases": 200,
+      "changed_cases": [],
+      "forbidden_id_selections": 0,
+      "legacy_id_correct": 52,
+      "negative_abstained": 0,
+      "negative_cases": 100,
+      "positive_cases": 100,
+      "positive_id_correct": 52,
+      "segments": {
+        "natural_gap_explicit_no_recall": {
+          "cases": 50,
+          "legacy_id_correct": 0
+        },
+        "natural_gap_mode_unspecified": {
+          "cases": 50,
+          "legacy_id_correct": 0
+        },
+        "natural_gap_onsite": {
+          "cases": 50,
+          "legacy_id_correct": 41
+        },
+        "natural_gap_remote": {
+          "cases": 50,
+          "legacy_id_correct": 11
+        }
+      }
+    }
+  },
+  "cases": 200,
+  "interpretation": "Rank-pool interventions on frozen historical Laya vectors. No active encoder, remote classifier, seed composition, timing or human semantic validation. Complete <=20-memory pools only. without_rrf_best_rank replaces reciprocal-rank sum with best individual rank on the same union; fixed cosine floors remove only semantic contributions and retain lexical matches. No structured-filter ablation can be inferred from filtered pools. Historical ID labels are not factual answer truth. Parameters fixed before reading results; do not choose a production threshold from these observed development/calibration data.",
+  "schema_version": 1,
+  "source": "outputs/iromem/evaluation/v5-natural-gap/development-hybrid-results.jsonl",
+  "source_sha256": "c09cca970f86131592fab68124444bc67a409a2f92c7e2a36eed8d2bb6682412",
+  "split": "development"
+}

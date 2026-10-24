@@ -1,0 +1,248 @@
+{
+  "contract_version": 1,
+  "implementation_sha256": "b84503823e881d12571e94bae587d2e65f6f8006699c92e0a96f1680370d3b2c",
+  "request_id": "m4-development-07-jev",
+  "execution_status": "completed",
+  "outcome": "evidence_selected",
+  "effective_request": {
+    "contract_version": 1,
+    "search": {
+      "query": "¿A qué hora cierra Greta el taller?",
+      "scope_kind": "project",
+      "scope_id": "m4-development-07",
+      "entity_id": null,
+      "actor_id": "local",
+      "as_of": "2026-10-24T12:00:00.000Z",
+      "limit": 8,
+      "query_mode": "keywords",
+      "memory_types": [],
+      "bm25_weights": null
+    },
+    "provider": "jev",
+    "selection_policy": "per_memory_factors_v1",
+    "request_id": "m4-development-07-jev",
+    "context": [],
+    "unresolved_references": [],
+    "budgets": {
+      "input_bytes": 32768,
+      "seed_bytes": 16384,
+      "input_tokens": 16384,
+      "seed_tokens": 2048,
+      "deadline_ms": 25000
+    },
+    "source_policy": "report",
+    "calibration": null
+  },
+  "input_sha256": "cbfc26e02a566c61dc60687dd493b021f3bb42810dbb84204e4ea8a915c82291",
+  "started_at": "2026-10-24T19:48:09.815Z",
+  "finished_at": "2026-10-24T19:48:10.905Z",
+  "total_ms": 1092.267125,
+  "segmentation": {
+    "version": "literal_segments_v1",
+    "original_sha256": "3eb5c06d25dde8f992c06a6eb0b9f68058e3f1f45a7f02ecaca83ad750976e49",
+    "original_bytes": 37,
+    "coverage": "complete",
+    "semantic_independence": "not_assessed",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start_byte": 0,
+        "end_byte": 37,
+        "text": "¿A qué hora cierra Greta el taller?",
+        "boundary": "end_of_input",
+        "exceeds_soft_limit": false
+      }
+    ],
+    "warnings": []
+  },
+  "context_segmentations": [],
+  "ambiguity": "not_assessed",
+  "clarifications": [],
+  "retrieval": {
+    "status": "complete",
+    "method": "fts5_keywords",
+    "candidates": [
+      {
+        "memory_id": "m4-development-07",
+        "revision": 1,
+        "summary": "Greta closes the workshop at eighteen hundred hours.",
+        "conditions": null,
+        "source": {
+          "kind": "document",
+          "ref": "synthetic:m4-factor-v1/development-07",
+          "locator": null
+        },
+        "state": "active",
+        "bm25": -4.190618329730425
+      }
+    ],
+    "semantic_coverage": "disabled",
+    "coverage": {
+      "eligible_memories": 1,
+      "indexed_memories": 1,
+      "matched_memories": 1,
+      "returned_memories": 1,
+      "truncated": false,
+      "fts_index": "complete",
+      "query": "executed",
+      "retrieval": "complete"
+    }
+  },
+  "assessments": [
+    {
+      "memory_id": "m4-development-07",
+      "revision": 1,
+      "selected": true,
+      "included_in_seed": true,
+      "relation": "unassessed",
+      "origin": "provider",
+      "validation": "structural_only",
+      "provenance_status": "declared_unverified",
+      "reason": null,
+      "applicability": true,
+      "requested_fact": true,
+      "premise_correction": false,
+      "relevance": true,
+      "calibrated_factor_scores": null,
+      "factor_scores": {
+        "same_context": 0.98,
+        "requested_fact": 0.99,
+        "premise_correction": 0.0
+      },
+      "calibration_status": "not_calibrated"
+    }
+  ],
+  "potential_equivalents": [],
+  "seed": {
+    "status": "complete",
+    "method": "fts5_external_classifier",
+    "classifier": "typesafe/jev-1.13",
+    "semantic_coverage": "disabled",
+    "memories": [
+      {
+        "memory_id": "m4-development-07",
+        "revision": 1,
+        "scope_kind": "project",
+        "scope_id": "m4-development-07",
+        "summary": "Greta closes the workshop at eighteen hundred hours.",
+        "conditions": null,
+        "source": {
+          "kind": "document",
+          "ref": "synthetic:m4-factor-v1/development-07",
+          "locator": null
+        },
+        "provenance_status": "declared_unverified",
+        "state": "active"
+      }
+    ],
+    "potential_equivalents": [],
+    "seed_text": "[m4-development-07@1] Greta closes the workshop at eighteen hundred hours.\n  Fuente declarada: document / synthetic:m4-factor-v1/development-07\n[Procedencia local: m4-development-07@1=declared_unverified. Solo se comprueba el texto original contra snapshots aportados por el operador; veracidad, resumen y condiciones añadidas sin evaluar.]"
+  },
+  "coverage": {
+    "input": "complete",
+    "semantic_index": "not_applicable",
+    "retrieval": "complete",
+    "candidate_limit": 8,
+    "returned_candidates": 1,
+    "candidates_presented": 1,
+    "classification": "complete",
+    "equivalence_review": "not_applicable",
+    "question": "unknown",
+    "seed": "complete"
+  },
+  "stages": [
+    {
+      "name": "validation",
+      "status": "completed",
+      "elapsed_ms": 1.7891249999999999,
+      "reason_code": null
+    },
+    {
+      "name": "segmentation",
+      "status": "completed",
+      "elapsed_ms": 0.017082999999999997,
+      "reason_code": null
+    },
+    {
+      "name": "search",
+      "status": "completed",
+      "elapsed_ms": 0.9309999999999999,
+      "reason_code": null
+    },
+    {
+      "name": "source_verification",
+      "status": "completed",
+      "elapsed_ms": 0.17304199999999997,
+      "reason_code": null
+    },
+    {
+      "name": "classification",
+      "status": "completed",
+      "elapsed_ms": 1086.310375,
+      "reason_code": null
+    },
+    {
+      "name": "composition",
+      "status": "completed",
+      "elapsed_ms": 2.9842079999999997,
+      "reason_code": null
+    }
+  ],
+  "issues": [],
+  "usage": {
+    "classifier_invocations": 1,
+    "receipt_status": "complete",
+    "served_model": "typesafe/jev-1.13-20260917",
+    "input_tokens": 767,
+    "output_tokens": 101,
+    "reported_cost_usd": 3.2214e-05,
+    "cost_status": "reported"
+  },
+  "token_accounting": {
+    "profile": "o200k_base:tiktoken-rs-0.12.0:ordinary:utf8-json-v1",
+    "input_basis": "serialized_request_json",
+    "provider_tokenizer": "unverified",
+    "input_limit": 16384,
+    "seed_limit": 2048,
+    "accepted_input_tokens": 408,
+    "requests": [
+      {
+        "stage": "classification",
+        "request_sha256": "d8b1a4a8b2d0d5c63bfbe1aebd50485c0e1f0dda5e531b073d99642a30d9a810",
+        "json_tokens": 408,
+        "accepted": true
+      }
+    ],
+    "seed_tokens": 79,
+    "seed_status": "complete"
+  },
+  "source_verification": {
+    "policy": "report",
+    "checks": [
+      {
+        "check_id": "a5381872e6af7afae90d77ae34cc75275d48437485fea4a5fa9cb2a830ff7369",
+        "memory_id": "m4-development-07",
+        "revision": 1,
+        "source": {
+          "kind": "document",
+          "ref": "synthetic:m4-factor-v1/development-07",
+          "locator": null
+        },
+        "snapshot_id": null,
+        "snapshot_version": null,
+        "snapshot_sha256": null,
+        "observed_snapshot_sha256": null,
+        "original_sha256": "0ff6ff2957f9f19d221da785c59abe0a4f774c73b686a597bb2f7f9390cf56ee",
+        "start_byte": null,
+        "end_byte": null,
+        "status": "declared_unverified",
+        "reason_code": "source_not_registered",
+        "checked_at": "2026-10-24T19:48:08.234Z",
+        "profile": "local_snapshot_literal_v1",
+        "semantic_support": "not_assessed"
+      }
+    ]
+  },
+  "requested_model": "typesafe/jev-1.13",
+  "local_review": "not_available_dashboard_removed"
+}

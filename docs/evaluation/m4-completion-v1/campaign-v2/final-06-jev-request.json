@@ -1,0 +1,62 @@
+{
+  "contract_version": 1,
+  "search": {
+    "query": "Vasco viajará a Quito. ¿Qué adaptador llevará Vasco?",
+    "scope_kind": "project",
+    "scope_id": "m4-final-06",
+    "actor_id": "local",
+    "as_of": "2026-10-24T12:00:00.000Z",
+    "limit": 8
+  },
+  "provider": "jev",
+  "selection_policy": "per_memory_factors_v1",
+  "request_id": "m4-final-06-jev",
+  "calibration": {
+    "factors": {
+      "premise_correction": [
+        {
+          "n": 7,
+          "positives": 0,
+          "upper": 0.5
+        },
+        {
+          "n": 1,
+          "positives": 1,
+          "upper": 1.0
+        }
+      ],
+      "requested_fact": [
+        {
+          "n": 3,
+          "positives": 0,
+          "upper": 0.5
+        },
+        {
+          "n": 5,
+          "positives": 4,
+          "upper": 1.0
+        }
+      ],
+      "same_context": [
+        {
+          "n": 4,
+          "positives": 2,
+          "upper": 0.5
+        },
+        {
+          "n": 4,
+          "positives": 4,
+          "upper": 1.0
+        }
+      ]
+    },
+    "profile": "factor_empirical_bins_v1",
+    "profile_sha256": "2a4e1a95035032f66b4b272c1ac91c1b5537cd84aa1c922eb8bc861ca34cff77",
+    "provider": "jev",
+    "requested_model": "typesafe/jev-1.13",
+    "schema_version": 1,
+    "selection_policy": "per_memory_factors_v1",
+    "served_model": "typesafe/jev-1.13-20260917",
+    "training_sha256": "d33efe63c346f28eada540cecffa261bd81e6267da2337d27bff1b1da7762bb6"
+  }
+}

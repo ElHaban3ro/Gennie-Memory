@@ -1,0 +1,434 @@
+[
+  {
+    "id": "m4-development-01",
+    "scope_kind": "project",
+    "scope_id": "m4-development-01",
+    "actor_id": "local",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Alba usa el editor Helix para su proyecto.",
+    "summary": "Alba usa el editor Helix para su proyecto.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:m4-factor-v1/development-01"
+    }
+  },
+  {
+    "id": "m4-development-02",
+    "scope_kind": "project",
+    "scope_id": "m4-development-02",
+    "actor_id": "local",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Bruno no ha enviado el informe; el envío sigue pendiente.",
+    "summary": "Bruno no ha enviado el informe; el envío sigue pendiente.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:m4-factor-v1/development-02"
+    }
+  },
+  {
+    "id": "m4-development-03",
+    "scope_kind": "project",
+    "scope_id": "m4-development-03",
+    "actor_id": "local",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Celia recibe las alertas por correo electrónico.",
+    "summary": "Celia recibe las alertas por correo electrónico.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:m4-factor-v1/development-03"
+    }
+  },
+  {
+    "id": "m4-development-04",
+    "scope_kind": "project",
+    "scope_id": "m4-development-04",
+    "actor_id": "local",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El distintivo de Dario es turquesa.",
+    "summary": "El distintivo de Dario es turquesa.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:m4-factor-v1/development-04"
+    }
+  },
+  {
+    "id": "m4-development-05",
+    "scope_kind": "project",
+    "scope_id": "m4-development-05",
+    "actor_id": "local",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Elena prefiere agenda breve si la reunión es remota; si es presencial, agenda extensa.",
+    "summary": "Elena prefiere agenda breve si la reunión es remota; si es presencial, agenda extensa.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:m4-factor-v1/development-05"
+    }
+  },
+  {
+    "id": "m4-development-06",
+    "scope_kind": "project",
+    "scope_id": "m4-development-06",
+    "actor_id": "local",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Si Fabio viaja a Lima, llevará el adaptador azul.",
+    "summary": "Si Fabio viaja a Lima, llevará el adaptador azul.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:m4-factor-v1/development-06"
+    }
+  },
+  {
+    "id": "m4-development-07",
+    "scope_kind": "project",
+    "scope_id": "m4-development-07",
+    "actor_id": "local",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Greta closes the workshop at eighteen hundred hours.",
+    "summary": "Greta closes the workshop at eighteen hundred hours.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:m4-factor-v1/development-07"
+    }
+  },
+  {
+    "id": "m4-development-08",
+    "scope_kind": "project",
+    "scope_id": "m4-development-08",
+    "actor_id": "local",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Hugo necesita presentar un documento para iniciar el trámite.",
+    "summary": "Hugo necesita presentar un documento para iniciar el trámite.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:m4-factor-v1/development-08"
+    }
+  },
+  {
+    "id": "m4-calibration-01",
+    "scope_kind": "project",
+    "scope_id": "m4-calibration-01",
+    "actor_id": "local",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Ines usa el editor Helix para su proyecto.",
+    "summary": "Ines usa el editor Helix para su proyecto.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:m4-factor-v1/calibration-01"
+    }
+  },
+  {
+    "id": "m4-calibration-02",
+    "scope_kind": "project",
+    "scope_id": "m4-calibration-02",
+    "actor_id": "local",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Jairo no ha enviado el informe; el envío sigue pendiente.",
+    "summary": "Jairo no ha enviado el informe; el envío sigue pendiente.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:m4-factor-v1/calibration-02"
+    }
+  },
+  {
+    "id": "m4-calibration-03",
+    "scope_kind": "project",
+    "scope_id": "m4-calibration-03",
+    "actor_id": "local",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Karla recibe las alertas por correo electrónico.",
+    "summary": "Karla recibe las alertas por correo electrónico.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:m4-factor-v1/calibration-03"
+    }
+  },
+  {
+    "id": "m4-calibration-04",
+    "scope_kind": "project",
+    "scope_id": "m4-calibration-04",
+    "actor_id": "local",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El distintivo de Lauro es turquesa.",
+    "summary": "El distintivo de Lauro es turquesa.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:m4-factor-v1/calibration-04"
+    }
+  },
+  {
+    "id": "m4-calibration-05",
+    "scope_kind": "project",
+    "scope_id": "m4-calibration-05",
+    "actor_id": "local",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Marta prefiere agenda breve si la reunión es remota; si es presencial, agenda extensa.",
+    "summary": "Marta prefiere agenda breve si la reunión es remota; si es presencial, agenda extensa.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:m4-factor-v1/calibration-05"
+    }
+  },
+  {
+    "id": "m4-calibration-06",
+    "scope_kind": "project",
+    "scope_id": "m4-calibration-06",
+    "actor_id": "local",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Si Nereo viaja a Lima, llevará el adaptador azul.",
+    "summary": "Si Nereo viaja a Lima, llevará el adaptador azul.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:m4-factor-v1/calibration-06"
+    }
+  },
+  {
+    "id": "m4-calibration-07",
+    "scope_kind": "project",
+    "scope_id": "m4-calibration-07",
+    "actor_id": "local",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Olga closes the workshop at eighteen hundred hours.",
+    "summary": "Olga closes the workshop at eighteen hundred hours.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:m4-factor-v1/calibration-07"
+    }
+  },
+  {
+    "id": "m4-calibration-08",
+    "scope_kind": "project",
+    "scope_id": "m4-calibration-08",
+    "actor_id": "local",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Pablo necesita presentar un documento para iniciar el trámite.",
+    "summary": "Pablo necesita presentar un documento para iniciar el trámite.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:m4-factor-v1/calibration-08"
+    }
+  },
+  {
+    "id": "m4-final-01",
+    "scope_kind": "project",
+    "scope_id": "m4-final-01",
+    "actor_id": "local",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Queta usa el editor Helix para su proyecto.",
+    "summary": "Queta usa el editor Helix para su proyecto.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:m4-factor-v1/final-01"
+    }
+  },
+  {
+    "id": "m4-final-02",
+    "scope_kind": "project",
+    "scope_id": "m4-final-02",
+    "actor_id": "local",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Ramon no ha enviado el informe; el envío sigue pendiente.",
+    "summary": "Ramon no ha enviado el informe; el envío sigue pendiente.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:m4-factor-v1/final-02"
+    }
+  },
+  {
+    "id": "m4-final-03",
+    "scope_kind": "project",
+    "scope_id": "m4-final-03",
+    "actor_id": "local",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Sonia recibe las alertas por correo electrónico.",
+    "summary": "Sonia recibe las alertas por correo electrónico.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:m4-factor-v1/final-03"
+    }
+  },
+  {
+    "id": "m4-final-04",
+    "scope_kind": "project",
+    "scope_id": "m4-final-04",
+    "actor_id": "local",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "El distintivo de Tadeo es turquesa.",
+    "summary": "El distintivo de Tadeo es turquesa.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:m4-factor-v1/final-04"
+    }
+  },
+  {
+    "id": "m4-final-05",
+    "scope_kind": "project",
+    "scope_id": "m4-final-05",
+    "actor_id": "local",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Ursula prefiere agenda breve si la reunión es remota; si es presencial, agenda extensa.",
+    "summary": "Ursula prefiere agenda breve si la reunión es remota; si es presencial, agenda extensa.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:m4-factor-v1/final-05"
+    }
+  },
+  {
+    "id": "m4-final-06",
+    "scope_kind": "project",
+    "scope_id": "m4-final-06",
+    "actor_id": "local",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Si Vasco viaja a Lima, llevará el adaptador azul.",
+    "summary": "Si Vasco viaja a Lima, llevará el adaptador azul.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:m4-factor-v1/final-06"
+    }
+  },
+  {
+    "id": "m4-final-07",
+    "scope_kind": "project",
+    "scope_id": "m4-final-07",
+    "actor_id": "local",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Wanda closes the workshop at eighteen hundred hours.",
+    "summary": "Wanda closes the workshop at eighteen hundred hours.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:m4-factor-v1/final-07"
+    }
+  },
+  {
+    "id": "m4-final-08",
+    "scope_kind": "project",
+    "scope_id": "m4-final-08",
+    "actor_id": "local",
+    "entity_id": null,
+    "revision": 1,
+    "memory_type": "fact",
+    "original_text": "Xenia necesita presentar un documento para iniciar el trámite.",
+    "summary": "Xenia necesita presentar un documento para iniciar el trámite.",
+    "state": "active",
+    "valid_from": null,
+    "valid_until": null,
+    "source": {
+      "kind": "document",
+      "ref": "synthetic:m4-factor-v1/final-08"
+    }
+  }
+]

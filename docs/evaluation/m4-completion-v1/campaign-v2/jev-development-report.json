@@ -1,0 +1,366 @@
+{
+  "bank_sha256": {
+    "blind-review.json": "c91857bbc7eb61a5a11eaff435dcef8f48b6d63104ccf3b2ea19598031aa2d18",
+    "cases.json": "89fc6a5033efff58848329ed4e76b4786bb5e7704506c647f7dc8e25fbb0f496",
+    "corpus.json": "c1e0a16c81a863679722a63a9fb9a2889bcceabd59d394663a096a9e7ec6f6b1",
+    "labels.json": "35dff234ef9cb8e489bffbcf131a691240d59d01f1c43e9a3f2c7ba68e4203b0"
+  },
+  "calibration_sha256": "959d687019464ba13c404fbe9fa0cac6ebe15e1b20deff70b2f2a347bd6672b3",
+  "cases": [
+    {
+      "expected_selected": true,
+      "id": "development-01",
+      "role": "support",
+      "segment": "direct",
+      "selected": true,
+      "selection_correct": true
+    },
+    {
+      "expected_selected": true,
+      "id": "development-02",
+      "role": "refutation",
+      "segment": "refutation",
+      "selected": true,
+      "selection_correct": true
+    },
+    {
+      "expected_selected": true,
+      "id": "development-03",
+      "role": "partial",
+      "segment": "partial",
+      "selected": false,
+      "selection_correct": false
+    },
+    {
+      "expected_selected": false,
+      "id": "development-04",
+      "role": "irrelevant",
+      "segment": "foreign_subject",
+      "selected": false,
+      "selection_correct": true
+    },
+    {
+      "expected_selected": true,
+      "id": "development-05",
+      "role": "support",
+      "segment": "condition_applies",
+      "selected": true,
+      "selection_correct": true
+    },
+    {
+      "expected_selected": false,
+      "id": "development-06",
+      "role": "irrelevant",
+      "segment": "condition_does_not_apply",
+      "selected": false,
+      "selection_correct": true
+    },
+    {
+      "expected_selected": true,
+      "id": "development-07",
+      "role": "support",
+      "segment": "cross_language",
+      "selected": true,
+      "selection_correct": true
+    },
+    {
+      "expected_selected": false,
+      "id": "development-08",
+      "role": "irrelevant",
+      "segment": "silence_not_negation",
+      "selected": false,
+      "selection_correct": true
+    }
+  ],
+  "degraded": [],
+  "expected_cases": 8,
+  "factors": {
+    "premise_correction": {
+      "calibrated_values": [
+        0.1111111111111111,
+        0.6666666666666666
+      ],
+      "correct_boolean_judgments": 8,
+      "empirical_two_bins": {
+        "bins": [
+          {
+            "lower": 0.0,
+            "mean_score": 0.11111111111111113,
+            "n": 7,
+            "positive_rate": 0.0,
+            "upper": 0.2
+          },
+          {
+            "lower": 0.2,
+            "mean_score": null,
+            "n": 0,
+            "positive_rate": null,
+            "upper": 0.4
+          },
+          {
+            "lower": 0.4,
+            "mean_score": null,
+            "n": 0,
+            "positive_rate": null,
+            "upper": 0.6
+          },
+          {
+            "lower": 0.6,
+            "mean_score": 0.6666666666666666,
+            "n": 1,
+            "positive_rate": 1.0,
+            "upper": 0.8
+          },
+          {
+            "lower": 0.8,
+            "mean_score": null,
+            "n": 0,
+            "positive_rate": null,
+            "upper": 1.0
+          }
+        ],
+        "brier": 0.02469135802469136,
+        "ece_5_fixed_bins": 0.1388888888888889,
+        "n": 8
+      },
+      "expected_cases": 8,
+      "raw": {
+        "bins": [
+          {
+            "lower": 0.0,
+            "mean_score": 0.018571428571428572,
+            "n": 7,
+            "positive_rate": 0.0,
+            "upper": 0.2
+          },
+          {
+            "lower": 0.2,
+            "mean_score": null,
+            "n": 0,
+            "positive_rate": null,
+            "upper": 0.4
+          },
+          {
+            "lower": 0.4,
+            "mean_score": null,
+            "n": 0,
+            "positive_rate": null,
+            "upper": 0.6
+          },
+          {
+            "lower": 0.6,
+            "mean_score": null,
+            "n": 0,
+            "positive_rate": null,
+            "upper": 0.8
+          },
+          {
+            "lower": 0.8,
+            "mean_score": 0.99,
+            "n": 1,
+            "positive_rate": 1.0,
+            "upper": 1.0
+          }
+        ],
+        "brier": 0.001825,
+        "ece_5_fixed_bins": 0.0175,
+        "n": 8
+      },
+      "unscored": []
+    },
+    "requested_fact": {
+      "calibrated_values": [
+        0.2,
+        0.7142857142857143
+      ],
+      "correct_boolean_judgments": 7,
+      "empirical_two_bins": {
+        "bins": [
+          {
+            "lower": 0.0,
+            "mean_score": null,
+            "n": 0,
+            "positive_rate": null,
+            "upper": 0.2
+          },
+          {
+            "lower": 0.2,
+            "mean_score": 0.20000000000000004,
+            "n": 3,
+            "positive_rate": 0.0,
+            "upper": 0.4
+          },
+          {
+            "lower": 0.4,
+            "mean_score": null,
+            "n": 0,
+            "positive_rate": null,
+            "upper": 0.6
+          },
+          {
+            "lower": 0.6,
+            "mean_score": 0.7142857142857143,
+            "n": 5,
+            "positive_rate": 0.8,
+            "upper": 0.8
+          },
+          {
+            "lower": 0.8,
+            "mean_score": null,
+            "n": 0,
+            "positive_rate": null,
+            "upper": 1.0
+          }
+        ],
+        "brier": 0.11959183673469388,
+        "ece_5_fixed_bins": 0.12857142857142856,
+        "n": 8
+      },
+      "expected_cases": 8,
+      "raw": {
+        "bins": [
+          {
+            "lower": 0.0,
+            "mean_score": 0.016666666666666666,
+            "n": 3,
+            "positive_rate": 0.0,
+            "upper": 0.2
+          },
+          {
+            "lower": 0.2,
+            "mean_score": null,
+            "n": 0,
+            "positive_rate": null,
+            "upper": 0.4
+          },
+          {
+            "lower": 0.4,
+            "mean_score": null,
+            "n": 0,
+            "positive_rate": null,
+            "upper": 0.6
+          },
+          {
+            "lower": 0.6,
+            "mean_score": 0.72,
+            "n": 2,
+            "positive_rate": 0.5,
+            "upper": 0.8
+          },
+          {
+            "lower": 0.8,
+            "mean_score": 0.9866666666666667,
+            "n": 3,
+            "positive_rate": 1.0,
+            "upper": 1.0
+          }
+        ],
+        "brier": 0.0652125,
+        "ece_5_fixed_bins": 0.06625,
+        "n": 8
+      },
+      "unscored": []
+    },
+    "same_context": {
+      "calibrated_values": [
+        0.5,
+        0.8333333333333334
+      ],
+      "correct_boolean_judgments": 6,
+      "empirical_two_bins": {
+        "bins": [
+          {
+            "lower": 0.0,
+            "mean_score": null,
+            "n": 0,
+            "positive_rate": null,
+            "upper": 0.2
+          },
+          {
+            "lower": 0.2,
+            "mean_score": null,
+            "n": 0,
+            "positive_rate": null,
+            "upper": 0.4
+          },
+          {
+            "lower": 0.4,
+            "mean_score": 0.5,
+            "n": 4,
+            "positive_rate": 0.5,
+            "upper": 0.6
+          },
+          {
+            "lower": 0.6,
+            "mean_score": null,
+            "n": 0,
+            "positive_rate": null,
+            "upper": 0.8
+          },
+          {
+            "lower": 0.8,
+            "mean_score": 0.8333333333333334,
+            "n": 4,
+            "positive_rate": 1.0,
+            "upper": 1.0
+          }
+        ],
+        "brier": 0.1388888888888889,
+        "ece_5_fixed_bins": 0.08333333333333331,
+        "n": 8
+      },
+      "expected_cases": 8,
+      "raw": {
+        "bins": [
+          {
+            "lower": 0.0,
+            "mean_score": 0.025,
+            "n": 2,
+            "positive_rate": 0.0,
+            "upper": 0.2
+          },
+          {
+            "lower": 0.2,
+            "mean_score": null,
+            "n": 0,
+            "positive_rate": null,
+            "upper": 0.4
+          },
+          {
+            "lower": 0.4,
+            "mean_score": 0.42500000000000004,
+            "n": 2,
+            "positive_rate": 1.0,
+            "upper": 0.6
+          },
+          {
+            "lower": 0.6,
+            "mean_score": 0.76,
+            "n": 1,
+            "positive_rate": 1.0,
+            "upper": 0.8
+          },
+          {
+            "lower": 0.8,
+            "mean_score": 0.9700000000000001,
+            "n": 3,
+            "positive_rate": 1.0,
+            "upper": 1.0
+          }
+        ],
+        "brier": 0.09058750000000002,
+        "ece_5_fixed_bins": 0.19124999999999998,
+        "n": 8
+      },
+      "unscored": []
+    }
+  },
+  "interpretation": "Descriptive synthetic sample only. Eight cases per split; sources disjoint but template families shared. Fixed two-bin Laplace rates have tiny support and do not certify facts or authorize general use. Missing scores and degraded operations are not successes.",
+  "provider": "jev",
+  "records_sha256": "387b208d841b6f74d162c7c74b25f3dbc8edf75943d6d87c50a8e60a578a1680",
+  "requested_model": "typesafe/jev-1.13",
+  "schema_version": 1,
+  "selection_correct": 7,
+  "served_model": "typesafe/jev-1.13-20260917",
+  "split": "development"
+}

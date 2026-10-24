@@ -1,0 +1,90 @@
+{
+  "verified_at": "2026-10-24T19:56:17.493Z",
+  "base_commit": "70332d73e40241a96d3b4079f214f9cb5db99a19",
+  "scope": "final shared local source; no commit, push or deployment",
+  "workspace_runs": [
+    {
+      "command": "cargo test --offline --workspace",
+      "exit_code": 0,
+      "passed": 1173,
+      "failed": 0,
+      "ignored": 26,
+      "log": "workspace-default.txt",
+      "log_sha256": "1dd0611b6c9255608e0a1769e100307278c04becf163a8e323702ccf9c26f56a"
+    },
+    {
+      "command": "cargo test --offline --workspace --features gennie-memory/local-embeddings",
+      "exit_code": 0,
+      "passed": 1189,
+      "failed": 0,
+      "ignored": 26,
+      "log": "workspace-local-embeddings.txt",
+      "log_sha256": "9f8246fb505288bc108b90d67dc3b1f750538be2dc7cb24f38eca0fff1390ad5"
+    }
+  ],
+  "format": {
+    "command": "cargo fmt --all --check",
+    "exit_code": 0
+  },
+  "whitespace": {
+    "command": "git diff --check",
+    "exit_code": 0
+  },
+  "modified_source_sha256": {
+    "apps/retrieval/src/classifier.rs": "1926338eb3ee5d4593d0812da70952d6d8b0fa8cf056f4ae275e735683256af1",
+    "apps/retrieval/src/lifecycle.rs": "3f02ae7aca969ba313b777bfa763e2aba2e69f9a2383f5883cda6413f223ca5d",
+    "apps/retrieval/src/per_memory.rs": "afca45d93c037e32b8934c47bfc7c012239507c2b0869d5a6401096361de49b5",
+    "apps/retrieval/src/per_memory/factors.rs": "611691c69c976ecc978b896c38136e36c9fbb3fc77795d053be457df08a57297",
+    "apps/retrieval/src/product.rs": "9328c4c344ce01ffec83c233ee4c33d9182283d0456d2bc225e400dde36ae6c1",
+    "apps/retrieval/src/product/calibration.rs": "143b82de8a6cff486b9e2d701efd0ef9ade054616f4a71087d3f601e416d34df",
+    "apps/retrieval/src/product/tests.rs": "5d222327286dc502696d9ec0e77e98523597bed2693d48ba07c5f0dbb9c062a1",
+    "apps/retrieval/src/reconciliation/commands.rs": "a4d7132f606f009a7f05b762b7449cc56d7722c9866fa5d0ccec28714313163e",
+    "apps/retrieval/src/service.rs": "98655017e066fe94a5553f0fcf5407a688b1bfa0cb37fa77fd3022d8842062dc",
+    "apps/retrieval/tests/product_coverage.rs": "6d3f93dbecafeb870b3f9f74a342b97ef8c34a39fd0bfd1e3e5c782473192783",
+    "bootstrap/src/main.rs": "f6838c6f94c2315b02097dca5b6b5da079a38b2c3d86472285cdf7e912a7c30b",
+    "bootstrap/src/openrouter.rs": "789f7adde06cc47c46f8aec0ce084908a167427280bb25c16793a1887a1aee4e",
+    "bootstrap/src/openrouter/per_memory/factors.rs": "2a4e1a95035032f66b4b272c1ac91c1b5537cd84aa1c922eb8bc861ca34cff77",
+    "bootstrap/src/openrouter/token_budget.rs": "17a0b438ebd8fe6af2c77d9ad3857900de4eceb2377bd1dcbf889dfac47aa5a9",
+    "bootstrap/src/session.rs": "5ae06960a4396f4b8f206186c5c967f87b32ddbe45c27ab26421a0c2d07baa01",
+    "bootstrap/src/source_import.rs": "b9ef05aad51ecd3af92cb58032ca43d143342e7f3aeb229d55b9b24548311447",
+    "bootstrap/tests/product_coverage_m4_concurrency.rs": "ffbd790d72e1b66c068797a1a9e6ed2e7178b4470523f11f2ede09ee924f3731",
+    "tools/evaluation/src/m4_calibration.rs": "6a0dbf761ef020de0d26b0efc90a8a2663fc36a4fedfe2c1723a6b5ce6aae2c9",
+    "tools/evaluation/src/m4_rank_replay.rs": "0e0d9d50d81b329f4059cf0f89d0cf59392f05225d5202b890e807837b80188c",
+    "tools/evaluation/src/main.rs": "c1dd0badc85fda18eb0755739567538411c02920e80ec2a85bfb9e0b5061ec55"
+  },
+  "remote_campaign": {
+    "completed_calls": 48,
+    "development_smoke_calls": 1,
+    "total_http_calls": 49,
+    "total_reported_cost_usd": 0.002361316,
+    "final_selection": {
+      "decisions": {
+        "correct": 8,
+        "cases": 8
+      },
+      "jev": {
+        "correct": 7,
+        "cases": 8
+      }
+    },
+    "calibration_adoption": "rejected: held-out Brier worse for all three factors and both providers"
+  },
+  "independent_reviews": {
+    "recall": "no remaining blocking findings",
+    "m4": "no remaining blocking findings"
+  },
+  "limits": [
+    "Synthetic cases and shared template families; no general quality approval.",
+    "Empirical calibration mechanisms are experimental; no production selection threshold adopted.",
+    "Concurrency observed for 30 seconds; no long-term production guarantee.",
+    "E5 and hybrid remain research; no Codex integration."
+  ],
+  "formatting_after_workspace_runs": [
+    {
+      "path": "tools/evaluation/src/main.rs",
+      "tested_sha256": "11962d8e015bf6d32cb4aed3864b648d76a62dec37c80882419c2c3d1bb24309",
+      "formatted_sha256": "c1dd0badc85fda18eb0755739567538411c02920e80ec2a85bfb9e0b5061ec55",
+      "reason": "cargo fmt whitespace-only after workspace suites; no behavior changes"
+    }
+  ]
+}

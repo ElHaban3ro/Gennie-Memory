@@ -1,0 +1,11 @@
+{
+  "scope": "local constructor failure reproduced before HTTP; failed request was not sent",
+  "returncode": 1,
+  "stderr": "gennie-memory: no se pudo crear el archivo de captura de evaluación",
+  "capture_sha256_before_after": "e055160b7d3ff22b2668dd1e962f93a1d520d102b5f1679074952df3c2fc9e0c",
+  "http_calls_in_capture": 1,
+  "known_reported_cost_usd": 6.27e-05,
+  "cause": "orchestrator reused create_new capture path across separate CLI processes",
+  "fix": "fresh capture paths per operation; preserve aborted development run; no final partition opened",
+  "served_snapshot_observed": "openai/gpt-6-luna-decisions-20261006"
+}

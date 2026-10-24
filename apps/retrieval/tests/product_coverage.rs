@@ -478,3 +478,78 @@ fn empty_scope_ambiguity_and_oversized_context_do_not_reach_classifier() {
     assert!(out["seed"].is_null());
     assert_ne!(out["outcome"], "no_candidates");
 }
+
+#[test]
+fn every_matrix_query_has_real_entity_and_type_filter_ablations() {
+    let conn = database();
+    let corpus: Vec<FixtureMemory> = serde_json::from_str(CORPUS).unwrap();
+    let mut rows = vec![];
+    let mut extra_candidates = 0;
+    for case in cases() {
+        for mode in [QueryMode::Natural, QueryMode::Keywords] {
+            let mut original = case.search.clone();
+            original.query_mode = Some(mode);
+            let baseline = service::search(&conn, &original).unwrap();
+            let baseline_ids = ids(&baseline);
+            for arm in [
+                "all_filters",
+                "without_entity",
+                "without_type",
+                "without_entity_and_type",
+            ] {
+                let mut query = original.clone();
+                if arm == "without_entity" || arm == "without_entity_and_type" {
+                    query.entity_id = None;
+                }
+                if arm == "without_type" || arm == "without_entity_and_type" {
+                    query.memory_types.clear();
+                }
+                let start = Instant::now();
+                let result = service::search(&conn, &query).unwrap();
+                let elapsed_ms = start.elapsed().as_secs_f64() * 1000.;
+                let selected = ids(&result);
+                // Removing optional filters preserves the actor/scope boundary.
+                // All matching pools in this frozen matrix fit the same limit.
+                assert!(!result.coverage.truncated, "{} {arm}", case.id);
+                for id in &baseline_ids {
+                    assert!(selected.contains(id), "{} {arm} lost {id}", case.id);
+                }
+                for c in &result.candidates {
+                    let memory = corpus
+                        .iter()
+                        .find(|m| m.id == c.memory_id && m.revision == c.revision)
+                        .unwrap();
+                    assert_eq!(
+                        memory.actor_id.as_deref().unwrap_or("local"),
+                        query.actor_id.as_deref().unwrap_or("local")
+                    );
+                    assert_eq!(memory.scope_kind, query.scope_kind);
+                    assert_eq!(memory.scope_id, query.scope_id);
+                }
+                let added: Vec<_> = selected
+                    .iter()
+                    .filter(|id| !baseline_ids.contains(id))
+                    .collect();
+                extra_candidates += added.len();
+                rows.push(json!({"id":case.id,"query_mode":mode,"arm":arm,"ids":selected,"added_vs_all_filters":added,"elapsed_ms":elapsed_ms}));
+            }
+        }
+    }
+    assert_eq!(rows.len(), 160);
+    assert!(
+        extra_candidates > 0,
+        "matrix must exercise actual filter removal"
+    );
+    if let Ok(path) = std::env::var("GENNIE_M4_FILTER_REPORT") {
+        use std::io::Write;
+        let report = json!({"schema_version":1,"corpus_sha256":sha256_hex(CORPUS.as_bytes()),"cases_sha256":sha256_hex(CASES.as_bytes()),"queries":40,"executions":rows.len(),"added_candidate_occurrences":extra_candidates,"rows":rows,"interpretation":"Current product service executions on the same synthetic corpus/queries. Only optional entity/type filters removed; actor/scope retained. Candidate accessibility, not semantic quality or real authentication. Timings are a short warm local test, not stable latency estimates."});
+        let mut file = std::fs::OpenOptions::new()
+            .create_new(true)
+            .write(true)
+            .open(path)
+            .unwrap();
+        file.write_all(serde_json::to_vec_pretty(&report).unwrap().as_slice())
+            .unwrap();
+        file.sync_all().unwrap();
+    }
+}

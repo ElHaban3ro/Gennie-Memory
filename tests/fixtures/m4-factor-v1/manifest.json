@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "case_count": 24,
+  "splits": {
+    "development": 8,
+    "calibration": 8,
+    "final": 8
+  },
+  "origin": "synthetic_agent_authored",
+  "human_review": {
+    "status": "confirmed",
+    "sample_ids": [
+      "development-01",
+      "development-02",
+      "calibration-03",
+      "calibration-04",
+      "calibration-05",
+      "final-06",
+      "final-07",
+      "final-08"
+    ],
+    "reviewed_on": "2026-10-24",
+    "evidence": "docs/evaluation/m4-completion-v1/human-review.json"
+  },
+  "partition_limit": "Disjoint source texts, names and scopes; template families are shared. Not population generalization.",
+  "sha256": {
+    "corpus.json": "c1e0a16c81a863679722a63a9fb9a2889bcceabd59d394663a096a9e7ec6f6b1",
+    "cases.json": "89fc6a5033efff58848329ed4e76b4786bb5e7704506c647f7dc8e25fbb0f496",
+    "labels.json": "35dff234ef9cb8e489bffbcf131a691240d59d01f1c43e9a3f2c7ba68e4203b0",
+    "blind-review.json": "c91857bbc7eb61a5a11eaff435dcef8f48b6d63104ccf3b2ea19598031aa2d18"
+  }
+}

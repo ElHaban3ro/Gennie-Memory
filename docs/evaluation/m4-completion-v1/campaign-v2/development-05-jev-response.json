@@ -1,0 +1,256 @@
+{
+  "contract_version": 1,
+  "implementation_sha256": "b84503823e881d12571e94bae587d2e65f6f8006699c92e0a96f1680370d3b2c",
+  "request_id": "m4-development-05-jev",
+  "execution_status": "completed",
+  "outcome": "evidence_selected",
+  "effective_request": {
+    "contract_version": 1,
+    "search": {
+      "query": "La reunión de Elena es remota. ¿Qué agenda prefiere Elena?",
+      "scope_kind": "project",
+      "scope_id": "m4-development-05",
+      "entity_id": null,
+      "actor_id": "local",
+      "as_of": "2026-10-24T12:00:00.000Z",
+      "limit": 8,
+      "query_mode": "keywords",
+      "memory_types": [],
+      "bm25_weights": null
+    },
+    "provider": "jev",
+    "selection_policy": "per_memory_factors_v1",
+    "request_id": "m4-development-05-jev",
+    "context": [],
+    "unresolved_references": [],
+    "budgets": {
+      "input_bytes": 32768,
+      "seed_bytes": 16384,
+      "input_tokens": 16384,
+      "seed_tokens": 2048,
+      "deadline_ms": 25000
+    },
+    "source_policy": "report",
+    "calibration": null
+  },
+  "input_sha256": "619e298e0017ec5d9bc019e8f8c227aab0797e9128ae65ae2d621245274e0323",
+  "started_at": "2026-10-24T19:48:04.687Z",
+  "finished_at": "2026-10-24T19:48:05.801Z",
+  "total_ms": 1114.937625,
+  "segmentation": {
+    "version": "literal_segments_v1",
+    "original_sha256": "37e71f9b7e83e17e1877431f0fa96a6f860dfc2ccee95dfd2439a9f719d5b67e",
+    "original_bytes": 61,
+    "coverage": "complete",
+    "semantic_independence": "not_assessed",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start_byte": 0,
+        "end_byte": 32,
+        "text": "La reunión de Elena es remota. ",
+        "boundary": "sentence_candidate",
+        "exceeds_soft_limit": false
+      },
+      {
+        "segment_id": 1,
+        "start_byte": 32,
+        "end_byte": 61,
+        "text": "¿Qué agenda prefiere Elena?",
+        "boundary": "end_of_input",
+        "exceeds_soft_limit": false
+      }
+    ],
+    "warnings": []
+  },
+  "context_segmentations": [],
+  "ambiguity": "not_assessed",
+  "clarifications": [],
+  "retrieval": {
+    "status": "complete",
+    "method": "fts5_keywords",
+    "candidates": [
+      {
+        "memory_id": "m4-development-05",
+        "revision": 1,
+        "summary": "Elena prefiere agenda breve si la reunión es remota; si es presencial, agenda extensa.",
+        "conditions": null,
+        "source": {
+          "kind": "document",
+          "ref": "synthetic:m4-factor-v1/development-05",
+          "locator": null
+        },
+        "state": "active",
+        "bm25": -18.388230885286177
+      }
+    ],
+    "semantic_coverage": "disabled",
+    "coverage": {
+      "eligible_memories": 1,
+      "indexed_memories": 1,
+      "matched_memories": 1,
+      "returned_memories": 1,
+      "truncated": false,
+      "fts_index": "complete",
+      "query": "executed",
+      "retrieval": "complete"
+    }
+  },
+  "assessments": [
+    {
+      "memory_id": "m4-development-05",
+      "revision": 1,
+      "selected": true,
+      "included_in_seed": true,
+      "relation": "unassessed",
+      "origin": "provider",
+      "validation": "structural_only",
+      "provenance_status": "declared_unverified",
+      "reason": null,
+      "applicability": true,
+      "requested_fact": true,
+      "premise_correction": false,
+      "relevance": true,
+      "calibrated_factor_scores": null,
+      "factor_scores": {
+        "same_context": 0.95,
+        "requested_fact": 0.98,
+        "premise_correction": 0.0
+      },
+      "calibration_status": "not_calibrated"
+    }
+  ],
+  "potential_equivalents": [],
+  "seed": {
+    "status": "complete",
+    "method": "fts5_external_classifier",
+    "classifier": "typesafe/jev-1.13",
+    "semantic_coverage": "disabled",
+    "memories": [
+      {
+        "memory_id": "m4-development-05",
+        "revision": 1,
+        "scope_kind": "project",
+        "scope_id": "m4-development-05",
+        "summary": "Elena prefiere agenda breve si la reunión es remota; si es presencial, agenda extensa.",
+        "conditions": null,
+        "source": {
+          "kind": "document",
+          "ref": "synthetic:m4-factor-v1/development-05",
+          "locator": null
+        },
+        "provenance_status": "declared_unverified",
+        "state": "active"
+      }
+    ],
+    "potential_equivalents": [],
+    "seed_text": "[m4-development-05@1] Elena prefiere agenda breve si la reunión es remota; si es presencial, agenda extensa.\n  Fuente declarada: document / synthetic:m4-factor-v1/development-05\n[Procedencia local: m4-development-05@1=declared_unverified. Solo se comprueba el texto original contra snapshots aportados por el operador; veracidad, resumen y condiciones añadidas sin evaluar.]"
+  },
+  "coverage": {
+    "input": "complete",
+    "semantic_index": "not_applicable",
+    "retrieval": "complete",
+    "candidate_limit": 8,
+    "returned_candidates": 1,
+    "candidates_presented": 1,
+    "classification": "complete",
+    "equivalence_review": "not_applicable",
+    "question": "unknown",
+    "seed": "complete"
+  },
+  "stages": [
+    {
+      "name": "validation",
+      "status": "completed",
+      "elapsed_ms": 1.639709,
+      "reason_code": null
+    },
+    {
+      "name": "segmentation",
+      "status": "completed",
+      "elapsed_ms": 0.026958,
+      "reason_code": null
+    },
+    {
+      "name": "search",
+      "status": "completed",
+      "elapsed_ms": 0.945416,
+      "reason_code": null
+    },
+    {
+      "name": "source_verification",
+      "status": "completed",
+      "elapsed_ms": 0.15475,
+      "reason_code": null
+    },
+    {
+      "name": "classification",
+      "status": "completed",
+      "elapsed_ms": 1110.5046249999998,
+      "reason_code": null
+    },
+    {
+      "name": "composition",
+      "status": "completed",
+      "elapsed_ms": 1.647875,
+      "reason_code": null
+    }
+  ],
+  "issues": [],
+  "usage": {
+    "classifier_invocations": 1,
+    "receipt_status": "complete",
+    "served_model": "typesafe/jev-1.13-20260917",
+    "input_tokens": 784,
+    "output_tokens": 101,
+    "reported_cost_usd": 3.2928e-05,
+    "cost_status": "reported"
+  },
+  "token_accounting": {
+    "profile": "o200k_base:tiktoken-rs-0.12.0:ordinary:utf8-json-v1",
+    "input_basis": "serialized_request_json",
+    "provider_tokenizer": "unverified",
+    "input_limit": 16384,
+    "seed_limit": 2048,
+    "accepted_input_tokens": 425,
+    "requests": [
+      {
+        "stage": "classification",
+        "request_sha256": "0e0e72f89b8447202d05a02e763ff01d99e5933e8d818a2abf93d3f6fe5c68f4",
+        "json_tokens": 425,
+        "accepted": true
+      }
+    ],
+    "seed_tokens": 90,
+    "seed_status": "complete"
+  },
+  "source_verification": {
+    "policy": "report",
+    "checks": [
+      {
+        "check_id": "7a815deb160f7a0ca01b7adca398ee2f98ba9a1a12c40351717fa248d6180846",
+        "memory_id": "m4-development-05",
+        "revision": 1,
+        "source": {
+          "kind": "document",
+          "ref": "synthetic:m4-factor-v1/development-05",
+          "locator": null
+        },
+        "snapshot_id": null,
+        "snapshot_version": null,
+        "snapshot_sha256": null,
+        "observed_snapshot_sha256": null,
+        "original_sha256": "127233ac5a611a985dbcd4bcbb06e50ed54e911ed53a6d8c6762469a9be13bd6",
+        "start_byte": null,
+        "end_byte": null,
+        "status": "declared_unverified",
+        "reason_code": "source_not_registered",
+        "checked_at": "2026-10-24T19:48:03.249Z",
+        "profile": "local_snapshot_literal_v1",
+        "semantic_support": "not_assessed"
+      }
+    ]
+  },
+  "requested_model": "typesafe/jev-1.13",
+  "local_review": "not_available_dashboard_removed"
+}

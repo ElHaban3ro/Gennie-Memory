@@ -1,0 +1,3 @@
+{"event": "started", "id": "development-01", "provider": "decisions", "request_sha256": "4fc9302a88d23dbf7dabfd9a1319b008d6a75e5d17652ebae7789e90913a394d", "sequence": 0, "elapsed_ms": 48.30999999830965}
+{"event": "finished", "id": "development-01", "provider": "decisions", "execution_status": "completed", "usage": {"classifier_invocations": 1, "receipt_status": "complete", "served_model": "openai/gpt-6-luna-decisions-20261006", "input_tokens": 627, "output_tokens": 0, "reported_cost_usd": 6.27e-05, "cost_status": "reported"}, "elapsed_ms": 1594.5846670074388}
+{"event": "started", "id": "development-01", "provider": "jev", "request_sha256": "56536108c8188ece68f639b45d901409294f43cea90e4d6e78937ff9570ea333", "sequence": 1, "elapsed_ms": 1628.8396669988288}

@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "reviewer": "Fernando, user of the coordinating chat",
+  "reviewed_on": "2026-10-24",
+  "review_method": "Explicit asynchronous user confirmation in coordinating chat, reported by root agent",
+  "sample_ids": [
+    "development-01",
+    "development-02",
+    "calibration-03",
+    "calibration-04",
+    "calibration-05",
+    "final-06",
+    "final-07",
+    "final-08"
+  ],
+  "bank_sha256": {
+    "corpus.json": "c1e0a16c81a863679722a63a9fb9a2889bcceabd59d394663a096a9e7ec6f6b1",
+    "cases.json": "89fc6a5033efff58848329ed4e76b4786bb5e7704506c647f7dc8e25fbb0f496",
+    "labels.json": "35dff234ef9cb8e489bffbcf131a691240d59d01f1c43e9a3f2c7ba68e4203b0",
+    "blind-review.json": "c91857bbc7eb61a5a11eaff435dcef8f48b6d63104ccf3b2ea19598031aa2d18"
+  },
+  "sample_sha256": "59bcba0644958769d363380f5504c3c65cc6cb44bad85cab20d5cde0902b2d5a",
+  "initial_confirmation": "Confirmo las 8 etiquetas",
+  "correction_confirmation": "Confirmo las 8 con esta corrección",
+  "correction": "Case final-06 source is now sufficient implication: Si Vasco viaja a Lima, llevará el adaptador azul. Replaces previous solo si wording. Proposed irrelevant label and false/false/false factors were confirmed with corrected source.",
+  "scope": "Eight synthetic cases only. Human confirmation of sample labels is not a provider quality approval; remaining16 labels have independent agent review, with no claimed human review."
+}

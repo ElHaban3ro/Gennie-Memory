@@ -1,0 +1,248 @@
+{
+  "contract_version": 1,
+  "implementation_sha256": "b84503823e881d12571e94bae587d2e65f6f8006699c92e0a96f1680370d3b2c",
+  "request_id": "m4-development-07-decisions",
+  "execution_status": "completed",
+  "outcome": "evidence_selected",
+  "effective_request": {
+    "contract_version": 1,
+    "search": {
+      "query": "¿A qué hora cierra Greta el taller?",
+      "scope_kind": "project",
+      "scope_id": "m4-development-07",
+      "entity_id": null,
+      "actor_id": "local",
+      "as_of": "2026-10-24T12:00:00.000Z",
+      "limit": 8,
+      "query_mode": "keywords",
+      "memory_types": [],
+      "bm25_weights": null
+    },
+    "provider": "decisions",
+    "selection_policy": "per_memory_factors_v1",
+    "request_id": "m4-development-07-decisions",
+    "context": [],
+    "unresolved_references": [],
+    "budgets": {
+      "input_bytes": 32768,
+      "seed_bytes": 16384,
+      "input_tokens": 16384,
+      "seed_tokens": 2048,
+      "deadline_ms": 25000
+    },
+    "source_policy": "report",
+    "calibration": null
+  },
+  "input_sha256": "8bd7170829777cfc05536210d035d6c8f47d25a54f0b06ea55f4fa2af8e4f3cd",
+  "started_at": "2026-10-24T19:48:08.233Z",
+  "finished_at": "2026-10-24T19:48:09.756Z",
+  "total_ms": 1523.9400829999997,
+  "segmentation": {
+    "version": "literal_segments_v1",
+    "original_sha256": "3eb5c06d25dde8f992c06a6eb0b9f68058e3f1f45a7f02ecaca83ad750976e49",
+    "original_bytes": 37,
+    "coverage": "complete",
+    "semantic_independence": "not_assessed",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start_byte": 0,
+        "end_byte": 37,
+        "text": "¿A qué hora cierra Greta el taller?",
+        "boundary": "end_of_input",
+        "exceeds_soft_limit": false
+      }
+    ],
+    "warnings": []
+  },
+  "context_segmentations": [],
+  "ambiguity": "not_assessed",
+  "clarifications": [],
+  "retrieval": {
+    "status": "complete",
+    "method": "fts5_keywords",
+    "candidates": [
+      {
+        "memory_id": "m4-development-07",
+        "revision": 1,
+        "summary": "Greta closes the workshop at eighteen hundred hours.",
+        "conditions": null,
+        "source": {
+          "kind": "document",
+          "ref": "synthetic:m4-factor-v1/development-07",
+          "locator": null
+        },
+        "state": "active",
+        "bm25": -4.190618329730425
+      }
+    ],
+    "semantic_coverage": "disabled",
+    "coverage": {
+      "eligible_memories": 1,
+      "indexed_memories": 1,
+      "matched_memories": 1,
+      "returned_memories": 1,
+      "truncated": false,
+      "fts_index": "complete",
+      "query": "executed",
+      "retrieval": "complete"
+    }
+  },
+  "assessments": [
+    {
+      "memory_id": "m4-development-07",
+      "revision": 1,
+      "selected": true,
+      "included_in_seed": true,
+      "relation": "unassessed",
+      "origin": "provider",
+      "validation": "structural_only",
+      "provenance_status": "declared_unverified",
+      "reason": null,
+      "applicability": true,
+      "requested_fact": true,
+      "premise_correction": false,
+      "relevance": true,
+      "calibrated_factor_scores": null,
+      "factor_scores": {
+        "same_context": 0.99,
+        "requested_fact": 0.99,
+        "premise_correction": 0.06
+      },
+      "calibration_status": "not_calibrated"
+    }
+  ],
+  "potential_equivalents": [],
+  "seed": {
+    "status": "complete",
+    "method": "fts5_external_classifier",
+    "classifier": "openai/gpt-6-luna-decisions",
+    "semantic_coverage": "disabled",
+    "memories": [
+      {
+        "memory_id": "m4-development-07",
+        "revision": 1,
+        "scope_kind": "project",
+        "scope_id": "m4-development-07",
+        "summary": "Greta closes the workshop at eighteen hundred hours.",
+        "conditions": null,
+        "source": {
+          "kind": "document",
+          "ref": "synthetic:m4-factor-v1/development-07",
+          "locator": null
+        },
+        "provenance_status": "declared_unverified",
+        "state": "active"
+      }
+    ],
+    "potential_equivalents": [],
+    "seed_text": "[m4-development-07@1] Greta closes the workshop at eighteen hundred hours.\n  Fuente declarada: document / synthetic:m4-factor-v1/development-07\n[Procedencia local: m4-development-07@1=declared_unverified. Solo se comprueba el texto original contra snapshots aportados por el operador; veracidad, resumen y condiciones añadidas sin evaluar.]"
+  },
+  "coverage": {
+    "input": "complete",
+    "semantic_index": "not_applicable",
+    "retrieval": "complete",
+    "candidate_limit": 8,
+    "returned_candidates": 1,
+    "candidates_presented": 1,
+    "classification": "complete",
+    "equivalence_review": "not_applicable",
+    "question": "unknown",
+    "seed": "complete"
+  },
+  "stages": [
+    {
+      "name": "validation",
+      "status": "completed",
+      "elapsed_ms": 1.6278329999999999,
+      "reason_code": null
+    },
+    {
+      "name": "segmentation",
+      "status": "completed",
+      "elapsed_ms": 0.016792,
+      "reason_code": null
+    },
+    {
+      "name": "search",
+      "status": "completed",
+      "elapsed_ms": 0.868375,
+      "reason_code": null
+    },
+    {
+      "name": "source_verification",
+      "status": "completed",
+      "elapsed_ms": 0.5964160000000001,
+      "reason_code": null
+    },
+    {
+      "name": "classification",
+      "status": "completed",
+      "elapsed_ms": 1518.9606250000002,
+      "reason_code": null
+    },
+    {
+      "name": "composition",
+      "status": "completed",
+      "elapsed_ms": 1.8457919999999999,
+      "reason_code": null
+    }
+  ],
+  "issues": [],
+  "usage": {
+    "classifier_invocations": 1,
+    "receipt_status": "complete",
+    "served_model": "openai/gpt-6-luna-decisions-20261006",
+    "input_tokens": 627,
+    "output_tokens": 0,
+    "reported_cost_usd": 6.27e-05,
+    "cost_status": "reported"
+  },
+  "token_accounting": {
+    "profile": "o200k_base:tiktoken-rs-0.12.0:ordinary:utf8-json-v1",
+    "input_basis": "serialized_request_json",
+    "provider_tokenizer": "unverified",
+    "input_limit": 16384,
+    "seed_limit": 2048,
+    "accepted_input_tokens": 410,
+    "requests": [
+      {
+        "stage": "classification",
+        "request_sha256": "e099fc3929a3e244deedff33595dcca76839d321abf169d43c7f2971e9c1dc4b",
+        "json_tokens": 410,
+        "accepted": true
+      }
+    ],
+    "seed_tokens": 79,
+    "seed_status": "complete"
+  },
+  "source_verification": {
+    "policy": "report",
+    "checks": [
+      {
+        "check_id": "a5381872e6af7afae90d77ae34cc75275d48437485fea4a5fa9cb2a830ff7369",
+        "memory_id": "m4-development-07",
+        "revision": 1,
+        "source": {
+          "kind": "document",
+          "ref": "synthetic:m4-factor-v1/development-07",
+          "locator": null
+        },
+        "snapshot_id": null,
+        "snapshot_version": null,
+        "snapshot_sha256": null,
+        "observed_snapshot_sha256": null,
+        "original_sha256": "0ff6ff2957f9f19d221da785c59abe0a4f774c73b686a597bb2f7f9390cf56ee",
+        "start_byte": null,
+        "end_byte": null,
+        "status": "declared_unverified",
+        "reason_code": "source_not_registered",
+        "checked_at": "2026-10-24T19:48:08.234Z",
+        "profile": "local_snapshot_literal_v1",
+        "semantic_support": "not_assessed"
+      }
+    ]
+  },
+  "requested_model": "openai/gpt-6-luna-decisions",
+  "local_review": "not_available_dashboard_removed"
+}

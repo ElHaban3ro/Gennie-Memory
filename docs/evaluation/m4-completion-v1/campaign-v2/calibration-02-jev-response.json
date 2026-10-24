@@ -1,0 +1,248 @@
+{
+  "contract_version": 1,
+  "implementation_sha256": "b84503823e881d12571e94bae587d2e65f6f8006699c92e0a96f1680370d3b2c",
+  "request_id": "m4-calibration-02-jev",
+  "execution_status": "completed",
+  "outcome": "evidence_selected",
+  "effective_request": {
+    "contract_version": 1,
+    "search": {
+      "query": "¿Por qué Jairo ya envió el informe?",
+      "scope_kind": "project",
+      "scope_id": "m4-calibration-02",
+      "entity_id": null,
+      "actor_id": "local",
+      "as_of": "2026-10-24T12:00:00.000Z",
+      "limit": 8,
+      "query_mode": "keywords",
+      "memory_types": [],
+      "bm25_weights": null
+    },
+    "provider": "jev",
+    "selection_policy": "per_memory_factors_v1",
+    "request_id": "m4-calibration-02-jev",
+    "context": [],
+    "unresolved_references": [],
+    "budgets": {
+      "input_bytes": 32768,
+      "seed_bytes": 16384,
+      "input_tokens": 16384,
+      "seed_tokens": 2048,
+      "deadline_ms": 25000
+    },
+    "source_policy": "report",
+    "calibration": null
+  },
+  "input_sha256": "1a73163f228acb922dd4bd8fc7222479ad77c179593203b895a82c5137da1205",
+  "started_at": "2026-10-24T19:48:17.667Z",
+  "finished_at": "2026-10-24T19:48:18.767Z",
+  "total_ms": 1102.1376249999998,
+  "segmentation": {
+    "version": "literal_segments_v1",
+    "original_sha256": "8857b93936c9e3ea2858d574b0d6a608de30be30d44ad64b178fdc4781158b80",
+    "original_bytes": 38,
+    "coverage": "complete",
+    "semantic_independence": "not_assessed",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start_byte": 0,
+        "end_byte": 38,
+        "text": "¿Por qué Jairo ya envió el informe?",
+        "boundary": "end_of_input",
+        "exceeds_soft_limit": false
+      }
+    ],
+    "warnings": []
+  },
+  "context_segmentations": [],
+  "ambiguity": "not_assessed",
+  "clarifications": [],
+  "retrieval": {
+    "status": "complete",
+    "method": "fts5_keywords",
+    "candidates": [
+      {
+        "memory_id": "m4-calibration-02",
+        "revision": 1,
+        "summary": "Jairo no ha enviado el informe; el envío sigue pendiente.",
+        "conditions": null,
+        "source": {
+          "kind": "document",
+          "ref": "synthetic:m4-factor-v1/calibration-02",
+          "locator": null
+        },
+        "state": "active",
+        "bm25": -11.820852051918722
+      }
+    ],
+    "semantic_coverage": "disabled",
+    "coverage": {
+      "eligible_memories": 1,
+      "indexed_memories": 1,
+      "matched_memories": 1,
+      "returned_memories": 1,
+      "truncated": false,
+      "fts_index": "complete",
+      "query": "executed",
+      "retrieval": "complete"
+    }
+  },
+  "assessments": [
+    {
+      "memory_id": "m4-calibration-02",
+      "revision": 1,
+      "selected": true,
+      "included_in_seed": true,
+      "relation": "unassessed",
+      "origin": "provider",
+      "validation": "structural_only",
+      "provenance_status": "declared_unverified",
+      "reason": null,
+      "applicability": true,
+      "requested_fact": true,
+      "premise_correction": true,
+      "relevance": true,
+      "calibrated_factor_scores": null,
+      "factor_scores": {
+        "same_context": 0.83,
+        "requested_fact": 0.72,
+        "premise_correction": 0.99
+      },
+      "calibration_status": "not_calibrated"
+    }
+  ],
+  "potential_equivalents": [],
+  "seed": {
+    "status": "complete",
+    "method": "fts5_external_classifier",
+    "classifier": "typesafe/jev-1.13",
+    "semantic_coverage": "disabled",
+    "memories": [
+      {
+        "memory_id": "m4-calibration-02",
+        "revision": 1,
+        "scope_kind": "project",
+        "scope_id": "m4-calibration-02",
+        "summary": "Jairo no ha enviado el informe; el envío sigue pendiente.",
+        "conditions": null,
+        "source": {
+          "kind": "document",
+          "ref": "synthetic:m4-factor-v1/calibration-02",
+          "locator": null
+        },
+        "provenance_status": "declared_unverified",
+        "state": "active"
+      }
+    ],
+    "potential_equivalents": [],
+    "seed_text": "[m4-calibration-02@1] Jairo no ha enviado el informe; el envío sigue pendiente.\n  Fuente declarada: document / synthetic:m4-factor-v1/calibration-02\n[Procedencia local: m4-calibration-02@1=declared_unverified. Solo se comprueba el texto original contra snapshots aportados por el operador; veracidad, resumen y condiciones añadidas sin evaluar.]"
+  },
+  "coverage": {
+    "input": "complete",
+    "semantic_index": "not_applicable",
+    "retrieval": "complete",
+    "candidate_limit": 8,
+    "returned_candidates": 1,
+    "candidates_presented": 1,
+    "classification": "complete",
+    "equivalence_review": "not_applicable",
+    "question": "unknown",
+    "seed": "complete"
+  },
+  "stages": [
+    {
+      "name": "validation",
+      "status": "completed",
+      "elapsed_ms": 1.5510000000000002,
+      "reason_code": null
+    },
+    {
+      "name": "segmentation",
+      "status": "completed",
+      "elapsed_ms": 0.015290999999999999,
+      "reason_code": null
+    },
+    {
+      "name": "search",
+      "status": "completed",
+      "elapsed_ms": 0.8180000000000001,
+      "reason_code": null
+    },
+    {
+      "name": "source_verification",
+      "status": "completed",
+      "elapsed_ms": 0.15341700000000003,
+      "reason_code": null
+    },
+    {
+      "name": "classification",
+      "status": "completed",
+      "elapsed_ms": 1097.522834,
+      "reason_code": null
+    },
+    {
+      "name": "composition",
+      "status": "completed",
+      "elapsed_ms": 2.048083,
+      "reason_code": null
+    }
+  ],
+  "issues": [],
+  "usage": {
+    "classifier_invocations": 1,
+    "receipt_status": "complete",
+    "served_model": "typesafe/jev-1.13-20260917",
+    "input_tokens": 771,
+    "output_tokens": 101,
+    "reported_cost_usd": 3.2382e-05,
+    "cost_status": "reported"
+  },
+  "token_accounting": {
+    "profile": "o200k_base:tiktoken-rs-0.12.0:ordinary:utf8-json-v1",
+    "input_basis": "serialized_request_json",
+    "provider_tokenizer": "unverified",
+    "input_limit": 16384,
+    "seed_limit": 2048,
+    "accepted_input_tokens": 413,
+    "requests": [
+      {
+        "stage": "classification",
+        "request_sha256": "d121f28d920d29a60c426a6decce43f51898dc27ee10d0421409ef2f7118ec59",
+        "json_tokens": 413,
+        "accepted": true
+      }
+    ],
+    "seed_tokens": 85,
+    "seed_status": "complete"
+  },
+  "source_verification": {
+    "policy": "report",
+    "checks": [
+      {
+        "check_id": "0bbde954e1ca6414aebe5bbd9b9a6d5925b88419cedeb7ce965f60f75a52da6e",
+        "memory_id": "m4-calibration-02",
+        "revision": 1,
+        "source": {
+          "kind": "document",
+          "ref": "synthetic:m4-factor-v1/calibration-02",
+          "locator": null
+        },
+        "snapshot_id": null,
+        "snapshot_version": null,
+        "snapshot_sha256": null,
+        "observed_snapshot_sha256": null,
+        "original_sha256": "15be1550dea56ef5ce1c5407d583dd481a7195aed32ae0f7cc252430bdddc7cd",
+        "start_byte": null,
+        "end_byte": null,
+        "status": "declared_unverified",
+        "reason_code": "source_not_registered",
+        "checked_at": "2026-10-24T19:48:16.280Z",
+        "profile": "local_snapshot_literal_v1",
+        "semantic_support": "not_assessed"
+      }
+    ]
+  },
+  "requested_model": "typesafe/jev-1.13",
+  "local_review": "not_available_dashboard_removed"
+}

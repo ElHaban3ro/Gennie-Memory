@@ -1,0 +1,482 @@
+[
+  {
+    "id": "development-01",
+    "split": "development",
+    "segment": "direct",
+    "memory_id": "m4-development-01",
+    "revision": 1,
+    "request": {
+      "contract_version": 1,
+      "search": {
+        "query": "¿Qué editor usa Alba para su proyecto?",
+        "scope_kind": "project",
+        "scope_id": "m4-development-01",
+        "actor_id": "local",
+        "as_of": "2026-10-24T12:00:00.000Z",
+        "limit": 8
+      },
+      "provider": "decisions",
+      "selection_policy": "per_memory_factors_v1"
+    }
+  },
+  {
+    "id": "development-02",
+    "split": "development",
+    "segment": "refutation",
+    "memory_id": "m4-development-02",
+    "revision": 1,
+    "request": {
+      "contract_version": 1,
+      "search": {
+        "query": "¿Por qué Bruno ya envió el informe?",
+        "scope_kind": "project",
+        "scope_id": "m4-development-02",
+        "actor_id": "local",
+        "as_of": "2026-10-24T12:00:00.000Z",
+        "limit": 8
+      },
+      "provider": "decisions",
+      "selection_policy": "per_memory_factors_v1"
+    }
+  },
+  {
+    "id": "development-03",
+    "split": "development",
+    "segment": "partial",
+    "memory_id": "m4-development-03",
+    "revision": 1,
+    "request": {
+      "contract_version": 1,
+      "search": {
+        "query": "¿Por qué canal y a qué hora recibe Celia las alertas?",
+        "scope_kind": "project",
+        "scope_id": "m4-development-03",
+        "actor_id": "local",
+        "as_of": "2026-10-24T12:00:00.000Z",
+        "limit": 8
+      },
+      "provider": "decisions",
+      "selection_policy": "per_memory_factors_v1"
+    }
+  },
+  {
+    "id": "development-04",
+    "split": "development",
+    "segment": "foreign_subject",
+    "memory_id": "m4-development-04",
+    "revision": 1,
+    "request": {
+      "contract_version": 1,
+      "search": {
+        "query": "¿De qué color es el distintivo de la hermana de Dario?",
+        "scope_kind": "project",
+        "scope_id": "m4-development-04",
+        "actor_id": "local",
+        "as_of": "2026-10-24T12:00:00.000Z",
+        "limit": 8
+      },
+      "provider": "decisions",
+      "selection_policy": "per_memory_factors_v1"
+    }
+  },
+  {
+    "id": "development-05",
+    "split": "development",
+    "segment": "condition_applies",
+    "memory_id": "m4-development-05",
+    "revision": 1,
+    "request": {
+      "contract_version": 1,
+      "search": {
+        "query": "La reunión de Elena es remota. ¿Qué agenda prefiere Elena?",
+        "scope_kind": "project",
+        "scope_id": "m4-development-05",
+        "actor_id": "local",
+        "as_of": "2026-10-24T12:00:00.000Z",
+        "limit": 8
+      },
+      "provider": "decisions",
+      "selection_policy": "per_memory_factors_v1"
+    }
+  },
+  {
+    "id": "development-06",
+    "split": "development",
+    "segment": "condition_does_not_apply",
+    "memory_id": "m4-development-06",
+    "revision": 1,
+    "request": {
+      "contract_version": 1,
+      "search": {
+        "query": "Fabio viajará a Quito. ¿Qué adaptador llevará Fabio?",
+        "scope_kind": "project",
+        "scope_id": "m4-development-06",
+        "actor_id": "local",
+        "as_of": "2026-10-24T12:00:00.000Z",
+        "limit": 8
+      },
+      "provider": "decisions",
+      "selection_policy": "per_memory_factors_v1"
+    }
+  },
+  {
+    "id": "development-07",
+    "split": "development",
+    "segment": "cross_language",
+    "memory_id": "m4-development-07",
+    "revision": 1,
+    "request": {
+      "contract_version": 1,
+      "search": {
+        "query": "¿A qué hora cierra Greta el taller?",
+        "scope_kind": "project",
+        "scope_id": "m4-development-07",
+        "actor_id": "local",
+        "as_of": "2026-10-24T12:00:00.000Z",
+        "limit": 8
+      },
+      "provider": "decisions",
+      "selection_policy": "per_memory_factors_v1"
+    }
+  },
+  {
+    "id": "development-08",
+    "split": "development",
+    "segment": "silence_not_negation",
+    "memory_id": "m4-development-08",
+    "revision": 1,
+    "request": {
+      "contract_version": 1,
+      "search": {
+        "query": "¿Es falso que Hugo deba pagar una tasa para iniciar el trámite?",
+        "scope_kind": "project",
+        "scope_id": "m4-development-08",
+        "actor_id": "local",
+        "as_of": "2026-10-24T12:00:00.000Z",
+        "limit": 8
+      },
+      "provider": "decisions",
+      "selection_policy": "per_memory_factors_v1"
+    }
+  },
+  {
+    "id": "calibration-01",
+    "split": "calibration",
+    "segment": "direct",
+    "memory_id": "m4-calibration-01",
+    "revision": 1,
+    "request": {
+      "contract_version": 1,
+      "search": {
+        "query": "¿Qué editor usa Ines para su proyecto?",
+        "scope_kind": "project",
+        "scope_id": "m4-calibration-01",
+        "actor_id": "local",
+        "as_of": "2026-10-24T12:00:00.000Z",
+        "limit": 8
+      },
+      "provider": "decisions",
+      "selection_policy": "per_memory_factors_v1"
+    }
+  },
+  {
+    "id": "calibration-02",
+    "split": "calibration",
+    "segment": "refutation",
+    "memory_id": "m4-calibration-02",
+    "revision": 1,
+    "request": {
+      "contract_version": 1,
+      "search": {
+        "query": "¿Por qué Jairo ya envió el informe?",
+        "scope_kind": "project",
+        "scope_id": "m4-calibration-02",
+        "actor_id": "local",
+        "as_of": "2026-10-24T12:00:00.000Z",
+        "limit": 8
+      },
+      "provider": "decisions",
+      "selection_policy": "per_memory_factors_v1"
+    }
+  },
+  {
+    "id": "calibration-03",
+    "split": "calibration",
+    "segment": "partial",
+    "memory_id": "m4-calibration-03",
+    "revision": 1,
+    "request": {
+      "contract_version": 1,
+      "search": {
+        "query": "¿Por qué canal y a qué hora recibe Karla las alertas?",
+        "scope_kind": "project",
+        "scope_id": "m4-calibration-03",
+        "actor_id": "local",
+        "as_of": "2026-10-24T12:00:00.000Z",
+        "limit": 8
+      },
+      "provider": "decisions",
+      "selection_policy": "per_memory_factors_v1"
+    }
+  },
+  {
+    "id": "calibration-04",
+    "split": "calibration",
+    "segment": "foreign_subject",
+    "memory_id": "m4-calibration-04",
+    "revision": 1,
+    "request": {
+      "contract_version": 1,
+      "search": {
+        "query": "¿De qué color es el distintivo de la hermana de Lauro?",
+        "scope_kind": "project",
+        "scope_id": "m4-calibration-04",
+        "actor_id": "local",
+        "as_of": "2026-10-24T12:00:00.000Z",
+        "limit": 8
+      },
+      "provider": "decisions",
+      "selection_policy": "per_memory_factors_v1"
+    }
+  },
+  {
+    "id": "calibration-05",
+    "split": "calibration",
+    "segment": "condition_applies",
+    "memory_id": "m4-calibration-05",
+    "revision": 1,
+    "request": {
+      "contract_version": 1,
+      "search": {
+        "query": "La reunión de Marta es remota. ¿Qué agenda prefiere Marta?",
+        "scope_kind": "project",
+        "scope_id": "m4-calibration-05",
+        "actor_id": "local",
+        "as_of": "2026-10-24T12:00:00.000Z",
+        "limit": 8
+      },
+      "provider": "decisions",
+      "selection_policy": "per_memory_factors_v1"
+    }
+  },
+  {
+    "id": "calibration-06",
+    "split": "calibration",
+    "segment": "condition_does_not_apply",
+    "memory_id": "m4-calibration-06",
+    "revision": 1,
+    "request": {
+      "contract_version": 1,
+      "search": {
+        "query": "Nereo viajará a Quito. ¿Qué adaptador llevará Nereo?",
+        "scope_kind": "project",
+        "scope_id": "m4-calibration-06",
+        "actor_id": "local",
+        "as_of": "2026-10-24T12:00:00.000Z",
+        "limit": 8
+      },
+      "provider": "decisions",
+      "selection_policy": "per_memory_factors_v1"
+    }
+  },
+  {
+    "id": "calibration-07",
+    "split": "calibration",
+    "segment": "cross_language",
+    "memory_id": "m4-calibration-07",
+    "revision": 1,
+    "request": {
+      "contract_version": 1,
+      "search": {
+        "query": "¿A qué hora cierra Olga el taller?",
+        "scope_kind": "project",
+        "scope_id": "m4-calibration-07",
+        "actor_id": "local",
+        "as_of": "2026-10-24T12:00:00.000Z",
+        "limit": 8
+      },
+      "provider": "decisions",
+      "selection_policy": "per_memory_factors_v1"
+    }
+  },
+  {
+    "id": "calibration-08",
+    "split": "calibration",
+    "segment": "silence_not_negation",
+    "memory_id": "m4-calibration-08",
+    "revision": 1,
+    "request": {
+      "contract_version": 1,
+      "search": {
+        "query": "¿Es falso que Pablo deba pagar una tasa para iniciar el trámite?",
+        "scope_kind": "project",
+        "scope_id": "m4-calibration-08",
+        "actor_id": "local",
+        "as_of": "2026-10-24T12:00:00.000Z",
+        "limit": 8
+      },
+      "provider": "decisions",
+      "selection_policy": "per_memory_factors_v1"
+    }
+  },
+  {
+    "id": "final-01",
+    "split": "final",
+    "segment": "direct",
+    "memory_id": "m4-final-01",
+    "revision": 1,
+    "request": {
+      "contract_version": 1,
+      "search": {
+        "query": "¿Qué editor usa Queta para su proyecto?",
+        "scope_kind": "project",
+        "scope_id": "m4-final-01",
+        "actor_id": "local",
+        "as_of": "2026-10-24T12:00:00.000Z",
+        "limit": 8
+      },
+      "provider": "decisions",
+      "selection_policy": "per_memory_factors_v1"
+    }
+  },
+  {
+    "id": "final-02",
+    "split": "final",
+    "segment": "refutation",
+    "memory_id": "m4-final-02",
+    "revision": 1,
+    "request": {
+      "contract_version": 1,
+      "search": {
+        "query": "¿Por qué Ramon ya envió el informe?",
+        "scope_kind": "project",
+        "scope_id": "m4-final-02",
+        "actor_id": "local",
+        "as_of": "2026-10-24T12:00:00.000Z",
+        "limit": 8
+      },
+      "provider": "decisions",
+      "selection_policy": "per_memory_factors_v1"
+    }
+  },
+  {
+    "id": "final-03",
+    "split": "final",
+    "segment": "partial",
+    "memory_id": "m4-final-03",
+    "revision": 1,
+    "request": {
+      "contract_version": 1,
+      "search": {
+        "query": "¿Por qué canal y a qué hora recibe Sonia las alertas?",
+        "scope_kind": "project",
+        "scope_id": "m4-final-03",
+        "actor_id": "local",
+        "as_of": "2026-10-24T12:00:00.000Z",
+        "limit": 8
+      },
+      "provider": "decisions",
+      "selection_policy": "per_memory_factors_v1"
+    }
+  },
+  {
+    "id": "final-04",
+    "split": "final",
+    "segment": "foreign_subject",
+    "memory_id": "m4-final-04",
+    "revision": 1,
+    "request": {
+      "contract_version": 1,
+      "search": {
+        "query": "¿De qué color es el distintivo de la hermana de Tadeo?",
+        "scope_kind": "project",
+        "scope_id": "m4-final-04",
+        "actor_id": "local",
+        "as_of": "2026-10-24T12:00:00.000Z",
+        "limit": 8
+      },
+      "provider": "decisions",
+      "selection_policy": "per_memory_factors_v1"
+    }
+  },
+  {
+    "id": "final-05",
+    "split": "final",
+    "segment": "condition_applies",
+    "memory_id": "m4-final-05",
+    "revision": 1,
+    "request": {
+      "contract_version": 1,
+      "search": {
+        "query": "La reunión de Ursula es remota. ¿Qué agenda prefiere Ursula?",
+        "scope_kind": "project",
+        "scope_id": "m4-final-05",
+        "actor_id": "local",
+        "as_of": "2026-10-24T12:00:00.000Z",
+        "limit": 8
+      },
+      "provider": "decisions",
+      "selection_policy": "per_memory_factors_v1"
+    }
+  },
+  {
+    "id": "final-06",
+    "split": "final",
+    "segment": "condition_does_not_apply",
+    "memory_id": "m4-final-06",
+    "revision": 1,
+    "request": {
+      "contract_version": 1,
+      "search": {
+        "query": "Vasco viajará a Quito. ¿Qué adaptador llevará Vasco?",
+        "scope_kind": "project",
+        "scope_id": "m4-final-06",
+        "actor_id": "local",
+        "as_of": "2026-10-24T12:00:00.000Z",
+        "limit": 8
+      },
+      "provider": "decisions",
+      "selection_policy": "per_memory_factors_v1"
+    }
+  },
+  {
+    "id": "final-07",
+    "split": "final",
+    "segment": "cross_language",
+    "memory_id": "m4-final-07",
+    "revision": 1,
+    "request": {
+      "contract_version": 1,
+      "search": {
+        "query": "¿A qué hora cierra Wanda el taller?",
+        "scope_kind": "project",
+        "scope_id": "m4-final-07",
+        "actor_id": "local",
+        "as_of": "2026-10-24T12:00:00.000Z",
+        "limit": 8
+      },
+      "provider": "decisions",
+      "selection_policy": "per_memory_factors_v1"
+    }
+  },
+  {
+    "id": "final-08",
+    "split": "final",
+    "segment": "silence_not_negation",
+    "memory_id": "m4-final-08",
+    "revision": 1,
+    "request": {
+      "contract_version": 1,
+      "search": {
+        "query": "¿Es falso que Xenia deba pagar una tasa para iniciar el trámite?",
+        "scope_kind": "project",
+        "scope_id": "m4-final-08",
+        "actor_id": "local",
+        "as_of": "2026-10-24T12:00:00.000Z",
+        "limit": 8
+      },
+      "provider": "decisions",
+      "selection_policy": "per_memory_factors_v1"
+    }
+  }
+]

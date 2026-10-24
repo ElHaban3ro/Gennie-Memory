@@ -1,0 +1,248 @@
+{
+  "contract_version": 1,
+  "implementation_sha256": "b84503823e881d12571e94bae587d2e65f6f8006699c92e0a96f1680370d3b2c",
+  "request_id": "m4-calibration-01-jev",
+  "execution_status": "completed",
+  "outcome": "evidence_selected",
+  "effective_request": {
+    "contract_version": 1,
+    "search": {
+      "query": "¿Qué editor usa Ines para su proyecto?",
+      "scope_kind": "project",
+      "scope_id": "m4-calibration-01",
+      "entity_id": null,
+      "actor_id": "local",
+      "as_of": "2026-10-24T12:00:00.000Z",
+      "limit": 8,
+      "query_mode": "keywords",
+      "memory_types": [],
+      "bm25_weights": null
+    },
+    "provider": "jev",
+    "selection_policy": "per_memory_factors_v1",
+    "request_id": "m4-calibration-01-jev",
+    "context": [],
+    "unresolved_references": [],
+    "budgets": {
+      "input_bytes": 32768,
+      "seed_bytes": 16384,
+      "input_tokens": 16384,
+      "seed_tokens": 2048,
+      "deadline_ms": 25000
+    },
+    "source_policy": "report",
+    "calibration": null
+  },
+  "input_sha256": "eb826480c9301d805486837a97c569e8e5a0eb01f2165e2be42d99c6340e897b",
+  "started_at": "2026-10-24T19:48:15.073Z",
+  "finished_at": "2026-10-24T19:48:16.230Z",
+  "total_ms": 1158.470917,
+  "segmentation": {
+    "version": "literal_segments_v1",
+    "original_sha256": "572ed9e20751e31039fcb185df63ce29d0e6af691aaf99a6a0751800b42b84c6",
+    "original_bytes": 40,
+    "coverage": "complete",
+    "semantic_independence": "not_assessed",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start_byte": 0,
+        "end_byte": 40,
+        "text": "¿Qué editor usa Ines para su proyecto?",
+        "boundary": "end_of_input",
+        "exceeds_soft_limit": false
+      }
+    ],
+    "warnings": []
+  },
+  "context_segmentations": [],
+  "ambiguity": "not_assessed",
+  "clarifications": [],
+  "retrieval": {
+    "status": "complete",
+    "method": "fts5_keywords",
+    "candidates": [
+      {
+        "memory_id": "m4-calibration-01",
+        "revision": 1,
+        "summary": "Ines usa el editor Helix para su proyecto.",
+        "conditions": null,
+        "source": {
+          "kind": "document",
+          "ref": "synthetic:m4-factor-v1/calibration-01",
+          "locator": null
+        },
+        "state": "active",
+        "bm25": -15.249444101528182
+      }
+    ],
+    "semantic_coverage": "disabled",
+    "coverage": {
+      "eligible_memories": 1,
+      "indexed_memories": 1,
+      "matched_memories": 1,
+      "returned_memories": 1,
+      "truncated": false,
+      "fts_index": "complete",
+      "query": "executed",
+      "retrieval": "complete"
+    }
+  },
+  "assessments": [
+    {
+      "memory_id": "m4-calibration-01",
+      "revision": 1,
+      "selected": true,
+      "included_in_seed": true,
+      "relation": "unassessed",
+      "origin": "provider",
+      "validation": "structural_only",
+      "provenance_status": "declared_unverified",
+      "reason": null,
+      "applicability": true,
+      "requested_fact": true,
+      "premise_correction": false,
+      "relevance": true,
+      "calibrated_factor_scores": null,
+      "factor_scores": {
+        "same_context": 0.98,
+        "requested_fact": 0.99,
+        "premise_correction": 0.0
+      },
+      "calibration_status": "not_calibrated"
+    }
+  ],
+  "potential_equivalents": [],
+  "seed": {
+    "status": "complete",
+    "method": "fts5_external_classifier",
+    "classifier": "typesafe/jev-1.13",
+    "semantic_coverage": "disabled",
+    "memories": [
+      {
+        "memory_id": "m4-calibration-01",
+        "revision": 1,
+        "scope_kind": "project",
+        "scope_id": "m4-calibration-01",
+        "summary": "Ines usa el editor Helix para su proyecto.",
+        "conditions": null,
+        "source": {
+          "kind": "document",
+          "ref": "synthetic:m4-factor-v1/calibration-01",
+          "locator": null
+        },
+        "provenance_status": "declared_unverified",
+        "state": "active"
+      }
+    ],
+    "potential_equivalents": [],
+    "seed_text": "[m4-calibration-01@1] Ines usa el editor Helix para su proyecto.\n  Fuente declarada: document / synthetic:m4-factor-v1/calibration-01\n[Procedencia local: m4-calibration-01@1=declared_unverified. Solo se comprueba el texto original contra snapshots aportados por el operador; veracidad, resumen y condiciones añadidas sin evaluar.]"
+  },
+  "coverage": {
+    "input": "complete",
+    "semantic_index": "not_applicable",
+    "retrieval": "complete",
+    "candidate_limit": 8,
+    "returned_candidates": 1,
+    "candidates_presented": 1,
+    "classification": "complete",
+    "equivalence_review": "not_applicable",
+    "question": "unknown",
+    "seed": "complete"
+  },
+  "stages": [
+    {
+      "name": "validation",
+      "status": "completed",
+      "elapsed_ms": 1.552083,
+      "reason_code": null
+    },
+    {
+      "name": "segmentation",
+      "status": "completed",
+      "elapsed_ms": 0.015666,
+      "reason_code": null
+    },
+    {
+      "name": "search",
+      "status": "completed",
+      "elapsed_ms": 0.9135420000000001,
+      "reason_code": null
+    },
+    {
+      "name": "source_verification",
+      "status": "completed",
+      "elapsed_ms": 0.140542,
+      "reason_code": null
+    },
+    {
+      "name": "classification",
+      "status": "completed",
+      "elapsed_ms": 1154.574625,
+      "reason_code": null
+    },
+    {
+      "name": "composition",
+      "status": "completed",
+      "elapsed_ms": 1.2562090000000001,
+      "reason_code": null
+    }
+  ],
+  "issues": [],
+  "usage": {
+    "classifier_invocations": 1,
+    "receipt_status": "complete",
+    "served_model": "typesafe/jev-1.13-20260917",
+    "input_tokens": 769,
+    "output_tokens": 101,
+    "reported_cost_usd": 3.2298e-05,
+    "cost_status": "reported"
+  },
+  "token_accounting": {
+    "profile": "o200k_base:tiktoken-rs-0.12.0:ordinary:utf8-json-v1",
+    "input_basis": "serialized_request_json",
+    "provider_tokenizer": "unverified",
+    "input_limit": 16384,
+    "seed_limit": 2048,
+    "accepted_input_tokens": 410,
+    "requests": [
+      {
+        "stage": "classification",
+        "request_sha256": "a53dfc770b7996513d67654ba75eec7fff58908c0744fa60d07ca4a44812bf44",
+        "json_tokens": 410,
+        "accepted": true
+      }
+    ],
+    "seed_tokens": 83,
+    "seed_status": "complete"
+  },
+  "source_verification": {
+    "policy": "report",
+    "checks": [
+      {
+        "check_id": "b5995ac3fa2dc8cb706ad1787a36035940494cb70ed3f7fa1c6fe48a749599db",
+        "memory_id": "m4-calibration-01",
+        "revision": 1,
+        "source": {
+          "kind": "document",
+          "ref": "synthetic:m4-factor-v1/calibration-01",
+          "locator": null
+        },
+        "snapshot_id": null,
+        "snapshot_version": null,
+        "snapshot_sha256": null,
+        "observed_snapshot_sha256": null,
+        "original_sha256": "456daf6f6dad788cf69a0e20fdda3dc43ee948303f373d32855bb06e33c1a49e",
+        "start_byte": null,
+        "end_byte": null,
+        "status": "declared_unverified",
+        "reason_code": "source_not_registered",
+        "checked_at": "2026-10-24T19:48:13.875Z",
+        "profile": "local_snapshot_literal_v1",
+        "semantic_support": "not_assessed"
+      }
+    ]
+  },
+  "requested_model": "typesafe/jev-1.13",
+  "local_review": "not_available_dashboard_removed"
+}

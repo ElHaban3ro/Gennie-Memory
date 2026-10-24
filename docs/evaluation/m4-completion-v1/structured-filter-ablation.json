@@ -1,0 +1,1601 @@
+{
+  "added_candidate_occurrences": 16,
+  "cases_sha256": "a7a539fba2140221d7bb67c42a7601427fe5757c52f9e3f920fcf5e9d66d5236",
+  "corpus_sha256": "2405ac819317ff178a3d003b17b1a98bb70ecb993e420edb0efd8c6b58b6049f",
+  "executions": 160,
+  "interpretation": "Current product service executions on the same synthetic corpus/queries. Only optional entity/type filters removed; actor/scope retained. Candidate accessibility, not semantic quality or real authentication. Timings are a short warm local test, not stable latency estimates.",
+  "queries": 40,
+  "rows": [
+    {
+      "added_vs_all_filters": [],
+      "arm": "all_filters",
+      "elapsed_ms": 0.7067910000000001,
+      "id": "spanish-diacritics",
+      "ids": [
+        "es"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity",
+      "elapsed_ms": 0.8835839999999999,
+      "id": "spanish-diacritics",
+      "ids": [
+        "es"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_type",
+      "elapsed_ms": 0.83725,
+      "id": "spanish-diacritics",
+      "ids": [
+        "es"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity_and_type",
+      "elapsed_ms": 0.662167,
+      "id": "spanish-diacritics",
+      "ids": [
+        "es"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "all_filters",
+      "elapsed_ms": 1.067791,
+      "id": "spanish-diacritics",
+      "ids": [
+        "es"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity",
+      "elapsed_ms": 1.070625,
+      "id": "spanish-diacritics",
+      "ids": [
+        "es"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_type",
+      "elapsed_ms": 1.064875,
+      "id": "spanish-diacritics",
+      "ids": [
+        "es"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity_and_type",
+      "elapsed_ms": 1.027666,
+      "id": "spanish-diacritics",
+      "ids": [
+        "es"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "all_filters",
+      "elapsed_ms": 0.746958,
+      "id": "english-literal",
+      "ids": [
+        "en"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity",
+      "elapsed_ms": 0.6963339999999999,
+      "id": "english-literal",
+      "ids": [
+        "en"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_type",
+      "elapsed_ms": 0.698375,
+      "id": "english-literal",
+      "ids": [
+        "en"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity_and_type",
+      "elapsed_ms": 0.771375,
+      "id": "english-literal",
+      "ids": [
+        "en"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "all_filters",
+      "elapsed_ms": 0.9078750000000001,
+      "id": "english-literal",
+      "ids": [
+        "en"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity",
+      "elapsed_ms": 1.040416,
+      "id": "english-literal",
+      "ids": [
+        "en"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_type",
+      "elapsed_ms": 0.9375,
+      "id": "english-literal",
+      "ids": [
+        "en"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity_and_type",
+      "elapsed_ms": 1.0498750000000001,
+      "id": "english-literal",
+      "ids": [
+        "en"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "all_filters",
+      "elapsed_ms": 0.645292,
+      "id": "portuguese-diacritics",
+      "ids": [
+        "pt"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity",
+      "elapsed_ms": 0.62275,
+      "id": "portuguese-diacritics",
+      "ids": [
+        "pt"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_type",
+      "elapsed_ms": 0.627875,
+      "id": "portuguese-diacritics",
+      "ids": [
+        "pt"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity_and_type",
+      "elapsed_ms": 0.654333,
+      "id": "portuguese-diacritics",
+      "ids": [
+        "pt"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "all_filters",
+      "elapsed_ms": 0.848792,
+      "id": "portuguese-diacritics",
+      "ids": [
+        "pt"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity",
+      "elapsed_ms": 0.955708,
+      "id": "portuguese-diacritics",
+      "ids": [
+        "pt"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_type",
+      "elapsed_ms": 0.8947080000000001,
+      "id": "portuguese-diacritics",
+      "ids": [
+        "pt"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity_and_type",
+      "elapsed_ms": 0.9111250000000001,
+      "id": "portuguese-diacritics",
+      "ids": [
+        "pt"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "all_filters",
+      "elapsed_ms": 0.604333,
+      "id": "arabic-literal",
+      "ids": [
+        "ar"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity",
+      "elapsed_ms": 0.6337079999999999,
+      "id": "arabic-literal",
+      "ids": [
+        "ar"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_type",
+      "elapsed_ms": 0.6050829999999999,
+      "id": "arabic-literal",
+      "ids": [
+        "ar"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity_and_type",
+      "elapsed_ms": 0.6342500000000001,
+      "id": "arabic-literal",
+      "ids": [
+        "ar"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "all_filters",
+      "elapsed_ms": 0.859292,
+      "id": "arabic-literal",
+      "ids": [
+        "ar"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity",
+      "elapsed_ms": 0.880667,
+      "id": "arabic-literal",
+      "ids": [
+        "ar"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_type",
+      "elapsed_ms": 0.833291,
+      "id": "arabic-literal",
+      "ids": [
+        "ar"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity_and_type",
+      "elapsed_ms": 0.8861249999999999,
+      "id": "arabic-literal",
+      "ids": [
+        "ar"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "all_filters",
+      "elapsed_ms": 0.589875,
+      "id": "japanese-literal",
+      "ids": [
+        "ja"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity",
+      "elapsed_ms": 0.616167,
+      "id": "japanese-literal",
+      "ids": [
+        "ja"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_type",
+      "elapsed_ms": 0.5908340000000001,
+      "id": "japanese-literal",
+      "ids": [
+        "ja"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity_and_type",
+      "elapsed_ms": 0.614709,
+      "id": "japanese-literal",
+      "ids": [
+        "ja"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "all_filters",
+      "elapsed_ms": 0.807417,
+      "id": "japanese-literal",
+      "ids": [
+        "ja"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity",
+      "elapsed_ms": 0.860875,
+      "id": "japanese-literal",
+      "ids": [
+        "ja"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_type",
+      "elapsed_ms": 0.823125,
+      "id": "japanese-literal",
+      "ids": [
+        "ja"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity_and_type",
+      "elapsed_ms": 0.87725,
+      "id": "japanese-literal",
+      "ids": [
+        "ja"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "all_filters",
+      "elapsed_ms": 0.5279170000000001,
+      "id": "unicode-combining",
+      "ids": [
+        "unicode"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity",
+      "elapsed_ms": 0.550333,
+      "id": "unicode-combining",
+      "ids": [
+        "unicode"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_type",
+      "elapsed_ms": 0.5245,
+      "id": "unicode-combining",
+      "ids": [
+        "unicode"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity_and_type",
+      "elapsed_ms": 0.529208,
+      "id": "unicode-combining",
+      "ids": [
+        "unicode"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "all_filters",
+      "elapsed_ms": 0.515541,
+      "id": "unicode-combining",
+      "ids": [
+        "unicode"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity",
+      "elapsed_ms": 0.5313749999999999,
+      "id": "unicode-combining",
+      "ids": [
+        "unicode"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_type",
+      "elapsed_ms": 0.5093749999999999,
+      "id": "unicode-combining",
+      "ids": [
+        "unicode"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity_and_type",
+      "elapsed_ms": 0.5311250000000001,
+      "id": "unicode-combining",
+      "ids": [
+        "unicode"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "all_filters",
+      "elapsed_ms": 0.521833,
+      "id": "long-original-tail",
+      "ids": [
+        "long"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity",
+      "elapsed_ms": 0.5439579999999999,
+      "id": "long-original-tail",
+      "ids": [
+        "long"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_type",
+      "elapsed_ms": 0.5195420000000001,
+      "id": "long-original-tail",
+      "ids": [
+        "long"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity_and_type",
+      "elapsed_ms": 0.5443340000000001,
+      "id": "long-original-tail",
+      "ids": [
+        "long"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "all_filters",
+      "elapsed_ms": 0.712541,
+      "id": "long-original-tail",
+      "ids": [
+        "long"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity",
+      "elapsed_ms": 0.757375,
+      "id": "long-original-tail",
+      "ids": [
+        "long"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_type",
+      "elapsed_ms": 0.722625,
+      "id": "long-original-tail",
+      "ids": [
+        "long"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity_and_type",
+      "elapsed_ms": 0.764708,
+      "id": "long-original-tail",
+      "ids": [
+        "long"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "all_filters",
+      "elapsed_ms": 0.485084,
+      "id": "homonym-a",
+      "ids": [
+        "homonym-a"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [
+        "homonym-b"
+      ],
+      "arm": "without_entity",
+      "elapsed_ms": 0.516458,
+      "id": "homonym-a",
+      "ids": [
+        "homonym-a",
+        "homonym-b"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_type",
+      "elapsed_ms": 0.481875,
+      "id": "homonym-a",
+      "ids": [
+        "homonym-a"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [
+        "homonym-b"
+      ],
+      "arm": "without_entity_and_type",
+      "elapsed_ms": 0.5119159999999999,
+      "id": "homonym-a",
+      "ids": [
+        "homonym-a",
+        "homonym-b"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "all_filters",
+      "elapsed_ms": 0.480583,
+      "id": "homonym-a",
+      "ids": [
+        "homonym-a"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [
+        "homonym-b"
+      ],
+      "arm": "without_entity",
+      "elapsed_ms": 0.509041,
+      "id": "homonym-a",
+      "ids": [
+        "homonym-a",
+        "homonym-b"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_type",
+      "elapsed_ms": 0.475333,
+      "id": "homonym-a",
+      "ids": [
+        "homonym-a"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [
+        "homonym-b"
+      ],
+      "arm": "without_entity_and_type",
+      "elapsed_ms": 0.504667,
+      "id": "homonym-a",
+      "ids": [
+        "homonym-a",
+        "homonym-b"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "all_filters",
+      "elapsed_ms": 0.332916,
+      "id": "homonym-b",
+      "ids": [
+        "homonym-b"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [
+        "homonym-a"
+      ],
+      "arm": "without_entity",
+      "elapsed_ms": 0.5027919999999999,
+      "id": "homonym-b",
+      "ids": [
+        "homonym-a",
+        "homonym-b"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_type",
+      "elapsed_ms": 0.325917,
+      "id": "homonym-b",
+      "ids": [
+        "homonym-b"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [
+        "homonym-a"
+      ],
+      "arm": "without_entity_and_type",
+      "elapsed_ms": 0.500083,
+      "id": "homonym-b",
+      "ids": [
+        "homonym-a",
+        "homonym-b"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "all_filters",
+      "elapsed_ms": 0.332625,
+      "id": "homonym-b",
+      "ids": [
+        "homonym-b"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [
+        "homonym-a"
+      ],
+      "arm": "without_entity",
+      "elapsed_ms": 0.503833,
+      "id": "homonym-b",
+      "ids": [
+        "homonym-a",
+        "homonym-b"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_type",
+      "elapsed_ms": 0.326166,
+      "id": "homonym-b",
+      "ids": [
+        "homonym-b"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [
+        "homonym-a"
+      ],
+      "arm": "without_entity_and_type",
+      "elapsed_ms": 0.505584,
+      "id": "homonym-b",
+      "ids": [
+        "homonym-a",
+        "homonym-b"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "all_filters",
+      "elapsed_ms": 0.510666,
+      "id": "homonym-unresolved",
+      "ids": [
+        "homonym-a",
+        "homonym-b"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity",
+      "elapsed_ms": 0.500334,
+      "id": "homonym-unresolved",
+      "ids": [
+        "homonym-a",
+        "homonym-b"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_type",
+      "elapsed_ms": 0.50125,
+      "id": "homonym-unresolved",
+      "ids": [
+        "homonym-a",
+        "homonym-b"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity_and_type",
+      "elapsed_ms": 0.502541,
+      "id": "homonym-unresolved",
+      "ids": [
+        "homonym-a",
+        "homonym-b"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "all_filters",
+      "elapsed_ms": 0.507333,
+      "id": "homonym-unresolved",
+      "ids": [
+        "homonym-a",
+        "homonym-b"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity",
+      "elapsed_ms": 0.506333,
+      "id": "homonym-unresolved",
+      "ids": [
+        "homonym-a",
+        "homonym-b"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_type",
+      "elapsed_ms": 0.504459,
+      "id": "homonym-unresolved",
+      "ids": [
+        "homonym-a",
+        "homonym-b"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity_and_type",
+      "elapsed_ms": 0.5016660000000001,
+      "id": "homonym-unresolved",
+      "ids": [
+        "homonym-a",
+        "homonym-b"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "all_filters",
+      "elapsed_ms": 0.494458,
+      "id": "contradiction-kept",
+      "ids": [
+        "contradiction-no",
+        "contradiction-yes"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity",
+      "elapsed_ms": 0.51725,
+      "id": "contradiction-kept",
+      "ids": [
+        "contradiction-no",
+        "contradiction-yes"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_type",
+      "elapsed_ms": 0.49275,
+      "id": "contradiction-kept",
+      "ids": [
+        "contradiction-no",
+        "contradiction-yes"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity_and_type",
+      "elapsed_ms": 0.511542,
+      "id": "contradiction-kept",
+      "ids": [
+        "contradiction-no",
+        "contradiction-yes"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "all_filters",
+      "elapsed_ms": 0.71575,
+      "id": "contradiction-kept",
+      "ids": [
+        "contradiction-no",
+        "contradiction-yes"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity",
+      "elapsed_ms": 0.754209,
+      "id": "contradiction-kept",
+      "ids": [
+        "contradiction-no",
+        "contradiction-yes"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_type",
+      "elapsed_ms": 0.7218749999999999,
+      "id": "contradiction-kept",
+      "ids": [
+        "contradiction-no",
+        "contradiction-yes"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity_and_type",
+      "elapsed_ms": 0.7658339999999999,
+      "id": "contradiction-kept",
+      "ids": [
+        "contradiction-no",
+        "contradiction-yes"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "all_filters",
+      "elapsed_ms": 0.49704100000000007,
+      "id": "distinct-duplicate-identities",
+      "ids": [
+        "duplicate-a",
+        "duplicate-b"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity",
+      "elapsed_ms": 0.513167,
+      "id": "distinct-duplicate-identities",
+      "ids": [
+        "duplicate-a",
+        "duplicate-b"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_type",
+      "elapsed_ms": 0.4938330000000001,
+      "id": "distinct-duplicate-identities",
+      "ids": [
+        "duplicate-a",
+        "duplicate-b"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity_and_type",
+      "elapsed_ms": 0.5151249999999999,
+      "id": "distinct-duplicate-identities",
+      "ids": [
+        "duplicate-a",
+        "duplicate-b"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "all_filters",
+      "elapsed_ms": 0.712916,
+      "id": "distinct-duplicate-identities",
+      "ids": [
+        "duplicate-a",
+        "duplicate-b"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity",
+      "elapsed_ms": 0.7552089999999999,
+      "id": "distinct-duplicate-identities",
+      "ids": [
+        "duplicate-a",
+        "duplicate-b"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_type",
+      "elapsed_ms": 0.726958,
+      "id": "distinct-duplicate-identities",
+      "ids": [
+        "duplicate-a",
+        "duplicate-b"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity_and_type",
+      "elapsed_ms": 0.770417,
+      "id": "distinct-duplicate-identities",
+      "ids": [
+        "duplicate-a",
+        "duplicate-b"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "all_filters",
+      "elapsed_ms": 0.4765,
+      "id": "private-intersection",
+      "ids": [
+        "private-allowed"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [
+        "private-entity"
+      ],
+      "arm": "without_entity",
+      "elapsed_ms": 0.511166,
+      "id": "private-intersection",
+      "ids": [
+        "private-allowed",
+        "private-entity"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [
+        "private-type"
+      ],
+      "arm": "without_type",
+      "elapsed_ms": 0.487333,
+      "id": "private-intersection",
+      "ids": [
+        "private-allowed",
+        "private-type"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [
+        "private-entity",
+        "private-type"
+      ],
+      "arm": "without_entity_and_type",
+      "elapsed_ms": 0.520875,
+      "id": "private-intersection",
+      "ids": [
+        "private-allowed",
+        "private-entity",
+        "private-type"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "all_filters",
+      "elapsed_ms": 0.48312499999999997,
+      "id": "private-intersection",
+      "ids": [
+        "private-allowed"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [
+        "private-entity"
+      ],
+      "arm": "without_entity",
+      "elapsed_ms": 0.5115000000000001,
+      "id": "private-intersection",
+      "ids": [
+        "private-allowed",
+        "private-entity"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [
+        "private-type"
+      ],
+      "arm": "without_type",
+      "elapsed_ms": 0.488667,
+      "id": "private-intersection",
+      "ids": [
+        "private-allowed",
+        "private-type"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [
+        "private-entity",
+        "private-type"
+      ],
+      "arm": "without_entity_and_type",
+      "elapsed_ms": 0.526708,
+      "id": "private-intersection",
+      "ids": [
+        "private-allowed",
+        "private-entity",
+        "private-type"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "all_filters",
+      "elapsed_ms": 0.475541,
+      "id": "current-revision",
+      "ids": [
+        "revised"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity",
+      "elapsed_ms": 0.495875,
+      "id": "current-revision",
+      "ids": [
+        "revised"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_type",
+      "elapsed_ms": 0.47679200000000005,
+      "id": "current-revision",
+      "ids": [
+        "revised"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity_and_type",
+      "elapsed_ms": 0.49808299999999994,
+      "id": "current-revision",
+      "ids": [
+        "revised"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "all_filters",
+      "elapsed_ms": 0.678125,
+      "id": "current-revision",
+      "ids": [
+        "revised"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity",
+      "elapsed_ms": 0.724417,
+      "id": "current-revision",
+      "ids": [
+        "revised"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_type",
+      "elapsed_ms": 0.6906669999999999,
+      "id": "current-revision",
+      "ids": [
+        "revised"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity_and_type",
+      "elapsed_ms": 0.732875,
+      "id": "current-revision",
+      "ids": [
+        "revised"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "all_filters",
+      "elapsed_ms": 0.459208,
+      "id": "obsolete-revision",
+      "ids": [],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity",
+      "elapsed_ms": 0.48062499999999997,
+      "id": "obsolete-revision",
+      "ids": [],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_type",
+      "elapsed_ms": 0.475125,
+      "id": "obsolete-revision",
+      "ids": [],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity_and_type",
+      "elapsed_ms": 0.485125,
+      "id": "obsolete-revision",
+      "ids": [],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "all_filters",
+      "elapsed_ms": 0.649208,
+      "id": "obsolete-revision",
+      "ids": [],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity",
+      "elapsed_ms": 0.697875,
+      "id": "obsolete-revision",
+      "ids": [],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_type",
+      "elapsed_ms": 0.6752079999999999,
+      "id": "obsolete-revision",
+      "ids": [],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity_and_type",
+      "elapsed_ms": 0.707708,
+      "id": "obsolete-revision",
+      "ids": [],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "all_filters",
+      "elapsed_ms": 0.48700000000000004,
+      "id": "validity-boundary",
+      "ids": [
+        "current"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity",
+      "elapsed_ms": 0.512209,
+      "id": "validity-boundary",
+      "ids": [
+        "current"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_type",
+      "elapsed_ms": 0.48404200000000003,
+      "id": "validity-boundary",
+      "ids": [
+        "current"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity_and_type",
+      "elapsed_ms": 0.504041,
+      "id": "validity-boundary",
+      "ids": [
+        "current"
+      ],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "all_filters",
+      "elapsed_ms": 0.692042,
+      "id": "validity-boundary",
+      "ids": [
+        "current"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity",
+      "elapsed_ms": 0.7429169999999999,
+      "id": "validity-boundary",
+      "ids": [
+        "current"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_type",
+      "elapsed_ms": 0.702791,
+      "id": "validity-boundary",
+      "ids": [
+        "current"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity_and_type",
+      "elapsed_ms": 0.74775,
+      "id": "validity-boundary",
+      "ids": [
+        "current"
+      ],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "all_filters",
+      "elapsed_ms": 0.468667,
+      "id": "unrelated-literal",
+      "ids": [],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity",
+      "elapsed_ms": 0.485667,
+      "id": "unrelated-literal",
+      "ids": [],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_type",
+      "elapsed_ms": 0.464,
+      "id": "unrelated-literal",
+      "ids": [],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity_and_type",
+      "elapsed_ms": 0.488583,
+      "id": "unrelated-literal",
+      "ids": [],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "all_filters",
+      "elapsed_ms": 0.6488750000000001,
+      "id": "unrelated-literal",
+      "ids": [],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity",
+      "elapsed_ms": 0.688708,
+      "id": "unrelated-literal",
+      "ids": [],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_type",
+      "elapsed_ms": 0.658292,
+      "id": "unrelated-literal",
+      "ids": [],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity_and_type",
+      "elapsed_ms": 0.701375,
+      "id": "unrelated-literal",
+      "ids": [],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "all_filters",
+      "elapsed_ms": 0.453,
+      "id": "translation-is-not-automatic",
+      "ids": [],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity",
+      "elapsed_ms": 0.472417,
+      "id": "translation-is-not-automatic",
+      "ids": [],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_type",
+      "elapsed_ms": 0.455833,
+      "id": "translation-is-not-automatic",
+      "ids": [],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity_and_type",
+      "elapsed_ms": 0.475458,
+      "id": "translation-is-not-automatic",
+      "ids": [],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "all_filters",
+      "elapsed_ms": 0.638,
+      "id": "translation-is-not-automatic",
+      "ids": [],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity",
+      "elapsed_ms": 0.695,
+      "id": "translation-is-not-automatic",
+      "ids": [],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_type",
+      "elapsed_ms": 0.65025,
+      "id": "translation-is-not-automatic",
+      "ids": [],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity_and_type",
+      "elapsed_ms": 0.69925,
+      "id": "translation-is-not-automatic",
+      "ids": [],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "all_filters",
+      "elapsed_ms": 0.28408300000000003,
+      "id": "unknown-actor",
+      "ids": [],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity",
+      "elapsed_ms": 0.284667,
+      "id": "unknown-actor",
+      "ids": [],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_type",
+      "elapsed_ms": 0.281875,
+      "id": "unknown-actor",
+      "ids": [],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity_and_type",
+      "elapsed_ms": 0.28212499999999996,
+      "id": "unknown-actor",
+      "ids": [],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "all_filters",
+      "elapsed_ms": 0.284167,
+      "id": "unknown-actor",
+      "ids": [],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity",
+      "elapsed_ms": 0.284791,
+      "id": "unknown-actor",
+      "ids": [],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_type",
+      "elapsed_ms": 0.28774999999999995,
+      "id": "unknown-actor",
+      "ids": [],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity_and_type",
+      "elapsed_ms": 0.285125,
+      "id": "unknown-actor",
+      "ids": [],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "all_filters",
+      "elapsed_ms": 0.289167,
+      "id": "empty-scope",
+      "ids": [],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity",
+      "elapsed_ms": 0.28445800000000004,
+      "id": "empty-scope",
+      "ids": [],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_type",
+      "elapsed_ms": 0.281541,
+      "id": "empty-scope",
+      "ids": [],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity_and_type",
+      "elapsed_ms": 0.278708,
+      "id": "empty-scope",
+      "ids": [],
+      "query_mode": "natural"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "all_filters",
+      "elapsed_ms": 0.294041,
+      "id": "empty-scope",
+      "ids": [],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity",
+      "elapsed_ms": 0.297584,
+      "id": "empty-scope",
+      "ids": [],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_type",
+      "elapsed_ms": 0.294792,
+      "id": "empty-scope",
+      "ids": [],
+      "query_mode": "keywords"
+    },
+    {
+      "added_vs_all_filters": [],
+      "arm": "without_entity_and_type",
+      "elapsed_ms": 0.29500000000000004,
+      "id": "empty-scope",
+      "ids": [],
+      "query_mode": "keywords"
+    }
+  ],
+  "schema_version": 1
+}

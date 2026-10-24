@@ -1,0 +1,386 @@
+[
+  {
+    "id": "development-01",
+    "memory_id": "m4-development-01",
+    "revision": 1,
+    "factors": {
+      "same_context": true,
+      "requested_fact": true,
+      "premise_correction": false
+    },
+    "role": "support",
+    "expected_selected": true,
+    "expected_answer": "Usa Helix.",
+    "forbidden_error": "Inventar otro editor.",
+    "label_provenance": "agent_proposed_before_inference",
+    "source_sha256": "48005e050445a3057d6962e76356d8a501535abc3365580177147601eec31613"
+  },
+  {
+    "id": "development-02",
+    "memory_id": "m4-development-02",
+    "revision": 1,
+    "factors": {
+      "same_context": true,
+      "requested_fact": false,
+      "premise_correction": true
+    },
+    "role": "refutation",
+    "expected_selected": true,
+    "expected_answer": "La fuente indica que no lo ha enviado; no explica una causa.",
+    "forbidden_error": "Afirmar que lo envió o inventar la causa.",
+    "label_provenance": "agent_proposed_before_inference",
+    "source_sha256": "4abb46a391ef87fa9067d3375c9d34e5ded9739e70cd4e478f9b04f4d7b1b4af"
+  },
+  {
+    "id": "development-03",
+    "memory_id": "m4-development-03",
+    "revision": 1,
+    "factors": {
+      "same_context": true,
+      "requested_fact": true,
+      "premise_correction": false
+    },
+    "role": "partial",
+    "expected_selected": true,
+    "expected_answer": "Por correo electrónico; la hora no consta.",
+    "forbidden_error": "Inventar una hora o afirmar respuesta completa.",
+    "label_provenance": "agent_proposed_before_inference",
+    "source_sha256": "8dc8d434391e7e413df7ad6238ab62ee61ccdf193997509510dde4ac2a9ade94"
+  },
+  {
+    "id": "development-04",
+    "memory_id": "m4-development-04",
+    "revision": 1,
+    "factors": {
+      "same_context": false,
+      "requested_fact": false,
+      "premise_correction": false
+    },
+    "role": "irrelevant",
+    "expected_selected": false,
+    "expected_answer": null,
+    "forbidden_error": "Transferir el dato de la persona a su hermana.",
+    "label_provenance": "agent_proposed_before_inference",
+    "source_sha256": "aeb9030c1f9039ed452b8b2785fb97c6cd3c18134f224cbf60a6a8eced72bafa"
+  },
+  {
+    "id": "development-05",
+    "memory_id": "m4-development-05",
+    "revision": 1,
+    "factors": {
+      "same_context": true,
+      "requested_fact": true,
+      "premise_correction": false
+    },
+    "role": "support",
+    "expected_selected": true,
+    "expected_answer": "Agenda breve, bajo la condición remota.",
+    "forbidden_error": "Elegir agenda extensa o omitir la condición.",
+    "label_provenance": "agent_proposed_before_inference",
+    "source_sha256": "127233ac5a611a985dbcd4bcbb06e50ed54e911ed53a6d8c6762469a9be13bd6"
+  },
+  {
+    "id": "development-06",
+    "memory_id": "m4-development-06",
+    "revision": 1,
+    "factors": {
+      "same_context": false,
+      "requested_fact": false,
+      "premise_correction": false
+    },
+    "role": "irrelevant",
+    "expected_selected": false,
+    "expected_answer": null,
+    "forbidden_error": "Aplicar la condición Lima al viaje a Quito.",
+    "label_provenance": "agent_proposed_before_inference",
+    "source_sha256": "a9d56ab67f19f64395bd2b0ce3e55c5f52d5781ce56df2a2c0eca2f33d3d4c2d"
+  },
+  {
+    "id": "development-07",
+    "memory_id": "m4-development-07",
+    "revision": 1,
+    "factors": {
+      "same_context": true,
+      "requested_fact": true,
+      "premise_correction": false
+    },
+    "role": "support",
+    "expected_selected": true,
+    "expected_answer": "A las 18:00.",
+    "forbidden_error": "Confundir apertura/cierre o cambiar la hora.",
+    "label_provenance": "agent_proposed_before_inference",
+    "source_sha256": "0ff6ff2957f9f19d221da785c59abe0a4f774c73b686a597bb2f7f9390cf56ee"
+  },
+  {
+    "id": "development-08",
+    "memory_id": "m4-development-08",
+    "revision": 1,
+    "factors": {
+      "same_context": true,
+      "requested_fact": false,
+      "premise_correction": false
+    },
+    "role": "irrelevant",
+    "expected_selected": false,
+    "expected_answer": null,
+    "forbidden_error": "Inferir ausencia de tasa a partir del silencio.",
+    "label_provenance": "agent_proposed_before_inference",
+    "source_sha256": "59423f3a2402d422759b280819bfc316c492835fa456ae2733e4237d61d64638"
+  },
+  {
+    "id": "calibration-01",
+    "memory_id": "m4-calibration-01",
+    "revision": 1,
+    "factors": {
+      "same_context": true,
+      "requested_fact": true,
+      "premise_correction": false
+    },
+    "role": "support",
+    "expected_selected": true,
+    "expected_answer": "Usa Helix.",
+    "forbidden_error": "Inventar otro editor.",
+    "label_provenance": "agent_proposed_before_inference",
+    "source_sha256": "456daf6f6dad788cf69a0e20fdda3dc43ee948303f373d32855bb06e33c1a49e"
+  },
+  {
+    "id": "calibration-02",
+    "memory_id": "m4-calibration-02",
+    "revision": 1,
+    "factors": {
+      "same_context": true,
+      "requested_fact": false,
+      "premise_correction": true
+    },
+    "role": "refutation",
+    "expected_selected": true,
+    "expected_answer": "La fuente indica que no lo ha enviado; no explica una causa.",
+    "forbidden_error": "Afirmar que lo envió o inventar la causa.",
+    "label_provenance": "agent_proposed_before_inference",
+    "source_sha256": "15be1550dea56ef5ce1c5407d583dd481a7195aed32ae0f7cc252430bdddc7cd"
+  },
+  {
+    "id": "calibration-03",
+    "memory_id": "m4-calibration-03",
+    "revision": 1,
+    "factors": {
+      "same_context": true,
+      "requested_fact": true,
+      "premise_correction": false
+    },
+    "role": "partial",
+    "expected_selected": true,
+    "expected_answer": "Por correo electrónico; la hora no consta.",
+    "forbidden_error": "Inventar una hora o afirmar respuesta completa.",
+    "label_provenance": "agent_proposed_before_inference",
+    "source_sha256": "9d9e32b0491675b704b04626338bf318c355283714486a01db734d6d55140ab6"
+  },
+  {
+    "id": "calibration-04",
+    "memory_id": "m4-calibration-04",
+    "revision": 1,
+    "factors": {
+      "same_context": false,
+      "requested_fact": false,
+      "premise_correction": false
+    },
+    "role": "irrelevant",
+    "expected_selected": false,
+    "expected_answer": null,
+    "forbidden_error": "Transferir el dato de la persona a su hermana.",
+    "label_provenance": "agent_proposed_before_inference",
+    "source_sha256": "d295d2c464d86db0ad244e18a5297961bc8080171fb215cfdeeea96c95ed84a7"
+  },
+  {
+    "id": "calibration-05",
+    "memory_id": "m4-calibration-05",
+    "revision": 1,
+    "factors": {
+      "same_context": true,
+      "requested_fact": true,
+      "premise_correction": false
+    },
+    "role": "support",
+    "expected_selected": true,
+    "expected_answer": "Agenda breve, bajo la condición remota.",
+    "forbidden_error": "Elegir agenda extensa o omitir la condición.",
+    "label_provenance": "agent_proposed_before_inference",
+    "source_sha256": "dac5c201af567e86cba375ff6193bf5446a3cb5ba3ebabc2854bd1c3c433011f"
+  },
+  {
+    "id": "calibration-06",
+    "memory_id": "m4-calibration-06",
+    "revision": 1,
+    "factors": {
+      "same_context": false,
+      "requested_fact": false,
+      "premise_correction": false
+    },
+    "role": "irrelevant",
+    "expected_selected": false,
+    "expected_answer": null,
+    "forbidden_error": "Aplicar la condición Lima al viaje a Quito.",
+    "label_provenance": "agent_proposed_before_inference",
+    "source_sha256": "35f227e2765afedfa8255d20ce1e647ab74e6da9e3e3141c752df2b6a20baecc"
+  },
+  {
+    "id": "calibration-07",
+    "memory_id": "m4-calibration-07",
+    "revision": 1,
+    "factors": {
+      "same_context": true,
+      "requested_fact": true,
+      "premise_correction": false
+    },
+    "role": "support",
+    "expected_selected": true,
+    "expected_answer": "A las 18:00.",
+    "forbidden_error": "Confundir apertura/cierre o cambiar la hora.",
+    "label_provenance": "agent_proposed_before_inference",
+    "source_sha256": "a105ef651d1e932c7c4083d1b3bd52fba1aa6306ce574cc244395a5c627ec439"
+  },
+  {
+    "id": "calibration-08",
+    "memory_id": "m4-calibration-08",
+    "revision": 1,
+    "factors": {
+      "same_context": true,
+      "requested_fact": false,
+      "premise_correction": false
+    },
+    "role": "irrelevant",
+    "expected_selected": false,
+    "expected_answer": null,
+    "forbidden_error": "Inferir ausencia de tasa a partir del silencio.",
+    "label_provenance": "agent_proposed_before_inference",
+    "source_sha256": "3c232190d845689fbb40761832fd231daf00d27fda4e15851e03bf1b1c38efe0"
+  },
+  {
+    "id": "final-01",
+    "memory_id": "m4-final-01",
+    "revision": 1,
+    "factors": {
+      "same_context": true,
+      "requested_fact": true,
+      "premise_correction": false
+    },
+    "role": "support",
+    "expected_selected": true,
+    "expected_answer": "Usa Helix.",
+    "forbidden_error": "Inventar otro editor.",
+    "label_provenance": "agent_proposed_before_inference",
+    "source_sha256": "dda9b7adaa81f367cb1e23d80497f0035cf05d00d2e8c73c6d091a5e9f9a1331"
+  },
+  {
+    "id": "final-02",
+    "memory_id": "m4-final-02",
+    "revision": 1,
+    "factors": {
+      "same_context": true,
+      "requested_fact": false,
+      "premise_correction": true
+    },
+    "role": "refutation",
+    "expected_selected": true,
+    "expected_answer": "La fuente indica que no lo ha enviado; no explica una causa.",
+    "forbidden_error": "Afirmar que lo envió o inventar la causa.",
+    "label_provenance": "agent_proposed_before_inference",
+    "source_sha256": "812f66cbd4292905b17a3686d60591f6e50c4d3edb62d8e6a0888ad73bdcc56c"
+  },
+  {
+    "id": "final-03",
+    "memory_id": "m4-final-03",
+    "revision": 1,
+    "factors": {
+      "same_context": true,
+      "requested_fact": true,
+      "premise_correction": false
+    },
+    "role": "partial",
+    "expected_selected": true,
+    "expected_answer": "Por correo electrónico; la hora no consta.",
+    "forbidden_error": "Inventar una hora o afirmar respuesta completa.",
+    "label_provenance": "agent_proposed_before_inference",
+    "source_sha256": "5e7db431b1622f0c5601f4cd8ae37e5b57114c2e69d0832135cdcca5acade24f"
+  },
+  {
+    "id": "final-04",
+    "memory_id": "m4-final-04",
+    "revision": 1,
+    "factors": {
+      "same_context": false,
+      "requested_fact": false,
+      "premise_correction": false
+    },
+    "role": "irrelevant",
+    "expected_selected": false,
+    "expected_answer": null,
+    "forbidden_error": "Transferir el dato de la persona a su hermana.",
+    "label_provenance": "agent_proposed_before_inference",
+    "source_sha256": "7527f7919b8c28bc4199006472d1cdcaf28063a6ea5ada2aa0fa541742a6c460"
+  },
+  {
+    "id": "final-05",
+    "memory_id": "m4-final-05",
+    "revision": 1,
+    "factors": {
+      "same_context": true,
+      "requested_fact": true,
+      "premise_correction": false
+    },
+    "role": "support",
+    "expected_selected": true,
+    "expected_answer": "Agenda breve, bajo la condición remota.",
+    "forbidden_error": "Elegir agenda extensa o omitir la condición.",
+    "label_provenance": "agent_proposed_before_inference",
+    "source_sha256": "fcf9b871d3130221780614b71c8f6f233f9bda581e88b099dffeb934db56edd3"
+  },
+  {
+    "id": "final-06",
+    "memory_id": "m4-final-06",
+    "revision": 1,
+    "factors": {
+      "same_context": false,
+      "requested_fact": false,
+      "premise_correction": false
+    },
+    "role": "irrelevant",
+    "expected_selected": false,
+    "expected_answer": null,
+    "forbidden_error": "Aplicar la condición Lima al viaje a Quito.",
+    "label_provenance": "agent_proposed_before_inference",
+    "source_sha256": "ce2b0c8569998093db110e3d9b740c5f3ad2fbfc2f752424297411e4615a412f"
+  },
+  {
+    "id": "final-07",
+    "memory_id": "m4-final-07",
+    "revision": 1,
+    "factors": {
+      "same_context": true,
+      "requested_fact": true,
+      "premise_correction": false
+    },
+    "role": "support",
+    "expected_selected": true,
+    "expected_answer": "A las 18:00.",
+    "forbidden_error": "Confundir apertura/cierre o cambiar la hora.",
+    "label_provenance": "agent_proposed_before_inference",
+    "source_sha256": "7ec408b66507df7d4519e381c82b244e00a536207db106905a06fb2f7748684a"
+  },
+  {
+    "id": "final-08",
+    "memory_id": "m4-final-08",
+    "revision": 1,
+    "factors": {
+      "same_context": true,
+      "requested_fact": false,
+      "premise_correction": false
+    },
+    "role": "irrelevant",
+    "expected_selected": false,
+    "expected_answer": null,
+    "forbidden_error": "Inferir ausencia de tasa a partir del silencio.",
+    "label_provenance": "agent_proposed_before_inference",
+    "source_sha256": "a1e9ebec4042c5c0f8ff9875a12f305e3cb5b84f6cdbb2e00b86b3bf0b57183e"
+  }
+]

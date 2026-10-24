@@ -1,0 +1,248 @@
+{
+  "contract_version": 1,
+  "implementation_sha256": "b84503823e881d12571e94bae587d2e65f6f8006699c92e0a96f1680370d3b2c",
+  "request_id": "m4-development-03-decisions",
+  "execution_status": "completed",
+  "outcome": "evidence_selected",
+  "effective_request": {
+    "contract_version": 1,
+    "search": {
+      "query": "¿Por qué canal y a qué hora recibe Celia las alertas?",
+      "scope_kind": "project",
+      "scope_id": "m4-development-03",
+      "entity_id": null,
+      "actor_id": "local",
+      "as_of": "2026-10-24T12:00:00.000Z",
+      "limit": 8,
+      "query_mode": "keywords",
+      "memory_types": [],
+      "bm25_weights": null
+    },
+    "provider": "decisions",
+    "selection_policy": "per_memory_factors_v1",
+    "request_id": "m4-development-03-decisions",
+    "context": [],
+    "unresolved_references": [],
+    "budgets": {
+      "input_bytes": 32768,
+      "seed_bytes": 16384,
+      "input_tokens": 16384,
+      "seed_tokens": 2048,
+      "deadline_ms": 25000
+    },
+    "source_policy": "report",
+    "calibration": null
+  },
+  "input_sha256": "090b3469df07658302c6fb752df4ade873a5f803555c03dc8ddd69b8fcdea1d3",
+  "started_at": "2026-10-24T19:47:58.477Z",
+  "finished_at": "2026-10-24T19:47:59.651Z",
+  "total_ms": 1176.120459,
+  "segmentation": {
+    "version": "literal_segments_v1",
+    "original_sha256": "cf611c48eaf805822139e63aa0814d843e59ceed800f25cb4cb27ce153f92234",
+    "original_bytes": 56,
+    "coverage": "complete",
+    "semantic_independence": "not_assessed",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start_byte": 0,
+        "end_byte": 56,
+        "text": "¿Por qué canal y a qué hora recibe Celia las alertas?",
+        "boundary": "end_of_input",
+        "exceeds_soft_limit": false
+      }
+    ],
+    "warnings": []
+  },
+  "context_segmentations": [],
+  "ambiguity": "not_assessed",
+  "clarifications": [],
+  "retrieval": {
+    "status": "complete",
+    "method": "fts5_keywords",
+    "candidates": [
+      {
+        "memory_id": "m4-development-03",
+        "revision": 1,
+        "summary": "Celia recibe las alertas por correo electrónico.",
+        "conditions": null,
+        "source": {
+          "kind": "document",
+          "ref": "synthetic:m4-factor-v1/development-03",
+          "locator": null
+        },
+        "state": "active",
+        "bm25": -12.84545239028728
+      }
+    ],
+    "semantic_coverage": "disabled",
+    "coverage": {
+      "eligible_memories": 1,
+      "indexed_memories": 1,
+      "matched_memories": 1,
+      "returned_memories": 1,
+      "truncated": false,
+      "fts_index": "complete",
+      "query": "executed",
+      "retrieval": "complete"
+    }
+  },
+  "assessments": [
+    {
+      "memory_id": "m4-development-03",
+      "revision": 1,
+      "selected": true,
+      "included_in_seed": true,
+      "relation": "unassessed",
+      "origin": "provider",
+      "validation": "structural_only",
+      "provenance_status": "declared_unverified",
+      "reason": null,
+      "applicability": true,
+      "requested_fact": true,
+      "premise_correction": false,
+      "relevance": true,
+      "calibrated_factor_scores": null,
+      "factor_scores": {
+        "same_context": 0.9,
+        "requested_fact": 0.74,
+        "premise_correction": 0.0
+      },
+      "calibration_status": "not_calibrated"
+    }
+  ],
+  "potential_equivalents": [],
+  "seed": {
+    "status": "complete",
+    "method": "fts5_external_classifier",
+    "classifier": "openai/gpt-6-luna-decisions",
+    "semantic_coverage": "disabled",
+    "memories": [
+      {
+        "memory_id": "m4-development-03",
+        "revision": 1,
+        "scope_kind": "project",
+        "scope_id": "m4-development-03",
+        "summary": "Celia recibe las alertas por correo electrónico.",
+        "conditions": null,
+        "source": {
+          "kind": "document",
+          "ref": "synthetic:m4-factor-v1/development-03",
+          "locator": null
+        },
+        "provenance_status": "declared_unverified",
+        "state": "active"
+      }
+    ],
+    "potential_equivalents": [],
+    "seed_text": "[m4-development-03@1] Celia recibe las alertas por correo electrónico.\n  Fuente declarada: document / synthetic:m4-factor-v1/development-03\n[Procedencia local: m4-development-03@1=declared_unverified. Solo se comprueba el texto original contra snapshots aportados por el operador; veracidad, resumen y condiciones añadidas sin evaluar.]"
+  },
+  "coverage": {
+    "input": "complete",
+    "semantic_index": "not_applicable",
+    "retrieval": "complete",
+    "candidate_limit": 8,
+    "returned_candidates": 1,
+    "candidates_presented": 1,
+    "classification": "complete",
+    "equivalence_review": "not_applicable",
+    "question": "unknown",
+    "seed": "complete"
+  },
+  "stages": [
+    {
+      "name": "validation",
+      "status": "completed",
+      "elapsed_ms": 1.6501249999999998,
+      "reason_code": null
+    },
+    {
+      "name": "segmentation",
+      "status": "completed",
+      "elapsed_ms": 0.017124999999999998,
+      "reason_code": null
+    },
+    {
+      "name": "search",
+      "status": "completed",
+      "elapsed_ms": 0.923875,
+      "reason_code": null
+    },
+    {
+      "name": "source_verification",
+      "status": "completed",
+      "elapsed_ms": 0.5608339999999999,
+      "reason_code": null
+    },
+    {
+      "name": "classification",
+      "status": "completed",
+      "elapsed_ms": 1171.204708,
+      "reason_code": null
+    },
+    {
+      "name": "composition",
+      "status": "completed",
+      "elapsed_ms": 1.745541,
+      "reason_code": null
+    }
+  ],
+  "issues": [],
+  "usage": {
+    "classifier_invocations": 1,
+    "receipt_status": "complete",
+    "served_model": "openai/gpt-6-luna-decisions-20261006",
+    "input_tokens": 632,
+    "output_tokens": 0,
+    "reported_cost_usd": 6.32e-05,
+    "cost_status": "reported"
+  },
+  "token_accounting": {
+    "profile": "o200k_base:tiktoken-rs-0.12.0:ordinary:utf8-json-v1",
+    "input_basis": "serialized_request_json",
+    "provider_tokenizer": "unverified",
+    "input_limit": 16384,
+    "seed_limit": 2048,
+    "accepted_input_tokens": 415,
+    "requests": [
+      {
+        "stage": "classification",
+        "request_sha256": "0b93c2622693d633a773cc0cfd71676c3dc980ee0a299b0dd6fb7cd80bd99347",
+        "json_tokens": 415,
+        "accepted": true
+      }
+    ],
+    "seed_tokens": 80,
+    "seed_status": "complete"
+  },
+  "source_verification": {
+    "policy": "report",
+    "checks": [
+      {
+        "check_id": "d58fd482aac2caf0de80867018b21b971d9c435ac601eb6fc4d19b496721f8d8",
+        "memory_id": "m4-development-03",
+        "revision": 1,
+        "source": {
+          "kind": "document",
+          "ref": "synthetic:m4-factor-v1/development-03",
+          "locator": null
+        },
+        "snapshot_id": null,
+        "snapshot_version": null,
+        "snapshot_sha256": null,
+        "observed_snapshot_sha256": null,
+        "original_sha256": "8dc8d434391e7e413df7ad6238ab62ee61ccdf193997509510dde4ac2a9ade94",
+        "start_byte": null,
+        "end_byte": null,
+        "status": "declared_unverified",
+        "reason_code": "source_not_registered",
+        "checked_at": "2026-10-24T19:47:58.478Z",
+        "profile": "local_snapshot_literal_v1",
+        "semantic_support": "not_assessed"
+      }
+    ]
+  },
+  "requested_model": "openai/gpt-6-luna-decisions",
+  "local_review": "not_available_dashboard_removed"
+}

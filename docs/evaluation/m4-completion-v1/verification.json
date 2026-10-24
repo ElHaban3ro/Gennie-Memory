@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "observed_on": "2026-10-24",
+  "scope": "M4 local evaluator/fixtures, current structured-filter intervention, frozen historical rank-pool interventions, bounded local concurrency; remote campaign owned and recorded separately by coordinator",
+  "tests": [
+    {
+      "command": "cargo test --offline -p gennie-memory-eval m4_ -- --nocapture",
+      "passed": 6,
+      "failed": 0,
+      "ignored": 0,
+      "test_seconds": 0.09,
+      "limits": "synthetic evaluator contracts/arithmetic/integrity, not provider quality"
+    },
+    {
+      "command": "GENNIE_M4_FILTER_REPORT=<new-file> cargo test --offline -p gennie-memory-retrieval --test product_coverage every_matrix_query -- --nocapture",
+      "passed": 1,
+      "failed": 0,
+      "test_seconds": 0.16,
+      "service_executions": 160
+    },
+    {
+      "command": "GENNIE_M4_OBSERVATION_REPORT=<new-file> cargo test --offline -p gennie-memory --test product_coverage_m4_concurrency -- --ignored --nocapture",
+      "passed": 1,
+      "failed": 0,
+      "test_seconds": 30.55,
+      "completed_operations": 960,
+      "resource_samples": 29,
+      "limits": "one paced synthetic30second observation; five childprocess workers; nativeps%CPU is lifetime not peroperation"
+    }
+  ],
+  "evaluator_build": {
+    "command": "cargo build --offline -p gennie-memory-eval",
+    "exit_code": 0,
+    "warnings": "27 existing dead_code warnings in historical semantic modules"
+  },
+  "binary_sha256": {
+    "target/debug/gennie-memory-eval": "2d39a333677c54d414070f917d6770b97a1a784ec32a08051add6cd2227dc18b"
+  },
+  "sha256": {
+    "apps/retrieval/tests/product_coverage.rs": "6d3f93dbecafeb870b3f9f74a342b97ef8c34a39fd0bfd1e3e5c782473192783",
+    "bootstrap/tests/product_coverage_m4_concurrency.rs": "ffbd790d72e1b66c068797a1a9e6ed2e7178b4470523f11f2ede09ee924f3731",
+    "tools/evaluation/src/main.rs": "c1dd0badc85fda18eb0755739567538411c02920e80ec2a85bfb9e0b5061ec55",
+    "tools/evaluation/src/m4_calibration.rs": "6a0dbf761ef020de0d26b0efc90a8a2663fc36a4fedfe2c1723a6b5ce6aae2c9",
+    "tools/evaluation/src/m4_rank_replay.rs": "0e0d9d50d81b329f4059cf0f89d0cf59392f05225d5202b890e807837b80188c",
+    "tests/fixtures/m4-factor-v1/labels.json": "35dff234ef9cb8e489bffbcf131a691240d59d01f1c43e9a3f2c7ba68e4203b0",
+    "tests/fixtures/m4-factor-v1/corpus.json": "c1e0a16c81a863679722a63a9fb9a2889bcceabd59d394663a096a9e7ec6f6b1",
+    "tests/fixtures/m4-factor-v1/blind-review.json": "c91857bbc7eb61a5a11eaff435dcef8f48b6d63104ccf3b2ea19598031aa2d18",
+    "tests/fixtures/m4-factor-v1/cases.json": "89fc6a5033efff58848329ed4e76b4786bb5e7704506c647f7dc8e25fbb0f496",
+    "tests/fixtures/m4-factor-v1/manifest.json": "39521d4130c6001bb18ffff4ceae7049e9f9aeda57ac76da746994b55553db40",
+    "docs/evaluation/m4-completion-v1/concurrency-observation.json": "5f06ce057e24ae0f31f4cb5762d996f8cffeee6ab7421d4837681370b0be54a8",
+    "docs/evaluation/m4-completion-v1/structured-filter-ablation.json": "edca3789a0dd3f732f97b28dcb14fa26c0473d02eba1fd159eda26ff9c38c38d",
+    "docs/evaluation/m4-completion-v1/rank-replay-main-development.json": "f3781677497cab8cb99fd1e345206cac38c6aa1b64a78657b2d98318c173b3c9",
+    "docs/evaluation/m4-completion-v1/rank-replay-natural-gap-development.json": "da1a99ff09269eb20dfa64b04a5670d81df5747be5a341162d70cb8d06a2aea4",
+    "docs/evaluation/m4-completion-v1/human-review-sample.md": "59bcba0644958769d363380f5504c3c65cc6cb44bad85cab20d5cde0902b2d5a",
+    "docs/evaluation/m4-completion-v1/human-review.json": "83bc4bdeaa86d480c730ead4d4440511503f177f6d931a6f152bd32c421859a4",
+    "docs/evaluation/m4-completion-v1/independent-label-review.json": "7e5d8110919aa60dfb908cd329766f5170c59d91d444ad38f233cd90f4260c27",
+    "docs/evaluation/m4-completion-v1/label-adjudication.json": "e00060701cde1c9b011adc3ae5a30c984d198442bcab53cb3a4489beb739ac42",
+    "docs/evaluation/m4-completion-v1/campaign-summary.json": "9f2132ab3d7ff68afdcc9acc4a031ccc2b1771d73cd33d0fef1dcfe321241472"
+  },
+  "not_claimed": [
+    "new encoder inference for frozen Laya ablations",
+    "semantic quality from classifier doubles",
+    "generalization across template families",
+    "truth of generated final responses",
+    "months-long stability",
+    "host authentication or real ACL",
+    "Codex integration",
+    "commit/push/deployment"
+  ],
+  "concurrency_bug_evidence": "../recall-completion-v1/sqlite-contention-diagnosis.md",
+  "coordinator_required": [],
+  "remote_campaign": {
+    "evidence": "campaign-v2/terminal.json and six Rust factor reports, executed by coordinator; summarized independently here",
+    "calls_second_attempt": 48,
+    "calls_total_confirmed": 49,
+    "reported_cost_usd_total": 0.002361316,
+    "elapsed_seconds_second_attempt": 61.75295875000302,
+    "degraded_operations_second_attempt": 0,
+    "final_selection": {
+      "decisions": "8/8",
+      "jev": "7/8"
+    },
+    "calibration_result": "all six final Brier comparisons worsen; no adoption/promotion; recipe preserved"
+  },
+  "formatting_after_tests": [
+    {
+      "path": "tools/evaluation/src/main.rs",
+      "tested_sha256": "11962d8e015bf6d32cb4aed3864b648d76a62dec37c80882419c2c3d1bb24309",
+      "formatted_sha256": "c1dd0badc85fda18eb0755739567538411c02920e80ec2a85bfb9e0b5061ec55",
+      "reason": "cargo fmt whitespace-only after workspace suites; no behavior changes"
+    }
+  ],
+  "joint_verification": "joint-verification.json"
+}

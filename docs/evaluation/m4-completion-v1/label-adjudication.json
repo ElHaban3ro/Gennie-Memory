@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "before_inference": true,
+  "previous_sha256": {
+    "corpus.json": "ddf4a2ca94e6c5ebb21ad83807eae7731bb1041edbff6f875dfc506b4a1b53c1",
+    "cases.json": "89fc6a5033efff58848329ed4e76b4786bb5e7704506c647f7dc8e25fbb0f496",
+    "labels.json": "26dc35d49d2ea927d71ac9bab5c1038b15331f3dd2ae8144e389f169f610d544",
+    "blind-review.json": "28d36ca13b5b8a1aff437c62cfed6be8b6538244b7b5403621f8efcacab04247"
+  },
+  "changes": [
+    {
+      "id": "development-06",
+      "original_source": "Fabio llevará el adaptador azul solo si viaja a Lima.",
+      "new_source": "Si Fabio viaja a Lima, llevará el adaptador azul.",
+      "source_sha256_before": "d69c08cabe0bd8e400325b45a91042f1d7a1a798642c580f7db08ef6cfa95bcc",
+      "reason": "Remove ambiguous necessary-condition wording before inference; a trip to Quito does not establish the antecedent Lima. No claim of negative blue via contrapositive."
+    },
+    {
+      "id": "calibration-06",
+      "original_source": "Nereo llevará el adaptador azul solo si viaja a Lima.",
+      "new_source": "Si Nereo viaja a Lima, llevará el adaptador azul.",
+      "source_sha256_before": "a9b3e62e7af6d7fbec06c17f32691f37d804ba0cc13616fb3f361cbb4bdabb1f",
+      "reason": "Remove ambiguous necessary-condition wording before inference; a trip to Quito does not establish the antecedent Lima. No claim of negative blue via contrapositive."
+    },
+    {
+      "id": "final-06",
+      "original_source": "Vasco llevará el adaptador azul solo si viaja a Lima.",
+      "new_source": "Si Vasco viaja a Lima, llevará el adaptador azul.",
+      "source_sha256_before": "8f27729577e004247194f4668870e33a397af96669f0579c4b6b8214ebf5aa45",
+      "reason": "Remove ambiguous necessary-condition wording before inference; a trip to Quito does not establish the antecedent Lima. No claim of negative blue via contrapositive."
+    }
+  ],
+  "updated_sha256": {
+    "corpus.json": "c1e0a16c81a863679722a63a9fb9a2889bcceabd59d394663a096a9e7ec6f6b1",
+    "cases.json": "89fc6a5033efff58848329ed4e76b4786bb5e7704506c647f7dc8e25fbb0f496",
+    "labels.json": "35dff234ef9cb8e489bffbcf131a691240d59d01f1c43e9a3f2c7ba68e4203b0",
+    "blind-review.json": "c91857bbc7eb61a5a11eaff435dcef8f48b6d63104ccf3b2ea19598031aa2d18"
+  },
+  "labels_changed": false,
+  "rationale_context": "Conditions unestablished are not enough to establish specified applicability; this synthetic label is a proposed rubric judgment, not a measured model result."
+}

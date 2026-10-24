@@ -1,0 +1,366 @@
+{
+  "bank_sha256": {
+    "blind-review.json": "c91857bbc7eb61a5a11eaff435dcef8f48b6d63104ccf3b2ea19598031aa2d18",
+    "cases.json": "89fc6a5033efff58848329ed4e76b4786bb5e7704506c647f7dc8e25fbb0f496",
+    "corpus.json": "c1e0a16c81a863679722a63a9fb9a2889bcceabd59d394663a096a9e7ec6f6b1",
+    "labels.json": "35dff234ef9cb8e489bffbcf131a691240d59d01f1c43e9a3f2c7ba68e4203b0"
+  },
+  "calibration_sha256": "14c099c9989347e2c8a824b8df881f4a7ab953ca6e5c466b40f22be2ff4d720e",
+  "cases": [
+    {
+      "expected_selected": true,
+      "id": "calibration-01",
+      "role": "support",
+      "segment": "direct",
+      "selected": true,
+      "selection_correct": true
+    },
+    {
+      "expected_selected": true,
+      "id": "calibration-02",
+      "role": "refutation",
+      "segment": "refutation",
+      "selected": true,
+      "selection_correct": true
+    },
+    {
+      "expected_selected": true,
+      "id": "calibration-03",
+      "role": "partial",
+      "segment": "partial",
+      "selected": true,
+      "selection_correct": true
+    },
+    {
+      "expected_selected": false,
+      "id": "calibration-04",
+      "role": "irrelevant",
+      "segment": "foreign_subject",
+      "selected": false,
+      "selection_correct": true
+    },
+    {
+      "expected_selected": true,
+      "id": "calibration-05",
+      "role": "support",
+      "segment": "condition_applies",
+      "selected": true,
+      "selection_correct": true
+    },
+    {
+      "expected_selected": false,
+      "id": "calibration-06",
+      "role": "irrelevant",
+      "segment": "condition_does_not_apply",
+      "selected": true,
+      "selection_correct": false
+    },
+    {
+      "expected_selected": true,
+      "id": "calibration-07",
+      "role": "support",
+      "segment": "cross_language",
+      "selected": true,
+      "selection_correct": true
+    },
+    {
+      "expected_selected": false,
+      "id": "calibration-08",
+      "role": "irrelevant",
+      "segment": "silence_not_negation",
+      "selected": false,
+      "selection_correct": true
+    }
+  ],
+  "degraded": [],
+  "expected_cases": 8,
+  "factors": {
+    "premise_correction": {
+      "calibrated_values": [
+        0.1111111111111111,
+        0.6666666666666666
+      ],
+      "correct_boolean_judgments": 7,
+      "empirical_two_bins": {
+        "bins": [
+          {
+            "lower": 0.0,
+            "mean_score": 0.11111111111111113,
+            "n": 7,
+            "positive_rate": 0.0,
+            "upper": 0.2
+          },
+          {
+            "lower": 0.2,
+            "mean_score": null,
+            "n": 0,
+            "positive_rate": null,
+            "upper": 0.4
+          },
+          {
+            "lower": 0.4,
+            "mean_score": null,
+            "n": 0,
+            "positive_rate": null,
+            "upper": 0.6
+          },
+          {
+            "lower": 0.6,
+            "mean_score": 0.6666666666666666,
+            "n": 1,
+            "positive_rate": 1.0,
+            "upper": 0.8
+          },
+          {
+            "lower": 0.8,
+            "mean_score": null,
+            "n": 0,
+            "positive_rate": null,
+            "upper": 1.0
+          }
+        ],
+        "brier": 0.02469135802469136,
+        "ece_5_fixed_bins": 0.1388888888888889,
+        "n": 8
+      },
+      "expected_cases": 8,
+      "raw": {
+        "bins": [
+          {
+            "lower": 0.0,
+            "mean_score": 0.018000000000000002,
+            "n": 5,
+            "positive_rate": 0.0,
+            "upper": 0.2
+          },
+          {
+            "lower": 0.2,
+            "mean_score": null,
+            "n": 0,
+            "positive_rate": null,
+            "upper": 0.4
+          },
+          {
+            "lower": 0.4,
+            "mean_score": 0.45999999999999996,
+            "n": 2,
+            "positive_rate": 0.0,
+            "upper": 0.6
+          },
+          {
+            "lower": 0.6,
+            "mean_score": null,
+            "n": 0,
+            "positive_rate": null,
+            "upper": 0.8
+          },
+          {
+            "lower": 0.8,
+            "mean_score": 0.96,
+            "n": 1,
+            "positive_rate": 1.0,
+            "upper": 1.0
+          }
+        ],
+        "brier": 0.053787499999999995,
+        "ece_5_fixed_bins": 0.13125,
+        "n": 8
+      },
+      "unscored": []
+    },
+    "requested_fact": {
+      "calibrated_values": [
+        0.2,
+        0.7142857142857143
+      ],
+      "correct_boolean_judgments": 7,
+      "empirical_two_bins": {
+        "bins": [
+          {
+            "lower": 0.0,
+            "mean_score": null,
+            "n": 0,
+            "positive_rate": null,
+            "upper": 0.2
+          },
+          {
+            "lower": 0.2,
+            "mean_score": 0.20000000000000004,
+            "n": 3,
+            "positive_rate": 0.0,
+            "upper": 0.4
+          },
+          {
+            "lower": 0.4,
+            "mean_score": null,
+            "n": 0,
+            "positive_rate": null,
+            "upper": 0.6
+          },
+          {
+            "lower": 0.6,
+            "mean_score": 0.7142857142857143,
+            "n": 5,
+            "positive_rate": 0.8,
+            "upper": 0.8
+          },
+          {
+            "lower": 0.8,
+            "mean_score": null,
+            "n": 0,
+            "positive_rate": null,
+            "upper": 1.0
+          }
+        ],
+        "brier": 0.11959183673469388,
+        "ece_5_fixed_bins": 0.12857142857142856,
+        "n": 8
+      },
+      "expected_cases": 8,
+      "raw": {
+        "bins": [
+          {
+            "lower": 0.0,
+            "mean_score": null,
+            "n": 0,
+            "positive_rate": null,
+            "upper": 0.2
+          },
+          {
+            "lower": 0.2,
+            "mean_score": 0.36,
+            "n": 1,
+            "positive_rate": 0.0,
+            "upper": 0.4
+          },
+          {
+            "lower": 0.4,
+            "mean_score": 0.455,
+            "n": 2,
+            "positive_rate": 0.0,
+            "upper": 0.6
+          },
+          {
+            "lower": 0.6,
+            "mean_score": 0.7050000000000001,
+            "n": 2,
+            "positive_rate": 0.5,
+            "upper": 0.8
+          },
+          {
+            "lower": 0.8,
+            "mean_score": 0.96,
+            "n": 3,
+            "positive_rate": 1.0,
+            "upper": 1.0
+          }
+        ],
+        "brier": 0.15905000000000002,
+        "ece_5_fixed_bins": 0.22500000000000003,
+        "n": 8
+      },
+      "unscored": []
+    },
+    "same_context": {
+      "calibrated_values": [
+        0.5,
+        0.75
+      ],
+      "correct_boolean_judgments": 6,
+      "empirical_two_bins": {
+        "bins": [
+          {
+            "lower": 0.0,
+            "mean_score": null,
+            "n": 0,
+            "positive_rate": null,
+            "upper": 0.2
+          },
+          {
+            "lower": 0.2,
+            "mean_score": null,
+            "n": 0,
+            "positive_rate": null,
+            "upper": 0.4
+          },
+          {
+            "lower": 0.4,
+            "mean_score": 0.5,
+            "n": 2,
+            "positive_rate": 0.5,
+            "upper": 0.6
+          },
+          {
+            "lower": 0.6,
+            "mean_score": 0.75,
+            "n": 6,
+            "positive_rate": 0.8333333333333334,
+            "upper": 0.8
+          },
+          {
+            "lower": 0.8,
+            "mean_score": null,
+            "n": 0,
+            "positive_rate": null,
+            "upper": 1.0
+          }
+        ],
+        "brier": 0.171875,
+        "ece_5_fixed_bins": 0.0625,
+        "n": 8
+      },
+      "expected_cases": 8,
+      "raw": {
+        "bins": [
+          {
+            "lower": 0.0,
+            "mean_score": 0.08,
+            "n": 1,
+            "positive_rate": 0.0,
+            "upper": 0.2
+          },
+          {
+            "lower": 0.2,
+            "mean_score": 0.38,
+            "n": 1,
+            "positive_rate": 1.0,
+            "upper": 0.4
+          },
+          {
+            "lower": 0.4,
+            "mean_score": 0.55,
+            "n": 1,
+            "positive_rate": 0.0,
+            "upper": 0.6
+          },
+          {
+            "lower": 0.6,
+            "mean_score": null,
+            "n": 0,
+            "positive_rate": null,
+            "upper": 0.8
+          },
+          {
+            "lower": 0.8,
+            "mean_score": 0.9720000000000001,
+            "n": 5,
+            "positive_rate": 1.0,
+            "upper": 1.0
+          }
+        ],
+        "brier": 0.08723750000000001,
+        "ece_5_fixed_bins": 0.17374999999999996,
+        "n": 8
+      },
+      "unscored": []
+    }
+  },
+  "interpretation": "Descriptive synthetic sample only. Eight cases per split; sources disjoint but template families shared. Fixed two-bin Laplace rates have tiny support and do not certify facts or authorize general use. Missing scores and degraded operations are not successes.",
+  "provider": "decisions",
+  "records_sha256": "50b97142dda56eb7261e39103f8ba1414365d629bdb3bafb84c7e5eb339ee499",
+  "requested_model": "openai/gpt-6-luna-decisions",
+  "schema_version": 1,
+  "selection_correct": 7,
+  "served_model": "openai/gpt-6-luna-decisions-20261006",
+  "split": "calibration"
+}

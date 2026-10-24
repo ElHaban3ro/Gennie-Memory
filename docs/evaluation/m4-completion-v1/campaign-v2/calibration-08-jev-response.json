@@ -1,0 +1,232 @@
+{
+  "contract_version": 1,
+  "implementation_sha256": "b84503823e881d12571e94bae587d2e65f6f8006699c92e0a96f1680370d3b2c",
+  "request_id": "m4-calibration-08-jev",
+  "execution_status": "completed",
+  "outcome": "abstained",
+  "effective_request": {
+    "contract_version": 1,
+    "search": {
+      "query": "¿Es falso que Pablo deba pagar una tasa para iniciar el trámite?",
+      "scope_kind": "project",
+      "scope_id": "m4-calibration-08",
+      "entity_id": null,
+      "actor_id": "local",
+      "as_of": "2026-10-24T12:00:00.000Z",
+      "limit": 8,
+      "query_mode": "keywords",
+      "memory_types": [],
+      "bm25_weights": null
+    },
+    "provider": "jev",
+    "selection_policy": "per_memory_factors_v1",
+    "request_id": "m4-calibration-08-jev",
+    "context": [],
+    "unresolved_references": [],
+    "budgets": {
+      "input_bytes": 32768,
+      "seed_bytes": 16384,
+      "input_tokens": 16384,
+      "seed_tokens": 2048,
+      "deadline_ms": 25000
+    },
+    "source_policy": "report",
+    "calibration": null
+  },
+  "input_sha256": "2d220324354d554002eb8734e224909e499d469a237dee7df71f184ea19a90b6",
+  "started_at": "2026-10-24T19:48:32.732Z",
+  "finished_at": "2026-10-24T19:48:33.844Z",
+  "total_ms": 1113.101459,
+  "segmentation": {
+    "version": "literal_segments_v1",
+    "original_sha256": "5e104554b254726bec768eca428f9a034e7b6f45c4f3b8b915d7334c7044fb6b",
+    "original_bytes": 66,
+    "coverage": "complete",
+    "semantic_independence": "not_assessed",
+    "segments": [
+      {
+        "segment_id": 0,
+        "start_byte": 0,
+        "end_byte": 66,
+        "text": "¿Es falso que Pablo deba pagar una tasa para iniciar el trámite?",
+        "boundary": "end_of_input",
+        "exceeds_soft_limit": false
+      }
+    ],
+    "warnings": []
+  },
+  "context_segmentations": [],
+  "ambiguity": "not_assessed",
+  "clarifications": [],
+  "retrieval": {
+    "status": "complete",
+    "method": "fts5_keywords",
+    "candidates": [
+      {
+        "memory_id": "m4-calibration-08",
+        "revision": 1,
+        "summary": "Pablo necesita presentar un documento para iniciar el trámite.",
+        "conditions": null,
+        "source": {
+          "kind": "document",
+          "ref": "synthetic:m4-factor-v1/calibration-08",
+          "locator": null
+        },
+        "state": "active",
+        "bm25": -14.83291907295837
+      }
+    ],
+    "semantic_coverage": "disabled",
+    "coverage": {
+      "eligible_memories": 1,
+      "indexed_memories": 1,
+      "matched_memories": 1,
+      "returned_memories": 1,
+      "truncated": false,
+      "fts_index": "complete",
+      "query": "executed",
+      "retrieval": "complete"
+    }
+  },
+  "assessments": [
+    {
+      "memory_id": "m4-calibration-08",
+      "revision": 1,
+      "selected": false,
+      "included_in_seed": false,
+      "relation": "unrelated",
+      "origin": "provider",
+      "validation": "structural_only",
+      "provenance_status": "declared_unverified",
+      "reason": null,
+      "applicability": false,
+      "requested_fact": false,
+      "premise_correction": false,
+      "relevance": false,
+      "calibrated_factor_scores": null,
+      "factor_scores": {
+        "same_context": 0.36,
+        "requested_fact": 0.02,
+        "premise_correction": 0.0
+      },
+      "calibration_status": "not_calibrated"
+    }
+  ],
+  "potential_equivalents": [],
+  "seed": {
+    "status": "complete",
+    "method": "fts5_external_classifier",
+    "classifier": "typesafe/jev-1.13",
+    "semantic_coverage": "disabled",
+    "memories": [],
+    "potential_equivalents": [],
+    "seed_text": null
+  },
+  "coverage": {
+    "input": "complete",
+    "semantic_index": "not_applicable",
+    "retrieval": "complete",
+    "candidate_limit": 8,
+    "returned_candidates": 1,
+    "candidates_presented": 1,
+    "classification": "complete",
+    "equivalence_review": "not_applicable",
+    "question": "unknown",
+    "seed": "complete"
+  },
+  "stages": [
+    {
+      "name": "validation",
+      "status": "completed",
+      "elapsed_ms": 1.508542,
+      "reason_code": null
+    },
+    {
+      "name": "segmentation",
+      "status": "completed",
+      "elapsed_ms": 0.016292,
+      "reason_code": null
+    },
+    {
+      "name": "search",
+      "status": "completed",
+      "elapsed_ms": 0.924,
+      "reason_code": null
+    },
+    {
+      "name": "source_verification",
+      "status": "completed",
+      "elapsed_ms": 0.142917,
+      "reason_code": null
+    },
+    {
+      "name": "classification",
+      "status": "completed",
+      "elapsed_ms": 1109.119167,
+      "reason_code": null
+    },
+    {
+      "name": "composition",
+      "status": "completed",
+      "elapsed_ms": 1.367084,
+      "reason_code": null
+    }
+  ],
+  "issues": [],
+  "usage": {
+    "classifier_invocations": 1,
+    "receipt_status": "complete",
+    "served_model": "typesafe/jev-1.13-20260917",
+    "input_tokens": 773,
+    "output_tokens": 101,
+    "reported_cost_usd": 3.2466e-05,
+    "cost_status": "reported"
+  },
+  "token_accounting": {
+    "profile": "o200k_base:tiktoken-rs-0.12.0:ordinary:utf8-json-v1",
+    "input_basis": "serialized_request_json",
+    "provider_tokenizer": "unverified",
+    "input_limit": 16384,
+    "seed_limit": 2048,
+    "accepted_input_tokens": 415,
+    "requests": [
+      {
+        "stage": "classification",
+        "request_sha256": "f9d6dd84d0a93e0710aca9dccbdfe0e2a4de934f19f0d82e8588bcf1e4963cbc",
+        "json_tokens": 415,
+        "accepted": true
+      }
+    ],
+    "seed_tokens": 0,
+    "seed_status": "complete"
+  },
+  "source_verification": {
+    "policy": "report",
+    "checks": [
+      {
+        "check_id": "e99fecb86b224d797aaed4f5bb885c03132e120006ce28d86a84fa6677071e9a",
+        "memory_id": "m4-calibration-08",
+        "revision": 1,
+        "source": {
+          "kind": "document",
+          "ref": "synthetic:m4-factor-v1/calibration-08",
+          "locator": null
+        },
+        "snapshot_id": null,
+        "snapshot_version": null,
+        "snapshot_sha256": null,
+        "observed_snapshot_sha256": null,
+        "original_sha256": "3c232190d845689fbb40761832fd231daf00d27fda4e15851e03bf1b1c38efe0",
+        "start_byte": null,
+        "end_byte": null,
+        "status": "declared_unverified",
+        "reason_code": "source_not_registered",
+        "checked_at": "2026-10-24T19:48:31.437Z",
+        "profile": "local_snapshot_literal_v1",
+        "semantic_support": "not_assessed"
+      }
+    ]
+  },
+  "requested_model": "typesafe/jev-1.13",
+  "local_review": "not_available_dashboard_removed"
+}

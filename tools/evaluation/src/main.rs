@@ -33,6 +33,8 @@ mod isolated_provider_probe;
 mod literal_identity_probe;
 mod local_embeddings;
 mod local_isolation_probe;
+mod m4_calibration;
+mod m4_rank_replay;
 mod opposite_task_probe;
 mod per_memory_matrix;
 mod policy_probe;
@@ -92,6 +94,44 @@ fn run() -> Result<(), String> {
         .next()
         .ok_or("uso: gennie-memory-eval <comando> ...; consulte docs/evaluation/contract-v1.md")?;
     match command.as_str() {
+        "m4-rank-replay" => {
+            let p: Vec<_> = args.collect();
+            if p.len() != 2 {
+                return Err(
+                    "uso: m4-rank-replay <ranks-congelados.jsonl> <nuevo-informe.json>".into(),
+                );
+            }
+            m4_rank_replay::run(Path::new(&p[0]), Path::new(&p[1]))
+        }
+        "m4-factor-calibrate" => {
+            let p: Vec<_> = args.collect();
+            if p.len() != 5 {
+                return Err("uso: m4-factor-calibrate <banco> <calibration.jsonl> <factors.rs> <provider> <nuevo.json>".into());
+            }
+            m4_calibration::calibrate(
+                Path::new(&p[0]),
+                Path::new(&p[1]),
+                Path::new(&p[2]),
+                &p[3],
+                Path::new(&p[4]),
+            )
+        }
+        "m4-factor-report" => {
+            let p: Vec<_> = args.collect();
+            if p.len() != 8 {
+                return Err("uso: m4-factor-report <banco> <records.jsonl> <calibrador.json> <training.jsonl> <factors.rs> <provider> <split> <nuevo.json>".into());
+            }
+            m4_calibration::report(
+                Path::new(&p[0]),
+                Path::new(&p[1]),
+                Path::new(&p[2]),
+                Path::new(&p[3]),
+                Path::new(&p[4]),
+                &p[5],
+                &p[6],
+                Path::new(&p[7]),
+            )
+        }
         "benchmark-local-cosine" => {
             let paths: Vec<_> = args.collect();
             if paths.len() != 3 {

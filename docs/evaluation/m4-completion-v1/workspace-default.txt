@@ -1,0 +1,1324 @@
+   Compiling gennie-memory-retrieval v0.1.0 (/Users/fer/Documents/Projects/Fer/Dev/iROMEM/apps/retrieval)
+   Compiling gennie-memory-eval v0.1.0 (/Users/fer/Documents/Projects/Fer/Dev/iROMEM/tools/evaluation)
+   Compiling gennie-memory v0.1.0 (/Users/fer/Documents/Projects/Fer/Dev/iROMEM/bootstrap)
+warning: function `query_excerpt_from_codepoints` is never used
+   --> bootstrap/src/openrouter/slot_evidence.rs:118:4
+    |
+118 | fn query_excerpt_from_codepoints(
+    |    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    |
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: function `find_identity_quote` is never used
+   --> bootstrap/src/openrouter/slot_evidence.rs:633:4
+    |
+633 | fn find_identity_quote(
+    |    ^^^^^^^^^^^^^^^^^^^
+
+warning: `gennie-memory` (bin "gennie-memory") generated 2 warnings
+warning: unused import: `generative::reasoning`
+ --> bootstrap/src/openrouter/per_memory/../../../../tools/evaluation/src/contribution_role_contract.rs:7:9
+  |
+7 | pub use generative::reasoning;
+  |         ^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: field `parent_selected` is never read
+   --> tools/evaluation/src/semantic_link_contract.rs:337:9
+    |
+331 | pub struct InputRow {
+    |            -------- field in this struct
+...
+337 |     pub parent_selected: bool,
+    |         ^^^^^^^^^^^^^^^
+    |
+    = note: `InputRow` has derived impls for the traits `Clone` and `Debug`, but these are intentionally ignored during dead code analysis
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: function `decode_body` is never used
+  --> tools/evaluation/src/semantic_link_local_contract.rs:87:8
+   |
+87 | pub fn decode_body(
+   |        ^^^^^^^^^^^
+
+warning: `gennie-memory` (bin "gennie-memory" test) generated 1 warning (run `cargo fix --bin "gennie-memory" -p gennie-memory --tests` to apply 1 suggestion)
+warning: `gennie-memory-eval` (bin "gennie-memory-eval" test) generated 2 warnings
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 14.35s
+     Running unittests src/main.rs (target/debug/deps/gennie_memory-3ee0400f602d27ab)
+
+running 272 tests
+test independent_projection::tests::requested_part_and_refutation_edges_have_distinct_real_targets ... ok
+test openrouter::baseline::tests::state_contains_saved_facts_not_the_abstention_option ... ok
+test openrouter::baseline::tests::only_evidence_is_added_to_legacy_payload_for_each_typed_model ... ok
+test independent_projection::tests::wrong_source_invented_or_duplicate_ids_are_invalid ... ok
+test openrouter::per_memory::assertion_census::live_assertion_projection_census ... ignored, authorized synthetic 128 HTTP assertion projection, concurrent batches of four
+test openrouter::per_memory::assertion_ids_probe::live_assertion_projection_ids_v3_probe ... ignored, authorized synthetic 128 HTTP assertion projection, concurrent batches of four
+test openrouter::per_memory::assertion_probe::live_assertion_projection_probe ... ignored, authorized synthetic 128 HTTP assertion projection, concurrent batches of four
+test openrouter::per_memory::assertion_sets_probe::live_assertion_projection_sets_v4_probe ... ignored, authorized synthetic 128 HTTP assertion projection, concurrent batches of four
+test openrouter::per_memory::assertion_tokens_probe::live_assertion_projection_tokens_v2_probe ... ignored, authorized synthetic 128 HTTP assertion projection, concurrent batches of four
+test openrouter::deadline_tests::unused_http1_mock_stops_without_a_connection ... ok
+test independent_projection::tests::negation_condition_and_antecedent_can_coexist_without_clause_range_loss ... ok
+test independent_projection::tests::separate_payloads_do_not_include_other_side_or_gold ... ok
+test openrouter::per_memory::complete_provider_probe::live_complete_premise_probe ... ignored, requires explicit authorization for staged synthetic four-task Perplexity checks
+test openrouter::per_memory::complete_provider_probe::live_complete_provider_probe ... ignored, requires explicit authorization for staged synthetic calls to three catalog decision models
+test independent_projection::tests::one_question_projection_is_reused_for_multiple_memories ... ok
+test openrouter::per_memory::complete_provider_probe::complete_payload_preserves_all_three_tasks_without_kind_routing_or_labels ... ok
+test openrouter::per_memory::complete_provider_probe::premise_gate_only_limits_ordinary_correction_and_preserves_other_paths ... ok
+test openrouter::per_memory::complete_premise::tests::product_atomic_question_matches_frozen_fixture_and_parser_keeps_one_receipt ... ok
+test openrouter::per_memory::contribution_role_probe::contract::generative::gemma_tests::gemma_changes_only_declared_transport_fields ... ok
+test openrouter::per_memory::contextual::tests::missing_or_foreign_role_preserves_known_usage_and_never_emits_a_partial_proposal ... ok
+test openrouter::per_memory::contextual::tests::raw_context_and_kind_preserve_corrections_reject_wrong_facts_and_count_one_receipt ... ok
+test openrouter::per_memory::contribution_role_probe::contract::generative::qwen_tests::qwen_preserves_semantics_and_disables_reasoning_without_fallback ... ok
+test openrouter::per_memory::contribution_role_probe::contract::generative::gemma_tests::gemma_requires_exact_model_provider_and_complete_roles ... ok
+test openrouter::per_memory::contribution_role_probe::contract::generative::qwen_tests::qwen_requires_complete_receipt_exact_identity_and_zero_reasoning ... ok
+test openrouter::per_memory::contribution_role_probe::contract::generative::reasoning::tests::paired_payloads_only_differ_in_enabled_and_preserve_base_semantics ... ok
+test openrouter::per_memory::contribution_role_probe::contract::generative::reasoning::tests::observed_reasoning_and_complete_receipts_are_required_without_changing_roles ... ok
+test openrouter::per_memory::contribution_role_probe::contract::generative::tests::malformed_partial_extra_roles_and_generation_fail_atomically ... ok
+test openrouter::per_memory::contribution_role_probe::contract::generative::tests::strict_roles_remap_original_ids_without_fake_probabilities ... ok
+test openrouter::per_memory::contribution_role_probe::contract::generative::tests::examples_change_only_system_message_and_keep_frozen_triplets ... ok
+test openrouter::per_memory::contribution_role_probe::contract::spanish::tests::restoring_only_translated_fields_recovers_exact_english_payload ... ok
+test openrouter::per_memory::contribution_role_probe::contract::tests::contrast_is_preserved_with_its_role_and_original_revision ... ok
+test openrouter::per_memory::contribution_role_probe::contract::tests::complete_profile_preserves_sources_model_schema_and_unmodified_criteria ... ok
+test openrouter::per_memory::contribution_role_probe::contract::spanish::tests::source_quotes_markers_model_and_canonical_namespace_survive_translation ... ok
+test openrouter::per_memory::contribution_role_probe::contract::tests::namespace_replacement_missing_roles_and_bad_model_fail_atomically ... ok
+test openrouter::per_memory::complete_premise::tests::pipeline_checks_every_positive_with_all_paths_and_merges_atomic_failure_cost ... ok
+test openrouter::per_memory::contribution_role_probe::contract::tests::local_sources_do_not_leak_sibling_source_into_state_or_question ... ok
+test openrouter::per_memory::contribution_role_probe::contract::tests::probabilities_unknown_roles_and_duplicate_sources_are_rejected ... ok
+test openrouter::per_memory::contribution_role_probe::contract::tests::profile_flags_round_trip_and_reject_inconsistent_or_wrong_types ... ok
+test openrouter::per_memory::contribution_role_probe::contract::tests::family_changes_only_model_and_binds_expected_served_revision ... ok
+test openrouter::per_memory::contribution_role_probe::contract::tests::negative_reasons_only_change_criteria_and_keep_positive_definitions ... ok
+test openrouter::per_memory::contribution_role_probe::contract::tests::negative_microsoft_changes_only_model_and_binds_revision ... ok
+test openrouter::per_memory::contribution_role_probe::contract::tests::provider_payload_contains_only_opaque_indexes_and_literal_sources ... ok
+test openrouter::per_memory::contribution_role_probe::contract::tests::unknown_value_revision_keeps_partial_and_contrast_routes ... ok
+test openrouter::per_memory::contribution_role_probe::contract::tests::negative_choices_map_to_none_without_accepting_old_or_unknown_namespace ... ok
+test openrouter::per_memory::contribution_role_probe::contract::tests::shared_definitions_reverse_exactly_and_preserve_roles_and_sources ... ok
+test openrouter::per_memory::correction_verified::tests::both_typed_answers_use_one_receipt_and_omissions_keep_known_usage ... ok
+test openrouter::per_memory::correction_verified::tests::revised_payload_keeps_candidates_questions_models_and_composition_contract ... ok
+test openrouter::per_memory::correction_verified::tests::failed_correction_check_never_returns_a_seed_and_keeps_paid_stages_once ... ok
+test openrouter::per_memory::documentary_extraction_probe::contract::grounded_references::tests::class_cue_must_be_inside_its_own_mention_and_old_kind_is_not_accepted ... ok
+test openrouter::per_memory::documentary_extraction_probe::contract::grounded_references::tests::lexical_encoding_is_reversible_conservative_and_does_not_truncate ... ok
+test openrouter::per_memory::documentary_extraction_probe::contract::grounded_references::tests::absent_class_is_explicit_and_never_an_anonymous_global_class ... ok
+test openrouter::per_memory::documentary_extraction_probe::contract::grounded_references::tests::ontology_binding_needs_a_class_cue_and_cannot_conflict_with_requested_filter ... ok
+test openrouter::per_memory::documentary_extraction_probe::contract::grounded_references::tests::all_clause_collections_are_translated_and_one_invalid_reference_degrades_the_whole ... ok
+test openrouter::per_memory::documentary_extraction_probe::contract::grounded_references::tests::parent_owner_cardinality_and_class_quantifier_keep_distinct_meanings ... ok
+test openrouter::per_memory::documentary_extraction_probe::contract::grounded_references::tests::same_grounded_reference_matches_across_source_question_and_keeps_bearer ... ok
+test openrouter::per_memory::documentary_extraction_probe::contract::grounded_references::tests::semantic_types_are_separate_from_lexical_identity_in_facts_and_requests ... ok
+test openrouter::per_memory::documentary_extraction_probe::contract::grounded_references::tests::owners_fixed_group_cardinality_and_depth_do_not_collapse_or_escape_limits ... ok
+test openrouter::per_memory::correction_verified::tests::only_correction_only_proposals_are_checked_and_direct_parts_survive_rejection ... ok
+test openrouter::per_memory::documentary_extraction_probe::contract::grounded_revision::tests::mismatched_or_filtered_rosters_and_parent_payloads_fail_closed ... ok
+test openrouter::per_memory::documentary_extraction_probe::contract::tests::capacity_contrast_changes_only_model_and_rejects_cross_served_models ... ok
+test openrouter::per_memory::documentary_extraction_probe::contract::tests::grounded_wire_changes_only_messages_and_validates_the_new_reference_contract ... ok
+test openrouter::per_memory::documentary_extraction_probe::contract::tests::guided_json_changes_only_schema_delivery_with_equal_local_validation ... ok
+test openrouter::per_memory::documentary_extraction_probe::contract::tests::guided_payload_preserves_user_data_and_generation_settings_and_rejects_nonmeasurement_scopes ... ok
+test openrouter::deadline_tests::product_request_deadline_covers_trickling_body ... ok
+test openrouter::deadline_tests::versioned_deadline_is_shorter_than_http_timeout_and_classifies_timeout ... ok
+test openrouter::per_memory::documentary_extraction_probe::contract::tests::openai_receipts_are_model_and_provider_specific_with_same_shape_validation ... ok
+test openrouter::per_memory::documentary_extraction_probe::contract::tests::guided_schema_rejects_inapplicable_measurement_xor_and_empty_readings_without_repair ... ok
+test openrouter::per_memory::documentary_extraction_probe::contract::tests::payload_has_one_text_no_fixture_facts_or_hidden_labels ... ok
+test openrouter::per_memory::documentary_extraction_probe::contract::tests::response_must_be_complete_from_fixed_model_and_provider ... ok
+test openrouter::per_memory::documentary_extraction_probe::contract::tests::strict_shape_rejects_missing_nullable_fields_extra_roles_and_bad_types ... ok
+test openrouter::per_memory::documentary_extraction_probe::contract::tests::json_v2_changes_only_schema_delivery_and_keeps_identical_validation ... ok
+test openrouter::per_memory::documentary_extraction_probe::contract::tests::profiles_reject_unknown_and_openai_changes_only_model_and_route ... ok
+test openrouter::per_memory::documentary_extraction_probe::contract::typed_clauses::tests::availability_keeps_exact_record_scope_trial_and_conditions ... ok
+test openrouter::per_memory::documentary_extraction_probe::contract::typed_clauses::tests::capability_permission_and_use_stay_distinct_with_same_term ... ok
+test openrouter::per_memory::documentary_extraction_probe::contract::typed_clauses::tests::closed_flow_set_does_not_publish_individual_known_endpoints_or_upstream_exclusion ... ok
+test openrouter::per_memory::documentary_extraction_probe::contract::typed_clauses::tests::component_identity_includes_ancestors_and_entity_terms ... ok
+test openrouter::per_memory::documentary_extraction_probe::contract::typed_clauses::tests::duplicate_conditions_are_not_overwritten_and_unsupported_is_not_empty_knowledge ... ok
+test openrouter::per_memory::documentary_extraction_probe::contract::tests::v4_removes_only_disabled_reasoning_and_preflight_rejects_unsupported_parameters ... ok
+test openrouter::per_memory::documentary_extraction_probe::contract::typed_clauses::tests::identity_keeps_kind_owner_and_fixed_group_but_not_universal_quantifier ... ok
+test openrouter::per_memory::documentary_extraction_probe::contract::typed_clauses::tests::invented_names_extra_fields_and_malformed_variants_fail_instead_of_being_ignored ... ok
+test openrouter::per_memory::documentary_extraction_probe::contract::typed_clauses::tests::exact_decimal_text_never_rounds_known_quantities ... ok
+test openrouter::per_memory::documentary_extraction_probe::contract::typed_clauses::tests::negative_requirement_keeps_item_polarity_and_basis_without_a_set_or_ignorance ... ok
+test openrouter::per_memory::documentary_extraction_probe::contract::typed_clauses::tests::procedure_nonperformance_pending_and_missing_method_never_add_quantity_facts ... ok
+test openrouter::per_memory::documentary_extraction_probe::contract::grounded_revision::tests::local_diagnostics_are_not_human_hints_and_cannot_be_forged ... ok
+test openrouter::per_memory::documentary_extraction_probe::contract::typed_clauses::tests::query_separates_slots_premises_and_explicit_vs_generic_measurement_identity ... ok
+test openrouter::per_memory::documentary_extraction_probe::contract::typed_clauses::tests::mixed_certain_and_correlated_open_readings_preserve_all_clauses ... ok
+test openrouter::per_memory::documentary_extraction_probe::contract::typed_clauses::tests::zero_and_negated_bounds_preserve_numeric_meaning_and_extent ... ok
+test openrouter::per_memory::factors::product_payload_tests::product_receives_conditions_and_source_while_legacy_remains_frozen ... ok
+test openrouter::per_memory::documentary_extraction_probe::contract::typed_clauses::tests::requested_extents_and_assumption_limit_are_preserved ... ok
+test openrouter::per_memory::factors::tests::missing_or_invalid_factor_fails_atomically_with_the_global_receipt ... ok
+test openrouter::per_memory::family_probe::live_scoped_family_probe ... ignored, authorized synthetic family contrast:108HTTP maximum,18knownquestions,3models,no retries
+test openrouter::per_memory::full_prefix_probe::asked_dimension_limits_only_data_and_never_globally_vetoes_corrections ... ok
+test openrouter::per_memory::full_prefix_probe::live_full_prefix_dimension_probe ... ignored, requires explicit authorization for 128 complete-prefix synthetic Perplexity judgments
+test openrouter::per_memory::independent_projection_probe::live_independent_projection_probe ... ignored, authorized synthetic independent projections: max253HTTP, concurrent batches of4
+test openrouter::per_memory::independent_role_probe::live_independent_role_matcher ... ignored, authorized synthetic role matcher: max128HTTP, existing projection receipts reused
+test openrouter::per_memory::predicate_probe::context_is_distinct_from_requested_evidence_and_invalid_choice_is_not_none ... ok
+test openrouter::per_memory::predicate_probe::live_predicate_relation_probe ... ignored, authorized synthetic 384 HTTP property-relation diagnostic; one-use directory
+test openrouter::per_memory::factors::tests::supports_and_corrections_survive_but_context_alone_and_wrong_referents_do_not ... ok
+test openrouter::per_memory::proposition_isolation_probe::contract::tests::ablations_change_only_grounding_questions_then_source_field ... ok
+test openrouter::per_memory::factors::score_tests::factor_probabilities_are_individual_and_invalid_or_partial_scores_fail ... ok
+test openrouter::per_memory::proposition_isolation_probe::contract::tests::order_is_balanced_over_eighteen_cases ... ok
+test openrouter::per_memory::proposition_examples_probe::contract::tests::add_only_exact_frozen_utility_triplets_and_their_scope ... ok
+test openrouter::per_memory::proposition_isolation_probe::contract::tests::role_only_namespace_does_not_require_or_fabricate_grounding ... ok
+test openrouter::per_memory::proposition_probe::contract::tests::decisions_changes_only_model_and_keeps_strict_revision_and_two_obligations ... ok
+test openrouter::per_memory::proposition_probe::contract::tests::namespace_revision_and_probabilities_reject_incomplete_or_fabricated_answers ... ok
+test openrouter::per_memory::provider_probe::live_role_opposite_task_probe ... ignored, requires explicit authorization for 25 fixed synthetic opposite-task requests
+test openrouter::per_memory::provider_probe::live_role_provider_probe ... ignored, requires explicit authorization for 86 fixed synthetic OpenRouter requests
+test openrouter::per_memory::quoted_role_probe::quote_contract::tests::invented_or_borrowed_quotes_and_premises_fail ... ok
+test openrouter::per_memory::provider_probe::provider_probe_changes_only_the_model_for_both_complete_verification_tasks ... ok
+test openrouter::per_memory::quoted_role_probe::quote_contract::tests::literal_b_keeps_original_source_and_none_needs_no_proof ... ok
+test openrouter::per_memory::quoted_role_probe::quote_contract::tests::missing_extra_duplicate_or_invalid_proofs_fail_atomically ... ok
+test openrouter::per_memory::quoted_role_probe::quote_contract::tests::role_count_unknown_role_and_unexpected_keys_are_invalid ... ok
+test openrouter::per_memory::role_batch::tests::live_role_batch_isolation_probe ... ignored, requires explicit authorization for twelve synthetic OpenRouter requests
+test openrouter::per_memory::role_batch::tests::memories_are_question_local_and_full_rules_are_preserved_once ... ok
+test openrouter::per_memory::role_batch::tests::all_answers_are_bound_but_global_receipt_is_not_duplicated ... ok
+test openrouter::per_memory::proposition_probe::contract::tests::unsupported_but_contributing_remains_two_separate_judgments ... ok
+test openrouter::per_memory::role_proposal::tests::missing_kind_or_foreign_option_retains_known_charge ... ok
+test openrouter::per_memory::role_proposal::tests::revision_changes_only_shared_rules_and_question_text_not_query_memories_or_model ... ok
+test openrouter::per_memory::role_proposal::tests::raw_kind_has_no_context_claim_and_keeps_one_proposal_receipt ... ok
+test openrouter::per_memory::role_verified::tests::a_fact_check_cannot_accept_foreign_correction_answers_and_keeps_known_usage ... ok
+test openrouter::per_memory::role_batch::tests::pipeline_uses_one_batch_receipt_and_preserves_atomic_failure_cost ... ok
+test openrouter::per_memory::role_verified::tests::fact_revision_keeps_query_summary_model_and_single_binary_schema ... ok
+test openrouter::per_memory::role_verified::tests::any_failed_fact_check_degrades_whole_operation_and_keeps_all_known_stage_receipts ... ok
+test openrouter::per_memory::scoped::tests::a_missing_path_is_a_failure_with_one_known_receipt ... ok
+test openrouter::per_memory::scoped::tests::compact_criteria_keep_every_question_rule_and_memory_unchanged ... ok
+test openrouter::per_memory::scoped::tests::flat_aliases_preserve_literal_task_and_criteria_and_remap_only_answer_identifiers ... ok
+test openrouter::per_memory::scoped::tests::scoped_paths_preserve_parts_and_corrections_without_fabricating_context_judgments ... ok
+test openrouter::per_memory::scoped_anchor::tests::corrected_author_is_not_required_as_fixed_identity_and_receipt_is_not_multiplied ... ok
+test openrouter::per_memory::scoped_anchor::tests::missing_or_out_of_namespace_anchor_fails_with_known_charge ... ok
+test openrouter::per_memory::documentary_extraction_probe::contract::tests::typed_clause_payloads_exclude_manual_frames_and_shape_is_strict_on_the_wire ... ok
+test openrouter::per_memory::scoped_anchor::tests::no_name_or_uncertain_name_preserves_scoped_fallback_without_manufactured_presence ... ok
+test openrouter::per_memory::role_verified::tests::every_positive_including_first_fact_is_checked_with_its_role_and_no_other_memories ... ok
+test openrouter::per_memory::scoped_definition_probe::definitions_change_only_evidence_instructions_and_keep_original_parser_contract ... ok
+test openrouter::per_memory::scoped_definition_probe::documented_paths_resolve_and_reversing_only_paths_restores_the_entire_payload ... ok
+test openrouter::per_memory::scoped_definition_probe::live_scoped_definition_probe ... ignored, authorized synthetic diagnostic: 18 known questions, two variants, 36 HTTP, no retries
+test openrouter::per_memory::scoped_definition_probe::live_scoped_inline_probe ... ignored, authorized synthetic inline diagnostic: same 18 known questions, 36 HTTP, no retries
+test openrouter::per_memory::scoped_definition_probe::live_scoped_path_probe ... ignored, authorized synthetic documented-path diagnostic:18questions36HTTP,no retries
+test openrouter::per_memory::scoped_definition_probe::live_scoped_presupposition_probe ... ignored, authorized synthetic presupposition diagnostic: same18questions,36HTTP,no retries
+test openrouter::per_memory::scoped_definition_probe::live_scoped_role_criteria_probe ... ignored, authorized synthetic role criteria diagnostic:18questions36HTTP,no retries
+test openrouter::per_memory::scoped_definition_probe::live_scoped_role_probe ... ignored, authorized synthetic role diagnostic: same18questions,36HTTP,no retries
+test openrouter::per_memory::scoped_definition_probe::inline_definitions_change_no_state_or_choice_namespace ... ok
+test openrouter::per_memory::scoped_definition_probe::exclusive_roles_preserve_state_anchor_and_reject_missing_or_unbound_answers ... ok
+test openrouter::per_memory::scoped_definition_probe::presupposition_revision_changes_only_correction_instructions ... ok
+test openrouter::per_memory::scoped_definition_probe::role_criteria_revision_only_changes_contribution_and_refutation_descriptions ... ok
+test openrouter::per_memory::semantic_check_probe::contract::tests::closed_input_does_not_accept_labels_or_a_second_text ... ok
+test openrouter::per_memory::semantic_check_probe::contract::tests::judgment_gate_rejects_uncertainty_and_never_self_certifies ... ok
+test openrouter::per_memory::semantic_check_probe::contract::tests::missing_normalization_is_not_a_semantic_acceptance ... ok
+test openrouter::per_memory::semantic_check_probe::capacity_terminal_does_not_accept_crossed_provider_or_repair_paths ... ok
+test openrouter::per_memory::semantic_check_probe::contract::label_tests::frozen_labels_must_follow_both_reviewers_and_every_adjudication ... ok
+test openrouter::per_memory::semantic_check_probe::presentation::tests::coordinate_mapping_preserves_nested_moved_values_and_escaped_keys ... ok
+test openrouter::per_memory::semantic_check_probe::contract::tests::payload_keeps_untrusted_data_and_contract_separate_without_repair_fields ... ok
+test openrouter::per_memory::semantic_check_probe::presentation::tests::all_values_paths_and_semantic_mentions_survive_without_overwriting ... ok
+test openrouter::per_memory::semantic_check_probe::presentation::tests::normalization_separates_only_root_copy_not_values_or_nested_fields ... ok
+test openrouter::per_memory::semantic_check_probe::presentation::tests::restore_rejects_duplicate_collision_bad_parent_and_escape ... ok
+test openrouter::per_memory::semantic_check_probe::presentation::tests::malformed_model_json_is_an_error_not_a_panic ... ok
+test openrouter::per_memory::semantic_check_probe::presentation::tests::model_route_and_non_message_parameters_are_identical ... ok
+test openrouter::per_memory::semantic_check_probe::contract::tests::rejects_forged_paths_quotes_labels_extra_and_empty_findings ... ok
+test openrouter::per_memory::semantic_link_probe::contract::tests::builder_keeps_full_text_and_only_opaque_input ... ok
+test openrouter::per_memory::semantic_check_probe::terminal_response_requires_valid_judgments_receipt_provider_and_complete_output ... ok
+test openrouter::per_memory::semantic_link_probe::contract::tests::duplicate_extra_missing_and_wrong_ids_fail ... ok
+test openrouter::per_memory::semantic_link_probe::contract::tests::uncertainty_is_debt_not_technical_failure_or_selection ... ok
+test openrouter::per_memory::semantic_link_probe::direct_contract::tests::document_only_index_is_distinct_and_legacy_index_is_unchanged ... ok
+test openrouter::per_memory::semantic_link_probe::contract::tests::quotes_cannot_cross_sources_or_invent_provenance ... ok
+test openrouter::per_memory::semantic_link_probe::direct_contract::tests::literal_references_do_not_turn_silence_into_verified_registered_absence ... ok
+test openrouter::per_memory::semantic_link_probe::direct_contract::tests::model_judgment_and_raw_provenance_preserve_uncertainty_without_repair ... ok
+test openrouter::per_memory::semantic_link_probe::direct_contract::tests::full_sources_without_query_map_and_exact_four_field_schema ... ok
+test openrouter::per_memory::semantic_link_probe::direct_contract::tests::wrong_source_noncanonical_duplicate_unordered_missing_references_fail ... ok
+test openrouter::per_memory::semantic_link_probe::direct_contract::tests::receipts_enforce_512_while_legacy_ceiling_remains_1024 ... ok
+test openrouter::per_memory::semantic_link_probe::contract::tests::receipt_and_generation_failures_are_never_abstentions ... ok
+test openrouter::per_memory::semantic_link_probe::local_contract::tests::false_facets_can_pass_structure_without_becoming_verified_truth ... ok
+test openrouter::per_memory::semantic_link_probe::local_contract::tests::artifact_preserves_raw_seven_fields_and_exact_reference_provenance ... ok
+test openrouter::per_memory::semantic_link_probe::direct_profile_limit_and_document_index_do_not_change_legacy_interfaces ... ok
+test openrouter::per_memory::semantic_link_probe::local_contract::tests::payload_keeps_v2_sources_maps_schema_facets_and_provider_but_has_no_decision ... ok
+test openrouter::per_memory::semantic_link_probe::local_contract::tests::remote_decision_duplicates_and_extra_fields_are_technical_failures ... ok
+test openrouter::per_memory::semantic_link_probe::missing_or_rebuilt_binary_cannot_use_a_frozen_plan ... ok
+test openrouter::per_memory::semantic_link_probe::next_request_cannot_cross_budget_or_nonfinite_values ... ok
+test openrouter::per_memory::semantic_link_probe::pilot_blocks_parent_losses_and_new_extras_not_existing_errors ... ok
+test openrouter::per_memory::semantic_link_probe::shared_harness_keeps_literal_v1_and_span_v2_decoding_isolated ... ok
+test openrouter::per_memory::semantic_link_probe::span_contract::tests::composed_card_keeps_source_and_debt_without_inventing_a_focus_value ... ok
+test openrouter::per_memory::semantic_link_probe::span_contract::tests::compact_maps_keep_full_sources_and_numeric_token_order ... ok
+test openrouter::per_memory::semantic_link_probe::span_contract::tests::references_reject_unknown_crossed_duplicate_disordered_and_empty_ids ... ok
+test openrouter::per_memory::semantic_link_probe::span_contract::tests::strict_fields_and_shared_receipt_guard_remain_atomic ... ok
+test openrouter::per_memory::semantic_link_probe::span_contract::tests::unicode_offsets_and_literal_separator_rendering ... ok
+test openrouter::per_memory::sparse_critic_probe::live_context_critic_probe ... ignored, authorized synthetic full-context parallel critics:18pairs,max72HTTP,no retries
+test openrouter::per_memory::sparse_critic_probe::live_sparse_critic_probe ... ignored, authorized synthetic sparse chain:18pairedknownqueries,max72HTTP,no retries,no ports
+test openrouter::per_memory::sparse_critic_probe::live_targeted_critic_probe ... ignored, authorized synthetic targeted critics with full context:18pairs,max72HTTP,no retries
+test openrouter::per_memory::semantic_link_probe::local_contract::tests::shared_v2_reference_errors_and_v1_v2_regressions_are_preserved ... ok
+test openrouter::per_memory::sparse_critic_probe::sparse_payload_exposes_only_remapped_sources_without_prior_judgments ... ok
+test openrouter::per_memory::semantic_link_probe::local_contract::tests::local_policy_handles_positive_negative_and_uncertainty_combinations ... ok
+test openrouter::per_memory::sparse_critic_probe::role_parser_is_atomic_and_keeps_literal_guard_with_exclusive_categories ... ok
+test openrouter::per_memory::tests::binary_task_keeps_utility_untyped_and_rejects_relation_labels ... ok
+test openrouter::per_memory::tests::contrastive_examples_preserve_candidates_query_and_task_without_becoming_live_questions ... ok
+test openrouter::per_memory::tests::any_missing_extra_or_invalid_judgement_fails_atomically_with_known_receipt ... ok
+test openrouter::per_memory::tests::experimental_model_version_changes_only_model_and_keeps_existing_provider_ids ... ok
+test openrouter::per_memory::tests::counterfactual_rule_applies_only_to_corrections_and_preserves_other_fields ... ok
+test openrouter::per_memory::tests::explicit_task_changes_only_memory_instructions_without_rewriting_data ... ok
+test openrouter::per_memory::tests::strict_binary_keeps_each_memory_as_data_and_caps_the_shared_request ... ok
+test openrouter::per_memory::tests::self_contained_questions_each_receive_the_query_and_one_memory ... ok
+test openrouter::per_memory::tests::score_instrumentation_preserves_choice_and_one_receipt_even_if_score_disagrees ... ok
+test openrouter::per_memory::tests::multiple_parts_are_retained_with_one_global_receipt ... ok
+test openrouter::product_diagnostic_tests::structured_metadata_distinguishes_budget_from_access_without_echoing_raw_text ... ok
+test openrouter::slot_evidence::tests::compact_anchor_derivation_keeps_literal_comma_name_id_and_rejects_cross_entity_span ... ok
+test openrouter::per_memory::verified::tests::each_proposal_is_checked_alone_and_receipts_are_counted_once ... ok
+test openrouter::slot_evidence::tests::compact_decode_diagnoses_incomplete_json_and_shape_without_exposing_content ... ok
+test openrouter::slot_evidence::tests::compact_anchor_components_allow_any_literal_order_and_derive_span_locally ... ok
+test openrouter::slot_evidence::tests::compact_identity_binding_is_derived_only_from_one_unique_cited_anchor ... ok
+test openrouter::per_memory::verified::tests::failed_check_is_atomic_and_missing_receipt_is_never_a_complete_cost ... ok
+test openrouter::slot_evidence::tests::compact_decode_rejects_legacy_anchor_offsets_even_when_provider_violates_schema ... ok
+test openrouter::slot_evidence::tests::compact_prompt_uses_literal_quotes_without_offsets ... ok
+test openrouter::slot_evidence::tests::compact_schema_fixes_slot_count_and_ids_from_question ... ok
+test openrouter::slot_evidence::tests::compact_slot_and_premise_quote_failures_have_distinct_diagnostics ... ok
+test openrouter::slot_evidence::tests::compact_schema_caps_candidate_records_to_the_supplied_roster_size ... ok
+test openrouter::slot_evidence::tests::compact_slots_preserve_multi_interrogative_order_and_fail_closed_on_count_mismatch ... ok
+test openrouter::slot_evidence::tests::compact_slots_are_derived_from_question_not_model_quotes ... ok
+test openrouter::slot_evidence::tests::compact_slots_recognize_bounded_english_and_spanish_interrogatives ... ok
+test openrouter::slot_evidence::tests::compact_schema_keeps_roster_citations_and_relation_targets ... ok
+test openrouter::slot_evidence::tests::compact_subject_quote_is_located_locally_and_must_be_unique ... ok
+test openrouter::slot_evidence::tests::compact_single_slot_binding_is_derived_locally_when_model_uses_anchor_id ... ok
+test openrouter::slot_evidence::tests::compact_v2_binds_each_proposition_to_its_own_query_anchor ... ok
+test openrouter::slot_evidence::tests::compact_v3_derives_subject_name_from_unique_kind_and_id ... ok
+test openrouter::slot_evidence::tests::compact_where_work_query_keeps_location_slot_and_work_premise_separate ... ok
+test openrouter::slot_evidence::tests::gemma_experimental_paths_keep_strict_parameter_filtering_with_provider_failover ... ok
+test openrouter::slot_evidence::tests::compact_v2_dto_matches_wire_shape_and_derives_only_local_fields ... ok
+test openrouter::slot_evidence::tests::compact_validation_demotes_foreign_memory_and_keeps_requested_evidence ... ok
+test openrouter::slot_evidence::tests::identity_quote_is_derived_from_exact_tokens_and_rejects_id_collisions ... ok
+test openrouter::slot_evidence::tests::query_target_codepoint_ranges_slice_original_unicode_without_normalizing ... ok
+test openrouter::slot_evidence::tests::query_target_start_and_positive_length_build_a_bounded_unicode_span ... ok
+test openrouter::slot_evidence::tests::selected_kind_and_subject_occurrences_are_bound_to_their_anchor_quote ... ok
+test openrouter::per_memory::documentary_extraction_probe::contract::grounded_revision::tests::every_draft_is_revised_with_only_own_text_and_recomputed_local_diagnostic ... ok
+test openrouter::slot_evidence::tests::compact_wire_v2_preserves_third_party_contrast_and_scoped_refutations ... ok
+test openrouter::slot_evidence::tests::v3_provider_is_pinned_without_changing_legacy_routing ... ok
+test openrouter::slot_evidence::tests::kind_is_reconstructed_from_the_exact_query_codepoint_span ... ok
+test openrouter::tests::consensus_requires_exact_agreement_and_retains_known_receipts_on_failure ... ok
+test openrouter::slot_evidence::tests::r31_fixture_runs_compact_trace_validation_and_selection_locally ... ok
+test openrouter::tests::failed_support_gate_preserves_only_the_known_first_call_usage ... ok
+test openrouter::tests::failed_votes_aggregate_known_receipts_without_inventing_unknowns ... ok
+test openrouter::tests::failed_http_replies_keep_valid_usage_without_inventing_receipts_for_html_or_oversized_bodies ... ok
+test openrouter::tests::invalid_choice_preserves_valid_receipt_fields ... ok
+test openrouter::tests::batched_consensus_counts_one_receipt_and_rejects_missing_vote ... ok
+test openrouter::tests::roles_fallback_preserves_first_selection_and_accounts_for_rescue_or_failure ... ok
+test openrouter::tests::shared_consensus_payload_keeps_all_twenty_memories_once ... ok
+test openrouter::tests::support_gate_vetoes_selection_and_accounts_for_both_calls ... ok
+test openrouter::tests::mirrored_payload_reverses_only_the_same_presented_prefix ... ok
+test openrouter::tests::typed_choice_maps_only_known_labels_and_validates_usage ... ok
+test openrouter::tests::primary_veto_is_asymmetric_and_never_turns_invalid_vote_into_abstention ... ok
+test projection_contract::tests::invented_quotes_dangling_targets_extra_fields_and_unscoped_negation_are_errors ... ok
+test openrouter::tests::mirrored_consensus_compares_memory_ids_instead_of_labels ... ok
+test openrouter::write_relations::tests::typed_relation_payload_and_parser_require_complete_roster ... ok
+test projection_contract::tests::literal_refutation_links_to_premise_without_demanding_requested_value ... ok
+test projection_contract::tests::wrong_case_is_not_rescued_by_literal_quote_and_parts_do_not_require_missing_values ... ok
+test projection_ids::tests::invented_ids_wrong_source_and_ambiguous_spelling_are_rejected ... ok
+test projection_sets::tests::set_order_does_not_change_membership_or_group_index ... ok
+test projection_tokens::tests::discontiguous_question_groups_are_grounded_without_invented_quotes ... ok
+test projection_tokens::tests::literal_tokens_do_not_rescue_another_case ... ok
+test projection_ids::tests::dynamic_schema_separates_namespaces_and_only_enumerates_real_tokens ... ok
+test registry::tests::orders_dependencies_and_rejects_invalid_graph ... ok
+test projection_tokens::tests::out_of_range_duplicate_and_outside_assertion_references_are_errors ... ok
+test projection_sets::tests::base_schema_and_source_specific_enums_are_preserved ... ok
+test openrouter::slot_evidence::tests::slot_evidence_http_route_records_hashes_without_storing_request_content ... ok
+test openrouter::per_memory::documentary_extraction_probe::contract::grounded_revision::tests::structurally_valid_drafts_are_also_revised_and_schema_rules_are_unchanged ... ok
+test source_import::tests::explicit_origin_rejects_credentials_redirect_surface_and_other_protocols ... ok
+test source_import::tests::imported_bytes_must_match_hash_utf8_and_limit ... ok
+test witness::tests::failed_second_stage_keeps_known_first_and_second_usage ... ok
+test retired_migrations::tests::fresh_database_never_creates_retired_tables ... ok
+test retired_migrations::tests::existing_reviews_are_preserved_but_checksum_stays_enforced ... ok
+test session::product_session_tests::versioned_operations_preserve_transport_and_validate_duplicate_fields ... ok
+test session::tests::session_reuses_search_and_revalidates_the_seed ... ok
+test openrouter::deadline_tests::product_deadline_includes_headers_and_body_in_one_budget ... ok
+test openrouter::per_memory::documentary_extraction_probe::contract::grounded_revision::tests::incomplete_failed_duplicate_wrong_model_or_receipt_parents_never_trigger_retry ... ok
+test openrouter::deadline_tests::rejected_token_budget_opens_no_connection_and_can_be_reused_at_exact_limit ... ok
+test openrouter::token_budget::tests::product_providers_and_policies_guard_full_payload_and_second_pass ... ok
+test openrouter::deadline_tests::evaluation_capture_records_only_hashes_and_transport_metadata ... ok
+
+test result: ok. 248 passed; 0 failed; 24 ignored; 0 measured; 0 filtered out; finished in 0.45s
+
+     Running tests/memory_lifecycle_cli.rs (target/debug/deps/memory_lifecycle_cli-3a403cb25cbb9b53)
+
+running 1 test
+test lifecycle_and_queue_persist_across_cli_and_jsonl_sessions ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.53s
+
+     Running tests/product_coverage_cli.rs (target/debug/deps/product_coverage_cli-290cdeeab01fd355)
+
+running 3 tests
+test jsonl_recovers_after_multiple_invalid_operations_and_keeps_authorization_per_request ... ok
+test four_concurrent_process_sessions_keep_filters_for_ninety_six_reads ... ok
+test failed_reimport_and_process_reopen_preserve_revisions_identity_and_isolation ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.10s
+
+     Running tests/product_coverage_m4_concurrency.rs (target/debug/deps/product_coverage_m4_concurrency-85b127adf1498e70)
+
+running 4 tests
+test writers_readers_and_lifecycle_overlap_with_measured_contention_for_thirty_seconds ... ignored, explicit 30-second bounded writer/reader/maintenance campaign; see protocol
+test embedding_job_waits_for_reserved_lock ... ok
+test lifecycle_transition_waits_for_reserved_lock ... ok
+test a_cli_writer_waits_for_an_existing_reserved_lock_then_commits_once ... ok
+
+test result: ok. 3 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.24s
+
+     Running tests/retrieval_isolation_cli.rs (target/debug/deps/retrieval_isolation_cli-88471ffaa02ea925)
+
+running 2 tests
+test entity_write_search_and_jsonl_use_the_same_persisted_contract ... ok
+test recall_token_budget_is_enforced_by_cli_and_each_jsonl_operation ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.91s
+
+     Running tests/source_verification_cli.rs (target/debug/deps/source_verification_cli-bafe7abf863a384d)
+
+running 2 tests
+test jsonl_new_versions_failures_and_old_version_replays_preserve_current_snapshot ... ok
+test register_write_verify_and_reopen_keep_the_same_local_receipt ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.49s
+
+     Running tests/write_reconciliation_cli.rs (target/debug/deps/write_reconciliation_cli-704925562a4097a5)
+
+running 2 tests
+test strict_cli_proposal_is_not_published_as_a_memory ... ok
+test cli_proposals_resolve_and_jsonl_confirmation_audit_are_durable ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running unittests src/main.rs (target/debug/deps/gennie_memory_eval-e509842b520a0574)
+
+running 717 tests
+test campaign::tests::any_evidence_selection_accepts_one_annotated_session_and_keeps_abstention_exact ... ok
+test campaign::tests::per_case_policy_is_explicit_and_cannot_recurse ... ok
+test campaign::tests::recall_message_always_pins_baseline_and_requested_policy ... ok
+test assertion_census::tests::census_continues_invalid_extraction_but_not_transport_or_model_errors ... ok
+test charts::tests::xml_labels_are_escaped ... ok
+test assertion_census::tests::query_variation_ignores_order_but_preserves_identity_membership ... ok
+test campaign::tests::journal_rejects_uncertain_call_before_any_retry ... ok
+test campaign::tests::campaign_preserves_one_declared_label_source ... ok
+test closeout::tests::incomplete_started_call_is_not_an_empty_answer_even_when_partial_allowed ... ok
+test closeout::tests::wilson_interval_does_not_turn_perfect_small_sample_into_certainty ... ok
+test complete_provider_probe::tests::all_three_real_choices_are_required_for_role_complete_or ... ok
+test complete_provider_probe::tests::atomic_premise_is_mandatory_but_cannot_veto_fact_or_linked_contrast ... ok
+test closeout::tests::missing_cost_is_unknown_rather_than_zero ... ok
+test config_selection::tests::losing_a_refutation_is_not_a_safety_improvement ... ok
+test closeout::tests::negative_evidence_remains_id_disagreement_without_claiming_falsehood ... ok
+test config_selection::tests::pairs_alternate_order_without_changing_labels_or_question ... ok
+test closeout::tests::rejects_case_hash_change_and_cross_scope_seed ... ok
+test config_sweep::tests::preserving_coverage_is_only_a_local_candidate ... ok
+test complete_provider_probe::tests::indirect_question_binding_requires_every_pre_call_payload_to_match ... ok
+test contribution_known_probe::tests::p95_uses_nearest_rank_and_keeps_slowest_of18 ... ok
+test benchmark::conversation_m5_tests::conversation_m5_accepts_consistent_fixture ... ok
+test config_sweep::tests::smaller_context_is_rejected_when_it_loses_refutation ... ok
+test contribution_role_contract::generative::gemma_tests::gemma_changes_only_declared_transport_fields ... ok
+test closeout::tests::rejects_duplicate_finished_event ... ok
+test contribution_role_contract::generative::qwen_tests::qwen_preserves_semantics_and_disables_reasoning_without_fallback ... ok
+test contribution_role_contract::generative::gemma_tests::gemma_requires_exact_model_provider_and_complete_roles ... ok
+test contribution_role_contract::generative::reasoning::tests::paired_payloads_only_differ_in_enabled_and_preserve_base_semantics ... ok
+test contribution_role_contract::generative::reasoning::tests::observed_reasoning_and_complete_receipts_are_required_without_changing_roles ... ok
+test benchmark::conversation_m5_tests::conversation_m5_rejects_wrong_label_and_duplicate_id ... ok
+test contribution_role_contract::generative::qwen_tests::qwen_requires_complete_receipt_exact_identity_and_zero_reasoning ... ok
+test contribution_role_contract::generative::tests::examples_change_only_system_message_and_keep_frozen_triplets ... ok
+test closeout::tests::rejects_corrupted_candidate_and_seed_text ... ok
+test contribution_role_contract::generative::tests::malformed_partial_extra_roles_and_generation_fail_atomically ... ok
+test contribution_role_contract::tests::complete_profile_preserves_sources_model_schema_and_unmodified_criteria ... ok
+test contribution_role_contract::tests::contrast_is_preserved_with_its_role_and_original_revision ... ok
+test contribution_role_contract::spanish::tests::source_quotes_markers_model_and_canonical_namespace_survive_translation ... ok
+test contribution_role_contract::spanish::tests::restoring_only_translated_fields_recovers_exact_english_payload ... ok
+test contribution_role_contract::generative::tests::strict_roles_remap_original_ids_without_fake_probabilities ... ok
+test contribution_role_contract::tests::namespace_replacement_missing_roles_and_bad_model_fail_atomically ... ok
+test benchmark::conversation_m5_tests::status_development_fixture_is_valid ... ok
+test contribution_role_contract::tests::probabilities_unknown_roles_and_duplicate_sources_are_rejected ... ok
+test contribution_role_contract::tests::local_sources_do_not_leak_sibling_source_into_state_or_question ... ok
+test contribution_role_contract::tests::profile_flags_round_trip_and_reject_inconsistent_or_wrong_types ... ok
+test closeout::tests::explicit_diagnostic_projection_fills_only_null_auxiliary_metadata_without_rewriting_files ... ok
+test contribution_role_contract::tests::negative_microsoft_changes_only_model_and_binds_revision ... ok
+test contribution_role_contract::tests::negative_reasons_only_change_criteria_and_keep_positive_definitions ... ok
+test contribution_role_contract::tests::provider_payload_contains_only_opaque_indexes_and_literal_sources ... ok
+test contribution_role_contract::tests::unknown_value_revision_keeps_partial_and_contrast_routes ... ok
+test contribution_role_contract::tests::negative_choices_map_to_none_without_accepting_old_or_unknown_namespace ... ok
+test contribution_role_contract::tests::shared_definitions_reverse_exactly_and_preserve_roles_and_sources ... ok
+test contribution_role_contract::tests::family_changes_only_model_and_binds_expected_served_revision ... ok
+test distributed_reference::tests::false_exact_equivalence_can_pass_shape_and_is_not_semantic_certificate ... ok
+test distributed_reference::tests::exact_class_binding_is_explicit_and_lexical_unknown_namespaces_do_not_collide ... ok
+test distributed_reference::tests::registry_tamper_unknown_ids_duplicates_and_missing_scope_are_rejected ... ok
+test distributed_reference::tests::relation_state_does_not_have_to_equal_event_modality_but_interval_must_survive ... ok
+test distributed_reference::tests::distributed_chain_keeps_phrase_order_and_old_validator_rejects_same_external_owner ... ok
+test distributed_reference::tests::negated_planned_normative_corrigible_and_unknown_links_do_not_fix_identity ... ok
+test documentary_extraction_contract::grounded_references::tests::ontology_binding_needs_a_class_cue_and_cannot_conflict_with_requested_filter ... ok
+test distributed_reference::tests::owner_support_preserves_legacy_condition_keys_up_to_96_bytes ... ok
+test documentary_extraction_contract::grounded_references::tests::class_cue_must_be_inside_its_own_mention_and_old_kind_is_not_accepted ... ok
+test documentary_extraction_contract::grounded_references::tests::lexical_encoding_is_reversible_conservative_and_does_not_truncate ... ok
+test documentary_extraction_contract::grounded_references::tests::absent_class_is_explicit_and_never_an_anonymous_global_class ... ok
+test documentary_extraction_contract::grounded_references::tests::all_clause_collections_are_translated_and_one_invalid_reference_degrades_the_whole ... ok
+test documentary_extraction_contract::grounded_references::tests::parent_owner_cardinality_and_class_quantifier_keep_distinct_meanings ... ok
+test documentary_extraction_contract::grounded_references::tests::same_grounded_reference_matches_across_source_question_and_keeps_bearer ... ok
+test documentary_extraction_contract::grounded_references::tests::semantic_types_are_separate_from_lexical_identity_in_facts_and_requests ... ok
+test documentary_extraction_contract::grounded_references::tests::owners_fixed_group_cardinality_and_depth_do_not_collapse_or_escape_limits ... ok
+test contribution_known_probe::tests::triple_contrast_balances_all_orders_and_has_literal_reference_payloads ... ok
+test contribution_known_probe::tests::adjudicated_bank_preserves_sources_and_visible_historical_discordance ... ok
+test documentary_extraction_contract::tests::grounded_wire_changes_only_messages_and_validates_the_new_reference_contract ... ok
+test documentary_extraction_contract::tests::capacity_contrast_changes_only_model_and_rejects_cross_served_models ... ok
+test contribution_role_probe::tests::reviewed_bank_rejects_tampering_and_missing_provenance_hashes ... ok
+test documentary_extraction_contract::tests::openai_receipts_are_model_and_provider_specific_with_same_shape_validation ... ok
+test documentary_extraction_contract::tests::guided_schema_rejects_inapplicable_measurement_xor_and_empty_readings_without_repair ... ok
+test documentary_extraction_contract::tests::guided_payload_preserves_user_data_and_generation_settings_and_rejects_nonmeasurement_scopes ... ok
+test documentary_extraction_contract::tests::payload_has_one_text_no_fixture_facts_or_hidden_labels ... ok
+test documentary_extraction_contract::tests::response_must_be_complete_from_fixed_model_and_provider ... ok
+test documentary_extraction_contract::tests::strict_shape_rejects_missing_nullable_fields_extra_roles_and_bad_types ... ok
+test documentary_extraction_contract::tests::profiles_reject_unknown_and_openai_changes_only_model_and_route ... ok
+test documentary_extraction_contract::typed_clauses::tests::availability_keeps_exact_record_scope_trial_and_conditions ... ok
+test documentary_extraction_contract::tests::json_v2_changes_only_schema_delivery_and_keeps_identical_validation ... ok
+test documentary_extraction_contract::tests::guided_json_changes_only_schema_delivery_with_equal_local_validation ... ok
+test documentary_extraction_contract::typed_clauses::tests::capability_permission_and_use_stay_distinct_with_same_term ... ok
+test documentary_extraction_contract::typed_clauses::tests::closed_flow_set_does_not_publish_individual_known_endpoints_or_upstream_exclusion ... ok
+test documentary_extraction_contract::typed_clauses::tests::component_identity_includes_ancestors_and_entity_terms ... ok
+test documentary_extraction_contract::typed_clauses::tests::identity_keeps_kind_owner_and_fixed_group_but_not_universal_quantifier ... ok
+test documentary_extraction_contract::tests::v4_removes_only_disabled_reasoning_and_preflight_rejects_unsupported_parameters ... ok
+test documentary_extraction_contract::typed_clauses::tests::duplicate_conditions_are_not_overwritten_and_unsupported_is_not_empty_knowledge ... ok
+test documentary_extraction_contract::typed_clauses::tests::invented_names_extra_fields_and_malformed_variants_fail_instead_of_being_ignored ... ok
+test documentary_extraction_contract::typed_clauses::tests::negative_requirement_keeps_item_polarity_and_basis_without_a_set_or_ignorance ... ok
+test documentary_extraction_contract::typed_clauses::tests::exact_decimal_text_never_rounds_known_quantities ... ok
+test documentary_extraction_contract::typed_clauses::tests::procedure_nonperformance_pending_and_missing_method_never_add_quantity_facts ... ok
+test documentary_extraction_contract::typed_clauses::tests::query_separates_slots_premises_and_explicit_vs_generic_measurement_identity ... ok
+test documentary_extraction_contract::typed_clauses::tests::mixed_certain_and_correlated_open_readings_preserve_all_clauses ... ok
+test documentary_extraction_contract::typed_clauses::tests::zero_and_negated_bounds_preserve_numeric_meaning_and_extent ... ok
+test documentary_v3::attribute_profiles::tests::duplicate_target_row_and_invalid_carrier_are_global_errors ... ok
+test documentary_v3::attribute_profiles::tests::legacy_and_missing_row_have_distinct_meanings ... ok
+test documentary_v3::attribute_profiles::tests::event_result_requires_literal_profile_and_known_aspect ... ok
+test documentary_v3::attribute_profiles::tests::profile_rejects_hours_for_mass_and_accepts_literal_kilograms ... ok
+test documentary_v3::attribute_profiles::tests::nonquantity_profile_has_no_units_and_rejects_quantity_values ... ok
+test documentary_v3::attribute_profiles::tests::request_missing_answer_slot_is_valid_but_incompatible_unit_is_pending ... ok
+test documentary_v3::attribute_profiles::tests::restriction_members_use_target_attribute_and_answer_role_with_exact_paths ... ok
+test documentary_v3::attribute_profiles::tests::restriction_property_values_reject_wrong_kind_and_preserve_legacy_behavior ... ok
+test documentary_extraction_contract::typed_clauses::tests::requested_extents_and_assumption_limit_are_preserved ... ok
+test documentary_v3::context_budget::tests::global_owners_and_evidence_cannot_hide_in_separate_leaves ... ok
+test documentary_v3::context_budget::tests::materialization_bytes_are_accumulated_and_no_legacy_budget_is_active ... ok
+test documentary_v3::context_budget::tests::nested_calls_share_counter_and_exhaustion_is_atomic ... ok
+test documentary_v3::descriptions::budget_tests::recursive_description_walk_and_semantic_copies_share_operation_budget ... ok
+test documentary_extraction_contract::tests::typed_clause_payloads_exclude_manual_frames_and_shape_is_strict_on_the_wire ... ok
+test documentary_v3::attribute_profiles::tests::repeated_profile_scans_consume_the_shared_budget_without_legacy_change ... ok
+test documentary_v3::lexical_clause_context::tests::absent_authority_is_pending_and_tampered_anchor_is_error ... ok
+test documentary_extraction_contract::grounded_revision::tests::mismatched_or_filtered_rosters_and_parent_payloads_fail_closed ... ok
+test documentary_v3::lexical_clause_context::tests::known_configuration_qualifier_is_preserved_without_becoming_an_answer ... ok
+test documentary_v3::lexical_clause_context::tests::debt_and_attachment_mismatch_never_become_positive ... ok
+test documentary_v3::lexical_clause_context::tests::absent_feature_adds_no_walk_and_combined_evidence_cap_is_atomic ... ok
+test documentary_v3::lexical_clause_context::tests::ordinary_routes_quarantine_owner_and_effective_consumers_only ... ok
+test documentary_v3::lexical_clause_context::tests::dependency_and_difference_are_not_identity_but_same_is ... ok
+test documentary_v3::lexical_clause_context::tests::positive_selection_preserves_qualified_occurrence_and_resolved_debt ... ok
+test documentary_v3::lexical_clause_context::tests::local_intent_and_exact_provenance_are_required ... ok
+test documentary_v3::linguistic_composition_tests::linguistic_composition_canonical_ids_preserve_semantics_without_resolving_any_hole ... ok
+test documentary_v3::lexical_clause_context::tests::unresolved_effective_type_blocks_without_vetoing_an_independent_reference ... ok
+test documentary_v3::linguistic_composition_tests::linguistic_composition_basis_remains_debt_and_internal_refs_do_not_assert_events ... ok
+test documentary_v3::linguistic_composition_tests::linguistic_composition_closed_ast_rejects_wrong_regions_resolution_incidence_and_utf8 ... ok
+test documentary_v3::linguistic_composition_tests::linguistic_composition_feature_requires_duration_and_absence_adds_no_walk ... ok
+test documentary_v3::linguistic_composition_tests::linguistic_composition_cuts_consumers_before_legacy_but_keeps_independent_answer ... ok
+test documentary_v3::linguistic_composition_tests::linguistic_composition_effective_coverage_debt_is_not_an_independent_veto ... ok
+test documentary_v3::linguistic_composition_tests::linguistic_composition_positive_preserves_tree_and_all_open_debts ... ok
+test documentary_v3::linguistic_composition_tests::linguistic_composition_possessive_keeps_no_physical_placeholder_and_never_selects_by_proximity ... ok
+test documentary_v3::linguistic_composition_tests::linguistic_composition_guard_needs_an_executable_unconflicted_fact ... ok
+test documentary_v3::linguistic_composition_tests::linguistic_composition_same_alias_keeps_every_restrictive_link ... ok
+test documentary_v3::nominal_de_tests::nominal_complement_absent_permission_has_no_traversal_budget_cost ... ok
+test documentary_v3::lexical_clause_context::tests::lexical_clause_quantity_selection_uses_term_unit_strings_without_request_unit_conversion ... ok
+test documentary_v3::linguistic_composition_tests::linguistic_composition_scalar_evidence_and_nested_work_share_one_global_budget ... ok
+test documentary_v3::nominal_de_tests::nominal_complement_long_alias_ids_spend_shared_copy_budget ... ok
+test documentary_v3::nominal_de_tests::nominal_complement_literal_marker_utf8_and_distinct_owner_controls ... ok
+test documentary_v3::linguistic_composition_tests::linguistic_composition_configuration_is_complete_not_an_absent_wildcard ... ok
+test documentary_v3::nominal_de_tests::nominal_complement_metadata_materialization_limit_preserves_validated_input ... ok
+test documentary_v3::linguistic_composition_tests::linguistic_composition_wrong_identity_attribute_status_and_namespace_are_not_selected ... ok
+test documentary_v3::nominal_de_tests::nominal_complement_complete_validation_and_typed_identity_guard ... ok
+test documentary_v3::nominal_de_tests::nominal_complement_metadata_consumers_are_blocked_independent_fact_remains ... ok
+test documentary_v3::nominal_event_context_tests::nominal_event_context_canonical_internal_ids_do_not_resolve_patient_or_attachment ... ok
+test documentary_v3::nominal_event_context_tests::nominal_event_context_consumer_cut_seeds_patient_and_tail_not_named_pps ... ok
+test documentary_v3::nominal_de_tests::nominal_complement_rejects_invalid_evidence_permission_and_scope ... ok
+test documentary_v3::nominal_de_tests::nominal_complement_metadata_is_local_partial_and_cannot_be_global_fact ... ok
+test documentary_v3::nominal_de_tests::nominal_complement_tail_alias_restrictions_and_legacy_adapter_are_not_bypassed ... ok
+test documentary_v3::nominal_event_context_tests::nominal_event_context_permission_is_separate_and_requires_nominal_and_remove ... ok
+test documentary_v3::nominal_event_context_tests::nominal_event_context_positive_preserves_all_operands_and_unanswered_debts ... ok
+test documentary_v3::nominal_event_context_tests::nominal_event_context_prepositional_phrase_cannot_absorb_se_or_action ... ok
+test documentary_v3::nominal_event_context_tests::nominal_event_context_closed_schema_rejects_attachment_region_duplicates_and_utf8 ... ok
+test documentary_v3::nominal_event_context_tests::nominal_event_context_same_patient_consumer_is_cut_but_named_pp_fact_answers ... ok
+test documentary_v3::nominal_event_context_tests::nominal_event_context_scalar_evidence_without_feature_ten_and_late_work_share_budget ... ok
+test documentary_v3::nominal_event_context_tests::nominal_event_context_other_name_or_nominal_pattern_does_not_select ... ok
+test documentary_v3::nominal_possessive_tests::possessive_determiner_must_be_a_whole_prenominal_token ... ok
+test documentary_v3::nominal_possessive_tests::possessive_complete_carrier_preserves_full_partial_and_open_slot ... ok
+test documentary_extraction_contract::grounded_revision::tests::structurally_valid_drafts_are_also_revised_and_schema_rules_are_unchanged ... ok
+test documentary_v3::nominal_possessive_tests::possessive_implicit_normative_guard_and_alias_closures_are_cut ... ok
+test documentary_v3::nominal_possessive_tests::possessive_matching_su_still_never_proves_same_or_global_answer ... ok
+test documentary_v3::nominal_event_context_tests::nominal_event_context_other_action_namespace_or_required_basis_does_not_select ... ok
+test documentary_v3::nominal_possessive_tests::possessive_requires_feature_and_absence_does_not_charge_new_walk ... ok
+test documentary_v3::nominal_possessive_tests::possessive_independent_claim_keeps_complete_answer ... ok
+test documentary_v3::nominal_possessive_tests::possessive_mismatching_actor_never_publishes_partial ... ok
+test documentary_v3::normative_indeterminacy_tests::normative_indeterminacy_cut_derived_from_content_when_internal_report_issues_missing ... ok
+test documentary_v3::nominal_possessive_tests::possessive_relevance_rows_cannot_be_spliced_into_an_undeclared_connection ... ok
+test documentary_v3::normative_indeterminacy_tests::normative_indeterminacy_internal_deep_invalid_input_exhausts_globally ... ok
+test documentary_v3::normative_indeterminacy_tests::normative_indeterminacy_explicit_actor_does_not_fill_null_scope_or_wildcard ... ok
+test documentary_v3::normative_indeterminacy_tests::normative_indeterminacy_extraction_relation_and_coverage_debts_never_promote ... ok
+test documentary_v3::normative_indeterminacy_tests::normative_indeterminacy_missing_constructor_evidence_never_promotes ... ok
+test documentary_v3::normative_indeterminacy_tests::normative_indeterminacy_other_validation_debts_are_never_not_blocked ... ok
+test documentary_v3::nominal_possessive_tests::possessive_shape_scope_reused_target_and_semantic_use_rejected ... ok
+test documentary_v3::normative_indeterminacy_tests::normative_indeterminacy_independent_request_retains_complete_answer ... ok
+test documentary_v3::normative_indeterminacy_tests::normative_indeterminacy_original_issues_and_paths_preserved_feature_absent ... ok
+test documentary_v3::nominal_possessive_tests::possessive_accumulated_graph_budget_fails_whole_operation ... ok
+test documentary_v3::normative_indeterminacy_tests::normative_indeterminacy_representation_complete_resolution_blocked_full_payload ... ok
+test documentary_v3::normative_indeterminacy_tests::normative_indeterminacy_partial_context_debt_keeps_actual_index ... ok
+test documentary_v3::normative_indeterminacy_tests::normative_indeterminacy_request_dependency_endpoint_is_technical_invalid ... ok
+test documentary_v3::normative_indeterminacy_tests::normative_indeterminacy_shared_budget_fails_entire_operation_before_materialization ... ok
+test documentary_v3::pair::configuration_slots::tests::configuration_profile_does_not_change_legacy_truth_mode ... ok
+test documentary_v3::normative_indeterminacy_tests::normative_indeterminacy_scope_same_or_different_cannot_resolve_ambiguous_actor ... ok
+test documentary_v3::normative_indeterminacy_tests::normative_indeterminacy_resolved_request_has_identical_matching_without_feature ... ok
+test documentary_v3::normative_indeterminacy_tests::normative_indeterminacy_wrong_basis_mode_and_nested_shape_do_not_share_exemption ... ok
+test documentary_v3::pair::configuration_slots::tests::configuration_slot_exact_basis_excludes_other_basis_before_uncertainty_collection ... ok
+test documentary_v3::pair::configuration_slots::tests::configuration_slot_pending_negative_context_cannot_hide_compatible_negation ... ok
+test documentary_v3::pair::anonymous_normative_context::tests::anonymous_normative_context_preserves_source_without_scope_identity_or_answer ... ok
+test documentary_v3::pair::configuration_slots::tests::configuration_slot_recovers_exact_same_claim_parameter_without_intrinsic_property ... ok
+test documentary_v3::pair::configuration_slots::tests::configuration_slot_never_donates_parameter_from_another_claim_or_selects_first_conflict ... ok
+test documentary_v3::pair::configuration_slots::tests::configuration_slot_rejects_requested_key_as_direct_question_restriction ... ok
+test documentary_v3::pair::configuration_slots::tests::configuration_slot_explicit_negation_blocks_only_compatible_positive_operation ... ok
+test documentary_v3::pair::configuration_slots::tests::configuration_slot_unrelated_pending_negative_does_not_veto_known_actor ... ok
+test documentary_v3::pair::configuration_slots::tests::configuration_slot_keeps_actor_predicate_key_setting_basis_time_and_guards_restrictive ... ok
+test documentary_v3::pair::context_type_grounding::tests::context_type_grounding_does_not_change_global_class_match_or_inactive_mode ... ok
+test documentary_v3::pair::configuration_slots::tests::configuration_slot_rejects_absent_unknown_inexact_or_wrong_unit_values ... ok
+test documentary_v3::pair::context_type_grounding::tests::context_type_grounding_does_not_choose_null_typed_alias_over_explicit_other_type ... ok
+test documentary_v3::pair::configuration_slots::tests::configuration_slot_requires_closed_opt_in_profile_and_complete_target ... ok
+test documentary_v3::pair::context_type_grounding::tests::context_type_grounding_retains_original_null_type_and_vocabulary_evidence_only_as_partial ... ok
+test documentary_v3::pair::configuration_slots::tests::configuration_slot_unknown_or_incompatible_second_value_cannot_choose_favorable_first ... ok
+test documentary_v3::pair::event_pattern_context::tests::event_pattern_does_not_fuse_separate_events ... ok
+test documentary_v3::pair::context_type_grounding::tests::context_type_grounding_rejects_wrong_type_ambiguous_quote_no_mapping_and_explicit_incompatible ... ok
+test documentary_v3::pair::event_pattern_context::tests::event_pattern_binder_domain_names_are_not_discarded ... ok
+test documentary_v3::pair::event_pattern_context::tests::event_pattern_normalizes_optional_plain_counting_class_as_context_only ... ok
+test documentary_v3::pair::event_pattern_context::tests::event_pattern_planned_event_is_not_recovered_for_unspecified_truth_status ... ok
+test documentary_v3::pair::event_pattern_context::tests::event_pattern_preserves_source_event_without_proving_identity_or_requested_time ... ok
+test documentary_v3::pair::event_pattern_context::tests::event_pattern_does_not_override_named_event_targets ... ok
+test documentary_v3::pair::event_pattern_context::tests::event_pattern_quantified_replacement_relation_still_requires_same_owner ... ok
+test documentary_v3::pair::event_pattern_context::tests::event_pattern_quantified_context_keeps_cardinality_and_quantifier_restrictive ... ok
+test documentary_v3::pair::context_type_grounding::tests::context_type_grounding_never_recovers_plans_negation_normative_or_bound_context ... ok
+test documentary_v3::pair::partial_assignment_context::tests::assignment_property_context_preserves_source_and_unproved_premise_without_numeric_answer ... ok
+test documentary_v3::pair::partial_documentary_context::tests::documentary_context_preserves_whole_state_and_support_without_value ... ok
+test documentary_v3::pair::partial_documentary_context::tests::documentary_context_rejects_explicitly_different_preservation_context ... ok
+test documentary_v3::pair::event_pattern_context::tests::event_pattern_quantified_variable_links_cannot_be_hidden_by_alpha_mapping ... ok
+test documentary_v3::pair::partial_documentary_context::tests::negative_measurement_context_keeps_basis_debt_and_rejects_positive_or_wrong_aspect ... ok
+test documentary_v3::pair::partial_assignment_context::tests::assignment_property_context_rejects_other_name_setting_attribute_unknown_value_and_conditions ... ok
+test documentary_v3::pair::pending_task_scope::tests::aggregate_and_dependency_provenance_cannot_launder_pending_claim ... ok
+test documentary_v3::pair::partial_documentary_context::tests::documentary_context_rejects_other_name_attribute_positive_value_and_applicability_context ... ok
+test documentary_v3::pair::pending_task_scope::tests::conflict_only_payload_is_guarded_and_independent_conflicts_survive ... ok
+test documentary_v3::pair::pending_task_scope::tests::independent_witness_and_unrelated_attribute_survive_with_conflicts_pruned ... ok
+test documentary_v3::pair::event_pattern_context::tests::event_pattern_carrier_normalization_keeps_explicit_domain_restrictions ... ok
+test documentary_v3::pair::pending_task_scope::tests::all_nine_task_combinations_have_exact_selector_equality ... ok
+test documentary_v3::pair::pending_task_scope::tests::proposition_carrier_truth_constraint_and_historical_rows_are_preserved ... ok
+test documentary_v3::pair::pending_task_scope::tests::malformed_unknown_duplicate_and_global_selectors_are_not_absence ... ok
+test documentary_v3::pair::pending_task_scope::tests::unsafe_nested_and_unsupported_modes_block_all_witness_channels ... ok
+test documentary_v3::pair::relative_bound_matching::tests::relative_bound_absence_preserves_historical_matching_and_legacy_api_rejects_profile ... ok
+test documentary_v3::pair::relative_bound_matching::tests::relative_bound_complete_representation_only_publishes_empty_payload_partial ... ok
+test documentary_extraction_contract::grounded_revision::tests::local_diagnostics_are_not_human_hints_and_cannot_be_forged ... ok
+test documentary_v3::pair::relative_bound_matching::tests::relative_bound_dependency_veto_keeps_independent_fact ... ok
+test documentary_v3::pair::event_pattern_context::tests::event_pattern_rejects_changed_owner_class_status_configuration_and_negative_event ... ok
+test documentary_v3::pair::relative_bound_matching::tests::relative_bound_is_opt_in_and_never_infers_an_unbounded_event_refutation ... ok
+test documentary_v3::pair::relative_bound_matching::tests::relative_bound_validation_and_matching_share_outer_budget ... ok
+test documentary_v3::pair::relative_bound_matching::tests::relative_bound_closed_shape_ownership_and_explicit_dependencies ... ok
+test documentary_v3::pair::relative_bound_matching::tests::relative_bound_unrelated_subject_aspect_and_external_context_are_not_partial ... ok
+test documentary_extraction_contract::grounded_revision::tests::every_draft_is_revised_with_only_own_text_and_recomputed_local_diagnostic ... ok
+test documentary_v3::pair::request_context_matching::tests::nominal_positive_retains_provenance_and_removal_blocks_fallback ... ok
+test documentary_v3::pair::relative_bound_matching::tests::relative_bound_implicit_normative_scope_and_alias_dependency_cannot_bypass_veto ... ok
+test documentary_v3::pair::anonymous_normative_context::tests::anonymous_normative_context_rejects_unanchored_other_context_and_unsupported_class ... ok
+test documentary_v3::pair::request_context_matching::tests::observed_maximum_context_is_partial_with_no_answer_leak ... ok
+test documentary_v3::pair::request_context_matching::tests::nominal_unknown_anchor_and_class_homonym_never_answer ... ok
+test documentary_v3::pair::request_context_matching::tests::normative_owner_slot_alias_requires_same_and_keeps_private_binding_local ... ok
+test documentary_v3::pair::request_context_matching::tests::normative_open_pattern_preserves_partial_and_never_fills_actor ... ok
+test documentary_v3::pair::request_context_matching::tests::normative_reference_pattern_cannot_bypass_class_evidence ... ok
+test documentary_v3::pair::tests::all_values_requires_closed_extent_and_namespace_must_be_explicit ... ok
+test documentary_v3::pair::tests::admission_request_context_tests::admission_request_context_rejects_known_member_via_question_alias ... ok
+test documentary_v3::pair::tests::anonymous_same_owner_is_not_named_identity ... ok
+test documentary_v3::pair::tests::alternative_parent_guard_is_inherited_without_repeating_child_fields ... ok
+test documentary_v3::pair::tests::alpha_pattern_preserves_quantifier_order_and_witness_relation ... ok
+test documentary_v3::pair::tests::association_is_bijective_and_pending_anchor_dependencies_do_not_disappear ... ok
+test documentary_v3::pair::request_context_matching::tests::normative_actor_control_class_and_unknown_are_distinct ... ok
+test documentary_v3::pair::tests::association_matching_is_restrictive_and_unknown_never_selects_an_answer ... ok
+test documentary_v3::pair::tests::association_answer_pattern_matches_only_the_same_directed_kind ... ok
+test documentary_v3::pair::tests::attribute_profile_mismatch_cannot_publish_and_does_not_erase_independent_fact ... ok
+test documentary_v3::pair::tests::closed_branches_publish_only_exact_invariant ... ok
+test documentary_v3::pair::tests::admission_request_context_tests::admission_request_context_profile_rejects_malformed_declarations ... ok
+test documentary_v3::pair::tests::descriptions_alias_without_class_cannot_hide_divergent_root_classes ... ok
+test documentary_v3::pair::tests::descriptions_binding_map_does_not_erase_descriptors ... ok
+test documentary_v3::pair::tests::descriptions_circular_internal_guard_returns_pending_before_recursing ... ok
+test documentary_v3::pair::tests::closure_domain_validation_distinguishes_unresolved_from_malformed ... ok
+test documentary_v3::pair::tests::descriptions_constraint_answer_keeps_whole_member_and_never_publishes_properties ... ok
+test documentary_v3::pair::tests::descriptions_closed_member_mass_exclusion_requires_domain_and_no_existential_gain ... ok
+test documentary_v3::pair::tests::descriptions_contradictory_closed_member_never_becomes_answer_even_with_alias ... ok
+test documentary_v3::pair::tests::descriptions_common_quantity_keeps_verified_universal_operand ... ok
+test documentary_v3::pair::tests::descriptions_domain_alias_denotation_cannot_be_hidden_by_nominal_anchor ... ok
+test documentary_v3::pair::tests::descriptions_deferred_request_preserves_payload_and_both_failure_reasons ... ok
+test documentary_v3::pair::tests::descriptions_internal_guard_stays_pending_without_world_discharge ... ok
+test documentary_v3::pair::tests::descriptions_internal_incompatible_masses_stay_unresolved ... ok
+test documentary_v3::pair::tests::declared_supply_context_preserves_closed_constraints_without_member_claims ... ok
+test documentary_v3::pair::tests::descriptions_internal_time_is_not_host_time_or_a_current_fact ... ok
+test documentary_v3::pair::tests::admission_request_context_tests::admission_request_context_frozen_positive_and_rejection_contract ... ok
+test documentary_v3::pair::tests::descriptions_opposite_polarity_constraints_cannot_complete_a_claim ... ok
+test documentary_v3::pair::tests::descriptions_multiple_members_keep_mass_and_origin_attached ... ok
+test documentary_v3::pair::tests::admission_caution_does_not_establish_actual_use_or_quantity ... ok
+test documentary_v3::pair::tests::descriptions_mixed_carriers_preserve_qualified_context_and_bindings ... ok
+test documentary_v3::pair::tests::descriptions_partial_anchor_does_not_admit_another_named_root ... ok
+test documentary_v3::pair::tests::descriptions_order_and_reference_ids_do_not_change_equivalence ... ok
+test documentary_v3::pair::tests::descriptions_negative_use_does_not_assert_origin_or_discharge_guard ... ok
+test documentary_v3::pair::tests::descriptions_pattern_preserves_mixed_independent_answers_without_stripping ... ok
+test documentary_v3::pair::tests::closure_domains_limit_exclusions_and_preserve_independent_facts ... ok
+test documentary_v3::pair::tests::descriptions_quantified_domains_cannot_hide_semantic_type_disagreement ... ok
+test documentary_v3::pair::tests::descriptions_reference_pattern_retains_complete_described_answer ... ok
+test documentary_v3::pair::tests::descriptions_unanchored_anonymous_source_is_not_qualified_evidence ... ok
+test documentary_v3::pair::tests::descriptions_unknown_host_does_not_block_independent_assertion ... ok
+test documentary_v3::pair::tests::descriptions_profile_shape_scope_and_locality_are_enforced ... ok
+test documentary_v3::pair::tests::direct_truth_and_no_evidence_are_total ... ok
+test documentary_v3::pair::tests::descriptions_plain_missing_unknown_and_units_never_prove_exclusion ... ok
+test documentary_v3::pair::tests::descriptions_verified_quantified_partial_survives_basis_debt ... ok
+test documentary_v3::pair::tests::events_preserve_basis_and_do_not_choose_repeated_measurement ... ok
+test documentary_v3::pair::tests::descriptions_partial_associations_accept_both_carriers_only_with_real_context ... ok
+test documentary_v3::pair::tests::documentary_state_is_scoped_partial_context_without_a_requested_value ... ok
+test documentary_v3::pair::tests::exact_quantity_preserves_unit_and_basis_filters ... ok
+test documentary_v3::pair::tests::descriptions_quantified_alias_representatives_preserve_partial_proof ... ok
+test documentary_v3::pair::tests::exact_exemption_waives_only_targeted_rule_and_never_grants_permission ... ok
+test documentary_v3::pair::tests::explicit_same_events_combine_selector_and_slot_with_both_citations ... ok
+test documentary_v3::pair::tests::guard_fact_inside_branch_does_not_discharge_global_guard ... ok
+test documentary_v3::pair::tests::descriptions_quantified_alias_inherits_associations_without_duplicating_links ... ok
+test documentary_v3::pair::tests::incompatible_request_unit_is_pending_and_allowed_units_do_not_authorize_conversion ... ok
+test documentary_v3::pair::tests::information_state_context_does_not_discharge_branches_or_basis ... ok
+test documentary_v3::pair::tests::documentary_anchor_profile_requires_explicit_link_status_and_configuration ... ok
+test documentary_v3::pair::tests::four_network_questions_require_explicit_pipe_and_network_pattern ... ok
+test documentary_v3::pair::tests::admission_context_tests::context_admission_setting_context_preserves_all_reference_links ... ok
+test documentary_v3::pair::tests::local_aliases_cannot_bypass_associated_context_and_anonymous_is_not_identity ... ok
+test documentary_v3::pair::tests::named_answer_target_keeps_universal_context_qualified ... ok
+test documentary_v3::pair::tests::named_answer_target_requires_anchoring_without_losing_class_partial ... ok
+test documentary_v3::pair::tests::necessary_requirement_keeps_target_configuration_and_does_not_complete_other_context ... ok
+test documentary_v3::pair::tests::network_filter_preserves_matching_member_of_a_mixed_closed_set ... ok
+test documentary_v3::pair::tests::frozen_domain_controls_preserve_bounds_years_occurrences_and_applicability ... ok
+test documentary_v3::pair::tests::normative_conflict_is_scoped_and_permission_never_implies_occurrence ... ok
+test documentary_v3::pair::tests::opposite_polarities_keep_both_traces ... ok
+test documentary_v3::pair::tests::pending_reference_cannot_be_used_as_guard_evidence ... ok
+test documentary_v3::pair::tests::one_step_sufficient_rule_requires_every_condition ... ok
+test documentary_v3::pair::tests::qualifier_operand_cycle_is_pending_and_candidate_payload_is_preserved ... ok
+test documentary_v3::pair::tests::premises_require_unconditional_source_and_keep_question_claim_context ... ok
+test documentary_v3::pair::tests::qualifier_operand_uses_its_own_dependencies_without_redundant_owner_edge ... ok
+test documentary_v3::pair::tests::normative_premise_correction_preserves_person_course_and_unmet_guard ... ok
+test documentary_v3::pair::tests::qualifier_operand_validation_issues_are_local_and_propagate_on_both_sides ... ok
+test documentary_v3::pair::tests::question_premise_profile_failure_is_transitive_and_never_authorizes_selection ... ok
+test documentary_v3::pair::tests::relevance_is_one_step_partial_and_keeps_original_judgment ... ok
+test documentary_v3::pair::tests::quantified_evidence_is_invariant_to_disjoint_ids_and_order_but_not_cardinality ... ok
+test documentary_v3::pair::tests::required_association_blocks_event_and_constraint_partial_answers ... ok
+test documentary_v3::pair::tests::relevance_profiles_validate_roles_shape_and_source_target_proof_bindings ... ok
+test documentary_v3::pair::tests::restricted_members_do_not_assert_ownership_and_unknown_name_is_not_exclusion ... ok
+test documentary_v3::pair::tests::restriction_member_unit_cannot_escape_the_attribute_profile ... ok
+test documentary_v3::pair::tests::same_event_incompatible_exact_results_conflict_instead_of_completing ... ok
+test documentary_v3::pair::tests::scoped_assignment_metadata_is_closed_and_typed ... ok
+test documentary_v3::pair::tests::measurement_context_profile_rejects_ambiguous_or_unsupported_configuration ... ok
+test documentary_v3::pair::tests::shared_forbidden_branches_refute_requested_permission ... ok
+test documentary_v3::pair::tests::named_premise_correction_keeps_missing_class_and_does_not_fill_date ... ok
+test documentary_v3::pair::tests::temporal_literal_difference_is_pending_not_disjointness ... ok
+test documentary_v3::pair::tests::sufficient_rule_with_missing_guard_rejects_proven_different_context ... ok
+test documentary_v3::pair::tests::temporal_premise_does_not_use_a_document_nested_under_a_vacuous_binder ... ok
+test documentary_v3::pair::tests::temporal_premise_requested_occurrence_year_does_not_block_its_own_premise ... ok
+test documentary_v3::pair::tests::temporal_premise_respects_pair_scope_time_selector ... ok
+test documentary_v3::pair::tests::temporal_premise_retains_matching_configuration_and_blocks_branches ... ok
+test documentary_v3::pair::tests::temporal_shared_invariant_is_one_occurrence_but_divergent_branches_are_not_complete ... ok
+test documentary_v3::pair::tests::tiny_closed_refutation_honors_target_qualifier_ids ... ok
+test documentary_v3::pair::tests::universal_common_scope_blocks_point_values_in_all_data_routes ... ok
+test documentary_v3::pair::tests::unsupported_coverage_stays_in_denominator ... ok
+test documentary_extraction_contract::grounded_revision::tests::incomplete_failed_duplicate_wrong_model_or_receipt_parents_never_trigger_retry ... ok
+test documentary_v3::quantified_match::tests::associated_domain_pattern_is_directed_and_does_not_upgrade_relation_kind ... ok
+test documentary_v3::quantified_match::tests::bound_alpha_variable_cannot_ignore_context_and_cycles_do_not_prove_identity ... ok
+test documentary_v3::quantified_match::tests::equal_classes_without_anchor_or_with_another_anchor_do_not_match ... ok
+test documentary_v3::quantified_match::tests::guarded_universal_quantity_does_not_become_unconditional_common ... ok
+test documentary_v3::quantified_match::tests::individual_or_existential_claim_cannot_prove_a_universal_common_quantity ... ok
+test documentary_v3::quantified_match::tests::literal_exact_quantity_under_a_matched_universal_discharges_only_common ... ok
+test documentary_v3::quantified_match::tests::same_anchored_universal_domain_is_a_pattern_correspondence ... ok
+test documentary_v3::request_context_profile::tests::absence_never_grants_carrier_permissions ... ok
+test documentary_v3::request_context_profile::tests::pending_scope_requires_registered_attribute_and_keeps_closed_features ... ok
+test documentary_v3::request_context_profile::tests::profile_is_closed_and_checks_feature_dependency ... ok
+test documentary_v3::pair::tests::qualified_relevance_keeps_identity_pending_and_never_supplies_origin ... ok
+test documentary_v3::pair::tests::temporal_premise_keeps_other_context_and_explicit_time_constraints ... ok
+test documentary_v3::validation::request_context::tests::conjunctive_contexts_are_kept_unsupported_not_split_or_deleted ... ok
+test documentary_v3::validation::request_context::tests::feature_absence_and_extras_reject_new_carriers_without_weakening_legacy ... ok
+test documentary_v3::validation::request_context::tests::implicit_reference_debt_reaches_owner_candidate_without_dependency_row ... ok
+test documentary_v3::validation::request_context::tests::nominal_operands_are_implicit_but_still_validate_scope_and_quotes ... ok
+test documentary_v3::validation::request_context::tests::source_open_pattern_has_no_individual_and_negative_owner_is_unsupported ... ok
+test documentary_v3::validation::request_context::tests::unknown_actor_reason_is_not_filled_or_treated_as_same_uncertainty ... ok
+test documentary_v3::validation::tests::accepts_empty_source_but_not_empty_question ... ok
+test documentary_v3::validation::tests::associated_link_uses_existing_literal_scope_and_dependency_validation ... ok
+test documentary_v3::validation::tests::branch_reference_cannot_escape_to_parent ... ok
+test documentary_v3::validation::tests::coverage_unknown_is_partial_not_invalid ... ok
+test documentary_v3::validation::tests::dependency_cycles_are_invalid ... ok
+test documentary_v3::validation::tests::described_term_roles_do_not_widen_symbol_quantity_or_method_carriers ... ok
+test documentary_v3::validation::tests::described_term_roles_match_whole_description_not_dropped_provider ... ok
+test documentary_v3::pair::tests::documentary_anchor_context_preserves_record_without_equating_edges_or_delivery ... ok
+test documentary_v3::validation::tests::described_term_roles_never_promote_inner_ownership_or_other_attribute ... ok
+test documentary_v3::validation::tests::described_term_roles_opt_in_preserves_members_and_property_value ... ok
+test documentary_v3::validation::tests::described_term_roles_preserve_context_and_pending_description_debt ... ok
+test documentary_v3::validation::tests::described_term_roles_reject_invalid_or_missing_prerequisite_profile ... ok
+test documentary_v3::validation::tests::event_preserves_missing_method_and_temporal_role ... ok
+test documentary_v3::validation::tests::missing_dependency_and_same_different_conflict ... ok
+test documentary_v3::validation::tests::preserves_invalid_candidates ... ok
+test documentary_v3::validation::tests::normative_scope_is_mandatory ... ok
+test documentary_v3::validation::tests::rejects_utf8_interior_and_unknown_fields ... ok
+test documentary_v3::validation::tests::unknown_claim_vocabulary_preserves_independent_and_propagates_to_consumer ... ok
+test documentary_v3::validation::tests::rule_normative_scope_requires_documentary_same_and_preserves_independents ... ok
+test documentary_v3::validation::tests::unknown_qualifier_propagates_only_to_consumer ... ok
+test documentary_v3::validation::tests::unknown_request_type_stays_local_and_preserves_request ... ok
+test documentary_v3::validation::tests::unknown_reference_type_propagates_and_vocabulary_hash_stays_fatal ... ok
+test documentary_v3::validation::tests::useful_claim_eligible_and_identity_not_collapsed ... ok
+test documentary_v3::pair::tests::scoped_assignment_keeps_subject_setting_and_quantity_together ... ok
+test documentary_v3::pair::water_operand_context::tests::water_operand_context_recovers_three_frozen_omissions_without_origin_answer ... ok
+test documentary_v3_io::assembly::tests::atomic_publication_never_replaces_or_exposes_incomplete_output ... ok
+test documentary_v3::pair::tests::universal_data_scope_preserves_known_useful_directions ... ok
+test documentary_v3_io::assembly::tests::incorrect_raw_metadata_or_null_raw_is_preserved_not_repaired ... ok
+test documentary_v3_io::assembly::tests::strict_parse_rejects_duplicates_and_lossy_numbers_at_any_depth ... ok
+test documentary_v3_io::context_json::tests::legacy_last_key_behavior_and_numbers_are_preserved ... ok
+test documentary_v3_io::context_json::tests::recursive_duplicate_is_detected_before_value_can_hide_the_profile ... ok
+test documentary_v3_io::context_json::tests::strict_receiver_rejects_nested_manifest_and_intent_duplicates_without_profile ... ok
+test documentary_v3_io::delivery::tests::author_guide_packet_preserves_closed_shape_and_frozen_binding ... ok
+test documentary_v3_io::assembly::tests::preserves_original_utf8_and_values_without_claiming_authorship_or_freshness ... ok
+test documentary_v3_io::delivery::tests::changed_packet_cannot_bind_to_original_frozen_hash ... ok
+test documentary_v3_io::delivery::tests::bound_complete_delivery_preserves_raw_and_does_not_claim_fidelity ... ok
+test documentary_v3_io::assembly::tests::receipt_verifies_original_against_derived_instead_of_trusting_flags ... ok
+test documentary_v3_io::delivery::tests::missing_malformed_and_binary_delivery_keep_every_expected_row_unavailable ... ok
+test documentary_v3_io::assembly::tests::no_rebinding_reordering_filling_or_partial_salvage ... ok
+test documentary_v3_io::delivery::tests::invalid_raw_is_retained_without_discarding_an_independent_valid_row ... ok
+test documentary_v3_io::delivery::tests::required_assembly_rejects_legacy_downgrade_without_changing_legacy_mode ... ok
+test documentary_v3_io::evidence_locator::tests::absent_empty_and_oversized_inputs_are_rejected ... ok
+test documentary_v3_io::evidence_locator::tests::file_adapter_enforces_closed_input_and_never_overwrites ... ok
+test documentary_v3_io::evidence_locator::tests::repeated_context_and_overlapping_occurrences_are_ambiguous ... ok
+test documentary_v3_io::evidence_locator::tests::repeated_quote_requires_author_context ... ok
+test documentary_v3_io::evidence_locator::tests::utf8_coordinates_preserve_exact_original_bytes ... ok
+test documentary_v3_io::lexical_clause_context::tests::read_is_bounded_before_json_and_existing_reports_are_preserved ... ok
+test documentary_v3_io::readings::existential_projection::operation_cap_tests::local_sort_cap_exhausts_entire_operation ... ok
+test documentary_v3_io::delivery::tests::wrong_kind_or_namespace_is_not_a_valid_campaign_entry ... ok
+test documentary_v3_io::delivery::tests::wrapper_mismatch_degrades_whole_batch_without_salvaging_rows ... ok
+test documentary_v3_io::delivery::tests::reading_envelope_is_retained_and_cannot_hide_invalid_or_open_leaves ... ok
+test documentary_v3::pair::tests::relevance_profiles_reject_same_destination_without_compatible_context ... ok
+test documentary_v3::pair::tests::measurement_gap_keeps_event_conditions_without_inventing_value_or_ignorance ... ok
+test documentary_v3_io::readings::existential_projection::tests::shared_budget_exhaustion_cannot_publish_a_favorable_subset ... ok
+test documentary_v3_io::readings::relative_bound_signature_tests::nominal_complement_signature_preserves_kind_owner_and_local_lexical_use ... ok
+test documentary_v3_io::readings::relative_bound_signature_tests::relative_bound_signature_uses_boundary_identity_and_preserves_operator ... ok
+test documentary_v3_io::readings::tests::context_readings_budget_is_global_and_keeps_original_payload_on_exhaustion ... ok
+test documentary_v3_io::readings::tests::contextual_owner_key_ignores_only_local_context_ids_and_detects_condition_swap ... ok
+test documentary_v3_io::readings::tests::contextual_reference_components_are_id_invariant_and_conflicting_aliases_fail ... ok
+test documentary_v3_io::readings::tests::convergent_qualifier_expansion_uses_one_shared_budget ... ok
+test documentary_v3_io::readings::existential_projection::tests::absent_feature_retains_historical_v1_and_invalid_profile_does_not_enable_v2 ... ok
+test documentary_v3_io::readings::tests::different_configuration_values_and_same_ids_do_not_pass ... ok
+test documentary_v3_io::readings::existential_projection::tests::common_nominal_body_has_one_binder_and_complete_per_cell_origins ... ok
+test documentary_v3_io::readings::tests::generic_constraint_preserves_bases_and_specific_capability_stays_conditional ... ok
+test documentary_v3_io::readings::existential_projection::tests::repeated_answer_incidence_is_correlated_and_lexical_tail_is_never_physical ... ok
+test documentary_v3_io::readings::tests::qualifier_cycles_and_deep_nesting_do_not_recurse_unboundedly ... ok
+test documentary_v3_io::readings::tests::named_identity_can_use_different_local_ids_but_anonymous_identity_cannot ... ok
+test documentary_v3_io::readings::tests::reference_link_depth_is_bounded_even_without_cycle ... ok
+test documentary_v3_io::readings::tests::same_name_at_different_occurrences_is_not_documentary_identity ... ok
+test documentary_v3_io::readings::tests::singleton_legacy_validation_and_file_no_replacement ... ok
+test documentary_v3_io::readings::existential_projection::tests::alpha_renaming_and_semantic_row_permutation_preserve_content ... ok
+test documentary_v3_io::readings::until_composition_canonical_tests::linguistic_composition_io_signature_uses_normalized_internal_incidence_ids ... ok
+test documentary_v3_io::readings::tests::open_missing_invalid_and_limits_never_promote ... ok
+test documentary_v3_io::source_context_reference::tests::aggregate_preflight_and_nested_budget_are_atomic ... ok
+test documentary_v3_io::readings::tests::question_request_drop_or_reorder_blocks_global_completion_and_retains_cells ... ok
+test documentary_v3_io::readings::tests::stable_first_request_survives_an_independent_elliptical_second_request ... ok
+test documentary_v3_io::source_context_reference::tests::changed_requested_owner_is_complete_but_cannot_resolve_source_possessive ... ok
+test documentary_v3_io::readings::existential_projection::tests::linguistic_composition_keeps_independent_existential_conclusion_and_blocks_its_consumer ... ok
+test documentary_v3_io::source_context_reference::tests::bind_and_consume_preserve_full_occurrence_and_logical_replay ... ok
+test documentary_v3_io::source_context_reference::tests::nominal_transport_schema_preserves_debts_flags_body_and_real_closures ... ok
+test documentary_v3_io::source_context_reference::tests::closed_manifest_delivery_and_invalid_documents_reject_without_semantic_credit ... ok
+test documentary_v3_io::source_context_reference::tests::file_transport_rejects_duplicates_limits_and_existing_output ... ok
+test documentary_v3_io::tests::file_adapter_never_overwrites_existing_report ... ok
+test documentary_v3_io::tests::file_adapter_rejects_extra_fields_without_creating_output ... ok
+test engram_benchmark::tests::keyword_normalization_matches_frozen_contract ... ok
+test evidence::tests::absence_cannot_hide_evidence_or_be_called_independently_reviewed ... ok
+test evidence::tests::all_seed_records_and_all_judgments_are_audited ... ok
+test evidence::tests::consensus_report_distinguishes_empty_search_from_missing_votes ... ok
+test evidence::tests::coverage_distinguishes_complementary_parts_and_undocumented_parts ... ok
+test evidence::tests::primary_veto_report_distinguishes_acceptance_without_second_vote ... ok
+test evidence::tests::rejects_cross_scope_evidence_and_changed_quotes ... ok
+test evidence::tests::resource_gate_rejects_missing_receipts_and_slow_tail ... ok
+test evidence::tests::utility_pairs_preserve_labels_and_gate_rejects_regressions ... ok
+test evidence::tests::v2_requires_larger_corpus_and_matching_source_identity ... ok
+test evidence::tests::v4_accepts_reviewed_alternatives_without_claiming_complete_answers ... ok
+test evidence::tests::v6_binds_reviewed_coverage_and_keeps_joint_answer_distinct_from_single_parts ... ok
+test factor_audit::tests::factor_json_cannot_forge_a_positive_or_rebind_a_revision ... ok
+test factor_audit::tests::literal_anchor_rejects_invented_presence_and_requires_null_for_unknown_identity ... ok
+test factor_audit::tests::scoped_json_checks_do_not_allow_an_unestablished_path_or_changed_revision ... ok
+test family_calibration::tests::a_is_kept_and_b_needs_both_critics ... ok
+test flow_compatibility::tests::contradictory_edge_constraints_have_no_model ... ok
+test flow_compatibility::tests::disconnected_cycle_does_not_create_network_provenance ... ok
+test flow_compatibility::tests::excessive_search_is_explicitly_unsupported ... ok
+test flow_compatibility::tests::exclusive_direct_supplier_permits_upstream_network ... ok
+test flow_compatibility::tests::explicit_no_network_blocks_even_indirect_provenance ... ok
+test flow_compatibility::tests::extra_origin_axiom_is_needed_to_remove_countermodel ... ok
+test flow_compatibility::tests::invalid_facts_rejected_instead_of_interpreted_as_unrelated ... ok
+test flow_compatibility::tests::nonexclusive_supplier_is_compatible ... ok
+test flow_compatibility::tests::renaming_and_order_do_not_change_satisfiability ... ok
+test flow_compatibility::tests::semantic_reading_documentation_is_required ... ok
+test full_prefix_probe::tests::dimension_gate_cannot_veto_valid_correction_and_missing_answer_is_not_abstention ... ok
+test independent_projection::tests::negation_condition_and_antecedent_can_coexist_without_clause_range_loss ... ok
+test independent_projection::tests::one_question_projection_is_reused_for_multiple_memories ... ok
+test independent_projection::tests::requested_part_and_refutation_edges_have_distinct_real_targets ... ok
+test independent_projection::tests::separate_payloads_do_not_include_other_side_or_gold ... ok
+test independent_projection::tests::wrong_source_invented_or_duplicate_ids_are_invalid ... ok
+test independent_projection_audit::tests::single_tail_batch_is_valid_and_uncertain_batch_is_not ... ok
+test independent_projection_roles::tests::duplicate_normalization_does_not_accept_bad_source_ids ... ok
+test independent_projection_roles::tests::only_identical_source_reference_assertions_merge ... ok
+test independent_projection_roles::tests::role_payload_keeps_originals_and_projections_without_suggested_edges ... ok
+test isolated_provider_probe::tests::correction_or_requires_both_real_answers_and_rejects_foreign_options ... ok
+test literal_identity_probe::tests::first_word_capitalization_and_unicode_punctuation_are_safe ... ok
+test literal_identity_probe::tests::named_qualifiers_block_other_person_but_do_not_require_lowercase_descriptors ... ok
+test local_isolation_probe::tests::isolation_changes_only_question_set_and_keeps_original_key ... ok
+test local_isolation_probe::tests::normalize_only_actual_answer_and_reject_same_size_wrong_namespace ... ok
+test m4_calibration::tests::brier_and_ece_use_probabilities_not_boolean_choices ... ok
+test documentary_v3_io::source_context_reference::tests::v2_preserves_legacy_context_and_enforces_version_separation ... ok
+test m4_calibration::tests::fixture_source_partitions_and_hashes_are_valid ... ok
+test documentary_v3_io::source_context_reference::tests::v2_file_transport_rejects_mutations_atomically_and_preserves_existing_output ... ok
+test m4_calibration::tests::missing_probability_does_not_become_boolean_confidence ... ok
+test m4_rank_replay::tests::threshold_removes_semantics_but_keeps_lexical ... ok
+test opposite_task_probe::tests::conditional_or_never_turns_a_technical_failure_into_a_reliable_rejection ... ok
+test per_memory_matrix::tests::preflight_rejects_missing_duplicate_or_misrouted_cells ... ok
+test per_memory_matrix::tests::preflight_rejects_null_single_label_metadata_and_projection_rejects_wrong_supplied_fact ... ok
+test per_memory_matrix::tests::projected_pairs_cannot_change_the_question_text_or_gold ... ok
+test per_memory_matrix::tests::target_success_cannot_hide_another_wrong_positive_or_wrong_task ... ok
+test policy_probe::tests::gains_do_not_compensate_for_lost_parts_or_unpermitted_context ... ok
+test policy_probe::tests::green_baseline_screen_cannot_qualify_a_candidate_that_loses_earlier_evidence ... ok
+test predicate_probe::tests::preserves_context_category_and_rejects_missing_extra_or_invalid_answers ... ok
+test m4_calibration::tests::replay_cannot_relabel_another_question_source_or_implementation ... ok
+test product_suite::binding::tests::groups_must_include_distractors_not_only_selected_memory ... ok
+test product_suite::binding::tests::rejects_foreign_stale_inactive_and_duplicate_gold ... ok
+test product_suite::binding::tests::prospective_bank_is_bound_without_executing_final ... ok
+test product_suite::binding::tests::rejects_policy_drift_and_contradictory_labels ... ok
+test product_suite::regression::tests::regression_cohort_has_thirty_bound_cases_and_original_failure ... ok
+test product_suite::run::tests::altered_seed_text_fails_even_when_memory_metadata_matches ... ok
+test product_suite::run::tests::gates_reject_wrong_roles_foreign_evidence_and_technical_abstentions ... ok
+test product_suite::tests::rejects_leakage_tampering_and_gold_in_runtime_request ... ok
+test projection_contract::tests::invented_quotes_dangling_targets_extra_fields_and_unscoped_negation_are_errors ... ok
+test projection_contract::tests::literal_refutation_links_to_premise_without_demanding_requested_value ... ok
+test projection_contract::tests::wrong_case_is_not_rescued_by_literal_quote_and_parts_do_not_require_missing_values ... ok
+test projection_ids::tests::dynamic_schema_separates_namespaces_and_only_enumerates_real_tokens ... ok
+test projection_ids::tests::invented_ids_wrong_source_and_ambiguous_spelling_are_rejected ... ok
+test projection_sets::tests::base_schema_and_source_specific_enums_are_preserved ... ok
+test projection_sets::tests::set_order_does_not_change_membership_or_group_index ... ok
+test projection_tokens::tests::discontiguous_question_groups_are_grounded_without_invented_quotes ... ok
+test projection_tokens::tests::literal_tokens_do_not_rescue_another_case ... ok
+test projection_tokens::tests::out_of_range_duplicate_and_outside_assertion_references_are_errors ... ok
+test proposition_bank::tests::changed_quotes_and_unresolved_or_disagreeing_review_cannot_freeze ... ok
+test proposition_bank::tests::missing_duplicate_and_foreign_review_ids_are_rejected ... ok
+test proposition_bank::tests::unsupported_and_irrelevant_are_independent_and_order_is_not_identity ... ok
+test proposition_contract::tests::decisions_changes_only_model_and_keeps_strict_revision_and_two_obligations ... ok
+test proposition_contract::tests::namespace_revision_and_probabilities_reject_incomplete_or_fabricated_answers ... ok
+test proposition_contract::tests::unsupported_but_contributing_remains_two_separate_judgments ... ok
+test proposition_examples_contract::tests::add_only_exact_frozen_utility_triplets_and_their_scope ... ok
+test m4_calibration::tests::empirical_profile_is_rebuilt_and_existing_reports_are_preserved ... ok
+test proposition_examples_probe::tests::compensated_selection_error_still_counts_as_new_component_regression ... ok
+test proposition_isolation_contract::tests::ablations_change_only_grounding_questions_then_source_field ... ok
+test proposition_isolation_contract::tests::order_is_balanced_over_eighteen_cases ... ok
+test proposition_isolation_contract::tests::role_only_namespace_does_not_require_or_fabricate_grounding ... ok
+test proposition_isolation_probe::tests::archived_report_comparison_preserves_exact_serialized_fractional_cost ... ok
+test proposition_isolation_probe::tests::plans_extras_contrast_losses_and_wrong_useful_roles_count_separately ... ok
+test proposition_examples_probe::tests::alternating_pairs_preserve_both_cases_and_payloads ... ok
+test proposition_probe::tests::compensated_grounding_and_role_errors_are_not_a_checking_success ... ok
+test proposition_probe::tests::missing_or_changed_preflight_source_bindings_are_rejected ... ok
+test quote_role_contract::tests::invented_or_borrowed_quotes_and_premises_fail ... ok
+test quote_role_contract::tests::literal_b_keeps_original_source_and_none_needs_no_proof ... ok
+test quote_role_contract::tests::missing_extra_duplicate_or_invalid_proofs_fail_atomically ... ok
+test quote_role_contract::tests::role_count_unknown_role_and_unexpected_keys_are_invalid ... ok
+test qwen_reasoning_probe::tests::snapshots_added_by_transport_are_verified_as_well_as_prepared_sources ... ok
+test reference_catalog::tests::all_reference_dimensions_survive_and_input_is_not_mutated ... ok
+test reference_catalog::tests::nested_entity_values_and_all_readings_use_exact_references ... ok
+test reference_catalog::tests::unknown_new_inline_modified_or_foreign_markers_are_rejected ... ok
+test reference_catalog::tests::unused_references_visible_and_same_local_id_is_not_cross_text_identity ... ok
+test reference_catalog::tests::wrong_reference_choice_and_wrong_predicate_are_not_certified_by_conservation ... ok
+test reference_coverage::tests::distributed_identity_and_external_parent_are_explicit_limits ... ok
+test reference_coverage::tests::empty_or_nameless_nested_reference_is_retained_as_not_audited ... ok
+test reference_coverage::tests::evidence_container_and_repeated_names_do_not_hide_missing_fields ... ok
+test reference_coverage::tests::external_or_ambiguous_container_cannot_cover_an_unrelated_local_name ... ok
+test documentary_v3_io::source_context_reference::tests::multiple_questions_and_identical_text_origins_do_not_collapse_occurrences ... ok
+test reference_coverage::tests::grammatical_and_corrigible_residuals_are_not_declared_errors ... ok
+test reference_coverage::tests::malformed_links_or_owner_containers_are_not_audited_as_complete ... ok
+test reference_coverage::tests::missing_intermediate_owner_and_declared_name_are_visible_without_repair ... ok
+test reference_coverage::tests::missing_nonliteral_and_unsupported_are_not_zero_residual_passes ... ok
+test reference_coverage::tests::file_audit_keeps_missing_operations_rejects_roster_mismatch_and_never_overwrites ... ok
+test reference_coverage::tests::no_stopwords_case_folding_or_unicode_byte_corruption ... ok
+test reference_coverage::tests::nested_links_and_all_readings_are_visited_and_never_rewritten ... ok
+test reference_coverage::tests::ontology_roles_and_additive_link_meaning_are_outside_lexical_evidence ... ok
+test reference_coverage::tests::partition_reconstructs_unicode_and_does_not_normalize_combining_forms ... ok
+test reference_coverage::tests::zero_residual_cannot_certify_owner_role_scope_or_ontology ... ok
+test retrieval::tests::evaluation_rejects_missing_results_and_mismatched_labels ... ok
+test reference_coverage::tests::universal_member_cardinality_and_owner_order_cannot_be_validated_by_coverage ... ok
+test revision_matrix::tests::blind_packet_rejects_direct_arm_metadata_and_gold_fields ... ok
+test revision_matrix::tests::nearest_rank_percentiles_are_explicit_and_small_sample_safe ... ok
+test product_suite::review::tests::audits_preserved_blind_reviews_without_claiming_adoption ... ok
+test role_batch_probe::tests::missing_or_repeated_operation_cannot_look_like_a_completed_probe ... ok
+test revision_matrix::tests::private_aliases_are_unique_enough_for_one_case ... ok
+test scoped_definition_probe::tests::exclusive_role_is_preserved_without_fabricating_separate_judgments ... ok
+test scoped_definition_probe::tests::malformed_probabilities_are_not_a_negative_judgment ... ok
+test roles::tests::annotated_development_contract_and_mutations ... ok
+test scoped_family_probe::tests::failed_or_unrun_candidate_does_not_create_semantic_losses ... ok
+test scoped_family_probe::tests::low_cost_does_not_compensate_for_quality_or_missing_receipts ... ok
+test score_diagnostic::tests::midpoint_requires_complete_cohort_and_predeclared_total_margin ... ok
+test score_diagnostic::tests::score_audit_preserves_disagreement_and_rejects_wrong_revision_or_missing_score ... ok
+test score_diagnostic::tests::zero_http_is_not_an_unknown_receipt_and_partial_failed_cost_is_not_total ... ok
+test semantic_check_contract::tests::closed_input_does_not_accept_labels_or_a_second_text ... ok
+test semantic_check_contract::label_tests::frozen_labels_must_follow_both_reviewers_and_every_adjudication ... ok
+test semantic_check_contract::tests::missing_normalization_is_not_a_semantic_acceptance ... ok
+test semantic_check_contract::tests::judgment_gate_rejects_uncertainty_and_never_self_certifies ... ok
+test semantic_check_contract::tests::payload_keeps_untrusted_data_and_contract_separate_without_repair_fields ... ok
+test semantic_check_contract::tests::rejects_forged_paths_quotes_labels_extra_and_empty_findings ... ok
+test semantic_link_contract::tests::builder_keeps_full_text_and_only_opaque_input ... ok
+test semantic_link_contract::tests::duplicate_extra_missing_and_wrong_ids_fail ... ok
+test semantic_link_contract::tests::quotes_cannot_cross_sources_or_invent_provenance ... ok
+test semantic_link_contract::tests::uncertainty_is_debt_not_technical_failure_or_selection ... ok
+test semantic_link_direct_contract::tests::document_only_index_is_distinct_and_legacy_index_is_unchanged ... ok
+test semantic_link_contract::tests::receipt_and_generation_failures_are_never_abstentions ... ok
+test semantic_link_direct_contract::tests::literal_references_do_not_turn_silence_into_verified_registered_absence ... ok
+test semantic_link_direct_contract::tests::full_sources_without_query_map_and_exact_four_field_schema ... ok
+test semantic_link_direct_contract::tests::model_judgment_and_raw_provenance_preserve_uncertainty_without_repair ... ok
+test semantic_link_direct_contract::tests::receipts_enforce_512_while_legacy_ceiling_remains_1024 ... ok
+test semantic_link_direct_contract::tests::wrong_source_noncanonical_duplicate_unordered_missing_references_fail ... ok
+test semantic_link_local_contract::tests::artifact_preserves_raw_seven_fields_and_exact_reference_provenance ... ok
+test semantic_link_local_contract::tests::false_facets_can_pass_structure_without_becoming_verified_truth ... ok
+test semantic_link_local_contract::tests::payload_keeps_v2_sources_maps_schema_facets_and_provider_but_has_no_decision ... ok
+test semantic_link_local_contract::tests::remote_decision_duplicates_and_extra_fields_are_technical_failures ... ok
+test semantic_link_local_contract::tests::local_policy_handles_positive_negative_and_uncertainty_combinations ... ok
+test semantic_link_local_contract::tests::shared_v2_reference_errors_and_v1_v2_regressions_are_preserved ... ok
+test semantic_link_span_contract::tests::composed_card_keeps_source_and_debt_without_inventing_a_focus_value ... ok
+test semantic_link_span_contract::tests::compact_maps_keep_full_sources_and_numeric_token_order ... ok
+test semantic_link_span_contract::tests::strict_fields_and_shared_receipt_guard_remain_atomic ... ok
+test semantic_link_span_contract::tests::unicode_offsets_and_literal_separator_rendering ... ok
+test semantic_link_span_contract::tests::references_reject_unknown_crossed_duplicate_disordered_and_empty_ids ... ok
+test semantic_presentation::tests::all_values_paths_and_semantic_mentions_survive_without_overwriting ... ok
+test semantic_presentation::tests::coordinate_mapping_preserves_nested_moved_values_and_escaped_keys ... ok
+test semantic_presentation::tests::model_route_and_non_message_parameters_are_identical ... ok
+test semantic_presentation::tests::malformed_model_json_is_an_error_not_a_panic ... ok
+test semantic_presentation::tests::normalization_separates_only_root_copy_not_values_or_nested_fields ... ok
+test semantic_presentation::tests::restore_rejects_duplicate_collision_bad_parent_and_escape ... ok
+test semantic_representation::tests::agent_adapter_rejects_missing_duplicate_foreign_and_exposed_outputs ... ok
+test proposition_isolation_probe::tests::requests_use_full_bank_balanced_order_and_literal_ablation ... ok
+test semantic_representation::report_tests::report_keeps_charged_http_errors_unknown_inflight_and_unsent_in_denominator ... ok
+test documentary_v3_io::readings::tests::convergent_reference_dag_has_shared_node_budget_and_small_control ... ok
+test documentary_v3::context_budget::tests::borrowed_pair_preflight_combines_limits_before_running_the_consumer ... ok
+test documentary_v3::validation::graph::tests::legacy_owners_under_profile_cannot_repeat_dependency_scans_without_charge ... ok
+test documentary_v3_io::assembly::tests::oversized_derived_output_is_not_transportable ... ok
+test slot_contract::tests::frozen_development_matrix_is_structurally_consistent ... ok
+test slot_contract::tests::identity_context_does_not_satisfy_a_requested_slot ... ok
+test slot_contract::tests::rejects_quotes_that_do_not_belong_to_their_memory ... ok
+test slot_contract::tests::rejects_silence_without_complete_source_coverage ... ok
+test slot_contract::tests::rejects_unmeasured_states_without_explicit_grounded_quote ... ok
+test source_frame_audit::tests::defective_review_requires_literal_source_and_explanation ... ok
+test source_frame_audit::tests::missing_duplicate_and_unknown_reviews_fail ... ok
+test source_frame_audit::tests::uncertainty_cannot_be_counted_as_faithful_or_bad_without_review ... ok
+test source_review::tests::review_requires_all_questions_and_same_scope_sources_without_evidence_context_overlap ... ok
+test sparse_critic_probe::replacement::tests::critic_replacement_payload_diff_is_model_only_and_questions_are_frozen_proposals ... ok
+test sparse_critic_probe::tests::baseline_validation_rejects_unexpected_answers_and_decodes_last_option ... ok
+test sparse_critic_probe::tests::parallel_audit_requires_both_starts_and_retains_failed_receipt ... ok
+test sparse_critic_probe::tests::targeted_answers_use_only_requested_sources_and_preserve_original_index_map ... ok
+test sparse_critic_probe::tests::transport_gate_requires_feature_and_every_observed_response_http2 ... ok
+test typed_facts::tests::additive_part_preserved_but_not_common_policy ... ok
+test typed_facts::tests::availability_in_distinct_records_is_not_a_contradiction ... ok
+test typed_facts::tests::direct_exclusion_does_not_refute_upstream_premise ... ok
+test typed_facts::tests::exhaustive_set_can_refute_but_not_other_subject ... ok
+test typed_facts::tests::explicit_contrast_needs_both_assignments ... ok
+test typed_facts::tests::explicit_unavailable_status_preserved_without_inventing_value_type ... ok
+test typed_facts::tests::extra_configuration_key_does_not_create_contrast ... ok
+test typed_facts::tests::fixed_context_is_not_configuration ... ok
+test typed_facts::tests::hidden_role_fields_rejected ... ok
+test typed_facts::tests::individual_counterexample_refutes_factual_universal_premise ... ok
+test typed_facts::tests::negated_unknown_is_not_positive_availability_evidence ... ok
+test typed_facts::tests::plans_do_not_establish_execution ... ok
+test typed_facts::tests::positive_alternative_does_not_refute ... ok
+test typed_facts::tests::universal_applies_to_member_not_reverse ... ok
+test typed_facts::tests::unknown_and_bounds_are_useful_without_claiming_exactness ... ok
+test typed_facts::tests::wrong_entity_and_attribute_rejected ... ok
+test typed_facts::v2::record_projection::automatic_extraction::codex::bank::tests::bound_content_failure_only_degrades_its_own_row ... ok
+test semantic_representation::tests::all46_presentations_reconstruct_originals_without_changing_route_or_semantic_fields ... ok
+test typed_facts::v2::record_projection::automatic_extraction::codex::bank::tests::malformed_envelope_never_recovers_a_valid_subset ... ok
+test typed_facts::v2::record_projection::automatic_extraction::codex::bank::tests::pilot_requires_exact_hash_rosters_and_complete_faithful_reviews ... ok
+test typed_facts::v2::record_projection::automatic_extraction::codex::tests::entry_property_guard_checks_every_reading_and_requested_slot ... ok
+test typed_facts::v2::record_projection::automatic_extraction::codex::tests::explicit_entry_relation_keeps_route_owner_and_cannot_publish_a_water_origin ... ok
+test typed_facts::v2::record_projection::automatic_extraction::codex::tests::grounded_schema_resolves_refs_optional_fields_and_numeric_constraints ... ok
+test typed_facts::v2::record_projection::automatic_extraction::codex::tests::normalizes_grounded_source_and_question_without_inventing_positive_or_answer ... ok
+test typed_facts::v2::record_projection::automatic_extraction::codex::tests::rejects_incomplete_duplicate_foreign_and_exposed_outputs ... ok
+test typed_facts::v2::record_projection::automatic_extraction::codex::tests::unsupported_and_invalid_raw_remain_failed_without_repair ... ok
+test documentary_v3_io::source_context_reference::tests::reclassification_rejects_each_tampered_reference_component ... ok
+test typed_facts::v2::record_projection::automatic_extraction::reference_matrix::tests::full_matrix_exposes_distributed_owner_and_class_mismatch_without_relaxation ... ok
+test typed_facts::v2::record_projection::automatic_extraction::tests::conditions_reject_duplicate_instead_of_overwriting ... ok
+test typed_facts::v2::record_projection::automatic_extraction::tests::final_revision_unsupported_never_falls_back_to_a_valid_initial_document ... ok
+test typed_facts::v2::record_projection::automatic_extraction::tests::grounded_reference_types_cross_original_parser_and_preserve_intermediate_evidence ... ok
+test typed_facts::v2::record_projection::automatic_extraction::tests::payloads_are_rebuilt_only_from_kind_text_and_ontology ... ok
+test documentary_v3::validation::graph::tests::same_component_clone_work_is_global_even_without_context_owners ... ok
+test typed_facts::v2::record_projection::automatic_extraction::tests::query_adapter_has_no_fact_completion_and_checks_literal_subject_and_slot ... ok
+test typed_facts::v2::record_projection::automatic_extraction::tests::typed_clause_translation_crosses_the_same_legacy_adapter_without_domain_relaxation ... ok
+test typed_facts::v2::record_projection::automatic_extraction::tests::unsupported_is_explicit_never_empty_reliable_frame ... ok
+test typed_facts::v2::record_projection::tests::absent_cue_keeps_analytic_utility_ambiguity_under_review ... ok
+test typed_facts::v2::record_projection::tests::actual_assignment_rejects_admission_without_losing_its_qualifier ... ok
+test typed_facts::v2::record_projection::tests::actual_nonuse_does_not_refute_capability_but_incapability_can_refute_use ... ok
+test typed_facts::v2::record_projection::tests::all_useful_analytic_values_still_require_qualification ... ok
+test typed_facts::v2::record_projection::tests::capacity_exclusion_can_refute_actual_use_without_establishing_use ... ok
+test typed_facts::v2::record_projection::tests::certain_distinct_value_survives_without_transferring_conditional_one ... ok
+test typed_facts::v2::record_projection::tests::closed_premise_does_not_turn_permission_into_observed_use ... ok
+test typed_facts::v2::record_projection::tests::component_quantity_stays_component_not_total ... ok
+test typed_facts::v2::record_projection::tests::condition_mismatch_does_not_manufacture_epistemic_contribution ... ok
+test typed_facts::v2::record_projection::tests::contrast_does_not_use_admission_as_assignment ... ok
+test typed_facts::v2::record_projection::tests::duplicate_conditional_fact_cannot_erase_certain_value ... ok
+test typed_facts::v2::record_projection::tests::generic_measurement_is_not_execution_when_only_planned ... ok
+test typed_facts::v2::record_projection::tests::identity_uncertainty_does_not_assign_phone ... ok
+test typed_facts::v2::record_projection::tests::invariant_refutation_retains_priority_over_requested_fact ... ok
+test typed_facts::v2::record_projection::tests::irrelevant_open_reading_does_not_poison_certain_requested_fact ... ok
+test typed_facts::v2::record_projection::tests::nonexistent_quote_and_target_encoded_fields_are_rejected ... ok
+test typed_facts::v2::record_projection::tests::normative_restriction_does_not_prove_actual_impossibility ... ok
+test typed_facts::v2::record_projection::tests::observed_use_refutes_incapacity_in_both_scalar_and_closed_set_premises ... ok
+test typed_facts::v2::record_projection::tests::open_conditional_refutation_does_not_override_certain_answer ... ok
+test typed_facts::v2::record_projection::tests::open_list_without_named_subject_is_not_irrelevant_or_selected ... ok
+test typed_facts::v2::record_projection::tests::open_single_reading_cannot_prove_concrete_fact ... ok
+test typed_facts::v2::record_projection::tests::optional_field_spelling_does_not_hide_invariance ... ok
+test typed_facts::v2::record_projection::tests::uncertain_refutation_does_not_turn_into_requested_field ... ok
+test typed_facts::v2::record_projection::tests::unknown_method_does_not_open_execution_to_quantity_bridge ... ok
+test typed_facts::v2::record_projection::tests::unknown_method_requires_explicit_scope_and_neutral_datum ... ok
+test typed_facts::v2::record_projection::tests::unspecified_method_answers_generic_measurement_without_inventing_method ... ok
+test typed_facts::v2::record_projection::tests::unspecified_method_never_answers_specific_method_or_other_quantity ... ok
+test typed_facts::v2::record_projection::tests::witness_auditor_rejects_conditional_fact_injected_as_invariant ... ok
+test typed_facts::v2::tests::component_measurement_does_not_establish_whole_autonomy ... ok
+test typed_facts::v2::tests::contradictory_method_aliases_are_rejected ... ok
+test typed_facts::v2::tests::direct_procedure_question_binds_its_measured_quantity ... ok
+test typed_facts::v2::tests::equivalent_method_encodings_preserve_negative_execution_answer ... ok
+test typed_facts::v2::tests::fixed_conditions_are_preserved ... ok
+test typed_facts::v2::tests::future_intent_does_not_establish_execution_status ... ok
+test typed_facts::v2::tests::missing_measurement_quantity_is_not_an_implicit_wildcard ... ok
+test typed_facts::v2::tests::missing_quantity_or_method_cannot_be_filled_from_question ... ok
+test typed_facts::v2::tests::no_measurement_is_evidence_not_unknown ... ok
+test typed_facts::v2::tests::other_quantity_is_not_a_contribution ... ok
+test typed_facts::v2::tests::pending_execution_differs_from_a_plan ... ok
+test typed_facts::v2::tests::pending_methods_are_not_conflated_for_refutation ... ok
+test typed_facts::v2::tests::pending_status_can_answer_direct_procedure_state_question ... ok
+test typed_facts::v2::tests::utility_disagreement_requires_review_and_counts_nonselection ... ok
+test verified::tests::contextual_audit_rejects_wrong_context_facts_and_keeps_a_linked_correction ... ok
+test verified::tests::correction_audit_checks_only_correction_proposals_and_counts_every_receipt ... ok
+test verified::tests::empty_search_requires_no_selection_trace_or_receipt ... ok
+test verified::tests::incomplete_receipts_cannot_pass_as_full_cost_or_hide_wrong_checks ... ok
+test verified::tests::only_absent_policy_uses_the_historical_default ... ok
+test verified::tests::pilot_must_bind_every_required_source_not_only_supplied_hashes ... ok
+test verified::tests::revised_pilots_require_an_explicit_recognized_source_group ... ok
+test verified::tests::role_audit_requires_all_fact_and_correction_checks_and_exclusive_path_types ... ok
+test typed_facts::v2::record_projection::automatic_extraction::codex::bank::tests::opaque_sorted_complete_chunks_and_only_text_projection ... ok
+test typed_facts::v2::record_projection::automatic_extraction::reference_matrix::tests::distributed_matrix_preserves_all_controls_and_exposes_false_exact_binding ... ok
+test revision_matrix::tests::blind_packet_and_score_join_are_end_to_end_and_fail_closed ... ok
+test typed_facts::v2::record_projection::automatic_extraction::tests::pilot_roster_uses_spaced_ordinals_only_and_never_gold ... ok
+test semantic_representation::tests::roster_preserves_all_sides_and_labels_never_enter_payload ... ok
+test semantic_representation::tests::basis_scope_profile_changes_only_system_audit_for_all46_inputs ... ok
+test semantic_representation::tests::all46_schema_variants_change_only_response_format_and_allow_exact_displayed_paths ... ok
+test semantic_representation::tests::capacity_profile_preserves_all_messages_schema_and_known_inputs ... ok
+test semantic_representation::tests::all46_coordinate_tables_are_exhaustive_and_validate_only_declared_namespaces ... ok
+
+test result: ok. 717 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 20.70s
+
+     Running unittests src/lib.rs (target/debug/deps/gennie_memory_kernel-d01860c165c1d689)
+
+running 6 tests
+test config::tests::reads_the_gennie_memory_openrouter_variable_name ... ok
+test config::tests::evaluation_response_content_path_is_separately_opt_in ... ok
+test config::tests::evaluation_capture_path_is_optional_and_rejects_empty_values ... ok
+test digest::tests::known_sha256_vector ... ok
+test db::tests::applied_migration_rejects_changed_bytes ... ok
+test db::tests::multiple_migrations_preserve_old_checksums ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/gennie_memory_retrieval-12381a2ad0de4a0d)
+
+running 179 tests
+test applicability::tests::compatible_correction_is_allowed_but_uncertain_extraction_is_not ... ok
+test applicability::tests::fabricated_quote_and_duplicate_dimension_are_invalid ... ok
+test applicability::tests::multiple_conditions_are_grounded_and_memory_may_have_extra_values ... ok
+test applicability::tests::mismatched_and_unknown_context_do_not_pass ... ok
+test isolation_tests::entity_aliases_homonyms_and_operation_replays_preserve_identity ... ok
+test isolation_tests::entity_ids_and_candidates_never_cross_actor_scope_or_kind ... ok
+test isolation_tests::entity_failure_rolls_back_identity_alias_operation_and_evidence ... ok
+test isolation_tests::fixture_revisions_cannot_change_actor_and_failed_batch_rolls_back ... ok
+test isolation_tests::fixture_import_after_a_write_cannot_leave_stale_exact_content_keys ... ok
+test embedding::tests::rrf_tie_prefers_text_rank_over_identifier_order ... ok
+test isolation_tests::bm25_weights_change_ranking_but_not_eligibility ... ok
+test isolation_tests::coverage_separates_eligible_indexed_matched_limited_and_empty_queries ... ok
+test isolation_tests::hybrid_fusion_returns_one_current_memory_per_identity_despite_two_ranks ... ok
+test embedding::tests::entity_filter_precedes_text_and_semantic_ranking ... ok
+test isolation_tests::legacy_write_receipts_keep_their_request_hash_and_replay_after_upgrade ... ok
+test isolation_tests::validation_and_time_boundaries_do_not_expand_the_result ... ok
+test isolation_tests::resolved_entity_round_trip_and_exact_dedup_keep_distinct_homonyms ... ok
+test isolation_tests::write_rejects_unknown_entities_and_other_actor_without_side_effects ... ok
+test isolation_tests::composition_cannot_reintroduce_a_foreign_actor_or_type ... ok
+test isolation_tests::fts_projection_updates_deletes_and_current_revision_are_consistent ... ok
+test embedding::tests::semantic_search_respects_scope_and_reports_partial_coverage ... ok
+test model::classifier_provider_tests::baseline_is_the_default_and_single_pass_stays_explicit ... ok
+test model::classifier_provider_tests::gemma_is_explicit_and_does_not_change_the_decisions_default ... ok
+test per_memory::anchor::tests::a_name_is_not_a_property_or_proof_of_identity ... ok
+test per_memory::anchor::tests::invalid_query_names_or_fabricated_source_presence_fail ... ok
+test per_memory::contextual::tests::context_filters_only_requested_facts_and_never_globally_vetoes_corrections ... ok
+test per_memory::factors::tests::identity_never_substitutes_for_a_requested_fact_or_correction ... ok
+test per_memory::tests::compatible_positives_survive_and_trace_cannot_reorder_omit_or_change_revision ... ok
+test per_memory::verification::tests::complete_policy_binds_all_paths_the_verifier_and_its_revision ... ok
+test per_memory::verification::tests::contextual_proposal_binds_raw_roles_and_checks_corrections_despite_false_fact_context ... ok
+test per_memory::verification::tests::intersection_checks_every_proposal_and_keeps_unknown_cost_distinct_from_zero ... ok
+test per_memory::verification::tests::kind_only_proposal_requires_every_positive_check_and_role_specific_paths ... ok
+test per_memory::verification::tests::selective_checks_preserve_direct_facts_and_require_every_correction_only_check ... ok
+test per_memory::verification::tests::typed_contrast_cannot_disagree_with_the_accepted_check ... ok
+test product::calibration::model_identity_tests::an_observed_snapshot_is_distinct_from_the_requested_alias ... ok
+test product::calibration::tests::empirical_rates_are_smoothed_and_never_select_memories ... ok
+test lifecycle::tests::withdrawal_restore_delete_and_replay_preserve_visibility ... ok
+test isolation_tests::actor_type_and_scope_filters_precede_both_rankings_and_scope_list ... ok
+test lifecycle::tests::abandoned_lease_recovers_with_new_fence ... ok
+test lifecycle::tests::erased_legacy_write_cannot_resurrect_on_retry ... ok
+test isolation_tests::operation_ids_cannot_be_reused_across_entity_and_memory_writes ... ok
+test product::tests::clarification_and_bad_input_never_call_provider ... ok
+test isolation_tests::phrase_queries_keep_order_accents_and_treat_operators_as_data ... ok
+test product::tests::adapters_without_budget_support_fail_closed ... ok
+test lifecycle::tests::deletion_purges_dependents_and_rolls_back_as_one_operation ... ok
+test lifecycle::tests::review_due_stale_scope_and_generation ... ok
+test product::tests::invalid_token_budgets_fail_before_classification ... ok
+test isolation_tests::upgrade_preserves_history_and_checksums_and_registers_legacy_entities ... ok
+test product::tests::isolation_filters_reach_product_and_empty_normalization_is_not_no_candidates ... ok
+test product::tests::missing_text_projection_degrades_product_before_classification ... ok
+test product::tests::factor_policy_rejects_a_trace_without_independent_factors ... ok
+test product::tests::preserves_selection_source_and_does_not_fabricate_relations ... ok
+test product::tests::rejected_registered_sources_never_reach_a_published_seed_in_report_mode ... ok
+test product::tests::equivalent_memory_second_pass_is_a_review_hint_and_cost_is_aggregated ... ok
+test product::tests::calibration_never_silently_accepts_missing_scores_or_another_served_model ... ok
+test product::tests::context_reaches_classifier_but_does_not_expand_search_scope ... ok
+test product::tests::calibration_binds_the_observed_snapshot_and_never_substitutes_its_alias ... ok
+test product::tests::factors_keep_applicability_separate_from_usefulness_and_apply_only_bound_calibration ... ok
+test product::tests::cumulative_input_and_final_seed_have_exact_inclusive_limits ... ok
+test product::tests::empty_abstention_invalid_and_technical_failure_are_distinct ... ok
+test reconciliation::tests::audit_accepts_exact_evidence_bytes_written_by_lifecycle ... ok
+test product::tests::source_updated_during_classification_is_revalidated_before_seed ... ok
+test product::tests::typed_roles_are_preserved_and_unsupported_policies_fail_before_call ... ok
+test reconciliation::tests::classifier_judgments_never_replace_and_invalid_quotes_degrade_to_review ... ok
+test product::tests::seed_and_deadline_limits_never_publish_truncated_or_late_seed ... ok
+test product::tests::source_policy_reports_unknowns_and_strict_mode_blocks_only_the_seed ... ok
+test reconciliation::tests::committed_writes_replay_receipts_and_audit_sources_without_new_calls ... ok
+test product::tests::token_input_boundary_blocks_before_adapter_and_preserves_candidates ... ok
+test product::tests::verified_sources_and_equivalent_hints_are_rechecked_and_counted_in_final_seed ... ok
+test reconciliation::tests::confirm_omitted_and_null_schedule_are_distinct_idempotent_requests ... ok
+test segmentation::tests::lossless_unicode_and_conditions ... ok
+test segmentation::tests::protects_abbreviations_numbers_urls_quotes_and_code ... ok
+test segmentation::tests::rejects_limits_instead_of_returning_partial_success ... ok
+test service::tests::fts_input_is_not_an_operator ... ok
+test service::tests::invalid_calendar_day_is_rejected ... ok
+test reconciliation::tests::confirm_preserves_content_and_source_and_advances_revision_with_separate_evidence ... ok
+test reconciliation::tests::operation_namespace_entity_and_scope_are_not_client_controlled ... ok
+test reconciliation::tests::exact_fingerprint_retains_different_source_and_does_not_merge_negation ... ok
+test reconciliation::tests::pending_proposal_is_visible_as_uncertainty_until_explicit_discard ... ok
+test reconciliation::tests::strict_unverified_source_stays_out_of_fts_and_can_be_resolved_after_snapshot ... ok
+test service::tests::retrieval_gate_demotes_ambiguous_v2_attribution_from_any_classifier ... ok
+test reconciliation::tests::relation_transport_holds_no_transaction_and_rechecks_concurrent_revisions ... ok
+test reconciliation::tests::stale_proposals_require_current_targets_and_resolution_rollback_is_complete ... ok
+test reconciliation::tests::transaction_failure_rolls_back_revision_fts_evidence_and_receipt ... ok
+test slot_evidence::tests::ambiguous_foreign_attribution_is_preserved_but_demoted_from_actionable_selection ... ok
+test slot_evidence::tests::compact_v2_accepts_independent_subject_quotes_bound_to_the_query_anchor ... ok
+test slot_evidence::tests::compact_v2_rejects_subject_quotes_for_a_different_query_person ... ok
+test slot_evidence::tests::compact_v2_trace_preserves_binding_and_selects_exact_roster_entry ... ok
+test reconciliation::tests::topic_conflict_requires_all_targets_and_an_explicit_revision ... ok
+test slot_evidence::tests::conservative_abstention_bank_r4_rejects_foreign_facts_without_losing_useful_cases ... ok
+test slot_evidence::tests::domain_type_matching_ignores_ascii_case_but_requires_token_boundaries ... ok
+test slot_evidence::tests::duplicate_roster_identity_fails_closed ... ok
+test slot_evidence::tests::excluding_a_third_party_does_not_veto_the_queried_recipient_answer ... ok
+test slot_evidence::tests::conservative_abstention_bank_r5_closes_possessive_subject_escape ... ok
+test slot_evidence::tests::explicit_unmeasured_slot_evidence_is_selected_without_inferencing_a_value ... ok
+test slot_evidence::tests::excluding_the_queried_recipient_still_blocks_the_answer ... ok
+test slot_evidence::tests::foreign_relative_after_bound_relative_is_not_misattributed ... ignored, Known V2 gap: no clause-local predicate evidence to distinguish sequential relatives
+test slot_evidence::tests::fact_about_another_subject_is_not_selected_even_with_matching_memory_identity ... ok
+test slot_evidence::tests::foreign_relative_guard_uses_proposition_anchor_not_candidate_identity ... ok
+test slot_evidence::tests::foreign_relative_guard_recognizes_common_id_separators_but_not_dates ... ok
+test slot_evidence::tests::invalid_trace_cannot_yield_selected_ids ... ok
+test slot_evidence::tests::matched_stable_id_and_literal_fact_can_be_selected ... ok
+test slot_evidence::tests::named_subject_inside_reported_clause_cannot_answer_anchor_fact ... ok
+test slot_evidence::tests::nested_request_does_not_turn_a_third_party_exclusion_into_a_refutation ... ok
+test slot_evidence::tests::prospective_sentence_scope_v1_matches_blind_subject_adjudication ... ok
+test slot_evidence::tests::queried_recipient_exclusion_does_not_preserve_a_refutation_about_someone_else ... ok
+test slot_evidence::tests::query_anchor_quote_must_bind_subject_kind_and_stable_id_together ... ok
+test slot_evidence::tests::query_requested_speech_complement_survives_local_abstention ... ok
+test slot_evidence::tests::frozen_v2_local_bank_preserves_evidence_and_rejects_wrong_referents ... ok
+test slot_evidence::tests::r10_requires_the_query_to_ask_about_the_bound_identity_as_speaker ... ok
+test slot_evidence::tests::r11_rejects_comma_vocative_and_preserves_firmly_modified_speech ... ok
+test slot_evidence::tests::r12_distinguishes_recipient_from_topic_and_keeps_time_asides ... ok
+test slot_evidence::tests::r13_blocks_explicit_recipient_exclusion_and_keeps_bounded_time_asides ... ok
+test slot_evidence::tests::r14_blocks_spanish_recipient_exclusion_and_keeps_monday_asides ... ok
+test slot_evidence::tests::r16_demotes_parenthetical_and_dashed_exclusions_when_marker_assessment_is_inconclusive ... ok
+test slot_evidence::tests::r17_preserves_an_informed_that_complement_without_changing_r16 ... ok
+test slot_evidence::tests::r18_preserves_advised_complements_and_role_contrast_asides ... ok
+test service::tests::keyword_search_removes_question_words_but_keeps_scoped_memory ... ok
+test slot_evidence::tests::r19_preserves_an_advised_complement_after_lunch_aside ... ok
+test slot_evidence::tests::r19_retrospective_overlay_preserves_premise_corrections_without_relabeling_bank ... ok
+test slot_evidence::tests::r4_counterexample_requires_the_same_recipient_without_an_intervening_clause ... ok
+test slot_evidence::tests::r20_binds_independent_subject_quotes_to_the_query_without_losing_bank_cases ... ok
+test slot_evidence::tests::r6_rejects_prepositional_speech_subject_and_preserves_useful_complements ... ok
+test slot_evidence::tests::r21_rejects_cooccurring_foreign_ids_and_preserves_literal_name_controls ... ok
+test slot_evidence::tests::r7_clause_local_subject_gate_handles_long_roles_and_contextual_prefixes ... ok
+test slot_evidence::tests::recipient_exclusion_guard_does_not_capture_a_nested_infinitive ... ok
+test slot_evidence::tests::report_guard_ignores_an_unrelated_later_report_clause ... ok
+test slot_evidence::tests::report_guard_stops_at_coordinated_foreign_report_clause ... ok
+test slot_evidence::tests::roster_gate_rejects_extra_missing_and_reordered_candidates ... ok
+test slot_evidence::tests::stable_id_matching_rejects_prefix_and_suffix_collisions ... ok
+test slot_evidence::tests::supporting_a_correction_premise_preserves_relevant_evidence ... ok
+test slot_evidence::tests::unresolved_identity_is_retained_but_never_selected ... ok
+test slot_evidence::tests::v2_literal_binding_known_false_acceptance_for_superseded_draft ... ok
+test slot_evidence::tests::v2_multi_anchor_slot_abstains_when_ambiguous_and_keeps_isolated_subject ... ok
+test slot_evidence::tests::v2_new_holdout_bank_binds_useful_and_non_actionable_evidence ... ok
+test slot_evidence::tests::r8_rejects_passive_speech_and_keeps_bounded_subject_modifiers ... ok
+test slot_evidence::tests::v2_reported_subject_matrix_v2_blocks_explicitly_distinct_homonym ... ok
+test slot_evidence::tests::v2_reported_subject_matrix_blocks_foreign_fact_without_losing_report_content ... ok
+test slot_evidence::tests::v2_reported_subject_matrix_v3_blocks_descriptive_foreign_subjects ... ok
+test slot_evidence::tests::v2_revision_matrix_exposes_known_stale_draft_false_acceptance ... ok
+test slot_evidence::tests::v2_revision_matrix_preserves_finality_conflict_and_correction_roles ... ok
+test slot_evidence::tests::v2_reported_subject_matrix_v4_preserves_compound_names_without_prefix_binding ... ok
+test slot_evidence::tests::v2_slot_cannot_be_answered_by_a_different_explicit_query_entity ... ok
+test slot_evidence::tests::v2_subject_binding_requires_direct_name_id_link_and_preserves_literal_names ... ok
+test slot_evidence::tests::r9_rejects_colon_imperative_and_preserves_past_perfect_complements ... ok
+test slot_evidence::tests::v3_critic_regressions_distinguish_reporting_and_subject_coordination ... ok
+test slot_evidence::tests::v3_demotes_foreign_later_sentence_and_keeps_useful_proposition ... ok
+test slot_evidence::tests::v3_new_blind_bank_matches_independent_attribution_adjudication ... ok
+test slot_evidence::tests::v3_predicate_scope_preserves_bound_fact_and_rejects_later_foreign_relative ... ok
+test slot_evidence::tests::v2_temporal_guard_is_scoped_to_the_requested_slot_in_multi_slot_queries ... ok
+test slot_evidence::tests::v2_temporal_query_downgrades_old_draft_without_losing_version_context ... ok
+test service::tests::recall_preserves_explicit_premise_refutation_separately_from_requested_slots ... ok
+test service::tests::search_filters_scope_and_old_revision ... ok
+test service::tests::seed_preserves_conditions_and_declared_source ... ok
+test service::tests::seed_rechecks_selection_against_authorized_candidates ... ok
+test source_verification::tests::checking_a_changed_candidate_rolls_back_all_new_receipts ... ok
+test source_verification::tests::overlapping_quotes_require_an_explicit_range ... ok
+test source_verification::tests::derived_candidate_uncertainty_does_not_change_literal_provenance ... ok
+test source_verification::tests::actor_scope_and_revision_are_checked_before_loading_source ... ok
+test source_verification::tests::invalid_or_oversized_registration_leaves_no_snapshot ... ok
+test source_verification::tests::literal_provenance_is_versioned_idempotent_and_does_not_certify_summary ... ok
+test token_budget::tests::accumulated_budget_never_counts_rejected_requests_as_accepted ... ok
+test token_budget::tests::ordinary_tokens_preserve_special_markers_unicode_and_exact_limits ... ok
+test source_verification::tests::missing_sources_and_unsupported_or_ambiguous_locators_remain_unverified ... ok
+test source_verification::tests::newer_memory_revisions_require_fresh_literal_evidence ... ok
+test service::tests::recall_normalizes_foreign_subjects_and_temporal_claims_before_seed ... ok
+test service::tests::recall_chooses_a_scoped_memory_and_degrades_on_provider_failure ... ok
+test source_verification::tests::proposed_evidence_can_be_checked_inside_a_caller_transaction_without_receipts ... ok
+test source_verification::tests::snapshot_and_receipt_tampering_cannot_reuse_a_verified_flag ... ok
+test source_verification::tests::unicode_byte_ranges_are_exact_and_never_normalized ... ok
+test source_verification::tests::versions_are_immutable_and_replaying_old_versions_does_not_reactivate_them ... ok
+test write::tests::batch_cap_is_enforced_before_processing ... ok
+test write::tests::create_persists_original_summary_source_and_fts_atomically ... ok
+test write::tests::exact_content_from_another_operation_reuses_memory_and_preserves_new_source ... ok
+test write::tests::exact_fingerprint_normalizes_whitespace_but_keeps_scope_and_content_fields ... ok
+test write::tests::invalid_request_is_rejected_before_any_write ... ok
+test write::tests::repeated_operation_is_idempotent_and_conflicting_reuse_is_rejected ... ok
+test write::tests::revise_appends_history_and_rejects_stale_or_duplicate_content ... ok
+test service::tests::per_memory_recall_composes_all_parts_and_rejects_incomplete_trace ... ok
+
+test result: ok. 178 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 3.48s
+
+     Running tests/product_coverage.rs (target/debug/deps/product_coverage-a7ce89840d2a320a)
+
+running 11 tests
+test unicode_segmentation_reconstructs_all_bytes_and_negated_conditions ... ok
+test empty_scope_ambiguity_and_oversized_context_do_not_reach_classifier ... ok
+test removing_entity_and_type_filters_exposes_only_the_expected_controls ... ok
+test zero_bm25_weight_changes_scoring_without_removing_field_matches ... ok
+test versioned_matrix_checks_both_query_modes_and_exact_allowed_sets ... ok
+test every_matrix_query_has_real_entity_and_type_filter_ablations ... ok
+test sixty_four_revisions_keep_current_projection_and_reject_stale_seed_selection ... ok
+test incomplete_failure_receipt_stays_unknown_without_retry_or_fabricated_zero_cost ... ok
+test contradictions_remain_distinct_and_review_failure_preserves_initial_evidence ... ok
+test forged_selection_cannot_publish_sensitive_text_and_failure_does_not_poison_next_call ... ok
+test product_preserves_unicode_conditions_and_declared_sources_in_selected_seed ... ok
+
+test result: ok. 11 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.84s
+
+   Doc-tests gennie_memory_kernel
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests gennie_memory_retrieval
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

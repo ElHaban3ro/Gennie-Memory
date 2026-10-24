@@ -1,0 +1,378 @@
+{
+  "schema_version": 1,
+  "observed_on": "2026-10-24",
+  "campaign_v2": {
+    "status": "completed",
+    "calls": 48,
+    "reported_cost_usd": 0.0022986160000000003,
+    "elapsed_seconds": 61.75295875000302
+  },
+  "combined_attempts": {
+    "http_calls": 49,
+    "reported_cost_usd": 0.002361316,
+    "first_attempt": "one completed Decisions development request; Jev local capture setup failed before HTTP, established separately in setup-failure-diagnosis.json"
+  },
+  "providers": {
+    "decisions": {
+      "requested_model": "openai/gpt-6-luna-decisions",
+      "served_model": "openai/gpt-6-luna-decisions-20261006",
+      "selection_by_split": {
+        "development": {
+          "correct": 8,
+          "n": 8,
+          "degraded": 0
+        },
+        "calibration": {
+          "correct": 7,
+          "n": 8,
+          "degraded": 0
+        },
+        "final": {
+          "correct": 8,
+          "n": 8,
+          "degraded": 0
+        }
+      },
+      "final_factors": {
+        "premise_correction": {
+          "raw_brier": 0.0639,
+          "empirical_brier": 0.07870370370370372,
+          "raw_ece": 0.15250000000000002,
+          "empirical_ece": 0.125,
+          "boolean_correct": 7,
+          "n": 8,
+          "unscored": []
+        },
+        "requested_fact": {
+          "raw_brier": 0.08578750000000002,
+          "empirical_brier": 0.11959183673469388,
+          "raw_ece": 0.22375,
+          "empirical_ece": 0.12857142857142856,
+          "boolean_correct": 7,
+          "n": 8,
+          "unscored": []
+        },
+        "same_context": {
+          "raw_brier": 0.016337500000000005,
+          "empirical_brier": 0.109375,
+          "raw_ece": 0.1037500000000001,
+          "empirical_ece": 0.3125,
+          "boolean_correct": 8,
+          "n": 8,
+          "unscored": []
+        }
+      },
+      "errors": [
+        {
+          "id": "development-06",
+          "split": "development",
+          "query": "Fabio viajará a Quito. ¿Qué adaptador llevará Fabio?",
+          "role": "irrelevant",
+          "expected_selected": false,
+          "selected": false,
+          "selection_error": false,
+          "factor_errors": [
+            {
+              "factor": "same_context",
+              "expected": false,
+              "observed": true
+            }
+          ]
+        },
+        {
+          "id": "calibration-02",
+          "split": "calibration",
+          "query": "¿Por qué Jairo ya envió el informe?",
+          "role": "refutation",
+          "expected_selected": true,
+          "selected": true,
+          "selection_error": false,
+          "factor_errors": [
+            {
+              "factor": "requested_fact",
+              "expected": false,
+              "observed": true
+            }
+          ]
+        },
+        {
+          "id": "calibration-06",
+          "split": "calibration",
+          "query": "Nereo viajará a Quito. ¿Qué adaptador llevará Nereo?",
+          "role": "irrelevant",
+          "expected_selected": false,
+          "selected": true,
+          "selection_error": true,
+          "factor_errors": [
+            {
+              "factor": "same_context",
+              "expected": false,
+              "observed": true
+            },
+            {
+              "factor": "premise_correction",
+              "expected": false,
+              "observed": true
+            }
+          ]
+        },
+        {
+          "id": "calibration-08",
+          "split": "calibration",
+          "query": "¿Es falso que Pablo deba pagar una tasa para iniciar el trámite?",
+          "role": "irrelevant",
+          "expected_selected": false,
+          "selected": false,
+          "selection_error": false,
+          "factor_errors": [
+            {
+              "factor": "same_context",
+              "expected": true,
+              "observed": false
+            }
+          ]
+        },
+        {
+          "id": "final-02",
+          "split": "final",
+          "query": "¿Por qué Ramon ya envió el informe?",
+          "role": "refutation",
+          "expected_selected": true,
+          "selected": true,
+          "selection_error": false,
+          "factor_errors": [
+            {
+              "factor": "requested_fact",
+              "expected": false,
+              "observed": true
+            }
+          ]
+        },
+        {
+          "id": "final-06",
+          "split": "final",
+          "query": "Vasco viajará a Quito. ¿Qué adaptador llevará Vasco?",
+          "role": "irrelevant",
+          "expected_selected": false,
+          "selected": false,
+          "selection_error": false,
+          "factor_errors": [
+            {
+              "factor": "premise_correction",
+              "expected": false,
+              "observed": true
+            }
+          ]
+        }
+      ],
+      "report_sha256": {
+        "development": "2f159c618d0884f056b74cfadb38a0f857743f1fef17288ec71fc2e67a9f2bac",
+        "calibration": "f642282a6cab86f59572b4072bfb13779ecca2c4afb23d28ab10c2ec2ddfb42b",
+        "final": "9212f853fde58ed9588a2dbc7579302797c58e7610f2d194633c7fdd8146fcf9"
+      }
+    },
+    "jev": {
+      "requested_model": "typesafe/jev-1.13",
+      "served_model": "typesafe/jev-1.13-20260917",
+      "selection_by_split": {
+        "development": {
+          "correct": 7,
+          "n": 8,
+          "degraded": 0
+        },
+        "calibration": {
+          "correct": 7,
+          "n": 8,
+          "degraded": 0
+        },
+        "final": {
+          "correct": 7,
+          "n": 8,
+          "degraded": 0
+        }
+      },
+      "final_factors": {
+        "premise_correction": {
+          "raw_brier": 0.0032625,
+          "empirical_brier": 0.02469135802469136,
+          "raw_ece": 0.026250000000000002,
+          "empirical_ece": 0.1388888888888889,
+          "boolean_correct": 8,
+          "n": 8,
+          "unscored": []
+        },
+        "requested_fact": {
+          "raw_brier": 0.061450000000000005,
+          "empirical_brier": 0.11959183673469388,
+          "raw_ece": 0.12250000000000003,
+          "empirical_ece": 0.12857142857142856,
+          "boolean_correct": 7,
+          "n": 8,
+          "unscored": []
+        },
+        "same_context": {
+          "raw_brier": 0.11358750000000001,
+          "empirical_brier": 0.1388888888888889,
+          "raw_ece": 0.20375000000000004,
+          "empirical_ece": 0.08333333333333331,
+          "boolean_correct": 6,
+          "n": 8,
+          "unscored": []
+        }
+      },
+      "errors": [
+        {
+          "id": "development-02",
+          "split": "development",
+          "query": "¿Por qué Bruno ya envió el informe?",
+          "role": "refutation",
+          "expected_selected": true,
+          "selected": true,
+          "selection_error": false,
+          "factor_errors": [
+            {
+              "factor": "requested_fact",
+              "expected": false,
+              "observed": true
+            }
+          ]
+        },
+        {
+          "id": "development-03",
+          "split": "development",
+          "query": "¿Por qué canal y a qué hora recibe Celia las alertas?",
+          "role": "partial",
+          "expected_selected": true,
+          "selected": false,
+          "selection_error": true,
+          "factor_errors": [
+            {
+              "factor": "same_context",
+              "expected": true,
+              "observed": false
+            }
+          ]
+        },
+        {
+          "id": "development-08",
+          "split": "development",
+          "query": "¿Es falso que Hugo deba pagar una tasa para iniciar el trámite?",
+          "role": "irrelevant",
+          "expected_selected": false,
+          "selected": false,
+          "selection_error": false,
+          "factor_errors": [
+            {
+              "factor": "same_context",
+              "expected": true,
+              "observed": false
+            }
+          ]
+        },
+        {
+          "id": "calibration-02",
+          "split": "calibration",
+          "query": "¿Por qué Jairo ya envió el informe?",
+          "role": "refutation",
+          "expected_selected": true,
+          "selected": true,
+          "selection_error": false,
+          "factor_errors": [
+            {
+              "factor": "requested_fact",
+              "expected": false,
+              "observed": true
+            }
+          ]
+        },
+        {
+          "id": "calibration-03",
+          "split": "calibration",
+          "query": "¿Por qué canal y a qué hora recibe Karla las alertas?",
+          "role": "partial",
+          "expected_selected": true,
+          "selected": false,
+          "selection_error": true,
+          "factor_errors": [
+            {
+              "factor": "same_context",
+              "expected": true,
+              "observed": false
+            }
+          ]
+        },
+        {
+          "id": "calibration-08",
+          "split": "calibration",
+          "query": "¿Es falso que Pablo deba pagar una tasa para iniciar el trámite?",
+          "role": "irrelevant",
+          "expected_selected": false,
+          "selected": false,
+          "selection_error": false,
+          "factor_errors": [
+            {
+              "factor": "same_context",
+              "expected": true,
+              "observed": false
+            }
+          ]
+        },
+        {
+          "id": "final-02",
+          "split": "final",
+          "query": "¿Por qué Ramon ya envió el informe?",
+          "role": "refutation",
+          "expected_selected": true,
+          "selected": true,
+          "selection_error": false,
+          "factor_errors": [
+            {
+              "factor": "requested_fact",
+              "expected": false,
+              "observed": true
+            }
+          ]
+        },
+        {
+          "id": "final-03",
+          "split": "final",
+          "query": "¿Por qué canal y a qué hora recibe Sonia las alertas?",
+          "role": "partial",
+          "expected_selected": true,
+          "selected": false,
+          "selection_error": true,
+          "factor_errors": [
+            {
+              "factor": "same_context",
+              "expected": true,
+              "observed": false
+            }
+          ]
+        },
+        {
+          "id": "final-08",
+          "split": "final",
+          "query": "¿Es falso que Xenia deba pagar una tasa para iniciar el trámite?",
+          "role": "irrelevant",
+          "expected_selected": false,
+          "selected": false,
+          "selection_error": false,
+          "factor_errors": [
+            {
+              "factor": "same_context",
+              "expected": true,
+              "observed": false
+            }
+          ]
+        }
+      ],
+      "report_sha256": {
+        "development": "37f830e311919aa52fb2c846015afe2839ff30cb1f4612a40d1d2082f2a042fd",
+        "calibration": "054d61304f0cc14f8ca92307d3a1f4cc7afa9122907ecf3a4aca8897abb6744d",
+        "final": "da63b211466c436e3da9891ee16d790227b49774db4f9206019823c2227c319e"
+      }
+    }
+  },
+  "calibration_adoption": "rejected_by_final_brier_all_factors_both_providers",
+  "limits": "24 synthetic source scopes, one candidate each, shared template families between source-disjoint splits;8human reviewed labels. No final natural-language answer generation/truth evaluation, baseline policy promotion or general quality approval. No rerun/tuning after final."
+}
