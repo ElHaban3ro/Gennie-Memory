@@ -1,58 +1,69 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="730" viewBox="0 0 1200 730" role="img" aria-label="Latencia local de búsqueda">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-label="Tiempo de búsqueda de candidatos">
 <rect width="100%" height="100%" fill="#fffefa"/>
-<text x="58" y="72" fill="#25313b" text-anchor="start" font-family="Georgia,serif" font-size="34">Latencia local de búsqueda</text>
-<text x="58" y="108" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="17">Misma cohorte de 1.982 consultas · milisegundos · una corrida por motor</text>
-<line x1="100" y1="500" x2="1140" y2="500" stroke="#d8dfdf"/>
-<text x="86" y="505" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">0.0 ms</text>
-<line x1="100" y1="416" x2="1140" y2="416" stroke="#d8dfdf"/>
-<text x="86" y="421" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">31.2 ms</text>
-<line x1="100" y1="332" x2="1140" y2="332" stroke="#d8dfdf"/>
-<text x="86" y="337" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">62.5 ms</text>
-<line x1="100" y1="249" x2="1140" y2="249" stroke="#d8dfdf"/>
-<text x="86" y="254" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">93.8 ms</text>
-<line x1="100" y1="165" x2="1140" y2="165" stroke="#d8dfdf"/>
-<text x="86" y="170" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">125.0 ms</text>
-<rect x="151.0" y="490.2" width="48.0" height="9.8" fill="#18817e" fill-opacity="1"/>
-<text x="175" y="481" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="13">3.7 ms</text>
-<rect x="209.0" y="486.7" width="48.0" height="13.3" fill="#18817e" fill-opacity="0.52"/>
-<text x="233" y="478" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="13">5.0 ms</text>
-<text x="204" y="529" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">Genny</text>
-<text x="204" y="548" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">palabras clave</text>
-<rect x="359.0" y="489.6" width="48.0" height="10.4" fill="#5277b8" fill-opacity="1"/>
-<text x="383" y="481" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="13">3.9 ms</text>
-<rect x="417.0" y="484.5" width="48.0" height="15.5" fill="#5277b8" fill-opacity="0.52"/>
-<text x="441" y="475" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="13">5.8 ms</text>
-<text x="412" y="529" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">Genny</text>
-<text x="412" y="548" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">natural</text>
-<rect x="567.0" y="493.0" width="48.0" height="7.0" fill="#b77a27" fill-opacity="1"/>
-<text x="591" y="484" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="13">2.6 ms</text>
-<rect x="625.0" y="490.2" width="48.0" height="9.8" fill="#b77a27" fill-opacity="0.52"/>
-<text x="649" y="481" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="13">3.7 ms</text>
-<text x="620" y="529" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">Engram 3.4.0</text>
-<rect x="775.0" y="395.2" width="48.0" height="104.8" fill="#8a6f9b" fill-opacity="1"/>
-<text x="799" y="386" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="13">39.1 ms</text>
-<rect x="833.0" y="181.3" width="48.0" height="318.7" fill="#8a6f9b" fill-opacity="0.52"/>
-<text x="857" y="172" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="13">118.9 ms</text>
-<text x="828" y="529" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">Lodis 0.6.0</text>
-<rect x="983.0" y="442.9" width="48.0" height="57.1" fill="#b75948" fill-opacity="1"/>
-<text x="1007" y="434" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="13">21.3 ms</text>
-<rect x="1041.0" y="304.6" width="48.0" height="195.4" fill="#b75948" fill-opacity="0.52"/>
-<text x="1065" y="296" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="13">72.9 ms</text>
-<text x="1036" y="529" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">Basic Memory</text>
-<text x="100" y="608" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="14">Tono de barra:</text>
-<rect x="208" y="594" width="14" height="14" fill="#25313b" fill-opacity="1"/>
-<text x="229" y="608" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="14">p50</text>
-<rect x="328" y="594" width="14" height="14" fill="#25313b" fill-opacity="0.52"/>
-<text x="349" y="608" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="14">p95</text>
-<text x="100" y="660" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="14">Herramienta:</text>
-<rect x="205" y="646" width="14" height="14" fill="#18817e"/>
-<text x="226" y="660" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="14">Genny · palabras clave</text>
-<rect x="429" y="646" width="14" height="14" fill="#5277b8"/>
-<text x="450" y="660" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="14">Genny · natural</text>
-<rect x="597" y="646" width="14" height="14" fill="#b77a27"/>
-<text x="618" y="660" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="14">Engram 3.4.0</text>
-<rect x="741" y="646" width="14" height="14" fill="#8a6f9b"/>
-<text x="762" y="660" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="14">Lodis 0.6.0</text>
-<rect x="881" y="646" width="14" height="14" fill="#b75948"/>
-<text x="902" y="660" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="14">Basic Memory</text>
+<text x="58.0" y="75.0" fill="#25313b" text-anchor="start" font-family="Georgia,serif" font-size="34">Tiempo de búsqueda de candidatos</text>
+<text x="58.0" y="110.0" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="17">LoCoMo · 1.982 consultas · una corrida completa por motor</text>
+<text x="58.0" y="144.0" fill="#25313b" text-anchor="start" font-family="Georgia,serif" font-size="22">Búsqueda: mediana</text>
+<text x="58.0" y="174.0" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="16">p50 de la corrida</text>
+<text x="528.0" y="200.0" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">milisegundos</text>
+<line x1="110" y1="484.0" x2="528" y2="484.0" stroke="#d8dfdf" stroke-width="1"/>
+<text x="100.0" y="489.0" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">0.0</text>
+<line x1="110" y1="349.0" x2="528" y2="349.0" stroke="#d8dfdf" stroke-width="1"/>
+<text x="100.0" y="354.0" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">25.0</text>
+<line x1="110" y1="214.0" x2="528" y2="214.0" stroke="#d8dfdf" stroke-width="1"/>
+<text x="100.0" y="219.0" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">50.0</text>
+<rect x="125.9" y="464.3" width="51.8" height="19.7" fill="#18817e"/>
+<text x="151.8" y="454.3" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="15">3.7</text>
+<text x="151.8" y="508.0" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">Gennie</text>
+<text x="151.8" y="526.0" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">palabras</text>
+<text x="151.8" y="544.0" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">clave</text>
+<rect x="209.5" y="463.1" width="51.8" height="20.9" fill="#18817e"/>
+<text x="235.4" y="453.1" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="15">3.9</text>
+<text x="235.4" y="508.0" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">Gennie</text>
+<text x="235.4" y="526.0" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">consulta</text>
+<text x="235.4" y="544.0" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">natural</text>
+<rect x="293.1" y="469.9" width="51.8" height="14.1" fill="#b77a27"/>
+<text x="319.0" y="459.9" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="15">2.6</text>
+<text x="319.0" y="508.0" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">Engram</text>
+<text x="319.0" y="526.0" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">3.4.0</text>
+<rect x="376.7" y="272.8" width="51.8" height="211.2" fill="#617db1"/>
+<text x="402.6" y="262.8" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="15">39.1</text>
+<text x="402.6" y="508.0" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">Lodis</text>
+<text x="402.6" y="526.0" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">0.6.0</text>
+<rect x="460.3" y="368.9" width="51.8" height="115.1" fill="#8a6f9b"/>
+<text x="486.2" y="358.9" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="15">21.3</text>
+<text x="486.2" y="508.0" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">Basic</text>
+<text x="486.2" y="526.0" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">Memory</text>
+<text x="610.0" y="144.0" fill="#25313b" text-anchor="start" font-family="Georgia,serif" font-size="22">Búsqueda: p95</text>
+<text x="610.0" y="174.0" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="16">p95 de la corrida</text>
+<text x="1080.0" y="200.0" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">milisegundos</text>
+<line x1="662" y1="484.0" x2="1080" y2="484.0" stroke="#d8dfdf" stroke-width="1"/>
+<text x="652.0" y="489.0" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">0.0</text>
+<line x1="662" y1="349.0" x2="1080" y2="349.0" stroke="#d8dfdf" stroke-width="1"/>
+<text x="652.0" y="354.0" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">70.0</text>
+<line x1="662" y1="214.0" x2="1080" y2="214.0" stroke="#d8dfdf" stroke-width="1"/>
+<text x="652.0" y="219.0" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">140.0</text>
+<rect x="677.9" y="474.4" width="51.8" height="9.6" fill="#18817e"/>
+<text x="703.8" y="464.4" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="15">5.0</text>
+<text x="703.8" y="508.0" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">Gennie</text>
+<text x="703.8" y="526.0" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">palabras</text>
+<text x="703.8" y="544.0" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">clave</text>
+<rect x="761.5" y="472.8" width="51.8" height="11.2" fill="#18817e"/>
+<text x="787.4" y="462.8" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="15">5.8</text>
+<text x="787.4" y="508.0" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">Gennie</text>
+<text x="787.4" y="526.0" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">consulta</text>
+<text x="787.4" y="544.0" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">natural</text>
+<rect x="845.1" y="476.9" width="51.8" height="7.1" fill="#b77a27"/>
+<text x="871.0" y="466.9" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="15">3.7</text>
+<text x="871.0" y="508.0" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">Engram</text>
+<text x="871.0" y="526.0" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">3.4.0</text>
+<rect x="928.7" y="254.7" width="51.8" height="229.3" fill="#617db1"/>
+<text x="954.6" y="244.7" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="15">118.9</text>
+<text x="954.6" y="508.0" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">Lodis</text>
+<text x="954.6" y="526.0" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">0.6.0</text>
+<rect x="1012.3" y="343.4" width="51.8" height="140.6" fill="#8a6f9b"/>
+<text x="1038.2" y="333.4" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="15">72.9</text>
+<text x="1038.2" y="508.0" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">Basic</text>
+<text x="1038.2" y="526.0" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">Memory</text>
+<text x="58.0" y="574.0" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="16">Gennie, Engram y Lodis: procesos persistentes; Basic Memory: API local en proceso.</text>
+<text x="58.0" y="606.0" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="16">Las escalas de ambos paneles empiezan en cero; la diferencia de transporte limita la comparación.</text>
 </svg>

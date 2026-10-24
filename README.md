@@ -1,6 +1,6 @@
-# Genny
+# Gennie
 
-Genny prepara recuerdos relevantes para que un agente de IA responda con contexto breve, sin tener que recorrer todo el historial en cada consulta. Corre localmente mediante CLI y sesiones JSONL.
+Gennie prepara recuerdos relevantes para que un agente de IA responda con contexto breve, sin tener que recorrer todo el historial en cada consulta. Corre localmente mediante CLI y sesiones JSONL.
 
 ## Índice
 
@@ -15,43 +15,48 @@ Genny prepara recuerdos relevantes para que un agente de IA responda con context
 
 ## Rendimiento
 
-La corrida vigente usa [LoCoMo](docs/evaluation/locomo-results-2026-10-24.md): **272 recuerdos**, **1.982 preguntas evaluables** (1.978 positivas y 4 sin evidencia) y cuatro referencias de evidencia sin resolver excluidas. Las figuras comparan una corrida local por motor; p95 describe esa corrida y no una distribución entre repeticiones.
+La corrida vigente usa [LoCoMo](docs/evaluation/locomo-results-2026-10-24.md): **272 recuerdos**, **1.982 preguntas evaluables** (1.978 positivas y 4 sin evidencia) y cuatro referencias de evidencia sin resolver excluidas. Las gráficas conservan los mismos indicadores y la presentación de la comparación anterior. Cada herramienta mantiene su color; las dos configuraciones de Gennie comparten el suyo.
 
-| Recuperación local | Palabras clave | Consulta natural |
-| --- | ---: | ---: |
-| Recuerdo esperado entre 20 | **99,04 %** | 98,84 % |
-| Recuerdo esperado entre 5 | **92,92 %** | 90,95 % |
-| Recuerdo esperado primero | **70,17 %** | 68,86 % |
-| Conjunto completo de evidencia en top 20 | **95,60 %** | 94,89 % |
-| Latencia p50 / p95 | **3,66 / 4,98 ms** | 3,88 / 5,79 ms |
+| Indicador | Gennie + Decisions |
+| --- | ---: |
+| Recuerdo anotado entre los 20 candidatos | **1.959/1.978 · 99,04 %** |
+| Semilla con algún recuerdo anotado | **993/1.978 · 50,20 %** |
+| Semilla vacía en preguntas sin evidencia | **2/4 · 50,00 %** |
+| Tiempo hasta la semilla: mediana / p95 | **420,55 / 903,96 ms** |
+| Coste informado por Decisions para 1.982 consultas | **US$1,076261** |
 
-![Precisión de recuperación en LoCoMo](docs/evaluation/assets/locomo-2026-10-24/locomo-retrieval-accuracy.svg)
-
-![Latencia de búsqueda de cada motor](docs/evaluation/assets/locomo-2026-10-24/locomo-search-latency.svg)
-
-![Cobertura de todos los recuerdos anotados](docs/evaluation/assets/locomo-2026-10-24/locomo-all-evidence.svg)
+La selección se compara con la evidencia anotada; no mide por sí sola la exactitud de la respuesta final. El banco y las limitaciones están descritos en el [informe LoCoMo](docs/evaluation/locomo-results-2026-10-24.md).
 
 ## Comparación con otros motores
 
-Se cargaron las mismas 272 memorias y se consultaron las mismas 1.982 preguntas. Las implementaciones y rutas no son idénticas: Engram usa MCP local con palabras clave; Lodis 0.6.0 usa híbrido con embeddings FastEmbed locales; Basic Memory usa FTS local y filtro de ámbito; Genny se midió con palabras clave y consulta natural.
+Se cargaron las mismas 272 memorias y se consultaron las mismas 1.982 preguntas. Las implementaciones y rutas no son idénticas: Engram usa MCP local con palabras clave; Lodis 0.6.0 usa híbrido con embeddings FastEmbed locales; Basic Memory usa FTS local y filtro de ámbito; Gennie se midió con palabras clave y consulta natural.
 
-| Motor | Recall@20 | Recall@5 | Top 1 | Evidencia completa@20 | p50 / p95 |
+| Búsqueda de candidatos | Gennie · palabras clave | Gennie · consulta natural | Engram 3.4.0 | Lodis 0.6.0 | Basic Memory |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| **Genny · palabras clave** | **99,04 %** | **92,92 %** | **70,17 %** | **95,60 %** | **3,66 / 4,98 ms** |
-| Genny · natural | 98,84 % | 90,95 % | 68,86 % | 94,89 % | 3,88 / 5,79 ms |
-| Engram 3.4.0 | 98,99 % | 91,56 % | 69,16 % | 95,25 % | **2,60 / 3,68 ms** |
-| Lodis 0.6.0 | 77,15 % | 27,40 % | 6,57 % | 70,58 % | 39,12 / 118,91 ms |
-| Basic Memory | 70,83 % | 36,45 % | 22,24 % | 63,04 % | 21,32 / 72,92 ms |
+| Recuerdo anotado entre 20 | **99,04 %** | 98,84 % | 98,99 % | 77,15 % | 70,83 % |
+| Recuerdo anotado en primer puesto | **70,17 %** | 68,86 % | 69,16 % | 6,57 % | 22,24 % |
+| Latencia mediana | 3,66 ms | 3,88 ms | **2,60 ms** | 39,12 ms | 21,32 ms |
+| Latencia p95 | 4,98 ms | 5,79 ms | **3,68 ms** | 118,91 ms | 72,92 ms |
 
-Las cuatro preguntas sin evidencia no bastan para comparar abstención: Basic Memory devolvió una lista vacía en 1/4; los otros motores, en 0/4. La cobertura completa cuenta si aparecen todos los IDs de evidencia anotados; Recall@20 cuenta si aparece al menos uno. Los resultados y las revisiones de código de terceros están en el [informe LoCoMo](docs/evaluation/locomo-results-2026-10-24.md).
+![Recuerdos esperados entre los candidatos y en primer puesto](docs/evaluation/assets/locomo-2026-10-24/locomo-retrieval-accuracy.svg)
+
+![Latencia mediana y p95 de búsqueda](docs/evaluation/assets/locomo-2026-10-24/locomo-search-latency.svg)
+
+![p95 de búsqueda por motor](docs/evaluation/assets/locomo-2026-10-24/locomo-search-p95-runs.svg)
+
+Las cuatro preguntas sin evidencia no bastan para comparar abstención: Basic Memory devolvió una lista vacía en 1/4; los otros motores, en 0/4. Las corridas de LoCoMo fueron una por motor; el gráfico de p95 no representa variación entre repeticiones.
 
 ## Selección de semilla y respuesta del agente
 
-Decisions evaluó las 1.982 consultas. Recuperó un recuerdo anotado en **1.959/1.978** positivas; la semilla final incluyó evidencia útil en **993/1.978** y toda la evidencia anotada en **793/1.978**. De las cuatro preguntas sin evidencia, la semilla quedó vacía en **2/4**. El coste informado fue **US$1,0763**; el tiempo total de servicio tuvo p50 **420,55 ms** y p95 **903,96 ms**. Seleccionar evidencia no mide por sí solo si la respuesta final es correcta.
+Decisions evaluó las 1.982 consultas. Recuperó un recuerdo anotado en **1.959/1.978** positivas; la semilla final incluyó algún recuerdo anotado en **993/1.978**. De las cuatro preguntas sin evidencia, la semilla quedó vacía en **2/4**. El coste informado fue **US$1,076261**; el tiempo total de servicio tuvo p50 **420,55 ms** y p95 **903,96 ms**. Seleccionar evidencia no mide por sí solo si la respuesta final es correcta.
 
-![Resultados de Decisions y la semilla](docs/evaluation/assets/locomo-2026-10-24/locomo-decisions-seed.svg)
+![Tiempo de preparación de la semilla con Decisions](docs/evaluation/assets/locomo-2026-10-24/locomo-seed-preparation.svg)
 
-La validación de respuestas con Codex quedó pendiente: se congelaron 50 casos para GPT‑6 Luna, pero el Codex CLI de esta cuenta rechazó el modelo antes de generar una respuesta. No se sustituyó el modelo. La [evaluación anterior del 16 de octubre](docs/evaluation/broader-comparison-2026-10-16.md) sigue disponible como referencia histórica separada; sus seis turnos por ruta, gráficos de preparación, suma calculada y tokens no se presentan como resultados de LoCoMo ni como medidas vigentes.
+La validación de respuestas con Codex quedó pendiente: se congelaron 50 casos para GPT‑6 Luna, pero Codex CLI rechazó el modelo antes de generar respuestas. No se sustituyó el modelo. Por eso, las figuras de respuesta Codex y recorrido calculado conservan sus datos anteriores y se muestran solo como referencia histórica; no son mediciones LoCoMo.
+
+![Tiempo hasta respuesta: recorrido calculado, referencia histórica del 16 de octubre](docs/evaluation/assets/broader-comparison-calculated-flow-2026-10-16.svg)
+
+![Tiempo del turno Codex y tokens de entrada, referencia histórica del 16 de octubre](docs/evaluation/assets/broader-comparison-codex-2026-10-16.svg)
 
 ## Cómo funciona
 

@@ -1,58 +1,69 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="730" viewBox="0 0 1200 730" role="img" aria-label="Recuperación de evidencia en LoCoMo">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650" role="img" aria-label="Recuerdos recuperados en las mismas preguntas">
 <rect width="100%" height="100%" fill="#fffefa"/>
-<text x="58" y="72" fill="#25313b" text-anchor="start" font-family="Georgia,serif" font-size="34">Recuperación de evidencia en LoCoMo</text>
-<text x="58" y="108" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="17">1.978 preguntas con evidencia · top 1 y top 20 · una corrida por motor</text>
-<line x1="100" y1="500" x2="1140" y2="500" stroke="#d8dfdf"/>
-<text x="86" y="505" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">0.0%</text>
-<line x1="100" y1="416" x2="1140" y2="416" stroke="#d8dfdf"/>
-<text x="86" y="421" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">25.0%</text>
-<line x1="100" y1="332" x2="1140" y2="332" stroke="#d8dfdf"/>
-<text x="86" y="337" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">50.0%</text>
-<line x1="100" y1="249" x2="1140" y2="249" stroke="#d8dfdf"/>
-<text x="86" y="254" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">75.0%</text>
-<line x1="100" y1="165" x2="1140" y2="165" stroke="#d8dfdf"/>
-<text x="86" y="170" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">100.0%</text>
-<rect x="151.0" y="264.9" width="48.0" height="235.1" fill="#18817e" fill-opacity="1"/>
-<text x="175" y="256" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="13">70.2%</text>
-<rect x="209.0" y="168.2" width="48.0" height="331.8" fill="#18817e" fill-opacity="0.52"/>
-<text x="233" y="159" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="13">99.0%</text>
-<text x="204" y="529" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">Genny</text>
-<text x="204" y="548" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">palabras clave</text>
-<rect x="359.0" y="269.3" width="48.0" height="230.7" fill="#5277b8" fill-opacity="1"/>
-<text x="383" y="260" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="13">68.9%</text>
-<rect x="417.0" y="168.9" width="48.0" height="331.1" fill="#5277b8" fill-opacity="0.52"/>
-<text x="441" y="160" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="13">98.8%</text>
-<text x="412" y="529" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">Genny</text>
-<text x="412" y="548" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">natural</text>
-<rect x="567.0" y="268.3" width="48.0" height="231.7" fill="#b77a27" fill-opacity="1"/>
-<text x="591" y="259" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="13">69.2%</text>
-<rect x="625.0" y="168.4" width="48.0" height="331.6" fill="#b77a27" fill-opacity="0.52"/>
-<text x="649" y="159" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="13">99.0%</text>
-<text x="620" y="529" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">Engram 3.4.0</text>
-<rect x="775.0" y="478.0" width="48.0" height="22.0" fill="#8a6f9b" fill-opacity="1"/>
-<text x="799" y="469" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="13">6.6%</text>
-<rect x="833.0" y="241.6" width="48.0" height="258.4" fill="#8a6f9b" fill-opacity="0.52"/>
-<text x="857" y="233" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="13">77.1%</text>
-<text x="828" y="529" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">Lodis 0.6.0</text>
-<rect x="983.0" y="425.5" width="48.0" height="74.5" fill="#b75948" fill-opacity="1"/>
-<text x="1007" y="416" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="13">22.2%</text>
-<rect x="1041.0" y="262.7" width="48.0" height="237.3" fill="#b75948" fill-opacity="0.52"/>
-<text x="1065" y="254" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="13">70.8%</text>
-<text x="1036" y="529" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">Basic Memory</text>
-<text x="100" y="608" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="14">Tono de barra:</text>
-<rect x="208" y="594" width="14" height="14" fill="#25313b" fill-opacity="1"/>
-<text x="229" y="608" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="14">top 1</text>
-<rect x="328" y="594" width="14" height="14" fill="#25313b" fill-opacity="0.52"/>
-<text x="349" y="608" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="14">top 20</text>
-<text x="100" y="660" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="14">Herramienta:</text>
-<rect x="205" y="646" width="14" height="14" fill="#18817e"/>
-<text x="226" y="660" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="14">Genny · palabras clave</text>
-<rect x="429" y="646" width="14" height="14" fill="#5277b8"/>
-<text x="450" y="660" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="14">Genny · natural</text>
-<rect x="597" y="646" width="14" height="14" fill="#b77a27"/>
-<text x="618" y="660" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="14">Engram 3.4.0</text>
-<rect x="741" y="646" width="14" height="14" fill="#8a6f9b"/>
-<text x="762" y="660" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="14">Lodis 0.6.0</text>
-<rect x="881" y="646" width="14" height="14" fill="#b75948"/>
-<text x="902" y="660" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="14">Basic Memory</text>
+<text x="58.0" y="75.0" fill="#25313b" text-anchor="start" font-family="Georgia,serif" font-size="34">Recuerdos recuperados en las mismas preguntas</text>
+<text x="58.0" y="110.0" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="17">LoCoMo · 1.978 positivas · 272 recuerdos de sesión · barras desde cero</text>
+<text x="58.0" y="144.0" fill="#25313b" text-anchor="start" font-family="Georgia,serif" font-size="22">Entre 20 candidatos</text>
+<text x="58.0" y="174.0" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="16">Recuerdo esperado presente</text>
+<text x="528.0" y="200.0" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">aciertos / 1.978</text>
+<line x1="110" y1="484.0" x2="528" y2="484.0" stroke="#d8dfdf" stroke-width="1"/>
+<text x="100.0" y="489.0" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">0</text>
+<line x1="110" y1="349.0" x2="528" y2="349.0" stroke="#d8dfdf" stroke-width="1"/>
+<text x="100.0" y="354.0" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">989</text>
+<line x1="110" y1="214.0" x2="528" y2="214.0" stroke="#d8dfdf" stroke-width="1"/>
+<text x="100.0" y="219.0" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">1978</text>
+<rect x="125.9" y="216.6" width="51.8" height="267.4" fill="#18817e"/>
+<text x="151.8" y="206.6" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="15">1959</text>
+<text x="151.8" y="508.0" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">Gennie</text>
+<text x="151.8" y="526.0" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">palabras</text>
+<text x="151.8" y="544.0" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">clave</text>
+<rect x="209.5" y="217.1" width="51.8" height="266.9" fill="#18817e"/>
+<text x="235.4" y="207.1" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="15">1955</text>
+<text x="235.4" y="508.0" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">Gennie</text>
+<text x="235.4" y="526.0" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">consulta</text>
+<text x="235.4" y="544.0" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">natural</text>
+<rect x="293.1" y="216.7" width="51.8" height="267.3" fill="#b77a27"/>
+<text x="319.0" y="206.7" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="15">1958</text>
+<text x="319.0" y="508.0" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">Engram</text>
+<text x="319.0" y="526.0" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">3.4.0</text>
+<rect x="376.7" y="275.7" width="51.8" height="208.3" fill="#617db1"/>
+<text x="402.6" y="265.7" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="15">1526</text>
+<text x="402.6" y="508.0" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">Lodis</text>
+<text x="402.6" y="526.0" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">0.6.0</text>
+<rect x="460.3" y="292.8" width="51.8" height="191.2" fill="#8a6f9b"/>
+<text x="486.2" y="282.8" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="15">1401</text>
+<text x="486.2" y="508.0" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">Basic</text>
+<text x="486.2" y="526.0" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">Memory</text>
+<text x="610.0" y="144.0" fill="#25313b" text-anchor="start" font-family="Georgia,serif" font-size="22">Primer candidato</text>
+<text x="610.0" y="174.0" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="16">Recuerdo esperado en posición 1</text>
+<text x="1080.0" y="200.0" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">aciertos / 1.978</text>
+<line x1="662" y1="484.0" x2="1080" y2="484.0" stroke="#d8dfdf" stroke-width="1"/>
+<text x="652.0" y="489.0" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">0</text>
+<line x1="662" y1="349.0" x2="1080" y2="349.0" stroke="#d8dfdf" stroke-width="1"/>
+<text x="652.0" y="354.0" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">989</text>
+<line x1="662" y1="214.0" x2="1080" y2="214.0" stroke="#d8dfdf" stroke-width="1"/>
+<text x="652.0" y="219.0" fill="#617078" text-anchor="end" font-family="Arial,sans-serif" font-size="14">1978</text>
+<rect x="677.9" y="294.5" width="51.8" height="189.5" fill="#18817e"/>
+<text x="703.8" y="284.5" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="15">1388</text>
+<text x="703.8" y="508.0" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">Gennie</text>
+<text x="703.8" y="526.0" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">palabras</text>
+<text x="703.8" y="544.0" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">clave</text>
+<rect x="761.5" y="298.1" width="51.8" height="185.9" fill="#18817e"/>
+<text x="787.4" y="288.1" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="15">1362</text>
+<text x="787.4" y="508.0" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">Gennie</text>
+<text x="787.4" y="526.0" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">consulta</text>
+<text x="787.4" y="544.0" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">natural</text>
+<rect x="845.1" y="297.3" width="51.8" height="186.7" fill="#b77a27"/>
+<text x="871.0" y="287.3" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="15">1368</text>
+<text x="871.0" y="508.0" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">Engram</text>
+<text x="871.0" y="526.0" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">3.4.0</text>
+<rect x="928.7" y="466.3" width="51.8" height="17.7" fill="#617db1"/>
+<text x="954.6" y="456.3" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="15">130</text>
+<text x="954.6" y="508.0" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">Lodis</text>
+<text x="954.6" y="526.0" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">0.6.0</text>
+<rect x="1012.3" y="423.9" width="51.8" height="60.1" fill="#8a6f9b"/>
+<text x="1038.2" y="413.9" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="15">440</text>
+<text x="1038.2" y="508.0" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">Basic</text>
+<text x="1038.2" y="526.0" fill="#25313b" text-anchor="middle" font-family="Arial,sans-serif" font-size="14">Memory</text>
+<text x="58.0" y="574.0" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="16">Búsqueda de candidatos: una lista de resultados no equivale a una semilla seleccionada.</text>
+<text x="58.0" y="606.0" fill="#617078" text-anchor="start" font-family="Arial,sans-serif" font-size="16">Gennie usa el mismo color en ambas configuraciones; las etiquetas las distinguen.</text>
 </svg>
