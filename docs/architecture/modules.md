@@ -1,18 +1,21 @@
 # Mapa de módulos
 
+## Contrato de producto v1 (2026-10-23)
+
+apps/retrieval posee segmentation (función pura), product (orquestación versionada), write (creación idempotente de recuerdos) y product/diagnostics. bootstrap compone el clasificador con deadline compartido y adapta CLI/session/mem-write; tools/evaluation/product_suite valida integridad de particiones sin inferencia; binding liga corpus/política y review audita artefactos de revisión y run ejecuta campañas/audita diarios mediante el binario CLI, sin dependencia de apps. Se conserva una conexión SQLite por proceso y el grafo acíclico. [Contrato y límites](product-contract-v1.md).
+
 | Crate | Responsabilidad | Dependencias obligatorias | Opcionales | Recursos propios | Contratos |
 | --- | --- | --- | --- | --- | --- |
 | `gennie-memory-kernel` (`kernel/`) | `AppModule`, configuración y conexión/migraciones SQLite | Ninguna interna | Ninguna | Tabla transversal `schema_migrations` | `AppModule`, `Migration`, `Config` |
 | `gennie-memory-retrieval` (`apps/retrieval/`) | Cargar fixtures, vectores, buscar candidatos autorizados y orquestar elección/composición de semilla | `gennie-memory-kernel` | Ninguna | `memories`, `memory_revisions`, `search_documents`, `memory_fts`, `embedding_spaces`, `memory_embeddings` | `FixtureMemory`, `SearchRequest`, `HybridRequest`, `SeedRequest`, `RecallRequest`, `Classifier` y respuestas |
-| `gennie-memory-dashboard` (`apps/dashboard/`) | Revisar preguntas y candidatos, guardar feedback local y servir HTTP/React en loopback o LAN privada | `gennie-memory-kernel`, `gennie-memory-retrieval` | Ninguna | `dashboard_reviews` | `ReviewRequest`, `ReviewView`, `reviewed_recall`, rutas `/api/*` |
-| `gennie-memory` (`bootstrap/`) | Registrar módulos, abrir DB, adaptar CLI/JSON, llamar a OpenRouter y arrancar HTTP local o LAN | `gennie-memory-kernel`, `gennie-memory-retrieval`, `gennie-memory-dashboard` | Ninguna | No posee tablas de negocio | Comandos anteriores más `dashboard [puerto] [casos.jsonl] [IP-local]` |
+| `gennie-memory` (`bootstrap/`) | Registrar módulos, abrir DB, adaptar CLI/JSON, llamar a OpenRouter mediante CLI/JSONL | `gennie-memory-kernel`, `gennie-memory-retrieval` | Ninguna | No posee tablas de negocio | Comandos de recuperación, segmentación, capacidades y session |
 | `gennie-memory-eval` (`tools/evaluation/`) | Validar bancos, ejecutar campañas y comparaciones sintéticas y generar figuras | Ninguna interna; invoca los binarios por CLI | Ninguna | Archivos y directorios explícitos; diarios sincronizados | Comandos `validate-*`, `retrieval`, `campaign`, `engram-benchmark`, `codex-*`, `render-charts`, `render-current-charts`, `render-codex-current` |
 
-Hay dos módulos registrados: `retrieval` (migraciones 1 a 4) y `dashboard` (migración 1, dependiente del primero). HTTP escucha en loopback por defecto y puede escuchar en una IP privada sin clave, accesible a otros equipos de esa LAN; no hay tareas de fondo, cuentas de usuario, eventos ni activación runtime. El orden topológico rechaza ciclos, ausencias y nombres duplicados. Los datos de ámbitos actuales son sintéticos, no una autorización de host.
+Solo se registra `retrieval` (migraciones 1 a 4). No hay UI ni servidor HTTP local. Bootstrap verifica de forma explícita el checksum de la migración histórica dashboard:1 si ya está aplicada; no la aplica a bases nuevas y no borra sus datos. El SQL congelado se conserva en bootstrap/migrations/retired_dashboard/. No hay tareas de fondo, cuentas, eventos ni activación runtime. El orden topológico conserva sus validaciones. Los ámbitos actuales son sintéticos, no autorización de host.
 
 Al sumar embeddings, decide si son parte profunda del módulo de recuperación o una app autónoma según responsabilidad y dependencias reales. Actualiza aquí propietario de datos, contratos consumidos/publicados y dependencias antes de tratar el nuevo módulo como integrado.
 
-El módulo puro `retrieval::applicability` expone el contrato de bindings/testigo y su comprobación. El adaptador `bootstrap::witness` usa reqwest ya existente para extracción estructurada; no agrega dependencias ni abre conexión SQLite propia. `RecallResponse.applicability` es opcional y no cambia la UI. La política `witness_v1` se mide con nuevos casos y anotación ciega según protocolo.
+El módulo puro `retrieval::applicability` expone el contrato de bindings/testigo y su comprobación. El adaptador `bootstrap::witness` usa reqwest ya existente para extracción estructurada; no agrega dependencias ni abre conexión SQLite propia. `RecallResponse.applicability` es opcional y no introduce UI. La política `witness_v1` se mide con nuevos casos y anotación ciega según protocolo.
 
 `tools/evaluation/src/roles.rs` comprueba especificaciones anotadas de roles sin importar apps. `roles_v1` usa el adaptador existente de bootstrap y el enum de selección de retrieval; no añade extractor, DB ni dependencias.
 
@@ -163,3 +166,5 @@ El comando de preparación del contraste Qwen con plazo total reutiliza el gener
 El contrato experimental de vínculo semántico reside en `tools/evaluation/src/semantic_link_contract.rs`; su preparador solo exporta payloads. Un módulo cfg(test) de bootstrap reutiliza el transporte generativo para el piloto manual congelado de Flash Lite. Sigue fuera del producto y no añade dependencias, servicios, conexiones o políticas de recuperación. La validación literal y las razones del modelo no acreditan fidelidad ni permiten adoptar sin las puertas originales.
 
 La interfazV2en `tools/evaluation/src/semantic_link_span_contract.rs` ofrece tokens con referencias canónicas y recompone citas desde fuente. Comparte el mismo harness de prueba conV1, sin añadir política o grafo de módulos productivos. La fuente y los offsets se conservan; pertinencia y foco semántico siguen siendo juicios que requieren medición.
+
+`bootstrap/src/openrouter/baseline.rs` posee el payload baseline con evidencia explícita para Decisions/Jev/Jev114. `tools/evaluation/src/product_suite/regression.rs` posee el banco único de desarrollo de 30 operaciones, reutilizando sesión, diarios y comprobación de semillas del runner existente, sin dependencias nuevas ni cambios de SQLite productiva. [Decisión](../decisions/0049-baseline-explicit-evidence.md).

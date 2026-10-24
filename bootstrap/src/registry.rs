@@ -1,10 +1,14 @@
-use gennie_memory_dashboard::module::DashboardModule;
 use gennie_memory_kernel::core::AppModule;
 use gennie_memory_retrieval::module::RetrievalModule;
 use std::collections::{HashMap, HashSet};
 
 pub fn modules() -> Result<Vec<Box<dyn AppModule>>, String> {
-    order(vec![Box::new(RetrievalModule), Box::new(DashboardModule)])
+    order(vec![Box::new(RetrievalModule)])
+}
+
+pub fn migrate(conn: &mut rusqlite::Connection) -> Result<(), String> {
+    crate::retired_migrations::verify(conn)?;
+    gennie_memory_kernel::db::migrate(conn, &modules()?)
 }
 
 fn order(input: Vec<Box<dyn AppModule>>) -> Result<Vec<Box<dyn AppModule>>, String> {

@@ -1,6 +1,6 @@
 # Gennie Memory
 
-Gennie Memory prepara recuerdos relevantes para que un agente de IA responda con contexto breve, sin tener que recorrer todo el historial en cada consulta. Corre localmente y cuenta con un dashboard para revisar y corregir la selección de recuerdos.
+Gennie Memory prepara recuerdos relevantes para que un agente de IA responda con contexto breve, sin tener que recorrer todo el historial en cada consulta. Corre localmente mediante CLI y sesiones JSONL.
 
 ## Índice
 
@@ -8,13 +8,16 @@ Gennie Memory prepara recuerdos relevantes para que un agente de IA responda con
 - [Comparación con otros motores](#comparación-con-otros-motores)
 - [Contexto y respuesta del agente](#contexto-y-respuesta-del-agente)
 - [Cómo funciona](#cómo-funciona)
+- [Contrato de producto v1 y comandos nuevos](docs/architecture/product-contract-v1.md)
 - [Funcionamiento técnico y diseño de la memoria](docs/architecture/memory-design.md)
 - [Roadmap resumido](ROADMAP-SUMMARY.md)
 - [Roadmap detallado e historial](ROADMAP.md)
 
 ## Rendimiento
 
-Configuración principal: **Decisions + baseline**. Referencia más reciente: **2.800 recuerdos y 540 consultas sintéticas**.
+Configuración principal: **Decisions + baseline**. La corrección de evidencia explícita pasó [30 recuperaciones de desarrollo, incluida Aliso](docs/evaluation/baseline-evidence-30-results-2026-10-23.md).
+
+La tabla y las gráficas siguientes conservan mediciones **anteriores a esa corrección**, con **2.800 recuerdos y 540 consultas sintéticas**; no miden el payload vigente.
 
 | Indicador | Gennie Memory |
 | --- | ---: |
@@ -49,7 +52,7 @@ Gráficas de referencia del **16 de octubre de 2026**. Las rutas de acceso de ca
 
 Con la semilla de Gennie Memory ya preparada, el turno de Codex tuvo una mediana de **4,99 s**, frente a **10,65 s** con Engram, **12,66 s** con Lodis y **15,29 s** con Basic Memory. La referencia es pequeña: seis turnos sintéticos por ruta, con instrucciones y contextos distintos.
 
-La preparación de la semilla se mide aparte. La gráfica siguiente conserva la referencia del **16 de octubre de 2026**: **370 ms** de mediana y **567 ms** en p95; la tabla superior contiene los tiempos más recientes.
+La preparación de la semilla se mide aparte. La gráfica siguiente conserva la referencia del **16 de octubre de 2026**: **370 ms** de mediana y **567 ms** en p95; la tabla superior conserva una referencia posterior, también anterior a la corrección del payload.
 
 ![Tiempo de preparación de la semilla: referencia del 16 de octubre de 2026](docs/evaluation/assets/full-comparison-seed-preparation-2026-10-16.svg)
 
@@ -67,6 +70,8 @@ La siguiente gráfica muestra el tiempo del turno y los tokens de entrada del ag
 2. **Selecciona** los candidatos que sirven para responder, reutilizando una revisión compatible o consultando al clasificador.
 3. **Prepara** una semilla breve con el contenido seleccionado y sus referencias, para que el agente la use como contexto.
 
-El núcleo está escrito en Rust, los recuerdos se almacenan en SQLite y el dashboard se sirve por HTTP local. La búsqueda predeterminada es por palabras clave; la búsqueda semántica sigue siendo experimental. La integración automática con agentes todavía está pendiente.
+El núcleo está escrito en Rust y los recuerdos se almacenan en SQLite. La interfaz actual es CLI/JSONL. La búsqueda predeterminada es por palabras clave; la búsqueda semántica sigue siendo experimental. La integración automática con agentes todavía está pendiente.
+
+La CLI incluye `mem-write` para crear una memoria y `mem-write-batch` para escribir lotes de hasta 2.500 mediante la misma operación idempotente. Esta primera ruta es local y no ofrece todavía autenticación multiusuario, ACL ni resolución de duplicados. [Contrato de escritura](docs/architecture/memory-design.md#21-contrato-de-escritura).
 
 Para contratos, almacenamiento, índices y ciclo de vida de los recuerdos, consulta el [funcionamiento técnico de la memoria](docs/architecture/memory-design.md). Para la distribución del código, consulta la [arquitectura vigente](docs/architecture/overview.md) y el [mapa de módulos](docs/architecture/modules.md).

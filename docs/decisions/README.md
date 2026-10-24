@@ -90,4 +90,12 @@ Cada decisión nueva debe indicar contexto, alternativas, motivo, estado y condi
 
 [0044 — Restaurar baseline como predeterminado](0044-restore-baseline-default.md) revierte la promoción tras el contraste completo de 540 preguntas y conserva single-pass como opción experimental explícita.
 
+[0045 — Segmentación programática para el contrato de producto](0045-programmatic-text-segmentation.md) registra el requisito de dividir textos localmente, sin modelo, preservando original y contexto; implementado según el contrato v1, con conservación literal verificada.
+
+[0046 — Contrato local v1 y validación sintética acotada](0046-product-contract-v1-bounded-validation.md) registra el cierre de la implementación y del perfil en 18 casos, el consumo de la reserva final y el límite observado de baseline con contexto.
+
+[0047 — Retirar el dashboard](0047-remove-dashboard.md) elimina UI/HTTP y reutilización de revisiones por petición del usuario, conserva datos/checksums históricos y aplaza la revisión humana.
+
 [0048 — Nombre Gennie Memory y remoto nuevo](0048-gennie-memory-rename.md) fija paquetes, ejecutables y variables vigentes, y documenta las excepciones históricas autorizadas.
+
+[0049 — Presentar evidencia explícita al baseline](0049-baseline-explicit-evidence.md) registra la corrección autorizada del payload y sus 30 recuperaciones de desarrollo.

@@ -1,6 +1,6 @@
 # 0014 — Dashboard local de revisión
 
-Estado: primera implementación local, pendiente de revisión humana y evaluación del aprendizaje. Fecha: 2026-10-17.
+Estado histórico: implementado el 2026-10-17 y retirado por decisión del usuario el 2026-10-23; [decisión vigente de retirada](0047-remove-dashboard.md). El contenido siguiente documenta el diseño anterior, no funciones disponibles hoy.
 
 ## Contexto
 
